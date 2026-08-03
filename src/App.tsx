@@ -5,6 +5,8 @@ import LibraryPage from './pages/LibraryPage';
 import BookPage from './pages/BookPage';
 import ReaderPage from './pages/ReaderPage';
 import SearchPage from './pages/SearchPage';
+import StudyPage from './pages/StudyPage';
+import PlanPage from './pages/PlanPage';
 import MePage from './pages/MePage';
 
 export default function App() {
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="bibel/:bookId" element={<BookPage />} />
         <Route path="bibel/:bookId/:chapter" element={<ReaderPage />} />
         <Route path="suche" element={<SearchPage />} />
+        <Route path="studium" element={<StudyPage />} />
+        <Route path="studium/:planId" element={<PlanPage />} />
         <Route path="ich" element={<MePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

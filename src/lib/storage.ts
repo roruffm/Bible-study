@@ -198,3 +198,50 @@ export function toggleChapterRead(book: string, chapter: number): void {
   const current = getReadChapters();
   write('readChapters', current.includes(key) ? current.filter((k) => k !== key) : [...current, key]);
 }
+
+/* ------------------------------------------------------------ Lesepläne */
+
+/** Erledigte Tage je Plan, gespeichert als Null-basierte Tagesnummern. */
+type PlanProgress = Record<string, number[]>;
+
+function getPlanProgressAll(): PlanProgress {
+  return memo('plans', () => read<PlanProgress>('plans', {}));
+}
+
+export function getPlanProgress(planId: string): number[] {
+  return memo(`plan:${planId}`, () => getPlanProgressAll()[planId] ?? []);
+}
+
+export function isPlanDayDone(planId: string, day: number): boolean {
+  return getPlanProgress(planId).includes(day);
+}
+
+export function togglePlanDay(planId: string, day: number): void {
+  const all = getPlanProgressAll();
+  const done = all[planId] ?? [];
+  write('plans', {
+    ...all,
+    [planId]: done.includes(day) ? done.filter((d) => d !== day) : [...done, day].sort((a, b) => a - b),
+  });
+}
+
+/** Der Plan, den die Startseite anzeigt. */
+export function getActivePlan(): string | null {
+  return memo('activePlan', () => read<string | null>('activePlan', null));
+}
+
+export function setActivePlan(planId: string | null): void {
+  write('activePlan', planId);
+}
+
+/**
+ * Der nächste offene Tag eines Plans – das ist der Abschnitt, den die App
+ * als „heute dran“ anbietet. Ist alles erledigt, wird `null` geliefert.
+ */
+export function nextOpenDay(planId: string, totalDays: number): number | null {
+  const done = new Set(getPlanProgress(planId));
+  for (let day = 0; day < totalDays; day++) {
+    if (!done.has(day)) return day;
+  }
+  return null;
+}

@@ -278,8 +278,8 @@ Group       (id, name, mitglieder[], planId, geteilteNotizen[])
 | Phase | Umfang | Ergebnis |
 |---|---|---|
 | **1 – MVP** ✅ **umgesetzt** | Bibeltext komplett (Platzhalter-Übersetzung, HFA nach Lizenz), Navigation, Schnellsprung, Volltextsuche, Leseansicht, Hell/Sepia/Dunkel-Modus, Vers des Tages | Nutzbare Lese-App |
-| **2 – Studium** (≈ 3 Monate) | Vers-Panel mit Kontext & Interpretationen (Start: Evangelien + Psalmen), Querverweise, Notizen & Markierungen, Buch-Steckbriefe, Offline-Modus | Echte Studien-App |
-| **3 – Vertiefung** (≈ 3 Monate) | Lesepläne, Themenpfade, Lexikon, Zeitleiste, Karten, Memorisation, Journal-Export | Umfassendes Studienwerkzeug |
+| **2 – Studium** ✅ **umgesetzt** | Vers-Panel mit Kontext & Interpretationen (Start: Evangelien + Psalmen), Querverweise, Notizen & Markierungen, Buch-Steckbriefe, Offline-Modus | Echte Studien-App |
+| **3 – Vertiefung** (teilweise: Lesepläne, Themenpfade und Journal-Export stehen) | Lesepläne, Themenpfade, Lexikon, Zeitleiste, Karten, Memorisation, Journal-Export | Umfassendes Studienwerkzeug |
 | **4 – Gemeinschaft & KI** | Gruppenmodus, Diskussionsfragen, „Frag den Text"-Assistent, Übersetzungsvergleich, Audio | Vollausbau |
 
 **Erfolgskriterien:** Wiederkehrende Nutzung (7-Tage-Retention),

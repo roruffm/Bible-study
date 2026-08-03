@@ -6,7 +6,7 @@ Abruf – dazu Notizen, Markierungen, Volltextsuche und Lesefortschritt.
 
 📄 Das ausführliche Konzept (Vision, Funktionsumfang, UI/UX, Roadmap) steht in
 **[KONZEPT.md](KONZEPT.md)**. Dieses README beschreibt den **umgesetzten
-Stand (Phase 1 – MVP)**.
+Stand (Phase 1 und 2 der Roadmap)**.
 
 ---
 
@@ -34,6 +34,8 @@ Datenimport ist für den Start nicht nötig.
 | **Leseansicht** | Buchähnliches Layout, anklickbare Verse, Blättern per Pfeiltasten, Schriftgröße stufenlos |
 | **Vers-Panel** | Vier Tabs: historischer Kontext, Auslegungen, Querverweise, eigene Notizen |
 | **Volltextsuche** | Alle 31.102 Verse, Mehrwortsuche, Phrasensuche in `"…"`, Filter nach Testament und Buch, Treffer hervorgehoben |
+| **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und drei kuratierte Themenpläne, mit Tagesfortschritt |
+| **Offline** | Service Worker; gelesene Kapitel bleiben gespeichert, auf Wunsch die ganze Bibel (≈ 4 MB) |
 | **Persönliches** | Notizen, Markierungen in vier Farben, gelesene Kapitel, Export des Journals als Markdown |
 | **Darstellung** | Hell, Sepia und Dunkel; responsiv vom Handy bis Desktop; Tastaturbedienung |
 | **Vers des Tages** | 50 kuratierte Verse mit kurzem Einordnungsimpuls |
@@ -42,10 +44,15 @@ Datenimport ist für den Start nicht nötig.
 
 - **Steckbriefe zu allen 66 Büchern** – Verfasser, Zeit, Anlass, Kernaussage.
   Damit hat jeder Vers von Beginn an eine historische Einordnung.
-- **Vertiefte Artikel zu 28 Schlüsselabschnitten** (Schöpfung, Zehn Gebote,
-  Psalm 23, Jesaja 53, Seligpreisungen, Vaterunser, barmherziger Samariter,
-  Johannesprolog, Römer 8, 1. Korinther 13, Offenbarung 21 …) mit
-  historischem Kontext, mehreren Auslegungstraditionen und Querverweisen.
+- **Vertiefte Artikel zu 40 Schlüsselabschnitten** mit 119 einzeln
+  ausgewiesenen Auslegungen – Schöpfung, Zehn Gebote, Schma Israel, Psalm 1,
+  22, 23, 51, 121, 137, Jesaja 53, Seligpreisungen, Vaterunser, Magnificat,
+  Weihnachtsgeschichte, Sturmstillung, barmherziger Samariter, verlorener
+  Sohn, Johannesprolog, Römer 8, 1. Korinther 13, Offenbarung 21 und weitere,
+  jeweils mit historischem Kontext und Querverweisen.
+- **Sieben Lesepläne**, davon drei kuratierte Themenwege („Hoffnung, wenn es
+  dunkel wird“, „Wer ist Jesus?“, „Vergebung“) mit Tagesüberschrift und
+  einordnendem Impuls.
 
 **Redaktionsprinzip:** Auslegungen stehen **beschreibend nebeneinander**,
 jeweils mit Angabe der Tradition (reformatorisch, katholisch, orthodox,
@@ -88,14 +95,33 @@ src/
   content/                 Redaktionelle Inhalte
     bookProfiles.ts          Steckbriefe aller 66 Bücher
     commentary.ts            Kontext- und Auslegungsartikel
+    readingPlans.ts          Lese- und Themenpläne
     verseOfDay.ts            Kuratierte Verse für den Tagesimpuls
   lib/
     bibleData.ts           Laden und Zwischenspeichern der Bücher
     reference.ts           Parser für Stellenangaben
     search.ts              Volltextindex und Suche
-    storage.ts             Notizen, Markierungen, Einstellungen (lokal)
-  pages/                   Heute, Bibliothek, Buch, Leseansicht, Suche, Ich
+    storage.ts             Notizen, Markierungen, Pläne, Einstellungen (lokal)
+    offline.ts             Stand und Steuerung des Offline-Speichers
+  pages/                   Heute, Bibliothek, Buch, Leseansicht, Suche,
+                           Studium, Plan, Ich
 ```
+
+### Ein Hinweis für Weiterentwicklung
+
+Alle Lesefunktionen in `lib/storage.ts` sind **memoisiert** und geben bei
+unverändertem Speicher dasselbe Objekt zurück. Das ist keine Optimierung,
+sondern Bedingung: `usePersisted` baut auf `useSyncExternalStore` auf, und
+React bricht mit „Maximum update depth exceeded“ ab, sobald ein Selektor bei
+jedem Aufruf einen neuen Wert liefert. Fallwerte wie `?? []` gehören deshalb
+in die Speicherschicht, nicht in den Selektor.
+
+### Lesepläne
+
+Durchlese-Pläne werden zur Laufzeit aus dem Bibel-Index berechnet – 365 Tage
+müssen nicht von Hand gepflegt werden und bleiben automatisch korrekt.
+Themenpläne sind in `content/readingPlans.ts` kuratiert und tragen zu jedem
+Tag eine Überschrift und einen einordnenden Satz.
 
 ### Datenformat
 
@@ -127,7 +153,8 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 ## Tests
 
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
-Vers-Panel, Notizen, Suche, Themenwechsel und mobile Ansicht (21 Prüfungen):
+Vers-Panel, Notizen, Suche, Lesepläne, Themenwechsel, mobile Ansicht und den
+echten Offline-Betrieb mit abgeschalteter Verbindung (31 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -138,9 +165,10 @@ node scripts/smoke-test.mjs  # legt Screenshots in smoke-shots/ ab
 
 ---
 
-## Nächste Schritte (Phase 2 laut Konzept)
+## Nächste Schritte (Phase 3 laut Konzept)
 
-- Offline-Modus als Service Worker, damit der Text ohne Netz verfügbar bleibt
-- Redaktioneller Ausbau der Kontextartikel über die Evangelien und Psalmen
-- Lesepläne mit Fortschritt und Erinnerungen
 - Personen- und Begriffslexikon, verlinkt aus dem Bibeltext heraus
+- Interaktive Zeitleiste und Kartenmodul (Paulusreisen, Exil-Routen)
+- Vers-Memorisation mit gestuftem Ausblenden und Wiederholung
+- Weiterer redaktioneller Ausbau der Kontextartikel, Buch für Buch
+- Vorlesefunktion und Erinnerungen für den Leseplan

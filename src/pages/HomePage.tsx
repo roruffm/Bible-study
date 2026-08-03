@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom';
 import { verseOfDay } from '../content/verseOfDay';
+import { buildDays, findPlan, portionLabel, portionLink } from '../content/readingPlans';
 import { useAsync, useBibleIndex, usePersisted } from '../hooks/useStore';
 import { findBook, loadBook, TRANSLATION_LABEL } from '../lib/bibleData';
-import { getLastPosition, getNotes, getReadChapters } from '../lib/storage';
+import {
+  getActivePlan,
+  getLastPosition,
+  getNotes,
+  getPlanProgress,
+  getReadChapters,
+  nextOpenDay,
+  togglePlanDay,
+} from '../lib/storage';
 
 const TOTAL_CHAPTERS = 1189;
 
@@ -14,6 +23,17 @@ export default function HomePage() {
   const lastPosition = usePersisted(getLastPosition);
   const readChapters = usePersisted(getReadChapters);
   const notes = usePersisted(getNotes);
+  const activePlanId = usePersisted(getActivePlan);
+  // Immer über getPlanProgress gehen – die Funktion liefert auch für einen
+  // leeren Plan-Schlüssel ein stabiles Ergebnis. Ein hier notiertes `[]` wäre
+  // bei jedem Aufruf ein neues Array und würde die Komponente endlos neu
+  // rendern (React verlangt stabile Snapshots).
+  const planProgress = usePersisted(() => getPlanProgress(activePlanId ?? ''));
+
+  const plan = activePlanId ? findPlan(activePlanId) : undefined;
+  const planDay = plan && index ? nextOpenDay(plan.id, plan.days) : null;
+  const planPortions =
+    plan && index && planDay !== null ? buildDays(plan, index)[planDay] : undefined;
 
   const dailyText = dailyBook?.chapters[daily.ref.chapter - 1]?.[daily.ref.verse - 1];
   const dailyBookMeta = index ? findBook(index, daily.ref.book) : undefined;
@@ -50,6 +70,56 @@ export default function HomePage() {
         </section>
 
         <div className="stack">
+          {plan && (
+            <div className="tile">
+              <div className="tile__label">
+                Leseplan · {plan.title}
+              </div>
+              {planPortions && planDay !== null ? (
+                <>
+                  <div className="tile__value">Tag {planDay + 1}</div>
+                  {planPortions.title && <div className="tile__meta">{planPortions.title}</div>}
+                  <div className="day__portions" style={{ marginTop: '0.6rem' }}>
+                    {planPortions.portions.map((portion, i) => (
+                      <Link key={i} className="chip" to={portionLink(portion)}>
+                        {portionLabel(portion, findBook(index!, portion.book)?.name ?? portion.book)}
+                      </Link>
+                    ))}
+                  </div>
+                  <button
+                    type="button"
+                    className="btn btn--sm"
+                    style={{ marginTop: '0.7rem' }}
+                    onClick={() => togglePlanDay(plan.id, planDay)}
+                  >
+                    Tag als gelesen abhaken
+                  </button>
+                </>
+              ) : (
+                <div className="tile__value">Plan abgeschlossen 🎉</div>
+              )}
+              <div className="progress">
+                <div
+                  className="progress__bar"
+                  style={{ width: `${(planProgress.length / plan.days) * 100}%` }}
+                />
+              </div>
+              <div className="tile__meta">
+                {planProgress.length} von {plan.days} Tagen
+              </div>
+            </div>
+          )}
+
+          {!plan && (
+            <Link className="tile" to="/studium">
+              <div className="tile__label">Leseplan</div>
+              <div className="tile__value">Noch keiner gewählt</div>
+              <div className="tile__meta">
+                Sieben Tage zu einem Thema oder die ganze Bibel in einem Jahr
+              </div>
+            </Link>
+          )}
+
           {lastPosition && lastBookMeta ? (
             <Link
               className="tile"

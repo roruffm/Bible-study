@@ -785,6 +785,319 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: '1mo', chapter: 2, verse: 9 },
     ],
   },
+
+  /* ------------------------------------------------- Psalmen (Ausbau) */
+
+  {
+    book: 'ps',
+    chapter: 1,
+    from: 1,
+    to: 6,
+    title: 'Das Tor zum Psalter',
+    historicalShort:
+      'Psalm 1 ist kein Gebet, sondern eine Einleitung: Er stellt dem ganzen Buch zwei Wege gegenüber. Das Bild vom Baum am Wasserlauf stammt aus einer Region, in der Wasser über Leben und Tod entscheidet.',
+    historicalLong:
+      'Die Endredaktion des Psalters hat diesen Text bewusst vorangestellt: Wer die 150 Psalmen betet, soll sie als „Weisung“ (Tora) lesen. Der Baum steht nicht am Fluss zufällig, sondern ist „gepflanzt“ – ein Passiv, das auf Gott als Handelnden verweist. Die Gegenüberstellung von Gerechten und Gottlosen ist typisch für die Weisheitsliteratur.',
+    interpretations: [
+      {
+        tradition: 'Weisheitliche Auslegung',
+        text: 'Die beiden Wege sind kein Urteil über Personen, sondern eine Einladung: Es macht einen Unterschied, woran man sich ausrichtet.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Das Tun-Ergehen-Schema dieses Psalms wird innerhalb der Bibel selbst hinterfragt – Hiob und Psalm 73 widersprechen der Erfahrung nach offen.',
+      },
+      {
+        tradition: 'Christliche Tradition',
+        text: 'Die Alte Kirche las den „Mann“ von Vers 1 auch auf Christus hin, der die Weisung vollkommen erfüllt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 17, verse: 8, note: 'Fast wörtlich dasselbe Bild' },
+      { book: 'ps', chapter: 73, verse: 3, note: 'Der Widerspruch zur Erfahrung' },
+    ],
+  },
+  {
+    book: 'ps',
+    chapter: 22,
+    from: 1,
+    to: 32,
+    title: '„Mein Gott, warum hast du mich verlassen?“',
+    historicalShort:
+      'Ein Klagepsalm, der mit dem schärfsten Vorwurf der Bibel beginnt und in einem Loblied endet. Diese Bewegung von der Klage zum Dank ist die häufigste Form im Psalter.',
+    historicalLong:
+      'Die Bilder – durchgrabene Hände und Füße, verteilte Kleider, das Los über das Gewand – sind Metaphern für äußerste Erniedrigung, wie sie in altorientalischer Klagedichtung verbreitet waren. Die Evangelien greifen sie in den Passionsberichten auf. Der Umschlag in Vers 23 erfolgt ohne Erklärung: Der Beter hat offenbar eine Zusage empfangen, die der Text nicht wiedergibt.',
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Psalm gilt als Gebet eines schwer leidenden Einzelnen, in dem sich das ganze Volk wiederfinden kann. Im Judentum wird er auch mit Ester und der Purim-Erzählung verbunden.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Jesu Ruf am Kreuz zitiert den ersten Vers. Wer den ganzen Psalm mithört, hört darin nicht nur Verzweiflung, sondern ein Gebet, das auf Rettung zuläuft.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Entscheidend ist, dass der Vorwurf selbst als Gebet gilt: Die Bibel erlaubt es, Gott sein Schweigen vorzuhalten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 15, verse: 34 },
+      { book: 'joh', chapter: 19, verse: 24 },
+    ],
+  },
+  {
+    book: 'ps',
+    chapter: 51,
+    from: 1,
+    to: 21,
+    title: 'Das Bußgebet nach schwerer Schuld',
+    historicalShort:
+      'Die Überschrift verbindet den Psalm mit Davids Vergehen an Batseba und dem Mord an Uria. Bemerkenswert ist, dass der Beter keine Wiedergutmachung anbietet, sondern allein um Neuschöpfung bittet.',
+    historicalLong:
+      'Das hebräische Wort für „schaffe“ in Vers 12 ist dasselbe wie in 1. Mose 1 – es wird in der Bibel ausschließlich für Gottes Handeln verwendet. Am Ende steht ein überraschender Satz: Opfer will Gott nicht, sondern „ein zerbrochenes Herz“. Die Verse 20–21, die den Tempelkult wieder aufwerten, gelten vielen Fachleuten als spätere Ergänzung aus der Zeit des Wiederaufbaus.',
+    interpretations: [
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Einer der sieben Bußpsalmen und ein Kerntext Luthers: Der Mensch kann seine Schuld nicht selbst beheben, er kann nur um Erneuerung bitten.',
+      },
+      {
+        tradition: 'Prophetische Linie',
+        text: 'Die Ablehnung des Opfers steht in einer Reihe mit Amos, Hosea und Micha: Haltung geht dem Ritus voraus.',
+      },
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Die Zuschreibung an David in der Überschrift stammt aus späterer Zeit; sie deutet den Psalm, statt seine Entstehung zu dokumentieren.',
+      },
+    ],
+    crossRefs: [{ book: '2sam', chapter: 12, verse: 13, note: 'Die Szene mit Nathan' }],
+  },
+  {
+    book: 'ps',
+    chapter: 121,
+    from: 1,
+    to: 8,
+    title: 'Ein Lied für unterwegs',
+    historicalShort:
+      'Einer der fünfzehn Wallfahrtspsalmen, gesungen auf dem Weg hinauf nach Jerusalem. Die Berge im ersten Vers sind keine romantische Kulisse, sondern der gefährliche Teil der Reise.',
+    historicalLong:
+      'Auf den Höhen standen fremde Heiligtümer – die Frage „Woher kommt mir Hilfe?“ ist deshalb eine echte Alternative: von den Höhenkulten oder vom Schöpfer? Die Antwort fällt eindeutig aus. Der Psalm ist als Wechselrede gebaut: Ein Einzelner fragt, eine andere Stimme antwortet ihm zusprechend.',
+    interpretations: [
+      {
+        tradition: 'Liturgische Tradition',
+        text: 'Als Segenswort bei Reisen, Aussendungen und Bestattungen weit verbreitet.',
+      },
+      {
+        tradition: 'Exegetische Beobachtung',
+        text: 'Das hebräische Wort für „behüten“ steht sechsmal – der Psalm sagt in kurzer Form immer wieder dasselbe zu.',
+      },
+    ],
+  },
+  {
+    book: 'ps',
+    chapter: 137,
+    from: 1,
+    to: 9,
+    title: 'An den Wassern Babels – und der Schlussvers',
+    historicalShort:
+      'Der Psalm stammt aus der Exilszeit und beschreibt die Demütigung, den Siegern zur Unterhaltung vorsingen zu sollen. Er endet mit einem Fluch über die Kinder der Feinde – einem der verstörendsten Sätze der Bibel.',
+    historicalLong:
+      'Der letzte Vers greift eine grausame Kriegspraxis der Zeit auf, die Israel selbst erlitten hatte. In vielen Gesangbüchern und Leseordnungen wird der Psalm gekürzt. Die Frage, ob man solche Verse auslassen darf, gehört zu den offenen Streitpunkten der Liturgiegeschichte.',
+    interpretations: [
+      {
+        tradition: 'Verteidigende Lesart',
+        text: 'Der Fluch wird ausgesprochen, nicht ausgeführt: Der Beter übergibt seine Rachegedanken an Gott, statt selbst zu handeln. Das Aussprechen vor Gott ist die Alternative zur Tat.',
+      },
+      {
+        tradition: 'Kritische Lesart',
+        text: 'Andere halten die Verharmlosung für unredlich: Der Vers bleibt ein Gewaltwunsch und darf als solcher benannt und zurückgewiesen werden.',
+      },
+      {
+        tradition: 'Liturgische Praxis',
+        text: 'Die meisten Kirchen lassen Vers 9 im Gottesdienst aus. Im Studium wird er bewusst gelesen, weil er zeigt, wie ungeschönt die Bibel Traumatisierung abbildet.',
+      },
+    ],
+  },
+
+  /* --------------------------------------------- Evangelien (Ausbau) */
+
+  {
+    book: 'lk',
+    chapter: 1,
+    from: 46,
+    to: 55,
+    title: 'Das Magnificat – Marias Lied',
+    historicalShort:
+      'Das Lied einer jungen Frau aus einem unbedeutenden Dorf ist politisch: Es besingt einen Gott, der Mächtige vom Thron stürzt und Hungernde sättigt. Sprachlich ist es dem Lied der Hanna aus 1. Samuel 2 nachgebildet.',
+    historicalLong:
+      'Die Verben stehen im Perfekt – die Umwälzung wird besungen, als sei sie schon geschehen. Das Lied wurde deshalb in verschiedenen Epochen als so brisant empfunden, dass sein öffentlicher Vortrag zeitweise eingeschränkt wurde, etwa während der britischen Kolonialherrschaft in Indien und unter der Militärdiktatur in Argentinien.',
+    interpretations: [
+      {
+        tradition: 'Liturgische Tradition',
+        text: 'Das Magnificat gehört seit dem frühen Mittelalter zum täglichen Abendgebet der Kirche.',
+      },
+      {
+        tradition: 'Befreiungstheologie',
+        text: 'Gelesen als Programm: Gottes Zuwendung zu den Armen ist keine innere Haltung, sondern verändert Verhältnisse.',
+      },
+      {
+        tradition: 'Marianische Frömmigkeit',
+        text: 'In der katholischen und orthodoxen Tradition gilt Maria hier als Urbild des Glaubens – als die, die Gottes Handeln zustimmt.',
+      },
+    ],
+    crossRefs: [{ book: '1sam', chapter: 2, verse: 1, note: 'Das Vorbild: Hannas Lied' }],
+  },
+  {
+    book: 'lk',
+    chapter: 2,
+    from: 1,
+    to: 20,
+    title: 'Die Weihnachtsgeschichte',
+    historicalShort:
+      'Lukas datiert die Geburt durch eine Volkszählung unter Kaiser Augustus. Die Hirten sind kein romantisches Beiwerk: Ihr Beruf galt als unrein, ihr Zeugnis vor Gericht als wertlos.',
+    historicalLong:
+      'Die historische Einordnung wirft Fragen auf: Die von Quirinius durchgeführte Zählung ist für das Jahr 6 n. Chr. bezeugt, während Herodes der Große 4 v. Chr. starb. Die Forschung diskutiert das seit langem ohne abschließendes Ergebnis. Lukas geht es erkennbar um eine Gegenüberstellung: Augustus trug die Titel „Retter“ und „Bringer des Friedens“ – genau diese Worte sprechen die Engel über einem Kind in einer Futterkrippe aus. Von einem Stall ist im Text übrigens nie die Rede.',
+    interpretations: [
+      {
+        tradition: 'Politische Lesart',
+        text: 'Die Erzählung stellt dem römischen Friedensversprechen einen anderen Frieden entgegen – und beginnt ihn ganz unten.',
+      },
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Kindheitsgeschichten bei Lukas und Matthäus unterscheiden sich stark. Sie werden als theologische Deutungen der Herkunft Jesu gelesen, nicht als Protokoll.',
+      },
+      {
+        tradition: 'Kirchliche Verkündigung',
+        text: 'Im Zentrum steht die Menschwerdung: Gott kommt nicht in die Zentren der Macht, sondern an ihren Rand.',
+      },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 4,
+    from: 35,
+    to: 41,
+    title: 'Der Sturm auf dem See',
+    historicalShort:
+      'Der See Gennesaret liegt rund 210 Meter unter dem Meeresspiegel; Fallwinde von den Golanhöhen erzeugen dort in kurzer Zeit hohe Wellen. Mehrere Jünger waren Fischer und kannten die Gefahr genau.',
+    historicalLong:
+      'Im Alten Testament ist das tobende Meer Bild der Chaosmacht, die allein Gott bändigt. Wenn Jesus den Wind „bedroht“ – dasselbe Wort wie bei Dämonenaustreibungen – nimmt Markus diese Linie auf. Die Frage der Jünger am Schluss, „Wer ist dieser?“, bleibt unbeantwortet und trägt das ganze Evangelium bis zum Bekenntnis unter dem Kreuz.',
+    interpretations: [
+      {
+        tradition: 'Christologische Auslegung',
+        text: 'Die Szene ordnet Jesus dem zu, was das Alte Testament allein Gott zuschreibt: Herrschaft über das Chaos.',
+      },
+      {
+        tradition: 'Auslegung auf die Gemeinde hin',
+        text: 'Das Boot wurde früh als Bild der Kirche in Bedrängnis gelesen – der scheinbar schlafende Gott ist eine Grunderfahrung des Glaubens.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Vorwurf der Jünger („Fragst du nichts danach?“) wird im Text nicht getadelt, sondern ernst genommen.',
+      },
+    ],
+    crossRefs: [{ book: 'ps', chapter: 107, verse: 29 }],
+  },
+  {
+    book: 'mt',
+    chapter: 25,
+    from: 31,
+    to: 46,
+    title: 'Das Weltgericht: „Was ihr getan habt einem unter diesen Geringsten“',
+    historicalShort:
+      'Die letzte große Rede bei Matthäus endet nicht mit einer Glaubensprüfung, sondern mit einer Liste konkreter Taten: Essen, Trinken, Kleidung, Besuch im Gefängnis. Beide Gruppen sind gleichermaßen überrascht.',
+    historicalLong:
+      'Umstritten ist, wer „diese meine geringsten Brüder“ sind. Traditionell werden alle Notleidenden verstanden; ein Teil der neueren Exegese liest die Wendung enger als Bezeichnung für die umherziehenden Boten der Gemeinde. Die weite Deutung prägt seit der Alten Kirche die christliche Armenfürsorge und ist bis heute die verbreitetste.',
+    interpretations: [
+      {
+        tradition: 'Kirchliche Hauptlinie',
+        text: 'Christus begegnet in den Bedürftigen selbst. Der Text begründet Diakonie und Caritas als Kern des Glaubens, nicht als Zusatz.',
+      },
+      {
+        tradition: 'Engere exegetische Lesart',
+        text: 'Bezogen auf die Aufnahme der Missionare, die in Armut unterwegs waren – die Völker werden danach beurteilt, wie sie den Boten begegnet sind.',
+      },
+      {
+        tradition: 'Reformatorische Rückfrage',
+        text: 'Der Text scheint Werken das Urteil zu überlassen. Die Antwort lautet meist: Die Handelnden wissen gerade nicht, dass sie Christus begegnen – es ist keine Leistung, die man verrechnen kann.',
+      },
+    ],
+    crossRefs: [{ book: 'jak', chapter: 2, verse: 15 }],
+  },
+  {
+    book: 'joh',
+    chapter: 8,
+    from: 1,
+    to: 11,
+    title: 'Die Frau, die beim Ehebruch ertappt wurde',
+    historicalShort:
+      'Die Szene ist eine Falle: Stimmt Jesus der Steinigung zu, gerät er in Konflikt mit dem römischen Recht, das Todesurteile den Statthaltern vorbehielt; lehnt er ab, stellt er sich gegen die Tora. Auffällig ist, dass der beteiligte Mann nicht vorgeführt wird.',
+    historicalLong:
+      'Der Abschnitt fehlt in den ältesten Handschriften des Johannesevangeliums und taucht in einigen Textzeugen an anderer Stelle auf, teils bei Lukas. Fachleute gehen deshalb überwiegend davon aus, dass er ursprünglich nicht zu diesem Evangelium gehörte – zugleich wird er meist als sehr alte, wahrscheinlich authentische Überlieferung eingeschätzt. Viele Bibelausgaben markieren ihn deshalb, drucken ihn aber ab.',
+    interpretations: [
+      {
+        tradition: 'Ethische Auslegung',
+        text: 'Der Satz vom ersten Stein entzieht der Selbstgerechtigkeit den Boden, ohne die Tat gutzuheißen – der Schluss enthält beides: „So verdamme ich dich auch nicht“ und „sündige hinfort nicht mehr“.',
+      },
+      {
+        tradition: 'Textkritische Einordnung',
+        text: 'Die unsichere Überlieferung wird offen benannt. Sie ändert nichts an der Wirkungsgeschichte: Kaum ein Text hat das christliche Verständnis von Barmherzigkeit stärker geprägt.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Hervorgehoben wird die Asymmetrie: Nur die Frau wird öffentlich vorgeführt, obwohl die Tora beide Beteiligten nennt.',
+      },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 20,
+    from: 24,
+    to: 29,
+    title: 'Thomas – der Zweifel als Teil des Glaubens',
+    historicalShort:
+      'Thomas verlangt nichts anderes, als die übrigen Jünger bereits erlebt hatten: den Auferstandenen zu sehen. Der Text erzählt nicht, dass er die Wunden tatsächlich berührt.',
+    interpretations: [
+      {
+        tradition: 'Klassische Auslegung',
+        text: 'Das Bekenntnis „Mein Herr und mein Gott“ ist der Höhepunkt des Evangeliums – die deutlichste Aussage über Jesus im ganzen Buch.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Beiname „der Ungläubige“ ist eine spätere Zuschreibung. Der Text zeigt einen, der ernst nimmt, was er glauben soll – und dem seine Frage nicht vorgeworfen wird.',
+      },
+      {
+        tradition: 'Auslegung auf die Leser hin',
+        text: 'Der Schlusssatz richtet sich an spätere Generationen, die nicht mehr sehen können – und damit ausdrücklich an die Lesenden.',
+      },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 28,
+    from: 16,
+    to: 20,
+    title: 'Der Missionsbefehl',
+    historicalShort:
+      'Die letzten Verse des Matthäusevangeliums enthalten einen bemerkenswerten Nebensatz: „Etliche aber zweifelten.“ Der Auftrag ergeht an eine Gruppe, die sich ihrer Sache nicht einig ist.',
+    historicalLong:
+      'Die dreigliedrige Taufformel gehört zu den frühesten Belegen dieser Form; in der Apostelgeschichte wird dagegen „auf den Namen Jesu“ getauft. Das Verb „macht zu Jüngern“ ist der einzige Imperativ im Satz – „gehen“, „taufen“ und „lehren“ sind ihm sprachlich untergeordnet.',
+    interpretations: [
+      {
+        tradition: 'Missionsgeschichtliche Wirkung',
+        text: 'Der Text begründete die weltweite Missionsbewegung. Seine Wirkungsgeschichte ist zwiespältig: Er wurde auch zur Rechtfertigung kolonialer Gewalt herangezogen.',
+      },
+      {
+        tradition: 'Neuere Missionstheologie',
+        text: 'Betont wird „lehren, alles zu halten“ – Mission als Einladung zu einer Lebensform, nicht als Übernahme fremder Kulturen.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der letzte Satz ist keine Aufgabe, sondern eine Zusage: „Ich bin bei euch alle Tage.“ Das Evangelium endet mit einer Anwesenheit, nicht mit einem Abschied.',
+      },
+    ],
+    crossRefs: [{ book: 'apg', chapter: 1, verse: 8 }],
+  },
 ];
 
 /** Artikel, die den angegebenen Vers abdecken. */

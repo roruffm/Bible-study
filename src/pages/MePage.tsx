@@ -1,5 +1,13 @@
+import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useBibleIndex, usePersisted } from '../hooks/useStore';
+import {
+  clearOfflineData,
+  downloadAll,
+  getOfflineStatus,
+  isOfflineSupported,
+  type OfflineStatus,
+} from '../lib/offline';
 import { findBook, TRANSLATION_LABEL } from '../lib/bibleData';
 import {
   deleteNote,
@@ -17,6 +25,90 @@ const THEMES: { id: ThemeName; label: string }[] = [
   { id: 'sepia', label: 'Sepia' },
   { id: 'dunkel', label: 'Dunkel' },
 ];
+
+/** Steuert, wie viel des Bibeltextes ohne Netzverbindung verfügbar ist. */
+function OfflineCard() {
+  const [status, setStatus] = useState<OfflineStatus | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  const refresh = useCallback(() => {
+    void getOfflineStatus().then(setStatus);
+  }, []);
+
+  useEffect(refresh, [refresh]);
+
+  if (!isOfflineSupported()) {
+    return (
+      <div className="card" style={{ padding: '1.1rem' }}>
+        <div className="section-title">Offline lesen</div>
+        <div className="notice">
+          Dieser Browser unterstützt keine Offline-Speicherung. Die App funktioniert weiterhin,
+          benötigt aber eine Verbindung.
+        </div>
+      </div>
+    );
+  }
+
+  const percent = status ? Math.round((status.cached / status.total) * 100) : 0;
+
+  return (
+    <div className="card" style={{ padding: '1.1rem' }}>
+      <div className="section-title">Offline lesen</div>
+      <p className="settings-row__hint" style={{ marginBottom: '0.7rem' }}>
+        Gelesene Kapitel bleiben automatisch gespeichert. Für den vollständigen Text ohne
+        Verbindung lädt der Knopf alle 66 Bücher – rund 4 MB.
+      </p>
+
+      <div className="tile__value">
+        {status ? `${status.cached} von ${status.total} Büchern` : '…'}
+      </div>
+      <div className="progress">
+        <div className="progress__bar" style={{ width: `${busy ? progress : percent}%` }} />
+      </div>
+
+      <div className="reader__tools" style={{ marginTop: '0.9rem', flexWrap: 'wrap' }}>
+        <button
+          type="button"
+          className="btn btn--sm btn--primary"
+          disabled={busy || status?.complete}
+          onClick={async () => {
+            setBusy(true);
+            setProgress(0);
+            const result = await downloadAll((loaded, total) =>
+              setProgress(Math.round((loaded / total) * 100)),
+            );
+            setStatus(result);
+            setBusy(false);
+          }}
+        >
+          {busy ? (
+            <>
+              <span className="spinner" /> Lädt … {progress} %
+            </>
+          ) : status?.complete ? (
+            '✓ Vollständig offline verfügbar'
+          ) : (
+            'Ganze Bibel offline verfügbar machen'
+          )}
+        </button>
+
+        {status && status.cached > 0 && !busy && (
+          <button
+            type="button"
+            className="btn btn--ghost btn--sm"
+            onClick={async () => {
+              await clearOfflineData();
+              refresh();
+            }}
+          >
+            Speicher leeren
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function MePage() {
   const { data: index } = useBibleIndex();
@@ -169,6 +261,8 @@ export default function MePage() {
               />
             </div>
           </div>
+
+          <OfflineCard />
 
           <div className="card" style={{ padding: '1.1rem' }}>
             <div className="section-title">Überblick</div>

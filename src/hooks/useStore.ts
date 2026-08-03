@@ -6,6 +6,12 @@ import type { BibleIndex } from '../lib/types';
 /**
  * Liest einen Wert aus dem lokalen Speicher und hält ihn aktuell, sobald
  * irgendwo in der App geschrieben wird.
+ *
+ * **Wichtig:** `read` muss bei unverändertem Speicher dasselbe Objekt
+ * zurückgeben. Die Funktionen in `lib/storage` erfüllen das über ihre
+ * Memoisierung. Ein im Selektor notiertes Literal wie `?? []` erzeugt dagegen
+ * bei jedem Aufruf einen neuen Wert – React bricht das mit „Maximum update
+ * depth exceeded“ ab. Fallwerte gehören deshalb in die Speicherschicht.
  */
 export function usePersisted<T>(read: () => T): T {
   const getSnapshot = useCallback(read, [read]);

@@ -6,6 +6,7 @@ const NAV = [
   { to: '/', label: 'Heute', icon: '🏠', end: true },
   { to: '/bibel', label: 'Bibel', icon: '📖', end: false },
   { to: '/suche', label: 'Suche', icon: '🔍', end: false },
+  { to: '/studium', label: 'Studium', icon: '🧭', end: false },
   { to: '/ich', label: 'Ich', icon: '👤', end: false },
 ];
 

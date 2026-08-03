@@ -108,7 +108,67 @@ check('Mobile: Panel fährt als Bottom-Sheet ein', await mobile.locator('.panel'
 check('Mobile: Tableiste sichtbar', await mobile.locator('.tabbar').isVisible());
 await mobile.screenshot({ path: `${OUT}/08-mobil.png` });
 
-// 10. Referenz-Parser
+// 10. Lesepläne
+await page.goto(BASE + '/studium', { waitUntil: 'networkidle' });
+const planCount = await page.locator('.plan').count();
+check('Studium listet alle Lesepläne', planCount === 7, `${planCount} Pläne`);
+await page.screenshot({ path: `${OUT}/09-studium.png` });
+
+await page.goto(BASE + '/studium/jesus-14', { waitUntil: 'networkidle' });
+const dayCount = await page.locator('.day').count();
+check('Themenplan hat 14 Tage', dayCount === 14, `${dayCount} Tage`);
+const firstPortion = await page.locator('.day').first().locator('.day__portions .chip').first().textContent();
+check('Tagesabschnitt ist beschriftet', (firstPortion ?? '').startsWith('Markus 1,1'), firstPortion ?? '');
+
+await page.locator('.day__check').first().click();
+await page.waitForSelector('.day--done');
+check('Tag lässt sich abhaken', (await page.locator('.day--done').count()) === 1);
+await page.getByRole('button', { name: 'Diesen Plan verfolgen' }).click();
+await page.waitForTimeout(200);
+await page.screenshot({ path: `${OUT}/10-leseplan.png` });
+
+// Der 365-Tage-Plan wird berechnet, nicht gepflegt – Umfang prüfen.
+await page.goto(BASE + '/studium/bibel-jahr', { waitUntil: 'networkidle' });
+const yearDays = await page.locator('.day').count();
+check('Jahresplan umfasst 365 Tage', yearDays === 365, `${yearDays} Tage`);
+
+// 11. Aktiver Plan erscheint auf der Startseite
+await page.goto(BASE + '/', { waitUntil: 'networkidle' });
+const homePlan = (await page.locator('.tile').first().textContent()) ?? '';
+check('Startseite zeigt den verfolgten Plan', homePlan.includes('Wer ist Jesus?') && homePlan.includes('Tag 2'), homePlan.replace(/\s+/g, ' ').slice(0, 70));
+
+// 12. Offline-Betrieb
+await page.goto(BASE + '/ich', { waitUntil: 'networkidle' });
+await page.evaluate(() => navigator.serviceWorker.ready);
+await page.reload({ waitUntil: 'networkidle' });
+const controlled = await page.evaluate(() => Boolean(navigator.serviceWorker.controller));
+check('Service Worker steuert die Seite', controlled);
+
+// Der Laufzeit-Cache kann durch die Volltextsuche bereits gefüllt sein –
+// dann ist der Knopf abgeschaltet und nur der Endzustand zu prüfen.
+const offlineCard = page.locator('.card', { hasText: 'Offline lesen' });
+await offlineCard.locator('.tile__value').waitFor();
+const offlineButton = offlineCard.getByRole('button').first();
+if (!/Vollständig/.test((await offlineButton.textContent()) ?? '')) {
+  await offlineButton.click();
+}
+await offlineCard.locator('button:has-text("Vollständig offline verfügbar")').waitFor({ timeout: 120_000 });
+const offlineLabel = (await offlineCard.locator('.tile__value').textContent()) ?? '';
+check('Alle 66 Bücher sind zwischengespeichert', offlineLabel.includes('66 von 66'), offlineLabel);
+await page.screenshot({ path: `${OUT}/11-offline.png` });
+
+await page.context().setOffline(true);
+await page.goto(BASE + '/bibel/ps/23', { waitUntil: 'load' });
+await page.waitForSelector('.reader__text');
+const offlineVerse = (await page.locator('#v1').textContent()) ?? '';
+check('Ohne Netz lädt ein Kapitel aus dem Cache', offlineVerse.includes('Der HERR ist mein Hirte'), offlineVerse.slice(0, 50) + '…');
+
+await page.goto(BASE + '/bibel/roem/8', { waitUntil: 'load' });
+await page.waitForSelector('.reader__text');
+check('Auch ein noch nie geöffnetes Buch ist offline da', ((await page.locator('#v28').textContent()) ?? '').includes('zum Besten'));
+await page.context().setOffline(false);
+
+// 13. Referenz-Parser
 await page.goto(BASE + '/', { waitUntil: 'networkidle' });
 for (const [input, expect] of [['1. Mose 1', '/bibel/1mo/1'], ['Psalm 23,1', '/bibel/ps/23'], ['1kor 13', '/bibel/1kor/13']]) {
   await page.fill('#quickjump', input);
