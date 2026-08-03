@@ -36,10 +36,12 @@ interface Props {
   book: BookMeta;
   ref_: VerseRef;
   text: string;
+  /** Abweichende Zählung der gedruckten Lutherbibel, falls vorhanden. */
+  altNumbering?: string;
   onClose: () => void;
 }
 
-export default function VersePanel({ index, book, ref_, text, onClose }: Props) {
+export default function VersePanel({ index, book, ref_, text, altNumbering, onClose }: Props) {
   const [tab, setTab] = useState<Tab>('kontext');
   const [expanded, setExpanded] = useState(false);
   const [draft, setDraft] = useState('');
@@ -103,6 +105,16 @@ export default function VersePanel({ index, book, ref_, text, onClose }: Props) 
 
         <div className="panel__body">
           <blockquote className="panel__quote">{text}</blockquote>
+
+          {altNumbering && (
+            <p className="settings-row__hint" style={{ marginTop: '-0.5rem', marginBottom: '1rem' }}>
+              In der gedruckten Lutherbibel steht dieser Vers unter{' '}
+              <strong>
+                {book.abbr} {altNumbering}
+              </strong>{' '}
+              – der Textbestand hier folgt der international üblichen Zählung.
+            </p>
+          )}
 
           {tab === 'kontext' && (
             <div className="panel__article">

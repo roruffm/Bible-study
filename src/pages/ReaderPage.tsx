@@ -283,6 +283,7 @@ export default function ReaderPage() {
           book={book}
           ref_={selectedRef}
           text={verses[selectedRef.verse - 1]}
+          altNumbering={content.alt?.[`${chapter}.${selectedRef.verse}`]}
           onClose={closePanel}
         />
       )}

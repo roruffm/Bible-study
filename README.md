@@ -6,7 +6,7 @@ Abruf – dazu Notizen, Markierungen, Volltextsuche und Lesefortschritt.
 
 📄 Das ausführliche Konzept (Vision, Funktionsumfang, UI/UX, Roadmap) steht in
 **[KONZEPT.md](KONZEPT.md)**. Dieses README beschreibt den **umgesetzten
-Stand (Phase 1 und 2 der Roadmap)**.
+Stand (Phase 1 bis 3 der Roadmap)**.
 
 ---
 
@@ -86,7 +86,7 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Leseansicht** | Buchähnliches Layout, anklickbare Verse, Blättern per Pfeiltasten, Schriftgröße stufenlos |
 | **Vers-Panel** | Vier Tabs: historischer Kontext, Auslegungen, Querverweise, eigene Notizen |
 | **Volltextsuche** | Alle 31.102 Verse, Mehrwortsuche, Phrasensuche in `"…"`, Filter nach Testament und Buch, Treffer hervorgehoben |
-| **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und drei kuratierte Themenpläne, mit Tagesfortschritt |
+| **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
 | **Lexikon** | 64 Einträge zu Personen, Orten und Begriffen – im Bibeltext markiert und mit einem Tippen erklärt |
 | **Zeitleiste** | 9 Epochen und 39 Ereignisse auf maßstabsgetreuer Achse, mit Angabe zur Sicherheit jeder Datierung |
 | **Karte** | Die biblische Welt von Rom bis Mesopotamien, 24 Orte und die vier Reisen des Paulus |
@@ -106,9 +106,14 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
   Weihnachtsgeschichte, Sturmstillung, barmherziger Samariter, verlorener
   Sohn, Johannesprolog, Römer 8, 1. Korinther 13, Offenbarung 21 und weitere,
   jeweils mit historischem Kontext und Querverweisen.
-- **Sieben Lesepläne**, davon drei kuratierte Themenwege („Hoffnung, wenn es
-  dunkel wird“, „Wer ist Jesus?“, „Vergebung“) mit Tagesüberschrift und
-  einordnendem Impuls.
+- **13 kuratierte Themenstudien** mit Tagesüberschrift und einordnendem
+  Impuls, gruppiert nach Sachgebiet:
+  - *Zum Anfangen:* Die Bibel kennenlernen (14 Tage)
+  - *Lebensfragen:* Hoffnung wenn es dunkel wird · Angst und Vertrauen ·
+    Zweifel und Ringen mit Gott · Abschied, Trauer und Trost · Vergebung
+  - *Glauben verstehen:* Wer ist Jesus? · Beten lernen · Der Heilige Geist
+  - *Leben in der Welt:* Gerechtigkeit: Gott und die Armen · Geld, Besitz und
+    Genug · Schöpfung und Verantwortung · Weisheit für den Alltag
 
 **Redaktionsprinzip:** Auslegungen stehen **beschreibend nebeneinander**,
 jeweils mit Angabe der Tradition (reformatorisch, katholisch, orthodox,
@@ -154,6 +159,7 @@ scripts/
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
   build-map-data.mjs       Natural-Earth-Küstenlinien zuschneiden
   build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
+  check-references.mjs     Alle Stellenangaben gegen den Bibeltext prüfen
   smoke-test.mjs           Browser-Test gegen den Vorschau-Server
   test-singlefile.mjs      Prüft die Einzeldatei ohne Server und ohne Netz
 src/
@@ -223,7 +229,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (47 Prüfungen):
+abgeschalteter Verbindung (50 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -232,8 +238,23 @@ npm run preview &            # Vorschau auf Port 4173
 node scripts/smoke-test.mjs  # legt Screenshots in smoke-shots/ ab
 ```
 
+Die redaktionellen Inhalte enthalten mehrere hundert Stellenangaben. Ein
+eigenes Skript vergleicht **jede** davon mit den tatsächlichen Kapitel- und
+Verszahlen, damit kein Verweis auf ein leeres Kapitel oder den falschen Vers
+zeigt:
+
+```bash
+node scripts/check-references.mjs
+```
+
+> **Achtung bei der Verszählung:** Der Datenbestand folgt der international
+> üblichen Zählung, die gedruckte Lutherbibel weicht an rund 355 Stellen
+> davon ab. Psalmen zählen die Überschrift als Vers 1 (Psalm 51,10 statt
+> 51,12), und die Geistausgießung steht in Joel 2,28 statt 3,1. Wo eine
+> abweichende Luther-Angabe existiert, weist das Vers-Panel darauf hin.
+
 Die Einzeldatei wird gesondert geprüft – sie wird als lokale Datei geöffnet
-und darf dabei keine einzige Netzanfrage stellen (9 Prüfungen):
+und darf dabei keine einzige Netzanfrage stellen (11 Prüfungen):
 
 ```bash
 npm run build:single

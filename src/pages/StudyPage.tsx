@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
-import { READING_PLANS } from '../content/readingPlans';
+import {
+  READING_PLANS,
+  TOPIC_HINT,
+  TOPIC_LABEL,
+  type PlanTopic,
+} from '../content/readingPlans';
 import { useBibleIndex, usePersisted } from '../hooks/useStore';
 import { getActivePlan, getPlanProgress } from '../lib/storage';
 
@@ -39,7 +44,16 @@ export default function StudyPage() {
   const activePlan = usePersisted(getActivePlan);
 
   const durchlesen = READING_PLANS.filter((p) => p.kind === 'durchlesen');
-  const themen = READING_PLANS.filter((p) => p.kind === 'thema');
+
+  // Themenpläne nach Sachgebiet gruppieren – bei einem Dutzend Plänen findet
+  // man den passenden sonst nicht mehr.
+  const topics: PlanTopic[] = ['einstieg', 'lebensfragen', 'glaube', 'welt'];
+  const byTopic = topics
+    .map((topic) => ({
+      topic,
+      plans: READING_PLANS.filter((p) => p.kind === 'thema' && p.topic === topic),
+    }))
+    .filter((group) => group.plans.length > 0);
 
   return (
     <div>
@@ -81,17 +95,23 @@ export default function StudyPage() {
         </div>
       </section>
 
-      <section>
-        <div className="library__head">
-          <h3>Rote Fäden</h3>
-          <span className="library__count">Kuratierte Wege durch ein Thema</span>
-        </div>
-        <div className="plan-grid">
-          {themen.map((plan) => (
-            <PlanCard key={plan.id} planId={plan.id} active={activePlan === plan.id} />
-          ))}
-        </div>
-      </section>
+      <div className="section-title" style={{ marginBottom: '1rem' }}>
+        Rote Fäden · kuratierte Wege durch ein Thema
+      </div>
+
+      {byTopic.map(({ topic, plans }) => (
+        <section key={topic} style={{ marginBottom: '2.5rem' }}>
+          <div className="library__head">
+            <h3>{TOPIC_LABEL[topic]}</h3>
+            <span className="library__count">{TOPIC_HINT[topic]}</span>
+          </div>
+          <div className="plan-grid">
+            {plans.map((plan) => (
+              <PlanCard key={plan.id} planId={plan.id} active={activePlan === plan.id} />
+            ))}
+          </div>
+        </section>
+      ))}
 
       {!index && (
         <div className="notice" style={{ marginTop: '1.5rem' }}>

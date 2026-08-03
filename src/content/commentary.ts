@@ -558,7 +558,9 @@ export const COMMENTARY: CommentaryEntry[] = [
     ],
     crossRefs: [
       { book: '1mo', chapter: 11, verse: 7, note: 'Babel als Kontrast' },
-      { book: 'joel', chapter: 3, verse: 1 },
+      // Achtung: Der Datensatz folgt der englischen Zählung. Die Ausgießung
+      // des Geistes steht hier in Joel 2,28 (Luther-Zählung: 3,1).
+      { book: 'joel', chapter: 2, verse: 28 },
     ],
   },
   {
@@ -821,12 +823,12 @@ export const COMMENTARY: CommentaryEntry[] = [
     book: 'ps',
     chapter: 22,
     from: 1,
-    to: 32,
+    to: 31,
     title: '„Mein Gott, warum hast du mich verlassen?“',
     historicalShort:
       'Ein Klagepsalm, der mit dem schärfsten Vorwurf der Bibel beginnt und in einem Loblied endet. Diese Bewegung von der Klage zum Dank ist die häufigste Form im Psalter.',
     historicalLong:
-      'Die Bilder – durchgrabene Hände und Füße, verteilte Kleider, das Los über das Gewand – sind Metaphern für äußerste Erniedrigung, wie sie in altorientalischer Klagedichtung verbreitet waren. Die Evangelien greifen sie in den Passionsberichten auf. Der Umschlag in Vers 23 erfolgt ohne Erklärung: Der Beter hat offenbar eine Zusage empfangen, die der Text nicht wiedergibt.',
+      'Die Bilder – durchgrabene Hände und Füße, verteilte Kleider, das Los über das Gewand – sind Metaphern für äußerste Erniedrigung, wie sie in altorientalischer Klagedichtung verbreitet waren. Die Evangelien greifen sie in den Passionsberichten auf. Der Umschlag in Vers 22 erfolgt ohne Erklärung: Der Beter hat offenbar eine Zusage empfangen, die der Text nicht wiedergibt.',
     interpretations: [
       {
         tradition: 'Jüdische Auslegung',
@@ -850,12 +852,12 @@ export const COMMENTARY: CommentaryEntry[] = [
     book: 'ps',
     chapter: 51,
     from: 1,
-    to: 21,
+    to: 19,
     title: 'Das Bußgebet nach schwerer Schuld',
     historicalShort:
       'Die Überschrift verbindet den Psalm mit Davids Vergehen an Batseba und dem Mord an Uria. Bemerkenswert ist, dass der Beter keine Wiedergutmachung anbietet, sondern allein um Neuschöpfung bittet.',
     historicalLong:
-      'Das hebräische Wort für „schaffe“ in Vers 12 ist dasselbe wie in 1. Mose 1 – es wird in der Bibel ausschließlich für Gottes Handeln verwendet. Am Ende steht ein überraschender Satz: Opfer will Gott nicht, sondern „ein zerbrochenes Herz“. Die Verse 20–21, die den Tempelkult wieder aufwerten, gelten vielen Fachleuten als spätere Ergänzung aus der Zeit des Wiederaufbaus.',
+      'Das hebräische Wort für „schaffe“ in Vers 10 ist dasselbe wie in 1. Mose 1 – es wird in der Bibel ausschließlich für Gottes Handeln verwendet. Am Ende steht ein überraschender Satz: Opfer will Gott nicht, sondern „ein zerschlagenes Herz“. Die Verse 18–19, die den Tempelkult wieder aufwerten, gelten vielen Fachleuten als spätere Ergänzung aus der Zeit des Wiederaufbaus.',
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',

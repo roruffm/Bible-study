@@ -38,7 +38,7 @@ export const DAILY_VERSES: DailyVerse[] = [
   { ref: { book: 'am', chapter: 5, verse: 24 }, impulse: 'Gottesdienst ohne Gerechtigkeit war den Propheten zuwider.' },
   { ref: { book: 'mt', chapter: 6, verse: 34 }, impulse: 'Keine Sorglosigkeit, sondern eine Begrenzung der Sorge auf heute.' },
   { ref: { book: 'roem', chapter: 12, verse: 2 }, impulse: 'Sich nicht anpassen – der Text meint konkrete Alltagsentscheidungen.' },
-  { ref: { book: 'ps', chapter: 51, verse: 12 }, impulse: 'Ein Gebet nach schwerem Versagen, nicht nach kleiner Verfehlung.' },
+  { ref: { book: 'ps', chapter: 51, verse: 10 }, impulse: 'Ein Gebet nach schwerem Versagen – erbeten wird kein guter Vorsatz, sondern eine Neuschöpfung.' },
   { ref: { book: 'joh', chapter: 8, verse: 32 }, impulse: 'Wahrheit als etwas, das man tut, nicht nur weiß.' },
   { ref: { book: 'jak', chapter: 1, verse: 19 }, impulse: 'Drei Sätze, die Konflikte entschärfen.' },
   { ref: { book: '2kor', chapter: 12, verse: 9 }, impulse: 'Paulus schreibt über etwas, das ihn dauerhaft belastete.' },

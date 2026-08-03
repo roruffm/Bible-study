@@ -67,7 +67,7 @@ check('Volltextsuche liefert Treffer', (await page.locator('.hit').count()) > 10
 
 await page.goto('file://' + FILE + '#/studium', { waitUntil: 'load' });
 await page.waitForSelector('.plan');
-check('Lesepläne sind vorhanden', (await page.locator('.plan:not([data-kind="werkzeug"])').count()) === 7);
+check('Lesepläne sind vorhanden', (await page.locator('.plan:not([data-kind="werkzeug"])').count()) === 17);
 
 // Karte und Lexikon müssen auch in der Einzeldatei ohne Nachladen laufen.
 await page.goto('file://' + FILE + '#/studium/karte', { waitUntil: 'load' });

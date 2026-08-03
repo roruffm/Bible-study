@@ -114,9 +114,24 @@ await page.goto(BASE + '/studium', { waitUntil: 'networkidle' });
 // nur die Pläne selbst.
 const planCount = await page.locator('.plan:not([data-kind="werkzeug"])').count();
 const toolCount = await page.locator('.plan[data-kind="werkzeug"]').count();
-check('Studium listet alle Lesepläne', planCount === 7, `${planCount} Pläne`);
+check('Studium listet alle Lesepläne', planCount === 17, `${planCount} Pläne`);
 check('Studium bietet die vier Werkzeuge an', toolCount === 4, `${toolCount} Werkzeuge`);
-await page.screenshot({ path: `${OUT}/09-studium.png` });
+const topicHeads = await page.locator('.library__head h3').allTextContents();
+check(
+  'Themenpläne sind nach Sachgebiet gruppiert',
+  ['Zum Anfangen', 'Lebensfragen', 'Glauben verstehen', 'Leben in der Welt'].every((t) => topicHeads.includes(t)),
+  topicHeads.join(' | '),
+);
+
+await page.screenshot({ path: `${OUT}/09-studium.png`, fullPage: true });
+
+// Ein neuer Themenplan von Anfang bis Ende.
+await page.goto(BASE + '/studium/gerechtigkeit-8', { waitUntil: 'networkidle' });
+const gerechtigkeitDays = await page.locator('.day').count();
+const firstDay = await page.locator('.day__portions .chip').first().textContent();
+check('Themenplan „Gerechtigkeit“ ist vollständig', gerechtigkeitDays === 8, `${gerechtigkeitDays} Tage`);
+check('Sein erster Abschnitt stimmt', firstDay === '2. Mose 22,21-27', firstDay ?? '');
+await page.screenshot({ path: `${OUT}/20-themenplan.png` });
 
 await page.goto(BASE + '/studium/jesus-14', { waitUntil: 'networkidle' });
 const dayCount = await page.locator('.day').count();

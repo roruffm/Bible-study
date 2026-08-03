@@ -43,8 +43,22 @@ function cleanVerse(text) {
     .trim();
 }
 
+/**
+ * Rund 350 Verse tragen am Anfang einen Marker wie „[32:1]“. Er nennt die
+ * abweichende Zählung der gedruckten Lutherbibel – die Quelle nummeriert die
+ * Dateien nach der englischen Zählung. Der Marker wird aus dem Fließtext
+ * genommen und getrennt festgehalten, damit die Leseansicht sauber bleibt und
+ * der Hinweis trotzdem nicht verlorengeht.
+ */
+function extractAltNumbering(text) {
+  const match = text.match(/^\[(\d+):(\d+)\]\s*/);
+  if (!match) return { text, alt: null };
+  return { text: text.slice(match[0].length), alt: `${match[1]},${match[2]}` };
+}
+
 const index = [];
 let totalVerses = 0;
+let altCount = 0;
 const problems = [];
 
 for (const [id, name, abbr, group, source] of BOOKS) {
@@ -65,6 +79,8 @@ for (const [id, name, abbr, group, source] of BOOKS) {
     .sort((a, b) => a - b);
 
   const chapters = [];
+  /** Abweichende Luther-Zählung, Schlüssel „kapitel.vers“. */
+  const altNumbering = {};
 
   for (const chapterNumber of chapterNumbers) {
     const raw = JSON.parse(readFileSync(join(chapterDir, `${chapterNumber}.json`), 'utf8'));
@@ -75,7 +91,9 @@ for (const [id, name, abbr, group, source] of BOOKS) {
     for (const row of rows) {
       const number = Number.parseInt(row.verse, 10);
       if (!Number.isInteger(number) || number < 1) continue;
-      verses[number - 1] = cleanVerse(row.text);
+      const { text, alt } = extractAltNumbering(cleanVerse(row.text));
+      verses[number - 1] = text;
+      if (alt) altNumbering[`${chapterNumber}.${number}`] = alt;
     }
 
     for (let i = 0; i < verses.length; i++) {
@@ -93,9 +111,17 @@ for (const [id, name, abbr, group, source] of BOOKS) {
     totalVerses += verses.length;
   }
 
+  altCount += Object.keys(altNumbering).length;
+
   writeFileSync(
     join(outDir, `${id}.json`),
-    JSON.stringify({ id, name, abbr, chapters }),
+    JSON.stringify({
+      id,
+      name,
+      abbr,
+      chapters,
+      ...(Object.keys(altNumbering).length > 0 ? { alt: altNumbering } : {}),
+    }),
   );
 
   index.push({
@@ -118,6 +144,7 @@ console.log(`Übersetzung : ${translationId}`);
 console.log(`Bücher      : ${index.length} / ${BOOKS.length}`);
 console.log(`Kapitel     : ${index.reduce((n, b) => n + b.chapters, 0)}`);
 console.log(`Verse       : ${totalVerses}`);
+console.log(`Luther-Zählung abweichend: ${altCount} Verse`);
 
 if (problems.length > 0) {
   console.log(`\nAuffälligkeiten (${problems.length}):`);

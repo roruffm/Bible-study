@@ -30,6 +30,12 @@ export interface BookContent {
   abbr: string;
   /** chapters[k][v] = Text von Kapitel k+1, Vers v+1 */
   chapters: string[][];
+  /**
+   * Abweichende Zählung der gedruckten Lutherbibel, Schlüssel „kapitel.vers“.
+   * Der Datenbestand folgt der englischen Zählung; wo beide auseinandergehen,
+   * steht hier die Luther-Angabe, etwa „3,1“ für Joel 2,28.
+   */
+  alt?: Record<string, string>;
 }
 
 /** Verweis auf einen einzelnen Vers. */
