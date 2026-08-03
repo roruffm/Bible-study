@@ -67,7 +67,16 @@ check('Volltextsuche liefert Treffer', (await page.locator('.hit').count()) > 10
 
 await page.goto('file://' + FILE + '#/studium', { waitUntil: 'load' });
 await page.waitForSelector('.plan');
-check('Lesepläne sind vorhanden', (await page.locator('.plan').count()) === 7);
+check('Lesepläne sind vorhanden', (await page.locator('.plan:not([data-kind="werkzeug"])').count()) === 7);
+
+// Karte und Lexikon müssen auch in der Einzeldatei ohne Nachladen laufen.
+await page.goto('file://' + FILE + '#/studium/karte', { waitUntil: 'load' });
+await page.waitForSelector('.map__svg', { timeout: 30_000 });
+check('Karte wird auch als Einzeldatei gezeichnet', (await page.locator('.map__place').count()) >= 20);
+
+await page.goto('file://' + FILE + '#/lexikon', { waitUntil: 'load' });
+await page.waitForSelector('.lex-entry__term');
+check('Lexikon ist enthalten', (await page.locator('.lex-entry__term').count()) >= 60);
 
 check('Keine Anfrage nach außen', externalRequests.length === 0, externalRequests.slice(0, 3).join(', '));
 check('Keine Konsolenfehler', errors.length === 0, errors.slice(0, 2).join(' | '));

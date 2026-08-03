@@ -1,7 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import VersePanel from '../components/VersePanel';
+import LexiconSheet from '../components/LexiconSheet';
 import { annotatedVerses } from '../content/commentary';
+import { findLexiconEntry } from '../content/lexicon';
+import { segmentChapter } from '../lib/lexiconText';
 import { useAsync, useBibleIndex, usePersisted } from '../hooks/useStore';
 import { findBook, loadBook, stepChapter, TRANSLATION_LABEL } from '../lib/bibleData';
 import {
@@ -25,6 +28,7 @@ export default function ReaderPage() {
   const { data: content, loading, error } = useAsync(() => loadBook(bookId), [bookId]);
 
   const [selected, setSelected] = useState<number | null>(null);
+  const [lexiconId, setLexiconId] = useState<string | null>(null);
   const verseRefs = useRef(new Map<number, HTMLElement>());
 
   const book = index ? findBook(index, bookId) : undefined;
@@ -36,6 +40,7 @@ export default function ReaderPage() {
   const read = usePersisted(() => isChapterRead(bookId, chapter));
 
   const annotated = useMemo(() => annotatedVerses(bookId, chapter), [bookId, chapter]);
+  const segments = useMemo(() => segmentChapter(verses), [verses]);
 
   const highlightByVerse = useMemo(() => {
     const map = new Map<number, string>();
@@ -220,7 +225,33 @@ export default function ReaderPage() {
                         📝
                       </span>
                     )}
-                    {text}
+                    {(segments[i] ?? [{ text }]).map((segment, s) =>
+                      segment.entryId ? (
+                        <span
+                          key={s}
+                          className="lex"
+                          role="button"
+                          tabIndex={0}
+                          title="Im Lexikon nachschlagen"
+                          onClick={(e) => {
+                            // Sonst öffnet sich zusätzlich das Vers-Panel.
+                            e.stopPropagation();
+                            setLexiconId(segment.entryId!);
+                          }}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              setLexiconId(segment.entryId!);
+                            }
+                          }}
+                        >
+                          {segment.text}
+                        </span>
+                      ) : (
+                        <span key={s}>{segment.text}</span>
+                      ),
+                    )}
                   </span>{' '}
                 </span>
               );
@@ -254,6 +285,10 @@ export default function ReaderPage() {
           text={verses[selectedRef.verse - 1]}
           onClose={closePanel}
         />
+      )}
+
+      {lexiconId && findLexiconEntry(lexiconId) && (
+        <LexiconSheet entry={findLexiconEntry(lexiconId)!} onClose={() => setLexiconId(null)} />
       )}
     </div>
   );

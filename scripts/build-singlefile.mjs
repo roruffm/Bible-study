@@ -38,7 +38,16 @@ for (const file of readdirSync(bibleDir)) {
   books[book.id] = book;
 }
 
-const payloadJson = JSON.stringify({ index, books });
+// Die Kartengrundlage muss ebenfalls mit hinein, sonst bleibt die Karte in
+// der Einzeldatei leer.
+let karten;
+try {
+  karten = JSON.parse(readFileSync(join(ROOT, 'public', 'karten', 'regionen.json'), 'utf8'));
+} catch {
+  console.log('Hinweis: keine Kartendaten gefunden – zuerst "node scripts/build-map-data.mjs".');
+}
+
+const payloadJson = JSON.stringify({ index, books, karten });
 const payload = gzipSync(Buffer.from(payloadJson, 'utf8'), { level: 9 }).toString('base64');
 
 console.log(

@@ -3,6 +3,36 @@ import { READING_PLANS } from '../content/readingPlans';
 import { useBibleIndex, usePersisted } from '../hooks/useStore';
 import { getActivePlan, getPlanProgress } from '../lib/storage';
 
+const TOOLS = [
+  {
+    to: '/lexikon',
+    label: 'Nachschlagen',
+    title: 'Lexikon',
+    description:
+      'Personen, Orte und Schlüsselbegriffe – im Bibeltext hervorgehoben und mit einem Tippen erklärt.',
+  },
+  {
+    to: '/studium/zeitleiste',
+    label: 'Einordnen',
+    title: 'Zeitleiste',
+    description:
+      'Zwei Jahrtausende von Abraham bis zur frühen Kirche, mit ehrlicher Angabe zur Sicherheit der Daten.',
+  },
+  {
+    to: '/studium/karte',
+    label: 'Verorten',
+    title: 'Karte',
+    description: 'Die Welt der Bibel von Rom bis Mesopotamien, samt der vier Reisen des Paulus.',
+  },
+  {
+    to: '/studium/merkverse',
+    label: 'Behalten',
+    title: 'Merkverse',
+    description:
+      'Verse auswendig lernen: mit jeder Stufe verschwinden mehr Wörter, die Abstände wachsen.',
+  },
+];
+
 /** Übersicht über die Lesepläne. */
 export default function StudyPage() {
   const { data: index } = useBibleIndex();
@@ -18,6 +48,26 @@ export default function StudyPage() {
         Lesepläne geben dem Studium einen Rhythmus. Wähle einen Plan, hake die Tage ab – die App
         merkt sich, wo du stehst, und zeigt dir den nächsten Abschnitt auf der Startseite.
       </p>
+
+      <section style={{ marginBottom: '2.5rem' }}>
+        <div className="library__head">
+          <h3>Werkzeuge</h3>
+          <span className="library__count">Nachschlagen, einordnen, behalten</span>
+        </div>
+        <div className="plan-grid">
+          {TOOLS.map((tool) => (
+            <Link key={tool.to} className="plan" to={tool.to} data-kind="werkzeug">
+              <div className="plan__head">
+                <span className="tile__label">{tool.label}</span>
+              </div>
+              <div className="plan__title">{tool.title}</div>
+              <p className="plan__subtitle" style={{ marginBottom: 0 }}>
+                {tool.description}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       <section style={{ marginBottom: '2.5rem' }}>
         <div className="library__head">

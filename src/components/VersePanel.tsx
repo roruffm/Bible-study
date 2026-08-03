@@ -4,9 +4,12 @@ import { commentaryFor } from '../content/commentary';
 import { BOOK_PROFILES } from '../content/bookProfiles';
 import { usePersisted } from '../hooks/useStore';
 import {
+  addMemoryCard,
   deleteNote,
   getHighlight,
+  getMemoryCard,
   getNotesFor,
+  removeMemoryCard,
   saveNote,
   toggleHighlight,
 } from '../lib/storage';
@@ -49,6 +52,7 @@ export default function VersePanel({ index, book, ref_, text, onClose }: Props) 
 
   const highlight = usePersisted(() => getHighlight(ref_));
   const notes = usePersisted(() => getNotesFor(ref_));
+  const memoryCard = usePersisted(() => getMemoryCard(ref_));
 
   // Beim Wechsel des Verses den Zustand zurücksetzen.
   useEffect(() => {
@@ -226,6 +230,20 @@ export default function VersePanel({ index, book, ref_, text, onClose }: Props) 
                   />
                 ))}
               </div>
+
+              <div className="section-title">Auswendig lernen</div>
+              <button
+                type="button"
+                className={`btn btn--sm${memoryCard ? '' : ' btn--primary'}`}
+                style={{ marginBottom: '1.1rem' }}
+                onClick={() =>
+                  memoryCard ? removeMemoryCard(ref_) : addMemoryCard(ref_, text)
+                }
+              >
+                {memoryCard
+                  ? `✓ In den Merkversen (Stufe ${memoryCard.level})`
+                  : 'Zu den Merkversen hinzufügen'}
+              </button>
 
               <div className="section-title">Eigene Notiz</div>
               <textarea

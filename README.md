@@ -54,6 +54,10 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Vers-Panel** | Vier Tabs: historischer Kontext, Auslegungen, Querverweise, eigene Notizen |
 | **Volltextsuche** | Alle 31.102 Verse, Mehrwortsuche, Phrasensuche in `"…"`, Filter nach Testament und Buch, Treffer hervorgehoben |
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und drei kuratierte Themenpläne, mit Tagesfortschritt |
+| **Lexikon** | 64 Einträge zu Personen, Orten und Begriffen – im Bibeltext markiert und mit einem Tippen erklärt |
+| **Zeitleiste** | 9 Epochen und 39 Ereignisse auf maßstabsgetreuer Achse, mit Angabe zur Sicherheit jeder Datierung |
+| **Karte** | Die biblische Welt von Rom bis Mesopotamien, 24 Orte und die vier Reisen des Paulus |
+| **Merkverse** | Auswendiglernen mit wachsenden Abständen; je Stufe verschwinden mehr Wörter |
 | **Offline** | Service Worker; gelesene Kapitel bleiben gespeichert, auf Wunsch die ganze Bibel (≈ 4 MB) |
 | **Persönliches** | Notizen, Markierungen in vier Farben, gelesene Kapitel, Export des Journals als Markdown |
 | **Darstellung** | Hell, Sepia und Dunkel; responsiv vom Handy bis Desktop; Tastaturbedienung |
@@ -100,6 +104,12 @@ Mechanismus ermöglicht später den Übersetzungsvergleich (Konzept, Idee 5).
 
 Rohdaten der Lutherbibel 1912: [wldeh/bible-api](https://github.com/wldeh/bible-api).
 
+Die Küstenlinien des Kartenmoduls stammen aus
+[Natural Earth](https://www.naturalearthdata.com/) (gemeinfrei) und liegen
+zugeschnitten und vereinfacht unter `public/karten/` bei. Neu erzeugen lassen
+sie sich mit `node scripts/build-map-data.mjs` – aus knapp 3 MB Weltdaten
+werden dabei 19 KB für den Ausschnitt der biblischen Welt.
+
 ---
 
 ## Aufbau des Projekts
@@ -109,6 +119,7 @@ public/bibel/luther1912/   Bibeltext: index.json + eine Datei je Buch
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
+  build-map-data.mjs       Natural-Earth-Küstenlinien zuschneiden
   build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
   smoke-test.mjs           Browser-Test gegen den Vorschau-Server
   test-singlefile.mjs      Prüft die Einzeldatei ohne Server und ohne Netz
@@ -116,6 +127,9 @@ src/
   content/                 Redaktionelle Inhalte
     bookProfiles.ts          Steckbriefe aller 66 Bücher
     commentary.ts            Kontext- und Auslegungsartikel
+    lexicon.ts               Personen, Orte, Begriffe
+    timeline.ts              Epochen und Ereignisse
+    journeys.ts              Reiserouten für die Karte
     readingPlans.ts          Lese- und Themenpläne
     verseOfDay.ts            Kuratierte Verse für den Tagesimpuls
   lib/
@@ -174,8 +188,9 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 ## Tests
 
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
-Vers-Panel, Notizen, Suche, Lesepläne, Themenwechsel, mobile Ansicht und den
-echten Offline-Betrieb mit abgeschalteter Verbindung (31 Prüfungen):
+Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
+Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
+abgeschalteter Verbindung (47 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -194,10 +209,9 @@ node scripts/test-singlefile.mjs
 
 ---
 
-## Nächste Schritte (Phase 3 laut Konzept)
+## Nächste Schritte (Phase 4 laut Konzept)
 
-- Personen- und Begriffslexikon, verlinkt aus dem Bibeltext heraus
-- Interaktive Zeitleiste und Kartenmodul (Paulusreisen, Exil-Routen)
-- Vers-Memorisation mit gestuftem Ausblenden und Wiederholung
-- Weiterer redaktioneller Ausbau der Kontextartikel, Buch für Buch
+- Gruppenmodus für Hauskreise: geteilte Notizen und Diskussionsfragen
+- Übersetzungsvergleich, sobald eine zweite Übersetzung lizenziert ist
 - Vorlesefunktion und Erinnerungen für den Leseplan
+- Weiterer redaktioneller Ausbau der Kontextartikel und des Lexikons

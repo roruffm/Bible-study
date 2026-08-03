@@ -235,6 +235,78 @@ export function togglePlanDay(planId: string, day: number): void {
   });
 }
 
+/* ----------------------------------------------------------- Merkverse */
+
+export interface MemoryCard {
+  ref: VerseRef;
+  /** Der Verstext wird mitgespeichert, damit Lernen ohne Nachladen geht. */
+  text: string;
+  /** Lernstufe 0–6; sie bestimmt Abstand und Schwierigkeit. */
+  level: number;
+  /** Zeitpunkt der nächsten Wiederholung. */
+  dueAt: number;
+  addedAt: number;
+}
+
+/** Abstände in Tagen je Lernstufe – klassische Staffelung. */
+export const MEMORY_INTERVALS = [0, 1, 3, 7, 16, 35, 90];
+
+export const MEMORY_MAX_LEVEL = MEMORY_INTERVALS.length - 1;
+
+export function getMemoryCards(): MemoryCard[] {
+  return memo('memory', () => read<MemoryCard[]>('memory', []));
+}
+
+export function getMemoryCard(ref: VerseRef): MemoryCard | undefined {
+  const key = refKey(ref);
+  return memo(`memory:${key}`, () => getMemoryCards().find((c) => refKey(c.ref) === key));
+}
+
+/**
+ * Karten, deren Wiederholung ansteht. Bewusst ohne Memoisierung: Das Ergebnis
+ * hängt an der Uhrzeit und wäre deshalb nicht stabil zwischenspeicherbar.
+ * Komponenten leiten es per `useMemo` aus `getMemoryCards()` ab.
+ */
+export function dueCards(cards: MemoryCard[], now = Date.now()): MemoryCard[] {
+  return cards.filter((c) => c.dueAt <= now).sort((a, b) => a.dueAt - b.dueAt);
+}
+
+export function addMemoryCard(ref: VerseRef, text: string): void {
+  if (getMemoryCard(ref)) return;
+  const now = Date.now();
+  write('memory', [...getMemoryCards(), { ref, text, level: 0, dueAt: now, addedAt: now }]);
+}
+
+export function removeMemoryCard(ref: VerseRef): void {
+  const key = refKey(ref);
+  write(
+    'memory',
+    getMemoryCards().filter((c) => refKey(c.ref) !== key),
+  );
+}
+
+/**
+ * Bewertet eine Karte. Bei „gewusst“ rückt sie eine Stufe vor und wird
+ * entsprechend später wieder fällig; sonst fällt sie eine Stufe zurück und
+ * kommt noch in derselben Sitzung erneut.
+ */
+export function reviewMemoryCard(ref: VerseRef, known: boolean): void {
+  const key = refKey(ref);
+  const now = Date.now();
+
+  write(
+    'memory',
+    getMemoryCards().map((card) => {
+      if (refKey(card.ref) !== key) return card;
+      if (!known) {
+        return { ...card, level: Math.max(0, card.level - 1), dueAt: now + 10 * 60_000 };
+      }
+      const level = Math.min(MEMORY_MAX_LEVEL, card.level + 1);
+      return { ...card, level, dueAt: now + MEMORY_INTERVALS[level] * 86_400_000 };
+    }),
+  );
+}
+
 /** Der Plan, den die Startseite anzeigt. */
 export function getActivePlan(): string | null {
   return memo('activePlan', () => read<string | null>('activePlan', null));

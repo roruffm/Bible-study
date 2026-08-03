@@ -1075,6 +1075,10 @@ button {
   --group-color: #3f7d6f;
 }
 
+.plan[data-kind='werkzeug'] {
+  --group-color: #8a6d3b;
+}
+
 .plan__head {
   display: flex;
   align-items: center;
@@ -1175,6 +1179,326 @@ button {
   color: var(--text-muted);
   font-size: 0.85rem;
   margin: 0.5rem 0 0;
+}
+
+/* -------------------------------------------------------------- Lexikon */
+
+/* Stichwort im Bibeltext: dezent unterstrichen, nicht eingefärbt – der
+   Verstext soll nicht wie eine Linksammlung aussehen. */
+.lex {
+  cursor: pointer;
+  border-bottom: 1px dotted var(--border-strong);
+}
+
+.lex:hover {
+  border-bottom-style: solid;
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+.chip--kind-person { background: #eae2f3; border-color: #cfbfe4; color: #5b4783; }
+.chip--kind-ort { background: #dfeee6; border-color: #b9d9c8; color: #2f6b52; }
+.chip--kind-begriff { background: #f4e6d8; border-color: #e0c6a8; color: #8a5a2b; }
+
+:root[data-theme='dunkel'] .chip--kind-person,
+:root[data-theme='dark'] .chip--kind-person { background: #2b2540; border-color: #453a63; color: #bcaade; }
+:root[data-theme='dunkel'] .chip--kind-ort,
+:root[data-theme='dark'] .chip--kind-ort { background: #1e3229; border-color: #33513f; color: #9ecfb4; }
+:root[data-theme='dunkel'] .chip--kind-begriff,
+:root[data-theme='dark'] .chip--kind-begriff { background: #392c1e; border-color: #5b452c; color: #ddb385; }
+
+.lex-entry__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.lex-entry__term {
+  font-size: 1.1rem;
+}
+
+/* Überlagerung für einen einzelnen Eintrag */
+
+.sheet {
+  position: fixed;
+  z-index: 70;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: sheet-in 0.18s var(--ease);
+}
+
+@keyframes sheet-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -46%);
+  }
+}
+
+.sheet__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.sheet__title {
+  font-size: 1.25rem;
+  margin-top: 0.35rem;
+}
+
+.sheet__body {
+  padding: 1rem 1.1rem 1.25rem;
+  overflow-y: auto;
+  font-size: 0.92rem;
+}
+
+.scrim--always {
+  display: block;
+}
+
+@media (max-width: 620px) {
+  .sheet {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-height: 82vh;
+    border-radius: var(--radius) var(--radius) 0 0;
+    animation: slide-up 0.2s var(--ease);
+  }
+
+  @keyframes sheet-in {
+    from {
+      opacity: 0;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------- Karte */
+
+.map {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-raised);
+}
+
+.map__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.map__sea {
+  fill: #cfe0ea;
+}
+
+.map__sea-inner {
+  fill: #cfe0ea;
+}
+
+.map__land {
+  fill: #e9e1d0;
+  stroke: #b0a084;
+  stroke-width: 0.8;
+}
+
+:root[data-theme='dunkel'] .map__sea,
+:root[data-theme='dark'] .map__sea,
+:root[data-theme='dunkel'] .map__sea-inner,
+:root[data-theme='dark'] .map__sea-inner {
+  fill: #16222b;
+}
+
+:root[data-theme='dunkel'] .map__land,
+:root[data-theme='dark'] .map__land {
+  fill: #262b30;
+  stroke: #454d56;
+}
+
+.map__route {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 7 5;
+  opacity: 0.9;
+}
+
+.map__label {
+  font-family: var(--sans);
+  font-size: 11px;
+  fill: var(--text);
+  paint-order: stroke;
+  stroke: var(--bg-raised);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.map__stop circle {
+  stroke: var(--bg-raised);
+  stroke-width: 1.5;
+}
+
+.map__place {
+  cursor: pointer;
+}
+
+.map__place circle {
+  fill: var(--accent);
+  stroke: var(--bg-raised);
+  stroke-width: 1.5;
+  transition: r 0.12s var(--ease);
+}
+
+.map__place--active circle {
+  fill: #c2410c;
+}
+
+.map__place--active .map__label {
+  font-weight: 700;
+}
+
+/* ----------------------------------------------------------- Zeitleiste */
+
+.axis {
+  position: relative;
+  height: 5.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 2px solid var(--border-strong);
+}
+
+.axis__band {
+  position: absolute;
+  top: 0;
+  height: 2.4rem;
+  padding: 0 0.3rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg-sunken);
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 650;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.axis__band:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.axis__band--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.axis__tick {
+  position: absolute;
+  bottom: 0;
+  height: 2.6rem;
+  border-left: 1px solid var(--border-strong);
+  padding-left: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+/* Nahe am rechten Rand ragt die Beschriftung sonst aus der Achse heraus. */
+.axis__tick--inward {
+  border-left: none;
+  border-right: 1px solid var(--border-strong);
+  padding-left: 0;
+  padding-right: 0.3rem;
+  transform: translateX(-100%);
+}
+
+.event {
+  display: flex;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.event:last-child {
+  border-bottom: none;
+}
+
+.event__year {
+  flex-shrink: 0;
+  width: 7.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.1rem;
+}
+
+.event__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.chip--certainty-gesichert { background: #dfeee6; border-color: #b9d9c8; color: #2f6b52; }
+.chip--certainty-ungefähr { background: var(--bg-sunken); }
+.chip--certainty-umstritten { background: #f7e4de; border-color: #e6c3b7; color: #9a4a2f; }
+
+:root[data-theme='dunkel'] .chip--certainty-gesichert,
+:root[data-theme='dark'] .chip--certainty-gesichert { background: #1e3229; border-color: #33513f; color: #9ecfb4; }
+:root[data-theme='dunkel'] .chip--certainty-umstritten,
+:root[data-theme='dark'] .chip--certainty-umstritten { background: #3a251e; border-color: #5c3a2d; color: #dda893; }
+
+@media (max-width: 620px) {
+  .event {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .event__year {
+    width: auto;
+  }
+}
+
+/* ------------------------------------------------------------ Merkverse */
+
+.memo {
+  padding: 1.5rem;
+}
+
+.memo__text {
+  font-family: var(--serif);
+  font-size: calc(1.15rem * var(--font-scale));
+  line-height: 1.8;
+  margin: 0.75rem 0 1.25rem;
+  white-space: pre-wrap;
+}
+
+.memo__gap {
+  border-bottom: 1px solid var(--border-strong);
+  color: var(--text-faint);
 }
 
 /* ---------------------------------------------------------------- Suche */

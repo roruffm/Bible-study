@@ -7,6 +7,10 @@ import ReaderPage from './pages/ReaderPage';
 import SearchPage from './pages/SearchPage';
 import StudyPage from './pages/StudyPage';
 import PlanPage from './pages/PlanPage';
+import LexiconPage from './pages/LexiconPage';
+import TimelinePage from './pages/TimelinePage';
+import MapPage from './pages/MapPage';
+import MemoryPage from './pages/MemoryPage';
 import MePage from './pages/MePage';
 
 export default function App() {
@@ -18,7 +22,12 @@ export default function App() {
         <Route path="bibel/:bookId" element={<BookPage />} />
         <Route path="bibel/:bookId/:chapter" element={<ReaderPage />} />
         <Route path="suche" element={<SearchPage />} />
+        <Route path="lexikon" element={<LexiconPage />} />
         <Route path="studium" element={<StudyPage />} />
+        {/* Werkzeuge vor der Plan-Route, sonst greift :planId zuerst. */}
+        <Route path="studium/zeitleiste" element={<TimelinePage />} />
+        <Route path="studium/karte" element={<MapPage />} />
+        <Route path="studium/merkverse" element={<MemoryPage />} />
         <Route path="studium/:planId" element={<PlanPage />} />
         <Route path="ich" element={<MePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

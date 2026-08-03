@@ -110,8 +110,12 @@ await mobile.screenshot({ path: `${OUT}/08-mobil.png` });
 
 // 10. Lesepläne
 await page.goto(BASE + '/studium', { waitUntil: 'networkidle' });
-const planCount = await page.locator('.plan').count();
+// Die Werkzeugkarten teilen sich die Gestaltung mit den Plänen – hier zählen
+// nur die Pläne selbst.
+const planCount = await page.locator('.plan:not([data-kind="werkzeug"])').count();
+const toolCount = await page.locator('.plan[data-kind="werkzeug"]').count();
 check('Studium listet alle Lesepläne', planCount === 7, `${planCount} Pläne`);
+check('Studium bietet die vier Werkzeuge an', toolCount === 4, `${toolCount} Werkzeuge`);
 await page.screenshot({ path: `${OUT}/09-studium.png` });
 
 await page.goto(BASE + '/studium/jesus-14', { waitUntil: 'networkidle' });
@@ -168,7 +172,77 @@ await page.waitForSelector('.reader__text');
 check('Auch ein noch nie geöffnetes Buch ist offline da', ((await page.locator('#v28').textContent()) ?? '').includes('zum Besten'));
 await page.context().setOffline(false);
 
-// 13. Referenz-Parser
+// 13. Lexikon
+await page.goto(BASE + '/lexikon', { waitUntil: 'networkidle' });
+const lexCount = await page.locator('.lex-entry__term').count();
+check('Lexikon listet alle Einträge', lexCount >= 60, `${lexCount} Einträge`);
+await page.fill('.input', 'Damaskus');
+await page.waitForFunction(() => document.querySelectorAll('.lex-entry__term').length === 1);
+check('Lexikonsuche filtert', (await page.locator('.lex-entry__term').textContent()) === 'Damaskus');
+await page.screenshot({ path: `${OUT}/14-lexikon.png` });
+
+// Stichworte im Bibeltext – und nur beim ersten Vorkommen im Kapitel.
+await page.goto(BASE + '/bibel/apg/9', { waitUntil: 'networkidle' });
+await page.waitForSelector('.reader__text');
+const lexInText = await page.locator('.lex').count();
+const lexTerms = await page.locator('.lex').allTextContents();
+check('Stichworte sind im Bibeltext markiert', lexInText > 0, lexTerms.slice(0, 6).join(', '));
+check('Jedes Stichwort nur einmal je Kapitel', new Set(lexTerms).size === lexTerms.length, `${lexTerms.length} Markierungen`);
+
+await page.locator('.lex', { hasText: 'Damaskus' }).first().click();
+await page.waitForSelector('.sheet');
+check('Lexikon-Überlagerung öffnet sich', ((await page.locator('.sheet__title').textContent()) ?? '') === 'Damaskus');
+check('Vers-Panel bleibt dabei zu', (await page.locator('.panel').count()) === 0);
+await page.screenshot({ path: `${OUT}/15-lexikon-im-text.png` });
+await page.keyboard.press('Escape');
+
+// 14. Zeitleiste
+await page.goto(BASE + '/studium/zeitleiste', { waitUntil: 'networkidle' });
+const epochs = await page.locator('.axis__band').count();
+const events = await page.locator('.event').count();
+check('Zeitleiste zeigt Epochen und Ereignisse', epochs === 9 && events >= 35, `${epochs} Epochen, ${events} Ereignisse`);
+await page.locator('.axis__band').filter({ hasText: 'Babylonisches Exil' }).click();
+await page.waitForFunction(() => document.querySelectorAll('.event').length < 10);
+check('Epoche lässt sich filtern', (await page.locator('.event').count()) < 10, `${await page.locator('.event').count()} Ereignisse`);
+await page.screenshot({ path: `${OUT}/16-zeitleiste.png` });
+
+// 15. Karte
+await page.goto(BASE + '/studium/karte', { waitUntil: 'networkidle' });
+await page.waitForSelector('.map__svg');
+const placeCount = await page.locator('.map__place').count();
+check('Karte verortet die Orte', placeCount >= 20, `${placeCount} Orte`);
+await page.screenshot({ path: `${OUT}/17-karte.png` });
+
+await page.getByRole('button', { name: 'Zweite Missionsreise' }).click();
+await page.waitForSelector('.map__route');
+// 14 Stationen, aber Antiochia ist Start und Ziel – doppelt angefahrene Orte
+// werden zu einem Punkt zusammengefasst.
+const stops = await page.locator('.map__stop').count();
+check('Route der zweiten Missionsreise wird gezeichnet', stops === 13, `${stops} Punkte für 14 Stationen`);
+const merged = await page.locator('.map__stop text', { hasText: 'Antiochia' }).first().textContent();
+check('Doppelt angefahrener Ort trägt beide Nummern', /1\.,\s*14\./.test(merged ?? ''), merged ?? '');
+check('Stationsliste zeigt alle 14 Schritte', (await page.locator('section .day').count()) === 14);
+await page.screenshot({ path: `${OUT}/18-karte-reise.png` });
+
+// 16. Merkverse
+await page.goto(BASE + '/bibel/joh/3?vers=16', { waitUntil: 'networkidle' });
+await page.waitForSelector('.panel');
+await page.getByRole('tab', { name: /Notizen/ }).click();
+await page.getByRole('button', { name: 'Zu den Merkversen hinzufügen' }).click();
+await page.waitForSelector('button:has-text("In den Merkversen")');
+check('Vers landet in den Merkversen', true, 'Stufe 0');
+
+await page.goto(BASE + '/studium/merkverse', { waitUntil: 'networkidle' });
+await page.waitForSelector('.memo');
+check('Merkvers steht zur Wiederholung an', ((await page.locator('.memo__text').textContent()) ?? '').includes('Also hat Gott'));
+await page.getByRole('button', { name: 'Aufdecken' }).click();
+await page.getByRole('button', { name: 'Gewusst' }).click();
+await page.waitForSelector('.memo', { state: 'detached' });
+const levelBadge = await page.locator('.day__check').first().textContent();
+check('Nach „Gewusst“ steigt die Lernstufe', levelBadge?.trim() === '1', `Stufe ${levelBadge?.trim()}`);
+await page.screenshot({ path: `${OUT}/19-merkverse.png` });
+
+// 17. Referenz-Parser
 await page.goto(BASE + '/', { waitUntil: 'networkidle' });
 for (const [input, expect] of [['1. Mose 1', '/bibel/1mo/1'], ['Psalm 23,1', '/bibel/ps/23'], ['1kor 13', '/bibel/1kor/13']]) {
   await page.fill('#quickjump', input);
