@@ -15,13 +15,17 @@ applySettings();
 const singleFile = isSingleFile();
 const Router = singleFile ? HashRouter : BrowserRouter;
 
+// Auf GitHub Pages liegt die App unter „/<repository>/“; ohne diesen Präfix
+// würde der Router alle Adressen ins Leere zeigen lassen.
+const basename = singleFile ? undefined : import.meta.env.BASE_URL;
+
 if (!singleFile) {
   registerSW({ immediate: true });
 }
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router>
+    <Router basename={basename}>
       <App />
     </Router>
   </StrictMode>,

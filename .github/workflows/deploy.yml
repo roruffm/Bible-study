@@ -1,0 +1,65 @@
+name: Webseite veröffentlichen
+
+# Baut die App und stellt sie über GitHub Pages bereit.
+# Ergebnis: https://<benutzer>.github.io/<repository>/
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Nie zwei Veröffentlichungen gleichzeitig; laufende nicht abbrechen.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  bauen:
+    # Nur der Standard-Branch wird veröffentlicht – so lösen Arbeitszweige
+    # keine Veröffentlichung aus, auch wenn der Branch später umbenannt wird.
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Basispfad setzen
+        # Eine Projektseite liegt unter /<repository>/, nicht unter /.
+        run: echo "BASE_PATH=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
+
+      - run: npm run build
+
+      - name: Rückfallseite für Unterseiten
+        # GitHub Pages leitet unbekannte Pfade nicht auf die App um. Die
+        # Kopie als 404.html sorgt dafür, dass auch ein direkt aufgerufener
+        # Link wie /bibel/joh/3 in der App landet statt im Fehler.
+        run: cp dist/index.html dist/404.html
+
+      - uses: actions/configure-pages@v5
+        with:
+          # Schaltet GitHub Pages beim ersten Lauf selbst frei.
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  veroeffentlichen:
+    needs: bauen
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

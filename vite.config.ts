@@ -2,7 +2,15 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
+/**
+ * Auf GitHub Pages liegt eine Projektseite nicht unter „/“, sondern unter
+ * „/<repository>/“. Der Basispfad kommt deshalb aus der Umgebung – lokal
+ * bleibt es bei „/“, der Veröffentlichungs-Workflow setzt BASE_PATH.
+ */
+const base = process.env.BASE_PATH ?? '/';
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     VitePWA({
@@ -14,11 +22,15 @@ export default defineConfig({
         // damit die Installation klein bleibt. Er wandert beim Lesen in den
         // Laufzeit-Cache oder auf einen Schlag über „Offline verfügbar machen“.
         globPatterns: ['**/*.{js,css,html,svg,webmanifest}'],
-        navigateFallback: 'index.html',
-        navigateFallbackDenylist: [/^\/bibel\/.*\.json$/],
+        navigateFallback: `${base}index.html`,
+        // Datendateien dürfen nicht durch die App-Seite ersetzt werden.
+        navigateFallbackDenylist: [/\/(bibel|karten)\/.*\.json$/],
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => url.pathname.startsWith('/bibel/'),
+            // Bewusst ohne führenden Basispfad geprüft, damit dieselbe Regel
+            // unter „/“ wie unter „/Bible-study/“ greift.
+            urlPattern: ({ url }) =>
+              url.pathname.includes('/bibel/') || url.pathname.includes('/karten/'),
             // Schrifttext ändert sich nicht – einmal geladen, immer verfügbar.
             handler: 'CacheFirst',
             options: {

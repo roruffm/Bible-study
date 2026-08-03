@@ -10,6 +10,23 @@ Stand (Phase 1 und 2 der Roadmap)**.
 
 ---
 
+## Die App aufrufen
+
+Bei jedem Push auf den Standard-Branch baut
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) die App und
+stellt sie über **GitHub Pages** bereit:
+
+> **https://roruffm.github.io/Bible-study/**
+
+Der Workflow schaltet Pages beim ersten Lauf selbst frei. Weil eine
+Projektseite unter `/<repository>/` liegt und nicht unter `/`, setzt er den
+Basispfad über die Umgebungsvariable `BASE_PATH`; lokal bleibt es bei `/`.
+GitHub Pages leitet unbekannte Pfade nicht auf die App um – deshalb wird
+`index.html` zusätzlich als `404.html` abgelegt, damit auch ein direkt
+aufgerufener Link wie `/bibel/joh/3` in der App landet.
+
+Ohne Hosting geht es auch: siehe [Als einzelne Datei](#als-einzelne-datei).
+
 ## Schnellstart
 
 ```bash
