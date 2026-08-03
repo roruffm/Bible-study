@@ -1,4 +1,7 @@
 node_modules
 dist
+dist-ssr
 smoke-shots
+*.tsbuildinfo
+dev-dist
 *.local
