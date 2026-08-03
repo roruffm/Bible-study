@@ -1,0 +1,19 @@
+{
+  "name": "Lumina – Bibel lesen und verstehen",
+  "short_name": "Lumina",
+  "description": "Vollständiger Bibeltext mit historischem Kontext und Auslegungshilfen.",
+  "lang": "de",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ee",
+  "theme_color": "#1c3f5e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -195,11 +195,20 @@ Wichtige Prinzipien:
 
 ### 5.1 Überblick
 
-- **Frontend:** **Next.js (React) als Progressive Web App** – eine Codebasis
+> **Stand der Umsetzung:** Phase 1 ist gebaut – siehe
+> [README.md](README.md) für Installation und Funktionsumfang. Beim MVP
+> wurde bewusst von diesem Entwurf abgewichen: Statt Next.js kommt ein
+> **Vite-basiertes React-Frontend ohne Backend** zum Einsatz, weil Phase 1
+> keinen Server benötigt (der Bibeltext liegt statisch vor, persönliche
+> Daten bleiben lokal). Das hält den MVP schlank und offline-tauglich. Der
+> Wechsel zu Next.js bleibt für Phase 3/4 offen, sobald Konten,
+> Gruppenfunktionen und serverseitiges Rendern für Suchmaschinen dazukommen.
+
+- **Frontend:** **React als Progressive Web App** – eine Codebasis
   für Web, Mobil (installierbar) und Desktop; später optional native Apps via
   Capacitor.
-- **Backend:** Node.js (API-Routen in Next.js oder separates NestJS),
-  **PostgreSQL** für Nutzerdaten, Notizen, Pläne.
+- **Backend:** in Phase 1 nicht erforderlich. Ab Phase 3/4 Node.js und
+  **PostgreSQL** für Konten, geteilte Notizen und Gruppen.
 - **Bibeltext-Zugriff:** Der HFA-Text wird **per lizenzierter API** bezogen
   (z. B. [API.Bible](https://scripture.api.bible/) der American Bible Society,
   die die HFA im Katalog führt) und zur Performance lokal gecacht. Siehe 5.3.
@@ -268,7 +277,7 @@ Group       (id, name, mitglieder[], planId, geteilteNotizen[])
 
 | Phase | Umfang | Ergebnis |
 |---|---|---|
-| **1 – MVP** (≈ 3 Monate) | Bibeltext komplett (Platzhalter-Übersetzung, HFA nach Lizenz), Navigation, Schnellsprung, Volltextsuche, Leseansicht, Hell/Dunkel-Modus, Vers des Tages | Nutzbare Lese-App |
+| **1 – MVP** ✅ **umgesetzt** | Bibeltext komplett (Platzhalter-Übersetzung, HFA nach Lizenz), Navigation, Schnellsprung, Volltextsuche, Leseansicht, Hell/Sepia/Dunkel-Modus, Vers des Tages | Nutzbare Lese-App |
 | **2 – Studium** (≈ 3 Monate) | Vers-Panel mit Kontext & Interpretationen (Start: Evangelien + Psalmen), Querverweise, Notizen & Markierungen, Buch-Steckbriefe, Offline-Modus | Echte Studien-App |
 | **3 – Vertiefung** (≈ 3 Monate) | Lesepläne, Themenpfade, Lexikon, Zeitleiste, Karten, Memorisation, Journal-Export | Umfassendes Studienwerkzeug |
 | **4 – Gemeinschaft & KI** | Gruppenmodus, Diskussionsfragen, „Frag den Text"-Assistent, Übersetzungsvergleich, Audio | Vollausbau |

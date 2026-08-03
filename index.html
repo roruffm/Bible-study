@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Lumina – die Bibel lesen, verstehen und studieren: vollständiger Bibeltext mit historischem Kontext und Auslegungshilfen." />
+    <meta name="theme-color" content="#1c3f5e" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Lumina – Bibel lesen und verstehen</title>
+    <script>
+      // Theme vor dem ersten Rendern setzen, damit kein heller Blitz entsteht.
+      (function () {
+        try {
+          var s = JSON.parse(localStorage.getItem('lumina.settings') || '{}');
+          if (s.theme) document.documentElement.dataset.theme = s.theme;
+          if (s.fontScale) document.documentElement.style.setProperty('--font-scale', s.fontScale);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
