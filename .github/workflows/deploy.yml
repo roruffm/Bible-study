@@ -45,9 +45,14 @@ jobs:
         # Link wie /bibel/joh/3 in der App landet statt im Fehler.
         run: cp dist/index.html dist/404.html
 
+      # Setzt voraus, dass Pages im Repository einmal auf die Quelle
+      # „GitHub Actions“ gestellt wurde: Settings → Pages → Build and
+      # deployment → Source. Das Token eines Workflows darf eine Pages-Seite
+      # nicht selbst anlegen; ohne diesen Handgriff bricht der Schritt mit
+      # „Resource not accessible by integration“ ab.
       - uses: actions/configure-pages@v5
         with:
-          # Schaltet GitHub Pages beim ersten Lauf selbst frei.
+          # Wirkt nur dort, wo das Token es darf – schadet sonst nicht.
           enablement: true
 
       - uses: actions/upload-pages-artifact@v3

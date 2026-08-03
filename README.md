@@ -18,9 +18,25 @@ stellt sie über **GitHub Pages** bereit:
 
 > **https://roruffm.github.io/Bible-study/**
 
-Der Workflow schaltet Pages beim ersten Lauf selbst frei. Weil eine
-Projektseite unter `/<repository>/` liegt und nicht unter `/`, setzt er den
-Basispfad über die Umgebungsvariable `BASE_PATH`; lokal bleibt es bei `/`.
+### Einmalig: Pages einschalten
+
+GitHub Pages muss **einmal von Hand** aktiviert werden – das Token eines
+Workflows darf eine Pages-Seite nicht selbst anlegen und scheitert sonst mit
+`Resource not accessible by integration`:
+
+> **Settings → Pages → Build and deployment → Source: „GitHub Actions“**
+
+Danach genügt ein beliebiger Push (oder *Actions → Webseite veröffentlichen →
+Run workflow*), und die Seite ist nach ein bis zwei Minuten online. Ab dann
+läuft alles automatisch.
+
+### Wie der Workflow arbeitet
+
+Weil eine Projektseite unter `/<repository>/` liegt und nicht unter `/`, setzt
+der Workflow den Basispfad über die Umgebungsvariable `BASE_PATH`; lokal
+bleibt es bei `/`. Der Router bekommt denselben Pfad als `basename`, Icon und
+Manifest werden über `%BASE_URL%` aufgelöst.
+
 GitHub Pages leitet unbekannte Pfade nicht auf die App um – deshalb wird
 `index.html` zusätzlich als `404.html` abgelegt, damit auch ein direkt
 aufgerufener Link wie `/bibel/joh/3` in der App landet.
