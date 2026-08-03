@@ -22,6 +22,25 @@ npm run preview  # Produktionsbuild lokal ausliefern
 Der Bibeltext liegt bereits aufbereitet unter `public/bibel/` – ein separater
 Datenimport ist für den Start nicht nötig.
 
+### Als einzelne Datei
+
+```bash
+npm run build:single   # erzeugt dist-single/lumina.html
+```
+
+Das Ergebnis ist **eine HTML-Datei von rund 2 MB**, die den vollständigen
+Bibeltext enthält. Sie läuft per Doppelklick im Browser – ohne Server, ohne
+Installation und ohne Netzverbindung – und lässt sich weitergeben oder auf
+einen USB-Stick legen.
+
+Damit die Datei klein bleibt, wird der Text gzip-komprimiert und
+base64-kodiert eingebettet (3,9 MB → 1,7 MB); die App entpackt ihn beim Start
+über `DecompressionStream`. In diesem Modus übernimmt der Hash die Navigation,
+weil es keinen Server gibt, der Pfade auf die App zurückführen könnte.
+
+Zusätzlich entsteht `dist-single/lumina-fragment.html` – dieselbe App ohne
+eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
+
 ---
 
 ## Was funktioniert
@@ -90,7 +109,9 @@ public/bibel/luther1912/   Bibeltext: index.json + eine Datei je Buch
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
+  build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
   smoke-test.mjs           Browser-Test gegen den Vorschau-Server
+  test-singlefile.mjs      Prüft die Einzeldatei ohne Server und ohne Netz
 src/
   content/                 Redaktionelle Inhalte
     bookProfiles.ts          Steckbriefe aller 66 Bücher
@@ -161,6 +182,14 @@ npm install --no-save playwright
 npm run build
 npm run preview &            # Vorschau auf Port 4173
 node scripts/smoke-test.mjs  # legt Screenshots in smoke-shots/ ab
+```
+
+Die Einzeldatei wird gesondert geprüft – sie wird als lokale Datei geöffnet
+und darf dabei keine einzige Netzanfrage stellen (9 Prüfungen):
+
+```bash
+npm run build:single
+node scripts/test-singlefile.mjs
 ```
 
 ---

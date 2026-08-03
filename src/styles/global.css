@@ -14,9 +14,12 @@
   --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
 }
 
-/* Helles Grundthema – warmes Elfenbein, tiefes Blau als Leitfarbe. */
+/* Helles Grundthema – warmes Elfenbein, tiefes Blau als Leitfarbe.
+   `light`/`dark` sind Aliasnamen: Wird die Seite eingebettet und von außen
+   ein Farbschema vorgegeben, trifft sie trotzdem die richtige Palette. */
 :root,
-:root[data-theme='hell'] {
+:root[data-theme='hell'],
+:root[data-theme='light'] {
   --bg: #f7f4ee;
   --bg-raised: #ffffff;
   --bg-sunken: #efeae1;
@@ -72,7 +75,8 @@
   --shadow-sm: 0 1px 2px rgba(59, 47, 30, 0.08);
 }
 
-:root[data-theme='dunkel'] {
+:root[data-theme='dunkel'],
+:root[data-theme='dark'] {
   --bg: #14171b;
   --bg-raised: #1c2026;
   --bg-sunken: #0f1216;

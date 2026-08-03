@@ -63,9 +63,19 @@ export const DEFAULT_SETTINGS: Settings = {
   showHeadings: true,
 };
 
+/** Ohne eigene Wahl richtet sich die App nach der Einstellung des Systems. */
+function preferredTheme(): Settings['theme'] {
+  try {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dunkel' : 'hell';
+  } catch {
+    return DEFAULT_SETTINGS.theme;
+  }
+}
+
 export function getSettings(): Settings {
   return memo('settings', () => ({
     ...DEFAULT_SETTINGS,
+    theme: preferredTheme(),
     ...read<Partial<Settings>>('settings', {}),
   }));
 }

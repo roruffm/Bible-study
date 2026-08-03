@@ -13,7 +13,8 @@
       (function () {
         try {
           var s = JSON.parse(localStorage.getItem('lumina.settings') || '{}');
-          if (s.theme) document.documentElement.dataset.theme = s.theme;
+          var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.dataset.theme = s.theme || (dark ? 'dunkel' : 'hell');
           if (s.fontScale) document.documentElement.style.setProperty('--font-scale', s.fontScale);
         } catch (e) {}
       })();

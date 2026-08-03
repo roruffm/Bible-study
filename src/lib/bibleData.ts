@@ -15,7 +15,57 @@ const BASE = `${import.meta.env.BASE_URL}bibel/${TRANSLATION}`;
 let indexPromise: Promise<BibleIndex> | null = null;
 const bookPromises = new Map<string, Promise<BookContent>>();
 
+/* ------------------------------------------------- Einzeldatei-Modus */
+
+/**
+ * Für die Verteilung als **eine einzige HTML-Datei** (siehe
+ * `scripts/build-singlefile.mjs`) wird der gesamte Bibeltext gzip-komprimiert
+ * und base64-kodiert in die Seite geschrieben. Liegt eine solche Nutzlast vor,
+ * bedient sich die App daraus statt über das Netz – die Datei läuft dann ohne
+ * Server und ohne Verbindung.
+ */
+interface EmbeddedBible {
+  index: BibleIndex;
+  books: Record<string, BookContent>;
+}
+
+declare global {
+  interface Window {
+    __LUMINA_PAYLOAD__?: string;
+  }
+}
+
+let embeddedPromise: Promise<EmbeddedBible> | null = null;
+
+function embedded(): Promise<EmbeddedBible> | null {
+  const payload = typeof window === 'undefined' ? undefined : window.__LUMINA_PAYLOAD__;
+  if (typeof payload !== 'string') return null;
+
+  if (!embeddedPromise) {
+    embeddedPromise = (async () => {
+      if (typeof DecompressionStream === 'undefined') {
+        throw new Error(
+          'Dieser Browser kann die eingebettete Textdatei nicht entpacken. ' +
+            'Bitte eine aktuelle Version von Chrome, Firefox oder Safari verwenden.',
+        );
+      }
+      const bytes = Uint8Array.from(atob(payload), (c) => c.charCodeAt(0));
+      const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+      return JSON.parse(await new Response(stream).text()) as EmbeddedBible;
+    })();
+  }
+  return embeddedPromise;
+}
+
+/** Läuft die App als eigenständige Einzeldatei? */
+export function isSingleFile(): boolean {
+  return typeof window !== 'undefined' && typeof window.__LUMINA_PAYLOAD__ === 'string';
+}
+
 export function loadIndex(): Promise<BibleIndex> {
+  const local = embedded();
+  if (local) return local.then((data) => data.index);
+
   if (!indexPromise) {
     indexPromise = fetch(`${BASE}/index.json`).then((r) => {
       if (!r.ok) throw new Error(`Bibel-Index nicht gefunden (${r.status})`);
@@ -30,6 +80,15 @@ export function loadIndex(): Promise<BibleIndex> {
 }
 
 export function loadBook(bookId: string): Promise<BookContent> {
+  const local = embedded();
+  if (local) {
+    return local.then((data) => {
+      const book = data.books[bookId];
+      if (!book) throw new Error(`Buch "${bookId}" nicht gefunden`);
+      return book;
+    });
+  }
+
   let promise = bookPromises.get(bookId);
   if (!promise) {
     promise = fetch(`${BASE}/${bookId}.json`).then((r) => {

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useBibleIndex, usePersisted } from '../hooks/useStore';
+import { isSingleFile } from '../lib/bibleData';
 import {
   clearOfflineData,
   downloadAll,
@@ -37,6 +38,18 @@ function OfflineCard() {
   }, []);
 
   useEffect(refresh, [refresh]);
+
+  if (isSingleFile()) {
+    return (
+      <div className="card" style={{ padding: '1.1rem' }}>
+        <div className="section-title">Offline lesen</div>
+        <div className="notice">
+          Diese Fassung enthält den vollständigen Bibeltext bereits in der Seite selbst. Sie
+          funktioniert ohne Verbindung – auch als gespeicherte Datei.
+        </div>
+      </div>
+    );
+  }
 
   if (!isOfflineSupported()) {
     return (

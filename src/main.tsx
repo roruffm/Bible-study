@@ -1,21 +1,28 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { registerSW } from 'virtual:pwa-register';
 import App from './App';
+import { isSingleFile } from './lib/bibleData';
 import { applySettings } from './lib/storage';
 import './styles/global.css';
 
 applySettings();
 
-// Der Service Worker macht App-Shell und gelesene Kapitel offline verfügbar.
-// Im Entwicklungsmodus ist er abgeschaltet, damit Änderungen sofort greifen.
-registerSW({ immediate: true });
+// Als Einzeldatei gibt es keinen Server, der Pfade auf die App zurückführen
+// könnte – dort übernimmt der Hash die Navigation. Ein Service Worker wäre
+// dann ebenfalls sinnlos, weil bereits alles in der Seite steckt.
+const singleFile = isSingleFile();
+const Router = singleFile ? HashRouter : BrowserRouter;
+
+if (!singleFile) {
+  registerSW({ immediate: true });
+}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <Router>
       <App />
-    </BrowserRouter>
+    </Router>
   </StrictMode>,
 );
