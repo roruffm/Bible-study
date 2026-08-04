@@ -114,9 +114,6 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
   spielt im 6. Jahrhundert v. Chr., das Buch Daniel entstand rund 400 Jahre
   später. Jede Angabe verlinkt auf die passende Epoche der Zeitleiste.
 
-**Mindesttiefe je Artikel:** ausführlicher historischer Kontext und
-mindestens drei Auslegungen aus verschiedenen Traditionen. Das Prüfskript
-setzt das durch, damit es beim Weiterschreiben nicht verlorengeht.
 - **Sachwissen zur Lebenswelt der Bibel:** Maße, Gewichte und Geld, Ämter und
   Gruppen, Bräuche und Feste, Pflanzen und Stoffe. Weil diese Begriffe
   hundertfach vorkommen, erreichen sie **rund 31 % aller 31.102 Verse** –
@@ -131,6 +128,10 @@ setzt das durch, damit es beim Weiterschreiben nicht verlorengeht.
   - *Glauben verstehen:* Wer ist Jesus? · Beten lernen · Der Heilige Geist
   - *Leben in der Welt:* Gerechtigkeit: Gott und die Armen · Geld, Besitz und
     Genug · Schöpfung und Verantwortung · Weisheit für den Alltag
+
+**Mindesttiefe je Artikel:** ausführlicher historischer Kontext und
+mindestens drei Auslegungen aus verschiedenen Traditionen. Das Prüfskript
+setzt das durch, damit es beim Weiterschreiben nicht verlorengeht.
 
 **Redaktionsprinzip:** Auslegungen stehen **beschreibend nebeneinander**,
 jeweils mit Angabe der Tradition (reformatorisch, katholisch, orthodox,
