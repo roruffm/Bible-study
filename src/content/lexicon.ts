@@ -10,7 +10,20 @@
  * GeoJSON üblich.
  */
 
-export type LexiconKind = 'person' | 'ort' | 'begriff';
+import { REALIA } from './realia';
+
+export type LexiconKind =
+  | 'person'
+  | 'ort'
+  | 'begriff'
+  /** Maße, Gewichte und Geld */
+  | 'mass'
+  /** Ämter, Berufe und Gruppen */
+  | 'amt'
+  /** Bräuche, Feste und Riten */
+  | 'brauch'
+  /** Pflanzen, Tiere, Stoffe und Handwerk */
+  | 'natur';
 
 export interface LexiconRef {
   book: string;
@@ -27,6 +40,11 @@ export interface LexiconEntry {
   short: string;
   /** Ausführlichere Fassung, wo es sich lohnt. */
   long?: string;
+  /**
+   * Eine harte Angabe in wenigen Worten – „etwa 45 cm“, „ein Tageslohn“.
+   * Sie wird hervorgehoben, weil sie beim Lesen sofort weiterhilft.
+   */
+  fact?: string;
   /** Weitere Schreibweisen, unter denen der Eintrag im Text erkannt wird. */
   aliases?: string[];
   /** Wichtige Stellen. */
@@ -37,7 +55,8 @@ export interface LexiconEntry {
   today?: string;
 }
 
-export const LEXICON: LexiconEntry[] = [
+/** Personen, Orte und theologische Begriffe. */
+const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
   /* ------------------------------------------------------------ Personen */
   {
     id: 'abraham',
@@ -65,12 +84,26 @@ export const LEXICON: LexiconEntry[] = [
     id: 'jakob',
     term: 'Jakob',
     kind: 'person',
-    aliases: ['Israel'],
+    // „Israel“ ist bewusst kein Alias: Das Wort steht an den allermeisten
+    // Stellen für das Volk, nicht für den Erzvater. Dafür gibt es einen
+    // eigenen Eintrag.
     short:
       'Enkel Abrahams, der seinen Bruder um das Erstgeburtsrecht betrügt und nach einem nächtlichen Ringkampf den Namen Israel erhält. Seine zwölf Söhne gelten als Stammväter der Stämme.',
     refs: [
       { book: '1mo', chapter: 28, verse: 10, note: 'Die Himmelsleiter' },
       { book: '1mo', chapter: 32, verse: 25, note: 'Der Kampf am Jabbok' },
+    ],
+  },
+  {
+    id: 'israel',
+    term: 'Israel',
+    kind: 'begriff',
+    short:
+      'Zuerst der Beiname Jakobs nach dem nächtlichen Kampf, dann der Name seiner Nachkommen – und später auch der des Nordreichs im Unterschied zu Juda.',
+    long: 'Welche Bedeutung jeweils gemeint ist, entscheidet der Zusammenhang: In den Erzväter-Erzählungen steht „Israel“ oft für die Person Jakob, in den Königsbüchern meist für den Nordstaat, bei den Propheten und im Neuen Testament für das Gottesvolk insgesamt. Der Name bedeutet etwa „Gott streitet“ oder „der mit Gott streitet“.',
+    refs: [
+      { book: '1mo', chapter: 32, verse: 28, note: 'Die Namensgebung' },
+      { book: 'roem', chapter: 9, verse: 6 },
     ],
   },
   {
@@ -640,6 +673,12 @@ export const LEXICON: LexiconEntry[] = [
   },
 ];
 
+/**
+ * Das vollständige Lexikon: Namen und Begriffe zusammen mit dem Sachwissen
+ * zur Lebenswelt der Bibel (Maße, Ämter, Bräuche, Naturkunde).
+ */
+export const LEXICON: LexiconEntry[] = [...NAMEN_UND_BEGRIFFE, ...REALIA];
+
 /* ------------------------------------------------------------ Hilfsmittel */
 
 export function findLexiconEntry(id: string): LexiconEntry | undefined {
@@ -650,6 +689,21 @@ export const LEXICON_KIND_LABEL: Record<LexiconKind, string> = {
   person: 'Person',
   ort: 'Ort',
   begriff: 'Begriff',
+  mass: 'Maß & Geld',
+  amt: 'Amt & Gruppe',
+  brauch: 'Brauch & Fest',
+  natur: 'Natur & Stoff',
+};
+
+/** Mehrzahlform für die Filterleiste. */
+export const LEXICON_KIND_PLURAL: Record<LexiconKind, string> = {
+  person: 'Personen',
+  ort: 'Orte',
+  begriff: 'Begriffe',
+  mass: 'Maß & Geld',
+  amt: 'Ämter & Gruppen',
+  brauch: 'Bräuche & Feste',
+  natur: 'Natur & Stoffe',
 };
 
 /** Alle Orte mit Koordinaten – Grundlage des Kartenmoduls. */

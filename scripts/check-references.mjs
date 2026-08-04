@@ -13,12 +13,12 @@
  * Prüfkette einhängen.
  */
 
-import { readFileSync, mkdtempSync, writeFileSync, rmSync } from 'node:fs';
+import { readFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { pathToFileURL } from 'node:url';
 import { fileURLToPath } from 'node:url';
-import { transformSync } from 'esbuild';
+import { buildSync } from 'esbuild';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TRANSLATION = process.argv[2] ?? 'luther1912';
@@ -28,13 +28,21 @@ const index = JSON.parse(
 );
 const books = new Map(index.books.map((b) => [b.id, b]));
 
-/** Lädt ein TypeScript-Inhaltsmodul, indem es vorher übersetzt wird. */
+/**
+ * Lädt ein Inhaltsmodul. Es wird gebündelt statt nur übersetzt, damit auch
+ * Module mit eigenen Importen (etwa lexicon → realia) auflösbar bleiben.
+ */
 const temp = mkdtempSync(join(tmpdir(), 'lumina-check-'));
 async function loadContent(name) {
-  const source = readFileSync(join(ROOT, 'src', 'content', `${name}.ts`), 'utf8');
-  const { code } = transformSync(source, { loader: 'ts', format: 'esm' });
   const file = join(temp, `${name}.mjs`);
-  writeFileSync(file, code);
+  buildSync({
+    entryPoints: [join(ROOT, 'src', 'content', `${name}.ts`)],
+    outfile: file,
+    bundle: true,
+    format: 'esm',
+    platform: 'neutral',
+    logLevel: 'silent',
+  });
   return import(pathToFileURL(file).href);
 }
 

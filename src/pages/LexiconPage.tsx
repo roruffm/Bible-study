@@ -1,10 +1,24 @@
 import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { LEXICON, LEXICON_KIND_LABEL, type LexiconKind } from '../content/lexicon';
+import {
+  LEXICON,
+  LEXICON_KIND_LABEL,
+  LEXICON_KIND_PLURAL,
+  type LexiconKind,
+} from '../content/lexicon';
 import { useBibleIndex } from '../hooks/useStore';
 import { normalize } from '../lib/reference';
 
-const KINDS: (LexiconKind | 'alle')[] = ['alle', 'person', 'ort', 'begriff'];
+const KINDS: (LexiconKind | 'alle')[] = [
+  'alle',
+  'person',
+  'ort',
+  'begriff',
+  'mass',
+  'amt',
+  'brauch',
+  'natur',
+];
 
 export default function LexiconPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -52,7 +66,7 @@ export default function LexiconPage() {
             className={`chip${kind === value ? ' chip--active' : ''}`}
             onClick={() => setKind(value)}
           >
-            {value === 'alle' ? 'Alle' : `${LEXICON_KIND_LABEL[value]}en`}
+            {value === 'alle' ? 'Alle' : LEXICON_KIND_PLURAL[value]}
           </button>
         ))}
         <span className="settings-row__hint" style={{ alignSelf: 'center' }}>
@@ -72,9 +86,12 @@ export default function LexiconPage() {
             >
               <div className="lex-entry__head">
                 <h3 className="lex-entry__term">{entry.term}</h3>
-                <span className={`chip chip--kind-${entry.kind}`}>
-                  {LEXICON_KIND_LABEL[entry.kind]}
-                </span>
+                <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
+                  {entry.fact && <span className="mention__fact">{entry.fact}</span>}
+                  <span className={`chip chip--kind-${entry.kind}`}>
+                    {LEXICON_KIND_LABEL[entry.kind]}
+                  </span>
+                </div>
               </div>
 
               <p style={{ color: 'var(--text-muted)', marginBottom: entry.long ? '0.5rem' : 0 }}>

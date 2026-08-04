@@ -1,4 +1,4 @@
-import { lexiconMatcher } from '../content/lexicon';
+import { lexiconMatcher, type LexiconEntry } from '../content/lexicon';
 
 /**
  * Zerlegt die Verse eines Kapitels in Abschnitte und markiert dabei die
@@ -16,6 +16,24 @@ export interface TextSegment {
   text: string;
   /** Gesetzt, wenn dieser Abschnitt ein Lexikonstichwort ist. */
   entryId?: string;
+}
+
+/**
+ * Alle Lexikoneinträge, die in **diesem einen Vers** vorkommen.
+ *
+ * Anders als bei der Hervorhebung im Fließtext wird hier nichts ausgelassen:
+ * Das Vers-Panel soll zu jedem Vers zeigen, was sich darin nachschlagen lässt
+ * – auch dann, wenn der Begriff im Kapitel schon einmal markiert war.
+ */
+export function lexiconInVerse(text: string): LexiconEntry[] {
+  const { pattern, byTerm } = lexiconMatcher();
+  const found = new Map<string, LexiconEntry>();
+
+  for (const match of text.matchAll(pattern)) {
+    const entry = byTerm.get(match[0]);
+    if (entry && !found.has(entry.id)) found.set(entry.id, entry);
+  }
+  return [...found.values()];
 }
 
 export function segmentChapter(verses: string[]): TextSegment[][] {

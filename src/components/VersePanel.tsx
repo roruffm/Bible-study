@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { commentaryFor } from '../content/commentary';
 import { BOOK_PROFILES } from '../content/bookProfiles';
+import { LEXICON_KIND_LABEL } from '../content/lexicon';
+import { lexiconInVerse } from '../lib/lexiconText';
 import { usePersisted } from '../hooks/useStore';
 import {
   addMemoryCard,
@@ -50,6 +52,7 @@ export default function VersePanel({ index, book, ref_, text, altNumbering, onCl
     () => commentaryFor(ref_.book, ref_.chapter, ref_.verse),
     [ref_.book, ref_.chapter, ref_.verse],
   );
+  const mentioned = useMemo(() => lexiconInVerse(text), [text]);
   const profile = BOOK_PROFILES[ref_.book];
 
   const highlight = usePersisted(() => getHighlight(ref_));
@@ -118,6 +121,32 @@ export default function VersePanel({ index, book, ref_, text, altNumbering, onCl
 
           {tab === 'kontext' && (
             <div className="panel__article">
+              {/* Sachwissen zu allem, was in diesem Vers vorkommt – das greift
+                  auch dort, wo es keinen eigenen Artikel gibt. */}
+              {mentioned.length > 0 && (
+                <section style={{ marginBottom: '1.5rem' }}>
+                  <div className="section-title">Im Vers erwähnt</div>
+                  {mentioned.map((entry) => (
+                    <div className="mention" key={entry.id}>
+                      <div className="mention__head">
+                        <strong>{entry.term}</strong>
+                        {entry.fact && <span className="mention__fact">{entry.fact}</span>}
+                        <span className={`chip chip--kind-${entry.kind}`}>
+                          {LEXICON_KIND_LABEL[entry.kind]}
+                        </span>
+                      </div>
+                      <p>{entry.short}</p>
+                      <Link
+                        className="btn btn--ghost btn--sm"
+                        to={`/lexikon?eintrag=${entry.id}`}
+                        onClick={onClose}
+                      >
+                        Mehr im Lexikon →
+                      </Link>
+                    </div>
+                  ))}
+                </section>
+              )}
               {entries.length > 0 ? (
                 entries.map((entry) => (
                   <div key={entry.title} style={{ marginBottom: '1.25rem' }}>
@@ -147,7 +176,8 @@ export default function VersePanel({ index, book, ref_, text, altNumbering, onCl
                 <>
                   <div className="notice" style={{ marginBottom: '1rem' }}>
                     Zu diesem Vers liegt noch kein eigener Artikel vor. Die Sammlung wächst
-                    schrittweise – hier zunächst die Einordnung des ganzen Buches.
+                    schrittweise – hier die Einordnung des ganzen Buches
+                    {mentioned.length > 0 ? ', ergänzt um das Sachwissen oben.' : '.'}
                   </div>
                   {profile && (
                     <>

@@ -1207,6 +1207,60 @@ button {
 :root[data-theme='dunkel'] .chip--kind-begriff,
 :root[data-theme='dark'] .chip--kind-begriff { background: #392c1e; border-color: #5b452c; color: #ddb385; }
 
+/* „Im Vers erwähnt“ – Sachwissen zu allem, was in einem Vers vorkommt */
+
+.mention {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.mention:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.mention__head {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.mention__head strong {
+  font-size: 0.95rem;
+}
+
+.mention__fact {
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.mention p {
+  margin: 0 0 0.3rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.chip--kind-mass { background: #e3ecf5; border-color: #c1d4e8; color: #2c5578; }
+.chip--kind-amt { background: #f2e6e6; border-color: #ddc2c2; color: #7d4444; }
+.chip--kind-brauch { background: #ece4f0; border-color: #d3c2dc; color: #62497a; }
+.chip--kind-natur { background: #e4efe0; border-color: #c5dcbd; color: #45703a; }
+
+:root[data-theme='dunkel'] .chip--kind-mass,
+:root[data-theme='dark'] .chip--kind-mass { background: #1e2c3a; border-color: #33475c; color: #a3c4e0; }
+:root[data-theme='dunkel'] .chip--kind-amt,
+:root[data-theme='dark'] .chip--kind-amt { background: #332424; border-color: #513939; color: #d7a9a9; }
+:root[data-theme='dunkel'] .chip--kind-brauch,
+:root[data-theme='dark'] .chip--kind-brauch { background: #2c2436; border-color: #443a52; color: #c0abd4; }
+:root[data-theme='dunkel'] .chip--kind-natur,
+:root[data-theme='dark'] .chip--kind-natur { background: #24301f; border-color: #3c4d35; color: #a9c99c; }
+
 .lex-entry__head {
   display: flex;
   align-items: center;

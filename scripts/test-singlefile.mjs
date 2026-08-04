@@ -76,7 +76,7 @@ check('Karte wird auch als Einzeldatei gezeichnet', (await page.locator('.map__p
 
 await page.goto('file://' + FILE + '#/lexikon', { waitUntil: 'load' });
 await page.waitForSelector('.lex-entry__term');
-check('Lexikon ist enthalten', (await page.locator('.lex-entry__term').count()) >= 60);
+check('Lexikon ist enthalten', (await page.locator('.lex-entry__term').count()) >= 120);
 
 check('Keine Anfrage nach außen', externalRequests.length === 0, externalRequests.slice(0, 3).join(', '));
 check('Keine Konsolenfehler', errors.length === 0, errors.slice(0, 2).join(' | '));

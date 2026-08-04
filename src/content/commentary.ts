@@ -1100,6 +1100,485 @@ export const COMMENTARY: CommentaryEntry[] = [
     ],
     crossRefs: [{ book: 'apg', chapter: 1, verse: 8 }],
   },
+
+  /* ------------------------------------------ Altes Testament (Ausbau) */
+
+  {
+    book: '1mo',
+    chapter: 22,
+    from: 1,
+    to: 19,
+    title: 'Die Bindung Isaaks',
+    historicalShort:
+      'Der Text gehört zu den verstörendsten der Bibel. Kinderopfer waren in der Umwelt Israels bezeugt; die Erzählung endet damit, dass genau das abgewehrt wird.',
+    historicalLong:
+      'Auffällig ist die Kargheit: kein Wort über Abrahams Gefühle, kein Wort über Saras Reaktion, und nach der Szene gehen Vater und Sohn getrennte Wege – von einer gemeinsamen Rückkehr ist nicht die Rede. Das Wort „Moria“ wird später mit dem Tempelberg gleichgesetzt. Im Judentum heißt der Abschnitt „Akeda“ (Bindung), nicht „Opferung“; der Akzent liegt dort auf Isaak, nicht auf Abraham.',
+    interpretations: [
+      {
+        tradition: 'Religionsgeschichtliche Lesart',
+        text: 'Die Erzählung wird als Absage an das Kinderopfer verstanden: Was in der Umwelt gefordert wurde, lehnt dieser Gott ausdrücklich ab.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Blick richtet sich auf Isaak als Erwachsenen, der einwilligt. Die Akeda gilt als Inbegriff der Bereitschaft, für den Glauben alles zu geben, und wird an Neujahr gelesen.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Früh wurde die Szene auf den Kreuzestod bezogen: der einzige Sohn, das Holz, der Berg. Die Parallele ist eine spätere Deutung, nicht der ursprüngliche Sinn.',
+      },
+      {
+        tradition: 'Philosophischer Einspruch',
+        text: 'Kant lehnte den Gehorsam Abrahams ausdrücklich ab, Kierkegaard machte ihn zum Kernfall des Glaubens jenseits der Vernunft. Der Text bleibt in der Ethik ein offener Streitpunkt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 7, verse: 31, note: 'Gott verabscheut Kinderopfer' },
+      { book: 'hebr', chapter: 11, verse: 17 },
+    ],
+  },
+  {
+    book: '2mo',
+    chapter: 14,
+    from: 1,
+    to: 31,
+    title: 'Der Durchzug durch das Meer',
+    historicalShort:
+      'Das hebräische „jam suf“ heißt wörtlich „Schilfmeer“, nicht „Rotes Meer“ – die verbreitete Übersetzung geht auf die griechische Bibel zurück. Gemeint ist vermutlich ein flaches Sumpfgebiet im östlichen Nildelta.',
+    historicalLong:
+      'Der Text enthält zwei ineinandergeschobene Darstellungen: In der einen treibt ein Ostwind das Wasser zurück, in der anderen stehen die Fluten wie Mauern. Die Forschung sieht darin verschiedene Überlieferungsstränge. Das Lied in Kapitel 15 gilt sprachlich als einer der ältesten Texte der Bibel überhaupt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Außerägyptische Belege fehlen. Als Kern wird eine Rettungserfahrung einer kleinen Gruppe angenommen, die zur Gründungserzählung des ganzen Volkes wurde.',
+      },
+      {
+        tradition: 'Jüdische Tradition',
+        text: 'Der Durchzug wird jedes Jahr beim Passa vergegenwärtigt: Jeder soll sich so verstehen, als wäre er selbst aus Ägypten gezogen.',
+      },
+      {
+        tradition: 'Befreiungstheologie',
+        text: 'Der Exodus gilt als Grundmuster: Gott ergreift Partei gegen ein Unterdrückungssystem – ein Text, der in vielen Freiheitsbewegungen zitiert wurde.',
+      },
+    ],
+    crossRefs: [{ book: 'jes', chapter: 43, verse: 16 }],
+  },
+  {
+    book: '1sam',
+    chapter: 17,
+    from: 1,
+    to: 54,
+    title: 'David und Goliat',
+    historicalShort:
+      'Die Szene ist als Zweikampf zwischen Vorkämpfern erzählt – eine im Alten Orient bezeugte Form, die eine Feldschlacht ersetzen konnte. Die Schleuder war keine Kinderwaffe, sondern eine Fernwaffe mit erheblicher Durchschlagskraft.',
+    historicalLong:
+      'Goliats Ausrüstung wird auffallend genau beschrieben und entspricht eher griechischer als philistäischer Bewaffnung. Seine Größe von „sechs Ellen und einer Handbreit“ ergäbe rund 2,90 m; die griechische Überlieferung nennt vier Ellen, also etwa 2 m. In 2. Samuel 21,19 wird der Sieg über Goliat einem gewissen Elhanan zugeschrieben – ein bekanntes Rätsel der Textüberlieferung.',
+    interpretations: [
+      {
+        tradition: 'Erzählerische Lesart',
+        text: 'Die Pointe liegt im Verzicht auf die Rüstung: David gewinnt gerade nicht mit den Mitteln des Stärkeren.',
+      },
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Die Erzählung ist literarisch geformt und will keine Schlachtbeschreibung sein. Die abweichende Notiz in 2. Samuel zeigt, dass verschiedene Überlieferungen nebeneinander bestanden.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Kaum ein biblisches Bild wurde häufiger politisch beansprucht – von beiden Seiten eines Konflikts zugleich.',
+      },
+    ],
+    crossRefs: [{ book: '2sam', chapter: 21, verse: 19, note: 'Die abweichende Notiz' }],
+  },
+  {
+    book: '2sam',
+    chapter: 12,
+    from: 1,
+    to: 15,
+    title: 'Nathan stellt den König',
+    historicalShort:
+      'Ein Prophet klagt den amtierenden König des Mordes an – im Alten Orient beispiellos. Nathan geht dabei über eine Erzählung vor: David spricht das Urteil, bevor er merkt, dass er selbst gemeint ist.',
+    interpretations: [
+      {
+        tradition: 'Politische Lesart',
+        text: 'Der Text hält fest, dass auch der König dem Recht unterworfen bleibt – eine der frühesten Formulierungen dieses Gedankens.',
+      },
+      {
+        tradition: 'Literarische Beobachtung',
+        text: 'Das Gleichnis wirkt, weil es die Abwehr umgeht: Wer über einen Fremden urteilt, urteilt unbefangen. „Du bist der Mann“ ist der Umschlagpunkt.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Dass das Kind für Davids Schuld stirbt, widerspricht dem später ausdrücklich formulierten Grundsatz, dass niemand für die Schuld eines anderen haftet.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 51, verse: 1 },
+      { book: 'hes', chapter: 18, verse: 20, note: 'Niemand haftet für fremde Schuld' },
+    ],
+  },
+  {
+    book: '1koe',
+    chapter: 18,
+    from: 20,
+    to: 46,
+    title: 'Elia auf dem Karmel',
+    historicalShort:
+      'Der Karmel liegt an der Grenze zum phönizischen Gebiet – ein umstrittener Ort zwischen zwei Kulten. Baal galt als Wettergott, der Regen gibt; deshalb ist die Dürre der eigentliche Streitpunkt.',
+    historicalLong:
+      'Elias Spott über den schlafenden oder verreisten Baal greift Züge auf, die in ugaritischen Texten tatsächlich von Baal erzählt werden. Die Tötung der Baalspropheten am Ende gehört zu den Stellen, die in der Auslegung durchgehend als schwierig gelten und heute meist ausdrücklich nicht als Vorbild verstanden werden.',
+    interpretations: [
+      {
+        tradition: 'Religionsgeschichtliche Einordnung',
+        text: 'Die Erzählung spiegelt einen realen Kulturkampf im Nordreich unter Ahab und der phönizischen Königin Isebel.',
+      },
+      {
+        tradition: 'Theologische Auslegung',
+        text: 'Die Frage „Wie lange hinkt ihr auf beiden Seiten?“ zielt nicht auf Religionswechsel, sondern auf Eindeutigkeit.',
+      },
+      {
+        tradition: 'Kritische Lesart',
+        text: 'Der Triumph endet unmittelbar im Zusammenbruch: Kapitel 19 zeigt Elia am Ende seiner Kraft. Die Erzählung selbst relativiert den Sieg.',
+      },
+    ],
+    crossRefs: [{ book: '1koe', chapter: 19, verse: 12, note: 'Das stille, sanfte Sausen' }],
+  },
+  {
+    book: 'jes',
+    chapter: 6,
+    from: 1,
+    to: 13,
+    title: 'Die Berufung im Tempel',
+    historicalShort:
+      'Die Vision wird genau datiert: im Todesjahr des Königs Usija, um 740 v. Chr. Während der irdische Thron leer wird, sieht der Prophet den himmlischen besetzt.',
+    historicalLong:
+      'Die Serafim sind wörtlich „die Brennenden“ – geflügelte Wesen, wie sie auch auf altorientalischen Siegeln erscheinen. Der Auftrag ist verstörend formuliert: Der Prophet soll reden, damit das Volk gerade nicht versteht. Die Forschung sieht darin eine rückblickende Deutung des ausgebliebenen Erfolgs, nicht eine Absicht von Anfang an.',
+    interpretations: [
+      {
+        tradition: 'Klassische Auslegung',
+        text: 'Das Dreimalheilig wurde in die Liturgie übernommen und ist bis heute Teil des Abendmahlsgebets.',
+      },
+      {
+        tradition: 'Exegetische Einordnung',
+        text: 'Der „Verstockungsauftrag“ ist eine im Rückblick formulierte Erfahrung: Prophetie blieb folgenlos, und der Text ringt darum, was das über Gott aussagt.',
+      },
+      {
+        tradition: 'Spirituelle Lesart',
+        text: 'Auf das Erschrecken folgt die Reinigung, erst dann der Auftrag – die Reihenfolge gilt als Grundmuster jeder Berufung.',
+      },
+    ],
+    crossRefs: [{ book: 'mt', chapter: 13, verse: 14 }],
+  },
+  {
+    book: 'jer',
+    chapter: 31,
+    from: 31,
+    to: 34,
+    title: 'Der neue Bund',
+    historicalShort:
+      'Die einzige Stelle im Alten Testament, an der ausdrücklich von einem „neuen Bund“ die Rede ist – formuliert in der Katastrophe, als der alte Bund gescheitert schien.',
+    historicalLong:
+      'Neu ist nicht der Inhalt: Es bleibt dieselbe Weisung. Neu ist der Ort – sie soll „ins Herz geschrieben“ werden, statt auf Tafeln zu stehen. Damit entfällt auch die Belehrung von außen: „Einer wird den andern nicht mehr lehren.“ Das Neue Testament trägt seinen Namen nach diesem Text; die lateinische Übersetzung von „Bund“ lautet testamentum.',
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Es handelt sich um eine Erneuerung des Bundes mit Israel, nicht um seine Ersetzung – der Text spricht ausdrücklich vom „Haus Israel und Haus Juda“.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Die Verheißung wird auf das Abendmahl und das Wirken des Geistes bezogen. Der Hebräerbrief zitiert die Stelle in voller Länge.',
+      },
+      {
+        tradition: 'Ökumenische Klarstellung',
+        text: 'Die früher verbreitete Folgerung, der Bund mit Israel sei aufgekündigt, wird von den großen Kirchen heute ausdrücklich zurückgewiesen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hebr', chapter: 8, verse: 8 },
+      { book: 'lk', chapter: 22, verse: 20 },
+    ],
+  },
+  {
+    book: 'hes',
+    chapter: 37,
+    from: 1,
+    to: 14,
+    title: 'Das Feld der Totengebeine',
+    historicalShort:
+      'Die Vision gilt einer Gemeinschaft im Exil, die sich selbst für erledigt hielt – der Text sagt es ausdrücklich: „Unsere Hoffnung ist verloren.“ Das Bild eines Schlachtfelds mit unbestatteten Toten war die äußerste Vorstellung von Endgültigkeit.',
+    historicalLong:
+      'Das hebräische Wort ruach bedeutet zugleich Wind, Atem und Geist – der Text spielt in wenigen Versen alle drei Bedeutungen durch. Die Deutung liefert der Text selbst mit: Gemeint ist die Heimkehr des Volkes, noch nicht die Auferstehung Einzelner.',
+    interpretations: [
+      {
+        tradition: 'Exegetische Einordnung',
+        text: 'Ursprünglich ein Bild für die Wiederherstellung Israels. Der Glaube an eine persönliche Auferstehung entsteht erst später, etwa im Buch Daniel.',
+      },
+      {
+        tradition: 'Jüdische Tradition',
+        text: 'Der Abschnitt wird am Sabbat des Passafestes gelesen – als Text der Befreiung.',
+      },
+      {
+        tradition: 'Christliche Rezeption',
+        text: 'Seit der Alten Kirche wird die Vision auf die Auferstehung der Toten und auf das Wirken des Geistes bezogen.',
+      },
+    ],
+    crossRefs: [{ book: 'dan', chapter: 12, verse: 2 }],
+  },
+  {
+    book: 'dan',
+    chapter: 3,
+    from: 1,
+    to: 30,
+    title: 'Der Feuerofen',
+    historicalShort:
+      'Die Erzählung spielt im babylonischen Exil, entstand aber vermutlich in der Verfolgung unter Antiochus IV. um 165 v. Chr. Sie richtet sich an Menschen, die vor genau dieser Wahl standen.',
+    historicalLong:
+      'Der Kernsatz steht in Vers 18: „Und wenn er es nicht tut …“ – die drei bleiben standhaft, auch für den Fall, dass keine Rettung kommt. Damit unterscheidet sich der Text von einer bloßen Wundererzählung: Er begründet Treue nicht mit ihrer Aussicht auf Erfolg.',
+    interpretations: [
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Widerstandsliteratur: Erzählungen aus ferner Zeit sprechen verschlüsselt über die eigene Gegenwart – eine in Verfolgungssituationen häufige Form.',
+      },
+      {
+        tradition: 'Ethische Auslegung',
+        text: 'Der Text gilt als klassische Begründung für Gehorsamsverweigerung gegenüber staatlicher Macht und wurde im 20. Jahrhundert vielfach so gelesen.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Lobgesang der drei Männer im Feuerofen steht in der griechischen Fassung des Buches und gehört bis heute zum Stundengebet.',
+      },
+    ],
+  },
+  {
+    book: 'jona',
+    chapter: 4,
+    from: 1,
+    to: 11,
+    title: 'Der Streit um den Rizinus',
+    historicalShort:
+      'Das Buch endet nicht mit der Umkehr Ninives, sondern mit dem Zorn des Propheten darüber. Jona begründet seine Flucht rückblickend damit, dass er Gottes Erbarmen befürchtet habe.',
+    historicalLong:
+      'Der Schlusssatz ist eine Frage, die unbeantwortet bleibt – und er nennt ausdrücklich auch das Vieh der Stadt. Die Erzählung arbeitet durchweg mit Übertreibung: eine Stadt von drei Tagesreisen, Tiere in Bußgewändern, ein Prophet, der die kürzeste Predigt der Bibel hält und damit den größten Erfolg hat.',
+    interpretations: [
+      {
+        tradition: 'Literarische Einordnung',
+        text: 'Das Buch wird überwiegend als Lehrerzählung gelesen, nicht als Bericht – erkennbar an Ironie, Übertreibung und der offenen Schlussfrage.',
+      },
+      {
+        tradition: 'Jüdische Tradition',
+        text: 'Jona wird am Nachmittag des Versöhnungstags gelesen: als Text über Umkehr, die selbst den Feinden offensteht.',
+      },
+      {
+        tradition: 'Auslegung auf die Gemeinde hin',
+        text: 'Die Frage am Ende richtet sich an die Lesenden: Gönnen wir Gottes Erbarmen auch denen, die wir nicht dafür vorgesehen haben?',
+      },
+    ],
+  },
+
+  /* ----------------------------------------- Neues Testament (Ausbau) */
+
+  {
+    book: 'mt',
+    chapter: 13,
+    from: 1,
+    to: 23,
+    title: 'Der Sämann',
+    historicalShort:
+      'In der damaligen Landwirtschaft wurde vor dem Pflügen gesät – dass Körner auf den Weg und ins Gestrüpp fallen, war deshalb kein Missgeschick, sondern Teil des Verfahrens.',
+    historicalLong:
+      'Der Ertrag von dreißig-, sechzig- und hundertfach lag weit über dem Üblichen; realistisch waren etwa fünf- bis zehnfache Ernten. Die Deutung, die der Text mitliefert, gilt vielen Fachleuten als spätere Auslegung der Gemeinde – das Gleichnis selbst wirkt zunächst offen und ohne Zuordnung.',
+    interpretations: [
+      {
+        tradition: 'Traditionelle Auslegung',
+        text: 'Der Same ist das Wort, die Böden sind die Hörenden – so deutet es der Text selbst und so wird er meist gepredigt.',
+      },
+      {
+        tradition: 'Neuere Gleichnisforschung',
+        text: 'Der Akzent liegt auf dem Ertrag, nicht auf den Böden: Trotz aller Verluste kommt eine unerhörte Ernte zustande. Das Gleichnis wäre dann Ermutigung, keine Selbstprüfung.',
+      },
+      {
+        tradition: 'Landwirtschaftliche Beobachtung',
+        text: 'Wer das Verfahren kennt, hört die Erzählung anders: Der Sämann ist nicht nachlässig, sondern arbeitet, wie man damals arbeitete.',
+      },
+    ],
+    crossRefs: [{ book: 'mk', chapter: 4, verse: 3 }],
+  },
+  {
+    book: 'mk',
+    chapter: 8,
+    from: 27,
+    to: 38,
+    title: 'Das Bekenntnis – und der Widerspruch',
+    historicalShort:
+      'Die Szene spielt bei Cäsarea Philippi, einem Ort mit einem Heiligtum für den Gott Pan und einem Tempel für den Kaiser. Ausgerechnet dort fällt die Frage, wer Jesus sei.',
+    historicalLong:
+      'Der Abschnitt ist die Mitte des Markusevangeliums: Von hier an geht der Weg nach Jerusalem. Petrus hat mit seinem Bekenntnis recht und versteht doch nichts – kaum ausgesprochen, weist er die Leidensankündigung zurück und wird schärfer zurechtgewiesen als jeder Gegner im ganzen Buch. „Kreuz auf sich nehmen“ war keine Metapher: Verurteilte trugen den Querbalken selbst zum Hinrichtungsort.',
+    interpretations: [
+      {
+        tradition: 'Markinische Theologie',
+        text: 'Wer Jesus „Messias“ nennt, ohne das Kreuz mitzudenken, hat ihn nach Markus gerade nicht verstanden. Deshalb das auffällige Schweigegebot.',
+      },
+      {
+        tradition: 'Nachfolge-Ethik',
+        text: 'Die Aufforderung richtet sich ausdrücklich an „das Volk samt den Jüngern“ – nicht an eine Elite.',
+      },
+      {
+        tradition: 'Seelsorgliche Warnung',
+        text: 'Der Satz vom Kreuztragen wurde historisch oft missbraucht, um Menschen zum Erdulden von Unrecht anzuhalten. Der Zusammenhang meint freiwillige Nachfolge, nicht auferlegtes Leiden.',
+      },
+    ],
+    crossRefs: [{ book: 'mk', chapter: 15, verse: 39, note: 'Das Bekenntnis unter dem Kreuz' }],
+  },
+  {
+    book: 'lk',
+    chapter: 24,
+    from: 13,
+    to: 35,
+    title: 'Die Emmausjünger',
+    historicalShort:
+      'Zwei Enttäuschte verlassen Jerusalem. Die Lage von Emmaus ist unsicher – schon die alten Handschriften nennen unterschiedliche Entfernungen, meist rund 60 Stadien, also etwa elf Kilometer.',
+    historicalLong:
+      'Die Erzählung ist sorgfältig gebaut: Zuerst wird der Schrift nachgegangen, dann wird das Brot gebrochen – erst dann werden die Augen geöffnet, und im selben Moment verschwindet er. Viele sehen darin den Ablauf des frühen Gottesdienstes gespiegelt: Wort und Mahl. Einer der beiden heißt Kleopas, der andere bleibt namenlos.',
+    interpretations: [
+      {
+        tradition: 'Liturgische Auslegung',
+        text: 'Der Text gilt als Urbild des Gottesdienstes: Der Auferstandene wird in der Schriftauslegung und im Brotbrechen erkannt.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Er geht mit, ohne sich zu erkennen zu geben, und lässt sich die enttäuschte Version der Geschichte erzählen, bevor er etwas sagt.',
+      },
+      {
+        tradition: 'Literarische Beobachtung',
+        text: 'Dass der zweite Jünger namenlos bleibt, wird oft als bewusste Lücke gelesen – ein Platz für die Lesenden.',
+      },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 4,
+    from: 1,
+    to: 30,
+    title: 'Die Frau am Jakobsbrunnen',
+    historicalShort:
+      'Gleich drei Grenzen werden überschritten: Jesus spricht als Mann eine Frau öffentlich an, als Jude eine Samaritanerin, und als Lehrer eine Person mit zweifelhaftem Ruf. Das längste Gespräch des Johannesevangeliums führt er mit ihr.',
+    historicalLong:
+      'Juden und Samaritaner stritten seit Jahrhunderten darüber, wo Gott anzubeten sei – auf dem Garizim oder in Jerusalem. Genau diese Frage stellt die Frau, und die Antwort verschiebt sie: weder hier noch dort. Die fünf Männer werden im Text nicht bewertet; sie können auf Verwitwung oder Verstoßung zurückgehen, worüber eine Frau damals nicht selbst entschied. Am Ende wird sie zur ersten Verkündigerin außerhalb Israels.',
+    interpretations: [
+      {
+        tradition: 'Klassische Auslegung',
+        text: 'Der Text zeigt, dass die Zuwendung Jesu keine Vorbedingungen kennt – religiöse Zugehörigkeit und Lebensführung stehen nicht davor.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Die verbreitete Darstellung als „Sünderin“ trägt der Text nicht. Betont wird stattdessen ihre Rolle als theologische Gesprächspartnerin und Botin.',
+      },
+      {
+        tradition: 'Missionstheologische Lesart',
+        text: 'Der Abschnitt gilt als Vorwegnahme der späteren Öffnung zu den Samaritanern in Apostelgeschichte 8.',
+      },
+    ],
+    crossRefs: [{ book: 'apg', chapter: 8, verse: 5 }],
+  },
+  {
+    book: 'apg',
+    chapter: 17,
+    from: 16,
+    to: 34,
+    title: 'Die Rede auf dem Areopag',
+    historicalShort:
+      'Paulus spricht vor dem Rat auf dem Areopag in Athen. Sein Anknüpfungspunkt ist ein Altar mit der Aufschrift „dem unbekannten Gott“ – solche Altäre sind für die Antike tatsächlich bezeugt.',
+    historicalLong:
+      'Die Rede zitiert keine Bibelstelle, sondern griechische Dichter. Sie ist damit der Versuch, das Evangelium ganz in der Sprache der Zuhörer zu sagen. Bei der Auferstehung bricht die Zustimmung ab: Für griechisches Denken war die Unsterblichkeit der Seele vorstellbar, die Auferstehung des Leibes nicht. Der Ertrag fällt entsprechend gering aus – nur wenige schließen sich an.',
+    interpretations: [
+      {
+        tradition: 'Missionstheologische Auslegung',
+        text: 'Ein Vorbild dafür, an vorhandenen Fragen anzuknüpfen statt eine fremde Begrifflichkeit vorauszusetzen.',
+      },
+      {
+        tradition: 'Kritische Einordnung',
+        text: 'Manche sehen die Rede als Beispiel für die Grenzen der Anpassung: Wo sie zum Kern kommt, endet die Zustimmung ohnehin.',
+      },
+      {
+        tradition: 'Historische Beobachtung',
+        text: 'Der Aufbau folgt der antiken Redekunst genau; Lukas gestaltet die Rede erkennbar literarisch.',
+      },
+    ],
+  },
+  {
+    book: '1kor',
+    chapter: 15,
+    from: 1,
+    to: 11,
+    title: 'Das älteste Bekenntnis',
+    historicalShort:
+      'Paulus zitiert hier eine Formel, die er selbst übernommen hat – vermutlich innerhalb weniger Jahre nach den Ereignissen entstanden. Es ist damit die früheste erhaltene Zusammenfassung des christlichen Glaubens.',
+    historicalLong:
+      'Die Aufzählung der Zeugen ist bemerkenswert: über fünfhundert auf einmal, „von denen die meisten noch leben“ – eine Einladung zur Nachfrage. Auffällig ist zugleich, dass die Frauen am Grab, die alle vier Evangelien nennen, in dieser Liste fehlen; ihr Zeugnis galt vor Gericht nichts. Paulus setzt sich selbst ans Ende, als „unzeitige Geburt“.',
+    interpretations: [
+      {
+        tradition: 'Historische Forschung',
+        text: 'Das hohe Alter der Formel gilt als gesichert und ist ein zentrales Argument in der Diskussion über die Entstehung des Osterglaubens.',
+      },
+      {
+        tradition: 'Dogmatische Auslegung',
+        text: 'Die vier Glieder – gestorben, begraben, auferweckt, erschienen – bilden die Grundstruktur, die später in die Glaubensbekenntnisse einging.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Das Fehlen der Frauen wird als Hinweis auf die gesellschaftlichen Verhältnisse gelesen, nicht als Bestreitung ihres Zeugnisses.',
+      },
+    ],
+    crossRefs: [{ book: 'mk', chapter: 16, verse: 1 }],
+  },
+  {
+    book: '2kor',
+    chapter: 12,
+    from: 1,
+    to: 10,
+    title: 'Der Pfahl im Fleisch',
+    historicalShort:
+      'Paulus spricht über eine dauerhafte Belastung, die er dreimal vergeblich loszuwerden versuchte. Was gemeint ist, sagt er nicht – Vermutungen reichen von einer Augenkrankheit über Epilepsie bis zu Anfeindungen durch Gegner.',
+    historicalLong:
+      'Der Abschnitt steht in einer Auseinandersetzung mit Gegnern, die sich auf Erfahrungen und Erfolge beriefen. Paulus antwortet mit einer „Narrenrede“: Er zählt auf, worauf er sich berufen könnte, und stellt dann ausgerechnet seine Schwäche in die Mitte. Dass er von der Entrückung in der dritten Person spricht, gehört zu dieser Zurückhaltung.',
+    interpretations: [
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Ein Kerntext der Theologie des Kreuzes: Gott handelt nicht am Erfolg vorbei, sondern durch das Schwache hindurch.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Das Gebet wird nicht erhört, wie es gemeint war – und der Text macht daraus keinen Mangel an Glauben.',
+      },
+      {
+        tradition: 'Kritische Warnung',
+        text: 'Der Satz darf nicht dazu dienen, Leiden zu verklären oder Betroffene von Hilfe abzuhalten. Paulus beschreibt seine eigene Erfahrung, er stellt keine Regel auf.',
+      },
+    ],
+  },
+  {
+    book: 'eph',
+    chapter: 6,
+    from: 10,
+    to: 20,
+    title: 'Die Waffenrüstung',
+    historicalShort:
+      'Das Bild ist der Ausrüstung des römischen Legionärs entnommen – für die Lesenden also der Anblick der Besatzungsmacht. Genau diese Bilder werden umgedeutet.',
+    historicalLong:
+      'Auffällig ist, wofür die Stücke stehen: Wahrheit, Gerechtigkeit, Bereitschaft zum Frieden, Glaube, Rettung, Gottes Wort. Die einzige Angriffswaffe ist das Wort. Der Text sagt zudem ausdrücklich, dass der Kampf nicht „gegen Fleisch und Blut“ geht – also nicht gegen Menschen.',
+    interpretations: [
+      {
+        tradition: 'Klassische Auslegung',
+        text: 'Eine Zusammenfassung christlicher Existenz: standhalten, nicht erobern. Alle Stücke sind auf Verteidigung angelegt.',
+      },
+      {
+        tradition: 'Kritische Wirkungsgeschichte',
+        text: 'Die Bildsprache wurde vielfach militaristisch missbraucht, bis hin zu Kreuzzugsrhetorik – gegen die ausdrückliche Aussage des Textes selbst.',
+      },
+      {
+        tradition: 'Friedenskirchliche Lesart',
+        text: 'Gerade die Umdeutung der Waffen gilt als gewaltkritisch: Die Rüstung des Legionärs wird zum Bild für das genaue Gegenteil seines Handwerks.',
+      },
+    ],
+  },
 ];
 
 /** Artikel, die den angegebenen Vers abdecken. */

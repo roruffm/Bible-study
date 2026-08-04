@@ -190,7 +190,12 @@ await page.context().setOffline(false);
 // 13. Lexikon
 await page.goto(BASE + '/lexikon', { waitUntil: 'networkidle' });
 const lexCount = await page.locator('.lex-entry__term').count();
-check('Lexikon listet alle Einträge', lexCount >= 60, `${lexCount} Einträge`);
+check('Lexikon listet alle Einträge', lexCount >= 120, `${lexCount} Einträge`);
+await page.getByRole('button', { name: 'Maß & Geld' }).click();
+await page.waitForFunction(() => document.querySelectorAll('.lex-entry__term').length < 30);
+const massFacts = await page.locator('.mention__fact').allTextContents();
+check('Maße tragen eine konkrete Angabe', massFacts.includes('etwa 45 cm'), massFacts.slice(0, 5).join(' | '));
+await page.getByRole('button', { name: 'Alle' }).click();
 await page.fill('.input', 'Damaskus');
 await page.waitForFunction(() => document.querySelectorAll('.lex-entry__term').length === 1);
 check('Lexikonsuche filtert', (await page.locator('.lex-entry__term').textContent()) === 'Damaskus');
@@ -210,6 +215,26 @@ check('Lexikon-Überlagerung öffnet sich', ((await page.locator('.sheet__title'
 check('Vers-Panel bleibt dabei zu', (await page.locator('.panel').count()) === 0);
 await page.screenshot({ path: `${OUT}/15-lexikon-im-text.png` });
 await page.keyboard.press('Escape');
+
+// 13b. Sachwissen im Vers-Panel – gerade dort, wo es keinen eigenen Artikel gibt
+await page.goto(BASE + '/bibel/mt/20?vers=2', { waitUntil: 'networkidle' });
+await page.waitForSelector('.panel');
+const mentions = await page.locator('.mention__head strong').allTextContents();
+check(
+  'Vers-Panel erklärt, was im Vers vorkommt',
+  mentions.includes('Groschen') && mentions.includes('Weinberg'),
+  mentions.join(', '),
+);
+check(
+  'Dazu die harte Angabe',
+  (await page.locator('.mention__fact').first().textContent()) === 'ein Tageslohn',
+  (await page.locator('.mention__fact').first().textContent()) ?? '',
+);
+check(
+  'Auch ohne eigenen Artikel gibt es Hintergrund',
+  ((await page.locator('.panel__article').textContent()) ?? '').includes('kein eigener Artikel'),
+);
+await page.screenshot({ path: `${OUT}/21-sachwissen.png` });
 
 // 14. Zeitleiste
 await page.goto(BASE + '/studium/zeitleiste', { waitUntil: 'networkidle' });

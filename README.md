@@ -84,10 +84,10 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Bibliothek** | Bücher nach Kanon-Gruppen, farblich codiert, mit Lesefortschritt |
 | **Schnellsprung** | Erkennt `Joh 3,16`, `1. Mose 1`, `Psalm 23,1-6`, `1kor 13`, auch lateinische Namen (`Genesis`, `Apokalypse`) |
 | **Leseansicht** | Buchähnliches Layout, anklickbare Verse, Blättern per Pfeiltasten, Schriftgröße stufenlos |
-| **Vers-Panel** | Vier Tabs: historischer Kontext, Auslegungen, Querverweise, eigene Notizen |
+| **Vers-Panel** | Vier Tabs: historischer Kontext, Auslegungen, Querverweise, eigene Notizen – dazu „Im Vers erwähnt“ mit Sachwissen zu allem, was im Vers vorkommt |
 | **Volltextsuche** | Alle 31.102 Verse, Mehrwortsuche, Phrasensuche in `"…"`, Filter nach Testament und Buch, Treffer hervorgehoben |
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
-| **Lexikon** | 64 Einträge zu Personen, Orten und Begriffen – im Bibeltext markiert und mit einem Tippen erklärt |
+| **Lexikon** | 124 Einträge in sieben Kategorien – Personen, Orte, Begriffe, Maße & Geld, Ämter, Bräuche, Natur & Stoffe |
 | **Zeitleiste** | 9 Epochen und 39 Ereignisse auf maßstabsgetreuer Achse, mit Angabe zur Sicherheit jeder Datierung |
 | **Karte** | Die biblische Welt von Rom bis Mesopotamien, 24 Orte und die vier Reisen des Paulus |
 | **Merkverse** | Auswendiglernen mit wachsenden Abständen; je Stufe verschwinden mehr Wörter |
@@ -100,12 +100,18 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 
 - **Steckbriefe zu allen 66 Büchern** – Verfasser, Zeit, Anlass, Kernaussage.
   Damit hat jeder Vers von Beginn an eine historische Einordnung.
-- **Vertiefte Artikel zu 40 Schlüsselabschnitten** mit 119 einzeln
-  ausgewiesenen Auslegungen – Schöpfung, Zehn Gebote, Schma Israel, Psalm 1,
-  22, 23, 51, 121, 137, Jesaja 53, Seligpreisungen, Vaterunser, Magnificat,
-  Weihnachtsgeschichte, Sturmstillung, barmherziger Samariter, verlorener
-  Sohn, Johannesprolog, Römer 8, 1. Korinther 13, Offenbarung 21 und weitere,
-  jeweils mit historischem Kontext und Querverweisen.
+- **Vertiefte Artikel zu 58 Schlüsselabschnitten** mit 174 einzeln
+  ausgewiesenen Auslegungen. Sie decken zusammen **787 Verse** ab – von der
+  Schöpfung über die Bindung Isaaks, den Durchzug durchs Meer, David und
+  Goliat, Nathans Gleichnis, Elia auf dem Karmel, Jesajas Berufung, den neuen
+  Bund, die Totengebeine und den Feuerofen bis zu Sämann, Emmaus, der Frau am
+  Brunnen, der Areopagrede, dem ältesten Bekenntnis und der Waffenrüstung.
+- **Sachwissen zur Lebenswelt der Bibel:** Maße, Gewichte und Geld, Ämter und
+  Gruppen, Bräuche und Feste, Pflanzen und Stoffe. Weil diese Begriffe
+  hundertfach vorkommen, erreichen sie **rund 31 % aller 31.102 Verse** –
+  auch dort, wo es keinen eigenen Artikel gibt. Beispiele: ein Groschen ist
+  ein Tageslohn, eine Elle rund 45 cm, ein Zentner etwa 34 kg Silber, und
+  „Ostern“ meint bei Luther im Neuen Testament immer das Passafest.
 - **13 kuratierte Themenstudien** mit Tagesüberschrift und einordnendem
   Impuls, gruppiert nach Sachgebiet:
   - *Zum Anfangen:* Die Bibel kennenlernen (14 Tage)
@@ -167,6 +173,7 @@ src/
     bookProfiles.ts          Steckbriefe aller 66 Bücher
     commentary.ts            Kontext- und Auslegungsartikel
     lexicon.ts               Personen, Orte, Begriffe
+    realia.ts                Maße, Geld, Ämter, Bräuche, Naturkunde
     timeline.ts              Epochen und Ereignisse
     journeys.ts              Reiserouten für die Karte
     readingPlans.ts          Lese- und Themenpläne
@@ -229,7 +236,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (50 Prüfungen):
+abgeschalteter Verbindung (54 Prüfungen):
 
 ```bash
 npm install --no-save playwright
