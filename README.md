@@ -89,7 +89,7 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
 | **Lexikon** | 124 Einträge in sieben Kategorien – Personen, Orte, Begriffe, Maße & Geld, Ämter, Bräuche, Natur & Stoffe |
 | **Konkordanz** | Alle Vorkommen eines Wortes in biblischer Reihenfolge, mit der Verteilung über die 66 Bücher; zählt ganze Wörter |
-| **Synopse** | 77 Abschnitte der Evangelien nebeneinander – bis zu vier Fassungen im Wortlaut, mit Hinweis auf den Unterschied |
+| **Synopse** | 125 Abschnitte der Evangelien nebeneinander – bis zu vier Fassungen im Wortlaut, mit Hinweis auf den Unterschied |
 | **Zeitleiste** | 10 Epochen und 97 Einträge auf maßstabsgetreuer Achse – biblische Ereignisse, Weltgeschichte, außerbiblische Funde und die Entstehung der Bücher, einzeln filterbar |
 | **Karte** | 188 Orte und Landschaften von Rom bis Susa, nach Epoche filterbar, 9 Wege (Abraham, Auszug, Exil, Wege Jesu, die sieben Gemeinden, drei Missionsreisen, die Fahrt nach Rom), sechs Ausschnitte, freies Ziehen und Vergrößern, Maßstabsbalken, Ortssuche und zu jedem Ort Hintergrund und Bibelstellen |
 | **Merkverse** | Auswendiglernen mit wachsenden Abständen; je Stufe verschwinden mehr Wörter |
@@ -102,9 +102,9 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 
 - **Steckbriefe zu allen 66 Büchern** – Verfasser, Zeit, Anlass, Kernaussage.
   Damit hat jeder Vers von Beginn an eine historische Einordnung.
-- **Vertiefte Artikel zu 113 Schlüsselabschnitten** mit 343 einzeln
-  ausgewiesenen Auslegungen, zusammen **1.346 Verse**. **Jedes der 66 Bücher
-  hat mindestens einen Artikel** – von der Schöpfung über die Bindung Isaaks,
+- **Vertiefte Artikel zu 152 Schlüsselabschnitten** mit 460 einzeln
+  ausgewiesenen Auslegungen, zusammen **1.828 Verse**. **Jedes der 66 Bücher
+  hat mindestens einen Artikel**, und nur noch 24 haben genau einen (vorher 52) – von der Schöpfung über die Bindung Isaaks,
   den Durchzug durchs Meer, David und Goliat, Nathans Gleichnis, den
   aaronitischen Segen und Naamans Heilung bis zu Sämann, Zinsgroschen,
   Emmaus, Kornelius, dem Abendmahl in Korinth und dem Brief nach Laodizea.
@@ -161,7 +161,9 @@ verbunden, statt für sich zu stehen:
   „Askalon“, „Beer-Seba“). Das erreicht **695 der 1189 Kapitel**, also
   deutlich mehr als die 113 Kapitel mit einem Artikel.
 - Beim Lesen eines Evangeliums stehen darunter die **Parallelstellen** in den
-  anderen dreien, mit einem Klick zum Vergleich im Wortlaut.
+  anderen dreien, mit einem Klick zum Vergleich im Wortlaut. Die Synopse
+  umfasst **125 Abschnitte** in sechs Erzählstufen, davon 13 nur bei
+  Johannes, mit 106 Anmerkungen zu dem, was der Vergleich zeigt.
 - **Zeitleiste und Karte sind in beide Richtungen verbunden:** 81 der 97
   Ereignisse tragen einen Ort, jedes verlinkt auf die Karte. Umgekehrt lässt
   sich die Karte auf eine Epoche einschränken – dann bleiben nur die Orte
@@ -315,7 +317,7 @@ node scripts/check-references.mjs
 ```
 
 Geprüft werden Artikel, Querverweise, Lesepläne, Lexikon, Zeitleiste, Vers
-des Tages, die Karte und die Synopse – zurzeit 1438 Angaben. Für die Synopse
+des Tages, die Karte und die Synopse – zurzeit 1768 Angaben. Für die Synopse
 kommen zwei Prüfungen dazu, die sich am fertigen Vergleich sofort rächen
 würden: Kein Abschnitt darf mitten im Satz beginnen, und jedes Zitat in einer
 Anmerkung muss im Wortlaut der Lutherbibel von 1912 wirklich so stehen. Es meldet zugleich, wie weit

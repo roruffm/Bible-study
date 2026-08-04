@@ -581,6 +581,204 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 95 n. Chr.',
     epoch: 'urkirche',
   },
+  /* ------------------------------------ Nachgezogene Artikel: Tora und
+   * Geschichtsbücher */
+  '3mo 19,9': {
+    events: 'Wüstenzeit, im Text am Sinai angesiedelt',
+    written: 'Heiligkeitsgesetz, meist 6./5. Jh. v. Chr.',
+    epoch: 'exil',
+  },
+  '4mo 14,1': {
+    events: 'Wüstenzeit, meist im 13. Jh. v. Chr. verortet',
+    written: 'Ältere Erzählung mit priesterlicher Bearbeitung, 6./5. Jh. v. Chr.',
+    epoch: 'exodus',
+  },
+  '5mo 30,15': {
+    events: 'Im Text: letzte Rede des Mose vor dem Jordan',
+    written: 'Grundform 7. Jh. v. Chr., Endgestalt nach dem Exil',
+    epoch: 'koenige',
+  },
+  'jos 1,1': {
+    events: 'Im Text: Beginn der Landnahme',
+    written: 'Deuteronomistisches Geschichtswerk, 6. Jh. v. Chr.',
+    epoch: 'exodus',
+  },
+  'jos 6,12': {
+    events: 'Im Text: Beginn der Landnahme; archäologisch umstritten',
+    written: 'Deuteronomistisches Geschichtswerk, 6. Jh. v. Chr.',
+    epoch: 'exodus',
+  },
+  'ri 4,1': {
+    events: 'etwa 12./11. Jh. v. Chr.',
+    written: 'Das Lied in Kapitel 5 sehr alt, die Prosafassung jünger',
+    epoch: 'richter',
+  },
+  'ri 16,23': {
+    events: 'etwa 12./11. Jh. v. Chr.',
+    written: 'Ältere Erzählstoffe, im Richterbuch 6. Jh. v. Chr. gerahmt',
+    epoch: 'richter',
+  },
+  'rut 4,13': {
+    events: 'Im Text: Richterzeit',
+    written: 'Umstritten; viele setzen die Perserzeit an, 5./4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  '1sam 3,1': {
+    events: 'etwa 1050 v. Chr.',
+    written: 'Samuelüberlieferung, im 6. Jh. v. Chr. zusammengefügt',
+    epoch: 'richter',
+  },
+  '1sam 8,1': {
+    events: 'etwa 1030 v. Chr.',
+    written: 'Königskritische Schicht wohl nach 587 v. Chr.',
+    epoch: 'koenige',
+  },
+  '2sam 7,1': {
+    events: 'etwa 1000 v. Chr.',
+    written: 'Mehrfach überarbeitet, Endgestalt nach dem Exil',
+    epoch: 'koenige',
+  },
+  '2sam 11,1': {
+    events: 'etwa 990 v. Chr.',
+    written: 'Thronfolgeerzählung, teils sehr alt',
+    epoch: 'koenige',
+  },
+  '1koe 3,16': {
+    events: 'etwa 960 v. Chr.',
+    written: 'Höfische Weisheitsüberlieferung, im 6. Jh. v. Chr. gerahmt',
+    epoch: 'koenige',
+  },
+  '1koe 21,1': {
+    events: 'etwa 860 v. Chr.',
+    written: 'Prophetische Überlieferung, 8./7. Jh. v. Chr.',
+    epoch: 'koenige',
+  },
+  '2koe 17,5': {
+    events: '722 v. Chr.',
+    written: 'Deuteronomistische Deutung nach 587 v. Chr.',
+    epoch: 'koenige',
+  },
+  '2koe 22,8': {
+    events: '622 v. Chr.',
+    written: 'Deuteronomistisches Geschichtswerk, 6. Jh. v. Chr.',
+    epoch: 'koenige',
+  },
+  '2koe 25,1': {
+    events: '587 v. Chr.',
+    written: 'Kurz nach den Ereignissen, im Exil abgeschlossen',
+    epoch: 'exil',
+  },
+  '2chr 36,15': {
+    events: '587 bis 538 v. Chr.',
+    written: 'Perserzeit, 4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'esr 1,1': {
+    events: '538 v. Chr.',
+    written: 'Perserzeit, 4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'neh 2,11': {
+    events: 'etwa 445 v. Chr.',
+    written: 'Nehemia-Denkschrift, kurz nach den Ereignissen',
+    epoch: 'perser',
+  },
+  /* ------------------------ Nachgezogene Artikel: Weisheit und Propheten */
+  'hi 38,1': {
+    events: 'Die Rahmenerzählung nennt keine Zeit',
+    written: 'Umstritten; meist 6.–4. Jh. v. Chr., Gottesreden womöglich später',
+    epoch: 'exil',
+  },
+  'spr 8,22': {
+    events: 'Vor der Schöpfung – keine erzählte Zeit',
+    written: 'Jüngere Schicht der Sprüche, Perserzeit',
+    epoch: 'perser',
+  },
+  'pred 12,1': {
+    events: 'Keine erzählte Zeit',
+    written: 'Hellenistische Zeit, 3. Jh. v. Chr.',
+    epoch: 'hellenismus',
+  },
+  'hes 1,4': {
+    events: '593 v. Chr., im babylonischen Exil',
+    written: 'Kurz danach, mit späterer Schulüberarbeitung',
+    epoch: 'exil',
+  },
+  'hes 18,1': {
+    events: 'Zwischen 593 und 571 v. Chr.',
+    written: 'Exilszeit',
+    epoch: 'exil',
+  },
+  'hes 34,1': {
+    events: 'Nach 587 v. Chr.',
+    written: 'Exilszeit',
+    epoch: 'exil',
+  },
+  'dan 7,9': {
+    events: 'Im Text: babylonische Zeit, gemeint ist das 2. Jh. v. Chr.',
+    written: 'um 165 v. Chr.',
+    epoch: 'hellenismus',
+  },
+  'dan 9,1': {
+    events: 'Im Text: 539 v. Chr., gemeint ist das 2. Jh. v. Chr.',
+    written: 'um 165 v. Chr.',
+    epoch: 'hellenismus',
+  },
+  'hos 1,2': {
+    events: 'etwa 750–725 v. Chr., kurz vor dem Untergang des Nordreichs',
+    written: 'Sammlung im 8. Jh. v. Chr., judäische Bearbeitung später',
+    epoch: 'koenige',
+  },
+  'joel 1,1': {
+    events: 'Nicht sicher datierbar',
+    written: 'Meist Perserzeit, 5./4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'am 7,10': {
+    events: 'etwa 760 v. Chr.',
+    written: 'Sammlung kurz danach, spätere Ergänzungen',
+    epoch: 'koenige',
+  },
+  'jona 1,1': {
+    events: 'Im Text: 8. Jh. v. Chr.; das Buch erzählt eine Lehrgeschichte',
+    written: 'Meist nachexilisch, 5./4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'jona 3,1': {
+    events: 'Im Text: 8. Jh. v. Chr.',
+    written: 'Meist nachexilisch, 5./4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'mi 5,1': {
+    events: 'Assyrische Bedrohung, spätes 8. Jh. v. Chr.',
+    written: '8. Jh. v. Chr., Umfang der späteren Bearbeitung umstritten',
+    epoch: 'koenige',
+  },
+  'nah 3,1': {
+    events: 'Der Fall Ninives 612 v. Chr.',
+    written: 'Kurz vor oder nach 612 v. Chr.',
+    epoch: 'koenige',
+  },
+  'hab 3,17': {
+    events: 'Aufstieg Babylons, um 605 v. Chr.',
+    written: 'Kapitel 3 möglicherweise später angefügt',
+    epoch: 'koenige',
+  },
+  'hag 2,1': {
+    events: '520 v. Chr., auf den Tag datiert',
+    written: 'Kurz nach den Ereignissen',
+    epoch: 'perser',
+  },
+  'sach 4,1': {
+    events: '520/519 v. Chr.',
+    written: 'Kurz nach den Ereignissen',
+    epoch: 'perser',
+  },
+  'mal 3,8': {
+    events: 'Perserzeit, 5. Jh. v. Chr.',
+    written: '5. Jh. v. Chr.',
+    epoch: 'perser',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

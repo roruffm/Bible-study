@@ -3063,6 +3063,1182 @@ export const COMMENTARY: CommentaryEntry[] = [
       },
     ],
   },
+
+  /* ================================================================
+   * Nachgezogen: Bücher, die bisher nur einen Artikel hatten.
+   * Schwerpunkt Geschichtsbücher und Propheten – sie tragen die
+   * historische Linie und sind ohne Einordnung am schwersten zu lesen.
+   * ================================================================ */
+
+  {
+    book: '3mo',
+    chapter: 19,
+    from: 9,
+    to: 18,
+    title: 'Die Nächstenliebe im Heiligkeitsgesetz',
+    historicalShort:
+      'Der Satz „Du sollst deinen Nächsten lieben wie dich selbst“ steht nicht im Neuen Testament zuerst, sondern hier – mitten in einer Reihe sehr handfester Sozialvorschriften über Ernte, Lohn und Rechtsprechung.',
+    historicalLong:
+      'Kapitel 17–26 fasst man als „Heiligkeitsgesetz“ zusammen. Auffällig ist, wie unpathetisch die Liebe hier bestimmt wird: Man lässt die Ränder des Feldes ungeerntet, damit Arme und Fremde etwas finden; man zahlt den Tagelohn noch am selben Abend, weil er davon lebt; man beugt das Recht nicht, weder zugunsten des Armen noch des Mächtigen. Erst am Ende dieser Kette steht der berühmte Satz. Liebe ist hier keine Empfindung, sondern eine Weise, mit Besitz und Macht umzugehen. Neun Verse später wird dieselbe Liebe ausdrücklich auf den Fremden ausgeweitet.',
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Rabbi Akiba nannte diesen Vers „das große Prinzip der Tora“. Hillel gab dieselbe Sache negativ wieder: Was dir verhasst ist, tu deinem Nächsten nicht an – das sei die ganze Tora, alles andere Auslegung.',
+      },
+      {
+        tradition: 'Neues Testament',
+        text: 'Jesus verbindet den Vers mit dem Schma Israel zum Doppelgebot; Paulus nennt ihn die Erfüllung des ganzen Gesetzes. Beide zitieren, sie erfinden nicht.',
+      },
+      {
+        tradition: 'Sozialethische Lesart',
+        text: 'Die Reihenfolge des Textes wird ernst genommen: Weil die Liebe am Ende konkreter Anweisungen steht, ist sie an ihnen zu messen – am Lohn, am Erntesaum, am Gerichtsverfahren.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 19, verse: 34, note: 'Dasselbe für den Fremden' },
+      { book: 'mk', chapter: 12, verse: 31, note: 'Das Doppelgebot' },
+      { book: 'roem', chapter: 13, verse: 9 },
+    ],
+  },
+  {
+    book: '4mo',
+    chapter: 14,
+    from: 1,
+    to: 10,
+    title: 'Der Aufstand nach dem Kundschafterbericht',
+    historicalShort:
+      'Zwölf Kundschafter kommen aus dem Land zurück, zehn raten ab. Die Gemeinde will umkehren nach Ägypten – der Wendepunkt, an dem aus einer kurzen Wanderung vierzig Jahre werden.',
+    historicalLong:
+      'Der Bericht selbst ist unstrittig: Das Land ist fruchtbar. Strittig ist die Bewertung der Risiken. Die Mehrheit beschreibt die Bewohner als Riesen und sich selbst als Heuschrecken – eine Selbsteinschätzung, keine Beobachtung. Erzählerisch ist bemerkenswert, dass die Strafe genau in dem besteht, was das Volk sich selbst wünscht: „Wären wir doch in dieser Wüste gestorben.“ Die Zahl vierzig entspricht der Zahl der Kundschaftertage – ein Jahr für jeden Tag.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Text verbindet ältere Erzählstoffe mit priesterlicher Bearbeitung. Er erklärt rückblickend, warum eine Generation das Land nicht erreichte, und richtet sich an Leser, die selbst zwischen Aufbruch und Rückkehr schwanken – etwa im Exil.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Sünde der Kundschafter gilt als Musterfall der üblen Nachrede: Nicht die Angst wird getadelt, sondern dass sie das Land schlechtredeten und damit die Gemeinschaft entmutigten.',
+      },
+      {
+        tradition: 'Christliche Predigttradition',
+        text: 'Der Hebräerbrief nimmt die Episode als Warnung auf: Die Verheißung war da, das Hören nützte nichts, weil es nicht mit Glauben verbunden war.',
+      },
+    ],
+    crossRefs: [
+      { book: '4mo', chapter: 13, verse: 33, note: '„Wir waren wie Heuschrecken“' },
+      { book: 'hebr', chapter: 3, verse: 19 },
+      { book: 'ps', chapter: 95, verse: 8 },
+    ],
+  },
+  {
+    book: '5mo',
+    chapter: 30,
+    from: 15,
+    to: 20,
+    title: 'Die Wahl zwischen Leben und Tod',
+    historicalShort:
+      'Am Ende der Rede des Mose steht keine Drohung, sondern eine Wahl: Leben und Tod werden vorgelegt, und der Text sagt gleich dazu, was zu wählen ist.',
+    historicalLong:
+      'Die Form entspricht altorientalischen Vasallenverträgen: Vorgeschichte, Bestimmungen, Zeugen, Segen und Fluch. 5. Mose übernimmt dieses Muster – nur steht an der Stelle des Großkönigs Gott, und an der Stelle des unterworfenen Kleinkönigs steht ein ganzes Volk. Dass Himmel und Erde als Zeugen aufgerufen werden, gehört zur Vertragssprache. Entstanden ist das Buch in seiner Grundform wohl im 7. Jahrhundert v. Chr.; die Reform Josias beruft sich auf ein „gefundenes Gesetzbuch“, das die Forschung meist mit einer Vorform des Deuteronomiums gleichsetzt.',
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Vers gilt als klassischer Beleg für die Willensfreiheit: Die Wahl liegt wirklich beim Menschen, sonst wäre die Aufforderung sinnlos.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther und Calvin lasen die Stelle im Licht von Römer 7: Der Mensch erkennt das Gute und wählt es doch nicht – gerade darin zeige das Gesetz, dass es Gnade braucht.',
+      },
+      {
+        tradition: 'Bundestheologische Lesart',
+        text: 'Segen und Fluch sind keine willkürlichen Belohnungen, sondern die inneren Folgen eines Weges. Der Text beschreibt weniger ein Gericht als eine Richtung.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 11, verse: 26 },
+      { book: 'jos', chapter: 24, verse: 15, note: 'Dieselbe Wahl in Sichem' },
+      { book: 'jer', chapter: 21, verse: 8 },
+    ],
+  },
+  {
+    book: 'jos',
+    chapter: 1,
+    from: 1,
+    to: 9,
+    title: '„Sei getrost und unverzagt“',
+    historicalShort:
+      'Der Amtsantritt Josuas nach dem Tod des Mose. Dreimal wird ihm derselbe Zuspruch gesagt – ein Hinweis darauf, dass die Furcht das eigentliche Thema ist.',
+    historicalLong:
+      'Die Wiederholung ist kein Stilfehler, sondern Form: Solche Einsetzungsreden folgen einem festen Muster aus Zuspruch, Auftrag und Beistandszusage, das sich auch bei Königseinsetzungen findet. Neu ist der Zusatz, das Gesetzbuch solle „nicht von deinem Munde kommen“ – der Anführer wird an dieselbe Weisung gebunden wie alle anderen. Das Buch Josua gehört nach heutiger Sicht zum deuteronomistischen Geschichtswerk, das die Geschichte Israels rückblickend vom Exil her deutet.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt ist die theologische Rahmung des Buches, verfasst deutlich später als die geschilderten Ereignisse. Er will weniger von Landnahme berichten als Leser ermutigen, die ihr Land verloren haben.',
+      },
+      {
+        tradition: 'Klassische kirchliche Auslegung',
+        text: 'Der Zuspruch wird auf jede Amtsübernahme und jeden Aufbruch übertragen: Nicht die eigene Stärke trägt, sondern die Zusage der Gegenwart Gottes.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Wer die Landverheißung liest, muss mitlesen, was sie für die Bewohner des Landes bedeutete. Die Rezeptionsgeschichte dieses Kapitels – von der Kolonisierung bis in heutige Konflikte – ist Teil dessen, was der Text ausgelöst hat.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 31, verse: 7 },
+      { book: 'jos', chapter: 1, verse: 8, note: 'Die Bindung an die Weisung' },
+      { book: 'hebr', chapter: 13, verse: 5 },
+    ],
+  },
+  {
+    book: 'jos',
+    chapter: 6,
+    from: 12,
+    to: 21,
+    title: 'Der Fall Jerichos',
+    historicalShort:
+      'Sieben Tage, sieben Priester, sieben Widderhörner – und am siebten Tag sieben Umzüge. Die Erzählung ist als Liturgie gebaut, nicht als Schlachtbericht.',
+    historicalLong:
+      'Archäologisch ist Jericho der am heftigsten umstrittene Ort des Alten Testaments. Kathleen Kenyon fand in den 1950er Jahren für die üblicherweise angenommene Zeit Josuas keine Stadtmauer und keine nennenswerte Siedlung; ältere Grabungen von John Garstang hatten das Gegenteil behauptet. Die Fundlage lässt beide Deutungen zu: eine spätere Datierung des Ereignisses oder eine literarische Ausgestaltung eines kleineren Vorgangs. Der Bann über die Stadt – die vollständige Vernichtung – gehört zu den Texten, an denen sich die Auslegung bis heute abarbeitet.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Erzählung ist ein Kultätiologie: Sie erklärt einen Ruinenhügel und feiert die Landgabe als Werk Gottes, nicht als militärische Leistung. Die sieben Umzüge lesen sich wie ein Prozessionsritual.',
+      },
+      {
+        tradition: 'Kirchliche Auslegungsgeschichte',
+        text: 'Origenes und viele nach ihm lasen die Eroberung durchweg sinnbildlich – als Kampf gegen die eigenen Laster –, gerade weil ihnen die wörtliche Lesart moralisch untragbar erschien.',
+      },
+      {
+        tradition: 'Ethische Rückfrage',
+        text: 'Ein erheblicher Teil heutiger Auslegung weigert sich, den Bann zu entschärfen. Der Text bleibe eine Zumutung, und die Aufgabe bestehe darin, das auszuhalten und nicht theologisch zu glätten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jos', chapter: 6, verse: 25, note: 'Rahab wird verschont' },
+      { book: 'hebr', chapter: 11, verse: 30 },
+      { book: 'jak', chapter: 2, verse: 25 },
+    ],
+  },
+  {
+    book: 'ri',
+    chapter: 4,
+    from: 1,
+    to: 16,
+    title: 'Debora',
+    historicalShort:
+      'Eine Prophetin richtet Israel, ein Feldherr will nur mit ihr in die Schlacht ziehen – und der Sieg wird am Ende einer dritten Frau zugeschrieben. Das Kapitel bricht mit den Erwartungen seiner Zeit an mehreren Stellen zugleich.',
+    historicalLong:
+      'Das Lied in Kapitel 5 gilt sprachlich als einer der ältesten Texte der Bibel überhaupt, möglicherweise 12./11. Jahrhundert v. Chr.; die Prosafassung in Kapitel 4 ist jünger und erzählt dieselbe Sache etwas anders. Militärisch entscheidend ist das Gelände: Siseras eisenbeschlagene Streitwagen waren in der Ebene überlegen und im aufgeweichten Boden am Bach Kischon wertlos. Das Lied nennt genau das – ein Wolkenbruch, der die Wagen im Schlamm festsetzte.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Debora ist die einzige Frau im Richterbuch, die selbst richtet und nicht nur Rettung vermittelt. Dass ein so alter Text sie derart selbstverständlich schildert, gilt als Hinweis darauf, dass die späteren Rollenbilder nicht durchweg gegolten haben.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Debora zählt in der rabbinischen Tradition zu den sieben Prophetinnen Israels. Ihre Sitzung unter der Palme wird als offenes Gericht gedeutet, zugänglich für jeden.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Der Abschnitt wird häufig gegen die Annahme angeführt, biblische Führung sei durchgehend männlich gedacht. Zugleich wird gefragt, warum die Wirkungsgeschichte dieser Text so lange übergangen hat.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ri', chapter: 5, verse: 21, note: 'Der Bach Kison im Deboralied' },
+      { book: 'ri', chapter: 4, verse: 21, note: 'Jael' },
+      { book: 'hebr', chapter: 11, verse: 32 },
+    ],
+  },
+  {
+    book: 'ri',
+    chapter: 16,
+    from: 23,
+    to: 31,
+    title: 'Das Ende Simsons',
+    historicalShort:
+      'Der stärkste der Richter endet blind, als Belustigung im Tempel des feindlichen Gottes – und reißt im Sterben mehr Menschen mit sich als in seinem ganzen Leben.',
+    historicalLong:
+      'Die Simsonerzählungen unterscheiden sich von den übrigen Richtergeschichten: Simson führt kein Heer, sondern handelt allein, meist aus persönlichen Motiven. Der Dagon-Tempel in Gaza passt zu ausgegrabenen Philisteranlagen, deren Dach von zwei zentralen Säulen getragen wurde – zwischen ihnen stand ein Blickfang für die Menge auf dem Dach. Das Buch schließt diese Reihe nüchtern ab, ohne den Helden zu verklären.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Erzählung trägt Züge älterer Heldensagen und wurde in das Richterbuch eingebaut, um dessen Grundthese zu stützen: Ohne Ordnung tut jeder, was ihn gut dünkt.',
+      },
+      {
+        tradition: 'Klassische kirchliche Auslegung',
+        text: 'Der Hebräerbrief nennt Simson unter den Glaubenszeugen. Die Auslegung hat daran lange Anstoß genommen und betont, dass Gott auch durch zerrissene Menschen handelt.',
+      },
+      {
+        tradition: 'Kritische Lesart',
+        text: 'Das letzte Gebet Simsons bittet ausdrücklich um Rache. Viele Ausleger halten fest, dass der Text dies erzählt, ohne es zu billigen – die Rahmung des Buches wertet die ganze Epoche als Verfall.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ri', chapter: 21, verse: 25, note: 'Das Fazit des Buches' },
+      { book: 'hebr', chapter: 11, verse: 32 },
+    ],
+  },
+  {
+    book: 'rut',
+    chapter: 4,
+    from: 13,
+    to: 22,
+    title: 'Der Stammbaum am Ende des Buches',
+    historicalShort:
+      'Die Erzählung endet mit einer Genealogie, die auf David zuläuft. Damit steht am Anfang der Königsfamilie eine Moabiterin – ausgerechnet aus dem Volk, dem 5. Mose 23 den Zugang zur Gemeinde verwehrt.',
+    historicalLong:
+      'Das Buch spielt „zur Zeit der Richter“, wurde aber vermutlich deutlich später geschrieben. Viele Ausleger sehen darin einen Einspruch gegen die strenge Trennungspolitik unter Esra und Nehemia, die Mischehen auflösen ließ. Der Schluss ist dann kein frommer Anhang, sondern das Argument: Ohne diese Ausländerin gäbe es David nicht. Matthäus nimmt den Faden auf und nennt Rut ausdrücklich im Stammbaum Jesu – eine von vier Frauen dort, die alle nicht in ein glattes Bild passen.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Datierung ist umstritten. Wer das Buch in die Perserzeit setzt, liest es als bewusste Gegenstimme zu Esra 9–10; wer es älter datiert, sieht eher eine Familienerzählung mit davidischem Ausklang.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Rut wird als Musterfall des Übertritts gelesen. Ihr Satz „Dein Volk ist mein Volk“ gilt als Kern der Zugehörigkeit – nicht Abstammung, sondern Bindung.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Boas als „Löser“ wurde früh auf Christus gedeutet. Neuere Auslegung betont daneben die soziale Seite: Das Löserrecht ist eine konkrete Rechtsfigur zum Schutz verarmter Familien.',
+      },
+    ],
+    crossRefs: [
+      { book: 'rut', chapter: 1, verse: 16, note: '„Dein Volk ist mein Volk“' },
+      { book: 'mt', chapter: 1, verse: 5, note: 'Rut im Stammbaum Jesu' },
+      { book: '5mo', chapter: 23, verse: 3 },
+    ],
+  },
+  {
+    book: '1sam',
+    chapter: 3,
+    from: 1,
+    to: 14,
+    title: 'Die Berufung Samuels',
+    historicalShort:
+      '„Des HERRN Wort war teuer zu der Zeit“ – der Text beginnt mit einer Mangelanzeige. Was folgt, ist eine Berufung, die ein Kind dreimal missversteht.',
+    historicalLong:
+      'Silo war vor Jerusalem der zentrale Heiligtumsort; hier stand die Lade. Der alte Priester Eli und seine Söhne verkörpern eine Ordnung, die abläuft – die Botschaft, die Samuel empfängt, richtet sich gegen das eigene Haus seines Lehrers. Bemerkenswert ist die Nüchternheit der Szene: kein Donner, keine Erscheinung, sondern eine Stimme, die für die eines Menschen gehalten wird. Erst Eli erkennt, was geschieht, und weist den Jungen an, wie er antworten soll.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt leitet den Übergang von der Richter- zur Königszeit ein und begründet Samuels Autorität. Die Kritik am Priesterhaus Elis bereitet dessen Ablösung vor.',
+      },
+      {
+        tradition: 'Spirituelle Auslegung',
+        text: 'Die Szene gilt als klassisches Bild geistlicher Begleitung: Der Ältere erkennt, was dem Jüngeren geschieht, und tritt dann zurück. Elis Rat ist der Wendepunkt, obwohl das Wort gegen ihn ergeht.',
+      },
+      {
+        tradition: 'Kirchliche Predigttradition',
+        text: 'Die Antwort „Rede, denn dein Knecht hört“ ist zur Formel für Berufung überhaupt geworden – auch dort, wo der Text von Berufung ins Amt gar nicht spricht.',
+      },
+    ],
+    crossRefs: [
+      { book: '1sam', chapter: 2, verse: 12, note: 'Die Söhne Elis' },
+      { book: 'jer', chapter: 7, verse: 12, note: 'Silo als Warnung' },
+      { book: '1sam', chapter: 3, verse: 19 },
+    ],
+  },
+  {
+    book: '1sam',
+    chapter: 8,
+    from: 1,
+    to: 22,
+    title: '„Gib uns einen König“',
+    historicalShort:
+      'Das Volk fordert einen König, „wie ihn alle Völker haben“. Samuel warnt mit einer sehr genauen Liste dessen, was ein Königtum kostet – und Gott lässt es trotzdem zu.',
+    historicalLong:
+      'Der Text ist eines der schärfsten machtkritischen Stücke der Bibel. Die Aufzählung – Söhne für das Heer, Töchter für den Hof, der Zehnte von Feld und Herde, Zwangsarbeit – entspricht dem, was aus altorientalischen Verwaltungsarchiven über Hofhaltungen bekannt ist. Die Forschung liest hier meist zwei Stimmen: eine königsfreundliche, die Saul als Retter zeigt, und eine königskritische, die im Wunsch nach einem König eine Absage an Gott sieht. Beide stehen unausgeglichen nebeneinander.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die königskritische Schicht dürfte nach dem Zusammenbruch der Monarchie entstanden sein: Wer den Untergang erlebt hat, liest die Anfänge anders.',
+      },
+      {
+        tradition: 'Politische Theologie',
+        text: 'Der Abschnitt wird als biblische Grundlage einer Herrschaftskritik gelesen: Macht wird nicht verteufelt, aber nüchtern nach ihren Kosten befragt – und der Preis wird vorher genannt.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Ein Teil der Tradition sieht im Königtum eine erlaubte, aber nicht gebotene Einrichtung: Gott gibt nach, weil das Volk es will, nicht weil es gut wäre.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 17, verse: 14, note: 'Das Königsgesetz' },
+      { book: '1sam', chapter: 12, verse: 17 },
+      { book: 'hos', chapter: 13, verse: 11 },
+    ],
+  },
+  {
+    book: '2sam',
+    chapter: 7,
+    from: 1,
+    to: 17,
+    title: 'Die Verheißung an David',
+    historicalShort:
+      'David will Gott ein Haus bauen. Die Antwort dreht das Wort um: Nicht David baut Gott ein Haus, sondern Gott baut David eines – eine Dynastie.',
+    historicalLong:
+      'Das Wortspiel mit „Haus“ trägt das ganze Kapitel: Palast, Tempel und Dynastie heißen im Hebräischen gleich. Aus dieser Zusage entwickelt sich die messianische Erwartung: ein Nachkomme Davids, dessen Thron Bestand hat. Als die Dynastie 587 v. Chr. endete, wurde die Verheißung nicht aufgegeben, sondern in die Zukunft verlegt. Das Neue Testament setzt genau hier an, wenn es Jesus als „Sohn Davids“ bezeichnet.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Text ist mehrfach überarbeitet. Die unbedingte Zusage und die Bedingung des Gehorsams stehen in Spannung – ein Hinweis darauf, dass nach dem Exil nachgetragen wurde, was die Katastrophe erklärbar machte.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Verheißung bleibt offen und wird auf einen künftigen Gesalbten bezogen. Die Erwartung ist irdisch und politisch gedacht: Friede, Recht und Bestand für Israel.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Die Zusage wird auf Jesus bezogen, ausdrücklich schon in der Weihnachtsgeschichte des Lukas. Umstritten bleibt, wie sich das zur bleibenden Erwartung des Judentums verhält.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 89, verse: 4 },
+      { book: 'lk', chapter: 1, verse: 32, note: '„Den Thron seines Vaters David“' },
+      { book: 'jes', chapter: 9, verse: 7 },
+    ],
+  },
+  {
+    book: '2sam',
+    chapter: 11,
+    from: 1,
+    to: 27,
+    title: 'David und Batseba',
+    historicalShort:
+      'Der König bleibt zu Hause, während sein Heer im Feld steht. Was folgt, erzählt die Bibel über ihren größten König ohne jede Beschönigung: Machtmissbrauch, Vertuschung und ein Mord per Befehl.',
+    historicalLong:
+      'Der erste Satz setzt den Ton: „zur Zeit, wann die Könige pflegen auszuziehen“ – und David zieht nicht aus. Die Erzählung vermeidet jedes Innenleben; sie berichtet nur Handlungen, in immer kürzeren Schritten. Bemerkenswert ist die Rolle Urias: Der Hetiter, also ein Ausländer, verhält sich vorbildlich, während der König Israels alle Regeln bricht. Dass eine Königsgeschichte des Alten Orients ihren Herrscher so darstellt, hat kaum Parallelen – Hofchroniken feierten üblicherweise.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt gehört zur sogenannten Thronfolgeerzählung, einem literarisch außergewöhnlich dichten Werk. Es erklärt, warum die Nachfolge so verlief, wie sie verlief – und spart die Schattenseiten nicht aus.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Der Text nennt Batsebas Sicht mit keinem Wort. Neuere Auslegung besteht darauf, das Machtgefälle zu benennen: Eine Frau, die der König holen lässt, hat keine freie Wahl. Die verbreitete Rede von einer „Affäre“ verfehle den Vorgang.',
+      },
+      {
+        tradition: 'Kirchliche Bußtradition',
+        text: 'Psalm 51 wird traditionell mit dieser Szene verbunden und gehört zu den sieben Bußpsalmen. Die Verbindung ist eine spätere Zuschreibung, hat die Wirkungsgeschichte aber stark geprägt.',
+      },
+    ],
+    crossRefs: [
+      { book: '2sam', chapter: 12, verse: 7, note: '„Du bist der Mann!“' },
+      { book: 'ps', chapter: 51, verse: 3 },
+      { book: '2sam', chapter: 11, verse: 27, note: 'Das Urteil des Erzählers' },
+    ],
+  },
+  {
+    book: '1koe',
+    chapter: 3,
+    from: 16,
+    to: 28,
+    title: 'Das Urteil Salomos',
+    historicalShort:
+      'Zwei Prostituierte, ein lebendes und ein totes Kind, kein Zeuge. Salomo löst den Fall nicht durch Beweise, sondern durch eine Probe, die den Beweis erzwingt.',
+    historicalLong:
+      'Die Erzählung ist die Illustration zu der Bitte, die Salomo im selben Kapitel äußert: um ein „hörendes Herz“, um unterscheiden zu können. Erzählerisch bedeutsam ist, wer hier vor den König tritt: Zwei Frauen ohne Rechtsstand und ohne Fürsprecher bekommen unmittelbaren Zugang zum obersten Gericht. Ähnliche Weisheitserzählungen sind aus Indien und dem hellenistischen Raum bekannt; die biblische Fassung ist die älteste erhaltene.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Text gehört zur Weisheitsüberlieferung am Königshof und dient der Legitimation: Er zeigt, wozu die erbetene Weisheit gut ist, und begründet Salomos Ruf.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Betont wird, dass das Urteil nicht auf Allwissenheit beruht, sondern auf Menschenkenntnis: Die wahre Mutter gibt lieber das Kind auf, als es zu verlieren. Weisheit ist hier Beobachtungsgabe.',
+      },
+      {
+        tradition: 'Rechtsgeschichtliche Lesart',
+        text: 'Der Fall wird als Beispiel für Beweisnot gelesen. Das Schwert ist kein Vollstreckungsmittel, sondern ein Verfahren – riskant, aber im Ergebnis gerecht.',
+      },
+    ],
+    crossRefs: [
+      { book: '1koe', chapter: 3, verse: 9, note: 'Die Bitte um ein hörendes Herz' },
+      { book: 'spr', chapter: 2, verse: 6 },
+      { book: 'jak', chapter: 1, verse: 5 },
+    ],
+  },
+  {
+    book: '1koe',
+    chapter: 21,
+    from: 1,
+    to: 16,
+    title: 'Nabots Weinberg',
+    historicalShort:
+      'Der König will einen Weinberg kaufen, der Besitzer lehnt ab – und die Königin löst das Problem mit einem inszenierten Prozess. Ein Lehrstück über die Grenzen königlicher Macht.',
+    historicalLong:
+      'Nabots Weigerung ist keine Sturheit: Erbbesitz galt als unverkäuflich, weil er die Familie über Generationen trug; 3. Mose 25 verbietet den endgültigen Verkauf ausdrücklich. Ahab akzeptiert das zunächst und schmollt. Isebel, aufgewachsen am phönizischen Hof mit absolutem Königtum, versteht die Zurückhaltung nicht – für sie ist der Fall eine Frage der Verfügungsgewalt. Sie hält die Form ein: Fasten, Versammlung, zwei Zeugen, wie das Gesetz sie verlangt. Gerade die korrekte Form macht den Justizmord möglich.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Erzählung stammt aus prophetischen Kreisen und stellt zwei Rechtsauffassungen gegeneinander: israelitisches Erbrecht gegen kanaanäisch-phönizisches Königsrecht.',
+      },
+      {
+        tradition: 'Sozialethische Auslegung',
+        text: 'Der Text gilt als früher Beleg dafür, dass Recht und Gesetzestreue auseinanderfallen können. Alle Formvorschriften wurden gewahrt, und das Ergebnis war Mord.',
+      },
+      {
+        tradition: 'Prophetische Tradition',
+        text: 'Elias Auftritt im Weinberg – „Hast du getötet und auch geerbt?“ – gilt als Musterfall prophetischer Machtkritik: Der Prophet stellt den König nicht wegen Gottlosigkeit, sondern wegen Unrechts an einem Einzelnen.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 25, verse: 23, note: 'Land gehört nicht auf Dauer' },
+      { book: '1koe', chapter: 21, verse: 19, note: 'Elias Wort an Ahab' },
+      { book: 'mi', chapter: 2, verse: 2 },
+    ],
+  },
+  {
+    book: '2koe',
+    chapter: 17,
+    from: 5,
+    to: 23,
+    title: 'Der Untergang des Nordreichs',
+    historicalShort:
+      '722 v. Chr. fällt Samaria nach dreijähriger Belagerung. Die Oberschicht wird verschleppt, das Nordreich verschwindet als politische Größe – und der Text erklärt ausführlich, warum.',
+    historicalLong:
+      'Der Vorgang ist von außen gut belegt: Assyrische Annalen nennen die Eroberung Samarias und die Zahl der Deportierten. Assyrien betrieb systematischen Bevölkerungsaustausch, um Aufstände unmöglich zu machen – deshalb wurden zugleich Menschen aus anderen Reichsteilen angesiedelt. Aus dieser Mischbevölkerung entstand später die Gruppe, die im Neuen Testament als Samariter erscheint. Der biblische Text verwendet mehr Raum auf die Deutung als auf den Vorgang: Nicht Assyriens Stärke wird als Ursache genannt, sondern das eigene Verhalten.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der lange Deutungsabschnitt ist deuteronomistisch geprägt und wurde nach 587 v. Chr. geschrieben. Judäische Leser sollten am Beispiel des Nordens verstehen, was ihnen selbst widerfahren war.',
+      },
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Die Rede von den „zehn verlorenen Stämmen“ ist eine spätere Zuspitzung. Deportiert wurde die Oberschicht; ein erheblicher Teil der Bevölkerung blieb im Land oder floh nach Juda, dessen Hauptstadt in dieser Zeit stark wuchs.',
+      },
+      {
+        tradition: 'Theologische Rückfrage',
+        text: 'Ein Teil der Auslegung wendet sich gegen das Schema Schuld–Strafe: Es erkläre zwar rückblickend, tauge aber nicht als Deutungsmuster für jede Katastrophe. Das Buch Hiob widerspricht ihm ausdrücklich.',
+      },
+    ],
+    crossRefs: [
+      { book: '2koe', chapter: 17, verse: 24, note: 'Die Neuansiedlung' },
+      { book: 'hos', chapter: 13, verse: 16 },
+      { book: 'joh', chapter: 4, verse: 9, note: 'Die Folgen bis ins Neue Testament' },
+    ],
+  },
+  {
+    book: '2koe',
+    chapter: 22,
+    from: 8,
+    to: 20,
+    title: 'Das gefundene Gesetzbuch',
+    historicalShort:
+      'Bei Renovierungsarbeiten am Tempel taucht ein Buch auf. Der König zerreißt seine Kleider, als es ihm vorgelesen wird – und leitet die tiefgreifendste Reform der Königszeit ein.',
+    historicalLong:
+      'Die Forschung setzt das gefundene Buch meist mit einer Vorform des Deuteronomiums gleich: Die Reform Josias – Zentralisierung des Opfers auf Jerusalem, Beseitigung der Höhenheiligtümer – entspricht genau dessen Forderungen. Ob das Buch tatsächlich gefunden oder für diesen Zweck verfasst wurde, ist seit dem 19. Jahrhundert umstritten. Bemerkenswert ist, wer befragt wird: nicht Jeremia, der zu dieser Zeit bereits auftrat, sondern die Prophetin Hulda. Ihr Wort entscheidet über die Echtheit.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Reform von 622 v. Chr. gilt als Schlüsseldatum für die Entstehung der Bibel: Von hier aus wurden ältere Überlieferungen gesammelt, geordnet und gedeutet.',
+      },
+      {
+        tradition: 'Traditionelle Auslegung',
+        text: 'Der Bericht wird beim Wort genommen: Ein verschollenes Gesetz kommt wieder ans Licht, und der König handelt daraufhin unverzüglich. Die Reform ist Gehorsam, nicht Konstruktion.',
+      },
+      {
+        tradition: 'Wirkungsgeschichtliche Lesart',
+        text: 'Dass eine Prophetin die Echtheit bestätigt, wurde in der Auslegungsgeschichte lange kaum beachtet. Neuere Arbeiten heben Hulda als eine der einflussreichsten Gestalten der Königszeit hervor.',
+      },
+    ],
+    crossRefs: [
+      { book: '2koe', chapter: 23, verse: 25, note: 'Das Urteil über Josia' },
+      { book: '5mo', chapter: 12, verse: 5, note: 'Die Forderung der Zentralisierung' },
+      { book: '2koe', chapter: 23, verse: 29, note: 'Sein früher Tod bei Megiddo' },
+    ],
+  },
+  {
+    book: '2koe',
+    chapter: 25,
+    from: 1,
+    to: 21,
+    title: 'Der Fall Jerusalems',
+    historicalShort:
+      '587 v. Chr. endet nach anderthalbjähriger Belagerung das Königreich Juda. Stadt und Tempel brennen, der letzte König wird geblendet, die Oberschicht verschleppt. Kein Ereignis hat das Alte Testament stärker geprägt.',
+    historicalLong:
+      'Der Bericht ist knapp und ohne Deutung – umso härter. Die babylonische Chronik bestätigt die Ereignisse von außen; die Lachisch-Briefe, Tonscherben mit Meldungen aus den letzten Wochen, geben einen Eindruck vom Zusammenbruch der Verteidigung. Was danach begann, war paradox: Nicht das Ende des Glaubens, sondern seine Umformung. Ohne Tempel und Staat entstanden Sammlung und Verschriftlichung der Überlieferung, Sabbat und Beschneidung wurden zu tragenden Kennzeichen. Ein erheblicher Teil des Alten Testaments hat in dieser Zeit seine Gestalt gefunden.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Das Exil ist der Angelpunkt der alttestamentlichen Literaturgeschichte. Vieles, was zuvor mündlich oder in Einzelstücken vorlag, wurde nun zusammengefügt und im Licht der Katastrophe gedeutet.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Tag der Zerstellung – der 9. Aw – ist bis heute Fasttag und erinnert an beide Tempelzerstörungen. Die Klagelieder werden an ihm gelesen.',
+      },
+      {
+        tradition: 'Theologische Deutung',
+        text: 'Umstritten bleibt, wie weit sich die Katastrophe als Strafe deuten lässt. Die Königsbücher tun es; die Klagelieder halten daneben die reine Klage offen, ohne sie aufzulösen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'klgl', chapter: 1, verse: 1 },
+      { book: 'ps', chapter: 137, verse: 1 },
+      { book: 'jer', chapter: 39, verse: 5, note: 'Derselbe Vorgang bei Jeremia' },
+    ],
+  },
+  {
+    book: '2chr',
+    chapter: 36,
+    from: 15,
+    to: 23,
+    title: 'Das offene Ende der Chronik',
+    historicalShort:
+      'Die hebräische Bibel endet nicht mit einem Propheten, sondern hier: mit dem Erlass des Kyros und dem Satz „Wer nun unter euch seines Volkes ist, der ziehe hinauf“. Ein Buchschluss, der eine Tür aufstößt.',
+    historicalLong:
+      'In der jüdischen Anordnung der Schriften steht die Chronik am Ende – anders als in christlichen Bibeln. Das Buch erzählt dieselbe Geschichte wie die Königsbücher noch einmal, aber mit anderem Interesse: Der Norden fehlt fast ganz, der Tempel steht im Mittelpunkt, und David erscheint vor allem als Organisator des Gottesdienstes. Der Schluss bricht mitten im Satz des Kyros-Erlasses ab; Esra 1 setzt genau dort wieder an. Der Kyros-Zylinder belegt die persische Politik der Kultrückführung, ohne Israel eigens zu nennen.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Chronik entstand in der Perserzeit, rund zwei Jahrhunderte nach den Königsbüchern. Sie schreibt Geschichte für eine Gemeinde, die keinen Staat mehr hat, aber einen Tempel – deshalb die Gewichtung.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Dass die Schriften mit einer Aufforderung zum Aufbruch enden, wird als bewusstes Signal gelesen: Die Sammlung schließt nicht mit einem Punkt, sondern mit einem offenen Weg.',
+      },
+      {
+        tradition: 'Vergleichende Lesart',
+        text: 'Der Vergleich mit den Königsbüchern zeigt, wie unterschiedlich dieselben Ereignisse erzählt werden können. Die Bibel selbst überliefert also mehr als eine Geschichtsdarstellung nebeneinander.',
+      },
+    ],
+    crossRefs: [
+      { book: 'esr', chapter: 1, verse: 1, note: 'Die Fortsetzung' },
+      { book: 'jer', chapter: 25, verse: 12, note: 'Die siebzig Jahre' },
+      { book: 'jes', chapter: 45, verse: 1, note: 'Kyros als „Gesalbter“' },
+    ],
+  },
+  {
+    book: 'esr',
+    chapter: 1,
+    from: 1,
+    to: 11,
+    title: 'Das Edikt des Kyros',
+    historicalShort:
+      'Ein persischer Großkönig erlaubt den Wiederaufbau eines Tempels in einer Randprovinz – und die Bibel nennt ihn dafür einen von Gott Erweckten.',
+    historicalLong:
+      'Anders als Assyrien und Babylon setzten die Perser auf lokale Selbstverwaltung und führten verschleppte Kulte in ihre Heimat zurück. Der Kyros-Zylinder, heute im Britischen Museum, beschreibt genau diese Politik – aus persischer Sicht und ohne Israel zu erwähnen. Für Juda war sie die Wende: Die Rückkehr begann, zog sich aber über Generationen hin, und viele blieben in Babylonien. Der zweite Tempel wurde erst 515 v. Chr. eingeweiht und blieb hinter dem ersten weit zurück.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der aramäische Wortlaut des Erlasses in Esra 6 gilt vielen als im Kern echt; die hebräische Fassung hier ist stärker theologisch geformt. Die Rückkehr verlief weniger geschlossen, als die Erzählung nahelegt.',
+      },
+      {
+        tradition: 'Prophetische Deutung',
+        text: 'Jesaja nennt Kyros ausdrücklich „meinen Gesalbten“ – der einzige Nichtisraelit, dem dieser Titel gilt. Gott handelt danach auch durch fremde Herrscher, die ihn nicht kennen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Rückkehrer trafen auf eine Bevölkerung, die nie weggegangen war. Die Spannungen daraus prägen Esra und Nehemia – und werfen die Frage auf, wer eigentlich „das Volk“ ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 45, verse: 1 },
+      { book: 'esr', chapter: 6, verse: 3, note: 'Die aramäische Fassung' },
+      { book: 'hag', chapter: 2, verse: 3, note: 'Der Vergleich mit dem ersten Tempel' },
+    ],
+  },
+  {
+    book: 'neh',
+    chapter: 2,
+    from: 11,
+    to: 20,
+    title: 'Die nächtliche Erkundung der Mauer',
+    historicalShort:
+      'Bevor Nehemia irgendjemandem von seinem Plan erzählt, reitet er nachts allein an der zerstörten Mauer entlang. Erst danach spricht er.',
+    historicalLong:
+      'Nehemia war Mundschenk am persischen Hof – ein Vertrauensamt in unmittelbarer Nähe des Königs. Sein Bericht ist in der Ich-Form geschrieben und liest sich streckenweise wie ein Rechenschaftsbericht an einen Vorgesetzten. Der Mauerbau war kein frommes Projekt, sondern eine politische Handlung: Eine befestigte Stadt bedeutete Status und Verteidigungsfähigkeit, weshalb Sanballat und die Nachbarn ihn zu verhindern suchten. Nach Nehemia 6 stand die Mauer nach 52 Tagen – eine Zahl, die für Ausbesserung, nicht Neubau spricht.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Nehemia-Denkschrift gilt als eine der zuverlässigsten Quellen der Perserzeit. Sie ist Selbstdarstellung und zugleich detailgenau in Verwaltung, Geografie und Gegnerschaft.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'Die Szene wird häufig als Musterfall verantwortlicher Leitung gelesen: erst prüfen, dann reden, dann gemeinsam anfangen – und den Widerstand nüchtern benennen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Dieselbe Entschlossenheit führt später zur Auflösung von Mischehen. Wer Nehemia als Vorbild liest, muss auch diese Seite in den Blick nehmen – das Buch Rut liest sich wie ein Einspruch dagegen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'neh', chapter: 6, verse: 15, note: 'Die Mauer nach 52 Tagen' },
+      { book: 'neh', chapter: 13, verse: 23 },
+      { book: 'rut', chapter: 4, verse: 17 },
+    ],
+  },
+  {
+    book: 'hi',
+    chapter: 38,
+    from: 1,
+    to: 18,
+    title: 'Die Gottesrede aus dem Sturm',
+    historicalShort:
+      'Nach 37 Kapiteln Streit antwortet Gott – und beantwortet keine einzige der gestellten Fragen. Stattdessen fragt er selbst, siebzig Kapitel lang, nach Erde, Meer, Morgenröte und Schnee.',
+    historicalLong:
+      'Hiobs Freunde hatten das gängige Schema vertreten: Wer leidet, hat gesündigt. Hiob bestreitet das und fordert ein Verfahren. Die Antwort verweigert genau dieses Verfahren – und rehabilitiert Hiob am Ende doch ausdrücklich gegenüber den Freunden. Die Fragen sind nicht spöttisch gemeint, sondern öffnen einen Horizont: Die Welt ist größer als die Buchhaltung von Schuld und Strafe. Das Buch gehört zur altorientalischen Weisheitsliteratur; verwandte Texte aus Mesopotamien behandeln dasselbe Problem, kommen aber zu anderen Schlüssen.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Gottesreden sind möglicherweise später hinzugewachsen. Auffällig ist, dass sie die Anklage nicht widerlegen, sondern den Rahmen wechseln – vom Rechtsstreit zur Schöpfung.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Entscheidend ist, dass Gott überhaupt antwortet. Nicht der Inhalt tröstet, sondern dass die Klage gehört wurde – Hiob hat sein Verfahren also doch bekommen.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Der Abschnitt wird gegen jede Theodizee-Formel gelesen, die Leid erklären will. Die Bibel selbst lässt die Frage offen und verbietet es, sie schnell zu schließen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hi', chapter: 42, verse: 7, note: 'Hiob wird gegen die Freunde bestätigt' },
+      { book: 'hi', chapter: 2, verse: 10 },
+      { book: 'roem', chapter: 11, verse: 33 },
+    ],
+  },
+  {
+    book: 'spr',
+    chapter: 8,
+    from: 22,
+    to: 31,
+    title: 'Die Weisheit vor der Schöpfung',
+    historicalShort:
+      'Die Weisheit tritt hier als Person auf, weiblich, älter als die Welt, und beschreibt sich als spielendes Kind vor Gott, während die Erde entsteht.',
+    historicalLong:
+      'Das hebräische „chokma“ ist grammatisch weiblich; der Text nutzt das und lässt die Weisheit selbst sprechen. Ein Wort in Vers 30 ist seit der Antike umstritten: Es kann „Werkmeisterin“ oder „Liebling, Kind“ bedeuten – daher die sehr unterschiedlichen Übersetzungen. Die Stelle wurde im 4. Jahrhundert zum Zentrum des arianischen Streits: Wenn die Weisheit „geschaffen“ ist und mit Christus gleichgesetzt wird, wäre auch er geschaffen. Die Auseinandersetzung um das Wort im Nizänischen Bekenntnis hängt unmittelbar an diesem Vers.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt gehört zur jüngeren Schicht der Sprüche, wohl aus der Perserzeit. Vergleichbare Personifikationen von Weisheit oder Gerechtigkeit sind aus Ägypten bekannt.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Weisheit wird häufig mit der Tora gleichgesetzt: Was hier vor der Schöpfung da ist, sei die Weisung, nach der die Welt gebaut wurde.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Kolosser 1 und der Johannesprolog nehmen die Sprache dieses Textes auf. Die Kirche hat ihn auf Christus bezogen und dabei sorgfältig unterschieden zwischen „gezeugt“ und „geschaffen“ – gerade wegen dieses Verses.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joh', chapter: 1, verse: 1 },
+      { book: 'kol', chapter: 1, verse: 15 },
+      { book: 'spr', chapter: 9, verse: 1 },
+    ],
+  },
+  {
+    book: 'pred',
+    chapter: 12,
+    from: 1,
+    to: 8,
+    title: 'Das Alter in Bildern',
+    historicalShort:
+      'Das Altwerden wird nicht benannt, sondern gemalt: zitternde Wächter, verstummte Mühlen, die Mandel blüht weiß, die Heuschrecke schleppt sich. Am Ende steht wieder der Satz vom Anfang.',
+    historicalLong:
+      'Fast jedes Bild lässt sich auf den Körper beziehen – die Wächter als Arme, die Mahlenden als Zähne, die Fenster als Augen. Ob der Text so gemeint ist oder ob er ein verfallendes Haus und ein sterbendes Dorf beschreibt, ist alt umstritten; die Doppeldeutigkeit dürfte beabsichtigt sein. Das Buch stammt aus hellenistischer Zeit; sein Hebräisch enthält persische Lehnwörter. Es wurde nur nach längerem Streit in den Kanon aufgenommen – zu wenig fromm, zu wenig eindeutig.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die abschließenden Verse des Buches gelten vielen als spätere Ergänzung, die den unbequemen Text einfängt. Der ursprüngliche Schluss dürfte bei „alles ist eitel“ gelegen haben.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Das Buch wird am Laubhüttenfest gelesen, dem Freudenfest. Der Kontrast ist gewollt: Gerade wer die Vergänglichkeit kennt, kann den Augenblick annehmen.',
+      },
+      {
+        tradition: 'Kirchliche Auslegung',
+        text: 'Das hebräische „hevel“ heißt eigentlich Hauch oder Windstoß. Neuere Übersetzungen ziehen „nichtig“ oder „flüchtig“ dem lutherischen „eitel“ vor – der Text klagt weniger an, als er feststellt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'pred', chapter: 1, verse: 2 },
+      { book: 'pred', chapter: 9, verse: 7 },
+      { book: 'ps', chapter: 90, verse: 12 },
+    ],
+  },
+  {
+    book: 'hes',
+    chapter: 1,
+    from: 4,
+    to: 28,
+    title: 'Die Vision am Kebar',
+    historicalShort:
+      'Ein Priester im Exil sieht, was er nach allem Herkommen nicht sehen dürfte: den Thron Gottes – und zwar fernab des Tempels, an einem babylonischen Kanal.',
+    historicalLong:
+      'Der eigentliche Skandal des Kapitels ist nicht die Bildersprache, sondern der Ort. Gottes Gegenwart galt als an den Tempel in Jerusalem gebunden; hier erscheint sie auf einem fahrbaren Thron über einem Bewässerungskanal in Babylonien. Räder, Flügelwesen und Kristallgewölbe erinnern deutlich an mesopotamische Bildwelten, die Hesekiel im Exil vor Augen hatte. Der Text ringt sichtbar um Sprache: fast jede Aussage wird durch „gleichwie“ und „ähnlich“ abgeschwächt. Am Ende steht nicht „das war Gott“, sondern „das Ansehen der Herrlichkeit des HERRN“.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die vorsichtige Sprache ist Absicht: Sie hält das Bilderverbot durch, indem sie beschreibt, wie etwas aussah, und nicht, was es war.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Das Kapitel begründet die Merkaba-Mystik, die Thronwagen-Tradition. Die Mischna rät davon ab, den Text öffentlich auszulegen – er galt als zu gefährlich für Ungeübte.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Die vier Gestalten – Mensch, Löwe, Stier, Adler – wurden früh den vier Evangelisten zugeordnet. Diese Zuordnung prägt die christliche Kunst bis heute.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hes', chapter: 10, verse: 18, note: 'Die Herrlichkeit verlässt den Tempel' },
+      { book: 'offb', chapter: 4, verse: 6 },
+      { book: 'jes', chapter: 6, verse: 1 },
+    ],
+  },
+  {
+    book: 'hes',
+    chapter: 18,
+    from: 1,
+    to: 9,
+    title: '„Die Väter haben Herlinge gegessen“',
+    historicalShort:
+      'Ein Sprichwort machte im Exil die Runde: Die Väter haben saure Trauben gegessen, den Kindern werden die Zähne stumpf. Hesekiel verbietet es – jeder haftet für sich.',
+    historicalLong:
+      'Hinter dem Sprichwort steht die Erfahrung einer Generation, die für die Politik ihrer Vorfahren büßte. Der Einwand ist verständlich und wird vom Text ernst genommen; die Antwort fällt trotzdem eindeutig aus. Das ist ein Bruch mit älteren Vorstellungen kollektiver Haftung, wie sie etwa im Dekalog anklingen. Bemerkenswert ist, dass Jeremia fast wortgleich dasselbe sagt – offenbar eine Debatte, die im Exil quer durch die Prophetie lief.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt gilt als Meilenstein auf dem Weg zu individueller Verantwortung. Ob er ältere Vorstellungen wirklich ablöst oder nur für eine bestimmte Situation gilt, wird unterschiedlich beurteilt.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Möglichkeit der Umkehr steht im Zentrum: Weder verurteilt die Vergangenheit endgültig, noch sichert Vergangenes ab. Entscheidend ist, was einer jetzt tut.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Neuere Auslegung fragt, ob die strenge Individualisierung die Wirklichkeit trifft: Schuldzusammenhänge über Generationen hinweg – ökologisch, politisch, familiär – lassen sich nicht einfach auflösen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 31, verse: 29, note: 'Dasselbe Sprichwort bei Jeremia' },
+      { book: '2mo', chapter: 20, verse: 5 },
+      { book: 'hes', chapter: 18, verse: 32, note: '„Ich habe kein Gefallen am Tode“' },
+    ],
+  },
+  {
+    book: 'hes',
+    chapter: 34,
+    from: 1,
+    to: 16,
+    title: 'Die schlechten Hirten',
+    historicalShort:
+      'Hirte war im Alten Orient ein Herrschertitel. Hesekiel nimmt ihn beim Wort und rechnet mit den Verantwortlichen ab: Sie haben sich selbst geweidet, nicht die Herde.',
+    historicalLong:
+      'Der Vorwurf ist im Detail sozialer Art: die Schwachen nicht gestärkt, die Kranken nicht geheilt, das Verirrte nicht gesucht. Die Konsequenz ist eine Amtsenthebung – Gott übernimmt selbst und kündigt an, „einen einzigen Hirten“ einzusetzen. Der Text steht in einer langen Reihe altorientalischer Hirtenmetaphorik; auch Hammurapi nennt sich Hirte seines Volkes. Neu ist die Schärfe, mit der die Metapher gegen die Herrschenden gewendet wird.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Das Kapitel ist Rückblick auf das Versagen der Könige und zugleich Programm für die Zeit nach dem Exil: Führung wird an ihrer Wirkung auf die Schwächsten gemessen.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Johannes 10 nimmt den Text auf – bis in die Wendung vom guten Hirten und den Mietlingen, die fliehen. Das Gleichnis vom verlorenen Schaf steht in derselben Linie.',
+      },
+      {
+        tradition: 'Kirchenkritische Lesart',
+        text: 'Der Abschnitt wird regelmäßig gegen kirchliche Amtsträger selbst gewendet. Dass Hirtenkritik in der Bibel steht, gehört zu den unbequemsten Zügen der prophetischen Überlieferung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joh', chapter: 10, verse: 11 },
+      { book: 'ps', chapter: 23, verse: 1 },
+      { book: 'jer', chapter: 23, verse: 1 },
+    ],
+  },
+  {
+    book: 'dan',
+    chapter: 7,
+    from: 9,
+    to: 14,
+    title: 'Der Menschensohn vor dem Alten',
+    historicalShort:
+      'Nach vier Tieren, die aus dem Meer steigen, kommt „einer wie eines Menschen Sohn“ mit den Wolken. Ein Bild, das für das Neue Testament kaum zu überschätzen ist.',
+    historicalLong:
+      'Die vier Tiere stehen für Weltreiche; das vierte wird meist auf die Diadochenreiche und Antiochus IV. bezogen. Der Gegensatz ist bewusst gebaut: Die Reiche steigen aus dem Chaosmeer und sind Bestien, die neue Herrschaft kommt von oben und sieht aus wie ein Mensch. Der Text selbst deutet die Gestalt kollektiv – als „das Volk der Heiligen des Höchsten“. In der Zwischentestamentlichen Literatur wird daraus zunehmend eine Einzelgestalt. „Menschensohn“ ist im Neuen Testament die Selbstbezeichnung Jesu, und bei der Verhandlung vor dem Hohen Rat zitiert er genau diesen Vers.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Das Buch erhielt seine Endgestalt um 165 v. Chr., während der Verfolgung unter Antiochus IV. Die Visionen deuten die eigene Gegenwart, indem sie sie in die babylonische Zeit zurückverlegen.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die kollektive Deutung – die Gestalt steht für das treue Israel – hat in der Tradition großes Gewicht. Daneben gibt es messianische Deutungen auf eine einzelne Person.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Die Kirche bezieht die Stelle auf Christus und liest sie zusammen mit Matthäus 26. Umstritten bleibt, ob Jesus selbst den Titel in diesem Sinn gebrauchte oder eher zurückhaltend.',
+      },
+    ],
+    crossRefs: [
+      { book: 'dan', chapter: 7, verse: 27, note: 'Die Deutung im Text selbst' },
+      { book: 'mk', chapter: 14, verse: 62, note: 'Das Zitat vor dem Hohen Rat' },
+      { book: 'offb', chapter: 1, verse: 13 },
+    ],
+  },
+  {
+    book: 'dan',
+    chapter: 9,
+    from: 1,
+    to: 19,
+    title: 'Das Gebet Daniels',
+    historicalShort:
+      'Daniel liest bei Jeremia von siebzig Jahren – und betet. Das Gebet fällt aus dem Rahmen des Buches: kein Geheimnis, keine Vision, sondern schlichtes Schuldbekenntnis in der Wir-Form.',
+    historicalLong:
+      'Auffällig ist das durchgehende „wir“: Daniel, den das Buch sonst als tadellos zeichnet, schließt sich ein. Das Gebet ist sprachlich stark an Nehemia 9 und Esra 9 angelehnt und dürfte einer festen liturgischen Form folgen. Die siebzig Jahre Jeremias werden anschließend zu „siebzig Wochen von Jahren“ gedeutet – eine Rechnung, die seit der Antike zu unzähligen Datierungsversuchen geführt hat. Der wahrscheinlichste Bezugspunkt bleibt die Entweihung des Tempels 167 v. Chr.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Deutung der siebzig Wochen zielt auf die Zeit des Antiochus IV. Die Zahlen sind symbolisch und nicht als Kalender gedacht.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Das Gebet gilt als Musterfall des Bußgebets: Es rechtfertigt Gott und klagt nicht an, ohne die Bitte um Erbarmen aufzugeben.',
+      },
+      {
+        tradition: 'Auslegungsgeschichte',
+        text: 'Aus den siebzig Wochen wurden über Jahrhunderte Weltenddaten errechnet – bis heute. Die Kirchen haben solche Berechnungen wiederholt zurückgewiesen; der Text selbst nennt keinen Termin.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 25, verse: 11, note: 'Die siebzig Jahre' },
+      { book: 'neh', chapter: 9, verse: 6 },
+      { book: 'dan', chapter: 9, verse: 24 },
+    ],
+  },
+  {
+    book: 'hos',
+    chapter: 1,
+    from: 2,
+    to: 11,
+    title: 'Die Ehe als Zeichen',
+    historicalShort:
+      'Der Prophet soll eine Frau heiraten, die ihm untreu sein wird, und den Kindern Namen geben, die Urteile sind: „Nicht begnadet“ und „Nicht mein Volk“. Sein Leben wird zur Botschaft.',
+    historicalLong:
+      'Hosea wirkte im Nordreich in den Jahrzehnten vor 722 v. Chr., also unmittelbar vor der Katastrophe. Ob die Ehe historisch war, eine Vision oder ein Gleichnis, ist seit der Antike umstritten; Kirchenväter fanden den wörtlichen Sinn anstößig. Entscheidend ist der Bildbereich: Israels Verhältnis zu Gott wird als Ehe beschrieben, und der Bruch dieses Verhältnisses als Ehebruch. Damit betritt die Bibel ein Sprachfeld, das später Jeremia, Hesekiel und das Neue Testament aufnehmen. Kapitel 1 endet nicht beim Urteil: Die Namen werden am Ende umgekehrt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Zeichenhandlung ist prophetische Praxis: Auch Jesaja und Hesekiel setzen den eigenen Körper und das eigene Leben als Botschaft ein. Der Text will keine Auskunft über Hoseas Privatleben geben.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Umkehrung der Namen – aus „Nicht mein Volk“ wird „Kinder des lebendigen Gottes“ – gilt als eigentliches Ziel des Kapitels. Das Urteil ist nicht das letzte Wort.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Das Ehebild wird kritisch befragt: Es setzt die untreue Frau mit dem Volk gleich und den strafenden Ehemann mit Gott. Diese Bildlogik hat eine problematische Wirkungsgeschichte, die mitgelesen werden muss.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hos', chapter: 2, verse: 14 },
+      { book: 'roem', chapter: 9, verse: 25, note: 'Paulus zitiert die Namen' },
+      { book: '1petr', chapter: 2, verse: 10 },
+    ],
+  },
+  {
+    book: 'joel',
+    chapter: 1,
+    from: 1,
+    to: 12,
+    title: 'Die Heuschreckenplage',
+    historicalShort:
+      'Ein Insektenschwarm frisst ein ganzes Land kahl. Der Prophet beschreibt es in vier Wellen und fordert die Alten auf zu sagen, ob sie so etwas je erlebt haben.',
+    historicalLong:
+      'Wanderheuschrecken sind im Nahen Osten eine reale Katastrophe: Ein großer Schwarm kann täglich so viel fressen wie eine Großstadt an Nahrung verbraucht. Der Text nennt vier Stadien, wohl Entwicklungsstufen des Insekts. Ob die Plage tatsächlich stattfand oder als Bild für ein einfallendes Heer steht, ist umstritten – Kapitel 2 beschreibt den Schwarm wie eine Armee. Die Datierung des Buches ist unsicher; die meisten setzen die Perserzeit an. Aus dieser Not entwickelt Joel den Aufruf zur Umkehr, und wenige Kapitel später den Satz vom Geist über alle.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Grenze zwischen Naturkatastrophe und Kriegsbild ist im Buch bewusst durchlässig. Beides steht für den „Tag des HERRN“, der hier zuerst als Bedrohung erscheint.',
+      },
+      {
+        tradition: 'Prophetische Tradition',
+        text: 'Bemerkenswert ist, dass Joel keine bestimmte Schuld benennt. Die Umkehr wird gefordert, ohne dass eine Anklage vorausgeht – ungewöhnlich für ein Prophetenbuch.',
+      },
+      {
+        tradition: 'Ökologische Lesart',
+        text: 'Der Text wird heute häufig als früher Beleg dafür gelesen, dass Naturkatastrophen theologisch nicht bagatellisiert werden. Klage über zerstörte Ernte und Landschaft hat einen eigenen Ort.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joel', chapter: 2, verse: 13, note: '„Zerreißt eure Herzen“' },
+      { book: 'joel', chapter: 2, verse: 28, note: 'Der Geist über alle' },
+      { book: 'am', chapter: 5, verse: 18 },
+    ],
+  },
+  {
+    book: 'am',
+    chapter: 7,
+    from: 10,
+    to: 17,
+    title: 'Amos wird des Landes verwiesen',
+    historicalShort:
+      'Der Priester von Bethel meldet den Propheten beim König und weist ihn aus: Er solle woanders sein Brot verdienen. Amos antwortet mit dem Satz, er sei gar kein Prophet.',
+    historicalLong:
+      'Der Vorwurf des Priesters ist bemerkenswert offen: Bethel sei „ein Heiligtum des Königs und ein Reichstempel“ – Religion als Staatsangelegenheit, ausgesprochen ohne Verlegenheit. Amos entgegnet, er sei weder Prophet noch Prophetenschüler, sondern Viehzüchter und Maulbeerfeigenzüchter. Damit lehnt er den Berufsstand ab: Er lebt nicht davon und ist deshalb nicht erpressbar. Amos stammte aus Tekoa in Juda und ging in das reichere Nordreich hinauf – ein Ausländer, der die Verhältnisse kritisierte.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Szene ist der einzige erzählende Abschnitt im Buch. Sie erklärt, warum die Sammlung endete, und zeigt die institutionelle Seite des Konflikts: Prophetie gegen Tempelbetrieb.',
+      },
+      {
+        tradition: 'Sozialethische Auslegung',
+        text: 'Die Kritik des Amos zielt durchweg auf wirtschaftliches Unrecht: verkaufte Arme, gefälschte Waagen, Luxus auf Kosten anderer. Die Ausweisung zeigt, wie schnell solche Kritik als Störung behandelt wird.',
+      },
+      {
+        tradition: 'Kirchliche Rezeption',
+        text: 'Der Satz „Ich bin kein Prophet“ wurde vielfach für die Legitimität der Kritik von außen in Anspruch genommen – auch gegen Amtskirchen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'am', chapter: 5, verse: 24, note: '„Es ströme das Recht wie Wasser“' },
+      { book: 'am', chapter: 2, verse: 6 },
+      { book: '1koe', chapter: 12, verse: 29, note: 'Warum Bethel Reichsheiligtum war' },
+    ],
+  },
+  {
+    book: 'jona',
+    chapter: 1,
+    from: 1,
+    to: 16,
+    title: 'Die Flucht nach Tarsis',
+    historicalShort:
+      'Der Auftrag lautet Ninive, im Osten. Jona bucht ein Schiff nach Tarsis, so weit im Westen wie damals denkbar. Die Erzählung setzt ihren Helden von Anfang an ins Unrecht – und die heidnischen Seeleute ins Recht.',
+    historicalLong:
+      'Das Buch ist keine Prophetenschrift wie die anderen: Es enthält fast keine Prophetenworte, dafür eine durchkomponierte Erzählung mit Ironie. Die Seeleute beten, werfen Lose, sträuben sich gegen den Menschenwurf und fürchten am Ende Gott – während der Prophet unter Deck schläft. Diese Umkehrung ist das Verfahren des ganzen Buches. Ninive war zur mutmaßlichen Abfassungszeit längst zerstört; die Wahl gerade dieser Stadt ist deshalb bewusst provozierend gesetzt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die meisten lesen das Buch als Lehrerzählung aus nachexilischer Zeit, gerichtet gegen eine Frömmigkeit, die Gottes Erbarmen auf die eigene Gruppe beschränkt.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Das Buch wird am Versöhnungstag zur Nachmittagszeit vollständig gelesen. Die Botschaft ist die Umkehr – auch die der Fremden, und die Bereitschaft Gottes, sein Urteil zurückzunehmen.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Matthäus deutet die drei Tage im Fisch auf Ostern. Diese Lesart hat die Wirkungsgeschichte geprägt, überdeckt aber leicht das eigentliche Thema des Buches.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jona', chapter: 4, verse: 2, note: 'Der Grund seiner Flucht' },
+      { book: 'mt', chapter: 12, verse: 40 },
+      { book: '2koe', chapter: 14, verse: 25, note: 'Der historische Jona' },
+    ],
+  },
+  {
+    book: 'jona',
+    chapter: 3,
+    from: 1,
+    to: 10,
+    title: 'Ninive kehrt um',
+    historicalShort:
+      'Fünf hebräische Wörter genügen: Die ganze Stadt fastet, vom König bis zum Vieh. Es ist die kürzeste Predigt der Bibel – und die einzige, die vollständig gelingt.',
+    historicalLong:
+      'Die Erzählung übertreibt sichtbar: eine Stadt von drei Tagereisen, ein König, der Sacktuch anlegt, Tiere im Bußgewand. Die Übertreibung gehört zum Verfahren – sie stellt das Ergebnis in ein grelles Licht. Der entscheidende Satz steht am Ende: „Und Gott reute das Übel.“ Das hebräische Wort meint ein Umdenken, kein Bedauern. Dass Gott ein angekündigtes Gericht zurücknimmt, ist theologisch die Zumutung des Buches – und genau das, was Jona im nächsten Kapitel wütend macht.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Erzählung setzt die Möglichkeit voraus, dass prophetische Ankündigung bedingt ist. Jeremia 18 formuliert dasselbe grundsätzlich: Ein Wort gegen ein Volk gilt, solange das Volk sich nicht ändert.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Buße Ninives dient als Beispiel dafür, dass Umkehr wirkt und niemandem verwehrt ist. Auf die Aufrichtigkeit kommt es an, nicht auf Herkunft.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Jesus stellt die Niniviten den eigenen Zeitgenossen gegenüber: Sie kehrten auf viel weniger hin um. Der Vergleich ist als Vorwurf gemeint, nicht als Lob des Propheten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 18, verse: 8 },
+      { book: 'lk', chapter: 11, verse: 32 },
+      { book: 'jona', chapter: 4, verse: 1, note: 'Jonas Reaktion' },
+    ],
+  },
+  {
+    book: 'mi',
+    chapter: 5,
+    from: 1,
+    to: 5,
+    title: 'Der Herrscher aus Bethlehem',
+    historicalShort:
+      'Aus dem kleinsten Ort soll kommen, was das Land nicht aus eigener Kraft schafft. Matthäus zitiert diese Stelle, als die Weisen nach dem König fragen.',
+    historicalLong:
+      'Der Kontrast trägt den Text: Jerusalem wird belagert, der Richter Israels ins Gesicht geschlagen – und der Blick geht ausgerechnet auf das Dorf, aus dem David kam. Die Erwartung ist nicht neuer Machtaufbau, sondern Rückkehr zu den Anfängen. Achtung bei der Zählung: In der gedruckten Lutherbibel beginnt Kapitel 5 einen Vers früher, sodass der Bethlehem-Vers dort 5,1 heißt und hier 5,2. Der Text selbst ist derselbe.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Stelle stammt vermutlich aus der Zeit der assyrischen Bedrohung im 8. Jahrhundert v. Chr.; manche setzen sie später an. Gemeint ist zunächst ein neuer davidischer König, nicht eine Gestalt am Ende der Zeit.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Vers gehört zu den messianischen Texten und wird auf einen künftigen Nachkommen Davids bezogen – irdisch gedacht, mit Frieden und Recht als Kennzeichen.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Matthäus zitiert die Stelle im Munde der Schriftgelehrten und weicht dabei vom hebräischen Wortlaut ab – ein Beispiel dafür, wie das Neue Testament die Schrift meist nach der griechischen Fassung zitiert.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 2, verse: 6, note: 'Das Zitat vor Herodes' },
+      { book: 'joh', chapter: 7, verse: 42 },
+      { book: '1sam', chapter: 16, verse: 1 },
+    ],
+  },
+  {
+    book: 'nah',
+    chapter: 3,
+    from: 1,
+    to: 7,
+    title: 'Wehe der Blutstadt',
+    historicalShort:
+      'Ein Prophetenbuch, das fast ausschließlich vom Untergang einer einzigen Stadt handelt – und dabei nicht verbirgt, dass es sich darüber freut.',
+    historicalLong:
+      'Ninive fiel 612 v. Chr. Assyrien hatte über anderthalb Jahrhunderte die Region beherrscht, das Nordreich vernichtet und Juda tributpflichtig gemacht; seine Reliefs zeigen Pfählungen und Deportationen mit einer Offenheit, die als Abschreckung gedacht war. Nahums Sprache ist entsprechend hart. Das Buch ist unter den Propheten das schwerste, weil es keine Umkehr in Aussicht stellt und keine Selbstkritik enthält – anders als Jona, das von derselben Stadt handelt und zum entgegengesetzten Ergebnis kommt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Das Buch dürfte kurz vor oder nach dem Fall Ninives entstanden sein. Es artikuliert die Erleichterung der Unterworfenen – eine Stimme, die im Kanon sonst kaum vorkommt.',
+      },
+      {
+        tradition: 'Theologische Rückfrage',
+        text: 'Viele Ausleger halten fest, dass Nahum und Jona bewusst nebeneinanderstehen. Die Bibel überliefert beide Haltungen gegenüber derselben Stadt und löst die Spannung nicht auf.',
+      },
+      {
+        tradition: 'Befreiungstheologische Lesart',
+        text: 'Der Text wird als Stimme der Opfer gelesen: Wer Gewalt erlitten hat, hat ein Recht darauf, das Ende der Gewalt zu benennen. Die Frage bleibt, wo Klage in Rachefantasie übergeht.',
+      },
+    ],
+    crossRefs: [
+      { book: 'nah', chapter: 1, verse: 7, note: 'Die andere Seite des Buches' },
+      { book: 'jona', chapter: 3, verse: 10 },
+      { book: 'zef', chapter: 2, verse: 13 },
+    ],
+  },
+  {
+    book: 'hab',
+    chapter: 3,
+    from: 17,
+    to: 19,
+    title: '„Dennoch will ich mich freuen“',
+    historicalShort:
+      'Kein Feigenbaum trägt, kein Weinstock, keine Herde im Stall – und dann folgt ein „dennoch“. Der Schluss des Buches gehört zu den nüchternsten Hoffnungstexten der Bibel.',
+    historicalLong:
+      'Habakuk beginnt mit einer Anklage gegen Gott: Warum bleibt Gewalt ungestraft? Die Antwort kündigt die Chaldäer an – und macht die Frage nur schlimmer, denn nun handelt Gott durch ein noch gewalttätigeres Volk. Das Buch löst diesen Widerspruch nicht auf. Es endet mit einem Psalm, der ausdrücklich für den Gottesdienst bestimmt ist, samt musikalischer Anweisung. Die Freude, von der er spricht, setzt nicht ein, wenn die Lage sich bessert, sondern während sie schlecht bleibt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Kapitel 3 ist ein eigenständiger Psalm, der in Qumran teilweise fehlt. Er wurde dem Buch wohl angefügt, um die offenen Fragen liturgisch aufzufangen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Satz „Der Gerechte wird aus Glauben leben“ aus Kapitel 2 wurde für Luther zum Schlüsselvers. Der Schluss in Kapitel 3 zeigt, was damit praktisch gemeint ist.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Text wird häufig gegen einen Optimismus in Anspruch genommen, der die Lage schönredet. Die Aufzählung des Mangels wird vollständig durchgehalten, bevor das „dennoch“ kommt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hab', chapter: 1, verse: 2, note: 'Die Anklage am Anfang' },
+      { book: 'hab', chapter: 2, verse: 4 },
+      { book: 'roem', chapter: 1, verse: 17 },
+    ],
+  },
+  {
+    book: 'hag',
+    chapter: 2,
+    from: 1,
+    to: 9,
+    title: 'Der Vergleich mit dem ersten Tempel',
+    historicalShort:
+      'Die Alten, die den ersten Tempel noch gesehen hatten, weinen beim Anblick des neuen. Haggai nimmt den Vergleich auf, statt ihn zu übergehen – und dreht ihn um.',
+    historicalLong:
+      'Der zweite Tempel war deutlich kleiner und ärmer ausgestattet als der salomonische; Esra 3 berichtet vom gleichzeitigen Weinen und Jubeln bei der Grundsteinlegung. Haggai wirkte um 520 v. Chr., als der Bau nach Jahren der Stockung wieder aufgenommen wurde. Seine Argumentation ist nicht, der Vergleich sei unfair, sondern die Herrlichkeit dieses Hauses werde die des ersten übertreffen – nicht durch Ausstattung, sondern weil Gott dort gegenwärtig sei. Der Bau wurde 515 v. Chr. abgeschlossen.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Haggais Datierungen sind so genau, dass sie sich auf den Monat umrechnen lassen. Das Buch ist eine der bestdatierten Schriften des Alten Testaments.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Zusage wird auf die Zukunft bezogen: Der zweite Tempel wurde später von Herodes prachtvoll ausgebaut, was manche als Erfüllung lasen; andere halten die Verheißung offen.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Die Kirche bezieht die Zusage auf das Kommen Christi in den Tempel. Neuere Auslegung betont daneben den seelsorglichen Zug: Der Text nimmt die Enttäuschung ernst, statt sie zu verbieten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'esr', chapter: 3, verse: 12, note: 'Weinen und Jubeln' },
+      { book: 'sach', chapter: 4, verse: 10, note: '„Wer ist, der geringe Anfänge verachtet?“' },
+      { book: 'hag', chapter: 1, verse: 4 },
+    ],
+  },
+  {
+    book: 'sach',
+    chapter: 4,
+    from: 1,
+    to: 14,
+    title: 'Der Leuchter und die zwei Ölbäume',
+    historicalShort:
+      'Ein goldener Leuchter, der sich selbst versorgt, und daneben zwei Ölbäume. Der Deutungssatz gehört zu den bekanntesten der Bibel: „Nicht durch Heer oder Kraft, sondern durch meinen Geist.“',
+    historicalLong:
+      'Die Vision fällt in dieselbe Zeit wie Haggai: der stockende Tempelbau um 520 v. Chr. Der Leuchter mit sieben Lampen erinnert an die Menora im Heiligtum, nur speist er sich hier ohne menschliches Zutun. Die zwei Ölbäume werden als „die zwei Gesalbten“ gedeutet – gemeint sind wohl der Statthalter Serubbabel und der Hohepriester Josua, also weltliche und geistliche Leitung nebeneinander. Der Satz vom Geist ist keine Absage an Arbeit, sondern an die Vorstellung, der Wiederaufbau hänge an militärischer oder politischer Macht, die es nicht mehr gab.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Doppelspitze aus Statthalter und Hohepriester spiegelt die Verhältnisse der frühen Perserzeit: kein König mehr, dafür geteilte Verantwortung unter fremder Oberhoheit.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Menora als Bild für die stetige Gegenwart Gottes prägt die Auslegung. Der Vers vom Geist wird an Chanukka gelesen.',
+      },
+      {
+        tradition: 'Christliche Auslegung',
+        text: 'Der Satz wurde zur Losung vieler Erneuerungsbewegungen. Der Zusammenhang mahnt zur Vorsicht: Er steht in einem Bauprojekt, nicht in einer Absage an Mühe.',
+      },
+    ],
+    crossRefs: [
+      { book: 'sach', chapter: 4, verse: 6 },
+      { book: 'offb', chapter: 11, verse: 4 },
+      { book: 'hag', chapter: 2, verse: 4 },
+    ],
+  },
+  {
+    book: 'mal',
+    chapter: 3,
+    from: 8,
+    to: 12,
+    title: '„Prüft mich hierin“',
+    historicalShort:
+      'Der einzige Ort in der Bibel, an dem Gott ausdrücklich zum Test auffordert – und es geht um Geld: um den Zehnten für die Vorratskammer des Tempels.',
+    historicalLong:
+      'Maleachi wirkt in der Perserzeit, als der Tempel steht, der Alltag aber ernüchternd ist. Der Zehnte war die Grundversorgung der Leviten, die keinen Landbesitz hatten; blieb er aus, brach der Dienst zusammen. Nehemia 13 berichtet von genau dieser Lage. Das ganze Buch ist als Streitgespräch gebaut: Gott sagt etwas, das Volk widerspricht, Gott antwortet. Diese Form – Behauptung, Einwand, Begründung – prägt alle sechs Abschnitte.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Text spiegelt eine konkrete Versorgungskrise am Tempel, keine allgemeine Lehre über Geben. Die Disputationsform gilt als Vorstufe rabbinischer Argumentation.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Aufforderung zum Prüfen wird als Ausnahme markiert: Sonst gilt, Gott nicht auf die Probe zu stellen. Hier ist es erlaubt, weil es um die Versorgung der Bedürftigen geht.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Vers wird verbreitet als Zusage materiellen Wohlstands für Spender gebraucht. Viele Ausleger widersprechen: Es geht um die Verlässlichkeit einer Gemeinschaft gegenüber ihren Bediensteten, nicht um ein Anlagegeschäft.',
+      },
+    ],
+    crossRefs: [
+      { book: 'neh', chapter: 13, verse: 10, note: 'Dieselbe Lage bei Nehemia' },
+      { book: '4mo', chapter: 18, verse: 21 },
+      { book: 'mal', chapter: 3, verse: 1 },
+    ],
+  },
 ];
 
 /**
