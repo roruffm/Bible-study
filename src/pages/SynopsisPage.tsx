@@ -29,24 +29,76 @@ function passageText(book: BookContent | undefined, chapter: number, from: numbe
   return verses.slice(from - 1, to).map((text, i) => ({ verse: from + i, text }));
 }
 
+/**
+ * Der Vergleich selbst. Er steht bewusst **unmittelbar unter der
+ * angeklickten Zeile** und nicht am Kopf der Seite: Wer in „Leiden und
+ * Ostern“ etwas anklickt, ist tausend Pixel vom Seitenanfang entfernt und
+ * sähe dort oben nichts passieren.
+ */
+function Comparison({ pericope, onClose }: { pericope: Pericope; onClose: () => void }) {
+  const shown = GOSPELS.filter((g) => pericope[g.key]);
+
+  // Erst laden, wenn wirklich verglichen wird – die vier Evangelien sind
+  // zusammen rund ein Megabyte.
+  const { data: books, loading } = useAsync<Record<string, BookContent>>(
+    () =>
+      Promise.all(
+        shown.map((g) => loadBook(g.id).then((content) => [g.id, content] as const)),
+      ).then((pairs) => Object.fromEntries(pairs)),
+    [pericope.id],
+  );
+
+  return (
+    <div className="syn__compare">
+      {pericope.note && <p className="syn__note">{pericope.note}</p>}
+
+      {loading && (
+        <div className="empty">
+          <span className="spinner" /> Evangelien werden geladen …
+        </div>
+      )}
+
+      {books && (
+        <div className="syn__columns" data-columns={shown.length}>
+          {shown.map((gospel) => {
+            const passage = pericope[gospel.key as GospelKey]!;
+            return (
+              <div className="syn__column" key={gospel.key}>
+                <div className="syn__column-head">
+                  <strong>{gospel.label}</strong>{' '}
+                  <Link
+                    className="syn__ref"
+                    to={`/bibel/${gospel.id}/${passage.chapter}?vers=${passage.from}`}
+                  >
+                    {passage.chapter},{passage.from}–{passage.to}
+                  </Link>
+                </div>
+                <p className="syn__text">
+                  {passageText(books[gospel.id], passage.chapter, passage.from, passage.to).map(
+                    (line) => (
+                      <span key={line.verse}>
+                        <span className="verse__num">{line.verse}</span> {line.text}{' '}
+                      </span>
+                    ),
+                  )}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      <button type="button" className="btn btn--ghost btn--sm" onClick={onClose}>
+        Vergleich schließen
+      </button>
+    </div>
+  );
+}
+
 export default function SynopsisPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const openId = searchParams.get('abschnitt');
   const open = openId ? findPericope(openId) : undefined;
-
-  // Nur laden, wenn wirklich verglichen wird – die vier Evangelien sind
-  // zusammen rund ein Megabyte.
-  const { data: books, loading } = useAsync<Record<string, BookContent>>(
-    () =>
-      open
-        ? Promise.all(
-            GOSPELS.filter((g) => open[g.key]).map((g) =>
-              loadBook(g.id).then((content) => [g.id, content] as const),
-            ),
-          ).then((pairs) => Object.fromEntries(pairs))
-        : null,
-    [openId],
-  );
 
   const bySection = useMemo(() => {
     const map = new Map<string, Pericope[]>();
@@ -54,8 +106,6 @@ export default function SynopsisPage() {
     for (const pericope of SYNOPSIS) map.get(pericope.section)?.push(pericope);
     return map;
   }, []);
-
-  const shown = open ? GOSPELS.filter((g) => open[g.key]) : [];
 
   return (
     <div>
@@ -70,64 +120,6 @@ export default function SynopsisPage() {
         gängigen Praxis der Synopsen; sie ist ein Vorschlag, keine Eigenschaft des Textes.
       </p>
 
-      {open && (
-        <section className="card syn__compare">
-          <div className="syn__compare-head">
-            <div>
-              <div className="section-title" style={{ marginBottom: '0.25rem' }}>
-                {open.section}
-              </div>
-              <h2 className="lex-entry__term">{open.title}</h2>
-            </div>
-            <button
-              type="button"
-              className="btn btn--ghost btn--sm"
-              onClick={() => setSearchParams({}, { replace: true })}
-            >
-              Schließen
-            </button>
-          </div>
-
-          {open.note && <p className="syn__note">{open.note}</p>}
-
-          {loading && (
-            <div className="empty">
-              <span className="spinner" /> Evangelien werden geladen …
-            </div>
-          )}
-
-          {books && (
-            <div className="syn__columns" data-columns={shown.length}>
-              {shown.map((gospel) => {
-                const passage = open[gospel.key as GospelKey]!;
-                return (
-                  <div className="syn__column" key={gospel.key}>
-                    <div className="syn__column-head">
-                      <strong>{gospel.label}</strong>{' '}
-                      <Link
-                        className="syn__ref"
-                        to={`/bibel/${gospel.id}/${passage.chapter}?vers=${passage.from}`}
-                      >
-                        {passage.chapter},{passage.from}–{passage.to}
-                      </Link>
-                    </div>
-                    <p className="syn__text">
-                      {passageText(books[gospel.id], passage.chapter, passage.from, passage.to).map(
-                        (line) => (
-                          <span key={line.verse}>
-                            <span className="verse__num">{line.verse}</span> {line.text}{' '}
-                          </span>
-                        ),
-                      )}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </section>
-      )}
-
       {SYNOPSIS_SECTIONS.map((section) => (
         <section key={section} style={{ marginTop: '1.75rem' }}>
           <div className="library__head">
@@ -137,10 +129,11 @@ export default function SynopsisPage() {
 
           <div className="card">
             {(bySection.get(section) ?? []).map((pericope) => (
+              <div key={pericope.id} className="syn__item">
               <button
-                key={pericope.id}
                 type="button"
                 className={`syn__row${openId === pericope.id ? ' syn__row--active' : ''}`}
+                aria-expanded={openId === pericope.id}
                 onClick={() =>
                   setSearchParams(
                     openId === pericope.id ? {} : { abschnitt: pericope.id },
@@ -173,6 +166,14 @@ export default function SynopsisPage() {
                   })}
                 </span>
               </button>
+
+              {openId === pericope.id && open && (
+                <Comparison
+                  pericope={open}
+                  onClose={() => setSearchParams({}, { replace: true })}
+                />
+              )}
+              </div>
             ))}
           </div>
         </section>

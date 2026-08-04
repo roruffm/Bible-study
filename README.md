@@ -296,7 +296,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (95 Prüfungen):
+abgeschalteter Verbindung (96 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -315,7 +315,10 @@ node scripts/check-references.mjs
 ```
 
 Geprüft werden Artikel, Querverweise, Lesepläne, Lexikon, Zeitleiste, Vers
-des Tages, die Karte und die Synopse – zurzeit 1438 Angaben. Es meldet zugleich, wie weit
+des Tages, die Karte und die Synopse – zurzeit 1438 Angaben. Für die Synopse
+kommen zwei Prüfungen dazu, die sich am fertigen Vergleich sofort rächen
+würden: Kein Abschnitt darf mitten im Satz beginnen, und jedes Zitat in einer
+Anmerkung muss im Wortlaut der Lutherbibel von 1912 wirklich so stehen. Es meldet zugleich, wie weit
 die Inhalte reichen: wie viele Abschnitte und Verse abgedeckt sind, ob ein
 Buch noch ganz ohne Artikel dasteht und wie viele Orte einen Hintergrundtext
 haben. Für die Karte prüft es außerdem, dass jeder Ort im Kartenausschnitt

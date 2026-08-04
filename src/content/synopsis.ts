@@ -101,7 +101,7 @@ export const SYNOPSIS: Pericope[] = [
     mk: { chapter: 1, from: 1, to: 8 },
     lk: { chapter: 3, from: 1, to: 18 },
     joh: { chapter: 1, from: 19, to: 28 },
-    note: 'Der einzige Punkt, an dem alle vier Evangelien gleich einsetzen. Lukas datiert ihn als einziger mit Regierungsjahren.',
+    note: 'Hier setzen alle vier Evangelien gemeinsam ein – Markus beginnt überhaupt erst an dieser Stelle. Lukas datiert das Auftreten als einziger mit Regierungsjahren.',
   },
   {
     id: 'taufe',
@@ -125,7 +125,7 @@ export const SYNOPSIS: Pericope[] = [
     id: 'nazareth',
     title: 'Die Ablehnung in Nazareth',
     section: 'Anfänge',
-    mt: { chapter: 13, from: 54, to: 58 },
+    mt: { chapter: 13, from: 53, to: 58 },
     mk: { chapter: 6, from: 1, to: 6 },
     lk: { chapter: 4, from: 16, to: 30 },
     note: 'Lukas zieht die Szene an den Anfang und macht sie zum Programm des ganzen Evangeliums – samt Mordversuch, den die anderen nicht kennen.',
@@ -215,7 +215,7 @@ export const SYNOPSIS: Pericope[] = [
     mt: { chapter: 10, from: 1, to: 4 },
     mk: { chapter: 3, from: 13, to: 19 },
     lk: { chapter: 6, from: 12, to: 16 },
-    note: 'Die drei Namenslisten stimmen nicht vollständig überein – an der zehnten Stelle steht bei Lukas Judas, der Sohn des Jakobus, bei den anderen Thaddäus.',
+    note: 'Die drei Namenslisten stimmen nicht vollständig überein: Wo Matthäus und Markus „Lebbäus mit dem Zunamen Thaddäus“ nennen, steht bei Lukas „Judas, des Jakobus Sohn“.',
   },
   {
     id: 'seligpreisungen',
@@ -223,7 +223,7 @@ export const SYNOPSIS: Pericope[] = [
     section: 'Wirken in Galiläa',
     mt: { chapter: 5, from: 1, to: 12 },
     lk: { chapter: 6, from: 20, to: 26 },
-    note: 'Matthäus zählt neun und spricht von den „geistlich Armen“, Lukas vier – und stellt ihnen vier Weherufe gegenüber. Bei ihm sind schlicht die Armen gemeint.',
+    note: 'Matthäus zählt neun Seligpreisungen und sagt „die da geistlich arm sind“; Lukas hat vier und sagt schlicht „ihr Armen“ – und stellt ihnen vier Weherufe gegenüber.',
   },
   {
     id: 'feindesliebe',
@@ -231,7 +231,7 @@ export const SYNOPSIS: Pericope[] = [
     section: 'Wirken in Galiläa',
     mt: { chapter: 5, from: 43, to: 48 },
     lk: { chapter: 6, from: 27, to: 36 },
-    note: 'Matthäus schließt mit „seid vollkommen“, Lukas mit „seid barmherzig“ – dieselbe Rede, zwei Zielpunkte.',
+    note: 'Dieselbe Rede, zwei Zielpunkte: Matthäus schließt mit „Darum sollt ihr vollkommen sein“, Lukas mit „Darum seid barmherzig“.',
   },
   {
     id: 'richten',
@@ -303,7 +303,7 @@ export const SYNOPSIS: Pericope[] = [
     mt: { chapter: 8, from: 23, to: 27 },
     mk: { chapter: 4, from: 35, to: 41 },
     lk: { chapter: 8, from: 22, to: 25 },
-    note: 'Nur Markus überliefert den Vorwurf der Jünger: „Fragst du nichts danach, dass wir verderben?“',
+    note: 'Nur Markus überliefert den Vorwurf der Jünger: „Meister, fragst du nichts darnach, daß wir verderben?“',
   },
   {
     id: 'gadara',
@@ -382,7 +382,7 @@ export const SYNOPSIS: Pericope[] = [
     section: 'Wirken in Galiläa',
     mt: { chapter: 16, from: 13, to: 20 },
     mk: { chapter: 8, from: 27, to: 30 },
-    lk: { chapter: 9, from: 18, to: 21 },
+    lk: { chapter: 9, from: 18, to: 20 },
     joh: { chapter: 6, from: 66, to: 71 },
     note: 'Das Wort „Du bist Petrus, und auf diesen Felsen …“ steht nur bei Matthäus – und ist einer der meistumstrittenen Sätze der Kirchengeschichte.',
   },
@@ -392,8 +392,8 @@ export const SYNOPSIS: Pericope[] = [
     section: 'Wirken in Galiläa',
     mt: { chapter: 16, from: 21, to: 23 },
     mk: { chapter: 8, from: 31, to: 33 },
-    lk: { chapter: 9, from: 22, to: 22 },
-    note: 'Den scharfen Zurechtweisung des Petrus lässt Lukas weg.',
+    lk: { chapter: 9, from: 21, to: 22 },
+    note: 'Die scharfe Zurechtweisung des Petrus – „Gehe hinter mich, du Satan!“ bei Markus, „Hebe dich, Satan, von mir!“ bei Matthäus – lässt Lukas weg.',
   },
   {
     id: 'nachfolge',
@@ -574,10 +574,10 @@ export const SYNOPSIS: Pericope[] = [
     id: 'endzeitrede',
     title: 'Die Rede über das Ende',
     section: 'In Jerusalem',
-    mt: { chapter: 24, from: 1, to: 14 },
-    mk: { chapter: 13, from: 1, to: 13 },
-    lk: { chapter: 21, from: 5, to: 19 },
-    note: 'Lukas beschreibt die Belagerung Jerusalems konkreter als die anderen – für viele ein Hinweis darauf, dass er nach 70 n. Chr. schrieb.',
+    mt: { chapter: 24, from: 1, to: 22 },
+    mk: { chapter: 13, from: 1, to: 23 },
+    lk: { chapter: 21, from: 5, to: 24 },
+    note: 'Wo Matthäus und Markus vom „Greuel der Verwüstung“ sprechen, schreibt Lukas ausdrücklich vom belagerten Jerusalem (21,20) – für viele ein Hinweis darauf, dass er nach 70 n. Chr. schrieb.',
   },
 
   /* ------------------------------------------------- Leiden und Ostern */

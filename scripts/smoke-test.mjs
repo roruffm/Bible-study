@@ -508,8 +508,20 @@ await page.goto(BASE + '/studium/synopse', { waitUntil: 'networkidle' });
 await page.waitForSelector('.syn__row');
 const perikopen = await page.locator('.syn__row').count();
 check('Synopse listet die Abschnitte', perikopen >= 70, `${perikopen} Abschnitte`);
-await page.locator('.syn__row', { hasText: 'Der Tod Jesu' }).click();
+// Der Vergleich muss unter der angeklickten Zeile aufgehen. Stand er am
+// Seitenkopf, sah man beim Klicken auf eine der hinteren Perikopen nichts.
+const perikopeZeile = page.locator('.syn__row', { hasText: 'Der Tod Jesu' });
+await perikopeZeile.scrollIntoViewIfNeeded();
+await perikopeZeile.click();
 await page.waitForSelector('.syn__column');
+const zeilenKasten = await perikopeZeile.boundingBox();
+const vergleichKasten = await page.locator('.syn__compare').boundingBox();
+check(
+  'Der Vergleich geht unter der angeklickten Zeile auf',
+  Math.abs(vergleichKasten.y - (zeilenKasten.y + zeilenKasten.height)) < 6 &&
+    vergleichKasten.y < page.viewportSize().height,
+  `Zeile endet bei ${Math.round(zeilenKasten.y + zeilenKasten.height)}, Vergleich beginnt bei ${Math.round(vergleichKasten.y)}`,
+);
 const spalten = await page.locator('.syn__column').count();
 check('Der Tod Jesu steht in allen vier Evangelien', spalten === 4, `${spalten} Spalten`);
 const spaltenTexte = await page.locator('.syn__text').allTextContents();

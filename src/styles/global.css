@@ -1896,7 +1896,7 @@ mark {
   text-align: left;
 }
 
-.syn__row + .syn__row {
+.syn__item + .syn__item {
   border-top: 1px solid var(--border);
 }
 
@@ -1949,17 +1949,11 @@ mark {
   opacity: 0.5;
 }
 
+/* Der Vergleich klappt unter der Zeile auf, an der geklickt wurde. */
 .syn__compare {
-  padding: 1.1rem 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.syn__compare-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 0.7rem;
+  padding: 0.4rem 1rem 1rem;
+  background: var(--bg-sunken);
+  border-top: 1px solid var(--border);
 }
 
 .syn__note {

@@ -266,6 +266,62 @@ for (const pericope of SYNOPSIS) {
   if (columns === 0) problems.push(`${where}: keine einzige Stelle angegeben`);
 }
 
+/*
+ * Zwei Fehler, die beim Schreiben leicht passieren und im fertigen Vergleich
+ * sofort auffallen:
+ *
+ * 1. Ein Abschnitt beginnt mitten im Satz. In der Gegenüberstellung steht
+ *    dann eine Spalte, die mit einem Kleinbuchstaben anfängt.
+ * 2. Eine Anmerkung zitiert etwas, das im Text so nicht steht. Bei einer
+ *    Übersetzung von 1912 ist das schnell passiert – „darnach“ statt
+ *    „danach“, „Hebe dich“ statt „Weiche von mir“.
+ */
+const gospelText = new Map();
+for (const gospel of GOSPELS) {
+  const data = JSON.parse(
+    readFileSync(join(ROOT, 'public', 'bibel', TRANSLATION, `${gospel.id}.json`), 'utf8'),
+  );
+  gospelText.set(gospel.id, data.chapters);
+}
+
+/** Für den Vergleich: Groß/klein, Umlaute und Zeichensetzung ausblenden. */
+function loose(value) {
+  return value
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+for (const pericope of SYNOPSIS) {
+  const where = `Perikope "${pericope.title}"`;
+  let volltext = '';
+
+  for (const gospel of GOSPELS) {
+    const passage = pericope[gospel.key];
+    if (!passage) continue;
+    const verses = gospelText.get(gospel.id)[passage.chapter - 1] ?? [];
+    const erster = verses[passage.from - 1] ?? '';
+    if (/^[a-zäöüß]/.test(erster)) {
+      problems.push(
+        `${where} (${gospel.label} ${passage.chapter},${passage.from}): beginnt mitten im Satz`,
+      );
+    }
+    volltext += ' ' + verses.slice(passage.from - 1, passage.to).join(' ');
+  }
+
+  // Zitate in der Anmerkung müssen in einer der Spalten wirklich stehen.
+  for (const zitat of (pericope.note ?? '').matchAll(/„([^“]{15,})“/g)) {
+    const gesucht = loose(zitat[1].replace(/\s*…\s*$/, ''));
+    if (!loose(volltext).includes(gesucht)) {
+      problems.push(`${where}: Zitat „${zitat[1]}“ steht so in keinem der Abschnitte`);
+    }
+  }
+}
+
 /* ------------------------------------------------------ Vers des Tages */
 
 const { DAILY_VERSES } = await loadContent('verseOfDay');
