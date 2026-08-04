@@ -66,6 +66,19 @@ export interface MapPlace {
   fact?: string;
   /** Stellen, an denen der Ort eine Rolle spielt. */
   refs: PlaceRef[];
+  /**
+   * Schreibweisen, unter denen der Ort im Luthertext von 1912 auftaucht –
+   * „Beth-El“ statt Bethel, „Askalon“ statt Aschkelon. Nur Formen, die im
+   * Text tatsächlich vorkommen und dort eindeutig diesen Ort meinen;
+   * `scripts/check-references.mjs` prüft beides nach.
+   */
+  aliases?: string[];
+  /**
+   * Vom Textabgleich ausnehmen. Für Namen, die im Luthertext überwiegend
+   * etwas anderes bezeichnen: „Sela“ ist dort 82-mal der Sohn Judas und nur
+   * einmal die Felsenstadt.
+   */
+  noMatch?: boolean;
   /** Kennung eines Lexikoneintrags mit ausführlichem Text. */
   lexicon?: string;
   /** Heutige Lage oder heutiger Name, wo er sich geändert hat. */
@@ -124,6 +137,7 @@ export const PLACES: MapPlace[] = [
     name: 'Betanien',
     coords: [35.26, 31.77],
     kind: 'stadt',
+    aliases: ['Bethanien'],
     short: 'Dorf am Ölberg, Zuhause von Maria, Marta und Lazarus.',
     long: 'Rund drei Kilometer von Jerusalem entfernt, hinter dem Ölberg und damit außer Sicht der Stadt. Nach Markus übernachtete Jesus in der letzten Woche hier, statt in Jerusalem zu bleiben – für Pilger war die Stadt zum Passa hoffnungslos überfüllt.',
     refs: [
@@ -161,6 +175,7 @@ export const PLACES: MapPlace[] = [
     name: 'Lachisch',
     coords: [34.85, 31.56],
     kind: 'stadt',
+    aliases: ['Lachis'],
     short:
       'Zweitwichtigste Stadt Judas. Ihre Belagerung durch Sanherib ist auf assyrischen Reliefs im Detail dargestellt.',
     long: 'Die Reliefs aus Sanheribs Palast in Ninive – heute im Britischen Museum – zeigen die Rampe, die Sturmböcke und die Verschleppung der Bewohner. Die Rampe liegt bis heute am Hügel. Dazu kommen die „Lachisch-Briefe“, Tonscherben mit hebräischen Notizen aus den letzten Tagen vor der babylonischen Eroberung 587 v. Chr. Kaum ein biblisches Ereignis ist so gut von außen belegt.',
@@ -174,6 +189,7 @@ export const PLACES: MapPlace[] = [
     name: 'Beerscheba',
     coords: [34.79, 31.25],
     kind: 'stadt',
+    aliases: ['Beer-Seba'],
     short: 'Südgrenze des Landes – „von Dan bis Beerscheba“ meint das ganze Israel.',
     long: 'Der Name heißt „Brunnen des Schwurs“ oder „Brunnen der Sieben“. Hier endet das Ackerland und beginnt die Steppe; wer weiterzog, war auf Brunnen angewiesen, und um Brunnen wurde gestritten. Die Formel „von Dan bis Beerscheba“ steht rund zehnmal in der Bibel für die volle Ausdehnung des Landes.',
     refs: [
@@ -200,6 +216,7 @@ export const PLACES: MapPlace[] = [
     name: 'Kidrontal',
     coords: [35.24, 31.76],
     kind: 'gewaesser',
+    aliases: ['Kidron'],
     short: 'Trockental zwischen Stadt und Ölberg; nur bei Regen führt es Wasser.',
     refs: [
       { book: '2sam', chapter: 15, verse: 23, note: 'David flieht über den Kidron' },
@@ -259,6 +276,7 @@ export const PLACES: MapPlace[] = [
     name: 'Anatot',
     coords: [35.26, 31.82],
     kind: 'stadt',
+    aliases: ['Anathoth'],
     short: 'Priesterdorf nordöstlich von Jerusalem, Heimat Jeremias.',
     long: 'Mitten in der Belagerung kauft Jeremia hier einen Acker und lässt den Kaufvertrag in einem Tonkrug verwahren – ein Zeichen dafür, dass in diesem Land wieder Häuser und Felder gekauft werden. Seine eigenen Landsleute aus Anatot trachteten ihm nach dem Leben.',
     refs: [
@@ -271,6 +289,7 @@ export const PLACES: MapPlace[] = [
     name: 'Tekoa',
     coords: [35.21, 31.62],
     kind: 'stadt',
+    aliases: ['Thekoa'],
     short: 'Dorf am Rand der Wüste Juda, Heimat des Propheten Amos.',
     long: 'Amos war Viehzüchter und Maulbeerfeigenzüchter, kein Berufsprophet – und er sprach nicht in Juda, sondern zog in das reichere Nordreich hinauf, um dort zu reden. Von Tekoa aus fällt das Land binnen weniger Kilometer um über tausend Meter zum Toten Meer ab.',
     refs: [
@@ -283,6 +302,7 @@ export const PLACES: MapPlace[] = [
     name: 'En-Gedi',
     coords: [35.39, 31.46],
     kind: 'stadt',
+    aliases: ['Engedi'],
     short: 'Süßwasserquelle in der Wüste am Toten Meer; hier verschont David den schlafenden Saul.',
     long: 'Vier Quellen speisen mitten in der Salzwüste eine tropische Oase mit Wasserfällen. Die Höhlen ringsum boten Verstecke – deshalb spielt die Szene, in der David dem Verfolger nur einen Zipfel vom Mantel schneidet, genau hier.',
     refs: [
@@ -303,6 +323,7 @@ export const PLACES: MapPlace[] = [
     name: 'Ela-Tal (Eichgrund)',
     coords: [34.97, 31.7],
     kind: 'region',
+    noMatch: true,
     span: 0.5,
     short: 'Talebene, in der sich Israeliten und Philister gegenüberstehen – Schauplatz des Zweikampfs mit Goliat.',
     refs: [{ book: '1sam', chapter: 17, verse: 2, note: 'Die Schlachtordnung im Eichgrund' }],
@@ -312,6 +333,7 @@ export const PLACES: MapPlace[] = [
     name: 'Bet-Schemesch',
     coords: [34.98, 31.75],
     kind: 'stadt',
+    aliases: ['Beth-Semes'],
     short: 'Grenzstadt, in die die von den Philistern zurückgegebene Bundeslade auf einem Ochsenkarren rollt.',
     refs: [{ book: '1sam', chapter: 6, verse: 12, note: 'Die Rückkehr der Lade' }],
   },
@@ -320,6 +342,7 @@ export const PLACES: MapPlace[] = [
     name: 'Kirjat-Jearim',
     coords: [35.05, 31.81],
     kind: 'stadt',
+    aliases: ['Kirjath-Jearim'],
     short: 'Hier stand die Bundeslade zwanzig Jahre, bis David sie nach Jerusalem holte.',
     refs: [
       { book: '1sam', chapter: 7, verse: 1, note: 'Die Lade kommt zur Ruhe' },
@@ -373,6 +396,7 @@ export const PLACES: MapPlace[] = [
     name: 'Bethel',
     coords: [35.22, 31.93],
     kind: 'stadt',
+    aliases: ['Beth-El', 'Beth-el'],
     rank: 1,
     short: 'Ort von Jakobs Traum, später Reichsheiligtum des Nordreichs.',
     long: 'Der Name heißt „Haus Gottes“. Als das Reich zerfiel, richtete Jerobeam hier und in Dan Stierbilder ein, damit die Nordisraeliten nicht mehr nach Jerusalem pilgern mussten – aus Sicht der Königsbücher der Sündenfall des Nordreichs. Amos wird in Bethel des Landes verwiesen, weil es „ein Heiligtum des Königs“ sei.',
@@ -415,6 +439,7 @@ export const PLACES: MapPlace[] = [
     name: 'Bet-Schean',
     coords: [35.5, 32.5],
     kind: 'stadt',
+    aliases: ['Beth-Sean'],
     short: 'Stadt am Kreuzungspunkt zweier Täler; an ihrer Mauer wurde Sauls Leichnam aufgehängt.',
     long: 'Der Ort verbindet die Jesreelebene mit dem Jordantal und war lange ägyptische Garnison. In römischer Zeit wuchs er als Skythopolis zur größten Stadt der Dekapolis; Theater, Straßen und Bäder sind ausgegraben.',
     refs: [{ book: '1sam', chapter: 31, verse: 10, note: 'Sauls Leichnam an der Mauer' }],
@@ -425,6 +450,7 @@ export const PLACES: MapPlace[] = [
     name: 'Dotan',
     coords: [35.2, 32.4],
     kind: 'stadt',
+    aliases: ['Dothan'],
     short: 'Weidegebiet, in dem Josef von seinen Brüdern verkauft wird – und wo Elisas Diener das Feuerheer sieht.',
     refs: [
       { book: '1mo', chapter: 37, verse: 17, note: 'Die Brüder in Dothan' },
@@ -448,6 +474,7 @@ export const PLACES: MapPlace[] = [
     name: 'Tirza',
     coords: [35.32, 32.27],
     kind: 'stadt',
+    aliases: ['Thirza'],
     short: 'Hauptstadt des Nordreichs vor Samaria.',
     refs: [
       { book: '1koe', chapter: 15, verse: 33, note: 'Bahsa regiert in Thirza' },
@@ -459,6 +486,7 @@ export const PLACES: MapPlace[] = [
     name: 'Dan',
     coords: [35.65, 33.25],
     kind: 'stadt',
+    noMatch: true,
     rank: 1,
     short: 'Nördlichster Ort des Landes und zweites Reichsheiligtum Jerobeams.',
     long: 'In Dan fand man 1993 eine aramäische Siegesinschrift aus dem 9. Jahrhundert v. Chr., die vom „Haus Davids“ spricht – der bislang einzige außerbiblische Beleg für die Dynastie und einer der wichtigsten Funde der Archäologie Israels überhaupt. Das Podest des Heiligtums ist ausgegraben.',
@@ -484,6 +512,7 @@ export const PLACES: MapPlace[] = [
     name: 'Jabesch-Gilead',
     coords: [35.65, 32.42],
     kind: 'stadt',
+    aliases: ['Jabes'],
     short: 'Stadt östlich des Jordan, die Saul rettet – und die ihm zuletzt die Ehre erweist.',
     long: 'Sauls erste Tat als König ist die Befreiung dieser Stadt. Jahre später holen ihre Männer bei Nacht seinen geschändeten Leichnam von der Mauer in Bet-Schean und begraben ihn. Die Klammer ist bewusst gesetzt.',
     refs: [
@@ -496,6 +525,7 @@ export const PLACES: MapPlace[] = [
     name: 'Mahanajim',
     coords: [35.7, 32.25],
     kind: 'stadt',
+    aliases: ['Mahanaim'],
     short: 'Zuflucht Davids während des Aufstands seines Sohnes Absalom.',
     refs: [
       { book: '1mo', chapter: 32, verse: 2, note: 'Jakob nennt den Ort' },
@@ -518,6 +548,7 @@ export const PLACES: MapPlace[] = [
     name: 'Sukkot',
     coords: [35.62, 32.2],
     kind: 'stadt',
+    aliases: ['Sukkoth'],
     short: 'Ort im Jordantal, an dem Jakob Hütten für sein Vieh baut.',
     refs: [
       { book: '1mo', chapter: 33, verse: 17, note: 'Der Name kommt von den Hütten' },
@@ -541,6 +572,7 @@ export const PLACES: MapPlace[] = [
     name: 'Akko (Ptolemais)',
     coords: [35.07, 32.93],
     kind: 'stadt',
+    aliases: ['Akko', 'Ptolemais'],
     short: 'Bester Naturhafen der Küste; im Alten Testament Akko, im Neuen Ptolemais.',
     refs: [
       { book: 'ri', chapter: 1, verse: 31, note: 'Asser vertreibt die Bewohner nicht' },
@@ -607,6 +639,7 @@ export const PLACES: MapPlace[] = [
     name: 'Betsaida',
     coords: [35.63, 32.91],
     kind: 'stadt',
+    aliases: ['Bethsaida'],
     short: 'Fischerort am Nordufer, Heimat von Petrus, Andreas und Philippus.',
     long: 'Der Name heißt „Haus des Fischfangs“. Philippus, der Sohn des Herodes, baute den Ort zur Stadt aus und nannte ihn Julias nach der Kaisertochter. Über Kapernaum, Chorazin und Betsaida spricht Jesus ein Wehe – ausgerechnet über die drei Orte, in denen er am meisten wirkte.',
     refs: [
@@ -648,6 +681,7 @@ export const PLACES: MapPlace[] = [
     name: 'Magdala',
     coords: [35.52, 32.82],
     kind: 'stadt',
+    aliases: ['Magdalas'],
     short: 'Ort am Westufer, bekannt für das Einsalzen von Fisch – Herkunftsort Marias von Magdala.',
     long: 'Von hier wurde gepökelter Fisch bis nach Rom gehandelt. 2009 kam bei Bauarbeiten eine Synagoge aus dem 1. Jahrhundert zum Vorschein, eine der wenigen, die sicher aus der Zeit Jesu stammen.',
     refs: [{ book: 'mt', chapter: 15, verse: 39, note: 'Jesus kommt in die Gegend von Magdala' }],
@@ -657,6 +691,7 @@ export const PLACES: MapPlace[] = [
     name: 'Gadara',
     coords: [35.68, 32.65],
     kind: 'stadt',
+    aliases: ['Gadarener'],
     short: 'Stadt der Dekapolis östlich des Sees; in ihrer Gegend spielt die Heilung des Besessenen.',
     long: 'Die Handschriften schwanken zwischen Gadarenern, Gerasenern und Gergesenern – schon die frühen Abschreiber wussten nicht genau, welcher Ort gemeint war. Sicher ist nur: Es war nichtjüdisches Gebiet, sonst gäbe es dort keine Schweineherde.',
     refs: [{ book: 'mk', chapter: 5, verse: 1, note: 'In der Gegend der Gadarener' }],
@@ -708,6 +743,7 @@ export const PLACES: MapPlace[] = [
     name: 'Aschkelon',
     coords: [34.55, 31.67],
     kind: 'stadt',
+    aliases: ['Askalon'],
     short: 'Philisterstadt am Meer, in Davids Klage um Saul genannt.',
     long: 'Die einzige der fünf Philisterstädte direkt am Meer und damit Seehafen. Der Name taucht schon auf der Merenptah-Stele um 1208 v. Chr. auf – derselben Inschrift, die als früheste außerbiblische Erwähnung „Israels“ gilt.',
     refs: [
@@ -720,6 +756,7 @@ export const PLACES: MapPlace[] = [
     name: 'Aschdod',
     coords: [34.65, 31.8],
     kind: 'stadt',
+    aliases: ['Asdod'],
     short: 'Philisterstadt, in deren Dagon-Tempel die erbeutete Bundeslade stand.',
     refs: [{ book: '1sam', chapter: 5, verse: 1, note: 'Die Lade im Dagon-Tempel' }],
   },
@@ -728,6 +765,7 @@ export const PLACES: MapPlace[] = [
     name: 'Gat',
     coords: [34.85, 31.7],
     kind: 'stadt',
+    aliases: ['Gath'],
     short: 'Heimatstadt Goliats; David suchte hier zeitweise Zuflucht vor Saul.',
     long: 'Die Ausgrabungen in Tell es-Safi zeigen eine der größten Städte der Region im 10./9. Jahrhundert v. Chr. – und eine Scherbe mit zwei Namen, die dem Namen „Goliat“ sprachlich entsprechen. Sie beweist nicht die Erzählung, belegt aber, dass solche Namen dort geläufig waren.',
     refs: [
@@ -781,6 +819,7 @@ export const PLACES: MapPlace[] = [
     name: 'Zarpat (Sarepta)',
     coords: [35.27, 33.45],
     kind: 'stadt',
+    aliases: ['Zarpath'],
     short: 'Phönizisches Dorf, in dem Elia bei einer Witwe unterkommt.',
     long: 'Dass der Prophet ausgerechnet im Land Isebels und bei einer Nichtisraelitin versorgt wird, ist der Punkt der Erzählung. Jesus führt sie in Nazareth an – und die Zuhörer wollen ihn daraufhin den Berg hinabstürzen.',
     refs: [
@@ -843,6 +882,7 @@ export const PLACES: MapPlace[] = [
     name: 'Totes Meer',
     coords: [35.47, 31.5],
     kind: 'gewaesser',
+    aliases: ['Salzmeer'],
     rank: 1,
     fact: '430 m unter dem Meeresspiegel',
     short:
@@ -875,6 +915,7 @@ export const PLACES: MapPlace[] = [
     name: 'Berg Tabor',
     coords: [35.39, 32.69],
     kind: 'berg',
+    aliases: ['Thabor'],
     short: 'Auffällig freistehender Berg in Galiläa; seit dem 4. Jh. als Ort der Verklärung verehrt.',
     long: 'Mit 588 m nicht hoch, aber weil er allein aus der Ebene aufsteigt, von weither sichtbar. Die Evangelien nennen für die Verklärung nur „einen hohen Berg“; die Zuordnung zum Tabor ist kirchliche Überlieferung, andere denken an den Hermon.',
     refs: [{ book: 'ri', chapter: 4, verse: 6, note: 'Barak sammelt das Heer' }],
@@ -955,6 +996,7 @@ export const PLACES: MapPlace[] = [
     name: 'Bach Kischon',
     coords: [35.1, 32.72],
     kind: 'gewaesser',
+    aliases: ['Kison'],
     short: 'Fluss durch die Jesreelebene, der in der Debora-Schlacht zur Falle für die Streitwagen wird.',
     long: 'Im Sommer ein Rinnsal, nach Gewitterregen ein Strom, der die Ebene in Schlamm verwandelt. Genau das beschreibt das Deboralied: Die eisenbeschlagenen Wagen Siseras, eigentlich überlegen, blieben stecken.',
     refs: [
@@ -989,6 +1031,7 @@ export const PLACES: MapPlace[] = [
     name: 'Tigris (Hiddekel)',
     coords: [43.5, 34.5],
     kind: 'gewaesser',
+    aliases: ['Hiddekel'],
     short: 'Der zweite Strom Mesopotamiens; an ihm empfängt Daniel seine letzte Vision.',
     refs: [
       { book: '1mo', chapter: 2, verse: 14, note: 'Der Strom Hiddekel' },
@@ -1000,6 +1043,7 @@ export const PLACES: MapPlace[] = [
     name: 'Kebar',
     coords: [44.6, 32.2],
     kind: 'gewaesser',
+    aliases: ['Chebar'],
     short: 'Kanal im babylonischen Schwemmland; hier sieht Hesekiel unter den Verschleppten seine Vision.',
     long: 'Der Kebar war kein Fluss, sondern ein großer Bewässerungskanal – in babylonischen Urkunden als „nāru kabaru“ belegt. Dass die Berufungsvision eines Priesters fern vom Tempel geschieht, ist der eigentliche Skandal des Buches: Gottes Thron ist beweglich.',
     refs: [
@@ -1037,6 +1081,7 @@ export const PLACES: MapPlace[] = [
     name: 'Das große Meer',
     coords: [33.4, 34.3],
     kind: 'gewaesser',
+    aliases: ['große Meer'],
     short: 'Das Mittelmeer – in der Bibel meist einfach „das große Meer“ und Westgrenze des Landes.',
     long: 'Israel war kein Seefahrervolk; Häfen und Flotten kamen von Phöniziern, Griechen und Römern. Im Bild der Propheten steht das Meer für das Ungebändigte – und in der Offenbarung heißt es von der neuen Welt ausdrücklich, dass „das Meer nicht mehr ist“.',
     refs: [
@@ -1051,6 +1096,7 @@ export const PLACES: MapPlace[] = [
     name: 'Memphis',
     coords: [31.25, 29.85],
     kind: 'stadt',
+    aliases: ['Noph', 'Moph'],
     rank: 1,
     lexicon: 'aegypten',
     today: 'Bei Kairo, Luther nennt es „Noph“',
@@ -1066,6 +1112,7 @@ export const PLACES: MapPlace[] = [
     name: 'Ramses',
     coords: [31.83, 30.8],
     kind: 'stadt',
+    aliases: ['Raemses'],
     rank: 1,
     short: 'Vorratsstadt im Nildelta, die Israel nach 2. Mose 1 erbauen musste – Ausgangspunkt des Auszugs.',
     long: 'Der Name verweist auf Ramses II. (13. Jh. v. Chr.); die Ausgrabungen in Qantir haben dort eine riesige Residenzstadt freigelegt. Das ist eines der Hauptargumente für eine Datierung des Auszugs ins 13. Jahrhundert – andere halten den Namen für eine spätere Aktualisierung eines älteren Ortsnamens.',
@@ -1079,6 +1126,7 @@ export const PLACES: MapPlace[] = [
     name: 'Theben',
     coords: [32.64, 25.7],
     kind: 'stadt',
+    aliases: ['No-Amon', 'No'],
     today: 'Luxor',
     short: 'Religiöses Zentrum Oberägyptens; die Propheten nennen es „No-Amon“.',
     long: 'Die Tempelanlagen von Karnak und Luxor und die Königsgräber im Tal der Könige liegen hier. Als Assurbanipal die Stadt 663 v. Chr. plünderte, ging das als Schock durch den ganzen Orient – Nahum führt es Ninive als Warnung vor Augen: Wenn selbst Theben fiel, fällst auch du.',
@@ -1089,6 +1137,7 @@ export const PLACES: MapPlace[] = [
     name: 'Alexandria',
     coords: [29.92, 31.2],
     kind: 'stadt',
+    aliases: ['Alexandrien'],
     rank: 1,
     short:
       'Größte jüdische Gemeinde außerhalb Judäas. Hier entstand die Septuaginta, die griechische Bibel des Neuen Testaments.',
@@ -1103,6 +1152,7 @@ export const PLACES: MapPlace[] = [
     name: 'Kadesch-Barnea',
     coords: [34.5, 30.68],
     kind: 'stadt',
+    aliases: ['Kades-Barnea', 'Kades'],
     short: 'Oase, an der Israel nach 4. Mose den größten Teil der Wüstenzeit verbrachte.',
     long: 'Von den vierzig Jahren entfallen nach dem Text achtunddreißig auf diesen Ort. Von hier brachen die Kundschafter auf, hier starb Mirjam, hier scheiterte Mose am Streit ums Wasser. Die Oase liegt am Übergang zwischen Negev und Sinai.',
     refs: [
@@ -1116,6 +1166,7 @@ export const PLACES: MapPlace[] = [
     name: 'On (Heliopolis)',
     coords: [31.3, 30.13],
     kind: 'stadt',
+    noMatch: true,
     short: 'Zentrum des Sonnenkults; von hier stammt die Frau Josefs.',
     long: 'Dass der Pharao seinem Verwalter ausgerechnet die Tochter des Priesters von On zur Frau gibt, ist die höchste denkbare Einbindung in die ägyptische Oberschicht. Die Erzählung erzählt das ohne jeden Kommentar.',
     refs: [{ book: '1mo', chapter: 41, verse: 45, note: 'Asnat, die Tochter Potipheras' }],
@@ -1125,6 +1176,7 @@ export const PLACES: MapPlace[] = [
     name: 'Pithom',
     coords: [32.0, 30.6],
     kind: 'stadt',
+    aliases: ['Pithon'],
     short: 'Die zweite Vorratsstadt, die Israel nach 2. Mose 1 bauen musste.',
     refs: [{ book: '2mo', chapter: 1, verse: 11, note: 'Pithom und Ramses' }],
   },
@@ -1144,6 +1196,7 @@ export const PLACES: MapPlace[] = [
     name: 'Tachpanhes',
     coords: [32.16, 30.87],
     kind: 'stadt',
+    aliases: ['Thachpanhes'],
     short: 'Grenzstadt, in die Jeremia nach der Katastrophe von 587 v. Chr. gegen seinen Willen verschleppt wird.',
     long: 'Die letzte bekannte Station des Propheten: Eine Gruppe Überlebender flieht vor der babylonischen Vergeltung nach Ägypten und nimmt ihn mit. Dort verkündet er, dass Nebukadnezar auch hierher kommen werde – die Flucht ins vermeintlich sichere Ägypten läuft ins Leere.',
     refs: [
@@ -1166,6 +1219,7 @@ export const PLACES: MapPlace[] = [
     name: 'Ezjon-Geber',
     coords: [35.0, 29.55],
     kind: 'stadt',
+    aliases: ['Ezeon-Geber'],
     short: 'Salomos Hafen am Roten Meer, Ausgangspunkt der Fahrten nach Ofir.',
     refs: [
       { book: '4mo', chapter: 33, verse: 35, note: 'Station der Wüstenwanderung' },
@@ -1177,6 +1231,7 @@ export const PLACES: MapPlace[] = [
     name: 'Sela (Petra)',
     coords: [35.44, 30.32],
     kind: 'stadt',
+    noMatch: true,
     short: 'Edomitische Felsenstadt, später Hauptstadt der Nabatäer.',
     long: 'Der hebräische Name bedeutet schlicht „Fels“, wie das griechische Petra. Obadja spottet über die, die „in Felsklüften wohnen“ und sich für unerreichbar halten. Die berühmten Felsfassaden stammen aus nabatäischer Zeit, also Jahrhunderte nach den Propheten.',
     refs: [
@@ -1201,6 +1256,7 @@ export const PLACES: MapPlace[] = [
     name: 'Heschbon',
     coords: [35.8, 31.8],
     kind: 'stadt',
+    aliases: ['Hesbon'],
     short: 'Stadt des Amoriterkönigs Sihon, die Israel auf dem Weg ins Land einnimmt.',
     refs: [
       { book: '4mo', chapter: 21, verse: 26, note: 'Die Stadt Sihons' },
@@ -1240,6 +1296,7 @@ export const PLACES: MapPlace[] = [
     name: 'Antiochia in Syrien',
     coords: [36.16, 36.2],
     kind: 'stadt',
+    aliases: ['Antiochien'],
     rank: 1,
     lexicon: 'antiochia',
     fact: 'etwa 300 000 Einwohner',
@@ -1270,6 +1327,7 @@ export const PLACES: MapPlace[] = [
     name: 'Karkemisch',
     coords: [38.01, 36.83],
     kind: 'stadt',
+    aliases: ['Karchemis'],
     short:
       'Furt über den Euphrat. Die Schlacht von 605 v. Chr. entschied, dass Babylon und nicht Ägypten die Levante beherrschte.',
     long: 'Der Sieg Nebukadnezars über Pharao Necho ist in der babylonischen Chronik und bei Jeremia gleichlautend überliefert. Für Juda war er das Ende jeder Hoffnung auf ägyptischen Schutz – von da an lief alles auf 587 v. Chr. zu.',
@@ -1343,6 +1401,7 @@ export const PLACES: MapPlace[] = [
     name: 'Ekbatana',
     coords: [48.52, 34.8],
     kind: 'stadt',
+    aliases: ['Ahmetha'],
     short: 'Sommerresidenz der Perserkönige; hier wird nach Esra 6 das Edikt des Kyros wiedergefunden.',
     long: 'Dass die Erlaubnis zum Tempelbau ausgerechnet im Archiv der Sommerresidenz auftaucht, ist ein Detail, das die persische Verwaltungspraxis erstaunlich genau trifft: Urkunden lagerten dort, wo der Hof zur Zeit ihrer Ausstellung residierte.',
     refs: [{ book: 'esr', chapter: 6, verse: 2, note: 'Die wiedergefundene Urkunde' }],
@@ -1365,6 +1424,7 @@ export const PLACES: MapPlace[] = [
     name: 'Hamat',
     coords: [36.75, 35.13],
     kind: 'stadt',
+    aliases: ['Hamath'],
     short: 'Stadt am Orontes; „bis wohin man nach Hamat kommt“ ist die ideale Nordgrenze des Landes.',
     refs: [
       { book: '4mo', chapter: 34, verse: 8, note: 'Die Nordgrenze' },
@@ -1376,6 +1436,7 @@ export const PLACES: MapPlace[] = [
     name: 'Tadmor (Palmyra)',
     coords: [38.27, 34.55],
     kind: 'stadt',
+    aliases: ['Thadmor'],
     short: 'Oasenstadt mitten in der syrischen Wüste, nach 2. Chronik von Salomo ausgebaut.',
     long: 'Die Oase liegt genau dort, wo die Wüstenroute zwischen Euphrat und Mittelmeer Wasser braucht – deshalb wurde sie später eine der reichsten Karawanenstädte der Antike.',
     refs: [{ book: '2chr', chapter: 8, verse: 4, note: 'Salomo baut Thadmor in der Wüste' }],
@@ -1396,6 +1457,7 @@ export const PLACES: MapPlace[] = [
     name: 'Kalach (Nimrud)',
     coords: [43.33, 36.1],
     kind: 'stadt',
+    aliases: ['Kalah'],
     short: 'Assyrische Hauptstadt vor Ninive, in der Völkertafel als Gründung genannt.',
     long: 'Aus Kalach stammt der Schwarze Obelisk Salmanassars III. – er zeigt einen knienden Mann, der Tribut bringt, und die Beischrift nennt ihn „Jehu, Sohn des Omri“. Es ist das einzige zeitgenössische Bild, das einen israelitischen König darstellt.',
     refs: [{ book: '1mo', chapter: 10, verse: 11, note: 'In der Völkertafel' }],
@@ -1405,6 +1467,7 @@ export const PLACES: MapPlace[] = [
     name: 'Erech (Uruk)',
     coords: [45.64, 31.32],
     kind: 'stadt',
+    aliases: ['Erech'],
     short: 'Eine der ältesten Städte der Welt, in der Völkertafel neben Babel genannt.',
     long: 'In Uruk entstand um 3200 v. Chr. die erste bekannte Schrift der Menschheit. Die Stadt ist auch der Schauplatz des Gilgamesch-Epos, dessen Flutbericht dem der Genesis auffällig ähnelt – ein Vergleich, der die Auslegung von 1. Mose 6–9 bis heute prägt.',
     refs: [{ book: '1mo', chapter: 10, verse: 10, note: 'Babel, Erech und Akkad' }],
@@ -1463,6 +1526,7 @@ export const PLACES: MapPlace[] = [
     name: 'Pergamon',
     coords: [27.18, 39.13],
     kind: 'stadt',
+    aliases: ['Pergamus'],
     short:
       'Sitz des ersten Kaisertempels der Provinz; die Offenbarung nennt die Stadt „wo der Thron des Satans ist“.',
     long: 'Auf der Akropolis standen der monumentale Zeusaltar, ein Heiligtum des Heilgottes Asklepios und seit 29 v. Chr. der erste Tempel für den lebenden Kaiser in der Provinz Asien. Welches dieser Bauwerke mit dem „Thron des Satans“ gemeint ist, ist umstritten – der Kaiserkult ist der wahrscheinlichste Bezug. Aus Pergamon stammt auch das Wort Pergament: Als Ägypten den Papyrus-Export sperrte, wich die Bibliothek auf Tierhaut aus.',
@@ -1588,6 +1652,7 @@ export const PLACES: MapPlace[] = [
     name: 'Seleukia',
     coords: [35.93, 36.12],
     kind: 'stadt',
+    aliases: ['Seleucia'],
     short: 'Hafen von Antiochia; von hier sticht die erste Missionsreise in See.',
     refs: [{ book: 'apg', chapter: 13, verse: 4, note: 'Abfahrt nach Zypern' }],
   },
@@ -1605,6 +1670,7 @@ export const PLACES: MapPlace[] = [
     name: 'Attalia',
     coords: [30.7, 36.88],
     kind: 'stadt',
+    aliases: ['Attalien'],
     today: 'Antalya',
     short: 'Hafen, von dem aus die erste Missionsreise zurück nach Antiochia führt.',
     refs: [{ book: 'apg', chapter: 14, verse: 25, note: 'Die Rückfahrt' }],
@@ -1747,6 +1813,7 @@ export const PLACES: MapPlace[] = [
     name: 'Salamis auf Zypern',
     coords: [33.9, 35.18],
     kind: 'insel',
+    aliases: ['Salamis'],
     rank: 1,
     short: 'Heimat des Barnabas und erste Station der ersten Missionsreise.',
     long: 'Zypern war reich an Kupfer – das lateinische Wort für Kupfer leitet sich vom Namen der Insel ab. Die jüdische Gemeinde war groß genug für mehrere Synagogen. Dass Barnabas von hier stammte, erklärt, warum die erste Reise dorthin führte.',
@@ -1769,6 +1836,7 @@ export const PLACES: MapPlace[] = [
     name: 'Rhodos',
     coords: [28.22, 36.44],
     kind: 'insel',
+    aliases: ['Rhodus'],
     short: 'Station auf der Rückreise der dritten Missionsreise.',
     refs: [{ book: 'apg', chapter: 21, verse: 1, note: 'Auf der Fahrt nach Jerusalem' }],
   },
@@ -1802,6 +1870,7 @@ export const PLACES: MapPlace[] = [
     name: 'Malta',
     coords: [14.38, 35.9],
     kind: 'insel',
+    aliases: ['Melite'],
     rank: 1,
     short: 'Hier strandet das Schiff des Paulus; er bleibt drei Monate auf der Insel.',
     long: 'Die Strandung nach vierzehn Tagen Treiben passt zur vorherrschenden Windrichtung und zur Drift – eine der Berechnungen, die die Genauigkeit des Berichts stützen. Alle 276 Menschen an Bord kommen an Land.',
@@ -1880,6 +1949,7 @@ export const PLACES: MapPlace[] = [
     name: 'Rhegium',
     coords: [15.65, 38.11],
     kind: 'stadt',
+    aliases: ['Rhegion'],
     short: 'Hafen an der Meerenge von Messina auf der letzten Etappe nach Rom.',
     refs: [{ book: 'apg', chapter: 28, verse: 13, note: 'Warten auf günstigen Wind' }],
   },
@@ -1967,6 +2037,7 @@ export const PLACES: MapPlace[] = [
     name: 'Baschan',
     coords: [36.0, 32.85],
     kind: 'region',
+    aliases: ['Basan'],
     span: 0.8,
     short: 'Fruchtbare Hochebene im Nordosten, sprichwörtlich für starkes Vieh.',
     refs: [
@@ -2017,6 +2088,7 @@ export const PLACES: MapPlace[] = [
     name: 'Aram (Syrien)',
     coords: [37.2, 34.8],
     kind: 'region',
+    aliases: ['Syrien'],
     span: 3,
     short: 'Aramäische Reiche im Norden – Jahrhunderte lang Nachbar, Gegner und Bündnispartner.',
     long: 'Das Aramäische wurde zur Verkehrssprache des ganzen Vorderen Orients und war zur Zeit Jesu die Alltagssprache in Galiläa. Teile von Daniel und Esra stehen auf Aramäisch; einzelne Worte Jesu sind im griechischen Text aramäisch stehen geblieben.',
@@ -2084,6 +2156,7 @@ export const PLACES: MapPlace[] = [
     name: 'Makedonien',
     coords: [22.4, 41.3],
     kind: 'region',
+    aliases: ['Mazedonien'],
     span: 3,
     rank: 1,
     short: 'Römische Provinz im Norden Griechenlands – der erste europäische Boden der Mission.',
@@ -2097,6 +2170,7 @@ export const PLACES: MapPlace[] = [
     name: 'Achaia',
     coords: [22.4, 38.3],
     kind: 'region',
+    aliases: ['Achaja'],
     span: 2.5,
     short: 'Provinz mit Athen und Korinth; Verwaltungssitz war Korinth, nicht Athen.',
     refs: [
@@ -2109,6 +2183,7 @@ export const PLACES: MapPlace[] = [
     name: 'Provinz Asien',
     coords: [29.6, 39.4],
     kind: 'region',
+    aliases: ['Asien'],
     span: 4,
     rank: 1,
     short: 'Reichste Provinz Kleinasiens mit Ephesus als Hauptstadt; Adressatin der sieben Sendschreiben.',
@@ -2174,6 +2249,7 @@ export const PLACES: MapPlace[] = [
     name: 'Kilikien',
     coords: [34.6, 37.3],
     kind: 'region',
+    aliases: ['Zilizien'],
     span: 3,
     short: 'Heimatprovinz des Paulus zwischen Taurus und Mittelmeer.',
     refs: [

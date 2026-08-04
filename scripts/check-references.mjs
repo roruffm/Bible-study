@@ -155,6 +155,51 @@ for (const place of PLACES) {
   }
 }
 
+/*
+ * Die Luther-Schreibweisen müssen im Text tatsächlich vorkommen – sonst
+ * greift der Abgleich in der Leseansicht ins Leere und niemand merkt es.
+ * Geprüft wird gegen den vollständigen Bibeltext.
+ */
+const chapterText = new Map();
+let placeChapters = 0;
+for (const book of index.books) {
+  const data = JSON.parse(readFileSync(join(ROOT, 'public', 'bibel', TRANSLATION, `${book.id}.json`), 'utf8'));
+  data.chapters.forEach((verses, i) => chapterText.set(`${book.id} ${i + 1}`, verses.join(' ')));
+}
+const allText = [...chapterText.values()].join(' ');
+
+function occurrences(term) {
+  const clean = term.replace(/\s*\(.*\)$/, '').trim();
+  const escaped = clean.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(?<![\\wÄÖÜäöüß])${escaped}(?![\\wÄÖÜäöüß])`, 'g');
+  return (allText.match(re) ?? []).length;
+}
+
+for (const place of PLACES) {
+  for (const alias of place.aliases ?? []) {
+    if (occurrences(alias) === 0) {
+      problems.push(`Ort "${place.name}": Schreibweise "${alias}" kommt im Text nicht vor`);
+    }
+  }
+}
+
+// Wie viele Kapitel bekommen dadurch einen Kartenbezug?
+{
+  const terms = new Map();
+  for (const place of PLACES) {
+    if (place.noMatch) continue;
+    for (const term of [place.name, ...(place.aliases ?? [])]) {
+      const clean = term.replace(/\s*\(.*\)$/, '').trim();
+      if (clean && !terms.has(clean)) terms.set(clean, place);
+    }
+  }
+  const escaped = [...terms.keys()]
+    .sort((a, b) => b.length - a.length)
+    .map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const re = new RegExp(`(?<![\\wÄÖÜäöüß])(${escaped.join('|')})(?![\\wÄÖÜäöüß])`);
+  for (const text of chapterText.values()) if (re.test(text)) placeChapters++;
+}
+
 // Ein `lexicon`-Verweis muss den Eintrag auch treffen.
 const lexiconIds = new Set((await loadContent('lexicon')).LEXICON.map((e) => e.id));
 for (const place of PLACES) {
@@ -181,8 +226,44 @@ for (const journey of JOURNEYS) {
 
 const { TIMELINE } = await loadContent('timeline');
 for (const event of TIMELINE) {
-  if (!event.ref) continue;
-  check(`Zeitleiste "${event.label}"`, event.ref.book, event.ref.chapter, event.ref.verse);
+  if (event.ref) {
+    check(`Zeitleiste "${event.label}"`, event.ref.book, event.ref.chapter, event.ref.verse);
+  }
+  // Der Ortsbezug verbindet Zeitleiste und Karte – ein Tippfehler darin
+  // führte auf eine leere Kartentafel.
+  if (event.place && !placeIds.has(event.place)) {
+    problems.push(`Zeitleiste "${event.label}": Ort "${event.place}" gibt es nicht`);
+  }
+}
+
+/* ---------------------------------------------------------- Synopse */
+
+const { SYNOPSIS, SYNOPSIS_SECTIONS, GOSPELS } = await loadContent('synopsis');
+const pericopeIds = new Set();
+let synopsisRefs = 0;
+
+for (const pericope of SYNOPSIS) {
+  const where = `Perikope "${pericope.title}"`;
+  if (pericopeIds.has(pericope.id)) problems.push(`${where}: Kennung doppelt`);
+  pericopeIds.add(pericope.id);
+
+  if (!SYNOPSIS_SECTIONS.includes(pericope.section)) {
+    problems.push(`${where}: Abschnitt "${pericope.section}" ist nicht vorgesehen`);
+  }
+
+  let columns = 0;
+  for (const gospel of GOSPELS) {
+    const passage = pericope[gospel.key];
+    if (!passage) continue;
+    columns++;
+    synopsisRefs += 2;
+    check(`${where} (${gospel.label})`, gospel.id, passage.chapter, passage.from);
+    check(`${where} (${gospel.label})`, gospel.id, passage.chapter, passage.to);
+    if (passage.to < passage.from) {
+      problems.push(`${where} (${gospel.label}): Versbereich läuft rückwärts`);
+    }
+  }
+  if (columns === 0) problems.push(`${where}: keine einzige Stelle angegeben`);
 }
 
 /* ------------------------------------------------------ Vers des Tages */
@@ -204,6 +285,7 @@ const checked =
   PLACES.reduce((n, p) => n + p.refs.length, 0) +
   JOURNEYS.length +
   TIMELINE.filter((e) => e.ref).length +
+  synopsisRefs +
   DAILY_VERSES.length;
 
 /* ------------------------------------------------ Mindesttiefe */
@@ -275,6 +357,20 @@ console.log(
   `Karte       : ${PLACES.length} Orte und ${JOURNEYS.length} Wege, ` +
     `${PLACES.filter((p) => p.long).length} Orte mit Hintergrundtext`,
 );
+console.log(
+  `Ortsbezug   : ${placeChapters} von ${chapterText.size} Kapiteln nennen einen Ort der Karte`,
+);
+console.log(
+  `Zeit + Ort  : ${TIMELINE.filter((e) => e.place).length} von ${TIMELINE.length} Ereignissen sind verortet`,
+);
+{
+  const mehrfach = SYNOPSIS.filter(
+    (p) => GOSPELS.filter((g) => p[g.key]).length > 1,
+  ).length;
+  console.log(
+    `Synopse     : ${SYNOPSIS.length} Abschnitte, ${mehrfach} davon in mehreren Evangelien`,
+  );
+}
 
 if (problems.length === 0) {
   console.log('Ergebnis    : alle Angaben existieren ✓');

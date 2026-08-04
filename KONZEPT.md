@@ -87,6 +87,10 @@ Wichtige Prinzipien:
    jeder Ort trägt Bibelstellen und meist einen Hintergrundtext. Namen und
    Punkte werden zur Laufzeit überschneidungsfrei verteilt – was keinen Platz
    findet, erscheint beim Hineinzoomen.
+2b. **Verzahnung der Module:** Die Karte weiß, welche Orte im gelesenen
+   Kapitel stehen; die Zeitleiste weiß, wo ihre Ereignisse spielen; aus jedem
+   Stichwort führt ein Weg in die Konkordanz; und wer ein Evangelium liest,
+   sieht die Parallelen in den anderen. *Umgesetzt.*
 3. **Personen- & Begriffslexikon:** Namen (Abraham, Pilatus …) und
    Schlüsselbegriffe (Bund, Gnade, Passah …) sind im Text dezent markiert;
    Antippen zeigt eine Kurzerklärung mit allen Vorkommen.

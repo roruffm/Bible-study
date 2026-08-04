@@ -88,8 +88,10 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Volltextsuche** | Alle 31.102 Verse, Mehrwortsuche, Phrasensuche in `"…"`, Filter nach Testament und Buch, Treffer hervorgehoben |
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
 | **Lexikon** | 124 Einträge in sieben Kategorien – Personen, Orte, Begriffe, Maße & Geld, Ämter, Bräuche, Natur & Stoffe |
+| **Konkordanz** | Alle Vorkommen eines Wortes in biblischer Reihenfolge, mit der Verteilung über die 66 Bücher; zählt ganze Wörter |
+| **Synopse** | 77 Abschnitte der Evangelien nebeneinander – bis zu vier Fassungen im Wortlaut, mit Hinweis auf den Unterschied |
 | **Zeitleiste** | 10 Epochen und 97 Einträge auf maßstabsgetreuer Achse – biblische Ereignisse, Weltgeschichte, außerbiblische Funde und die Entstehung der Bücher, einzeln filterbar |
-| **Karte** | 188 Orte und Landschaften von Rom bis Susa, 9 Wege (Abraham, Auszug, Exil, Wege Jesu, die sieben Gemeinden, drei Missionsreisen, die Fahrt nach Rom), sechs Ausschnitte, freies Ziehen und Vergrößern, Maßstabsbalken, Ortssuche und zu jedem Ort Hintergrund und Bibelstellen |
+| **Karte** | 188 Orte und Landschaften von Rom bis Susa, nach Epoche filterbar, 9 Wege (Abraham, Auszug, Exil, Wege Jesu, die sieben Gemeinden, drei Missionsreisen, die Fahrt nach Rom), sechs Ausschnitte, freies Ziehen und Vergrößern, Maßstabsbalken, Ortssuche und zu jedem Ort Hintergrund und Bibelstellen |
 | **Merkverse** | Auswendiglernen mit wachsenden Abständen; je Stufe verschwinden mehr Wörter |
 | **Offline** | Service Worker; gelesene Kapitel bleiben gespeichert, auf Wunsch die ganze Bibel (≈ 4 MB) |
 | **Persönliches** | Notizen, Markierungen in vier Farben, gelesene Kapitel, Export des Journals als Markdown |
@@ -150,6 +152,23 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
   wichtigeren, Punkte, die aufeinanderlägen, erscheinen erst beim
   Hineinzoomen. Der Smoke-Test misst das nach – in keinem Ausschnitt
   überdeckt ein Name oder ein Punkt einen anderen.
+
+**Die Module greifen ineinander.** Jeder Bereich ist mit den anderen
+verbunden, statt für sich zu stehen:
+
+- Beim Lesen stehen unter dem Kapitel die **Orte, die darin vorkommen** –
+  abgeglichen mit den Schreibweisen der Lutherbibel von 1912 („Beth-El“,
+  „Askalon“, „Beer-Seba“). Das erreicht **695 der 1189 Kapitel**, also
+  deutlich mehr als die 113 Kapitel mit einem Artikel.
+- Beim Lesen eines Evangeliums stehen darunter die **Parallelstellen** in den
+  anderen dreien, mit einem Klick zum Vergleich im Wortlaut.
+- **Zeitleiste und Karte sind in beide Richtungen verbunden:** 81 der 97
+  Ereignisse tragen einen Ort, jedes verlinkt auf die Karte. Umgekehrt lässt
+  sich die Karte auf eine Epoche einschränken – dann bleiben nur die Orte
+  übrig, an denen in dieser Zeit etwas geschah. Jede Ortstafel zeigt
+  außerdem, was dort geschah und welche Wege darüber führten.
+- Aus dem Vers-Panel und aus dem Lexikon führt zu jedem Stichwort ein Weg in
+  die **Konkordanz**.
 
 **Mindesttiefe je Artikel:** ausführlicher historischer Kontext und
 mindestens drei Auslegungen aus verschiedenen Traditionen. Jeder Kartenort
@@ -213,6 +232,7 @@ src/
     timeline.ts              Epochen und Ereignisse
     journeys.ts              Reiserouten für die Karte
     places.ts                Orte, Landschaften und Kartenausschnitte
+    synopsis.ts              Perikopen der Evangelien mit ihren Parallelen
     readingPlans.ts          Lese- und Themenpläne
     verseOfDay.ts            Kuratierte Verse für den Tagesimpuls
   lib/
@@ -223,6 +243,7 @@ src/
     offline.ts             Stand und Steuerung des Offline-Speichers
     mapData.ts             Küstenlinien laden
     mapLabels.ts           Beschriftungen überschneidungsfrei verteilen
+    placeText.ts           Ortsnamen im Kapiteltext erkennen
   pages/                   Heute, Bibliothek, Buch, Leseansicht, Suche,
                            Studium, Plan, Ich
 ```
@@ -275,7 +296,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (80 Prüfungen):
+abgeschalteter Verbindung (95 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -294,7 +315,7 @@ node scripts/check-references.mjs
 ```
 
 Geprüft werden Artikel, Querverweise, Lesepläne, Lexikon, Zeitleiste, Vers
-des Tages und die Karte – zurzeit 1008 Angaben. Es meldet zugleich, wie weit
+des Tages, die Karte und die Synopse – zurzeit 1438 Angaben. Es meldet zugleich, wie weit
 die Inhalte reichen: wie viele Abschnitte und Verse abgedeckt sind, ob ein
 Buch noch ganz ohne Artikel dasteht und wie viele Orte einen Hintergrundtext
 haben. Für die Karte prüft es außerdem, dass jeder Ort im Kartenausschnitt

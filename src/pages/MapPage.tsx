@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { JOURNEYS, findJourney, type Journey } from '../content/journeys';
 import { findLexiconEntry } from '../content/lexicon';
+import { EPOCHS, TIMELINE, type TimelineEvent } from '../content/timeline';
 import {
   MAP_VIEWS,
   PLACES,
@@ -104,6 +105,13 @@ const SCALE_STEPS = [10, 20, 50, 100, 200, 500, 1000, 2000];
 const ZOOM_MIN = 1;
 const ZOOM_MAX = 20;
 
+/** Ereignisse einer Epoche, die einen Ort auf der Karte haben. */
+function eventsOfEpoch(epochId: string): TimelineEvent[] {
+  return TIMELINE.filter((event) => event.epoch === epochId && event.place).sort(
+    (a, b) => a.year - b.year,
+  );
+}
+
 export default function MapPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const { data, loading, error } = useAsync<MapRegions>(() => loadRegions(), []);
@@ -113,8 +121,16 @@ export default function MapPage() {
   const placeId = searchParams.get('ort');
   const viewId = searchParams.get('ausschnitt') ?? 'welt';
   const kindFilter = searchParams.get('art') as PlaceKind | null;
+  const epochId = searchParams.get('epoche');
 
   const journey = journeyId ? findJourney(journeyId) : undefined;
+  const epoch = epochId ? EPOCHS.find((e) => e.id === epochId) : undefined;
+  const epochEvents = useMemo(() => (epoch ? eventsOfEpoch(epoch.id) : []), [epoch]);
+  /** Orte, an denen in dieser Epoche etwas geschah. */
+  const epochPlaces = useMemo(
+    () => new Set(epochEvents.map((event) => event.place as string)),
+    [epochEvents],
+  );
   const focusPlace = placeId ? findPlace(placeId) : undefined;
   const [hover, setHover] = useState<string | null>(null);
   const [query, setQuery] = useState('');
@@ -212,13 +228,14 @@ export default function MapPage() {
     if (journey || !project) return [];
     return PLACES.filter((place) => {
       if (kindFilter && place.kind !== kindFilter) return false;
+      if (epoch && !epochPlaces.has(place.id)) return false;
       // Eine Landschaft erscheint erst, wenn sie im Ausschnitt auch etwas
       // ausmacht – sonst klebt „Galiläa“ als Punktname auf der Weltkarte.
       if (place.kind === 'region' && (place.span ?? 1) < viewDegrees * 0.06) return false;
       const [x, y] = project(place.coords);
       return x >= view.x && x <= view.x + view.w && y >= view.y && y <= view.y + view.h;
     });
-  }, [journey, project, view, kindFilter, viewDegrees]);
+  }, [journey, project, view, kindFilter, viewDegrees, epoch, epochPlaces]);
 
   /** Mehrfach angefahrene Orte zu einer Beschriftung zusammenfassen. */
   const journeyPoints = useMemo(() => {
@@ -272,12 +289,12 @@ export default function MapPage() {
       }
       const [x, y] = project(place.coords);
       const tooClose = kept.some(([kx, ky]) => Math.abs(kx - x) < minGap && Math.abs(ky - y) < minGap);
-      if (tooClose && place.id !== focusPlace?.id) continue;
+      if (tooClose && place.id !== focusPlace?.id && !epoch) continue;
       kept.push([x, y]);
       out.push(place);
     }
     return out;
-  }, [shownPlaces, project, unit, focusPlace]);
+  }, [shownPlaces, project, unit, focusPlace, epoch]);
 
   /**
    * Beschriftungen der Orte. Wichtige Orte kommen zuerst dran, damit ihnen
@@ -439,6 +456,10 @@ export default function MapPage() {
   }
 
   const routes = focusPlace ? journeysThrough(focusPlace) : [];
+  /** Ereignisse der Zeitleiste, die an diesem Ort spielen. */
+  const placeEvents = focusPlace
+    ? TIMELINE.filter((event) => event.place === focusPlace.id).sort((a, b) => a.year - b.year)
+    : [];
 
   return (
     <div>
@@ -491,6 +512,25 @@ export default function MapPage() {
         ))}
       </div>
 
+      {/* Epochen – die zeitliche Sicht auf denselben Bestand */}
+      <div className="search__filters">
+        <span className="settings-row__hint" style={{ alignSelf: 'center' }}>
+          Epoche:
+        </span>
+        {EPOCHS.filter((item) => eventsOfEpoch(item.id).length > 0).map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            className={`chip${epoch?.id === item.id ? ' chip--active' : ''}`}
+            onClick={() =>
+              setParams({ epoche: epoch?.id === item.id ? null : item.id, reise: null, ort: null })
+            }
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
+
       {/* Routen */}
       <div className="search__filters">
         <span className="settings-row__hint" style={{ alignSelf: 'center' }}>
@@ -502,7 +542,11 @@ export default function MapPage() {
             type="button"
             className={`chip${journey?.id === item.id ? ' chip--active' : ''}`}
             onClick={() =>
-              setParams({ reise: journey?.id === item.id ? null : item.id, ort: null })
+              setParams({
+                reise: journey?.id === item.id ? null : item.id,
+                ort: null,
+                epoche: null,
+              })
             }
             style={
               journey?.id === item.id ? undefined : { borderLeft: `3px solid ${item.color}` }
@@ -758,6 +802,52 @@ export default function MapPage() {
         </>
       )}
 
+      {epoch && (
+        <section style={{ marginTop: '1.75rem' }}>
+          <div className="library__head">
+            <h3>{epoch.label}</h3>
+            <span className="library__count">
+              {epoch.from < 0 ? `${-epoch.from} v. Chr.` : `${epoch.from} n. Chr.`} –{' '}
+              {epoch.to < 0 ? `${-epoch.to} v. Chr.` : `${epoch.to} n. Chr.`}
+            </span>
+          </div>
+          <p className="page-lead">{epoch.summary}</p>
+          <p className="settings-row__hint">
+            Die Karte zeigt nur die Orte, an denen in dieser Zeit etwas geschah –{' '}
+            {epochPlaces.size} von {PLACES.length}.
+          </p>
+          <Link className="btn btn--sm" to={`/studium/zeitleiste?epoche=${epoch.id}`}>
+            In der Zeitleiste öffnen
+          </Link>
+
+          <div className="card" style={{ marginTop: '1rem' }}>
+            {epochEvents.map((event) => {
+              const eventPlace = findPlace(event.place as string);
+              return (
+                <div className="day" key={`${event.year}-${event.label}`}>
+                  <span className="day__check">
+                    {event.year < 0 ? -event.year : event.year}
+                  </span>
+                  <div className="day__body">
+                    <div className="day__title">{event.label}</div>
+                    <p className="day__note">{event.description}</p>
+                    {eventPlace && (
+                      <button
+                        type="button"
+                        className="chip"
+                        onClick={() => setParams({ ort: eventPlace.id })}
+                      >
+                        📍 {eventPlace.name}
+                      </button>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       {journey && (
         <section style={{ marginTop: '1.75rem' }}>
           <div className="library__head">
@@ -852,6 +942,26 @@ export default function MapPage() {
               {ref.note && <span> — {ref.note}</span>}
             </Link>
           ))}
+
+          {placeEvents.length > 0 && (
+            <>
+              <div className="section-title" style={{ marginTop: '1.1rem' }}>
+                Was hier geschah
+              </div>
+              {placeEvents.map((event) => (
+                <Link
+                  key={`${event.year}-${event.label}`}
+                  className="xref"
+                  to={`/studium/zeitleiste?epoche=${event.epoch}`}
+                >
+                  <strong>
+                    {event.year < 0 ? `${-event.year} v. Chr.` : `${event.year} n. Chr.`}
+                  </strong>
+                  <span> — {event.label}</span>
+                </Link>
+              ))}
+            </>
+          )}
 
           {routes.length > 0 && (
             <>

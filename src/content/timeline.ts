@@ -55,6 +55,12 @@ export interface TimelineEvent {
   description: string;
   certainty: Certainty;
   ref?: { book: string; chapter: number; verse?: number };
+  /**
+   * Kennung eines Ortes aus `places.ts`, wenn sich das Ereignis auf der Karte
+   * verorten lässt. So lässt sich die Zeitleiste räumlich und die Karte
+   * zeitlich lesen – zwei Zugänge auf denselben Bestand.
+   */
+  place?: string;
 }
 
 export const EPOCHS: Epoch[] = [
@@ -149,6 +155,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'vorgeschichte',
     kind: 'welt',
     label: 'Die Große Pyramide von Gizeh',
+    place: 'aegypten',
     description:
       'Sie stand bereits über 500 Jahre, als Abraham nach der biblischen Erzählung nach Ägypten zog – und über 1300 Jahre zur Zeit des Auszugs.',
     certainty: 'gesichert',
@@ -158,6 +165,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'vorgeschichte',
     kind: 'welt',
     label: 'Blütezeit von Ur',
+    place: 'ur',
     description:
       'Die Stadt, aus der Abrahams Familie nach 1. Mose 11 aufbricht, ist damals ein Zentrum mit Zikkurat, Verwaltung und Schulen.',
     certainty: 'gesichert',
@@ -168,6 +176,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'vorgeschichte',
     kind: 'welt',
     label: 'Der Kodex Hammurapi',
+    place: 'babylon',
     description:
       'Babylonische Rechtssammlung mit Bestimmungen, die denen des Bundesbuchs in 2. Mose 21–23 auffallend ähneln – etwa dem Grundsatz „Auge um Auge“.',
     certainty: 'gesichert',
@@ -180,6 +189,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'erzvaeter',
     kind: 'biblisch',
     label: 'Abraham bricht aus Ur auf',
+    place: 'ur',
     description:
       'Die Erzählung setzt mit dem Aufbruch einer Sippe nach Kanaan ein. Eine Datierung ist nicht möglich; die Zeitangabe folgt der überlieferten Abfolge.',
     certainty: 'umstritten',
@@ -190,6 +200,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'erzvaeter',
     kind: 'biblisch',
     label: 'Josef in Ägypten',
+    place: 'aegypten',
     description: 'Israels Vorfahren siedeln sich in Ägypten an.',
     certainty: 'umstritten',
     ref: { book: '1mo', chapter: 41 },
@@ -199,6 +210,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'erzvaeter',
     kind: 'welt',
     label: 'Die Hyksos herrschen in Ägypten',
+    place: 'ramses',
     description:
       'Eine Dynastie westsemitischer Herkunft regiert das Nildelta. Viele sehen darin den plausibelsten Hintergrund dafür, dass ein Fremder wie Josef bis an die Spitze gelangen konnte.',
     certainty: 'gesichert',
@@ -228,6 +240,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exodus',
     kind: 'biblisch',
     label: 'Auszug aus Ägypten',
+    place: 'ramses',
     description:
       'Meist unter Ramses II. verortet. Außerbiblische Belege für den Auszug fehlen; die Forschung diskutiert Umfang und Verlauf seit langem.',
     certainty: 'umstritten',
@@ -238,6 +251,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exodus',
     kind: 'biblisch',
     label: 'Die Weisung am Sinai',
+    place: 'sinai',
     description: 'Bundesschluss und Empfang der Zehn Gebote.',
     certainty: 'umstritten',
     ref: { book: '2mo', chapter: 20 },
@@ -247,6 +261,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exodus',
     kind: 'fund',
     label: 'Die Merenptah-Stele nennt „Israel“',
+    place: 'theben',
     description:
       'Der älteste bekannte Beleg für den Namen außerhalb der Bibel. Die ägyptische Inschrift bezeichnet Israel als Volksgruppe, nicht als Staat.',
     certainty: 'gesichert',
@@ -265,6 +280,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exodus',
     kind: 'welt',
     label: 'Die Philister lassen sich an der Küste nieder',
+    place: 'philistaea',
     description:
       'Als Teil der „Seevölker“ siedeln sie in fünf Städten an der südlichen Küste – die Nachbarn und Gegner Israels in Richter- und Samuelbüchern.',
     certainty: 'gesichert',
@@ -278,6 +294,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'richter',
     kind: 'biblisch',
     label: 'Zeit der Richter',
+    place: 'silo',
     description: 'Regionale Anführer wie Debora, Gideon und Simson.',
     certainty: 'ungefähr',
     ref: { book: 'ri', chapter: 2 },
@@ -299,6 +316,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Saul wird König',
+    place: 'gilgal',
     description: 'Israel bekommt auf eigenen Wunsch einen König „wie alle Völker“.',
     certainty: 'ungefähr',
     ref: { book: '1sam', chapter: 8 },
@@ -309,6 +327,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Herrschaft Davids',
+    place: 'hebron',
     description: 'Jerusalem wird Hauptstadt.',
     certainty: 'ungefähr',
     ref: { book: '2sam', chapter: 5 },
@@ -319,6 +338,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Salomo und der erste Tempel',
+    place: 'jerusalem',
     description: 'Bau des Tempels in Jerusalem; nach seinem Tod zerbricht das Reich.',
     certainty: 'ungefähr',
     ref: { book: '1koe', chapter: 6 },
@@ -337,6 +357,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Teilung in Nord- und Südreich',
+    place: 'sichem',
     description: 'Israel im Norden, Juda im Süden – von da an zwei getrennte Wege.',
     certainty: 'ungefähr',
     ref: { book: '1koe', chapter: 12 },
@@ -346,6 +367,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'fund',
     label: 'Der Feldzug des Schoschenk',
+    place: 'megiddo',
     description:
       'Der Pharao, den die Bibel Sisak nennt, listet die eroberten Orte auf einer Tempelwand in Karnak auf – eine der frühesten Überschneidungen von Bibel und ägyptischer Quelle.',
     certainty: 'gesichert',
@@ -356,6 +378,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'welt',
     label: 'Assyrien beginnt zu expandieren',
+    place: 'assyrien',
     description:
       'Das neuassyrische Reich wächst zur ersten Großmacht, die dauerhaft in die Levante hineinregiert – der Hintergrund fast aller Prophetenbücher des 8. Jahrhunderts.',
     certainty: 'gesichert',
@@ -365,6 +388,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Elia gegen die Baalspropheten',
+    place: 'karmel',
     description: 'Auseinandersetzung um die alleinige Verehrung des Gottes Israels.',
     certainty: 'ungefähr',
     ref: { book: '1koe', chapter: 18 },
@@ -383,6 +407,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'fund',
     label: 'Jehu auf dem Schwarzen Obelisken',
+    place: 'kalach',
     description:
       'Der Obelisk Salmanassars III. zeigt einen israelitischen König, der sich vor dem Assyrer niederwirft – die einzige zeitgenössische Abbildung einer biblischen Person.',
     certainty: 'gesichert',
@@ -393,6 +418,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'fund',
     label: 'Die Mescha-Stele',
+    place: 'dibon',
     description:
       'Der moabitische König schildert seine Kriege gegen Israel aus seiner Sicht – und nennt dabei den Gottesnamen JHWH. Ein Gegenstück zu 2. Könige 3.',
     certainty: 'gesichert',
@@ -403,6 +429,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'fund',
     label: 'Die Tel-Dan-Inschrift nennt das „Haus David“',
+    place: 'dan',
     description:
       'Der bislang einzige außerbiblische Beleg für eine Dynastie Davids – ein aramäisches Siegesdenkmal, 1993 gefunden.',
     certainty: 'gesichert',
@@ -412,6 +439,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'welt',
     label: 'Die ersten Olympischen Spiele',
+    place: 'achaia',
     description: 'Traditioneller Beginn der griechischen Zeitrechnung.',
     certainty: 'ungefähr',
   },
@@ -420,6 +448,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Amos und Hosea treten auf',
+    place: 'tekoa',
     description: 'Die ersten Schriftpropheten klagen soziale Ungerechtigkeit an.',
     certainty: 'ungefähr',
     ref: { book: 'am', chapter: 5, verse: 24 },
@@ -438,6 +467,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'welt',
     label: 'Sagenhafte Gründung Roms',
+    place: 'rom',
     description:
       'Zur Zeit von Amos und Hosea ist Rom ein Dorf. Bis es Judäa beherrscht, vergehen noch 700 Jahre.',
     certainty: 'umstritten',
@@ -447,6 +477,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Berufung Jesajas',
+    place: 'jerusalem',
     description: 'Prophetisches Wirken in Jerusalem unter assyrischer Bedrohung.',
     certainty: 'ungefähr',
     ref: { book: 'jes', chapter: 6 },
@@ -456,6 +487,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Untergang des Nordreichs',
+    place: 'samaria',
     description: 'Assyrien erobert Samaria und deportiert Teile der Bevölkerung.',
     certainty: 'gesichert',
     ref: { book: '2koe', chapter: 17 },
@@ -465,6 +497,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Sanherib belagert Jerusalem',
+    place: 'lachisch',
     description: 'Die Stadt hält stand – eine der genauesten Überschneidungen von Bibel und Archäologie.',
     certainty: 'gesichert',
     ref: { book: '2koe', chapter: 19 },
@@ -474,6 +507,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'fund',
     label: 'Das Sanherib-Prisma',
+    place: 'ninive',
     description:
       'Der assyrische König rühmt sich, Hiskia „wie einen Vogel im Käfig“ eingeschlossen zu haben – eine Eroberung Jerusalems meldet er auffälligerweise nicht.',
     certainty: 'gesichert',
@@ -483,6 +517,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'fund',
     label: 'Die Siloah-Inschrift',
+    place: 'jerusalem',
     description:
       'Im Fels des Hiskia-Tunnels beschreiben die Arbeiter, wie sich zwei Vortriebe in der Mitte trafen. Der Tunnel ist bis heute begehbar.',
     certainty: 'gesichert',
@@ -493,6 +528,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'welt',
     label: 'Assyrien erobert Ägypten',
+    place: 'theben',
     description: 'Die assyrische Macht erreicht ihre größte Ausdehnung – und beginnt kurz darauf zu zerfallen.',
     certainty: 'gesichert',
   },
@@ -501,6 +537,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'fund',
     label: 'Die Silberamulette von Ketef Hinnom',
+    place: 'jerusalem',
     description:
       'Zwei winzige Silberrollen mit dem aaronitischen Segen – der älteste bekannte Bibeltext, rund 400 Jahre älter als die Rollen von Qumran.',
     certainty: 'gesichert',
@@ -511,6 +548,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Berufung Jeremias',
+    place: 'anatot',
     description: 'Sein Wirken umspannt die letzten vierzig Jahre Judas.',
     certainty: 'ungefähr',
     ref: { book: 'jer', chapter: 1 },
@@ -520,6 +558,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'biblisch',
     label: 'Reform unter König Josia',
+    place: 'jerusalem',
     description:
       'Bei Tempelarbeiten wird ein Gesetzbuch gefunden; die Forschung sieht darin den Kern des 5. Buches Mose.',
     certainty: 'gesichert',
@@ -540,6 +579,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'welt',
     label: 'Ninive fällt',
+    place: 'ninive',
     description:
       'Babylonier und Meder zerstören die assyrische Hauptstadt. Das Buch Nahum feiert dieses Ende.',
     certainty: 'gesichert',
@@ -550,6 +590,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'koenige',
     kind: 'welt',
     label: 'Die Schlacht bei Karkemisch',
+    place: 'karkemisch',
     description:
       'Babylon schlägt Ägypten und übernimmt die Vorherrschaft über die Levante. Von da an ist Judas Untergang absehbar.',
     certainty: 'gesichert',
@@ -562,6 +603,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exil',
     kind: 'biblisch',
     label: 'Erste Deportation nach Babylon',
+    place: 'babylon',
     description: 'König Jojachin und die Oberschicht werden verschleppt; Hesekiel ist unter ihnen.',
     certainty: 'gesichert',
     ref: { book: '2koe', chapter: 24 },
@@ -571,6 +613,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exil',
     kind: 'fund',
     label: 'Die Babylonische Chronik',
+    place: 'babylon',
     description:
       'Eine Keilschrifttafel datiert die Einnahme Jerusalems auf den Tag genau – der 16. März 597 v. Chr.',
     certainty: 'gesichert',
@@ -580,6 +623,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exil',
     kind: 'fund',
     label: 'Rationentafeln für König Jojachin',
+    place: 'babylon',
     description:
       'Babylonische Verwaltungslisten führen Öl- und Getreidezuteilungen für „Jaukin, König von Juda“ und seine Söhne – der verschleppte König lebte am Hof weiter.',
     certainty: 'gesichert',
@@ -590,6 +634,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exil',
     kind: 'biblisch',
     label: 'Zerstörung Jerusalems und des Tempels',
+    place: 'jerusalem',
     description:
       'Die einschneidendste Katastrophe des Alten Testaments – und der Anstoß, die eigene Geschichte neu zu deuten und aufzuschreiben.',
     certainty: 'gesichert',
@@ -619,6 +664,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exil',
     kind: 'text',
     label: 'Das Trostbuch Jesajas',
+    place: 'babylon',
     description:
       'Jesaja 40–55 entsteht im Exil, rund 150 Jahre nach dem Propheten, dessen Namen das Buch trägt.',
     certainty: 'ungefähr',
@@ -629,6 +675,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'exil',
     kind: 'welt',
     label: 'Kyros erobert Babylon',
+    place: 'babylon',
     description:
       'Das Perserreich löst Babylon ab. Der Kyros-Zylinder beschreibt seine Politik, verschleppte Gruppen heimkehren zu lassen.',
     certainty: 'gesichert',
@@ -641,6 +688,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'perser',
     kind: 'biblisch',
     label: 'Das Edikt des Kyros',
+    place: 'ekbatana',
     description: 'Der Perserkönig erlaubt die Heimkehr und den Wiederaufbau des Tempels.',
     certainty: 'gesichert',
     ref: { book: 'esr', chapter: 1 },
@@ -650,6 +698,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'perser',
     kind: 'biblisch',
     label: 'Haggai und Sacharja drängen zum Tempelbau',
+    place: 'jerusalem',
     description: 'Haggais Reden sind auf den Monat genau datiert – ungewöhnlich für ein Prophetenbuch.',
     certainty: 'gesichert',
     ref: { book: 'hag', chapter: 1 },
@@ -659,6 +708,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'perser',
     kind: 'biblisch',
     label: 'Der zweite Tempel wird eingeweiht',
+    place: 'jerusalem',
     description: 'Bescheidener als der erste – manche Alte weinen beim Anblick der Grundmauern.',
     certainty: 'gesichert',
     ref: { book: 'esr', chapter: 6 },
@@ -668,6 +718,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'perser',
     kind: 'welt',
     label: 'Die Perserkriege',
+    place: 'athen',
     description:
       'Marathon und zehn Jahre später Salamis. Während Juda unter persischer Verwaltung steht, entsteht in Athen die klassische Kultur.',
     certainty: 'gesichert',
@@ -687,6 +738,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'perser',
     kind: 'biblisch',
     label: 'Nehemia baut die Stadtmauer',
+    place: 'jerusalem',
     description: 'In 52 Tagen, gegen erheblichen Widerstand der Nachbarn.',
     certainty: 'gesichert',
     ref: { book: 'neh', chapter: 6, verse: 15 },
@@ -696,6 +748,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'perser',
     kind: 'welt',
     label: 'Der Tod des Sokrates',
+    place: 'athen',
     description:
       'Griechische Philosophie prägt eine Begriffswelt, in der Jahrhunderte später das Neue Testament formuliert wird.',
     certainty: 'gesichert',
@@ -707,6 +760,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'hellenismus',
     kind: 'welt',
     label: 'Alexander der Große erobert die Levante',
+    place: 'tyrus',
     description:
       'Griechisch wird zur Verkehrssprache – Voraussetzung für die spätere Ausbreitung des Evangeliums.',
     certainty: 'gesichert',
@@ -726,6 +780,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'hellenismus',
     kind: 'text',
     label: 'Die Septuaginta entsteht',
+    place: 'alexandria',
     description:
       'Die Übersetzung der hebräischen Bibel ins Griechische in Alexandria. Die neutestamentlichen Autoren zitieren meist aus ihr.',
     certainty: 'ungefähr',
@@ -736,6 +791,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'hellenismus',
     kind: 'fund',
     label: 'Die Schriftrollen von Qumran entstehen',
+    place: 'totes-meer',
     description:
       'Am Toten Meer entsteht eine Bibliothek mit Bibelhandschriften, die 1947 gefunden wurde. Sie ist rund tausend Jahre älter als die bis dahin ältesten bekannten hebräischen Handschriften.',
     certainty: 'gesichert',
@@ -745,6 +801,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'hellenismus',
     kind: 'welt',
     label: 'Religionsverfolgung unter Antiochus IV.',
+    place: 'jerusalem',
     description: 'Der Tempel wird entweiht; jüdische Praxis wird bei Todesstrafe verboten.',
     certainty: 'gesichert',
     ref: { book: 'dan', chapter: 11 },
@@ -764,6 +821,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'hellenismus',
     kind: 'biblisch',
     label: 'Makkabäeraufstand und Tempelweihe',
+    place: 'jerusalem',
     description: 'Die Wiedereinweihung wird bis heute als Chanukka gefeiert.',
     certainty: 'gesichert',
   },
@@ -772,6 +830,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'hellenismus',
     kind: 'welt',
     label: 'Rom zerstört Karthago und Korinth',
+    place: 'korinth',
     description:
       'Rom wird zur beherrschenden Macht des Mittelmeers. Korinth wird 44 v. Chr. als römische Kolonie neu gegründet – die Stadt der Korintherbriefe.',
     certainty: 'gesichert',
@@ -783,6 +842,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'welt',
     label: 'Pompeius nimmt Jerusalem ein',
+    place: 'jerusalem',
     description: 'Judäa gerät unter römische Oberhoheit.',
     certainty: 'gesichert',
   },
@@ -791,6 +851,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'welt',
     label: 'Die Ermordung Caesars',
+    place: 'rom',
     description: 'Der Bürgerkrieg, der folgt, endet mit der Alleinherrschaft des Augustus.',
     certainty: 'gesichert',
   },
@@ -800,6 +861,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'biblisch',
     label: 'Herodes der Große',
+    place: 'jerusalem',
     description: 'Großbauten wie der erweiterte Tempel und Cäsarea – erkauft mit harter Herrschaft.',
     certainty: 'gesichert',
     ref: { book: 'mt', chapter: 2 },
@@ -809,6 +871,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'welt',
     label: 'Augustus wird Kaiser',
+    place: 'rom',
     description:
       'Er trägt die Titel „Retter“ und „Bringer des Friedens“ – dieselben Worte, die die Engel in Lukas 2 über einem Kind in einer Futterkrippe sprechen.',
     certainty: 'gesichert',
@@ -819,6 +882,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'welt',
     label: 'Herodes erweitert den Tempel',
+    place: 'jerusalem',
     description:
       'Der Umbau dauert Jahrzehnte und macht den Tempelbezirk zum größten religiösen Areal der antiken Welt. Sechs Jahre nach der Vollendung wird er zerstört.',
     certainty: 'gesichert',
@@ -829,6 +893,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'biblisch',
     label: 'Geburt Jesu',
+    place: 'bethlehem',
     description:
       'Meist zwischen 7 und 4 v. Chr. angesetzt, weil Herodes 4 v. Chr. starb. Die im 6. Jahrhundert eingeführte Jahreszählung rechnete um einige Jahre falsch.',
     certainty: 'umstritten',
@@ -840,6 +905,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'welt',
     label: 'Pontius Pilatus ist Präfekt von Judäa',
+    place: 'caesarea',
     description:
       'Außerbiblisch bezeugt bei Josephus und Philo – beide schildern ihn härter als die Evangelien.',
     certainty: 'gesichert',
@@ -850,6 +916,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'biblisch',
     label: 'Johannes der Täufer tritt auf',
+    place: 'jordan',
     description: 'Bußpredigt und Taufe am Jordan; auch Josephus berichtet von ihm.',
     certainty: 'ungefähr',
     ref: { book: 'mk', chapter: 1 },
@@ -859,6 +926,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'biblisch',
     label: 'Kreuzigung Jesu',
+    place: 'jerusalem',
     description:
       'Unter dem Präfekten Pontius Pilatus, meist auf 30 oder 33 n. Chr. datiert. Die Hinrichtung selbst gilt historisch als gesichert.',
     certainty: 'gesichert',
@@ -869,6 +937,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'roemer',
     kind: 'fund',
     label: 'Die Pilatus-Inschrift von Cäsarea',
+    place: 'caesarea',
     description:
       'Ein 1961 gefundener Steinblock nennt Pontius Pilatus als „Präfekt von Judäa“ – der einzige zeitgenössische Beleg für ihn.',
     certainty: 'gesichert',
@@ -880,6 +949,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'biblisch',
     label: 'Pfingsten in Jerusalem',
+    place: 'jerusalem',
     description: 'Die erste Gemeinde entsteht.',
     certainty: 'ungefähr',
     ref: { book: 'apg', chapter: 2 },
@@ -889,6 +959,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'biblisch',
     label: 'Bekehrung des Paulus',
+    place: 'damaskus',
     description: 'Aus dem Verfolger wird der wirkmächtigste Missionar der jungen Bewegung.',
     certainty: 'ungefähr',
     ref: { book: 'apg', chapter: 9 },
@@ -898,6 +969,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'biblisch',
     label: 'Kornelius wird aufgenommen',
+    place: 'caesarea',
     description:
       'Ein römischer Offizier gehört dazu, ohne zuvor zum Judentum überzutreten – die folgenreichste Weichenstellung der frühen Gemeinde.',
     certainty: 'ungefähr',
@@ -908,6 +980,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'biblisch',
     label: 'Das Apostelkonzil',
+    place: 'jerusalem',
     description:
       'Entscheidung, dass Nichtjuden nicht beschnitten werden müssen.',
     certainty: 'ungefähr',
@@ -918,6 +991,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'welt',
     label: 'Claudius weist Juden aus Rom aus',
+    place: 'rom',
     description:
       'Sueton nennt als Anlass Unruhen „auf Betreiben eines Chrestus“. Aquila und Priska kommen dadurch nach Korinth.',
     certainty: 'gesichert',
@@ -928,6 +1002,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'text',
     label: 'Der 1. Thessalonicherbrief',
+    place: 'thessalonich',
     description: 'Vermutlich die älteste erhaltene Schrift des Neuen Testaments.',
     certainty: 'ungefähr',
     ref: { book: '1thess', chapter: 1 },
@@ -937,6 +1012,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'fund',
     label: 'Die Gallio-Inschrift in Delphi',
+    place: 'korinth',
     description:
       'Sie datiert die Amtszeit des Prokonsuls Gallio auf 51/52 n. Chr. – der einzige feste Fixpunkt, an dem sich die gesamte Chronologie des Paulus aufhängen lässt.',
     certainty: 'gesichert',
@@ -947,6 +1023,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'text',
     label: 'Die Korintherbriefe',
+    place: 'korinth',
     description:
       'Sie geben den genauesten Einblick in den Alltag einer frühen Gemeinde – samt ihrer Konflikte.',
     certainty: 'ungefähr',
@@ -957,6 +1034,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'text',
     label: 'Der Römerbrief',
+    place: 'korinth',
     description: 'Die ausführlichste Darlegung des paulinischen Evangeliums, geschrieben in Korinth.',
     certainty: 'ungefähr',
     ref: { book: 'roem', chapter: 1 },
@@ -966,6 +1044,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'biblisch',
     label: 'Paulus kommt nach Rom',
+    place: 'rom',
     description: 'Als Gefangener, nach Schiffbruch vor Malta. Die Apostelgeschichte endet hier.',
     certainty: 'ungefähr',
     ref: { book: 'apg', chapter: 28 },
@@ -975,6 +1054,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'welt',
     label: 'Brand Roms und Verfolgung unter Nero',
+    place: 'rom',
     description:
       'Nach Tacitus schiebt Nero die Schuld den Christen zu. Petrus und Paulus sterben vermutlich in dieser Zeit.',
     certainty: 'gesichert',
@@ -985,6 +1065,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'welt',
     label: 'Der Jüdische Krieg',
+    place: 'jerusalem',
     description:
       'Der Aufstand gegen Rom endet mit der Zerstörung Jerusalems. Josephus, der ihn erst mitführte und dann überlief, hat ihn ausführlich beschrieben.',
     certainty: 'gesichert',
@@ -994,6 +1075,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'biblisch',
     label: 'Zerstörung des zweiten Tempels',
+    place: 'jerusalem',
     description:
       'Judentum und Christentum gehen danach endgültig getrennte Wege.',
     certainty: 'gesichert',
@@ -1004,6 +1086,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'text',
     label: 'Das Markusevangelium',
+    place: 'rom',
     description: 'Das älteste der vier Evangelien, Vorlage für Matthäus und Lukas.',
     certainty: 'ungefähr',
     ref: { book: 'mk', chapter: 1 },
@@ -1013,6 +1096,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'welt',
     label: 'Der Ausbruch des Vesuv',
+    place: 'puteoli',
     description:
       'Pompeji wird verschüttet und konserviert damit den Alltag einer römischen Stadt zur Zeit der ersten Gemeinden.',
     certainty: 'gesichert',
@@ -1032,6 +1116,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'text',
     label: 'Die Offenbarung des Johannes',
+    place: 'patmos',
     description: 'Trostschrift für bedrängte Gemeinden in Kleinasien, meist unter Domitian verortet.',
     certainty: 'ungefähr',
     ref: { book: 'offb', chapter: 1 },
@@ -1051,6 +1136,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'fund',
     label: 'Der Papyrus P52',
+    place: 'alexandria',
     description:
       'Ein Schnipsel aus Johannes 18, kaum größer als eine Streichholzschachtel – die älteste erhaltene Handschrift des Neuen Testaments.',
     certainty: 'ungefähr',
@@ -1062,6 +1148,7 @@ export const TIMELINE: TimelineEvent[] = [
     epoch: 'urkirche',
     kind: 'welt',
     label: 'Der Bar-Kochba-Aufstand',
+    place: 'jerusalem',
     description:
       'Der letzte große jüdische Aufstand gegen Rom scheitert. Jerusalem wird als römische Kolonie neu gegründet, Juden der Zutritt verwehrt.',
     certainty: 'gesichert',

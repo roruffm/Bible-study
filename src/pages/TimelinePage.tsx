@@ -10,6 +10,7 @@ import {
   type Certainty,
   type EventKind,
 } from '../content/timeline';
+import { findPlace } from '../content/places';
 import { useBibleIndex } from '../hooks/useStore';
 
 /**
@@ -178,18 +179,24 @@ export default function TimelinePage() {
                       </span>
                     </div>
                     <p className="day__note">{event.description}</p>
-                    {event.ref && (
-                      <Link
-                        className="chip"
-                        to={`/bibel/${event.ref.book}/${event.ref.chapter}${
-                          event.ref.verse ? `?vers=${event.ref.verse}` : ''
-                        }`}
-                        style={{ marginTop: '0.4rem' }}
-                      >
-                        {nameOf(event.ref.book)} {event.ref.chapter}
-                        {event.ref.verse ? `,${event.ref.verse}` : ''}
-                      </Link>
-                    )}
+                    <div className="day__portions" style={{ marginTop: '0.4rem' }}>
+                      {event.ref && (
+                        <Link
+                          className="chip"
+                          to={`/bibel/${event.ref.book}/${event.ref.chapter}${
+                            event.ref.verse ? `?vers=${event.ref.verse}` : ''
+                          }`}
+                        >
+                          {nameOf(event.ref.book)} {event.ref.chapter}
+                          {event.ref.verse ? `,${event.ref.verse}` : ''}
+                        </Link>
+                      )}
+                      {event.place && findPlace(event.place) && (
+                        <Link className="chip" to={`/studium/karte?ort=${event.place}`}>
+                          📍 {findPlace(event.place)!.name}
+                        </Link>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}

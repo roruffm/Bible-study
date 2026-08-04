@@ -5,6 +5,8 @@ import LexiconSheet from '../components/LexiconSheet';
 import { annotatedVerses } from '../content/commentary';
 import { findLexiconEntry } from '../content/lexicon';
 import { segmentChapter } from '../lib/lexiconText';
+import { placesInChapter } from '../lib/placeText';
+import { GOSPELS, pericopesForChapter } from '../content/synopsis';
 import { useAsync, useBibleIndex, usePersisted } from '../hooks/useStore';
 import { findBook, loadBook, stepChapter, TRANSLATION_LABEL } from '../lib/bibleData';
 import {
@@ -41,6 +43,15 @@ export default function ReaderPage() {
 
   const annotated = useMemo(() => annotatedVerses(bookId, chapter), [bookId, chapter]);
   const segments = useMemo(() => segmentChapter(verses), [verses]);
+  const places = useMemo(() => placesInChapter(verses), [verses]);
+  /** Abschnitte dieses Kapitels, die auch in anderen Evangelien stehen. */
+  const parallels = useMemo(
+    () =>
+      pericopesForChapter(bookId ?? '', chapter).filter(
+        (p) => GOSPELS.filter((g) => p[g.key]).length > 1,
+      ),
+    [bookId, chapter],
+  );
 
   const highlightByVerse = useMemo(() => {
     const map = new Map<number, string>();
@@ -257,6 +268,52 @@ export default function ReaderPage() {
               );
             })}
           </p>
+
+          {parallels.length > 0 && (
+            <section className="reader__places">
+              <div className="section-title">Parallelstellen in den Evangelien</div>
+              <div className="stack" style={{ gap: '0.4rem' }}>
+                {parallels.map((pericope) => (
+                  <Link
+                    key={pericope.id}
+                    className="xref"
+                    to={`/studium/synopse?abschnitt=${pericope.id}`}
+                  >
+                    <strong>{pericope.title}</strong>
+                    <span>
+                      {' — '}
+                      {GOSPELS.filter((g) => pericope[g.key])
+                        .map((g) => {
+                          const passage = pericope[g.key]!;
+                          return `${g.label} ${passage.chapter},${passage.from}`;
+                        })
+                        .join(' · ')}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {places.length > 0 && (
+            <section className="reader__places">
+              <div className="section-title">Orte in diesem Kapitel</div>
+              <div className="day__portions">
+                {places.map(({ place, verses: hits }) => (
+                  <Link
+                    key={place.id}
+                    className="chip"
+                    to={`/studium/karte?ort=${place.id}`}
+                    title={`${place.short} (Vers ${hits.slice(0, 4).join(', ')}${
+                      hits.length > 4 ? ' …' : ''
+                    })`}
+                  >
+                    {place.name}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           <div className="reader__nav">
             {prev ? (

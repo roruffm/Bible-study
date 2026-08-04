@@ -137,13 +137,23 @@ export default function VersePanel({ index, book, ref_, text, altNumbering, onCl
                         </span>
                       </div>
                       <p>{entry.short}</p>
-                      <Link
-                        className="btn btn--ghost btn--sm"
-                        to={`/lexikon?eintrag=${entry.id}`}
-                        onClick={onClose}
-                      >
-                        Mehr im Lexikon →
-                      </Link>
+                      <div className="day__portions">
+                        <Link
+                          className="chip"
+                          to={`/lexikon?eintrag=${entry.id}`}
+                          onClick={onClose}
+                        >
+                          Mehr im Lexikon
+                        </Link>
+                        <Link
+                          className="chip"
+                          to={`/studium/konkordanz?wort=${encodeURIComponent(entry.term)}`}
+                          onClick={onClose}
+                          title={`Alle Stellen mit „${entry.term}“`}
+                        >
+                          Alle Stellen
+                        </Link>
+                      </div>
                     </div>
                   ))}
                 </section>

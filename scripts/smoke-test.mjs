@@ -130,7 +130,7 @@ await page.goto(BASE + '/studium', { waitUntil: 'networkidle' });
 const planCount = await page.locator('.plan:not([data-kind="werkzeug"])').count();
 const toolCount = await page.locator('.plan[data-kind="werkzeug"]').count();
 check('Studium listet alle Lesepläne', planCount === 17, `${planCount} Pläne`);
-check('Studium bietet die vier Werkzeuge an', toolCount === 4, `${toolCount} Werkzeuge`);
+check('Studium bietet alle Werkzeuge an', toolCount === 6, `${toolCount} Werkzeuge`);
 const topicHeads = await page.locator('.library__head h3').allTextContents();
 check(
   'Themenpläne sind nach Sachgebiet gruppiert',
@@ -418,10 +418,13 @@ check(
   dichteOrte.length + ' Orte',
 );
 
+// Die Karte muss im Sichtfenster liegen, sonst zieht die Maus ins Leere.
+await page.locator('.map__svg').scrollIntoViewIfNeeded();
 const kasten = await page.locator('.map__svg').boundingBox();
-await page.mouse.move(kasten.x + kasten.width / 2, kasten.y + kasten.height / 2);
+const zugY = Math.min(kasten.y + kasten.height / 2, page.viewportSize().height - 80);
+await page.mouse.move(kasten.x + kasten.width / 2, zugY);
 await page.mouse.down();
-await page.mouse.move(kasten.x + kasten.width / 2 - 180, kasten.y + kasten.height / 2, { steps: 8 });
+await page.mouse.move(kasten.x + kasten.width / 2 - 180, zugY, { steps: 8 });
 await page.mouse.up();
 await page.waitForTimeout(150);
 check('Ziehen verschiebt die Karte', (await viewBoxOf()) !== nahDran);
@@ -444,7 +447,91 @@ check(
   (await page.locator('.lex-entry__term').first().textContent()) === 'Jerusalem',
 );
 
-// 16. Merkverse
+// 16. Verzahnung: Orte im gelesenen Kapitel führen auf die Karte
+await page.goto(BASE + '/bibel/apg/17', { waitUntil: 'networkidle' });
+await page.waitForSelector('.reader__text');
+const orteImKapitel = await page.locator('.reader__places .chip').allTextContents();
+check(
+  'Leseansicht nennt die Orte des Kapitels',
+  orteImKapitel.includes('Athen') && orteImKapitel.includes('Thessalonich'),
+  orteImKapitel.join(', '),
+);
+await page.locator('.reader__places .chip', { hasText: 'Athen' }).first().click();
+await page.waitForURL(/studium\/karte\?ort=athen/);
+await page.waitForSelector('.lex-entry__term');
+check('Der Ort öffnet sich auf der Karte', (await page.locator('.lex-entry__term').first().textContent()) === 'Athen');
+
+// Zeitleiste und Karte sind in beide Richtungen verbunden
+await page.goto(BASE + '/studium/zeitleiste?epoche=exil', { waitUntil: 'networkidle' });
+await page.waitForSelector('.event');
+const ortsKnoepfe = await page.locator('.event .chip', { hasText: '📍' }).count();
+check('Zeitleiste verweist auf die Karte', ortsKnoepfe >= 3, `${ortsKnoepfe} Ereignisse mit Ort`);
+
+await page.goto(BASE + '/studium/karte?epoche=urkirche', { waitUntil: 'networkidle' });
+await page.waitForSelector('.map__svg');
+const epochenOrte = await page.locator('.map__place').count();
+const alleOrte = await page.evaluate(() => document.querySelectorAll('[data-ort]').length);
+check('Karte lässt sich auf eine Epoche einschränken', epochenOrte > 0 && epochenOrte < 40, `${epochenOrte} Orte`);
+check('Die Epoche listet ihre Ereignisse', (await page.locator('section .day').count()) >= 10);
+void alleOrte;
+await page.screenshot({ path: `${OUT}/21-karte-epoche.png` });
+
+await page.goto(BASE + '/studium/karte?ort=jerusalem', { waitUntil: 'networkidle' });
+await page.waitForSelector('.lex-entry__term');
+const abschnitte = await page.locator('section .section-title').allTextContents();
+check(
+  'Die Ortstafel zeigt, was hier geschah',
+  abschnitte.includes('Was hier geschah'),
+  abschnitte.join(' | '),
+);
+
+// 17. Konkordanz
+await page.goto(BASE + '/studium/konkordanz?wort=Bund', { waitUntil: 'networkidle' });
+await page.waitForSelector('.conc__summary', { timeout: 90_000 });
+const summe = await page.evaluate(() =>
+  [...document.querySelectorAll('.conc__count')].reduce((n, el) => n + Number(el.textContent), 0),
+);
+const gesamt = Number(await page.locator('.conc__number').first().textContent());
+check('Konkordanz zählt die Vorkommen', gesamt > 100, `${gesamt} Vorkommen von „Bund“`);
+check('Die Bücher summieren sich zur Gesamtzahl', summe === gesamt, `${summe} = ${gesamt}`);
+check('Treffer stehen in biblischer Reihenfolge', (await page.locator('.conc__hits .xref').count()) > 0);
+await page.screenshot({ path: `${OUT}/22-konkordanz.png` });
+
+// Ganze Wörter: „Bund“ darf „Bundeslade“ nicht mitzählen.
+await page.goto(BASE + '/studium/konkordanz?wort=Bundeslade', { waitUntil: 'networkidle' });
+await page.waitForSelector('.conc__summary');
+const lade = Number(await page.locator('.conc__number').first().textContent());
+check('Konkordanz zählt nur ganze Wörter', lade > 0 && lade < gesamt, `Bundeslade ${lade}, Bund ${gesamt}`);
+
+// 18. Synopse
+await page.goto(BASE + '/studium/synopse', { waitUntil: 'networkidle' });
+await page.waitForSelector('.syn__row');
+const perikopen = await page.locator('.syn__row').count();
+check('Synopse listet die Abschnitte', perikopen >= 70, `${perikopen} Abschnitte`);
+await page.locator('.syn__row', { hasText: 'Der Tod Jesu' }).click();
+await page.waitForSelector('.syn__column');
+const spalten = await page.locator('.syn__column').count();
+check('Der Tod Jesu steht in allen vier Evangelien', spalten === 4, `${spalten} Spalten`);
+const spaltenTexte = await page.locator('.syn__text').allTextContents();
+check(
+  'Die Fassungen stehen im Wortlaut nebeneinander',
+  spaltenTexte.every((t) => t.length > 100) &&
+    spaltenTexte[0] !== spaltenTexte[1],
+  spaltenTexte.map((t) => t.length + ' Zeichen').join(' / '),
+);
+await page.screenshot({ path: `${OUT}/23-synopse.png` });
+
+// Aus der Leseansicht heraus zu den Parallelen
+await page.goto(BASE + '/bibel/mk/4', { waitUntil: 'networkidle' });
+await page.waitForSelector('.reader__text');
+const parallelen = await page.locator('.reader__places .xref').count();
+check('Leseansicht bietet die Parallelstellen an', parallelen >= 3, `${parallelen} Abschnitte`);
+await page.locator('.reader__places .xref').first().click();
+await page.waitForURL(/studium\/synopse\?abschnitt=/);
+await page.waitForSelector('.syn__column');
+check('Der Parallelvergleich öffnet sich', (await page.locator('.syn__column').count()) >= 2);
+
+// 19. Merkverse
 await page.goto(BASE + '/bibel/joh/3?vers=16', { waitUntil: 'networkidle' });
 await page.waitForSelector('.panel');
 await page.getByRole('tab', { name: /Notizen/ }).click();

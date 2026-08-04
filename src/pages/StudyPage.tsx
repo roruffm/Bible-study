@@ -27,7 +27,22 @@ const TOOLS = [
     to: '/studium/karte',
     label: 'Verorten',
     title: 'Karte',
-    description: 'Die Welt der Bibel von Rom bis Mesopotamien, samt der vier Reisen des Paulus.',
+    description:
+      '188 Orte von Rom bis Susa, neun Wege und die Möglichkeit, eine Epoche räumlich zu sehen.',
+  },
+  {
+    to: '/studium/konkordanz',
+    label: 'Vergleichen',
+    title: 'Konkordanz',
+    description:
+      'Alle Stellen eines Wortes in biblischer Reihenfolge – mit der Verteilung über die 66 Bücher.',
+  },
+  {
+    to: '/studium/synopse',
+    label: 'Gegenüberstellen',
+    title: 'Synopse der Evangelien',
+    description:
+      'Dieselbe Erzählung bei Matthäus, Markus, Lukas und Johannes nebeneinander – samt dem, was sie unterscheidet.',
   },
   {
     to: '/studium/merkverse',

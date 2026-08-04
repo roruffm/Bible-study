@@ -131,6 +131,12 @@ export default function LexiconPage() {
                     Auf der Karte
                   </Link>
                 )}
+                <Link
+                  className="chip"
+                  to={`/studium/konkordanz?wort=${encodeURIComponent(entry.term)}`}
+                >
+                  Alle Stellen
+                </Link>
                 {(entry.refs ?? []).map((ref) => (
                   <Link
                     key={`${ref.book}${ref.chapter}${ref.verse}`}

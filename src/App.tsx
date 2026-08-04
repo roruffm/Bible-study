@@ -10,6 +10,8 @@ import PlanPage from './pages/PlanPage';
 import LexiconPage from './pages/LexiconPage';
 import TimelinePage from './pages/TimelinePage';
 import MapPage from './pages/MapPage';
+import ConcordancePage from './pages/ConcordancePage';
+import SynopsisPage from './pages/SynopsisPage';
 import MemoryPage from './pages/MemoryPage';
 import MePage from './pages/MePage';
 
@@ -27,6 +29,8 @@ export default function App() {
         {/* Werkzeuge vor der Plan-Route, sonst greift :planId zuerst. */}
         <Route path="studium/zeitleiste" element={<TimelinePage />} />
         <Route path="studium/karte" element={<MapPage />} />
+        <Route path="studium/konkordanz" element={<ConcordancePage />} />
+        <Route path="studium/synopse" element={<SynopsisPage />} />
         <Route path="studium/merkverse" element={<MemoryPage />} />
         <Route path="studium/:planId" element={<PlanPage />} />
         <Route path="ich" element={<MePage />} />

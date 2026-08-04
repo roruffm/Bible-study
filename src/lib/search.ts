@@ -194,3 +194,80 @@ export function splitByTerms(text: string, terms: string[]): { text: string; hit
   if (cursor < text.length) parts.push({ text: text.slice(cursor), hit: false });
   return parts;
 }
+
+/* ------------------------------------------------------------ Konkordanz */
+
+export interface ConcordanceBook {
+  bookId: string;
+  bookName: string;
+  bookAbbr: string;
+  testament: string;
+  hits: SearchHit[];
+}
+
+export interface Concordance {
+  /** Das gesuchte Wort in der Form, in der gezählt wurde. */
+  word: string;
+  total: number;
+  /** Wie viele der 66 Bücher das Wort enthalten. */
+  bookCount: number;
+  books: ConcordanceBook[];
+}
+
+/**
+ * Alle Vorkommen eines Wortes, nach Büchern gruppiert.
+ *
+ * Anders als die Suche sortiert die Konkordanz nicht nach Relevanz, sondern
+ * behält die biblische Reihenfolge: Wer wissen will, wie sich der Gebrauch
+ * eines Begriffs von der Tora bis zu den Briefen verschiebt, braucht genau
+ * diese Reihenfolge – und die Verteilung über die Bücher ist selbst schon
+ * eine Aussage.
+ *
+ * Gezählt wird das **ganze Wort**; „Bund“ trifft nicht „Bundeslade“. Sonst
+ * wäre jede Zahl irreführend.
+ */
+export async function concordance(word: string): Promise<Concordance> {
+  const verses = await buildCorpus();
+  const needle = normalizeForSearch(word);
+
+  const empty: Concordance = { word: word.trim(), total: 0, bookCount: 0, books: [] };
+  if (needle.length < 2) return empty;
+
+  const byBook = new Map<string, ConcordanceBook>();
+  let total = 0;
+
+  for (const verse of verses) {
+    // Ganze Wörter: Der Vergleich läuft auf der normalisierten Fassung, in
+    // der Wörter durch einzelne Leerzeichen getrennt sind.
+    const padded = ` ${verse.haystack} `;
+    const occurrences = padded.split(` ${needle} `).length - 1;
+    if (occurrences === 0) continue;
+
+    total += occurrences;
+    let entry = byBook.get(verse.bookId);
+    if (!entry) {
+      entry = {
+        bookId: verse.bookId,
+        bookName: verse.bookName,
+        bookAbbr: verse.bookAbbr,
+        testament: verse.testament,
+        hits: [],
+      };
+      byBook.set(verse.bookId, entry);
+    }
+    entry.hits.push({
+      ref: { book: verse.bookId, chapter: verse.chapter, verse: verse.verse },
+      bookName: verse.bookName,
+      bookAbbr: verse.bookAbbr,
+      text: verse.text,
+      score: occurrences,
+    });
+  }
+
+  return {
+    word: word.trim(),
+    total,
+    bookCount: byBook.size,
+    books: [...byBook.values()],
+  };
+}
