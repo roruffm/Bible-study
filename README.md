@@ -100,12 +100,14 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 
 - **Steckbriefe zu allen 66 Büchern** – Verfasser, Zeit, Anlass, Kernaussage.
   Damit hat jeder Vers von Beginn an eine historische Einordnung.
-- **Vertiefte Artikel zu 58 Schlüsselabschnitten** mit 174 einzeln
-  ausgewiesenen Auslegungen. Sie decken zusammen **787 Verse** ab – von der
-  Schöpfung über die Bindung Isaaks, den Durchzug durchs Meer, David und
-  Goliat, Nathans Gleichnis, Elia auf dem Karmel, Jesajas Berufung, den neuen
-  Bund, die Totengebeine und den Feuerofen bis zu Sämann, Emmaus, der Frau am
-  Brunnen, der Areopagrede, dem ältesten Bekenntnis und der Waffenrüstung.
+- **Vertiefte Artikel zu 113 Schlüsselabschnitten** mit 326 einzeln
+  ausgewiesenen Auslegungen, zusammen **1.346 Verse**. **Jedes der 66 Bücher
+  hat mindestens einen Artikel** – von der Schöpfung über die Bindung Isaaks,
+  den Durchzug durchs Meer, David und Goliat, Nathans Gleichnis, den
+  aaronitischen Segen und Naamans Heilung bis zu Sämann, Zinsgroschen,
+  Emmaus, Kornelius, dem Abendmahl in Korinth und dem Brief nach Laodizea.
+  Umstrittene Stellen wie Jesaja 7,14, „Du bist Petrus“, Römer 13 oder
+  1. Timotheus 2 werden ausdrücklich als umstritten dargestellt.
 - **Sachwissen zur Lebenswelt der Bibel:** Maße, Gewichte und Geld, Ämter und
   Gruppen, Bräuche und Feste, Pflanzen und Stoffe. Weil diese Begriffe
   hundertfach vorkommen, erreichen sie **rund 31 % aller 31.102 Verse** –
@@ -253,6 +255,9 @@ zeigt:
 ```bash
 node scripts/check-references.mjs
 ```
+
+Es meldet zugleich, wie weit die Artikel reichen – wie viele Abschnitte und
+Verse abgedeckt sind und ob ein Buch noch ganz ohne Artikel dasteht.
 
 > **Achtung bei der Verszählung:** Der Datenbestand folgt der international
 > üblichen Zählung, die gedruckte Lutherbibel weicht an rund 355 Stellen

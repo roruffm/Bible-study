@@ -158,8 +158,23 @@ const checked =
   TIMELINE.filter((e) => e.ref).length +
   DAILY_VERSES.length;
 
+/* ------------------------------------------------------- Abdeckung */
+
+const booksWithArticle = new Set(COMMENTARY.map((e) => e.book));
+const withoutArticle = index.books.filter((b) => !booksWithArticle.has(b.id));
+const versesWithArticle = COMMENTARY.reduce((n, e) => n + (e.to - e.from + 1), 0);
+const interpretations = COMMENTARY.reduce((n, e) => n + e.interpretations.length, 0);
+
 console.log(`Übersetzung : ${TRANSLATION}`);
 console.log(`Geprüft     : ${checked} Stellenangaben`);
+console.log(
+  `Artikel     : ${COMMENTARY.length} zu ${versesWithArticle} Versen, ` +
+    `${interpretations} Auslegungen`,
+);
+console.log(
+  `Bücher      : ${booksWithArticle.size} von ${index.books.length} haben einen Artikel` +
+    (withoutArticle.length > 0 ? ` (ohne: ${withoutArticle.map((b) => b.name).join(', ')})` : ''),
+);
 
 if (problems.length === 0) {
   console.log('Ergebnis    : alle Angaben existieren ✓');
