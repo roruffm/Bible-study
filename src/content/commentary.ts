@@ -74,6 +74,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Kreationistische Lesart',
         text: 'In Teilen evangelikaler Kreise werden die sechs Tage als reale, aufeinanderfolgende Tage verstanden. Diese Position ist innerhalb der Christenheit eine Minderheitsmeinung und wird von den meisten Kirchen nicht geteilt.',
       },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Theologie liest den Bericht von seinem Ziel her: Der siebte Tag, an dem Gott ruht, ist nicht Abschluss, sondern Ausblick – die Schöpfung ist auf ein Fest hin angelegt, nicht auf Betrieb.',
+      },
     ],
     crossRefs: [
       { book: 'joh', chapter: 1, verse: 1, note: 'Nimmt „Im Anfang“ auf' },
@@ -104,6 +108,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Jüdische Auslegung',
         text: 'Im Judentum gilt der Text nicht als Fall in eine verdorbene Natur. Der Mensch bleibt frei, sich für das Gute zu entscheiden; die Erzählung beschreibt das Erwachsenwerden mit seiner Last der Verantwortung.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Die Auslegungsgeschichte hat die Frau über Jahrhunderte als Urheberin des Bruchs beschrieben. Der Text selbst sagt, der Mann sei „bei ihr“ gewesen und habe wortlos mitgegessen; das Urteil trifft beide.',
       },
     ],
     crossRefs: [
@@ -191,6 +199,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Religionsgeschichtliche Einordnung',
         text: 'Die Forschung sieht hier einen Schritt von der ausschließlichen Verehrung eines Gottes (Monolatrie) hin zum Bekenntnis, dass es nur einen Gott gibt.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Tradition betont, dass das Hören vor dem Bekennen steht. Der Glaube beginnt nicht mit einer Aussage über Gott, sondern mit einer Haltung des Empfangens.',
       },
     ],
     crossRefs: [
@@ -355,6 +367,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Moderne Sozialethik',
         text: 'Der Vers gilt als Kurzformel christlicher und jüdischer Sozialethik: Gerechtigkeit als Struktur, Güte als Haltung, Demut als Verhältnis zu Gott.',
+      },
+      {
+        tradition: 'Rabbinische Tradition',
+        text: 'Der Talmud erzählt, alle 613 Gebote seien nach und nach zusammengefasst worden – bei Micha auf drei. Der Vers gilt als kürzeste Fassung dessen, worum es geht.',
       },
     ],
   },
@@ -1222,6 +1238,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Wirkungsgeschichte',
         text: 'Kaum ein biblisches Bild wurde häufiger politisch beansprucht – von beiden Seiten eines Konflikts zugleich.',
       },
+      {
+        tradition: 'Befreiungstheologie',
+        text: 'Der Text wird in Basisgemeinden Lateinamerikas als Beleg gelesen, dass Übermacht nicht das letzte Wort hat. Kritisch angemerkt wird zugleich, wie oft mächtige Staaten sich selbst in der Rolle Davids sehen.',
+      },
     ],
     crossRefs: [{ book: '2sam', chapter: 21, verse: 19, note: 'Die abweichende Notiz' }],
   },
@@ -1247,6 +1267,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Dass das Kind für Davids Schuld stirbt, widerspricht dem später ausdrücklich formulierten Grundsatz, dass niemand für die Schuld eines anderen haftet.',
+      },
+      {
+        tradition: 'Machtkritische Lesart',
+        text: 'Die Erzählung gilt als Musterfall dafür, wie Kritik an Mächtigen funktionieren kann: Nathan erzählt einen Fall, lässt den König selbst urteilen und dreht das Urteil dann um. Erst danach fällt der Name.',
       },
     ],
     crossRefs: [
@@ -1276,6 +1300,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Lesart',
         text: 'Der Triumph endet unmittelbar im Zusammenbruch: Kapitel 19 zeigt Elia am Ende seiner Kraft. Die Erzählung selbst relativiert den Sieg.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Das Kapitel endet mit der Tötung der Baalspropheten. Ein erheblicher Teil heutiger Auslegung weigert sich, diesen Schluss zu übergehen, und hält fest, dass der Text ihn erzählt, ohne ihn zu rechtfertigen.',
       },
     ],
     crossRefs: [{ book: '1koe', chapter: 19, verse: 12, note: 'Das stille, sanfte Sausen' }],
@@ -1358,6 +1386,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Christliche Rezeption',
         text: 'Seit der Alten Kirche wird die Vision auf die Auferstehung der Toten und auf das Wirken des Geistes bezogen.',
       },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Text wird am Sabbat der Zwischentage von Pessach gelesen. Die Deutung bleibt dort, wo der Text selbst sie ansiedelt: bei der Rückkehr des Volkes, nicht bei der Auferstehung Einzelner.',
+      },
     ],
     crossRefs: [{ book: 'dan', chapter: 12, verse: 2 }],
   },
@@ -1383,6 +1415,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Liturgische Rezeption',
         text: 'Der Lobgesang der drei Männer im Feuerofen steht in der griechischen Fassung des Buches und gehört bis heute zum Stundengebet.',
+      },
+      {
+        tradition: 'Befreiungstheologie',
+        text: 'Die Antwort der drei – Gott könne retten, aber auch wenn er es nicht tut, bleibe es beim Nein – wird als Grundmuster gewaltlosen Widerstands gelesen: Der Gehorsam hängt nicht am Ausgang.',
       },
     ],
   },
@@ -1593,31 +1629,6 @@ export const COMMENTARY: CommentaryEntry[] = [
       },
     ],
   },
-  {
-    book: 'eph',
-    chapter: 6,
-    from: 10,
-    to: 20,
-    title: 'Die Waffenrüstung',
-    historicalShort:
-      'Das Bild ist der Ausrüstung des römischen Legionärs entnommen – für die Lesenden also der Anblick der Besatzungsmacht. Genau diese Bilder werden umgedeutet.',
-    historicalLong:
-      'Auffällig ist, wofür die Stücke stehen: Wahrheit, Gerechtigkeit, Bereitschaft zum Frieden, Glaube, Rettung, Gottes Wort. Die einzige Angriffswaffe ist das Wort. Der Text sagt zudem ausdrücklich, dass der Kampf nicht „gegen Fleisch und Blut“ geht – also nicht gegen Menschen.',
-    interpretations: [
-      {
-        tradition: 'Klassische Auslegung',
-        text: 'Eine Zusammenfassung christlicher Existenz: standhalten, nicht erobern. Alle Stücke sind auf Verteidigung angelegt.',
-      },
-      {
-        tradition: 'Kritische Wirkungsgeschichte',
-        text: 'Die Bildsprache wurde vielfach militaristisch missbraucht, bis hin zu Kreuzzugsrhetorik – gegen die ausdrückliche Aussage des Textes selbst.',
-      },
-      {
-        tradition: 'Friedenskirchliche Lesart',
-        text: 'Gerade die Umdeutung der Waffen gilt als gewaltkritisch: Die Rüstung des Legionärs wird zum Bild für das genaue Gegenteil seines Handwerks.',
-      },
-    ],
-  },
 
   /* ---------------------------------------- Tora und Geschichtsbücher */
 
@@ -1727,6 +1738,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Kritische Rückfrage',
         text: 'Die Vorstellung, Schuld auf einen Unschuldigen zu übertragen, ist ethisch umstritten. Die Ritualforschung betont, dass es hier nicht um Bestrafung geht, sondern um symbolische Entfernung.',
       },
+      {
+        tradition: 'Jüdische Liturgie',
+        text: 'Jom Kippur ist bis heute der höchste Feiertag des Judentums. Nach der Tempelzerstörung traten Fasten, Gebet und Umkehr an die Stelle des Opfers – die Deutung des Tages hat sich also grundlegend gewandelt, ohne dass der Tag verlorenging.',
+      },
     ],
     crossRefs: [{ book: 'hebr', chapter: 9, verse: 11 }],
   },
@@ -1752,6 +1767,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Theologische Auslegung',
         text: '„Frieden“ meint hier schalom: nicht die Abwesenheit von Streit, sondern Unversehrtheit im umfassenden Sinn.',
+      },
+      {
+        tradition: 'Archäologische Einordnung',
+        text: 'Zwei winzige Silberrollen aus Ketef Hinnom bei Jerusalem tragen diesen Segen und stammen aus dem 7. oder 6. Jahrhundert v. Chr. Es sind die ältesten bekannten Handschriften eines biblischen Textes überhaupt – über vier Jahrhunderte älter als die Rollen von Qumran.',
       },
     ],
   },
@@ -1857,6 +1876,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Theologische Beobachtung',
         text: 'Die offene Antwort am Schluss ist bemerkenswert: Der Text lässt eine Frage stehen, die er auch hätte entscheiden können.',
       },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Jesus führt die Geschichte in Nazareth an – und löst damit den Zorn aus, der ihn beinahe das Leben kostet. Dass ein syrischer Feldherr geheilt wurde und kein Israelit, war der anstößige Punkt.',
+      },
     ],
     crossRefs: [{ book: 'lk', chapter: 4, verse: 27 }],
   },
@@ -1936,6 +1959,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Seelsorgliche Lesart',
         text: 'Entscheidend ist die Bewegung: Hiob klagt Gott an und hofft zugleich auf Gott. Beides steht unaufgelöst nebeneinander.',
       },
+      {
+        tradition: 'Wirkungsgeschichte in der Musik',
+        text: 'Händel setzt den Vers an den Anfang des dritten Teils des „Messiah“. Die Vertonung hat die Stelle für viele endgültig zum Osterlied gemacht – im Buch Hiob steht sie mitten in der Anklage.',
+      },
     ],
   },
   {
@@ -1961,6 +1988,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Rezeption',
         text: 'Als Lied von Pete Seeger und den Byrds wurde der Abschnitt zu einem der weltweit bekanntesten Bibeltexte des 20. Jahrhunderts.',
       },
+      {
+        tradition: 'Wirkungsgeschichte in der Musik',
+        text: 'Der Text ist als Popsong um die Welt gegangen, seit Pete Seeger ihn 1959 fast wörtlich vertonte. Kaum ein biblischer Abschnitt ist außerhalb der Kirchen so verbreitet.',
+      },
     ],
   },
   {
@@ -1985,6 +2016,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Jüdische Tradition',
         text: 'Die Klagelieder werden am 9. Aw gelesen, dem Gedenktag der Tempelzerstörungen.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Tradition liest die Stelle im Zusammenhang der Morgenliturgie: Der Tag beginnt mit der Zusage, dass Erbarmen nicht aufgebraucht werden kann.',
       },
     ],
   },
@@ -2110,12 +2145,16 @@ export const COMMENTARY: CommentaryEntry[] = [
         text: 'Recht und Gottesdienst lassen sich nicht trennen. Diese Linie zieht sich von Amos über Jesaja 58 bis Matthäus 25 durch.',
       },
       {
-        tradition: 'Wirkungsgeschichte',
+        tradition: 'Wirkungsgeschichte im 20. Jahrhundert',
         text: 'Martin Luther King zitierte den Vers in seiner Rede „I Have a Dream“ und machte ihn zu einer Losung der Bürgerrechtsbewegung.',
       },
       {
         tradition: 'Kritische Einordnung',
         text: 'Amos verkündet zunächst kein Heil. Die tröstlichen Schlussverse des Buches gelten vielen Fachleuten als spätere Ergänzung.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Martin Luther King zitierte den Vers in seiner Rede am Lincoln Memorial 1963. Er ist über die Bürgerrechtsbewegung zu einem der bekanntesten Prophetenworte überhaupt geworden.',
       },
     ],
     crossRefs: [{ book: 'jes', chapter: 58, verse: 6 }],
@@ -2142,6 +2181,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Politische Lesart',
         text: 'Die Szene wird als bewusste Gegeninszenierung zum römischen Triumphzug gelesen, der zur selben Zeit von der anderen Seite in die Stadt zog.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Vers wird am Palmsonntag gelesen. Das Reittier ist der Punkt: Ein König, der auf einem Esel kommt, kommt nicht als Sieger von einem Feldzug zurück.',
       },
     ],
     crossRefs: [{ book: 'mt', chapter: 21, verse: 5 }],
@@ -2623,6 +2666,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Sprachliche Beobachtung',
         text: 'Das mit „Eifer“ übersetzte Wort meint die Unbedingtheit der Liebe, nicht Eifersucht im heutigen Sinn – es steht sonst für Gottes leidenschaftliche Zuwendung.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Wendung „ein Siegel auf dein Herz“ verweist auf den Siegelring, den man am Körper trug. Die rabbinische Tradition liest darin die Unauflöslichkeit einer Bindung, nicht ihre Heftigkeit.',
       },
     ],
   },
@@ -4237,6 +4284,857 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'neh', chapter: 13, verse: 10, note: 'Dieselbe Lage bei Nehemia' },
       { book: '4mo', chapter: 18, verse: 21 },
       { book: 'mal', chapter: 3, verse: 1 },
+    ],
+  },
+
+  /* ================================================================
+   * Dritter Ausbau: die Briefe und die letzten dünn besetzten Bücher.
+   * ================================================================ */
+
+  {
+    book: '1chr',
+    chapter: 16,
+    from: 8,
+    to: 22,
+    title: 'Das Danklied bei der Überführung der Lade',
+    historicalShort:
+      'Die Chronik lässt David bei der Überführung der Lade ein Lied anstimmen, das aus drei Psalmen zusammengesetzt ist – eine Collage, die man im Psalter einzeln nachlesen kann.',
+    historicalLong:
+      'Der Abschnitt setzt sich aus Psalm 105, 96 und 106 zusammen. Solche Kompositionen sind für die Chronik typisch: Sie erzählt die Geschichte Davids als Gründungsgeschichte des Gottesdienstes und legt ihm dabei Texte in den Mund, die zur Zeit des Verfassers längst im Gebrauch waren. Bemerkenswert ist, was ausgelassen wird: Aus Psalm 106 übernimmt sie den Lobteil, nicht die lange Sündengeschichte.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Auswahl zeigt das Interesse des Chronisten: Er will nicht anklagen, sondern eine Gemeinde ohne Staat um ihren Gottesdienst sammeln.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Abschnitt gilt als frühester Beleg dafür, dass Psalmen als Sammlung zitiert und neu zusammengestellt wurden – ein Blick in die Entstehung von Liturgie.',
+      },
+      {
+        tradition: 'Vergleichende Lesart',
+        text: 'Der Vergleich mit 2. Samuel 6 lohnt: Dort steht die Überführung der Lade ohne Lied, dafür mit dem Tanz Davids und dem Spott seiner Frau. Die Chronik lässt beides weg.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Teile des Textes wurden in die tägliche Morgenliturgie aufgenommen. Der Vers „Gedenkt seines Bundes ewiglich“ trägt dort das Gedächtnis der Gemeinde.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 105, verse: 1, note: 'Die Vorlage der ersten Verse' },
+      { book: 'ps', chapter: 96, verse: 1 },
+      { book: '2sam', chapter: 6, verse: 14, note: 'Dieselbe Szene ohne Lied' },
+    ],
+  },
+  {
+    book: 'est',
+    chapter: 9,
+    from: 20,
+    to: 28,
+    title: 'Die Einsetzung des Purimfestes',
+    historicalShort:
+      'Am Ende steht die Stiftung eines Festes, das bis heute gefeiert wird – benannt nach dem Los, mit dem der Tag der Vernichtung ausgelost worden war.',
+    historicalLong:
+      'Ester ist das einzige Buch der hebräischen Bibel, in dem der Gottesname nicht vorkommt – ein Umstand, der seine Aufnahme in den Kanon lange umstritten machte; in Qumran fehlt es. Umso auffälliger ist die Sorgfalt, mit der es die Einsetzung eines Festes begründet. Purim wird mit Vorlesung der Rolle, Geschenken an Freunde und Gaben an die Armen begangen. Die Freude ist ausdrücklich mit Solidarität verkoppelt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Das Buch dürfte in hellenistischer Zeit entstanden sein und ein bereits bestehendes Fest erzählerisch begründen. Historische Anhaltspunkte für die geschilderten Vorgänge fehlen.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Estherrolle wird an Purim vollständig vorgelesen. Dass Gott nicht genannt wird, gilt als Aussage für sich: Rettung geschieht durch das Handeln von Menschen, hinter dem sich Gott verbirgt.',
+      },
+      {
+        tradition: 'Christliche Auslegungsgeschichte',
+        text: 'Luther bekannte offen, dem Buch mit Widerwillen zu begegnen. Die Kirchen haben es lange vernachlässigt – nach der Schoah wird es neu und anders gelesen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Kapitel 9 erzählt auch von Gegengewalt mit vielen Toten. Ein Teil der Auslegung besteht darauf, diesen Zug nicht zu übergehen, sondern als Notwehrphantasie einer bedrohten Minderheit zu benennen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'est', chapter: 4, verse: 14, note: '„Wer weiß, ob du nicht um dieser Zeit willen …“' },
+      { book: 'est', chapter: 3, verse: 7, note: 'Das Los, das dem Fest den Namen gab' },
+    ],
+  },
+  {
+    book: 'hld',
+    chapter: 2,
+    from: 8,
+    to: 17,
+    title: 'Das Kommen des Geliebten',
+    historicalShort:
+      'Ein Liebeslied ohne jede Frömmigkeit: zwei Menschen, ein Frühling, Gazellen auf den Bergen. Das Buch nennt Gott an keiner Stelle.',
+    historicalLong:
+      'Die Sammlung enthält Lieder, die dem ägyptischen Liebeslied nahestehen. Auffällig ist, dass die Frau die meisten Verse spricht und die Initiative ergreift – ungewöhnlich für antike Literatur. Die Aufnahme in den Kanon verdankt sich der allegorischen Deutung: Rabbi Akiba nannte das Buch das „Allerheiligste“ der Schriften und meinte damit die Liebe zwischen Gott und Israel. Die wörtliche Lesart hat sich erst in der Neuzeit wieder durchgesetzt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Lieder sind zunächst weltliche Liebeslyrik. Ob sie je einen kultischen Ursprung hatten, ist umstritten; der Text selbst gibt dafür nichts her.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Das Lied wird als Zwiegespräch zwischen Gott und Israel gelesen und am Passafest vorgetragen. Die Frühlingsbilder verbinden sich mit dem Auszug aus Ägypten.',
+      },
+      {
+        tradition: 'Christliche Mystik',
+        text: 'Bernhard von Clairvaux hielt 86 Predigten über die ersten beiden Kapitel. Die Brautmystik von Origenes bis Teresa von Ávila lebt aus diesem Buch.',
+      },
+      {
+        tradition: 'Neuere Auslegung',
+        text: 'Viele Ausleger halten die wörtliche Lesart für einen Gewinn: Dass die Bibel ein Buch über erfüllte Liebe zwischen Menschen enthält, ohne es zu rechtfertigen, sei theologisch bedeutsamer als jede Allegorie.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hld', chapter: 8, verse: 6, note: '„Liebe ist stark wie der Tod“' },
+      { book: 'hld', chapter: 2, verse: 16, note: '„Mein Freund ist mein, und ich bin sein“' },
+    ],
+  },
+  {
+    book: 'klgl',
+    chapter: 5,
+    from: 15,
+    to: 22,
+    title: 'Der offene Schluss der Klagelieder',
+    historicalShort:
+      'Das Buch endet nicht mit Trost, sondern mit einer Frage und einem Konditionalsatz: „es sei denn, dass du uns gar verstoßen hast“. Kein anderes biblisches Buch schließt so.',
+    historicalLong:
+      'Die ersten vier Kapitel sind alphabetische Akrosticha – jeder Abschnitt beginnt mit dem nächsten Buchstaben. Kapitel 5 bricht diese Form: es hat zwar 22 Verse wie das Alphabet Buchstaben, aber keine Anfangsbuchstaben mehr. Die Ordnung, die die Klage bis dahin gefasst hatte, hält am Ende nicht mehr. In der Synagoge wird der vorletzte Vers nach dem letzten wiederholt, damit die Lesung nicht auf dieser Frage endet – ein liturgischer Umgang mit einem Text, den man so nicht stehen lassen wollte.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Lieder entstanden kurz nach 587 v. Chr., wohl in Jerusalem selbst. Sie gehören zur altorientalischen Gattung der Stadtklage, für die es sumerische Vorläufer gibt.',
+      },
+      {
+        tradition: 'Jüdische Liturgie',
+        text: 'Die Klagelieder werden am 9. Aw gelesen, dem Fasttag für beide Tempelzerstörungen. Die Wiederholung des vorletzten Verses ist bis heute Praxis.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Text wird als Erlaubnis gelesen, Klage nicht auflösen zu müssen. Dass die Bibel ein Buch enthält, das ohne Antwort endet, ist selbst eine Aussage.',
+      },
+      {
+        tradition: 'Theologische Rückfrage',
+        text: 'In der Mitte des Buches steht „alle Morgen neu“ – einer der bekanntesten Trostverse überhaupt. Dass er nicht am Ende steht, sondern von neuer Klage umschlossen wird, gehört zur Aussage des Ganzen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'klgl', chapter: 3, verse: 22, note: '„Alle Morgen neu“ – in der Mitte des Buches' },
+      { book: 'ps', chapter: 88, verse: 18, note: 'Ein Psalm, der ebenfalls ohne Trost endet' },
+    ],
+  },
+  {
+    book: 'obd',
+    chapter: 1,
+    from: 17,
+    to: 21,
+    title: 'Rettung auf dem Berg Zion',
+    historicalShort:
+      'Das kürzeste Buch des Alten Testaments endet mit einem Satz, der über den Streit mit Edom hinausgeht: „und das Reich wird des HERRN sein“.',
+    historicalLong:
+      'Obadja umfasst 21 Verse und richtet sich fast vollständig gegen Edom, das sich nach dem Fall Jerusalems am Unglück des Bruderreiches beteiligt haben soll. Der Schluss weitet den Blick: Aus der Abrechnung wird ein Ausblick auf eine Herrschaft, die keinem Volk mehr gehört. Verwandte Formulierungen finden sich in Jeremia 49 – eines der Beispiele dafür, wie prophetische Texte einander aufnehmen.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Das Buch entstand wohl im 6. Jahrhundert v. Chr., kurz nach der Katastrophe. Wie viel vom Verhalten Edoms historisch ist und wie viel Zuschreibung, lässt sich kaum entscheiden.',
+      },
+      {
+        tradition: 'Prophetische Tradition',
+        text: 'Die Ankündigung, dass „Retter“ auf den Berg Zion ziehen, wird als Gegenbild zur Ohnmacht gelesen: Das besiegte Volk erhält eine Aufgabe, nicht nur Genugtuung.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Edom gilt als Nachkommenschaft Esaus – die Feindschaft ist also eine Brudergeschichte. Viele Ausleger halten fest, dass gerade das die Härte des Buches erklärt und zugleich fragwürdig macht.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'In rabbinischer Zeit wurde „Edom“ zum Deckwort für Rom und später für die Christenheit. Ein Text über einen Nachbarn wurde so zum Text über eine Weltmacht.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 49, verse: 14, note: 'Fast wörtlich derselbe Text' },
+      { book: 'ps', chapter: 137, verse: 7, note: 'Der Vorwurf gegen Edom' },
+    ],
+  },
+  {
+    book: 'zef',
+    chapter: 1,
+    from: 14,
+    to: 18,
+    title: 'Der Tag des HERRN',
+    historicalShort:
+      'Kein anderer Text hat die abendländische Vorstellung vom Gericht so geprägt: Aus „dies irae, dies illa“ wurde die Sequenz der Totenmesse und ein Grundmotiv der europäischen Musik.',
+    historicalLong:
+      'Zefanja wirkte in der Zeit vor der Reform Josias, im späten 7. Jahrhundert v. Chr. Der „Tag des HERRN“ war in der Volksfrömmigkeit ein Tag des Sieges über die Feinde; die Propheten drehen ihn um – Amos zuerst, Zefanja am schärfsten. Die lateinische Übersetzung der ersten Worte prägte im 13. Jahrhundert die Sequenz „Dies irae“, die bis zur Liturgiereform fester Bestandteil des Requiems war und von Mozart bis Verdi vertont wurde.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Umkehrung des Erwartungsbildes ist die eigentliche prophetische Leistung: Der Tag richtet sich zuerst gegen das eigene Volk, nicht gegen die Nachbarn.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Über das „Dies irae“ ist dieser Text in der Musikgeschichte präsenter als fast jeder andere Prophetenvers – und dabei fast immer ohne seinen Zusammenhang.',
+      },
+      {
+        tradition: 'Theologische Auslegung',
+        text: 'Das Buch endet nicht hier: Kapitel 3 spricht davon, dass Gott über sein Volk jubelt. Wer nur den Gerichtsteil liest, verkürzt es um seinen Schluss.',
+      },
+      {
+        tradition: 'Seelsorgliche Warnung',
+        text: 'Viele Prediger warnen davor, den Text als Angstmittel zu gebrauchen. Er ist an Verantwortliche gerichtet, nicht an Verängstigte – die Anklage trifft zuerst die Oberschicht.',
+      },
+    ],
+    crossRefs: [
+      { book: 'am', chapter: 5, verse: 18, note: 'Dieselbe Umkehrung bei Amos' },
+      { book: 'zef', chapter: 3, verse: 17, note: 'Der Schluss des Buches' },
+      { book: 'joel', chapter: 2, verse: 11 },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 4,
+    from: 7,
+    to: 12,
+    title: 'Der Schatz in irdenen Gefäßen',
+    historicalShort:
+      'Tongefäße waren das billigste Behältnis der Antike – Wegwerfware. Paulus wählt genau dieses Bild für sich selbst und die, die mit ihm arbeiten.',
+    historicalLong:
+      'Der zweite Korintherbrief ist der persönlichste Text des Paulus. Er verteidigt sich gegen Gegner, die offenbar mit Rednergabe und Beglaubigungsschreiben auftraten. Seine Antwort dreht den Maßstab um: Gerade die Schwäche sei der Beweis. Die vier Gegensatzpaare in Vers 8–9 sind rhetorisch sorgfältig gebaut – jedes Mal wird ein Zugeständnis gemacht und sofort begrenzt. Die Bildwelt der Tongefäße passt zur Erfahrung eines Handwerkers, der seinen Lebensunterhalt selbst verdiente.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt gehört zur Auseinandersetzung mit den „Überaposteln“ in Korinth. Paulus entwickelt hier eine Theologie der Schwachheit, die im Kapitel 12 ihren Höhepunkt findet.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las hier seine „Theologie des Kreuzes“: Gott handelt nicht an der Macht vorbei, sondern in ihrem Gegenteil.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Text wird häufig in Krankheit und Erschöpfung gelesen. Entscheidend ist die Genauigkeit der Begrenzungen: bedrängt, aber nicht erdrückt – der Text beschönigt nichts.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Tradition liest den Abschnitt zusammen mit der Verklärung: Das irdene Gefäß bleibt, was es ist, und wird zugleich vom ungeschaffenen Licht durchscheinend.',
+      },
+    ],
+    crossRefs: [
+      { book: '2kor', chapter: 12, verse: 9, note: '„Meine Kraft ist in den Schwachen mächtig“' },
+      { book: '1kor', chapter: 1, verse: 27 },
+      { book: '2kor', chapter: 11, verse: 23 },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 5,
+    from: 17,
+    to: 21,
+    title: 'Der Dienst der Versöhnung',
+    historicalShort:
+      '„Ist jemand in Christo, so ist er eine neue Kreatur“ – und unmittelbar danach folgt kein Rückzug ins Innerliche, sondern ein Auftrag: Botschafter zu sein.',
+    historicalLong:
+      'Das griechische Wort für Versöhnung stammt aus dem Bereich zerstrittener Parteien, nicht aus dem Opferkult. Auffällig ist die Richtung: Nicht der Mensch versöhnt Gott, sondern Gott versöhnt die Welt mit sich. Der Ausdruck „an Christi Statt“ verwendet die Sprache der Gesandtschaft: Ein Botschafter spricht mit der Vollmacht dessen, der ihn schickt, ohne selbst dessen Rang zu haben. Der Schlussvers gehört zu den dichtesten und am meisten diskutierten Sätzen des Paulus.',
+    interpretations: [
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der letzte Vers gilt als Kern der Rechtfertigungslehre: ein Tausch, bei dem Christus übernimmt, was uns gehört, und wir empfangen, was ihm gehört.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Betont wird der Auftrag: Versöhnung ist nicht nur zugesprochen, sondern wird als Dienst weitergegeben – hier hat das Sakrament der Versöhnung einen seiner biblischen Anker.',
+      },
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Paulus greift vermutlich eine vorgeprägte Formel auf. Die Frage, ob die Wendung „zur Sünde gemacht“ ein Sündopfer meint, ist seit der Antike unentschieden.',
+      },
+      {
+        tradition: 'Befreiungstheologie',
+        text: 'Die „neue Schöpfung“ wird nicht auf das Innere begrenzt: Versöhnung ohne veränderte Verhältnisse bliebe eine Formel. Der Dienst der Versöhnung schließt die Arbeit an Konflikten ein.',
+      },
+    ],
+    crossRefs: [
+      { book: 'roem', chapter: 5, verse: 10 },
+      { book: 'kol', chapter: 1, verse: 20 },
+      { book: 'gal', chapter: 6, verse: 15 },
+    ],
+  },
+  {
+    book: 'gal',
+    chapter: 2,
+    from: 11,
+    to: 21,
+    title: 'Der Streit in Antiochia',
+    historicalShort:
+      'Paulus berichtet, wie er Petrus öffentlich widersprach. Es ist der einzige Text im Neuen Testament, in dem zwei Apostel namentlich und ungeschminkt aneinandergeraten.',
+    historicalLong:
+      'Der Streitpunkt war die Tischgemeinschaft: In Antiochia aßen Juden- und Heidenchristen zusammen, bis Abgesandte aus Jerusalem kamen und Petrus sich zurückzog. Für Paulus stand damit die Sache selbst auf dem Spiel, nicht eine Frage der Ordnung. Wie der Streit ausging, sagt der Text nicht – ein beredtes Schweigen, das viele so deuten, dass Paulus sich in Antiochia nicht durchsetzte. Die Apostelgeschichte erwähnt den Vorfall überhaupt nicht.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt zeigt, dass die frühe Kirche keineswegs einig war. Lukas glättet solche Konflikte; der Galaterbrief ist hier die ältere und ungeschminktere Quelle.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luthers Galaterkommentar von 1535 gehört zu seinen wichtigsten Werken. Für ihn stand hier der Kern des Evangeliums gegen jede Werkgerechtigkeit.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Betont wird, dass Paulus die Autorität des Petrus nicht bestreitet, sondern sein Verhalten. Augustinus und Hieronymus stritten im 4. Jahrhundert ausführlich darüber, ob der Vorfall echt war.',
+      },
+      {
+        tradition: 'Neuere Paulusforschung',
+        text: 'Die sogenannte „neue Perspektive“ liest den Konflikt weniger als Streit über Verdienst und Gnade, sondern über die Zugehörigkeit von Nichtjuden zum Gottesvolk – also als Frage von Grenzen, nicht von Leistung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 15, verse: 1, note: 'Das Apostelkonzil bei Lukas' },
+      { book: 'gal', chapter: 2, verse: 16 },
+      { book: 'apg', chapter: 10, verse: 28, note: 'Petrus bei Kornelius' },
+    ],
+  },
+  {
+    book: 'gal',
+    chapter: 5,
+    from: 1,
+    to: 6,
+    title: '„Zur Freiheit hat uns Christus befreit“',
+    historicalShort:
+      'Der Satz steht nicht am Anfang des Briefes, sondern nach vier Kapiteln Auseinandersetzung – und er ist ein Kampfruf, kein Motto.',
+    historicalLong:
+      'Der konkrete Streitpunkt war die Beschneidung von Nichtjuden. Gegner in Galatien verlangten sie als Bedingung der vollen Zugehörigkeit; Paulus sieht darin die Aufhebung dessen, was er verkündigt. Der Nachsatz ist wichtig: Freiheit endet für ihn nicht in Beliebigkeit, sondern in der Liebe, „die durch den Glauben tätig ist“. Wenige Verse später steht der Satz, das ganze Gesetz sei erfüllt in dem einen Wort: Du sollst deinen Nächsten lieben wie dich selbst.',
+    interpretations: [
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Freiheit ist hier nicht Wahlfreiheit, sondern Freiheit von dem Zwang, sich selbst rechtfertigen zu müssen. Luthers Schrift „Von der Freiheit eines Christenmenschen“ entfaltet genau diesen Satz.',
+      },
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Schärfe des Briefes ist ohne die konkrete Gemeindesituation nicht zu verstehen. Paulus schreibt in einem Konflikt, nicht in einer Vorlesung.',
+      },
+      {
+        tradition: 'Politische Lesart',
+        text: 'Der Freiheitsbegriff des Textes ist in der Neuzeit vielfach politisch in Anspruch genommen worden – von Bauernkriegen bis zu Bürgerrechtsbewegungen, teils gegen die Absicht der Kirchen.',
+      },
+      {
+        tradition: 'Jüdisch-christliches Gespräch',
+        text: 'Neuere Auslegung mahnt, den Text nicht als Absage an die Tora zu lesen. Paulus streitet darüber, was für Nichtjuden gilt – nicht darüber, ob Juden die Tora halten sollen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'gal', chapter: 5, verse: 14, note: 'Das ganze Gesetz in einem Wort' },
+      { book: 'gal', chapter: 3, verse: 28 },
+      { book: '1kor', chapter: 8, verse: 9 },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 4,
+    from: 4,
+    to: 9,
+    title: '„Freuet euch in dem HERRN allewege“',
+    historicalShort:
+      'Ein Aufruf zur Freude, geschrieben aus dem Gefängnis. Wie ernst die Lage war, zeigt derselbe Brief: Paulus erwägt darin ausdrücklich seinen Tod.',
+    historicalLong:
+      'Der Philipperbrief entstand in Haft – wo, ist umstritten: Rom, Ephesus und Cäsarea werden vorgeschlagen. Die Gemeinde in Philippi war die erste in Europa und die einzige, von der Paulus Geld annahm. Das Wort für „Güte“ in Vers 5 bezeichnet ein Nachgeben, das über das Geforderte hinausgeht – ein Begriff aus dem Rechtswesen. Der Friede, der „höher ist als alle Vernunft“, wird nicht als Gefühl beschrieben, sondern als Wache, die Herz und Sinne bewahrt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Brief könnte aus mehreren Schreiben zusammengesetzt sein; der Themenwechsel in Kapitel 3 ist auffällig abrupt. Die Frage ist offen.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Aufruf zur Freude wird gerade dort ernst genommen, wo er nicht selbstverständlich ist. Aus dem Gefängnis geschrieben, ist er keine Aufforderung zur guten Laune.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Vers ist der Eingang des Sonntags Gaudete in der Adventszeit – der rosa Sonntag mitten in der Bußzeit hat hier seinen Namen her.',
+      },
+      {
+        tradition: 'Ethische Auslegung',
+        text: 'Der Schluss nennt, worauf zu achten ist: was wahrhaftig, ehrbar, gerecht und liebenswert ist. Bemerkenswert ist, dass diese Liste der antiken Tugendlehre entstammt – Paulus grenzt sich nicht ab, sondern nimmt auf.',
+      },
+    ],
+    crossRefs: [
+      { book: 'phil', chapter: 1, verse: 21, note: 'Der Brief erwägt den Tod' },
+      { book: 'phil', chapter: 2, verse: 5 },
+      { book: 'joh', chapter: 14, verse: 27 },
+    ],
+  },
+  {
+    book: 'kol',
+    chapter: 3,
+    from: 12,
+    to: 17,
+    title: 'Anziehen wie ein Kleid',
+    historicalShort:
+      'Erbarmen, Freundlichkeit, Demut, Sanftmut, Geduld – und über alles die Liebe. Der Text beschreibt Haltungen wie Kleidungsstücke, die man anlegt.',
+    historicalLong:
+      'Das Bild vom An- und Ausziehen gehört zur frühchristlichen Taufsprache; in manchen Gemeinden wurde bei der Taufe tatsächlich das Gewand gewechselt. Bemerkenswert ist die Reihenfolge: Zuerst steht die Zusage, erwählt und geliebt zu sein, dann folgt die Aufforderung. Die genannten Eigenschaften sind durchweg soziale Größen – keine lässt sich allein üben. Der Abschnitt schließt mit dem Singen von Psalmen und Liedern, dem frühesten Hinweis auf gottesdienstliche Musik in den Briefen.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Verfasserschaft des Kolosserbriefs ist umstritten; viele halten ihn für nachpaulinisch. Die Tauf- und Katechismussprache spricht für eine Gemeinde, die bereits eine feste Unterweisung kannte.',
+      },
+      {
+        tradition: 'Klassische kirchliche Auslegung',
+        text: 'Die Reihe der Tugenden wurde als Gegenstück zur Lasterliste im selben Kapitel gelesen. Beide Listen sind literarisch geformt und finden sich ähnlich in der Popularphilosophie der Zeit.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Dass Haltungen „angezogen“ werden, wird als Entlastung gelesen: Sie müssen nicht empfunden, sondern eingeübt werden – das Gefühl kann folgen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Unmittelbar danach folgt die sogenannte Haustafel mit Anweisungen an Frauen, Kinder und Sklaven. Wer den schönen Teil liest, muss den anschließenden mitlesen und benennen, was daran zeitgebunden ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'kol', chapter: 3, verse: 18, note: 'Die Haustafel unmittelbar danach' },
+      { book: 'gal', chapter: 3, verse: 27 },
+      { book: 'eph', chapter: 4, verse: 24 },
+    ],
+  },
+  {
+    book: '1thess',
+    chapter: 5,
+    from: 1,
+    to: 11,
+    title: 'Wie ein Dieb in der Nacht',
+    historicalShort:
+      'Auf die Frage nach dem Wann folgt keine Berechnung, sondern eine Absage an jede Berechnung – und stattdessen eine Anweisung für das Jetzt.',
+    historicalLong:
+      'Der erste Thessalonicherbrief ist mit großer Wahrscheinlichkeit die älteste erhaltene christliche Schrift, geschrieben um 50 n. Chr. Die Gemeinde beunruhigte, dass Mitglieder starben, bevor Christus wiederkam. Paulus antwortet im vorigen Kapitel darauf und wendet sich hier gegen die Terminfrage. Das Bild vom Dieb stammt aus der Jesusüberlieferung; der Ruf „Friede und Sicherheit“ war römische Propagandasprache – pax et securitas findet sich auf Münzen und Inschriften.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Naherwartung ist bei Paulus deutlich greifbar. Wie die frühe Kirche mit ihrem Ausbleiben umging, lässt sich an den späteren Briefen ablesen.',
+      },
+      {
+        tradition: 'Politische Lesart',
+        text: 'Der Gegensatz zur kaiserlichen Losung „Friede und Sicherheit“ ist kaum zufällig. Der Text stellt der römischen Ordnung eine andere Erwartung entgegen.',
+      },
+      {
+        tradition: 'Kirchliche Auslegung',
+        text: 'Die Absage an Terminrechnungen wurde immer wieder gegen Endzeitbewegungen angeführt – mit wechselndem Erfolg. Der Text selbst zieht aus der Unberechenbarkeit eine ethische, keine spekulative Folge.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt endet mit „tröstet euch untereinander“. Das Thema ist nicht Angst, sondern der Umgang einer Gemeinde mit ihren Toten.',
+      },
+    ],
+    crossRefs: [
+      { book: '1thess', chapter: 4, verse: 13, note: 'Der unmittelbare Zusammenhang' },
+      { book: 'mt', chapter: 24, verse: 43, note: 'Das Bild vom Dieb in der Jesusüberlieferung' },
+      { book: '2petr', chapter: 3, verse: 10 },
+    ],
+  },
+  {
+    book: '2thess',
+    chapter: 2,
+    from: 1,
+    to: 12,
+    title: 'Der Mensch der Sünde',
+    historicalShort:
+      'Ein Text, der vor voreiligen Endzeitansagen warnt – und dabei selbst ein Endzeitszenario entwirft, das zu den rätselhaftesten des Neuen Testaments gehört.',
+    historicalLong:
+      'Die Gemeinde hatte offenbar gehört, der Tag des Herrn sei bereits da – möglicherweise aufgrund eines gefälschten Briefes, den der Text ausdrücklich erwähnt. Die Antwort schiebt zwei Ereignisse davor: den Abfall und das Auftreten des „Menschen der Sünde“. Wer oder was ihn zurückhält, bleibt offen; die Auslegung hat darin das römische Reich, den Heiligen Geist, die Verkündigung und vieles andere gesehen. Schon Augustinus schrieb, er wisse nicht, was gemeint sei.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Verfasserschaft ist umstritten. Wer den Brief für nachpaulinisch hält, liest ihn als Korrektur einer überhitzten Naherwartung, die sich auf Paulus berief.',
+      },
+      {
+        tradition: 'Auslegungsgeschichte',
+        text: 'Die Gestalt wurde mit Nero, dem Papsttum, Luther, mit Diktatoren des 20. Jahrhunderts und immer wieder mit dem jeweiligen Gegner gleichgesetzt. Die Reihe dieser Zuschreibungen ist selbst eine Warnung.',
+      },
+      {
+        tradition: 'Kirchliche Auslegung',
+        text: 'Die Kirchen lehren überwiegend Zurückhaltung: Der Text warnt vor Täuschung und ruft zum Feststehen, er liefert keinen Schlüssel zur Identifikation von Personen.',
+      },
+      {
+        tradition: 'Seelsorgliche Warnung',
+        text: 'Der Anlass des Briefes ist ein Gerücht, das Angst gemacht hat. Wer den Abschnitt heute zur Angsterzeugung gebraucht, wendet ihn gegen seine erklärte Absicht.',
+      },
+    ],
+    crossRefs: [
+      { book: '2thess', chapter: 2, verse: 2, note: 'Der gefälschte Brief' },
+      { book: 'dan', chapter: 11, verse: 36 },
+      { book: '1joh', chapter: 2, verse: 18 },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 6,
+    from: 6,
+    to: 12,
+    title: 'Genügsamkeit und Geldliebe',
+    historicalShort:
+      'Der meistverkürzte Vers der Bibel steht hier: Nicht das Geld ist die Wurzel allen Übels, sondern die Geldgier.',
+    historicalLong:
+      'Der Text bewegt sich in der Sprache der antiken Popularphilosophie: Die Autarkie – das Sichgenügenlassen – war ein Grundbegriff der Stoa. Auch das Bild, nichts in die Welt gebracht zu haben und nichts hinaustragen zu können, findet sich mehrfach in griechischer und lateinischer Literatur sowie bei Hiob. Die Pastoralbriefe richten sich an Gemeinden mit fester Ordnung und offenbar auch mit wohlhabenden Mitgliedern; die Warnung ist konkret adressiert.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die drei Pastoralbriefe unterscheiden sich in Sprache und Ämterordnung deutlich von den unumstrittenen Paulusbriefen. Die Mehrheit setzt sie ins späte 1. oder frühe 2. Jahrhundert.',
+      },
+      {
+        tradition: 'Klassische kirchliche Auslegung',
+        text: 'Der Vers wurde in der Alten Kirche breit gegen den Reichtum von Amtsträgern angeführt – von Basilius bis Johannes Chrysostomus mit erheblicher Schärfe.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Die verkürzte Fassung „Geld ist die Wurzel allen Übels“ ist sprichwörtlich geworden und sagt etwas anderes als der Text. Er richtet sich auf eine Haltung, nicht auf eine Sache.',
+      },
+      {
+        tradition: 'Sozialethische Lesart',
+        text: 'Wenige Verse später folgt eine Anweisung an die Reichen – nicht, arm zu werden, sondern gern zu geben und mitzuteilen. Der Brief entwirft keine Besitzlosigkeit, sondern eine Verpflichtung des Besitzes.',
+      },
+    ],
+    crossRefs: [
+      { book: '1tim', chapter: 6, verse: 17, note: 'Die Anweisung an die Reichen' },
+      { book: 'hi', chapter: 1, verse: 21 },
+      { book: 'mt', chapter: 6, verse: 24 },
+    ],
+  },
+  {
+    book: '2tim',
+    chapter: 4,
+    from: 6,
+    to: 8,
+    title: '„Ich habe den guten Kampf gekämpft“',
+    historicalShort:
+      'Ein Rückblick am Ende, in der Sprache des Sports und des Opferkults zugleich: ausgegossen wie ein Trankopfer, gelaufen wie ein Wettlauf.',
+    historicalLong:
+      'Der Text verwendet das Bild des Trankopfers, das über ein Opfer gegossen wurde, und daneben die Wettkampfsprache, die Paulus auch sonst gebraucht – der Siegeskranz war ein Kranz aus Zweigen, nicht aus Gold. Beides zusammen ergibt einen Ton, der zugleich nüchtern und feierlich ist. Ob der historische Paulus diese Zeilen schrieb, ist umstritten; als literarisches Vermächtnis haben sie die christliche Sterbeliturgie tief geprägt.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Wer die Pastoralbriefe für später hält, liest den Abschnitt als bewusst gestaltetes Testament: Eine spätere Generation lässt Paulus sagen, was sie von ihm überliefert wissen will.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Text gehört zu den meistgelesenen Abschnitten bei Beerdigungen und in Sterbegebeten – in allen Konfessionen.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Auffällig ist, dass der Rückblick nichts beschönigt: Wenige Verse später steht, alle hätten ihn verlassen. Der Text hält Bilanz und Enttäuschung nebeneinander.',
+      },
+      {
+        tradition: 'Ethische Auslegung',
+        text: 'Die Wendung „den Glauben gehalten“ meint im Griechischen ebenso „die Treue bewahrt“. Gemeint ist weniger ein Bekenntnis als ein Durchhalten.',
+      },
+    ],
+    crossRefs: [
+      { book: '2tim', chapter: 4, verse: 16, note: '„Alle verließen mich“' },
+      { book: '1kor', chapter: 9, verse: 24 },
+      { book: 'phil', chapter: 3, verse: 14 },
+    ],
+  },
+  {
+    book: 'tit',
+    chapter: 2,
+    from: 11,
+    to: 14,
+    title: '„Es ist erschienen die heilsame Gnade“',
+    historicalShort:
+      'Ein dichter, fast liedhafter Abschnitt, der Gnade und Lebensführung unmittelbar aneinanderbindet – die Gnade „erzieht“.',
+    historicalLong:
+      'Das griechische Wort für „erscheinen“ ist Epiphaneia – ein Begriff aus dem Herrscherkult, mit dem das Auftreten eines Gottes oder eines Kaisers bezeichnet wurde. Der Text setzt ihn zweimal: für das erste Kommen und für die erwartete Wiederkunft. Auffällig ist das Verb „erziehen“: Gnade wird nicht als Freibrief beschrieben, sondern als etwas, das Gewohnheiten formt. Der Abschnitt steht mitten in einer Haustafel und begründet, warum ihre Anweisungen gelten sollen.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Abschnitt wirkt wie ein zitiertes Bekenntnisstück. Die Übernahme kaiserlicher Sprache ist typisch für die Zeit und keineswegs harmlos.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Text wurde gegen die Trennung von Glaube und Lebensführung angeführt: Gnade und Erziehung stehen in einem Satz, nicht in einer Reihenfolge.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Abschnitt ist Lesung der Christnacht – die „Erscheinung“ wird dort auf die Geburt bezogen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die umgebende Haustafel weist Sklaven an, sich zu fügen. Dass ein Text über die Gnade diese Funktion erfüllt, gehört zu den Stellen, an denen die Auslegung Widerspruch anmelden muss.',
+      },
+    ],
+    crossRefs: [
+      { book: 'tit', chapter: 2, verse: 9, note: 'Die Anweisung an Sklaven' },
+      { book: 'tit', chapter: 3, verse: 4 },
+      { book: '1joh', chapter: 3, verse: 2 },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 4,
+    from: 12,
+    to: 16,
+    title: 'Das Wort wie ein Schwert – und der mitfühlende Hohepriester',
+    historicalShort:
+      'Zwei Bilder unmittelbar nacheinander: ein Schwert, das bis ins Innerste dringt, und ein Hohepriester, der weiß, wie sich Schwäche anfühlt.',
+    historicalLong:
+      'Der Hebräerbrief ist kein Brief, sondern eine kunstvoll gebaute Predigt in ausgesuchtem Griechisch; sein Verfasser ist unbekannt. Origenes schrieb bereits im 3. Jahrhundert, wer ihn geschrieben habe, wisse Gott allein. Der Hohepriestergedanke ist sein eigentliches Thema und begegnet so in keinem anderen neutestamentlichen Text. Der zweischneidige Schwertvergleich stammt aus der Weisheitsliteratur; das Wort für „Schwert“ meint das kurze römische Kurzschwert, nicht das Zweihandschwert der Bilder.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Predigt richtet sich an eine Gemeinde in Ermüdung. Ihr Argumentationsgang setzt gute Kenntnis der griechischen Bibel voraus.',
+      },
+      {
+        tradition: 'Klassische kirchliche Auslegung',
+        text: 'Das Nebeneinander ist gewollt: Erst das Wort, das nichts verbirgt, dann der Zugang zum Thron „mit Freudigkeit“. Ohne den zweiten Teil wäre der erste unerträglich.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Tradition betont die Aussage, er sei „versucht allenthalben gleichwie wir“: Mitleiden ist hier kein Zugeständnis, sondern Voraussetzung der Erlösung.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt wird häufig gegen ein Gottesbild gelesen, das nur richtet. Das Wort dringt durch – und der, vor den es führt, kennt die Lage von innen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hebr', chapter: 2, verse: 18 },
+      { book: 'eph', chapter: 6, verse: 17 },
+      { book: 'jes', chapter: 49, verse: 2 },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 12,
+    from: 1,
+    to: 3,
+    title: 'Die Wolke der Zeugen',
+    historicalShort:
+      'Nach dem langen Kapitel über die Glaubenden der Vergangenheit folgt das Bild eines Stadions: Die Zeugen sitzen auf den Rängen, der Lauf ist noch zu laufen.',
+    historicalLong:
+      'Die Bildsprache ist die des griechischen Wettkampfs, der in der ganzen Mittelmeerwelt vertraut war: das Ablegen jeder Last, das Laufen mit Ausdauer, der Blick nach vorn. Das griechische Wort für „Zeugen“ ist dasselbe, aus dem „Märtyrer“ wurde – hier steht es noch für Zeugen im weiteren Sinn. Die vorangehende Aufzählung in Kapitel 11 endet ausdrücklich nicht mit Erfolgsgeschichten: Sie nennt Gefolterte, Verspottete, Getötete.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Wettkampfmetaphorik durchzieht die frühchristliche Literatur. Sie richtet sich an Gemeinden, deren Ausdauer nachließ, nicht an Anfänger.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die „Wolke der Zeugen“ gehört zu den biblischen Wurzeln der Heiligenverehrung: Die Gestorbenen sind nicht abwesend, sondern als Gemeinschaft gegenwärtig.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Betont wird der Blick auf Christus als „Anfänger und Vollender“. Die Zeugen bleiben Zuschauer; getragen wird der Lauf von einem anderen.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Das Bild wird oft bei Trauerfeiern gebraucht. Es tröstet weniger mit Wiedersehen als mit Zugehörigkeit: Wer läuft, läuft nicht als Erster und nicht allein.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hebr', chapter: 11, verse: 36, note: 'Was die Zeugen erlitten' },
+      { book: '1kor', chapter: 9, verse: 24 },
+      { book: 'phil', chapter: 3, verse: 13 },
+    ],
+  },
+  {
+    book: 'jak',
+    chapter: 1,
+    from: 2,
+    to: 8,
+    title: 'Anfechtung und die Bitte um Weisheit',
+    historicalShort:
+      'Der Brief beginnt ohne Umschweife mit dem Schwierigen – und stellt der Anfechtung nicht Trost gegenüber, sondern eine Bitte: um Weisheit.',
+    historicalLong:
+      'Der Jakobusbrief steht der jüdischen Weisheitsliteratur so nahe wie kein anderer neutestamentlicher Text; Christus wird nur zweimal genannt. Das griechische Wort für „Anfechtung“ meint Prüfung wie Versuchung zugleich – dieselbe Doppeldeutigkeit wie in der Bitte des Vaterunsers. Der „Zweifler“ wird mit einer Meereswoge verglichen; das Wort für „zwiespältig“ ist im Griechischen vor Jakobus nicht belegt und könnte eine Neubildung sein.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Brief ist eher eine Sammlung von Mahnreden als ein Brief. Verfasser und Datierung sind offen; die Nähe zur Bergpredigt ist auffällig, ohne dass zitiert würde.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther nannte den Brief eine „stroherne Epistel“, weil er die Rechtfertigung anders akzentuiere. Die lutherische Auslegung ist ihm darin überwiegend nicht gefolgt.',
+      },
+      {
+        tradition: 'Jüdische Parallelen',
+        text: 'Die Verbindung von Prüfung, Geduld und Weisheit findet sich fast wörtlich bei Jesus Sirach. Der Brief steht in einer durchgehenden weisheitlichen Linie.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Bemerkenswert ist, worum gebeten werden soll: nicht um das Ende der Prüfung, sondern um Urteilsfähigkeit in ihr.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jak', chapter: 2, verse: 14, note: 'Glaube ohne Taten' },
+      { book: 'roem', chapter: 5, verse: 3 },
+      { book: '1koe', chapter: 3, verse: 9 },
+    ],
+  },
+  {
+    book: 'jak',
+    chapter: 5,
+    from: 13,
+    to: 16,
+    title: 'Gebet, Salbung und das Bekennen der Sünden',
+    historicalShort:
+      'Der Abschnitt beschreibt, was eine Gemeinde tut, wenn jemand krank ist: rufen, beten, salben – und einander die Verfehlungen bekennen.',
+    historicalLong:
+      'Der Text ist die wichtigste neutestamentliche Grundlage der Krankensalbung. Öl war in der Antike zugleich Heilmittel und rituelles Zeichen; die beiden Bedeutungen lassen sich hier nicht trennen. Auffällig ist die Reihenfolge: Nicht ein Einzelner heilt, sondern die Ältesten werden gerufen. Das gegenseitige Bekennen ist ausdrücklich wechselseitig formuliert, nicht auf ein Amt gerichtet.',
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Abschnitt begründet das Sakrament der Krankensalbung. Das Konzil von Trient beruft sich ausdrücklich auf ihn; die frühere Bezeichnung „Letzte Ölung“ hat das Zweite Vatikanum bewusst aufgegeben.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Reformatoren erkannten hier kein Sakrament, hielten aber am Gebet für Kranke fest. Neuere evangelische Ordnungen kennen die Salbung wieder als Segenshandlung.',
+      },
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Text spiegelt eine Gemeinde mit Ältestenamt. Ob Heilung erwartet oder Zuspruch gemeint ist, lässt die Formulierung bewusst offen.',
+      },
+      {
+        tradition: 'Seelsorgliche Warnung',
+        text: 'Die Verbindung von Krankheit und Sünde wird häufig missbraucht. Der Text stellt sie nebeneinander, ohne sie ursächlich zu verknüpfen – das Johannesevangelium widerspricht der Verknüpfung ausdrücklich.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joh', chapter: 9, verse: 3, note: '„Weder dieser hat gesündigt noch seine Eltern“' },
+      { book: 'mk', chapter: 6, verse: 13 },
+      { book: 'jak', chapter: 5, verse: 16 },
+    ],
+  },
+  {
+    book: '1petr',
+    chapter: 2,
+    from: 1,
+    to: 10,
+    title: 'Lebendige Steine',
+    historicalShort:
+      'Aus dem Bild des Tempels wird eine Gemeinde: keine Mauern, sondern Menschen – und der verworfene Stein wird zum Eckstein.',
+    historicalLong:
+      'Der Abschnitt reiht mehrere Schriftzitate aneinander, alle über Steine: Jesaja 28, Psalm 118, Jesaja 8. Diese Zusammenstellung war offenbar bereits eine feste Sammlung, denn Paulus verwendet Teile davon ähnlich. Der Höhepunkt überträgt Titel, die im Alten Testament Israel gelten, auf die angeschriebenen Gemeinden in Kleinasien: „auserwähltes Geschlecht, königliches Priestertum“. Das Wort für „Volk“ am Ende stammt aus Hosea – aus „Nicht mein Volk“ wird „Volk Gottes“.',
+    interpretations: [
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Wendung vom „königlichen Priestertum“ wurde zum Kernbeleg für das Priestertum aller Getauften – bei Luther in den reformatorischen Hauptschriften von 1520.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Zweite Vatikanum nimmt den Text auf und verbindet das gemeinsame Priestertum aller Gläubigen mit dem Amtspriestertum, ohne beide gleichzusetzen.',
+      },
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Brief richtet sich an Gemeinden in einer Minderheitslage. Die Übertragung der Israel-Titel dient der Vergewisserung, nicht der Enteignung.',
+      },
+      {
+        tradition: 'Jüdisch-christliches Gespräch',
+        text: 'Genau diese Übertragung wurde später zur Behauptung ausgebaut, die Kirche habe Israel ersetzt. Die Kirchen haben dieser Enterbungslehre seit dem 20. Jahrhundert ausdrücklich widersprochen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 118, verse: 22, note: 'Der verworfene Stein' },
+      { book: 'hos', chapter: 2, verse: 23 },
+      { book: '2mo', chapter: 19, verse: 6, note: 'Die Vorlage: „königliches Priestertum“' },
+    ],
+  },
+  {
+    book: '2petr',
+    chapter: 1,
+    from: 16,
+    to: 21,
+    title: 'Augenzeugen und Prophetenwort',
+    historicalShort:
+      'Der Verfasser beruft sich auf die Verklärung als Augenzeuge – und stellt dem doch das prophetische Wort als das Festere gegenüber.',
+    historicalLong:
+      'Der zweite Petrusbrief gilt in der Forschung überwiegend als die späteste Schrift des Neuen Testaments; schon in der Alten Kirche war seine Zugehörigkeit zum Kanon umstritten. Er greift den Judasbrief großflächig auf. Der Abschnitt reagiert auf Spötter, die das Ausbleiben der Wiederkunft anführten. Die Aussage über die Schriftauslegung – „keine Weissagung geschieht aus eigener Auslegung“ – gehört zu den wirkungsreichsten Sätzen der Kirchengeschichte.',
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Vers über die Auslegung wird als Beleg dafür angeführt, dass Schrift nicht privat, sondern in der Gemeinschaft der Kirche ausgelegt wird.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die reformatorische Tradition liest denselben Vers anders: Nicht die eigene Willkür legt aus, sondern die Schrift sich selbst – „sacra scriptura sui ipsius interpres“.',
+      },
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Die Berufung auf die Augenzeugenschaft in einem Text, den die meisten für pseudepigraph halten, ist ein bemerkenswerter Befund. Er sagt etwas über die Autoritätsfragen der zweiten Generation.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die Verklärung hat in der orthodoxen Theologie einen zentralen Rang; dieser Abschnitt gehört zu ihren wichtigsten Belegen für die Teilhabe an der göttlichen Natur.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 17, verse: 5, note: 'Die Verklärung' },
+      { book: '2petr', chapter: 3, verse: 4, note: 'Die Spötter' },
+      { book: '2tim', chapter: 3, verse: 16 },
+    ],
+  },
+  {
+    book: '1joh',
+    chapter: 1,
+    from: 5,
+    to: 10,
+    title: '„Gott ist Licht“',
+    historicalShort:
+      'Der Brief beginnt seine Argumentation mit einem Satz von großer Klarheit – und zieht daraus sofort eine unbequeme Folgerung über den Umgang mit der eigenen Schuld.',
+    historicalLong:
+      'Der erste Johannesbrief richtet sich gegen eine Gruppe, die die Gemeinde verlassen hat. Ihre Position lässt sich aus den Sätzen erschließen, die der Brief zitiert und zurückweist: „Wir haben keine Sünde“ und „Wir haben nicht gesündigt“. Vermutlich handelte es sich um eine Frömmigkeit, die sich durch Erkenntnis über die alltägliche Schuld erhaben glaubte. Der Brief antwortet nicht mit Verschärfung, sondern mit dem Angebot des Bekennens – und mit dem Hinweis, dass die Leugnung Gott zum Lügner macht.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Brief spiegelt eine Gemeindespaltung, deren Gegenseite wir nur durch seine Widerlegung kennen. Die Nähe zum Johannesevangelium ist deutlich, das Verhältnis beider Texte umstritten.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Vers 8 und 9 stehen in vielen Gottesdienstordnungen am Beginn – als Grundlage von Sündenbekenntnis und Zuspruch der Vergebung.',
+      },
+      {
+        tradition: 'Klassische kirchliche Auslegung',
+        text: 'Augustinus widmete den Johannesbriefen zehn Predigten. Für ihn hängt alles an der Verbindung von Licht und Liebe: Das eine ist ohne das andere nicht zu haben.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Text verlangt keine Selbsterforschung ohne Ende. Er stellt fest, dass Selbsttäuschung mehr schadet als das Eingestandene – und sagt sofort die Vergebung zu.',
+      },
+    ],
+    crossRefs: [
+      { book: '1joh', chapter: 4, verse: 8, note: '„Gott ist Liebe“' },
+      { book: 'joh', chapter: 8, verse: 12 },
+      { book: 'ps', chapter: 32, verse: 5 },
+    ],
+  },
+  {
+    book: 'eph',
+    chapter: 6,
+    from: 10,
+    to: 18,
+    title: 'Die Waffenrüstung',
+    historicalShort:
+      'Der Brief endet mit einem militärischen Bild – und dreht es zugleich um: Alle genannten Stücke sind Schutz, die einzige Waffe ist ein Wort.',
+    historicalLong:
+      'Die Ausrüstung entspricht der eines römischen Legionärs, wie ihn jeder Leser im Alltag sah. Die Zuordnungen stammen aber aus Jesaja, wo Gott selbst diese Rüstung trägt. Bemerkenswert ist die Auswahl: Gürtel, Panzer, Schuhe, Schild, Helm – lauter Verteidigung; das Schwert ist „das Wort Gottes“, und der Abschnitt mündet in das Gebet. Der genannte Gegner ist ausdrücklich nicht „Fleisch und Blut“, also kein Mensch.',
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Forschung',
+        text: 'Der Epheserbrief gilt vielen als nachpaulinisch. Das Bild vom Kampf gegen Mächte spiegelt eine Welt, in der man mit wirksamen überirdischen Kräften rechnete.',
+      },
+      {
+        tradition: 'Klassische kirchliche Auslegung',
+        text: 'Die Ausrichtung auf Verteidigung wurde früh betont: Der Text ruft nicht zum Angriff, sondern zum Standhalten – „so werdet ihr bestehen können“.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Bildsprache ist in der Geschichte wiederholt zur Rechtfertigung realer Gewalt herangezogen worden, bis in Kreuzzugspredigten. Der ausdrückliche Satz, es gehe nicht gegen Menschen, wurde dabei überlesen.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt wird in Situationen gelesen, in denen jemand sich ohnmächtig erlebt. Sein Trost liegt darin, dass Standhalten schon als Sieg gilt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 59, verse: 17, note: 'Gott trägt dieselbe Rüstung' },
+      { book: 'roem', chapter: 13, verse: 12 },
+      { book: '1thess', chapter: 5, verse: 8 },
     ],
   },
 ];

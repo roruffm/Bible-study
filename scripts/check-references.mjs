@@ -122,6 +122,46 @@ for (const entry of COMMENTARY) {
   }
 }
 
+/*
+ * Zwei Artikel zu demselben Abschnitt sind fast immer ein Versehen: Im
+ * Vers-Panel erschienen sie untereinander, und beide beanspruchten dieselbe
+ * Datierung. Überlappende Versbereiche im selben Kapitel fallen genauso auf.
+ */
+{
+  const gesehen = new Map();
+  for (const entry of COMMENTARY) {
+    const key = `${entry.book} ${entry.chapter},${entry.from}`;
+    if (gesehen.has(key)) {
+      problems.push(
+        `Artikel "${entry.title}": beginnt an derselben Stelle wie "${gesehen.get(key)}"`,
+      );
+    } else {
+      gesehen.set(key, entry.title);
+    }
+  }
+
+  const proKapitel = new Map();
+  for (const entry of COMMENTARY) {
+    const key = `${entry.book} ${entry.chapter}`;
+    if (!proKapitel.has(key)) proKapitel.set(key, []);
+    proKapitel.get(key).push(entry);
+  }
+  for (const list of proKapitel.values()) {
+    for (let i = 0; i < list.length; i++) {
+      for (let j = i + 1; j < list.length; j++) {
+        const a = list[i];
+        const b = list[j];
+        if (a.from <= b.to && b.from <= a.to) {
+          problems.push(
+            `Artikel "${a.title}" (${a.from}–${a.to}) und "${b.title}" (${b.from}–${b.to}) ` +
+              `überschneiden sich in ${a.book} ${a.chapter}`,
+          );
+        }
+      }
+    }
+  }
+}
+
 /* ----------------------------------------------------------- Lexikon */
 
 const { LEXICON } = await loadContent('lexicon');
@@ -409,6 +449,14 @@ console.log(
 console.log(
   `Datierungen : ${COMMENTARY.length - missingDating.length} von ${COMMENTARY.length} Artikeln`,
 );
+{
+  const vier = COMMENTARY.filter((e) => e.interpretations.length >= 4).length;
+  const traditionen = new Set(COMMENTARY.flatMap((e) => e.interpretations.map((i) => i.tradition)));
+  console.log(
+    `Auslegungen : ${interpretations} aus ${traditionen.size} Traditionen, ` +
+      `${vier} Artikel mit vier oder mehr`,
+  );
+}
 console.log(
   `Karte       : ${PLACES.length} Orte und ${JOURNEYS.length} Wege, ` +
     `${PLACES.filter((p) => p.long).length} Orte mit Hintergrundtext`,

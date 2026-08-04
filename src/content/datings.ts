@@ -779,6 +779,111 @@ export const DATINGS: Record<string, Dating> = {
     written: '5. Jh. v. Chr.',
     epoch: 'perser',
   },
+  /* --------------------------- Nachgezogene Artikel: Briefe und Restliches */
+  '1chr 16,8': {
+    events: 'Im Text: Überführung der Lade, um 1000 v. Chr.',
+    written: 'Chronik, Perserzeit, 4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'est 9,20': {
+    events: 'Im Text: Perserzeit unter Ahasveros',
+    written: 'Hellenistische Zeit, 3./2. Jh. v. Chr.',
+    epoch: 'hellenismus',
+  },
+  'hld 2,8': {
+    events: 'Keine erzählte Zeit',
+    written: 'Umstritten; Sprache weist auf nachexilische Zeit',
+    epoch: 'perser',
+  },
+  'klgl 5,15': {
+    events: 'Nach 587 v. Chr.',
+    written: 'Kurz nach der Zerstörung Jerusalems',
+    epoch: 'exil',
+  },
+  'obd 1,17': {
+    events: 'Nach 587 v. Chr.',
+    written: '6. Jh. v. Chr.',
+    epoch: 'exil',
+  },
+  'zef 1,14': {
+    events: 'Spätes 7. Jh. v. Chr., vor der Reform Josias',
+    written: '7. Jh. v. Chr., spätere Ergänzungen',
+    epoch: 'koenige',
+  },
+  '2kor 4,7': {
+    written: 'etwa 55/56 n. Chr., aus dem Konflikt mit Korinth',
+    epoch: 'urkirche',
+  },
+  '2kor 5,17': {
+    written: 'etwa 55/56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 2,11': {
+    events: 'Der Vorfall in Antiochia, um 48/49 n. Chr.',
+    written: 'etwa 48–55 n. Chr.; die Datierung hängt am Adressatenkreis',
+    epoch: 'urkirche',
+  },
+  'gal 5,1': {
+    written: 'etwa 48–55 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 4,4': {
+    events: 'Aus der Gefangenschaft geschrieben',
+    written: 'etwa 55–62 n. Chr., Ort der Haft umstritten',
+    epoch: 'urkirche',
+  },
+  'kol 3,12': {
+    written: 'etwa 60–80 n. Chr.; Verfasserschaft umstritten',
+    epoch: 'urkirche',
+  },
+  '1thess 5,1': {
+    written: 'um 50 n. Chr. – wohl die älteste erhaltene christliche Schrift',
+    epoch: 'urkirche',
+  },
+  '2thess 2,1': {
+    written: 'um 50 n. Chr. oder deutlich später; Verfasserschaft umstritten',
+    epoch: 'urkirche',
+  },
+  '1tim 6,6': {
+    written: 'Spätes 1. oder frühes 2. Jh. n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2tim 4,6': {
+    written: 'Spätes 1. oder frühes 2. Jh. n. Chr.',
+    epoch: 'urkirche',
+  },
+  'tit 2,11': {
+    written: 'Spätes 1. oder frühes 2. Jh. n. Chr.',
+    epoch: 'urkirche',
+  },
+  'hebr 4,12': {
+    written: 'Vor 100 n. Chr.; Verfasser unbekannt',
+    epoch: 'urkirche',
+  },
+  'hebr 12,1': {
+    written: 'Vor 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 1,2': {
+    written: 'Umstritten, zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 5,13': {
+    written: 'Umstritten, zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 2,1': {
+    written: 'etwa 70–95 n. Chr., an Gemeinden in Kleinasien',
+    epoch: 'urkirche',
+  },
+  '2petr 1,16': {
+    written: 'Wohl die späteste Schrift des Neuen Testaments, 2. Jh. n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 1,5': {
+    written: 'um 100 n. Chr., aus einer Gemeindespaltung',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
