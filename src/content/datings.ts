@@ -884,6 +884,464 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 100 n. Chr., aus einer Gemeindespaltung',
     epoch: 'urkirche',
   },
+
+  /* ------------------------- Schlüsselverse, Nachtrag */
+  '1mo 2,24': {
+    events: 'Urgeschichte',
+    written: 'Ältere Erzählschicht, meist 10.–8. Jh. v. Chr. angesetzt',
+    epoch: 'koenige',
+  },
+  '1mo 12,1': {
+    events: 'Nicht datierbar; die Erzählung setzt die frühe Bronzezeit voraus',
+    written: 'Endgestalt in der Exilszeit, 6. Jh. v. Chr.',
+    epoch: 'erzvaeter',
+  },
+  '1mo 15,6': {
+    events: 'Nicht datierbar',
+    written: 'Vermutlich exilische Bearbeitung älterer Überlieferung',
+    epoch: 'erzvaeter',
+  },
+  '1mo 28,15': {
+    events: 'Nicht datierbar',
+    written: 'Ältere Erzählung, in der Königszeit gesammelt',
+    epoch: 'erzvaeter',
+  },
+  '2mo 33,14': {
+    events: 'Wüstenzeit, meist im 13. Jh. v. Chr. verortet',
+    written: 'Ältere Erzählschicht mit späterer Bearbeitung',
+    epoch: 'exodus',
+  },
+  '5mo 31,6': {
+    events: 'Im Text: letzte Tage des Mose',
+    written: 'Grundform 7. Jh. v. Chr., Endgestalt nach dem Exil',
+    epoch: 'koenige',
+  },
+  '1sam 16,7': {
+    events: 'etwa 1020 v. Chr.',
+    written: 'Samuelüberlieferung, im 6. Jh. v. Chr. zusammengefügt',
+    epoch: 'koenige',
+  },
+  '1koe 8,27': {
+    events: 'Im Text: Tempelweihe um 950 v. Chr.',
+    written: 'Deuteronomistisch, 6. Jh. v. Chr.',
+    epoch: 'koenige',
+  },
+  '1koe 19,11': {
+    events: 'etwa 860 v. Chr.',
+    written: 'Prophetische Überlieferung, 8./7. Jh. v. Chr.',
+    epoch: 'koenige',
+  },
+  '2koe 6,16': {
+    events: 'etwa 840 v. Chr.',
+    written: 'Prophetische Überlieferung, 8. Jh. v. Chr.',
+    epoch: 'koenige',
+  },
+  'ps 8,3': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 16,11': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 19,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 27,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 32,8': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 34,8': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 37,4': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 42,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 46,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 46,10': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 55,22': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 62,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 73,25': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 90,12': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 91,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 103,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 118,22': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 119,105': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'ps 127,1': {
+    written: 'Sammlung des Psalters, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  '2chr 20,15': {
+    events: 'Im Text: 9. Jh. v. Chr.',
+    written: 'Chronik, Perserzeit, 4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'hi 1,20': {
+    events: 'Keine erzählte Zeit',
+    written: 'Umstritten; meist 6.–4. Jh. v. Chr.',
+    epoch: 'exil',
+  },
+  'hi 42,1': {
+    events: 'Keine erzählte Zeit',
+    written: 'Umstritten; meist 6.–4. Jh. v. Chr.',
+    epoch: 'exil',
+  },
+  'spr 4,23': {
+    written: 'Sammlung der Sprüche, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'spr 16,9': {
+    written: 'Sammlung der Sprüche, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'spr 18,10': {
+    written: 'Sammlung der Sprüche, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'spr 22,6': {
+    written: 'Sammlung der Sprüche, Endgestalt nachexilisch',
+    epoch: 'koenige',
+  },
+  'pred 12,13': {
+    events: 'Keine erzählte Zeit',
+    written: 'Hellenistische Zeit, 3. Jh. v. Chr.',
+    epoch: 'hellenismus',
+  },
+  'jes 1,18': {
+    written: '8. Jh. v. Chr., mit späteren Bearbeitungen',
+    epoch: 'koenige',
+  },
+  'jes 9,6': {
+    written: '8. Jh. v. Chr., mit späteren Bearbeitungen',
+    epoch: 'koenige',
+  },
+  'jes 26,3': {
+    written: '8. Jh. v. Chr., mit späteren Bearbeitungen',
+    epoch: 'koenige',
+  },
+  'jes 40,31': {
+    written: 'Zweiter Teil des Jesajabuchs, Exilszeit',
+    epoch: 'exil',
+  },
+  'jes 41,10': {
+    written: 'Zweiter Teil des Jesajabuchs, Exilszeit',
+    epoch: 'exil',
+  },
+  'jes 43,1': {
+    written: 'Zweiter Teil des Jesajabuchs, Exilszeit',
+    epoch: 'exil',
+  },
+  'jes 55,8': {
+    written: 'Zweiter Teil des Jesajabuchs, Exilszeit',
+    epoch: 'exil',
+  },
+  'jes 58,6': {
+    written: 'Dritter Teil, frühe Perserzeit',
+    epoch: 'perser',
+  },
+  'jes 61,1': {
+    written: 'Dritter Teil, frühe Perserzeit',
+    epoch: 'perser',
+  },
+  'jer 17,7': {
+    events: 'Späte Königszeit, 7./6. Jh. v. Chr.',
+    written: 'Jeremiaüberlieferung, im Exil gesammelt',
+    epoch: 'koenige',
+  },
+  'jer 31,3': {
+    events: 'Späte Königszeit oder Exil',
+    written: 'Trostbüchlein, im Exil gesammelt',
+    epoch: 'exil',
+  },
+  'hes 36,26': {
+    events: 'Nach 587 v. Chr.',
+    written: 'Exilszeit',
+    epoch: 'exil',
+  },
+  'hos 6,6': {
+    events: 'etwa 750–725 v. Chr.',
+    written: '8. Jh. v. Chr., judäische Bearbeitung später',
+    epoch: 'koenige',
+  },
+  'joel 2,12': {
+    events: 'Nicht sicher datierbar',
+    written: 'Meist Perserzeit, 5./4. Jh. v. Chr.',
+    epoch: 'perser',
+  },
+  'mt 5,14': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Matthäus, meist 80–90 n. Chr., wohl in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 6,33': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Matthäus, meist 80–90 n. Chr., wohl in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 7,7': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Matthäus, meist 80–90 n. Chr., wohl in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 7,12': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Matthäus, meist 80–90 n. Chr., wohl in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 11,28': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Matthäus, meist 80–90 n. Chr., wohl in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 19,26': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Matthäus, meist 80–90 n. Chr., wohl in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 22,37': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Matthäus, meist 80–90 n. Chr., wohl in Syrien',
+    epoch: 'roemer',
+  },
+  'mk 10,45': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Markus, meist um 70 n. Chr.',
+    epoch: 'roemer',
+  },
+  'mk 16,15': {
+    events: 'Nach Ostern erzählt; der Text selbst entstand später',
+    written: 'Längerer Markusschluss, meist 2. Jh. n. Chr.',
+    epoch: 'urkirche',
+  },
+  'lk 1,37': {
+    events: 'Vorgeschichte der Geburt Jesu, um 6–4 v. Chr.',
+    written: 'Evangelium nach Lukas, meist 80–90 n. Chr.',
+    epoch: 'roemer',
+  },
+  'lk 6,31': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Lukas, meist 80–90 n. Chr.',
+    epoch: 'roemer',
+  },
+  'lk 6,38': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Lukas, meist 80–90 n. Chr.',
+    epoch: 'roemer',
+  },
+  'lk 9,23': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Lukas, meist 80–90 n. Chr.',
+    epoch: 'roemer',
+  },
+  'lk 19,10': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Lukas, meist 80–90 n. Chr.',
+    epoch: 'roemer',
+  },
+  'joh 10,10': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Johannes, meist 90–110 n. Chr.',
+    epoch: 'roemer',
+  },
+  'joh 11,25': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Johannes, meist 90–110 n. Chr.',
+    epoch: 'roemer',
+  },
+  'joh 13,34': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Johannes, meist 90–110 n. Chr.',
+    epoch: 'roemer',
+  },
+  'joh 14,27': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Johannes, meist 90–110 n. Chr.',
+    epoch: 'roemer',
+  },
+  'joh 15,5': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Johannes, meist 90–110 n. Chr.',
+    epoch: 'roemer',
+  },
+  'joh 16,33': {
+    events: 'Wirken Jesu, um 28–30 n. Chr.',
+    written: 'Evangelium nach Johannes, meist 90–110 n. Chr.',
+    epoch: 'roemer',
+  },
+  'apg 1,8': {
+    events: 'Nach Ostern, um 30 n. Chr.',
+    written: 'Apostelgeschichte, meist 80–90 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'apg 2,38': {
+    events: 'Pfingsten, um 30 n. Chr.',
+    written: 'Apostelgeschichte, meist 80–90 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'apg 4,12': {
+    events: 'Frühe Zeit der Jerusalemer Gemeinde, um 30–33 n. Chr.',
+    written: 'Apostelgeschichte, meist 80–90 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'apg 16,31': {
+    events: 'Zweite Missionsreise, um 50 n. Chr.',
+    written: 'Apostelgeschichte, meist 80–90 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 1,16': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  'roem 3,23': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  'roem 5,8': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  'roem 6,23': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  'roem 8,1': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  'roem 10,9': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  'roem 12,1': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  'roem 12,2': {
+    events: 'Abgefasst um 56 n. Chr.',
+    written: 'Römerbrief, um 56 n. Chr. in Korinth diktiert',
+    epoch: 'urkirche',
+  },
+  '1kor 1,18': {
+    events: 'Abgefasst um 54/55 n. Chr.',
+    written: 'Erster Korintherbrief, um 54/55 n. Chr. in Ephesus',
+    epoch: 'urkirche',
+  },
+  '1kor 10,13': {
+    events: 'Abgefasst um 54/55 n. Chr.',
+    written: 'Erster Korintherbrief, um 54/55 n. Chr. in Ephesus',
+    epoch: 'urkirche',
+  },
+  '1kor 15,58': {
+    events: 'Abgefasst um 54/55 n. Chr.',
+    written: 'Erster Korintherbrief, um 54/55 n. Chr. in Ephesus',
+    epoch: 'urkirche',
+  },
+  '2kor 4,16': {
+    events: 'Abgefasst um 55/56 n. Chr.',
+    written: 'Zweiter Korintherbrief, um 55/56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2kor 5,7': {
+    events: 'Abgefasst um 55/56 n. Chr.',
+    written: 'Zweiter Korintherbrief, um 55/56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 5,22': {
+    events: 'Abgefasst um 50–55 n. Chr.',
+    written: 'Galaterbrief, meist 50–55 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'eph 3,20': {
+    written: 'Epheserbrief, Verfasserschaft umstritten, meist 80–100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 1,6': {
+    events: 'Aus der Haft, um 55–62 n. Chr.',
+    written: 'Philipperbrief, meist 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 2,3': {
+    events: 'Aus der Haft, um 55–62 n. Chr.',
+    written: 'Philipperbrief, meist 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 4,13': {
+    events: 'Aus der Haft, um 55–62 n. Chr.',
+    written: 'Philipperbrief, meist 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'kol 3,23': {
+    written: 'Kolosserbrief, Verfasserschaft umstritten, um 60 oder 70–80 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2tim 1,7': {
+    written: 'Zweiter Timotheusbrief, Verfasserschaft umstritten, meist 100–130 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'hebr 13,5': {
+    written: 'Hebräerbrief, Verfasser unbekannt, meist 60–90 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 5,7': {
+    written: 'Erster Petrusbrief, Verfasserschaft umstritten, meist 80–100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 3,1': {
+    written: 'Erster Johannesbrief, meist um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 4,7': {
+    written: 'Jakobusbrief, meist 80–100 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

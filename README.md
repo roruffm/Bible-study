@@ -102,17 +102,23 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 
 - **Steckbriefe zu allen 66 Büchern** – Verfasser, Zeit, Anlass, Kernaussage.
   Damit hat jeder Vers von Beginn an eine historische Einordnung.
-- **Vertiefte Artikel zu 176 Schlüsselabschnitten** mit 575 einzeln
-  ausgewiesenen Auslegungen aus 185 Traditionen, zusammen **1.996 Verse**.
+- **Vertiefte Artikel zu 275 Schlüsselabschnitten** mit 920 einzeln
+  ausgewiesenen Auslegungen aus 207 Traditionen, zusammen **2.212 Verse**.
   **Jedes der 66 Bücher hat mindestens einen Artikel**, und nur noch vier
   haben genau einen – Philemon, 2. und 3. Johannes und Judas, allesamt
   einkapitelige Briefe, bei denen ein Artikel angemessen ist (anfangs waren
-  es 52 Bücher). 47 Artikel bieten vier oder mehr Auslegungen – von der Schöpfung über die Bindung Isaaks,
+  es 52 Bücher). 95 Artikel bieten vier oder mehr Auslegungen – von der Schöpfung über die Bindung Isaaks,
   den Durchzug durchs Meer, David und Goliat, Nathans Gleichnis, den
   aaronitischen Segen und Naamans Heilung bis zu Sämann, Zinsgroschen,
   Emmaus, Kornelius, dem Abendmahl in Korinth und dem Brief nach Laodizea.
   Umstrittene Stellen wie Jesaja 7,14, „Du bist Petrus“, Römer 13 oder
   1. Timotheus 2 werden ausdrücklich als umstritten dargestellt.
+  Abgedeckt sind inzwischen auch die klassischen **Schlüsselverse**, nach
+  denen am häufigsten gesucht wird – von 1. Mose 15,6 über Psalm 23, 46,
+  91, 103 und 139, Jesaja 40,31, 41,10 und 43,1 bis zu Johannes 11,25,
+  Römer 8,1, 1. Korinther 13, Galater 5,22, Philipper 4,13 und 1. Petrus
+  5,7. Jede Überschrift, die ein Bibelwort zitiert, gibt es im Wortlaut
+  der Lutherbibel von 1912 wieder; das Prüfskript setzt das durch.
 - **Zeitleiste mit 97 Einträgen in vier Kategorien**, die einander erst
   verständlich machen: was die Bibel erzählt (33), was gleichzeitig anderswo
   geschah (32), was sich außerhalb der Bibel nachweisen lässt (15) und wann
@@ -162,7 +168,7 @@ verbunden, statt für sich zu stehen:
 - Beim Lesen stehen unter dem Kapitel die **Orte, die darin vorkommen** –
   abgeglichen mit den Schreibweisen der Lutherbibel von 1912 („Beth-El“,
   „Askalon“, „Beer-Seba“). Das erreicht **695 der 1189 Kapitel**, also
-  deutlich mehr als die 113 Kapitel mit einem Artikel.
+  deutlich mehr als die 250 Kapitel mit einem Artikel.
 - Beim Lesen eines Evangeliums stehen darunter die **Parallelstellen** in den
   anderen dreien, mit einem Klick zum Vergleich im Wortlaut. Die Synopse
   umfasst **156 Abschnitte** in sechs Erzählstufen, davon 97 in mehreren
@@ -321,10 +327,12 @@ node scripts/check-references.mjs
 ```
 
 Geprüft werden Artikel, Querverweise, Lesepläne, Lexikon, Zeitleiste, Vers
-des Tages, die Karte und die Synopse – zurzeit 1985 Angaben. Für die Synopse
+des Tages, die Karte und die Synopse – zurzeit 2528 Angaben. Für die Synopse
 kommen zwei Prüfungen dazu, die sich am fertigen Vergleich sofort rächen
 würden: Kein Abschnitt darf mitten im Satz beginnen, und jedes Zitat in einer
-Anmerkung muss im Wortlaut der Lutherbibel von 1912 wirklich so stehen. Es meldet zugleich, wie weit
+Anmerkung muss im Wortlaut der Lutherbibel von 1912 wirklich so stehen.
+Dasselbe gilt für jedes Bibelwort, das als Artikelüberschrift dient: Es muss
+wörtlich im Versbereich des Artikels vorkommen, nicht bloß sinngemäß. Es meldet zugleich, wie weit
 die Inhalte reichen: wie viele Abschnitte und Verse abgedeckt sind, ob ein
 Buch noch ganz ohne Artikel dasteht und wie viele Orte einen Hintergrundtext
 haben. Für die Karte prüft es außerdem, dass jeder Ort im Kartenausschnitt

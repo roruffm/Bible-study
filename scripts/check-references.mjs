@@ -362,6 +362,35 @@ for (const pericope of SYNOPSIS) {
   }
 }
 
+/* ----------------------------------------------- Zitate in Artikeltiteln */
+
+/*
+ * Viele Artikel tragen ein Bibelwort als Titel. Steht dort eine leicht
+ * geglättete oder aus dem Gedächtnis zitierte Fassung, führt das in die Irre:
+ * Der Leser sucht den Satz im Kapitel darunter und findet ihn nicht. Deshalb
+ * muss jedes Zitat in Anführungszeichen wörtlich im Versbereich des Artikels
+ * stehen – Zeichensetzung und Groß/klein ausgenommen.
+ */
+for (const entry of COMMENTARY) {
+  const zitate = [...entry.title.matchAll(/„([^“]{8,})“/g)];
+  if (zitate.length === 0) continue;
+
+  const data = JSON.parse(
+    readFileSync(join(ROOT, 'public', 'bibel', TRANSLATION, `${entry.book}.json`), 'utf8'),
+  );
+  const abschnitt = loose(
+    (data.chapters[entry.chapter - 1] ?? []).slice(entry.from - 1, entry.to).join(' '),
+  );
+
+  for (const zitat of zitate) {
+    if (!abschnitt.includes(loose(zitat[1].replace(/\s*…\s*$/, '')))) {
+      problems.push(
+        `Artikel "${entry.title}": das Zitat steht so nicht in ${entry.book} ${entry.chapter},${entry.from}–${entry.to}`,
+      );
+    }
+  }
+}
+
 /* ------------------------------------------------------ Vers des Tages */
 
 const { DAILY_VERSES } = await loadContent('verseOfDay');
