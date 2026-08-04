@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { commentaryFor } from '../content/commentary';
 import { BOOK_PROFILES } from '../content/bookProfiles';
 import { LEXICON_KIND_LABEL } from '../content/lexicon';
+import { EPOCHS } from '../content/timeline';
 import { lexiconInVerse } from '../lib/lexiconText';
 import { usePersisted } from '../hooks/useStore';
 import {
@@ -151,6 +152,41 @@ export default function VersePanel({ index, book, ref_, text, altNumbering, onCl
                 entries.map((entry) => (
                   <div key={entry.title} style={{ marginBottom: '1.25rem' }}>
                     <h4>{entry.title}</h4>
+
+                    {/* Ereigniszeit und Entstehungszeit fallen in der Bibel oft
+                        weit auseinander – deshalb stehen sie getrennt. */}
+                    {entry.dating && (
+                      <dl className="dating">
+                        {entry.dating.events && (
+                          <>
+                            <dt>Ereignis</dt>
+                            <dd>{entry.dating.events}</dd>
+                          </>
+                        )}
+                        {entry.dating.written && (
+                          <>
+                            <dt>Aufgeschrieben</dt>
+                            <dd>{entry.dating.written}</dd>
+                          </>
+                        )}
+                        {entry.dating.epoch && (
+                          <>
+                            <dt>Epoche</dt>
+                            <dd>
+                              <Link
+                                to={`/studium/zeitleiste?epoche=${entry.dating.epoch}`}
+                                onClick={onClose}
+                              >
+                                {EPOCHS.find((e) => e.id === entry.dating!.epoch)?.label ??
+                                  entry.dating.epoch}{' '}
+                                →
+                              </Link>
+                            </dd>
+                          </>
+                        )}
+                      </dl>
+                    )}
+
                     <p>{entry.historicalShort}</p>
                     {entry.historicalLong && (
                       <>

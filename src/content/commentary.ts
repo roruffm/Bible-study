@@ -11,6 +11,10 @@
  * vorliegt, zeigt die App den Steckbrief des jeweiligen Buches.
  */
 
+import { DATINGS, datingKey, type Dating } from './datings';
+
+export type { Dating };
+
 export interface Interpretation {
   /** Tradition oder Denkrichtung, aus der die Deutung stammt. */
   tradition: string;
@@ -27,6 +31,11 @@ export interface CrossReference {
 export interface CommentaryEntry {
   book: string;
   chapter: number;
+  /**
+   * Zeitliche Einordnung. Sie steht nicht hier im Artikel, sondern in
+   * `datings.ts`, und wird von `commentaryFor` angehängt.
+   */
+  dating?: Dating;
   /** Abgedeckter Versbereich (einschließlich). */
   from: number;
   to: number;
@@ -226,6 +235,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Von Gott durchschaut und gehalten',
     historicalShort:
       'Ein später Psalm, sprachlich mit aramäischen Einflüssen. Er beschreibt Gottes Allwissenheit nicht als Überwachung, sondern als Geborgenheit: Es gibt keinen Ort ohne Gott.',
+    historicalLong:
+      'Der Aufbau ist streng: vier Strophen zu je sechs Versen über Wissen, Gegenwart, Werden und schließlich die Bitte um Prüfung. Die Bildwelt greift die damals bekannten Grenzen der Welt auf – Himmel, Totenreich, der Osten des Sonnenaufgangs, das Meer im Westen. „Im Verborgenen gebildet, gewirkt unten in der Erde“ ist eine ungewöhnliche Wendung: Der Mutterleib wird mit dem Erdinneren verglichen, dem Ort, aus dem nach 1. Mose 2 der Mensch geformt wurde. Der Schluss dreht die Richtung um: Nachdem der Beter zwanzig Verse lang beschrieben hat, wie durchschaut er ist, bittet er ausdrücklich darum, geprüft zu werden.',
     interpretations: [
       {
         tradition: 'Spirituelle Tradition',
@@ -249,6 +260,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Vertrauen statt eigener Berechnung',
     historicalShort:
       'Der Spruch stammt aus dem Weisheitsunterricht, in dem junge Männer auf Verantwortung vorbereitet wurden. Er stellt nicht Vernunft gegen Glauben, sondern warnt davor, sich allein auf die eigene Einschätzung zu verlassen.',
+    historicalLong:
+      'Das hebräische Wort für „Herz“ meint nicht das Gefühl, sondern den Ort des Nachdenkens und Entscheidens – näher an „Verstand“ als an „Empfindung“. Wörtlich steht da: „Stütze dich nicht auf deine eigene Einsicht.“ Gemeint ist also nicht der Verzicht aufs Denken, sondern auf dessen Verabsolutierung. Auffällig ist die Fortsetzung wenige Verse später: Wer weise ist, soll sich nicht für weise halten. Die Sprüche misstrauen der Selbstsicherheit durchgehend – nicht der Klugheit.',
     interpretations: [
       {
         tradition: 'Weisheitliche Auslegung',
@@ -257,6 +270,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Frömmigkeitstradition',
         text: 'Der Vers gehört zu den meistzitierten Bibelworten bei Lebensentscheidungen und wird als Zusage der Wegführung verstanden.',
+      },
+      {
+        tradition: 'Sprachliche Beobachtung',
+        text: 'Das mit „Wege“ übersetzte Wort meint im Hebräischen das ganz konkrete Unterwegssein. Gemeint ist keine geheime Führung, sondern ein gangbarer Weg.',
       },
     ],
     crossRefs: [{ book: 'hi', chapter: 28, verse: 28 }],
@@ -324,6 +341,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Was Gott vom Menschen erwartet',
     historicalShort:
       'Der Vers steht am Ende einer Gerichtsrede, die wie ein Prozess aufgebaut ist. Auf die Frage, mit welchen Opfern man Gott gnädig stimmen könne, folgt eine überraschend schlichte Antwort.',
+    historicalLong:
+      'Die Steigerung davor ist bewusst absurd: erst Kälber, dann tausend Widder, dann zehntausend Bäche Öl – und schließlich der eigene erstgeborene Sohn. Damit ist genau die Praxis benannt, die in der Umwelt Israels vorkam und die die Propheten scharf ablehnten. Die Antwort verlangt dagegen nichts, was man abliefern könnte. Die drei Forderungen sind unterschiedlich gebaut: Recht wird „getan“, Güte wird „geliebt“, und mit Gott geht man „demütig“ – Handlung, Haltung und Beziehung.',
     interpretations: [
       {
         tradition: 'Prophetische Tradition',
@@ -517,6 +536,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: '„Ich bin der Weg, die Wahrheit und das Leben“',
     historicalShort:
       'Der Satz fällt in den Abschiedsreden, unmittelbar nach der Ankündigung des Weggehens. Er ist zunächst Trostwort an verunsicherte Jünger, nicht eine Aussage über andere Religionen.',
+    historicalLong:
+      'Ausgelöst wird er durch eine praktische Frage des Thomas: „Wie können wir den Weg wissen?“ Die Antwort verschiebt die Ebene – gefragt war nach einer Route, geantwortet wird mit einer Person. Das johanneische Evangelium entstand in einer Gemeinde, die sich gerade schmerzhaft von der Synagoge trennte; viele seiner scharfen Abgrenzungen sind aus dieser Lage heraus formuliert. Wer sie heute liest, muss diesen Entstehungszusammenhang mitbedenken, gerade weil solche Sätze historisch zur Abwertung anderer benutzt wurden.',
     interpretations: [
       {
         tradition: 'Traditionelle Auslegung',
@@ -648,6 +669,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Aus Gnade – und zu guten Werken',
     historicalShort:
       'Der Abschnitt fasst zusammen, was der Brief zuvor entfaltet: Zugehörigkeit zu Gott ist Geschenk. Unmittelbar danach folgt jedoch der Hinweis, dass Menschen „zu guten Werken geschaffen“ sind.',
+    historicalLong:
+      'Das griechische Wort für „Werk“ in Vers 10 ist poiema – davon kommt „Poesie“. Der Mensch erscheint als Gedicht Gottes, nicht als dessen Werkzeug. Grammatisch ist umstritten, worauf sich „das“ in „das nicht aus euch“ bezieht: auf den Glauben, auf die Rettung oder auf den ganzen Vorgang. Die griechische Form spricht eher für Letzteres. Der unmittelbare Zusammenhang zielt zudem nicht auf den Einzelnen, sondern auf die Gemeinde: Wenige Verse später geht es um die niedergerissene Trennmauer zwischen Juden und Nichtjuden.',
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -698,6 +721,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Was Glaube ist',
     historicalShort:
       'Der Satz leitet eine lange Reihe von Beispielen ein – von Abel bis zu namenlosen Verfolgten. Adressiert sind Menschen, die müde geworden sind und über einen Rückzug nachdenken.',
+    historicalLong:
+      'Bemerkenswert ist der Schluss des Kapitels: Nach der langen Aufzählung heißt es, dass sie alle das Verheißene gerade **nicht** erlangt haben. Glaube wird hier also nicht am Erfolg gemessen. Die Beispielreihe wird zunehmend dunkler – am Ende stehen Menschen, die zersägt, gesteinigt und in Fellen umhergetrieben wurden. Der Verfasser ist unbekannt; schon Origenes schrieb im 3. Jahrhundert, das wisse „Gott allein“.',
     interpretations: [
       {
         tradition: 'Klassische Auslegung',
@@ -706,6 +731,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Sprachliche Beobachtung',
         text: 'Die griechischen Begriffe (hypostasis, elenchos) stammen aus der Rechts- und Wirtschaftssprache und bedeuten so viel wie „Grundlage“ und „Nachweis“ – Glaube als tragfähiger Boden.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Kapitelschluss hält fest, dass keiner der Genannten das Verheißene erlebt hat. Glaube wird hier ausdrücklich nicht am Eintreffen gemessen.',
       },
     ],
   },
@@ -743,6 +772,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: '„Gott ist Liebe“',
     historicalShort:
       'Der Brief entsteht nach einer Spaltung: Eine Gruppe hat die Gemeinde verlassen. Vor diesem Hintergrund wird die Liebe zum Geschwister zum entscheidenden Prüfstein für die Echtheit des Glaubens.',
+    historicalLong:
+      'Der Satz „Gott ist Liebe“ steht zweimal – und beide Male nicht als Definition am Anfang, sondern als Schlussfolgerung aus dem, was Gott getan hat. Das griechische agape war vor dem Neuen Testament ein eher farbloses Wort; erst hier bekommt es sein Gewicht. Der Umkehrschluss wird ausdrücklich abgewehrt: Nicht „Liebe ist Gott“, sondern Gott zeigt sich als der, der zuerst liebt. Der Brief argumentiert dabei bewusst greifbar: Der unsichtbare Gott und der sichtbare Bruder lassen sich nicht gegeneinander ausspielen.',
     interpretations: [
       {
         tradition: 'Dogmatische Auslegung',
@@ -892,6 +923,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Exegetische Beobachtung',
         text: 'Das hebräische Wort für „behüten“ steht sechsmal – der Psalm sagt in kurzer Form immer wieder dasselbe zu.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Zusage „kein Übel wird dir begegnen“ hat sich für viele nicht bewahrheitet. Ausgelegt wird sie deshalb meist als Zusage von Begleitung, nicht von Unversehrtheit.',
       },
     ],
   },
@@ -1059,6 +1094,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Thomas – der Zweifel als Teil des Glaubens',
     historicalShort:
       'Thomas verlangt nichts anderes, als die übrigen Jünger bereits erlebt hatten: den Auferstandenen zu sehen. Der Text erzählt nicht, dass er die Wunden tatsächlich berührt.',
+    historicalLong:
+      'Die Wunden bleiben – das ist die stille Pointe der Szene. Der Auferstandene ist nicht der Unversehrte, sondern der Gezeichnete. Das Bekenntnis „Mein Herr und mein Gott“ war zugleich politisch heikel: Nach Sueton ließ sich Kaiser Domitian, unter dem das Evangelium vermutlich entstand, als „dominus et deus“ anreden. Wer den Satz zu Jesus sagte, sprach ihn einem anderen ab. Das Evangelium endet unmittelbar danach mit der Bemerkung, all dies sei geschrieben, damit die Lesenden glauben – Thomas steht also stellvertretend für sie.',
     interpretations: [
       {
         tradition: 'Klassische Auslegung',
@@ -1196,6 +1233,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Nathan stellt den König',
     historicalShort:
       'Ein Prophet klagt den amtierenden König des Mordes an – im Alten Orient beispiellos. Nathan geht dabei über eine Erzählung vor: David spricht das Urteil, bevor er merkt, dass er selbst gemeint ist.',
+    historicalLong:
+      'Das Gleichnis arbeitet mit einem juristischen Kunstgriff: David wird als oberster Richter angerufen und fällt sein Urteil unbefangen – vierfacher Ersatz, wie ihn 2. Mose 22 für ein gestohlenes Schaf vorsieht. Erst dann fällt der Satz „Du bist der Mann“. In den Königsinschriften Ägyptens und Mesopotamiens gibt es nichts Vergleichbares: Herrscher wurden dort verherrlicht, nicht angeklagt. Dass Israel diese Erzählung über seinen größten König bewahrt hat, ist selbst bemerkenswert.',
     interpretations: [
       {
         tradition: 'Politische Lesart',
@@ -1724,6 +1763,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Der Landtag zu Sichem',
     historicalShort:
       'Die Szene ist wie ein Vertragsabschluss aufgebaut: Vorgeschichte, Forderung, Zeugen, schriftliche Niederlegung. Josua weist die Zusage des Volkes zunächst zurück – „Ihr könnt dem HERRN nicht dienen.“',
+    historicalLong:
+      'Der Aufbau entspricht genau den hethitischen Vasallenverträgen des 2. Jahrtausends: Vorgeschichte der Wohltaten, Forderung der Treue, Zeugen, Niederschrift und Aufbewahrung am Heiligtum. Als Zeuge dient hier ein Stein – „er hat alle Worte gehört“. Auffällig ist, dass Josua von Göttern spricht, die „jenseits des Stroms“ und in Ägypten verehrt wurden: Der Text setzt voraus, dass die Versammelten sehr unterschiedliche Herkunft hatten. Sichem war zudem ein alter Heiligtumsort, an dem schon Abraham und Jakob Altäre errichtet hatten.',
     interpretations: [
       {
         tradition: 'Historische Einordnung',
@@ -1852,6 +1893,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: '„Komme ich um, so komme ich um“',
     historicalShort:
       'Ester riskiert ihr Leben, weil ungebetenes Erscheinen vor dem König mit dem Tod bedroht war. Das Buch nennt Gott an keiner Stelle – auch hier nicht, wo Mordechai von Rettung „von einem anderen Ort her“ spricht.',
+    historicalLong:
+      'Die Regel, dass ungeladenes Erscheinen den Tod bedeuten konnte, ist auch bei griechischen Geschichtsschreibern für den Perserhof bezeugt. Dass Gott im ganzen Buch nicht vorkommt, war schon in der Antike ein Problem: Die griechische Fassung fügt daher lange Gebete ein, die im hebräischen Text fehlen. In Qumran ist Ester als einziges Buch der hebräischen Bibel nicht gefunden worden. Auch Luther äußerte sich abschätzig darüber – der Kanon hat es dennoch behalten.',
     interpretations: [
       {
         tradition: 'Literarische Beobachtung',
@@ -2008,6 +2051,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Die Berufung Jeremias',
     historicalShort:
       'Jeremia wehrt sich mit dem Hinweis auf seine Jugend – ein Einwand, der in biblischen Berufungen wiederkehrt. Der Auftrag lautet, „auszureißen und einzureißen“, aber auch „zu bauen und zu pflanzen“.',
+    historicalLong:
+      'Die Berufung fällt ins Jahr 627 v. Chr., kurz vor der Reform Josias und rund vierzig Jahre vor der Zerstörung Jerusalems – Jeremia wird die ganze Katastrophe miterleben. Das hebräische Wort na’ar, das Luther mit „zu jung“ wiedergibt, kann Kind bis junger Mann bedeuten. Die Berührung des Mundes erinnert an die Berufung Jesajas, wo eine glühende Kohle die Lippen reinigt; hier genügt die Hand. Bemerkenswert ist die Reihenfolge der sechs Verben: Vier zerstören, zwei bauen – und die aufbauenden stehen am Ende.',
     interpretations: [
       {
         tradition: 'Theologische Auslegung',
@@ -2083,6 +2128,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Der König auf dem Esel',
     historicalShort:
       'Der erwartete König kommt nicht auf einem Streitross, sondern auf einem Lasttier – und der Text sagt ausdrücklich, dass Streitwagen und Bogen vernichtet werden. Die Ankündigung ist entwaffnend gemeint.',
+    historicalLong:
+      'Der König wird „gerecht und ein Helfer“ genannt – die hebräische Form ist passiv und meint eher „dem geholfen wurde“ als „der hilft“. Er ist also selbst ein Empfangender. Der hebräische Parallelismus nennt „einen Esel“ und „ein Füllen der Eselin“; gemeint ist ein Tier, nicht zwei. Matthäus hat die Doppelung wörtlich genommen und schildert entsprechend zwei Tiere – ein bekanntes Beispiel dafür, wie ein Zitat die Erzählung formen kann. Die angekündigte Herrschaft reicht „von einem Meer zum andern“, wird aber ausdrücklich ohne Waffen ausgeübt.',
     interpretations: [
       {
         tradition: 'Alttestamentliche Auslegung',
@@ -2486,6 +2533,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Davids Gebet vor dem Tempelbau',
     historicalShort:
       'Der Chronist lässt David beten, bevor sein Sohn den Tempel baut. Der Kernsatz nimmt jedem Stifterstolz die Grundlage: „Von dir ist alles gekommen, und von deiner Hand haben wir dir gegeben.“',
+    historicalLong:
+      'Das Gebet steht am Ende einer langen Aufzählung von Spenden – Gold, Silber, Erz, Edelsteine – und dreht deren Wirkung um: Statt die Geber zu ehren, stellt es fest, dass sie nur zurückgeben. Der Satz „wir sind Fremdlinge und Gäste vor dir“ nimmt eine Wendung aus 3. Mose 25 auf, wo sie das Eigentumsrecht am Land begrenzt. Der Schlussteil des Gebets ist in die christliche Liturgie eingegangen: Die Doxologie „Dein ist das Reich und die Kraft und die Herrlichkeit“, die später an das Vaterunser angefügt wurde, stammt sprachlich aus diesem Text.',
     interpretations: [
       {
         tradition: 'Theologische Auslegung',
@@ -2494,6 +2543,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Historische Einordnung',
         text: 'Die Chronik schreibt nach dem Exil und zeichnet David bewusst als frommen Stifter, ohne die dunklen Kapitel aus 2. Samuel zu wiederholen.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Schluss des Gebets ist in die christliche Liturgie eingegangen: Die an das Vaterunser angefügte Doxologie stammt sprachlich von hier.',
       },
     ],
   },
@@ -2505,6 +2558,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: '„Wenn mein Volk sich demütigt“',
     historicalShort:
       'Die Zusage ergeht nach der Tempelweihe und nennt ausdrücklich Bedingungen: sich demütigen, beten, Gottes Angesicht suchen, von bösen Wegen umkehren. Erst dann folgt die Verheißung der Heilung des Landes.',
+    historicalLong:
+      'Der Chronist schreibt für Leser, die das Exil hinter sich haben und wissen, dass es anders kam. Deshalb steht im selben Abschnitt auch die Kehrseite: Wird der Bund verlassen, wird der Tempel „zum Sprichwort und Spott unter allen Völkern“. Das hebräische „mein Volk, über das mein Name genannt ist“ bezeichnet Israel als Gottes Eigentum – die Formel wurde bei Eroberungen für unterworfene Städte verwendet. Sie meint Zugehörigkeit, nicht Auserwähltheit im Sinne eines Vorrechts.',
     interpretations: [
       {
         tradition: 'Exegetische Einordnung',
@@ -2513,6 +2568,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Wirkungsgeschichte',
         text: 'Der Vers wird häufig politisch beansprucht. Auffällig ist, dass die geforderte Umkehr dabei meist bei anderen gesucht wird, nicht bei den Zitierenden.',
+      },
+      {
+        tradition: 'Theologische Auslegung',
+        text: 'Die vier Bedingungen richten sich nach innen, nicht nach außen: sich demütigen, beten, suchen, umkehren. Keine davon betrifft das Verhalten anderer.',
       },
     ],
   },
@@ -2524,6 +2583,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Weinen und Jubeln bei der Grundsteinlegung',
     historicalShort:
       'Bei der Grundsteinlegung des zweiten Tempels jubeln die Jüngeren, während die Alten weinen – sie hatten den ersten Tempel noch gesehen. Der Text sagt, man konnte beides nicht mehr voneinander unterscheiden.',
+    historicalLong:
+      'Rechnerisch wäre jemand, der 587 v. Chr. den ersten Tempel als Kind sah, bei der Grundsteinlegung um 536 rund sechzig Jahre alt gewesen – die Szene ist also gut vorstellbar. Der zweite Tempel blieb tatsächlich deutlich hinter dem ersten zurück; Haggai spricht wenige Jahrzehnte später ausdrücklich davon, dass er in den Augen der Alten „wie nichts“ sei. Erst Herodes ließ ihn Jahrhunderte später zu dem Prachtbau erweitern, den das Neue Testament voraussetzt.',
     interpretations: [
       {
         tradition: 'Seelsorgliche Lesart',
@@ -2532,6 +2593,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Historische Einordnung',
         text: 'Der zweite Tempel blieb hinter dem ersten deutlich zurück. Die Enttäuschung darüber zieht sich durch mehrere nachexilische Schriften.',
+      },
+      {
+        tradition: 'Theologische Auslegung',
+        text: 'Die Erzählung wertet nicht: Weder wird das Weinen getadelt noch der Jubel gebremst. Beides gehört zum selben Tag.',
       },
     ],
     crossRefs: [{ book: 'hag', chapter: 2, verse: 3 }],
@@ -2555,6 +2620,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Allegorische Tradition',
         text: 'Jahrhundertelang als Bild für die Liebe zwischen Gott und Volk beziehungsweise Christus und Kirche verstanden. Diese Deutung sicherte dem Buch seinen Platz im Kanon.',
       },
+      {
+        tradition: 'Sprachliche Beobachtung',
+        text: 'Das mit „Eifer“ übersetzte Wort meint die Unbedingtheit der Liebe, nicht Eifersucht im heutigen Sinn – es steht sonst für Gottes leidenschaftliche Zuwendung.',
+      },
     ],
   },
   {
@@ -2565,6 +2634,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Der Geist über alle',
     historicalShort:
       'Die Aufzählung ist bewusst umfassend: Söhne und Töchter, Alte und Junge, Knechte und Mägde. Prophetie wird damit gerade nicht auf eine Gruppe beschränkt.',
+    historicalLong:
+      'Bis dahin galt Prophetie als Sache Einzelner, die eigens berufen wurden. Hier wird sie auf „alles Fleisch“ ausgeweitet – ein Ausdruck, der sonst die gesamte Menschheit oder alle Lebewesen bezeichnet. Die Nennung von Knechten und Mägden ist der schärfste Punkt: Sklaven hatten weder Rechtsstellung noch Stimme. Der Abschnitt steht unmittelbar nach der Zusage, dass die Ernte wieder ertragreich sein wird – erst die materielle Wende, dann die geistliche.',
     interpretations: [
       {
         tradition: 'Neutestamentliche Aufnahme',
@@ -2589,6 +2660,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Der Vorwurf an Edom',
     historicalShort:
       'Das kürzeste Buch des Alten Testaments klagt ein einziges Vergehen an: Edom hat beim Fall Jerusalems zugesehen, sich mitgefreut und Fliehende ausgeliefert. Nicht die Tat, das Danebenstehen steht im Zentrum.',
+    historicalLong:
+      'Der Vorwurf ist in einer Reihe von acht Verboten formuliert, die alle mit „du sollst nicht“ beginnen: nicht zusehen, nicht dich freuen, nicht großtun, nicht in das Tor ziehen, nicht die Fliehenden ausliefern. Die Steigerung führt vom Blick über die Schadenfreude bis zur Beihilfe – der Text beschreibt, wie Gleichgültigkeit in Mittäterschaft übergeht. Edom lag in einem Bergland südöstlich des Toten Meeres; die Felsenstadt Petra entstand später in dieser Region. Der Spott über die vermeintlich uneinnehmbare Höhe zielt genau darauf.',
     interpretations: [
       {
         tradition: 'Ethische Auslegung',
@@ -2597,6 +2670,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Historische Einordnung',
         text: 'Edom galt als Brudervolk – es leitete sich von Esau her. Genau das macht den Vorwurf so scharf.',
+      },
+      {
+        tradition: 'Prophetische Linie',
+        text: 'Der Schluss weitet den Blick: Aus dem Gericht über ein Volk wird der „Tag des HERRN über alle Heiden“. Das Einzelne steht für ein größeres Muster.',
       },
     ],
   },
@@ -2608,6 +2685,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Zuflucht und Zorn',
     historicalShort:
       'Das Buch kündigt den Fall Ninives an, der Hauptstadt einer Macht, die für ihre Grausamkeit berüchtigt war. Mitten in den Zornesbildern steht der Satz: „Der HERR ist gütig und eine Feste zur Zeit der Not.“',
+    historicalLong:
+      'Der Anfang des Buches ist ein teilweise erhaltenes Akrostichon: Die Verse beginnen der Reihe nach mit den Buchstaben des Alphabets. Assyrien hatte seine Kriegsführung selbst dokumentiert – Reliefs und Inschriften zeigen Massendeportationen, Pfählungen und Häutungen als Mittel der Abschreckung. Ninive fiel 612 v. Chr. an eine Koalition aus Babyloniern und Medern und wurde nie wieder aufgebaut; die Ruinen liegen heute am Rand von Mossul. Der Text spricht also von einer Macht, deren Ende tatsächlich eintrat.',
     interpretations: [
       {
         tradition: 'Theologische Auslegung',
@@ -2616,6 +2695,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kanonische Beobachtung',
         text: 'Nahum steht in auffälliger Spannung zu Jona: Dort wird Ninive verschont, hier vernichtet. Die Bibel lässt beide Bücher nebeneinander stehen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Gewaltbilder des Buches sind schwer erträglich. Ausgelegt wird es heute meist als Stimme der Opfer, nicht als Programm.',
       },
     ],
     crossRefs: [{ book: 'jona', chapter: 3, verse: 10 }],
@@ -2654,6 +2737,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Gott jubelt über sein Volk',
     historicalShort:
       'Nach zwei Kapiteln voller Gerichtsankündigung endet das Buch mit einem der zärtlichsten Bilder der Bibel: Gott „wird über dir mit Freuden fröhlich sein“ und „vor Liebe stillschweigen“.',
+    historicalLong:
+      'Das hebräische Verb für Gottes Freude beschreibt ein lautes Jubeln, wie es sonst von Menschen bei einem Fest gesagt wird – die Rollen kehren sich um. Zefanja wirkte im 7. Jahrhundert unter König Josia; der Buchanfang führt seine Herkunft ungewöhnlich weit zurück, bis zu einem Hiskia, möglicherweise dem König. Die Wendung „vor Liebe stillschweigen“ ist sprachlich schwierig: Manche Handschriften und Übersetzungen lesen statt „schweigen“ ein ähnlich geschriebenes Wort für „erneuern“.',
     interpretations: [
       {
         tradition: 'Theologische Auslegung',
@@ -2662,6 +2747,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Textkritische Beobachtung',
         text: 'Die Wendung „er wird schweigen in seiner Liebe“ ist schwierig; manche Übersetzungen lesen stattdessen „er wird dich erneuern“.',
+      },
+      {
+        tradition: 'Kanonische Beobachtung',
+        text: 'Mehrere Prophetenbücher enden mit Heilsworten nach langen Gerichtsreden. Ob diese Schlüsse ursprünglich sind, ist umstritten – ihre Stellung im Kanon ist es nicht.',
       },
     ],
   },
@@ -2673,6 +2762,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: '„Ist es euch Zeit, in getäfelten Häusern zu wohnen?“',
     historicalShort:
       'Der Wiederaufbau des Tempels stockt seit Jahren, während die eigenen Häuser fertig sind. Haggai deutet Missernten und Teuerung als Folge falscher Prioritäten – seine ganze Wirksamkeit umfasst nur wenige Monate im Jahr 520 v. Chr.',
+    historicalLong:
+      'Kein anderes Prophetenbuch ist so genau datiert: Jede Rede trägt Tag, Monat und Regierungsjahr des Perserkönigs Darius – die erste fällt auf den 29. August 520 v. Chr. Das Wort für „getäfelt“ bezeichnet eine Verkleidung mit Holzpaneelen, damals ein Zeichen von Wohlstand. Das Bild vom „durchlöcherten Beutel“, in dem der Lohn verschwindet, beschreibt eine Erfahrung der Nachkriegswirtschaft. Haggai hatte Erfolg: Der Bau wurde wieder aufgenommen und 515 v. Chr. vollendet.',
     interpretations: [
       {
         tradition: 'Prophetische Auslegung',
@@ -2681,6 +2772,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Die direkte Verknüpfung von Ernteausfall und Ungehorsam entspricht dem Tun-Ergehen-Denken, dem Hiob und Kohelet widersprechen.',
+      },
+      {
+        tradition: 'Historische Beobachtung',
+        text: 'Haggai hatte messbaren Erfolg: Der Bau wurde binnen Wochen wieder aufgenommen und fünf Jahre später vollendet. Wenige Prophetenbücher berichten von so unmittelbarer Wirkung.',
       },
     ],
   },
@@ -2692,6 +2787,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Der Bote, der den Weg bereitet',
     historicalShort:
       'Der Name des Buches bedeutet selbst „mein Bote“. Angekündigt wird ein Vorläufer – und ein Läuterungsvorgang, der mit dem Bild des Silberschmelzers beschrieben wird.',
+    historicalLong:
+      'Ob „Maleachi“ ein Eigenname ist oder nur die Amtsbezeichnung aus Vers 1, ist seit der Antike umstritten. Das Buch ist ganz in Rede und Gegenrede gebaut: Auf jede Aussage Gottes folgt ein Einwand des Volkes – „Womit denn?“ –, den der Prophet beantwortet. Der Läuterungsvorgang zielt ausdrücklich zuerst auf die Priester, nicht auf das Volk. Als letztes Buch des christlichen Alten Testaments endet es mit der Ankündigung Elias; in der hebräischen Bibel steht es an anderer Stelle, dort schließen die Chronikbücher den Kanon.',
     interpretations: [
       {
         tradition: 'Neutestamentliche Aufnahme',
@@ -2741,6 +2838,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: '„Wer nicht arbeiten will, soll auch nicht essen“',
     historicalShort:
       'Der Satz richtet sich gegen Gemeindeglieder, die wegen der erwarteten Wiederkunft die Arbeit niedergelegt hatten und sich von anderen versorgen ließen – nicht gegen Menschen, die keine Arbeit finden.',
+    historicalLong:
+      'Das griechische Wort für die Betreffenden bedeutet wörtlich „ungeordnet“ und stammt aus der Militärsprache: jemand, der aus der Reihe tritt. Paulus verweist auf sein eigenes Beispiel – er habe Tag und Nacht gearbeitet, um niemandem zur Last zu fallen. Als Zeltmacher übte er ein Handwerk aus, was in der griechischen Oberschicht als unter der Würde eines Lehrers galt. Der Abschnitt schließt mit der Mahnung, den Betreffenden nicht als Feind zu behandeln, sondern als Bruder zurechtzuweisen.',
     interpretations: [
       {
         tradition: 'Exegetische Klarstellung',
@@ -2749,6 +2848,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Wirkungsgeschichte',
         text: 'Der Satz stand in der Verfassung der Sowjetunion und wird bis heute in Sozialstaatsdebatten zitiert – meist ohne seinen Anlass.',
+      },
+      {
+        tradition: 'Seelsorgliche Beobachtung',
+        text: 'Der Abschnitt endet mit der ausdrücklichen Mahnung, die Betreffenden nicht als Feinde zu behandeln. Die Zurechtweisung bleibt innerhalb der Gemeinschaft.',
       },
     ],
   },
@@ -2818,6 +2921,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Was zuerst kommt',
     historicalShort:
       'Der Abschnitt beschreibt zuerst schonungslos, wie es vorher war – „unverständig, ungehorsam, verführt“ – und stellt dem die erschienene Güte Gottes gegenüber. Erst danach ist von guten Werken die Rede.',
+    historicalLong:
+      'Das griechische Wort philanthropia, das Luther mit „Leutseligkeit“ übersetzt, heißt wörtlich „Menschenfreundlichkeit“ und war ein geläufiger Herrschertitel: So rühmte man hellenistische Könige und römische Kaiser. Der Brief überträgt den Titel auf Gott. Auffällig ist auch die Formulierung über die Vergangenheit – „auch wir waren einst“ –, die jede Überheblichkeit gegenüber Außenstehenden von vornherein ausschließt. Kreta hatte in der Antike einen schlechten Ruf, den der Brief an anderer Stelle sogar zitiert.',
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -2826,6 +2931,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Liturgische Rezeption',
         text: 'Der Satz von der erschienenen „Freundlichkeit und Leutseligkeit Gottes“ gehört zu den klassischen Weihnachtstexten.',
+      },
+      {
+        tradition: 'Ethische Auslegung',
+        text: 'Die Erinnerung „auch wir waren einst unverständig“ nimmt jeder Überheblichkeit gegenüber Außenstehenden den Boden – das ist der eigentliche Zweck der Aufzählung.',
       },
     ],
   },
@@ -2862,6 +2971,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Warum es dauert',
     historicalShort:
       'Der Brief antwortet auf Spott: Die erwartete Wiederkunft blieb aus. Die Antwort deutet den Aufschub um – nicht als Säumigkeit, sondern als Geduld, die Zeit zur Umkehr lässt.',
+    historicalLong:
+      'Der Satz von den tausend Jahren zitiert Psalm 90 und dreht ihn um: Dort geht es um die Vergänglichkeit des Menschen, hier um die Unvergleichbarkeit von Gottes Zeitmaß. Der Brief nimmt zudem Bezug auf die Paulusbriefe und nennt sie in einem Atemzug mit „den andern Schriften“ – ein früher Hinweis darauf, dass christliche Texte selbst als maßgeblich zu gelten begannen. Er räumt dabei freimütig ein, in ihnen sei „etliches schwer zu verstehen“.',
     interpretations: [
       {
         tradition: 'Theologische Auslegung',
@@ -2870,6 +2981,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Historische Einordnung',
         text: 'Der Brief gilt als eine der spätesten Schriften des Neuen Testaments. Er zeigt, wie die Gemeinden mit der ausbleibenden Naherwartung umgingen.',
+      },
+      {
+        tradition: 'Kanongeschichtliche Beobachtung',
+        text: 'Der Brief nennt die Paulusbriefe in einem Atemzug mit „den andern Schriften“ – einer der frühesten Hinweise darauf, dass christliche Texte selbst maßgeblich wurden.',
       },
     ],
   },
@@ -2881,6 +2996,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Wahrheit und Gastfreundschaft',
     historicalShort:
       'Der kurze Brief richtet sich an eine Gemeinde, die als „auserwählte Frau“ angesprochen wird. Es geht um Wanderprediger: Wer eine andere Lehre bringt, soll nicht aufgenommen werden.',
+    historicalLong:
+      'Ob mit der „auserwählten Frau“ eine einzelne Person oder bildlich eine Gemeinde gemeint ist, wird seit der Alten Kirche diskutiert; die Mehrheit versteht es bildlich, weil der Brief durchweg im Plural weiterspricht. Strittig war offenbar, ob Jesus wirklich leiblich gekommen sei – die Gegner werden ausdrücklich so beschrieben. Da Gastfreundschaft in Privathäusern die einzige Grundlage der Wandermission war, kam ihre Verweigerung einem Ausschluss gleich. Mit 13 Versen ist es das zweitkürzeste Buch der Bibel.',
     interpretations: [
       {
         tradition: 'Historische Einordnung',
@@ -2889,6 +3006,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Die Anweisung wurde später zur Rechtfertigung von Ausgrenzung benutzt. Der Brief selbst hat eine konkrete Streitlage im Blick, keine allgemeine Regel für den Umgang mit Andersdenkenden.',
+      },
+      {
+        tradition: 'Theologische Einordnung',
+        text: 'Strittig war die leibliche Menschwerdung Jesu. Der Brief verteidigt damit keine Nebenfrage, sondern das, was ihm als Kern galt.',
       },
     ],
   },
@@ -2900,6 +3021,8 @@ export const COMMENTARY: CommentaryEntry[] = [
     title: 'Ein Konflikt um Macht in der Gemeinde',
     historicalShort:
       'Diotrephes, „der unter ihnen hochgehalten sein will“, nimmt Reisende nicht auf und schließt sogar aus, wer es tut. Der Brief nennt den Konflikt offen beim Namen – ein seltener Einblick in den Alltag früher Gemeinden.',
+    historicalLong:
+      'Der Brief ist mit 14 Versen das kürzeste Buch der Bibel und der einzige neutestamentliche Text, der einen innergemeindlichen Machtkonflikt mit Namen schildert. Drei Personen stehen einander gegenüber: Gaius, der aufnimmt; Diotrephes, der ausschließt; Demetrius, für den gebürgt wird. Bemerkenswert ist, dass der „Älteste“ keine Amtsgewalt geltend macht – er kündigt lediglich an, beim nächsten Besuch das Verhalten zur Sprache zu bringen. Feste Leitungsstrukturen gab es offenbar noch nicht.',
     interpretations: [
       {
         tradition: 'Kirchengeschichtliche Einordnung',
@@ -2908,6 +3031,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Ethische Auslegung',
         text: 'Die Gegenüberstellung ist deutlich: Gaius wird für seine Gastfreundschaft gelobt, Diotrephes für sein Geltungsstreben getadelt.',
+      },
+      {
+        tradition: 'Beobachtung zur Leitung',
+        text: 'Der Verfasser beruft sich auf kein Amt und droht keine Sanktion an – er kündigt lediglich an, das Verhalten anzusprechen. Feste Strukturen gab es offenbar noch nicht.',
       },
     ],
   },
@@ -2930,15 +3057,25 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Kanongeschichtliche Beobachtung',
         text: 'Die Zitate aus dem Henochbuch zeigen, dass die Grenzen der maßgeblichen Schriften im 1. Jahrhundert noch nicht festlagen.',
       },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der abschließende Lobpreis – „dem, der euch behüten kann ohne Fehl“ – gehört bis heute zu den verbreitetsten Segensworten im Gottesdienst.',
+      },
     ],
   },
 ];
 
-/** Artikel, die den angegebenen Vers abdecken. */
+/**
+ * Artikel, die den angegebenen Vers abdecken – jeweils ergänzt um die
+ * zeitliche Einordnung aus `datings.ts`.
+ */
 export function commentaryFor(book: string, chapter: number, verse: number): CommentaryEntry[] {
   return COMMENTARY.filter(
     (e) => e.book === book && e.chapter === chapter && verse >= e.from && verse <= e.to,
-  );
+  ).map((entry) => ({
+    ...entry,
+    dating: DATINGS[datingKey(entry.book, entry.chapter, entry.from)],
+  }));
 }
 
 /** Verse eines Kapitels, zu denen ein Artikel vorliegt. */

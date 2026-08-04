@@ -1207,6 +1207,44 @@ button {
 :root[data-theme='dunkel'] .chip--kind-begriff,
 :root[data-theme='dark'] .chip--kind-begriff { background: #392c1e; border-color: #5b452c; color: #ddb385; }
 
+/* Zeitliche Einordnung eines Artikels */
+
+.dating {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.7rem;
+  margin: 0 0 0.9rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-sunken);
+  border-left: 3px solid var(--accent);
+  font-size: 0.84rem;
+}
+
+.dating dt {
+  font-weight: 700;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.68rem;
+  padding-top: 0.15rem;
+  white-space: nowrap;
+}
+
+.dating dd {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.dating a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.dating a:hover {
+  text-decoration: underline;
+}
+
 /* „Im Vers erwähnt“ – Sachwissen zu allem, was in einem Vers vorkommt */
 
 .mention {

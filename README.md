@@ -100,7 +100,7 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 
 - **Steckbriefe zu allen 66 Büchern** – Verfasser, Zeit, Anlass, Kernaussage.
   Damit hat jeder Vers von Beginn an eine historische Einordnung.
-- **Vertiefte Artikel zu 113 Schlüsselabschnitten** mit 326 einzeln
+- **Vertiefte Artikel zu 113 Schlüsselabschnitten** mit 343 einzeln
   ausgewiesenen Auslegungen, zusammen **1.346 Verse**. **Jedes der 66 Bücher
   hat mindestens einen Artikel** – von der Schöpfung über die Bindung Isaaks,
   den Durchzug durchs Meer, David und Goliat, Nathans Gleichnis, den
@@ -108,6 +108,15 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
   Emmaus, Kornelius, dem Abendmahl in Korinth und dem Brief nach Laodizea.
   Umstrittene Stellen wie Jesaja 7,14, „Du bist Petrus“, Römer 13 oder
   1. Timotheus 2 werden ausdrücklich als umstritten dargestellt.
+- **Zeitliche Einordnung zu jedem Artikel** – getrennt nach **Ereigniszeit**
+  („wann spielt das?“) und **Entstehungszeit** („wann wurde es
+  aufgeschrieben?“). Beides fällt regelmäßig weit auseinander: Der Feuerofen
+  spielt im 6. Jahrhundert v. Chr., das Buch Daniel entstand rund 400 Jahre
+  später. Jede Angabe verlinkt auf die passende Epoche der Zeitleiste.
+
+**Mindesttiefe je Artikel:** ausführlicher historischer Kontext und
+mindestens drei Auslegungen aus verschiedenen Traditionen. Das Prüfskript
+setzt das durch, damit es beim Weiterschreiben nicht verlorengeht.
 - **Sachwissen zur Lebenswelt der Bibel:** Maße, Gewichte und Geld, Ämter und
   Gruppen, Bräuche und Feste, Pflanzen und Stoffe. Weil diese Begriffe
   hundertfach vorkommen, erreichen sie **rund 31 % aller 31.102 Verse** –
@@ -174,6 +183,7 @@ src/
   content/                 Redaktionelle Inhalte
     bookProfiles.ts          Steckbriefe aller 66 Bücher
     commentary.ts            Kontext- und Auslegungsartikel
+    datings.ts               Ereignis- und Entstehungszeit je Artikel
     lexicon.ts               Personen, Orte, Begriffe
     realia.ts                Maße, Geld, Ämter, Bräuche, Naturkunde
     timeline.ts              Epochen und Ereignisse
@@ -238,7 +248,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (54 Prüfungen):
+abgeschalteter Verbindung (56 Prüfungen):
 
 ```bash
 npm install --no-save playwright

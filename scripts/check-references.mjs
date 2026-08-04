@@ -158,6 +158,51 @@ const checked =
   TIMELINE.filter((e) => e.ref).length +
   DAILY_VERSES.length;
 
+/* ------------------------------------------------ Mindesttiefe */
+
+// Was einmal erreicht ist, soll nicht unbemerkt wieder wegfallen: Jeder
+// Artikel braucht einen ausführlichen Teil und mindestens drei Auslegungen
+// aus verschiedenen Traditionen.
+for (const entry of COMMENTARY) {
+  if (!entry.historicalLong) {
+    problems.push(`Artikel "${entry.title}": kein ausführlicher Kontext`);
+  }
+  if (entry.interpretations.length < 3) {
+    problems.push(
+      `Artikel "${entry.title}": nur ${entry.interpretations.length} Auslegungen (mindestens 3)`,
+    );
+  }
+  const traditionen = new Set(entry.interpretations.map((i) => i.tradition));
+  if (traditionen.size !== entry.interpretations.length) {
+    problems.push(`Artikel "${entry.title}": Tradition doppelt genannt`);
+  }
+}
+
+/* ------------------------------------------- Zeitliche Einordnung */
+
+const { DATINGS, datingKey } = await loadContent('datings');
+const missingDating = COMMENTARY.filter(
+  (e) => !DATINGS[datingKey(e.book, e.chapter, e.from)],
+);
+for (const entry of missingDating) {
+  problems.push(`Artikel "${entry.title}": keine zeitliche Einordnung hinterlegt`);
+}
+
+// Umgekehrt: verwaiste Datierungen zeigen auf einen Artikel, den es nicht gibt.
+const articleKeys = new Set(COMMENTARY.map((e) => datingKey(e.book, e.chapter, e.from)));
+for (const key of Object.keys(DATINGS)) {
+  if (!articleKeys.has(key)) problems.push(`Datierung "${key}": kein passender Artikel`);
+}
+
+// Die Epoche muss es in der Zeitleiste geben, sonst geht der Sprung ins Leere.
+const { EPOCHS } = await loadContent('timeline');
+const epochIds = new Set(EPOCHS.map((e) => e.id));
+for (const [key, dating] of Object.entries(DATINGS)) {
+  if (dating.epoch && !epochIds.has(dating.epoch)) {
+    problems.push(`Datierung "${key}": Epoche "${dating.epoch}" gibt es nicht`);
+  }
+}
+
 /* ------------------------------------------------------- Abdeckung */
 
 const booksWithArticle = new Set(COMMENTARY.map((e) => e.book));
@@ -174,6 +219,9 @@ console.log(
 console.log(
   `Bücher      : ${booksWithArticle.size} von ${index.books.length} haben einen Artikel` +
     (withoutArticle.length > 0 ? ` (ohne: ${withoutArticle.map((b) => b.name).join(', ')})` : ''),
+);
+console.log(
+  `Datierungen : ${COMMENTARY.length - missingDating.length} von ${COMMENTARY.length} Artikeln`,
 );
 
 if (problems.length === 0) {

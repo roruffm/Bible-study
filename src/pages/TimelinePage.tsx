@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { EPOCHS, TIMELINE, formatSpan, formatYear, type Certainty } from '../content/timeline';
 import { useBibleIndex } from '../hooks/useStore';
 
@@ -20,7 +19,18 @@ const CERTAINTY_LABEL: Record<Certainty, string> = {
 
 export default function TimelinePage() {
   const { data: index } = useBibleIndex();
-  const [epoch, setEpoch] = useState<string | null>(null);
+
+  // Die Auswahl steht in der Adresse, damit ein Artikel direkt auf seine
+  // Epoche verlinken kann und der Zustand teilbar bleibt.
+  const [searchParams, setSearchParams] = useSearchParams();
+  const epoch = searchParams.get('epoche');
+
+  function setEpoch(next: string | null) {
+    const params = new URLSearchParams(searchParams);
+    if (next) params.set('epoche', next);
+    else params.delete('epoche');
+    setSearchParams(params, { replace: true });
+  }
 
   const position = (year: number) => ((year - START) / (END - START)) * 100;
   const nameOf = (bookId: string) => index?.books.find((b) => b.id === bookId)?.name ?? bookId;

@@ -47,6 +47,21 @@ const kontext = (await page.locator('.panel__article').textContent()) ?? '';
 check('Panel zeigt historischen Kontext', kontext.includes('Nikodemus'), kontext.slice(0, 60).trim() + '…');
 await page.screenshot({ path: `${OUT}/02-leseansicht-panel.png` });
 
+// Zeitliche Einordnung: Ereignis und Entstehung stehen getrennt.
+const dating = (await page.locator('.dating').textContent()) ?? '';
+check(
+  'Panel zeigt die zeitliche Einordnung',
+  dating.includes('Ereignis') && dating.includes('Aufgeschrieben') && dating.includes('90–100'),
+  dating.replace(/\s+/g, ' ').slice(0, 80),
+);
+await page.locator('.dating a').click();
+await page.waitForURL(/epoche=roemer/);
+check('Die Epoche verlinkt in die Zeitleiste', (await page.locator('.axis__band--active').textContent())?.includes('Römische'), (await page.locator('.axis__band--active').textContent()) ?? '');
+// Der Klick schließt das Panel und nimmt die Vers-Auswahl aus der Adresse –
+// deshalb wird der Vers hier wieder gezielt angesteuert statt zurückgeblättert.
+await page.goto(BASE + '/bibel/joh/3?vers=16', { waitUntil: 'networkidle' });
+await page.waitForSelector('.panel');
+
 await page.getByRole('tab', { name: /Auslegung/ }).click();
 const interpCount = await page.locator('.interp').count();
 const traditions = await page.locator('.interp__tradition').allTextContents();
