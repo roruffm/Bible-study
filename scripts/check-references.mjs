@@ -131,6 +131,52 @@ for (const entry of LEXICON) {
   }
 }
 
+/* -------------------------------------------------------------- Karte */
+
+const { PLACES, MAP_VIEWS } = await loadContent('places');
+const placeIds = new Set();
+for (const place of PLACES) {
+  if (placeIds.has(place.id)) problems.push(`Ort "${place.name}": Kennung "${place.id}" doppelt`);
+  placeIds.add(place.id);
+
+  // Der erste Ausschnitt ist die Gesamtkarte – wer dort nicht hineinfällt,
+  // ist auf keiner Ansicht zu sehen.
+  const [lon, lat] = place.coords;
+  const [w, s, e, n] = MAP_VIEWS[0].bounds;
+  if (lon < w || lon > e || lat < s || lat > n) {
+    problems.push(`Ort "${place.name}": liegt außerhalb des Kartenausschnitts`);
+  }
+
+  if (!place.refs || place.refs.length === 0) {
+    problems.push(`Ort "${place.name}": keine Bibelstelle hinterlegt`);
+  }
+  for (const ref of place.refs ?? []) {
+    check(`Ort "${place.name}"`, ref.book, ref.chapter, ref.verse);
+  }
+}
+
+// Ein `lexicon`-Verweis muss den Eintrag auch treffen.
+const lexiconIds = new Set((await loadContent('lexicon')).LEXICON.map((e) => e.id));
+for (const place of PLACES) {
+  if (place.lexicon && !lexiconIds.has(place.lexicon)) {
+    problems.push(`Ort "${place.name}": Lexikoneintrag "${place.lexicon}" gibt es nicht`);
+  }
+}
+
+// Jede Route muss auf ein Kapitel zeigen, das es gibt.
+const { JOURNEYS } = await loadContent('journeys');
+for (const journey of JOURNEYS) {
+  check(`Route "${journey.title}"`, journey.ref.book, journey.ref.chapter);
+  if (journey.stops.length < 2) problems.push(`Route "${journey.title}": zu wenige Stationen`);
+  for (const stop of journey.stops) {
+    const [lon, lat] = stop.coords;
+    const [w, s, e, n] = MAP_VIEWS[0].bounds;
+    if (lon < w || lon > e || lat < s || lat > n) {
+      problems.push(`Route "${journey.title}", Station "${stop.name}": außerhalb der Karte`);
+    }
+  }
+}
+
 /* --------------------------------------------------------- Zeitleiste */
 
 const { TIMELINE } = await loadContent('timeline');
@@ -155,6 +201,8 @@ const checked =
   COMMENTARY.length * 2 +
   COMMENTARY.reduce((n, e) => n + (e.crossRefs?.length ?? 0), 0) +
   LEXICON.reduce((n, e) => n + (e.refs?.length ?? 0), 0) +
+  PLACES.reduce((n, p) => n + p.refs.length, 0) +
+  JOURNEYS.length +
   TIMELINE.filter((e) => e.ref).length +
   DAILY_VERSES.length;
 
@@ -222,6 +270,10 @@ console.log(
 );
 console.log(
   `Datierungen : ${COMMENTARY.length - missingDating.length} von ${COMMENTARY.length} Artikeln`,
+);
+console.log(
+  `Karte       : ${PLACES.length} Orte und ${JOURNEYS.length} Wege, ` +
+    `${PLACES.filter((p) => p.long).length} Orte mit Hintergrundtext`,
 );
 
 if (problems.length === 0) {

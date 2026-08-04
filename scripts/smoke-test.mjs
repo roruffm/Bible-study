@@ -287,9 +287,101 @@ await page.screenshot({ path: `${OUT}/16-zeitleiste.png` });
 await page.goto(BASE + '/studium/karte', { waitUntil: 'networkidle' });
 await page.waitForSelector('.map__svg');
 const placeCount = await page.locator('.map__place').count();
-check('Karte verortet die Orte', placeCount >= 20, `${placeCount} Orte`);
+check('Karte verortet die Orte', placeCount >= 40, `${placeCount} Orte im Weltausschnitt`);
+// Auf der Gesamtkarte passen nur die weiträumigen Landschaften; die kleinen
+// um Israel herum erscheinen erst im engeren Ausschnitt.
+const regionCount = await page.locator('.map__region').count();
+check('Landschaften sind beschriftet', regionCount >= 6, `${regionCount} Landschaften`);
+check('Alle neun Wege stehen zur Wahl', (await page.locator('.search__filters .chip').filter({ hasText: /reise|Weg|Gemeinden|Auszug|Wege Jesu|Fahrt nach Rom/ }).count()) >= 9);
 await page.screenshot({ path: `${OUT}/17-karte.png` });
 
+// Beschriftungen dürfen sich in keinem Ausschnitt überdecken – wer keinen
+// Platz findet, bleibt ein Punkt ohne Namen.
+const countOverlaps = () =>
+  page.evaluate(() => {
+    const boxes = [...document.querySelectorAll('.map__place text, .map__region text')].map((el) =>
+      el.getBoundingClientRect(),
+    );
+    let n = 0;
+    for (let i = 0; i < boxes.length; i++) {
+      for (let j = i + 1; j < boxes.length; j++) {
+        const a = boxes[i];
+        const b = boxes[j];
+        if (!(a.right < b.left || b.right < a.left || a.bottom < b.top || b.bottom < a.top)) n++;
+      }
+    }
+    return n;
+  });
+
+const countClipped = () =>
+  page.evaluate(() => {
+    const svg = document.querySelector('.map__svg').getBoundingClientRect();
+    return [...document.querySelectorAll('.map__place text, .map__region text')].filter((el) => {
+      const r = el.getBoundingClientRect();
+      return r.left < svg.left - 0.5 || r.right > svg.right + 0.5;
+    }).length;
+  });
+
+let worstOverlap = 0;
+let worstClipped = 0;
+for (const ausschnitt of ['welt', 'israel', 'levante', 'aegaeis', 'mesopotamien', 'westen']) {
+  await page.goto(BASE + '/studium/karte?ausschnitt=' + ausschnitt, { waitUntil: 'networkidle' });
+  await page.waitForSelector('.map__svg');
+  worstOverlap = Math.max(worstOverlap, await countOverlaps());
+  worstClipped = Math.max(worstClipped, await countClipped());
+}
+check('Keine Beschriftung überdeckt eine andere', worstOverlap === 0, `${worstOverlap} Überdeckungen`);
+check('Keine Beschriftung ragt aus der Karte', worstClipped === 0, `${worstClipped} abgeschnitten`);
+
+// Jeder Ausschnitt bleibt gleich hoch – sonst wird "Israel" ein 1700 Pixel
+// hoher Streifen.
+const heights = [];
+for (const ausschnitt of ['welt', 'israel', 'aegaeis']) {
+  await page.goto(BASE + '/studium/karte?ausschnitt=' + ausschnitt, { waitUntil: 'networkidle' });
+  await page.waitForSelector('.map__svg');
+  heights.push(Math.round(await page.locator('.map__svg').evaluate((el) => el.getBoundingClientRect().height)));
+}
+check('Alle Ausschnitte haben dasselbe Format', new Set(heights).size === 1 && heights[0] < 900, heights.join(' / '));
+
+await page.goto(BASE + '/studium/karte', { waitUntil: 'networkidle' });
+await page.waitForSelector('.map__svg');
+
+// Ausschnitt wechseln: Israel zeigt weniger, aber die Orte werden lesbar.
+await page.getByRole('button', { name: 'Israel', exact: true }).click();
+await page.waitForFunction(
+  (before) => document.querySelectorAll('.map__place').length < before,
+  placeCount,
+);
+const israelCount = await page.locator('.map__place').count();
+check('Ausschnitt Israel schränkt die Orte ein', israelCount > 0 && israelCount < placeCount, `${israelCount} statt ${placeCount}`);
+const israelRegions = await page.locator('.map__region text').allTextContents();
+check('Im engeren Ausschnitt erscheinen die kleinen Landschaften', israelRegions.includes('Galiläa') && israelRegions.includes('Judäa'), israelRegions.join(', '));
+await page.screenshot({ path: `${OUT}/17b-karte-israel.png` });
+
+// Nach Art filtern.
+await page.getByRole('button', { name: 'Berge', exact: true }).click();
+await page.waitForFunction(() => document.querySelectorAll('.map__place').length < 12);
+check('Karte lässt sich nach Art filtern', (await page.locator('.map__place').count()) < 12, `${await page.locator('.map__place').count()} Berge`);
+
+// Ortssuche springt auf den passenden Ausschnitt und öffnet die Tafel.
+await page.goto(BASE + '/studium/karte', { waitUntil: 'networkidle' });
+await page.waitForSelector('.map__svg');
+await page.getByPlaceholder(/Ort suchen/).fill('Ninive');
+await page.locator('.jump__item', { hasText: 'Ninive' }).first().click();
+await page.waitForSelector('.lex-entry__term');
+check('Ortssuche öffnet den Ort', (await page.locator('.lex-entry__term').first().textContent()) === 'Ninive');
+check('Ort nennt Bibelstellen', (await page.locator('section .xref').count()) >= 1, `${await page.locator('section .xref').count()} Stellen`);
+check('Ortssuche zoomt auf den passenden Ausschnitt', new URL(page.url()).searchParams.get('ausschnitt') === 'mesopotamien', new URL(page.url()).searchParams.get('ausschnitt') ?? '—');
+await page.screenshot({ path: `${OUT}/17c-karte-ort.png` });
+
+// Von einem Ort aus zu einer Route, die über ihn führt.
+await page.goto(BASE + '/studium/karte?ort=jerusalem', { waitUntil: 'networkidle' });
+await page.waitForSelector('.lex-entry__term');
+const throughCount = await page.locator('section .day__portions .chip').count();
+check('Ort zeigt die Wege, die über ihn führen', throughCount >= 2, `${throughCount} Wege über Jerusalem`);
+
+await page.goto(BASE + '/studium/karte', { waitUntil: 'networkidle' });
+await page.waitForSelector('.map__svg');
 await page.getByRole('button', { name: 'Zweite Missionsreise' }).click();
 await page.waitForSelector('.map__route');
 // 14 Stationen, aber Antiochia ist Start und Ziel – doppelt angefahrene Orte

@@ -89,7 +89,7 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
 | **Lexikon** | 124 Einträge in sieben Kategorien – Personen, Orte, Begriffe, Maße & Geld, Ämter, Bräuche, Natur & Stoffe |
 | **Zeitleiste** | 10 Epochen und 97 Einträge auf maßstabsgetreuer Achse – biblische Ereignisse, Weltgeschichte, außerbiblische Funde und die Entstehung der Bücher, einzeln filterbar |
-| **Karte** | Die biblische Welt von Rom bis Mesopotamien, 24 Orte und die vier Reisen des Paulus |
+| **Karte** | 99 Orte und Landschaften von Rom bis Susa, 9 Wege (Abraham, Auszug, Exil, Wege Jesu, die sieben Gemeinden, drei Missionsreisen, die Fahrt nach Rom), sechs Ausschnitte, Ortssuche und zu jedem Ort Hintergrund und Bibelstellen |
 | **Merkverse** | Auswendiglernen mit wachsenden Abständen; je Stufe verschwinden mehr Wörter |
 | **Offline** | Service Worker; gelesene Kapitel bleiben gespeichert, auf Wunsch die ganze Bibel (≈ 4 MB) |
 | **Persönliches** | Notizen, Markierungen in vier Farben, gelesene Kapitel, Export des Journals als Markdown |
@@ -135,9 +135,18 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
   - *Leben in der Welt:* Gerechtigkeit: Gott und die Armen · Geld, Besitz und
     Genug · Schöpfung und Verantwortung · Weisheit für den Alltag
 
+- **99 Orte und Landschaften auf der Karte**, jeder mit Bibelstellen und
+  fast alle mit einem Hintergrundtext: warum Jerusalem ohne Fluss und ohne
+  Handelsstraße Hauptstadt wurde, warum das Wasser von Laodizea lauwarm
+  ankam, warum Tyrus heute eine Halbinsel ist. Dazu **9 Wege** – Abrahams
+  Route, der Auszug, der Weg ins Exil, die Wege Jesu, die Ringstraße der
+  sieben Gemeinden, die drei Missionsreisen und die Fahrt nach Rom – und
+  sechs Ausschnitte vom Gesamtbild bis nach Israel hinein.
+
 **Mindesttiefe je Artikel:** ausführlicher historischer Kontext und
-mindestens drei Auslegungen aus verschiedenen Traditionen. Das Prüfskript
-setzt das durch, damit es beim Weiterschreiben nicht verlorengeht.
+mindestens drei Auslegungen aus verschiedenen Traditionen. Jeder Kartenort
+braucht mindestens eine Bibelstelle. Das Prüfskript setzt beides durch, damit
+es beim Weiterschreiben nicht verlorengeht.
 
 **Redaktionsprinzip:** Auslegungen stehen **beschreibend nebeneinander**,
 jeweils mit Angabe der Tradition (reformatorisch, katholisch, orthodox,
@@ -195,6 +204,7 @@ src/
     realia.ts                Maße, Geld, Ämter, Bräuche, Naturkunde
     timeline.ts              Epochen und Ereignisse
     journeys.ts              Reiserouten für die Karte
+    places.ts                Orte, Landschaften und Kartenausschnitte
     readingPlans.ts          Lese- und Themenpläne
     verseOfDay.ts            Kuratierte Verse für den Tagesimpuls
   lib/
@@ -203,6 +213,8 @@ src/
     search.ts              Volltextindex und Suche
     storage.ts             Notizen, Markierungen, Pläne, Einstellungen (lokal)
     offline.ts             Stand und Steuerung des Offline-Speichers
+    mapData.ts             Küstenlinien laden
+    mapLabels.ts           Beschriftungen überschneidungsfrei verteilen
   pages/                   Heute, Bibliothek, Buch, Leseansicht, Suche,
                            Studium, Plan, Ich
 ```
@@ -255,7 +267,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (59 Prüfungen):
+abgeschalteter Verbindung (71 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -273,8 +285,12 @@ zeigt:
 node scripts/check-references.mjs
 ```
 
-Es meldet zugleich, wie weit die Artikel reichen – wie viele Abschnitte und
-Verse abgedeckt sind und ob ein Buch noch ganz ohne Artikel dasteht.
+Geprüft werden Artikel, Querverweise, Lesepläne, Lexikon, Zeitleiste, Vers
+des Tages und die Karte – zurzeit 864 Angaben. Es meldet zugleich, wie weit
+die Inhalte reichen: wie viele Abschnitte und Verse abgedeckt sind, ob ein
+Buch noch ganz ohne Artikel dasteht und wie viele Orte einen Hintergrundtext
+haben. Für die Karte prüft es außerdem, dass jeder Ort im Kartenausschnitt
+liegt, keine Kennung doppelt vergeben ist und jeder Lexikonverweis trifft.
 
 > **Achtung bei der Verszählung:** Der Datenbestand folgt der international
 > üblichen Zählung, die gedruckte Lutherbibel weicht an rund 355 Stellen

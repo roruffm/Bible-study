@@ -5,9 +5,11 @@
  * Kapitel jeweils beim ersten Vorkommen, damit die Seite lesbar bleibt.
  *
  * `aliases` enthält die Schreibweisen, die im Text der Lutherbibel 1912
- * tatsächlich auftauchen (z. B. „Kapernaum“ statt „Kafarnaum“). Orte tragen
- * zusätzlich Koordinaten für das Kartenmodul – Längengrad zuerst, wie in
- * GeoJSON üblich.
+ * tatsächlich auftauchen (z. B. „Kapernaum“ statt „Kafarnaum“).
+ *
+ * Koordinaten stehen bewusst nicht hier, sondern in `places.ts`: Das
+ * Kartenmodul führt seine Orte selbst und verweist über `lexicon` auf den
+ * ausführlichen Text. So gibt es für jede Angabe genau eine Quelle.
  */
 
 import { REALIA } from './realia';
@@ -49,8 +51,6 @@ export interface LexiconEntry {
   aliases?: string[];
   /** Wichtige Stellen. */
   refs?: LexiconRef[];
-  /** Nur bei Orten: [Längengrad, Breitengrad]. */
-  coords?: [number, number];
   /** Nur bei Orten: heutige Lage, wenn der Name sich geändert hat. */
   today?: string;
 }
@@ -312,7 +312,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'jerusalem',
     term: 'Jerusalem',
     kind: 'ort',
-    coords: [35.23, 31.78],
     aliases: ['Zion'],
     short:
       'Hauptstadt seit David, Ort des Tempels und Zentrum der Hoffnung Israels. Zweimal zerstört – 587 v. Chr. durch Babylon, 70 n. Chr. durch Rom.',
@@ -323,7 +322,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'bethlehem',
     term: 'Bethlehem',
     kind: 'ort',
-    coords: [35.2, 31.7],
     short:
       'Kleiner Ort südlich von Jerusalem, Heimat Davids und nach Matthäus und Lukas Geburtsort Jesu. Der Name bedeutet „Haus des Brotes“.',
     refs: [{ book: 'mi', chapter: 5, verse: 1 }],
@@ -332,7 +330,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'nazareth',
     term: 'Nazareth',
     kind: 'ort',
-    coords: [35.3, 32.7],
     aliases: ['Nazareth', 'Nazaret'],
     short:
       'Dorf in Galiläa, in dem Jesus aufwuchs. Es war so unbedeutend, dass es außerhalb der Bibel in keiner antiken Quelle vor dem 3. Jahrhundert auftaucht.',
@@ -342,7 +339,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'kapernaum',
     term: 'Kapernaum',
     kind: 'ort',
-    coords: [35.57, 32.88],
     short:
       'Fischerort am See Genezareth, Ausgangspunkt von Jesu Wirken in Galiläa. Die Ausgrabungen legten eine Synagoge und ein früh verehrtes Wohnhaus frei.',
     refs: [{ book: 'mk', chapter: 1, verse: 21 }],
@@ -351,7 +347,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'jericho',
     term: 'Jericho',
     kind: 'ort',
-    coords: [35.45, 31.87],
     short:
       'Oasenstadt am Jordan, rund 250 Meter unter dem Meeresspiegel – eine der ältesten dauerhaft besiedelten Städte der Welt.',
     refs: [{ book: 'jos', chapter: 6, verse: 20 }],
@@ -360,7 +355,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'samaria',
     term: 'Samaria',
     kind: 'ort',
-    coords: [35.2, 32.28],
     short:
       'Hauptstadt des Nordreichs, 722 v. Chr. von Assyrien erobert. Aus der Region stammen die Samaritaner, mit denen Juden zur Zeit Jesu verfeindet waren.',
     refs: [{ book: 'joh', chapter: 4, verse: 9 }],
@@ -369,7 +363,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'genezareth',
     term: 'See Genezareth',
     kind: 'ort',
-    coords: [35.59, 32.82],
     aliases: ['galiläischen Meer', 'Meer Galiläas'],
     short:
       'Süßwassersee in Galiläa, 210 Meter unter dem Meeresspiegel. Fallwinde von den umliegenden Höhen erzeugen dort binnen Minuten hohen Wellengang.',
@@ -379,7 +372,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'jordan',
     term: 'Jordan',
     kind: 'ort',
-    coords: [35.55, 32.3],
     short:
       'Fluss vom Hermon bis zum Toten Meer. Sein Durchzug markiert den Einzug ins Land; an ihm tauft Johannes.',
     refs: [{ book: 'jos', chapter: 3, verse: 17 }],
@@ -388,7 +380,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'sinai',
     term: 'Sinai',
     kind: 'ort',
-    coords: [33.97, 28.54],
     aliases: ['Horeb'],
     short:
       'Berg, an dem Israel die Weisung empfängt. Welcher Gipfel gemeint ist, lässt sich nicht sicher bestimmen; die traditionelle Lage im Süden der Halbinsel ist erst seit dem 4. Jahrhundert bezeugt.',
@@ -398,7 +389,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'aegypten',
     term: 'Ägypten',
     kind: 'ort',
-    coords: [31.25, 29.85],
     short:
       'Großmacht am Nil, in der Bibel zugleich Zufluchtsort und Inbegriff der Unterdrückung. Der Auszug von dort ist Israels Gründungserzählung.',
     refs: [{ book: '2mo', chapter: 14, verse: 21 }],
@@ -407,7 +397,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'babylon',
     term: 'Babylon',
     kind: 'ort',
-    coords: [44.42, 32.54],
     today: 'Ruinenstätte im heutigen Irak, rund 85 km südlich von Bagdad',
     short:
       'Hauptstadt des neubabylonischen Reiches, das 587 v. Chr. Jerusalem zerstörte und die Oberschicht verschleppte. Im Neuen Testament wird der Name zum Deckwort für Rom.',
@@ -420,7 +409,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'ninive',
     term: 'Ninive',
     kind: 'ort',
-    coords: [43.15, 36.36],
     today: 'Bei Mossul im heutigen Irak',
     short:
       'Hauptstadt Assyriens, gefürchtet für ihre Kriegsführung, 612 v. Chr. zerstört. Im Buch Jona wird ausgerechnet ihr Gottes Erbarmen zugesprochen.',
@@ -430,7 +418,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'ur',
     term: 'Ur',
     kind: 'ort',
-    coords: [45.97, 30.96],
     today: 'Südirak',
     short:
       'Sumerische Stadt, aus der Abrahams Familie aufbricht. Ihre Zikkurat ist bis heute erhalten.',
@@ -440,7 +427,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'damaskus',
     term: 'Damaskus',
     kind: 'ort',
-    coords: [36.3, 33.51],
     short:
       'Uralte Handelsstadt in Syrien. Auf dem Weg dorthin erlebt Paulus die Wende, die aus dem Verfolger einen Verkündiger macht.',
     refs: [{ book: 'apg', chapter: 9, verse: 3 }],
@@ -449,7 +435,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'antiochia',
     term: 'Antiochia',
     kind: 'ort',
-    coords: [36.16, 36.2],
     today: 'Antakya in der Türkei',
     short:
       'Drittgrößte Stadt des Römischen Reiches und erste Gemeinde mit Juden und Nichtjuden. Hier wurden die Anhänger Jesu zuerst „Christen“ genannt.',
@@ -459,7 +444,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'caesarea',
     term: 'Cäsarea',
     kind: 'ort',
-    coords: [34.89, 32.5],
     short:
       'Von Herodes erbaute Hafenstadt und Sitz der römischen Statthalter. Paulus verbrachte hier zwei Jahre in Haft.',
     refs: [{ book: 'apg', chapter: 10, verse: 1 }],
@@ -468,7 +452,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'tarsus',
     term: 'Tarsus',
     kind: 'ort',
-    coords: [34.9, 36.92],
     today: 'Südtürkei',
     short: 'Geburtsstadt des Paulus in Kilikien, bekannt für ihre Philosophenschulen.',
     refs: [{ book: 'apg', chapter: 21, verse: 39 }],
@@ -477,7 +460,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'ephesus',
     term: 'Ephesus',
     kind: 'ort',
-    coords: [27.34, 37.95],
     today: 'Bei Selçuk in der Türkei',
     short:
       'Metropole in Kleinasien mit dem Artemistempel, einem der sieben Weltwunder. Paulus wirkte hier über zwei Jahre.',
@@ -487,7 +469,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'philippi',
     term: 'Philippi',
     kind: 'ort',
-    coords: [24.29, 41.01],
     today: 'Nordgriechenland',
     short:
       'Römische Kolonie in Makedonien und erste Gemeinde auf europäischem Boden. Der Philipperbrief richtet sich an sie.',
@@ -497,7 +478,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'thessalonich',
     term: 'Thessalonich',
     kind: 'ort',
-    coords: [22.94, 40.64],
     today: 'Thessaloniki, Griechenland',
     short:
       'Hafenstadt an der Via Egnatia. An die dortige Gemeinde geht vermutlich der älteste erhaltene Brief des Paulus.',
@@ -507,7 +487,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'athen',
     term: 'Athen',
     kind: 'ort',
-    coords: [23.73, 37.98],
     short:
       'Zentrum griechischer Philosophie. Die Rede des Paulus auf dem Areopag ist der Versuch, das Evangelium in der Sprache der Gebildeten zu sagen.',
     refs: [{ book: 'apg', chapter: 17, verse: 22 }],
@@ -516,7 +495,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'korinth',
     term: 'Korinth',
     kind: 'ort',
-    coords: [22.88, 37.94],
     short:
       'Reiche Hafenstadt mit zwei Häfen und dem Ruf besonderer Sittenlosigkeit. Die dortige Gemeinde war zerstritten – daher die ausführlichen Briefe.',
     refs: [{ book: '1kor', chapter: 1, verse: 11 }],
@@ -525,7 +503,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'rom',
     term: 'Rom',
     kind: 'ort',
-    coords: [12.48, 41.89],
     short:
       'Hauptstadt des Reiches und Ziel des Paulus. Die Apostelgeschichte endet damit, dass er dort unter Hausarrest weiter verkündigt.',
     refs: [{ book: 'apg', chapter: 28, verse: 30 }],
@@ -534,7 +511,6 @@ const NAMEN_UND_BEGRIFFE: LexiconEntry[] = [
     id: 'patmos',
     term: 'Patmos',
     kind: 'ort',
-    coords: [26.55, 37.31],
     short:
       'Kleine Ägäisinsel, auf der Johannes die Offenbarung empfängt – nach eigener Angabe dort, weil er wegen seines Zeugnisses verbannt war.',
     refs: [{ book: 'offb', chapter: 1, verse: 9 }],
@@ -705,11 +681,6 @@ export const LEXICON_KIND_PLURAL: Record<LexiconKind, string> = {
   brauch: 'Bräuche & Feste',
   natur: 'Natur & Stoffe',
 };
-
-/** Alle Orte mit Koordinaten – Grundlage des Kartenmoduls. */
-export function places(): LexiconEntry[] {
-  return LEXICON.filter((e) => e.coords);
-}
 
 /**
  * Ein Muster über alle Schreibweisen, längste zuerst, damit

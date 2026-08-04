@@ -6,6 +6,7 @@ import {
   LEXICON_KIND_PLURAL,
   type LexiconKind,
 } from '../content/lexicon';
+import { placeForLexicon } from '../content/places';
 import { useBibleIndex } from '../hooks/useStore';
 import { normalize } from '../lib/reference';
 
@@ -77,6 +78,7 @@ export default function LexiconPage() {
       <div className="stack">
         {entries.map((entry) => {
           const open = openId === entry.id;
+          const place = placeForLexicon(entry.id);
           return (
             <article
               key={entry.id}
@@ -124,8 +126,8 @@ export default function LexiconPage() {
               )}
 
               <div className="day__portions" style={{ marginTop: '0.7rem' }}>
-                {entry.coords && (
-                  <Link className="chip" to={`/studium/karte?ort=${entry.id}`}>
+                {place && (
+                  <Link className="chip" to={`/studium/karte?ort=${place.id}`}>
                     Auf der Karte
                   </Link>
                 )}

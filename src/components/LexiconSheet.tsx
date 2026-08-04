@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LEXICON_KIND_LABEL, type LexiconEntry } from '../content/lexicon';
+import { placeForLexicon } from '../content/places';
 import { useBibleIndex } from '../hooks/useStore';
 
 /** Zeigt einen Lexikoneintrag über der Leseansicht, ohne sie zu verlassen. */
@@ -22,6 +23,7 @@ export default function LexiconSheet({
   }, [onClose]);
 
   const nameOf = (bookId: string) => index?.books.find((b) => b.id === bookId)?.name ?? bookId;
+  const place = placeForLexicon(entry.id);
 
   return (
     <>
@@ -50,8 +52,8 @@ export default function LexiconSheet({
             </p>
           )}
 
-          {entry.coords && (
-            <Link className="btn btn--sm" to={`/studium/karte?ort=${entry.id}`} onClick={onClose}>
+          {place && (
+            <Link className="btn btn--sm" to={`/studium/karte?ort=${place.id}`} onClick={onClose}>
               Auf der Karte zeigen
             </Link>
           )}

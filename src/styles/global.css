@@ -1465,6 +1465,38 @@ button {
   font-weight: 700;
 }
 
+/* Berge, Gewässer und Inseln bekommen eigene Farben, damit die Karte auch
+   ohne Beschriftung lesbar bleibt. */
+.map__place--berg circle {
+  fill: #8a6d3b;
+}
+
+.map__place--gewaesser circle {
+  fill: #2a6f8e;
+}
+
+.map__place--insel circle {
+  fill: #3f7d6f;
+}
+
+/* Landschaften haben keinen Punkt, nur einen Namen im Gebiet. */
+.map__region {
+  cursor: pointer;
+}
+
+.map__label--region {
+  font-variant: small-caps;
+  letter-spacing: 0.09em;
+  font-weight: 600;
+  fill: var(--text-muted);
+  opacity: 0.9;
+}
+
+.map__region--active .map__label--region {
+  fill: #c2410c;
+  opacity: 1;
+}
+
 /* ----------------------------------------------------------- Zeitleiste */
 
 .axis {

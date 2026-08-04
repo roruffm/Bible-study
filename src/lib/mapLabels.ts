@@ -12,6 +12,12 @@ export interface LabelInput {
   x: number;
   y: number;
   text: string;
+  /**
+   * Beschriftung sitzt auf dem Punkt selbst statt daneben – für Landschaften,
+   * die keine Markierung haben, sondern nur einen Namen im Gebiet. Solche
+   * Beschriftungen werden zuerst gesetzt, alle anderen weichen ihnen aus.
+   */
+  fixed?: boolean;
 }
 
 export type Anchor = 'start' | 'end' | 'middle';
@@ -36,23 +42,58 @@ function overlaps(a: Box, b: Box): boolean {
 }
 
 /**
- * @param unit Größe eines Bildschirmpixels in Zeichenkoordinaten – bei
- *             gezoomter Ansicht sind Beschriftungen sonst riesig.
+ * @param unit   Größe eines Bildschirmpixels in Zeichenkoordinaten – bei
+ *               gezoomter Ansicht sind Beschriftungen sonst riesig.
+ * @param bounds Sichtbarer Bereich. Beschriftungen, die darüber hinausragen,
+ *               werden am Rand abgeschnitten und sind unbrauchbar; sie gelten
+ *               deshalb als nicht platzierbar.
  */
-export function layoutLabels(items: LabelInput[], unit = 1): PlacedLabel[] {
-  // Die Punkte selbst gelten von Anfang an als belegt, damit keine
-  // Beschriftung auf einem fremden Ortspunkt zu liegen kommt.
-  const placed: Box[] = items.map((item) => ({
-    x1: item.x - 6 * unit,
-    y1: item.y - 6 * unit,
-    x2: item.x + 6 * unit,
-    y2: item.y + 6 * unit,
-  }));
+export function layoutLabels(items: LabelInput[], unit = 1, bounds?: Box): PlacedLabel[] {
+  const inside = (box: Box) =>
+    !bounds ||
+    (box.x1 >= bounds.x1 && box.x2 <= bounds.x2 && box.y1 >= bounds.y1 && box.y2 <= bounds.y2);
 
-  return items.map((item) => {
-    // Grobe Textbreite; genauer ginge nur durch Messen im Browser.
-    const width = item.text.length * 5.6 * unit;
-    const height = 11 * unit;
+  // Grobe Textbreite; genauer ginge nur durch Messen im Browser. Feste
+  // Beschriftungen stehen gesperrt und in Kapitälchen und brauchen mehr Platz.
+  const widthOf = (text: string, fixed = false) => text.length * (fixed ? 10 : 7.2) * unit;
+
+  const placed: Box[] = [];
+  const result = new Array<PlacedLabel>(items.length);
+
+  // Feste Beschriftungen zuerst: Sie sitzen auf ihrem Punkt und blockieren die
+  // Fläche, bevor die freien Beschriftungen verteilt werden. Sie weichen
+  // einander aus, nicht aber den Ortspunkten – ein Landschaftsname darf über
+  // einer Stadt liegen, er steht ja im Hintergrund.
+  items.forEach((item, i) => {
+    if (!item.fixed) return;
+    const width = widthOf(item.text, true);
+    const box: Box = {
+      x1: item.x - width / 2,
+      y1: item.y - 12 * unit,
+      x2: item.x + width / 2,
+      y2: item.y + 3 * unit,
+    };
+    const crowded = !inside(box) || placed.some((other) => overlaps(other, box));
+    placed.push(box);
+    result[i] = { ...item, labelX: item.x, labelY: item.y, anchor: 'middle', crowded };
+  });
+
+  // Erst jetzt gelten die Ortspunkte als belegt, damit keine Beschriftung auf
+  // einem fremden Punkt zu liegen kommt.
+  for (const item of items) {
+    if (item.fixed) continue;
+    placed.push({
+      x1: item.x - 6 * unit,
+      y1: item.y - 6 * unit,
+      x2: item.x + 6 * unit,
+      y2: item.y + 6 * unit,
+    });
+  }
+
+  items.forEach((item, i) => {
+    if (item.fixed) return;
+    const width = widthOf(item.text);
+    const height = 14 * unit;
     const gap = 9 * unit;
 
     const candidates: [number, number, Anchor][] = [
@@ -71,17 +112,27 @@ export function layoutLabels(items: LabelInput[], unit = 1): PlacedLabel[] {
     for (const [labelX, labelY, anchor] of candidates) {
       const left =
         anchor === 'start' ? labelX : anchor === 'end' ? labelX - width : labelX - width / 2;
-      const box: Box = { x1: left, y1: labelY - height, x2: left + width, y2: labelY };
+      // Unter der Schriftlinie liegen noch Unterlängen und der helle Rand,
+      // mit dem der Text vom Kartenbild abgesetzt wird.
+      const box: Box = {
+        x1: left,
+        y1: labelY - height,
+        x2: left + width,
+        y2: labelY + 4 * unit,
+      };
 
-      if (!placed.some((other) => overlaps(other, box))) {
+      if (inside(box) && !placed.some((other) => overlaps(other, box))) {
         placed.push(box);
-        return { ...item, labelX, labelY, anchor, crowded: false };
+        result[i] = { ...item, labelX, labelY, anchor, crowded: false };
+        return;
       }
     }
 
     // Nichts frei: erste Position nehmen und den Punkt als gedrängt melden,
     // damit die Darstellung ihn zurücknehmen kann.
     const [labelX, labelY, anchor] = candidates[0];
-    return { ...item, labelX, labelY, anchor, crowded: true };
+    result[i] = { ...item, labelX, labelY, anchor, crowded: true };
   });
+
+  return result;
 }
