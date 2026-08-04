@@ -82,11 +82,11 @@ Wichtige Prinzipien:
    auf ein Ereignis springt zur Bibelstelle.
 2. **Karten-Modul:** Historische Karten (Reisen des Paulus, Reich Davids,
    Exil-Routen). Ortsnamen im Bibeltext sind verlinkt und zeigen den Ort auf
-   der Karte. *Umgesetzt* mit 99 Orten und Landschaften, 9 Wegen, sechs
-   Ausschnitten und Ortssuche; jeder Ort trägt Bibelstellen und meist einen
-   Hintergrundtext. Die Beschriftung wird zur Laufzeit überschneidungsfrei
-   verteilt – wer keinen Platz findet, bleibt ein Punkt und wird beim
-   Hineinzoomen lesbar.
+   der Karte. *Umgesetzt* mit 188 Orten und Landschaften, 9 Wegen, sechs
+   Ausschnitten, freiem Ziehen und Vergrößern, Maßstabsbalken und Ortssuche;
+   jeder Ort trägt Bibelstellen und meist einen Hintergrundtext. Namen und
+   Punkte werden zur Laufzeit überschneidungsfrei verteilt – was keinen Platz
+   findet, erscheint beim Hineinzoomen.
 3. **Personen- & Begriffslexikon:** Namen (Abraham, Pilatus …) und
    Schlüsselbegriffe (Bund, Gnade, Passah …) sind im Text dezent markiert;
    Antippen zeigt eine Kurzerklärung mit allen Vorkommen.

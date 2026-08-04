@@ -89,7 +89,7 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
 | **Lexikon** | 124 Einträge in sieben Kategorien – Personen, Orte, Begriffe, Maße & Geld, Ämter, Bräuche, Natur & Stoffe |
 | **Zeitleiste** | 10 Epochen und 97 Einträge auf maßstabsgetreuer Achse – biblische Ereignisse, Weltgeschichte, außerbiblische Funde und die Entstehung der Bücher, einzeln filterbar |
-| **Karte** | 99 Orte und Landschaften von Rom bis Susa, 9 Wege (Abraham, Auszug, Exil, Wege Jesu, die sieben Gemeinden, drei Missionsreisen, die Fahrt nach Rom), sechs Ausschnitte, Ortssuche und zu jedem Ort Hintergrund und Bibelstellen |
+| **Karte** | 188 Orte und Landschaften von Rom bis Susa, 9 Wege (Abraham, Auszug, Exil, Wege Jesu, die sieben Gemeinden, drei Missionsreisen, die Fahrt nach Rom), sechs Ausschnitte, freies Ziehen und Vergrößern, Maßstabsbalken, Ortssuche und zu jedem Ort Hintergrund und Bibelstellen |
 | **Merkverse** | Auswendiglernen mit wachsenden Abständen; je Stufe verschwinden mehr Wörter |
 | **Offline** | Service Worker; gelesene Kapitel bleiben gespeichert, auf Wunsch die ganze Bibel (≈ 4 MB) |
 | **Persönliches** | Notizen, Markierungen in vier Farben, gelesene Kapitel, Export des Journals als Markdown |
@@ -135,13 +135,21 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
   - *Leben in der Welt:* Gerechtigkeit: Gott und die Armen · Geld, Besitz und
     Genug · Schöpfung und Verantwortung · Weisheit für den Alltag
 
-- **99 Orte und Landschaften auf der Karte**, jeder mit Bibelstellen und
-  fast alle mit einem Hintergrundtext: warum Jerusalem ohne Fluss und ohne
+- **188 Orte und Landschaften auf der Karte**, jeder mit Bibelstellen und
+  128 davon mit einem Hintergrundtext: warum Jerusalem ohne Fluss und ohne
   Handelsstraße Hauptstadt wurde, warum das Wasser von Laodizea lauwarm
-  ankam, warum Tyrus heute eine Halbinsel ist. Dazu **9 Wege** – Abrahams
-  Route, der Auszug, der Weg ins Exil, die Wege Jesu, die Ringstraße der
-  sieben Gemeinden, die drei Missionsreisen und die Fahrt nach Rom – und
-  sechs Ausschnitte vom Gesamtbild bis nach Israel hinein.
+  ankam, warum Tyrus heute eine Halbinsel ist, warum in Lystra ausgerechnet
+  „Zeus und Hermes“ gerufen wird. Dazu **9 Wege** – Abrahams Route, der
+  Auszug, der Weg ins Exil, die Wege Jesu, die Ringstraße der sieben
+  Gemeinden, die drei Missionsreisen und die Fahrt nach Rom –, jeweils mit
+  Etappenlängen in Kilometern.
+
+  Die Karte lässt sich ziehen und vergrößern, hat sechs voreingestellte
+  Ausschnitte und einen Maßstabsbalken. Was auf dem Bildschirm keinen Platz
+  hat, wird ausgeblendet statt übereinandergestapelt: Namen weichen den
+  wichtigeren, Punkte, die aufeinanderlägen, erscheinen erst beim
+  Hineinzoomen. Der Smoke-Test misst das nach – in keinem Ausschnitt
+  überdeckt ein Name oder ein Punkt einen anderen.
 
 **Mindesttiefe je Artikel:** ausführlicher historischer Kontext und
 mindestens drei Auslegungen aus verschiedenen Traditionen. Jeder Kartenort
@@ -267,7 +275,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (71 Prüfungen):
+abgeschalteter Verbindung (80 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -286,7 +294,7 @@ node scripts/check-references.mjs
 ```
 
 Geprüft werden Artikel, Querverweise, Lesepläne, Lexikon, Zeitleiste, Vers
-des Tages und die Karte – zurzeit 864 Angaben. Es meldet zugleich, wie weit
+des Tages und die Karte – zurzeit 1008 Angaben. Es meldet zugleich, wie weit
 die Inhalte reichen: wie viele Abschnitte und Verse abgedeckt sind, ob ein
 Buch noch ganz ohne Artikel dasteht und wie viele Orte einen Hintergrundtext
 haben. Für die Karte prüft es außerdem, dass jeder Ort im Kartenausschnitt

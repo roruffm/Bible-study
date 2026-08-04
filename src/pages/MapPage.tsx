@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { JOURNEYS, findJourney, type Journey } from '../content/journeys';
 import { findLexiconEntry } from '../content/lexicon';
@@ -68,6 +68,42 @@ function journeysThrough(place: MapPlace): Journey[] {
   );
 }
 
+/** Der Kartenort zu einer Station, falls es einen gibt. */
+function placeAt(coords: [number, number]): MapPlace | undefined {
+  return PLACES.find(
+    (place) =>
+      Math.abs(place.coords[0] - coords[0]) < SAME_PLACE &&
+      Math.abs(place.coords[1] - coords[1]) < SAME_PLACE,
+  );
+}
+
+/** Entfernung zweier Punkte auf der Kugel in Kilometern. */
+function distanceKm([lon1, lat1]: [number, number], [lon2, lat2]: [number, number]): number {
+  const R = 6371;
+  const toRad = (deg: number) => (deg * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+/** Luftlinie über alle Stationen einer Route. */
+function journeyLength(journey: Journey): number {
+  let sum = 0;
+  for (let i = 1; i < journey.stops.length; i++) {
+    sum += distanceKm(journey.stops[i - 1].coords, journey.stops[i].coords);
+  }
+  return sum;
+}
+
+/** Stufen für den Maßstabsbalken. */
+const SCALE_STEPS = [10, 20, 50, 100, 200, 500, 1000, 2000];
+
+const ZOOM_MIN = 1;
+const ZOOM_MAX = 20;
+
 export default function MapPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const { data, loading, error } = useAsync<MapRegions>(() => loadRegions(), []);
@@ -112,7 +148,7 @@ export default function MapPage() {
    * verliert sie sich in leerer Fläche. Ein einzeln gewählter Ort rückt in
    * die Mitte. Sonst gilt der eingestellte Ausschnitt.
    */
-  const view = useMemo(() => {
+  const baseView = useMemo((): View => {
     if (!project || !box) return { x: 0, y: 0, w: WIDTH, h: height };
 
     if (journey) {
@@ -133,8 +169,37 @@ export default function MapPage() {
     const [west, south, east, north] = preset.bounds;
     const [x1, y1] = project([west, north]);
     const [x2, y2] = project([east, south]);
-    return fitAspect({ x: x1, y: y1, w: x2 - x1, h: y2 - y1 });
-  }, [project, box, journey, viewId, height]);
+    const fitted = fitAspect({ x: x1, y: y1, w: x2 - x1, h: y2 - y1 });
+
+    // Ein einzeln gewählter Ort rückt in die Mitte – sonst sucht man ihn im
+    // Ausschnitt, und beim Vergrößern verschwindet er ganz aus dem Bild.
+    if (focusPlace) {
+      const [fx, fy] = project(focusPlace.coords);
+      return { ...fitted, x: fx - fitted.w / 2, y: fy - fitted.h / 2 };
+    }
+    return fitted;
+  }, [project, box, journey, viewId, height, focusPlace]);
+
+  /**
+   * Freie Bewegung über dem eingestellten Ausschnitt: Ziehen verschiebt,
+   * Mausrad und die Knöpfe vergrößern. Der Zustand bleibt bewusst außerhalb
+   * der Adresse – geteilt wird der Ausschnitt, nicht jeder Zwischenschritt.
+   */
+  const [nav, setNav] = useState({ scale: 1, dx: 0, dy: 0 });
+
+  // Ein neuer Ausschnitt oder eine neue Route setzt die Bewegung zurück.
+  useEffect(() => {
+    setNav({ scale: 1, dx: 0, dy: 0 });
+  }, [viewId, journeyId]);
+
+  const view = useMemo((): View => {
+    const w = baseView.w / nav.scale;
+    const h = baseView.h / nav.scale;
+    // Die Mitte darf die Gesamtkarte nicht verlassen, sonst zieht man ins Leere.
+    const cx = Math.min(Math.max(baseView.x + baseView.w / 2 + nav.dx, 0), WIDTH);
+    const cy = Math.min(Math.max(baseView.y + baseView.h / 2 + nav.dy, 0), height);
+    return { x: cx - w / 2, y: cy - h / 2, w, h };
+  }, [baseView, nav, height]);
 
   /** Größe eines Bildschirmpixels in Zeichenkoordinaten. */
   const unit = view.w / WIDTH;
@@ -190,6 +255,31 @@ export default function MapPage() {
   );
 
   /**
+   * Ausdünnen: Zwei Punkte, die auf dem Bildschirm aufeinanderliegen, sind
+   * kein Gewinn – Jerusalem und das Kidrontal trennen zwei Kilometer. Wichtige
+   * Orte behalten ihren Platz, die übrigen erscheinen beim Hineinzoomen.
+   */
+  const drawnPlaces = useMemo(() => {
+    if (!project) return [] as MapPlace[];
+    const minGap = 11 * unit;
+    const kept: [number, number][] = [];
+    const out: MapPlace[] = [];
+
+    for (const place of [...shownPlaces].sort((a, b) => (a.rank ?? 2) - (b.rank ?? 2))) {
+      if (place.kind === 'region') {
+        out.push(place);
+        continue;
+      }
+      const [x, y] = project(place.coords);
+      const tooClose = kept.some(([kx, ky]) => Math.abs(kx - x) < minGap && Math.abs(ky - y) < minGap);
+      if (tooClose && place.id !== focusPlace?.id) continue;
+      kept.push([x, y]);
+      out.push(place);
+    }
+    return out;
+  }, [shownPlaces, project, unit, focusPlace]);
+
+  /**
    * Beschriftungen der Orte. Wichtige Orte kommen zuerst dran, damit ihnen
    * auf der gedrängten Gesamtkarte der Platz zufällt; wer keinen findet,
    * bleibt ein Punkt ohne Namen und wird erst beim Hineinzoomen lesbar.
@@ -198,23 +288,24 @@ export default function MapPage() {
     const byId = new Map<string, PlacedLabel>();
     if (!project) return byId;
 
-    const ordered = [...shownPlaces].sort((a, b) => (a.rank ?? 2) - (b.rank ?? 2));
     const laid = layoutLabels(
-      ordered.map((place) => {
+      drawnPlaces.map((place) => {
         const [x, y] = project(place.coords);
         return { x, y, text: place.name, fixed: place.kind === 'region' };
       }),
       unit,
       clip,
     );
-    ordered.forEach((place, i) => byId.set(place.id, laid[i]));
+    drawnPlaces.forEach((place, i) => byId.set(place.id, laid[i]));
     return byId;
-  }, [project, shownPlaces, unit, clip]);
+  }, [project, drawnPlaces, unit, clip]);
 
   const hiddenLabels = useMemo(
     () => [...placeLabels.values()].filter((label) => label.crowded).length,
     [placeLabels],
   );
+
+  const hiddenPlaces = shownPlaces.length - drawnPlaces.length;
 
   /** Freitextsuche über alle Orte, unabhängig vom Ausschnitt. */
   const found = useMemo(() => {
@@ -226,6 +317,90 @@ export default function MapPage() {
   }, [query]);
 
   const nameOf = (bookId: string) => index?.books.find((b) => b.id === bookId)?.name ?? bookId;
+
+  /* ------------------------------------------------ Ziehen und Vergrößern */
+
+  const svgRef = useRef<SVGSVGElement | null>(null);
+  const drag = useRef<{ x: number; y: number; moved: number } | null>(null);
+  const [dragging, setDragging] = useState(false);
+
+  /** Ein Bildschirmpixel in Zeichenkoordinaten – abhängig von der Anzeigebreite. */
+  const pixelToUnit = useCallback(
+    () => view.w / (svgRef.current?.getBoundingClientRect().width || WIDTH),
+    [view.w],
+  );
+
+  const zoomBy = useCallback((factor: number) => {
+    setNav((prev) => ({
+      ...prev,
+      scale: Math.min(Math.max(prev.scale * factor, ZOOM_MIN), ZOOM_MAX),
+    }));
+  }, []);
+
+  // Das Mausrad muss die Seite am Scrollen hindern; das geht nur mit einem
+  // Zuhörer, der ausdrücklich nicht passiv ist.
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+    function onWheel(event: WheelEvent) {
+      event.preventDefault();
+      zoomBy(event.deltaY < 0 ? 1.18 : 1 / 1.18);
+    }
+    svg.addEventListener('wheel', onWheel, { passive: false });
+    return () => svg.removeEventListener('wheel', onWheel);
+  }, [zoomBy, data]);
+
+  function onPointerDown(event: React.PointerEvent<SVGSVGElement>) {
+    drag.current = { x: event.clientX, y: event.clientY, moved: 0 };
+    setDragging(true);
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+
+  function onPointerMove(event: React.PointerEvent<SVGSVGElement>) {
+    const state = drag.current;
+    if (!state) return;
+    const scale = pixelToUnit();
+    const dx = event.clientX - state.x;
+    const dy = event.clientY - state.y;
+    state.moved += Math.abs(dx) + Math.abs(dy);
+    state.x = event.clientX;
+    state.y = event.clientY;
+    setNav((prev) => ({ ...prev, dx: prev.dx - dx * scale, dy: prev.dy - dy * scale }));
+  }
+
+  function onPointerUp(event: React.PointerEvent<SVGSVGElement>) {
+    setDragging(false);
+    event.currentTarget.releasePointerCapture(event.pointerId);
+    // Nach einem echten Zug darf der Klick keinen Ort öffnen.
+    setTimeout(() => {
+      drag.current = null;
+    }, 0);
+  }
+
+  /** Wahr, wenn gerade gezogen und nicht geklickt wurde. */
+  const wasDragged = () => (drag.current?.moved ?? 0) > 6;
+
+  function openPlace(id: string) {
+    if (wasDragged()) return;
+    setParams({ ort: id, reise: null });
+  }
+
+  const moved = nav.scale !== 1 || nav.dx !== 0 || nav.dy !== 0;
+
+  /**
+   * Maßstabsbalken. Er macht Entfernungen ablesbar – dass zwischen Nazareth
+   * und Jerusalem nur 150 Kilometer liegen, ist für das Verständnis der
+   * Evangelien wichtiger als jede Ortsangabe.
+   */
+  const scaleBar = useMemo(() => {
+    if (!box) return null;
+    const centerLat = box.north - ((view.y + view.h / 2) / height) * (box.north - box.south);
+    const degPerUnit = (box.east - box.west) / WIDTH;
+    const kmPerUnit = degPerUnit * 111.32 * Math.cos((centerLat * Math.PI) / 180);
+    const target = view.w * 0.22 * kmPerUnit;
+    const km = SCALE_STEPS.find((step) => step >= target) ?? SCALE_STEPS[SCALE_STEPS.length - 1];
+    return { km, length: km / kmPerUnit };
+  }, [box, view, height]);
 
   /**
    * Adressparameter setzen. Mehrere Änderungen müssen in einem Schritt
@@ -374,13 +549,47 @@ export default function MapPage() {
       {data && project && box && (
         <>
           <div className="map">
+            <div className="map__tools">
+              <button
+                type="button"
+                className="map__tool"
+                onClick={() => zoomBy(1.5)}
+                aria-label="Vergrößern"
+                title="Vergrößern"
+              >
+                +
+              </button>
+              <button
+                type="button"
+                className="map__tool"
+                onClick={() => zoomBy(1 / 1.5)}
+                aria-label="Verkleinern"
+                title="Verkleinern"
+              >
+                −
+              </button>
+              {moved && (
+                <button
+                  type="button"
+                  className="map__tool map__tool--wide"
+                  onClick={() => setNav({ scale: 1, dx: 0, dy: 0 })}
+                >
+                  Ansicht zurücksetzen
+                </button>
+              )}
+            </div>
             <svg
+              ref={svgRef}
               viewBox={`${view.x} ${view.y} ${view.w} ${view.h}`}
-              className="map__svg"
+              className={`map__svg${dragging ? ' map__svg--dragging' : ''}`}
               role="img"
               aria-label={
                 journey ? `Karte: ${journey.title}` : 'Karte der biblischen Welt mit Orten'
               }
+              onPointerDown={onPointerDown}
+              onPointerMove={onPointerMove}
+              onPointerUp={onPointerUp}
+              onPointerCancel={onPointerUp}
             >
               <rect x={view.x} y={view.y} width={view.w} height={view.h} className="map__sea" />
               <path d={toPath(data.land)} className="map__land" style={{ strokeWidth: unit }} />
@@ -428,7 +637,7 @@ export default function MapPage() {
               )}
 
               {/* Landschaften zuerst, damit Ortspunkte darüber liegen. */}
-              {shownPlaces.map((place) => {
+              {drawnPlaces.map((place) => {
                 if (place.kind !== 'region') return null;
                 const label = placeLabels.get(place.id);
                 if (!label || label.crowded) return null;
@@ -436,8 +645,9 @@ export default function MapPage() {
                 return (
                   <g
                     key={place.id}
+                    data-ort={place.id}
                     className={`map__region${active ? ' map__region--active' : ''}`}
-                    onClick={() => setParams({ ort: place.id, reise: null })}
+                    onClick={() => openPlace(place.id)}
                     onMouseEnter={() => setHover(place.id)}
                     onMouseLeave={() => setHover(null)}
                   >
@@ -454,7 +664,7 @@ export default function MapPage() {
                 );
               })}
 
-              {shownPlaces.map((place) => {
+              {drawnPlaces.map((place) => {
                 if (place.kind === 'region') return null;
                 const label = placeLabels.get(place.id);
                 if (!label) return null;
@@ -465,10 +675,11 @@ export default function MapPage() {
                 return (
                   <g
                     key={place.id}
+                    data-ort={place.id}
                     className={`map__place map__place--${place.kind}${
                       active ? ' map__place--active' : ''
                     }`}
-                    onClick={() => setParams({ ort: place.id, reise: null })}
+                    onClick={() => openPlace(place.id)}
                     onMouseEnter={() => setHover(place.id)}
                     onMouseLeave={() => setHover(null)}
                   >
@@ -492,13 +703,51 @@ export default function MapPage() {
                   </g>
                 );
               })}
+
+              {/* Maßstab */}
+              {scaleBar && (
+                <g className="map__scale" style={{ pointerEvents: 'none' }}>
+                  <line
+                    x1={view.x + 16 * unit}
+                    y1={view.y + view.h - 16 * unit}
+                    x2={view.x + 16 * unit + scaleBar.length}
+                    y2={view.y + view.h - 16 * unit}
+                    style={{ strokeWidth: 2 * unit }}
+                  />
+                  <line
+                    x1={view.x + 16 * unit}
+                    y1={view.y + view.h - 20 * unit}
+                    x2={view.x + 16 * unit}
+                    y2={view.y + view.h - 12 * unit}
+                    style={{ strokeWidth: 2 * unit }}
+                  />
+                  <line
+                    x1={view.x + 16 * unit + scaleBar.length}
+                    y1={view.y + view.h - 20 * unit}
+                    x2={view.x + 16 * unit + scaleBar.length}
+                    y2={view.y + view.h - 12 * unit}
+                    style={{ strokeWidth: 2 * unit }}
+                  />
+                  <text
+                    x={view.x + 16 * unit + scaleBar.length / 2}
+                    y={view.y + view.h - 24 * unit}
+                    textAnchor="middle"
+                    className="map__label"
+                    style={{ fontSize: 10 * unit, strokeWidth: 3 * unit }}
+                  >
+                    {scaleBar.km} km
+                  </text>
+                </g>
+              )}
             </svg>
           </div>
 
-          {!journey && hiddenLabels > 0 && (
+          {!journey && (hiddenLabels > 0 || hiddenPlaces > 0) && (
             <p className="settings-row__hint" style={{ marginTop: '0.6rem' }}>
-              {hiddenLabels} Namen haben in diesem Ausschnitt keinen Platz. Die Punkte sind
-              trotzdem da – ein engerer Ausschnitt oder ein Klick zeigt sie.
+              In diesem Ausschnitt ist kein Platz für {hiddenPlaces > 0 && <>{hiddenPlaces} Orte</>}
+              {hiddenPlaces > 0 && hiddenLabels > 0 && ' und '}
+              {hiddenLabels > 0 && <>{hiddenLabels} Namen</>}. Ziehen, das Mausrad oder ein engerer
+              Ausschnitt holt sie hervor.
             </p>
           )}
 
@@ -516,25 +765,48 @@ export default function MapPage() {
             <span className="library__count">{journey.period}</span>
           </div>
           <p className="page-lead">{journey.summary}</p>
+          <p className="settings-row__hint">
+            <strong>{journey.stops.length} Stationen · </strong>
+            rund {Math.round(journeyLength(journey) / 10) * 10} km Luftlinie über alle Etappen –
+            zu Fuß und zu Schiff ein Vielfaches an tatsächlichem Weg.
+          </p>
           <Link className="btn btn--sm" to={`/bibel/${journey.ref.book}/${journey.ref.chapter}`}>
             Im Bibeltext nachlesen
           </Link>
 
           <div className="card" style={{ marginTop: '1rem' }}>
-            {journey.stops.map((stop, i) => (
-              <div className="day" key={`${stop.name}-${i}`}>
-                <span
-                  className="day__check day__check--done"
-                  style={{ background: journey.color, borderColor: journey.color }}
-                >
-                  {i + 1}
-                </span>
-                <div className="day__body">
-                  <div className="day__title">{stop.name}</div>
-                  {stop.note && <p className="day__note">{stop.note}</p>}
+            {journey.stops.map((stop, i) => {
+              const stopPlace = placeAt(stop.coords);
+              const leg = i > 0 ? distanceKm(journey.stops[i - 1].coords, stop.coords) : 0;
+              return (
+                <div className="day" key={`${stop.name}-${i}`}>
+                  <span
+                    className="day__check day__check--done"
+                    style={{ background: journey.color, borderColor: journey.color }}
+                  >
+                    {i + 1}
+                  </span>
+                  <div className="day__body">
+                    <div className="day__title">
+                      {stop.name}
+                      {leg > 0 && (
+                        <span className="settings-row__hint"> · {Math.round(leg)} km</span>
+                      )}
+                    </div>
+                    {stop.note && <p className="day__note">{stop.note}</p>}
+                    {stopPlace && (
+                      <button
+                        type="button"
+                        className="chip"
+                        onClick={() => setParams({ ort: stopPlace.id, reise: null })}
+                      >
+                        Ort auf der Karte
+                      </button>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       )}

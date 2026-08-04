@@ -1383,6 +1383,7 @@ button {
 /* ---------------------------------------------------------------- Karte */
 
 .map {
+  position: relative;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -1393,6 +1394,53 @@ button {
   display: block;
   width: 100%;
   height: auto;
+  cursor: grab;
+  touch-action: none;
+}
+
+.map__svg--dragging {
+  cursor: grabbing;
+}
+
+/* Bedienknöpfe über der Karte. */
+.map__tools {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-end;
+}
+
+.map__tool {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg-raised);
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.18);
+}
+
+.map__tool:hover {
+  background: var(--accent-soft);
+}
+
+.map__tool--wide {
+  width: auto;
+  height: auto;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.78rem;
+}
+
+.map__scale line {
+  stroke: var(--text-muted);
+  stroke-linecap: butt;
 }
 
 .map__sea {

@@ -287,7 +287,7 @@ await page.screenshot({ path: `${OUT}/16-zeitleiste.png` });
 await page.goto(BASE + '/studium/karte', { waitUntil: 'networkidle' });
 await page.waitForSelector('.map__svg');
 const placeCount = await page.locator('.map__place').count();
-check('Karte verortet die Orte', placeCount >= 40, `${placeCount} Orte im Weltausschnitt`);
+check('Karte verortet die Orte', placeCount >= 60, `${placeCount} Orte im Weltausschnitt`);
 // Auf der Gesamtkarte passen nur die weiträumigen Landschaften; die kleinen
 // um Israel herum erscheinen erst im engeren Ausschnitt.
 const regionCount = await page.locator('.map__region').count();
@@ -297,11 +297,9 @@ await page.screenshot({ path: `${OUT}/17-karte.png` });
 
 // Beschriftungen dürfen sich in keinem Ausschnitt überdecken – wer keinen
 // Platz findet, bleibt ein Punkt ohne Namen.
-const countOverlaps = () =>
-  page.evaluate(() => {
-    const boxes = [...document.querySelectorAll('.map__place text, .map__region text')].map((el) =>
-      el.getBoundingClientRect(),
-    );
+const countOverlaps = (selector) =>
+  page.evaluate((sel) => {
+    const boxes = [...document.querySelectorAll(sel)].map((el) => el.getBoundingClientRect());
     let n = 0;
     for (let i = 0; i < boxes.length; i++) {
       for (let j = i + 1; j < boxes.length; j++) {
@@ -311,7 +309,7 @@ const countOverlaps = () =>
       }
     }
     return n;
-  });
+  }, selector);
 
 const countClipped = () =>
   page.evaluate(() => {
@@ -324,13 +322,16 @@ const countClipped = () =>
 
 let worstOverlap = 0;
 let worstClipped = 0;
+let worstDots = 0;
 for (const ausschnitt of ['welt', 'israel', 'levante', 'aegaeis', 'mesopotamien', 'westen']) {
   await page.goto(BASE + '/studium/karte?ausschnitt=' + ausschnitt, { waitUntil: 'networkidle' });
   await page.waitForSelector('.map__svg');
-  worstOverlap = Math.max(worstOverlap, await countOverlaps());
+  worstOverlap = Math.max(worstOverlap, await countOverlaps('.map__place text, .map__region text'));
+  worstDots = Math.max(worstDots, await countOverlaps('.map__place circle'));
   worstClipped = Math.max(worstClipped, await countClipped());
 }
 check('Keine Beschriftung überdeckt eine andere', worstOverlap === 0, `${worstOverlap} Überdeckungen`);
+check('Kein Ortspunkt liegt auf einem anderen', worstDots === 0, `${worstDots} Überdeckungen`);
 check('Keine Beschriftung ragt aus der Karte', worstClipped === 0, `${worstClipped} abgeschnitten`);
 
 // Jeder Ausschnitt bleibt gleich hoch – sonst wird "Israel" ein 1700 Pixel
@@ -392,6 +393,56 @@ const merged = await page.locator('.map__stop text', { hasText: 'Antiochia' }).f
 check('Doppelt angefahrener Ort trägt beide Nummern', /1\.,\s*14\./.test(merged ?? ''), merged ?? '');
 check('Stationsliste zeigt alle 14 Schritte', (await page.locator('section .day').count()) === 14);
 await page.screenshot({ path: `${OUT}/18-karte-reise.png` });
+
+// Vergrößern, Ziehen und Zurücksetzen
+await page.goto(BASE + '/studium/karte?ausschnitt=israel&ort=jerusalem', { waitUntil: 'networkidle' });
+await page.waitForSelector('.map__svg');
+const viewBoxOf = () => page.locator('.map__svg').getAttribute('viewBox');
+const weitRaus = await viewBoxOf();
+for (let i = 0; i < 4; i++) await page.getByRole('button', { name: 'Vergrößern' }).click();
+await page.waitForTimeout(150);
+const nahDran = await viewBoxOf();
+check(
+  'Vergrößern verkleinert den Bildausschnitt',
+  Number(nahDran.split(' ')[2]) < Number(weitRaus.split(' ')[2]) / 4,
+  `${weitRaus} → ${nahDran}`,
+);
+
+// Beim Hineinzoomen tauchen die dicht beieinanderliegenden Orte auf.
+const dichteOrte = await page.evaluate(() =>
+  [...document.querySelectorAll('[data-ort]')].map((el) => el.dataset.ort),
+);
+check(
+  'Beim Vergrößern erscheinen die eng benachbarten Orte',
+  dichteOrte.includes('kidron') && dichteOrte.includes('betanien'),
+  dichteOrte.length + ' Orte',
+);
+
+const kasten = await page.locator('.map__svg').boundingBox();
+await page.mouse.move(kasten.x + kasten.width / 2, kasten.y + kasten.height / 2);
+await page.mouse.down();
+await page.mouse.move(kasten.x + kasten.width / 2 - 180, kasten.y + kasten.height / 2, { steps: 8 });
+await page.mouse.up();
+await page.waitForTimeout(150);
+check('Ziehen verschiebt die Karte', (await viewBoxOf()) !== nahDran);
+check('Ein Zug öffnet keinen Ort', (await page.locator('section .xref').count()) > 0);
+await page.getByRole('button', { name: 'Ansicht zurücksetzen' }).click();
+await page.waitForTimeout(150);
+check('Zurücksetzen stellt den Ausschnitt wieder her', (await viewBoxOf()) === weitRaus);
+check('Die Karte trägt einen Maßstab', /km/.test(await page.locator('.map__scale text').textContent()));
+await page.screenshot({ path: `${OUT}/17d-karte-zoom.png` });
+
+// Routen: Länge und Verknüpfung der Stationen mit den Orten
+await page.goto(BASE + '/studium/karte?reise=exil', { waitUntil: 'networkidle' });
+await page.waitForSelector('.map__route');
+const laenge = await page.locator('section .settings-row__hint').first().innerText();
+check('Route nennt Stationen und Wegstrecke', /\d+ km/.test(laenge), laenge.replace(/\n/g, ' '));
+await page.locator('section .day .chip').first().click();
+await page.waitForSelector('.lex-entry__term');
+check(
+  'Station führt zum Ort',
+  (await page.locator('.lex-entry__term').first().textContent()) === 'Jerusalem',
+);
 
 // 16. Merkverse
 await page.goto(BASE + '/bibel/joh/3?vers=16', { waitUntil: 'networkidle' });
