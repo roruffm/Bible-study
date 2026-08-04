@@ -255,10 +255,32 @@ await page.screenshot({ path: `${OUT}/21-sachwissen.png` });
 await page.goto(BASE + '/studium/zeitleiste', { waitUntil: 'networkidle' });
 const epochs = await page.locator('.axis__band').count();
 const events = await page.locator('.event').count();
-check('Zeitleiste zeigt Epochen und Ereignisse', epochs === 9 && events >= 35, `${epochs} Epochen, ${events} Ereignisse`);
+check('Zeitleiste zeigt Epochen und Ereignisse', epochs === 10 && events === 97, `${epochs} Epochen, ${events} Einträge`);
+
+// Vier Arten von Einträgen stehen nebeneinander und lassen sich trennen.
+await page.getByRole('button', { name: 'Entstehung' }).click();
+await page.waitForFunction(() => document.querySelectorAll('.event').length < 30);
+const textEvents = await page.locator('.event').count();
+const textLabels = await page.locator('.event__label').allTextContents();
+check('Entstehungszeiten lassen sich einzeln zeigen', textEvents === 17, `${textEvents} Einträge`);
+check(
+  'Darunter die Entstehung des Danielbuchs',
+  textLabels.some((l) => l.includes('Daniel')),
+  textLabels.find((l) => l.includes('Daniel'))?.slice(0, 60) ?? '',
+);
+await page.getByRole('button', { name: 'Fund' }).click();
+await page.waitForFunction(() => document.querySelectorAll('.event').length === 15);
+const fundLabels = await page.locator('.event__label').allTextContents();
+check(
+  'Außerbiblische Funde sind eigens ausgewiesen',
+  fundLabels.some((l) => l.includes('Tel-Dan')) && fundLabels.some((l) => l.includes('Gallio')),
+  `${fundLabels.length} Funde`,
+);
+await page.getByRole('button', { name: 'Alles' }).click();
+
 await page.locator('.axis__band').filter({ hasText: 'Babylonisches Exil' }).click();
-await page.waitForFunction(() => document.querySelectorAll('.event').length < 10);
-check('Epoche lässt sich filtern', (await page.locator('.event').count()) < 10, `${await page.locator('.event').count()} Ereignisse`);
+await page.waitForFunction(() => document.querySelectorAll('.event').length < 12);
+check('Epoche lässt sich filtern', (await page.locator('.event').count()) < 12, `${await page.locator('.event').count()} Einträge`);
 await page.screenshot({ path: `${OUT}/16-zeitleiste.png` });
 
 // 15. Karte

@@ -88,7 +88,7 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Volltextsuche** | Alle 31.102 Verse, Mehrwortsuche, Phrasensuche in `"…"`, Filter nach Testament und Buch, Treffer hervorgehoben |
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
 | **Lexikon** | 124 Einträge in sieben Kategorien – Personen, Orte, Begriffe, Maße & Geld, Ämter, Bräuche, Natur & Stoffe |
-| **Zeitleiste** | 9 Epochen und 39 Ereignisse auf maßstabsgetreuer Achse, mit Angabe zur Sicherheit jeder Datierung |
+| **Zeitleiste** | 10 Epochen und 97 Einträge auf maßstabsgetreuer Achse – biblische Ereignisse, Weltgeschichte, außerbiblische Funde und die Entstehung der Bücher, einzeln filterbar |
 | **Karte** | Die biblische Welt von Rom bis Mesopotamien, 24 Orte und die vier Reisen des Paulus |
 | **Merkverse** | Auswendiglernen mit wachsenden Abständen; je Stufe verschwinden mehr Wörter |
 | **Offline** | Service Worker; gelesene Kapitel bleiben gespeichert, auf Wunsch die ganze Bibel (≈ 4 MB) |
@@ -108,6 +108,12 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
   Emmaus, Kornelius, dem Abendmahl in Korinth und dem Brief nach Laodizea.
   Umstrittene Stellen wie Jesaja 7,14, „Du bist Petrus“, Römer 13 oder
   1. Timotheus 2 werden ausdrücklich als umstritten dargestellt.
+- **Zeitleiste mit 97 Einträgen in vier Kategorien**, die einander erst
+  verständlich machen: was die Bibel erzählt (33), was gleichzeitig anderswo
+  geschah (32), was sich außerhalb der Bibel nachweisen lässt (15) und wann
+  die Bücher selbst entstanden (17). So steht die Große Pyramide neben
+  Abraham, die Tel-Dan-Inschrift neben David und die Entstehung des
+  Danielbuchs 400 Jahre nach der Zeit, von der es erzählt.
 - **Zeitliche Einordnung zu jedem Artikel** – getrennt nach **Ereigniszeit**
   („wann spielt das?“) und **Entstehungszeit** („wann wurde es
   aufgeschrieben?“). Beides fällt regelmäßig weit auseinander: Der Feuerofen
@@ -249,7 +255,7 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (56 Prüfungen):
+abgeschalteter Verbindung (59 Prüfungen):
 
 ```bash
 npm install --no-save playwright

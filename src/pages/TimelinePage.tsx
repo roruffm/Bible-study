@@ -1,15 +1,25 @@
+import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { EPOCHS, TIMELINE, formatSpan, formatYear, type Certainty } from '../content/timeline';
+import {
+  EPOCHS,
+  KIND_HINT,
+  KIND_LABEL,
+  TIMELINE,
+  formatSpan,
+  formatYear,
+  type Certainty,
+  type EventKind,
+} from '../content/timeline';
 import { useBibleIndex } from '../hooks/useStore';
 
 /**
  * Zeitleiste. Oben eine maßstabsgetreue Achse, die zeigt, wie ungleich sich
- * die Epochen über die Jahrhunderte verteilen; darunter die Ereignisse nach
+ * die Epochen über die Jahrtausende verteilen; darunter die Ereignisse nach
  * Epochen gruppiert – das bleibt auch auf schmalen Bildschirmen lesbar.
+ *
+ * Filter und Epochenauswahl stehen in der Adresse, damit ein Artikel direkt
+ * auf seine Epoche verlinken kann und der Zustand teilbar bleibt.
  */
-
-const START = -1950;
-const END = 110;
 
 const CERTAINTY_LABEL: Record<Certainty, string> = {
   gesichert: 'gesichert',
@@ -17,25 +27,36 @@ const CERTAINTY_LABEL: Record<Certainty, string> = {
   umstritten: 'Datierung umstritten',
 };
 
+const KINDS: EventKind[] = ['biblisch', 'welt', 'fund', 'text'];
+
 export default function TimelinePage() {
   const { data: index } = useBibleIndex();
-
-  // Die Auswahl steht in der Adresse, damit ein Artikel direkt auf seine
-  // Epoche verlinken kann und der Zustand teilbar bleibt.
   const [searchParams, setSearchParams] = useSearchParams();
-  const epoch = searchParams.get('epoche');
 
-  function setEpoch(next: string | null) {
+  const epoch = searchParams.get('epoche');
+  const kind = searchParams.get('art') as EventKind | null;
+
+  // Die Achse umspannt genau das, was auch tatsächlich vorkommt.
+  const [start, end] = useMemo(() => {
+    const years = TIMELINE.flatMap((e) => [e.year, e.until ?? e.year]);
+    const epochYears = EPOCHS.flatMap((e) => [e.from, e.to]);
+    const all = [...years, ...epochYears];
+    return [Math.min(...all) - 60, Math.max(...all) + 60];
+  }, []);
+
+  function setParam(key: string, value: string | null) {
     const params = new URLSearchParams(searchParams);
-    if (next) params.set('epoche', next);
-    else params.delete('epoche');
+    if (value) params.set(key, value);
+    else params.delete(key);
     setSearchParams(params, { replace: true });
   }
 
-  const position = (year: number) => ((year - START) / (END - START)) * 100;
+  const position = (year: number) => ((year - start) / (end - start)) * 100;
   const nameOf = (bookId: string) => index?.books.find((b) => b.id === bookId)?.name ?? bookId;
 
-  const shown = epoch ? EPOCHS.filter((e) => e.id === epoch) : EPOCHS;
+  const shownEpochs = epoch ? EPOCHS.filter((e) => e.id === epoch) : EPOCHS;
+  const matchesKind = (eventKind: EventKind) => !kind || eventKind === kind;
+  const visible = TIMELINE.filter((e) => matchesKind(e.kind));
 
   return (
     <div>
@@ -45,31 +66,37 @@ export default function TimelinePage() {
 
       <h1 className="page-title">Zeitleiste</h1>
       <p className="page-lead">
-        Zwei Jahrtausende auf einen Blick. Je weiter man zurückgeht, desto unsicherer werden die
-        Daten – die Angabe an jedem Ereignis sagt, wie belastbar sie ist.
+        Über drei Jahrtausende auf einen Blick – und zwar vier Arten von Einträgen nebeneinander:
+        wovon die Bibel erzählt, was gleichzeitig anderswo geschah, was sich außerhalb der Bibel
+        nachweisen lässt und wann die Bücher selbst entstanden. Je weiter man zurückgeht, desto
+        unsicherer werden die Daten; die Angabe an jedem Eintrag sagt, wie belastbar sie ist.
       </p>
 
       {/* Maßstabsgetreue Achse */}
       <div className="axis" role="presentation">
-        {EPOCHS.map((item) => (
+        {EPOCHS.map((item, i) => (
           <button
             key={item.id}
             type="button"
+            // Auf drei Reihen versetzt: Bei echtem Maßstab sind kurze Epochen
+            // wie das Exil so schmal, dass ihre Beschriftung sonst mitten im
+            // Wort abgeschnitten würde. Versetzt darf sie über den Nachbarn
+            // hinausragen, ohne ihn zu überdecken.
+            data-row={i % 3}
             className={`axis__band${epoch === item.id ? ' axis__band--active' : ''}`}
             style={{
               left: `${position(item.from)}%`,
               width: `${position(item.to) - position(item.from)}%`,
             }}
-            onClick={() => setEpoch(epoch === item.id ? null : item.id)}
+            onClick={() => setParam('epoche', epoch === item.id ? null : item.id)}
             title={`${item.label}: ${formatYear(item.from)} bis ${formatYear(item.to)}`}
           >
             <span>{item.label}</span>
           </button>
         ))}
 
-        {[-1500, -1000, -500, 0].map((year) => {
+        {[-3000, -2000, -1000, 0].map((year) => {
           const left = position(year);
-          // Am rechten Rand die Beschriftung nach innen klappen.
           const inward = left > 80;
           return (
             <div
@@ -83,14 +110,47 @@ export default function TimelinePage() {
         })}
       </div>
 
-      {epoch && (
-        <button type="button" className="btn btn--sm" onClick={() => setEpoch(null)}>
-          Alle Epochen zeigen
+      <div className="search__filters">
+        <button
+          type="button"
+          className={`chip${!kind ? ' chip--active' : ''}`}
+          onClick={() => setParam('art', null)}
+        >
+          Alles
         </button>
+        {KINDS.map((value) => (
+          <button
+            key={value}
+            type="button"
+            className={`chip${kind === value ? ' chip--active' : ''}`}
+            onClick={() => setParam('art', value)}
+            title={KIND_HINT[value]}
+          >
+            {KIND_LABEL[value]}
+          </button>
+        ))}
+        {epoch && (
+          <button type="button" className="chip" onClick={() => setParam('epoche', null)}>
+            ✕ Alle Epochen
+          </button>
+        )}
+        <span className="settings-row__hint" style={{ alignSelf: 'center' }}>
+          {visible.length} Einträge
+        </span>
+      </div>
+
+      {kind && (
+        <div className="notice" style={{ marginBottom: '1.25rem' }}>
+          {KIND_HINT[kind]}
+        </div>
       )}
 
-      {shown.map((item) => {
-        const events = TIMELINE.filter((e) => e.epoch === item.id).sort((a, b) => a.year - b.year);
+      {shownEpochs.map((item) => {
+        const events = visible
+          .filter((e) => e.epoch === item.id)
+          .sort((a, b) => a.year - b.year);
+        if (events.length === 0) return null;
+
         return (
           <section key={item.id} style={{ marginTop: '2rem' }}>
             <div className="library__head">
@@ -110,6 +170,9 @@ export default function TimelinePage() {
                   <div className="event__body">
                     <div className="event__label">
                       {event.label}
+                      <span className={`chip chip--art-${event.kind}`}>
+                        {KIND_LABEL[event.kind]}
+                      </span>
                       <span className={`chip chip--certainty-${event.certainty}`}>
                         {CERTAINTY_LABEL[event.certainty]}
                       </span>

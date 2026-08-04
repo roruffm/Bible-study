@@ -1469,15 +1469,14 @@ button {
 
 .axis {
   position: relative;
-  height: 5.5rem;
+  height: 9.5rem;
   margin-bottom: 1.25rem;
   border-bottom: 2px solid var(--border-strong);
 }
 
 .axis__band {
   position: absolute;
-  top: 0;
-  height: 2.4rem;
+  height: 1.9rem;
   padding: 0 0.3rem;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
@@ -1485,11 +1484,34 @@ button {
   color: var(--text-muted);
   font-size: 0.7rem;
   font-weight: 650;
-  overflow: hidden;
   white-space: nowrap;
   text-align: left;
   display: flex;
   align-items: center;
+}
+
+/* Drei versetzte Reihen; die Beschriftung darf über den Rand hinausragen. */
+.axis__band[data-row='0'] {
+  top: 0;
+}
+
+.axis__band[data-row='1'] {
+  top: 2.1rem;
+}
+
+.axis__band[data-row='2'] {
+  top: 4.2rem;
+}
+
+.axis__band span {
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* Die aktive Epoche nach vorn holen, damit ihre Beschriftung obenauf liegt. */
+.axis__band--active,
+.axis__band:hover {
+  z-index: 2;
 }
 
 .axis__band:hover {
@@ -1506,7 +1528,7 @@ button {
 .axis__tick {
   position: absolute;
   bottom: 0;
-  height: 2.6rem;
+  height: 3rem;
   border-left: 1px solid var(--border-strong);
   padding-left: 0.3rem;
   font-size: 0.7rem;
@@ -1554,6 +1576,21 @@ button {
   font-weight: 600;
   margin-bottom: 0.15rem;
 }
+
+/* Art des Eintrags auf der Zeitleiste */
+.chip--art-biblisch { background: #e6edf3; border-color: #c3d5e4; color: #1c3f5e; }
+.chip--art-welt { background: #f2ece1; border-color: #ded0b8; color: #7a5230; }
+.chip--art-fund { background: #eae4f0; border-color: #d2c4de; color: #5f4a7a; }
+.chip--art-text { background: #e3efe8; border-color: #c1dcca; color: #35674a; }
+
+:root[data-theme='dunkel'] .chip--art-biblisch,
+:root[data-theme='dark'] .chip--art-biblisch { background: #1f2a35; border-color: #35485c; color: #9dc2e0; }
+:root[data-theme='dunkel'] .chip--art-welt,
+:root[data-theme='dark'] .chip--art-welt { background: #332a1e; border-color: #4f4131; color: #d4b98f; }
+:root[data-theme='dunkel'] .chip--art-fund,
+:root[data-theme='dark'] .chip--art-fund { background: #2b2436; border-color: #443a52; color: #bcaade; }
+:root[data-theme='dunkel'] .chip--art-text,
+:root[data-theme='dark'] .chip--art-text { background: #1e3229; border-color: #33513f; color: #9ecfb4; }
 
 .chip--certainty-gesichert { background: #dfeee6; border-color: #b9d9c8; color: #2f6b52; }
 .chip--certainty-ungefähr { background: var(--bg-sunken); }
