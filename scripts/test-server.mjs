@@ -125,7 +125,7 @@ await anfrage({ ...gueltig, max_tokens: 999_999 }, { 'x-api-key': WORT }).then((
 const gedeckelt = await (await fetch(`http://127.0.0.1:${ATTRAPPE}/letzte-anfrage`)).json();
 check(
   'Eine überzogene Ausgabelänge wird gedeckelt',
-  gedeckelt.max_tokens === 8192,
+  gedeckelt.max_tokens === 2048,
   `max_tokens: ${gedeckelt.max_tokens}`,
 );
 
@@ -236,6 +236,53 @@ check(
   'Ohne Proxy lässt sich die Grenze nicht mit erfundener Herkunft umgehen',
   erfunden === 429,
   `dritte Anfrage mit neuer erfundener IP: ${erfunden}`,
+);
+
+/* ------------------------------------- Tagesgrenze und Modellfreigabe */
+
+/*
+ * Die Stundengrenze je IP hilft gegen den Einzelnen, der es übertreibt – aber
+ * IP-Adressen sind billig. Erst die Tagesgrenze bindet den Schaden an eine
+ * Zahl, die man vorher kennt. Und wer den Server öffentlich stellt, will die
+ * Modellauswahl auf das günstigste beschränken können, ohne den Code zu ändern.
+ */
+const TAG_PORT = 8096;
+starte('server/entgegen-server.mjs', {
+  ANTHROPIC_API_KEY: SCHLUESSEL,
+  ENTGEGEN_UPSTREAM: `http://127.0.0.1:${ATTRAPPE}`,
+  ENTGEGEN_STATIC: 'aus',
+  ENTGEGEN_LIMIT: '0',
+  ENTGEGEN_TAGESLIMIT: '2',
+  ENTGEGEN_MODELLE: 'claude-haiku-4-5',
+  PORT: String(TAG_PORT),
+});
+await warteAuf(`http://127.0.0.1:${TAG_PORT}/gesund`);
+
+function tagAnfrage(modell) {
+  return fetch(`http://127.0.0.1:${TAG_PORT}/v1/messages`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ ...gueltig, model: modell }),
+  }).then((x) => {
+    x.body?.cancel();
+    return x.status;
+  });
+}
+
+const nurHaiku = await tagAnfrage('claude-opus-5');
+check(
+  'Die Modellfreigabe lässt sich über die Umgebung einengen',
+  nurHaiku === 400,
+  `Opus gegen eine Haiku-Freigabe: HTTP ${nurHaiku}`,
+);
+
+await tagAnfrage('claude-haiku-4-5');
+await tagAnfrage('claude-haiku-4-5');
+const ueberTag = await tagAnfrage('claude-haiku-4-5');
+check(
+  'Die Tagesgrenze greift auch ohne Stundengrenze',
+  ueberTag === 429,
+  `dritte Anfrage bei Tagesgrenze 2: HTTP ${ueberTag}`,
 );
 
 /* ------------------------------------------------------------- Schluss */

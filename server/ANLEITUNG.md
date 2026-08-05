@@ -450,6 +450,65 @@ Dann ein Kapitel aufschlagen, einen Vers antippen, Tab **Fragen** – und fragen
 
 ---
 
+## Rückfragen für alle freigeben – und was das kostet
+
+Standardmäßig braucht jede Person einen eigenen Schlüssel. Willst du die
+Rückfragen für alle Besucher öffnen, zahlst du deren Verbrauch. Dann gehören
+vier Grenzen in `/etc/entgegen.env`:
+
+```
+ENTGEGEN_MODELLE=claude-haiku-4-5
+ENTGEGEN_MAX_TOKENS=1024
+ENTGEGEN_TAGESLIMIT=300
+ENTGEGEN_LIMIT=20
+```
+
+Was das bewirkt: nur das günstigste Modell, höchstens 1024 Token je Antwort
+(zwei bis fünf Sätze, wie vorgesehen), höchstens 300 Fragen am Tag über alle
+Besucher zusammen und höchstens 20 je Stunde und Person.
+
+Der Server rechnet beim Start selbst vor, was das im schlimmsten Fall kostet:
+
+```bash
+journalctl -u entgegen -n 20
+```
+
+### Die Zahlen
+
+Eine Frage schickt rund 1.900 Token hin (Vers, Umgebung, Artikel, Auslegungen)
+und bekommt etwa 400 zurück.
+
+| Modell | je Frage | 100 Fragen/Tag | 1.000 Fragen/Tag |
+|---|---|---|---|
+| Opus 5 | ~1,9 ¢ | ~58 €/Monat | ~584 €/Monat |
+| Sonnet 5 | ~1,2 ¢ | ~35 €/Monat | ~350 €/Monat |
+| **Haiku 4.5** | **~0,4 ¢** | **~12 €/Monat** | ~117 €/Monat |
+
+Haiku ist also rund fünfmal günstiger als Opus. **Das allein ist aber kein
+Schutz.** Wer die Adresse kennt und ein Skript schreibt, kommt auch mit Haiku
+auf über 3.000 $ am Tag. Die Stundengrenze hilft gegen Einzelne, aber
+IP-Adressen sind billig.
+
+### Die einzige harte Grenze
+
+Alles oben begrenzt den Schaden, verhindert ihn aber nicht – es sind Zeilen in
+einem Programm, das ich geschrieben habe. **Die einzige Obergrenze, die auch
+dann noch hält, wenn hier etwas falsch ist, sitzt bei Anthropic:**
+
+1. Im [Anthropic-Konto](https://console.anthropic.com) einen **eigenen
+   Workspace** für diesen Server anlegen.
+2. Dort ein **Ausgabenlimit** setzen (Limits → Spend limit), etwa 20 € im Monat.
+3. Einen **Schlüssel nur für diesen Workspace** erzeugen und ihn in
+   `/etc/entgegen.env` eintragen.
+
+Damit ist der schlimmste Fall die Zahl, die du dort eingetragen hast. Ist sie
+erreicht, funktionieren die Rückfragen nicht mehr – der Rest der App läuft
+weiter, und wer einen eigenen Schlüssel hat, kann ihn eintragen.
+
+**Mach diesen Schritt zuerst, nicht zuletzt.**
+
+---
+
 ## Später: die App aktualisieren
 
 Wenn es eine neue Fassung gibt:

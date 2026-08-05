@@ -85,6 +85,17 @@ Frage, mehr nur, wenn die Frage mehr verlangt. Führ nicht aus, wonach nicht gef
 und wiederhole den Vers nicht, der ohnehin über dem Gespräch steht. Keine Überschriften
 bei kurzen Antworten; Aufzählungen nur, wenn wirklich mehrere Dinge nebeneinander stehen.`;
 
+/**
+ * Versteht dieses Modell `output_config.effort`?
+ *
+ * Der Schalter steuert, wie gründlich das Modell nachdenkt. Die Haiku-Reihe
+ * kennt ihn nicht und weist eine Anfrage, die ihn enthält, vollständig zurück –
+ * die Rückfragen blieben mit einem Modell in der Auswahl also schlicht kaputt.
+ */
+function kenntEffort(modell: string): boolean {
+  return !modell.startsWith('claude-haiku');
+}
+
 /** Antworten kommen Stück für Stück, damit das Lesen sofort beginnen kann. */
 export type OnDelta = (text: string) => void;
 
@@ -158,14 +169,19 @@ export async function askAboutVerse(options: AskOptions): Promise<void> {
     { role: 'user' as const, content: options.question },
   ];
 
+  const modell = settings.model || 'claude-opus-5';
+
   try {
     const stream = client.messages.stream(
       {
-        model: settings.model || 'claude-opus-5',
+        model: modell,
         max_tokens: 4096,
         // Mittlere Stufe: Auslegungsfragen sind selten trivial, aber in einem
         // Gespräch am Vers zählt auch, dass die Antwort bald da ist.
-        output_config: { effort: 'medium' },
+        //
+        // Nicht bei jedem Modell: Die Haiku-Reihe kennt den Schalter nicht und
+        // lehnt die ganze Anfrage ab, wenn er mitkommt.
+        ...(kenntEffort(modell) ? { output_config: { effort: 'medium' as const } } : {}),
         system,
         messages,
       },

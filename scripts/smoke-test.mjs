@@ -704,6 +704,38 @@ if (!attrappeDa) {
     (gesendet.system ?? []).filter((b) => b.cache_control).length === 2,
   );
 
+  /*
+   * Nicht jedes Modell versteht `output_config.effort`: Die Haiku-Reihe kennt
+   * den Schalter nicht und weist eine Anfrage, die ihn enthält, vollständig
+   * zurück. Mit Haiku in der Auswahl wären die Rückfragen sonst schlicht
+   * kaputt – und zwar nur bei diesem einen Modell, also leicht zu übersehen.
+   */
+  for (const [modell, erwartetEffort] of [
+    ['claude-opus-5', true],
+    ['claude-haiku-4-5', false],
+  ]) {
+    await page.evaluate(
+      ([url, m]) =>
+        localStorage.setItem(
+          'entgegen.chat',
+          JSON.stringify({ mode: 'proxy', proxyUrl: url, apiKey: '', model: m }),
+        ),
+      [FAKE, modell],
+    );
+    await page.reload({ waitUntil: 'networkidle' });
+    await page.getByRole('tab', { name: /Fragen/ }).click();
+    await page.fill('.chat__input', 'Probe');
+    await page.getByRole('button', { name: 'Fragen' }).click();
+    await page.waitForSelector('.chat__compose .btn--primary', { timeout: 20_000 });
+
+    const gesendet = await (await fetch(`${FAKE}/letzte-anfrage`)).json();
+    const hatEffort = gesendet.output_config?.effort !== undefined;
+    check(
+      `${modell}: Effort wird ${erwartetEffort ? 'mitgeschickt' : 'weggelassen'}`,
+      gesendet.model === modell && hatEffort === erwartetEffort,
+    );
+  }
+
   // Ein Fehler des Dienstes muss als Satz ankommen, nicht als Rohtext. Die
   // Ablehnung erzeugt zwangsläufig eine Konsolenmeldung des Browsers; sie wird
   // unten wieder herausgenommen, damit sie die Prüfung auf Konsolenfehler nicht

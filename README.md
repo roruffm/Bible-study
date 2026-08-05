@@ -402,11 +402,19 @@ docker run -p 8080:8080 \
 | `ENTGEGEN_LIMIT` | `60` | Anfragen je Stunde und IP; `0` schaltet die Grenze ab |
 | `ENTGEGEN_HOST` | `0.0.0.0` | Hinter Caddy oder nginx auf `127.0.0.1` setzen, damit der Server nicht zusätzlich direkt erreichbar ist |
 | `ENTGEGEN_PROXY` | – | Auf `1` setzen, wenn ein Reverse Proxy davorsteht. **Sonst zählt die Stundengrenze alle Besucher als einen**, weil aus Sicht des Servers alles vom Proxy kommt |
+| `ENTGEGEN_MODELLE` | alle drei | Freigegebene Modelle, mit Komma getrennt. Für einen öffentlichen Server ist `claude-haiku-4-5` die naheliegende Wahl – rund ein Fünftel der Kosten von Opus |
+| `ENTGEGEN_MAX_TOKENS` | `2048` | Obergrenze der Antwortlänge |
+| `ENTGEGEN_TAGESLIMIT` | `500` | Anfragen je Tag über **alle** Besucher zusammen; `0` schaltet sie ab. Die Stundengrenze hilft gegen Einzelne, aber IP-Adressen sind billig – erst diese Grenze bindet den Schaden an eine Zahl, die man vorher kennt |
 
-Fest eingebaut: nur `claude-opus-5`, `claude-sonnet-5` und `claude-haiku-4-5`
-sind freigegeben, `max_tokens` wird bei 8.192 gedeckelt und der Anfragekörper
-bei 512 KB. Alles, was der Browser schickt, wird am Ende dem Serverbetreiber in
-Rechnung gestellt – nicht dem Absender.
+Der Anfragekörper ist zusätzlich bei 512 KB gedeckelt. Alles, was der Browser
+schickt, wird am Ende dem Serverbetreiber in Rechnung gestellt – nicht dem
+Absender.
+
+Beim Start rechnet der Server vor, was seine Einstellungen im schlimmsten Fall
+am Tag kosten können. **Diese Grenzen begrenzen den Schaden, sie verhindern ihn
+nicht** – die einzige harte Obergrenze ist ein Ausgabenlimit im Anthropic-Konto;
+die Einrichtung steht in [`server/ANLEITUNG.md`](server/ANLEITUNG.md) unter
+„Rückfragen für alle freigeben“.
 
 #### Die App bleibt auf GitHub Pages
 
@@ -435,7 +443,7 @@ node server/entgegen-server.mjs
 
 ```bash
 npm run build
-node scripts/test-server.mjs      # 15 Prüfungen
+node scripts/test-server.mjs      # 17 Prüfungen
 ```
 
 Geprüft wird, was teuer wird, wenn es fehlt: ob jemand ohne Zugangswort
@@ -528,7 +536,7 @@ Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
 Themenwechsel, mobile Ansicht, die Markenbilder, die Rückfragen am Vers, den
 Umzug der Speicherdaten aus der Zeit vor der Umbenennung und den echten
-Offline-Betrieb mit abgeschalteter Verbindung (106 Prüfungen):
+Offline-Betrieb mit abgeschalteter Verbindung (108 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -542,7 +550,7 @@ Der eigene Server hat eine eigene Prüfkette – er trägt den Schlüssel und st
 im Netz, also zielt sie auf das, was teuer wird, wenn es fehlt:
 
 ```bash
-npm run test:server          # 15 Prüfungen, startet Attrappe und Server selbst
+npm run test:server          # 17 Prüfungen, startet Attrappe und Server selbst
 ```
 
 Die redaktionellen Inhalte enthalten mehrere hundert Stellenangaben. Ein

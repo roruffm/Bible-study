@@ -43,6 +43,22 @@
  *                       Nur dann wird X-Forwarded-For ausgewertet – sonst
  *                       zählt die Stundengrenze alle Besucher als einen,
  *                       weil aus Sicht des Servers alles vom Proxy kommt.
+ *   ENTGEGEN_MODELLE    Freigegebene Modelle, mit Komma getrennt. Standard
+ *                       alle drei. Für einen öffentlichen Server ist
+ *                       "claude-haiku-4-5" die naheliegende Wahl: rund ein
+ *                       Fünftel der Kosten von Opus.
+ *   ENTGEGEN_MAX_TOKENS Obergrenze der Antwortlänge. Standard 2048 – die
+ *                       Antworten sollen laut Systemanweisung zwei bis fünf
+ *                       Sätze lang sein, nicht Seiten.
+ *   ENTGEGEN_TAGESLIMIT Anfragen je Tag über alle Besucher zusammen.
+ *                       Standard 500, 0 = aus. Das ist die Grenze, die auch
+ *                       dann noch greift, wenn jemand mit wechselnden
+ *                       IP-Adressen anfragt.
+ *
+ * Zum Geld: Diese drei Grenzen begrenzen den Schaden, sie verhindern ihn
+ * nicht. Die einzige harte Obergrenze ist ein **Ausgabenlimit im
+ * Anthropic-Konto**; siehe server/ANLEITUNG.md. Der Server rechnet beim Start
+ * vor, was seine Einstellungen im schlimmsten Fall am Tag kosten können.
  */
 
 import { createServer } from 'node:http';
@@ -58,6 +74,7 @@ const HERKUNFT = process.env.ENTGEGEN_HERKUNFT ?? '*';
 const LIMIT = Number(process.env.ENTGEGEN_LIMIT ?? 60);
 const HOST = process.env.ENTGEGEN_HOST ?? '0.0.0.0';
 const HINTER_PROXY = process.env.ENTGEGEN_PROXY === '1';
+const TAGESLIMIT = Number(process.env.ENTGEGEN_TAGESLIMIT ?? 500);
 
 const UPSTREAM = process.env.ENTGEGEN_UPSTREAM ?? 'https://api.anthropic.com';
 
@@ -67,20 +84,49 @@ if (!SCHLUESSEL) {
 }
 
 /*
- * Zwei Grenzen gegen versehentliche und absichtliche Kostenexplosionen. Der
- * Browser schickt den Anfragekörper, und alles, was von dort kommt, ist am
- * Ende die Abrechnung des Serverbetreibers – nicht die des Absenders.
+ * Grenzen gegen versehentliche und absichtliche Kostenexplosionen. Der Browser
+ * schickt den Anfragekörper, und alles, was von dort kommt, ist am Ende die
+ * Abrechnung des Serverbetreibers – nicht die des Absenders.
  */
-const MODELLE = new Set([
-  'claude-opus-5',
-  'claude-sonnet-5',
-  'claude-haiku-4-5',
-]);
-const MAX_TOKENS = 8192;
+const MODELLE = new Set(
+  (process.env.ENTGEGEN_MODELLE ?? 'claude-opus-5,claude-sonnet-5,claude-haiku-4-5')
+    .split(',')
+    .map((m) => m.trim())
+    .filter(Boolean),
+);
+const MAX_TOKENS = Number(process.env.ENTGEGEN_MAX_TOKENS ?? 2048);
+
+/**
+ * Listenpreise in Dollar je Million Token, Stand August 2026.
+ *
+ * Sie stehen hier nur, damit der Server beim Start vorrechnen kann, was seine
+ * eigenen Einstellungen im schlimmsten Fall kosten. Maßgeblich ist immer die
+ * Abrechnung im Anthropic-Konto, nicht diese Tabelle.
+ */
+const PREISE = {
+  'claude-opus-5': [5, 25],
+  'claude-sonnet-5': [3, 15],
+  'claude-haiku-4-5': [1, 5],
+};
+
+/** Grob geschätzte Eingabegröße einer Frage: Kontext der Stelle plus Anweisungen. */
+const EINGABE_TOKEN = 1900;
 
 /** Anfragen je IP in der laufenden Stunde. */
 const zaehler = new Map();
 setInterval(() => zaehler.clear(), 3600_000).unref();
+
+/*
+ * Anfragen des laufenden Tages über alle Besucher zusammen.
+ *
+ * Die Stundengrenze je IP hilft gegen den Einzelnen, der es übertreibt – aber
+ * IP-Adressen sind billig. Wer wirklich will, fragt von hundert verschiedenen.
+ * Erst diese Grenze bindet den Schaden an eine Zahl, die man vorher kennt.
+ */
+let heute = 0;
+setInterval(() => {
+  heute = 0;
+}, 86_400_000).unref();
 
 /**
  * Wer fragt hier eigentlich?
@@ -151,6 +197,17 @@ async function weiterreichen(req, res) {
     res.setHeader('Retry-After', '3600');
     return fehler(res, 429, `Mehr als ${LIMIT} Anfragen in dieser Stunde.`);
   }
+
+  if (TAGESLIMIT && heute >= TAGESLIMIT) {
+    res.setHeader('Retry-After', '3600');
+    return fehler(
+      res,
+      429,
+      'Das Tageskontingent dieses Servers ist aufgebraucht. Morgen wieder – oder ' +
+        'trag unter „Ich“ deinen eigenen Schlüssel ein.',
+    );
+  }
+  heute++;
 
   let koerper = '';
   for await (const stueck of req) {
@@ -300,8 +357,45 @@ server.listen(PORT, HOST, () => {
   console.log(`  Grenze       : ${LIMIT ? `${LIMIT} Anfragen/Stunde/IP` : 'keine'}`);
   console.log(`  Hinter Proxy : ${HINTER_PROXY ? 'ja, X-Forwarded-For wird gelesen' : 'nein'}`);
   console.log(`  Modelle      : ${[...MODELLE].join(', ')}`);
+  console.log(`  Antwortlänge : höchstens ${MAX_TOKENS} Token`);
+  console.log(`  Tagesgrenze  : ${TAGESLIMIT ? `${TAGESLIMIT} Anfragen` : 'KEINE'}`);
+  console.log(`\n  ${schlimmsterFall()}`);
+
   if (!PASSWORT) {
     console.log('\n  Achtung: Ohne ENTGEGEN_PASSWORT kann jeder, der die Adresse kennt,');
     console.log('  auf deine Rechnung Anfragen stellen.');
   }
 });
+
+/**
+ * Was können die eingestellten Grenzen im schlimmsten Fall kosten?
+ *
+ * Eine Zahl beim Start ist mehr wert als ein Absatz in der Anleitung: Sie
+ * zwingt zu der Frage, ob man diesen Betrag im Ernstfall zahlen möchte. Ohne
+ * Tagesgrenze gibt es keine Zahl – und genau das soll dann dastehen.
+ */
+function schlimmsterFall() {
+  const teuerstes = [...MODELLE]
+    .filter((m) => PREISE[m])
+    .sort((a, b) => PREISE[b][1] - PREISE[a][1])[0];
+
+  if (!teuerstes) return 'Kosten: unbekanntes Modell, keine Schätzung möglich.';
+  if (!TAGESLIMIT) {
+    return (
+      'Kosten: ohne Tagesgrenze nach oben offen. Setz ENTGEGEN_TAGESLIMIT und\n' +
+      '  zusätzlich ein Ausgabenlimit im Anthropic-Konto.'
+    );
+  }
+
+  const [ein, aus] = PREISE[teuerstes];
+  const jeAnfrage = (EINGABE_TOKEN / 1e6) * ein + (MAX_TOKENS / 1e6) * aus;
+  const proTag = jeAnfrage * TAGESLIMIT;
+
+  return (
+    `Kosten im schlimmsten Fall: rund ${proTag.toFixed(2)} $ am Tag ` +
+    `(${(proTag * 30).toFixed(0)} $ im Monat),\n` +
+    `  wenn die Tagesgrenze mit ${teuerstes} und voller Antwortlänge ` +
+    `ausgeschöpft wird.\n` +
+    '  Das ist eine Schätzung. Die harte Grenze ist das Ausgabenlimit im Anthropic-Konto.'
+  );
+}
