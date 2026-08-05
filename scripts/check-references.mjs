@@ -450,6 +450,42 @@ for (const entry of COMMENTARY) {
   }
 }
 
+/*
+ * Kein Absatz darf wiederholen, was ein anderer im selben Artikel schon sagt.
+ *
+ * Beim Nachtragen von Absätzen ist genau das passiert: Wer den bestehenden
+ * Text nicht daneben legt, schreibt ihn ein zweites Mal. Für den Leser sieht
+ * das aus wie ein Fehler in der App, und es ist auch einer. Verglichen werden
+ * Ketten von acht Wörtern – kürzere Übereinstimmungen sind bei einem Thema
+ * unvermeidlich, längere sind es nicht.
+ */
+{
+  const KETTE = 8;
+  const ketten = (text) => {
+    const w = loose(text).split(' ').filter(Boolean);
+    const out = new Set();
+    for (let i = 0; i + KETTE <= w.length; i++) out.add(w.slice(i, i + KETTE).join(' '));
+    return out;
+  };
+  for (const entry of COMMENTARY) {
+    const teile = [
+      entry.historicalShort,
+      ...(entry.historicalLong ?? '').split(/\n\s*\n/),
+      ...(entry.reception ?? '').split(/\n\s*\n/),
+    ].filter((t) => t && t.trim());
+    for (let a = 0; a < teile.length; a++) {
+      for (let b = a + 1; b < teile.length; b++) {
+        const gemeinsam = [...ketten(teile[a])].filter((k) => ketten(teile[b]).has(k));
+        if (gemeinsam.length > 0) {
+          problems.push(
+            `Artikel "${entry.title}": zwei Absätze sagen dasselbe – „…${gemeinsam[0]}…“`,
+          );
+        }
+      }
+    }
+  }
+}
+
 // Jedes Buch braucht Standardliteratur – sie ist der Rückfall für alle
 // Artikel, die nichts Eigenes nennen, und für Verse ganz ohne Artikel.
 const { BOOK_PROFILES } = await loadContent('bookProfiles');

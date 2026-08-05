@@ -149,10 +149,19 @@ for (const entry of [...entries].reverse()) {
   }
   if (nach.length) lines.splice(longLine + 2, 0, ...nach);
 
-  /* --- weiterer Absatz im ausführlichen Teil --- */
-  if (patch.longAdd) {
+  /* --- Absätze im ausführlichen Teil --- */
+  if (patch.longAdd || patch.longPara) {
     const alt = unlit(wert.slice(7, -2)); // führendes ' und abschließendes ',
-    lines[longLine + 1] = `      ${lit(`${alt}\n\n${patch.longAdd}`)},`;
+    const absaetze = alt.split('\n\n');
+    if (patch.longAdd) absaetze.push(patch.longAdd);
+    // Einen bestimmten Absatz ersetzen, gezählt ab 1. Gebraucht, wenn ein
+    // nachgetragener Absatz doch wiederholt, was schon oben steht.
+    for (const [nr, text] of Object.entries(patch.longPara ?? {})) {
+      const i = Number(nr) - 1;
+      if (!absaetze[i]) throw new Error(`${entry.key}: Absatz ${nr} gibt es nicht`);
+      absaetze[i] = text;
+    }
+    lines[longLine + 1] = `      ${lit(absaetze.join('\n\n'))},`;
     stats.long++;
   }
 }
