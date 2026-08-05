@@ -1,7 +1,7 @@
 /**
  * Baut die App zu **einer einzigen HTML-Datei** zusammen.
  *
- * Ergebnis: `dist-single/lumina.html` – enthält Skript, Stile und den
+ * Ergebnis: `dist-single/entgegen.html` – enthält Skript, Stile und den
  * vollständigen Bibeltext. Die Datei läuft per Doppelklick im Browser, ohne
  * Server und ohne Netzverbindung, und lässt sich so auch verschicken.
  *
@@ -82,22 +82,47 @@ html = html.replace(/<link[^>]*rel="stylesheet"[^>]*href="([^"]+)"[^>]*>/g, (mat
   }
 });
 
-// Manifest und Icon zeigen ins Leere, sobald die Datei allein steht.
+// Manifest, Startbildschirm-Icon und Vorschaubild zeigen ins Leere, sobald
+// die Datei allein steht – es gibt kein public/ mehr neben ihr.
 html = html.replace(/<link[^>]*rel="manifest"[^>]*>/g, '');
+html = html.replace(/<link[^>]*rel="apple-touch-icon"[^>]*>/g, '');
+html = html.replace(/<meta[^>]*property="og:image"[^>]*>/g, '');
+// Von den beiden Favicon-Größen bleibt eine übrig, eingebettet als Daten-URI.
+let iconGesetzt = false;
 html = html.replace(/<link[^>]*rel="icon"[^>]*>/g, () => {
-  const svg = readFileSync(join(ROOT, 'public', 'favicon.svg'), 'utf8');
-  const dataUri = `data:image/svg+xml;base64,${Buffer.from(svg, 'utf8').toString('base64')}`;
-  return `<link rel="icon" type="image/svg+xml" href="${dataUri}">`;
+  if (iconGesetzt) return '';
+  iconGesetzt = true;
+  const png = readFileSync(join(ROOT, 'public', 'favicon-48.png')).toString('base64');
+  return `<link rel="icon" type="image/png" href="data:image/png;base64,${png}">`;
 });
+
+/*
+ * Icon und Schriftzug erscheinen in der laufenden App, nicht im Markup – die
+ * Prüfung am Ende dieses Skripts würde sie also übersehen, und in der
+ * verschickten Datei blieben zwei leere Kästchen. Deshalb wandern sie als
+ * Daten-URIs mit; `src/lib/brand.ts` greift sie dort ab. Zusammen rund 65 KB
+ * in einer Datei von mehreren Megabyte.
+ */
+const brand = Object.fromEntries(
+  [
+    ['icon', 'icon-192.png'],
+    ['schriftzug', 'schriftzug.png'],
+    ['schriftzug-dunkel', 'schriftzug-dunkel.png'],
+  ].map(([key, file]) => [
+    key,
+    `data:image/png;base64,${readFileSync(join(ROOT, 'public', file)).toString('base64')}`,
+  ]),
+);
 
 // Die Nutzlast muss vor dem App-Skript stehen.
 html = html.replace(
   '</head>',
-  `<script>window.__LUMINA_PAYLOAD__=${JSON.stringify(payload)};</script>\n</head>`,
+  `<script>window.__ENTGEGEN_PAYLOAD__=${JSON.stringify(payload)};` +
+    `window.__ENTGEGEN_BRAND__=${JSON.stringify(brand)};</script>\n</head>`,
 );
 
 mkdirSync(OUT_DIR, { recursive: true });
-const outFile = join(OUT_DIR, 'lumina.html');
+const outFile = join(OUT_DIR, 'entgegen.html');
 writeFileSync(outFile, html);
 
 console.log(`\nFertig: ${outFile}`);
@@ -114,7 +139,7 @@ const body = html.match(/<body>([\s\S]*?)<\/body>/)?.[1] ?? '';
 // Aus dem Kopf übernehmen wir, was auch im Rumpf wirkt.
 const keep = [...head.matchAll(/<(title|style|script)\b[\s\S]*?<\/\1>/g)].map((m) => m[0]);
 
-const fragmentFile = join(OUT_DIR, 'lumina-fragment.html');
+const fragmentFile = join(OUT_DIR, 'entgegen-fragment.html');
 writeFileSync(fragmentFile, `${keep.join('\n')}\n${body.trim()}\n`);
 
 console.log(`Fragment: ${fragmentFile}`);

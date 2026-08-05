@@ -32,7 +32,7 @@ const books = new Map(index.books.map((b) => [b.id, b]));
  * Lädt ein Inhaltsmodul. Es wird gebündelt statt nur übersetzt, damit auch
  * Module mit eigenen Importen (etwa lexicon → realia) auflösbar bleiben.
  */
-const temp = mkdtempSync(join(tmpdir(), 'lumina-check-'));
+const temp = mkdtempSync(join(tmpdir(), 'entgegen-check-'));
 async function loadContent(name) {
   const file = join(temp, `${name}.mjs`);
   buildSync({

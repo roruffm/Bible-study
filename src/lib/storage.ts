@@ -13,7 +13,39 @@ import { refKey } from './bibleData';
  * endlos neu.
  */
 
-const PREFIX = 'lumina.';
+const PREFIX = 'entgegen.';
+
+/**
+ * Die App hieß bis August 2026 anders. Der Speicherschlüssel hing am alten
+ * Namen, und ein bloßes Umbenennen hätte jedem, der die App schon benutzt,
+ * Notizen, Markierungen, Merkverse und Lesefortschritt unter den Händen
+ * weggenommen – die Daten lägen noch da, aber unter einem Schlüssel, den
+ * niemand mehr liest.
+ *
+ * Deshalb wird beim ersten Start einmalig umgezogen. Die alten Einträge
+ * bleiben liegen: Wer eine ältere Fassung der App offline installiert hat,
+ * findet dort weiterhin seinen Stand vor.
+ */
+const ALTER_PREFIX = 'lumina.';
+
+function umziehen(): void {
+  try {
+    if (localStorage.getItem(PREFIX + 'umgezogen')) return;
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key?.startsWith(ALTER_PREFIX)) continue;
+      const neu = PREFIX + key.slice(ALTER_PREFIX.length);
+      if (localStorage.getItem(neu) === null) {
+        localStorage.setItem(neu, localStorage.getItem(key) as string);
+      }
+    }
+    localStorage.setItem(PREFIX + 'umgezogen', '1');
+  } catch {
+    // Privater Modus oder kein Speicherplatz – die App läuft trotzdem.
+  }
+}
+
+if (typeof localStorage !== 'undefined') umziehen();
 
 const listeners = new Set<() => void>();
 

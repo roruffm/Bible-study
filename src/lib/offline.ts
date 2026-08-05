@@ -9,7 +9,7 @@ import { loadIndex, TRANSLATION } from './bibleData';
  * funktioniert die App ohne Netzverbindung vollständig.
  */
 
-const CACHE_NAME = 'lumina-bibeltext';
+const CACHE_NAME = 'entgegen-bibeltext';
 
 export function isOfflineSupported(): boolean {
   return typeof navigator !== 'undefined' && 'serviceWorker' in navigator && 'caches' in window;

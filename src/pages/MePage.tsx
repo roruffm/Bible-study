@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useBibleIndex, usePersisted } from '../hooks/useStore';
 import { isSingleFile } from '../lib/bibleData';
+import { brandAsset } from '../lib/brand';
 import {
   clearOfflineData,
   downloadAll,
@@ -287,6 +288,29 @@ export default function MePage() {
               <span className="settings-row__label">Textgrundlage</span>
               <strong>{TRANSLATION_LABEL}</strong>
             </div>
+          </div>
+
+          <div className="card about">
+            {/* Zwei Fassungen des Schriftzugs, eine je Erscheinungsbild. Das
+                Teal des Logos ist auf dunklem Grund zu dunkel zum Lesen; die
+                aufgehellte Fassung entsteht in scripts/build-brand.py. */}
+            <img
+              className="about__logo about__logo--hell"
+              src={brandAsset('schriftzug')}
+              alt="Entgegen – Bibelstudium"
+            />
+            <img
+              className="about__logo about__logo--dunkel"
+              src={brandAsset('schriftzug-dunkel')}
+              alt=""
+              aria-hidden="true"
+            />
+            <p className="about__text">
+              Der Name ist Programm: Die Bibel kommt einem entgegen, wenn man weiß, woher sie
+              kommt. Deshalb steht zu jeder Stelle, wann sie spielt, wann sie aufgeschrieben wurde
+              und wie sie in verschiedenen Traditionen gelesen wird – nebeneinander, ohne dass eine
+              Auslegung zur richtigen erklärt würde.
+            </p>
           </div>
         </div>
       </div>

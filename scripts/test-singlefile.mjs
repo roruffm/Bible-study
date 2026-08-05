@@ -11,10 +11,10 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const FILE = join(ROOT, 'dist-single', 'lumina.html');
+const FILE = join(ROOT, 'dist-single', 'entgegen.html');
 
 if (!existsSync(FILE)) {
-  console.error('dist-single/lumina.html fehlt – zuerst "npm run build:single" ausführen.');
+  console.error('dist-single/entgegen.html fehlt – zuerst "npm run build:single" ausführen.');
   process.exit(1);
 }
 
@@ -77,6 +77,26 @@ check('Karte wird auch als Einzeldatei gezeichnet', (await page.locator('.map__p
 await page.goto('file://' + FILE + '#/lexikon', { waitUntil: 'load' });
 await page.waitForSelector('.lex-entry__term');
 check('Lexikon ist enthalten', (await page.locator('.lex-entry__term').count()) >= 120);
+
+/*
+ * Icon und Schriftzug stehen nicht im Markup, sondern werden erst zur Laufzeit
+ * gesetzt. Die Prüfung „keine Anfrage nach außen“ übersieht sie deshalb: Ein
+ * kaputter Pfad ergäbe hier keinen Fehler, sondern nur ein leeres Kästchen.
+ * Gemessen wird daher am geladenen Bild selbst.
+ */
+await page.goto('file://' + FILE + '#/ich', { waitUntil: 'load' });
+await page.waitForSelector('.about__logo');
+const bilder = await page.evaluate(() =>
+  [...document.querySelectorAll('.brand__mark, .about__logo')].map((img) => ({
+    eingebettet: img.getAttribute('src')?.startsWith('data:image/png') ?? false,
+    geladen: img.naturalWidth > 0,
+  })),
+);
+check(
+  'Icon und Schriftzug stecken in der Datei',
+  bilder.length === 3 && bilder.every((b) => b.eingebettet && b.geladen),
+  `${bilder.filter((b) => b.geladen).length} von ${bilder.length} geladen`,
+);
 
 check('Keine Anfrage nach außen', externalRequests.length === 0, externalRequests.slice(0, 3).join(', '));
 check('Keine Konsolenfehler', errors.length === 0, errors.slice(0, 2).join(' | '));

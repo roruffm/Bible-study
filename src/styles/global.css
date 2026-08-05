@@ -30,8 +30,9 @@
   --text-muted: #6a6055;
   --text-faint: #8d8375;
 
-  --accent: #1c3f5e;
-  --accent-soft: #e6edf3;
+  /* Das Teal des Logos – dieselbe Farbe wie der Rahmen des App-Icons. */
+  --accent: #164c58;
+  --accent-soft: #e2eded;
   --accent-text: #ffffff;
 
   --verse-number: #a8977c;
@@ -87,8 +88,9 @@
   --text-muted: #9aa1ab;
   --text-faint: #79808a;
 
-  --accent: #82b4dd;
-  --accent-soft: #1f2a35;
+  /* Aufgehelltes Teal – dieselbe Verschiebung wie beim Schriftzug. */
+  --accent: #7fbccb;
+  --accent-soft: #1b2b30;
   --accent-text: #0f1216;
 
   --verse-number: #6f7883;
@@ -226,12 +228,15 @@ button {
   width: 26px;
   height: 26px;
   border-radius: 7px;
-  background: var(--accent);
-  color: var(--accent-text);
-  display: grid;
-  place-items: center;
-  font-size: 0.85rem;
-  font-weight: 700;
+  flex-shrink: 0;
+  /* Das Zeichen bringt sein eigenes weißes Feld mit; im dunklen
+     Erscheinungsbild bekommt es einen leisen Rand, damit es nicht
+     ausgeschnitten aussieht. */
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 8%);
+}
+
+[data-theme='dunkel'] .brand__mark {
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 14%);
 }
 
 .brand__sub {
@@ -2029,4 +2034,37 @@ mark {
     align-items: flex-start;
     gap: 0.4rem;
   }
+}
+
+/* Über die App: der Schriftzug in der Fassung des jeweiligen Erscheinungsbilds */
+
+.about {
+  padding: 1.4rem 1.1rem 1.1rem;
+  text-align: center;
+}
+
+.about__logo {
+  width: min(280px, 80%);
+  height: auto;
+  margin: 0 auto 0.9rem;
+}
+
+.about__logo--dunkel {
+  display: none;
+}
+
+[data-theme='dunkel'] .about__logo--hell {
+  display: none;
+}
+
+[data-theme='dunkel'] .about__logo--dunkel {
+  display: block;
+}
+
+.about__text {
+  margin: 0;
+  color: var(--text-faint);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  text-align: left;
 }

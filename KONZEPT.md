@@ -1,4 +1,4 @@
-# Konzept: Interaktive Bibelstudium-Anwendung „Lumina" (Arbeitstitel)
+# Konzept: Interaktive Bibelstudium-Anwendung „Entgegen"
 
 > Eine moderne, interaktive Anwendung zum Studium der Bibel in der Übersetzung
 > **Hoffnung für Alle (HFA)** – mit historischem Kontext, Auslegungshilfen und
@@ -13,7 +13,7 @@ bedeutete ein Text damals? Wie wird er heute ausgelegt? Wie hängen die Bücher
 zusammen? Bestehende Bibel-Apps bieten meist entweder nur den reinen Text oder
 überfrachten den Nutzer mit theologischem Fachmaterial.
 
-**Lumina** schließt diese Lücke:
+**Entgegen** schließt diese Lücke:
 
 - **Vollständiger Bibeltext** – alle 66 Bücher der Hoffnung für Alle, jeder
   Vers einzeln auswählbar und abrufbar.
@@ -298,7 +298,7 @@ Sitzung), Feedback-Bewertungen der Artikel.
 
 ## 8. Zusammenfassung
 
-Lumina verbindet den **vollständigen, leicht verständlichen HFA-Bibeltext**
+Entgegen verbindet den **vollständigen, leicht verständlichen HFA-Bibeltext**
 mit **Kontextwissen auf Abruf** und **persönlichen Studienwerkzeugen** – in
 einer ruhigen, buchähnlichen Oberfläche, die den Text ins Zentrum stellt.
 Der größte Mehrwert entsteht durch die Kombination: lesen, verstehen

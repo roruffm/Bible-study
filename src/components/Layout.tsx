@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import QuickJump from './QuickJump';
 import { useBibleIndex } from '../hooks/useStore';
+import { brandAsset } from '../lib/brand';
 
 const NAV = [
   { to: '/', label: 'Heute', icon: '🏠', end: true },
@@ -18,10 +19,14 @@ export default function Layout() {
       <header className="topbar">
         <div className="topbar__inner">
           <NavLink to="/" className="brand">
-            <span className="brand__mark" aria-hidden="true">
-              L
-            </span>
-            Lumina
+            <img
+              className="brand__mark"
+              src={brandAsset('icon')}
+              alt=""
+              width={26}
+              height={26}
+            />
+            Entgegen
             <span className="brand__sub">Bibel lesen und verstehen</span>
           </NavLink>
 

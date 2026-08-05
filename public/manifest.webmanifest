@@ -1,19 +1,31 @@
 {
-  "name": "Lumina – Bibel lesen und verstehen",
-  "short_name": "Lumina",
+  "name": "Entgegen – Bibel lesen und verstehen",
+  "short_name": "Entgegen",
   "description": "Vollständiger Bibeltext mit historischem Kontext und Auslegungshilfen.",
   "lang": "de",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f7f4ee",
-  "theme_color": "#1c3f5e",
+  "theme_color": "#164c58",
   "icons": [
     {
-      "src": "./favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

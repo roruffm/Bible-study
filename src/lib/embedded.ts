@@ -25,7 +25,7 @@ export interface EmbeddedPayload {
 
 declare global {
   interface Window {
-    __LUMINA_PAYLOAD__?: string;
+    __ENTGEGEN_PAYLOAD__?: string;
   }
 }
 
@@ -33,12 +33,12 @@ let decoded: Promise<EmbeddedPayload> | null = null;
 
 /** Läuft die App als eigenständige Einzeldatei? */
 export function isSingleFile(): boolean {
-  return typeof window !== 'undefined' && typeof window.__LUMINA_PAYLOAD__ === 'string';
+  return typeof window !== 'undefined' && typeof window.__ENTGEGEN_PAYLOAD__ === 'string';
 }
 
 /** Die eingebetteten Daten – oder `null`, wenn normal über das Netz geladen wird. */
 export function embeddedPayload(): Promise<EmbeddedPayload> | null {
-  const payload = typeof window === 'undefined' ? undefined : window.__LUMINA_PAYLOAD__;
+  const payload = typeof window === 'undefined' ? undefined : window.__ENTGEGEN_PAYLOAD__;
   if (typeof payload !== 'string') return null;
 
   if (!decoded) {

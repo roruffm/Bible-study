@@ -1,4 +1,4 @@
-# Lumina – Bibel lesen und verstehen
+# Entgegen – Bibel lesen und verstehen
 
 Interaktive Bibelstudium-Anwendung: vollständiger Bibeltext, jeder Vers
 anklickbar, mit **historischem Kontext** und **verbreiteten Auslegungen** auf
@@ -58,7 +58,7 @@ Datenimport ist für den Start nicht nötig.
 ### Als einzelne Datei
 
 ```bash
-npm run build:single   # erzeugt dist-single/lumina.html
+npm run build:single   # erzeugt dist-single/entgegen.html
 ```
 
 Das Ergebnis ist **eine HTML-Datei von rund 2 MB**, die den vollständigen
@@ -71,7 +71,7 @@ base64-kodiert eingebettet (3,9 MB → 1,7 MB); die App entpackt ihn beim Start
 über `DecompressionStream`. In diesem Modus übernimmt der Hash die Navigation,
 weil es keinen Server gibt, der Pfade auf die App zurückführen könnte.
 
-Zusätzlich entsteht `dist-single/lumina-fragment.html` – dieselbe App ohne
+Zusätzlich entsteht `dist-single/entgegen-fragment.html` – dieselbe App ohne
 eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 
 ---
@@ -226,11 +226,13 @@ werden dabei 19 KB für den Ausschnitt der biblischen Welt.
 
 ```
 public/bibel/luther1912/   Bibeltext: index.json + eine Datei je Buch
+brand/                     Logo-Vorlage, aus der die Bilder erzeugt werden
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
   build-map-data.mjs       Natural-Earth-Küstenlinien zuschneiden
   build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
+  build-brand.py           Icon und Schriftzug aus der Logo-Vorlage schneiden
   check-references.mjs     Alle Stellenangaben gegen den Bibeltext prüfen
   smoke-test.mjs           Browser-Test gegen den Vorschau-Server
   test-singlefile.mjs      Prüft die Einzeldatei ohne Server und ohne Netz
@@ -294,6 +296,38 @@ node scripts/build-bible-data.mjs <quellverzeichnis> <übersetzungs-id>
 
 ---
 
+## Name und Marke
+
+Die App heißt **Entgegen**. Der Name meint die Bewegung, um die es geht: Ein
+Text aus einer fremden Zeit kommt einem entgegen, sobald man weiß, woher er
+kommt – wann er spielt, wann er aufgeschrieben wurde, wie er gelesen worden
+ist.
+
+Das Zeichen zeigt einen gewundenen Weg unter einem Kreuz; das geschwungene Ɛ
+und der Weg sind dieselbe Linie. Aus der gelieferten Vorlage
+(`brand/entgegen-original.png`) erzeugt `scripts/build-brand.py` alles, was
+Browser und Betriebssysteme brauchen:
+
+| Datei | Wozu |
+|---|---|
+| `public/icon-512.png`, `icon-192.png` | App-Icon, freigestellte Ecken |
+| `public/icon-maskable.png` | Android, das beliebige Formen ausschneidet – Teal-Fläche mit 20 % Sicherheitsrand |
+| `public/apple-touch-icon.png` | Startbildschirm unter iOS |
+| `public/favicon-32.png`, `favicon-48.png` | Browserkachel. Eine nachgezeichnete SVG-Fassung wäre schärfer, sähe aber anders aus als das Zeichen überall sonst – bei dieser Größe ist ohnehin jedes Icon unscharf |
+| `public/schriftzug.png`, `schriftzug-dunkel.png` | Schriftzug, freigestellt; die zweite Fassung mit aufgehelltem Teal für das dunkle Erscheinungsbild |
+| `public/vorschau.png` | Vorschaubild für geteilte Links |
+
+Die Leitfarbe der App ist das Teal des Icons (`#164c58`), im dunklen
+Erscheinungsbild aufgehellt zu `#7fbccb`.
+
+**Beim Umbenennen mitgezogen:** Der Speicherschlüssel im Browser hing am alten
+Namen. Wer die App vorher benutzt hat, hätte Notizen, Markierungen, Merkverse
+und Lesefortschritt verloren – die Daten lägen noch da, nur läse sie niemand
+mehr. `src/lib/storage.ts` zieht sie deshalb beim ersten Start einmalig um und
+lässt die alten Einträge liegen.
+
+---
+
 ## Datenschutz
 
 Notizen, Markierungen und Lesefortschritt liegen ausschließlich im
@@ -307,8 +341,9 @@ sind nach Art. 9 DSGVO besonders schutzwürdig.
 
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
-Themenwechsel, mobile Ansicht und den echten Offline-Betrieb mit
-abgeschalteter Verbindung (96 Prüfungen):
+Themenwechsel, mobile Ansicht, die Markenbilder, den Umzug der
+Speicherdaten aus der Zeit vor der Umbenennung und den echten
+Offline-Betrieb mit abgeschalteter Verbindung (99 Prüfungen):
 
 ```bash
 npm install --no-save playwright
@@ -345,7 +380,7 @@ liegt, keine Kennung doppelt vergeben ist und jeder Lexikonverweis trifft.
 > abweichende Luther-Angabe existiert, weist das Vers-Panel darauf hin.
 
 Die Einzeldatei wird gesondert geprüft – sie wird als lokale Datei geöffnet
-und darf dabei keine einzige Netzanfrage stellen (11 Prüfungen):
+und darf dabei keine einzige Netzanfrage stellen (12 Prüfungen):
 
 ```bash
 npm run build:single

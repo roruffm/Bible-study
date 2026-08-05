@@ -572,6 +572,47 @@ for (const [input, expect] of [['1. Mose 1', '/bibel/1mo/1'], ['Psalm 23,1', '/b
   await page.goto(BASE + '/', { waitUntil: 'networkidle' });
 }
 
+// 18. Marke: Name, Icon, Schriftzug
+await page.goto(BASE + '/ich', { waitUntil: 'networkidle' });
+check('Seitentitel trägt den Namen', (await page.title()).startsWith('Entgegen'), await page.title());
+
+const markenBilder = await page.evaluate(() =>
+  [...document.querySelectorAll('.brand__mark, .about__logo')].map((img) => img.naturalWidth > 0),
+);
+check(
+  'Icon und Schriftzug werden geladen',
+  markenBilder.length === 3 && markenBilder.every(Boolean),
+  `${markenBilder.filter(Boolean).length} von ${markenBilder.length}`,
+);
+
+/*
+ * Der Speicherschlüssel hing bis zur Umbenennung am alten Namen. Ohne Umzug
+ * verlöre jeder, der die App vorher benutzt hat, Notizen und Lesefortschritt –
+ * still, denn die Daten lägen weiterhin da, nur läse sie niemand mehr.
+ */
+await page.evaluate(() => {
+  localStorage.clear();
+  const notiz = {
+    id: 'alt',
+    ref: { book: 'joh', chapter: 3, verse: 16 },
+    text: 'Alte Notiz',
+    createdAt: 1,
+    updatedAt: 1,
+  };
+  localStorage.setItem('lumina.notes', JSON.stringify([notiz]));
+  localStorage.setItem('lumina.readChapters', JSON.stringify(['joh.3']));
+});
+await page.reload({ waitUntil: 'networkidle' });
+const umzug = await page.evaluate(() => ({
+  notizen: localStorage.getItem('entgegen.notes'),
+  kapitel: localStorage.getItem('entgegen.readChapters'),
+}));
+check(
+  'Daten aus der Zeit vor der Umbenennung ziehen mit um',
+  (umzug.notizen ?? '').includes('Alte Notiz') && (umzug.kapitel ?? '').includes('joh.3'),
+  umzug.notizen ?? 'nichts übernommen',
+);
+
 check('Keine Konsolenfehler', errors.length === 0, errors.slice(0, 3).join(' | '));
 
 await browser.close();
