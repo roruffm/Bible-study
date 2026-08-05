@@ -122,7 +122,14 @@ export async function askAboutVerse(options: AskOptions): Promise<void> {
     // im Browser. Die Einstellungsseite sagt das ebenso deutlich.
     dangerouslyAllowBrowser: true,
     ...(settings.mode === 'proxy'
-      ? { baseURL: settings.proxyUrl.trim().replace(/\/+$/, ''), apiKey: 'proxy' }
+      ? {
+          baseURL: settings.proxyUrl.trim().replace(/\/+$/, ''),
+          // Im Proxy-Modus steht in diesem Feld nicht der Schlüssel, sondern
+          // das Zugangswort des eigenen Servers – der echte Schlüssel bleibt
+          // dort. Verlangt der Server keines, bleibt es leer; das SDK besteht
+          // aber auf einem Wert.
+          apiKey: settings.apiKey.trim() || 'kein-zugangswort',
+        }
       : { apiKey: settings.apiKey.trim() }),
   });
 

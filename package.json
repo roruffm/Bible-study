@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
     "build:data": "node scripts/build-bible-data.mjs",
-    "build:single": "node scripts/build-singlefile.mjs"
+    "build:single": "node scripts/build-singlefile.mjs",
+    "server": "node server/entgegen-server.mjs",
+    "test:server": "node scripts/test-server.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.115.0",

@@ -228,6 +228,9 @@ werden dabei 19 KB für den Ausschnitt der biblischen Welt.
 ```
 public/bibel/luther1912/   Bibeltext: index.json + eine Datei je Buch
 brand/                     Logo-Vorlage, aus der die Bilder erzeugt werden
+server/
+  entgegen-server.mjs      Eigener Server: liefert die App aus, hält den Schlüssel
+  Dockerfile               Baut App und Server in ein Abbild
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
@@ -235,6 +238,7 @@ scripts/
   build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
   build-brand.py           Icon und Schriftzug aus der Logo-Vorlage schneiden
   fake-model.mjs           Attrappe der Sprachmodell-Schnittstelle für den Test
+  test-server.mjs          Prüft den eigenen Server aus server/
   check-references.mjs     Alle Stellenangaben gegen den Bibeltext prüfen
   smoke-test.mjs           Browser-Test gegen den Vorschau-Server
   test-singlefile.mjs      Prüft die Einzeldatei ohne Server und ohne Netz
@@ -331,11 +335,100 @@ jeden lesbar im Auslieferungspaket. Daher zwei Wege, einzustellen unter
 | Weg | Wie es läuft | Wofür |
 |---|---|---|
 | **Eigener Schlüssel** | Der Schlüssel liegt in diesem Browser, die Anfrage geht direkt an Anthropic | Schnell eingerichtet. Aber: Jedes Skript auf dieser Seite könnte den Schlüssel lesen – nimm einen mit Ausgabenlimit und nicht auf fremden Geräten |
-| **Eigener Server** | Die Anfrage geht an einen selbst betriebenen Server, der den Schlüssel hält | Aufwendiger, dafür bleibt der Schlüssel geheim. Der Server muss `/v1/messages` anbieten und CORS erlauben |
+| **Eigener Server** | Die Anfrage geht an einen selbst betriebenen Server, der den Schlüssel hält | Aufwendiger, dafür bleibt der Schlüssel geheim. Der fertige Server liegt in [`server/`](#eigener-server) |
 
 Voreingestellt ist **Claude Opus 5**; Sonnet 5 und Haiku 4.5 stehen als
 schnellere und günstigere Alternativen zur Wahl. Die Kosten trägt, wem der
 Schlüssel gehört.
+
+### Eigener Server
+
+`server/entgegen-server.mjs` ist der Server dazu – **eine Datei, keine
+Abhängigkeiten**, Node ab Version 18. Er erledigt zwei Dinge, jedes einzeln
+abschaltbar:
+
+1. **Er liefert die App aus.** Damit liegen App und Schnittstelle auf derselben
+   Herkunft; CORS entfällt, und ein falsch gesetzter Header kann nichts mehr
+   kaputtmachen.
+2. **Er reicht `POST /v1/messages` an Anthropic weiter** und legt den Schlüssel
+   dabei ein. Die ausgelieferte App kennt ihn nie.
+
+```bash
+npm run build                      # ohne BASE_PATH: baut für die Wurzel „/“
+
+ANTHROPIC_API_KEY=sk-ant-… \
+ENTGEGEN_PASSWORT=ein-eigenes-wort \
+node server/entgegen-server.mjs    # → http://localhost:8080
+```
+
+In der App dann unter **Ich → Rückfragen am Vers → Eigener Server** die Adresse
+und dasselbe Zugangswort eintragen. Läuft die App auf demselben Server, genügt
+dessen eigene Adresse.
+
+Mit Docker:
+
+```bash
+docker build -f server/Dockerfile -t entgegen .
+docker run -p 8080:8080 \
+  -e ANTHROPIC_API_KEY=sk-ant-… \
+  -e ENTGEGEN_PASSWORT=ein-eigenes-wort \
+  entgegen
+```
+
+#### Einstellungen
+
+| Variable | Standard | Wozu |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | – | **Pflicht.** Der Schlüssel, der hier bleibt |
+| `ENTGEGEN_PASSWORT` | leer | Zugangswort. **Ohne dieses Wort ist ein öffentlich erreichbarer Server ein offener Hahn auf deine Abrechnung** |
+| `PORT` | `8080` | |
+| `ENTGEGEN_STATIC` | `dist` | Verzeichnis der gebauten App; `aus` liefert nur die Schnittstelle |
+| `ENTGEGEN_HERKUNFT` | `*` | Erlaubte Herkunft für CORS, etwa `https://roruffm.github.io`. Nur nötig, wenn die App woanders liegt |
+| `ENTGEGEN_LIMIT` | `60` | Anfragen je Stunde und IP; `0` schaltet die Grenze ab |
+
+Fest eingebaut: nur `claude-opus-5`, `claude-sonnet-5` und `claude-haiku-4-5`
+sind freigegeben, `max_tokens` wird bei 8.192 gedeckelt und der Anfragekörper
+bei 512 KB. Alles, was der Browser schickt, wird am Ende dem Serverbetreiber in
+Rechnung gestellt – nicht dem Absender.
+
+#### Die App bleibt auf GitHub Pages
+
+Auch möglich: Der Server macht **nur** die Schnittstelle, die App bleibt, wo sie
+ist. Dann muss die Herkunft freigegeben werden:
+
+```bash
+ENTGEGEN_STATIC=aus \
+ENTGEGEN_HERKUNFT=https://roruffm.github.io \
+ANTHROPIC_API_KEY=sk-ant-… ENTGEGEN_PASSWORT=… \
+node server/entgegen-server.mjs
+```
+
+#### Was noch dazugehört
+
+- **HTTPS.** Der Server spricht nur HTTP. Setz ihn hinter Caddy, nginx oder
+  einen Anbieter, der TLS beendet – ohne HTTPS geht das Zugangswort im Klartext
+  über die Leitung, und der Browser verweigert die Anfrage von einer
+  HTTPS-Seite ohnehin.
+- **Neustart.** Ein systemd-Dienst oder `docker run --restart=always`.
+- **Der Schlüssel gehört nicht ins Abbild** und nicht ins Repository, sondern in
+  die Umgebung (`--env-file`, systemd `EnvironmentFile`, das Secret-Verzeichnis
+  des Anbieters).
+
+#### Getestet wird der Server eigens
+
+```bash
+npm run build
+node scripts/test-server.mjs      # 13 Prüfungen
+```
+
+Geprüft wird, was teuer wird, wenn es fehlt: ob jemand ohne Zugangswort
+durchkommt, ob sich über den Pfad eine Datei außerhalb der App abrufen lässt
+(fünf Ausbruchsversuche), ob der Schlüssel in Auslieferung oder Fehlermeldungen
+auftaucht, ob ein fremdes Modell durchgereicht wird und ob die Antwort wirklich
+als Ereignisstrom ankommt. Gegenstelle ist die Attrappe – geprüft wird der
+eigene Server, nicht Anthropic.
+
+---
 
 ### Was das für den Rest der App bedeutet
 
@@ -424,7 +517,15 @@ Offline-Betrieb mit abgeschalteter Verbindung (106 Prüfungen):
 npm install --no-save playwright
 npm run build
 npm run preview &            # Vorschau auf Port 4173
+node scripts/fake-model.mjs &   # optional: sonst werden die Rückfrage-Prüfungen übersprungen
 node scripts/smoke-test.mjs  # legt Screenshots in smoke-shots/ ab
+```
+
+Der eigene Server hat eine eigene Prüfkette – er trägt den Schlüssel und steht
+im Netz, also zielt sie auf das, was teuer wird, wenn es fehlt:
+
+```bash
+npm run test:server          # 13 Prüfungen, startet Attrappe und Server selbst
 ```
 
 Die redaktionellen Inhalte enthalten mehrere hundert Stellenangaben. Ein

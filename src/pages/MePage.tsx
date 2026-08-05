@@ -114,10 +114,28 @@ function ChatCard() {
             type="url"
             autoComplete="off"
             spellCheck={false}
-            placeholder="https://mein-server.example/api"
+            placeholder="https://mein-server.example"
             value={chat.proxyUrl}
             onChange={(e) => setChatSettings({ proxyUrl: e.target.value })}
             aria-label="Adresse des eigenen Servers"
+          />
+          <p
+            className="settings-row__hint"
+            style={{ margin: '0.7rem 0 0.5rem' }}
+          >
+            Zugangswort, falls der Server eines verlangt. Ein öffentlich
+            erreichbarer Server ohne Zugangswort ist ein offener Hahn auf die
+            Abrechnung dessen, dem der Schlüssel gehört.
+          </p>
+          <input
+            className="textarea"
+            type="password"
+            autoComplete="off"
+            spellCheck={false}
+            placeholder="optional"
+            value={chat.apiKey}
+            onChange={(e) => setChatSettings({ apiKey: e.target.value })}
+            aria-label="Zugangswort"
           />
         </div>
       )}
