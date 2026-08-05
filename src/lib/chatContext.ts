@@ -101,6 +101,21 @@ export function buildVerseContext(
     stueck.push(entry.historicalShort);
     if (entry.historicalLong) stueck.push(entry.historicalLong);
 
+    if (entry.terms?.length) {
+      stueck.push(
+        'Wörter des Urtextes, die die Übersetzung nicht mitträgt:\n' +
+          entry.terms
+            .map(
+              (t) =>
+                `- ${t.word}${t.rendered ? ` (bei Luther „${t.rendered}“)` : ''}: ${t.note}`,
+            )
+            .join('\n'),
+      );
+    }
+    if (entry.reception) {
+      stueck.push(`Wirkungsgeschichte:\n${entry.reception}`);
+    }
+
     if (entry.interpretations.length) {
       stueck.push(
         'Auslegungen, die die App zu diesem Abschnitt führt – jeweils mit der Tradition, ' +

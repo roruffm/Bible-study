@@ -21,7 +21,27 @@ export interface BookProfile {
   occasion: string;
   message: string;
   outline?: BookOutlineEntry[];
+  /**
+   * Standardliteratur zu diesem Buch.
+   *
+   * Sie steht hier und nicht in jedem Artikel, weil sie sich pro Buch kaum
+   * ändert. Ein Artikel darf mit `sources` etwas Genaueres nennen; wo er das
+   * nicht tut, zeigt die App diese Liste. Genannt sind eingeführte Kommentare
+   * und Einleitungen – keine Belege für einzelne Sätze, sondern der Rahmen, in
+   * dem das Gesagte steht.
+   */
+  literature?: string[];
 }
+
+/**
+ * Werke, die über die ganze Bibel hinweg gelten und deshalb nicht bei jedem
+ * Buch wiederholt werden.
+ */
+export const GENERAL_LITERATURE = [
+  'Zenger u. a., Einleitung in das Alte Testament',
+  'Ebner/Schreiber, Einleitung in das Neue Testament',
+  'Religion in Geschichte und Gegenwart (RGG⁴)',
+] as const;
 
 export const BOOK_PROFILES: Record<string, BookProfile> = {
   '1mo': {
@@ -30,6 +50,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: Urgeschichte bis etwa 1500 v. Chr. Schriftliche Endgestalt vermutlich in oder nach der Exilszeit (6./5. Jh. v. Chr.).',
     occasion: 'Israel vergewissert sich seiner Herkunft: Woher kommen Welt und Mensch, und warum gilt gerade dieser Familie eine Zusage Gottes?',
     message: 'Gott schafft eine gute Welt, der Mensch entzieht sich ihm – und Gott beginnt dennoch mit einer Familie einen Weg der Rettung für alle Völker.',
+    literature: ['Claus Westermann, Genesis (BK I/1–3)', 'Gerhard von Rad, Das erste Buch Mose (ATD)'],
     outline: [
       { from: 1, to: 11, label: 'Urgeschichte: Schöpfung, Sündenfall, Flut, Babel' },
       { from: 12, to: 25, label: 'Abraham: Berufung und Verheißung' },
@@ -43,6 +64,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: 2. Jahrtausend v. Chr., meist im 13. Jh. v. Chr. verortet.',
     occasion: 'Die Grunderzählung Israels: Wie aus einer Sklavengruppe ein Volk mit eigener Ordnung wurde.',
     message: 'Gott hört das Schreien der Unterdrückten, befreit sie und bindet sich in einem Bund dauerhaft an sie.',
+    literature: ['Martin Noth, Das zweite Buch Mose (ATD)', 'William H. C. Propp, Exodus (Anchor Bible)'],
     outline: [
       { from: 1, to: 15, label: 'Unterdrückung, Berufung des Mose, Auszug' },
       { from: 16, to: 24, label: 'Wüstenzug und Bundesschluss am Sinai' },
@@ -55,6 +77,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Endgestalt vermutlich exilisch/nachexilisch (6./5. Jh. v. Chr.).',
     occasion: 'Ordnung für Opfer, Priesterdienst und Alltag eines Volkes, das in der Nähe Gottes lebt.',
     message: 'Heiligkeit ist kein Rückzug aus der Welt, sondern eine Lebensform – bis hinein in Ernte, Recht und Umgang mit Fremden.',
+    literature: ['Jacob Milgrom, Leviticus (Anchor Bible)', 'Erhard S. Gerstenberger, Das dritte Buch Mose (ATD)'],
   },
   '4mo': {
     subtitle: 'Vierzig Jahre unterwegs zwischen Aufbruch und Murren',
@@ -62,6 +85,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: Wüstenwanderung zwischen Sinai und Jordan.',
     occasion: 'Zählungen, Wanderetappen und Konflikte auf dem Weg ins verheißene Land.',
     message: 'Gottes Zusage bleibt bestehen, auch wenn eine ganze Generation an ihrem Misstrauen scheitert.',
+    literature: ['Martin Noth, Das vierte Buch Mose (ATD)', 'Baruch A. Levine, Numbers (Anchor Bible)'],
   },
   '5mo': {
     subtitle: 'Die Abschiedsreden des Mose vor dem Einzug ins Land',
@@ -69,6 +93,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: kurz vor dem Einzug ins Land; Entstehung 7.–6. Jh. v. Chr.',
     occasion: 'Erinnerung an den Bund für eine Generation, die den Auszug selbst nicht erlebt hat.',
     message: 'Erinnern und Lieben gehören zusammen: Wer Gottes Taten nicht vergisst, wird ihn und den Nächsten lieben.',
+    literature: ['Gerhard von Rad, Das fünfte Buch Mose (ATD)', 'Georg Braulik, Deuteronomium (NEB)'],
   },
   jos: {
     subtitle: 'Landnahme und Verteilung des Landes',
@@ -76,6 +101,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: ab etwa 1200 v. Chr.; Endgestalt später.',
     occasion: 'Wie Israel im Land Fuß fasst – erzählt als Erfüllung einer alten Zusage.',
     message: 'Gott hält, was er versprochen hat. Die Gewaltschilderungen sind theologisch geformte Erinnerung und heute intensiv diskutiert.',
+    literature: ['Volkmar Fritz, Das Buch Josua (HAT)', 'Martin Noth, Das Buch Josua (HAT)'],
   },
   ri: {
     subtitle: 'Eine Spirale aus Abfall, Not und Rettung',
@@ -83,6 +109,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: zwischen Landnahme und Königtum (ca. 1200–1000 v. Chr.).',
     occasion: 'Erzählungen von regionalen Anführern in einer Zeit ohne zentrale Ordnung.',
     message: 'Ohne gemeinsame Bindung zerfällt eine Gesellschaft – „jeder tat, was ihn recht dünkte“.',
+    literature: ['Wolfgang Groß, Richter (HThKAT)', 'Walter Groß / Hartmut N. Rösel, Studien zum Richterbuch'],
   },
   rut: {
     subtitle: 'Eine Ausländerin wird zur Urgroßmutter Davids',
@@ -90,6 +117,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: Richterzeit; Entstehung wahrscheinlich nachexilisch.',
     occasion: 'Vermutlich ein Gegenentwurf zu einer Zeit strenger Abgrenzung gegenüber Fremden.',
     message: 'Treue und Güte überschreiten Volksgrenzen – und Gott wirkt durch sie Geschichte.',
+    literature: ['Erich Zenger, Das Buch Ruth (ZBK)', 'Jack M. Sasson, Ruth'],
   },
   '1sam': {
     subtitle: 'Vom letzten Richter zum ersten König',
@@ -97,6 +125,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: ca. 1050–1010 v. Chr.',
     occasion: 'Israel verlangt einen König „wie alle Völker“.',
     message: 'Macht ist zweischneidig: Sie kann ordnen und zerstören. Gott sieht nicht auf das Äußere, sondern auf das Herz.',
+    literature: ['Hans Wilhelm Hertzberg, Die Samuelbücher (ATD)', 'P. Kyle McCarter, I Samuel (Anchor Bible)'],
   },
   '2sam': {
     subtitle: 'Aufstieg, Größe und Schuld des Königs David',
@@ -104,6 +133,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: ca. 1010–970 v. Chr.',
     occasion: 'Davids Herrschaft, einschließlich seiner Verbrechen.',
     message: 'Die Bibel zeichnet ihren größten König ungeschönt – Erwählung schützt nicht vor Schuld.',
+    literature: ['Hans Wilhelm Hertzberg, Die Samuelbücher (ATD)', 'P. Kyle McCarter, II Samuel (Anchor Bible)'],
   },
   '1koe': {
     subtitle: 'Salomos Tempel und die Teilung des Reiches',
@@ -111,6 +141,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: ca. 970–850 v. Chr.',
     occasion: 'Glanzzeit unter Salomo, danach Spaltung in Nord- und Südreich.',
     message: 'Prachtbauten sichern nichts. Entscheidend ist die Treue zum Bund.',
+    literature: ['Ernst Würthwein, Die Bücher der Könige (ATD)', 'Martin Noth, Könige (BK)'],
   },
   '2koe': {
     subtitle: 'Der Weg beider Reiche in die Katastrophe',
@@ -118,6 +149,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: bis 587/586 v. Chr.',
     occasion: 'Untergang Samarias (722 v. Chr.) und Jerusalems (587/586 v. Chr.).',
     message: 'Eine schonungslose Bilanz – und zugleich das Festhalten daran, dass Gott sein Volk nicht endgültig aufgibt.',
+    literature: ['Ernst Würthwein, Die Bücher der Könige (ATD)', 'Mordechai Cogan / Hayim Tadmor, II Kings (Anchor Bible)'],
   },
   '1chr': {
     subtitle: 'Israels Geschichte, noch einmal erzählt – mit Blick auf den Gottesdienst',
@@ -125,6 +157,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung: 4. Jh. v. Chr.',
     occasion: 'Neuvergewisserung nach dem Exil.',
     message: 'Wer sind wir nach dem Zusammenbruch? Antwort: das Volk, das Gott anbetet.',
+    literature: ['Sara Japhet, 1 Chronik (HThKAT)', 'Wilhelm Rudolph, Chronikbücher (HAT)'],
   },
   '2chr': {
     subtitle: 'Die Könige Judas im Licht des Tempels',
@@ -132,6 +165,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung: 4. Jh. v. Chr.',
     occasion: 'Von Salomo bis zum Erlass des Kyros.',
     message: 'Umkehr ist immer möglich – das Buch endet mit einer offenen Tür zur Heimkehr.',
+    literature: ['Sara Japhet, 2 Chronik (HThKAT)', 'Wilhelm Rudolph, Chronikbücher (HAT)'],
   },
   esr: {
     subtitle: 'Rückkehr aus dem Exil und Wiederaufbau des Tempels',
@@ -139,6 +173,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: ab 538 v. Chr.',
     occasion: 'Der Perserkönig Kyros erlaubt die Heimkehr.',
     message: 'Neuanfang ist mühsam und umstritten – und geschieht doch.',
+    literature: ['Antonius H. J. Gunneweg, Esra (KAT)', 'Sara Japhet, From the Rivers of Babylon to the Highlands of Judah'],
   },
   neh: {
     subtitle: 'Der Wiederaufbau der Stadtmauer und der Gemeinschaft',
@@ -146,6 +181,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: ab etwa 445 v. Chr.',
     occasion: 'Jerusalem liegt schutzlos; Nehemia erhält ein Mandat.',
     message: 'Glaube und Organisation schließen sich nicht aus: beten und Wache aufstellen.',
+    literature: ['Antonius H. J. Gunneweg, Nehemia (KAT)', 'Joseph Blenkinsopp, Ezra–Nehemiah (OTL)'],
   },
   est: {
     subtitle: 'Rettung im Exil – ohne dass Gott je genannt wird',
@@ -153,6 +189,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: Perserreich, 5. Jh. v. Chr.',
     occasion: 'Ursprungserzählung des Purimfestes.',
     message: 'Auch wo Gott nicht ausdrücklich vorkommt, wendet sich das Blatt – und Mut zur rechten Zeit entscheidet.',
+    literature: ['Beate Ego, Ester (BK)', 'Jon D. Levenson, Esther (OTL)'],
   },
   hi: {
     subtitle: 'Das Ringen eines Unschuldigen mit dem Leid',
@@ -160,6 +197,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung vermutlich zwischen dem 6. und 4. Jh. v. Chr.',
     occasion: 'Der Widerspruch zwischen dem Tun-Ergehen-Denken und der Erfahrung.',
     message: 'Leid lässt sich nicht wegerklären. Hiobs Klage wird nicht getadelt, sondern ernst genommen.',
+    literature: ['Georg Fohrer, Das Buch Hiob (KAT)', 'Jürgen Ebach, Streiten mit Gott'],
   },
   ps: {
     subtitle: 'Das Gebetbuch Israels: 150 Lieder für jede Lebenslage',
@@ -167,6 +205,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung: Königszeit bis nachexilisch.',
     occasion: 'Gebete und Lieder für Tempel, Wallfahrt und persönliche Not.',
     message: 'Vor Gott darf alles gesagt werden: Jubel, Zweifel, Wut und Vertrauen.',
+    literature: ['Frank-Lothar Hossfeld / Erich Zenger, Psalmen (HThKAT)', 'Hans-Joachim Kraus, Psalmen (BK)'],
     outline: [
       { from: 1, to: 41, label: 'Erstes Buch' },
       { from: 42, to: 72, label: 'Zweites Buch' },
@@ -181,6 +220,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung über mehrere Jahrhunderte, Endgestalt nachexilisch.',
     occasion: 'Weisheitsunterricht für junge Menschen.',
     message: 'Gottesfurcht und Alltagsvernunft gehören zusammen. Sprichwörter sind Regeln, keine Garantien.',
+    literature: ['Otto Plöger, Sprüche Salomos (BK)', 'Michael V. Fox, Proverbs (Anchor Bible)'],
   },
   pred: {
     subtitle: 'Ein nüchterner Blick auf die Vergänglichkeit',
@@ -188,6 +228,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung: 3. Jh. v. Chr.',
     occasion: 'Die Frage nach dem Sinn angesichts von Tod und Zufall.',
     message: 'Alles ist flüchtig – und gerade darum ist das schlichte Gute des Alltags ein Geschenk.',
+    literature: ['Thomas Krüger, Kohelet (BK)', 'Ludger Schwienhorst-Schönberger, Kohelet (HThKAT)'],
   },
   hld: {
     subtitle: 'Liebeslieder zwischen zwei Liebenden',
@@ -195,6 +236,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung vermutlich nachexilisch.',
     occasion: 'Sammlung poetischer Liebeslyrik.',
     message: 'Körperliche Liebe wird gefeiert, nicht versteckt. Traditionell auch als Bild für die Liebe zwischen Gott und Volk gelesen.',
+    literature: ['Othmar Keel, Das Hohelied (ZBK)', 'Ludger Schwienhorst-Schönberger, Das Hohelied der Liebe'],
   },
   jes: {
     subtitle: 'Gericht und Trost über drei Jahrhunderte',
@@ -202,6 +244,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '8. Jh. v. Chr. (Kap. 1–39), Exilszeit (40–55), danach (56–66).',
     occasion: 'Assyrische Bedrohung, Exil und Rückkehr.',
     message: 'Gott richtet – und tröstet. Aus dem Gericht wächst eine Hoffnung, die über Israel hinausreicht.',
+    literature: ['Hans Wildberger, Jesaja (BK)', 'Ulrich Berges, Jesaja (HThKAT)', 'Claus Westermann, Das Buch Jesaja 40–66 (ATD)'],
     outline: [
       { from: 1, to: 39, label: 'Gerichtsworte über Juda und die Völker' },
       { from: 40, to: 55, label: 'Trostbuch im Exil' },
@@ -214,6 +257,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Ca. 627–586 v. Chr.',
     occasion: 'Die letzten Jahrzehnte Judas vor der Zerstörung Jerusalems.',
     message: 'Selbst im Zusammenbruch kündigt Gott einen neuen Bund an, der ins Herz geschrieben wird.',
+    literature: ['Georg Fischer, Jeremia (HThKAT)', 'Wilhelm Rudolph, Jeremia (HAT)'],
   },
   klgl: {
     subtitle: 'Fünf Klagelieder über die zerstörte Stadt',
@@ -221,6 +265,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Kurz nach 587/586 v. Chr.',
     occasion: 'Die Zerstörung Jerusalems.',
     message: 'Trauer braucht Worte. Mitten in der Klage steht die Zusage: Gottes Barmherzigkeit ist jeden Morgen neu.',
+    literature: ['Ulrich Berges, Klagelieder (HThKAT)', 'Hans-Joachim Kraus, Klagelieder (BK)'],
   },
   hes: {
     subtitle: 'Visionen eines Priesters im Exil',
@@ -228,6 +273,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Ca. 593–571 v. Chr.',
     occasion: 'Seelsorge und Deutung für die Verschleppten.',
     message: 'Gott ist nicht an den Tempel gebunden – er geht mit ins Exil und schafft neues Leben aus Totengebeinen.',
+    literature: ['Walther Zimmerli, Ezechiel (BK)', 'Karl-Friedrich Pohlmann, Der Prophet Hesekiel (ATD)'],
   },
   dan: {
     subtitle: 'Standhaftigkeit unter fremder Herrschaft und apokalyptische Visionen',
@@ -235,6 +281,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Erzählte Zeit: 6. Jh. v. Chr.; Endgestalt in der Bedrängnis unter Antiochus IV. (um 165 v. Chr.).',
     occasion: 'Ermutigung für Menschen unter religiösem Druck.',
     message: 'Weltreiche vergehen; Gottes Herrschaft bleibt. Treue lohnt sich auch dort, wo sie gefährlich ist.',
+    literature: ['John J. Collins, Daniel (Hermeneia)', 'Klaus Koch, Das Buch Daniel'],
   },
   hos: {
     subtitle: 'Gottes Liebe, erzählt als verletzte Ehe',
@@ -242,6 +289,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '8. Jh. v. Chr.',
     occasion: 'Politische Unruhe und Fremdkulte vor dem Untergang Samarias.',
     message: 'Gott leidet an der Untreue seines Volkes – und kann doch nicht von ihm lassen.',
+    literature: ['Hans Walter Wolff, Dodekapropheton 1: Hosea (BK)', 'Jörg Jeremias, Der Prophet Hosea (ATD)'],
   },
   joel: {
     subtitle: 'Heuschreckenplage als Weckruf',
@@ -249,6 +297,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Umstritten, vermutlich nachexilisch.',
     occasion: 'Eine Naturkatastrophe wird als Zeichen gedeutet.',
     message: 'Umkehr ist möglich; Gottes Geist wird über alle ausgegossen – Frauen und Männer, Alte und Junge.',
+    literature: ['Hans Walter Wolff, Dodekapropheton 2: Joel und Amos (BK)', 'Jörg Jeremias, Die Propheten Joel, Obadja, Jona, Micha (ATD)'],
   },
   am: {
     subtitle: 'Der Hirte, der die soziale Ungerechtigkeit anklagt',
@@ -256,6 +305,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Um 760 v. Chr.',
     occasion: 'Wirtschaftlicher Aufschwung im Nordreich – auf Kosten der Armen.',
     message: 'Gottesdienst ohne Gerechtigkeit ist Gott zuwider: „Es ströme das Recht wie Wasser.“',
+    literature: ['Hans Walter Wolff, Dodekapropheton 2: Joel und Amos (BK)', 'Jörg Jeremias, Der Prophet Amos (ATD)'],
   },
   obd: {
     subtitle: 'Ein einziges Kapitel gegen Edom',
@@ -263,6 +313,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Nach 587 v. Chr.',
     occasion: 'Edom hatte beim Fall Jerusalems zugesehen oder mitgetan.',
     message: 'Schadenfreude über das Unglück anderer bleibt nicht folgenlos.',
+    literature: ['Hans Walter Wolff, Dodekapropheton 3: Obadja und Jona (BK)', 'Jörg Jeremias, Die Propheten Joel, Obadja, Jona, Micha (ATD)'],
   },
   jona: {
     subtitle: 'Ein widerwilliger Prophet und ein barmherziger Gott',
@@ -270,6 +321,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Entstehung wahrscheinlich nachexilisch.',
     occasion: 'Erzählung mit lehrhaftem Zug über Israels Verhältnis zu den Völkern.',
     message: 'Gottes Erbarmen gilt auch denen, die man dafür nicht vorgesehen hat – bis hin zu den Tieren Ninives.',
+    literature: ['Hans Walter Wolff, Dodekapropheton 3: Obadja und Jona (BK)', 'Jack M. Sasson, Jonah (Anchor Bible)'],
   },
   mi: {
     subtitle: 'Anklage und die Verheißung von Bethlehem',
@@ -277,6 +329,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '8. Jh. v. Chr.',
     occasion: 'Ausbeutung der Landbevölkerung und korrupte Führung.',
     message: 'Was Gott fordert, ist knapp gesagt: Recht tun, Güte lieben, aufmerksam mit Gott gehen.',
+    literature: ['Hans Walter Wolff, Dodekapropheton 4: Micha (BK)', 'Wilhelm Rudolph, Micha–Nahum–Habakuk–Zephanja (KAT)'],
   },
   nah: {
     subtitle: 'Das Ende der Gewaltmacht Ninive',
@@ -284,6 +337,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Kurz vor 612 v. Chr.',
     occasion: 'Der bevorstehende Fall der assyrischen Hauptstadt.',
     message: 'Tyrannei ist nicht ewig. Die Wucht der Bilder gilt einer Gewaltherrschaft, nicht einem Volk an sich.',
+    literature: ['Wilhelm Rudolph, Micha–Nahum–Habakuk–Zephanja (KAT)', 'Klaus Seybold, Nahum, Habakuk, Zephanja (ZBK)'],
   },
   hab: {
     subtitle: 'Ein Prophet stellt Gott zur Rede',
@@ -291,6 +345,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Um 600 v. Chr.',
     occasion: 'Die aufsteigende Macht Babylons.',
     message: 'Warum lässt Gott Unrecht zu? Die Antwort ist kein Argument, sondern Vertrauen: „Der Gerechte wird aus Glauben leben.“',
+    literature: ['Wilhelm Rudolph, Micha–Nahum–Habakuk–Zephanja (KAT)', 'Klaus Seybold, Nahum, Habakuk, Zephanja (ZBK)'],
   },
   zef: {
     subtitle: 'Der „Tag des HERRN“ als Gericht und Neuanfang',
@@ -298,6 +353,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '7. Jh. v. Chr.',
     occasion: 'Vor oder während der Reform des Königs Josia.',
     message: 'Nach dem Gericht bleibt ein „Rest“ – und Gott jubelt über sein Volk.',
+    literature: ['Wilhelm Rudolph, Micha–Nahum–Habakuk–Zephanja (KAT)', 'Klaus Seybold, Nahum, Habakuk, Zephanja (ZBK)'],
   },
   hag: {
     subtitle: 'Zwei Monate Predigt für den Tempelbau',
@@ -305,6 +361,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '520 v. Chr.',
     occasion: 'Der Wiederaufbau des Tempels stockt.',
     message: 'Prioritäten prüfen: Wo investiert man Kraft, wenn das Gemeinsame liegen bleibt?',
+    literature: ['Hans Walter Wolff, Dodekapropheton 6: Haggai (BK)', 'Wilhelm Rudolph, Haggai–Sacharja–Maleachi (KAT)'],
   },
   sach: {
     subtitle: 'Nachtgesichte und Hoffnung auf einen kommenden König',
@@ -312,6 +369,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Ab 520 v. Chr.',
     occasion: 'Wiederaufbau nach dem Exil.',
     message: 'Nicht durch Heer und Kraft, sondern durch Gottes Geist. Der kommende König reitet auf einem Esel.',
+    literature: ['Wilhelm Rudolph, Haggai–Sacharja–Maleachi (KAT)', 'Carol L. Meyers / Eric M. Meyers, Zechariah (Anchor Bible)'],
   },
   mal: {
     subtitle: 'Letzte Mahnungen vor einer langen Pause',
@@ -319,6 +377,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '5. Jh. v. Chr.',
     occasion: 'Nachlassender Eifer im wiederaufgebauten Tempel.',
     message: 'Gott nimmt die Beziehung ernst – und kündigt einen Boten an, der den Weg bereitet.',
+    literature: ['Wilhelm Rudolph, Haggai–Sacharja–Maleachi (KAT)', 'Andrew E. Hill, Malachi (Anchor Bible)'],
   },
   mt: {
     subtitle: 'Jesus als der verheißene Messias Israels',
@@ -326,6 +385,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 80–90 n. Chr.',
     occasion: 'Geschrieben für judenchristliche Gemeinden nach der Zerstörung des Tempels.',
     message: 'Jesus erfüllt die Schrift und lehrt eine Gerechtigkeit, die tiefer geht als Regeltreue.',
+    literature: ['Ulrich Luz, Das Evangelium nach Matthäus (EKK)', 'Joachim Gnilka, Das Matthäusevangelium (HThKNT)'],
     outline: [
       { from: 1, to: 4, label: 'Herkunft und Anfang' },
       { from: 5, to: 7, label: 'Bergpredigt' },
@@ -339,6 +399,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Um 70 n. Chr.',
     occasion: 'Vermutlich für eine bedrängte Gemeinde, oft in Rom verortet.',
     message: 'Wer Jesus verstehen will, muss bis zum Kreuz mitgehen. Erst dort fällt das Bekenntnis.',
+    literature: ['Joachim Gnilka, Das Evangelium nach Markus (EKK)', 'Rudolf Pesch, Das Markusevangelium (HThKNT)'],
   },
   lk: {
     subtitle: 'Das Evangelium der Zugewandtheit zu den Übersehenen',
@@ -346,6 +407,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 80–90 n. Chr.',
     occasion: 'Sorgfältig recherchierte Darstellung für „Theophilus“.',
     message: 'Gottes Rettung gilt gerade den Armen, Frauen, Fremden und Ausgegrenzten.',
+    literature: ['François Bovon, Das Evangelium nach Lukas (EKK)', 'Joseph A. Fitzmyer, The Gospel According to Luke (Anchor Bible)'],
   },
   joh: {
     subtitle: 'Ein Evangelium in Bildern: Licht, Brot, Weg, Leben',
@@ -353,6 +415,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 90–100 n. Chr.',
     occasion: 'Vertiefte Deutung der Person Jesu, vermutlich in Kleinasien.',
     message: 'In Jesus begegnet Gott selbst – „das Wort wurde Mensch“.',
+    literature: ['Rudolf Schnackenburg, Das Johannesevangelium (HThKNT)', 'Rudolf Bultmann, Das Evangelium des Johannes (KEK)', 'Hartwig Thyen, Das Johannesevangelium (HNT)'],
     outline: [
       { from: 1, to: 1, label: 'Prolog: Das Wort wurde Mensch' },
       { from: 2, to: 12, label: 'Zeichen und Reden in der Öffentlichkeit' },
@@ -366,6 +429,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 80–90 n. Chr.',
     occasion: 'Die Ausbreitung des Evangeliums von Jerusalem bis Rom.',
     message: 'Der Geist Gottes durchbricht Grenzen – kulturelle, religiöse und geografische.',
+    literature: ['Ernst Haenchen, Die Apostelgeschichte (KEK)', 'Jürgen Roloff, Die Apostelgeschichte (NTD)'],
   },
   roem: {
     subtitle: 'Die ausführlichste Darlegung des Evangeliums durch Paulus',
@@ -373,6 +437,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 56–58 n. Chr., aus Korinth.',
     occasion: 'Vorstellungsschreiben an eine Gemeinde, die Paulus noch nicht kannte.',
     message: 'Alle sind auf Gottes Zuwendung angewiesen – und alle bekommen sie geschenkt, Juden wie Nichtjuden.',
+    literature: ['Ernst Käsemann, An die Römer (HNT)', 'Ulrich Wilckens, Der Brief an die Römer (EKK)'],
   },
   '1kor': {
     subtitle: 'Seelsorge und Klartext für eine zerstrittene Großstadtgemeinde',
@@ -380,6 +445,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 54–55 n. Chr.',
     occasion: 'Parteiungen, Rechtsstreit, Fragen zu Ehe, Götzenopferfleisch und Abendmahl.',
     message: 'Freiheit ohne Liebe zerstört Gemeinschaft. Das Kreuz stellt alle Maßstäbe auf den Kopf.',
+    literature: ['Wolfgang Schrage, Der erste Brief an die Korinther (EKK)', 'Hans Conzelmann, Der erste Brief an die Korinther (KEK)'],
   },
   '2kor': {
     subtitle: 'Ein persönlicher Brief über Schwachheit und Vollmacht',
@@ -387,6 +453,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 55–56 n. Chr.',
     occasion: 'Auseinandersetzung mit Gegnern, die Paulus die Autorität absprachen.',
     message: 'Gottes Kraft zeigt sich nicht an Erfolgsbilanzen, sondern in der Schwäche.',
+    literature: ['Thomas Schmeller, Der zweite Brief an die Korinther (EKK)', 'Hans Windisch, Der zweite Korintherbrief (KEK)'],
   },
   gal: {
     subtitle: 'Ein Kampfbrief für die Freiheit',
@@ -394,6 +461,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 50–55 n. Chr.',
     occasion: 'Forderung, dass Nichtjuden sich beschneiden lassen müssten.',
     message: 'Zugehörigkeit zu Gott hängt nicht an Herkunft oder Leistung: „Ihr seid alle einer in Christus.“',
+    literature: ['Hans Dieter Betz, Der Galaterbrief (Hermeneia)', 'Franz Mußner, Der Galaterbrief (HThKNT)'],
   },
   eph: {
     subtitle: 'Die Kirche als Ort versöhnter Verschiedenheit',
@@ -401,6 +469,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 60–90 n. Chr.',
     occasion: 'Rundschreiben an Gemeinden Kleinasiens.',
     message: 'Christus reißt die Trennmauer zwischen den Gruppen nieder und schafft eine neue Gemeinschaft.',
+    literature: ['Rudolf Schnackenburg, Der Brief an die Epheser (EKK)', 'Gerhard Sellin, Der Brief an die Epheser (KEK)'],
   },
   phil: {
     subtitle: 'Ein Brief der Freude – geschrieben im Gefängnis',
@@ -408,6 +477,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 55–62 n. Chr., aus der Haft.',
     occasion: 'Dank für Unterstützung und Ermutigung zur Einigkeit.',
     message: 'Freude hängt nicht an den Umständen. Christus wählte den Weg nach unten.',
+    literature: ['Ulrich B. Müller, Der Brief des Paulus an die Philipper (THKNT)', 'Joachim Gnilka, Der Philipperbrief (HThKNT)'],
   },
   kol: {
     subtitle: 'Christus ist genug',
@@ -415,6 +485,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 60–80 n. Chr.',
     occasion: 'Lehren, die zusätzliche religiöse Praktiken verlangten.',
     message: 'Es braucht keine Zusätze zu Christus – in ihm ist die ganze Fülle Gottes.',
+    literature: ['Eduard Lohse, Die Briefe an die Kolosser und an Philemon (KEK)', 'Petr Pokorný, Der Brief des Paulus an die Kolosser (THKNT)'],
   },
   '1thess': {
     subtitle: 'Wahrscheinlich der älteste Text des Neuen Testaments',
@@ -422,6 +493,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 50–51 n. Chr.',
     occasion: 'Sorge um eine junge Gemeinde unter Druck; Fragen zu Verstorbenen.',
     message: 'Trauer ja – aber nicht ohne Hoffnung.',
+    literature: ['Traugott Holtz, Der erste Brief an die Thessalonicher (EKK)', 'Rudolf Hoppe, Der erste Thessalonikerbrief (HThKNT)'],
   },
   '2thess': {
     subtitle: 'Klarstellungen zur Endzeiterwartung',
@@ -429,6 +501,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '1. Jh. n. Chr.',
     occasion: 'Verunsicherung durch die Behauptung, der Tag des Herrn sei schon da.',
     message: 'Erwartung ersetzt nicht den Alltag: weiterarbeiten, nicht in Untergangsstimmung erstarren.',
+    literature: ['Wolfgang Trilling, Der zweite Brief an die Thessalonicher (EKK)', 'Ebner/Schreiber, Einleitung in das Neue Testament'],
   },
   '1tim': {
     subtitle: 'Anleitung für die Leitung einer Gemeinde',
@@ -436,6 +509,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '1. Jh. n. Chr.',
     occasion: 'Ordnung, Lehre und Ämter in einer konsolidierten Gemeinde.',
     message: 'Gesunde Lehre und glaubwürdiges Leben gehören zusammen.',
+    literature: ['Jürgen Roloff, Der erste Brief an Timotheus (EKK)', 'Lorenz Oberlinner, Die Pastoralbriefe (HThKNT)'],
   },
   '2tim': {
     subtitle: 'Ein Vermächtnis kurz vor dem Ende',
@@ -443,6 +517,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '1. Jh. n. Chr.',
     occasion: 'Abschiedsworte an einen Mitarbeiter.',
     message: 'Dranbleiben, auch wenn andere aufgeben: „Ich habe den guten Kampf gekämpft.“',
+    literature: ['Lorenz Oberlinner, Die Pastoralbriefe (HThKNT)', 'Martin Dibelius / Hans Conzelmann, Die Pastoralbriefe (HNT)'],
   },
   tit: {
     subtitle: 'Gemeindeaufbau auf Kreta',
@@ -450,6 +525,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '1. Jh. n. Chr.',
     occasion: 'Aufbau von Gemeindestrukturen in schwierigem Umfeld.',
     message: 'Gottes Güte verändert das Verhalten – Lehre zeigt sich im Alltag.',
+    literature: ['Lorenz Oberlinner, Die Pastoralbriefe (HThKNT)', 'Martin Dibelius / Hans Conzelmann, Die Pastoralbriefe (HNT)'],
   },
   phlm: {
     subtitle: 'Ein Privatbrief, der ein Machtverhältnis aushebelt',
@@ -457,6 +533,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 60 n. Chr.',
     occasion: 'Der entlaufene Sklave Onesimus kehrt zu seinem Besitzer zurück.',
     message: 'Paulus bittet, statt zu befehlen: Onesimus soll nun „mehr als ein Sklave“ sein – ein Bruder.',
+    literature: ['Eduard Lohse, Die Briefe an die Kolosser und an Philemon (KEK)', 'Peter Stuhlmacher, Der Brief an Philemon (EKK)'],
   },
   hebr: {
     subtitle: 'Eine kunstvolle Predigt über die Größe Christi',
@@ -464,6 +541,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Vor 100 n. Chr.',
     occasion: 'Gemeinde in Gefahr, müde zu werden und zurückzufallen.',
     message: 'Christus ist der bessere Weg – haltet durch, wie die Zeugen des Glaubens vor euch.',
+    literature: ['Erich Gräßer, An die Hebräer (EKK)', 'Harold W. Attridge, Hebrews (Hermeneia)'],
   },
   jak: {
     subtitle: 'Praktische Weisheit: Glaube, der sich zeigt',
@@ -471,6 +549,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '1. Jh. n. Chr.',
     occasion: 'Missstände zwischen Arm und Reich in den Gemeinden.',
     message: 'Glaube ohne Taten ist tot. Besonders die Zunge entscheidet über das Miteinander.',
+    literature: ['Christoph Burchard, Der Jakobusbrief (HNT)', 'Martin Dibelius, Der Brief des Jakobus (KEK)'],
   },
   '1petr': {
     subtitle: 'Ermutigung für Christen in der Minderheit',
@@ -478,6 +557,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 60–90 n. Chr.',
     occasion: 'Anfeindungen im Alltag, keine staatliche Verfolgung im großen Stil.',
     message: 'Als „Fremde“ leben, ohne bitter zu werden – und antworten können, warum man hofft.',
+    literature: ['Leonhard Goppelt, Der erste Petrusbrief (KEK)', 'Reinhard Feldmeier, Der erste Brief des Petrus (THKNT)'],
   },
   '2petr': {
     subtitle: 'Warnung vor Irrlehrern und vor Ungeduld',
@@ -485,6 +565,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Spätes 1. / frühes 2. Jh. n. Chr.',
     occasion: 'Spott über das Ausbleiben der Wiederkunft.',
     message: 'Gottes Zeitrechnung ist eine andere; sein Aufschub ist Geduld, nicht Gleichgültigkeit.',
+    literature: ['Anton Vögtle, Der zweite Petrusbrief (EKK)', 'Henning Paulsen, Der zweite Petrusbrief und der Judasbrief (KEK)'],
   },
   '1joh': {
     subtitle: 'Woran echte Gemeinschaft mit Gott erkennbar ist',
@@ -492,6 +573,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 90–110 n. Chr.',
     occasion: 'Spaltung in der Gemeinde über die Frage, wer Jesus wirklich war.',
     message: 'Gott ist Liebe. Wer den Bruder nicht liebt, kann Gott nicht lieben.',
+    literature: ['Hans-Josef Klauck, Der erste Johannesbrief (EKK)', 'Rudolf Schnackenburg, Die Johannesbriefe (HThKNT)'],
   },
   '2joh': {
     subtitle: 'Ein kurzer Brief über Wahrheit und Gastfreundschaft',
@@ -499,6 +581,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 90–110 n. Chr.',
     occasion: 'Umgang mit Wanderpredigern, die eine andere Lehre brachten.',
     message: 'Liebe und Wahrheit gehören zusammen – Offenheit ist nicht grenzenlos.',
+    literature: ['Hans-Josef Klauck, Der zweite und dritte Johannesbrief (EKK)', 'Rudolf Schnackenburg, Die Johannesbriefe (HThKNT)'],
   },
   '3joh': {
     subtitle: 'Ein Konflikt um Gastfreundschaft, in wenigen Zeilen',
@@ -506,6 +589,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 90–110 n. Chr.',
     occasion: 'Ein Gemeindeleiter verweigert Reisenden die Aufnahme.',
     message: 'Machtstreben zerstört Gemeinschaft; Gastfreundschaft baut sie auf.',
+    literature: ['Hans-Josef Klauck, Der zweite und dritte Johannesbrief (EKK)', 'Rudolf Schnackenburg, Die Johannesbriefe (HThKNT)'],
   },
   jud: {
     subtitle: 'Ein scharfer Weckruf zur Wachsamkeit',
@@ -513,6 +597,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: '1. Jh. n. Chr.',
     occasion: 'Eingedrungene Lehren, die Freiheit als Beliebigkeit ausgaben.',
     message: 'Für den Glauben einstehen – und zugleich mit Zweifelnden barmherzig umgehen.',
+    literature: ['Anton Vögtle, Der Judasbrief (EKK)', 'Henning Paulsen, Der zweite Petrusbrief und der Judasbrief (KEK)'],
   },
   offb: {
     subtitle: 'Trostbuch in Bildern für bedrängte Gemeinden',
@@ -520,6 +605,7 @@ export const BOOK_PROFILES: Record<string, BookProfile> = {
     time: 'Etwa 95 n. Chr., meist unter Kaiser Domitian verortet.',
     occasion: 'Druck durch Kaiserkult und gesellschaftliche Ausgrenzung.',
     message: 'Kein Fahrplan für die Zukunft, sondern eine Perspektive: Nicht die Gewalt behält das letzte Wort, sondern das Lamm.',
+    literature: ['Jürgen Roloff, Die Offenbarung des Johannes (ZBK)', 'David E. Aune, Revelation (WBC)', 'Heinrich Kraft, Die Offenbarung des Johannes (HNT)'],
     outline: [
       { from: 1, to: 3, label: 'Sendschreiben an sieben Gemeinden' },
       { from: 4, to: 16, label: 'Visionen von Siegeln, Posaunen und Schalen' },

@@ -29,6 +29,15 @@ const TABS: { id: Tab; label: string }[] = [
   { id: 'notizen', label: 'Notizen' },
 ];
 
+/** Leerzeilen im Artikeltext werden zu Absätzen. */
+function paragraphs(text: string | undefined): string[] {
+  if (!text) return [];
+  return text
+    .split(/\n\s*\n/)
+    .map((t) => t.trim())
+    .filter(Boolean);
+}
+
 const COLORS: { id: HighlightColor; label: string }[] = [
   { id: 'gelb', label: 'Gelb' },
   { id: 'gruen', label: 'Grün' },
@@ -210,9 +219,46 @@ export default function VersePanel({
                     )}
 
                     <p>{entry.historicalShort}</p>
-                    {entry.historicalLong && (
+                    {(entry.historicalLong || entry.terms?.length || entry.reception) && (
                       <>
-                        {expanded && <p>{entry.historicalLong}</p>}
+                        {expanded && (
+                          <>
+                            {paragraphs(entry.historicalLong).map((text, i) => (
+                              <p key={i}>{text}</p>
+                            ))}
+
+                            {/* Der Urtext steht hinter der Übersetzung, nicht
+                                neben ihr – deshalb erst hier, nicht in der
+                                Kurzansicht. */}
+                            {entry.terms && entry.terms.length > 0 && (
+                              <section className="deepen">
+                                <div className="section-title">Im Urtext</div>
+                                {entry.terms.map((term) => (
+                                  <p key={term.word} className="term">
+                                    <strong>{term.word}</strong>
+                                    {term.rendered && (
+                                      <span className="term__rendered">
+                                        {' '}
+                                        – bei Luther „{term.rendered}“
+                                      </span>
+                                    )}
+                                    <br />
+                                    {term.note}
+                                  </p>
+                                ))}
+                              </section>
+                            )}
+
+                            {entry.reception && (
+                              <section className="deepen">
+                                <div className="section-title">Was der Text bewirkt hat</div>
+                                {paragraphs(entry.reception).map((text, i) => (
+                                  <p key={i}>{text}</p>
+                                ))}
+                              </section>
+                            )}
+                          </>
+                        )}
                         <button
                           type="button"
                           className="btn btn--ghost btn--sm"
@@ -222,12 +268,21 @@ export default function VersePanel({
                         </button>
                       </>
                     )}
-                    {entry.sources && entry.sources.length > 0 && (
-                      <p style={{ fontSize: '0.78rem', marginTop: '0.6rem' }}>
-                        <span style={{ fontWeight: 600 }}>Grundlagen: </span>
-                        {entry.sources.join('; ')}
-                      </p>
-                    )}
+                    {(() => {
+                      // Wo der Artikel nichts Eigenes nennt, steht die
+                      // Standardliteratur zum Buch – eine ehrliche Angabe auf
+                      // Buchebene ist besser als eine leere Zeile.
+                      const grundlagen = entry.sources?.length
+                        ? entry.sources
+                        : (profile?.literature ?? []);
+                      if (grundlagen.length === 0) return null;
+                      return (
+                        <p className="sources">
+                          <span>Grundlagen: </span>
+                          {grundlagen.join('; ')}
+                        </p>
+                      );
+                    })()}
                   </div>
                 ))
               ) : (
@@ -257,6 +312,12 @@ export default function VersePanel({
                         <strong>Kernaussage: </strong>
                         {profile.message}
                       </p>
+                      {profile.literature && profile.literature.length > 0 && (
+                        <p className="sources">
+                          <span>Grundlagen: </span>
+                          {profile.literature.join('; ')}
+                        </p>
+                      )}
                     </>
                   )}
                 </>

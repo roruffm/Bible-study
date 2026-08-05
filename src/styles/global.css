@@ -914,6 +914,43 @@ button {
   line-height: 1.6;
 }
 
+/* Der ausführliche Teil eines Artikels läuft über mehrere Absätze – ohne
+   Abstand dazwischen liest ihn niemand zu Ende. */
+.panel__article p + p {
+  margin-top: 0.7rem;
+}
+
+/* Vertiefungen hinter „Mehr erfahren“: Urtext und Wirkungsgeschichte. */
+.deepen {
+  margin-top: 1.1rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--border);
+}
+
+.deepen .section-title {
+  margin-bottom: 0.4rem;
+}
+
+.term strong {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.term__rendered {
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+.sources {
+  font-size: 0.78rem;
+  margin-top: 0.8rem;
+  color: var(--text-muted);
+}
+
+.sources span {
+  font-weight: 600;
+}
+
 .interp {
   padding: 0.75rem 0;
   border-top: 1px solid var(--border);

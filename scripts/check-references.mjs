@@ -373,7 +373,10 @@ for (const pericope of SYNOPSIS) {
  */
 for (const entry of COMMENTARY) {
   const zitate = [...entry.title.matchAll(/„([^“]{8,})“/g)];
-  if (zitate.length === 0) continue;
+  // Dasselbe gilt für den Anhaltspunkt, den ein Urtext-Wort im deutschen Text
+  // nennt: Wer „bei Luther ‚schuf‘“ liest, muss „schuf“ im Abschnitt finden.
+  const woerter = (entry.terms ?? []).filter((t) => t.rendered);
+  if (zitate.length === 0 && woerter.length === 0) continue;
 
   const data = JSON.parse(
     readFileSync(join(ROOT, 'public', 'bibel', TRANSLATION, `${entry.book}.json`), 'utf8'),
@@ -386,6 +389,14 @@ for (const entry of COMMENTARY) {
     if (!abschnitt.includes(loose(zitat[1].replace(/\s*…\s*$/, '')))) {
       problems.push(
         `Artikel "${entry.title}": das Zitat steht so nicht in ${entry.book} ${entry.chapter},${entry.from}–${entry.to}`,
+      );
+    }
+  }
+  for (const term of woerter) {
+    if (!abschnitt.includes(loose(term.rendered))) {
+      problems.push(
+        `Artikel "${entry.title}": „${term.rendered}“ (zu ${term.word}) steht so nicht in ` +
+          `${entry.book} ${entry.chapter},${entry.from}–${entry.to}`,
       );
     }
   }
@@ -430,6 +441,24 @@ for (const entry of COMMENTARY) {
   const traditionen = new Set(entry.interpretations.map((i) => i.tradition));
   if (traditionen.size !== entry.interpretations.length) {
     problems.push(`Artikel "${entry.title}": Tradition doppelt genannt`);
+  }
+  for (const term of entry.terms ?? []) {
+    // Ohne Sprachangabe steht ein fremdes Wort ohne Anhaltspunkt da.
+    if (!/^(hebr\.|aram\.|griech\.|lat\.)/.test(term.word)) {
+      problems.push(`Artikel "${entry.title}": „${term.word}“ ohne Sprachangabe`);
+    }
+  }
+}
+
+// Jedes Buch braucht Standardliteratur – sie ist der Rückfall für alle
+// Artikel, die nichts Eigenes nennen, und für Verse ganz ohne Artikel.
+const { BOOK_PROFILES } = await loadContent('bookProfiles');
+for (const book of index.books) {
+  const profile = BOOK_PROFILES[book.id];
+  if (!profile) {
+    problems.push(`Buch "${book.name}": kein Steckbrief`);
+  } else if (!profile.literature?.length) {
+    problems.push(`Buch "${book.name}": keine Literaturangabe im Steckbrief`);
   }
 }
 
@@ -484,6 +513,30 @@ console.log(
   console.log(
     `Auslegungen : ${interpretations} aus ${traditionen.size} Traditionen, ` +
       `${vier} Artikel mit vier oder mehr`,
+  );
+}
+{
+  // Umfang des Fließtextes – die Zahl, an der sich ablesen lässt, ob die
+  // Artikel wirklich wachsen oder nur mehr werden.
+  const zeichen = COMMENTARY.reduce(
+    (n, e) =>
+      n +
+      e.historicalShort.length +
+      (e.historicalLong?.length ?? 0) +
+      (e.reception?.length ?? 0) +
+      e.interpretations.reduce((m, i) => m + i.text.length, 0) +
+      (e.terms ?? []).reduce((m, t) => m + t.note.length, 0),
+    0,
+  );
+  const mitUrtext = COMMENTARY.filter((e) => e.terms?.length).length;
+  const mitWirkung = COMMENTARY.filter((e) => e.reception).length;
+  console.log(
+    `Umfang      : ${Math.round(zeichen / 1000)} Tsd. Zeichen Artikeltext, ` +
+      `im Schnitt ${Math.round(zeichen / COMMENTARY.length)} je Artikel`,
+  );
+  console.log(
+    `Vertiefung  : ${mitUrtext} Artikel mit Urtext-Wörtern, ` +
+      `${mitWirkung} mit Wirkungsgeschichte`,
   );
 }
 console.log(

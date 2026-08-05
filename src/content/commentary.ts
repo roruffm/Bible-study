@@ -28,6 +28,23 @@ export interface CrossReference {
   note?: string;
 }
 
+/**
+ * Ein Wort des Urtextes, an dem die Übersetzung an eine Grenze kommt.
+ *
+ * Nicht als Sprachunterricht gedacht, sondern als Hinweis darauf, dass an
+ * dieser Stelle eine Entscheidung getroffen wurde: „Wort“ für *logos*, „Liebe“
+ * für gleich drei verschiedene griechische Wörter. Wer das weiß, liest die
+ * Übersetzung anders – auch ohne ein Wort Hebräisch zu können.
+ */
+export interface TermNote {
+  /** Das Wort in Umschrift, mit Sprache: „hebr. chesed“, „griech. logos“. */
+  word: string;
+  /** Wie Luther übersetzt – der Anhaltspunkt im deutschen Text. */
+  rendered?: string;
+  /** Was das Wort trägt und was in der Übersetzung verloren geht. */
+  note: string;
+}
+
 export interface CommentaryEntry {
   book: string;
   chapter: number;
@@ -42,11 +59,31 @@ export interface CommentaryEntry {
   title: string;
   /** Zwei bis drei Sätze für die Kurzansicht. */
   historicalShort: string;
-  /** Ausführliche Fassung hinter „Mehr erfahren“. */
+  /**
+   * Ausführliche Fassung hinter „Mehr erfahren“.
+   *
+   * Leerzeilen trennen Absätze. Die Anzeige setzt sie auch als Absätze – ein
+   * langer Block ohne Gliederung wird sonst nicht gelesen, sondern überflogen.
+   */
   historicalLong?: string;
+  /**
+   * Was der Text in der Geschichte angerichtet und bewirkt hat.
+   *
+   * Ausdrücklich auch dort, wo es unangenehm wird: Stellen, mit denen Sklaverei,
+   * Judenfeindschaft oder Gewalt begründet wurden, gehören zur Auslegungs-
+   * geschichte dieser Texte und werden hier nicht übergangen.
+   */
+  reception?: string;
+  /** Wörter des Urtextes, die die Übersetzung nicht mitträgt. */
+  terms?: TermNote[];
   interpretations: Interpretation[];
   crossRefs?: CrossReference[];
-  /** Grundlagen des Artikels. */
+  /**
+   * Grundlagen des Artikels.
+   *
+   * Wo nichts steht, zeigt die App die Standardliteratur zum Buch aus dem
+   * Steckbrief – besser eine ehrliche Angabe zur Buchebene als gar keine.
+   */
   sources?: string[];
 }
 
@@ -60,7 +97,26 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Text ist als feierlicher Sieben-Tage-Rhythmus komponiert und stammt vermutlich aus priesterlichen Kreisen der Exilszeit. Er entstand in einer Umwelt, in der babylonische Schöpfungsmythen wie das Enuma Elisch die Welt aus einem Götterkampf hervorgehen ließen.',
     historicalLong:
-      'Israel formuliert hier bewusst einen Gegenentwurf: Es gibt keinen Kampf zwischen Göttern, Sonne und Mond sind keine Gottheiten, sondern werden nüchtern „Lichter“ genannt. Auffällig ist auch die Würde des Menschen: Während in Mesopotamien nur der König als Bild der Gottheit galt, wird hier der Mensch als solcher – „männlich und weiblich“ – zum Bild Gottes erklärt. Für Menschen im babylonischen Exil, die ihren Tempel und ihre Eigenstaatlichkeit verloren hatten, war das eine Kampfansage gegen die Weltdeutung der Siegermacht.',
+      'Israel formuliert hier bewusst einen Gegenentwurf: Es gibt keinen Kampf zwischen Göttern, Sonne und Mond sind keine Gottheiten, sondern werden nüchtern „Lichter“ genannt. Auffällig ist auch die Würde des Menschen: Während in Mesopotamien nur der König als Bild der Gottheit galt, wird hier der Mensch als solcher – „männlich und weiblich“ – zum Bild Gottes erklärt. Für Menschen im babylonischen Exil, die ihren Tempel und ihre Eigenstaatlichkeit verloren hatten, war das eine Kampfansage gegen die Weltdeutung der Siegermacht.\n\nDer Aufbau ist streng: Die ersten drei Tage schaffen Räume – Licht und Finsternis, Himmelsgewölbe und Wasser, Land und Meer –, die zweiten drei füllen sie mit Gestirnen, Fischen, Vögeln und Landtieren. Tag eins gehört zu Tag vier, Tag zwei zu Tag fünf, Tag drei zu Tag sechs. Der siebte Tag steht außerhalb dieser Ordnung und hat als einziger kein Werk: Er ist das Ziel, nicht der Rest. Der wiederkehrende Satz „und Gott sah, daß es gut war“ ist dabei kein ästhetisches Urteil, sondern eine Feststellung über die Brauchbarkeit der Welt – sie taugt zum Leben.',
+    reception:
+      'Der Auftrag, sich die Erde untertan zu machen, ist über Jahrhunderte als Freibrief gelesen worden. Der Historiker Lynn White machte 1967 genau diesen Vers für die ökologische Krise mitverantwortlich – eine These, die heftig widersprochen wurde, aber die Debatte bis heute prägt. Die Gegenlesart weist darauf hin, dass das hebräische Wort für „herrschen“ in derselben Bibel den Hirten meint, der für die Herde einsteht, und dass der Mensch im zweiten Schöpfungsbericht den Garten „bebauen und bewahren“ soll.\n\nDie andere Wirkung geht in die entgegengesetzte Richtung: Dass jeder Mensch Gottes Bild ist, wurde in den Abolitionismus, in die Erklärung der Menschenrechte und in die Bürgerrechtsbewegung hinein zitiert. Beide Wirkungen gehen von demselben Kapitel aus.',
+    terms: [
+      {
+        word: 'hebr. bara',
+        rendered: 'schuf',
+        note: 'Ein Verb, das im Alten Testament ausschließlich Gott als Subjekt hat. Kein Mensch „schafft“ in diesem Sinn. Über das Wie sagt es nichts – die Vorstellung einer Erschaffung aus dem Nichts ist eine spätere Zuspitzung.',
+      },
+      {
+        word: 'hebr. tohu wabohu',
+        rendered: 'wüst und leer',
+        note: 'Ein Reimpaar für das Ungeformte, nicht für das Nichts. Der Text setzt nicht bei einer Leere an, sondern bei einem Zustand ohne Ordnung, den Gott gliedert.',
+      },
+      {
+        word: 'hebr. zelem',
+        rendered: 'Bild',
+        note: 'Dasselbe Wort steht sonst für die Statue eines Königs, die in einer Provinz seine Gegenwart vertritt. Auf den Menschen angewandt heißt es: Er steht in der Welt an Gottes Stelle – eine Ansage, die im Alten Orient nur für Könige galt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -77,6 +133,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Ostkirchliche Auslegung',
         text: 'Die orthodoxe Theologie liest den Bericht von seinem Ziel her: Der siebte Tag, an dem Gott ruht, ist nicht Abschluss, sondern Ausblick – die Schöpfung ist auf ein Fest hin angelegt, nicht auf Betrieb.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Raschi liest den ersten Satz nicht als Zeitangabe, sondern als Überschrift: „Als Gott anfing, Himmel und Erde zu schaffen …“ Die Frage, was vorher war, wird damit gar nicht erst gestellt – der Text beginnt bei der Ordnung, nicht beim Ursprung.',
       },
     ],
     crossRefs: [
@@ -95,7 +155,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Erzählung gehört zur älteren Schicht der Urgeschichte. Sie erklärt nicht den Ursprung des Bösen, sondern beschreibt eine Grunderfahrung: Der Mensch will sein wie Gott und verliert dabei Vertrauen, Nähe und Unbefangenheit.',
     historicalLong:
-      'Die Schlange ist im Text ausdrücklich ein Geschöpf, kein Gegengott – die Gleichsetzung mit dem Teufel entsteht erst in späterer jüdischer und christlicher Auslegung. Auffällig ist die psychologische Genauigkeit: Zuerst wird das Gebot verzerrt wiedergegeben, dann wird Misstrauen gesät, am Ende folgt gegenseitige Schuldzuweisung. Das Bild vom Feigenblatt und die Frage „Wo bist du?“ gehören zu den dichtesten Szenen der Bibel.',
+      'Die Schlange ist im Text ausdrücklich ein Geschöpf, kein Gegengott – die Gleichsetzung mit dem Teufel entsteht erst in späterer jüdischer und christlicher Auslegung. Auffällig ist die psychologische Genauigkeit: Zuerst wird das Gebot verzerrt wiedergegeben, dann wird Misstrauen gesät, am Ende folgt gegenseitige Schuldzuweisung. Das Bild vom Feigenblatt und die Frage „Wo bist du?“ gehören zu den dichtesten Szenen der Bibel.\n\nBemerkenswert ist, was nicht dasteht. Von einem Apfel ist keine Rede, von einem Teufel auch nicht: Die Schlange gehört zu den Tieren, die Gott gemacht hat, und wird erst in hellenistischer Zeit mit dem Satan gleichgesetzt. Das Wort „Sünde“ kommt im ganzen Kapitel nicht vor, „Fall“ ebenso wenig. Und der Satz der Schlange ist nicht einmal falsch: Die Augen werden tatsächlich aufgetan, die beiden sterben nicht an diesem Tag. Was sie gewinnen, ist Erkenntnis; was sie verlieren, ist die Selbstverständlichkeit.',
+    reception:
+      'Kaum ein Kapitel hat mehr Schaden angerichtet. Aus der Reihenfolge von Verführung und Strafe wurde über Jahrhunderte die Behauptung abgeleitet, die Frau sei die Tür zur Sünde – ein Satz, der von Kirchenvätern bis in Hexenprozesse hinein wirkte. Auch der Satz „er soll dein Herr sein“ wurde als Anordnung gelesen statt als Beschreibung eines beschädigten Zustands.\n\nDaneben steht eine Auslegungslinie, die den Text als Erklärung der Mühsal las: Warum Ackerbau schwer ist, warum Geburten gefährlich sind, warum Menschen sterben. Und in der Kunst wurde aus der namenlosen Frucht der Apfel – vermutlich, weil das lateinische *malum* sowohl „Apfel“ als auch „das Böse“ heißt.',
+    terms: [
+      {
+        word: 'hebr. arum',
+        rendered: 'listiger',
+        note: 'Klingt fast gleich wie das Wort für „nackt“ im Vers davor. Der Erzähler spielt mit dem Anklang: Wer klug werden will, endet nackt.',
+      },
+      {
+        word: 'hebr. tow wara',
+        rendered: 'gut und böse',
+        note: 'Ein Ausdruck für die Gesamtheit – so wie „Himmel und Erde“ alles meint. „Wissen, was gut und böse ist“ heißt daher weniger moralische Einsicht als das Beanspruchen einer Übersicht, die dem Menschen nicht zusteht.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Westliche Tradition seit Augustinus',
@@ -113,6 +187,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Feministische Exegese',
         text: 'Die Auslegungsgeschichte hat die Frau über Jahrhunderte als Urheberin des Bruchs beschrieben. Der Text selbst sagt, der Mann sei „bei ihr“ gewesen und habe wortlos mitgegessen; das Urteil trifft beide.',
       },
+      {
+        tradition: 'Religionsgeschichtliche Einordnung',
+        text: 'Die Erzählung teilt Motive mit älteren Texten der Umwelt: Im Gilgamesch-Epos verliert der Mensch die Unsterblichkeit an eine Schlange, und die Verwandlung des Wildmanns Enkidu zum Menschen geht ebenfalls über eine Erkenntnis, nach der es kein Zurück gibt. Israel erzählt das Motiv um – nicht Götterlaune, sondern eine Entscheidung des Menschen steht am Anfang.',
+      },
     ],
     crossRefs: [
       { book: 'roem', chapter: 5, verse: 12 },
@@ -128,7 +206,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Mose fragt nach dem Namen – in der Antike die Frage nach Wesen und Verfügbarkeit einer Gottheit. Die Antwort „Ich bin, der ich bin“ (hebräisch ehje ascher ehje) ist bewusst offen und entzieht sich dem Zugriff.',
     historicalLong:
-      'Aus dieser Wurzel wird der Eigenname JHWH abgeleitet, das Tetragramm. Aus Ehrfurcht wird er im Judentum nicht ausgesprochen, sondern beim Lesen durch „Adonai“ (Herr) ersetzt; die Lutherbibel gibt ihn mit „HERR“ in Großbuchstaben wieder. Die Form lässt sich auch zukünftig übersetzen: „Ich werde da sein, als der ich da sein werde“ – eine Zusage der Mitgegenwart auf dem Weg, nicht eine Definition des Wesens.',
+      'Aus dieser Wurzel wird der Eigenname JHWH abgeleitet, das Tetragramm. Aus Ehrfurcht wird er im Judentum nicht ausgesprochen, sondern beim Lesen durch „Adonai“ (Herr) ersetzt; die Lutherbibel gibt ihn mit „HERR“ in Großbuchstaben wieder. Die Form lässt sich auch zukünftig übersetzen: „Ich werde da sein, als der ich da sein werde“ – eine Zusage der Mitgegenwart auf dem Weg, nicht eine Definition des Wesens.\n\nDie Antwort ist eine Verweigerung und eine Zusage zugleich. Im Alten Orient gab ein Name Verfügungsgewalt: Wer den Namen einer Gottheit kannte, konnte sie anrufen und in Formeln binden. Gott antwortet mit einem Satz, der grammatisch offen bleibt – er lässt sich als „ich bin, der ich bin“, als „ich werde sein, der ich sein werde“ und als „ich werde da sein, als der ich da sein werde“ übersetzen. Luther entschied sich für die Zukunftsform und schrieb sie in Großbuchstaben. Vers 15 gibt dann doch einen Namen, aber gebunden an eine Geschichte: der Gott Abrahams, Isaaks und Jakobs.',
+    reception:
+      'Die griechische Übersetzung machte aus dem Satz eine Aussage über das Sein selbst: „Ich bin der Seiende.“ Von dort führt eine lange Linie über Augustinus und Thomas von Aquin zur Bestimmung Gottes als das Sein schlechthin – eine Deutung, die viel philosophische Kraft entfaltet hat und der neuere Exegeten entgegenhalten, dass der hebräische Text vom Dasein für jemanden spricht, nicht vom Sein an sich.\n\nMartin Buber und Franz Rosenzweig übersetzten deshalb bewusst gegen die Tradition: „Ich werde dasein, als der ich dasein werde“ – und trafen damit im 20. Jahrhundert einen Ton, der auch in christlichen Gesangbüchern nachhallt.',
+    terms: [
+      {
+        word: 'hebr. JHWH',
+        rendered: 'HERR',
+        note: 'Die vier Buchstaben des Gottesnamens werden im Judentum nicht ausgesprochen; gelesen wird stattdessen „Adonaj“, Herr. Luther folgt dieser Ehrfurcht und setzt überall dort, wo im Hebräischen der Name steht, das Wort HERR in Großbuchstaben – eine Schreibweise, die durch die ganze Bibel geht.',
+      },
+      {
+        word: 'hebr. ehje ascher ehje',
+        rendered: 'ICH WERDE SEIN, DER ICH SEIN WERDE',
+        note: 'Zwei Formen desselben Verbs „sein“, verbunden durch ein Relativpronomen. Das Hebräische kennt keine Zeitformen im deutschen Sinn; deshalb sind Gegenwart und Zukunft beide möglich, und keine Übersetzung kann beides zugleich sagen.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Philosophische Tradition',
@@ -141,6 +233,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Johanneische Auslegung',
         text: 'Die „Ich bin“-Worte Jesu im Johannesevangelium werden traditionell als bewusste Anspielung auf diese Stelle verstanden.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Midrasch versteht die Doppelung als Zusage an Bedrängte: Ich werde bei ihnen sein in dieser Not, und ich werde bei ihnen sein in der nächsten. Der Name ist damit keine Definition, sondern ein Versprechen für die Zukunft.',
       },
     ],
     crossRefs: [
@@ -157,7 +253,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Gebote stehen literarisch nicht am Anfang, sondern nach der Befreiung: Erst rettet Gott, dann ordnet er das Zusammenleben. Formal erinnern sie an altorientalische Vertragstexte zwischen einem Großkönig und seinen Vasallen.',
     historicalLong:
-      'Der Vorspruch „Ich bin der HERR, dein Gott, der ich dich aus Ägypten geführt habe“ ist entscheidend: Die Gebote sind Konsequenz der Befreiung, nicht deren Bedingung. Die Zählung unterscheidet sich zwischen den Konfessionen – die katholische und lutherische Tradition zählt anders als die reformierte, orthodoxe und jüdische; die Gesamtzahl bleibt zehn. Mehrere Gebote schützen konkret die Schwächeren: Der Sabbat gilt ausdrücklich auch für Sklaven, Fremde und Tiere.',
+      'Der Vorspruch „Ich bin der HERR, dein Gott, der ich dich aus Ägypten geführt habe“ ist entscheidend: Die Gebote sind Konsequenz der Befreiung, nicht deren Bedingung. Die Zählung unterscheidet sich zwischen den Konfessionen – die katholische und lutherische Tradition zählt anders als die reformierte, orthodoxe und jüdische; die Gesamtzahl bleibt zehn. Mehrere Gebote schützen konkret die Schwächeren: Der Sabbat gilt ausdrücklich auch für Sklaven, Fremde und Tiere.\n\nDie Zählung der zehn Gebote ist keine Angabe des Textes, sondern eine Entscheidung der Auslegung – und die Konfessionen entschieden verschieden. Judentum, orthodoxe und reformierte Kirchen zählen das Bilderverbot als eigenes Gebot und fassen die beiden Begehrensverbote am Ende zusammen. Katholische und lutherische Tradition rechnen das Bilderverbot zum ersten Gebot und teilen dafür am Schluss auf. Beide Zählungen kommen auf zehn, aber ein „viertes Gebot“ meint dann Verschiedenes. Wer über die Gebote spricht, spricht deshalb immer schon aus einer Tradition heraus.',
+    reception:
+      'Die Gebote stehen bis heute in Gerichtssälen, Schulen und Verfassungsdebatten – und ihre öffentliche Aufstellung ist in den USA mehrfach vor dem Supreme Court gelandet. Zugleich sind sie im Recht nie einfach übernommen worden: Kein moderner Staat verbietet Bilder oder verlangt die Sabbatruhe.\n\nDas Bilderverbot hat eine eigene, blutige Geschichte: Im byzantinischen Bilderstreit des 8. und 9. Jahrhunderts und noch einmal in der Reformationszeit wurden Kirchen geplündert und Kunstwerke zerstört; in Zürich und Wittenberg wurde erbittert darüber gestritten, ob Luther oder Karlstadt recht behielt. Die Ostkirche entschied den Streit 843 zugunsten der Ikonen – mit dem Argument, dass Gott in Christus selbst ein Bild geworden sei.',
+    terms: [
+      {
+        word: 'hebr. dabar',
+        rendered: 'Worte',
+        note: 'Der hebräische Text spricht nicht von zehn Geboten, sondern von den „zehn Worten“. Daher der griechische Name Dekalog. Das Wort lässt offen, ob es sich um Befehle, Zusagen oder Grundsätze handelt.',
+      },
+      {
+        word: 'hebr. razach',
+        rendered: 'töten',
+        note: 'Meint das widerrechtliche Töten eines Menschen, nicht jede Tötung; für Krieg, Todesstrafe und Schlachten stehen andere Verben. Neuere Übersetzungen sagen deshalb „morden“. Ob damit auch die Todesstrafe gedeckt ist, wird seit Jahrhunderten gestritten.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -170,6 +280,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Katholische Soziallehre',
         text: 'Die zweite Tafel wird als Grundlage einer Ethik des Gemeinwohls gelesen: Schutz von Leben, Ehe, Eigentum und Ruf sind Bedingungen einer menschenwürdigen Gesellschaft.',
+      },
+      {
+        tradition: 'Rechtsgeschichtliche Einordnung',
+        text: 'Verglichen mit dem Kodex Hammurapi fällt auf, was fehlt: keine Strafandrohung, keine Fallunterscheidung, kein Verfahren. Die zehn Worte sind kein Gesetzbuch, sondern eine Grundordnung, die erst in den folgenden Kapiteln in einzelne Rechtssätze übersetzt wird.',
       },
     ],
     crossRefs: [
@@ -186,7 +300,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Dieser Text ist bis heute das zentrale Bekenntnis des Judentums, gesprochen morgens und abends. Er entstand in einer Zeit, in der die Verehrung mehrerer Gottheiten selbstverständlich war.',
     historicalLong:
-      'Der hebräische Satz lässt zwei Übersetzungen zu: „Der HERR ist unser Gott, der HERR allein“ oder „… der HERR ist einer“. Die erste Fassung ist ein Treuebekenntnis (nur dieser eine gilt), die zweite eine Aussage über Gottes Einheit. Die Anweisungen, die Worte an Türpfosten und an die Hand zu binden, wurden wörtlich umgesetzt: Mesusa und Tefillin gehen auf diese Verse zurück.',
+      'Der hebräische Satz lässt zwei Übersetzungen zu: „Der HERR ist unser Gott, der HERR allein“ oder „… der HERR ist einer“. Die erste Fassung ist ein Treuebekenntnis (nur dieser eine gilt), die zweite eine Aussage über Gottes Einheit. Die Anweisungen, die Worte an Türpfosten und an die Hand zu binden, wurden wörtlich umgesetzt: Mesusa und Tefillin gehen auf diese Verse zurück.\n\nDer Satz ist grammatisch nicht eindeutig, und die Übersetzungen gehen auseinander: „Der HERR, unser Gott, ist ein einiger HERR“ ist eine Aussage über die Einzigkeit; „Der HERR ist unser Gott, der HERR allein“ ist eine Aussage über die Bindung. Der Unterschied ist nicht klein. Im ersten Fall geht es um die Zahl der Götter, im zweiten darum, wem dieses Volk gehört. Die ältere Forschung sah in dem Vers deshalb keinen Monotheismus im späteren Sinn, sondern die Forderung ausschließlicher Treue – nicht: es gibt nur einen Gott, sondern: für uns kommt nur dieser eine in Frage.',
+    reception:
+      'Das Schma ist das Gebet, mit dem gläubige Jüdinnen und Juden den Tag beginnen und beschließen – und mit dem viele in den Tod gegangen sind. Rabbi Akiba soll es unter der Folter der Römer gesprochen haben; in den Ghettos und Lagern des 20. Jahrhunderts wurde es wieder zum letzten Satz.\n\nDie Anweisungen der Verse 8 und 9 sind wörtlich genommen worden und im Judentum bis heute sichtbar: Tefillin an Arm und Stirn, die Mesusa am Türpfosten. Im Christentum blieb der Vers dagegen fast unsichtbar – bis auf die Stelle, an der Jesus ihn zitiert und damit das ganze Gesetz zusammenfasst.',
+    terms: [
+      {
+        word: 'hebr. schema',
+        rendered: 'Höre',
+        note: 'Der Imperativ, der dem Gebet seinen Namen gibt. Im Hebräischen schließt Hören das Befolgen ein – wer hört, ohne zu tun, hat nicht gehört.',
+      },
+      {
+        word: 'hebr. lewaw',
+        rendered: 'Herzen',
+        note: 'Nicht der Sitz der Gefühle, sondern der des Denkens, Planens und Entscheidens. „Von ganzem Herzen lieben“ meint deshalb zuerst eine Ausrichtung des Willens, nicht eine Stimmung.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Jüdische Tradition',
@@ -204,6 +332,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Ostkirchliche Auslegung',
         text: 'Die orthodoxe Tradition betont, dass das Hören vor dem Bekennen steht. Der Glaube beginnt nicht mit einer Aussage über Gott, sondern mit einer Haltung des Empfangens.',
       },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther legte das Gewicht auf das erste Gebot und las das Schma als dessen Auslegung: Woran ein Mensch sein Herz hängt, das ist sein Gott. Die Frage lautet damit nicht, ob jemand einen Gott hat, sondern welchen.',
+      },
     ],
     crossRefs: [
       { book: 'mk', chapter: 12, verse: 29 },
@@ -219,7 +351,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das Bild vom Hirten war im Alten Orient ein politischer Titel: Könige nannten sich Hirten ihres Volkes. Der Psalm überträgt diesen Herrschertitel auf Gott – und verbindet ihn mit persönlicher Fürsorge.',
     historicalLong:
-      'Der Psalm wechselt in der Mitte das Bild: Aus dem Hirten auf der Weide wird der Gastgeber, der einen Tisch deckt – „im Angesicht meiner Feinde“. Das Salben des Kopfes mit Öl und der überfließende Becher gehören zur Gastfreundschaft; wer in einem Zelt aufgenommen wurde, stand unter dem Schutz des Gastgebers. Das „finstere Tal“ meint wörtlich einen Ort tiefer Dunkelheit; die Übersetzung „Tal der Todesschatten“ ist möglich, aber deutend.',
+      'Der Psalm wechselt in der Mitte das Bild: Aus dem Hirten auf der Weide wird der Gastgeber, der einen Tisch deckt – „im Angesicht meiner Feinde“. Das Salben des Kopfes mit Öl und der überfließende Becher gehören zur Gastfreundschaft; wer in einem Zelt aufgenommen wurde, stand unter dem Schutz des Gastgebers. Das „finstere Tal“ meint wörtlich einen Ort tiefer Dunkelheit; die Übersetzung „Tal der Todesschatten“ ist möglich, aber deutend.\n\nDer Psalm wechselt in der Mitte die Perspektive. Bis Vers 3 wird über Gott geredet – „er weidet mich“, „er führet mich“. Ab Vers 4, im finsteren Tal, wird Gott angeredet: „du bist bei mir“. Genau dort, wo es dunkel wird, wird aus dem Reden über Gott ein Reden mit ihm. Auch das Bild wechselt: Aus dem Hirten wird in Vers 5 der Gastgeber, der einen Tisch deckt – und zwar im Angesicht der Feinde, die also nicht verschwunden sind. Der Psalm verspricht keine feindfreie Welt, sondern einen gedeckten Tisch mitten darin.',
+    reception:
+      'Dieser Psalm ist der Text, der in Deutschland am häufigsten am Grab gesprochen wird – und er ist zugleich der, den auch Menschen ohne Kirchenbindung noch auswendig können. Vertont wurde er hundertfach, von Schütz und Bach bis zu Popsongs; das schottische Gesangbuchlied „The Lord’s my Shepherd“ und Bourgeois’ „Der Herr ist mein getreuer Hirt“ gehören zum Kernbestand des evangelischen Singens.\n\nSeine Bildsprache stammt aus dem Alten Orient, wo „Hirte“ ein Königstitel war – in Ägypten wie in Mesopotamien. Dass dieser Titel hier nicht dem König Israels, sondern Gott gilt, ist eine leise politische Aussage.',
+    terms: [
+      {
+        word: 'hebr. zalmawet',
+        rendered: 'finstern Tal',
+        note: 'Wörtlich etwa „Todesschatten“ – ein Wort für tiefste Dunkelheit. Luther übersetzte hier zurückhaltend; andere Übersetzungen sagen „Tal des Todesschattens“ oder „finsterste Schlucht“.',
+      },
+      {
+        word: 'hebr. nefesch',
+        rendered: 'Seele',
+        note: 'Nicht die unsterbliche Seele der griechischen Philosophie, sondern die Kehle, der Atem, das Leben selbst. „Er erquicket meine Seele“ heißt: Er bringt mich wieder zu Atem.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Jüdische Auslegung',
@@ -232,6 +378,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Betont wird, dass der Psalm die Dunkelheit nicht überspringt: Er verspricht keinen Weg um das Tal herum, sondern Begleitung hindurch.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Wer den Psalm am Sterbebett hört, hört ihn anders als jemand, dem gerade Unrecht geschieht. Ausleger warnen deshalb davor, ihn zum Beruhigungsmittel zu machen: Er wurde von Menschen gebetet, die sehr genau wussten, dass Stecken und Stab auch schlagen können.',
       },
     ],
     crossRefs: [
@@ -248,7 +398,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein später Psalm, sprachlich mit aramäischen Einflüssen. Er beschreibt Gottes Allwissenheit nicht als Überwachung, sondern als Geborgenheit: Es gibt keinen Ort ohne Gott.',
     historicalLong:
-      'Der Aufbau ist streng: vier Strophen zu je sechs Versen über Wissen, Gegenwart, Werden und schließlich die Bitte um Prüfung. Die Bildwelt greift die damals bekannten Grenzen der Welt auf – Himmel, Totenreich, der Osten des Sonnenaufgangs, das Meer im Westen. „Im Verborgenen gebildet, gewirkt unten in der Erde“ ist eine ungewöhnliche Wendung: Der Mutterleib wird mit dem Erdinneren verglichen, dem Ort, aus dem nach 1. Mose 2 der Mensch geformt wurde. Der Schluss dreht die Richtung um: Nachdem der Beter zwanzig Verse lang beschrieben hat, wie durchschaut er ist, bittet er ausdrücklich darum, geprüft zu werden.',
+      'Der Aufbau ist streng: vier Strophen zu je sechs Versen über Wissen, Gegenwart, Werden und schließlich die Bitte um Prüfung. Die Bildwelt greift die damals bekannten Grenzen der Welt auf – Himmel, Totenreich, der Osten des Sonnenaufgangs, das Meer im Westen. „Im Verborgenen gebildet, gewirkt unten in der Erde“ ist eine ungewöhnliche Wendung: Der Mutterleib wird mit dem Erdinneren verglichen, dem Ort, aus dem nach 1. Mose 2 der Mensch geformt wurde. Der Schluss dreht die Richtung um: Nachdem der Beter zwanzig Verse lang beschrieben hat, wie durchschaut er ist, bittet er ausdrücklich darum, geprüft zu werden.\n\nDer Psalm ist eine Verteidigungsrede vor Gericht. Das wird erst am Schluss deutlich, wo der Beter darum bittet, geprüft zu werden – und im ausgelassenen Teil, den Versen 19 bis 22, wo er sich scharf von den „Blutgierigen“ abgrenzt. Die berühmten Verse über das Durchschautsein sind also nicht als Meditation gedichtet, sondern als Argument: Wenn Gott alles weiß, dann weiß er auch, dass ich unschuldig bin. Wer nur die schönen Verse liest, liest den Psalm ohne seine Lage.',
+    reception:
+      'Die Verse 13 bis 16 gehören zu den meistzitierten Stellen in der Debatte um Schwangerschaftsabbruch, in Deutschland wie in den USA. Ausleger weisen darauf hin, dass der Psalm keine Aussage über den Status des Embryos treffen will, sondern über Gottes Zuwendung zu diesem einen Beter; wer ihn zum Argument macht, macht aus einem Gebet einen Rechtssatz. Dass er in dieser Rolle wirkt, lässt sich davon unabhängig nicht bestreiten.\n\nEine andere Wirkung ist stiller: In der Seelsorge bei Menschen mit Behinderung und in der Trauerbegleitung nach Fehlgeburten ist gerade Vers 16 – „alle Tage waren auf dein Buch geschrieben“ – zu einem der meistgesprochenen Sätze geworden.',
+    terms: [
+      {
+        word: 'hebr. kiljotai',
+        rendered: 'Nieren',
+        note: 'Im hebräischen Menschenbild sitzt im Innern der Organe das Innerste der Person – Nieren und Herz stehen für das, was niemand sieht. Gemeint ist nicht Anatomie, sondern das verborgene Selbst.',
+      },
+      {
+        word: 'hebr. golem',
+        rendered: 'unbereitet',
+        note: 'Das einzige Vorkommen des Wortes in der Bibel: das noch Ungeformte, der Rohling. Aus ihm wurde in der jüdischen Überlieferung später der Golem, die vom Menschen geformte Gestalt ohne Sprache.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Spirituelle Tradition',
@@ -277,7 +441,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Spruch stammt aus dem Weisheitsunterricht, in dem junge Männer auf Verantwortung vorbereitet wurden. Er stellt nicht Vernunft gegen Glauben, sondern warnt davor, sich allein auf die eigene Einschätzung zu verlassen.',
     historicalLong:
-      'Das hebräische Wort für „Herz“ meint nicht das Gefühl, sondern den Ort des Nachdenkens und Entscheidens – näher an „Verstand“ als an „Empfindung“. Wörtlich steht da: „Stütze dich nicht auf deine eigene Einsicht.“ Gemeint ist also nicht der Verzicht aufs Denken, sondern auf dessen Verabsolutierung. Auffällig ist die Fortsetzung wenige Verse später: Wer weise ist, soll sich nicht für weise halten. Die Sprüche misstrauen der Selbstsicherheit durchgehend – nicht der Klugheit.',
+      'Das hebräische Wort für „Herz“ meint nicht das Gefühl, sondern den Ort des Nachdenkens und Entscheidens – näher an „Verstand“ als an „Empfindung“. Wörtlich steht da: „Stütze dich nicht auf deine eigene Einsicht.“ Gemeint ist also nicht der Verzicht aufs Denken, sondern auf dessen Verabsolutierung. Auffällig ist die Fortsetzung wenige Verse später: Wer weise ist, soll sich nicht für weise halten. Die Sprüche misstrauen der Selbstsicherheit durchgehend – nicht der Klugheit.\n\nDie beiden Verse stehen mitten in einer Lehrrede, die ein Vater an seinen Sohn richtet – der Rahmen ist Ausbildung, nicht Mystik. Und die Weisheitsliteratur ist gerade das Gegenteil von Verstandesverzicht: Sie sammelt Erfahrung, wägt ab, beobachtet die Ameise und die Wetterlage. Der Satz warnt deshalb nicht vor dem Denken, sondern vor einer bestimmten Haltung des Denkens: sich auf die eigene Einsicht zu *stützen*, sie zum tragenden Grund zu machen. Wer das im Blick behält, liest den Vers nicht als Aufforderung, den Kopf abzugeben.',
+    reception:
+      'Der Vers gehört zu den meistverschenkten Konfirmations- und Taufsprüchen im deutschen Sprachraum und steht auf unzähligen Postkarten. In der Ratgeberliteratur wird er gern als Gegensatz zu Planung und Fachwissen gelesen – ein Gebrauch, der in evangelikalen Kreisen bis zur Ablehnung ärztlicher Behandlung führen kann. Ausleger halten dagegen, dass in demselben Buch der Rat der Vielen empfohlen und Faulheit gerügt wird.',
+    terms: [
+      {
+        word: 'hebr. batach',
+        rendered: 'verlaß dich',
+        note: 'Sein Gewicht auf etwas legen, sich anlehnen. Das Wort beschreibt keine Gefühlslage, sondern worauf jemand sein Leben stützt.',
+      },
+      {
+        word: 'hebr. jaschar',
+        rendered: 'recht führen',
+        note: 'Wörtlich: gerade machen, ebnen. Das Bild ist nicht „er sagt dir, wo es langgeht“, sondern „er räumt den Weg frei“ – von Hindernissen, nicht von Entscheidungen.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Weisheitliche Auslegung',
@@ -291,6 +469,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Sprachliche Beobachtung',
         text: 'Das mit „Wege“ übersetzte Wort meint im Hebräischen das ganz konkrete Unterwegssein. Gemeint ist keine geheime Führung, sondern ein gangbarer Weg.',
       },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition liest den Vers zusammen mit dem Studium: Vertrauen und Lernen sind keine Gegensätze. Wer Tora lernt, verlässt sich gerade nicht auf seinen eigenen Einfall, sondern stellt ihn in ein Gespräch, das seit Generationen läuft.',
+      },
     ],
     crossRefs: [{ book: 'hi', chapter: 28, verse: 28 }],
   },
@@ -303,7 +485,19 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Text ist das vierte der sogenannten Gottesknechtslieder und stammt aus dem Trostbuch für die Exilierten in Babylon. Er beschreibt eine Gestalt, die stellvertretend leidet – ein im Alten Orient ungewöhnlicher Gedanke.',
     historicalLong:
-      'Wer der „Knecht“ ist, sagt der Text nicht ausdrücklich. Im Buch selbst wird die Bezeichnung an anderen Stellen ausdrücklich auf Israel bezogen. Zugleich erscheint der Knecht hier als Einzelner, der für „viele“ eintritt. Die Frage nach seiner Identität ist eine der meistdiskutierten der Bibelauslegung überhaupt.',
+      'Wer der „Knecht“ ist, sagt der Text nicht ausdrücklich. Im Buch selbst wird die Bezeichnung an anderen Stellen ausdrücklich auf Israel bezogen. Zugleich erscheint der Knecht hier als Einzelner, der für „viele“ eintritt. Die Frage nach seiner Identität ist eine der meistdiskutierten der Bibelauslegung überhaupt.\n\nDer Text ist kunstvoll gebaut: Fünf Strophen zu je drei Versen, mit dem Zentrum in Vers 5. Und er hat einen auffälligen Perspektivwechsel – gerahmt von Gottesreden am Anfang und Ende spricht in der Mitte ein „Wir“, das seine eigene Fehleinschätzung eingesteht: „Wir aber hielten ihn für den, der von Gott geschlagen wäre.“ Erzählt wird also nicht nur ein Leiden, sondern eine Umkehr im Urteil über dieses Leiden. Wer der Knecht ist, sagt der Text nie; die Kandidaten reichen vom Propheten selbst über einen namenlosen Gerechten bis zum Volk Israel im Exil.',
+    reception:
+      'Kein Kapitel des Alten Testaments ist im christlich-jüdischen Verhältnis so belastet. Seit der Alten Kirche wurde es als Beweis gelesen, dass Jesus der Messias sei, und in den mittelalterlichen Zwangsdisputationen mussten jüdische Gelehrte sich dazu verhören lassen – in Paris 1240, in Barcelona 1263, in Tortosa 1413. Wer die christliche Deutung nicht teilte, galt als verstockt.\n\nHeute betonen kirchliche Erklärungen, dass die christliche Lesart eine nachträgliche Aneignung ist und die jüdische Auslegung – die den Knecht auf Israel bezieht – dem Text mindestens ebenso nahesteht. In der Musik ist das Kapitel durch Händels *Messiah* präsent geblieben: „He was despised“ und „Surely he hath borne our griefs“ stammen aus diesen Versen.',
+    terms: [
+      {
+        word: 'hebr. ebed',
+        note: 'Knecht, Diener – aber auch ein Ehrentitel: Mose, David und die Propheten heißen so. In den vier „Gottesknechtsliedern“ Jesajas bleibt bewusst offen, wer gemeint ist.',
+      },
+      {
+        word: 'hebr. ascham',
+        note: 'Der Fachbegriff für das Schuldopfer aus dem Opferrecht. Dass er in Vers 10 auf einen Menschen angewandt wird, ist im Alten Testament einmalig – und die Grundlage aller späteren Deutungen auf ein stellvertretendes Leiden.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Jüdische Auslegung',
@@ -316,6 +510,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Historisch-kritische Forschung',
         text: 'Betont wird, dass der Text in seiner Entstehungszeit zunächst innerhalb der Exilserfahrung verstanden werden muss; die christliche Lesart ist eine spätere, legitime Rezeption, aber nicht der ursprüngliche Sinn.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Theologie liest das Lied weniger als Rechtsvorgang – Strafe wird übernommen – denn als Mitleiden: Gott geht in das menschliche Elend hinein und heilt es von innen. Der Vers „durch seine Wunden sind wir geheilt“ steht dann für Heilung, nicht für Bezahlung.',
       },
     ],
     crossRefs: [
@@ -332,7 +530,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Vers steht in einem Brief an die nach Babylon Verschleppten. Unmittelbar davor sagt Gott ihnen an, dass das Exil siebzig Jahre dauern wird – die Zusage gilt also einer Generation, die die Heimkehr selbst nicht mehr erleben wird.',
     historicalLong:
-      'Der Brief widerspricht Propheten, die eine schnelle Rückkehr versprachen. Stattdessen lautet die Anweisung: Häuser bauen, Gärten anlegen, heiraten – und für die Stadt beten, in der man gefangen ist. Der Trost ist also gerade kein Versprechen, dass sich die Lage bald bessert, sondern dass Gott auch die lange Fremde nicht als Endpunkt versteht.',
+      'Der Brief widerspricht Propheten, die eine schnelle Rückkehr versprachen. Stattdessen lautet die Anweisung: Häuser bauen, Gärten anlegen, heiraten – und für die Stadt beten, in der man gefangen ist. Der Trost ist also gerade kein Versprechen, dass sich die Lage bald bessert, sondern dass Gott auch die lange Fremde nicht als Endpunkt versteht.\n\nDer Vers steht in einem Brief, und der Brief hat eine Adresse: die nach Babel Verschleppten, die auf schnelle Rückkehr hofften. Jeremia schreibt ihnen das Gegenteil. Baut Häuser, pflanzt Gärten, heiratet, sucht das Beste der Stadt, in die ihr verschleppt seid – und rechnet mit siebzig Jahren. Die Zusage in Vers 11 gilt also nicht anstelle des Exils, sondern mitten darin, und sie gilt einer Generation, die das Ende nicht mehr erleben wird. Die Verse davor sind die Bedingung, unter der der berühmte Satz überhaupt steht.',
+    reception:
+      'Der Vers ist heute wohl der meistverschenkte Bibelvers auf Karten, Tassen und Abschlussfeiern, im englischen Sprachraum noch stärker als im deutschen. In der Wohlstandsverkündigung wird er zur Zusage persönlichen Erfolgs, was den Brief auf den Kopf stellt: Gesagt ist er Menschen, deren Stadt zerstört und deren Land verloren war.\n\nDaneben hat er eine ganz andere Wirkung entfaltet: Die Aufforderung, das Wohl der fremden Stadt zu suchen, gilt als eine der frühesten Grundlagen für ein Leben in der Diaspora – und wird in Debatten über Migration und Integration bis heute zitiert.',
+    terms: [
+      {
+        word: 'hebr. schalom',
+        rendered: 'Friedens',
+        note: 'Weit mehr als Abwesenheit von Krieg: Unversehrtheit, Auskommen, tragfähige Verhältnisse. Dasselbe Wort steht in Vers 7 für das, was die Verbannten der fremden Stadt suchen sollen – ihr eigenes Wohl hängt an deren Wohl.',
+      },
+      {
+        word: 'hebr. acharit',
+        rendered: 'Ende',
+        note: 'Das Spätere, der Ausgang einer Sache. Gemeint ist nicht das Weltende, sondern wie es einmal ausgehen wird – Zukunft im Sinn von: es geht weiter.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Verbreitete Frömmigkeitspraxis',
@@ -346,6 +558,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Seelsorgliche Vermittlung',
         text: 'Beide Ebenen lassen sich verbinden: Der Vers trägt gerade dann, wenn er nicht schnelle Lösungen verspricht, sondern langen Atem im Unfertigen ermöglicht.',
       },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Im Judentum ist der Brief zum Grundtext des Lebens in der Fremde geworden: Man betet für das Wohl des Landes, in dem man wohnt, auch wenn man nicht dorthin gehört. Der Talmud leitet daraus die Pflicht ab, für die Regierung zu beten – nicht aus Zustimmung, sondern weil das eigene Leben an ihrer Ordnung hängt.',
+      },
     ],
     crossRefs: [{ book: 'jer', chapter: 29, verse: 7, note: 'Betet für die Stadt' }],
   },
@@ -358,7 +574,25 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Vers steht am Ende einer Gerichtsrede, die wie ein Prozess aufgebaut ist. Auf die Frage, mit welchen Opfern man Gott gnädig stimmen könne, folgt eine überraschend schlichte Antwort.',
     historicalLong:
-      'Die Steigerung davor ist bewusst absurd: erst Kälber, dann tausend Widder, dann zehntausend Bäche Öl – und schließlich der eigene erstgeborene Sohn. Damit ist genau die Praxis benannt, die in der Umwelt Israels vorkam und die die Propheten scharf ablehnten. Die Antwort verlangt dagegen nichts, was man abliefern könnte. Die drei Forderungen sind unterschiedlich gebaut: Recht wird „getan“, Güte wird „geliebt“, und mit Gott geht man „demütig“ – Handlung, Haltung und Beziehung.',
+      'Die Steigerung davor ist bewusst absurd: erst Kälber, dann tausend Widder, dann zehntausend Bäche Öl – und schließlich der eigene erstgeborene Sohn. Damit ist genau die Praxis benannt, die in der Umwelt Israels vorkam und die die Propheten scharf ablehnten. Die Antwort verlangt dagegen nichts, was man abliefern könnte. Die drei Forderungen sind unterschiedlich gebaut: Recht wird „getan“, Güte wird „geliebt“, und mit Gott geht man „demütig“ – Handlung, Haltung und Beziehung.\n\nDer Vers ist die Antwort auf eine Frage, die zwei Verse vorher gestellt wird und die immer größer wird: Soll ich mit Brandopfern kommen? Mit tausend Widdern? Mit zehntausend Strömen Öl? Mit meinem erstgeborenen Sohn? Die Steigerung ist bitter gemeint – sie zeigt einen Menschen, der immer mehr geben will und immer weniger versteht. Die Antwort nimmt der Steigerung den Boden: Es ist längst gesagt, und es ist nicht kompliziert. Drei Worte, von denen keines im Tempel stattfindet.',
+    reception:
+      'Der Vers gilt vielen als Kurzfassung prophetischer Ethik und steht in den Grundlagentexten kirchlicher Entwicklungsarbeit ebenso wie in Reden der amerikanischen Bürgerrechtsbewegung. Im Judentum zählt er zu den Sätzen, in denen die 613 Gebote der Tora zusammengefasst werden – der Talmud nennt Micha als den, der sie auf drei brachte.',
+    terms: [
+      {
+        word: 'hebr. mischpat',
+        note: 'Recht im Sinn von: dem anderen zukommen lassen, was ihm zusteht. Luther übersetzt hier „Gottes Wort halten“; neuere Übersetzungen sagen „Recht tun“, was dem Hebräischen näher kommt.',
+      },
+      {
+        word: 'hebr. chesed',
+        rendered: 'Liebe',
+        note: 'Eines der schwersten Wörter des Alten Testaments: Güte, Treue, Solidarität – die Zuwendung, zu der man nicht verpflichtet ist und die man trotzdem hält. Keine deutsche Entsprechung deckt es ganz ab.',
+      },
+      {
+        word: 'hebr. haznea',
+        rendered: 'demütig sein',
+        note: 'Ein seltenes Wort, das eher „aufmerksam, besonnen mitgehen“ meint als Selbsterniedrigung. Der Ton ist nicht Unterwerfung, sondern Umsicht.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Prophetische Tradition',
@@ -387,7 +621,26 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Bergpredigt beginnt nicht mit Forderungen, sondern mit Zusagen. Die Angesprochenen sind Menschen ohne Status: Arme, Trauernde, Gewaltlose – in einer Gesellschaft, in der Ehre und Ansehen alles bedeuteten.',
     historicalLong:
-      'Matthäus formuliert „arm im Geist“, Lukas in seiner Parallelfassung schlicht „ihr Armen“. Die Forschung sieht darin zwei Akzente derselben Überlieferung: die wirtschaftliche Notlage und die innere Haltung dessen, der nichts vorzuweisen hat. Der Aufbau erinnert an die Sinai-Szene: Wie Mose auf den Berg stieg, lehrt Jesus hier auf einem Berg – Matthäus zeichnet ihn bewusst in diese Linie.',
+      'Matthäus formuliert „arm im Geist“, Lukas in seiner Parallelfassung schlicht „ihr Armen“. Die Forschung sieht darin zwei Akzente derselben Überlieferung: die wirtschaftliche Notlage und die innere Haltung dessen, der nichts vorzuweisen hat. Der Aufbau erinnert an die Sinai-Szene: Wie Mose auf den Berg stieg, lehrt Jesus hier auf einem Berg – Matthäus zeichnet ihn bewusst in diese Linie.\n\nDer Aufbau ist gerechnet: Acht Seligpreisungen in der dritten Person, eingerahmt von derselben Begründung – „denn ihr ist das Himmelreich“ am Anfang und am Ende. Die neunte, längere spricht die Hörer dann direkt an. Die ersten vier gelten Menschen in Not, die zweiten vier Menschen, die etwas tun; in der Mitte steht der Hunger nach Gerechtigkeit, der beides verbindet. Der Vergleich mit der Feldrede bei Lukas ist aufschlussreich: Dort heißt es schlicht „Selig seid ihr Armen“ – Matthäus fügt „geistlich“ hinzu und verschiebt damit den Ton von der Lage zur Haltung.',
+    reception:
+      'Die Bergpredigt ist der Text, an dem sich seit Tertullian entscheidet, wie Christen zu Gewalt, Eid und Besitz stehen. Franz von Assisi, die Täufer, die Quäker, Tolstoi, Gandhi, Martin Luther King, Dietrich Bonhoeffer – die Linie derer, die sie wörtlich nehmen wollten, zieht sich durch die ganze Geschichte und stand meist quer zu den Kirchen ihrer Zeit.\n\nDie Gegenbewegung ist ebenso alt: die Deutung als unerfüllbare Forderung, die den Menschen zur Einsicht in seine Ohnmacht treibt; die Zweiteilung in Gebote für alle und Räte für Mönche; die Beschränkung auf das persönliche Verhalten, die dem Staat sein Schwert lässt. Keine dieser Lesarten ist ohne Folgen geblieben.',
+    terms: [
+      {
+        word: 'griech. makarios',
+        rendered: 'Selig',
+        note: 'Kein frommes Wort, sondern die übliche Anrede an Beneidenswerte: „Glücklich zu preisen ist, wer …“ Die Wendung ist aus Weisheitstexten und Grabinschriften bekannt. Was daran anstößig ist, sind nicht die Worte, sondern wer damit gemeint wird.',
+      },
+      {
+        word: 'griech. ptochos',
+        rendered: 'arm',
+        note: 'Nicht der einfache Mann, sondern der Bettler – wer nichts hat und darauf angewiesen ist, dass ihm gegeben wird. Der Zusatz „im Geist“ überträgt dieses völlige Angewiesensein auf das Verhältnis zu Gott.',
+      },
+      {
+        word: 'griech. praeis',
+        rendered: 'Sanftmütigen',
+        note: 'Beschreibt kein weiches Gemüt, sondern verzichtete Gewalt: Wer Macht hätte, sie aber nicht einsetzt. Dasselbe Wort gebraucht Matthäus für den König, der auf einem Esel einzieht.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -405,6 +658,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Befreiungstheologie',
         text: 'Betont wird die materielle Dimension: Gott ergreift Partei für die tatsächlich Armen, nicht nur für eine innere Haltung.',
       },
+      {
+        tradition: 'Jüdische Einordnung',
+        text: 'Seligpreisungen sind eine bekannte jüdische Gattung; sie finden sich in den Psalmen und in Texten aus Qumran. Neuere Forschung liest die Bergpredigt deshalb nicht als Absetzung vom Judentum, sondern als Beitrag innerhalb einer laufenden Debatte darüber, wie die Tora zu halten sei.',
+      },
     ],
     crossRefs: [
       { book: 'lk', chapter: 6, verse: 20, note: 'Parallelfassung in der Feldrede' },
@@ -420,7 +677,26 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das Gebet ist ganz aus jüdischer Gebetssprache geformt; zu fast jeder Bitte gibt es Parallelen in zeitgenössischen jüdischen Gebeten. Neu ist die Dichte und die vertraute Anrede Gottes als Vater.',
     historicalLong:
-      'Lukas überliefert eine kürzere Fassung, was für hohe Alterswertigkeit spricht. Die Bitte um das „tägliche Brot“ enthält ein griechisches Wort (epiousios), das sonst kaum belegt ist; es kann „für den kommenden Tag“ oder „zum Leben notwendig“ bedeuten. Der abschließende Lobpreis („Denn dein ist das Reich…“) fehlt in den ältesten Handschriften und wurde früh aus dem gottesdienstlichen Gebrauch ergänzt.',
+      'Lukas überliefert eine kürzere Fassung, was für hohe Alterswertigkeit spricht. Die Bitte um das „tägliche Brot“ enthält ein griechisches Wort (epiousios), das sonst kaum belegt ist; es kann „für den kommenden Tag“ oder „zum Leben notwendig“ bedeuten. Der abschließende Lobpreis („Denn dein ist das Reich…“) fehlt in den ältesten Handschriften und wurde früh aus dem gottesdienstlichen Gebrauch ergänzt.\n\nDas Gebet fällt durch das auf, was es nicht enthält: keinen Dank, kein Lob eigener Frömmigkeit, keine Bitte für sich allein – alles steht im Plural. Und es hat eine Reihenfolge: erst drei Bitten um das, was Gott angeht, dann drei um das, was die Betenden angeht. Die Lukas-Fassung ist deutlich kürzer, was in der Forschung meist so erklärt wird, dass die Gemeinden ein kürzeres Gebet liturgisch ausgebaut haben. Der Schlusssatz „Denn dein ist das Reich“ fehlt in den ältesten Handschriften ganz; er stammt aus dem gottesdienstlichen Gebrauch und ist deshalb in katholischen Messen bis heute vom Vaterunser abgesetzt.',
+    reception:
+      'Das Vaterunser ist der einzige Text, den fast alle Konfessionen gemeinsam sprechen – und die Stelle, an der die Unterschiede trotzdem hörbar werden: am Schlusssatz, an „Schuld“ gegen „Schulden“, an der Bitte um Bewahrung vor Versuchung. Ökumenische Gottesdienste einigen sich meist auf die Fassung von 1971.\n\nDie fünfte Bitte hat eine praktische Wirkungsgeschichte: Sie band das Vergebenwollen an das Vergebenbekommen und wurde in der Bußpraxis der Alten Kirche wie in heutiger Versöhnungsarbeit zur Nagelprobe. Dass sie im Gottesdienst wöchentlich gesprochen wird, hat schon Augustinus als tägliche Reinigung gedeutet.',
+    terms: [
+      {
+        word: 'aram. abba',
+        rendered: 'Vater',
+        note: 'Die Anrede, die Jesus nach Markus 14,36 gebraucht und die Paulus zweimal unübersetzt stehen lässt. Lange galt sie als Kindersprache – „Papa“; die neuere Forschung hält das für überzogen: Auch erwachsene Söhne redeten so.',
+      },
+      {
+        word: 'griech. epiousios',
+        rendered: 'täglich',
+        note: 'Ein Wort, das außerhalb des Vaterunsers so gut wie nicht belegt ist. Es kann „für den heutigen Tag“, „für morgen“ oder „zum Dasein nötig“ heißen. Hieronymus übersetzte es an einer Stelle mit „überwesentlich“ – daraus wurde eine Deutung auf das Abendmahlsbrot.',
+      },
+      {
+        word: 'griech. peirasmos',
+        rendered: 'Versuchung',
+        note: 'Erprobung, Prüfung – auch die große Prüfung am Ende der Zeit. Der Streit, ob Gott überhaupt in Versuchung führen kann, hängt an diesem Wort; Papst Franziskus ließ die italienische Fassung 2018 deshalb ändern.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Alte Kirche',
@@ -434,6 +710,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Sozialethische Lesart',
         text: 'Die Brotbitte steht im Plural: Es wird nicht um mein, sondern um unser Brot gebeten – ein Gebet, das Verantwortung füreinander einschließt.',
       },
+      {
+        tradition: 'Jüdische Einordnung',
+        text: 'Fast jede Bitte hat eine Entsprechung im jüdischen Gebet: die Heiligung des Namens und das Kommen des Reiches im Kaddisch, die Bitte um Brot und Vergebung im Achtzehnbittengebet. Das Vaterunser ist danach kein neues Gebet, sondern eine knappe, zugespitzte Zusammenfassung dessen, was Juden damals beteten.',
+      },
     ],
     crossRefs: [{ book: 'lk', chapter: 11, verse: 2, note: 'Kürzere Fassung' }],
   },
@@ -446,7 +726,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Straße von Jerusalem nach Jericho fällt auf 27 Kilometern rund 1000 Höhenmeter ab und war für Überfälle berüchtigt. Entscheidend für die Sprengkraft der Erzählung ist, dass Samaritaner und Juden verfeindet waren.',
     historicalLong:
-      'Priester und Levit hätten sich durch die Berührung eines möglicherweise Toten kultisch verunreinigt und ihren Dienst nicht antreten können – ihr Verhalten ist im Rahmen der Reinheitsvorschriften nachvollziehbar. Genau dadurch wird die Frage geschärft. Die Pointe liegt in der Umkehrung der Ausgangsfrage: Der Gesetzeslehrer fragt „Wer ist mein Nächster?“ (wen muss ich einbeziehen?), Jesus fragt zurück, wer sich als Nächster erwiesen hat. Zwei Denare entsprachen etwa zwei Tageslöhnen.',
+      'Priester und Levit hätten sich durch die Berührung eines möglicherweise Toten kultisch verunreinigt und ihren Dienst nicht antreten können – ihr Verhalten ist im Rahmen der Reinheitsvorschriften nachvollziehbar. Genau dadurch wird die Frage geschärft. Die Pointe liegt in der Umkehrung der Ausgangsfrage: Der Gesetzeslehrer fragt „Wer ist mein Nächster?“ (wen muss ich einbeziehen?), Jesus fragt zurück, wer sich als Nächster erwiesen hat. Zwei Denare entsprachen etwa zwei Tageslöhnen.\n\nDie Erzählung dreht die Frage um. Der Gesetzeslehrer fragt: Wer ist mein Nächster? – also: Wo hört meine Pflicht auf? Jesus antwortet mit einer Geschichte und fragt am Ende zurück: Wer ist dem Überfallenen zum Nächsten geworden? Aus einer Abgrenzungsfrage wird eine Handlungsfrage. Auch die Route ist genau gewählt: Die Straße von Jerusalem hinab nach Jericho fällt auf 27 Kilometern um rund tausend Höhenmeter durch unübersichtliches Gelände und war für Überfälle berüchtigt. Und Priester und Levit handeln nicht unbedingt herzlos: Wer einen Toten berührte, wurde kultisch unrein und für den Tempeldienst untauglich. Die Geschichte stellt zwei Pflichten gegeneinander.',
+    reception:
+      'Aus dem Gleichnis ist ein Rechtsbegriff geworden: Die „Samariter-Gesetze“ vieler Länder regeln, wer zur Hilfe verpflichtet ist und wer dabei vor Haftung geschützt wird. Krankenhäuser, Hilfsdienste und die Telefonseelsorge in mehreren Ländern tragen den Namen.\n\nWeniger bekannt ist die Kehrseite: Dass ausgerechnet ein Samariter der Vorbildliche ist, war für die ersten Hörer eine Provokation – Samaritaner galten als Abtrünnige, und die Feindschaft war gegenseitig. In der christlichen Predigt wurde daraus über Jahrhunderte oft das Gegenteil: eine Erzählung über versagende jüdische Amtsträger. Diese Zuspitzung hat antijüdische Klischees gestützt und wird in neueren Auslegungen ausdrücklich zurückgewiesen.',
+    terms: [
+      {
+        word: 'griech. plesion',
+        rendered: 'Nächster',
+        note: 'Wörtlich „der Nahe“. Der Gesetzeslehrer fragt nach dem Umfang dieser Gruppe; die Erzählung antwortet nicht mit einer Grenze, sondern mit einer Bewegung – man wird zum Nächsten.',
+      },
+      {
+        word: 'griech. esplanchnisthe',
+        rendered: 'jammerte ihn sein',
+        note: 'Von *splanchna*, den Eingeweiden: Es traf ihn körperlich. Lukas gebraucht dasselbe Wort für den Vater des verlorenen Sohnes – und sonst fast nur für Jesus selbst.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Ethische Auslegung',
@@ -460,6 +754,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Sozialgeschichtliche Lesart',
         text: 'Betont wird die Provokation: Der Held ist ausgerechnet ein Angehöriger der verachteten Gruppe. Die Erzählung richtet sich damit auch gegen religiös begründete Verachtung.',
       },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'In der orthodoxen Tradition wird die Geschichte oft auf Christus gelesen: Er ist der Fremde, der zu den Verwundeten kommt und sie in die Herberge – die Kirche – bringt. Diese Deutung nimmt der Erzählung nichts von ihrer ethischen Spitze, stellt sie aber in einen zweiten Rahmen.',
+      },
     ],
     crossRefs: [{ book: '3mo', chapter: 19, verse: 18 }],
   },
@@ -472,7 +770,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der jüngere Sohn fordert sein Erbe zu Lebzeiten des Vaters ein – eine schwere Ehrverletzung, die dem Wunsch nach dessen Tod nahekam. Für die Zuhörer war schon dieser Einstieg ein Skandal.',
     historicalLong:
-      'Dass ein älterer Mann läuft und dabei sein Gewand rafft, galt als würdelos – der Vater nimmt diese Blamage öffentlich auf sich. Ring, Gewand und Schuhe sind Zeichen der Wiedereinsetzung als Sohn, nicht als Knecht. Die Erzählung endet bewusst offen: Ob der ältere Bruder hineingeht, bleibt unbeantwortet. Sie steht als dritte von drei Gleichnissen über Verlorenes, erzählt als Antwort auf den Vorwurf, Jesus esse mit Zöllnern und Sündern.',
+      'Dass ein älterer Mann läuft und dabei sein Gewand rafft, galt als würdelos – der Vater nimmt diese Blamage öffentlich auf sich. Ring, Gewand und Schuhe sind Zeichen der Wiedereinsetzung als Sohn, nicht als Knecht. Die Erzählung endet bewusst offen: Ob der ältere Bruder hineingeht, bleibt unbeantwortet. Sie steht als dritte von drei Gleichnissen über Verlorenes, erzählt als Antwort auf den Vorwurf, Jesus esse mit Zöllnern und Sündern.\n\nDas Gleichnis hat zwei Söhne und keinen Schluss. Der ältere bleibt am Ende draußen, seine Antwort auf die Bitte des Vaters wird nicht erzählt – die Geschichte bricht ab, und die Frage geht an die Zuhörer. Und die sind bekannt: Lukas nennt in Vers 2 Pharisäer und Schriftgelehrte, die daran Anstoß nehmen, dass Jesus mit Zöllnern isst. Das Gleichnis antwortet ihnen, aber ohne sie zu verurteilen: Der Vater geht auch zum älteren Sohn hinaus und sagt ihm den vielleicht wichtigsten Satz des Textes – „du bist allezeit bei mir, und alles, was mein ist, das ist dein“.',
+    reception:
+      'Rembrandts Gemälde in der Eremitage hat die Rezeption geprägt wie kaum ein Bild sonst; Henri Nouwens Buch darüber ist zu einem der meistgelesenen geistlichen Titel des 20. Jahrhunderts geworden. In der Beichtpraxis der katholischen Kirche ist das Gleichnis der zentrale Bezugstext.\n\nAuslegungsgeschichtlich problematisch ist die Rolle des älteren Bruders: Er wurde über Jahrhunderte mit dem Judentum gleichgesetzt, der jüngere mit den Heidenchristen – eine Deutung, die den Text gegen die Absicht seiner Pointe wendet, denn der Vater bekräftigt gegenüber dem Älteren ausdrücklich dessen bleibendes Recht.',
+    terms: [
+      {
+        word: 'griech. ousia',
+        rendered: 'Gut',
+        note: 'Vermögen, Habe – wörtlich das „Wesen“. Der Sohn verlangt sein Erbe zu Lebzeiten des Vaters, was in der antiken Welt einem Todeswunsch nahekam.',
+      },
+      {
+        word: 'griech. eis heauton de elthon',
+        rendered: 'schlug er in sich',
+        note: 'Wörtlich „er kam zu sich“. Ob das schon Reue heißt oder nur nüchterne Berechnung – er hat ja Hunger –, ist absichtlich offen gehalten; der Vater fragt auch nicht danach.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -486,6 +798,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Seelsorgliche Lesart',
         text: 'Häufig wird das Gleichnis „Vom barmherzigen Vater“ genannt, weil nicht die Verfehlung, sondern die zuvorkommende Liebe im Mittelpunkt steht.',
       },
+      {
+        tradition: 'Sozialgeschichtliche Lesart',
+        text: 'Das Erbe zu Lebzeiten zu fordern und in der Fremde zu verbrauchen bedeutete für die Familie einen realen Verlust an Land und Ansehen. Dass der Vater dem Zurückkehrenden entgegenläuft, war für einen Hausherrn ein Bruch mit der Würde seines Standes – die Geschichte erzählt nicht nur von Vergebung, sondern von einem, der sich für sie öffentlich blamiert.',
+      },
     ],
     crossRefs: [{ book: 'lk', chapter: 15, verse: 1, note: 'Anlass der drei Gleichnisse' }],
   },
@@ -498,7 +814,26 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Prolog nimmt mit „Im Anfang“ bewusst 1. Mose 1 auf. Der Begriff „Logos“ (Wort) verband jüdische Weisheitstradition mit griechischer Philosophie und war für beide Lesergruppen anschlussfähig.',
     historicalLong:
-      'In der jüdischen Tradition war die Weisheit bei Gott, als er die Welt schuf (Sprüche 8). In der stoischen Philosophie bezeichnete der Logos die vernünftige Ordnung des Kosmos. Johannes verbindet beides und sagt dann etwas, das für beide Traditionen unerhört war: Dieser Logos wurde Fleisch. Das griechische Wort für „wohnte unter uns“ meint wörtlich „zeltete“ und erinnert an das Zelt der Begegnung in der Wüste.',
+      'In der jüdischen Tradition war die Weisheit bei Gott, als er die Welt schuf (Sprüche 8). In der stoischen Philosophie bezeichnete der Logos die vernünftige Ordnung des Kosmos. Johannes verbindet beides und sagt dann etwas, das für beide Traditionen unerhört war: Dieser Logos wurde Fleisch. Das griechische Wort für „wohnte unter uns“ meint wörtlich „zeltete“ und erinnert an das Zelt der Begegnung in der Wüste.\n\nDer Prolog ist wahrscheinlich ein älteres Lied, das der Evangelist übernommen und durch Prosaabschnitte über Johannes den Täufer unterbrochen hat – Vers 6 bis 8 und Vers 15 fallen aus dem Rhythmus. Der Bogen führt von der Ewigkeit über die Schöpfung und die Ablehnung bis zu dem Satz, auf den alles zuläuft: „Das Wort ward Fleisch.“ Für griechisch gebildete Ohren war genau das die Zumutung. Dass es ein göttliches Vernunftprinzip gibt, war Allgemeinbildung; dass dieses Prinzip ein Mensch aus Nazareth mit Schweiß, Durst und Todesangst sein soll, war es nicht.',
+    reception:
+      'Der Prolog war der Schlüsseltext der christologischen Konzilien: In Nizäa 325 und Chalcedon 451 wurde mit seinen Sätzen gerungen, und die Formeln über die Gottheit Christi sind ohne ihn nicht zu verstehen. Bis zur Liturgiereform wurde er in der katholischen Messe am Ende jedes Gottesdienstes gelesen, das „Letzte Evangelium“.\n\nAn Vers 1 hängt bis heute ein Übersetzungsstreit: Weil im Griechischen vor dem zweiten „Gott“ der Artikel fehlt, übersetzen die Zeugen Jehovas „ein Gott“. Die große Mehrheit der Gräzisten hält das für unhaltbar – das Fehlen des Artikels markiert hier das Prädikat, nicht eine Abstufung.',
+    terms: [
+      {
+        word: 'griech. logos',
+        rendered: 'Wort',
+        note: 'Wort, Rede, Sinn, Vernunft, Ordnung – alles zugleich. Die Stoa nannte so das Prinzip, das die Welt zusammenhält; die jüdische Weisheitsliteratur sprach ähnlich von der Weisheit, die vor der Schöpfung war. Der Prolog nimmt beide Linien auf.',
+      },
+      {
+        word: 'griech. eskenosen',
+        rendered: 'wohnte unter uns',
+        note: 'Wörtlich „zeltete“. Das Wort ruft die Wüstenzeit auf, in der Gott im Zelt mitzog – nichts Festes, nichts Gemauertes.',
+      },
+      {
+        word: 'griech. katelaben',
+        rendered: 'begriffen',
+        note: 'Kann „erfassen, verstehen“ heißen und „ergreifen, überwältigen“. Luthers Übersetzung wählt das Verstehen; ebenso richtig wäre: Die Finsternis hat es nicht überwältigt. Die Doppeldeutigkeit ist im Griechischen wohl beabsichtigt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Altkirchliche Dogmatik',
@@ -511,6 +846,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Spirituelle Auslegung',
         text: 'Betont wird die Bewegung Gottes zum Menschen hin: Gott bleibt nicht fern, sondern nimmt Wohnung im Alltäglichen.',
+      },
+      {
+        tradition: 'Jüdische Einordnung',
+        text: 'Die jüdische Tradition kennt das Motiv eines Wortes, das bei Gott ist, aus den Targumen, wo das aramäische *Memra* als Umschreibung für Gottes Wirken steht, und aus der Weisheitsliteratur. Neuere Forschung liest den Prolog deshalb weniger als Anleihe bei griechischer Philosophie denn als Zuspitzung innerjüdischer Sprache.',
       },
     ],
     crossRefs: [
@@ -527,7 +866,26 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Vers gehört zum nächtlichen Gespräch mit Nikodemus, einem Mitglied des Hohen Rates. Dass er bei Nacht kommt, ist bei Johannes doppeldeutig: Es schützt seinen Ruf und steht zugleich für das Nicht-Verstehen.',
     historicalLong:
-      'Ob der Vers noch Jesu Rede ist oder bereits Kommentar des Evangelisten, ist offen – die antiken Handschriften kennen keine Anführungszeichen. „Welt“ (kosmos) meint bei Johannes sonst meist die von Gott abgewandte Menschheit; gerade ihr gilt hier die Liebe. Unmittelbar davor steht der Verweis auf die eherne Schlange in der Wüste (4. Mose 21): Ein Zeichen des Todes wird zum Zeichen der Rettung.',
+      'Ob der Vers noch Jesu Rede ist oder bereits Kommentar des Evangelisten, ist offen – die antiken Handschriften kennen keine Anführungszeichen. „Welt“ (kosmos) meint bei Johannes sonst meist die von Gott abgewandte Menschheit; gerade ihr gilt hier die Liebe. Unmittelbar davor steht der Verweis auf die eherne Schlange in der Wüste (4. Mose 21): Ein Zeichen des Todes wird zum Zeichen der Rettung.\n\nDer Vers steht in einem Nachtgespräch mit Nikodemus – und es ist nicht sicher, wo dieses Gespräch aufhört. Die ältesten Handschriften kennen keine Anführungszeichen; ob Vers 16 noch Jesus spricht oder schon der Evangelist kommentiert, ist deshalb offen, und die Übersetzungen setzen die Grenze verschieden. Ebenso strittig ist das erste Wort: „Also hat Gott die Welt geliebt“ meint bei Luther nicht das Ausmaß, sondern die Art – „auf diese Weise“. Die vertraute Steigerungslesart – „so sehr“ – ist erst durch spätere Übersetzungen gewachsen.',
+    reception:
+      'Kein Vers ist häufiger auf Plakaten in Stadien, auf Aufklebern und in Werbespots erschienen; „John 3:16“ genügt in den USA als Erkennungszeichen. Diese Verselbständigung ist selbst ein Thema geworden: Der Vers wird meist ohne Vers 17 zitiert, der ausdrücklich sagt, dass der Sohn nicht zum Richten gesandt ist.\n\nDie Rede vom Vater, der den Sohn „gibt“, ist zudem theologisch scharf befragt worden. Feministische und befreiungstheologische Ausleger haben darauf hingewiesen, dass eine Deutung, in der ein Vater seinen Sohn opfert, in der Seelsorge an Gewaltbetroffenen Schaden anrichten kann – und dass der Text selbst das Geben nicht als Tötung, sondern als Hingabe beschreibt.',
+    terms: [
+      {
+        word: 'griech. kosmos',
+        rendered: 'Welt',
+        note: 'Bei Johannes fast immer die Welt, sofern sie sich Gott verweigert. Dass gerade sie geliebt wird, ist die Spitze des Satzes.',
+      },
+      {
+        word: 'griech. monogenes',
+        rendered: 'eingeborenen',
+        note: 'Einziggeboren, einzig in seiner Art. Luthers „eingeboren“ ist heute missverständlich; gemeint ist nicht ein Zeugungsvorgang, sondern Unvertretbarkeit.',
+      },
+      {
+        word: 'griech. aionios',
+        rendered: 'ewige',
+        note: 'Weniger „unendlich lang“ als „zum kommenden Äon gehörig“. Ewiges Leben ist bei Johannes keine Verlängerung, sondern eine Qualität, die schon jetzt beginnt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -540,6 +898,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Debatte um die Reichweite',
         text: 'Umstritten bleibt, wie exklusiv der Vers zu lesen ist. Manche betonen die Notwendigkeit ausdrücklichen Glaubens, andere die Weite von „die Welt“ und die Hoffnung, dass Gottes Wille zur Rettung niemanden von vornherein ausschließt.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Theologie liest den Vers von der Menschwerdung her, nicht vom Kreuz: Gott gibt den Sohn in die Welt hinein, damit menschliches Leben an göttlichem teilhat. Das Ziel ist weniger die Tilgung einer Schuld als die Heilung der Sterblichkeit.',
       },
     ],
     crossRefs: [
@@ -557,7 +919,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Satz fällt in den Abschiedsreden, unmittelbar nach der Ankündigung des Weggehens. Er ist zunächst Trostwort an verunsicherte Jünger, nicht eine Aussage über andere Religionen.',
     historicalLong:
-      'Ausgelöst wird er durch eine praktische Frage des Thomas: „Wie können wir den Weg wissen?“ Die Antwort verschiebt die Ebene – gefragt war nach einer Route, geantwortet wird mit einer Person. Das johanneische Evangelium entstand in einer Gemeinde, die sich gerade schmerzhaft von der Synagoge trennte; viele seiner scharfen Abgrenzungen sind aus dieser Lage heraus formuliert. Wer sie heute liest, muss diesen Entstehungszusammenhang mitbedenken, gerade weil solche Sätze historisch zur Abwertung anderer benutzt wurden.',
+      'Ausgelöst wird er durch eine praktische Frage des Thomas: „Wie können wir den Weg wissen?“ Die Antwort verschiebt die Ebene – gefragt war nach einer Route, geantwortet wird mit einer Person. Das johanneische Evangelium entstand in einer Gemeinde, die sich gerade schmerzhaft von der Synagoge trennte; viele seiner scharfen Abgrenzungen sind aus dieser Lage heraus formuliert. Wer sie heute liest, muss diesen Entstehungszusammenhang mitbedenken, gerade weil solche Sätze historisch zur Abwertung anderer benutzt wurden.\n\nDer Satz ist eine Antwort auf eine praktische Frage. Thomas hat gerade gesagt: Wir wissen nicht, wohin du gehst – wie können wir den Weg wissen? Die Antwort verschiebt die Ebene: Nicht eine Route wird genannt, sondern eine Person. Und der Zusammenhang ist Abschied, nicht Religionsvergleich: Jesus redet zu den Seinen am letzten Abend, um sie zu trösten. Ob ein Trostwort an Bedrängte zugleich ein Urteil über andere Religionen enthält, ist genau die Frage, an der sich die Auslegungen scheiden.',
+    reception:
+      'Der Vers ist der meistzitierte Beleg für den Absolutheitsanspruch des Christentums – und stand deshalb im Zentrum aller Streitigkeiten um Mission und Religionsdialog. Das Zweite Vatikanische Konzil formulierte 1965 in *Nostra aetate*, dass die Kirche nicht ablehnt, „was in diesen Religionen wahr und heilig ist“; die evangelischen Kirchen ringen in ihren Dialogpapieren seit den 1970er Jahren um dieselbe Frage.\n\nBesonders belastet ist der Gebrauch gegenüber dem Judentum. Kirchliche Erklärungen nach 1945 – von der Rheinischen Synode 1980 bis zu römischen Dokumenten – halten fest, dass Gottes Bund mit Israel nicht gekündigt ist, und lehnen eine Judenmission ab. Wie das mit diesem Vers zusammengeht, ist theologisch nicht abschließend geklärt und wird offen ausgetragen.',
+    terms: [
+      {
+        word: 'griech. hodos',
+        rendered: 'Weg',
+        note: 'Die frühe Gemeinde hieß in der Apostelgeschichte einfach „der Weg“, bevor der Name „Christen“ aufkam. Das Wort meint keine Lehre, sondern eine Lebensrichtung.',
+      },
+      {
+        word: 'griech. aletheia',
+        rendered: 'Wahrheit',
+        note: 'Bei Johannes nicht die Richtigkeit eines Satzes, sondern das, was sich als tragfähig erweist – näher am hebräischen *emet*, der Verlässlichkeit, als am griechischen Begriff der Erkenntnis.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Traditionelle Auslegung',
@@ -571,6 +947,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Exklusivistische Position',
         text: 'In Teilen evangelikaler Theologie wird der Vers als klare Aussage verstanden, dass Rettung ausschließlich über den ausdrücklichen Glauben an Christus erfolgt.',
       },
+      {
+        tradition: 'Exegetische Beobachtung',
+        text: 'Der Satz ist an Jünger gerichtet, die bleiben sollen, nicht an Außenstehende, über die geurteilt wird. Manche Ausleger schließen daraus, dass er die Zugehörigkeit der Gemeinde bestimmt und nicht die Grenzen des Heils – andere halten dagegen, dass „niemand kommt zum Vater denn durch mich“ eine Aussage über alle sei.',
+      },
     ],
   },
   {
@@ -582,7 +962,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das Wochenfest (Schawuot) war eines der drei Wallfahrtsfeste; Jerusalem war voller Pilger aus dem ganzen Mittelmeerraum. Im Judentum wurde an diesem Fest zunehmend auch der Bundesschluss am Sinai gefeiert.',
     historicalLong:
-      'Die Völkerliste in Apostelgeschichte 2 bildet die bekannte Welt ab. Lukas zeichnet damit bewusst eine Gegenszene zum Turmbau von Babel: Dort wurde die Sprache verwirrt, hier versteht jeder in seiner eigenen Sprache. Bemerkenswert ist, dass nicht alle ein Wunder sehen – manche halten die Gruppe für betrunken.',
+      'Die Völkerliste in Apostelgeschichte 2 bildet die bekannte Welt ab. Lukas zeichnet damit bewusst eine Gegenszene zum Turmbau von Babel: Dort wurde die Sprache verwirrt, hier versteht jeder in seiner eigenen Sprache. Bemerkenswert ist, dass nicht alle ein Wunder sehen – manche halten die Gruppe für betrunken.\n\nDas Fest, an dem das geschieht, ist kein christliches: Schawuot, das Wochenfest, fiel fünfzig Tage nach Passa und war ursprünglich ein Erntefest, das im Judentum zunehmend als Fest der Tora-Gabe am Sinai begangen wurde. Damit wird die Szene lesbar: Am Sinai gab Gott sein Gebot unter Feuer und Donner; hier gibt er seinen Geist unter Feuer und Sturm. Die rabbinische Überlieferung erzählte sogar, die Stimme vom Sinai habe sich in siebzig Sprachen geteilt, damit alle Völker sie hören konnten – dieselbe Zahl, die die Völkerliste der Genesis nennt.',
+    reception:
+      'Aus der Frage, was in Jerusalem geschah, ist im 20. Jahrhundert eine weltweite Bewegung geworden: Die Erweckung in der Azusa Street in Los Angeles ab 1906 machte die Geisterfahrung zum Kern einer eigenen Frömmigkeit. Pfingstlich-charismatische Kirchen gehören heute zu den am schnellsten wachsenden christlichen Gruppen überhaupt, mit Schwerpunkten in Lateinamerika, Afrika und Asien.\n\nDie Gegenlesart hat ebenfalls Geschichte gemacht: Die Völkerliste in den Versen 9 bis 11 nennt Menschen aus dem ganzen bekannten Erdkreis, und jeder hört in seiner eigenen Sprache. Daraus wurde ein Argument gegen die eine Kirchensprache – und in der Missionsgeschichte das Motiv, die Bibel in jede Sprache zu übersetzen, statt eine heilige Sprache durchzusetzen.',
+    terms: [
+      {
+        word: 'griech. pentekoste',
+        rendered: 'Pfingsten',
+        note: 'Schlicht „der fünfzigste“ – der fünfzigste Tag nach Passa. Das deutsche Wort ist eine Verschleifung des griechischen.',
+      },
+      {
+        word: 'griech. glossais',
+        rendered: 'Zungen',
+        note: 'Dasselbe Wort für „Sprache“ und für das Körperteil. Lukas erzählt eindeutig von verstehbaren Fremdsprachen; das Zungenreden, das Paulus in Korinth beschreibt und das ohne Auslegung unverständlich bleibt, ist etwas anderes.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Kirchengeschichtliche Deutung',
@@ -595,6 +989,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Missionstheologische Lesart',
         text: 'Der Geist übersetzt: Das Evangelium bindet sich nicht an eine heilige Sprache, sondern kommt in der Muttersprache der Menschen an – eine Grundlage für Bibelübersetzung überhaupt.',
+      },
+      {
+        tradition: 'Kritische Einordnung',
+        text: 'Historisch lässt sich hinter der Szene wenig sichern. Paulus, der früheste Zeuge, kennt eine Geistausgießung als Erfahrung der Gemeinden, erwähnt aber kein Pfingstereignis in Jerusalem. Lukas erzählt hier weniger ein datierbares Ereignis als den Anfang der Kirche in Bildern, die den Sinai zitieren.',
       },
     ],
     crossRefs: [
@@ -613,7 +1011,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Paulus schreibt an eine Gemeinde in der Hauptstadt des Reiches, in der Christen eine kleine, gesellschaftlich unsichere Minderheit waren. Der Abschnitt endet mit einer Aufzählung realer Bedrohungen: Trübsal, Verfolgung, Hunger, Schwert.',
     historicalLong:
-      'Der berühmte Vers 28 ist sprachlich mehrdeutig. Möglich ist auch die Übersetzung „bei denen, die Gott lieben, wirkt Gott alles zum Guten“ – dann ist Gott das handelnde Subjekt, nicht „alle Dinge“. Diese Lesart vermeidet den Eindruck, jedes Ereignis sei an sich gut.',
+      'Der berühmte Vers 28 ist sprachlich mehrdeutig. Möglich ist auch die Übersetzung „bei denen, die Gott lieben, wirkt Gott alles zum Guten“ – dann ist Gott das handelnde Subjekt, nicht „alle Dinge“. Diese Lesart vermeidet den Eindruck, jedes Ereignis sei an sich gut.\n\nDer Text ist an dieser Stelle nicht eindeutig überliefert. Einige alte Handschriften lesen „Gott lässt alle Dinge zum Besten dienen“ – dann ist Gott das Subjekt, und der Satz sagt nicht, dass alles gut ist, sondern dass Gott daran arbeitet. Luther folgt der anderen Lesart. Wichtiger noch ist der Zusammenhang: Zwei Verse vorher steht, dass wir nicht wissen, was wir beten sollen, und dass der Geist mit unaussprechlichem Seufzen eintritt. Der berühmte Satz folgt also nicht auf eine Erfolgsbilanz, sondern auf das Eingeständnis der Ratlosigkeit.',
+    reception:
+      'Der Vers ist ein Trostwort ersten Ranges – und ein Satz, mit dem viel Schaden angerichtet wurde. In der Seelsorge gilt es als Grundregel, ihn Trauernden nicht ungefragt zuzusprechen: Wer eben ein Kind verloren hat, hört „alles dient zum Besten“ als Verharmlosung. Dass er im Text gerade nicht erklärt, wozu ein Leid gut sei, sondern nur, wer daran festhält, wird beim Zitieren oft überhört.\n\nDie Verse 29 und 30 wurden zur Grundlage der Prädestinationslehre. Augustinus, Calvin und die Synode von Dordrecht 1619 leiteten daraus eine doppelte Vorherbestimmung ab; die lutherische Tradition wehrte sich dagegen, und die *Konkordienformel* von 1577 lehnte eine Erwählung zur Verdammnis ausdrücklich ab.',
+    terms: [
+      {
+        word: 'griech. synergei',
+        rendered: 'dienen',
+        note: 'Wörtlich „wirkt mit“. Kein Automatismus, sondern ein Zusammenwirken – und die Frage, wer dabei wirkt, hängt an der Textüberlieferung.',
+      },
+      {
+        word: 'griech. proegno',
+        rendered: 'zuvor ersehen',
+        note: 'Vorher erkennen. Ob damit ein Vorherwissen oder ein vorgängiges Erwählen gemeint ist, ist der Kern des Streits um die Prädestination – im Hebräischen schließt „erkennen“ eine Zuwendung ein, nicht nur eine Information.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -627,6 +1039,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Diskussion um Vorherbestimmung',
         text: 'Die Verse 29–30 sind zentral für die Lehre von der Erwählung. Reformierte Theologie liest sie als doppelte Prädestination, lutherische und katholische Auslegung betonen dagegen Gottes universalen Heilswillen.',
       },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die orthodoxe Theologie liest das Vorherwissen nicht als Vorherbestimmen: Gott sieht, wer sich ihm öffnet, ohne es zu erzwingen. Freiheit und Gnade stehen dabei nicht in Konkurrenz – ein Ansatz, der die westliche Zuspitzung des Streits gar nicht erst mitmacht.',
+      },
     ],
   },
   {
@@ -638,7 +1054,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Text ist kein Hochzeitsgedicht, sondern steht mitten in einer Auseinandersetzung über Geistesgaben. In Korinth stritt man darüber, welche Fähigkeiten – besonders die Zungenrede – den höheren Rang haben.',
     historicalLong:
-      'Paulus unterbricht die Sachdiskussion mit einem kunstvoll gebauten Zwischenstück und stellt die Rangfrage auf den Kopf: Nicht die spektakulärste Gabe zählt, sondern die Liebe, ohne die alles andere wertlos ist. Das griechische Wort agape meint nicht Gefühl, sondern zugewandtes Handeln. Der „Spiegel“ in Vers 12 war ein poliertes Metallstück – das Bild blieb notwendig unscharf.',
+      'Paulus unterbricht die Sachdiskussion mit einem kunstvoll gebauten Zwischenstück und stellt die Rangfrage auf den Kopf: Nicht die spektakulärste Gabe zählt, sondern die Liebe, ohne die alles andere wertlos ist. Das griechische Wort agape meint nicht Gefühl, sondern zugewandtes Handeln. Der „Spiegel“ in Vers 12 war ein poliertes Metallstück – das Bild blieb notwendig unscharf.\n\nDas Kapitel ist kein Einschub und keine Hochzeitsrede, sondern der Mittelteil einer Auseinandersetzung. In Korinth stritt man darüber, welche Geistesgaben mehr gelten; Kapitel 12 und 14 handeln von Zungenrede, Prophetie und Ordnung im Gottesdienst. Genau dazwischen setzt Paulus diesen Text – und alle Gaben, um die gestritten wird, tauchen in den ersten drei Versen wieder auf, jeweils entwertet. Die Liebe wird dabei nicht definiert, sondern in fünfzehn Verben beschrieben, von denen kein einziges ein Gefühl benennt. Es sind lauter Handlungen und Unterlassungen.',
+    reception:
+      'Kaum ein Text wird häufiger bei Trauungen gelesen – obwohl er nicht von Paaren handelt, sondern von einer zerstrittenen Gemeinde. Ausleger sehen darin keinen Fehler: Die Beschreibung trifft, was in jeder dauerhaften Beziehung gebraucht wird. Der Umzug in die Hochzeitsliturgie hat den Text allerdings weichgezeichnet; im Original ist er eine Zurechtweisung.\n\nMartin Luther King zitierte das Kapitel regelmäßig und verband es mit dem griechischen Wortfeld: Agape sei die Liebe, die man auch dem Gegner schuldet, weil sie keine Sympathie voraussetzt. Diese Auslegung ist in die Sprache der Bürgerrechtsbewegung eingegangen.',
+    terms: [
+      {
+        word: 'griech. agape',
+        rendered: 'Liebe',
+        note: 'Das Griechische hat mehrere Wörter für Liebe: *eros* für das Begehren, *philia* für die Freundschaft, *agape* für die zugewandte, entscheidungsfähige Liebe. Paulus gebraucht durchgehend das letzte – deshalb ist der Text auch dort anwendbar, wo keine Zuneigung im Spiel ist.',
+      },
+      {
+        word: 'griech. en ainigmati',
+        rendered: 'dunkeln Wort',
+        note: 'Wörtlich „in einem Rätsel“ – daher unser Fremdwort Enigma. Das Bild vom Spiegel meint kein modernes Glas, sondern poliertes Metall: Man sieht etwas, aber verzerrt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Exegetische Einordnung',
@@ -652,6 +1082,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Spirituelle Tradition',
         text: 'Die Eigenschaftsliste wird als Beschreibung der Liebe Gottes selbst gelesen – und damit als Maßstab, an dem sich menschliche Liebe orientiert.',
       },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: '„Sie verträgt alles, sie duldet alles“ ist Menschen in Gewaltbeziehungen als Aufforderung zum Aushalten vorgehalten worden. Seelsorgliche Literatur widerspricht hier deutlich: Der Text beschreibt, was Liebe tut, und begründet keine Pflicht, Misshandlung zu ertragen – „sie freut sich nicht der Ungerechtigkeit“ steht im selben Abschnitt.',
+      },
     ],
     crossRefs: [{ book: '1kor', chapter: 12, verse: 31, note: 'Der Weg, der alles übertrifft' }],
   },
@@ -664,7 +1098,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Satz stammt vermutlich aus einer frühen Taufformel. Er benennt die drei grundlegenden Trennungen der antiken Gesellschaft: Ethnie, Rechtsstatus und Geschlecht.',
     historicalLong:
-      'Griechische Männer dankten in einem verbreiteten Spruch dafür, weder als Barbar noch als Sklave noch als Frau geboren zu sein. Paulus kehrt genau diese Dreiteilung um. Anlass des Briefes war die Forderung, nichtjüdische Christen müssten beschnitten werden – also die Frage, ob Zugehörigkeit von Herkunft und Ritus abhängt.',
+      'Griechische Männer dankten in einem verbreiteten Spruch dafür, weder als Barbar noch als Sklave noch als Frau geboren zu sein. Paulus kehrt genau diese Dreiteilung um. Anlass des Briefes war die Forderung, nichtjüdische Christen müssten beschnitten werden – also die Frage, ob Zugehörigkeit von Herkunft und Ritus abhängt.\n\nDer Satz ist wahrscheinlich älter als der Brief: Aufbau und Rhythmus deuten auf eine Taufformel hin, die Paulus zitiert – dieselben drei Paare tauchen in abgewandelter Form in 1. Korinther 12 und Kolosser 3 auf. Die drei Gegensätze sind nicht beliebig gewählt; sie benennen die Grundunterscheidungen der antiken Gesellschaft: Herkunft, Rechtsstand, Geschlecht. Und die Formulierung wechselt beim dritten Paar auffällig: Statt „kein Mann noch Weib“ steht im Griechischen „nicht männlich und weiblich“ – exakt die Worte, mit denen die griechische Übersetzung von Genesis 1,27 die Erschaffung des Menschen beschreibt.',
+    reception:
+      'Der Vers gehört zu den meistzitierten der Bibel in Debatten um Gleichheit – und seine Wirkungsgeschichte ist zwiespältig. Abolitionisten führten ihn gegen die Sklaverei ins Feld, während ihre Gegner mit den Haustafeln der Briefe antworteten; in Südafrika stand er im Zentrum der kirchlichen Auseinandersetzung um die Apartheid, und die Bekenntniserklärung von Belhar 1986 baut auf ihm auf.\n\nIn der Frauenordination und in der Diskussion um Homosexualität wird er ebenso angeführt. Der Einwand lautet jeweils, der Vers rede vom Heil und nicht von Ämtern oder Ordnungen. Wo die Grenze zwischen beidem verläuft, ist bis heute konfessionell umstritten.',
+    terms: [
+      {
+        word: 'griech. eneduasthe',
+        rendered: 'angezogen',
+        note: 'Ein Kleidungswort: Christus wie ein Gewand anlegen. In der Alten Kirche wurden Täuflinge nach dem Untertauchen in ein weißes Gewand gekleidet – das Bild war sichtbar.',
+      },
+      {
+        word: 'griech. heis',
+        rendered: 'einer',
+        note: 'Männliche Form des Zahlworts, nicht „eines“. Paulus schreibt nicht, dass alle gleich seien, sondern dass sie zusammen eine einzige Person bilden – ein Bild, das er anderswo mit dem Leib entfaltet.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -678,6 +1126,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Einschränkende Position',
         text: 'Teile der Auslegung sehen die Aussage auf den Heilsstand bezogen und leiten daraus keine Aufhebung unterschiedlicher Rollen in Gemeinde und Familie ab. Diese Frage ist innerhalb der Kirchen bis heute umstritten.',
       },
+      {
+        tradition: 'Ökumenische Verständigung',
+        text: 'Viele Kirchen haben sich darauf verständigt, dass der Vers eine Wirklichkeit beschreibt, die in der Gemeinde sichtbar werden soll, ohne dass daraus unmittelbar eine Kirchenordnung folgt. Der Streit verläuft dann nicht mehr um den Vers selbst, sondern um die Frage, was „sichtbar werden“ konkret verlangt.',
+      },
     ],
     crossRefs: [{ book: 'kol', chapter: 3, verse: 11 }],
   },
@@ -690,7 +1142,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Abschnitt fasst zusammen, was der Brief zuvor entfaltet: Zugehörigkeit zu Gott ist Geschenk. Unmittelbar danach folgt jedoch der Hinweis, dass Menschen „zu guten Werken geschaffen“ sind.',
     historicalLong:
-      'Das griechische Wort für „Werk“ in Vers 10 ist poiema – davon kommt „Poesie“. Der Mensch erscheint als Gedicht Gottes, nicht als dessen Werkzeug. Grammatisch ist umstritten, worauf sich „das“ in „das nicht aus euch“ bezieht: auf den Glauben, auf die Rettung oder auf den ganzen Vorgang. Die griechische Form spricht eher für Letzteres. Der unmittelbare Zusammenhang zielt zudem nicht auf den Einzelnen, sondern auf die Gemeinde: Wenige Verse später geht es um die niedergerissene Trennmauer zwischen Juden und Nichtjuden.',
+      'Das griechische Wort für „Werk“ in Vers 10 ist poiema – davon kommt „Poesie“. Der Mensch erscheint als Gedicht Gottes, nicht als dessen Werkzeug. Grammatisch ist umstritten, worauf sich „das“ in „das nicht aus euch“ bezieht: auf den Glauben, auf die Rettung oder auf den ganzen Vorgang. Die griechische Form spricht eher für Letzteres. Der unmittelbare Zusammenhang zielt zudem nicht auf den Einzelnen, sondern auf die Gemeinde: Wenige Verse später geht es um die niedergerissene Trennmauer zwischen Juden und Nichtjuden.\n\nDer Abschnitt endet nicht bei Vers 9, sondern bei Vers 10 – und dort stehen die Werke wieder da, nur an anderer Stelle. Nicht als Weg zum Heil, sondern als das, wozu Gerettete geschaffen sind. Griechisch heißt es sogar, Gott habe sie „zuvor bereitet, dass wir darin wandeln sollen“: Die guten Werke warten schon. Wer nur die Verse 8 und 9 zitiert, macht aus einer Umstellung eine Streichung. Bemerkenswert ist auch, worauf sich „das nicht aus euch“ bezieht – grammatisch am ehesten auf den ganzen Vorgang, nicht nur auf den Glauben.',
+    reception:
+      'Diese Verse gehören zum Kernbestand der Reformation und stehen in Luthers Vorreden ebenso wie in unzähligen Gesangbuchliedern. Der Streit, den sie auslösten, wurde 1999 in der *Gemeinsamen Erklärung zur Rechtfertigungslehre* zwischen dem Lutherischen Weltbund und der katholischen Kirche zumindest teilweise beigelegt: Beide Seiten erklärten, dass der Mensch allein aus Gnade angenommen wird und die gegenseitigen Lehrverurteilungen des 16. Jahrhunderts den heutigen Partner nicht mehr treffen.\n\nDie Kehrseite ist ein Missbrauch, den schon Bonhoeffer benannt hat: „billige Gnade“ – Vergebung als Prinzip, das nichts kostet und nichts ändert. Die Verse 8 bis 10 zusammen zu lesen ist die exegetische Antwort darauf.',
+    terms: [
+      {
+        word: 'griech. charis',
+        rendered: 'Gnade',
+        note: 'In der antiken Gesellschaft der Fachbegriff für die Zuwendung eines Höhergestellten, die eine Gegenleistung erwartete. Paulus gebraucht das Wort und streicht die Erwartung – das war der eigentliche Bruch mit der Konvention.',
+      },
+      {
+        word: 'griech. poiema',
+        rendered: 'Werk',
+        note: 'Das Gemachte, das Gebilde – daher unser Wort Poem. Dieselbe Wurzel wie in den „guten Werken“ zwei Zeilen später: Wir sind Gottes Werk, damit Werke folgen.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -704,6 +1170,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Ökumenische Verständigung',
         text: 'Die Gemeinsame Erklärung zur Rechtfertigungslehre (1999) hält fest, dass der jahrhundertealte Gegensatz in dieser Frage die Kirchen nicht länger trennen muss.',
       },
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Die neuere Paulusforschung liest die Gegenüberstellung von Glaube und Werken weniger als Streit um menschliche Leistung als um Zugehörigkeit: Strittig war in den Gemeinden, ob Nichtjuden Beschneidung und Speisegebote übernehmen mussten. Ob der Epheserbrief diese Frontstellung noch teilt oder sie bereits grundsätzlich versteht, ist umstritten.',
+      },
     ],
     crossRefs: [{ book: 'jak', chapter: 2, verse: 17, note: 'Der scheinbare Gegensatz' }],
   },
@@ -716,7 +1186,26 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Abschnitt gilt als vorpaulinisches Lied, das Paulus zitiert – damit einer der ältesten christlichen Texte überhaupt, vermutlich älter als jedes Evangelium.',
     historicalLong:
-      'Der Aufbau beschreibt eine Bewegung nach unten und wieder nach oben: Entäußerung bis zum Kreuz, dann Erhöhung. Die Kreuzigung war die Hinrichtungsart für Sklaven und Aufrührer; dass ein Loblied ausgerechnet diesen Tod besingt, war kulturell ungeheuerlich. Die Schlusszeile überträgt eine Aussage aus Jesaja 45, die dort ausdrücklich Gott gilt, auf Christus.',
+      'Der Aufbau beschreibt eine Bewegung nach unten und wieder nach oben: Entäußerung bis zum Kreuz, dann Erhöhung. Die Kreuzigung war die Hinrichtungsart für Sklaven und Aufrührer; dass ein Loblied ausgerechnet diesen Tod besingt, war kulturell ungeheuerlich. Die Schlusszeile überträgt eine Aussage aus Jesaja 45, die dort ausdrücklich Gott gilt, auf Christus.\n\nDer Hymnus hat eine klare Kurve: Abstieg in den Versen 6 bis 8, Aufstieg in 9 bis 11, und der tiefste Punkt ist mit drei Worten markiert – „ja zum Tode am Kreuz“. Viele Forscher halten gerade diese drei Worte für Paulus’ eigenen Zusatz zu einem übernommenen Lied; sie sprengen das Versmaß. Der Rahmen ist dabei nicht Dogmatik, sondern Streitschlichtung: Die Gemeinde in Philippi war zerstritten, und Paulus stellt ihr nicht eine Lehre, sondern eine Haltung vor Augen. Der Hymnus ist ein Argument in einem Konflikt.',
+    reception:
+      'Der Hymnus lieferte den christologischen Konzilien ihre Sprache, und der Karfreitag lebt bis heute von seinen Bildern. Bemerkenswerter ist seine politische Wirkung: Die Schlussverse übertragen auf Christus, was in den Städten des Reiches dem Kaiser galt – dass sich ihm jedes Knie beuge und jede Zunge ihn als *Kyrios* bekenne. In Philippi, einer römischen Veteranenkolonie, war das keine fromme Floskel.\n\nDie Aufforderung zur Erniedrigung hat auch Schaden gestiftet: Sie wurde Untergebenen, Frauen und Kolonisierten als Pflicht zum Aushalten gepredigt. Feministische Theologie hat dagegen eingewandt, dass Selbstentleerung nur predigen kann, wer etwas zu entleeren hat – dem Machtlosen ist mit dem Ruf zur Demut nicht geholfen.',
+    terms: [
+      {
+        word: 'griech. morphe',
+        rendered: 'Gestalt',
+        note: 'Nicht die äußere Erscheinung, sondern die Erscheinungsweise, in der etwas erkennbar wird, was es ist. Dasselbe Wort steht für die göttliche und für die Knechtsgestalt – die Parallele ist beabsichtigt.',
+      },
+      {
+        word: 'griech. harpagmos',
+        rendered: 'Raub',
+        note: 'Ein seltenes Wort, an dem viel hängt: Etwas, das man an sich reißt – oder etwas, das man festhält, weil man es schon hat. Je nachdem heißt der Satz, Christus habe nicht nach Gottgleichheit gegriffen, oder er habe an ihr nicht festgehalten.',
+      },
+      {
+        word: 'griech. ekenosen',
+        rendered: 'entäußerte sich',
+        note: 'Wörtlich „er leerte sich aus“. Von diesem Wort hat die Kenosis-Theologie ihren Namen – die Frage, worauf Gott bei der Menschwerdung verzichtet hat, wird seit dem 19. Jahrhundert intensiv verhandelt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Dogmatische Auslegung',
@@ -730,6 +1219,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Politische Lesart',
         text: 'Das Bekenntnis „Jesus Christus ist der Herr“ stand in bewusster Spannung zur Formel „Caesar ist Herr“ und war damit auch eine politische Aussage.',
       },
+      {
+        tradition: 'Religionsgeschichtliche Forschung',
+        text: 'Form, Rhythmus und ungewöhnliche Vokabeln sprechen dafür, dass Paulus hier ein bereits vorhandenes Lied der Gemeinden zitiert. Damit wäre der Text älter als der Brief und einer der frühesten Belege dafür, wie in den ersten Jahrzehnten von Christus gesungen wurde – gesungene Theologie vor geschriebener.',
+      },
     ],
     crossRefs: [{ book: 'jes', chapter: 45, verse: 23 }],
   },
@@ -742,7 +1235,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Satz leitet eine lange Reihe von Beispielen ein – von Abel bis zu namenlosen Verfolgten. Adressiert sind Menschen, die müde geworden sind und über einen Rückzug nachdenken.',
     historicalLong:
-      'Bemerkenswert ist der Schluss des Kapitels: Nach der langen Aufzählung heißt es, dass sie alle das Verheißene gerade **nicht** erlangt haben. Glaube wird hier also nicht am Erfolg gemessen. Die Beispielreihe wird zunehmend dunkler – am Ende stehen Menschen, die zersägt, gesteinigt und in Fellen umhergetrieben wurden. Der Verfasser ist unbekannt; schon Origenes schrieb im 3. Jahrhundert, das wisse „Gott allein“.',
+      'Bemerkenswert ist der Schluss des Kapitels: Nach der langen Aufzählung heißt es, dass sie alle das Verheißene gerade **nicht** erlangt haben. Glaube wird hier also nicht am Erfolg gemessen. Die Beispielreihe wird zunehmend dunkler – am Ende stehen Menschen, die zersägt, gesteinigt und in Fellen umhergetrieben wurden. Der Verfasser ist unbekannt; schon Origenes schrieb im 3. Jahrhundert, das wisse „Gott allein“.\n\nDer Satz ist keine Definition des Glaubens im heutigen Sinn, sondern eine Beschreibung dessen, was er leistet – und er steht am Anfang einer langen Aufzählung. Was in Kapitel 11 folgt, sind keine Glaubenssätze, sondern Lebensläufe: Abel, Henoch, Noah, Abraham, Sara, Mose, Rahab. Und der Abschnitt endet nicht triumphal. Die Verse 36 bis 39 zählen Verspottete, Gesteinigte, Zersägte auf und schließen mit dem Satz, dass sie die Verheißung gerade nicht erlangt haben. Glaube heißt in diesem Kapitel: unterwegs bleiben, ohne anzukommen.',
+    reception:
+      'Kapitel 11 ist zum Musterkatalog des Glaubens geworden und prägt Predigt und Frömmigkeit bis heute – von mittelalterlichen Heiligenreihen bis zu modernen Vorbildersammlungen. Auffällig ist, wen es aufnimmt: Rahab, eine Prostituierte, und Sara, die im Erzählzusammenhang gelacht hat. Der Katalog ist deutlich weiter als die Frömmigkeit, die sich auf ihn beruft.\n\nIn der Auseinandersetzung mit dem Atheismus ist der Vers oft als Beleg dafür zitiert worden, Glaube sei Fürwahrhalten ohne Grund. Ausleger halten dagegen, dass *elenchos* ein Beweiswort ist und der Verfasser gerade nicht zum blinden Vertrauen aufruft, sondern auf eine Erfahrungsgeschichte verweist.',
+    terms: [
+      {
+        word: 'griech. hypostasis',
+        rendered: 'Zuversicht',
+        note: 'Das Wort schwankt zwischen „feste Grundlage“ und „Zuversicht“ – dasselbe, das in der Trinitätslehre „Person“ meint. Luther wählt die innere Seite; man kann ebenso übersetzen: Glaube ist der Grundbestand dessen, was man hofft.',
+      },
+      {
+        word: 'griech. elenchos',
+        rendered: 'Nichtzweifeln',
+        note: 'Eigentlich ein Beweis oder Nachweis – ein Wort aus dem Gerichtssaal. Die Spannung des Satzes liegt gerade darin, dass etwas Unsichtbares als erwiesen gilt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Klassische Auslegung',
@@ -756,6 +1263,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Kritische Rückfrage',
         text: 'Der Kapitelschluss hält fest, dass keiner der Genannten das Verheißene erlebt hat. Glaube wird hier ausdrücklich nicht am Eintreffen gemessen.',
       },
+      {
+        tradition: 'Jüdische Einordnung',
+        text: 'Der Katalog folgt einer bekannten Form: Auch das Buch Jesus Sirach lobt „berühmte Männer“ in einer langen Reihe. Der Hebräerbrief übernimmt diese Gattung und deutet sie um – nicht ihre Taten machen die Aufgezählten groß, sondern dass sie sich auf Unsichtbares verlassen haben.',
+      },
     ],
   },
   {
@@ -767,7 +1278,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Abschnitt reagiert auf konkrete Missstände: In den Gemeinden wurden Wohlhabende bevorzugt, während Bedürftige mit frommen Worten abgespeist wurden.',
     historicalLong:
-      'Der scheinbare Widerspruch zu Paulus löst sich weitgehend auf, wenn man die Begriffe vergleicht. Paulus wendet sich gegen „Werke des Gesetzes“ als Bedingung der Zugehörigkeit; Jakobus meint mit „Werken“ die praktische Nächstenliebe als Folge des Glaubens. Luther hielt den Brief dennoch für minderwertig und nannte ihn eine „stroherne Epistel“ – ein Urteil, dem die spätere lutherische Theologie überwiegend nicht gefolgt ist.',
+      'Der scheinbare Widerspruch zu Paulus löst sich weitgehend auf, wenn man die Begriffe vergleicht. Paulus wendet sich gegen „Werke des Gesetzes“ als Bedingung der Zugehörigkeit; Jakobus meint mit „Werken“ die praktische Nächstenliebe als Folge des Glaubens. Luther hielt den Brief dennoch für minderwertig und nannte ihn eine „stroherne Epistel“ – ein Urteil, dem die spätere lutherische Theologie überwiegend nicht gefolgt ist.\n\nDer scheinbare Widerspruch zu Paulus löst sich zum Teil an den Wörtern auf. Wenn Paulus von „Werken“ spricht, meint er meist die Werke des Gesetzes – Beschneidung, Speisegebote, Feiertage, also Kennzeichen der Zugehörigkeit. Jakobus meint tätige Hilfe: Er hat zwei Verse vorher jemanden vor Augen, der einem Hungernden „Gehet hin in Frieden“ wünscht und ihm nichts gibt. Auch „Glaube“ ist verschieden gefüllt: Bei Paulus ist er Vertrauen, bei Jakobus ein bloßes Fürwahrhalten, das auch die Dämonen haben. Beide berufen sich auf Abraham – und meinen verschiedene Szenen seines Lebens.',
+    reception:
+      'Luther nannte den Jakobusbrief 1522 in seiner Vorrede eine „stroherne Epistel“ und stellte ihn im Anhang seines Neuen Testaments hinter die anderen Schriften – eine Wertung, die er später zurückhaltender formulierte, die aber in der lutherischen Tradition nachwirkte. Das Konzil von Trient antwortete 1546 mit der ausdrücklichen Bekräftigung des Briefes als vollgültiger Schrift.\n\nDie *Gemeinsame Erklärung zur Rechtfertigungslehre* von 1999 hat den Streit entschärft, ohne ihn aufzulösen: Beide Seiten halten fest, dass der Glaube die Werke wirkt und die Werke ihn nicht ersetzen. In der Diakonie und in der christlichen Sozialarbeit ist Jakobus 2 der meistzitierte Begründungstext geblieben.',
+    terms: [
+      {
+        word: 'griech. erga',
+        rendered: 'Werke',
+        note: 'Taten, Handlungen. Dass Paulus und Jakobus dasselbe Wort gebrauchen, aber Verschiedenes darunter fassen, ist der Kern des Streits – und der Grund, warum er sich exegetisch weitgehend auflöst.',
+      },
+      {
+        word: 'griech. nekra',
+        rendered: 'tot',
+        note: 'Nicht „schwach“ oder „unvollständig“: Ein toter Glaube ist kein geringerer Glaube, sondern gar keiner mehr. Das Bild ist medizinisch, nicht moralisch.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -781,6 +1306,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Sozialethische Lesart',
         text: 'Das Beispiel ist bewusst materiell: Wer einem Frierenden „geht hin in Frieden“ sagt, ohne Kleidung zu geben, verspottet ihn.',
       },
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Manche Ausleger lesen den Abschnitt als Reaktion nicht auf Paulus selbst, sondern auf eine verkürzte Paulus-Auslegung, die in einigen Gemeinden umlief: Wenn der Glaube genügt, sei das Handeln gleichgültig. Der Brief widerspricht dann nicht Paulus, sondern denen, die ihn missverstanden.',
+      },
     ],
     crossRefs: [{ book: 'eph', chapter: 2, verse: 8 }],
   },
@@ -793,7 +1322,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Brief entsteht nach einer Spaltung: Eine Gruppe hat die Gemeinde verlassen. Vor diesem Hintergrund wird die Liebe zum Geschwister zum entscheidenden Prüfstein für die Echtheit des Glaubens.',
     historicalLong:
-      'Der Satz „Gott ist Liebe“ steht zweimal – und beide Male nicht als Definition am Anfang, sondern als Schlussfolgerung aus dem, was Gott getan hat. Das griechische agape war vor dem Neuen Testament ein eher farbloses Wort; erst hier bekommt es sein Gewicht. Der Umkehrschluss wird ausdrücklich abgewehrt: Nicht „Liebe ist Gott“, sondern Gott zeigt sich als der, der zuerst liebt. Der Brief argumentiert dabei bewusst greifbar: Der unsichtbare Gott und der sichtbare Bruder lassen sich nicht gegeneinander ausspielen.',
+      'Der Satz „Gott ist Liebe“ steht zweimal – und beide Male nicht als Definition am Anfang, sondern als Schlussfolgerung aus dem, was Gott getan hat. Das griechische agape war vor dem Neuen Testament ein eher farbloses Wort; erst hier bekommt es sein Gewicht. Der Umkehrschluss wird ausdrücklich abgewehrt: Nicht „Liebe ist Gott“, sondern Gott zeigt sich als der, der zuerst liebt. Der Brief argumentiert dabei bewusst greifbar: Der unsichtbare Gott und der sichtbare Bruder lassen sich nicht gegeneinander ausspielen.\n\nDer Satz „Gott ist Liebe“ steht zweimal in diesem Abschnitt, und beide Male ist er nicht der Ausgangspunkt, sondern die Folgerung – begründet mit einem Ereignis: dass Gott den Sohn gesandt hat. Der Brief argumentiert also nicht von einem allgemeinen Begriff der Liebe zu Gott hin, sondern umgekehrt. Ebenso wichtig ist die Grenze, die der Text zieht: Wer Gott zu lieben behauptet und den Bruder hasst, wird in Vers 20 schlicht ein Lügner genannt. Das Wort ist hart, und es steht in einem Brief, der von Spaltungen in der Gemeinde geprägt ist.',
+    reception:
+      'Der Satz „Gott ist Liebe“ ist wohl die meistzitierte Kurzformel des Christentums und steht über Kirchentüren, in Traureden und auf Grabsteinen. Benedikt XVI. machte ihn 2005 zum Titel seiner ersten Enzyklika *Deus caritas est* und verband darin die griechischen Wörter *eros* und *agape* ausdrücklich miteinander.\n\nDie Verkürzung liegt nahe: Der Satz lässt sich so lesen, als sei Liebe ein anderes Wort für Gott – und damit alles gemeint, was Menschen so nennen. Der Brief selbst geht den umgekehrten Weg; er bestimmt, was Liebe ist, von einem bestimmten Ereignis her, nicht von der Erfahrung.',
+    terms: [
+      {
+        word: 'griech. hilasmos',
+        rendered: 'Versöhnung',
+        note: 'Im griechischen Alten Testament das Wort für die Sühnehandlung am Versöhnungstag. Ob es eine Besänftigung Gottes meint oder die Beseitigung dessen, was trennt, ist eine der ältesten Streitfragen der Auslegung – der Brief selbst betont, dass die Bewegung von Gott ausgeht.',
+      },
+      {
+        word: 'griech. teteleiomene',
+        rendered: 'völlig',
+        note: 'Zum Ziel gebracht, vollendet. Die Liebe Gottes kommt nach diesem Brief nicht in einem Gefühl an ihr Ziel, sondern darin, dass Menschen einander lieben.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Dogmatische Auslegung',
@@ -807,6 +1350,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Seelsorgliche Lesart',
         text: '„Furcht ist nicht in der Liebe“ wird als Befreiung von einer Frömmigkeit gelesen, die von Angst vor Strafe lebt.',
       },
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Der Brief entsteht in einer Gemeinde, aus der Menschen weggegangen sind – Kapitel 2 spricht von solchen, die „von uns ausgegangen“ sind. Der Ruf zur gegenseitigen Liebe ist deshalb zunächst nach innen gerichtet: Er soll eine Gruppe zusammenhalten, die gerade auseinanderfällt. Ob und wie weit er darüber hinausreicht, ist eine Frage der Auslegung, nicht des Wortlauts.',
+      },
     ],
   },
   {
@@ -818,7 +1365,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das Buch endet nicht mit einer Weltflucht, sondern mit einer Stadt, die auf die Erde herabkommt. Für bedrängte Gemeinden unter dem Druck des Kaiserkults war das eine Gegenvision zur ewigen Roma.',
     historicalLong:
-      'Die Sprache ist bewusst aus dem Alten Testament gespeist, besonders aus Jesaja 65. Auffällig ist die Richtung: Nicht die Menschen steigen auf, sondern Gott zieht ein – „die Hütte Gottes bei den Menschen“. Dass „das Meer nicht mehr ist“, meint nicht das Verschwinden von Ozeanen, sondern das Ende der Chaosmacht, die im Alten Orient für Bedrohung stand.',
+      'Die Sprache ist bewusst aus dem Alten Testament gespeist, besonders aus Jesaja 65. Auffällig ist die Richtung: Nicht die Menschen steigen auf, sondern Gott zieht ein – „die Hütte Gottes bei den Menschen“. Dass „das Meer nicht mehr ist“, meint nicht das Verschwinden von Ozeanen, sondern das Ende der Chaosmacht, die im Alten Orient für Bedrohung stand.\n\nDie Bewegungsrichtung ist bemerkenswert: Die Stadt kommt herab. Nicht die Erlösten steigen in den Himmel, sondern Gott zieht zu den Menschen – „siehe da, die Hütte Gottes bei den Menschen“. Das Wort für Hütte ist dasselbe, mit dem das Wüstenzelt bezeichnet wurde, in dem Gott mit Israel mitzog. Und der Satz „das Meer ist nicht mehr“ meint keine Austrocknung der Ozeane: Das Meer steht in dieser Bildwelt für das Chaos, aus dem in Kapitel 13 das Tier aufsteigt. Was aufhört, ist die Bedrohung, nicht die Schöpfung.',
+    reception:
+      'Die Deutung dieses Kapitels trennt bis heute christliche Strömungen. Die kirchliche Hauptlinie seit Augustinus liest es als Bild für die vollendete Gemeinschaft mit Gott, nicht als Fahrplan. Der Dispensationalismus des 19. Jahrhunderts – über die Scofield-Bibel weit verbreitet – ordnete es dagegen in eine feste Abfolge künftiger Ereignisse ein, mit erheblichen politischen Folgen bis in die Nahostpolitik hinein.\n\nDaneben steht eine schöpfungstheologische Wirkung: Weil der Text von einer neuen Erde spricht und nicht von deren Abschaffung, ist er in den letzten Jahrzehnten zu einem Kerntext kirchlicher Umweltarbeit geworden. Wer die Erde für Ausschussware hält, so das Argument, liest hier gegen den Wortlaut.',
+    terms: [
+      {
+        word: 'griech. kainos',
+        rendered: 'neuen',
+        note: 'Das Griechische unterscheidet zwei Arten von Neuheit: *neos* meint zeitlich neu, gerade entstanden; *kainos*, das hier steht, meint neu in der Art – erneuert, verwandelt. Der Text spricht eher von Verwandlung als von Ersatz.',
+      },
+      {
+        word: 'griech. skene',
+        rendered: 'Hütte',
+        note: 'Zelt. Dasselbe Wort steht im Johannesprolog für das „Wohnen“ des Wortes unter uns und im griechischen Alten Testament für das Begegnungszelt der Wüstenzeit.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Kirchliche Hauptlinie',
@@ -831,6 +1392,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Schöpfungstheologische Lesart',
         text: 'Betont wird, dass die Erde erneuert und nicht ersetzt wird – ein Argument gegen die Gleichgültigkeit gegenüber der Schöpfung.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Vers 4 – dass Gott alle Tränen abwischt – ist einer der meistgesprochenen Sätze an Gräbern. Bemerkenswert ist, dass er die Tränen nicht für unnötig erklärt: Erst werden sie da sein, dann werden sie abgewischt. Der Trost bestreitet den Schmerz nicht, sondern setzt ihn voraus.',
       },
     ],
     crossRefs: [
@@ -879,7 +1444,16 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Klagepsalm, der mit dem schärfsten Vorwurf der Bibel beginnt und in einem Loblied endet. Diese Bewegung von der Klage zum Dank ist die häufigste Form im Psalter.',
     historicalLong:
-      'Die Bilder – durchgrabene Hände und Füße, verteilte Kleider, das Los über das Gewand – sind Metaphern für äußerste Erniedrigung, wie sie in altorientalischer Klagedichtung verbreitet waren. Die Evangelien greifen sie in den Passionsberichten auf. Der Umschlag in Vers 22 erfolgt ohne Erklärung: Der Beter hat offenbar eine Zusage empfangen, die der Text nicht wiedergibt.',
+      'Die Bilder – durchgrabene Hände und Füße, verteilte Kleider, das Los über das Gewand – sind Metaphern für äußerste Erniedrigung, wie sie in altorientalischer Klagedichtung verbreitet waren. Die Evangelien greifen sie in den Passionsberichten auf. Der Umschlag in Vers 22 erfolgt ohne Erklärung: Der Beter hat offenbar eine Zusage empfangen, die der Text nicht wiedergibt.\n\nDer Psalm ist zweigeteilt, und die zweite Hälfte wird selten mitzitiert. Bis Vers 21 ist er eine Klage, die nichts auslässt: Verlassenheit, Spott, ausgerenkte Glieder, verteilte Kleider. Ab Vers 22 kippt der Ton unvermittelt in Dank und Lobgesang, und der Schluss weitet sich auf „alle Welt“ und die kommenden Geschlechter. Ob dieser Umschwung nachträglich angefügt wurde oder ob der Beter zwischendurch eine Zusage empfangen hat – im Tempel womöglich durch einen Priester –, ist nicht zu entscheiden. Klar ist nur: Der Text bleibt nicht bei der Klage stehen, aber er kommt auch nicht ohne sie aus.',
+    reception:
+      'Die Passionsberichte sind mit diesem Psalm durchsetzt: das Verteilen der Kleider, das Kopfschütteln der Umstehenden, der Spottsatz „Er hat auf Gott vertraut, der helfe ihm nun“. Die Evangelisten erzählen die Kreuzigung in seinen Worten – ob als Erinnerung an tatsächlich Gesagtes oder als Deutung des Geschehens, ist umstritten.\n\nVers 17 hat eine eigene, belastete Geschichte: Der hebräische Text ist an dieser Stelle unklar, die griechische Übersetzung las „sie haben meine Hände und Füße durchgraben“. Über Jahrhunderte wurde daraus im christlich-jüdischen Streitgespräch der Vorwurf, die Juden hätten ihren eigenen Text gefälscht – ein Vorwurf, den die Textforschung nicht bestätigt.',
+    terms: [
+      {
+        word: 'hebr. eli eli lama asawtani',
+        rendered: 'Mein Gott, mein Gott, warum hast du mich verlassen',
+        note: 'Diesen Anfang zitiert Jesus am Kreuz – bei Markus allerdings in aramäischer Form. Wer einen Psalm mit seinem ersten Vers anführt, ruft im Judentum das ganze Lied auf; deshalb ist strittig, ob der Ruf nur Verzweiflung ausdrückt oder auch schon den Schluss meint.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Jüdische Auslegung',
@@ -892,6 +1466,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Entscheidend ist, dass der Vorwurf selbst als Gebet gilt: Die Bibel erlaubt es, Gott sein Schweigen vorzuhalten.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'In der Karfreitagsliturgie vieler Kirchen wird der Psalm ganz gelesen oder gesungen, oft ohne Antwort und ohne Segen. Dass die Klage im Gottesdienst stehen bleiben darf, ohne sofort aufgelöst zu werden, gilt als eine ihrer wichtigsten Funktionen.',
       },
     ],
     crossRefs: [
@@ -908,7 +1486,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Überschrift verbindet den Psalm mit Davids Vergehen an Batseba und dem Mord an Uria. Bemerkenswert ist, dass der Beter keine Wiedergutmachung anbietet, sondern allein um Neuschöpfung bittet.',
     historicalLong:
-      'Das hebräische Wort für „schaffe“ in Vers 10 ist dasselbe wie in 1. Mose 1 – es wird in der Bibel ausschließlich für Gottes Handeln verwendet. Am Ende steht ein überraschender Satz: Opfer will Gott nicht, sondern „ein zerschlagenes Herz“. Die Verse 18–19, die den Tempelkult wieder aufwerten, gelten vielen Fachleuten als spätere Ergänzung aus der Zeit des Wiederaufbaus.',
+      'Das hebräische Wort für „schaffe“ in Vers 10 ist dasselbe wie in 1. Mose 1 – es wird in der Bibel ausschließlich für Gottes Handeln verwendet. Am Ende steht ein überraschender Satz: Opfer will Gott nicht, sondern „ein zerschlagenes Herz“. Die Verse 18–19, die den Tempelkult wieder aufwerten, gelten vielen Fachleuten als spätere Ergänzung aus der Zeit des Wiederaufbaus.\n\nDie Bitten in der Mitte des Psalms verwenden dieselben Verben wie der Schöpfungsbericht: „Schaffe in mir, Gott, ein reines Herz“ steht dort mit dem Wort, das sonst nur Gott als Subjekt hat. Der Beter bittet also nicht um Besserung, sondern um eine Neuschöpfung – er traut sich selbst die Wende nicht zu. Auffällig ist auch der Schluss: Nach der Ablehnung des Opfers in Vers 18 folgen in den letzten beiden Versen doch wieder Brandopfer auf dem Altar. Die meisten Ausleger sehen darin einen nachexilischen Zusatz, der die scharfe Kultkritik entschärfen sollte.',
+    reception:
+      'Psalm 51 ist der bekannteste der sieben Bußpsalmen und stand im Zentrum der mittelalterlichen Bußpraxis. Sein lateinischer Anfang *Miserere mei, Deus* wurde zum Namen einer ganzen Gattung; Allegris Vertonung in der Sixtinischen Kapelle durfte lange nicht abgeschrieben werden. Luther legte den Psalm 1532 in einer eigenen Vorlesung aus und fand darin seine Lehre vom Menschen wieder.\n\nDie Überschrift verbindet den Psalm mit Davids Vergehen an Batseba. Historisch ist diese Zuordnung wahrscheinlich später hinzugefügt; als Deutung hat sie den Text jedoch geprägt – er wurde zum Gebet der Mächtigen, die sich schuldig gemacht haben.',
+    terms: [
+      {
+        word: 'hebr. bara',
+        rendered: 'Schaffe',
+        note: 'Dasselbe Verb wie im ersten Satz der Bibel, und es hat nur Gott als Subjekt. Der Beter bittet um etwas, das er selbst nicht herstellen kann.',
+      },
+      {
+        word: 'hebr. ruach',
+        rendered: 'Geist',
+        note: 'Atem, Wind, Geist – dasselbe Wort für alles drei. In diesen Versen dreimal, jedes Mal anders gefüllt: der neue, der heilige und der freudige Geist.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -921,6 +1513,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Historische Einordnung',
         text: 'Die Zuschreibung an David in der Überschrift stammt aus späterer Zeit; sie deutet den Psalm, statt seine Entstehung zu dokumentieren.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Satz „an dir allein habe ich gesündigt“ ist Auslegern immer wieder aufgestoßen: Wenn der Psalm von Davids Tat an Batseba und an Uria handelt, sind es gerade nicht nur Gott, an dem gesündigt wurde. Wer den Vers zitiert, um Verantwortung gegenüber Menschen zu übergehen, wendet ihn gegen seine eigene Überschrift.',
       },
     ],
     crossRefs: [{ book: '2sam', chapter: 12, verse: 13, note: 'Die Szene mit Nathan' }],
@@ -1169,7 +1765,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Text gehört zu den verstörendsten der Bibel. Kinderopfer waren in der Umwelt Israels bezeugt; die Erzählung endet damit, dass genau das abgewehrt wird.',
     historicalLong:
-      'Auffällig ist die Kargheit: kein Wort über Abrahams Gefühle, kein Wort über Saras Reaktion, und nach der Szene gehen Vater und Sohn getrennte Wege – von einer gemeinsamen Rückkehr ist nicht die Rede. Das Wort „Moria“ wird später mit dem Tempelberg gleichgesetzt. Im Judentum heißt der Abschnitt „Akeda“ (Bindung), nicht „Opferung“; der Akzent liegt dort auf Isaak, nicht auf Abraham.',
+      'Auffällig ist die Kargheit: kein Wort über Abrahams Gefühle, kein Wort über Saras Reaktion, und nach der Szene gehen Vater und Sohn getrennte Wege – von einer gemeinsamen Rückkehr ist nicht die Rede. Das Wort „Moria“ wird später mit dem Tempelberg gleichgesetzt. Im Judentum heißt der Abschnitt „Akeda“ (Bindung), nicht „Opferung“; der Akzent liegt dort auf Isaak, nicht auf Abraham.\n\nDer Erzähler nimmt dem Leser die Spannung im ersten Satz: Gott „versuchte“ Abraham – der Ausgang ist von Anfang an klar, für alle außer für Abraham. Auffällig ist auch die Sprache der Nähe, die der Text ausgerechnet hier häuft: „deinen einzigen Sohn, den du lieb hast“. Es ist die erste Stelle der Bibel, an der das Wort „lieben“ vorkommt. Und dreimal sagt Abraham dasselbe: „Hier bin ich“ – zu Gott, zu Isaak, zum Engel. Die Erzählung besteht aus lauter Auslassungen: Sara kommt nicht vor, Isaaks Alter bleibt offen, und was Abraham denkt, wird nie gesagt.',
+    reception:
+      'Im Judentum heißt der Abschnitt die Akeda, die „Bindung“, und wurde in den Verfolgungen des Mittelalters zum Text der Märtyrer: In den Klageliedern auf die Pogrome der Kreuzzugszeit gehen Eltern und Kinder gemeinsam in den Tod und rufen dabei Isaak an. Im Christentum wurde die Szene früh als Vorabbild der Kreuzigung gelesen – Isaak trägt das Holz wie Jesus den Balken.\n\nDie Kehrseite ist die Rechtfertigung von Gehorsam gegen jede Einsicht. Immanuel Kant hat dagegen den schärfsten Einwand formuliert: Abraham hätte antworten müssen, dass er sich sicher sei, kein Unrecht zu tun, aber nicht sicher sein könne, dass die Stimme Gott sei. Wer eine Stimme zum Töten hört, so Kant, muss sie deshalb zurückweisen.',
+    terms: [
+      {
+        word: 'hebr. nissa',
+        rendered: 'versuchte',
+        note: 'Prüfen, erproben – dasselbe Wort wie beim Erproben einer Rüstung. Es geht nicht um Verführung zum Bösen, sondern darum, ob etwas trägt.',
+      },
+      {
+        word: 'hebr. hinneni',
+        rendered: 'Hier bin ich',
+        note: 'Kein Ortshinweis, sondern eine Bereitschaftserklärung: „Ich höre, ich bin da.“ Dieselbe Antwort geben Mose am Dornbusch, Samuel im Tempel und Jesaja bei seiner Berufung.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Religionsgeschichtliche Lesart',
@@ -1187,6 +1797,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Philosophischer Einspruch',
         text: 'Kant lehnte den Gehorsam Abrahams ausdrücklich ab, Kierkegaard machte ihn zum Kernfall des Glaubens jenseits der Vernunft. Der Text bleibt in der Ethik ein offener Streitpunkt.',
       },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Manche lesen den Text nicht als Vorbild, sondern als Erfahrungsbericht: Es gibt Wege, auf denen ein Mensch verliert, woran sein Leben hängt, und keine Erklärung bekommt. Dass der Text darüber schweigt, was Abraham dabei empfindet, wird dann nicht als Lücke gelesen, sondern als Respekt.',
+      },
     ],
     crossRefs: [
       { book: 'jer', chapter: 7, verse: 31, note: 'Gott verabscheut Kinderopfer' },
@@ -1202,7 +1816,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das hebräische „jam suf“ heißt wörtlich „Schilfmeer“, nicht „Rotes Meer“ – die verbreitete Übersetzung geht auf die griechische Bibel zurück. Gemeint ist vermutlich ein flaches Sumpfgebiet im östlichen Nildelta.',
     historicalLong:
-      'Der Text enthält zwei ineinandergeschobene Darstellungen: In der einen treibt ein Ostwind das Wasser zurück, in der anderen stehen die Fluten wie Mauern. Die Forschung sieht darin verschiedene Überlieferungsstränge. Das Lied in Kapitel 15 gilt sprachlich als einer der ältesten Texte der Bibel überhaupt.',
+      'Der Text enthält zwei ineinandergeschobene Darstellungen: In der einen treibt ein Ostwind das Wasser zurück, in der anderen stehen die Fluten wie Mauern. Die Forschung sieht darin verschiedene Überlieferungsstränge. Das Lied in Kapitel 15 gilt sprachlich als einer der ältesten Texte der Bibel überhaupt.\n\nIm Kapitel liegen zwei Darstellungen übereinander, die sich nicht ganz decken. In der einen treibt ein starker Ostwind das Wasser die ganze Nacht zurück, und die Ägypter geraten in Verwirrung; in der anderen teilt Mose mit ausgestreckter Hand das Meer, und das Wasser steht wie eine Mauer zur Rechten und Linken. Die Forschung ordnet beides verschiedenen Erzählsträngen zu. Auch der Ort ist unsicher: Das hebräische *jam suf* heißt „Schilfmeer“, nicht „Rotes Meer“ – die Gleichsetzung stammt aus der griechischen Übersetzung. Gemeint ist eher eine der Sumpfseen östlich des Nildeltas.',
+    reception:
+      'Kein alttestamentlicher Text hat mehr Befreiungsbewegungen getragen. In den Spirituals der versklavten Afroamerikaner ist der Auszug das Grundmotiv – „Go down, Moses“ –, und Martin Luther King griff es in seinen Reden auf. Die lateinamerikanische Befreiungstheologie machte den Exodus zum Schlüssel des ganzen Alten Testaments, ebenso Bewegungen in Südafrika und Osteuropa.\n\nDie Kehrseite steht im selben Kapitel: Die Rettung der einen ist der Untergang der anderen. Der Midrasch erzählt, die Engel hätten singen wollen, als die Ägypter ertranken, und Gott habe sie zurechtgewiesen: Meine Geschöpfe ertrinken, und ihr singt? Beim Sederabend werden deshalb Tropfen Wein aus dem Becher genommen – die Freude ist gemindert.',
+    terms: [
+      {
+        word: 'hebr. jam suf',
+        rendered: 'Meer',
+        note: 'Schilfmeer. Erst die griechische Bibel machte daraus die *erythra thalassa*, das Rote Meer – eine Gleichsetzung, die Luther übernahm und die die Vorstellung bis heute prägt.',
+      },
+      {
+        word: 'hebr. jeschua',
+        rendered: 'Heil',
+        note: 'Rettung, Befreiung – etwas, das geschieht, nicht ein Zustand nach dem Tod. Aus derselben Wurzel kommt der Name Jesus.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -1321,7 +1949,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Vision wird genau datiert: im Todesjahr des Königs Usija, um 740 v. Chr. Während der irdische Thron leer wird, sieht der Prophet den himmlischen besetzt.',
     historicalLong:
-      'Die Serafim sind wörtlich „die Brennenden“ – geflügelte Wesen, wie sie auch auf altorientalischen Siegeln erscheinen. Der Auftrag ist verstörend formuliert: Der Prophet soll reden, damit das Volk gerade nicht versteht. Die Forschung sieht darin eine rückblickende Deutung des ausgebliebenen Erfolgs, nicht eine Absicht von Anfang an.',
+      'Die Serafim sind wörtlich „die Brennenden“ – geflügelte Wesen, wie sie auch auf altorientalischen Siegeln erscheinen. Der Auftrag ist verstörend formuliert: Der Prophet soll reden, damit das Volk gerade nicht versteht. Die Forschung sieht darin eine rückblickende Deutung des ausgebliebenen Erfolgs, nicht eine Absicht von Anfang an.\n\nDie Berufung ist genau datiert – im Todesjahr des Königs Usia, also etwa 740 vor Christus. Das ist kein Beiwerk: Der irdische König stirbt, und der Prophet sieht den wirklichen König auf dem Thron. Auffällig ist auch, was auf die Berufung folgt. Der Auftrag in den Versen 9 und 10 ist eine Zumutung: Der Prophet soll reden, damit das Volk gerade nicht versteht. Die meisten Ausleger sehen darin eine rückblickende Deutung – erst nach Jahren der Erfolglosigkeit wurde die Ablehnung als Teil des Auftrags formuliert. Und auf Jesajas Frage „Wie lange?“ kommt eine Antwort, die niemand hören will: bis die Städte verwüstet sind.',
+    reception:
+      'Der Ruf der Seraphim ist als Sanctus in jede christliche Abendmahlsliturgie eingegangen – „Heilig, heilig, heilig“ wird in Ost und West seit dem 4. Jahrhundert gesungen, und im Judentum steht die Keduscha an entsprechender Stelle im Gebet. Es ist damit einer der wenigen Sätze, die Synagoge und Kirche gemeinsam singen.\n\nDer Verstockungsauftrag hat eine belastete Nachgeschichte: Er wird im Neuen Testament mehrfach zitiert, um die Ablehnung Jesu durch Teile Israels zu erklären, und wurde in der christlichen Auslegung zur Begründung einer angeblichen Blindheit der Juden. Neuere Auslegung liest ihn zurück in seinen Zusammenhang – als Selbstdeutung eines gescheiterten Propheten, nicht als Urteil über ein Volk.',
+    terms: [
+      {
+        word: 'hebr. qadosch',
+        rendered: 'Heilig',
+        note: 'Nicht „moralisch gut“, sondern „abgesondert, anders“. Die dreifache Wiederholung ist im Hebräischen die stärkste Form der Steigerung – der einzige Ort im Alten Testament, an dem ein Wort dreimal gesetzt wird.',
+      },
+      {
+        word: 'hebr. seraphim',
+        rendered: 'Seraphim',
+        note: 'Von der Wurzel „brennen“ – die Brennenden. Dasselbe Wort bezeichnet anderswo Schlangen; die geflügelten Uräusschlangen der ägyptischen Königsikonographie sind der wahrscheinliche Hintergrund.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Klassische Auslegung',
@@ -1335,6 +1977,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Spirituelle Lesart',
         text: 'Auf das Erschrecken folgt die Reinigung, erst dann der Auftrag – die Reihenfolge gilt als Grundmuster jeder Berufung.',
       },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Zwischen Vision und Sendung steht das Eingeständnis „ich bin unreiner Lippen“. Erst danach kommt die Kohle vom Altar. Wer den Text auf Berufung hin liest, findet hier die Reihenfolge: nicht Eignung, dann Auftrag, sondern Auftrag an einen, der sich für ungeeignet hält.',
+      },
     ],
     crossRefs: [{ book: 'mt', chapter: 13, verse: 14 }],
   },
@@ -1347,7 +1993,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die einzige Stelle im Alten Testament, an der ausdrücklich von einem „neuen Bund“ die Rede ist – formuliert in der Katastrophe, als der alte Bund gescheitert schien.',
     historicalLong:
-      'Neu ist nicht der Inhalt: Es bleibt dieselbe Weisung. Neu ist der Ort – sie soll „ins Herz geschrieben“ werden, statt auf Tafeln zu stehen. Damit entfällt auch die Belehrung von außen: „Einer wird den andern nicht mehr lehren.“ Das Neue Testament trägt seinen Namen nach diesem Text; die lateinische Übersetzung von „Bund“ lautet testamentum.',
+      'Neu ist nicht der Inhalt: Es bleibt dieselbe Weisung. Neu ist der Ort – sie soll „ins Herz geschrieben“ werden, statt auf Tafeln zu stehen. Damit entfällt auch die Belehrung von außen: „Einer wird den andern nicht mehr lehren.“ Das Neue Testament trägt seinen Namen nach diesem Text; die lateinische Übersetzung von „Bund“ lautet testamentum.\n\nDer Text sagt nicht, dass ein anderes Gesetz kommt. Neu ist nicht der Inhalt, sondern der Ort: Dasselbe Gesetz wird ins Herz geschrieben statt auf Tafeln. Und die Begründung steht am Schluss – nicht menschliche Besserung, sondern Vergebung: „Denn ich will ihnen ihre Missetat vergeben.“ Der Abschnitt gehört zum sogenannten Trostbüchlein der Kapitel 30 bis 33, das in einer Lage entstand, in der von Bund und Volk kaum noch etwas übrig war.',
+    reception:
+      'Die griechische Übersetzung dieses Verses hat der zweiten Hälfte der christlichen Bibel ihren Namen gegeben: *diatheke kaine*, Neues Testament. Der Hebräerbrief zitiert den Abschnitt in voller Länge und folgert, der erste Bund sei damit veraltet – der Satz, aus dem über Jahrhunderte die Enterbungslehre wurde, nach der die Kirche an Israels Stelle getreten sei.\n\nDiese Lehre haben die Kirchen im 20. Jahrhundert weithin widerrufen. Die Rheinische Synode formulierte 1980, Gottes Bund mit seinem Volk sei nie gekündigt worden; römische Dokumente sprechen seither vom „nie widerrufenen Bund“. Dass gerade dieser Vers die Namensgebung trägt, macht die Korrektur nicht leichter.',
+    terms: [
+      {
+        word: 'hebr. berit chadascha',
+        rendered: 'Bund',
+        note: 'Der einzige Ort im Alten Testament, an dem von einem „neuen Bund“ die Rede ist. Das hebräische Wort für neu meint erneuert, wiederhergestellt – nicht: an die Stelle eines anderen tretend.',
+      },
+      {
+        word: 'hebr. jada',
+        rendered: 'kennen',
+        note: 'Erkennen im Sinn eines Verhältnisses, nicht einer Information. Dasselbe Verb steht für das eheliche Erkennen. „Sie sollen mich alle kennen“ heißt: unmittelbar, ohne Vermittlung.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Jüdische Auslegung',
@@ -1360,6 +2020,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Ökumenische Klarstellung',
         text: 'Die früher verbreitete Folgerung, der Bund mit Israel sei aufgekündigt, wird von den großen Kirchen heute ausdrücklich zurückgewiesen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Bund wird ausdrücklich „mit dem Hause Israel und mit dem Hause Juda“ geschlossen, nicht mit einem anderen Volk. Wer den Text auf die Kirche bezieht, muss diesen Adressaten mitlesen – oder erklären, warum er ihn ersetzt. Die neuere Auslegung hält das für den Prüfstein jeder Deutung dieses Kapitels.',
       },
     ],
     crossRefs: [
@@ -1376,7 +2040,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Vision gilt einer Gemeinschaft im Exil, die sich selbst für erledigt hielt – der Text sagt es ausdrücklich: „Unsere Hoffnung ist verloren.“ Das Bild eines Schlachtfelds mit unbestatteten Toten war die äußerste Vorstellung von Endgültigkeit.',
     historicalLong:
-      'Das hebräische Wort ruach bedeutet zugleich Wind, Atem und Geist – der Text spielt in wenigen Versen alle drei Bedeutungen durch. Die Deutung liefert der Text selbst mit: Gemeint ist die Heimkehr des Volkes, noch nicht die Auferstehung Einzelner.',
+      'Das hebräische Wort ruach bedeutet zugleich Wind, Atem und Geist – der Text spielt in wenigen Versen alle drei Bedeutungen durch. Die Deutung liefert der Text selbst mit: Gemeint ist die Heimkehr des Volkes, noch nicht die Auferstehung Einzelner.\n\nDie Vision wird im Text selbst gedeutet, und zwar politisch: „Diese Gebeine sind das ganze Haus Israel“ – gemeint ist die Rückkehr aus dem Exil, nicht die Auferstehung Einzelner. Bemerkenswert ist der Aufbau in zwei Gängen: Erst kommen Adern, Fleisch und Haut, aber kein Odem – ein Feld voller vollständiger, aber toter Körper. Erst der zweite Auftrag bringt den Wind. Das ist dieselbe Reihenfolge wie in 1. Mose 2, wo Gott den Menschen aus Erde formt und ihm dann Atem einbläst.',
+    reception:
+      'Das Bild ist zum Inbegriff der Hoffnung gegen den Augenschein geworden. In den Spirituals – „Dem Bones“ – wurde daraus ein Lied, das die Anatomie durchbuchstabiert; nach 1945 und in der Erinnerung an die Schoah ist die Vision zu einem der meistzitierten Texte überhaupt geworden, und Wandbilder in der Synagoge von Dura Europos zeigen sie schon im 3. Jahrhundert.\n\nDie Auslegung auf die leibliche Auferstehung der Toten ist erst später gewachsen; im Judentum ist der Text ein Hauptbeleg dafür geworden, im Christentum steht er in der Osternacht. Der Text selbst gibt beides nicht her – und schließt es auch nicht aus.',
+    terms: [
+      {
+        word: 'hebr. ruach',
+        rendered: 'Odem',
+        note: 'Wind, Atem, Geist – dasselbe Wort. In diesem Kapitel steht es zehnmal und wechselt dabei die Bedeutung; im Deutschen braucht es dafür drei verschiedene Wörter, was den Zusammenhang zerreißt.',
+      },
+      {
+        word: 'hebr. ben adam',
+        rendered: 'Menschenkind',
+        note: 'Die Anrede, mit der Gott den Propheten über neunzigmal anspricht: „Sohn Adams“, also schlicht: Mensch. Sie betont den Abstand zwischen dem Redenden und dem Angeredeten.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Exegetische Einordnung',
@@ -1393,6 +2071,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Jüdische Auslegung',
         text: 'Der Text wird am Sabbat der Zwischentage von Pessach gelesen. Die Deutung bleibt dort, wo der Text selbst sie ansiedelt: bei der Rückkehr des Volkes, nicht bei der Auferstehung Einzelner.',
+      },
+      {
+        tradition: 'Politische Lesart',
+        text: 'Die Deutung im Text spricht von Rückkehr ins eigene Land und von der Wiedervereinigung der getrennten Reiche. Im Streit um den Staat Israel wird das Kapitel deshalb von religiös-zionistischer Seite als Erfüllung gelesen; andere Ausleger halten dagegen, dass eine prophetische Zusage keine Landkarte ist und der Text keine politische Ordnung legitimiert.',
       },
     ],
     crossRefs: [{ book: 'dan', chapter: 12, verse: 2 }],
@@ -1645,7 +2327,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Beschrieben wird eine Zikkurat, wie sie in Mesopotamien tatsächlich gebaut wurden – aus gebrannten Ziegeln und Erdpech, weil dort der Baustein fehlte. Der Text kennt die Bautechnik genau.',
     historicalLong:
-      'Der Name „Babel“ bedeutet auf Akkadisch „Tor Gottes“; die Erzählung deutet ihn stattdessen vom hebräischen Wort für „verwirren“ her – ein Wortspiel, das die Selbstdarstellung der Großmacht ins Gegenteil verkehrt. Auffällig ist auch, was nicht dasteht: von Hochmut ist ausdrücklich nicht die Rede, wohl aber von der Furcht, „zerstreut zu werden“. Kritisiert wird also eher die erzwungene Einheit als der Ehrgeiz.',
+      'Der Name „Babel“ bedeutet auf Akkadisch „Tor Gottes“; die Erzählung deutet ihn stattdessen vom hebräischen Wort für „verwirren“ her – ein Wortspiel, das die Selbstdarstellung der Großmacht ins Gegenteil verkehrt. Auffällig ist auch, was nicht dasteht: von Hochmut ist ausdrücklich nicht die Rede, wohl aber von der Furcht, „zerstreut zu werden“. Kritisiert wird also eher die erzwungene Einheit als der Ehrgeiz.\n\nDie Erzählung spielt mit Sprache, wie sie sie zum Thema macht. „Wohlauf, laßt uns bauen“ sagen die Menschen – „Wohlauf, laßt uns herniederfahren“ sagt Gott, in derselben Wendung. Ziegel statt Stein und Erdharz statt Kalk sind eine genaue Beschreibung mesopotamischer Bauweise; im steinreichen Palästina baute man anders. Gemeint ist eine Zikkurat, ein Stufentempel, wie er in Babylon stand. Und die Pointe steckt im Namen: Babel heißt auf Akkadisch „Tor des Gottes“ – der hebräische Erzähler hört darin das Wort *balal*, verwirren.',
+    reception:
+      'Der Turm ist zum Bild für menschliche Selbstüberhebung geworden – bei Bruegel ebenso wie in der Rede von babylonischer Sprachverwirrung. In der Auslegungsgeschichte wurde daraus oft eine Warnung vor Technik und Größe überhaupt; der Text selbst nennt aber kein Bauwerk als Sünde, sondern die Absicht dahinter.\n\nEine zweite Wirkung ist politisch: Weil die Erzählung ein imperiales Zentrum zeigt, das alle gleichmachen will, ist sie in der Ökumene zum Text gegen sprachliche und kulturelle Vereinheitlichung geworden. Pfingsten gilt dabei nicht als Rücknahme der Vielfalt, sondern als deren Verständlichwerden.',
+    terms: [
+      {
+        word: 'hebr. schem',
+        rendered: 'Namen',
+        note: 'Name, Ruf, Denkmal. „Sich einen Namen machen“ heißt: dem Vergessen entgehen. Genau das verspricht Gott ein Kapitel später Abraham – ohne Turm.',
+      },
+      {
+        word: 'hebr. balal',
+        rendered: 'verwirrt',
+        note: 'Vermischen, durcheinanderbringen. Der Gleichklang zu „Babel“ ist ein Wortspiel des Erzählers, keine sprachwissenschaftliche Ableitung.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Klassische Auslegung',
@@ -1658,6 +2354,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Neutestamentliche Aufnahme',
         text: 'Pfingsten wird seit der Alten Kirche als Gegenbild gelesen: Die Sprachen bleiben verschieden, und trotzdem versteht jeder.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Lesart',
+        text: 'Zikkurats wurden mit Fronarbeit gebaut. Wer die Erzählung von den Bauleuten her liest statt von den Bauherren, hört weniger eine Warnung vor Hochmut als eine Kritik an einem Reich, das Menschen für seinen Namen verbraucht.',
       },
     ],
     crossRefs: [
@@ -1699,7 +2399,20 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Die Anweisungen sind auf Aufbruch hin formuliert: im Stehen essen, die Lenden gegürtet, Stab in der Hand. Das Fest wird eingesetzt, bevor die Rettung geschehen ist.',
     historicalLong:
-      'Religionsgeschichtlich vermutet die Forschung zwei ältere Feste im Hintergrund – ein Hirtenfest mit dem Erstlingslamm und ein Bauernfest mit ungesäuertem Brot –, die hier zu einem Fest der Befreiung verbunden werden. Der Text richtet sich ausdrücklich an kommende Generationen: „Ihr sollt diesen Tag haben zum Gedächtnis.“ Erinnerung ist damit selbst ein Gebot.',
+      'Religionsgeschichtlich vermutet die Forschung zwei ältere Feste im Hintergrund – ein Hirtenfest mit dem Erstlingslamm und ein Bauernfest mit ungesäuertem Brot –, die hier zu einem Fest der Befreiung verbunden werden. Der Text richtet sich ausdrücklich an kommende Generationen: „Ihr sollt diesen Tag haben zum Gedächtnis.“ Erinnerung ist damit selbst ein Gebot.\n\nDer Abschnitt ist keine Erzählung, sondern eine Gottesdienstordnung mitten in einer Erzählung – und er hat mehrere Schichten. Vermutlich sind hier zwei ältere Bräuche zusammengewachsen: ein Frühjahrsritus von Hirten, bei dem ein Lamm geschlachtet und mit dessen Blut die Zelte geschützt wurden, und ein Bauernfest der ungesäuerten Brote zu Beginn der Gerstenernte. Israel deutet beides auf ein geschichtliches Ereignis um: Der Ritus erklärt nicht mehr den Jahreslauf, sondern die Befreiung. Auffällig ist die Anweisung zur Eile – gegürtet, beschuht, den Stab in der Hand. Das Fest wird im Stehen begangen, als könnte der Aufbruch jeden Moment kommen.',
+    reception:
+      'Der Sederabend ist bis heute der wichtigste häusliche Gottesdienst des Judentums, und seine Grundfrage stammt aus diesem Kapitel: Warum ist diese Nacht anders als alle anderen Nächte? Erinnerung geschieht dort nicht als Bericht, sondern als Wiederholung – jede Generation soll sich verstehen, als sei sie selbst ausgezogen.\n\nDie christliche Deutung auf Jesus als Passalamm hat eine dunkle Kehrseite. Weil Kreuzigung und Passa zeitlich zusammenfielen, wurde die Karwoche über Jahrhunderte zur gefährlichsten Zeit des Jahres für jüdische Gemeinden in Europa; die Ritualmordlegende knüpfte gezielt an das Passafest an. Kirchliche Erklärungen des 20. Jahrhunderts haben diese Verleumdungen ausdrücklich zurückgenommen.',
+    terms: [
+      {
+        word: 'hebr. pesach',
+        rendered: 'Passah',
+        note: 'Die Ableitung ist unsicher; der Text selbst verbindet sie mit „vorübergehen“. Über das Griechische *pascha* kommt daraus das deutsche Wort „Paschalamm“ und der romanische Name für Ostern.',
+      },
+      {
+        word: 'hebr. mazza',
+        note: 'Das ungesäuerte Brot. Weil es ohne Gärung auskommt, ist es in Stunden fertig – der Text deutet es als Brot der Eile, nicht als Fastenspeise.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Jüdische Tradition',
@@ -1712,6 +2425,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Religionsgeschichtliche Einordnung',
         text: 'Die Verbindung zweier älterer Feste erklärt, warum die Vorschriften zu Lamm und zu ungesäuertem Brot im Text nebeneinanderstehen.',
+      },
+      {
+        tradition: 'Liturgische Beobachtung',
+        text: 'Die Feier des Sederabends durch christliche Gemeinden ist umstritten. Befürworter sehen darin ein Verstehen der eigenen Wurzeln; jüdische Stimmen und viele Kirchen halten dagegen, dass ein fremder Gottesdienst nicht nachgespielt werden sollte – erst recht nicht in einer Deutung, die ihn auf Christus hin auflöst.',
       },
     ],
     crossRefs: [
@@ -1758,7 +2475,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der wohl älteste erhaltene Bibeltext überhaupt: Zwei kleine Silberrollen aus Ketef Hinnom bei Jerusalem tragen diese Worte und werden auf das 7. Jahrhundert v. Chr. datiert – rund 400 Jahre älter als die ältesten bekannten Bibelhandschriften.',
     historicalLong:
-      'Der Segen ist kunstvoll gebaut: drei Zeilen von wachsender Länge, in denen der Gottesname dreimal vorkommt. Er wird nicht über das Volk als Ganzes gesprochen, sondern in der Einzahl – „dich“, „dir“. Das Bild vom leuchtenden Angesicht meint Zuwendung; das Abwenden des Angesichts ist in der Bibel das Zeichen für Distanz.',
+      'Der Segen ist kunstvoll gebaut: drei Zeilen von wachsender Länge, in denen der Gottesname dreimal vorkommt. Er wird nicht über das Volk als Ganzes gesprochen, sondern in der Einzahl – „dich“, „dir“. Das Bild vom leuchtenden Angesicht meint Zuwendung; das Abwenden des Angesichts ist in der Bibel das Zeichen für Distanz.\n\nDie Form ist streng: drei Zeilen, die von drei über fünf auf sieben hebräische Wörter anwachsen, und jede beginnt mit dem Gottesnamen. Was sie zusagen, steigert sich mit: erst Bewahrung, dann Zuwendung, zuletzt Frieden. Die Silberröllchen von Ketef Hinnom wurden 1979 gefunden und waren so fein gerollt, dass es Jahre dauerte, sie zu öffnen; getragen wurden sie am Hals.',
+    reception:
+      'Der aaronitische Segen steht am Ende fast jedes evangelischen und katholischen Gottesdienstes und wird im Judentum von den Nachkommen Aarons in der Synagoge gesprochen. Er ist damit der Text, den die meisten Menschen im deutschen Sprachraum am häufigsten hören, ohne zu wissen, wo er steht.\n\nBemerkenswert ist die Anweisung davor: Die Priester sollen den Namen Gottes „auf die Kinder Israel legen“ – der Segen ist keine Bitte des Priesters, sondern eine Zusage Gottes, die durch ihn hindurchgeht. Aus diesem Detail leiten viele Kirchen ab, dass beim Segen die Hände erhoben und die Gemeinde angesehen wird.',
+    terms: [
+      {
+        word: 'hebr. panim',
+        rendered: 'Angesicht',
+        note: 'Gesicht, Zuwendung, Gegenwart. Das Angesicht leuchten lassen heißt: freundlich ansehen; das Angesicht verbergen heißt im Alten Testament das Gegenteil und ist eine der härtesten Aussagen überhaupt.',
+      },
+      {
+        word: 'hebr. schalom',
+        rendered: 'Frieden',
+        note: 'Das letzte Wort des Segens und sein Ziel: Unversehrtheit, Auskommen, heile Verhältnisse – nicht bloß Ruhe.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Liturgische Praxis',
@@ -1775,6 +2506,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Archäologische Einordnung',
         text: 'Zwei winzige Silberrollen aus Ketef Hinnom bei Jerusalem tragen diesen Segen und stammen aus dem 7. oder 6. Jahrhundert v. Chr. Es sind die ältesten bekannten Handschriften eines biblischen Textes überhaupt – über vier Jahrhunderte älter als die Rollen von Qumran.',
+      },
+      {
+        tradition: 'Traditionsgeschichtliche Beobachtung',
+        text: 'Dass der Wortlaut schon vor dem Exil als Amulett getragen wurde, spricht dafür, dass der Segen älter ist als die priesterliche Schrift, in der er heute steht – und dass er von Anfang an nicht nur im Tempel, sondern im Alltag gebraucht wurde.',
       },
     ],
   },
@@ -1978,7 +2713,20 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Vierzehn Gegensatzpaare beschreiben das ganze Leben – ohne Wertung, welche Seite die bessere sei. Der Text tröstet nicht, er ordnet ein.',
     historicalLong:
-      'Der berühmte Katalog mündet in eine unbequeme Feststellung: Gott hat „die Ewigkeit in ihr Herz gelegt“, aber der Mensch kann das Werk Gottes nicht durchschauen. Kohelet zieht daraus keine Resignation, sondern eine schlichte Folgerung – essen, trinken und im Tun Gutes sehen. Das Wort, das Luther mit „eitel“ übersetzt, heißt wörtlich „Hauch“ und meint eher Flüchtigkeit als Nichtigkeit.',
+      'Der berühmte Katalog mündet in eine unbequeme Feststellung: Gott hat „die Ewigkeit in ihr Herz gelegt“, aber der Mensch kann das Werk Gottes nicht durchschauen. Kohelet zieht daraus keine Resignation, sondern eine schlichte Folgerung – essen, trinken und im Tun Gutes sehen. Das Wort, das Luther mit „eitel“ übersetzt, heißt wörtlich „Hauch“ und meint eher Flüchtigkeit als Nichtigkeit.\n\nDie Reihe der vierzehn Gegensatzpaare ist kein Trost, sondern eine Bestandsaufnahme – und sie enthält Zeiten, die man sich nicht wünscht: töten, abbrechen, hassen, Krieg. Was Kohelet feststellt, ist die Ungleichzeitigkeit des Menschen: Alles hat seine Zeit, aber der Mensch weiß nicht, welche gerade ist. Vers 11 sagt es ausdrücklich – Gott hat „die Ewigkeit in ihr Herz gelegt“, aber der Mensch kann das Werk Gottes nicht überschauen. Der Text handelt also weniger von der Weisheit des richtigen Augenblicks als von der Grenze dessen, was ein Mensch erkennt.',
+    reception:
+      'Der Abschnitt gehört zu den meistgelesenen Bibeltexten bei Beerdigungen und Jahreswechseln – und ist durch Pete Seegers Lied *Turn! Turn! Turn!*, 1965 von den Byrds an die Spitze der amerikanischen Charts gebracht, zum wohl bekanntesten vertonten Bibeltext des 20. Jahrhunderts geworden. Seeger fügte dem Text nur vier Worte hinzu: „I swear it’s not too late“.\n\nIn der Auslegung wird der Abschnitt gern als Aufforderung zur Gelassenheit gelesen. Kohelet selbst zieht eine nüchternere Folgerung: Weil der Mensch das Ganze nicht überblickt, soll er essen, trinken und bei seiner Arbeit guten Mutes sein – das sei Gottes Gabe.',
+    terms: [
+      {
+        word: 'hebr. et',
+        rendered: 'Zeit',
+        note: 'Der bestimmte, richtige Zeitpunkt – nicht die verrinnende Zeit. Das Hebräische unterscheidet, wo das Deutsche nur ein Wort hat.',
+      },
+      {
+        word: 'hebr. hebel',
+        note: 'Das Leitwort des ganzen Buches, von Luther mit „eitel“ übersetzt: Hauch, Windhauch, Nichtigkeit. Nicht „sinnlos“, sondern flüchtig – etwas, das man nicht festhalten kann.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Weisheitliche Auslegung',
@@ -1995,6 +2743,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Wirkungsgeschichte in der Musik',
         text: 'Der Text ist als Popsong um die Welt gegangen, seit Pete Seeger ihn 1959 fast wörtlich vertonte. Kaum ein biblischer Abschnitt ist außerhalb der Kirchen so verbreitet.',
+      },
+      {
+        tradition: 'Kanonische Beobachtung',
+        text: 'Dass ein so skeptisches Buch überhaupt in die Bibel kam, war umstritten; die rabbinische Überlieferung berichtet von Streit darüber. Erhalten blieb es wohl auch wegen des frommen Schlusses in Kapitel 12, den viele Ausleger für einen späteren Zusatz halten. Die Sammlung hält damit einen Widerspruch aus, statt ihn zu glätten.',
       },
     ],
   },
@@ -2172,7 +2924,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der erwartete König kommt nicht auf einem Streitross, sondern auf einem Lasttier – und der Text sagt ausdrücklich, dass Streitwagen und Bogen vernichtet werden. Die Ankündigung ist entwaffnend gemeint.',
     historicalLong:
-      'Der König wird „gerecht und ein Helfer“ genannt – die hebräische Form ist passiv und meint eher „dem geholfen wurde“ als „der hilft“. Er ist also selbst ein Empfangender. Der hebräische Parallelismus nennt „einen Esel“ und „ein Füllen der Eselin“; gemeint ist ein Tier, nicht zwei. Matthäus hat die Doppelung wörtlich genommen und schildert entsprechend zwei Tiere – ein bekanntes Beispiel dafür, wie ein Zitat die Erzählung formen kann. Die angekündigte Herrschaft reicht „von einem Meer zum andern“, wird aber ausdrücklich ohne Waffen ausgeübt.',
+      'Der König wird „gerecht und ein Helfer“ genannt – die hebräische Form ist passiv und meint eher „dem geholfen wurde“ als „der hilft“. Er ist also selbst ein Empfangender. Der hebräische Parallelismus nennt „einen Esel“ und „ein Füllen der Eselin“; gemeint ist ein Tier, nicht zwei. Matthäus hat die Doppelung wörtlich genommen und schildert entsprechend zwei Tiere – ein bekanntes Beispiel dafür, wie ein Zitat die Erzählung formen kann. Die angekündigte Herrschaft reicht „von einem Meer zum andern“, wird aber ausdrücklich ohne Waffen ausgeübt.\n\nDer Vers beschreibt einen Einzug, der bewusst gegen das Bild eines siegreichen Königs gesetzt ist. Ein Herrscher zog nach einem Feldzug auf dem Pferd ein; der Esel war das Reittier des Friedens und in älterer Zeit auch das der Fürsten. Die Fortsetzung in Vers 10 sagt es ausdrücklich: Streitwagen und Bogen werden ausgerottet. Der hebräische Ausdruck „arm“ meint dabei weniger Besitzlosigkeit als Wehrlosigkeit – einer, der nicht auf eigene Macht gestützt kommt.',
+    reception:
+      'Alle vier Evangelien erzählen den Einzug in Jerusalem, Matthäus und Johannes zitieren diesen Vers ausdrücklich. Matthäus liest die hebräische Doppelung – „auf einem Esel und auf einem jungen Füllen“ – als zwei Tiere; sie ist im Hebräischen eine übliche Wiederholung desselben Gedankens. An dieser Stelle lässt sich besonders gut beobachten, wie ein Evangelist ein Prophetenwort auslegt.\n\nDer Palmsonntag lebt bis heute von dieser Szene, mit Prozessionen, Palmzweigen und dem Palmesel als Bildwerk. Politisch gelesen ist der Einzug eine Gegendemonstration: Ein wehrloser König reitet in eine Stadt ein, in der zum Fest römische Truppen aufmarschierten.',
+    terms: [
+      {
+        word: 'hebr. ani',
+        rendered: 'arm',
+        note: 'Elend, gebeugt, ohne Macht. Nicht in erster Linie eine Aussage über Besitz, sondern über Schutzlosigkeit – dasselbe Wort steht für die, deren Recht die Propheten einklagen.',
+      },
+      {
+        word: 'hebr. noscha',
+        rendered: 'Helfer',
+        note: 'Grammatisch eine passive Form: „einer, dem geholfen wurde“ – nicht der Helfer, sondern der Gerettete. Luther übersetzt aktiv; die meisten neueren Ausgaben folgen der passiven Form.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Alttestamentliche Auslegung',
@@ -2189,6 +2955,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Liturgische Rezeption',
         text: 'Der Vers wird am Palmsonntag gelesen. Das Reittier ist der Punkt: Ein König, der auf einem Esel kommt, kommt nicht als Sieger von einem Feldzug zurück.',
+      },
+      {
+        tradition: 'Kritische Einordnung',
+        text: 'Der Abschnitt gehört zum zweiten Teil des Sacharjabuchs, der sprachlich und inhaltlich deutlich vom ersten abweicht und meist später datiert wird. Wer die Verse für sich liest, sollte wissen, dass unmittelbar davor und danach Gerichtsworte über Nachbarvölker stehen – der Friedenskönig steht in einem sehr unfriedlichen Zusammenhang.',
       },
     ],
     crossRefs: [{ book: 'mt', chapter: 21, verse: 5 }],
@@ -2657,7 +3427,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Höhepunkt des Buches – und die einzige Stelle, an der es fast lehrhaft wird. Gott kommt im Hohenlied sonst nicht vor; hier klingt sein Name möglicherweise in der Wendung „eine Flamme des HERRN“ an.',
     historicalLong:
-      'Die Bildwelt ist juristisch und existenziell zugleich: Siegel, Eifer, Scheol, Wasser, Kaufpreis. Der Schlusssatz – wer alles Gut seines Hauses für Liebe gäbe, würde nur verachtet – schließt jede Verrechnung aus. Dass ein Buch weltlicher Liebeslyrik in den Kanon kam, war schon in der Antike umstritten; Rabbi Akiba nannte es dennoch „das Allerheiligste“ unter den Schriften.',
+      'Die Bildwelt ist juristisch und existenziell zugleich: Siegel, Eifer, Scheol, Wasser, Kaufpreis. Der Schlusssatz – wer alles Gut seines Hauses für Liebe gäbe, würde nur verachtet – schließt jede Verrechnung aus. Dass ein Buch weltlicher Liebeslyrik in den Kanon kam, war schon in der Antike umstritten; Rabbi Akiba nannte es dennoch „das Allerheiligste“ unter den Schriften.\n\nDie Verse 6 und 7 sind der einzige Ort im ganzen Hohenlied, an dem Gott vorkommt – und selbst das ist unsicher: „eine Flamme des HERRN“ könnte auch schlicht „eine gewaltige Flamme“ heißen, weil das Hebräische einen Superlativ so bilden kann. Ansonsten schweigt das Buch von Gott, vom Bund, vom Gesetz. Es besteht aus Liebesliedern, die Motive ägyptischer Liebeslyrik aufnehmen, und es lässt die Frau mehr sprechen als den Mann – ein in der Bibel einmaliger Befund.',
+    reception:
+      'Über anderthalb Jahrtausende wurde das Hohelied fast ausschließlich allegorisch gelesen – im Judentum auf Gott und Israel, im Christentum auf Christus und die Kirche oder die Seele. Bernhard von Clairvaux hielt darüber 86 Predigten und kam bis Kapitel 3. Erst seit dem 18. Jahrhundert setzte sich die Lesart als Liebesdichtung durch, und beide Deutungen stehen heute nebeneinander.\n\nDass ein Buch mit unverstellter Körperlichkeit im Kanon steht, hat die kirchliche Sexualethik immer wieder in Verlegenheit gebracht – und wird in der neueren Auslegung gerade als Korrektiv gelesen: Die Bibel kennt Liebe nicht nur als Pflicht.',
+    terms: [
+      {
+        word: 'hebr. schalhebetja',
+        rendered: 'eine Flamme des HERRN',
+        note: 'Ein einmaliges Wort. Die Endung *-ja* kann eine Kurzform des Gottesnamens sein oder eine Steigerung markieren. Deshalb übersetzen die einen „Flamme des HERRN“, die anderen „gewaltige Flamme“.',
+      },
+      {
+        word: 'hebr. qina',
+        rendered: 'Eifer',
+        note: 'Eifersucht, Leidenschaft, Eifer – dasselbe Wort, das im Bilderverbot Gottes „Eifer“ meint. Der Vers stellt die Liebe damit auf eine Stufe mit den stärksten Mächten, die die Bibel kennt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Wörtliche Auslegung',
@@ -2674,6 +3458,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Jüdische Auslegung',
         text: 'Die Wendung „ein Siegel auf dein Herz“ verweist auf den Siegelring, den man am Körper trug. Die rabbinische Tradition liest darin die Unauflöslichkeit einer Bindung, nicht ihre Heftigkeit.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Im Hohenlied spricht die Frau zuerst, am häufigsten und am Ende. Sie sucht, begehrt und lädt ein, ohne dass ein Vater, ein Ehemann oder eine Ordnung sie vermittelt. Für viele Auslegerinnen ist das Buch deshalb der Gegentext zu den Rollenbildern, die anderswo im Kanon stehen.',
       },
     ],
   },
@@ -3190,7 +3978,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Am Ende der Rede des Mose steht keine Drohung, sondern eine Wahl: Leben und Tod werden vorgelegt, und der Text sagt gleich dazu, was zu wählen ist.',
     historicalLong:
-      'Die Form entspricht altorientalischen Vasallenverträgen: Vorgeschichte, Bestimmungen, Zeugen, Segen und Fluch. 5. Mose übernimmt dieses Muster – nur steht an der Stelle des Großkönigs Gott, und an der Stelle des unterworfenen Kleinkönigs steht ein ganzes Volk. Dass Himmel und Erde als Zeugen aufgerufen werden, gehört zur Vertragssprache. Entstanden ist das Buch in seiner Grundform wohl im 7. Jahrhundert v. Chr.; die Reform Josias beruft sich auf ein „gefundenes Gesetzbuch“, das die Forschung meist mit einer Vorform des Deuteronomiums gleichsetzt.',
+      'Die Form entspricht altorientalischen Vasallenverträgen: Vorgeschichte, Bestimmungen, Zeugen, Segen und Fluch. 5. Mose übernimmt dieses Muster – nur steht an der Stelle des Großkönigs Gott, und an der Stelle des unterworfenen Kleinkönigs steht ein ganzes Volk. Dass Himmel und Erde als Zeugen aufgerufen werden, gehört zur Vertragssprache. Entstanden ist das Buch in seiner Grundform wohl im 7. Jahrhundert v. Chr.; die Reform Josias beruft sich auf ein „gefundenes Gesetzbuch“, das die Forschung meist mit einer Vorform des Deuteronomiums gleichsetzt.\n\nDer Abschnitt ist im Stil altorientalischer Staatsverträge gehalten. Solche Verträge zwischen einem Großkönig und einem Vasallen endeten regelmäßig mit einer Liste von Segen und Fluch und mit der Anrufung von Zeugen – meist Götter, hier „Himmel und Erde“. Das Deuteronomium übernimmt die Form und besetzt die Stelle des Großkönigs mit Gott. Der Text bleibt dabei nicht neutral: Er legt zwei Wege vor und sagt im selben Atemzug, welchen er will – „daß du das Leben erwählest“.',
+    reception:
+      'Der Satz „wähle das Leben“ ist zu einer Formel weit über die Bibel hinaus geworden – in der Bioethik, in Antikriegsreden, in der Debatte um Sterbehilfe, und in ganz verschiedene Richtungen. Er steht auf Plakaten von Abtreibungsgegnern ebenso wie in Erklärungen für den Klimaschutz.\n\nTheologisch ist er der Kernbeleg gegen eine Vorherbestimmung: Wenn Gott zur Wahl auffordert, muss es etwas zu wählen geben. Erasmus führte ihn 1524 gegen Luther ins Feld; Luther antwortete in *De servo arbitrio*, dass die Aufforderung gerade zeige, was der Mensch nicht könne. Der Streit ist bis heute nicht entschieden.',
+    terms: [
+      {
+        word: 'hebr. bachar',
+        rendered: 'erwählest',
+        note: 'Wählen, aussuchen. Dasselbe Verb beschreibt sonst, dass Gott Israel erwählt – hier wird es umgedreht und dem Menschen zugemutet.',
+      },
+      {
+        word: 'hebr. chajjim',
+        rendered: 'Leben',
+        note: 'Steht im Hebräischen in der Mehrzahl: die Lebenszeit, die Lebendigkeit. Gemeint ist nicht das Überleben, sondern ein gelingendes Dasein im Land.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Jüdische Auslegung',
@@ -3203,6 +4005,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Bundestheologische Lesart',
         text: 'Segen und Fluch sind keine willkürlichen Belohnungen, sondern die inneren Folgen eines Weges. Der Text beschreibt weniger ein Gericht als eine Richtung.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Verknüpfung von Gehorsam und Wohlergehen wird in der Bibel selbst bestritten – Hiob und mehrere Psalmen widersprechen ihr ausdrücklich. Wer den Abschnitt als Regel liest, macht Leid zum Beweis von Schuld; wer ihn als Zuspruch an ein Volk vor einer Entscheidung liest, kommt ohne diese Folgerung aus.',
       },
     ],
     crossRefs: [
@@ -3220,7 +4026,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Amtsantritt Josuas nach dem Tod des Mose. Dreimal wird ihm derselbe Zuspruch gesagt – ein Hinweis darauf, dass die Furcht das eigentliche Thema ist.',
     historicalLong:
-      'Die Wiederholung ist kein Stilfehler, sondern Form: Solche Einsetzungsreden folgen einem festen Muster aus Zuspruch, Auftrag und Beistandszusage, das sich auch bei Königseinsetzungen findet. Neu ist der Zusatz, das Gesetzbuch solle „nicht von deinem Munde kommen“ – der Anführer wird an dieselbe Weisung gebunden wie alle anderen. Das Buch Josua gehört nach heutiger Sicht zum deuteronomistischen Geschichtswerk, das die Geschichte Israels rückblickend vom Exil her deutet.',
+      'Die Wiederholung ist kein Stilfehler, sondern Form: Solche Einsetzungsreden folgen einem festen Muster aus Zuspruch, Auftrag und Beistandszusage, das sich auch bei Königseinsetzungen findet. Neu ist der Zusatz, das Gesetzbuch solle „nicht von deinem Munde kommen“ – der Anführer wird an dieselbe Weisung gebunden wie alle anderen. Das Buch Josua gehört nach heutiger Sicht zum deuteronomistischen Geschichtswerk, das die Geschichte Israels rückblickend vom Exil her deutet.\n\nDer Abschnitt ist eine Amtseinführung nach festem Muster: Zuspruch der Gegenwart, Auftrag, Ermutigung – dieselbe Form findet sich bei der Einsetzung Salomos in 1. Chronik 22. Bemerkenswert ist, worin der Erfolg begründet wird. Nicht in militärischer Stärke, sondern darin, dass Josua das Gesetzbuch Tag und Nacht bedenkt. Damit wird eine Kriegserzählung von ihrem Anfang her umgedeutet: Der Held ist zuerst ein Leser.',
+    reception:
+      'Der Vers gehört zu den meistverschenkten Zusprüchen bei Amtseinführungen und Ordinationen. Er hat aber auch eine gefährliche Wirkungsgeschichte: Weil er am Anfang einer Landnahmeerzählung steht, wurde er in Siedlerbewegungen von Nordamerika bis Südafrika als göttliche Rückendeckung für Landnahme gelesen. Die Buren verstanden ihren Zug ins Landesinnere ausdrücklich in diesen Kategorien.\n\nDie Archäologie hat die Erzählung erheblich relativiert: Für die meisten der genannten Städte lässt sich keine Zerstörung in der fraglichen Zeit nachweisen. Das entschärft die historische Frage – die Frage nach der Wirkung solcher Texte bleibt.',
+    terms: [
+      {
+        word: 'hebr. chasak weemaz',
+        rendered: 'getrost und freudig',
+        note: 'Wörtlich „sei stark und fest“ – ein militärischer Zuruf. Er steht in diesem Kapitel dreimal und rahmt die Einsetzung.',
+      },
+      {
+        word: 'hebr. haga',
+        rendered: 'betrachte',
+        note: 'Murmeln, halblaut vor sich hinsprechen. Gemeint ist kein stilles Nachdenken, sondern lautes Lesen – so wurde in der Antike gelernt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -3233,6 +4053,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Wer die Landverheißung liest, muss mitlesen, was sie für die Bewohner des Landes bedeutete. Die Rezeptionsgeschichte dieses Kapitels – von der Kolonisierung bis in heutige Konflikte – ist Teil dessen, was der Text ausgelöst hat.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition legt das Gewicht ganz auf Vers 8: Josua wird nicht als Feldherr, sondern als Toragelehrter gezeichnet. Der Talmud leitet aus diesem Vers die Pflicht zum täglichen Lernen ab – und liest damit ein Kriegsbuch von seinem ersten Kapitel her um.',
       },
     ],
     crossRefs: [
@@ -3429,7 +4253,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'David will Gott ein Haus bauen. Die Antwort dreht das Wort um: Nicht David baut Gott ein Haus, sondern Gott baut David eines – eine Dynastie.',
     historicalLong:
-      'Das Wortspiel mit „Haus“ trägt das ganze Kapitel: Palast, Tempel und Dynastie heißen im Hebräischen gleich. Aus dieser Zusage entwickelt sich die messianische Erwartung: ein Nachkomme Davids, dessen Thron Bestand hat. Als die Dynastie 587 v. Chr. endete, wurde die Verheißung nicht aufgegeben, sondern in die Zukunft verlegt. Das Neue Testament setzt genau hier an, wenn es Jesus als „Sohn Davids“ bezeichnet.',
+      'Das Wortspiel mit „Haus“ trägt das ganze Kapitel: Palast, Tempel und Dynastie heißen im Hebräischen gleich. Aus dieser Zusage entwickelt sich die messianische Erwartung: ein Nachkomme Davids, dessen Thron Bestand hat. Als die Dynastie 587 v. Chr. endete, wurde die Verheißung nicht aufgegeben, sondern in die Zukunft verlegt. Das Neue Testament setzt genau hier an, wenn es Jesus als „Sohn Davids“ bezeichnet.\n\nDas Kapitel dreht sich um ein Wortspiel, das im Deutschen fast verschwindet: David will Gott ein „Haus“ bauen – einen Tempel; Gott antwortet, er werde David ein „Haus“ bauen – eine Dynastie. Dasselbe Wort, zweimal umgedreht. Und die Antwort enthält eine Zurückweisung: Gott hat nie um einen Tempel gebeten und ist bisher „im Zelt umhergezogen“. Die Forschung sieht in dem Kapitel mehrere Schichten; die Zusage einer ewigen Dynastie dürfte in ihrer heutigen Form nach dem Ende des Königtums formuliert oder überarbeitet worden sein – als Festhalten an einer Zusage, deren Erfüllung nicht mehr zu sehen war.',
+    reception:
+      'Aus diesem Kapitel wächst die messianische Erwartung. Die Rede vom „Sohn Davids“ in den Evangelien, der Stammbaum bei Matthäus, die Weihnachtserzählung in Bethlehem – alles bezieht sich auf diese Zusage. Im Judentum ist der davidische Messias bis heute eine Hoffnung auf die Zukunft, im Christentum eine Aussage über Jesus; an dieser Stelle trennen sich die Wege.\n\nDie Zusage hat auch politisch gewirkt: Europäische Könige ließen sich mit Verweis auf David salben, und das Gottesgnadentum berief sich auf Vers 14 – „ich will sein Vater sein“. Dass derselbe Vers ausdrücklich Strafe für Missetat vorsieht, wurde dabei regelmäßig überlesen.',
+    terms: [
+      {
+        word: 'hebr. bajit',
+        rendered: 'Haus',
+        note: 'Haus, Tempel, Dynastie, Familie – alles dasselbe Wort. Das Kapitel lebt von diesem Doppelsinn, den keine Übersetzung mitträgt.',
+      },
+      {
+        word: 'hebr. chesed',
+        rendered: 'Barmherzigkeit',
+        note: 'Güte und Vertragstreue zugleich. Dass sie David „nicht entwandt“ wird wie Saul, ist der Kern der Zusage: Sie hängt nicht am Wohlverhalten der Nachfolger.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -3442,6 +4280,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Christliche Auslegung',
         text: 'Die Zusage wird auf Jesus bezogen, ausdrücklich schon in der Weihnachtsgeschichte des Lukas. Umstritten bleibt, wie sich das zur bleibenden Erwartung des Judentums verhält.',
+      },
+      {
+        tradition: 'Politisch-kritische Lesart',
+        text: 'Der Text stützt eine Dynastie und ist damit interessengeleitet: Wer eine Herrschaft für ewig verbürgt erklärt, entzieht sie der Kritik. Ausleger weisen darauf hin, dass die Samuelbücher genau diese Herrschaft an anderer Stelle schonungslos darstellen – die Sammlung hält beides nebeneinander aus.',
       },
     ],
     crossRefs: [
@@ -3909,7 +4751,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Nach vier Tieren, die aus dem Meer steigen, kommt „einer wie eines Menschen Sohn“ mit den Wolken. Ein Bild, das für das Neue Testament kaum zu überschätzen ist.',
     historicalLong:
-      'Die vier Tiere stehen für Weltreiche; das vierte wird meist auf die Diadochenreiche und Antiochus IV. bezogen. Der Gegensatz ist bewusst gebaut: Die Reiche steigen aus dem Chaosmeer und sind Bestien, die neue Herrschaft kommt von oben und sieht aus wie ein Mensch. Der Text selbst deutet die Gestalt kollektiv – als „das Volk der Heiligen des Höchsten“. In der Zwischentestamentlichen Literatur wird daraus zunehmend eine Einzelgestalt. „Menschensohn“ ist im Neuen Testament die Selbstbezeichnung Jesu, und bei der Verhandlung vor dem Hohen Rat zitiert er genau diesen Vers.',
+      'Die vier Tiere stehen für Weltreiche; das vierte wird meist auf die Diadochenreiche und Antiochus IV. bezogen. Der Gegensatz ist bewusst gebaut: Die Reiche steigen aus dem Chaosmeer und sind Bestien, die neue Herrschaft kommt von oben und sieht aus wie ein Mensch. Der Text selbst deutet die Gestalt kollektiv – als „das Volk der Heiligen des Höchsten“. In der Zwischentestamentlichen Literatur wird daraus zunehmend eine Einzelgestalt. „Menschensohn“ ist im Neuen Testament die Selbstbezeichnung Jesu, und bei der Verhandlung vor dem Hohen Rat zitiert er genau diesen Vers.\n\nDas Kapitel ist auf Aramäisch geschrieben, nicht auf Hebräisch – ein Sprachwechsel, der mitten im Buch liegt und dessen Grund umstritten ist. Und es ist eine der frühesten Apokalypsen: Weltreiche erscheinen als Tiere aus dem Meer, Gott als Greis auf einem Feuerthron, das Gericht als Gerichtssitzung mit aufgeschlagenen Büchern. Der „wie eines Menschen Sohn“ ist demgegenüber kein Tier – er kommt nicht aus dem Chaos, sondern mit den Wolken, also von oben. Vers 27 deutet ihn ausdrücklich auf „das Volk der Heiligen des Höchsten“.',
+    reception:
+      'Die Wendung „Menschensohn“ wird in den Evangelien über achtzigmal gebraucht und ist die einzige Selbstbezeichnung, die Jesus dort durchgehend verwendet. Ob er damit auf diese Vision anspielte, ob er schlicht „ich“ meinte oder ob die Gemeinde ihm den Titel zuwuchs, ist eine der am längsten diskutierten Fragen der neutestamentlichen Forschung.\n\nDas Bild vom Thron mit den Büchern hat die abendländische Vorstellung vom Jüngsten Gericht geprägt – von den Portalen mittelalterlicher Kathedralen bis zu Michelangelos Wand in der Sixtinischen Kapelle. Die Verbindung mit Matthäus 25 und der Offenbarung geschah früh und ist bildlich kaum noch zu trennen.',
+    terms: [
+      {
+        word: 'aram. bar enasch',
+        rendered: 'eines Menschen Sohn',
+        note: 'Wörtlich „ein Menschensohn“ – im Aramäischen eine normale Umschreibung für „ein Mensch“. Der Vergleich „wie“ ist entscheidend: Die Gestalt sieht aus wie ein Mensch, im Gegensatz zu den Tieren davor.',
+      },
+      {
+        word: 'aram. attiq jomin',
+        rendered: 'dem Alten',
+        note: 'Der „Hochbetagte“. Die Vorstellung eines greisen Götterkönigs mit weißem Haar hat Vorbilder in kanaanäischen Texten; im Alten Testament ist diese Darstellung Gottes einmalig.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -3922,6 +4778,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Christliche Auslegung',
         text: 'Die Kirche bezieht die Stelle auf Christus und liest sie zusammen mit Matthäus 26. Umstritten bleibt, ob Jesus selbst den Titel in diesem Sinn gebrauchte oder eher zurückhaltend.',
+      },
+      {
+        tradition: 'Historische Einordnung',
+        text: 'Die meisten Ausleger datieren das Kapitel in die Verfolgung unter Antiochus IV. um 165 vor Christus – das vierte Tier mit dem lästernden Horn passt genau auf diesen König. Die Vision wäre dann kein Fahrplan der Weltgeschichte, sondern ein verschlüsselter Trost für Menschen, die gerade um ihr Leben fürchteten.',
       },
     ],
     crossRefs: [
@@ -4059,7 +4919,20 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Auftrag lautet Ninive, im Osten. Jona bucht ein Schiff nach Tarsis, so weit im Westen wie damals denkbar. Die Erzählung setzt ihren Helden von Anfang an ins Unrecht – und die heidnischen Seeleute ins Recht.',
     historicalLong:
-      'Das Buch ist keine Prophetenschrift wie die anderen: Es enthält fast keine Prophetenworte, dafür eine durchkomponierte Erzählung mit Ironie. Die Seeleute beten, werfen Lose, sträuben sich gegen den Menschenwurf und fürchten am Ende Gott – während der Prophet unter Deck schläft. Diese Umkehrung ist das Verfahren des ganzen Buches. Ninive war zur mutmaßlichen Abfassungszeit längst zerstört; die Wahl gerade dieser Stadt ist deshalb bewusst provozierend gesetzt.',
+      'Das Buch ist keine Prophetenschrift wie die anderen: Es enthält fast keine Prophetenworte, dafür eine durchkomponierte Erzählung mit Ironie. Die Seeleute beten, werfen Lose, sträuben sich gegen den Menschenwurf und fürchten am Ende Gott – während der Prophet unter Deck schläft. Diese Umkehrung ist das Verfahren des ganzen Buches. Ninive war zur mutmaßlichen Abfassungszeit längst zerstört; die Wahl gerade dieser Stadt ist deshalb bewusst provozierend gesetzt.\n\nDie Erzählung ist von der ersten Zeile an komisch gebaut. Jona soll nach Osten, er fährt nach Westen – Tarsis liegt vermutlich in Spanien, also am anderen Ende der bekannten Welt. Alles im Text geht abwärts: Er geht hinab nach Japho, hinab ins Schiff, hinab in den untersten Raum, hinab in den Schlaf, schließlich hinab ins Meer; dasselbe hebräische Verb steht fünfmal. Und die Heiden benehmen sich vorbildlich: Die Seeleute beten, opfern und wollen den Fremden nicht über Bord werfen, während der Prophet schläft.',
+    reception:
+      'Kaum eine biblische Erzählung ist so oft zum Prüfstein gemacht worden: Wer den Fisch für historisch hält, gilt in manchen Kreisen als bibeltreu, wer nicht, als liberal. Die Gattungsfrage ist in der Forschung jedoch weitgehend geklärt – Ironie, Übertreibung und die aufreizend runden Zahlen sprechen für eine Lehrerzählung, nicht für einen Bericht.\n\nIn der christlichen Kunst ist Jona das häufigste alttestamentliche Motiv der frühen Katakomben, weil die drei Tage im Fisch früh auf die Grablegung Jesu gedeutet wurden. Im Judentum wird das ganze Buch am Nachmittag des Versöhnungstags gelesen – als Text über Umkehr, die auch Feinden offensteht.',
+    terms: [
+      {
+        word: 'hebr. jarad',
+        rendered: 'hinab',
+        note: 'Hinabsteigen. Das Verb strukturiert das ganze Kapitel wie eine Treppe nach unten – Luther gibt es meist mit „hinab“ wieder, sodass die Bewegung auch im Deutschen sichtbar bleibt.',
+      },
+      {
+        word: 'hebr. dag gadol',
+        note: 'Ein „großer Fisch“ – von einem Wal steht im Hebräischen nichts. Die griechische Übersetzung sagt *ketos*, Seeungeheuer; die Kunstgeschichte hat daraus den Wal gemacht.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -4072,6 +4945,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Christliche Auslegung',
         text: 'Matthäus deutet die drei Tage im Fisch auf Ostern. Diese Lesart hat die Wirkungsgeschichte geprägt, überdeckt aber leicht das eigentliche Thema des Buches.',
+      },
+      {
+        tradition: 'Literarische Beobachtung',
+        text: 'Ninive war zur Entstehungszeit des Buches längst zerstört; die Hörer wussten das. Die Erzählung spielt also in einer Vergangenheit, deren Ausgang bekannt ist, und stellt trotzdem die Frage, ob Gott dieser Stadt vergeben darf. Das ist die Bauart einer Parabel, nicht die einer Chronik.',
       },
     ],
     crossRefs: [
@@ -5180,7 +6057,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Drei Aufforderungen und sieben Zusagen – mit diesen Versen beginnt die Geschichte Israels. Wohin es geht, wird nicht gesagt: „in ein Land, das ich dir zeigen will“.',
     historicalLong:
-      'Die Aufforderung steigert sich: Land, Verwandtschaft, Vaterhaus – von außen nach innen, jedes Mal schmerzhafter. Der Segen ist von Anfang an nicht auf eine Gruppe begrenzt: „in dir sollen gesegnet werden alle Geschlechter auf Erden“. Damit steht am Beginn der Erwählungsgeschichte ein Satz, der über sie hinausweist. Die Urgeschichte davor endet im Sprachenwirrwarr von Babel; die Berufung ist die Antwort darauf.',
+      'Die Aufforderung steigert sich: Land, Verwandtschaft, Vaterhaus – von außen nach innen, jedes Mal schmerzhafter. Der Segen ist von Anfang an nicht auf eine Gruppe begrenzt: „in dir sollen gesegnet werden alle Geschlechter auf Erden“. Damit steht am Beginn der Erwählungsgeschichte ein Satz, der über sie hinausweist. Die Urgeschichte davor endet im Sprachenwirrwarr von Babel; die Berufung ist die Antwort darauf.\n\nDer Auftrag steigert sich in drei Stufen des Verlusts: Land, Verwandtschaft, Vaterhaus – vom Weiten ins Engste, vom Allgemeinen ins Schmerzhafte. Und das Ziel bleibt ungenannt: „in ein Land, das ich dir zeigen will“. Fünf Formen von „segnen“ stehen in diesen drei Versen, gegen die fünf Flüche der Kapitel davor – Adam, Kain, die Erde, Kanaan, Babel. Die Urgeschichte endet in Zerstreuung; hier beginnt der Gegenzug, und er beginnt bei einem Einzelnen ohne Nachkommen.',
+    reception:
+      'Der Satz „in dir sollen gesegnet werden alle Geschlechter auf Erden“ ist der Grund, warum Judentum, Christentum und Islam sich gemeinsam auf Abraham beziehen – und zugleich der Punkt, an dem sie sich trennen, weil jede Tradition den Anspruch anders erbt. Der Begriff „abrahamitische Religionen“ stammt aus dem 20. Jahrhundert und ist selbst umstritten: Er betont Gemeinsames und verdeckt, dass die drei jeweils Verschiedenes daraus machen.\n\nPaulus liest den Vers als Ankündigung, dass auch Nichtjuden dazugehören; die christliche Auslegung folgte ihm oft in der Zuspitzung, Israel sei damit abgelöst. Kirchliche Erklärungen seit den 1970er Jahren widersprechen dieser Ablösungslehre ausdrücklich.',
+    terms: [
+      {
+        word: 'hebr. barach',
+        rendered: 'segnen',
+        note: 'Segnen heißt im Alten Testament nicht gut zureden, sondern mit Lebenskraft ausstatten: Nachkommen, Land, Auskommen. Es ist ein handfestes Wort.',
+      },
+      {
+        word: 'hebr. lech lecha',
+        rendered: 'Gehe aus',
+        note: 'Wörtlich „geh dir“ oder „geh für dich“ – eine im Hebräischen auffällige Doppelung. Die jüdische Auslegung hört darin: Geh zu dir selbst hin. Der Wochenabschnitt der Tora trägt diesen Namen.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -5193,6 +6084,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Christliche Auslegung',
         text: 'Der Hebräerbrief nennt den Aufbruch ins Ungewisse das Musterbeispiel des Glaubens. Paulus liest den Segen für alle Völker als Vorausschau auf die Öffnung zu den Heiden.',
+      },
+      {
+        tradition: 'Ostkirchliche Auslegung',
+        text: 'Die Väter der Ostkirche lasen den Aufbruch als Bild des geistlichen Weges: Aus dem Vertrauten herausgehen, ohne das Ziel zu kennen, gilt in dieser Tradition als Grundform des Glaubens überhaupt – nicht als einmaliges Ereignis, sondern als lebenslange Bewegung.',
       },
     ],
     crossRefs: [
@@ -5210,7 +6105,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein einziger Vers, der die Theologiegeschichte des Westens geprägt hat wie kaum ein anderer: Abraham glaubt, und das wird ihm angerechnet.',
     historicalLong:
-      'Im Zusammenhang geht es um die Zusage von Nachkommenschaft an einen kinderlosen alten Mann. Das hebräische Wort für „glauben“ hat mit Festigkeit zu tun – es steckt im Wort Amen. „Anrechnen“ stammt aus der Buchführung und wird sonst für priesterliche Anerkennung eines Opfers verwendet. Paulus baut auf diesem Vers seine gesamte Argumentation in Römer 4 auf, und Jakobus zitiert denselben Vers für die entgegengesetzte These.',
+      'Im Zusammenhang geht es um die Zusage von Nachkommenschaft an einen kinderlosen alten Mann. Das hebräische Wort für „glauben“ hat mit Festigkeit zu tun – es steckt im Wort Amen. „Anrechnen“ stammt aus der Buchführung und wird sonst für priesterliche Anerkennung eines Opfers verwendet. Paulus baut auf diesem Vers seine gesamte Argumentation in Römer 4 auf, und Jakobus zitiert denselben Vers für die entgegengesetzte These.\n\nDer Vers ist grammatisch offener, als seine Wirkungsgeschichte vermuten lässt. Wer wem was anrechnet, steht nicht ausdrücklich da: Meist wird gelesen, dass Gott dem Abram den Glauben als Gerechtigkeit anrechnet – möglich wäre auch, dass Abram Gottes Zusage als Gerechtigkeit anerkennt. Und der Zusammenhang ist nicht abstrakt: Abram hat zwei Verse vorher darüber geklagt, dass er kinderlos bleibt, und Gott hat ihn vor das Zelt geführt, die Sterne zu zählen. Der Glaube, von dem hier die Rede ist, ist das Standhalten eines alten Mannes gegen den Augenschein.',
+    reception:
+      'An diesem halben Vers hängt die abendländische Theologiegeschichte. Paulus baut auf ihm seine Argumentation in Römer 4 und Galater 3 auf – gegen die Beschneidung als Bedingung –, Jakobus zitiert ihn in Kapitel 2 mit umgekehrter Stoßrichtung, und Luther fand in ihm die Rechtfertigung allein aus Glauben. Das Konzil von Trient und die Reformatoren stritten darüber, ob „anrechnen“ eine Zusprechung oder eine Verwandlung meint.\n\nIm Judentum ist der Vers nie so zentral gewesen. Dort steht Abraham vor allem für Treue in Prüfungen – und die rabbinische Auslegung hält fest, dass sein Glaube sich in Taten zeigte, was den Streit zwischen Paulus und Jakobus in gewisser Weise vorwegnimmt.',
+    terms: [
+      {
+        word: 'hebr. aman',
+        rendered: 'glaubte',
+        note: 'Von derselben Wurzel wie „Amen“: fest sein, sich verlassen können. Kein Fürwahrhalten, sondern ein Sich-Festmachen an einem anderen.',
+      },
+      {
+        word: 'hebr. zedaka',
+        rendered: 'Gerechtigkeit',
+        note: 'Nicht die Fehlerlosigkeit vor einem Gesetz, sondern Gemeinschaftstreue – dem Verhältnis gerecht werden, in dem man steht. Im späteren Judentum bezeichnet dasselbe Wort auch die Almosen.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Reformatorische Auslegung',
@@ -5223,6 +6132,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Neuere Paulusforschung',
         text: 'Diskutiert wird, ob im Hebräischen Gott dem Abraham etwas anrechnet oder Abraham Gott. Die Grammatik lässt beides zu; die Septuaginta hat sich für die erste Lesart entschieden, und ihr folgt Paulus.',
+      },
+      {
+        tradition: 'Ökumenische Verständigung',
+        text: 'Die *Gemeinsame Erklärung zur Rechtfertigungslehre* von 1999 hat den alten Streit teilweise beigelegt: Beide Seiten bekennen, dass der Mensch allein aus Gnade angenommen wird und der Glaube dabei nicht ohne Wirkung bleibt. Offen bleibt, wie stark die Erneuerung des Menschen zur Rechtfertigung selbst gehört.',
       },
     ],
     crossRefs: [
@@ -5330,7 +6243,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Samuel soll einen König salben und greift nach dem Größten und Stattlichsten. Der Satz, der ihn korrigiert, ist zu einem der meistzitierten der Bibel geworden.',
     historicalLong:
-      'Die Szene steht in bewusstem Gegensatz zur Wahl Sauls, von dem das Buch eigens vermerkt, er sei einen Kopf größer gewesen als alle anderen. Dass am Ende der Jüngste geholt wird, der die Schafe hütet und beim Festmahl gar nicht dabei war, gehört zum Muster vieler biblischer Erzählungen. Der Text spielt zugleich mit einer Ironie: Wenige Verse später wird David selbst als „bräunlich, mit schönen Augen“ beschrieben.',
+      'Die Szene steht in bewusstem Gegensatz zur Wahl Sauls, von dem das Buch eigens vermerkt, er sei einen Kopf größer gewesen als alle anderen. Dass am Ende der Jüngste geholt wird, der die Schafe hütet und beim Festmahl gar nicht dabei war, gehört zum Muster vieler biblischer Erzählungen. Der Text spielt zugleich mit einer Ironie: Wenige Verse später wird David selbst als „bräunlich, mit schönen Augen“ beschrieben.\n\nDer Satz ist eine Zurechtweisung, und zwar an den Propheten. Samuel hat gerade den ältesten Sohn Isais gesehen und gedacht: Das muss er sein. Genau dieselbe Fehleinschätzung hatte er bei Saul gemacht, den das Buch zwei Kapitel zuvor als den schönsten und größten Mann Israels vorgestellt hat. Der Vers korrigiert also nicht irgendeinen Menschen, sondern die Instanz, die es besser wissen sollte. Und die Ironie geht weiter: Wenige Verse später wird ausgerechnet David als „bräunlich, mit schönen Augen und guter Gestalt“ beschrieben.',
+    reception:
+      'Der Vers ist ein Standardtext gegen Äußerlichkeit – in der Jugendarbeit, in Predigten über Schönheitsideale, in der Diskussion um Diskriminierung. Er hat aber auch eine problematische Verwendung: Als Argument, Ungerechtigkeit sei nicht so wichtig, weil Gott ja das Herz ansehe. Der Erzählzusammenhang gibt das nicht her – es geht um die Auswahl eines Königs, also um eine sehr äußerliche Angelegenheit.',
+    terms: [
+      {
+        word: 'hebr. lebab',
+        rendered: 'Herz',
+        note: 'Der Ort des Denkens und Entscheidens, nicht des Gefühls. „Auf das Herz sehen“ heißt: sehen, worauf jemand aus ist – nicht, wie warm er empfindet.',
+      },
+      {
+        word: 'hebr. enajim',
+        rendered: 'Augen',
+        note: 'Wörtlich steht da „der Mensch sieht auf die Augen“ – gemeint ist das, was ins Auge fällt. Luthers „was vor Augen ist“ trifft den Sinn genau.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -5343,6 +6270,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Die Herzensschau bleibt Gott vorbehalten. Wer den Vers gebraucht, um selbst über die Motive anderer zu urteilen, dreht ihn um.',
+      },
+      {
+        tradition: 'Literarische Beobachtung',
+        text: 'Das Verb „sehen“ durchzieht das ganze Kapitel wie ein Faden – Samuel sieht, Gott sieht, der Mensch sieht. Die Erzählung ist als Lehrstück über Wahrnehmung gebaut, und ihre Pointe liegt nicht in einem Satz, sondern darin, dass der Leser zusammen mit Samuel danebengreift.',
       },
     ],
     crossRefs: [
@@ -5390,7 +6321,16 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Sturm, Erdbeben und Feuer ziehen vorüber – und in keinem davon ist Gott. Danach kommt etwas, das sich kaum übersetzen lässt.',
     historicalLong:
-      'Elia ist nach dem Sieg auf dem Karmel geflohen und wünscht sich den Tod. Am Horeb, dem Berg der Weisung, wiederholt sich die Gotteserscheinung des Mose – aber ausdrücklich anders. Der hebräische Ausdruck bedeutet wörtlich etwa „Stimme verschwebenden Schweigens“; Luther übersetzt „ein stilles, sanftes Sausen“. Bemerkenswert ist, was danach geschieht: Gott stellt dieselbe Frage wie zuvor, Elia gibt dieselbe Antwort, und dann bekommt er einen Auftrag – und einen Nachfolger.',
+      'Elia ist nach dem Sieg auf dem Karmel geflohen und wünscht sich den Tod. Am Horeb, dem Berg der Weisung, wiederholt sich die Gotteserscheinung des Mose – aber ausdrücklich anders. Der hebräische Ausdruck bedeutet wörtlich etwa „Stimme verschwebenden Schweigens“; Luther übersetzt „ein stilles, sanftes Sausen“. Bemerkenswert ist, was danach geschieht: Gott stellt dieselbe Frage wie zuvor, Elia gibt dieselbe Antwort, und dann bekommt er einen Auftrag – und einen Nachfolger.\n\nDie Szene spielt am Horeb, also am Sinai – Elia geht dorthin, wo Mose Gott begegnet ist, und die Erzählung zitiert diese Begegnung Schritt für Schritt: vierzig Tage, die Höhle im Felsen, das Vorüberziehen Gottes. Nur der Ausgang ist ein anderer. Bei Mose kommt Gott in Sturm, Beben und Feuer; hier wird dreimal ausdrücklich gesagt, dass er darin nicht ist. Und was folgt, ist keine Erklärung, sondern eine Frage, die Elia schon einmal beantwortet hat: „Was hast du hier zu tun?“ Danach wird er zurückgeschickt.',
+    reception:
+      'Die „stille sanfte Stimme“ ist zum Grundwort der christlichen Kontemplation geworden, von den Wüstenvätern über die Mystik bis zu Exerzitien und Stilleretreats der Gegenwart. Mendelssohn vertonte die Szene in seinem *Elias* und traf damit den Ton, der bis heute mitschwingt.\n\nDie Auslegung hat dabei oft überhört, was direkt danach kommt: Elia bekommt keinen inneren Frieden, sondern drei politische Aufträge – zwei Könige zu salben und einen Nachfolger zu berufen. Die Stille ist in dieser Erzählung kein Ziel, sondern eine Zwischenstation.',
+    terms: [
+      {
+        word: 'hebr. kol demama dakka',
+        rendered: 'stilles, sanftes Sausen',
+        note: 'Wörtlich etwa „Stimme verschwebenden Schweigens“ – eine Wendung, die im Hebräischen selbst rätselhaft ist. Übersetzungen reichen von „sanftem Säuseln“ bis zu „Ton verschwebender Stille“; Luthers Fassung hat die deutsche Frömmigkeitssprache geprägt.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -5403,6 +6343,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Spirituelle Auslegung',
         text: 'Der Text ist zum Grundtext der Kontemplation geworden. Kritisch wird angemerkt, dass er nicht Stille an sich empfiehlt, sondern eine bestimmte Erfahrung erzählt.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Vor der Szene liegt ein Zusammenbruch: Elia sitzt unter dem Wacholder und wünscht sich den Tod. Was Gott zuerst schickt, ist kein Wort, sondern Schlaf und Essen, zweimal. Manche lesen das Kapitel deshalb als den nüchternsten Text der Bibel über Erschöpfung – zuerst der Körper, dann die Frage.',
       },
     ],
     crossRefs: [
@@ -6080,7 +7024,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Nach den Gottesreden gibt Hiob eine Antwort, die seit jeher unterschiedlich gelesen wird: als Widerruf oder als Ende eines Streits, in dem er recht behalten hat.',
     historicalLong:
-      'Der entscheidende Vers ist im Hebräischen mehrdeutig. Er kann heißen „ich widerrufe und tue Buße in Staub und Asche“ oder „ich verwerfe und bereue Staub und Asche“ – also das Trauergewand, in dem er sitzt. Im ersten Fall gibt Hiob nach, im zweiten steht er auf. Unmittelbar danach erklärt Gott ausdrücklich, Hiob habe recht von ihm geredet und seine Freunde nicht. Diese Reihenfolge macht die zweite Lesart für viele wahrscheinlicher.',
+      'Der entscheidende Vers ist im Hebräischen mehrdeutig. Er kann heißen „ich widerrufe und tue Buße in Staub und Asche“ oder „ich verwerfe und bereue Staub und Asche“ – also das Trauergewand, in dem er sitzt. Im ersten Fall gibt Hiob nach, im zweiten steht er auf. Unmittelbar danach erklärt Gott ausdrücklich, Hiob habe recht von ihm geredet und seine Freunde nicht. Diese Reihenfolge macht die zweite Lesart für viele wahrscheinlicher.\n\nDer Schluss ist so umstritten wie kaum ein anderer Text des Alten Testaments, und der Streit hängt an Vers 6. Der hebräische Satz hat kein Objekt: Wörtlich steht etwa „darum verwerfe ich und bereue über Staub und Asche“. Was Hiob verwirft, sagt er nicht. Übersetzungen ergänzen „mich selbst“ – ebenso möglich ist „meine Klage“, „meinen Staub“ oder sogar „ich verwerfe und lasse mich trösten über Staub und Asche hinweg“. Je nach Entscheidung endet das Buch mit einer Unterwerfung oder mit einem getrösteten Menschen, der aufhört zu prozessieren.',
+    reception:
+      'Das Buch endet mit einer Wiederherstellung: Hiob bekommt doppelt so viel Vieh und wieder zehn Kinder. Vielen Lesern ist gerade dieser Schluss anstößig, weil sich verlorene Kinder nicht ersetzen lassen; ein Teil der Forschung hält den Rahmen für älter als die Dichtung und liest die Spannung als absichtlich stehengelassen.\n\nNach 1945 ist Hiob zum Bezugstext der Theodizee-Debatte geworden. Elie Wiesel, Ernst Bloch und Carl Gustav Jung haben ihn je verschieden gelesen – als Anklage, als Aufstand, als Reifungsgeschichte Gottes. Gemeinsam ist ihnen, dass sie den Freunden Hiobs nicht glauben; und darin folgen sie dem Buch, das genau diese Freunde am Ende zurechtweist.',
+    terms: [
+      {
+        word: 'hebr. nicham',
+        rendered: 'tue Buße',
+        note: 'Das Verb heißt bereuen, aber auch sich trösten lassen und seinen Sinn ändern. Dasselbe Wort steht, wenn Gott sein Vorhaben ändert. Die Bandbreite ist der Grund, warum der Schlussvers so verschieden übersetzt wird.',
+      },
+      {
+        word: 'hebr. raa',
+        rendered: 'gesehen',
+        note: 'Sehen im Sinn von: unmittelbar begegnen. Der Gegensatz zu „mit den Ohren gehört“ ist der Bogen des ganzen Buches – vom Hörensagen über Gott zur Begegnung mit ihm.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -6093,6 +7051,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Theologische Rückfrage',
         text: 'Dass Gott den Freunden widerspricht, die ihn verteidigt hatten, gehört zu den überraschendsten Zügen der Bibel: Die fromme Rede wird getadelt, die anklagende gerechtfertigt.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Auffällig ist, was Gott am Ende nicht tut: Er erklärt nichts. Auf die Frage nach dem Warum kommt keine Antwort, sondern eine Gegenrede über Sternbilder, Wildesel und Nilpferde. In der Trauerbegleitung wird das oft als Hinweis gelesen, dass Anwesenheit tragfähiger ist als Erklärung.',
       },
     ],
     crossRefs: [
@@ -6290,7 +7252,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Vier Thronnamen für einen Herrscher, der Frieden ohne Ende bringen soll – gesprochen in einer Zeit assyrischer Bedrohung.',
     historicalLong:
-      'Die Reihung der Namen folgt dem Muster ägyptischer Thronnamen, die einem König bei der Krönung verliehen wurden. Gemeint war zunächst wohl ein davidischer König, möglicherweise Hiskia. Der Text steht in der Vergangenheitsform: Das Kind ist geboren – für die Prophetie eine übliche Weise, Künftiges als bereits geschehen anzusagen. Die Verbindung mit Weihnachten geht auf die frühe Kirche zurück; Händel machte den Vers im „Messiah“ weltweit bekannt.',
+      'Die Reihung der Namen folgt dem Muster ägyptischer Thronnamen, die einem König bei der Krönung verliehen wurden. Gemeint war zunächst wohl ein davidischer König, möglicherweise Hiskia. Der Text steht in der Vergangenheitsform: Das Kind ist geboren – für die Prophetie eine übliche Weise, Künftiges als bereits geschehen anzusagen. Die Verbindung mit Weihnachten geht auf die frühe Kirche zurück; Händel machte den Vers im „Messiah“ weltweit bekannt.\n\nDie vier Namen sind im Hebräischen zwei Doppelnamen und folgen einer ägyptischen Sitte: Beim Regierungsantritt bekam der Pharao eine Reihe von Thronnamen, die sein Programm ankündigten. Der Vers ist also wahrscheinlich ein Krönungslied, gesprochen bei der Inthronisation eines judäischen Königs – „uns ist ein Kind geboren“ meint dann nicht die Geburt, sondern die Einsetzung als Sohn Gottes, wie sie Psalm 2 beschreibt. Wer damit gemeint war, ist offen; oft wird an Hiskia gedacht.',
+    reception:
+      'Kaum ein Vers ist musikalisch so präsent: Händels *Messiah* macht aus „For unto us a child is born“ eines der bekanntesten Chorstücke überhaupt, und der Vers gehört zur festen Weihnachtslesung fast aller Kirchen. Auffällig ist, dass die Evangelien selbst ihn nirgends auf Jesus beziehen – die Zuordnung entstand in der Alten Kirche.\n\nIm Judentum wird der Abschnitt meist auf Hiskia oder auf eine künftige Zeit des Friedens bezogen. Der Streit darum gehört zu den ältesten zwischen Kirche und Synagoge und wurde in den mittelalterlichen Zwangsdisputationen ebenso verhandelt wie Jesaja 53.',
+    terms: [
+      {
+        word: 'hebr. pele joez',
+        rendered: 'Wunderbar, Rat',
+        note: 'Im Hebräischen ein Name, nicht zwei: „Wunder-Rat“ oder „Planer von Wunderbarem“. Luthers Komma hat die deutsche Zählung von vier Namen mitgeprägt; die hebräische Gliederung ergibt eher vier Doppelnamen.',
+      },
+      {
+        word: 'hebr. el gibbor',
+        rendered: 'Held',
+        note: 'Wörtlich „starker Gott“ oder „Gottheld“. Dass ein König so heißen konnte, ist im Alten Orient nicht ungewöhnlich; für die christliche Auslegung wurde es zum Beleg für die Gottheit des Kommenden.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -6303,6 +7279,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Christliche Auslegung',
         text: 'Die Kirche bezieht den Text auf Christus und liest ihn in der Christnacht. Die Wirkungsgeschichte über Händel hinaus ist kaum zu überschätzen.',
+      },
+      {
+        tradition: 'Politische Lesart',
+        text: 'Der Abschnitt beginnt mit zerbrochenen Stiefeln und blutigen Mänteln, die verbrannt werden – die Ankündigung gilt einem Land unter assyrischer Bedrohung. Wer den Vers ohne diesen Anfang liest, überhört, dass „Friedefürst“ hier ein Gegenwort zur Kriegsmaschine eines Großreichs ist.',
       },
     ],
     crossRefs: [
@@ -6500,7 +7480,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Text, mit dem Jesus in Nazareth sein Wirken eröffnet – und er bricht das Zitat mitten im Satz ab.',
     historicalLong:
-      'Der Abschnitt beschreibt eine Beauftragung: Gute Botschaft für Elende, Verbinden zerbrochener Herzen, Freiheit für Gefangene, ein Gnadenjahr des HERRN. Das Gnadenjahr nimmt das Erlassjahr aus 3. Mose 25 auf, in dem Schulden erlassen und Land zurückgegeben wurde. Als Jesus die Stelle in Nazareth vorliest, hört er vor „Tag der Rache unsres Gottes“ auf und setzt sich – die Auslassung ist bei Lukas erkennbar Absicht.',
+      'Der Abschnitt beschreibt eine Beauftragung: Gute Botschaft für Elende, Verbinden zerbrochener Herzen, Freiheit für Gefangene, ein Gnadenjahr des HERRN. Das Gnadenjahr nimmt das Erlassjahr aus 3. Mose 25 auf, in dem Schulden erlassen und Land zurückgegeben wurde. Als Jesus die Stelle in Nazareth vorliest, hört er vor „Tag der Rache unsres Gottes“ auf und setzt sich – die Auslassung ist bei Lukas erkennbar Absicht.\n\nDas „gnädige Jahr des Herrn“ ist kein Bild, sondern ein Rechtsbegriff: Das Jobeljahr aus 3. Mose 25 sah vor, dass alle fünfzig Jahre Schulden erlassen, Sklaven freigelassen und verkauftes Land an die ursprünglichen Familien zurückgegeben wurde. Ob es je vollzogen wurde, ist unter Historikern strittig – als Forderung blieb es im Text stehen. Der Prophet greift es auf und macht daraus die Beschreibung seines Auftrags: Was das Gesetz alle fünfzig Jahre vorsah, wird hier angekündigt.',
+    reception:
+      'Lukas lässt Jesus seine erste öffentliche Rede mit genau diesem Text halten – und bricht das Zitat mitten im Satz ab, vor dem „Tag der Rache“. Diese Auslassung ist eine der bewusstesten Entscheidungen im Neuen Testament und hat der ganzen lukanischen Theologie ihren Ton gegeben.\n\nIn der Neuzeit wurde der Abschnitt zum Kerntext der Befreiungstheologie und der kirchlichen Sozialarbeit. Die internationale Entschuldungskampagne *Jubilee 2000*, die den ärmsten Ländern Schulden erlassen wollte, benannte sich ausdrücklich nach dem Jobeljahr und erreichte Erlasse in Milliardenhöhe.',
+    terms: [
+      {
+        word: 'hebr. maschach',
+        rendered: 'gesalbt',
+        note: 'Salben – die Amtseinsetzung von Königen und Priestern. Von diesem Verb kommt das Wort Messias; seine griechische Übersetzung lautet Christus.',
+      },
+      {
+        word: 'hebr. deror',
+        rendered: 'Freiheit',
+        note: 'Der Fachbegriff für die Freilassung im Jobeljahr, nicht das allgemeine Wort für Freiheit. Er steht auch auf der Freiheitsglocke in Philadelphia – dort in der Fassung von 3. Mose 25,10.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -6513,6 +7507,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Christliche Auslegung',
         text: 'Lukas macht die Stelle zum Programm des ganzen Evangeliums. Der Abbruch vor dem Rachetag gilt vielen als bewusste inhaltliche Aussage.',
+      },
+      {
+        tradition: 'Wirtschaftsethische Lesart',
+        text: 'Das Jobeljahr ist der Versuch, ein Wirtschaftssystem gegen die Verfestigung von Ungleichheit zu sichern: Land bleibt unveräußerlich, Verschuldung wird befristet. Ob so etwas praktikabel ist, wird in der Ökonomie bezweifelt; als Maßstab hat es Debatten über Schuldenerlass und Erbrecht bis heute geprägt.',
       },
     ],
     crossRefs: [
@@ -6620,7 +7618,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Satz, den Jesus zweimal zitiert – beide Male, um eine Kritik an seinem Umgang mit Menschen zurückzuweisen.',
     historicalLong:
-      'Das hebräische Wort für „Liebe“ ist Chesed und meint eine verlässliche Zuwendung innerhalb einer Beziehung; es lässt sich schwer mit einem deutschen Wort wiedergeben. Der Satz ist keine Absage an den Opferkult, sondern eine Rangordnung: Was den Opfern erst Sinn gibt, ist die Treue im Verhältnis. Matthäus lässt Jesus den Vers anführen, als ihm die Tischgemeinschaft mit Zöllnern und das Ährenraufen am Sabbat vorgeworfen werden.',
+      'Das hebräische Wort für „Liebe“ ist Chesed und meint eine verlässliche Zuwendung innerhalb einer Beziehung; es lässt sich schwer mit einem deutschen Wort wiedergeben. Der Satz ist keine Absage an den Opferkult, sondern eine Rangordnung: Was den Opfern erst Sinn gibt, ist die Treue im Verhältnis. Matthäus lässt Jesus den Vers anführen, als ihm die Tischgemeinschaft mit Zöllnern und das Ährenraufen am Sabbat vorgeworfen werden.\n\nDer Satz ist kein Verbot des Opfers, sondern eine Rangordnung – das Hebräische kennt für „lieber dies als jenes“ oft nur die Form „dies und nicht jenes“. Hosea richtet ihn an ein Nordreich, in dem der Kult blühte und die Rechtsverhältnisse zerfielen; die Verse davor sprechen von einer Frömmigkeit, die „wie eine Morgenwolke“ vergeht. Bemerkenswert ist die zweite Hälfte, die selten mitzitiert wird: Neben der Güte steht die „Erkenntnis Gottes“ – bei Hosea kein Wissen, sondern ein Verhältnis, das man pflegt oder bricht.',
+    reception:
+      'Jesus zitiert den Vers bei Matthäus zweimal, beide Male in einem Streitgespräch – über das Essen mit Zöllnern und über das Ährenraufen am Sabbat. Das ist bemerkenswert, weil er damit eine innerjüdische Argumentationsweise benutzt: Ein Prophetenwort wird gegen eine bestimmte Auslegung der Tora ins Feld geführt, nicht gegen die Tora.\n\nIn der christlichen Auslegungsgeschichte wurde daraus oft ein Gegensatz zwischen prophetischer Innerlichkeit und jüdischem Ritualismus – ein Klischee, das die Forschung längst zurückweist, weil dieselbe Kritik am hohlen Kult im Judentum selbst formuliert wurde und wird.',
+    terms: [
+      {
+        word: 'hebr. chesed',
+        rendered: 'Liebe',
+        note: 'Güte, Treue, Solidarität – die Zuwendung, zu der niemand verpflichtet ist und die trotzdem gehalten wird. Dasselbe Wort steht bei Micha 6,8.',
+      },
+      {
+        word: 'hebr. daat elohim',
+        rendered: 'Erkenntnis Gottes',
+        note: 'Kein Wissen über Gott, sondern ein gelebtes Verhältnis zu ihm. Hosea gebraucht dieselbe Wurzel für das Erkennen zwischen Eheleuten.',
+      },
+    ],
     interpretations: [
       {
         tradition: 'Historisch-kritische Forschung',
@@ -6633,6 +7645,10 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Neutestamentliche Aufnahme',
         text: 'Matthäus zitiert den Vers zweimal, jeweils in einem Konflikt über Reinheit und Sabbat. Er wird damit zu einem Auslegungsschlüssel des ganzen Evangeliums.',
+      },
+      {
+        tradition: 'Kanonische Beobachtung',
+        text: 'Dieselbe Bibel, die den Opferkult in 3. Mose ausführlich regelt, überliefert Sätze wie diesen. Die Sammlung glättet den Widerspruch nicht. Ausleger sehen darin ein Grundmuster: Ordnung und Kritik der Ordnung stehen nebeneinander, und keine Seite bekommt das letzte Wort.',
       },
     ],
     crossRefs: [
