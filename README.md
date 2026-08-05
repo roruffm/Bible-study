@@ -26,6 +26,15 @@ Workflows darf eine Pages-Seite nicht selbst anlegen und scheitert sonst mit
 
 > **Settings → Pages → Build and deployment → Source: „GitHub Actions“**
 
+### Eigene Domain
+
+Liegt eine Datei `public/CNAME` mit einer Domain darin vor, baut der Workflow
+die App für die Wurzel `/` statt für den Unterordner `/Bible-study/` und GitHub
+Pages richtet die Domain samt kostenlosem HTTPS ein. Ohne diese Umstellung
+bliebe die Seite unter eigener Domain weiß, weil alle Verweise ins Leere
+zeigten. Die nötigen DNS-Einträge stehen in
+[`server/ANLEITUNG.md`](server/ANLEITUNG.md) unter „Weg A“.
+
 Danach genügt ein beliebiger Push (oder *Actions → Webseite veröffentlichen →
 Run workflow*), und die Seite ist nach ein bis zwei Minuten online. Ab dann
 läuft alles automatisch.
@@ -231,7 +240,7 @@ brand/                     Logo-Vorlage, aus der die Bilder erzeugt werden
 server/
   entgegen-server.mjs      Eigener Server: liefert die App aus, hält den Schlüssel
   Dockerfile               Baut App und Server in ein Abbild
-  ANLEITUNG.md             Schritt für Schritt zum eigenen Server, ohne Vorkenntnisse
+  ANLEITUNG.md             Drei Wege zur eigenen Domain, ohne Vorkenntnisse
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
@@ -345,8 +354,9 @@ Schlüssel gehört.
 ### Eigener Server
 
 > **Schritt-für-Schritt ohne Vorkenntnisse:** [`server/ANLEITUNG.md`](server/ANLEITUNG.md)
-> – vom Bestellen des Servers bis zum Schloss in der Adresszeile, alles zum
-> Kopieren. Der Rest dieses Abschnitts setzt etwas Vertrautheit voraus.
+> – drei Wege zur eigenen Domain (GitHub Pages kostenlos, Webhosting, eigener
+> Server), alles zum Kopieren. Der Rest dieses Abschnitts setzt etwas
+> Vertrautheit voraus.
 
 `server/entgegen-server.mjs` ist der Server dazu – **eine Datei, keine
 Abhängigkeiten**, Node ab Version 18. Er erledigt zwei Dinge, jedes einzeln

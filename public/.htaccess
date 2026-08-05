@@ -1,0 +1,57 @@
+# Regeln für Apache-Webhosting (IONOS, Strato, All-Inkl und ähnliche).
+#
+# Auf einem eigenen Server mit Caddy oder dem beiliegenden Node-Server wird
+# diese Datei ignoriert – die erledigen dasselbe von sich aus. Sie liegt in
+# `public/` und landet dadurch beim Bauen automatisch in `dist/`.
+#
+# Ohne diese Datei tut die App beim Herumklicken zwar alles richtig, aber ein
+# Neuladen oder ein geteilter Link auf `/bibel/joh/3` endet beim Hoster in
+# einem 404: Diesen Ordner gibt es auf der Platte nicht, die Adresse entsteht
+# erst im Browser.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Was es wirklich gibt, wird unverändert ausgeliefert: Skripte, Stile,
+  # Bilder und vor allem die Bibeltexte unter /bibel/luther1912/*.json.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Alles Übrige ist eine Adresse innerhalb der App und bekommt die Startseite.
+  # Den Rest erledigt der Router im Browser.
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Manche Hoster kennen die Endung nicht und liefern sie als Text aus; dann
+# erkennt der Browser die App nicht als installierbar.
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Dateien unter /assets/ tragen einen Prüfwert im Namen: Ändert sich der
+  # Inhalt, ändert sich der Name. Sie dürfen deshalb lange liegen bleiben.
+  <FilesMatch "\.(js|css|woff2)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+
+  # Der Bibeltext ändert sich nicht.
+  <FilesMatch "\.json$">
+    ExpiresDefault "access plus 30 days"
+  </FilesMatch>
+
+  # index.html dagegen nie zwischenspeichern – sonst bekommt niemand je eine
+  # neue Fassung der App zu sehen.
+  <FilesMatch "index\.html$">
+    ExpiresDefault "access plus 0 seconds"
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>

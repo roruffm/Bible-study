@@ -1,30 +1,176 @@
-# Entgegen auf eigenem Server – Schritt für Schritt
+# Entgegen unter eigener Domain – Schritt für Schritt
 
 Diese Anleitung setzt **keine Vorkenntnisse** voraus. Alle Befehle sind zum
-Kopieren gedacht; ersetze nur, was ausdrücklich dabeisteht.
+Kopieren gedacht; ersetze nur, was ausdrücklich dabeisteht. Als Beispiel dient
+durchgehend `entgegen.me` – setz deine eigene Adresse ein.
 
-Am Ende läuft die App unter deiner eigenen Adresse, mit HTTPS, und startet nach
-einem Neustart des Servers von selbst wieder.
+Am Ende läuft die App unter deiner Adresse, mit HTTPS.
 
-**Zeitbedarf:** etwa 45 Minuten, davon 20 Minuten Warten.
-**Kosten:** rund 4–6 € im Monat für den Server, 1–15 € im Jahr für die Adresse.
-
-> **Kürzester Weg ohne Terminal:** Wenn dir das alles zu viel ist, steht ganz
-> unten unter [Ohne Terminal](#ohne-terminal) eine Variante, bei der ein
-> Anbieter die Arbeit übernimmt.
+Es gibt drei Wege dorthin; welcher passt, klärt der nächste Abschnitt in einer
+Minute.
 
 ---
 
-## Was du vorher brauchst
+## Zuerst: welcher Weg passt?
 
-| | Was | Wo | Kosten |
-|---|---|---|---|
-| 1 | **Einen Server** (fachsprachlich: VPS) | Hetzner, Netcup, DigitalOcean, IONOS | ab ~4 €/Monat |
-| 2 | **Eine Internetadresse** (Domain), z. B. `meine-bibel.de` | INWX, Netcup, Namecheap | 1–15 €/Jahr |
-| 3 | **Einen API-Schlüssel** von Anthropic – nur für die Rückfragen am Vers | console.anthropic.com | nach Verbrauch |
+Es gibt drei, und sie unterscheiden sich stark im Aufwand. Der Unterschied
+hängt an einer einzigen Frage: **Soll der API-Schlüssel für die Rückfragen
+versteckt sein?**
 
-Punkt 3 kannst du weglassen. Ohne Schlüssel läuft die ganze App – nur der Tab
-„Fragen“ bleibt aus.
+| | Weg | Aufwand | Kosten | Rückfragen am Vers |
+|---|---|---|---|---|
+| **A** | [GitHub Pages mit eigener Domain](#weg-a--github-pages-mit-eigener-domain) | 15 Min, kein Terminal | **0 €** | nur mit eigenem Schlüssel im Browser |
+| **B** | [Webhosting bei IONOS](#weg-b--webhosting-hochladen) | 20 Min, kein Terminal | im Vertrag | nur mit eigenem Schlüssel im Browser |
+| **C** | [Eigener Server](#weg-c--eigener-server) | 45 Min, Terminal | ab ~4 €/Monat | Schlüssel bleibt auf dem Server |
+
+**Weg A ist für die meisten der richtige.** Er kostet nichts, die App liegt
+schon dort, und HTTPS macht GitHub von selbst. Wechseln kannst du später
+jederzeit – die Domain bleibt dieselbe.
+
+**Weg C brauchst du nur**, wenn die Rückfragen für alle Besucher funktionieren
+sollen, ohne dass jeder seinen eigenen Schlüssel einträgt.
+
+### Was hast du bei IONOS eigentlich gebucht?
+
+Für Weg B und C musst du das wissen. Melde dich bei IONOS an und schau unter
+**Menü → Verträge**:
+
+- **Nur „Domain"** → Weg A (oder Weg C mit einem Server woanders)
+- **„Webhosting"** (Paket S/M/L, oft mit „Website & Shop") → Weg A oder B.
+  Kein Weg C: Webhosting lässt keine dauerhaft laufenden eigenen Programme zu.
+- **„VPS", „Cloud Server", „Server Flex" oder „Dedicated Server"** → alle drei
+  Wege stehen offen, Weg C eingeschlossen.
+
+---
+
+## Weg A · GitHub Pages mit eigener Domain
+
+Kostenlos, kein Server, HTTPS inklusive. Deine App liegt weiter bei GitHub,
+erreichbar ist sie unter `https://entgegen.me`.
+
+### A1 · Die Domain im Projekt hinterlegen
+
+Lege im Repository eine Datei `public/CNAME` an, mit genau einer Zeile:
+
+```
+entgegen.me
+```
+
+Das ist alles – der Veröffentlichungs-Workflow erkennt die Datei und baut die
+App dann für die Wurzel statt für den Unterordner `/Bible-study/`. Ohne diesen
+Schritt bliebe die Seite unter der eigenen Domain **weiß**, weil alle Verweise
+ins Leere zeigten.
+
+```bash
+echo "entgegen.me" > public/CNAME
+git add public/CNAME
+git commit -m "Eigene Domain entgegen.me"
+git push
+```
+
+### A2 · Bei IONOS auf GitHub zeigen
+
+IONOS-Konto → **Domains & SSL** → bei `entgegen.me` auf **DNS**.
+
+Trag diese Einträge ein (vorhandene `A`-Einträge auf `@` vorher löschen):
+
+| Typ | Host | Wert |
+|---|---|---|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| AAAA | `@` | `2606:50c0:8000::153` |
+| AAAA | `@` | `2606:50c0:8001::153` |
+| AAAA | `@` | `2606:50c0:8002::153` |
+| AAAA | `@` | `2606:50c0:8003::153` |
+| CNAME | `www` | `roruffm.github.io.` |
+
+> Die vier AAAA-Adressen sind nachgeprüft. Die vier IPv4-Adressen sind die von
+> GitHub veröffentlichten; **maßgeblich ist, was GitHub dir selbst anzeigt** –
+> siehe nächster Schritt, dort stehen sie bei einem Fehler im Klartext.
+
+### A3 · Bei GitHub eintragen
+
+Im Repository: **Settings → Pages → Custom domain** → `entgegen.me` eintragen
+und **Save**.
+
+GitHub prüft jetzt die DNS-Einträge. Das dauert von wenigen Minuten bis zu
+einer Stunde. Danach ein Häkchen bei **Enforce HTTPS** setzen – das lässt sich
+erst anklicken, wenn das Zertifikat da ist.
+
+Fertig. `https://entgegen.me` zeigt die App.
+
+### A4 · Die Rückfragen am Vers
+
+Auf diesem Weg gibt es keinen Server, der einen Schlüssel verstecken könnte.
+Jede Person, die die Rückfragen nutzen will, trägt unter **Ich → Rückfragen am
+Vers → Eigener Schlüssel** ihren eigenen ein und zahlt ihren eigenen Verbrauch.
+
+Willst du das nicht, brauchst du Weg C – oder du kombinierst: App bei GitHub,
+und nur die Schnittstelle auf einem kleinen Server
+(siehe [Die App bleibt auf GitHub Pages](../README.md#die-app-bleibt-auf-github-pages)).
+
+---
+
+## Weg B · Webhosting hochladen
+
+Wenn du bei IONOS ein Webhosting-Paket hast: Die App besteht aus reinen
+Dateien, die kannst du einfach hochladen.
+
+### B1 · Bauen
+
+Auf deinem eigenen Rechner, im Projektordner:
+
+```bash
+npm ci
+npm run build
+```
+
+Im Ordner `dist` liegt jetzt alles, was hochgeladen werden muss – rund 5,6 MB.
+
+> **Wichtig:** Ohne `BASE_PATH` bauen. Und lade **auch die versteckte Datei
+> `.htaccess`** mit hoch, die dabei entsteht. Ohne sie funktioniert die App
+> beim Klicken zwar, aber ein Neuladen auf `/bibel/joh/3` endet in einem 404.
+> In FileZilla: **Server → Anzeige versteckter Dateien erzwingen**.
+
+### B2 · Hochladen
+
+IONOS-Konto → **Websites & Shops** → dein Paket → **SFTP-Zugang**. Dort stehen
+Servername, Benutzer und Passwort.
+
+Mit FileZilla (kostenlos) verbinden und den **Inhalt** von `dist` in das
+Webroot legen – bei IONOS heißt der Ordner meist `/` oder `htdocs`. Nicht den
+Ordner `dist` selbst hochladen, sondern was darin liegt.
+
+### B3 · Domain zuweisen und HTTPS
+
+IONOS-Konto → **Domains & SSL** → `entgegen.me` → **Ziel zuweisen** → auf dein
+Webhosting-Paket zeigen lassen. SSL schaltet IONOS in denselben Menüs kostenlos
+dazu („SSL-Zertifikat aktivieren").
+
+Für die Rückfragen gilt dasselbe wie bei Weg A: eigener Schlüssel je Person.
+
+---
+
+## Weg C · Eigener Server
+
+Ab hier die vollständige Anleitung für einen eigenen Server. Bei IONOS ist das
+ein **VPS** oder **Cloud Server**; bei anderen Anbietern heißt es genauso.
+
+> **IONOS-Besonderheit:** Cloud Server haben **zusätzlich zur Firewall im
+> Betriebssystem eine eigene Firewall im IONOS-Konto**. Sind dort die Ports 80
+> und 443 nicht freigegeben, bleibt die Seite unerreichbar, egal wie richtig
+> alles andere ist. Zu finden unter **Server & Cloud → dein Server →
+> Netzwerk → Firewall-Richtlinien**. Das ist der mit Abstand häufigste Grund,
+> warum es bei IONOS „nicht geht".
+
+---
+
+### Was du für Weg C brauchst
+
+Einen Server (VPS) und die Domain. Der API-Schlüssel von Anthropic ist optional
+– ohne ihn läuft die ganze App, nur der Tab „Fragen“ bleibt aus.
 
 **Servergröße:** Das Kleinste reicht. Zwei Gigabyte Arbeitsspeicher sind
 bequem; das Bauen der App dauert dort etwa eine Minute und braucht 5,6 MB
@@ -57,7 +203,7 @@ ein:
 |---|---|---|
 | `A` | `@` | deine IP-Adresse, z. B. `203.0.113.42` |
 
-Falls du zusätzlich `www.meine-bibel.de` willst, noch einen:
+Falls du zusätzlich `www.entgegen.me` willst, noch einen:
 
 | Typ | Name | Wert |
 |---|---|---|
@@ -69,7 +215,7 @@ mit Schritt 3 weiter, aber warte mit Schritt 7 (HTTPS), bis dieser Befehl auf
 deinem eigenen Rechner deine Server-IP zeigt:
 
 ```bash
-ping meine-bibel.de
+ping entgegen.me
 ```
 
 ---
@@ -247,11 +393,11 @@ nano /etc/caddy/Caddyfile
 ```
 
 **Alles löschen** (Strg+K hält die Taste gedrückt und löscht Zeile für Zeile)
-und stattdessen das hier hineinschreiben – `meine-bibel.de` durch deine Adresse
+und stattdessen das hier hineinschreiben – `entgegen.me` durch deine Adresse
 ersetzen:
 
 ```
-meine-bibel.de, www.meine-bibel.de {
+entgegen.me, www.entgegen.me {
     encode gzip
     reverse_proxy 127.0.0.1:8080
 }
@@ -289,7 +435,7 @@ Port 8080 bleibt bewusst zu – dorthin soll nur Caddy sprechen, von innen.
 
 ## Fertig – jetzt ausprobieren
 
-Ruf **https://meine-bibel.de** im Browser auf. Du solltest die App sehen, mit
+Ruf **https://entgegen.me** im Browser auf. Du solltest die App sehen, mit
 Schloss in der Adresszeile.
 
 Für die Rückfragen am Vers noch einmal in der App selbst:
@@ -297,7 +443,7 @@ Für die Rückfragen am Vers noch einmal in der App selbst:
 1. Unten oder oben auf **Ich**
 2. Runter zu **Rückfragen am Vers**
 3. **Eigener Server** anklicken
-4. Adresse: `https://meine-bibel.de`
+4. Adresse: `https://entgegen.me`
 5. Zugangswort: dasselbe wie in Schritt 6
 
 Dann ein Kapitel aufschlagen, einen Vers antippen, Tab **Fragen** – und fragen.
@@ -322,7 +468,7 @@ systemctl restart entgegen
 
 | Was du siehst | Woran es meist liegt | Was hilft |
 |---|---|---|
-| Browser: „Seite nicht erreichbar“ | Die Adresse zeigt noch nicht auf den Server | `ping meine-bibel.de` – kommt deine IP? Sonst warten |
+| Browser: „Seite nicht erreichbar“ | Die Adresse zeigt noch nicht auf den Server | `ping entgegen.me` – kommt deine IP? Sonst warten |
 | Browser: „Nicht sicher“ / Zertifikatswarnung | Caddy hat das Zertifikat noch nicht | `journalctl -u caddy -n 30` ansehen, dann `systemctl reload caddy` |
 | Weiße Seite | Die App wurde nicht gebaut | `ls /opt/entgegen/dist/index.html`, sonst `npm run build` |
 | Alles da, nur „Fragen“ meldet einen Fehler | Zugangswort stimmt nicht überein | In der App unter „Ich“ mit `/etc/entgegen.env` vergleichen |
@@ -349,11 +495,11 @@ nichts voneinander.
 
 ---
 
-## Ohne Terminal
+## Weg C ohne eigenen Server: fertige Plattformen
 
-Wenn dir das alles zu viel ist: Anbieter wie **Railway**, **Render** oder
-**Fly.io** bauen direkt aus dem Repository und geben dir eine fertige
-HTTPS-Adresse. Der Ablauf ist überall ähnlich:
+Wenn du die versteckten Schlüssel willst, aber keinen Server verwalten magst:
+Anbieter wie **Railway**, **Render** oder **Fly.io** bauen direkt aus dem
+Repository und geben dir eine fertige HTTPS-Adresse. Der Ablauf ist überall ähnlich:
 
 1. Beim Anbieter anmelden, GitHub verbinden, dieses Repository auswählen.
 2. Als Bauanleitung `server/Dockerfile` angeben – die liegt schon dabei.

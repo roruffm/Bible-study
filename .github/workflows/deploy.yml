@@ -34,8 +34,21 @@ jobs:
       - run: npm ci
 
       - name: Basispfad setzen
-        # Eine Projektseite liegt unter /<repository>/, nicht unter /.
-        run: echo "BASE_PATH=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
+        # Eine Projektseite liegt unter /<repository>/, eine eigene Domain
+        # dagegen unter /. Der Unterschied ist nicht kosmetisch: Mit falschem
+        # Basispfad zeigen alle Verweise ins Leere und die Seite bleibt weiß.
+        #
+        # Woran sich das erkennen lässt: `public/CNAME` ist die Datei, mit der
+        # GitHub Pages eine eigene Domain zugewiesen bekommt. Liegt sie vor,
+        # ist die Wurzel der richtige Ort.
+        run: |
+          if [ -f public/CNAME ]; then
+            echo "Eigene Domain gefunden: $(cat public/CNAME) – baue für /"
+            echo "BASE_PATH=/" >> "$GITHUB_ENV"
+          else
+            echo "Keine eigene Domain – baue für /${{ github.event.repository.name }}/"
+            echo "BASE_PATH=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
+          fi
 
       - run: npm run build
 
