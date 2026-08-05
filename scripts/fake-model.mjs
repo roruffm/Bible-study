@@ -32,10 +32,14 @@ const ANTWORT =
   'ordnet ihn der Sprache des Johannesevangeliums zu.';
 
 function sse(res, event, data) {
+  // Bricht der Leser mitten im Strom ab – im Test das Übliche –, läuft der
+  // Schreibversuch ins Leere. Das ist kein Fehler, sondern der Normalfall.
+  if (res.writableEnded || res.destroyed) return;
   res.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
 }
 
 const server = createServer((req, res) => {
+  res.on('error', () => {});
   // Der Browser fragt vor der eigentlichen Anfrage nach Erlaubnis. Ohne diese
   // Freigabe kommt die Anfrage gar nicht erst an – genau die Hürde, an der ein
   // selbst betriebener Server in der Praxis als Erstes scheitert.

@@ -36,6 +36,13 @@
  *                       "https://roruffm.github.io". Standard "*". Wird nur
  *                       gebraucht, wenn die App woanders liegt.
  *   ENTGEGEN_LIMIT      Anfragen je Stunde und IP. Standard 60, 0 = aus.
+ *   ENTGEGEN_HOST       Adresse, an die gebunden wird. Standard 0.0.0.0.
+ *                       Hinter Caddy oder nginx auf 127.0.0.1 setzen, damit
+ *                       der Server nicht zusätzlich direkt erreichbar ist.
+ *   ENTGEGEN_PROXY      Auf 1 setzen, wenn ein Reverse Proxy davorsteht.
+ *                       Nur dann wird X-Forwarded-For ausgewertet – sonst
+ *                       zählt die Stundengrenze alle Besucher als einen,
+ *                       weil aus Sicht des Servers alles vom Proxy kommt.
  */
 
 import { createServer } from 'node:http';
@@ -49,6 +56,8 @@ const PASSWORT = process.env.ENTGEGEN_PASSWORT ?? '';
 const STATIC = process.env.ENTGEGEN_STATIC ?? 'dist';
 const HERKUNFT = process.env.ENTGEGEN_HERKUNFT ?? '*';
 const LIMIT = Number(process.env.ENTGEGEN_LIMIT ?? 60);
+const HOST = process.env.ENTGEGEN_HOST ?? '0.0.0.0';
+const HINTER_PROXY = process.env.ENTGEGEN_PROXY === '1';
 
 const UPSTREAM = process.env.ENTGEGEN_UPSTREAM ?? 'https://api.anthropic.com';
 
@@ -72,6 +81,26 @@ const MAX_TOKENS = 8192;
 /** Anfragen je IP in der laufenden Stunde. */
 const zaehler = new Map();
 setInterval(() => zaehler.clear(), 3600_000).unref();
+
+/**
+ * Wer fragt hier eigentlich?
+ *
+ * Steht ein Reverse Proxy davor – die empfohlene Aufstellung –, kommt jede
+ * Anfrage aus Sicht des Servers von 127.0.0.1. Die Stundengrenze zählte dann
+ * alle Besucher zusammen und wäre nach 60 Anfragen für alle dicht.
+ *
+ * X-Forwarded-For wird deshalb ausgewertet, aber **nur** wenn ausdrücklich
+ * angesagt ist, dass ein Proxy davorsteht: Der Kopf ist frei erfindbar, und
+ * ohne Proxy davor könnte sich jeder mit einem frischen Wert unbegrenzt neue
+ * Kontingente ausstellen.
+ */
+function besucherIp(req) {
+  if (HINTER_PROXY) {
+    const kette = req.headers['x-forwarded-for'];
+    if (typeof kette === 'string' && kette.trim()) return kette.split(',')[0].trim();
+  }
+  return req.socket.remoteAddress ?? 'unbekannt';
+}
 
 function grenzeErreicht(ip) {
   if (!LIMIT) return false;
@@ -105,7 +134,7 @@ function fehler(res, code, nachricht) {
 /* ------------------------------------------------- Schnittstelle */
 
 async function weiterreichen(req, res) {
-  const ip = req.socket.remoteAddress ?? 'unbekannt';
+  const ip = besucherIp(req);
 
   if (PASSWORT) {
     // Das SDK schickt den Wert des Feldes „Zugangswort“ als x-api-key mit. Der
@@ -177,7 +206,12 @@ async function weiterreichen(req, res) {
    * Schnittstelle zum Nadelöhr. Ein Reverse Proxy transportiert, er deutet
    * nicht.
    */
-  Readable.fromWeb(oben.body).pipe(res);
+  const strom = Readable.fromWeb(oben.body);
+  // Schließt der Browser den Tab mitten in der Antwort, bricht die Leitung ab.
+  // Das ist Alltag und darf den Server nicht beenden.
+  strom.on('error', () => res.destroy());
+  res.on('close', () => strom.destroy());
+  strom.pipe(res);
 }
 
 /* ------------------------------------------------------- App ausliefern */
@@ -259,11 +293,12 @@ const server = createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Entgegen-Server auf http://localhost:${PORT}`);
+server.listen(PORT, HOST, () => {
+  console.log(`Entgegen-Server auf http://${HOST}:${PORT}`);
   console.log(`  App          : ${STATIC === 'aus' ? 'wird nicht ausgeliefert' : STATIC}`);
   console.log(`  Zugangswort  : ${PASSWORT ? 'gesetzt' : 'KEINES – der Server ist offen'}`);
   console.log(`  Grenze       : ${LIMIT ? `${LIMIT} Anfragen/Stunde/IP` : 'keine'}`);
+  console.log(`  Hinter Proxy : ${HINTER_PROXY ? 'ja, X-Forwarded-For wird gelesen' : 'nein'}`);
   console.log(`  Modelle      : ${[...MODELLE].join(', ')}`);
   if (!PASSWORT) {
     console.log('\n  Achtung: Ohne ENTGEGEN_PASSWORT kann jeder, der die Adresse kennt,');

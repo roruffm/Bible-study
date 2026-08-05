@@ -176,6 +176,68 @@ check('Der Schlüssel steht nicht in der Auslieferung', !startseite.includes(SCH
 const abgewiesen = await (await anfrage(gueltig, { 'x-api-key': 'falsch' })).text();
 check('Der Schlüssel steht nicht in Fehlermeldungen', !abgewiesen.includes(SCHLUESSEL));
 
+/* -------------------------------------------------- Grenze hinter Proxy */
+
+/*
+ * In der empfohlenen Aufstellung steht Caddy davor, und aus Sicht des Servers
+ * kommt dann jede Anfrage von 127.0.0.1. Zwei Dinge müssen stimmen: Hinter
+ * einem Proxy darf die Stundengrenze nicht alle Besucher zusammenzählen – und
+ * ohne Proxy darf sich niemand mit einem erfundenen X-Forwarded-For ein
+ * frisches Kontingent ausstellen.
+ */
+const GRENZE_PORT = 8098;
+starte('server/entgegen-server.mjs', {
+  ANTHROPIC_API_KEY: SCHLUESSEL,
+  ENTGEGEN_UPSTREAM: `http://127.0.0.1:${ATTRAPPE}`,
+  ENTGEGEN_STATIC: 'aus',
+  ENTGEGEN_LIMIT: '2',
+  ENTGEGEN_PROXY: '1',
+  PORT: String(GRENZE_PORT),
+});
+const OHNE_PORT = 8097;
+starte('server/entgegen-server.mjs', {
+  ANTHROPIC_API_KEY: SCHLUESSEL,
+  ENTGEGEN_UPSTREAM: `http://127.0.0.1:${ATTRAPPE}`,
+  ENTGEGEN_STATIC: 'aus',
+  ENTGEGEN_LIMIT: '2',
+  PORT: String(OHNE_PORT),
+});
+await warteAuf(`http://127.0.0.1:${GRENZE_PORT}/gesund`);
+await warteAuf(`http://127.0.0.1:${OHNE_PORT}/gesund`);
+
+function zaehle(port, weiter) {
+  return fetch(`http://127.0.0.1:${port}/v1/messages`, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      ...(weiter ? { 'x-forwarded-for': weiter } : {}),
+    },
+    body: JSON.stringify(gueltig),
+  }).then((x) => {
+    x.body?.cancel();
+    return x.status;
+  });
+}
+
+await zaehle(GRENZE_PORT, '10.0.0.1');
+await zaehle(GRENZE_PORT, '10.0.0.1');
+const dritte = await zaehle(GRENZE_PORT, '10.0.0.1');
+const andererBesucher = await zaehle(GRENZE_PORT, '10.0.0.2');
+check(
+  'Hinter einem Proxy zählt die Grenze je Besucher',
+  dritte === 429 && andererBesucher === 200,
+  `dritte Anfrage ${dritte}, anderer Besucher ${andererBesucher}`,
+);
+
+await zaehle(OHNE_PORT, 'erfunden-1');
+await zaehle(OHNE_PORT, 'erfunden-2');
+const erfunden = await zaehle(OHNE_PORT, 'erfunden-3');
+check(
+  'Ohne Proxy lässt sich die Grenze nicht mit erfundener Herkunft umgehen',
+  erfunden === 429,
+  `dritte Anfrage mit neuer erfundener IP: ${erfunden}`,
+);
+
 /* ------------------------------------------------------------- Schluss */
 
 kinder.forEach((k) => k.kill());

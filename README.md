@@ -231,6 +231,7 @@ brand/                     Logo-Vorlage, aus der die Bilder erzeugt werden
 server/
   entgegen-server.mjs      Eigener Server: liefert die App aus, hält den Schlüssel
   Dockerfile               Baut App und Server in ein Abbild
+  ANLEITUNG.md             Schritt für Schritt zum eigenen Server, ohne Vorkenntnisse
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
@@ -343,6 +344,10 @@ Schlüssel gehört.
 
 ### Eigener Server
 
+> **Schritt-für-Schritt ohne Vorkenntnisse:** [`server/ANLEITUNG.md`](server/ANLEITUNG.md)
+> – vom Bestellen des Servers bis zum Schloss in der Adresszeile, alles zum
+> Kopieren. Der Rest dieses Abschnitts setzt etwas Vertrautheit voraus.
+
 `server/entgegen-server.mjs` ist der Server dazu – **eine Datei, keine
 Abhängigkeiten**, Node ab Version 18. Er erledigt zwei Dinge, jedes einzeln
 abschaltbar:
@@ -385,6 +390,8 @@ docker run -p 8080:8080 \
 | `ENTGEGEN_STATIC` | `dist` | Verzeichnis der gebauten App; `aus` liefert nur die Schnittstelle |
 | `ENTGEGEN_HERKUNFT` | `*` | Erlaubte Herkunft für CORS, etwa `https://roruffm.github.io`. Nur nötig, wenn die App woanders liegt |
 | `ENTGEGEN_LIMIT` | `60` | Anfragen je Stunde und IP; `0` schaltet die Grenze ab |
+| `ENTGEGEN_HOST` | `0.0.0.0` | Hinter Caddy oder nginx auf `127.0.0.1` setzen, damit der Server nicht zusätzlich direkt erreichbar ist |
+| `ENTGEGEN_PROXY` | – | Auf `1` setzen, wenn ein Reverse Proxy davorsteht. **Sonst zählt die Stundengrenze alle Besucher als einen**, weil aus Sicht des Servers alles vom Proxy kommt |
 
 Fest eingebaut: nur `claude-opus-5`, `claude-sonnet-5` und `claude-haiku-4-5`
 sind freigegeben, `max_tokens` wird bei 8.192 gedeckelt und der Anfragekörper
@@ -418,7 +425,7 @@ node server/entgegen-server.mjs
 
 ```bash
 npm run build
-node scripts/test-server.mjs      # 13 Prüfungen
+node scripts/test-server.mjs      # 15 Prüfungen
 ```
 
 Geprüft wird, was teuer wird, wenn es fehlt: ob jemand ohne Zugangswort
@@ -525,7 +532,7 @@ Der eigene Server hat eine eigene Prüfkette – er trägt den Schlüssel und st
 im Netz, also zielt sie auf das, was teuer wird, wenn es fehlt:
 
 ```bash
-npm run test:server          # 13 Prüfungen, startet Attrappe und Server selbst
+npm run test:server          # 15 Prüfungen, startet Attrappe und Server selbst
 ```
 
 Die redaktionellen Inhalte enthalten mehrere hundert Stellenangaben. Ein
