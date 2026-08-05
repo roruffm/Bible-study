@@ -613,6 +613,119 @@ check(
   umzug.notizen ?? 'nichts übernommen',
 );
 
+/*
+ * 19. Rückfragen am Vers
+ *
+ * Geprüft wird gegen `scripts/fake-model.mjs`, eine Attrappe im Format der
+ * Anthropic-Schnittstelle. Den echten Dienst zu rufen wäre teuer, langsam, von
+ * einem Schlüssel abhängig und in der Antwort nicht vorhersagbar – während das,
+ * was hier wirklich am Code hängt, mit der Attrappe vollständig prüfbar ist:
+ * ob der zusammengestellte Kontext ankommt, ob die Antwort schon während des
+ * Empfangs erscheint und ob ein Fehler des Dienstes lesbar ankommt.
+ *
+ * Läuft keine Attrappe, werden diese Prüfungen übersprungen statt zu scheitern
+ * – der Smoke-Test soll ohne Zusatzaufbau durchlaufen.
+ */
+const FAKE = process.env.SMOKE_MODEL ?? 'http://127.0.0.1:4319';
+const attrappeDa = await fetch(`${FAKE}/letzte-anfrage`)
+  .then(() => true)
+  .catch(() => false);
+
+if (!attrappeDa) {
+  console.log(`ÜBERSPRUNGEN  Rückfragen am Vers – keine Attrappe auf ${FAKE}`);
+  console.log('              (starten mit: node scripts/fake-model.mjs)');
+} else {
+  await page.goto(BASE + '/bibel/joh/3?vers=16', { waitUntil: 'networkidle' });
+
+  // Ohne eingerichteten Zugang darf nichts hinausgehen: Die Funktion ist
+  // ausgeschaltet voreingestellt, und das ist der Kern des Datenschutz-
+  // versprechens der App.
+  await page.evaluate(() => localStorage.removeItem('entgegen.chat'));
+  await page.reload({ waitUntil: 'networkidle' });
+  await page.getByRole('tab', { name: /Fragen/ }).click();
+  const ausText = (await page.locator('.panel__article').textContent()) ?? '';
+  check(
+    'Rückfragen sind ohne Einrichtung ausgeschaltet',
+    ausText.includes('ausgeschaltet') && (await page.locator('.chat__input').count()) === 0,
+  );
+
+  await page.evaluate(
+    (url) =>
+      localStorage.setItem(
+        'entgegen.chat',
+        JSON.stringify({ mode: 'proxy', proxyUrl: url, apiKey: '', model: 'claude-opus-5' }),
+      ),
+    FAKE,
+  );
+  await page.reload({ waitUntil: 'networkidle' });
+  await page.getByRole('tab', { name: /Fragen/ }).click();
+  await page.waitForSelector('.chat__suggestions');
+  check(
+    'Vorschläge zeigen, wonach sich fragen lässt',
+    (await page.locator('.chat__suggestions .chip').count()) === 5,
+  );
+
+  await page.fill('.chat__input', 'Worum geht es hier?');
+  await page.getByRole('button', { name: 'Fragen' }).click();
+
+  // Der Text muss stehen, bevor die Antwort fertig ist – sonst starrt man bei
+  // langen Antworten sekundenlang auf einen Ladepunkt.
+  await page.waitForFunction(
+    () => (document.querySelector('.chat__turn--assistant')?.textContent?.length ?? 0) > 20,
+    null,
+    { timeout: 20_000 },
+  );
+  check('Die Antwort erscheint schon während des Empfangs', true);
+
+  // Fertig ist der Empfang, wenn der Abbruchknopf wieder zum Absendeknopf wird.
+  await page.waitForSelector('.chat__compose .btn--primary', { timeout: 20_000 });
+  const antwort = (await page.locator('.chat__turn--assistant').last().textContent()) ?? '';
+  check('Die Antwort kommt vollständig an', antwort.length > 100, `${antwort.length} Zeichen`);
+
+  // Der eigentliche Wert der Funktion: Es antwortet nicht das Gedächtnis des
+  // Modells, sondern der geprüfte Bestand dieser App.
+  const gesendet = await (await fetch(`${FAKE}/letzte-anfrage`)).json();
+  const kontext = gesendet.system?.[1]?.text ?? '';
+  const enthalten = [
+    ['Wortlaut', 'Also hat Gott die Welt geliebt'],
+    ['Umgebung', 'Bist du ein Meister in Israel'],
+    ['Buchsteckbrief', 'Verfasser:'],
+    ['Artikel', 'Artikel der App'],
+    ['Auslegungen', 'Auslegungen, die die App'],
+    ['Querverweise', 'Querverweise'],
+  ].filter(([, muster]) => kontext.includes(muster));
+  check(
+    'Der Bestand der App geht als Grundlage mit',
+    enthalten.length === 6,
+    enthalten.map(([n]) => n).join(', '),
+  );
+  check(
+    'Zwei Sprungmarken für den Zwischenspeicher',
+    (gesendet.system ?? []).filter((b) => b.cache_control).length === 2,
+  );
+
+  // Ein Fehler des Dienstes muss als Satz ankommen, nicht als Rohtext. Die
+  // Ablehnung erzeugt zwangsläufig eine Konsolenmeldung des Browsers; sie wird
+  // unten wieder herausgenommen, damit sie die Prüfung auf Konsolenfehler nicht
+  // fälschlich zum Scheitern bringt.
+  const fehlerVorher = errors.length;
+  await fetch(`${FAKE}/fehler/401`);
+  await page.fill('.chat__input', 'Und noch eine Frage');
+  await page.getByRole('button', { name: 'Fragen' }).click();
+  await page.waitForSelector('.chat__error', { timeout: 20_000 });
+  const fehlertext = (await page.locator('.chat__error').textContent()) ?? '';
+  check(
+    'Ein abgelehnter Schlüssel wird verständlich gemeldet',
+    fehlertext.includes('Schlüssel') && fehlertext.includes('Ich'),
+    fehlertext.trim(),
+  );
+
+  errors.splice(fehlerVorher, errors.length - fehlerVorher);
+
+  await page.screenshot({ path: `${OUT}/20-rueckfragen.png` });
+  await page.evaluate(() => localStorage.removeItem('entgegen.chat'));
+}
+
 check('Keine Konsolenfehler', errors.length === 0, errors.slice(0, 3).join(' | '));
 
 await browser.close();

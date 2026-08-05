@@ -16,8 +16,10 @@ import {
   getHighlights,
   getNotes,
   getReadChapters,
+  getChatSettings,
   getSettings,
   removeHighlight,
+  setChatSettings,
   setSettings,
 } from '../lib/storage';
 import type { ThemeName } from '../lib/types';
@@ -27,6 +29,122 @@ const THEMES: { id: ThemeName; label: string }[] = [
   { id: 'sepia', label: 'Sepia' },
   { id: 'dunkel', label: 'Dunkel' },
 ];
+
+/**
+ * Zugang für die Rückfragen am Vers.
+ *
+ * Die Karte redet Klartext statt zu beschwichtigen. Wer den Schlüssel in den
+ * Browser legt, soll wissen, worauf er sich einlässt – und wer das nicht will,
+ * soll den zweiten Weg finden, ohne danach suchen zu müssen.
+ */
+function ChatCard() {
+  const chat = usePersisted(getChatSettings);
+
+  return (
+    <div className="card" style={{ padding: '1.1rem' }}>
+      <div className="section-title">Rückfragen am Vers</div>
+      <p className="settings-row__hint" style={{ marginBottom: '0.9rem' }}>
+        Beim Lesen unter „Fragen“ lassen sich Fragen zu einer Stelle stellen. Die Antwort
+        stützt sich auf das Material, das die App zu dieser Stelle hinterlegt hat – Artikel,
+        Datierung, Auslegungen, Querverweise, Lexikon.
+      </p>
+      <div className="notice" style={{ marginBottom: '1rem' }}>
+        <strong>Hier verlassen Daten das Gerät.</strong> Deine Frage, der Vers und das
+        Material dazu gehen an den gewählten Dienst. Alles andere in dieser App bleibt
+        weiterhin lokal – und ohne diesen Zugang funktioniert alles andere unverändert.
+      </div>
+
+      <div className="settings-row">
+        <span className="settings-row__label">Zugang</span>
+        <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
+          {(
+            [
+              { id: 'aus', label: 'Aus' },
+              { id: 'anthropic', label: 'Eigener Schlüssel' },
+              { id: 'proxy', label: 'Eigener Server' },
+            ] as const
+          ).map((option) => (
+            <button
+              key={option.id}
+              type="button"
+              className={`chip${chat.mode === option.id ? ' chip--active' : ''}`}
+              onClick={() => setChatSettings({ mode: option.id })}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {chat.mode === 'anthropic' && (
+        <div style={{ marginTop: '0.9rem' }}>
+          <p className="settings-row__hint" style={{ marginBottom: '0.5rem' }}>
+            Der Schlüssel wird in diesem Browser gespeichert und direkt an Anthropic
+            geschickt. Das ist der einfache Weg – aber jedes Skript, das auf dieser Seite
+            läuft, könnte ihn lesen. Nimm einen Schlüssel mit Ausgabenlimit, und nutze ihn
+            nicht auf fremden Geräten. Schlüssel gibt es unter{' '}
+            <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noreferrer">
+              console.anthropic.com
+            </a>
+            ; die Nutzung wird dir dort in Rechnung gestellt.
+          </p>
+          <input
+            className="textarea"
+            type="password"
+            autoComplete="off"
+            spellCheck={false}
+            placeholder="sk-ant-…"
+            value={chat.apiKey}
+            onChange={(e) => setChatSettings({ apiKey: e.target.value })}
+            aria-label="API-Schlüssel"
+          />
+        </div>
+      )}
+
+      {chat.mode === 'proxy' && (
+        <div style={{ marginTop: '0.9rem' }}>
+          <p className="settings-row__hint" style={{ marginBottom: '0.5rem' }}>
+            Adresse eines selbst betriebenen Servers, der den Schlüssel hält und die Anfrage
+            weiterreicht. Der Schlüssel bleibt dann geheim. Der Server muss die Schnittstelle
+            von Anthropic unter <code>/v1/messages</code> anbieten und Anfragen von dieser
+            Seite erlauben (CORS).
+          </p>
+          <input
+            className="textarea"
+            type="url"
+            autoComplete="off"
+            spellCheck={false}
+            placeholder="https://mein-server.example/api"
+            value={chat.proxyUrl}
+            onChange={(e) => setChatSettings({ proxyUrl: e.target.value })}
+            aria-label="Adresse des eigenen Servers"
+          />
+        </div>
+      )}
+
+      {chat.mode !== 'aus' && (
+        <div className="settings-row" style={{ marginTop: '0.9rem' }}>
+          <span className="settings-row__label">
+            Modell
+            <span className="settings-row__hint">
+              Voreingestellt ist das derzeit stärkste; kleinere sind schneller und günstiger.
+            </span>
+          </span>
+          <select
+            className="btn btn--sm"
+            value={chat.model}
+            onChange={(e) => setChatSettings({ model: e.target.value })}
+            aria-label="Modell"
+          >
+            <option value="claude-opus-5">Claude Opus 5</option>
+            <option value="claude-sonnet-5">Claude Sonnet 5</option>
+            <option value="claude-haiku-4-5">Claude Haiku 4.5</option>
+          </select>
+        </div>
+      )}
+    </div>
+  );
+}
 
 /** Steuert, wie viel des Bibeltextes ohne Netzverbindung verfügbar ist. */
 function OfflineCard() {
@@ -277,6 +395,8 @@ export default function MePage() {
           </div>
 
           <OfflineCard />
+
+          <ChatCard />
 
           <div className="card" style={{ padding: '1.1rem' }}>
             <div className="section-title">Überblick</div>

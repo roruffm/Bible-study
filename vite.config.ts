@@ -26,7 +26,11 @@ export default defineConfig({
         // es gehört nicht in die Installation. Die Markenbilder schon: Icon
         // und Schriftzug erscheinen in der App selbst und fehlten sonst,
         // sobald die Verbindung weg ist. Zusammen sind sie rund 90 KB.
-        globIgnores: ['**/vorschau.png'],
+        //
+        // Das SDK für die Rückfragen bleibt ebenfalls draußen: Es wiegt rund
+        // 185 KB, ist ausgeschaltet voreingestellt, und ohne Verbindung nützt
+        // es ohnehin nichts. Wer die Rückfragen nie einschaltet, lädt es nie.
+        globIgnores: ['**/vorschau.png', '**/sprachmodell-*.js'],
         navigateFallback: `${base}index.html`,
         // Datendateien dürfen nicht durch die App-Seite ersetzt werden.
         navigateFallbackDenylist: [/\/(bibel|karten)\/.*\.json$/],
@@ -48,6 +52,27 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        /*
+         * Das SDK für die Rückfragen bekommt einen festen Dateinamen, damit der
+         * Service Worker es am Muster erkennt und aus dem Vorab-Cache
+         * heraushalten kann – sonst lüde jede Installation 175 KB für eine
+         * Funktion mit, die ausgeschaltet voreingestellt ist.
+         *
+         * Bewusst nur umbenannt und nicht über `manualChunks` verschoben: Ein
+         * eigener Chunk zog die geteilten Hilfsfunktionen mit sich, der
+         * Hauptcode importierte sie daraufhin statisch – und die App startete
+         * nicht mehr, sobald das SDK fehlte.
+         */
+        chunkFileNames(chunk) {
+          const vomSdk = chunk.moduleIds.some((id) => id.includes('@anthropic-ai'));
+          return vomSdk ? 'assets/sprachmodell-[hash].js' : 'assets/[name]-[hash].js';
+        },
+      },
+    },
+  },
   server: { host: '127.0.0.1', port: 5173 },
   preview: { host: '127.0.0.1', port: 4173 },
 });

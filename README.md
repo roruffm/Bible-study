@@ -84,7 +84,8 @@ eigenes `<html>`-Grundgerüst, zum Einbetten in fremde Seiten.
 | **Bibliothek** | Bücher nach Kanon-Gruppen, farblich codiert, mit Lesefortschritt |
 | **Schnellsprung** | Erkennt `Joh 3,16`, `1. Mose 1`, `Psalm 23,1-6`, `1kor 13`, auch lateinische Namen (`Genesis`, `Apokalypse`) |
 | **Leseansicht** | Buchähnliches Layout, anklickbare Verse, Blättern per Pfeiltasten, Schriftgröße stufenlos |
-| **Vers-Panel** | Vier Tabs: historischer Kontext, Auslegungen, Querverweise, eigene Notizen – dazu „Im Vers erwähnt“ mit Sachwissen zu allem, was im Vers vorkommt |
+| **Vers-Panel** | Fünf Tabs: historischer Kontext, Auslegungen, Querverweise, Rückfragen, eigene Notizen – dazu „Im Vers erwähnt“ mit Sachwissen zu allem, was im Vers vorkommt |
+| **Rückfragen am Vers** | Fragen zu einer Stelle stellen und Antworten bekommen, die auf dem Bestand der App fußen – Kontext, Auslegungen, Verweise, oder was die Stelle mit dem eigenen Leben zu tun hat. Standardmäßig aus; siehe [Rückfragen am Vers](#rückfragen-am-vers) |
 | **Volltextsuche** | Alle 31.102 Verse, Mehrwortsuche, Phrasensuche in `"…"`, Filter nach Testament und Buch, Treffer hervorgehoben |
 | **Lesepläne** | Vier Durchlese-Pläne (365 / 90 / 30 / 60 Tage) und 13 kuratierte Themenstudien, nach Sachgebiet gruppiert, mit Tagesfortschritt |
 | **Lexikon** | 124 Einträge in sieben Kategorien – Personen, Orte, Begriffe, Maße & Geld, Ämter, Bräuche, Natur & Stoffe |
@@ -233,6 +234,7 @@ scripts/
   build-map-data.mjs       Natural-Earth-Küstenlinien zuschneiden
   build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
   build-brand.py           Icon und Schriftzug aus der Logo-Vorlage schneiden
+  fake-model.mjs           Attrappe der Sprachmodell-Schnittstelle für den Test
   check-references.mjs     Alle Stellenangaben gegen den Bibeltext prüfen
   smoke-test.mjs           Browser-Test gegen den Vorschau-Server
   test-singlefile.mjs      Prüft die Einzeldatei ohne Server und ohne Netz
@@ -258,6 +260,8 @@ src/
     mapData.ts             Küstenlinien laden
     mapLabels.ts           Beschriftungen überschneidungsfrei verteilen
     placeText.ts           Ortsnamen im Kapiteltext erkennen
+    chat.ts                Rückfragen am Vers: Anfrage und redaktionelle Haltung
+    chatContext.ts         Stellt zusammen, was die App zu einer Stelle weiß
   pages/                   Heute, Bibliothek, Buch, Leseansicht, Suche,
                            Studium, Plan, Ich
 ```
@@ -292,6 +296,71 @@ Eine andere Quelle lässt sich so einbinden:
 
 ```bash
 node scripts/build-bible-data.mjs <quellverzeichnis> <übersetzungs-id>
+```
+
+---
+
+## Rückfragen am Vers
+
+Im Vers-Panel steht unter **Fragen** ein Gespräch zur aufgeschlagenen Stelle:
+Wie hängt der Vers mit dem Kapitel zusammen? Was ist daran umstritten? Welche
+Stellen gehören dazu? Was hat das mit meinem Leben zu tun?
+
+Der Unterschied zu einem allgemeinen Chatfenster liegt in der Grundlage. Mit
+jeder Frage geht mit, was die App zu genau dieser Stelle hinterlegt hat: der
+Wortlaut mit sechs Versen Umgebung, der Buchsteckbrief, der Artikel samt
+Ereignis- und Entstehungszeit, die Auslegungen **mit Angabe ihrer Tradition**,
+die Querverweise, die Lexikoneinträge des Verses, die Orte des Kapitels und die
+Parallelen in den Evangelien. Für Johannes 3,16 sind das rund 3.900 Zeichen
+geprüftes Material.
+
+Die redaktionelle Haltung der App ist in die Anweisungen übersetzt: Auslegungen
+stehen nebeneinander, keine wird zur richtigen erklärt; erfundene Stellenangaben
+sind untersagt; Zitate folgen dem Wortlaut der Lutherbibel von 1912; bei
+persönlichen Fragen ist das Modell Gesprächspartner und ausdrücklich weder
+Seelsorger noch Therapeut, und bei einer akuten Krise nennt es zuerst die
+Telefonseelsorge.
+
+### Warum ein eigener Zugang nötig ist
+
+Die App liegt als statische Seite auf GitHub Pages. Es gibt keinen Server, der
+einen Schlüssel geheim halten könnte – ein mitgelieferter Schlüssel stünde für
+jeden lesbar im Auslieferungspaket. Daher zwei Wege, einzustellen unter
+**Ich → Rückfragen am Vers**:
+
+| Weg | Wie es läuft | Wofür |
+|---|---|---|
+| **Eigener Schlüssel** | Der Schlüssel liegt in diesem Browser, die Anfrage geht direkt an Anthropic | Schnell eingerichtet. Aber: Jedes Skript auf dieser Seite könnte den Schlüssel lesen – nimm einen mit Ausgabenlimit und nicht auf fremden Geräten |
+| **Eigener Server** | Die Anfrage geht an einen selbst betriebenen Server, der den Schlüssel hält | Aufwendiger, dafür bleibt der Schlüssel geheim. Der Server muss `/v1/messages` anbieten und CORS erlauben |
+
+Voreingestellt ist **Claude Opus 5**; Sonnet 5 und Haiku 4.5 stehen als
+schnellere und günstigere Alternativen zur Wahl. Die Kosten trägt, wem der
+Schlüssel gehört.
+
+### Was das für den Rest der App bedeutet
+
+Nichts – solange der Zugang nicht eingerichtet ist. Das SDK wiegt rund 175 KB
+und wird deshalb erst beim ersten Gebrauch nachgeladen und ausdrücklich **nicht**
+in den Offline-Vorabruf aufgenommen (`globIgnores` in `vite.config.ts`). Der
+Vorab-Cache wächst durch diese Funktion um 15 KB, nicht um 190.
+
+In der Einzeldatei-Fassung sind die Rückfragen abgeschaltet: Sie ist eine Datei
+zum Verschicken, die ohne Server und ohne Netz läuft – beides braucht die
+Rückfrage.
+
+### Getestet wird gegen eine Attrappe
+
+`scripts/fake-model.mjs` antwortet im Format der Anthropic-Schnittstelle. Den
+echten Dienst zu rufen wäre teuer, langsam, von einem Schlüssel abhängig und in
+der Antwort nicht vorhersagbar – während alles, was hier am eigenen Code hängt,
+mit der Attrappe vollständig prüfbar ist: dass die Funktion ohne Einrichtung
+wirklich aus ist, dass der zusammengestellte Kontext ankommt, dass die Antwort
+schon während des Empfangs erscheint und dass ein abgelehnter Schlüssel als
+verständlicher Satz ankommt.
+
+```bash
+node scripts/fake-model.mjs &   # Attrappe auf Port 4319
+node scripts/smoke-test.mjs     # ohne sie werden diese Prüfungen übersprungen
 ```
 
 ---
@@ -335,15 +404,21 @@ Notizen, Markierungen und Lesefortschritt liegen ausschließlich im
 Nutzungsdaten. Das ist bewusst gewählt: Lesegewohnheiten in religiösen Texten
 sind nach Art. 9 DSGVO besonders schutzwürdig.
 
+**Eine Ausnahme, und nur eine:** Die [Rückfragen am Vers](#rückfragen-am-vers)
+schicken die Frage und das Material zur Stelle an einen Sprachmodell-Dienst.
+Deshalb sind sie **ausgeschaltet voreingestellt** und lassen sich nur mit einem
+eigenen Zugang einschalten. Ohne diesen Schritt verlässt weiterhin nichts das
+Gerät – auch das SDK dafür wird dann nie geladen.
+
 ---
 
 ## Tests
 
 Der Smoke-Test fährt die gebaute App in Chromium durch – Schnellsprung,
 Vers-Panel, Notizen, Suche, Lesepläne, Lexikon, Zeitleiste, Karte, Merkverse,
-Themenwechsel, mobile Ansicht, die Markenbilder, den Umzug der
-Speicherdaten aus der Zeit vor der Umbenennung und den echten
-Offline-Betrieb mit abgeschalteter Verbindung (99 Prüfungen):
+Themenwechsel, mobile Ansicht, die Markenbilder, die Rückfragen am Vers, den
+Umzug der Speicherdaten aus der Zeit vor der Umbenennung und den echten
+Offline-Betrieb mit abgeschalteter Verbindung (106 Prüfungen):
 
 ```bash
 npm install --no-save playwright

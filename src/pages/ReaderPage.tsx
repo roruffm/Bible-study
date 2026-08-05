@@ -338,6 +338,7 @@ export default function ReaderPage() {
         <VersePanel
           index={index}
           book={book}
+          content={content}
           ref_={selectedRef}
           text={verses[selectedRef.verse - 1]}
           altNumbering={content.alt?.[`${chapter}.${selectedRef.verse}`]}

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import VerseChat from './VerseChat';
 import { commentaryFor } from '../content/commentary';
 import { BOOK_PROFILES } from '../content/bookProfiles';
 import { LEXICON_KIND_LABEL } from '../content/lexicon';
@@ -16,14 +17,15 @@ import {
   saveNote,
   toggleHighlight,
 } from '../lib/storage';
-import type { BibleIndex, BookMeta, HighlightColor, VerseRef } from '../lib/types';
+import type { BibleIndex, BookContent, BookMeta, HighlightColor, VerseRef } from '../lib/types';
 
-type Tab = 'kontext' | 'auslegung' | 'verweise' | 'notizen';
+type Tab = 'kontext' | 'auslegung' | 'verweise' | 'fragen' | 'notizen';
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'kontext', label: 'Kontext' },
   { id: 'auslegung', label: 'Auslegung' },
   { id: 'verweise', label: 'Verweise' },
+  { id: 'fragen', label: 'Fragen' },
   { id: 'notizen', label: 'Notizen' },
 ];
 
@@ -37,6 +39,8 @@ const COLORS: { id: HighlightColor; label: string }[] = [
 interface Props {
   index: BibleIndex;
   book: BookMeta;
+  /** Das ganze Buch – der Fragen-Tab braucht den Zusammenhang, nicht nur den Vers. */
+  content: BookContent;
   ref_: VerseRef;
   text: string;
   /** Abweichende Zählung der gedruckten Lutherbibel, falls vorhanden. */
@@ -44,7 +48,15 @@ interface Props {
   onClose: () => void;
 }
 
-export default function VersePanel({ index, book, ref_, text, altNumbering, onClose }: Props) {
+export default function VersePanel({
+  index,
+  book,
+  content,
+  ref_,
+  text,
+  altNumbering,
+  onClose,
+}: Props) {
   const [tab, setTab] = useState<Tab>('kontext');
   const [expanded, setExpanded] = useState(false);
   const [draft, setDraft] = useState('');
@@ -300,6 +312,16 @@ export default function VersePanel({ index, book, ref_, text, altNumbering, onCl
                 <div className="notice">Zu diesem Vers sind noch keine Querverweise hinterlegt.</div>
               )}
             </div>
+          )}
+
+          {tab === 'fragen' && (
+            <VerseChat
+              index={index}
+              content={content}
+              ref_={ref_}
+              text={text}
+              onClose={onClose}
+            />
           )}
 
           {tab === 'notizen' && (

@@ -87,6 +87,58 @@ function write(key: string, value: unknown): void {
   emit();
 }
 
+/* ------------------------------------------------------------ Rückfragen */
+
+/**
+ * Zugang zum Sprachmodell für die Rückfragen am Vers.
+ *
+ * Dies ist die **einzige** Funktion der App, bei der Daten das Gerät
+ * verlassen – deshalb ist sie ausgeschaltet, bis jemand sie ausdrücklich
+ * einschaltet, und der Rest der App funktioniert unverändert ohne sie.
+ *
+ * Zwei Wege stehen offen, weil die App auf GitHub Pages ohne eigenen Server
+ * liegt und ein Schlüssel im Auslieferungspaket für jeden lesbar wäre:
+ *
+ * - `anthropic` – der eigene Schlüssel liegt in diesem Browser, die Anfrage
+ *   geht direkt an Anthropic. Kein Server nötig; der Schlüssel steht dafür im
+ *   `localStorage` und ist damit für Skripte auf dieser Seite lesbar.
+ * - `proxy` – die Anfrage geht an einen selbst betriebenen Server, der den
+ *   Schlüssel hält. Aufwendiger, aber der Schlüssel bleibt geheim.
+ */
+export type ChatMode = 'aus' | 'anthropic' | 'proxy';
+
+export interface ChatSettings {
+  mode: ChatMode;
+  apiKey: string;
+  proxyUrl: string;
+  model: string;
+}
+
+export const DEFAULT_CHAT_SETTINGS: ChatSettings = {
+  mode: 'aus',
+  apiKey: '',
+  proxyUrl: '',
+  model: 'claude-opus-5',
+};
+
+export function getChatSettings(): ChatSettings {
+  return memo('chat', () => ({
+    ...DEFAULT_CHAT_SETTINGS,
+    ...read<Partial<ChatSettings>>('chat', {}),
+  }));
+}
+
+export function setChatSettings(patch: Partial<ChatSettings>): void {
+  write('chat', { ...getChatSettings(), ...patch });
+}
+
+/** Ist der Zugang so weit eingerichtet, dass eine Anfrage überhaupt losgehen kann? */
+export function chatReady(settings: ChatSettings = getChatSettings()): boolean {
+  if (settings.mode === 'anthropic') return settings.apiKey.trim().length > 0;
+  if (settings.mode === 'proxy') return settings.proxyUrl.trim().length > 0;
+  return false;
+}
+
 /* ---------------------------------------------------------------- Settings */
 
 export const DEFAULT_SETTINGS: Settings = {

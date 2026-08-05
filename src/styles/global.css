@@ -868,7 +868,10 @@ button {
 }
 
 .panel__tab {
-  padding: 0.45rem 0.45rem;
+  /* Fünf Tabs teilen sich eine schmale Spalte: gleiche Anteile statt
+     Eigenbreite, sonst rutscht der letzte aus dem Bild. */
+  flex: 1 1 auto;
+  padding: 0.45rem 0.2rem;
   border: none;
   background: none;
   border-bottom: 2px solid transparent;
@@ -2067,4 +2070,68 @@ mark {
   font-size: 0.88rem;
   line-height: 1.6;
   text-align: left;
+}
+
+/* --------------------------------------------------- Rückfragen am Vers */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.chat__hint {
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: var(--text-faint);
+  border-left: 2px solid var(--border-strong);
+  padding-left: 0.6rem;
+}
+
+.chat__suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* Frage und Antwort sind bewusst unterschiedlich gesetzt, aber keine Sprech-
+   blasen: Der Panel ist schmal, und Blasen kosten dort Breite, die der Text
+   für die Lesbarkeit braucht. */
+.chat__turn {
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.75rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.chat__turn--user {
+  background: var(--accent-soft);
+  color: var(--text);
+  font-weight: 550;
+}
+
+.chat__turn--assistant {
+  background: var(--bg-sunken);
+  font-size: 0.95rem;
+}
+
+.chat__error {
+  font-size: 0.85rem;
+}
+
+.chat__compose {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.4rem;
+  position: sticky;
+  bottom: 0;
+  background: var(--bg-raised);
+  padding-top: 0.4rem;
+}
+
+.chat__input {
+  flex: 1;
+  min-height: 0;
+  resize: none;
 }

@@ -83,8 +83,11 @@ html = html.replace(/<link[^>]*rel="stylesheet"[^>]*href="([^"]+)"[^>]*>/g, (mat
 });
 
 // Manifest, Startbildschirm-Icon und Vorschaubild zeigen ins Leere, sobald
-// die Datei allein steht – es gibt kein public/ mehr neben ihr.
+// die Datei allein steht – es gibt kein public/ mehr neben ihr. Dasselbe gilt
+// für den Vorabruf des Sprachmodell-SDKs: Die Rückfragen sind in dieser
+// Fassung abgeschaltet (siehe VerseChat), und die Datei liegt hier nicht.
 html = html.replace(/<link[^>]*rel="manifest"[^>]*>/g, '');
+html = html.replace(/<link[^>]*rel="modulepreload"[^>]*>/g, '');
 html = html.replace(/<link[^>]*rel="apple-touch-icon"[^>]*>/g, '');
 html = html.replace(/<meta[^>]*property="og:image"[^>]*>/g, '');
 // Von den beiden Favicon-Größen bleibt eine übrig, eingebettet als Daten-URI.
