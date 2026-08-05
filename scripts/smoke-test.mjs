@@ -45,7 +45,19 @@ check('Vers 16 ist ausgewählt', await page.locator('#v16').evaluate((e) => e.cl
 await page.waitForSelector('.panel');
 const kontext = (await page.locator('.panel__article').textContent()) ?? '';
 check('Panel zeigt historischen Kontext', kontext.includes('Nikodemus'), kontext.slice(0, 60).trim() + '…');
+check('Grundlagen fallen auf die Literatur zum Buch zurück', kontext.includes('Schnackenburg'), (kontext.match(/Grundlagen:[^]{0,60}/) ?? [''])[0]);
 await page.screenshot({ path: `${OUT}/02-leseansicht-panel.png` });
+
+// „Mehr erfahren“ blendet die Vertiefung ein: weitere Absätze, die Wörter des
+// Urtextes und die Wirkungsgeschichte.
+await page.getByRole('button', { name: 'Mehr erfahren' }).click();
+const vertieft = (await page.locator('.panel__article').textContent()) ?? '';
+check('Der ausführliche Teil hat mehrere Absätze', await page.locator('.panel__article > div > p').count() >= 3);
+check('Vertiefung zeigt Wörter des Urtextes', vertieft.includes('IM URTEXT') || (await page.locator('.term strong').count()) >= 2, (await page.locator('.term strong').allTextContents()).join(' | '));
+check('Vertiefung nennt den Anhaltspunkt bei Luther', vertieft.includes('bei Luther'), (vertieft.match(/bei Luther[^]{0,30}/) ?? [''])[0]);
+check('Vertiefung zeigt die Wirkungsgeschichte', (await page.locator('.deepen').count()) >= 2 && vertieft.includes('John 3:16'));
+await page.screenshot({ path: `${OUT}/02b-vertiefung.png` });
+await page.getByRole('button', { name: 'Weniger anzeigen' }).click();
 
 // Zeitliche Einordnung: Ereignis und Entstehung stehen getrennt.
 const dating = (await page.locator('.dating').textContent()) ?? '';

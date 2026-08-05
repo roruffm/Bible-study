@@ -442,6 +442,14 @@ for (const entry of COMMENTARY) {
   if (traditionen.size !== entry.interpretations.length) {
     problems.push(`Artikel "${entry.title}": Tradition doppelt genannt`);
   }
+  // Seit dem Ausbau hat jeder Artikel beides. Was einmal erreicht ist, soll
+  // nicht unbemerkt wieder wegfallen – auch nicht bei neuen Artikeln.
+  if (!entry.terms?.length) {
+    problems.push(`Artikel "${entry.title}": kein Wort aus dem Urtext`);
+  }
+  if (!entry.reception) {
+    problems.push(`Artikel "${entry.title}": keine Wirkungsgeschichte`);
+  }
   for (const term of entry.terms ?? []) {
     // Ohne Sprachangabe steht ein fremdes Wort ohne Anhaltspunkt da.
     if (!/^(hebr\.|aram\.|griech\.|lat\.)/.test(term.word)) {
