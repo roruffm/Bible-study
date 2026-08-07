@@ -931,6 +931,24 @@ button {
   margin-bottom: 0.4rem;
 }
 
+/* Die Welt des Textes: je Notiz eine Marke und ein kurzer Absatz. */
+.world + .world {
+  margin-top: 0.75rem;
+}
+
+.world__aspect {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.15rem;
+}
+
+.world p {
+  margin: 0;
+}
+
 .term strong {
   color: var(--accent);
   font-style: italic;

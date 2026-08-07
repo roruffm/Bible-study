@@ -480,6 +480,7 @@ for (const entry of COMMENTARY) {
       entry.historicalShort,
       ...(entry.historicalLong ?? '').split(/\n\s*\n/),
       ...(entry.reception ?? '').split(/\n\s*\n/),
+      ...(entry.world ?? []).map((w) => w.text),
     ].filter((t) => t && t.trim());
     for (let a = 0; a < teile.length; a++) {
       for (let b = a + 1; b < teile.length; b++) {
@@ -569,11 +570,15 @@ console.log(
       (e.historicalLong?.length ?? 0) +
       (e.reception?.length ?? 0) +
       e.interpretations.reduce((m, i) => m + i.text.length, 0) +
-      (e.terms ?? []).reduce((m, t) => m + t.note.length, 0),
+      (e.terms ?? []).reduce((m, t) => m + t.note.length, 0) +
+      (e.world ?? []).reduce((m, w) => m + w.text.length, 0),
     0,
   );
   const mitUrtext = COMMENTARY.filter((e) => e.terms?.length).length;
   const mitWirkung = COMMENTARY.filter((e) => e.reception).length;
+  const weltNotizen = COMMENTARY.reduce((n, e) => n + (e.world?.length ?? 0), 0);
+  const mitWelt = COMMENTARY.filter((e) => e.world?.length).length;
+  const aspekte = new Set(COMMENTARY.flatMap((e) => (e.world ?? []).map((w) => w.aspect)));
   console.log(
     `Umfang      : ${Math.round(zeichen / 1000)} Tsd. Zeichen Artikeltext, ` +
       `im Schnitt ${Math.round(zeichen / COMMENTARY.length)} je Artikel`,
@@ -581,6 +586,10 @@ console.log(
   console.log(
     `Vertiefung  : ${mitUrtext} Artikel mit Urtext-Wörtern, ` +
       `${mitWirkung} mit Wirkungsgeschichte`,
+  );
+  console.log(
+    `Welt        : ${weltNotizen} Notizen in ${mitWelt} von ${COMMENTARY.length} Artikeln, ` +
+      `${aspekte.size} von 7 Seiten der Lebenswelt`,
   );
 }
 console.log(

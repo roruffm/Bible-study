@@ -1,4 +1,4 @@
-import { commentaryFor } from '../content/commentary';
+import { commentaryFor, WORLD_ASPECT_LABEL } from '../content/commentary';
 import { BOOK_PROFILES } from '../content/bookProfiles';
 import { EPOCHS } from '../content/timeline';
 import { GOSPELS, pericopesForChapter } from '../content/synopsis';
@@ -101,6 +101,15 @@ export function buildVerseContext(
     stueck.push(entry.historicalShort);
     if (entry.historicalLong) stueck.push(entry.historicalLong);
 
+    if (entry.world?.length) {
+      stueck.push(
+        'Die Welt, in der der Abschnitt spielt – was die ersten Hörer nicht ' +
+          'erklärt bekamen, weil es selbstverständlich war:\n' +
+          entry.world
+            .map((w) => `- ${WORLD_ASPECT_LABEL[w.aspect]}: ${w.text}`)
+            .join('\n'),
+      );
+    }
     if (entry.terms?.length) {
       stueck.push(
         'Wörter des Urtextes, die die Übersetzung nicht mitträgt:\n' +

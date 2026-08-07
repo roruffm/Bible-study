@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import VerseChat from './VerseChat';
-import { commentaryFor } from '../content/commentary';
+import { commentaryFor, WORLD_ASPECT_LABEL } from '../content/commentary';
 import { BOOK_PROFILES } from '../content/bookProfiles';
 import { LEXICON_KIND_LABEL } from '../content/lexicon';
 import { EPOCHS } from '../content/timeline';
@@ -226,6 +226,23 @@ export default function VersePanel({
                             {paragraphs(entry.historicalLong).map((text, i) => (
                               <p key={i}>{text}</p>
                             ))}
+
+                            {/* Zuerst die Lage des Textes, dann seine Sprache,
+                                zuletzt seine Nachgeschichte – in dieser
+                                Reihenfolge liest man einen fremden Text. */}
+                            {entry.world && entry.world.length > 0 && (
+                              <section className="deepen">
+                                <div className="section-title">Die Welt des Textes</div>
+                                {entry.world.map((note, i) => (
+                                  <div className="world" key={i}>
+                                    <div className="world__aspect">
+                                      {WORLD_ASPECT_LABEL[note.aspect]}
+                                    </div>
+                                    <p>{note.text}</p>
+                                  </div>
+                                ))}
+                              </section>
+                            )}
 
                             {/* Der Urtext steht hinter der Übersetzung, nicht
                                 neben ihr – deshalb erst hier, nicht in der

@@ -15,6 +15,7 @@
  *   export const PATCHES = {
  *     '1mo 1,1': {
  *       longAdd: 'Ein weiterer Absatz …',      // wird als Absatz angehängt
+ *       world: [{ aspect: 'macht', text: '…' }],
  *       terms: [{ word: 'hebr. bara', rendered: 'schuf', note: '…' }],
  *       reception: 'Was der Text bewirkt hat …',
  *       interpretations: [{ tradition: '…', text: '…' }],
@@ -81,7 +82,7 @@ function findLine(entry, regex) {
 }
 
 const keys = Object.keys(PATCHES);
-let stats = { long: 0, terms: 0, reception: 0, interp: 0 };
+let stats = { long: 0, terms: 0, reception: 0, interp: 0, world: 0 };
 
 // Von hinten nach vorn, damit eingefügte Zeilen die noch offenen Positionen
 // nicht verschieben.
@@ -147,7 +148,33 @@ for (const entry of [...entries].reverse()) {
     nach.push('    ],');
     stats.terms += patch.terms.length;
   }
-  if (nach.length) lines.splice(longLine + 2, 0, ...nach);
+  if (nach.length) {
+    lines.splice(longLine + 2, 0, ...nach);
+    entry.end += nach.length;
+  }
+
+  /*
+   * Die Welt des Textes gehört laut Schnittstelle zwischen `reception` und
+   * `terms`. Beide gibt es inzwischen in jedem Artikel, deshalb wird der Block
+   * vor der bestehenden `terms`-Liste eingesetzt statt hinter dem
+   * ausführlichen Teil – sonst stünde er vor der Wirkungsgeschichte.
+   */
+  if (patch.world?.length) {
+    if (findLine(entry, /^    world: \[$/) >= 0) throw new Error(`${entry.key}: world gibt es schon`);
+    const block = ['    world: ['];
+    for (const w of patch.world) {
+      block.push('      {', `        aspect: ${lit(w.aspect)},`, `        text: ${lit(w.text)},`, '      },');
+    }
+    block.push('    ],');
+
+    const ziel =
+      findLine(entry, /^    terms: \[$/) >= 0
+        ? findLine(entry, /^    terms: \[$/)
+        : findLine(entry, /^    interpretations: \[$/);
+    if (ziel < 0) throw new Error(`${entry.key}: keine Stelle für world gefunden`);
+    lines.splice(ziel, 0, ...block);
+    stats.world += patch.world.length;
+  }
 
   /* --- Absätze im ausführlichen Teil --- */
   if (patch.longAdd || patch.longPara) {
@@ -168,6 +195,7 @@ for (const entry of [...entries].reverse()) {
 
 writeFileSync(FILE, lines.join('\n'));
 console.log(
-  `Ergänzt: ${keys.length} Artikel – ${stats.long} Absätze, ${stats.terms} Urtext-Wörter, ` +
-    `${stats.reception} Wirkungsgeschichten, ${stats.interp} Auslegungen`,
+  `Ergänzt: ${keys.length} Artikel – ${stats.long} Absätze, ${stats.world} Notizen zur Welt, ` +
+    `${stats.terms} Urtext-Wörter, ${stats.reception} Wirkungsgeschichten, ` +
+    `${stats.interp} Auslegungen`,
 );
