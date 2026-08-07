@@ -739,6 +739,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Steigerung davor ist bewusst absurd: erst Kälber, dann tausend Widder, dann zehntausend Bäche Öl – und schließlich der eigene erstgeborene Sohn. Damit ist genau die Praxis benannt, die in der Umwelt Israels vorkam und die die Propheten scharf ablehnten. Die Antwort verlangt dagegen nichts, was man abliefern könnte. Die drei Forderungen sind unterschiedlich gebaut: Recht wird „getan“, Güte wird „geliebt“, und mit Gott geht man „demütig“ – Handlung, Haltung und Beziehung.\n\nDer ganze Abschnitt ist als Gerichtsverhandlung angelegt. In Vers 1 werden die Berge und die Grundfesten der Erde als Geschworene aufgerufen, dann trägt Gott seine Klage vor – und die Klage besteht aus Wohltaten: Auszug, Mose, Bileam, der Weg von Sittim nach Gilgal. Erst danach kommt die Rückfrage des Angeklagten, womit er denn kommen solle. Vers 8 ist die Antwort des Gerichts, und sie fällt aus dem Rahmen jedes Prozesses: Es wird nichts gefordert, was sich abliefern ließe.',
     reception:
       'Der Vers gilt vielen als Kurzfassung prophetischer Ethik und steht in den Grundlagentexten kirchlicher Entwicklungsarbeit ebenso wie in Reden der amerikanischen Bürgerrechtsbewegung. Im Judentum zählt er zu den Sätzen, in denen die 613 Gebote der Tora zusammengefasst werden – der Talmud nennt Micha als den, der sie auf drei brachte.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Micha stammt aus Moreschet in der Schefela, dem Hügelland zwischen Bergland und Küstenebene – Bauernland, das bei jedem Feldzug zuerst überrannt wurde. Seine Kritik richtet sich gegen Jerusalem, und sie kommt von außerhalb: aus der Gegend, die die Hauptstadt ernährte und für sie bezahlte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Steigerung der Opfergaben spielt auf eine reale Ordnung an: Wer mehr besaß, brachte Größeres, und die Schuldopfergesetzgebung staffelte nach Vermögen. Der Gedanke, Verfehlung ließe sich durch Aufwand ausgleichen, war deshalb naheliegend – und wird hier ins Absurde gesteigert, bis zum eigenen Kind.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Rede fällt in die Jahre assyrischer Bedrohung, in denen Juda Tribut zahlte und die Lasten nach unten weitergab. Wer den Text als Innerlichkeit liest, überhört, dass „Recht tun“ in dieser Lage zuerst hieß: den Kleinbauern nicht auch noch das Feld zu nehmen.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. mischpat',
@@ -2309,6 +2323,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text enthält zwei ineinandergeschobene Darstellungen: In der einen treibt ein Ostwind das Wasser zurück, in der anderen stehen die Fluten wie Mauern. Die Forschung sieht darin verschiedene Überlieferungsstränge. Das Lied in Kapitel 15 gilt sprachlich als einer der ältesten Texte der Bibel überhaupt.\n\nAuch der Ort ist unsicher. Das hebräische *jam suf* heißt „Schilfmeer“, nicht „Rotes Meer“; die Gleichsetzung stammt aus der griechischen Übersetzung und ist über Luther in den deutschen Sprachgebrauch gekommen. Gemeint ist eher einer der Sumpfseen östlich des Nildeltas. Bemerkenswert ist zudem der Satz in Vers 14: „Der HERR wird für euch streiten, und ihr werdet still sein.“ Die Erzählung schildert eine Befreiung, in der die Befreiten nichts tun – ein Zug, der die spätere Deutung des Auszugs entscheidend geprägt hat.',
     reception:
       'Kein alttestamentlicher Text hat mehr Befreiungsbewegungen getragen. In den Spirituals der versklavten Afroamerikaner ist der Auszug das Grundmotiv – „Go down, Moses“ –, und Martin Luther King griff es in seinen Reden auf. Die lateinamerikanische Befreiungstheologie machte den Exodus zum Schlüssel des ganzen Alten Testaments, ebenso Bewegungen in Südafrika und Osteuropa.\n\nDie Kehrseite steht im selben Kapitel: Die Rettung der einen ist der Untergang der anderen. Der Midrasch erzählt, die Engel hätten singen wollen, als die Ägypter ertranken, und Gott habe sie zurechtgewiesen: Meine Geschöpfe ertrinken, und ihr singt? Beim Sederabend werden deshalb Tropfen Wein aus dem Becher genommen – die Freude ist gemindert.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Streitwagen waren die teuerste Waffengattung der Bronzezeit: leichte Zweiräder mit Fahrer und Bogenschütze, Symbol königlicher Macht und auf ägyptischen Reliefs überall gezeigt. Sie funktionierten auf festem, ebenem Boden – und versagten in Schlamm. Der Text lässt genau das geschehen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Zwischen Nildelta und Sinai lagen Sumpfseen und Lagunen, dazu eine Kette ägyptischer Grenzfestungen entlang der Küstenstraße. Wer unbemerkt hinauswollte, musste die befestigte Route meiden und durch schwieriges Gelände – die Fluchtroute des Textes folgt dieser Logik.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer entlaufenen Arbeitskräften nachsetzte, tat das nicht aus Rachsucht, sondern weil Arbeitskraft Vermögen war. Ägyptische Grenzberichte verzeichnen die Verfolgung Geflohener wie eine Verwaltungsaufgabe. Die Erzählung setzt diese Selbstverständlichkeit voraus und braucht sie nicht zu begründen.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. jam suf',
@@ -2349,6 +2377,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Goliats Ausrüstung wird auffallend genau beschrieben und entspricht eher griechischer als philistäischer Bewaffnung. Seine Größe von „sechs Ellen und einer Handbreit“ ergäbe rund 2,90 m; die griechische Überlieferung nennt vier Ellen, also etwa 2 m. In 2. Samuel 21,19 wird der Sieg über Goliat einem gewissen Elhanan zugeschrieben – ein bekanntes Rätsel der Textüberlieferung.',
     reception:
       'Kaum eine biblische Erzählung ist so weit in die Alltagssprache eingegangen: „David gegen Goliat“ steht in jeder Sportberichterstattung und in jeder Beschreibung eines ungleichen Rechtsstreits. Michelangelos David von 1504 wurde zum Wahrzeichen der Republik Florenz gegen die Übermacht ihrer Nachbarn.\n\nDie Erzählung hat auch eine militärische Wirkungsgeschichte, die weniger bekannt ist: Sie wurde in Befreiungskämpfen ebenso zitiert wie von Besatzungsmächten, die sich als David darstellten. In der neueren Forschung wird zudem darauf hingewiesen, dass die Schleuder keine Notlösung war, sondern eine präzise Fernwaffe – der Zweikampf war weniger ungleich, als er erzählt wird.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die Philister kamen im 12. Jahrhundert als Teil der Seevölker an die Küste und gründeten fünf Stadtstaaten. Ihre Vorteile lagen in befestigten Städten, organisierten Heeren und der Metallverarbeitung – 1. Samuel 13 berichtet, sie hätten die Schmiede kontrolliert, sodass Israeliten ihre Geräte bei ihnen schärfen lassen mussten.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Schleuder war Hirtenwerkzeug und zugleich eine ernstzunehmende Waffe: Richter 20 kennt Schleuderer, die aufs Haar treffen, und assyrische Heere führten eigene Abteilungen. Ein Geschoss erreichte über hundert Stundenkilometer. Der Zweikampf war ungleicher, als er klingt – nur nicht zugunsten des Gerüsteten.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'David ist der jüngste von acht Söhnen und bringt seinen Brüdern Verpflegung – Heere versorgten sich nicht selbst, das übernahmen Familien. Der Jüngste hütete das Kleinvieh, weil dafür niemand gebraucht wurde, der Wichtigeres tun konnte. Seine Stellung im Haus ist die geringste.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. isch habbenajim',
@@ -2439,6 +2481,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Elias Spott über den schlafenden oder verreisten Baal greift Züge auf, die in ugaritischen Texten tatsächlich von Baal erzählt werden. Die Tötung der Baalspropheten am Ende gehört zu den Stellen, die in der Auslegung durchgehend als schwierig gelten und heute meist ausdrücklich nicht als Vorbild verstanden werden.',
     reception:
       'Mendelssohns Oratorium *Elias* von 1846 hat die Szene ins allgemeine Musikgedächtnis gebracht; das Karmelkloster Muhraqa in Israel gilt seit dem Mittelalter als Ort des Geschehens und ist bis heute Wallfahrtsziel für Christen, Juden und Drusen.\n\nDie Tötung der 450 Baalspropheten am Bach Kison gehört zu den Stellen, die in Kirche und Synagoge durchgehend als schwierig gelten. Der Text selbst kommentiert sie nicht. In heutigen Auslegungen wird regelmäßig darauf hingewiesen, dass unmittelbar danach Elia flieht und sterben will – das Kapitel endet nicht im Triumph.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Baal war Wettergott: Er brachte den Regen und damit die Ernte. Ugaritische Texte erzählen von seinem Tod und seiner Rückkehr im Jahreslauf – von dort stammt auch der Spott, er sei verreist oder schlafe. Eine dreijährige Dürre stellte damit genau seine Zuständigkeit in Frage.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Isebel war Tochter des Königs von Sidon; ihre Ehe mit Ahab war ein Bündnis mit der phönizischen Handelsmacht. Mit ihr kam der Hofkult ihres Landes nach Samaria. Der Streit auf dem Karmel ist deshalb auch Außenpolitik – und der Karmel liegt genau an der Grenze zwischen beiden Einflussgebieten.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Eine mehrjährige Dürre bedeutete: kein Getreide, kein Futter, sterbendes Vieh, dann Hungersnot. Kapitel 18 beginnt damit, dass der König persönlich mit seinem Hofmeister nach Gras für die Pferde sucht. Das ist der Zustand, in dem die Versammlung stattfindet.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. posechim al schete hasseippim',
@@ -2483,6 +2539,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Serafim sind wörtlich „die Brennenden“ – geflügelte Wesen, wie sie auch auf altorientalischen Siegeln erscheinen. Der Auftrag ist verstörend formuliert: Der Prophet soll reden, damit das Volk gerade nicht versteht. Die Forschung sieht darin eine rückblickende Deutung des ausgebliebenen Erfolgs, nicht eine Absicht von Anfang an.\n\nDie Berufung ist genau datiert: im Todesjahr des Königs Usia, etwa 740 vor Christus. Das ist kein Beiwerk – der irdische König stirbt, und der Prophet sieht den wirklichen König auf dem Thron. Bemerkenswert ist auch die Reihenfolge: Zwischen der Vision und der Sendung steht das Eingeständnis „ich bin unreiner Lippen“, und erst danach kommt die Kohle vom Altar. Nicht Eignung führt zum Auftrag, sondern der Auftrag ergeht an einen, der sich für ungeeignet hält. Und auf Jesajas Frage „Wie lange?“ kommt eine Antwort, die niemand hören will: bis die Städte verwüstet sind.',
     reception:
       'Der Ruf der Seraphim ist als Sanctus in jede christliche Abendmahlsliturgie eingegangen – „Heilig, heilig, heilig“ wird in Ost und West seit dem 4. Jahrhundert gesungen, und im Judentum steht die Keduscha an entsprechender Stelle im Gebet. Es ist damit einer der wenigen Sätze, die Synagoge und Kirche gemeinsam singen.\n\nDer Verstockungsauftrag hat eine belastete Nachgeschichte: Er wird im Neuen Testament mehrfach zitiert, um die Ablehnung Jesu durch Teile Israels zu erklären, und wurde in der christlichen Auslegung zur Begründung einer angeblichen Blindheit der Juden. Neuere Auslegung liest ihn zurück in seinen Zusammenhang – als Selbstdeutung eines gescheiterten Propheten, nicht als Urteil über ein Volk.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Usia hatte Juda über vier Jahrzehnte regiert und dem Land Wohlstand gebracht; sein Tod um 740 fällt in die Jahre, in denen Assyrien unter Tiglat-Pileser III. nach Westen ausgriff. Innerhalb einer Generation verschwand das Nordreich. Die Vision fällt an den Beginn dieser Bedrohung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Tempel war kein Versammlungsraum: Das Volk stand im Hof, Priester betraten das Heilige, das Allerheiligste einer allein und einmal im Jahr. Wer das Innere schildert, schildert einen Ort, den er nicht betreten durfte – und der Rauch, der das Haus füllt, gehört zur Räucheropferpraxis dort.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein König zu sehen war lebensgefährlich, wenn man nicht geladen war; ein Gott zu sehen galt als tödlich. Jesajas Ausruf „ich vergehe“ ist deshalb kein Gefühl der Unwürdigkeit, sondern die Feststellung, dass er eigentlich schon tot sein müsste.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. qadosch',
@@ -2574,6 +2644,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das hebräische Wort ruach bedeutet zugleich Wind, Atem und Geist – der Text spielt in wenigen Versen alle drei Bedeutungen durch. Die Deutung liefert der Text selbst mit: Gemeint ist die Heimkehr des Volkes, noch nicht die Auferstehung Einzelner.\n\nDer Aufbau geht in zwei Gängen. Erst kommen Adern, Fleisch und Haut, aber kein Odem – ein Feld voller vollständiger, aber toter Körper; erst der zweite Auftrag bringt den Wind. Das ist dieselbe Reihenfolge wie in 1. Mose 2, wo Gott den Menschen aus Erde formt und ihm dann Atem einbläst. Auffällig ist außerdem, dass der Prophet zweimal selbst reden muss: Nicht Gott spricht die Gebeine an, sondern Hesekiel auf seinen Befehl hin. Und auf die Frage, ob diese Gebeine wieder lebendig werden, antwortet er weder ja noch nein, sondern: „Herr HERR, das weißt du wohl.“',
     reception:
       'Das Bild ist zum Inbegriff der Hoffnung gegen den Augenschein geworden. In den Spirituals – „Dem Bones“ – wurde daraus ein Lied, das die Anatomie durchbuchstabiert; nach 1945 und in der Erinnerung an die Schoah ist die Vision zu einem der meistzitierten Texte überhaupt geworden, und Wandbilder in der Synagoge von Dura Europos zeigen sie schon im 3. Jahrhundert.\n\nDie Auslegung auf die leibliche Auferstehung der Toten ist erst später gewachsen; im Judentum ist der Text ein Hauptbeleg dafür geworden, im Christentum steht er in der Osternacht. Der Text selbst gibt beides nicht her – und schließt es auch nicht aus.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Unbestattete Gebeine auf freiem Feld waren das Schlimmste, was einem Menschen zustoßen konnte: Ein Grab bei den Vätern gehörte zur Würde, und der Fluch, den Vögeln überlassen zu werden, steht in Verträgen und Prophetenworten gleichermaßen. Das Bild zeigt ein Schlachtfeld, das nie aufgeräumt wurde.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Hesekiel gehörte zur ersten Deportation von 597 und lebte am Kanal Kebar bei Nippur. Er spricht also zu Menschen, deren Staat noch existierte, als sie gingen, und die zehn Jahre später erfuhren, dass er nicht mehr existiert. Die Vision antwortet auf den Satz „unsere Hoffnung ist verloren“.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Eine Auferstehung der Toten kannte das Alte Testament zu dieser Zeit noch nicht als Lehre; das Totenreich galt als Ort ohne Rückkehr und ohne Lob Gottes. Das Bild war deshalb für die ersten Hörer nicht die Beschreibung einer Erwartung, sondern die stärkste denkbare Übertreibung.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. ruach',
@@ -2622,6 +2706,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Kernsatz steht in Vers 18: „Und wenn er es nicht tut …“ – die drei bleiben standhaft, auch für den Fall, dass keine Rettung kommt. Damit unterscheidet sich der Text von einer bloßen Wundererzählung: Er begründet Treue nicht mit ihrer Aussicht auf Erfolg.',
     reception:
       'Der Text ist zum Grundtext des Widerstands gegen erzwungene Loyalitätsbekundungen geworden – von den Märtyrerakten der Alten Kirche über die Zeugen Jehovas im Nationalsozialismus, die den Hitlergruß verweigerten, bis zu Gewissensfragen um Fahneneid und Staatsverehrung.\n\nIn der Kunst gehört der Feuerofen zu den ältesten christlichen Motiven; in den Katakomben steht er neben Jona und Daniel in der Löwengrube als Bild der Rettung. Der Zusatz mit dem Gesang der drei Männer im Feuerofen, der in katholischen und orthodoxen Bibeln steht, fehlt im hebräisch-aramäischen Text und ist über die griechische Überlieferung in den Kanon gekommen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Ein Standbild aufzustellen und die Provinzbeamten zur Verehrung zu versammeln, war Herrschaftstechnik: Der Kniefall vor dem Bild des Königs machte Loyalität sichtbar und überprüfbar. Die Aufzählung der Ämter und Instrumente wirkt schwerfällig, weil sie einen Verwaltungsakt nachahmt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die drei sind Verwaltungsbeamte im Dienst der Besatzungsmacht, mit babylonischen Namen und babylonischer Ausbildung. Ihr Widerspruch kommt also nicht von Außenseitern, sondern von Aufsteigern, die alles zu verlieren haben – das ist die Lage, in der der Text seine ersten Leser sah.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Geschrieben wurde die Erzählung wahrscheinlich unter Antiochus IV., der um 167 den Jerusalemer Tempel für Zeus umwidmen ließ und Opfer erzwang. Wer sie damals hörte, hörte keine ferne Geschichte, sondern die eigene Woche.',
+      },
+    ],
     terms: [
       {
         word: 'aram. we hen la',
@@ -3028,6 +3126,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Name „Babel“ bedeutet auf Akkadisch „Tor Gottes“; die Erzählung deutet ihn stattdessen vom hebräischen Wort für „verwirren“ her – ein Wortspiel, das die Selbstdarstellung der Großmacht ins Gegenteil verkehrt. Auffällig ist auch, was nicht dasteht: von Hochmut ist ausdrücklich nicht die Rede, wohl aber von der Furcht, „zerstreut zu werden“. Kritisiert wird also eher die erzwungene Einheit als der Ehrgeiz.\n\nDer Erzähler spielt mit Sprache, wie er sie zum Thema macht. „Wohlauf, laßt uns bauen“ sagen die Menschen – „Wohlauf, laßt uns herniederfahren“ sagt Gott, in derselben Wendung. Auch die Bauweise ist genau beobachtet: Ziegel statt Stein und Erdharz statt Kalk beschreiben Mesopotamien; im steinreichen Palästina baute man anders. Gemeint ist eine Zikkurat, ein Stufentempel, wie er in Babylon stand. Und der Turm bleibt am Ende nicht zerstört, sondern unfertig – die Erzählung berichtet kein Strafgericht, sondern einen Abbruch.',
     reception:
       'Der Turm ist zum Bild für menschliche Selbstüberhebung geworden – bei Bruegel ebenso wie in der Rede von babylonischer Sprachverwirrung. In der Auslegungsgeschichte wurde daraus oft eine Warnung vor Technik und Größe überhaupt; der Text selbst nennt aber kein Bauwerk als Sünde, sondern die Absicht dahinter.\n\nEine zweite Wirkung ist politisch: Weil die Erzählung ein imperiales Zentrum zeigt, das alle gleichmachen will, ist sie in der Ökumene zum Text gegen sprachliche und kulturelle Vereinheitlichung geworden. Pfingsten gilt dabei nicht als Rücknahme der Vielfalt, sondern als deren Verständlichwerden.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Zikkurats wurden über Jahrzehnte mit Fronarbeit errichtet: Lehmziegel wurden in Formen gestrichen, in der Sonne getrocknet, in den Außenschichten gebrannt. Die Etemenanki in Babylon soll rund 90 Meter Kantenlänge gehabt haben. Wer den Text hörte, dachte an Arbeitskolonnen, nicht an Baukunst.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Reich mit „einerlei Sprache“ war das erklärte Ziel assyrischer und babylonischer Politik: Deportierte Völker wurden durchmischt, Verwaltungssprache vereinheitlicht, örtliche Kulte an den Reichskult angeschlossen. Der Satz beschreibt kein Idyll, sondern ein Programm – und die Zerstreuung beendet es.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Stufenturm war kein Aussichtsbau, sondern eine Treppe für die Gottheit: Auf der obersten Plattform stand ein kleiner Tempel, in dem sie beim Herabsteigen empfangen wurde. Dass in dieser Erzählung Gott herabsteigen muss, um überhaupt etwas zu sehen, ist beißender Spott.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. schem',
@@ -3075,6 +3187,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Schlüsselsatz lautet: „Ihr gedachtet es böse mit mir zu machen, aber Gott gedachte es gut zu machen.“ Die Bosheit wird beim Namen genannt und nicht umgedeutet – die Erzählung leugnet das Unrecht nicht, sie ordnet es ein. Bemerkenswert ist auch, was fehlt: Josef spricht keine Vergebung aus, er weint und sagt zu, für sie zu sorgen.',
     reception:
       'Vers 20 gehört zu den meistzitierten Sätzen in der Frage, wie sich Böses und Gottes Wirken zueinander verhalten. In der Seelsorge gilt er als heikel, wenn er Betroffenen zugesprochen wird: Aus einer Aussage, die Josef über sein eigenes Leben macht, wird dann eine Erklärung, die anderen über ihres gegeben wird.\n\nDie Erzählung selbst ist zurückhaltender. Josef bestreitet die böse Absicht nicht, er ordnet sie nicht um, und er spricht die Brüder nicht frei – er weigert sich nur, ihr Richter zu sein. Und der Text erwähnt beiläufig, dass die Brüder ihre Bitte um Vergebung mit einer erfundenen Anweisung des toten Vaters begründen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Josefs Stellung entspricht dem Amt eines Wesirs: Verwaltung der Speicher, Aufsicht über Abgaben, Vollmacht in Vertretung des Herrschers. Ägyptische Quellen kennen Semiten in hohen Ämtern; Getreidespeicher und Erntestatistiken sind vielfach belegt. Die Brüder stehen also vor einem Mann, der sie ohne Verfahren beseitigen könnte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Solange der Vater lebte, hielt seine Autorität die Familie zusammen; mit seinem Tod endete der Schutz und die Rechnung wurde offen. Genau darauf beruht die Angst der Brüder – und genau deshalb legen sie ihm eine Anweisung in den Mund, die er nach dem Text nie gegeben hat.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Hungersnöte in Kanaan folgten aus ausbleibendem Winterregen; Ägypten dagegen lebte von der Nilflut und war deshalb in schlechten Jahren die Zuflucht der ganzen Region. Wanderungen von Hirtengruppen ins Delta sind ägyptisch bezeugt, unter anderem auf einem Wandbild aus Beni Hassan.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. chaschab',
@@ -3174,6 +3300,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der zweite Bock wird nicht getötet, sondern mit den Verfehlungen des Volkes beladen fortgeschickt. Von ihm stammt das Wort „Sündenbock“. Das hebräische „Asasel“ ist unklar – es kann einen Ort, einen Dämon oder eine Wendung für „vollständige Entfernung“ bezeichnen. Bemerkenswert ist die Vorstellung dahinter: Schuld wird nicht nur vergeben, sie wird weggetragen.',
     reception:
       'Aus dem zweiten Bock ist das Wort „Sündenbock“ geworden, und mit ihm ein Begriff, der in Soziologie und Psychologie eine eigene Karriere gemacht hat: René Girards Theorie des Sündenbockmechanismus deutet damit die Entstehung von Gewalt in Gemeinschaften überhaupt.\n\nDer Hebräerbrief liest den Ritus christologisch – Christus als Hoherpriester, der ein für alle Mal eingeht – und begründet damit, warum die Kirche den Tag nicht übernommen hat. Im Judentum ist Jom Kippur bis heute der wichtigste Tag des Jahres; nach der Tempelzerstörung traten Fasten, Gebet und Umkehr an die Stelle des Opfers.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Dass Unheil auf ein Tier geladen und in die Wüste geschickt wird, ist ein weit verbreiteter Ritus; hethitische Texte kennen ähnliche Verfahren mit Widdern und Mäusen. Die Wüste galt als Ort außerhalb der Ordnung, in dem Dämonen hausten – dorthin wurde weggebracht, was in der bewohnten Welt nicht bleiben durfte.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Hohepriester legt die goldene Amtstracht ab und tritt in schlichtem Leinen an, badet mehrfach und wechselt die Kleidung. Leinen war Priesterstoff, weil es kühlt und nicht schwitzen lässt; Wolle galt als unrein im Heiligtum. Das Ritual besteht zu großen Teilen aus Waschen und Umziehen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Tag betraf alle: gearbeitet wurde nicht, gegessen wurde nicht, und zwar ausdrücklich auch von den Fremden im Land. In einer Agrargesellschaft war ein vollständiger Stillstand ein spürbarer wirtschaftlicher Einschnitt – und der einzige Fasttag, den die Tora vorschreibt.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. asasel',
@@ -3218,6 +3358,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Segen ist kunstvoll gebaut: drei Zeilen von wachsender Länge, in denen der Gottesname dreimal vorkommt. Er wird nicht über das Volk als Ganzes gesprochen, sondern in der Einzahl – „dich“, „dir“. Das Bild vom leuchtenden Angesicht meint Zuwendung; das Abwenden des Angesichts ist in der Bibel das Zeichen für Distanz.\n\nWas der Segen zusagt, steigert sich mit seiner Länge: erst Bewahrung, dann Zuwendung, zuletzt Frieden. Und er endet nicht mit Vers 26: Der Satz danach sagt, wozu das Ganze gut ist – die Priester sollen den Namen Gottes „auf die Kinder Israel legen“, und Gott selbst werde sie segnen. Der Segen ist damit keine Bitte des Priesters, sondern eine Zusage, die durch ihn hindurchgeht. Die beiden Silberröllchen von Ketef Hinnom, auf denen der Wortlaut steht, waren so fein gerollt, dass es Jahre dauerte, sie zu öffnen; getragen wurden sie am Hals.',
     reception:
       'Der aaronitische Segen steht am Ende fast jedes evangelischen und katholischen Gottesdienstes und wird im Judentum von den Nachkommen Aarons in der Synagoge gesprochen. Er ist damit der Text, den die meisten Menschen im deutschen Sprachraum am häufigsten hören, ohne zu wissen, wo er steht.\n\nAus dem Wortlaut leiten viele Kirchen ihre Segenspraxis ab: erhobene Hände, Blick zur Gemeinde, Anrede in der Einzahl. Im Judentum ist der Priestersegen an die Nachkommen Aarons gebunden und wird mit gespreizten Fingern gesprochen – eine Handhaltung, die über einen Schauspieler in einer Fernsehserie zum bekanntesten Gruß des Science-Fiction-Genres wurde.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Schutzsprüche am Körper waren im ganzen Alten Orient üblich – in Metallröllchen, Kapseln oder Anhängern, gegen Krankheit, Dämonen und den bösen Blick. Die Silberröllchen aus Ketef Hinnom sind genau solche Amulette. Der Segen begegnet damit zuerst als getragener Text, lange bevor er Gottesdienstformel war.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein zugewandtes Angesicht war Hofsprache: Wer beim König vorgelassen wurde und dessen freundlichen Blick fand, hatte seine Sache gewonnen; ein abgewandtes Gesicht bedeutete Ungnade. Die Bildsprache des Segens stammt aus der Audienz, nicht aus der Innerlichkeit.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. panim',
@@ -3343,6 +3493,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Noomi ändert ihren Namen in „Mara“ – die Bittere – und klagt Gott offen an. Diese Bitterkeit bleibt im Buch stehen und wird nicht widerlegt. Die Erzählung endet damit, dass die Ausländerin Rut zur Urgroßmutter Davids wird; das Buch schließt mit einem Stammbaum, der genau darauf hinausläuft.',
     reception:
       'Die Sätze der Rut gehören zu den meistgesprochenen bei Trauungen – obwohl sie zwischen zwei Frauen fallen und keine Ehe betreffen. In jüngerer Zeit werden sie deshalb auch bei Segnungen gleichgeschlechtlicher Paare gewählt, was in mehreren Kirchen umstritten ist.\n\nIm Judentum wird das Buch am Wochenfest gelesen, dem Fest der Tora-Gabe. Rut ist Moabiterin – und 5. Mose 23 schließt Moabiter ausdrücklich aus der Gemeinde aus. Dass ausgerechnet sie zur Urgroßmutter Davids wird, ist die Pointe, die viele Ausleger als bewussten Widerspruch gegen die Abgrenzungspolitik der Esra-Zeit lesen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine Witwe ohne Sohn hatte keinen Rechtsvertreter, kein Erbe und kein Einkommen. Sie kehrte üblicherweise in ihr Vaterhaus zurück – genau das schlägt Noomi ihren Schwiegertöchtern vor, und Orpa tut das Vernünftige. Ruts Entscheidung ist keine Treueprobe, sondern der Verzicht auf die einzige Absicherung, die es gab.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Von Moab nach Bethlehem sind es rund 80 Kilometer über das Jordantal und das judäische Bergland – Tagesmärsche durch fremdes Gebiet, für zwei Frauen ohne Begleitung ein erhebliches Wagnis. Moab lag östlich des Toten Meeres und war Israel bald verbündet, bald verfeindet.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Rückkehr fällt in den Beginn der Gerstenernte, also in die Wochen, in denen Nachlese überhaupt möglich war. Wer im Sommer kam, fand nichts. Der Erzähler nennt den Zeitpunkt beiläufig, aber er entscheidet über das Überleben der beiden.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. ammech ammi',
@@ -3385,6 +3549,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Naaman erwartet ein Ritual mit Gestus und Anrufung; stattdessen soll er im trüben Jordan baden, den er den Flüssen von Damaskus für unterlegen hält. Der Prophet kommt nicht einmal heraus. Am Ende bittet Naaman um zwei Maultierlasten Erde – er will auf israelitischem Boden opfern, obwohl er in Syrien lebt, und fragt zugleich, ob er weiter im Tempel des Rimmon dienen darf. Elisa antwortet mit „Zieh hin in Frieden“, ohne die Frage zu entscheiden.',
     reception:
       'Lukas lässt Jesus die Erzählung in seiner Antrittspredigt in Nazareth anführen – als Beleg dafür, dass Gottes Hilfe schon immer über die Grenzen Israels hinausging. Die Reaktion der Zuhörer ist der erste Mordversuch im Lukasevangelium.\n\nIn der Missionsgeschichte ist die Szene ein Standardtext für die Frage, wie viel von der eigenen Herkunft jemand behalten darf, der sich einem neuen Glauben zuwendet. Naamans Bitte um Erde und seine Frage nach dem Tempeldienst sind dabei in Debatten über Inkulturation bis heute präsent – gerade weil der Prophet keine Bedingung stellt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Aram und Israel führten über Jahrzehnte Grenzkriege mit Raubzügen; das israelitische Mädchen im Haushalt Naamans ist Kriegsbeute aus einem solchen Zug. Dass ausgerechnet sie den Hinweis gibt, kehrt jede Rangordnung des Textes um – die Ohnmächtigste weiß, was der Feldherr braucht.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Heilung erwartete man gegen Bezahlung und mit Zeremonie: Naaman bringt zehn Zentner Silber, sechstausend Goldstücke und zehn Festkleider mit und rechnet mit Handauflegen und Anrufung. Ein Bote, der ihn zum Baden schickt, verweigert ihm beides – die Behandlung und die Anerkennung seines Ranges.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Flüsse von Damaskus, Amana und Pharphar, führen klares Bergwasser aus dem Antilibanon; der Jordan ist trüb und im Sommer ein schmaler Lauf. Naamans Einwand ist nicht Hochmut, sondern eine zutreffende Beobachtung – und genau deshalb ist die Anweisung eine Zumutung.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. zaraat',
@@ -3429,6 +3607,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text erwähnt, dass die Leviten den Sinn erklärten – nach verbreiteter Auffassung, weil das Hebräische für viele nach dem Exil nicht mehr Alltagssprache war und ins Aramäische übertragen werden musste. Damit ist hier zum ersten Mal beschrieben, was später Synagoge und Predigt ausmacht: Lesung, Übersetzung, Auslegung. Die Reaktion ist Weinen – und wird ausdrücklich in Feiern umgewandelt.',
     reception:
       'Die Szene gilt als Geburtsstunde des Gottesdienstes, wie ihn Synagoge und Kirche kennen: Vorlesung aus der Schrift, Auslegung, gemeinsame Antwort. Der Ablauf – Lesung, Erklärung, Amen der Gemeinde – ist bis heute erkennbar.\n\nDer Satz „die Freude am HERRN ist eure Stärke“ ist zu einem der meistzitierten Verse in Gemeindebriefen und auf Kirchentagen geworden. Sein Ort im Kapitel wird dabei selten genannt: Er steht in einer Versammlung, die über dem Gehörten zusammenbricht, und stellt dem Weinen ein Fest entgegen – mit der ausdrücklichen Anweisung, denen etwas zu schicken, die nichts haben.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Nach zwei Generationen im Exil sprach die Bevölkerung Aramäisch, die Verkehrssprache des Perserreichs. Hebräisch war Sprache der Schrift und des Kultes geworden. Deshalb steht neben den Vorlesenden eine Gruppe Leviten, die „verständlich“ macht – vermutlich übersetzt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Versammelt wird auf dem Platz vor dem Wassertor, also im Freien, von Tagesanbruch bis zum Mittag. Ein Gebäude für so viele gab es nicht; öffentliche Verlesungen fanden auf Plätzen statt, mit einer erhöhten Holzkanzel für die Sprecher, die der Text eigens erwähnt.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Esra kommt mit persischer Vollmacht: Das Reich förderte örtliche Kulte und Rechtssammlungen, weil geordnete Provinzen leichter zu verwalten waren. Ähnliches ist für Ägypten belegt. Die Wiedereinführung der Tora ist damit auch ein Verwaltungsvorgang der Großmacht.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. meforasch',
@@ -3468,6 +3660,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Regel, dass ungeladenes Erscheinen den Tod bedeuten konnte, ist auch bei griechischen Geschichtsschreibern für den Perserhof bezeugt. Dass Gott im ganzen Buch nicht vorkommt, war schon in der Antike ein Problem: Die griechische Fassung fügt daher lange Gebete ein, die im hebräischen Text fehlen. In Qumran ist Ester als einziges Buch der hebräischen Bibel nicht gefunden worden. Auch Luther äußerte sich abschätzig darüber – der Kanon hat es dennoch behalten.',
     reception:
       'Das Buch begründet das Purimfest, den ausgelassensten Feiertag des jüdischen Jahres – mit Verkleidung, Lärm bei jeder Nennung Hamans und der Aufforderung zu trinken. Dass ein Buch ohne Gottesnamen ein solches Fest trägt, gehört zu den Eigenheiten des jüdischen Kanons.\n\nIn der christlichen Auslegung ist Ester lange stiefmütterlich behandelt worden; Luther schrieb, er sei dem Buch „so feind, dass ich wollte, es wäre gar nicht vorhanden“. In der neueren feministischen Exegese ist es umgekehrt zu einem der meistbeachteten Bücher geworden – als Erzählung über eine Frau, die in einem System ohne Rechte handlungsfähig wird.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Der Perserhof war durch ein Zeremoniell abgeschirmt, das griechische Geschichtsschreiber ausführlich beschreiben: Zutritt nur auf Ladung, Niederwerfung, Todesdrohung bei unangemeldetem Erscheinen. Der goldene Zepter, der Leben gewährt, gehört in dieses Bild. Esters Gang ist ein kalkuliertes Todesrisiko.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Königin hatte keine politische Stellung; Waschti wird im ersten Kapitel für eine einzige Weigerung abgesetzt, und zwar mit der Begründung, das Beispiel könnte Schule machen. Ester agiert also in einem System, in dem eine Frau nur über Umwege und Gastmähler wirken kann – und genau das tut sie.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein einmal gesiegeltes Gesetz der Meder und Perser war nach der Darstellung des Buches unwiderruflich. Deshalb wird der Erlass gegen die Juden nicht zurückgenommen, sondern durch einen zweiten ergänzt, der ihnen Selbstverteidigung erlaubt. Das ganze Buch dreht sich um diese Rechtsfigur.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. maqom acher',
@@ -3645,6 +3851,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das hebräische Wort alma bedeutet „junge Frau“; ob sie unverheiratet ist, sagt das Wort nicht. Die griechische Übersetzung des 3. Jahrhunderts v. Chr. gibt es mit parthenos wieder, was „Jungfrau“ heißen kann – und Matthäus zitiert diese griechische Fassung. Der Streit darüber gehört zu den ältesten zwischen Judentum und Christentum und wird bis heute geführt.',
     reception:
       'Der Streit um dieses eine Wort gehört zu den ältesten zwischen Kirche und Synagoge. Justin der Märtyrer führte ihn im 2. Jahrhundert im *Dialog mit Trypho*, und er wurde in den mittelalterlichen Zwangsdisputationen fortgesetzt. Da die jüdische Seite dabei unter Zwang antworten musste, ist die Überlieferung dieser Gespräche einseitig.\n\nHeutige Kommentare, katholische wie evangelische, halten überwiegend fest, dass der hebräische Text keine Jungfrauengeburt behauptet und die Ankündigung ihren nächsten Sinn in der Lage von 734 vor Christus hat. Dass Matthäus die griechische Fassung aufnimmt, ist damit nicht bestritten – es ist ein Beispiel dafür, wie das Neue Testament die Bibel Israels in ihrer griechischen Gestalt liest.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Im syrisch-ephraimitischen Krieg um 734 wollten Damaskus und das Nordreich Juda zwingen, sich ihrem Bündnis gegen Assyrien anzuschließen. Ahas rief stattdessen die Assyrer zu Hilfe – und machte Juda für ein Jahrhundert zum Vasallen. Die Szene spielt genau in dieser Entscheidungslage.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Das Treffen findet an der Wasserleitung des oberen Teiches statt, also an der Wasserversorgung der Stadt. Wer eine Belagerung erwartete, sicherte zuerst das Wasser; Hiskia ließ später den Tunnel schlagen, dessen Inschrift erhalten ist. Der Ort des Gesprächs ist ein Ort der Kriegsvorbereitung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Kindernamen waren Aussagen: Jesaja bringt seinen Sohn Schear-Jaschub mit – „ein Rest kehrt um“ – und kündigt später einen weiteren mit einem noch drastischeren Namen an. Ein Zeichenkind war in dieser Kultur eine wandelnde Botschaft, keine Metapher.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. alma',
@@ -3725,6 +3945,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Berufung fällt ins Jahr 627 v. Chr., kurz vor der Reform Josias und rund vierzig Jahre vor der Zerstörung Jerusalems – Jeremia wird die ganze Katastrophe miterleben. Das hebräische Wort na’ar, das Luther mit „zu jung“ wiedergibt, kann Kind bis junger Mann bedeuten. Die Berührung des Mundes erinnert an die Berufung Jesajas, wo eine glühende Kohle die Lippen reinigt; hier genügt die Hand. Bemerkenswert ist die Reihenfolge der sechs Verben: Vier zerstören, zwei bauen – und die aufbauenden stehen am Ende.',
     reception:
       'Vers 5 gehört zu den meistzitierten Bibelstellen in der Debatte um Schwangerschaftsabbruch, ähnlich wie Psalm 139. Ausleger halten dagegen, dass der Satz eine Berufungsaussage über diesen einen Propheten ist und keine Bestimmung des Status ungeborenen Lebens. Dass er in dieser Rolle wirkt, ändert das nicht.\n\nJeremia ist zugleich der biblische Prophet, dessen Innenleben am ausführlichsten überliefert ist: Die sogenannten Konfessionen in den Kapiteln 11 bis 20 enthalten Sätze, die an Gotteslästerung grenzen – „du hast mich überredet“, „verflucht sei der Tag, an dem ich geboren bin“. Das Wort „Jeremiade“ für eine Klagerede stammt von ihm und trifft ihn nur zur Hälfte.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Jeremias Berufung fällt um 627, in das Jahrzehnt, in dem Assyrien zusammenbrach und Ägypten und Babylon um die Vorherrschaft rangen. Juda lag zwischen ihnen und wechselte mehrfach die Seite. Vierzig Jahre später war Jerusalem zerstört – der Prophet erlebt die ganze Strecke.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Jeremia stammt aus Anatot, einer Priesterstadt bei Jerusalem, in die Salomo einen abgesetzten Hohenpriester verbannt hatte. Er kommt also aus einer Familie mit Amtsanspruch, aber ohne Amt. Kapitel 11 berichtet, dass ihm gerade seine Landsleute nach dem Leben trachten.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein Prophet, der den Untergang der eigenen Hauptstadt ansagte, galt als Wehrkraftzersetzer. Kapitel 26 schildert einen Prozess gegen ihn auf Leben und Tod, Kapitel 38 den Wurf in eine Zisterne. Das Amt, das hier übertragen wird, war lebensgefährlich, und der Text sagt es im selben Atemzug.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. naar',
@@ -3804,6 +4038,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       '„Ich hasse eure Feste“ ist keine Ablehnung des Kults an sich, sondern seiner Verwendung: In derselben Rede stehen die Anklagen wegen Bestechung, Getreidewucher und der Unterdrückung der Armen im Tor. Das Bild vom immerfließenden Bach ist bewusst gewählt – in einer Region, in der die meisten Wasserläufe im Sommer trockenfallen, meint es Verlässlichkeit.',
     reception:
       'Vers 24 ist einer der meistzitierten Bibelverse der amerikanischen Bürgerrechtsbewegung. Martin Luther King führte ihn in der Rede „I Have a Dream“ 1963 an; er steht am Civil Rights Memorial in Montgomery und auf dem King-Denkmal in Washington. Der Vers hat damit eine politische Wirkung entfaltet wie kaum ein anderer Prophetensatz.\n\nDie Absage an den Gottesdienst in den Versen davor ist die schärfste der Bibel. Sie wird regelmäßig missverstanden als Ablehnung des Kults überhaupt; Amos richtet sich gegen einen Gottesdienst, der neben Bestechung, Getreidewucher und der Beugung des Rechts weiterläuft, als wäre nichts.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Amos spricht in die wirtschaftliche Blütezeit des Nordreichs unter Jerobeam II. Ausgrabungen in Samaria haben Elfenbeineinlagen von Prunkmöbeln zutage gefördert – die „elfenbeinernen Häuser“, die Amos nennt. Zugleich verloren Kleinbauern durch Verschuldung ihr Land. Beides gehört zusammen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Recht wurde im Stadttor gesprochen, von den Ältesten, ohne Berufungsinstanz. Wer dort Zeugen kaufte oder den Richter beschenkte, hatte gewonnen; ein Armer hatte keine Mittel dagegen. Genau darauf zielen die Vorwürfe – „sie drängen den Armen im Tor“.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Bethel und Gilgal waren gut besuchte Reichsheiligtümer mit Wallfahrten, Opfern und Musik – der Kult blühte. Amos bestreitet nicht, dass er stattfindet, sondern dass er zählt. Für Hörer, denen Opferfrequenz als Frömmigkeitsnachweis galt, war das die eigentliche Provokation.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. jom JHWH',
@@ -5417,6 +5665,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Kapitel 17–26 fasst man als „Heiligkeitsgesetz“ zusammen. Auffällig ist, wie unpathetisch die Liebe hier bestimmt wird: Man lässt die Ränder des Feldes ungeerntet, damit Arme und Fremde etwas finden; man zahlt den Tagelohn noch am selben Abend, weil er davon lebt; man beugt das Recht nicht, weder zugunsten des Armen noch des Mächtigen. Erst am Ende dieser Kette steht der berühmte Satz. Liebe ist hier keine Empfindung, sondern eine Weise, mit Besitz und Macht umzugehen. Neun Verse später wird dieselbe Liebe ausdrücklich auf den Fremden ausgeweitet.',
     reception:
       'Rabbi Akiba nannte diesen Vers „das große Prinzip der Tora“, und Hillel fasste die ganze Weisung in die verneinte Form dieses Gebots. Jesus stellt ihn neben das Schma und macht daraus das Doppelgebot; Paulus schreibt, das ganze Gesetz sei in diesem einen Wort erfüllt.\n\nSelten mitgelesen wird der Vers davor: „Du sollst deinen Nächsten zurechtweisen.“ Nächstenliebe schließt nach dem Heiligkeitsgesetz den Widerspruch ein – wer schweigt, macht sich nach dem Wortlaut mitschuldig. Und die Verse 9 und 10 sind konkret: Was am Rand des Feldes stehen bleibt, gehört den Armen und den Fremden; im Buch Rut lebt eine Familie davon.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Nachlese war das Sozialsystem: Die Ränder des Feldes blieben stehen, Heruntergefallenes wurde nicht aufgesammelt, ein vergessenes Bündel blieb liegen. Wer nichts besaß, hatte damit ein einklagbares Zugriffsrecht auf fremdem Land – keine Gabe, sondern eine Beschränkung des Eigentums.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der Lohn des Tagelöhners war am selben Abend fällig, weil er davon am selben Abend aß. Dieselbe Regel steht im Deuteronomium und noch im Jakobusbrief. Wer bis zum Morgen zurückhielt, entzog kein Guthaben, sondern die Mahlzeit.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Kapitel regelt Nachbarschaft in einem Dorf, in dem alle einander kannten und niemand fortziehen konnte: nicht fluchen über Taube, kein Hindernis vor Blinde, nicht verleumden, den Streit offen austragen statt Hass im Herzen zu behalten. Nächstenliebe steht am Ende dieser sehr konkreten Reihe.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. rea',
@@ -5505,6 +5767,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Form entspricht altorientalischen Vasallenverträgen: Vorgeschichte, Bestimmungen, Zeugen, Segen und Fluch. 5. Mose übernimmt dieses Muster – nur steht an der Stelle des Großkönigs Gott, und an der Stelle des unterworfenen Kleinkönigs steht ein ganzes Volk. Dass Himmel und Erde als Zeugen aufgerufen werden, gehört zur Vertragssprache. Entstanden ist das Buch in seiner Grundform wohl im 7. Jahrhundert v. Chr.; die Reform Josias beruft sich auf ein „gefundenes Gesetzbuch“, das die Forschung meist mit einer Vorform des Deuteronomiums gleichsetzt.\n\nDer Text bleibt dabei nicht neutral: Er legt zwei Wege vor und sagt im selben Atemzug, welchen er will – „daß du das Leben erwählest“. Das ist keine Beratung, sondern ein Werben. Auffällig ist auch der Wechsel der Anrede: Über weite Strecken redet das Kapitel ein „Ihr“ an, im entscheidenden Satz ein „Du“. Das Deuteronomium tut das durchgehend, und die Forschung hat daraus lange Schlüsse auf verschiedene Bearbeitungsstufen gezogen; als Wirkung bleibt, dass die Entscheidung am Ende bei jedem Einzelnen landet.',
     reception:
       'Der Satz „wähle das Leben“ ist zu einer Formel weit über die Bibel hinaus geworden – in der Bioethik, in Antikriegsreden, in der Debatte um Sterbehilfe, und in ganz verschiedene Richtungen. Er steht auf Plakaten von Abtreibungsgegnern ebenso wie in Erklärungen für den Klimaschutz.\n\nTheologisch ist er der Kernbeleg gegen eine Vorherbestimmung: Wenn Gott zur Wahl auffordert, muss es etwas zu wählen geben. Erasmus führte ihn 1524 gegen Luther ins Feld; Luther antwortete in *De servo arbitrio*, dass die Aufforderung gerade zeige, was der Mensch nicht könne. Der Streit ist bis heute nicht entschieden.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Assyrische Vasallenverträge – erhalten etwa in den Thronfolgeverträgen Asarhaddons von 672 – verpflichteten Unterworfene mit Eiden, Zeugenanrufungen und seitenlangen Flüchen zur Loyalität. Wortlaut und Aufbau des Deuteronomiums sind diesen Texten so nahe, dass die Forschung eine bewusste Nachbildung annimmt: Die Form der Unterwerfung wird gegen den Großkönig gewendet.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Öffentliche Verpflichtungen wurden vor Zeugen gesprochen, weil es keine Registerbehörde gab; Himmel und Erde als Zeugen anzurufen war die stärkste verfügbare Form. Für die Versammelten war das kein Bild, sondern ein Rechtsakt mit Publikum.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. bachar',
@@ -5601,6 +5873,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Archäologisch ist Jericho der am heftigsten umstrittene Ort des Alten Testaments. Kathleen Kenyon fand in den 1950er Jahren für die üblicherweise angenommene Zeit Josuas keine Stadtmauer und keine nennenswerte Siedlung; ältere Grabungen von John Garstang hatten das Gegenteil behauptet. Die Fundlage lässt beide Deutungen zu: eine spätere Datierung des Ereignisses oder eine literarische Ausgestaltung eines kleineren Vorgangs. Der Bann über die Stadt – die vollständige Vernichtung – gehört zu den Texten, an denen sich die Auslegung bis heute abarbeitet.',
     reception:
       'Das Lied „Joshua fit the battle of Jericho“ machte die Erzählung zu einem der bekanntesten Spirituals; in den Sklavengemeinden Nordamerikas stand die einstürzende Mauer für die Aussicht auf Befreiung. Dieselbe Erzählung diente Siedlerbewegungen von Neuengland bis Südafrika als Rechtfertigung für Landnahme.\n\nDie Archäologie hat die Frage verschoben: Kathleen Kenyons Grabungen in den 1950er Jahren ergaben, dass Jericho zur fraglichen Zeit kaum besiedelt und ohne Mauern war. Die meisten Forscher lesen den Text heute als theologisch geformte Erinnerung. Das entlastet die Geschichte, nicht den Text – die Gewaltschilderung bleibt und wird in Kirchen wie Synagogen als schwierig benannt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Der Bann war keine Erfindung Israels. Die moabitische Mescha-Stele aus dem 9. Jahrhundert berichtet in derselben Sprache, dass König Mescha eine israelitische Stadt seinem Gott Kemosch geweiht und alles Lebende getötet habe. Solche Berichte gehörten zur Königsinschrift und dienten dem Ruhm des Herrschers.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Jericho liegt 250 Meter unter dem Meeresspiegel an einer starken Quelle – eine Oase am Ausgang des Jordantals und damit der natürliche Zugang ins Bergland. Wer von Osten kam, musste hier vorbei. Die Stadt ist einer der ältesten dauerhaft besiedelten Orte überhaupt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Belagerungen dauerten Monate und wurden mit Rampen, Sturmböcken und Aushungern geführt; assyrische Reliefs zeigen den Ablauf in allen Einzelheiten. Eine Stadt, die nach sieben Tagen Umzug fällt, kehrt dieses bekannte Verfahren in sein Gegenteil – erzählt wird eine Prozession, keine Schlacht.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. cherem',
@@ -5645,6 +5931,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Lied in Kapitel 5 gilt sprachlich als einer der ältesten Texte der Bibel überhaupt, möglicherweise 12./11. Jahrhundert v. Chr.; die Prosafassung in Kapitel 4 ist jünger und erzählt dieselbe Sache etwas anders. Militärisch entscheidend ist das Gelände: Siseras eisenbeschlagene Streitwagen waren in der Ebene überlegen und im aufgeweichten Boden am Bach Kischon wertlos. Das Lied nennt genau das – ein Wolkenbruch, der die Wagen im Schlamm festsetzte.',
     reception:
       'Debora ist in der feministischen Exegese zur Schlüsselfigur geworden, weil sie ohne jede Rechtfertigung als Anführerin auftritt: Der Text erklärt ihre Rolle nicht und entschuldigt sie nicht. In Debatten über Frauenordination gehört sie zu den meistgenannten Gegenbeispielen gegen 1. Timotheus 2.\n\nDer Schluss des Deboraliedes ist verstörend: Es lässt die Mutter des erschlagenen Sisera am Fenster auf ihren Sohn warten und ausrechnen, wie viele Frauen er wohl erbeutet habe. Der Text zeigt damit die Verlierer, ohne sie zu schonen und ohne sie zu verhöhnen – ein Zug, der in der Kriegsdichtung des Alten Orients ohne Beispiel ist.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Eisenbeschlagene Streitwagen machten die Ebene Jesreel beherrschbar und das Bergland nicht. Genau daran hängt die Erzählung: Sisera wird an den Bach Kison gelockt, wo Regen den Boden aufweicht und der Vorteil der Wagen verschwindet. Militärisch ist das die einzige Möglichkeit, die eine Bergbevölkerung hatte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Recht wurde im Freien gesprochen, an einem festen Ort, oft unter einem Baum oder im Stadttor, durch eine Person mit anerkanntem Ansehen und ohne geschriebenes Verfahren. Dass Debora unter ihrer Palme sitzt und die Leute zu ihr hinaufkommen, beschreibt genau diese Einrichtung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Zelte aufzuschlagen und die Heringe einzuschlagen war Frauenarbeit bei Nomaden – Jaël greift also zu ihrem Werkzeug. Die Gastfreundschaft, unter deren Schutz Sisera sich begibt, macht die Tat für antike Hörer nicht heldenhaft, sondern ungeheuerlich; das Lied in Kapitel 5 besingt sie trotzdem.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. schofetet',
@@ -5731,6 +6031,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Buch spielt „zur Zeit der Richter“, wurde aber vermutlich deutlich später geschrieben. Viele Ausleger sehen darin einen Einspruch gegen die strenge Trennungspolitik unter Esra und Nehemia, die Mischehen auflösen ließ. Der Schluss ist dann kein frommer Anhang, sondern das Argument: Ohne diese Ausländerin gäbe es David nicht. Matthäus nimmt den Faden auf und nennt Rut ausdrücklich im Stammbaum Jesu – eine von vier Frauen dort, die alle nicht in ein glattes Bild passen.',
     reception:
       'Der Stammbaum am Buchende bindet Rut an David und über Matthäus 1 an Jesus. Matthäus nennt in seiner Ahnenreihe vier Frauen, und alle vier sind Ausländerinnen oder haben eine irreguläre Geschichte – Tamar, Rahab, Rut und die Frau des Uria. Das gilt als bewusste Setzung.\n\nDas Buch wird meist als Gegenstimme zu den Kapiteln in Esra und Nehemia gelesen, in denen Mischehen aufgelöst wurden. Ob es tatsächlich als Widerspruch geschrieben wurde, ist umstritten; als Wirkung ist es unbestreitbar: In Debatten über Migration und Zugehörigkeit ist Rut einer der meistzitierten biblischen Texte.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Verhandelt wird im Stadttor vor zehn Ältesten – dem Ort, an dem Verträge geschlossen, Streitigkeiten entschieden und Zeugen gestellt wurden. Der Ausziehen des Schuhs bei der Übergabe eines Anspruchs ist ein Rechtsbrauch, den der Erzähler seinen Lesern eigens erklärt: Er war zu seiner Zeit schon veraltet.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Boas löst nicht nur eine Frau aus, sondern ein Grundstück. Der namenlose nähere Verwandte springt ab, sobald klar wird, dass er den Acker samt Erbfolge übernehmen müsste – dann ginge das Land nach einer Generation an den Namen des Verstorbenen zurück, und seine Aufwendungen wären verloren. Es ist eine wirtschaftliche Entscheidung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Den Namen des Verstorbenen zu erhalten war der eigentliche Zweck der Schwagerehe: Ohne Nachkommen erlosch der Anteil einer Familie am Land und ihr Gedächtnis. Deshalb sprechen die Nachbarinnen am Ende von einem Sohn, der Noomi geboren sei – nicht Rut.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. goel',
@@ -5818,6 +6132,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text ist eines der schärfsten machtkritischen Stücke der Bibel. Die Aufzählung – Söhne für das Heer, Töchter für den Hof, der Zehnte von Feld und Herde, Zwangsarbeit – entspricht dem, was aus altorientalischen Verwaltungsarchiven über Hofhaltungen bekannt ist. Die Forschung liest hier meist zwei Stimmen: eine königsfreundliche, die Saul als Retter zeigt, und eine königskritische, die im Wunsch nach einem König eine Absage an Gott sieht. Beide stehen unausgeglichen nebeneinander.',
     reception:
       'Das Kapitel ist einer der ältesten Texte der Herrschaftskritik überhaupt. In der Reformationszeit wurde es gegen absolutistische Ansprüche angeführt, im 17. Jahrhundert in England von den Gegnern des Königtums, und in der amerikanischen Unabhängigkeitsbewegung zitierte Thomas Paine es in *Common Sense* ausführlich gegen die Monarchie.\n\nIn der Bibel selbst steht die Gegenstimme daneben: Andere Texte in denselben Büchern sehen im Königtum eine Gabe Gottes, und die Zusage an David in 2. Samuel 7 setzt es voraus. Die Sammlung hält beide Beurteilungen nebeneinander aus, ohne zu entscheiden.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Ein König bedeutete konkret: stehendes Heer, Steuerverwaltung, Fronarbeit, Hofhaltung. Genau das zählt Samuel in Vers 11 bis 17 auf, und Ausgrabungen bestätigen es – Verwaltungsbauten, Vorratshäuser, Ostraka mit Abgabenlisten. Die Rede ist kein Vorurteil, sondern eine Kostenschätzung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ohne Königtum lief Verteidigung über Aufgebote der Sippen, die zusammenkamen, wenn Not war, und danach heimgingen. Gegen die Philister mit ihren befestigten Städten und ihrer Metallverarbeitung reichte das nicht mehr. „Wie alle Heiden“ ist deshalb kein Modewunsch, sondern eine Sicherheitsfrage.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Anlass ist die Bestechlichkeit von Samuels Söhnen. Rechtsprechung war ein Amt ohne Gehalt, das sich aus Gebühren und Geschenken finanzierte – die Grenze zur Bestechung war fließend, und die Propheten klagen sie durchgehend ein. Das Volk verlangt einen König, weil die alte Ordnung an dieser Stelle versagt.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. mischpat hammelech',
@@ -5861,6 +6189,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Wortspiel mit „Haus“ trägt das ganze Kapitel: Palast, Tempel und Dynastie heißen im Hebräischen gleich. Aus dieser Zusage entwickelt sich die messianische Erwartung: ein Nachkomme Davids, dessen Thron Bestand hat. Als die Dynastie 587 v. Chr. endete, wurde die Verheißung nicht aufgegeben, sondern in die Zukunft verlegt. Das Neue Testament setzt genau hier an, wenn es Jesus als „Sohn Davids“ bezeichnet.\n\nBevor die Zusage kommt, steht eine Zurückweisung: Gott hat nie um einen Tempel gebeten und ist bisher „im Zelt umhergezogen“ – Vers 7 fragt ausdrücklich, ob er je gefordert habe, ihm ein Zedernhaus zu bauen. Auch der Prophet Nathan steht schlecht da: Er stimmt Davids Plan zuerst zu und muss ihn in derselben Nacht widerrufen. Die Forschung sieht im Kapitel mehrere Schichten; die Zusage einer ewigen Dynastie dürfte in ihrer heutigen Form nach dem Ende des Königtums überarbeitet worden sein – als Festhalten an einem Versprechen, dessen Erfüllung nicht mehr zu sehen war.',
     reception:
       'Aus diesem Kapitel wächst die messianische Erwartung. Die Rede vom „Sohn Davids“ in den Evangelien, der Stammbaum bei Matthäus, die Weihnachtserzählung in Bethlehem – alles bezieht sich auf diese Zusage. Im Judentum ist der davidische Messias bis heute eine Hoffnung auf die Zukunft, im Christentum eine Aussage über Jesus; an dieser Stelle trennen sich die Wege.\n\nDie Zusage hat auch politisch gewirkt: Europäische Könige ließen sich mit Verweis auf David salben, und das Gottesgnadentum berief sich auf Vers 14 – „ich will sein Vater sein“. Dass derselbe Vers ausdrücklich Strafe für Missetat vorsieht, wurde dabei regelmäßig überlesen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Einen Tempel zu bauen war Königspflicht im ganzen Alten Orient: Er beglaubigte die Herrschaft, band die Gottheit an die Hauptstadt und machte den Kult kontrollierbar. Wer den Tempel baute, verfügte über die Priesterschaft. Dass die Erlaubnis hier ausbleibt, entzieht David genau diesen Zugriff.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Jerusalem war eben erst erobert und gehörte keinem Stamm – eine neutrale Hauptstadt, in die David die Lade holte. Tempel und Königspalast nebeneinander wären der letzte Schritt gewesen, aus einem Stämmebund einen Staat zu machen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Ein Gott im Zelt war kein Provisorium, sondern die Form, in der Gottheiten mit wandernden Gruppen mitzogen; ägyptische und arabische Belege kennen tragbare Heiligtümer. Die Rückfrage in Vers 7, ob er je ein Zedernhaus verlangt habe, verteidigt diese ältere Form gegen die neue.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. bajit',
@@ -5909,6 +6251,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der erste Satz setzt den Ton: „zur Zeit, wann die Könige pflegen auszuziehen“ – und David zieht nicht aus. Die Erzählung vermeidet jedes Innenleben; sie berichtet nur Handlungen, in immer kürzeren Schritten. Bemerkenswert ist die Rolle Urias: Der Hetiter, also ein Ausländer, verhält sich vorbildlich, während der König Israels alle Regeln bricht. Dass eine Königsgeschichte des Alten Orients ihren Herrscher so darstellt, hat kaum Parallelen – Hofchroniken feierten üblicherweise.',
     reception:
       'Die Erzählung ist über Jahrhunderte als Ehebruchsgeschichte gelesen worden, mit Batseba als Verführerin – ein Bild, das die Malerei von Rembrandt bis Chagall geprägt hat. Der Text selbst gibt das nicht her: Batseba spricht in Kapitel 11 kein einziges Wort, sie handelt nicht, und das Machtgefälle ist absolut.\n\nSeit den 1980er Jahren wird die Szene deshalb in der Exegese überwiegend als sexualisierter Machtmissbrauch beschrieben. In den kirchlichen Aufarbeitungsprozessen der Gegenwart gehört sie zu den am häufigsten herangezogenen biblischen Texten – gerade weil die Bibel den Vorgang nicht beschönigt und in Kapitel 12 einen Propheten dagegenstellt.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Häuser hatten Flachdächer, die als Arbeits- und Schlafplatz dienten – dort wurde getrocknet, geschlafen, gebadet. Ein Palastdach überragte die Nachbarschaft. Der Text sagt damit nicht, dass Batseba sich zeigte, sondern dass David von oben in fremde Höfe sah.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Satz „zur Zeit, wenn die Könige ausziehen“ ist ein Vorwurf im Nebensatz: Der König gehörte an die Front. Stattdessen schickt er Joab. Alles Weitere geschieht, weil einer im Palast bleibt, der dort nichts zu tun hat.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Uria ist Hethiter, also Söldner im Dienst der Krone, und hält sich an die Regel, dass Kämpfende im Feldzug enthaltsam bleiben. Seine Weigerung, nach Hause zu gehen, ist Dienstauffassung – und macht die Vertuschung unmöglich. Der Brief, den er dann selbst überbringt, ist sein Todesurteil.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. schalach',
@@ -5997,6 +6353,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Nabots Weigerung ist keine Sturheit: Erbbesitz galt als unverkäuflich, weil er die Familie über Generationen trug; 3. Mose 25 verbietet den endgültigen Verkauf ausdrücklich. Ahab akzeptiert das zunächst und schmollt. Isebel, aufgewachsen am phönizischen Hof mit absolutem Königtum, versteht die Zurückhaltung nicht – für sie ist der Fall eine Frage der Verfügungsgewalt. Sie hält die Form ein: Fasten, Versammlung, zwei Zeugen, wie das Gesetz sie verlangt. Gerade die korrekte Form macht den Justizmord möglich.',
     reception:
       'Nabots Weinberg ist der biblische Musterfall für Landraub durch Mächtige und gehört zu den meistzitierten Texten der kirchlichen Sozialethik. In Lateinamerika, Südafrika und in Landrechtskonflikten der Gegenwart wird er regelmäßig angeführt; die Bodenreformdebatten des 20. Jahrhunderts haben ihn ebenso gebraucht.\n\nAuffällig ist, wie das Verbrechen abläuft: Nicht der König greift zu, sondern die Königin organisiert ein förmliches Verfahren mit zwei Zeugen, einem Fasttag und einem Gerichtsspruch. Der Text beschreibt Rechtsbeugung, nicht Willkür – und das ist der Grund, warum er in juristischen Zusammenhängen so oft zitiert wird.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Land war nach 3. Mose 25 unverkäuflich: Es gehörte Gott und war der Sippe zugeteilt, damit jede Familie ihre Grundlage behielt. Nabot beruft sich nicht auf Sturheit, sondern auf geltendes Recht. Ahab weiß das und kann nichts machen – deshalb legt er sich ins Bett.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Isebel kommt aus einer Stadtkultur, in der der König über den Boden verfügte; ihr Unverständnis in Vers 7 ist echt. Das Verfahren, das sie einsetzt – Fasttag, zwei Zeugen, Gotteslästerungsvorwurf, Steinigung – hält sich formal an das Recht, das Nabot schützen sollte.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ein Weinberg war Generationenarbeit: Terrassen anlegen, Steine lesen, Reben ziehen, Mauern und Turm bauen; bis zum vollen Ertrag vergingen Jahre. Ihn in einen Gemüsegarten neben dem Palast zu verwandeln, hätte diese Arbeit vernichtet – der Erzähler nennt das Vorhaben mit Absicht so kleinlich.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. nachalat abotaj',
@@ -6127,6 +6497,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Bericht ist knapp und ohne Deutung – umso härter. Die babylonische Chronik bestätigt die Ereignisse von außen; die Lachisch-Briefe, Tonscherben mit Meldungen aus den letzten Wochen, geben einen Eindruck vom Zusammenbruch der Verteidigung. Was danach begann, war paradox: Nicht das Ende des Glaubens, sondern seine Umformung. Ohne Tempel und Staat entstanden Sammlung und Verschriftlichung der Überlieferung, Sabbat und Beschneidung wurden zu tragenden Kennzeichen. Ein erheblicher Teil des Alten Testaments hat in dieser Zeit seine Gestalt gefunden.',
     reception:
       'Der Fall Jerusalems 587 vor Christus ist durch die babylonische Chronik unabhängig bezeugt und gilt als eines der bestdatierten Ereignisse der israelitischen Geschichte. Ausgrabungen haben Brandschichten und Pfeilspitzen freigelegt; die Lachisch-Ostraka aus derselben Zeit lassen die letzten Tage der Verteidigung erahnen.\n\nDer 9. Aw ist im Judentum bis heute der Trauertag für beide Tempelzerstörungen; gelesen werden dann die Klagelieder. Das Kapitel endet mit einer kleinen Nachricht, die in der Auslegung viel Gewicht bekommen hat: Der weggeführte König Jojachin wird nach 37 Jahren aus dem Kerker geholt und darf am Tisch des babylonischen Königs essen. Das Geschichtswerk endet nicht mit dem Untergang, sondern mit einer offenen Tür.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Belagert wurde ausgehungert: Die babylonische Armee schloss die Stadt ein und wartete. Achtzehn Monate lang – bis der Vorrat aufgebraucht war. Die Klagelieder beschreiben, was das hieß. Erst danach wurde die Mauer durchbrochen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Zurück blieben „die Geringsten im Lande“, und sie bekamen Weinberge und Äcker. Wer nichts besessen hatte, wurde durch den Untergang des Staates zum Bauern mit eigenem Land. Der Text hält diesen Umbruch in einem einzigen Satz fest, ohne ihn zu bewerten.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Behandlung Zedekias – die Söhne vor seinen Augen getötet, dann geblendet, in Ketten weggeführt – entspricht der bezeugten Praxis gegenüber eidbrüchigen Vasallen. Er hatte Nebukadnezar Treue geschworen und den Eid gebrochen; assyrische und babylonische Quellen kennen dieselbe Strafenfolge.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. nebuzaradan',
@@ -6740,6 +7124,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Vorwurf des Priesters ist bemerkenswert offen: Bethel sei „ein Heiligtum des Königs und ein Reichstempel“ – Religion als Staatsangelegenheit, ausgesprochen ohne Verlegenheit. Amos entgegnet, er sei weder Prophet noch Prophetenschüler, sondern Viehzüchter und Maulbeerfeigenzüchter. Damit lehnt er den Berufsstand ab: Er lebt nicht davon und ist deshalb nicht erpressbar. Amos stammte aus Tekoa in Juda und ging in das reichere Nordreich hinauf – ein Ausländer, der die Verhältnisse kritisierte.',
     reception:
       'Die Szene ist der biblische Musterfall für den Konflikt zwischen Amtskirche und prophetischer Kritik und wird in Auseinandersetzungen um kirchliche Meinungsfreiheit regelmäßig zitiert. Der Vorwurf, ein Prediger solle „woanders sein Brot essen“, ist über Jahrhunderte in ähnlichen Konflikten wiederholt worden.\n\nBonhoeffer, Martin Luther King und die Kirchen im DDR-Herbst 1989 haben sich auf Amos berufen. Auffällig ist, dass die Erzählung ohne Auflösung endet: Amos antwortet mit einem Gerichtswort über Amazja, und ob er das Land verlässt, wird nicht gesagt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Bethel war Staatstempel: gegründet von Jerobeam I. als Gegengewicht zu Jerusalem, unterhalten von der Krone, geleitet von einem königlich bestellten Priester. Amazja handelt deshalb als Beamter, nicht als Frommer – er schützt eine Einrichtung, und die Anzeige beim König ist Dienstweg.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Amos verweist auf seinen Beruf: Rinderhirt und einer, der Maulbeerfeigen ansticht – eine Arbeit, die die Frucht zum Reifen bringt und in Judäa in tiefen Lagen anfiel. Er beschreibt sich damit als Mann mit eigenem Einkommen, der auf Zuwendungen nicht angewiesen ist.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Prophetie war teils ein Gewerbe: Am Hof und an Heiligtümern gab es Prophetengruppen, die von ihren Sprüchen lebten und deshalb im Verdacht standen, das Gewünschte zu sagen. Amazjas Vorwurf, Amos solle anderswo sein Brot essen, unterstellt genau das.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. miqdasch melech',
@@ -6784,6 +7182,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Buch ist keine Prophetenschrift wie die anderen: Es enthält fast keine Prophetenworte, dafür eine durchkomponierte Erzählung mit Ironie. Die Seeleute beten, werfen Lose, sträuben sich gegen den Menschenwurf und fürchten am Ende Gott – während der Prophet unter Deck schläft. Diese Umkehrung ist das Verfahren des ganzen Buches. Ninive war zur mutmaßlichen Abfassungszeit längst zerstört; die Wahl gerade dieser Stadt ist deshalb bewusst provozierend gesetzt.\n\nDie Richtung ist die erste Pointe: Jona soll nach Osten, er fährt nach Westen – Tarsis liegt vermutlich in Spanien, am anderen Ende der bekannten Welt. Und alles im Kapitel geht abwärts: Er geht hinab nach Japho, hinab ins Schiff, hinab in den untersten Raum, hinab in den Schlaf, schließlich hinab ins Meer; dasselbe hebräische Verb steht fünfmal. Auch die Zahlen sind auffällig rund – drei Tage Wegstrecke, vierzig Tage Frist, hundertzwanzigtausend Einwohner. Das ist die Bauart einer Lehrerzählung, nicht die einer Chronik.',
     reception:
       'Kaum eine biblische Erzählung ist so oft zum Prüfstein gemacht worden: Wer den Fisch für historisch hält, gilt in manchen Kreisen als bibeltreu, wer nicht, als liberal. Die Gattungsfrage ist in der Forschung jedoch weitgehend geklärt – Ironie, Übertreibung und die aufreizend runden Zahlen sprechen für eine Lehrerzählung, nicht für einen Bericht.\n\nIn der christlichen Kunst ist Jona das häufigste alttestamentliche Motiv der frühen Katakomben, weil die drei Tage im Fisch früh auf die Grablegung Jesu gedeutet wurden. Im Judentum wird das ganze Buch am Nachmittag des Versöhnungstags gelesen – als Text über Umkehr, die auch Feinden offensteht.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Ninive war ab Sanherib Hauptstadt Assyriens, mit einer Mauer von rund zwölf Kilometern Umfang und einem Kanalsystem aus dem Bergland. Für Israel war es der Ort, von dem die Deportationen ausgingen. Eine Stadt, der Umkehr angeboten wird, war die denkbar unangenehmste Wahl.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Seefahrt war Küstenschifffahrt: Man segelte auf Sicht, mied den Winter und rechnete mit Verlusten. Die Besatzung wirft die Ladung über Bord – also den Zweck der Reise – und rudert vergeblich, bevor sie zum Losentscheid greift. Der Erzähler schildert einen geordneten Ablauf, den jeder Hafenbewohner kannte.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Dass ein Unglück auf See einen Schuldigen hat und das Los ihn findet, war verbreitete Überzeugung – die Seeleute handeln nach dem Stand ihres Wissens und ausgesprochen gewissenhaft: Sie beten, sie versuchen erst umzukehren, sie wollen den Fremden nicht opfern. Der Erzähler stellt ihr Verhalten dem des Propheten gegenüber.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. jarad',
@@ -8446,6 +8858,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Im Zusammenhang geht es um die Zusage von Nachkommenschaft an einen kinderlosen alten Mann. Das hebräische Wort für „glauben“ hat mit Festigkeit zu tun – es steckt im Wort Amen. „Anrechnen“ stammt aus der Buchführung und wird sonst für priesterliche Anerkennung eines Opfers verwendet. Paulus baut auf diesem Vers seine gesamte Argumentation in Römer 4 auf, und Jakobus zitiert denselben Vers für die entgegengesetzte These.\n\nGrammatisch ist der Satz offener, als seine Wirkungsgeschichte vermuten lässt. Wer wem was anrechnet, steht nicht ausdrücklich da: Meist wird gelesen, dass Gott dem Abram den Glauben als Gerechtigkeit anrechnet – möglich wäre auch, dass Abram Gottes Zusage als Gerechtigkeit anerkennt. Und der Vers steht nicht allein: Unmittelbar danach verlangt Abram ein Zeichen – „woran soll ich merken, dass ich es besitzen werde?“ –, und Gott antwortet mit einem Bundesritual zwischen zerteilten Tieren. Der Glaube, den der Vers lobt, verträgt sich also mit einer Rückfrage.',
     reception:
       'An diesem halben Vers hängt die abendländische Theologiegeschichte. Paulus baut auf ihm seine Argumentation in Römer 4 und Galater 3 auf – gegen die Beschneidung als Bedingung –, Jakobus zitiert ihn in Kapitel 2 mit umgekehrter Stoßrichtung, und Luther fand in ihm die Rechtfertigung allein aus Glauben. Das Konzil von Trient und die Reformatoren stritten darüber, ob „anrechnen“ eine Zusprechung oder eine Verwandlung meint.\n\nIm Judentum ist der Vers nie so zentral gewesen. Dort steht Abraham vor allem für Treue in Prüfungen – und die rabbinische Auslegung hält fest, dass sein Glaube sich in Taten zeigte, was den Streit zwischen Paulus und Jakobus in gewisser Weise vorwegnimmt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Kinderlosigkeit war ein Rechtsproblem, kein Gefühl: Ohne Sohn fiel das Vermögen an einen Hausverwalter oder an Seitenlinien. Verträge aus Nuzi zeigen genau die Lösung, die Abram in Vers 2 nennt – die Adoption eines Bediensteten als Erben, der den Adoptierenden bis zum Tod versorgt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Zeremonie mit zerteilten Tieren, durch die etwas hindurchzieht, ist der übliche Vollzug eines Bundesschlusses im Alten Orient: Wer den Vertrag bricht, dem soll geschehen wie diesen Tieren. Belege gibt es in Verträgen aus Mari und Sefire. Auffällig ist, wer hier allein hindurchgeht.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Sterne zählen konnte nur, wer nachts im Freien lebte. In einer Welt ohne künstliches Licht war der Himmel Kalender, Kompass und Uhr; Hirten kannten Aufgang und Stand der Gestirne genau. Die Aufforderung ist deshalb an einen Fachmann gerichtet und beschreibt eine Aufgabe, die er als unlösbar erkennt.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. aman',
@@ -9680,6 +10106,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Reaktion folgt den Trauerriten der Zeit: Kleider zerreißen, das Haupt scheren, sich zur Erde werfen. Der Satz, den Hiob dabei spricht, ist zur Formel geworden; im Text ist er keine Erklärung, sondern ein Lobpreis mitten im Zusammenbruch. Der Erzähler fügt eigens hinzu, Hiob habe nicht töricht geredet. Wer das Buch weiterliest, findet allerdings ab Kapitel 3 einen ganz anderen Ton: Hiob verflucht den Tag seiner Geburt.',
     reception:
       'Der Satz „der HERR hat’s gegeben, der HERR hat’s genommen“ gehört zu den meistgesprochenen Sätzen am Grab und ist über Brahms und zahllose Trauerlieder in die Musik eingegangen. Er ist zugleich einer der am schwersten zu sprechenden: Wo er Trauernden zugemutet wird, kann er als Aufforderung ankommen, nicht zu klagen.\n\nDas Buch selbst arbeitet dagegen. Was Hiob in den folgenden neununddreißig Kapiteln sagt, ist das Gegenteil ergebener Zustimmung – und am Ende erklärt Gott ausgerechnet ihn für im Recht, nicht die Freunde, die ihn zur Ergebenheit anhalten wollten.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Kleider zerreißen, den Kopf scheren, sich auf die Erde setzen – Trauer war körperlich, öffentlich und in festen Formen geregelt. Wer nicht so trauerte, fiel auf. Die Handlungen sind kein Ausbruch, sondern das Protokoll, das jeder kannte.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Hiobs Vermögen wird in Tieren gezählt: siebentausend Schafe, dreitausend Kamele, fünfhundert Joch Rinder, fünfhundert Eselinnen. Das ist die Bilanz eines Großviehzüchters, nicht eines Königs – Reichtum bestand aus Herden, Weiderechten und Gesinde, und alles davon war an einem Tag zu verlieren.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Zusammenhang von Wohlergehen und Gerechtigkeit war die selbstverständliche Annahme der ganzen Region: Wem es gut geht, der steht gut mit der Gottheit. Genau deshalb ist die Rahmenerzählung so gebaut, dass der Leser weiß, was die Freunde nicht wissen können.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. natan / laqach',
