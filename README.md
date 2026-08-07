@@ -216,13 +216,32 @@ darf nicht ohne Vereinbarung eingebettet werden. Nötig ist eine Lizenz von
 Biblica/Fontis oder die Anbindung über eine lizenzierte Schnittstelle wie
 [API.Bible](https://scripture.api.bible/).
 
+Als **Vergleichstext** liegt die **King James Version** bei – ebenfalls
+gemeinfrei. Sie erscheint im Vers-Panel unter dem deutschen Wortlaut und lässt
+sich unter *Ich → Darstellung* abschalten.
+
 Die Architektur ist deshalb von Anfang an **übersetzungs-agnostisch**: Eine
 Übersetzung ist nur ein Datensatz unter `public/bibel/<id>/`. Sobald die
 Lizenz vorliegt, wird die HFA als weiterer Datensatz ergänzt und in
-`src/lib/bibleData.ts` aktiviert – ohne Änderung an der Oberfläche. Derselbe
-Mechanismus ermöglicht später den Übersetzungsvergleich (Konzept, Idee 5).
+`src/lib/bibleData.ts` aktiviert – ohne Änderung an der Oberfläche.
 
-Rohdaten der Lutherbibel 1912: [wldeh/bible-api](https://github.com/wldeh/bible-api).
+Rohdaten beider Übersetzungen: [wldeh/bible-api](https://github.com/wldeh/bible-api).
+
+### Zur Verszählung des Vergleichs
+
+Beide Fassungen stammen aus derselben Quelle und sind dort nach der
+international üblichen Zählung abgelegt. `node scripts/check-translations.mjs`
+weist nach, dass alle 1189 Kapitel in beiden Fassungen dieselbe Verszahl haben
+und kein Vers leer ist – eine Stelle steht also unter derselben Nummer.
+
+Das ist eine notwendige, keine hinreichende Bedingung: Zwei Ausgaben können
+gleich viele Verse haben und die Grenzen trotzdem anders ziehen. In den
+Psalmen zählt der deutsche Text die Überschrift zum ersten Vers, die englische
+Ausgabe setzt sie darüber; in Johannes 10 verschiebt sich die Teilung für drei
+Verse. Ein Umrechnungsschlüssel dafür ließe sich nicht ehrlich aufstellen –
+deshalb führen im Vers-Panel zwei Pfeile zum Nachbarvers, und der Versatz wird
+angezeigt. Das Prüfskript nennt zusätzlich die Kapitel, in denen sich die
+Textmenge am stärksten unterschiedlich verteilt.
 
 Die Küstenlinien des Kartenmoduls stammen aus
 [Natural Earth](https://www.naturalearthdata.com/) (gemeinfrei) und liegen
@@ -236,6 +255,7 @@ werden dabei 19 KB für den Ausschnitt der biblischen Welt.
 
 ```
 public/bibel/luther1912/   Bibeltext: index.json + eine Datei je Buch
+public/bibel/kjv/          Englischer Vergleichstext, gleicher Aufbau
 brand/                     Logo-Vorlage, aus der die Bilder erzeugt werden
 server/
   entgegen-server.mjs      Eigener Server: liefert die App aus, hält den Schlüssel
@@ -244,6 +264,8 @@ server/
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
+  fetch-kjv.mjs            Englischen Vergleichstext aus der Quelle holen
+  check-translations.mjs   Grundtext und Vergleich auf gleiche Zählung prüfen
   build-map-data.mjs       Natural-Earth-Küstenlinien zuschneiden
   build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
   build-brand.py           Icon und Schriftzug aus der Logo-Vorlage schneiden
@@ -310,6 +332,14 @@ Eine andere Quelle lässt sich so einbinden:
 
 ```bash
 node scripts/build-bible-data.mjs <quellverzeichnis> <übersetzungs-id>
+```
+
+Den englischen Vergleichstext erneuert man in zwei Schritten:
+
+```bash
+node scripts/fetch-kjv.mjs                          # rund 1200 Kapitel holen
+node scripts/build-bible-data.mjs .rohdaten/en-kjv kjv
+node scripts/check-translations.mjs                 # Zählung gegenprüfen
 ```
 
 ---
@@ -593,6 +623,6 @@ node scripts/test-singlefile.mjs
 ## Nächste Schritte (Phase 4 laut Konzept)
 
 - Gruppenmodus für Hauskreise: geteilte Notizen und Diskussionsfragen
-- Übersetzungsvergleich, sobald eine zweite Übersetzung lizenziert ist
+- Deutscher Zweittext, sobald eine moderne Übersetzung lizenziert ist
 - Vorlesefunktion und Erinnerungen für den Leseplan
 - Weiterer redaktioneller Ausbau der Kontextartikel und des Lexikons

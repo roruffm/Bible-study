@@ -10,7 +10,7 @@ import {
   isOfflineSupported,
   type OfflineStatus,
 } from '../lib/offline';
-import { findBook, TRANSLATION_LABEL } from '../lib/bibleData';
+import { COMPARISON_LABEL, findBook, TRANSLATION_LABEL } from '../lib/bibleData';
 import {
   deleteNote,
   getHighlights,
@@ -207,7 +207,8 @@ function OfflineCard() {
       <div className="section-title">Offline lesen</div>
       <p className="settings-row__hint" style={{ marginBottom: '0.7rem' }}>
         Gelesene Kapitel bleiben automatisch gespeichert. Für den vollständigen Text ohne
-        Verbindung lädt der Knopf alle 66 Bücher – rund 4 MB.
+        Verbindung lädt der Knopf alle 66 Bücher – rund 4 MB, mit eingeschaltetem englischem
+        Vergleichstext rund 8 MB.
       </p>
 
       <div className="tile__value">
@@ -410,6 +411,30 @@ export default function MePage() {
                 aria-label="Schriftgröße"
               />
             </div>
+
+            <div className="settings-row">
+              <div>
+                <div className="settings-row__label">Englischer Vergleichstext</div>
+                <div className="settings-row__hint">
+                  Zeigt beim Antippen eines Verses die {COMPARISON_LABEL} dazu.
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '0.3rem' }}>
+                {[
+                  { on: true, label: 'Ein' },
+                  { on: false, label: 'Aus' },
+                ].map((choice) => (
+                  <button
+                    key={choice.label}
+                    type="button"
+                    className={`chip${settings.showComparison === choice.on ? ' chip--active' : ''}`}
+                    onClick={() => setSettings({ showComparison: choice.on })}
+                  >
+                    {choice.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           <OfflineCard />
@@ -425,6 +450,10 @@ export default function MePage() {
             <div className="settings-row">
               <span className="settings-row__label">Textgrundlage</span>
               <strong>{TRANSLATION_LABEL}</strong>
+            </div>
+            <div className="settings-row">
+              <span className="settings-row__label">Vergleichstext</span>
+              <strong>{COMPARISON_LABEL}</strong>
             </div>
           </div>
 

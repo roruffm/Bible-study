@@ -8,6 +8,9 @@
  * Erwartete Quellstruktur (wldeh/bible-api):
  *   <quelle>/books/<buch>/chapters/<kapitel>.json  →  { data: [{ verse, text }] }
  *
+ * Der Verzeichnisname eines Buches steht in der Sprache der Übersetzung; welche
+ * Spalte der Buchliste ihn liefert, entscheidet die Übersetzungs-Kennung.
+ *
  * Ergebnis:
  *   public/bibel/<id>/<buchId>.json   { id, name, chapters: [ [vers, …], … ] }
  *   public/bibel/<id>/index.json      Buch-Metadaten inkl. Kapitel-/Verszahlen
@@ -34,13 +37,38 @@ if (!sourceDir) {
 const outDir = join(ROOT, 'public', 'bibel', translationId);
 mkdirSync(outDir, { recursive: true });
 
+/**
+ * Welche Spalte der Buchliste den Verzeichnisnamen im Rohbestand liefert.
+ * Die Quelle benennt ihre Verzeichnisse in der Sprache der jeweiligen
+ * Übersetzung – „1.mose“ dort, „genesis“ hier.
+ */
+const SOURCE_COLUMN = { luther1912: 4, kjv: 5 };
+const sourceColumn = SOURCE_COLUMN[translationId] ?? 4;
+
 /** Entfernt Reste von Auszeichnungen und normalisiert Leerraum. */
 function cleanVerse(text) {
   return String(text)
     .replace(/\{[^}]*\}/g, '')       // Strong-Nummern u. Ä.
     .replace(/<[^>]*>/g, '')          // XML-/HTML-Reste
+    .replace(/¶/g, '')                // Absatzzeichen der King-James-Ausgabe
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/**
+ * Im englischen Bestand hängen die Randbemerkungen der Übersetzer ohne
+ * Trennung am Versende, eingeleitet von der eigenen Stellenangabe – etwa
+ * „…their possessions.1.17 deliverance: or, they that escape“. Sie gehören
+ * nicht zum Bibeltext und werden abgeschnitten.
+ *
+ * Der Marker ist eindeutig: Er besteht aus der Kapitel- und Versnummer des
+ * Verses selbst. Im Rumpf der King-James-Verse kommt überhaupt keine Ziffer
+ * vor, im Luthertext taucht das Muster nirgends auf – ein Fehlschnitt ist
+ * damit ausgeschlossen.
+ */
+function stripMarginalNotes(text, chapter, verse) {
+  const at = text.indexOf(`${chapter}.${verse} `);
+  return at > 0 ? text.slice(0, at).trim() : text;
 }
 
 /**
@@ -61,7 +89,9 @@ let totalVerses = 0;
 let altCount = 0;
 const problems = [];
 
-for (const [id, name, abbr, group, source] of BOOKS) {
+for (const book of BOOKS) {
+  const [id, name, abbr, group] = book;
+  const source = book[sourceColumn];
   const chapterDir = join(sourceDir, 'books', source, 'chapters');
 
   let chapterFiles;
@@ -91,7 +121,11 @@ for (const [id, name, abbr, group, source] of BOOKS) {
     for (const row of rows) {
       const number = Number.parseInt(row.verse, 10);
       if (!Number.isInteger(number) || number < 1) continue;
-      const { text, alt } = extractAltNumbering(cleanVerse(row.text));
+      // Der englische Bestand führt jeden Vers doppelt auf, beide Male mit
+      // demselben Wortlaut. Weil nach Versnummer einsortiert wird, überschreibt
+      // der zweite Eintrag den ersten und richtet keinen Schaden an.
+      const cleaned = stripMarginalNotes(cleanVerse(row.text), chapterNumber, number);
+      const { text, alt } = extractAltNumbering(cleaned);
       verses[number - 1] = text;
       if (alt) altNumbering[`${chapterNumber}.${number}`] = alt;
     }

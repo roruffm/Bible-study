@@ -67,6 +67,8 @@ export interface Settings {
   theme: ThemeName;
   fontScale: number;
   showHeadings: boolean;
+  /** Englischen Vergleichstext im Vers-Panel einblenden. */
+  showComparison: boolean;
 }
 
 export interface Note {

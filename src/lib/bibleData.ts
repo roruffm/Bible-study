@@ -1,4 +1,4 @@
-import { embeddedPayload } from './embedded';
+import { embeddedPayload, isSingleFile } from './embedded';
 import type { BibleIndex, BookContent, BookMeta, VerseRef } from './types';
 
 export { isSingleFile } from './embedded';
@@ -53,6 +53,55 @@ export function loadBook(bookId: string): Promise<BookContent> {
     });
     promise.catch(() => bookPromises.delete(bookId));
     bookPromises.set(bookId, promise);
+  }
+  return promise;
+}
+
+/* -------------------------------------------------------- Vergleichstext */
+
+/**
+ * Neben dem Luthertext liegt eine zweite Übersetzung bereit, die im Vers-Panel
+ * zum Vergleich eingeblendet wird. Sie stammt aus demselben Rohdatenbestand und
+ * folgt derselben Kapitel- und Verszählung – der Vers mit einer bestimmten
+ * Nummer ist in beiden Ausgaben derselbe.
+ *
+ * Zwei Einschränkungen bleiben: In den Psalmen zählt der deutsche Text die
+ * Überschrift zum ersten Vers, die englische Ausgabe setzt sie davor; und an
+ * einigen Stellen ziehen die Ausgaben die Versgrenze verschieden. Deshalb kann
+ * man im Panel zum Nachbarvers weiterblättern.
+ */
+export const COMPARISON = 'kjv';
+
+export const COMPARISON_LABEL = 'King James Version';
+
+export const COMPARISON_NOTE = 'Englisch, Ausgabe von 1769 – gemeinfrei';
+
+const COMPARISON_BASE = `${import.meta.env.BASE_URL}bibel/${COMPARISON}`;
+
+const comparisonPromises = new Map<string, Promise<BookContent>>();
+
+/**
+ * Steht der Vergleichstext zur Verfügung? In der Einzeldatei-Fassung nicht:
+ * Sie trägt nur den Luthertext im Gepäck und würde sonst doppelt so groß.
+ */
+export function hasComparison(): boolean {
+  return !isSingleFile();
+}
+
+/** Lädt ein Buch des Vergleichstextes – wie `loadBook`, nur aus dem zweiten Bestand. */
+export function loadComparisonBook(bookId: string): Promise<BookContent> {
+  if (!hasComparison()) {
+    return Promise.reject(new Error('Der Vergleichstext ist in dieser Fassung nicht enthalten.'));
+  }
+
+  let promise = comparisonPromises.get(bookId);
+  if (!promise) {
+    promise = fetch(`${COMPARISON_BASE}/${bookId}.json`).then((r) => {
+      if (!r.ok) throw new Error(`Vergleichstext zu "${bookId}" nicht gefunden (${r.status})`);
+      return r.json() as Promise<BookContent>;
+    });
+    promise.catch(() => comparisonPromises.delete(bookId));
+    comparisonPromises.set(bookId, promise);
   }
   return promise;
 }

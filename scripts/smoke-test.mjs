@@ -48,6 +48,18 @@ check('Panel zeigt historischen Kontext', kontext.includes('Nikodemus'), kontext
 check('Grundlagen fallen auf die Literatur zum Buch zurück', kontext.includes('Schnackenburg'), (kontext.match(/Grundlagen:[^]{0,60}/) ?? [''])[0]);
 await page.screenshot({ path: `${OUT}/02-leseansicht-panel.png` });
 
+// Der englische Vergleichstext steht unter dem deutschen Vers – über allen
+// Reitern, weil er zum Vers gehört und nicht zu einem Studienschritt.
+const kjv = (await page.locator('.compare').textContent()) ?? '';
+check('Panel zeigt die King James Version', kjv.includes('King James Version') && kjv.includes('For God so loved the world'), (kjv.match(/For God[^]{0,50}/) ?? [''])[0]);
+check('Der Vergleich nennt dieselbe Versnummer', ((await page.locator('.compare__ref').textContent()) ?? '').includes('3:16'), (await page.locator('.compare__ref').textContent()) ?? '');
+// Wo die Ausgaben die Versgrenze verschieden ziehen, führen die Pfeile zum
+// Nachbarvers; der Versatz wird dabei ausgewiesen.
+await page.locator('.compare__step .btn').first().click();
+const kjvZurueck = (await page.locator('.compare').textContent()) ?? '';
+check('Der Pfeil führt zum vorigen englischen Vers', kjvZurueck.includes('eternal life') && kjvZurueck.includes('Verschoben um -1'), (kjvZurueck.match(/That whosoever[^]{0,40}/) ?? [''])[0]);
+await page.locator('.compare__step .btn').last().click();
+
 // „Mehr erfahren“ blendet die Vertiefung ein: weitere Absätze, die Wörter des
 // Urtextes und die Wirkungsgeschichte.
 await page.getByRole('button', { name: 'Mehr erfahren' }).click();
@@ -261,11 +273,19 @@ check(
   (await page.locator('.mention__fact').first().textContent()) === 'ein Tageslohn',
   (await page.locator('.mention__fact').first().textContent()) ?? '',
 );
+await page.screenshot({ path: `${OUT}/21-sachwissen.png` });
+
+// Wo noch kein Artikel steht, tritt die Einordnung des Buches an seine Stelle.
+// Der Bestand wächst, deshalb muss hier eine Stelle gewählt sein, die keinen
+// eigenen Artikel hat – Apg 3,6 nennt vier Lexikoneinträge und keinen Abschnitt.
+await page.goto(BASE + '/bibel/apg/3?vers=6', { waitUntil: 'networkidle' });
+await page.waitForSelector('.panel');
+const ohneArtikel = (await page.locator('.panel__article').textContent()) ?? '';
 check(
   'Auch ohne eigenen Artikel gibt es Hintergrund',
-  ((await page.locator('.panel__article').textContent()) ?? '').includes('kein eigener Artikel'),
+  ohneArtikel.includes('kein eigener Artikel') && (await page.locator('.mention').count()) >= 2,
+  `${await page.locator('.mention').count()} Sacheinträge`,
 );
-await page.screenshot({ path: `${OUT}/21-sachwissen.png` });
 
 // 14. Zeitleiste
 await page.goto(BASE + '/studium/zeitleiste', { waitUntil: 'networkidle' });

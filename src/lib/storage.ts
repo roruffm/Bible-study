@@ -145,6 +145,7 @@ export const DEFAULT_SETTINGS: Settings = {
   theme: 'hell',
   fontScale: 1,
   showHeadings: true,
+  showComparison: true,
 };
 
 /** Ohne eigene Wahl richtet sich die App nach der Einstellung des Systems. */
