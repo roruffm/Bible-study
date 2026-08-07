@@ -1942,6 +1942,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Verben stehen im Perfekt – die Umwälzung wird besungen, als sei sie schon geschehen. Das Lied wurde deshalb in verschiedenen Epochen als so brisant empfunden, dass sein öffentlicher Vortrag zeitweise eingeschränkt wurde, etwa während der britischen Kolonialherrschaft in Indien und unter der Militärdiktatur in Argentinien.\n\nDas Lied ist fast durchgehend aus dem Alten Testament zusammengesetzt: Hannas Lied, Psalm 113, Habakuk, Hiob. Eine junge Frau aus Galiläa singt in Sätzen, die ihr Volk seit Jahrhunderten kennt – und ordnet sich damit in eine Reihe von Menschen ein, denen zugesagt wurde, was unmöglich schien. Auffällig ist der Bruch in der Mitte: Bis Vers 50 geht es um sie selbst, danach um Mächtige und Hungrige. Was ihr geschieht, ist in diesem Lied kein Einzelfall, sondern ein Beispiel.',
     reception:
       'Das Magnificat wird in der katholischen Kirche täglich zur Vesper gesungen und gehört in der anglikanischen Tradition zum Evensong; Bach vertonte es 1723 als eines seiner ersten Leipziger Werke. Es ist damit einer der meistgesungenen Texte der Christenheit.\n\nZugleich ist es der einzige biblische Lobgesang, dessen öffentlicher Vortrag mehrfach untersagt wurde. Dietrich Bonhoeffer nannte es in einer Adventspredigt 1933 das „leidenschaftlichste, wildeste, ja revolutionärste Adventslied, das je gesungen worden ist“ – und traf damit genau das, was Zensoren an ihm störte.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Verlobt wurde früh, oft mit zwölf bis vierzehn Jahren; die Verlobung war rechtlich bindend und ließ sich nur durch Scheidungsbrief lösen. Eine Schwangerschaft in dieser Zeit brachte die Frau in Lebensgefahr und die Familie in Schande. Das Lied wird aus dieser Lage heraus gesungen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Herrscher vom Thron zu stoßen war keine fromme Redewendung: Innerhalb weniger Jahrzehnte hatte Judäa Hasmonäer, Herodes, seine Söhne und römische Statthalter erlebt, dazu Aufstände und deren Niederschlagung. Wer von Umstürzen sang, sang über Erlebtes.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Nazareth war ein Dorf mit vielleicht zweihundert bis vierhundert Einwohnern, ohne Synagogenbau aus Stein, ohne Straße, mit Höhlen als Vorratsräumen. Vier Kilometer entfernt wuchs Sepphoris zur Residenzstadt. Wer die Hungrigen und die Reichen besingt, hatte beides in Sichtweite.',
+      },
+    ],
     terms: [
       {
         word: 'griech. tapeinosis',
@@ -2043,6 +2057,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Im Alten Testament ist das tobende Meer Bild der Chaosmacht, die allein Gott bändigt. Wenn Jesus den Wind „bedroht“ – dasselbe Wort wie bei Dämonenaustreibungen – nimmt Markus diese Linie auf. Die Frage der Jünger am Schluss, „Wer ist dieser?“, bleibt unbeantwortet und trägt das ganze Evangelium bis zum Bekenntnis unter dem Kreuz.\n\nMarkus erzählt zwei Ängste, und die zweite ist größer. Im Sturm haben die Jünger Angst um ihr Leben; nachdem der Sturm sich gelegt hat, „fürchteten sie sich sehr“. Nicht das Unwetter erschreckt sie am Ende, sondern der, der neben ihnen im Boot sitzt. Auffällig ist auch der Vorwurf, den sie erheben: nicht „hilf uns“, sondern „fragst du nichts danach, dass wir verderben?“ Sie werfen ihm Gleichgültigkeit vor. Der Text lässt diesen Vorwurf stehen, ohne ihn zu entschuldigen.',
     reception:
       'Das Schiff in der Not ist zum ältesten Bild für die Kirche geworden: Schon in den Katakomben steht es, und der Kirchenraum heißt bis heute Schiff. In der Reformationszeit und in den Kirchenkämpfen des 20. Jahrhunderts wurde die Szene regelmäßig auf die eigene Lage gedeutet – die Gemeinde im Sturm, mit einem scheinbar schlafenden Gott.\n\nIn der Seelsorge ist der Vorwurf der Jünger wichtiger geworden als das Wunder. Dass ausgerechnet die Frage „kümmert es dich nicht?“ unwidersprochen in einem Evangelium steht, gilt vielen als Erlaubnis, Gott dasselbe zu fragen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der See liegt 210 Meter unter dem Meeresspiegel, umgeben von Hochland. Kalte Luft von den Golanhöhen fällt in den warmen Kessel und erzeugt binnen Minuten steile, kurze Wellen. Fischer kannten das und fuhren nachts trotzdem – dann standen die Schwärme.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Boot, das 1986 am Seeufer gefunden wurde, misst gut acht Meter und bot Platz für rund fünfzehn Mann – ein Familienbetrieb mit Schleppnetz. Fischerei war ein reguliertes Gewerbe mit Pachtabgaben an den Landesherrn; die Zebedäus-Söhne hatten Tagelöhner, gehörten also zum besseren Mittelstand.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Meer galt als Sitz des Chaos, nicht als Erholungsraum; Israel war kein Seefahrervolk, und das Tier der Offenbarung steigt aus dem Wasser. Wer einem Sturm gebietet wie einem Dämon, greift damit an einer Stelle ein, die nach allgemeiner Überzeugung Gott vorbehalten war.',
+      },
+    ],
     terms: [
       {
         word: 'griech. epetimesen',
@@ -2083,6 +2111,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Umstritten ist, wer „diese meine geringsten Brüder“ sind. Traditionell werden alle Notleidenden verstanden; ein Teil der neueren Exegese liest die Wendung enger als Bezeichnung für die umherziehenden Boten der Gemeinde. Die weite Deutung prägt seit der Alten Kirche die christliche Armenfürsorge und ist bis heute die verbreitetste.\n\nBemerkenswert ist, was in beiden Urteilen nicht vorkommt: keine Frage nach Glauben, keine nach Bekenntnis, keine nach Zugehörigkeit. Gefragt wird nach sechs Handlungen, und fünf davon stehen bereits in Jesaja 58; die sechste – der Besuch im Gefängnis – kommt hinzu. Ebenso bemerkenswert ist die doppelte Überraschung: Beide Gruppen wissen nicht, dass sie es getan oder gelassen haben. Der Text kennt kein Verdienstbewusstsein, weder im Guten noch im Bösen.',
     reception:
       'Kaum ein Text hat die christliche Sozialgeschichte stärker geprägt. Die sieben Werke der Barmherzigkeit, an denen sich mittelalterliche Hospitäler, Bruderschaften und Bildprogramme orientierten, sind aus diesen sechs Handlungen abgeleitet; die siebte – das Begraben der Toten – kam aus dem Buch Tobit hinzu. Von Basilius über Elisabeth von Thüringen bis zu den Kranken- und Flüchtlingshilfen der Gegenwart läuft eine durchgehende Linie.\n\nDie Verse 41 bis 46 haben eine andere Wirkung entfaltet: Das „ewige Feuer“ gehört zu den Belegstellen der Höllenpredigt und hat Bildwelten von Giotto bis zu barocken Kanzelbildern geprägt. In der Theologie wird seit der Alten Kirche darüber gestritten, ob das Gericht endgültig ist; Origenes vertrat eine Wiederherstellung aller, was später verurteilt wurde.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Schafe und Ziegen weideten gemeinsam und wurden abends getrennt: Ziegen sind kälteempfindlich und kamen unter Dach, Schafe blieben im Freien. Das Bild beschreibt einen Handgriff, den jeder Hirte täglich tat – keine Wertung des Tieres, sondern eine Routine.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Gefangene wurden von der Obrigkeit nicht verpflegt: Wer im Kerker saß, war auf Angehörige angewiesen, die Essen brachten. Ein Gefängnisbesuch war deshalb keine Geste, sondern Versorgung – und er brachte den Besucher selbst in den Verdacht, zur Sache des Häftlings zu gehören.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die sechs Handlungen sind die Grundleistungen der Gastfreundschaft und der Nachbarschaftshilfe: speisen, tränken, beherbergen, kleiden, pflegen, besuchen. Fünf davon stehen bereits bei Jesaja 58. Es ist die Liste dessen, was ein Haushalt für einen Fremden tun konnte, ohne Geld auszugeben.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ethne',
@@ -2127,6 +2169,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Abschnitt fehlt in den ältesten Handschriften des Johannesevangeliums und taucht in einigen Textzeugen an anderer Stelle auf, teils bei Lukas. Fachleute gehen deshalb überwiegend davon aus, dass er ursprünglich nicht zu diesem Evangelium gehörte – zugleich wird er meist als sehr alte, wahrscheinlich authentische Überlieferung eingeschätzt. Viele Bibelausgaben markieren ihn deshalb, drucken ihn aber ab.\n\nWas Jesus auf die Erde schreibt, sagt der Text nicht – und das ist einer der bekanntesten Leerstellen der Bibel. Vorschläge gab es viele: die Sünden der Ankläger, ein Gesetzeszitat, gar nichts Bestimmtes. Auffällig ist etwas anderes: Nach dem Gesetz mussten bei einer Steinigung die Zeugen den ersten Stein werfen, und beim Ehebruch waren beide Beteiligten zu bestrafen. Der Mann fehlt. Die Szene wendet das Recht nicht ab, sie hält es den Anklägern vor.',
     reception:
       'Der Satz vom ersten Stein ist in die Alltagssprache eingegangen, meist als Aufforderung, nicht zu urteilen. In der Alten Kirche galt der Abschnitt dagegen als heikel: Augustinus vermutete, er sei aus manchen Handschriften entfernt worden, weil man fürchtete, er ermuntere zum Ehebruch. Die Bußpraxis mancher Gemeinden sah tatsächlich keine Vergebung für Ehebruch vor.\n\nHeute wird der Text vor allem gegen Ehrenmorde und gegen Steinigungsurteile angeführt, die es in einzelnen Rechtsordnungen bis in die Gegenwart gibt. In der feministischen Auslegung steht die Beobachtung im Vordergrund, dass die Frau im ganzen Abschnitt bis zum vorletzten Vers kein Wort sagt und niemand sie fragt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Zum Beweis eines Ehebruchs verlangte das Recht zwei Zeugen der Tat selbst – eine Hürde, die kaum je zu nehmen war und die den Vorgang hier verdächtig macht. Zudem hätten beide Beteiligten vor Gericht gehört; der Mann fehlt. Und die Zeugen mussten den ersten Stein werfen, also die Hinrichtung beginnen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Todesurteile waren dem Statthalter vorbehalten. Eine Steinigung durchzuführen hieß also, römisches Recht zu brechen; sie zu verweigern hieß, sich gegen die Tora zu stellen. Die Falle funktioniert nur, weil beide Rechtsordnungen gleichzeitig galten.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Frau steht „in der Mitte“ – öffentlich vorgeführt vor einer Menge im Tempelbezirk. Ehre war das entscheidende Gut, und die Bloßstellung war bereits die halbe Strafe. Der Text lässt sie bis zum vorletzten Vers schweigen und niemand fragt sie.',
+      },
+    ],
     terms: [
       {
         word: 'griech. anamartetos',
@@ -2170,6 +2226,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Wunden bleiben – das ist die stille Pointe der Szene. Der Auferstandene ist nicht der Unversehrte, sondern der Gezeichnete. Das Bekenntnis „Mein Herr und mein Gott“ war zugleich politisch heikel: Nach Sueton ließ sich Kaiser Domitian, unter dem das Evangelium vermutlich entstand, als „dominus et deus“ anreden. Wer den Satz zu Jesus sagte, sprach ihn einem anderen ab. Das Evangelium endet unmittelbar danach mit der Bemerkung, all dies sei geschrieben, damit die Lesenden glauben – Thomas steht also stellvertretend für sie.\n\nThomas bekommt einen schlechten Ruf, den der Text nicht hergibt. Er verlangt genau das, was die anderen bereits bekommen haben – Vers 20 sagt, Jesus habe ihnen Hände und Seite gezeigt, bevor sie sich freuten. Und dass er die Wunden berührt hätte, steht nirgends: Auf die Aufforderung folgt unmittelbar sein Bekenntnis. Bemerkenswert ist auch, dass er den weitesten Satz des ganzen Evangeliums spricht. Kein anderer nennt Jesus so direkt „mein Gott“.',
     reception:
       'Caravaggios Gemälde von 1602, auf dem Thomas den Finger in die Wunde legt, hat die Vorstellung endgültig geprägt – obwohl der Text diese Berührung nicht erzählt. Der „ungläubige Thomas“ ist als Redewendung geblieben, und mit ihm ein Zweifelsverdikt, das die Szene selbst nicht ausspricht.\n\nIn der Seelsorge und in der Predigt hat sich die Deutung weitgehend gedreht: Thomas gilt heute meist als der, der stellvertretend für alle späteren Leser fragt – und dessen Frage beantwortet wird, statt abgewiesen zu werden. Der Thomaschristentum Indiens führt sich zudem auf ihn zurück; die Thomas-Christen in Kerala berufen sich auf eine Mission des Apostels im 1. Jahrhundert.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Jünger sitzen hinter verschlossenen Türen „aus Furcht vor den Juden“ – gemeint sind die Behörden, nicht das Volk. Nach der Hinrichtung des Anführers war der Kreis der Anhänger gefährdet; Rom verfuhr mit Restgruppen von Aufständischen gründlich. Die Szene spielt in einem Versteck.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Domitian, unter dem das Evangelium vermutlich entsteht, ließ sich nach Sueton als „dominus et deus“ anreden. Wer diese Formel einem Hingerichteten zusprach, sprach sie dem Kaiser ab. Das Bekenntnis des Thomas war damit nicht nur fromm, sondern gefährlich.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Auferstehung erwarteten Pharisäer am Ende der Zeiten und für alle; Sadduzäer bestritten sie ganz. Dass ein Einzelner mitten in der Geschichte aufersteht, passte in keine der beiden Vorstellungen – der Zweifel des Thomas ist deshalb der Normalfall, nicht die Ausnahme.',
+      },
+    ],
     terms: [
       {
         word: 'griech. apistos',
@@ -2212,6 +2282,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die dreigliedrige Taufformel gehört zu den frühesten Belegen dieser Form; in der Apostelgeschichte wird dagegen „auf den Namen Jesu“ getauft. Das Verb „macht zu Jüngern“ ist der einzige Imperativ im Satz – „gehen“, „taufen“ und „lehren“ sind ihm sprachlich untergeordnet.\n\nDer Schluss nimmt den Anfang auf. Das Evangelium begann mit dem Namen Immanuel, „Gott mit uns“, und es endet mit „ich bin bei euch alle Tage“ – der Bogen ist über 28 Kapitel gespannt. Auffällig ist auch, dass Matthäus keine Himmelfahrt erzählt: Der Auferstandene geht nicht weg, sondern bleibt. Und der Ort ist ein Berg in Galiläa, nicht der Tempel in Jerusalem – dort, wo die Erzählung begonnen hatte, wo „das Volk im Finstern“ saß und wo die Bergpredigt gehalten wurde.',
     reception:
       'Aus diesen fünf Versen ist der Begriff „Missionsbefehl“ geworden, und mit ihm eine Geschichte, die Licht und Schatten hat. Sie trägt Bibelübersetzungen in über tausend Sprachen, Schulen und Krankenhäuser – und sie war zugleich das Begleitwort der europäischen Kolonisierung. Wo Mission und Landnahme zusammenfielen, wurde der Auftrag zur Rechtfertigung von Zwangstaufen und Kulturzerstörung.\n\nSeit der Weltmissionskonferenz von Edinburgh 1910 und stärker seit den 1960er Jahren haben die Kirchen das aufgearbeitet. Heutige Missionserklärungen betonen Dialog, Zeugnis ohne Zwang und die Absage an jede Verbindung von Verkündigung mit Macht; mehrere Kirchen haben sich bei indigenen Gemeinschaften ausdrücklich entschuldigt.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Galiläa lag drei Tagereisen von Jerusalem entfernt und galt als Provinz: gemischt besiedelt, mit eigenem Dialekt, den man in der Hauptstadt heraushörte. Dass der Auftrag dort ergeht und nicht im Tempel, ist eine Ortswahl gegen das Zentrum.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Reisen bedeutete zu Fuß gehen, etwa 25 bis 30 Kilometer am Tag, auf Straßen mit Wegelagerern und in Herbergen mit schlechtem Ruf. „Gehet hin in alle Welt“ war für die ersten Hörer keine Redewendung, sondern eine Zumutung mit Wegzeit in Monaten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Übertritte zum Judentum gab es, aber sie liefen über Beschneidung, Tauchbad und Gesetzesbindung und blieben eine Ausnahme. Eine Bewegung, die planmäßig Nichtjuden aufnimmt, ohne dies zu verlangen, hatte in der Umwelt kein Vorbild.',
+      },
+    ],
     terms: [
       {
         word: 'griech. edistasan',
@@ -2805,6 +2889,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Ertrag von dreißig-, sechzig- und hundertfach lag weit über dem Üblichen; realistisch waren etwa fünf- bis zehnfache Ernten. Die Deutung, die der Text mitliefert, gilt vielen Fachleuten als spätere Auslegung der Gemeinde – das Gleichnis selbst wirkt zunächst offen und ohne Zuordnung.\n\nDas Gleichnis steht am Anfang eines ganzen Kapitels aus Gleichnissen, und Matthäus rahmt es doppelt: Zwischen Erzählung und Deutung stehen die Verse über das Reden in Gleichnissen und das Zitat aus Jesaja 6. Auffällig ist die Zählung: drei erfolglose Böden, ein guter – aber dessen Ertrag ist so hoch, dass er alles andere aufwiegt. Und im Griechischen ist der letzte Satz eine Aufforderung, keine Feststellung: „Wer Ohren hat zu hören, der höre.“ Damit gibt der Text die Deutung an die Zuhörer zurück, bevor er selbst eine liefert.',
     reception:
       'Der Sämann gehört zu den ersten Gleichnissen, die in der Kunst dargestellt wurden, und ist über Jahrhunderte als Selbstprüfung gepredigt worden: Welcher Boden bist du? Die neuere Gleichnisforschung seit Adolf Jülicher hat dieser Allegorese widersprochen – ein Gleichnis habe einen Vergleichspunkt, nicht ein Wörterbuch von Entsprechungen.\n\nDie mitgelieferte Deutung in den Versen 18 bis 23 gilt vielen Fachleuten selbst als frühe Auslegung der Gemeinde: Ihr Wortschatz ist der der späteren Missionssprache. Damit steht im Text ein bemerkenswerter Fall – eine Auslegung, die in die Bibel hineingewachsen ist und dort neben dem Ausgelegten steht.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Gesät wurde vor dem Pflügen: Der Sämann ging über das Stoppelfeld und streute breitwürfig, danach wurde untergepflügt. Dass Körner auf den Weg, auf Fels und in Dornen fallen, ist deshalb kein Missgeschick, sondern der normale Verlust eines Verfahrens ohne Reihensaat.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Ein Feld im Bergland war selten eine ebene Fläche: Zwischen Terrassen lagen Pfade, unter der Krume stand oft Kalkfels, an den Rändern wuchs Gestrüpp. Alle vier Bodenarten des Gleichnisses konnten auf demselben Acker vorkommen – die Zuhörer sahen keinen Vergleich, sondern ihre Parzelle.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Erträge lagen bei fünf- bis zehnfacher Aussaat; ein Drittel der Ernte ging für Saatgut, Abgaben und Zehnten wieder ab. Dreißig-, sechzig- und hundertfach war deshalb keine gute Ernte, sondern eine unmögliche – die Zahl markiert das Ende der gewohnten Rechnung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. parabole',
@@ -2849,6 +2947,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Abschnitt ist die Mitte des Markusevangeliums: Von hier an geht der Weg nach Jerusalem. Petrus hat mit seinem Bekenntnis recht und versteht doch nichts – kaum ausgesprochen, weist er die Leidensankündigung zurück und wird schärfer zurechtgewiesen als jeder Gegner im ganzen Buch. „Kreuz auf sich nehmen“ war keine Metapher: Verurteilte trugen den Querbalken selbst zum Hinrichtungsort.\n\nUnmittelbar vor der Szene steht eine ungewöhnliche Heilung: Ein Blinder wird geheilt, aber erst beim zweiten Anlauf – zunächst sieht er Menschen „wie Bäume umhergehen“. Markus setzt sie mit Absicht hierhin. Petrus sieht ebenfalls halb: Er erkennt den Christus und erkennt nicht, wohin dessen Weg führt. Auffällig ist auch das Schweigegebot: Sooft in diesem Evangelium jemand die Wahrheit über Jesus ausspricht, wird ihm der Mund verboten – bis unter dem Kreuz ein römischer Hauptmann sie ausspricht und niemand ihn mehr zurückhält.',
     reception:
       'Das „Kreuz auf sich nehmen“ ist zur Redewendung für alles geworden, was jemand zu tragen hat – Krankheit, ein schwieriger Mensch, eine Last. Der Ursprung ist konkreter: Verurteilte trugen den Querbalken selbst zum Hinrichtungsort, und wer das Bild hörte, sah einen Zug zum Galgen.\n\nSeelsorgliche Literatur warnt seit Jahrzehnten vor der übertragenen Verwendung. Wo Menschen in Gewaltbeziehungen geraten sind, ist ihnen der Satz als Aufforderung zum Ausharren gesagt worden; die Selbstverleugnung, von der der Text spricht, meint eine Entscheidung, nicht ein Erleiden.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Gekreuzigt wurden Sklaven und Aufrührer, nie römische Bürger. Der Verurteilte trug den Querbalken selbst zum Hinrichtungsort, durch die Stadt, als abschreckende Vorführung. Wer „sein Kreuz auf sich nehmen“ hörte, sah diesen Zug – das Bild war öffentlich und regelmäßig zu besichtigen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Rom kreuzigte planmäßig gegen Aufstände: Nach dem Tod des Herodes ließ Varus bei Jerusalem zweitausend Menschen hinrichten. Wer in Galiläa aufwuchs, hatte solche Reihen gesehen. Eine Nachfolge, die mit diesem Wort beschrieben wird, kündigt eine politische Einordnung an.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Anführer, der scheiterte, entwertete seine Anhänger mit: Man wechselte zur nächsten Bewegung. Genau deshalb ist Petrus’ Widerspruch naheliegend und nicht kleinmütig – ein leidender Messias war nach allem, was man kannte, ein widerlegter Messias.',
+      },
+    ],
     terms: [
       {
         word: 'griech. christos',
@@ -2892,6 +3004,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Erzählung ist sorgfältig gebaut: Zuerst wird der Schrift nachgegangen, dann wird das Brot gebrochen – erst dann werden die Augen geöffnet, und im selben Moment verschwindet er. Viele sehen darin den Ablauf des frühen Gottesdienstes gespiegelt: Wort und Mahl. Einer der beiden heißt Kleopas, der andere bleibt namenlos.\n\nDie Erzählung ist eine Umkehrung des Ostermorgens: Zwei gehen von Jerusalem weg, nicht hin, und sie gehen am selben Tag. Auffällig ist, was sie nicht erkennen und was sie doch spüren – „brannte nicht unser Herz“ sagen sie hinterher über eine Stunde, in der sie nichts begriffen. Und der Text hält die Reihenfolge fest: Erst als das Brot gebrochen ist, werden die Augen geöffnet, und im selben Augenblick verschwindet er. Erkennen und Festhalten schließen sich hier aus.',
     reception:
       'Die Emmauserzählung gilt vielen Liturgikern als Bauplan des Gottesdienstes: Weg, Klage, Schriftauslegung, Mahl, Aufbruch. Sie ist deshalb in den liturgischen Reformen des 20. Jahrhunderts, katholisch wie evangelisch, als Begründungstext für die Gleichgewichtung von Wort und Mahl herangezogen worden.\n\nIn der Kunst ist die Szene vor allem als Mahl dargestellt worden – Rembrandt hat sie mehrfach gemalt, Caravaggio zweimal. Auffällig ist, wie oft dabei der Moment des Verschwindens gewählt wird und nicht der des Erkennens.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Sechzig Stadien sind rund elf Kilometer – zwei bis drei Stunden zu Fuß, also eine Strecke, die man am Nachmittag beginnt und vor Dunkelheit beendet. Deshalb drängen die beiden am Ende zum Bleiben: Nach Einbruch der Nacht reiste niemand freiwillig weiter.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Gastfreundschaft war Pflicht, aber sie hatte eine Ordnung: Der Hausherr brach das Brot und sprach den Segen. Dass der Gast das übernimmt, ist ein Bruch der Rollen – und genau in diesem Moment erkennen sie ihn.',
+      },
+      {
+        aspect: 'macht',
+        text: '„Wir hofften, er werde Israel erlösen“ ist eine politische Erwartung. Erlösung meinte das Ende der Besatzung, wie sie die Makkabäer erreicht hatten. Die Enttäuschung der beiden ist deshalb konkret: Sie gehen von einem gescheiterten Aufstand nach Hause.',
+      },
+    ],
     terms: [
       {
         word: 'griech. diermeneusen',
@@ -2993,6 +3119,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Rede zitiert keine Bibelstelle, sondern griechische Dichter. Sie ist damit der Versuch, das Evangelium ganz in der Sprache der Zuhörer zu sagen. Bei der Auferstehung bricht die Zustimmung ab: Für griechisches Denken war die Unsterblichkeit der Seele vorstellbar, die Auferstehung des Leibes nicht. Der Ertrag fällt entsprechend gering aus – nur wenige schließen sich an.\n\nDer Areopag war zu dieser Zeit kein Gerichtshof für Kapitalverbrechen mehr, aber weiterhin ein Rat mit Aufsicht über Religion und Lehre in der Stadt. Ob Paulus dort angeklagt wurde oder nur angehört, lässt Lukas offen – das Verb kann beides heißen. Auffällig ist der Einstieg: Was in Vers 16 als Ärgernis beschrieben wird, „voller Götzenbilder“, verwandelt Paulus in der Anrede in ein Kompliment. Und der Altar für den unbekannten Gott, an den er anknüpft, war in Athen kein Bekenntnis zur Offenheit, sondern eine Vorsichtsmaßnahme: Man wollte keine Gottheit übergehen.',
     reception:
       'Die Areopagrede ist der Musterfall für jede Debatte über Anknüpfung: Darf man das Evangelium in fremder Sprache sagen, mit fremden Begriffen, ohne die Bibel zu zitieren? Karl Barth hielt das für einen Irrweg und sah in dem mageren Ertrag den Beweis; Paul Tillich und die katholische Missionstheologie sahen darin das Vorbild einer Verkündigung, die ernst nimmt, was Menschen schon glauben.\n\nDie zitierten Dichter sind identifizierbar: „In ihm leben, weben und sind wir“ geht wohl auf Epimenides zurück, „wir sind seines Geschlechts“ auf Arat von Soloi. Ein Prediger, der heidnische Dichtung zitiert und keine Schriftstelle, war in der Alten Kirche selbst begründungsbedürftig.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Athen lebte zu dieser Zeit von seiner Vergangenheit: politisch bedeutungslos, aber Universitätsstadt des Reiches, in der man sich Bildung holte. Lukas’ spöttische Bemerkung über Leute, die nichts anderes taten, als Neues zu hören, trifft ein zeitgenössisches Klischee über die Stadt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Epikureer und Stoiker, die der Text nennt, waren keine Religionen, sondern Lebenslehren: Die einen erklärten die Götter für unbeteiligt, die anderen sahen die Welt von einer Vernunft durchwaltet. Beide bestritten eine leibliche Auferstehung – die einen, weil danach nichts kommt, die anderen, weil der Leib das Geringere ist.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Areopag war ein alter Rat mit Aufsicht über Kult und Lehre in der Stadt. Sokrates war knapp fünfhundert Jahre zuvor wegen Einführung neuer Gottheiten hingerichtet worden – der Vorwurf gegen Paulus in Vers 18 lautet fast wörtlich gleich. Das ist keine Podiumsdiskussion.',
+      },
+    ],
     terms: [
       {
         word: 'griech. deisidaimonesterous',
@@ -4147,6 +4287,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Astronomisch wird das Gestirn unterschiedlich erklärt: als Zusammentreffen von Jupiter und Saturn im Jahr 7 v. Chr., als Komet oder als Nova. Erzählerisch ist die Pointe eine andere: Ausgerechnet Fremde mit einer religiös verdächtigen Profession finden das Kind, während die Schriftgelehrten in Jerusalem die richtige Stelle nennen können und trotzdem sitzen bleiben.',
     reception:
       'Aus den Weisen wurden Könige – wegen Psalm 72 und Jesaja 60 –, dann drei, dann Caspar, Melchior und Balthasar; seit dem Mittelalter ruhen ihre Gebeine angeblich im Kölner Dom, wohin sie 1164 aus Mailand gebracht wurden. Die Sternsinger, die als C+M+B an Türen schreiben, gehen auf diese Legendenbildung zurück.\n\nDie politische Seite der Erzählung wird seltener erzählt: Auf den Besuch folgt der Kindermord in Bethlehem und die Flucht nach Ägypten. Matthäus zeichnet die Kindheit Jesu als Fluchtgeschichte, und in kirchlichen Stellungnahmen zum Flüchtlingsschutz ist dieses Kapitel der meistzitierte Text.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Herodes der Große regierte als von Rom eingesetzter Klientelkönig und sicherte seine Stellung mit Bauwerken und mit Blut: Josephus berichtet von der Hinrichtung dreier eigener Söhne und seiner Frau Mariamne. Kaiser Augustus soll gespottet haben, er wäre lieber Herodes’ Schwein als sein Sohn. Wer das wusste, fand den Kindermord nicht unwahrscheinlich.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Sterndeutung war Wissenschaft, nicht Aberglaube: In Babylonien wurden über Jahrhunderte Himmelsbeobachtungen aufgezeichnet, und Herrscherwechsel las man am Himmel ab. Ein Hof, der von auswärtigen Sterndeutern die Geburt eines Königs gemeldet bekam, hatte einen ernsten Anlass zur Sorge.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Von Jerusalem nach Bethlehem sind es rund neun Kilometer – eine Wegstunde. Der Ort war klein und unbedeutend; seine einzige Bekanntheit bezog er aus der Davidsüberlieferung. Die Flucht nach Ägypten führte dagegen über etwa 500 Kilometer in eine Provinz mit großer jüdischer Bevölkerung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. magoi',
@@ -4187,6 +4341,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Umstritten ist, worauf sich „dieser Fels“ bezieht: auf die Person des Petrus, auf sein Bekenntnis oder auf Christus selbst. Alle drei Deutungen sind alt und lassen sich am Text vertreten. „Schlüssel“ und „binden und lösen“ sind rabbinische Wendungen für die Vollmacht, verbindlich auszulegen und über Zugehörigkeit zu entscheiden. Nur wenige Verse später wird derselbe Petrus „Satan“ genannt.\n\nDer Abschnitt hat eine Parallele bei Markus, und der Vergleich ist aufschlussreich: Dort bekennt Petrus ebenfalls, aber die Verse über den Felsen, die Schlüssel und das Binden und Lösen fehlen vollständig. Ein Teil der Forschung sieht darin eine Zufügung des Matthäus, die die Stellung des Petrus in seiner Gemeinde spiegelt; andere halten sie für alte Überlieferung, die Markus nicht aufgenommen hat. Bemerkenswert ist zudem, dass dieselbe Vollmacht zum Binden und Lösen zwei Kapitel später der ganzen Gemeinde zugesprochen wird.',
     reception:
       'Die Verse 18 und 19 stehen in meterhohen Buchstaben unter der Kuppel des Petersdoms und sind der biblische Grund, auf den sich der römische Primat beruft. Das Erste Vatikanische Konzil erklärte 1870 den Jurisdiktionsprimat und die Unfehlbarkeit des Papstes und stützte sich dabei zentral auf diese Stelle.\n\nDie Reformatoren bestritten nicht den Text, sondern die Folgerung: Luther bezog den Felsen auf das Bekenntnis, Calvin auf Christus. Die orthodoxen Kirchen sehen in Petrus einen Ehrenvorrang, aber keine Vollmacht über andere Bischöfe. Der Streit um diesen einen Satz ist bis heute der härteste Punkt in jedem ökumenischen Gespräch über Kirchenleitung.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Cäsarea Philippi lag an einer Quellgrotte, die dem Hirtengott Pan geweiht war; Nischen für Götterbilder sind im Fels bis heute sichtbar. Herodes der Große hatte daneben einen Tempel für Augustus errichtet. Die Frage nach dem Messias fällt vor einer Kulisse aus griechischer und römischer Verehrung.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Messias hieß für die meisten Zeitgenossen: ein König aus Davids Haus, der die Fremdherrschaft beendet. Die Psalmen Salomos aus dem 1. Jahrhundert vor Christus beschreiben ihn genau so. Petrus verwendet also einen politischen Begriff – und versteht die Leidensankündigung deshalb als Widerspruch.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Binden und lösen war Fachsprache der Schriftgelehrten für verbindliche Auslegung: Was erlaubt und was verboten ist, wer zur Gemeinschaft gehört und wer ausgeschlossen wird. Schlüssel wiederum standen für die Verwaltung eines Hauses. Beide Bilder stammen aus dem Rechts- und Verwaltungsalltag, nicht aus dem Jenseits.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ekklesia',
@@ -4231,6 +4399,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Denar trug das Bild des Kaisers und die Aufschrift „Tiberius Caesar, Sohn des vergöttlichten Augustus“ – für fromme Juden ein doppelter Anstoß. Dass die Fragesteller die Münze sofort zur Hand haben, entlarvt sie beiläufig. Die Antwort entscheidet nichts, sondern gibt die Frage zurück: Was trägt Gottes Bild? Nach 1. Mose 1 der Mensch.\n\nDie Antwort ist keine Zweireichelehre, sondern eine Gegenfrage mit einer offenen Kante. Was dem Kaiser gehört, ist am Bild zu erkennen; was Gott gehört, bleibt unausgesprochen – und wer 1. Mose 1 im Ohr hat, weiß, welches Wesen Gottes Bild trägt. Auffällig ist auch die Zusammensetzung der Fragesteller: Pharisäer und Herodianer, sonst Gegner, treten hier gemeinsam auf. Die einen lehnten die römische Steuer ab, die anderen lebten von der römischen Ordnung – eine Antwort hätte in jedem Fall die eine Seite gegen Jesus aufgebracht.',
     reception:
       'Aus diesem Vers ist die abendländische Lehre von den zwei Bereichen gewachsen – bei Augustinus, bei Luther in der Unterscheidung der beiden Regimente, im modernen Verhältnis von Kirche und Staat. Er hat Religionsfreiheit begründen helfen und ebenso den Rückzug der Kirchen aus der Politik.\n\nDie Kehrseite ist gut dokumentiert: Im 19. und 20. Jahrhundert diente der Vers regelmäßig dazu, kirchlichen Widerspruch gegen staatliches Unrecht als Grenzüberschreitung abzuweisen. Die Barmer Theologische Erklärung von 1934 setzte dem entgegen, dass es keine Bereiche gebe, in denen Christus nicht Herr sei – ein direkter Widerspruch gegen die verbreitete Auslegung dieses Satzes.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die Kopfsteuer wurde seit der Provinzwerdung Judäas im Jahr 6 erhoben und war das Zeichen der Unterwerfung schlechthin – sie traf jeden Erwachsenen unabhängig vom Einkommen. Ihre Einführung löste den Aufstand des Judas Galiläus aus; die Frage betraf also einen Konflikt mit Toten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Denar trug Bild und Titel des Kaisers, der sich als Sohn des vergöttlichten Augustus bezeichnete. Für strenge Kreise war das ein doppelter Verstoß: ein Bildnis und ein Gotteslästerungsanspruch. Im Tempelbezirk waren römische Münzen deshalb nicht zugelassen; man musste wechseln.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Pharisäer und Herodianer traten sonst nicht gemeinsam auf: Die einen lehnten die Fremdherrschaft ab, die anderen lebten von ihr. Dass sie hier zusammen fragen, zeigt die Falle – jede Antwort hätte eine der beiden Seiten gegen Jesus aufgebracht, und beide waren als Zeugen vor Ort.',
+      },
+    ],
     terms: [
       {
         word: 'griech. eikon',
@@ -4275,6 +4457,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Anstoß liegt nicht in der Heilung, sondern im Satz „Dir sind deine Sünden vergeben“. Die Passivform vermeidet den Gottesnamen; genau das wird als Anmaßung verstanden. Bemerkenswert ist, dass der Text vom Glauben der Freunde spricht, nicht von dem des Kranken – Glaube erscheint hier als etwas, das andere für einen aufbringen können.\n\nDie Erzählung ist ineinandergeschoben: Eine Heilungsgeschichte wird mitten im Satz von einem Streitgespräch unterbrochen und danach zu Ende erzählt – Markus tut das im ganzen Evangelium, und der Einschub trägt jedes Mal die Pointe. Auffällig ist zudem, dass niemand um Heilung bittet. Vier Männer graben ein Dach auf, und Jesus reagiert auf etwas, das gar nicht gesagt wurde. Was er dann sagt, ist nicht, was alle erwarten.',
     reception:
       'Das Bild der vier Männer, die ein Dach abdecken, ist zum Standardbild für Fürbitte und Begleitung geworden – in Predigten, in der Hospizarbeit, in Selbsthilfegruppen. Auch die Redewendung „nimm dein Bett und geh“ hat den Weg in die Alltagssprache gefunden, meist als Aufforderung, sich nicht länger hängen zu lassen; im Text ist sie das Gegenteil einer Aufforderung, nämlich eine Zusage.\n\nDie Verbindung von Krankheit und Sünde hat dagegen eine schädliche Wirkungsgeschichte. Der Vers ist verwendet worden, um Kranken eine Schuld zuzuschreiben. Auslegern zufolge stellt der Text diesen Zusammenhang gerade nicht her: Er stellt zwei Aussagen nebeneinander und fragt, welche schwerer ist.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Häuser in Kapernaum bestanden aus Basaltbruchstein mit Dächern aus Balken, Zweigen und gestampftem Lehm, zugänglich über eine Außentreppe. Ein solches Dach ließ sich mit einfachem Gerät aufbrechen und in wenigen Stunden wieder schließen – der Schaden war ärgerlich, nicht ruinös.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Lähmung bedeutete Betteln: Es gab keine Versorgung, nur Almosen und die Familie. Ein Gelähmter wurde getragen, auf einer Matte, die zugleich sein Bett war. Dass vier Männer ihn Stunden weit schleppen, ist der eigentliche Aufwand der Erzählung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Krankheit und Schuld galten als verbunden – nicht als Strafe im engen Sinn, aber als Zeichen einer gestörten Ordnung. Vergebung zuzusprechen war deshalb Sache des Tempels, mit Opfer und Priester. Wer sie ohne beides zusprach, umging eine Institution samt ihren Einnahmen.',
+      },
+    ],
     terms: [
       {
         word: 'griech. apheontai',
@@ -4318,6 +4514,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Abweisung ist hart: „Es ist nicht fein, dass man den Kindern das Brot nehme und werfe es vor die Hunde.“ Die Frau widerspricht nicht, sondern nimmt das Bild auf und dreht es um. Der Text stellt nicht dar, dass Jesus sie prüfen wollte – er lässt die Härte stehen und erzählt, dass ihre Antwort ihn umstimmt.\n\nDie Frau bekommt gleich drei Zuschreibungen, die sie im Erzählzusammenhang disqualifizieren: Sie ist eine Frau, eine Griechin und aus Syrophönizien – also aus der wohlhabenden Küstenregion, die das Hinterland Galiläa mit Getreide versorgte. Ihr Argument nimmt dabei genau das Bild auf, mit dem sie abgewiesen wurde, und verschiebt es um ein Wort: nicht die Hunde draußen, sondern die Hündlein unter dem Tisch. Sie bestreitet die Rangfolge nicht, sie besteht auf einem Platz darin. Und es ist das einzige Mal in den Evangelien, dass jemand mit einem Wort etwas erreicht, was zuvor abgelehnt wurde.',
     reception:
       'Der Abschnitt gehört zu denen, die in der Predigt lange geglättet wurden: Jesus habe die Frau nur prüfen wollen, sein Ton sei freundlich gemeint gewesen. Der Text sagt davon nichts. Die neuere Auslegung lässt die Härte stehen – und liest die Szene als Lernvorgang, an dessen Ende Jesus seine eigene Zusage weiter fasst als zuvor.\n\nIn der postkolonialen Theologie ist die Frau zu einer Schlüsselfigur geworden: eine Angehörige der wirtschaftlich stärkeren, politisch privilegierten Seite, die dennoch als Bittstellerin auftritt und deren Widerspruch etwas verändert. In feministischen Auslegungen gilt sie als die einzige, die im Neuen Testament eine Diskussion gegen Jesus gewinnt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Tyrus und Sidon waren reiche Hafenstädte, die ihr Getreide aus dem galiläischen Hinterland bezogen; Josephus beschreibt die Abhängigkeit ausdrücklich. In Hungerjahren ging das Korn zuerst in die zahlungskräftige Stadt. „Zuerst die Kinder satt werden“ hatte für galiläische Ohren einen wirtschaftlichen Klang.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Frau tritt allein auf, ohne männlichen Fürsprecher, spricht einen fremden Lehrer an und widerspricht ihm. Jeder dieser Schritte verstieß gegen die Ordnung. Dass Markus sie als „Griechin“ einführt, meint dabei ihren Stand: gebildet, städtisch, wohlhabend.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Hunde waren keine Haustiere, sondern Straßentiere, die den Abfall der Städte fraßen; das Wort galt als Beschimpfung. Die Verkleinerungsform, die die Frau aufnimmt, meint dagegen Tiere, die im Haus geduldet wurden. Sie verschiebt das Bild um genau diesen Schritt – vom Hof unter den Tisch.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kynaria',
@@ -4361,6 +4571,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Motiv der Umkehrung der Verhältnisse nach dem Tod ist auch aus ägyptischen und rabbinischen Erzählungen bekannt; Jesus greift eine bekannte Form auf. Die Pointe liegt aber nicht in der Jenseitsschilderung, sondern im Schlusssatz: Wer auf Mose und die Propheten nicht hört, wird sich auch durch einen Auferstandenen nicht überzeugen lassen. Vorgeworfen wird dem Reichen nichts Kriminelles – nur, dass er den Armen vor seiner Tür täglich übersah.\n\nDie Jenseitsschilderung folgt Vorstellungen, die in der Zeit umliefen, und ist nicht als Landkarte gemeint: Abrahams Schoß, die Kluft, der Blick von einem Bereich in den anderen. Auffällig ist, dass der Reiche auch dort noch redet, als sei Lazarus sein Bedienter – er bittet nicht ihn, sondern Abraham, ihn zu schicken. Der Text erzählt keine Bekehrung, sondern eine Unbelehrbarkeit. Und die Pointe liegt nicht im Jenseits: Sie steht im letzten Satz, der von Mose und den Propheten spricht.',
     reception:
       'Aus dem Namen ist ein Wort geworden: Lazarett und Lazarus-Orden gehen auf ihn zurück, ebenso die mittelalterlichen Leprosenhäuser. Das Bild von Abrahams Schoß hat Grabmäler und Kirchenfenster geprägt und über Bachs Kantaten den Weg in die Musik gefunden.\n\nIn der Sozialgeschichte ist das Gleichnis einer der meistzitierten Texte gegen Gleichgültigkeit. Dem Reichen wird nichts Kriminelles vorgeworfen – er hat nichts geraubt und niemanden betrogen. Ihm wird vorgeworfen, dass er täglich über einen Menschen hinwegsah, der vor seiner Tür lag und dessen Namen er kannte.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Purpur und feines Leinen waren die teuersten Stoffe überhaupt: Purpur wurde aus Meeresschnecken gewonnen, tausende für ein Gewand, und war in Rom zeitweise dem Kaiserhaus vorbehalten. Täglich so gekleidet zu sein und zu schlemmen beschreibt keinen Wohlstand, sondern Prunk.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Bettler saßen am Tor des Hauses, weil dort die Gäste vorbeikamen und Reste ausgetragen wurden; man wischte sich bei Tisch die Hände an Brotstücken ab, die anschließend weggeworfen wurden. Lazarus wartet also auf etwas, das ohnehin anfiel – und bekommt es nicht.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Abrahams Schoß meint den Ehrenplatz an der Seite des Gastgebers beim Mahl. Die Jenseitsvorstellung des Gleichnisses – zwei Bereiche, eine Kluft, Sichtkontakt – entspricht dem, was zur Zeit Jesu umlief, und ist aus ägyptischen und rabbinischen Erzählungen bekannt. Der Text erfindet sie nicht, er benutzt sie.',
+      },
+    ],
     terms: [
       {
         word: 'griech. hades',
@@ -4405,6 +4629,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Auffällig ist die Bitte: „Gedenke an mich, wenn du in dein Reich kommst“ – sie rechnet mit einer fernen Zukunft. Die Antwort verschiebt den Zeitpunkt auf „heute“, ein Schlüsselwort des Lukasevangeliums. Der Mann bringt keine Leistung mit, nicht einmal Zeit; er wird angenommen, wie er ist.\n\nLukas verändert die Szene gegenüber Markus deutlich: Dort verspotten ihn beide Mitgekreuzigten, hier tritt einer dazwischen. Auffällig ist, was dieser sagt – er hält das eigene Urteil für gerecht und Jesu Urteil für ungerecht, spricht also ein juristisches Urteil aus, kein frommes Bekenntnis. Und seine Bitte ist bescheiden: nur „gedenke an mich“. Was er bekommt, ist mehr, als er verlangt hat, und früher: nicht irgendwann, sondern heute.',
     reception:
       'Der Satz gehört zu den am häufigsten gesprochenen Worten am Sterbebett und ist der biblische Kern der katholischen Sterbesakramente wie der evangelischen Aussegnung. Die Reformatoren führten ihn gegen die Lehre vom Fegefeuer an: Zwischen dem Sterben und dem Paradies liegt hier nichts.\n\nDie Kommasetzung ist dabei zum Streitpunkt geworden. Wer liest „Wahrlich, ich sage dir heute: du wirst mit mir im Paradiese sein“, verschiebt das „heute“ zur Redeeinleitung und macht die Zusage zeitlich offen. Die griechischen Handschriften kennen keine Kommas; die große Mehrheit der Ausleger hält die traditionelle Lesart für die naheliegende.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Statthalter besaß die Gerichtsgewalt über Leben und Tod; der Hohe Rat besaß sie nicht. Kreuzigungen wurden an Ausfallstraßen vollzogen, damit möglichst viele sie sahen, und die Leichen blieben oft hängen. Die Tafel mit der Anklage über dem Kopf gehörte zum Verfahren.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die beiden Mitgekreuzigten heißen bei Markus mit einem Wort, das Aufständische meint. Kreuzigung war die Strafe für Widerstand gegen Rom; ein gewöhnlicher Dieb wurde anders bestraft. Die drei Kreuze zeigen also wahrscheinlich eine politische Hinrichtung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Zum Sterben gehörte, dass jemand den Namen im Gedächtnis behielt – ohne Nachkommen und ohne Grab war ein Mensch endgültig verloren. „Gedenke an mich“ ist deshalb die bescheidenste denkbare Bitte: nicht Rettung, sondern Erinnerung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. paradeisos',
@@ -4448,6 +4686,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Johannes erzählt kein Abendmahl; an dessen Stelle steht diese Szene. Der Widerstand des Petrus ist verständlich: Die Umkehrung der Rollen war schwerer zu ertragen als ein Dienst. Am Ende steht kein Gefühl, sondern ein Auftrag – „so sollt auch ihr einander die Füße waschen“.\n\nZwei Sätze rahmen die Szene und werden selten mitgelesen. Vor der Handlung steht, dass Jesus wusste, dass ihm der Vater alles in die Hände gegeben hatte – und genau daraufhin steht er auf und zieht sich aus. Der Text stellt die Erniedrigung nicht als Verzicht auf Macht dar, sondern als deren Gebrauch. Und mitten in der Szene sitzt Judas mit am Tisch: Ihm werden die Füße gewaschen wie den anderen. Das Wort „bis ans Ende“ in Vers 1 kann beides heißen – bis zum Schluss und bis zum Äußersten.',
     reception:
       'Die Fußwaschung am Gründonnerstag ist in der katholischen und in vielen evangelischen Liturgien fester Bestandteil; Papst Franziskus wusch sie ab 2013 in Gefängnissen und Flüchtlingsunterkünften, auch Frauen und Nichtchristen, und änderte 2016 die Rubrik entsprechend. In Teilen der Täuferbewegung – bei Mennoniten und Amischen – gilt sie als eigene Ordnung neben Taufe und Abendmahl.\n\nDie Zeremonie hat auch eine höfische Geschichte: Englische und habsburgische Monarchen wuschen zu Gründonnerstag Armen die Füße, oft in stark ritualisierter Form. Kritiker sahen darin früh das Gegenteil dessen, was die Szene erzählt – eine Demutsgeste, die Rang bestätigt statt ihn aufzuheben.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Man ging in offenen Sandalen auf Wegen, die zugleich Viehtrieb und Abwasserrinne waren. Die Füße zu waschen war deshalb keine Zeremonie, sondern Notwendigkeit vor dem Essen – und da man zu Tisch lag, lagen die Füße der anderen in Sichtweite.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Fußwaschung galt als die niedrigste Sklavenarbeit; jüdischen Sklaven durfte sie nach rabbinischer Auffassung nicht zugemutet werden, nichtjüdischen schon. Ein Lehrer, der sie an seinen Schülern vollzieht, kehrt damit nicht Bescheidenheit, sondern die Ständeordnung um. Petrus’ Widerstand ist die erwartbare Reaktion.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Wer mit jemandem aß, stand in einem Verhältnis, das Verrat besonders schwer machte – Tischgemeinschaft galt als Schutz und Bindung zugleich. Dass Judas mitisst und die Füße gewaschen bekommt, verschärft nach antikem Empfinden alles Weitere.',
+      },
+    ],
     terms: [
       {
         word: 'griech. eis telos',
@@ -4494,6 +4746,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Erzählung nimmt sich auffällig viel Raum – die Vision wird gleich mehrfach wiederholt. Petrus muss selbst überzeugt werden: Seine Antwort auf die Aufforderung, Unreines zu essen, ist ein glattes Nein. Die Wende formuliert er erst, nachdem er den Geist bei den Anwesenden wirken sieht: „Nun erfahre ich mit der Wahrheit, dass Gott die Person nicht ansieht.“ Kornelius wird als „gottesfürchtig“ bezeichnet – ein feststehender Ausdruck für Nichtjuden im Umfeld der Synagoge.\n\nLukas erzählt die Geschichte dreimal – hier, dann in Petrus’ Rechtfertigung vor der Gemeinde in Kapitel 11, dann noch einmal beim Apostelkonzil in Kapitel 15. Kein anderer Vorgang bekommt in der Apostelgeschichte so viel Raum; das ist die Art, wie Lukas Gewicht anzeigt. Auffällig ist die Reihenfolge der Einsicht: Der Geist kommt über die Anwesenden, bevor sie getauft sind, und Petrus zieht daraus die Folgerung – nicht umgekehrt. Die Entscheidung fällt an einer Erfahrung, nicht an einem Argument.',
     reception:
       'Die Kornelius-Erzählung ist der Kerntext für jede kirchliche Debatte über Aufnahme und Grenzen geworden – von den Missionskonferenzen des 19. Jahrhunderts bis zu den Auseinandersetzungen um Rassentrennung. In den amerikanischen Kirchen der Bürgerrechtszeit gehörte der Satz „Gott sieht die Person nicht an“ zu den meistzitierten überhaupt.\n\nIn jüngerer Zeit wird das Kapitel in Debatten über den Umgang mit Homosexualität herangezogen, und zwar von beiden Seiten: Die einen sehen darin das Muster, dass Erfahrung eine überlieferte Ordnung aufbrechen kann; die anderen halten dagegen, dass hier eine Zusage der Schrift selbst eingelöst werde und die Lage nicht vergleichbar sei.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Cäsarea Maritima war Sitz des Statthalters, mit künstlichem Hafen, Theater und Kaisertempel – eine römische Stadt an der Küste, in der Nichtjuden die Mehrheit stellten. Ein Hauptmann dort gehörte zur Besatzungsmacht und befehligte etwa achtzig Mann.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die „Gottesfürchtigen“ waren eine feste Größe: Nichtjuden, die sich an die Synagoge hielten, Almosen gaben und die Gebetszeiten einhielten, ohne beschnitten zu sein. Inschriften aus Aphrodisias nennen sie eigens. Sie standen zwischen den Welten – und aus ihnen kamen viele der ersten Christen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Haus eines Nichtjuden zu betreten galt vielen als verunreinigend, weil man nicht wusste, was dort gelagert und gekocht wurde. Es ging weniger um ein Verbot als um Tischgemeinschaft: Wer mitaß, konnte nicht kontrollieren, woher das Fleisch stammte und ob es Götterbildern geweiht war.',
+      },
+    ],
     terms: [
       {
         word: 'griech. prosopolemptes',
@@ -11059,6 +11325,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz steht in der Bergpredigt unmittelbar hinter den Seligpreisungen und dem Salzwort. Angeredet ist eine kleine, gefährdete Gruppe, nicht eine Mehrheitsreligion. Das Bild der Stadt auf dem Berge meint vermutlich Jerusalem, dessen Lage jeder Zuhörer vor Augen hatte; das Licht unter dem Scheffel spielt auf die einfache Öllampe im Einraumhaus an, die man mit einem Getreidemaß löschte. Auffällig ist die Reihenfolge: Erst steht die Zusage, dann die Aufforderung in Vers 16.',
     reception:
       'Die „Stadt auf dem Berge“ ist zu einer politischen Formel geworden. John Winthrop gebrauchte sie 1630 an Bord der Arbella für die Puritanersiedlung in Neuengland; über Kennedy und Reagan wurde daraus ein Kernbild amerikanischen Selbstverständnisses. Im Text ist der Satz keine Zusage an ein Land, sondern eine Feststellung über eine kleine, verfolgte Gruppe.\n\nIn der kirchlichen Auslegung ist der Vers das Standardargument gegen einen Rückzug ins Private: Was verborgen bleibt, erfüllt seine Bestimmung nicht. Der Nachsatz in Vers 16 zieht dabei eine Grenze – das Licht soll leuchten, damit nicht die Leuchtenden, sondern Gott gerühmt wird.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Ein Bauernhaus hatte einen Raum und wenige, kleine Fenster. Die Tonlampe mit Olivenöl und Docht brannte auf einem Ständer und beleuchtete tatsächlich alles, was da war. Öl war teuer genug, dass man die Lampe nicht ohne Grund brennen ließ.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Städte lagen aus Verteidigungsgründen auf Kuppen und waren nachts an ihren Lichtern über weite Strecken zu sehen. Wer im galiläischen Bergland stand, hatte solche Orte am Horizont. Das Bild ist eine Beobachtung, keine Erfindung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. modios',
@@ -11108,6 +11384,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Bergpredigt spricht hier zu Menschen, für die Essen und Kleidung tatsächlich täglich unsicher waren. Die Beispiele davor stammen aus der Anschauung: Vögel, die nicht säen, Lilien, die nicht spinnen. Der Vers zieht daraus keine Empfehlung zur Untätigkeit, sondern eine Reihenfolge. Das Wort für Sorgen meint im Griechischen ein Zerteiltsein der Gedanken. Vers 34 begrenzt den Horizont bewusst auf den heutigen Tag.',
     reception:
       'Der Vers gehört zu den meistverwendeten Konfirmationssprüchen und steht zugleich im Zentrum eines Streits: In der Wohlstandsverkündigung wird das „zufallen“ als Zusage materiellen Erfolgs gelesen. Der Zusammenhang gibt das nicht her – gesprochen ist er zu Menschen, für die Essen und Kleidung täglich unsicher waren, und der nächste Vers begrenzt den Horizont ausdrücklich auf den heutigen Tag.\n\nIn der Ordensgeschichte hat der Abschnitt eine andere Wirkung entfaltet: Die Bettelorden des 13. Jahrhunderts, Franziskaner wie Dominikaner, beriefen sich auf ihn für den Verzicht auf Besitz. Kirchenrechtlich löste das den Armutsstreit aus, der das 14. Jahrhundert beschäftigte.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Kleidung war ein Vermögenswert: Ein Gewand entstand aus Wolle oder Flachs in Wochen Handarbeit, wurde vererbt, gepfändet und als Sicherheit hinterlegt. 2. Mose 22 verlangt, den Mantel eines Armen vor Sonnenuntergang zurückzugeben, weil er darin schläft. Sorge um Kleidung war deshalb keine Eitelkeit.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Lilien und das Gras des Feldes blühen in Galiläa im Frühjahr für wenige Wochen und verdorren im Mai; getrocknetes Gras wurde als Brennmaterial in den Backofen geschoben. Das Bild vom Gras, das morgen in den Ofen kommt, beschreibt einen Handgriff aus der Küche.',
+      },
+    ],
     terms: [
       {
         word: 'griech. merimnate',
@@ -11250,6 +11536,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Ruf steht am Ende eines Kapitels voller Ablehnung: Johannes zweifelt, die Städte hören nicht. Umso auffälliger ist der Wechsel im Ton. Sprachlich lehnt sich der Abschnitt eng an Jesus Sirach an, wo die Weisheit selbst zu ihrem Joch einlädt. Das Joch ist im rabbinischen Sprachgebrauch ein feststehendes Bild für die Tora; das Wort für erquicken meint eine Atempause, nicht dauerhafte Ruhe. Mühselig und beladen bezeichnet keine Seelenlage, sondern die Erschöpfung von Menschen, die körperlich arbeiten und Abgaben tragen.',
     reception:
       'Der Vers steht über unzähligen Kirchenportalen und Krankenhauskapellen und gehört zu den meistgesprochenen Sätzen in der Sterbebegleitung. Bach vertonte ihn mehrfach; Händel gab ihm im *Messiah* als „Come unto Him“ eine der ruhigsten Nummern des Werks.\n\nDie Auslegungsgeschichte hat den Satz oft verinnerlicht – als Ruf an Beladene mit einem schweren Gewissen. Im Zusammenhang bei Matthäus geht es zunächst um etwas Handfesteres: um Menschen, die körperlich arbeiten, Abgaben tragen und deren Erschöpfung nichts mit ihrer Seelenlage zu tun hat.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Mühselig und beladen beschreibt Tagelöhner, Träger und Kleinbauern: Lasten wurden auf dem Rücken oder mit dem Joch über den Schultern getragen, gearbeitet wurde von Sonnenaufgang bis Sonnenuntergang. Der Zustand ist körperlich gemeint, bevor er auf anderes übertragen wird.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ein Joch war maßgefertigt: Es wurde dem einzelnen Tier angepasst, damit es nicht scheuerte, und verband zwei Zugtiere, von denen das erfahrene das jüngere führte. „Mein Joch ist sanft“ meint deshalb ein gut gearbeitetes Joch – nicht das Fehlen einer Last.',
+      },
+    ],
     terms: [
       {
         word: 'griech. anapauso',
@@ -11348,6 +11644,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Beide Zitate stammen aus dem Alten Testament: die Gottesliebe aus dem täglichen Bekenntnis Israels in 5. Mose 6, die Nächstenliebe aus dem Heiligkeitsgesetz in 3. Mose 19. Beide waren jedem Zuhörer vertraut. Die Frage nach dem vornehmsten Gebot war eine geläufige Schuldebatte. Neu ist, dass die beiden Sätze aneinandergebunden und gemeinsam an die Spitze gestellt werden. Der Nächste meint in 3. Mose zunächst den Volksgenossen; wie weit der Kreis reicht, verhandelt Lukas in der Erzählung vom barmherzigen Samariter.',
     reception:
       'Das Doppelgebot ist der meistzitierte ethische Satz des Christentums und steht in nahezu jedem kirchlichen Grundlagentext. In der Reformationszeit ordnete es die Katechismen: Luthers Einteilung der Zehn Gebote in zwei Tafeln – Gott und Nächster – folgt ihm.\n\nBemerkenswert ist die Wirkungsgeschichte des Zusatzes „wie dich selbst“. In der älteren Auslegung galt Selbstliebe als das, was ohnehin geschieht und als Maßstab dient; seit dem 20. Jahrhundert wird der Satz häufiger als Aufforderung gelesen, sich selbst gut zu behandeln. Beide Lesarten sind vertretbar, und die zweite ist die jüngere.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Frage nach dem wichtigsten Gebot war eine geläufige Schuldebatte: Bei 613 gezählten Geboten stritt man darüber, welches als Grundsatz alle anderen zusammenfasst. Hillel soll auf einem Bein die verneinte Goldene Regel genannt haben. Die Antwort steht in dieser Übung, sie fällt nicht aus ihr heraus.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Beide Zitate kannte jeder Hörer auswendig: Das erste stand im Gebet, das zweimal täglich gesprochen wurde, das zweite im Heiligkeitsgesetz. Sie zusammenzustellen war eine Auslegungsleistung, die man am Wortlaut nachprüfen konnte – deshalb stimmt der Fragende im Markusbericht ausdrücklich zu.',
+      },
+    ],
     terms: [
       {
         word: 'griech. dianoia',
@@ -11397,6 +11703,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Vers beendet die Szene, in der Jakobus und Johannes die Ehrenplätze fordern. Das Wort, das Luther mit Bezahlung übersetzt, heißt im Griechischen Lösegeld und stammt aus der Sprache des Sklavenfreikaufs; wem es gezahlt wird, sagt der Text nicht. Für viele meint im Semitischen die Vielen, also alle, nicht eine Auswahl. Der Satz verbindet zwei Bilder, die sonst getrennt laufen: den dienenden Menschensohn aus Daniel 7 und den leidenden Gottesknecht aus Jesaja 53.',
     reception:
       'Aus dem Wort „Lösegeld“ ist die älteste Deutung des Kreuzes gewachsen: Christus habe den Preis für die an den Teufel Verfallenen gezahlt. Gregor von Nyssa malte das als List aus, mit der der Teufel überlistet werde; Anselm von Canterbury verwarf diese Vorstellung um 1098 und ersetzte sie durch die Satisfaktionslehre – Christus leiste Genugtuung an Gottes Ehre. Abaelard widersprach beidem und sah im Kreuz vor allem eine Liebeserweisung.\n\nDie Debatte ist offen geblieben. Seit dem 20. Jahrhundert wird vor allem gefragt, ob eine Deutung, in der ein Vater den Sohn zur Zahlung schickt, in der Seelsorge tragbar ist. Dass der Text selbst keinen Empfänger nennt, ist dabei das wichtigste Argument gegen jede Zuspitzung.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Beim Gastmahl entschied die Sitzordnung über den Rang, und die Plätze rechts und links des Gastgebers waren die begehrtesten. Die Bitte der Zebedäus-Söhne ist deshalb keine Frömmigkeit, sondern eine Karriereforderung – und die Empörung der übrigen zehn ist Konkurrenz.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Lösegeld war ein geläufiger Rechtsvorgang: Kriegsgefangene und Schuldsklaven wurden freigekauft, oft von Verwandten, manchmal von Gemeinden. Inschriften aus Delphi überliefern hunderte solcher Freilassungen. Das Wort kam aus dem Alltag, nicht aus der Theologie.',
+      },
+    ],
     terms: [
       {
         word: 'griech. lytron',
@@ -11633,6 +11949,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Markus und Matthäus überliefern denselben Ruf ohne das Wort täglich. Bei Markus ist das Kreuz die Hinrichtung, die konkret bevorsteht; der Satz meint dort die Bereitschaft, mit Jesus zu sterben. Lukas schreibt für eine Gemeinde, in der die meisten nicht hingerichtet werden. Sein Zusatz überträgt das Bild auf den Alltag und macht aus dem einmaligen Todesweg eine wiederkehrende Übung. Das Kreuz war für die Erstleser kein Schmuckstück, sondern das Hinrichtungswerkzeug der römischen Besatzung.',
     reception:
       'Aus dem Zusatz „täglich“ hat das Mönchtum seine Grundregel gemacht: Nachfolge als Übung, nicht als einmaliger Entschluss. Von der Regula Benedicti über Thomas von Kempen bis zur ignatianischen Tagesrückschau läuft diese Linie durch die ganze abendländische Frömmigkeit.\n\nSie hat auch eine schädliche Seite. „Sein Kreuz tragen“ ist zur Redewendung für jede Last geworden und wurde Menschen in Gewaltbeziehungen, in Ausbeutung und in Krankheit als Aufforderung zum Ausharren vorgehalten. Seelsorgliche Literatur widerspricht dem heute klar: Der Text spricht von einer Entscheidung, nicht von einem Erleiden.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Wer sich einer Bewegung anschloss, deren Anführer hingerichtet worden war, machte sich mitverdächtig. Rom verfolgte Aufstandsreste, und Sippenhaftung war nicht ausgeschlossen. Die Nachfolge, von der der Vers spricht, hatte für die ersten Leser eine unmittelbare politische Bedeutung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Sich selbst zu verleugnen hieß in einer Ehrgesellschaft: auf den eigenen Anspruch verzichten, den die Familie mitträgt. Wer seinen Stand nicht verteidigte, beschädigte auch seine Angehörigen. Deshalb ist die Aufforderung härter, als sie heute klingt – sie betraf nicht nur den Einzelnen.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kath hemeran',
@@ -11682,6 +12008,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Zachäus ist Oberzöllner in Jericho, also Kollaborateur der römischen Steuerpacht und begütert. Dass Jesus bei ihm einkehrt, löst Murren aus. Der Schlusssatz greift auf Hesekiel 34 zurück, wo Gott selbst ankündigt, das Verlorene zu suchen. Lukas hat denselben Gedanken zuvor in drei Gleichnissen entfaltet: das verlorene Schaf, der verlorene Groschen, der verlorene Sohn. Die Zusage steht dabei nicht am Anfang, sondern nachdem Zachäus die Hälfte seines Vermögens abgegeben hat.',
     reception:
       'Der Vers ist das Leitwort unzähliger Missionswerke und Stadtmissionen geworden und steht über den Eingängen vieler diakonischer Einrichtungen. In der Erweckungsbewegung des 19. Jahrhunderts war er der Standardtext für die Ansprache an Außenstehende.\n\nStrittig ist die Reihenfolge im Text. Zachäus sagt in Vers 8 zu, die Hälfte seines Vermögens zu geben und vierfach zu erstatten – im Griechischen in der Gegenwartsform, was auch heißen kann, dass er es längst tut. Wer so liest, findet keine Bekehrungsgeschichte, sondern die Verteidigung eines Mannes gegen ein Vorurteil.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Zölle wurden verpachtet: Wer die Erhebung ersteigerte, zahlte im Voraus und holte sich den Einsatz mit Aufschlag herein. Jericho lag an einer Zollgrenze und war für Balsamhandel bekannt – ein Oberzöllner dort war reich, und jeder wusste, woher.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Zöllner galten als unrein und unzuverlässig, ihr Zeugnis vor Gericht wenig wert; sie wurden gemieden, weil sie für die Besatzungsmacht arbeiteten und die eigenen Leute schröpften. Bei einem solchen einzukehren hieß, seine Tischgemeinschaft öffentlich anzuerkennen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Vierfache Erstattung war der Satz für nachgewiesenen Diebstahl mit Schlachtung nach 2. Mose 21; freiwillige Rückgabe verlangte nur den Betrag plus ein Fünftel. Zachäus bietet also weit mehr an, als das Recht ihm abverlangt hätte.',
+      },
+    ],
     terms: [
       {
         word: 'griech. architelones',
@@ -11730,6 +12070,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Zählung weicht hier von der gedruckten Lutherbibel ab: Vers 10 enthält nur den Satz über den Dieb, der Zweck des Kommens steht in Vers 11, und das Wort vom guten Hirten beginnt erst in Vers 12. Wer nach Johannes 10,10 sucht, findet den bekannten Satz also einen Vers weiter. Inhaltlich steht der Abschnitt in der Hirtenrede, die auf Hesekiel 34 zurückgreift, wo die Hirten Israels ihrer Herde vorgeworfen werden. Das Wort, das Luther mit volle Genüge übersetzt, meint das Übermaß, den Überschuss.',
     reception:
       'Der Satz vom Leben in Fülle ist zum Leitwort kirchlicher Entwicklungsarbeit geworden: Der Ökumenische Rat der Kirchen und zahlreiche Hilfswerke führen ihn in ihren Grundlagentexten, meist mit der Betonung, dass „Fülle“ Ernährung, Bildung und Gesundheit einschließt und nicht nur eine innere Größe ist.\n\nIn der Wohlstandsverkündigung wird derselbe Vers als Zusage materiellen Überflusses gelesen. Der Zusammenhang steht dem entgegen: Er handelt vom Hirten, der sein Leben lässt, und richtet sich gegen die, die „stehlen, würgen und umbringen“ – der Kontrast ist Ausbeutung, nicht Bescheidenheit.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Nachts wurden Herden in Steinpferche getrieben, deren einziger Zugang eine Lücke war; der Hirte legte sich davor. Wer über die Mauer kam, kam als Dieb. Die Bildrede setzt diese Bauweise voraus und braucht sie nicht zu erklären.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Hesekiel 34 nennt die Hirten Israels als Verantwortliche, die sich selbst weiden – gemeint ist die politische Führung. Wer in Jerusalem vom guten Hirten und von Dieben sprach, sprach in einem Bild, das seit Jahrhunderten Herrschaftskritik trug.',
+      },
+    ],
     terms: [
       {
         word: 'griech. perisson',
@@ -11779,6 +12129,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Martha hat Jesus gerade vorgeworfen, zu spät gekommen zu sein, und bekennt zugleich den Glauben an die Auferstehung am Jüngsten Tage, wie ihn die Pharisäer lehrten. Jesus verschiebt die Aussage aus der Zukunft in die Gegenwart: nicht ein Ereignis am Ende, sondern eine Person jetzt. Der Satz gehört zu den sieben Ich-bin-Worten des Johannesevangeliums. Bemerkenswert ist, dass die Rede in eine Frage mündet, die unbeantwortet im Raum steht, bis Martha in Vers 27 antwortet.',
     reception:
       'Der Vers eröffnet in vielen Kirchen die Trauerfeier und steht am Beginn des anglikanischen Begräbnisritus, der über das Book of Common Prayer die englischsprachige Bestattungssprache geprägt hat. Brahms nahm ihn nicht auf, Bach vertonte ihn mehrfach; in der bildenden Kunst gehört die Auferweckung des Lazarus zu den ältesten Motiven überhaupt und findet sich schon in den römischen Katakomben.\n\nAuffällig ist, wie selten die Fortsetzung mitgelesen wird. Auf die Zusage folgt eine Frage – „Glaubst du das?“ –, und zwei Verse später weint Jesus am Grab. Der Text lässt Zusage, Rückfrage und Trauer nebeneinander stehen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Bestattet wurde am Todestag, weil der Verwesung in diesem Klima nicht anders beizukommen war. Der Leichnam wurde gewaschen, mit Spezereien in Tücher gewickelt und in eine Felskammer gelegt; nach einem Jahr sammelte man die Gebeine in einer Kiste. Vier Tage im Grab hieß: endgültig.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Trauer war öffentlich und dauerte sieben Tage im Haus, mit Besuchern, Klagefrauen und Flötenspielern; auch arme Familien mussten sie bezahlen. Marta und Maria sind also von Menschen umgeben, als sie sprechen – die Szene spielt nicht im Stillen.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ego eimi',
@@ -11926,6 +12286,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Weinstock ist im Alten Testament ein feststehendes Bild für Israel, meist in der Anklage: Jesaja 5 erzählt vom Weinberg, der schlechte Trauben bringt. Auf den Münzen der Aufständischen war die Weinranke ein nationales Zeichen. Wenn der Text das Bild auf Jesus überträgt, ist das eine gewichtige Aussage. Das Wort bleiben kommt in Kapitel 15 elfmal vor und trägt den ganzen Abschnitt. Der Schlusssatz, ohne mich könnt ihr nichts tun, ist im Griechischen sehr scharf formuliert.',
     reception:
       'Der Weinstock ist eines der ältesten christlichen Bildmotive und findet sich in Katakomben, auf Sarkophagen und in Kirchenfenstern; er hat zugleich eine Vorgeschichte, denn im Alten Testament ist der Weinstock ein Bild für Israel – bei Jesaja 5, Psalm 80, Jeremia 2. Dass Johannes es aufnimmt, ist in der christlich-jüdischen Auslegungsgeschichte nicht unbelastet.\n\nIn der Frömmigkeitsgeschichte hat der Vers zwei entgegengesetzte Wirkungen entfaltet: Für die Mystik ist er der Text vom Einwohnen Gottes im Menschen, für die Aktivisten der Erweckungsbewegungen der Beleg, dass ohne Christus nichts gelingt. Der Satz „ohne mich könnt ihr nichts tun“ steht dabei häufiger auf Plakaten als der Satz vom Bleiben.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Weinbau war die aufwendigste Landwirtschaft der Region: Terrassen anlegen, Steine lesen, Mauern setzen, jährlich schneiden, im Herbst Wache halten. Bis zum vollen Ertrag vergingen vier bis fünf Jahre. Ein Weinberg war deshalb Vermögen und Verpflichtung zugleich.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Weinstock war Sinnbild Israels – bei Jesaja 5, Psalm 80 und Jeremia 2 –, und über dem Eingang zum Tempel hing nach Josephus ein goldener Weinstock. Wer das Bild in Jerusalem gebrauchte, griff nach einem Zeichen, das jeder Besucher gesehen hatte.',
+      },
+    ],
     terms: [
       {
         word: 'griech. meno',
@@ -12024,6 +12394,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Jünger haben eben gefragt, ob nun das Reich für Israel wiederhergestellt werde – eine politische Frage. Die Antwort verschiebt die Erwartung von der Zeit auf den Raum: nicht wann, sondern wohin. Die genannten Stationen sind zugleich der Aufbau der Apostelgeschichte: Jerusalem in den Kapiteln 1 bis 7, Judäa und Samarien in 8 bis 12, das Ende der Erde ab Kapitel 13. Das Buch endet in Rom, also nicht am geographischen Ende – der Auftrag bleibt bewusst offen.',
     reception:
       'Auffällig ist, wie das Buch endet: Paulus predigt in Rom „ungehindert“, und danach bricht die Erzählung ab – ohne Prozess, ohne Tod, ohne Abschluss. Ein Teil der Forschung sieht darin Absicht: Das „Ende der Erde“ sei erreicht, und was danach kommt, betreffe die Leser.\n\nIn der Missionsgeschichte ist der Vers zum Programm geworden, mit den bekannten zwei Seiten: weltweite Übersetzungsarbeit und Bildung auf der einen, die Verquickung mit kolonialer Macht auf der anderen. Missionserklärungen seit den 1960er Jahren betonen deshalb, dass „Zeuge sein“ ein Aussagewort ist und kein Auftrag zur Unterwerfung.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Die Reihenfolge Jerusalem – Judäa – Samarien – Ende der Erde ist eine Landkarte in konzentrischen Kreisen, und der letzte Kreis meinte für antike Leser die Säulen des Herakles oder Indien. Für Lukas endet er in Rom: Wer die Hauptstadt erreicht hatte, erreichte alles Übrige über deren Straßen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Samarien ausdrücklich zu nennen war keine Selbstverständlichkeit: Der Weg dorthin führte durch Gebiet, das viele Pilger großräumig umgingen. Die Aufzählung setzt die unangenehmste Station in die Mitte.',
+      },
+    ],
     terms: [
       {
         word: 'griech. martyres',
@@ -12073,6 +12453,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Zuhörer haben nach der Pfingstpredigt gefragt, was sie tun sollen. Die Antwort nennt drei Schritte, die im Text zusammengehören: Umkehr, Taufe auf den Namen Jesu Christi, Empfang des Geistes. Das griechische Wort für Buße heißt Umdenken, nicht Reue im Sinne von Zerknirschung. Die Taufe auf den Namen Jesu unterscheidet sich in der Formel von der trinitarischen Taufe in Matthäus 28; beide Formen stehen unausgeglichen nebeneinander im Neuen Testament.',
     reception:
       'Der Vers ist der zentrale Text jeder Tauflehre und markiert zugleich die Grenzlinien zwischen den Konfessionen: über die Reihenfolge von Umkehr und Taufe, über die Kindertaufe und über die Formel „auf den Namen Jesu“ gegenüber der dreigliedrigen Formel aus Matthäus 28.\n\nLuthers erste These von 1517 – „Da unser Herr und Meister Jesus Christus spricht ‚Tut Buße‘, hat er gewollt, dass das ganze Leben der Gläubigen Buße sein soll“ – beruht auf der Beobachtung, dass das griechische Wort Umdenken meint und die lateinische Übersetzung *poenitentiam agite* eine Handlung daraus machte.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Tauchbäder waren Alltag: In Jerusalem sind über hundert Mikwen ausgegraben, viele in Privathäusern und rund um den Tempelbezirk. Man tauchte vor dem Betreten des Heiligtums, nach Unreinheit, regelmäßig und selbst. Eine einmalige Taufe, die ein anderer vollzieht, war deshalb die auffällige Abweichung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Szene spielt am Wochenfest, mit Wallfahrern aus aller Welt in der Stadt. Wer sich taufen ließ, tat das öffentlich und vor Zeugen aus der eigenen Heimatgemeinde – und nahm die Folgen für seine Stellung dort mit in Kauf.',
+      },
+    ],
     terms: [
       {
         word: 'griech. metanoesate',
@@ -12122,6 +12512,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Petrus steht vor dem Hohen Rat und wird verhört, weil er einen Gelähmten geheilt hat. Die Frage lautete, in welchem Namen er das getan habe; der Satz ist die Antwort darauf. Das griechische Wort, das Luther mit selig werden übersetzt, meint zugleich heilen und retten – im Zusammenhang der Heilung ist beides gemeint. Der Text der Lutherausgabe enthält hier den ungewöhnlichen Bindestrich in keinem andern-Heil, eine Eigenheit der Vorlage. Angeredet ist eine innerjüdische Streitlage, nicht das Verhältnis zu anderen Religionen.',
     reception:
       'Der Vers ist neben Johannes 14,6 der meistzitierte Beleg für den Absolutheitsanspruch des Christentums und stand entsprechend im Zentrum aller Debatten über Mission und Religionsdialog. Er wird häufig ohne seine Lage zitiert: Gesprochen ist er in einem Verhör vor dem Hohen Rat, in dem sich zwei Handwerker gegen eine Anklage verteidigen, nicht in einem Vergleich der Religionen.\n\nKirchliche Erklärungen des 20. Jahrhunderts halten daran fest, dass Christen ihr Heil von Christus erwarten, und lehnen zugleich ab, daraus ein Urteil über andere abzuleiten – *Nostra aetate* 1965, die Erklärungen des Ökumenischen Rates seit 1979. Wie beides zusammengeht, ist nicht abschließend geklärt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Hohe Rat hatte etwa siebzig Mitglieder und tagte als oberstes Gericht in Religions- und Rechtsfragen. Petrus und Johannes stehen dort als Handwerker ohne Ausbildung – der Text vermerkt in Vers 13 ausdrücklich, dass man sie für ungelehrt hielt. Ihre Rede ist eine Verteidigung, kein Vortrag.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Anlass der Verhandlung ist die Heilung eines Gelähmten, der jahrelang am Tempeltor gebettelt hatte und in der Stadt bekannt war. Der Rat verhandelt also einen Fall, den jeder überprüfen konnte – und dessen Wirkung sich nicht bestreiten ließ.',
+      },
+    ],
     terms: [
       {
         word: 'griech. sozo',
