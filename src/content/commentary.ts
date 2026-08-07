@@ -535,6 +535,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Aufbau ist streng: vier Strophen zu je sechs Versen über Wissen, Gegenwart, Werden und schließlich die Bitte um Prüfung. Die Bildwelt greift die damals bekannten Grenzen der Welt auf – Himmel, Totenreich, der Osten des Sonnenaufgangs, das Meer im Westen. „Im Verborgenen gebildet, gewirkt unten in der Erde“ ist eine ungewöhnliche Wendung: Der Mutterleib wird mit dem Erdinneren verglichen, dem Ort, aus dem nach 1. Mose 2 der Mensch geformt wurde. Der Schluss dreht die Richtung um: Nachdem der Beter zwanzig Verse lang beschrieben hat, wie durchschaut er ist, bittet er ausdrücklich darum, geprüft zu werden.\n\nSelten mitgelesen werden die Verse 19 bis 22. Dort bittet der Beter Gott, die „Blutgierigen“ zu töten, und erklärt, er hasse sie „mit rechtem Ernst“. Viele Ausgaben lassen sie in Gottesdiensten weg, und wer nur die berühmten Verse kennt, hält den Psalm für eine Meditation. Mit den Hassversen gelesen wird er zu etwas anderem: zur Verteidigungsrede eines Angeklagten, der sich auf Gottes Allwissen beruft, weil es ihn entlastet. Die Bitte am Schluss – „erforsche mich“ – ist dann kein frommer Nachsatz, sondern der Antrag, den der ganze Psalm stellt.',
     reception:
       'Die Verse 13 bis 16 gehören zu den meistzitierten Stellen in der Debatte um Schwangerschaftsabbruch, in Deutschland wie in den USA. Ausleger weisen darauf hin, dass der Psalm keine Aussage über den Status des Embryos treffen will, sondern über Gottes Zuwendung zu diesem einen Beter; wer ihn zum Argument macht, macht aus einem Gebet einen Rechtssatz. Dass er in dieser Rolle wirkt, lässt sich davon unabhängig nicht bestreiten.\n\nEine andere Wirkung ist stiller: In der Seelsorge bei Menschen mit Behinderung und in der Trauerbegleitung nach Fehlgeburten ist gerade Vers 16 – „alle Tage waren auf dein Buch geschrieben“ – zu einem der meistgesprochenen Sätze geworden.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Himmel, Totenreich, Morgenröte im Osten, Meer im Westen: Das ist die vollständige Weltkarte der Zeit, in vier Richtungen abgeschritten. Wer sie nennt, sagt nicht „überall“, sondern zählt die Enden auf, die man kannte – und schließt ausdrücklich das Totenreich ein, aus dem es nach damaliger Vorstellung keine Verbindung nach oben gab.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der Psalm endet mit der Bitte, geprüft zu werden. Vor Gericht gab es keine Ermittlung: Wo Zeugen fehlten, blieb der Gottesentscheid – Eid, Los, Ordal. Ein Angeklagter, der Gott zum Prüfer anruft, greift damit auf ein anerkanntes Verfahren zurück.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. kiljotai',
@@ -578,6 +588,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das hebräische Wort für „Herz“ meint nicht das Gefühl, sondern den Ort des Nachdenkens und Entscheidens – näher an „Verstand“ als an „Empfindung“. Wörtlich steht da: „Stütze dich nicht auf deine eigene Einsicht.“ Gemeint ist also nicht der Verzicht aufs Denken, sondern auf dessen Verabsolutierung. Auffällig ist die Fortsetzung wenige Verse später: Wer weise ist, soll sich nicht für weise halten. Die Sprüche misstrauen der Selbstsicherheit durchgehend – nicht der Klugheit.\n\nDie beiden Verse stehen in einer Lehrrede, die ein Vater an seinen Sohn richtet; der Rahmen ist Ausbildung, nicht Mystik. Und die Weisheitsliteratur ist international: Große Teile von Sprüche 22 bis 24 haben eine erkennbare Vorlage in der ägyptischen Lehre des Amenemope, und die Bücher Israels verhandeln dieselben Fragen wie die Schulen von Ägypten und Mesopotamien. Was in Kapitel 3 folgt, ist entsprechend handfest: Gib den Zehnten, schlage niemandem eine Wohltat ab, streite nicht ohne Grund. Von Weltflucht ist an keiner Stelle die Rede.',
     reception:
       'Der Vers gehört zu den meistverschenkten Konfirmations- und Taufsprüchen im deutschen Sprachraum und steht auf unzähligen Postkarten. In der Ratgeberliteratur wird er gern als Gegensatz zu Planung und Fachwissen gelesen – ein Gebrauch, der in evangelikalen Kreisen bis zur Ablehnung ärztlicher Behandlung führen kann. Ausleger halten dagegen, dass in demselben Buch der Rat der Vielen empfohlen und Faulheit gerügt wird.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Weisheit wurde in Schulen gelehrt, die Schreiber für Hof und Tempel ausbildeten: lesen, rechnen, Briefe formulieren, Sprüche auswendig lernen. Die Anrede „mein Sohn“ ist Schulsprache – der Lehrer redet den Schüler so an, nicht nur der Vater das Kind.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Sprüche empfehlen an anderer Stelle sehr handfest, Rat einzuholen, die Herden zu kennen, Vorräte anzulegen und die Ameise zu beobachten. Wer sich „nicht auf den eigenen Verstand stützen“ soll, wird also nicht zum Verzicht aufs Planen aufgefordert, sondern zum Verzicht auf dessen Alleinstellung.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. batach',
@@ -1798,6 +1818,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Endredaktion des Psalters hat diesen Text bewusst vorangestellt: Wer die 150 Psalmen betet, soll sie als „Weisung“ (Tora) lesen. Der Baum steht nicht am Fluss zufällig, sondern ist „gepflanzt“ – ein Passiv, das auf Gott als Handelnden verweist. Die Gegenüberstellung von Gerechten und Gottlosen ist typisch für die Weisheitsliteratur.',
     reception:
       'Weil Psalm 1 dem Psalter vorangestellt ist, hat er der ganzen Sammlung eine Leserichtung gegeben: Die Psalmen sind nicht nur Gebete, sondern Lehrtexte. Im Judentum ist er deshalb bis heute Grundlage der Vorstellung, dass Beten und Lernen zusammengehören.\n\nDie Zweiwegelehre, die er aufstellt, hat eine lange Nachgeschichte – von der Didache im 1. Jahrhundert über mittelalterliche Erbauungsschriften bis zu Bunyans *Pilgerreise*. Ihre Schwäche ist bekannt und wird in der Bibel selbst benannt: Hiob und Psalm 73 widersprechen der Zusage, dass es dem Gerechten wohlgeht.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Ein Baum an Wasserbächen war in Juda kein Naturbild, sondern Bewässerungswirtschaft: Kanäle und Rinnen führten Quellwasser zu angelegten Gärten, meist in Talgründen. Wer so gepflanzt war, überstand den Sommer – alles andere verdorrte ab Mai.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die drei Verben – wandeln, treten, sitzen – beschreiben eine Bewegung ins Feste: vorbeigehen, stehenbleiben, dazugehören. Der „Sitz der Spötter“ meint eine Runde, in der man Platz nimmt. In einem Dorf entschied genau das über den Ruf einer Familie.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. aschre',
@@ -1841,6 +1871,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Bilder – durchgrabene Hände und Füße, verteilte Kleider, das Los über das Gewand – sind Metaphern für äußerste Erniedrigung, wie sie in altorientalischer Klagedichtung verbreitet waren. Die Evangelien greifen sie in den Passionsberichten auf. Der Umschlag in Vers 22 erfolgt ohne Erklärung: Der Beter hat offenbar eine Zusage empfangen, die der Text nicht wiedergibt.\n\nSelten mitzitiert wird die zweite Hälfte. Bis Vers 21 ist der Psalm eine Klage, die nichts auslässt; ab Vers 22 wird er zum Danklied, und der Schluss weitet sich immer weiter: erst die Brüder, dann die Gemeinde, dann „aller Welt Enden“, schließlich ein Volk, „das noch geboren werden soll“. Der letzte Satz lautet, dass er es getan hat – im Hebräischen ein einziges Wort. Damit endet der Psalm der Gottverlassenheit mit einer vollendeten Tatsache.',
     reception:
       'Die Passionsberichte sind mit diesem Psalm durchsetzt: das Verteilen der Kleider, das Kopfschütteln der Umstehenden, der Spottsatz „Er hat auf Gott vertraut, der helfe ihm nun“. Die Evangelisten erzählen die Kreuzigung in seinen Worten – ob als Erinnerung an tatsächlich Gesagtes oder als Deutung des Geschehens, ist umstritten.\n\nVers 17 hat eine eigene, belastete Geschichte: Der hebräische Text ist an dieser Stelle unklar, die griechische Übersetzung las „sie haben meine Hände und Füße durchgraben“. Über Jahrhunderte wurde daraus im christlich-jüdischen Streitgespräch der Vorwurf, die Juden hätten ihren eigenen Text gefälscht – ein Vorwurf, den die Textforschung nicht bestätigt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Die Kleider eines Hingerichteten fielen den Vollstreckern zu; das war übliches Recht und galt als Teil ihres Verdienstes. Der Psalm beschreibt damit keinen Ausnahmefall, sondern das Verfahren – und die Beschämung, dass der Sterbende dabei zusieht.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Schluss kündigt an, ein Gelübde einzulösen und „vor denen, die ihn fürchten“ zu opfern – gemeint ist das Dankopfer, bei dem der Beter im Tempel ein Mahl ausrichtete und Arme mit einlud. Das Lob am Ende hat also einen Ort und eine Speisenfolge.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Spott war eine körperliche Handlung: Kopfschütteln, Lippenrümpfen, Umringen. Wer öffentlich verhöhnt wurde, verlor seine Stellung in der Gemeinschaft. Die Bilder der ersten Hälfte beschreiben deshalb weniger Schmerz als soziale Vernichtung.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. eli eli lama asawtani',
@@ -1883,6 +1927,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das hebräische Wort für „schaffe“ in Vers 10 ist dasselbe wie in 1. Mose 1 – es wird in der Bibel ausschließlich für Gottes Handeln verwendet. Am Ende steht ein überraschender Satz: Opfer will Gott nicht, sondern „ein zerschlagenes Herz“. Die Verse 18–19, die den Tempelkult wieder aufwerten, gelten vielen Fachleuten als spätere Ergänzung aus der Zeit des Wiederaufbaus.\n\nDer Psalm hat für die Schuld drei verschiedene Wörter und wechselt zwischen ihnen: Übertretung als Bruch eines Verhältnisses, Verfehlung als Zielverfehlung, Verkehrtheit als etwas, das krumm gewachsen ist. Dieselbe Dreiheit steht in der Gnadenformel von 2. Mose 34, auf die der Anfang des Psalms anspielt – der Beter zitiert also die Zusage, auf die er sich beruft. Bemerkenswert ist auch die Bitte um Reinigung „mit Ysop“: Ysop gehörte zum Ritual bei Aussatz und zur Totenreinigung. Der Beter vergleicht seine Lage mit dem, was einen Menschen ganz aus der Gemeinschaft nimmt.',
     reception:
       'Psalm 51 ist der bekannteste der sieben Bußpsalmen und stand im Zentrum der mittelalterlichen Bußpraxis. Sein lateinischer Anfang *Miserere mei, Deus* wurde zum Namen einer ganzen Gattung; Allegris Vertonung in der Sixtinischen Kapelle durfte lange nicht abgeschrieben werden. Luther legte den Psalm 1532 in einer eigenen Vorlesung aus und fand darin seine Lehre vom Menschen wieder.\n\nHistorisch ist die Zuschreibung an David wahrscheinlich später hinzugefügt; als Deutung hat sie den Text jedoch geprägt – er wurde zum Gebet der Mächtigen, die sich schuldig gemacht haben, und in dieser Rolle im Mittelalter Königen und Bischöfen bei der öffentlichen Buße aufgetragen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Ysop war ein Büschelkraut, das als Sprengwedel diente – klein, überall verfügbar, in keiner Weise kostbar. Das Reinigungsmittel der Wahl war also nichts, was man kaufen musste. Wer darum bittet, damit besprengt zu werden, bittet um ein Verfahren, das jeder Haushalt kannte und das nichts kostete.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Für Mord und Ehebruch sah das Recht kein Opfer vor: Sühnopfer galten für unabsichtliche Vergehen. Wer vorsätzlich getötet hatte, konnte nichts abliefern. Genau darauf läuft der Psalm hinaus – „Opfer willst du nicht“ ist keine Kultkritik im Grundsatz, sondern die Feststellung einer Lücke.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. bara',
@@ -1927,6 +1981,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Auf den Höhen standen fremde Heiligtümer – die Frage „Woher kommt mir Hilfe?“ ist deshalb eine echte Alternative: von den Höhenkulten oder vom Schöpfer? Die Antwort fällt eindeutig aus. Der Psalm ist als Wechselrede gebaut: Ein Einzelner fragt, eine andere Stimme antwortet ihm zusprechend.',
     reception:
       'Der Psalm gehört zu den meistgesprochenen Segenstexten bei Reisen, Auswanderungen und Abschieden und steht in vielen Kirchen am Ausgang. Mendelssohn machte aus den Versen 1 bis 4 im *Elias* das Terzett „Hebe deine Augen auf“, eines der bekanntesten Chorstücke des 19. Jahrhunderts.\n\nDie Zusage, dass kein Übel widerfährt, wird in der Seelsorge zurückhaltend verwendet: Sie ist in dieser Form nicht einlösbar, und Trauernden vorgehalten kann sie verletzen. Ausleger weisen darauf hin, dass der Psalm einem Wanderer gilt, dem konkrete Gefahren drohen – Sonnenstich, Steinschlag, Überfall –, und keine Aussage über das Leben im Ganzen macht.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Jerusalem liegt auf rund 750 Metern; wer aus dem Jordantal kam, stieg über tausend Höhenmeter. Die Wege führten durch unübersichtliche Schluchten, in denen Überfälle üblich waren. Zu den Bergen aufzusehen hieß deshalb zuerst: die gefährliche Strecke abschätzen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Auf den Höhen standen Heiligtümer – „Höhen“ ist im Alten Testament ein feststehender Begriff für örtliche Kultstätten, die die Reformen abzuschaffen versuchten. Die Frage „woher kommt mir Hilfe?“ hatte also zwei mögliche Antworten, und der Psalm entscheidet sie.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Sonnenstich war eine reale Todesursache: 2. Könige 4 erzählt vom Kind, das auf dem Feld über Kopfschmerzen klagt und stirbt. Auch der Mond galt als gefährlich – das Wort „mondsüchtig“ hat hier seine Wurzel. Die Zusage nennt die beiden Gefahren des Tages und der Nacht.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. schir hammaalot',
@@ -3962,6 +4030,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der hebräische Text dieser Verse gilt als einer der am schwierigsten zu übersetzenden der ganzen Bibel; die Fassungen weichen erheblich voneinander ab. Ob Hiob von einer Rehabilitierung zu Lebzeiten spricht oder von etwas darüber hinaus, ist offen. Er verlangt zuvor ausdrücklich, dass seine Worte „in Fels gehauen“ werden – er rechnet damit, nicht mehr da zu sein, wenn er recht bekommt.',
     reception:
       'Händels *Messiah* macht aus dem Vers die Sopranarie „I know that my Redeemer liveth“ und stellt sie an den Beginn des dritten Teils, unmittelbar vor die Auferstehungstexte. Diese Verbindung hat die christliche Wahrnehmung des Verses geprägt: Er gilt seither als alttestamentliches Osterzeugnis und steht auf unzähligen Grabsteinen.\n\nDer hebräische Text trägt das nicht ohne weiteres. Er gehört zu den am schwersten zu übersetzenden Stellen der Bibel, und der Zusammenhang ist eine Anklage: Hiob verlangt einen Rechtsbeistand gegen Gott. Dass ein Vers aus einem Prozess gegen Gott zum Trostwort am Grab wurde, ist eine der bemerkenswertesten Verschiebungen der Auslegungsgeschichte.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Löser war eine Rechtsfigur der Sippe: der nächste Verwandte, der verpflichtet war, verkauftes Land zurückzukaufen, einen Verarmten freizukaufen oder vergossenes Blut zu rächen. Hiob verlangt keinen Erlöser im späteren Sinn, sondern einen Anwalt, der seinen Fall führt – wenn nötig posthum.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Schrift auf Fels war die einzige Form der Dauer: Königsinschriften, Grenzsteine, Grabsprüche. Papyrus verrottete, Tontafeln zerbrachen, und Blei zum Einlegen der Buchstaben machte die Sache teuer. Wer so etwas verlangte, verlangte ein Denkmal – und rechnete mit einem sehr späten Verfahren.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. goel',
@@ -4005,6 +4083,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der berühmte Katalog mündet in eine unbequeme Feststellung: Gott hat „die Ewigkeit in ihr Herz gelegt“, aber der Mensch kann das Werk Gottes nicht durchschauen. Kohelet zieht daraus keine Resignation, sondern eine schlichte Folgerung – essen, trinken und im Tun Gutes sehen. Das Wort, das Luther mit „eitel“ übersetzt, heißt wörtlich „Hauch“ und meint eher Flüchtigkeit als Nichtigkeit.\n\nDie vierzehn Gegensatzpaare sind kein Trost, sondern eine Bestandsaufnahme – und sie enthalten Zeiten, die sich niemand wünscht: töten, abbrechen, hassen, Krieg. Auffällig ist, dass der Mensch in dieser Liste nicht handelt: Er kommt in keinem der Verse als Subjekt vor. Die Zeiten sind da; wer in welcher steht, entscheidet er nicht. Genau darin liegt die Zumutung des Abschnitts, und sie erklärt, warum er sich schlecht als Lebensweisheit verwenden lässt – als Aufforderung, den richtigen Augenblick zu treffen, ist er nicht gemeint.',
     reception:
       'Der Abschnitt gehört zu den meistgelesenen Bibeltexten bei Beerdigungen und Jahreswechseln – und ist durch Pete Seegers Lied *Turn! Turn! Turn!*, 1965 von den Byrds an die Spitze der amerikanischen Charts gebracht, zum wohl bekanntesten vertonten Bibeltext des 20. Jahrhunderts geworden. Seeger fügte dem Text nur vier Worte hinzu: „I swear it’s not too late“.\n\nIn der Auslegung wird der Abschnitt gern als Aufforderung zur Gelassenheit gelesen. Kohelet selbst zieht eine nüchternere Folgerung: Weil der Mensch das Ganze nicht überblickt, soll er essen, trinken und bei seiner Arbeit guten Mutes sein – das sei Gottes Gabe.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Pflanzen und Ausreißen, Steine sammeln und Steine werfen, Umarmen und Fernsein: Die Liste besteht überwiegend aus Feldarbeit und Bauarbeit. Steine vom Acker zu lesen und auf den Nachbaracker zu werfen war ein bekannter Streitpunkt zwischen Nachbarn.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Kohelet schreibt vermutlich in hellenistischer Zeit, als Handel, Geld und städtische Bildung nach Judäa kamen und alte Sicherheiten verloren gingen. Die Ptolemäer verpachteten die Steuererhebung an einheimische Familien – Vermögen entstand und verschwand schnell. Das ist der Hintergrund seiner Skepsis.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. et',
@@ -4051,6 +4139,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Klagelieder sind Akrosticha: Jede Strophe beginnt mit dem nächsten Buchstaben des Alphabets. Diese strenge Form ist selbst eine Aussage – wo alles zusammenbricht, hält wenigstens die Sprache eine Ordnung. Bemerkenswert ist, dass der Trost nicht am Ende steht: Nach ihm geht die Klage weiter, und das Buch schließt mit einer offenen Frage.',
     reception:
       'Aus Vers 23 wurde das Lied „Great Is Thy Faithfulness“, eines der meistgesungenen englischsprachigen Kirchenlieder des 20. Jahrhunderts, und im deutschen Sprachraum „Alle Morgen neu“. Der Vers steht in unzähligen Andachtsbüchern als Morgengebet.\n\nSein Ort im Buch wird dabei selten mitgesagt: Er steht mitten in einer Sammlung von Klageliedern über die Zerstörung Jerusalems 587 vor Christus, unmittelbar nach der Aussage, Gott habe den Beter „mit Bitterkeit gesättigt“ – und danach geht die Klage weiter. Das Buch endet mit einer offenen Frage, nicht mit dem Trost. In der Synagoge wird es am 9. Aw gelesen, dem Gedenktag beider Tempelzerstörungen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Die Klagelieder beschreiben eine ausgehungerte Stadt: Kinder, die nach Brot betteln, Frauen, die ihre eigenen Kinder essen, Angesehene, die im Abfall suchen. Belagerung bedeutete monatelanges Aushungern. Der Trostabschnitt steht mitten in diesen Bildern.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Klagelieder über zerstörte Städte waren eine eigene Gattung; aus Mesopotamien sind Klagen über Ur, Nippur und Uruk erhalten, teils im Tempel vorgetragen. Israel übernimmt die Form – und richtet die Klage an denselben Gott, der als Ursache genannt wird.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. chesed',
@@ -5326,6 +5424,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Bildwelt ist juristisch und existenziell zugleich: Siegel, Eifer, Scheol, Wasser, Kaufpreis. Der Schlusssatz – wer alles Gut seines Hauses für Liebe gäbe, würde nur verachtet – schließt jede Verrechnung aus. Dass ein Buch weltlicher Liebeslyrik in den Kanon kam, war schon in der Antike umstritten; Rabbi Akiba nannte es dennoch „das Allerheiligste“ unter den Schriften.\n\nDie Verse 6 und 7 sind der einzige Ort im ganzen Hohenlied, an dem Gott vorkommt – und selbst das ist unsicher: „eine Flamme des HERRN“ könnte auch schlicht „eine gewaltige Flamme“ heißen, weil das Hebräische einen Superlativ so bilden kann. Ansonsten schweigt das Buch von Gott, vom Bund, vom Gesetz. Es besteht aus Liebesliedern, die Motive ägyptischer Liebeslyrik aufnehmen, und es lässt die Frau mehr sprechen als den Mann – ein in der Bibel einmaliger Befund.',
     reception:
       'Über anderthalb Jahrtausende wurde das Hohelied fast ausschließlich allegorisch gelesen – im Judentum auf Gott und Israel, im Christentum auf Christus und die Kirche oder die Seele. Bernhard von Clairvaux hielt darüber 86 Predigten und kam bis Kapitel 3. Erst seit dem 18. Jahrhundert setzte sich die Lesart als Liebesdichtung durch, und beide Deutungen stehen heute nebeneinander.\n\nDass ein Buch mit unverstellter Körperlichkeit im Kanon steht, hat die kirchliche Sexualethik immer wieder in Verlegenheit gebracht – und wird in der neueren Auslegung gerade als Korrektiv gelesen: Die Bibel kennt Liebe nicht nur als Pflicht.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Ein Siegel war der persönlichste Gegenstand überhaupt: Es unterschrieb Verträge, verschloss Krüge und Türen und wurde am Halsband oder als Ring getragen. Es aus der Hand zu geben hieß, die eigene Rechtsfähigkeit zu übergeben. Das Bild verlangt genau das.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Brautpreise wurden in Silber und Vieh verhandelt, in Verträgen festgehalten und bei Scheidung zurückgefordert; Urkunden aus Elephantine überliefern solche Abmachungen im Wortlaut. Eheschließung war ein Geschäft zwischen Familien – und der Schlussvers des Buches stellt sich gegen genau diese Rechenweise.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. schalhebetja',
@@ -7139,6 +7247,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Hiobs Freunde hatten das gängige Schema vertreten: Wer leidet, hat gesündigt. Hiob bestreitet das und fordert ein Verfahren. Die Antwort verweigert genau dieses Verfahren – und rehabilitiert Hiob am Ende doch ausdrücklich gegenüber den Freunden. Die Fragen sind nicht spöttisch gemeint, sondern öffnen einen Horizont: Die Welt ist größer als die Buchhaltung von Schuld und Strafe. Das Buch gehört zur altorientalischen Weisheitsliteratur; verwandte Texte aus Mesopotamien behandeln dasselbe Problem, kommen aber zu anderen Schlüssen.',
     reception:
       'Die Gottesreden gehören zu den großen Naturdichtungen der Weltliteratur: Sternbilder, Wildesel, Strauß, Ross, Adler. Sie sind vielfach vertont und illustriert worden – William Blakes Radierungen von 1826 sind die berühmtesten. Carl Gustav Jung nahm sie 1952 in *Antwort auf Hiob* zum Ausgangspunkt einer Deutung, die weit über die Theologie hinaus gewirkt hat.\n\nWas sie nicht enthalten, ist die Antwort auf Hiobs Frage. Kein Wort über sein Leid, keine Erklärung, keine Rechtfertigung – stattdessen eine Reihe von Gegenfragen über die Schöpfung. In der Seelsorge wird gerade das als Hinweis gelesen: Es gibt Fragen, auf die eine Erklärung die falsche Antwort wäre.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Die Gottesreden zählen auf, was der Mensch nicht kontrolliert: Regen über unbewohntem Land, Schnee und Hagel, die Bahnen der Sternbilder, Löwen, Wildesel, Strauße, das Pferd im Krieg. Es ist eine Übersicht über die Ränder der bewohnten Welt, gesehen von jemandem, der Karawanen und Weidegründe kennt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Rechtsstreit wurde durch Rede und Gegenrede geführt; wer keine Antwort mehr hatte, hatte verloren. Hiob hat Gott vorgeladen und ein Verfahren verlangt. Was er bekommt, ist ein Verhör mit siebzig Gegenfragen – die Form der Erwiderung entspricht dem Verfahren, das er selbst angestrengt hat.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. seara',
@@ -7182,6 +7300,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das hebräische „chokma“ ist grammatisch weiblich; der Text nutzt das und lässt die Weisheit selbst sprechen. Ein Wort in Vers 30 ist seit der Antike umstritten: Es kann „Werkmeisterin“ oder „Liebling, Kind“ bedeuten – daher die sehr unterschiedlichen Übersetzungen. Die Stelle wurde im 4. Jahrhundert zum Zentrum des arianischen Streits: Wenn die Weisheit „geschaffen“ ist und mit Christus gleichgesetzt wird, wäre auch er geschaffen. Die Auseinandersetzung um das Wort im Nizänischen Bekenntnis hängt unmittelbar an diesem Vers.',
     reception:
       'Der Abschnitt war der meistumkämpfte alttestamentliche Text des arianischen Streits: Arius las in „der HERR hat mich gehabt im Anfang“ den Beweis, dass der Sohn geschaffen sei; Athanasius bestritt die Gleichsetzung von Weisheit und Sohn an dieser Stelle. Das Konzil von Nizäa 325 entschied gegen Arius – und damit über die Auslegung dieser Verse mit.\n\nIn der feministischen Theologie ist die Weisheit – hebräisch *Chochma*, griechisch *Sophia* – zu einer zentralen Gestalt geworden: eine weibliche Figur, die bei Gott ist, in der Schöpfung wirkt und auf den Straßen ruft. Die Sophiologie der russischen Theologie des 20. Jahrhunderts, bei Sergej Bulgakow, geht ebenfalls von diesem Kapitel aus.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Weisheit ruft auf den Straßen, an den Toren und auf den Anhöhen – dort, wo Recht gesprochen und Handel getrieben wurde. Sie tritt damit auf wie ein Lehrer, der öffentlich Schüler sucht, und in Konkurrenz zu der Frau, die in Kapitel 7 ebenfalls auf der Straße wirbt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'In Ägypten galt Maat als Ordnung der Welt und wurde als Göttin dargestellt, die neben dem Schöpfer steht; auch die Isis-Verehrung kannte weisheitliche Züge. Die Gestalt der Weisheit bewegt sich in diesem Vorstellungsraum – und bleibt Geschöpf.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. qanani',
@@ -7225,6 +7353,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Fast jedes Bild lässt sich auf den Körper beziehen – die Wächter als Arme, die Mahlenden als Zähne, die Fenster als Augen. Ob der Text so gemeint ist oder ob er ein verfallendes Haus und ein sterbendes Dorf beschreibt, ist alt umstritten; die Doppeldeutigkeit dürfte beabsichtigt sein. Das Buch stammt aus hellenistischer Zeit; sein Hebräisch enthält persische Lehnwörter. Es wurde nur nach längerem Streit in den Kanon aufgenommen – zu wenig fromm, zu wenig eindeutig.',
     reception:
       'Die Bilderreihe gehört zu den kunstvollsten Altersdarstellungen der Weltliteratur. Ob sie als Allegorie gemeint ist oder als Beschreibung eines untergehenden Hauswesens, wird bis heute diskutiert – manche Ausleger lesen darin den Verfall eines Anwesens, andere ein aufziehendes Unwetter, wieder andere einen Trauerzug.\n\nDer „silberne Strick“ und der „goldene Becher“ am Ende sind über Poe und zahlreiche Grabinschriften in die Literatur eingegangen. In der Altenseelsorge gilt der Abschnitt als einer der wenigen biblischen Texte, die das Altwerden ohne Verklärung beschreiben – und die es trotzdem nicht als Unglück bezeichnen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Die Bilder sind Hauswirtschaft: zitternde Wächter, gebeugte Starke, Müllerinnen, die aufhören, weil zu wenige sind, verdunkelte Fenster, eine Tür zur Straße, die geschlossen wird. Beschrieben ist ein Anwesen, in dem der Betrieb ausläuft – ein Vorgang, den jeder in seinem Dorf gesehen hatte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Alte lebten im Haus der Kinder; ein Ruhestand war unbekannt, und wer nicht mehr arbeiten konnte, war auf die Familie angewiesen. Die Klagefrauen auf der Gasse am Ende des Abschnitts gehörten zur Bestattung und wurden bezahlt – auch das gehörte zu den Kosten des Sterbens.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. borecha',
@@ -8103,6 +8241,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Sammlung enthält Lieder, die dem ägyptischen Liebeslied nahestehen. Auffällig ist, dass die Frau die meisten Verse spricht und die Initiative ergreift – ungewöhnlich für antike Literatur. Die Aufnahme in den Kanon verdankt sich der allegorischen Deutung: Rabbi Akiba nannte das Buch das „Allerheiligste“ der Schriften und meinte damit die Liebe zwischen Gott und Israel. Die wörtliche Lesart hat sich erst in der Neuzeit wieder durchgesetzt.',
     reception:
       'Der Frühlingsabschnitt gehört zu den meistvertonten Texten der Bibel und ist über Kirchenlieder, Motetten und die Trauliturgie weit verbreitet. In der jüdischen Tradition wird das Hohelied am Passafest gelesen – im Frühjahr, zu dem der Text passt.\n\nDie allegorische Auslegung hat den Abschnitt über anderthalb Jahrtausende auf das Verhältnis zwischen Gott und Seele bezogen; Bernhard von Clairvaux und die spätere Brautmystik leben davon. Seit dem 18. Jahrhundert setzte sich die Lesart als Liebesdichtung durch, und beide stehen heute nebeneinander – die Kirchen lesen den Text bei Trauungen und in der Mystik.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der Winter im Bergland ist regnerisch und kalt; ab März blühen Anemonen und Zyklamen, die Turteltaube kehrt als Zugvogel zurück, Feige und Weinstock treiben aus. Die Reihenfolge im Text ist botanisch und ornithologisch zutreffend und beschreibt wenige Wochen im Frühjahr.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehen wurden von Familien geschlossen, oft zwischen Verwandten, mit Brautpreis und Vertrag; Zuneigung war kein Kriterium. Ein Buch, in dem zwei sich suchen, ohne dass Väter, Verträge oder Kinder vorkommen, beschreibt deshalb nicht das Übliche, sondern eine Ausnahme.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Frau spricht von den „Hütern, die in der Stadt umgehen“ und die sie schlagen – Nachtwachen kontrollierten die Gassen, und eine Frau allein bei Nacht galt als Freiwild. Die Lieder spielen an Orten, an denen ein Treffen tatsächlich gefährlich war.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. dodi',
@@ -8150,6 +8302,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die ersten vier Kapitel sind alphabetische Akrosticha – jeder Abschnitt beginnt mit dem nächsten Buchstaben. Kapitel 5 bricht diese Form: es hat zwar 22 Verse wie das Alphabet Buchstaben, aber keine Anfangsbuchstaben mehr. Die Ordnung, die die Klage bis dahin gefasst hatte, hält am Ende nicht mehr. In der Synagoge wird der vorletzte Vers nach dem letzten wiederholt, damit die Lesung nicht auf dieser Frage endet – ein liturgischer Umgang mit einem Text, den man so nicht stehen lassen wollte.',
     reception:
       'Die Klagelieder enden ohne Auflösung. Das ist in der Synagoge liturgisch aufgefangen worden: Beim Vortrag am 9. Aw wird nach dem letzten Vers Vers 21 noch einmal wiederholt, damit die Lesung nicht mit der Verwerfung schließt. Dieselbe Praxis gilt bei Jesaja, Maleachi und Kohelet.\n\nIn der christlichen Auslegung ist der offene Schluss lange überspielt worden, indem man ihn mit Ostern beantwortete. Die Seelsorgeliteratur der letzten Jahrzehnte liest ihn anders: Als Erlaubnis, dass eine Klage stehen bleiben darf, wenn es nichts zu antworten gibt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Das Kapitel zählt auf, was der Alltag nach der Zerstörung kostete: Wasser wird gekauft, Holz muss bezahlt werden, das Brot holt man unter Lebensgefahr, junge Männer tragen die Mühlsteine – Sklavenarbeit. Es ist eine Bestandsaufnahme in Preisen und Verrichtungen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Klage nennt Ägypten und Assur, denen man „die Hand gereicht“ habe, um satt zu werden. Juda hatte über Jahrzehnte zwischen den Großmächten laviert und Tribut gezahlt. Der Rückblick benennt diese Politik als Teil des Unglücks, ohne sie zur einzigen Ursache zu machen.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. haschibenu',
@@ -9834,6 +9996,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Frage klingt nach Selbstverkleinerung, die Antwort dreht sie um: Der Mensch ist „wenig niedriger als Gott“ gemacht und mit Herrschaft betraut. Im Alten Orient galt allein der König als Statthalter der Gottheit; hier wird die Würde auf jeden Menschen ausgeweitet. Der Psalm rahmt das mit demselben Vers am Anfang und am Ende – die Würde ist eingefasst vom Lob, nicht selbstverständlich. Der Hebräerbrief zitiert die Stelle und bezieht sie auf Christus.',
     reception:
       'Der Psalm ist der biblische Grundtext der Rede von der Menschenwürde und steht in kirchlichen Stellungnahmen von der Bioethik bis zum Flüchtlingsschutz. Sein Bild – der Mensch als Statthalter – ist zugleich der Ansatzpunkt der ökologischen Kritik: Wo Herrschaft als Verfügung gelesen wird, gerät derselbe Vers unter denselben Verdacht wie Genesis 1.\n\n1969 legte die Besatzung von Apollo 11 eine Silberscheibe mit Grußbotschaften auf dem Mond ab; die des Papstes bestand aus diesem Psalm. Der Vers vom Blick auf Mond und Sterne ist damit auf dem Mond gelandet.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Ohne künstliches Licht war der Sternenhimmel überwältigend und alltäglich zugleich: Er diente als Kalender, Kompass und Uhr. Wer nachts unterwegs war oder Herden hütete, kannte Aufgang und Stand der Gestirne. Der Psalm setzt bei einer gewöhnlichen Wahrnehmung an.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Statthalter der Gottheit zu sein war ein Königstitel: Pharaonen und mesopotamische Herrscher trugen ihn, und Standbilder vertraten den Herrscher in den Provinzen. Diese Würde auf jeden Menschen zu übertragen war eine politische Aussage, keine fromme.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. enosch',
@@ -9922,6 +10094,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Psalm besteht aus zwei sehr verschiedenen Teilen, die manche für ursprünglich getrennt halten: die Himmel in den ersten Versen, dann das Lob der Weisung Gottes. Der Übergang ist Absicht: Zwei Weisen, Gott zu erkennen, stehen nebeneinander, ohne dass eine die andere ersetzt. Bemerkenswert ist die Sonnenbeschreibung – sie verwendet Bilder aus dem altorientalischen Sonnenkult und macht die Sonne dabei ausdrücklich zum Geschöpf. Paulus greift den ersten Teil in Römer 10 auf.',
     reception:
       'Haydn machte aus dem ersten Vers den Chor „Die Himmel erzählen die Ehre Gottes“ in der *Schöpfung* von 1798 – bis heute eines der meistgesungenen Chorstücke überhaupt; Beethoven vertonte den Psalm in Gellerts Fassung. Immanuel Kant zitierte den Vers nicht, aber sein berühmter Satz vom bestirnten Himmel über mir und dem moralischen Gesetz in mir folgt genau der Zweiteilung dieses Psalms.\n\nIn der Auslegung ist der Psalm der Kronzeuge für die Frage, ob Gott aus der Schöpfung erkennbar sei. Die katholische Tradition hat daraus eine natürliche Gotteserkenntnis abgeleitet; Karl Barth hat ihr entschieden widersprochen. Der Psalm selbst stellt beides nebeneinander, ohne zu ordnen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Sonne und Mond waren in Ägypten und Mesopotamien Gottheiten mit eigenen Tempeln, Priestern und Festen; Schamasch galt zugleich als Gott des Rechts. Der Psalm beschreibt die Sonne wie einen Helden, der seine Bahn läuft – und macht sie im selben Zug zum Geschöpf, das ein Zelt bekommt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die zweite Hälfte lobt die Weisung mit sechs verschiedenen Wörtern und vergleicht sie mit Gold und Honig – beides Luxusgüter. Für Hörer, die selten Süßes aßen und kaum Gold sahen, war das die stärkste verfügbare Steigerung.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. kawwam',
@@ -9965,6 +10147,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die ersten Verse klingen unerschütterlich, ab Vers 7 wird gebeten und geklagt, am Ende steht die Aufforderung, auf den HERRN zu harren. Diese Bewegung ist typisch für den Psalter: Vertrauen wird nicht als Zustand beschrieben, sondern als etwas, das gegen die Umstände festgehalten wird. Das Bild vom Licht ist im Alten Testament selten als Gottesbezeichnung; häufiger steht es für Rettung und Leben. Der Psalm gehört im Judentum zur Zeit der Bußtage vor dem Neujahrsfest.',
     reception:
       'Im Judentum wird Psalm 27 vom Beginn des Monats Elul bis zum Ende der Herbstfeste zweimal täglich gesprochen – also über sieben Wochen der Selbstprüfung hinweg. Kaum ein Psalm hat einen so festen Platz im Jahreslauf.\n\nIm Christentum ist er vor allem durch seine Musik präsent: Heinrich Schütz, Mendelssohn und zahlreiche Vertonungen des 20. Jahrhunderts. In der Seelsorge wird er wegen seines Bruchs geschätzt – dass ein Psalm, der so fest beginnt, ab Vers 7 ins Bitten kippt, gilt als Erlaubnis, dass Zuversicht und Angst nebeneinander bestehen dürfen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Wunsch, „im Hause des HERRN zu wohnen“, ist konkreter, als er klingt: Das Heiligtum bot Asyl. Wer verfolgt wurde, konnte die Hörner des Altars ergreifen und war vorläufig unantastbar; 1. Könige 1 und 2 erzählen zwei solche Fälle. Der Psalm bittet um genau diesen Schutzraum.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Vers 12 nennt falsche Zeugen. Ein Verfahren stand und fiel mit ihnen: Es gab keine Ermittlungen, keine Sachbeweise, nur Aussagen vor den Ältesten im Tor. Wer zwei Zeugen kaufte, konnte einen Nachbarn ruinieren – und der Beschuldigte hatte kaum etwas dagegenzusetzen.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. or',
@@ -10141,6 +10333,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Psalm gehört mit Psalm 43 zusammen; beide teilen denselben Kehrvers. Der Beter ist offenbar fern vom Heiligtum, im Norden am Hermon. Bemerkenswert ist die Wendung an die eigene Seele: Der Beter redet mit sich selbst und hält sich zur Hoffnung an, ohne dass sich die Lage ändert. Der Vorwurf der anderen – „wo ist nun dein Gott?“ – wird nicht widerlegt.',
     reception:
       'Der Anfangsvers ist über Palestrina, Bach und Mendelssohn – dessen Psalmvertonung von 1837 gehört zu den meistaufgeführten – zu einem der bekanntesten Bibeltexte der Kirchenmusik geworden. Das Kirchenlied „Wie der Hirsch nach frischem Wasser“ steht in fast allen deutschsprachigen Gesangbüchern.\n\nIn der Frömmigkeitsgeschichte gilt der Psalm als Grundtext für die Erfahrung der Gottesferne. Johannes vom Kreuz nannte sie die „dunkle Nacht“, und die Seelsorge greift den Psalm bei Depression und Glaubenskrisen auf – gerade weil er die Frage der Spötter, „wo ist nun dein Gott?“, unbeantwortet lässt.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der Beter verortet sich im Norden, am Hermon und am Jordanoberlauf – rund 200 Kilometer von Jerusalem entfernt, an Wasserfällen und Quellen. Er ist also nicht durstig, sondern fern; die Fülle des Wassers um ihn herum macht den Vergleich noch schärfer.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Zu den drei Wallfahrtsfesten zog man in Gruppen, mit Gesang, Trommeln und Zeltlagern unterwegs; die Erinnerung an das Ziehen „mit dem Haufen“ ist die an ein Volksfest. Wer nicht mitziehen konnte, fiel aus der Gemeinschaft heraus – die Trauer gilt auch dem.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Frage der Umgebenden „wo ist nun dein Gott?“ war naheliegend: Wer keinen Zugang zum Heiligtum hatte, galt als von seiner Gottheit getrennt, und die Wirksamkeit einer Gottheit maß man an der Lage ihrer Verehrer. Der Vorwurf ist kein Hohn, sondern damalige Logik.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. taarog',
@@ -10185,6 +10391,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Bilder sind kosmisch: Berge stürzen ins Meer, das Wasser tobt. Im altorientalischen Denken ist das Meer die Chaosmacht schlechthin. Dagegen steht ein Bild von großer Ruhe: ein Strom, dessen Bäche die Stadt Gottes erfreuen – Jerusalem hatte keinen Fluss, das Bild ist also bewusst gegen die Wirklichkeit gesetzt. Luther dichtete daraus 1529 „Ein feste Burg ist unser Gott“, das Lied wurde zur Hymne der Reformation.',
     reception:
       'Heinrich Heine nannte Luthers Lied die Marseillaise der Reformation; Bach schrieb darauf die Kantate BWV 80. Die politische Verwendung ging weit über Luther hinaus: Im 19. Jahrhundert wurde es zum Bekenntnislied des deutschen Protestantismus und in den Kriegen des Jahrhunderts national vereinnahmt – eine Wirkung, von der es bis heute nicht ganz gelöst ist.\n\nDer Psalm selbst ist zurückhaltender als sein Lied. Er spricht nicht von Kampf, sondern von einer Stadt, die nicht wanken wird, und endet mit der Aufforderung, den Krieg einzustellen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Jerusalem hatte keinen Fluss – nur die Gihonquelle außerhalb der Mauer, deren Wasser Hiskia durch einen 533 Meter langen Tunnel in die Stadt leiten ließ. Der „Strom, dessen Bäche die Stadt erfreuen“ steht deshalb bewusst gegen die Wirklichkeit; große Städte lagen an Flüssen, diese nicht.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Psalm beschreibt eine belagerte Stadt, die standhält – die Lage von 701, als Sanherib Jerusalem einschloss und unverrichteter Dinge abzog. Seine eigene Inschrift räumt ein, er habe Hiskia „wie einen Vogel im Käfig“ eingeschlossen; von einer Einnahme berichtet auch sie nicht.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. machse',
@@ -10229,6 +10445,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das hebräische Verb bedeutet „lasst nach, lasst die Hände sinken“ – gemeint ist das Einstellen des Kampfes, nicht innere Sammlung. Unmittelbar davor steht die Beschreibung, wie Bogen zerbrochen und Wagen verbrannt werden. Die verbreitete Lesart als Einladung zur Stille ist damit nicht falsch, aber sie verschiebt den Ton erheblich. Beide Deutungen haben eine lange Geschichte nebeneinander.',
     reception:
       'Der Satz ist zum Leitwort der Stilleübung geworden: Er steht über Meditationsräumen, in Exerzitienbüchern und in der Achtsamkeitsliteratur, meist in der englischen Fassung „Be still and know that I am God“. Diese Deutung ist alt und hat eine ehrwürdige Tradition – sie ist nur nicht die des Textes.\n\nDie politische Lesart hat ihre eigene Geschichte: In Friedensgebeten und Antikriegsreden wird der Vers als Aufforderung an Kriegführende zitiert, mit Verweis auf den vorangehenden Vers, in dem Bogen zerbrochen und Wagen verbrannt werden. Beide Deutungen laufen seit Jahrhunderten nebeneinander her.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Bogen zerbrechen, Spieße zerschlagen, Wagen verbrennen: Das ist die Beschreibung dessen, was Sieger mit erbeuteten Waffen taten. Reliefs und Königsinschriften zeigen solche Verbrennungen als Teil des Triumphs. Der Vers davor schildert also einen Vorgang, den man gesehen hatte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Aufforderung ergeht an die Völker, nicht an Fromme: Es ist ein Machtwort in einem Konflikt, wie es ein Schiedsrichter oder ein Großkönig gesprochen hätte. „Lasst ab und erkennt“ heißt in dieser Sprache: Stellt die Kampfhandlungen ein und erkennt an, wer hier bestimmt.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. harpu',
@@ -10360,6 +10586,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Wendepunkt steht in der Mitte: „bis ich ging in das Heiligtum Gottes und merkte auf ihr Ende“. Was sich dort ändert, ist nicht die Lage, sondern die Perspektive. Der Schluss formuliert eine Gottesbeziehung, die ohne Gegenleistung auskommt – nicht einmal Himmel und Erde werden noch verlangt. Viele Ausleger sehen hier eine der Stellen, an denen sich im Alten Testament eine Hoffnung über den Tod hinaus andeutet.',
     reception:
       'Psalm 73 gilt vielen als der ehrlichste Text des Psalters über den Neid: Der Beter gesteht ein, dass er die Gottlosen beneidet hat und beinahe daran gescheitert wäre. Die Wende kommt nicht durch ein Argument, sondern durch den Gang ins Heiligtum – der Text erklärt nicht, was dort geschah.\n\nVers 25 ist einer der meistgewählten Konfirmationssprüche und Grabinschriften. In der Mystik ist er zum Kerntext geworden: Meister Eckhart, Tersteegen und die pietistische Liedtradition beziehen sich auf ihn, wenn sie vom Genügen an Gott allein sprechen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Neid des Psalms ist genau beobachtet: Die Gottlosen haben keine Schmerzen beim Sterben, ihr Leib ist feist, sie tragen Hochmut wie eine Halskette, und die Leute laufen ihnen zu. Das ist die Beschreibung einer Oberschicht, die sichtbar besser lebte – Kleidung, Körper, Gefolge.',
+      },
+      {
+        aspect: 'arbeit',
+        text: '„Mein Teil“ meint den Erbanteil am Land. Die Leviten bekamen keinen, und von ihnen heißt es, Gott selbst sei ihr Anteil. Wer diesen Satz auf sich anwendet, verzichtet sprachlich auf das, wovon in Israel alles abhing – Grundbesitz als Lebensgrundlage und Alterssicherung.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. cheleq',
@@ -10404,6 +10640,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Siebzig Jahre, wenn es hoch kommt achtzig, und das Beste daran sei Mühe und Arbeit gewesen: Der Psalm beschönigt nichts. Umso bemerkenswerter ist die Bitte, die daraus folgt – nicht um mehr Zeit, sondern um Einsicht in die begrenzte. Der Schluss bittet darum, dass das Werk der Hände Bestand habe. Isaac Watts dichtete daraus 1719 „O God, our help in ages past“, eines der bekanntesten englischen Kirchenlieder.',
     reception:
       'Der Psalm ist der Standardtext für Beerdigungen und Jahreswechsel im deutschen Sprachraum; Vers 12 ist einer der meistgewählten Verse für Grabsteine. Isaac Watts dichtete 1719 daraus „O God, our help in ages past“, das in Großbritannien bei Staatsbegräbnissen gesungen wird; Brahms nahm die Verse über das Gras in sein *Deutsches Requiem* auf.\n\nDie Zuschreibung an Mose ist singulär im Psalter und historisch nicht haltbar. Sie hat den Text jedoch geprägt: Gelesen als Gebet dessen, der das Land nicht betreten durfte, bekommt die Bitte um Einsicht in die begrenzte Zeit eine biographische Kante.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Siebzig oder achtzig Jahre waren die Obergrenze, nicht der Durchschnitt: Die Lebenserwartung bei Geburt lag deutlich niedriger, weil etwa ein Drittel der Kinder das fünfte Jahr nicht erreichte. Wer das Erwachsenenalter erreichte, konnte durchaus alt werden – die Zahl beschreibt das erreichbare Ende.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Schlussbitte um das „Werk unserer Hände“ steht in einer Welt, in der fast alle mit den Händen arbeiteten und die Ergebnisse vergänglich waren: Ernten wurden gegessen, Häuser aus Lehm zerfielen, Terrassen mussten jedes Jahr neu gerichtet werden. Bestand war die Ausnahme.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. manot',
@@ -10448,6 +10694,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Bildfolge ist dicht: Schirm, Schatten, Burg, Fittiche, Schild. Im Alten Orient waren solche Formeln aus Amuletttexten bekannt, und in Qumran fanden sich tatsächlich Psalmen dieser Art als Abwehrtexte. Genau diese Zusagen zitiert der Teufel in der Versuchungsgeschichte – und Jesus weist die Anwendung zurück. Damit steht im Neuen Testament eine ausdrückliche Warnung davor, den Psalm als Garantie zu lesen.',
     reception:
       'Der Psalm war über Jahrhunderte ein Schutztext im wörtlichen Sinn: In Qumran fand sich eine Sammlung von Psalmen dieser Art zur Abwehr böser Mächte, im Mittelalter wurde er auf Amulette geschrieben, und in beiden Weltkriegen trugen Soldaten ihn als „Schutzbrief“ bei sich. In der Corona-Zeit erlebte er eine neue Konjunktur.\n\nDagegen steht eine Warnung im Neuen Testament selbst: In der Versuchungsgeschichte zitiert der Versucher genau diese Verse, und die Antwort lautet, man solle Gott nicht versuchen. Damit steht in der Bibel eine ausdrückliche Grenze gegen den Gebrauch dieses Psalms als Garantie.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Die Bildreihe – Strick des Jägers, Pest, Pfeil bei Tag, Seuche im Finstern – entspricht dem, wovor man sich mit Amuletten schützte: Krankheitsdämonen, böser Blick, plötzlicher Tod. In Qumran wurde eine Sammlung solcher Abwehrpsalmen gefunden. Der Text steht in dieser Gebrauchsform.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Seuchen waren keine Ausnahme: Enge Wohnverhältnisse, verunreinigtes Wasser und Unterernährung führten regelmäßig zu Ausbrüchen, die ganze Orte entvölkerten. Wer den Psalm sprach, hatte keine Behandlung zur Verfügung – der Schutz, um den er bittet, war der einzige, den er kannte.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. schaddaj',
@@ -10492,6 +10748,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Aufforderung an die eigene Seele rahmt den ganzen Psalm; sie kehrt am Ende wieder. Die Liste ist konkret: Vergebung, Heilung, Erlösung aus der Grube, Krönung mit Gnade. Der Mittelteil enthält die Formel von Gott als barmherzig und gnädig, geduldig und von großer Güte – ein Bekenntnissatz, der aus 2. Mose 34 stammt und im Alten Testament etwa ein Dutzend Mal wiederkehrt. Am Ende steht das Bild vom Menschen als Gras und vom Erbarmen, das von Ewigkeit zu Ewigkeit reicht.',
     reception:
       'Der Psalm ist einer der meistvertonten überhaupt: Bachs Choral „Nun lob, mein Seel, den Herren“ nach Johann Gramann, Mendelssohns Motetten, unzählige Gemeindelieder. Im Judentum gehört er zu den Psalmen des Versöhnungstags, im Christentum zu den Grundtexten der Beichte.\n\nDer Vers vom Menschen als Gras, der gegen Ende steht, hat eine eigene Geschichte: Brahms nahm ihn in sein *Deutsches Requiem* auf, und in der Trauerliturgie steht er meist unmittelbar neben der Zusage vom Erbarmen, das „von Ewigkeit zu Ewigkeit“ währt. Der Psalm hält beides in einem Atemzug.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Die Liste ist die eines Menschen, der Krankheit überstanden hat: Vergebung, Heilung, Rettung aus der Grube, wieder Kraft wie ein Adler. In einer Welt ohne wirksame Medizin war Genesung ein Ereignis, das man öffentlich beging – mit einem Dankopfer und einem Mahl.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Bild vom Vater, der sich über Kinder erbarmt, setzt einen Vater voraus, der nicht nur befiehlt. Väterliche Gewalt war umfassend; dass Milde ausdrücklich hervorgehoben wird, zeigt, dass sie nicht selbstverständlich war.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. beraki',
@@ -10535,6 +10801,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Psalm gehört zum Hallel, das an den Wallfahrtsfesten gesungen wurde – Jesus und die Jünger dürften ihn beim letzten Mahl gesungen haben. Der Eckstein ist entweder der Grundstein an der Ecke oder der Schlussstein im Gewölbe; das hebräische Wort lässt beides zu. Der Vers wird im Neuen Testament sechsmal zitiert, unter anderem am Ende des Gleichnisses von den bösen Weingärtnern und in der Verteidigungsrede des Petrus vor dem Hohen Rat.',
     reception:
       'Der Eckstein-Vers ist der meistzitierte alttestamentliche Vers im Neuen Testament – jedes Mal als Deutung einer Ablehnung, die sich als Anfang erweist. In der Baukunst hat er eine eigene Karriere gemacht: Der Grundstein eines Kirchenbaus trägt bis heute oft diese Worte, und im Englischen ist der *cornerstone* zum Wort für jede Grundlage geworden.\n\nVers 24 – „Dies ist der Tag, den der HERR macht“ – ist in der christlichen Liturgie zum Ostervers geworden und eröffnet in vielen Kirchen den Sonntagsgottesdienst. Luther nannte Psalm 118 seinen Lieblingspsalm und schrieb, er habe ihm „aus großen Nöten geholfen, da mir weder Kaiser noch Könige helfen konnten“.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Steine wurden im Steinbruch grob zugerichtet und auf der Baustelle nachbearbeitet; wer nicht passte, blieb liegen. Der Eckstein trug die Flucht zweier Mauern und musste besonders genau sein. Aussortierte Blöcke lagen am Rand jeder Baustelle – ein Anblick, den jeder kannte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Psalm gehört zum Hallel, das beim Passa und den anderen Wallfahrtsfesten gesungen wurde, teils im Wechsel zwischen Vorsänger und Menge. Der Ruf „Hilf doch!“ aus Vers 25 wurde beim Laubhüttenfest mit Zweigen in der Hand gerufen – daraus wurde das Hosianna beim Einzug.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. rosch pinna',
@@ -10578,6 +10854,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Psalm 119 ist ein kunstvolles Akrostichon: Je acht Verse beginnen mit demselben Buchstaben, durch das ganze hebräische Alphabet. In fast jedem Vers steht eines von acht Wörtern für die Weisung – Gesetz, Zeugnisse, Befehle, Gebote, Rechte, Wort, Rede, Wege. Das Bild der Leuchte ist genau: Eine antike Öllampe erhellte nicht den Weg, sondern den nächsten Schritt. Der Psalm feiert die Tora nicht als Last, sondern als Freude – ein Zug, der christlichen Lesern oft fremd bleibt.',
     reception:
       'Der Vers gehört zu den meistgewählten Tauf- und Konfirmationssprüchen und steht über Bibelschulen, Lesepulten und in Gemeindelogos. Bemerkenswert ist die Bescheidenheit des Bildes, die dabei meist verlorengeht: Eine Öllampe erhellt keinen Weg, sondern einen Schritt.\n\nPsalm 119 selbst ist das längste Kapitel der Bibel und streng gebaut: 22 Strophen zu je acht Versen, jede Strophe beginnt mit einem Buchstaben des hebräischen Alphabets. Im Mittelalter war er das Grundgerüst der Stundengebete; Bonhoeffer arbeitete in der Haft an einer Auslegung, die Fragment blieb.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Die Tonlampe fasste wenige Löffel Öl und brannte einige Stunden mit einer Flamme von der Größe einer Kerzenflamme. Wer nachts unterwegs war, trug sie in der Hand und sah damit den nächsten Schritt, nicht den Weg. Das Bild ist eine genaue Angabe über Reichweite.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Auswendiglernen war die übliche Form der Aneignung; Schüler wiederholten laut, bis der Text saß. Deshalb ist der Psalm streng nach dem Alphabet gebaut und wechselt in fast jedem Vers das Wort für die Weisung – die Form ist eine Gedächtnisstütze, kein Schmuck.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. ner',
@@ -10622,6 +10908,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Wort „Haus“ meint hier zugleich Gebäude, Familie und Dynastie; der zweite Teil des Psalms handelt von Kindern. Der Vers über das frühe Aufstehen und späte Sitzen beschreibt eine Arbeitshaltung, die schon in der Antike verbreitet war. Der letzte Halbvers ist umstritten: Er kann heißen, Gott gebe den Seinen den Schlaf, oder er gebe ihnen im Schlaf. Beide Übersetzungen sind grammatisch möglich, und beide haben eine lange Auslegungsgeschichte.',
     reception:
       'Der erste Vers steht als Bauspruch an unzähligen Häusern, Rathäusern und Kirchen im deutschsprachigen Raum – oft in der Kurzform „Wo Gott zum Haus nicht gibt sein Gunst“. Die Zuschreibung an Salomo in der Überschrift hat ihn zusätzlich mit dem Tempelbau verbunden.\n\nDer zweite Vers hat eine eigene Wirkung entfaltet: In Debatten über Arbeitszeit, Ruhetag und Erschöpfung wird er als biblisches Argument gegen Selbstausbeutung angeführt. Dass er im selben Atemzug Kinder als Gabe besingt, macht ihn zugleich zu einem der meistgelesenen Texte bei Taufen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Söhne waren die Altersversorgung, die Verteidigung des Familienbesitzes und die Vertretung im Tor, wo Recht gesprochen wurde. Der zweite Teil des Psalms nennt sie deshalb Pfeile im Köcher – ein militärisches Bild für die Frage, wer im Streitfall hinter einem steht.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Früh aufstehen und spät sitzen beschreibt die Tage der Erntezeit und der Bauarbeit, wenn das Tageslicht knapp war. „Brot der Sorgen“ meint das Essen zwischendurch, im Stehen, während man weiterarbeitet. Der Psalm bestreitet nicht die Mühe, sondern ihre Alleinzuständigkeit.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. schaw',
@@ -10768,6 +11064,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der entscheidende Vers ist im Hebräischen mehrdeutig. Er kann heißen „ich widerrufe und tue Buße in Staub und Asche“ oder „ich verwerfe und bereue Staub und Asche“ – also das Trauergewand, in dem er sitzt. Im ersten Fall gibt Hiob nach, im zweiten steht er auf. Unmittelbar danach erklärt Gott ausdrücklich, Hiob habe recht von ihm geredet und seine Freunde nicht. Diese Reihenfolge macht die zweite Lesart für viele wahrscheinlicher.\n\nWas danach kommt, ist so überraschend wie der Vers selbst: Gott erklärt Hiobs Freunde für im Unrecht und Hiob für im Recht – ausgerechnet den, der geklagt und angeklagt hat. Und Hiob muss für sie beten. Der Rahmen schließt mit einer Wiederherstellung: doppelt so viel Vieh, wieder zehn Kinder, und als einzige werden die drei Töchter mit Namen genannt und bekommen Erbteil unter ihren Brüdern – im damaligen Recht ungewöhnlich. Vielen Lesern ist gerade dieser Schluss anstößig, weil sich verlorene Kinder nicht ersetzen lassen.',
     reception:
       'Ein Teil der Forschung hält den erzählenden Rahmen für älter als die Dichtung in der Mitte: Das Volksbuch vom geduldigen Hiob wäre dann von einem Dichter aufgebrochen worden, der ihm einen Anklagenden in den Mund legt. Die Sammlung hat beides nebeneinander stehen lassen, und die Spannung ist bis heute nicht geglättet.\n\nNach 1945 ist Hiob zum Bezugstext der Theodizee-Debatte geworden. Elie Wiesel, Ernst Bloch und Carl Gustav Jung haben ihn je verschieden gelesen – als Anklage, als Aufstand, als Reifungsgeschichte Gottes. Gemeinsam ist ihnen, dass sie den Freunden Hiobs nicht glauben; und darin folgen sie dem Buch, das genau diese Freunde am Ende zurechtweist.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Am Ende bekommt Hiob doppelt so viel Vieh, und seine Töchter werden namentlich genannt und erben neben den Brüdern. Nach gewöhnlichem Erbrecht erhielten Töchter nur, wenn keine Söhne da waren. Der Schluss verzeichnet damit eine Ausnahme, die auffiel.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Freunde sitzen sieben Tage schweigend bei ihm, bevor sie reden – das ist die vorgeschriebene Form der Trauerbegleitung, und der Text hält ausdrücklich fest, dass niemand ein Wort sagte. Ihr Fehler beginnt erst danach, mit der Erklärung.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. nicham',
@@ -10948,6 +11254,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der hebräische Text ist knapp und kann auch bedeuten: „gemäß seinem Weg“, also entsprechend der Eigenart des Kindes. Die Sprüche formulieren Erfahrungssätze, keine Garantien; im selben Buch steht, dass ein Sohn Schande bringen kann, ohne dass die Erziehung dafür verantwortlich gemacht wird. Kapitel 22 zeigt auffällige Berührungen mit der ägyptischen Lehre des Amenemope, teils bis in die Reihenfolge der Sprüche.',
     reception:
       'Der Spruch gehört zu den meistzitierten Bibelversen in der christlichen Erziehungsliteratur und wird dort oft als Zusage gelesen: Wer richtig erzieht, dessen Kinder bleiben dabei. Die Sprüche sind aber Erfahrungssätze, keine Versprechen – dieselbe Sammlung enthält Sprüche, die einander widersprechen, und rechnet ausdrücklich mit Ausnahmen.\n\nIn der Seelsorge ist diese Verwechslung folgenreich. Eltern, deren erwachsene Kinder einen anderen Weg gehen, lesen den Vers als Urteil über sich selbst. Ausleger halten dem entgegen, dass ein Sprichwort beschreibt, was meistens gilt, und keine Schuldzuweisung für den Einzelfall enthält.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Erziehung fand im Haus statt und bestand aus Mitarbeit: Kinder hüteten Kleinvieh, lasen Ähren, halfen bei Ernte und Handwerk. Schule gab es für wenige. Was ein Kind lernte, lernte es durch Nachmachen – deshalb spricht der Spruch vom Einüben und nicht vom Unterrichten.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Verb meint das Einweihen: Man „weihte“ ein Haus, einen Altar, ein Werkzeug ein, indem man es zum ersten Mal in Gebrauch nahm. Auf ein Kind angewandt heißt es, es an seine künftige Aufgabe zu gewöhnen – ein Handwerksbegriff, kein pädagogischer.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. al pi darko',
@@ -10991,6 +11307,12 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Nach elf Kapiteln über die Flüchtigkeit von allem folgt ein Schluss, der überraschend eindeutig klingt: Gott fürchten und seine Gebote halten. Der Ton unterscheidet sich deutlich vom übrigen Buch, und die Rede vom Gericht über alles Verborgene passt schlecht zu den vorangehenden Kapiteln. Die Aufnahme des Buches in den Kanon war umstritten; dieser Schluss dürfte dabei eine Rolle gespielt haben.',
     reception:
       'Die letzten beiden Verse gelten vielen Auslegern als späterer Zusatz eines Bearbeiters, der das skeptische Buch für den Kanon fassbar machen wollte. Ohne sie endet Kohelet mit dem Bild vom zerbrochenen Krug am Brunnen und dem Satz „es ist alles ganz eitel“.\n\nOb das Buch dadurch entschärft oder abgerundet wird, wird seit der Antike gestritten. Die rabbinische Überlieferung berichtet von einer Auseinandersetzung darüber, ob Kohelet überhaupt in den Kanon gehört; der Schluss dürfte dabei den Ausschlag gegeben haben. Was er nicht leistet: die Widersprüche im Buch aufzulösen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Nachsatz über das Büchermachen ohne Ende und das viele Studieren, das den Leib müde macht, ist ein Seitenhieb auf den hellenistischen Bildungsbetrieb, der in dieser Zeit nach Judäa kam. Kohelet schließt seine Sammlung mit einer Bemerkung über Sammlungen.',
+      },
+    ],
     terms: [
       {
         word: 'hebr. sof dabar',
