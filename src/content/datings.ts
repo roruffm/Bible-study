@@ -1462,6 +1462,126 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Schlussgedicht des Sprüchebuchs, nachexilische Endgestalt',
     epoch: 'perser',
   },
+  'jes 2,1': {
+    events: 'Assyrische Bedrohung Judas, 8. Jahrhundert v. Chr.',
+    written: 'Umstritten: vorexilischer Kern oder nachexilische Voranstellung',
+    epoch: 'koenige',
+  },
+  'jes 11,1': {
+    events: 'Assyrische Zeit, Bedrohung des davidischen Königtums',
+    written: 'Jesajaüberlieferung, Zuordnung zwischen 8. und 6. Jahrhundert umstritten',
+    epoch: 'koenige',
+  },
+  'jes 45,1': {
+    events: 'Aufstieg des Kyros und Fall Babylons, um 539 v. Chr.',
+    written: 'Späte Exilszeit, dem sogenannten zweiten Jesaja zugeordnet',
+    epoch: 'exil',
+  },
+  'jer 18,1': {
+    events: 'Letzte Jahrzehnte des Königreichs Juda, um 600 v. Chr.',
+    written: 'Jeremiaüberlieferung mit deuteronomistischer Bearbeitung',
+    epoch: 'koenige',
+  },
+  'jer 32,6': {
+    events: 'Belagerung Jerusalems durch Babylon, 588/587 v. Chr.',
+    written: 'Jeremiaüberlieferung, Baruchbericht zugerechnet',
+    epoch: 'exil',
+  },
+  'hes 47,1': {
+    events: 'Vision im babylonischen Exil nach 586 v. Chr.',
+    written: 'Tempelentwurf Hesekiels, Exilszeit oder kurz danach',
+    epoch: 'exil',
+  },
+  'dan 6,10': {
+    events: 'Als Hofgeschichte der frühen Perserzeit erzählt',
+    written: 'Endgestalt in der Verfolgung unter Antiochus IV., um 165 v. Chr.',
+    epoch: 'perser',
+  },
+  'am 8,4': {
+    events: 'Nordreich unter Jerobeam II., um 760 v. Chr.',
+    written: 'Amosüberlieferung, später zusammengestellt und ergänzt',
+    epoch: 'koenige',
+  },
+  'sach 8,3': {
+    events: 'Frühe Perserzeit, Wiederaufbau des Tempels um 520 v. Chr.',
+    written: 'Erster Teil des Sacharjabuchs, zeitnah zum Geschehen',
+    epoch: 'perser',
+  },
+  'mi 7,18': {
+    events: 'Assyrische Zeit als Rahmen des Buches, 8. Jahrhundert v. Chr.',
+    written: 'Buchschluss, sprachlich vielfach der nachexilischen Zeit zugeordnet',
+    epoch: 'koenige',
+  },
+  'hab 1,1': {
+    events: 'Aufstieg Babylons, Juda unter Jojakim, um 605 v. Chr.',
+    written: 'Späte Königszeit, kurz vor dem babylonischen Zugriff',
+    epoch: 'koenige',
+  },
+  'jer 7,1': {
+    events: 'Beginn der Regierung Jojakims, um 609/608 v. Chr.',
+    written: 'Jeremiaüberlieferung, deuteronomistisch geprägte Prosarede',
+    epoch: 'koenige',
+  },
+  'mt 4,1': {
+    events: 'Beginn des öffentlichen Wirkens Jesu, um 28 n. Chr.',
+    written: 'Matthäusevangelium, um 80–90 n. Chr., nach älterer Spruchüberlieferung',
+    epoch: 'roemer',
+  },
+  'mt 18,21': {
+    events: 'Unterweisung im Kreis der Jünger',
+    written: 'Matthäusevangelium, um 80–90 n. Chr., Sondergut',
+    epoch: 'roemer',
+  },
+  'mt 20,1': {
+    events: 'Lehre Jesu auf dem Weg nach Jerusalem',
+    written: 'Matthäusevangelium, um 80–90 n. Chr., Sondergut',
+    epoch: 'roemer',
+  },
+  'mt 26,36': {
+    events: 'Nacht vor der Kreuzigung, um 30 n. Chr.',
+    written: 'Matthäusevangelium, um 80–90 n. Chr., nach Markus',
+    epoch: 'roemer',
+  },
+  'mk 5,25': {
+    events: 'Wirken Jesu in Galiläa, um 28–30 n. Chr.',
+    written: 'Markusevangelium, um 70 n. Chr.',
+    epoch: 'roemer',
+  },
+  'mk 12,41': {
+    events: 'Letzte Tage im Tempel vor der Passion, um 30 n. Chr.',
+    written: 'Markusevangelium, um 70 n. Chr.',
+    epoch: 'roemer',
+  },
+  'lk 4,16': {
+    events: 'Beginn des Wirkens Jesu in Galiläa, um 28 n. Chr.',
+    written: 'Lukasevangelium, um 80–90 n. Chr.',
+    epoch: 'roemer',
+  },
+  'lk 12,13': {
+    events: 'Lehre Jesu auf dem Weg nach Jerusalem',
+    written: 'Lukasevangelium, um 80–90 n. Chr., Sondergut',
+    epoch: 'roemer',
+  },
+  'lk 18,9': {
+    events: 'Lehre Jesu auf dem Weg nach Jerusalem',
+    written: 'Lukasevangelium, um 80–90 n. Chr., Sondergut',
+    epoch: 'roemer',
+  },
+  'joh 9,1': {
+    events: 'Wirken Jesu in Jerusalem',
+    written: 'Johannesevangelium, um 90–100 n. Chr.',
+    epoch: 'roemer',
+  },
+  'joh 17,20': {
+    events: 'Abschiedsreden am Abend vor der Passion',
+    written: 'Johannesevangelium, um 90–100 n. Chr.',
+    epoch: 'roemer',
+  },
+  'apg 9,1': {
+    events: 'Wenige Jahre nach der Kreuzigung, etwa 33–36 n. Chr.',
+    written: 'Apostelgeschichte, um 80–90 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

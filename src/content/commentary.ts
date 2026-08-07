@@ -17512,6 +17512,1808 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'rut', chapter: 3, verse: 11, note: 'Rut wird mit demselben Ausdruck bezeichnet' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 12 Abschnitte */
+  {
+    book: 'jes',
+    chapter: 2,
+    from: 1,
+    to: 5,
+    title: '„ihre Schwerter zu Pflugscharen“',
+    historicalShort:
+      'Eine Vision vom Ende der Kriege, formuliert in einem Jahrhundert, in dem die assyrische Armee das gesamte Vordere Asien überzog. Der Satz von den umgeschmiedeten Waffen gehört zu den bekanntesten der Bibel – und steht fast wörtlich auch bei einem zweiten Propheten.',
+    historicalLong:
+      'Dieselben Verse finden sich fast unverändert im vierten Kapitel des Michabuchs. Beide Propheten wirkten im 8. Jahrhundert v. Chr. in Juda, und die Forschung streitet seit langem, ob einer den anderen zitiert oder beide auf eine ältere Überlieferung zurückgreifen. Ein Unterschied ist bezeichnend: Micha fügt einen Vers hinzu, in dem jeder unter seinem Weinstock und Feigenbaum sitzt – die häusliche Kehrseite des großen Bildes. Das Nebeneinander zeigt, dass hier eine Vorstellung im Umlauf war, die verschiedene Verfasser aufnahmen.\n\nDie politische Lage, in die diese Verse fallen, war so ungünstig wie denkbar. Assyrien unter Tiglat-Pileser III. und seinen Nachfolgern hatte die Kriegführung industrialisiert: stehende Truppen, Belagerungsmaschinen, systematische Deportation ganzer Bevölkerungen. Die Annalen dieser Könige zählen Erschlagene und Verschleppte in Zehntausenden. Das Nordreich Israel ging 722 v. Chr. in diesem System unter, Juda entkam 701 v. Chr. nur knapp. Ein Text, der in dieser Zeit vom Ende des Kriegshandwerks spricht, widerspricht nicht einer abstrakten Möglichkeit, sondern der sichtbaren Weltordnung.\n\nDas Bild vom Umschmieden ist technisch genau. Eisen war in der Eisenzeit II der Werkstoff für Waffen wie für Geräte, und ein Schmied konnte dasselbe Metall neu ausschmieden. Eine Pflugschar und eine Speerspitze unterscheiden sich in Form und Härtung, nicht im Material. Der Prophet Joel kehrt das Bild später um und fordert, Pflugscharen zu Schwertern zu schmieden – ein Beleg dafür, dass der Vorgang beiden Richtungen offenstand und jeder ihn kannte.\n\nDie zweite Hälfte der Vision beschreibt einen Vorgang, der ebenso ungewöhnlich ist. Nicht Israel zieht aus, um die Völker zu belehren; die Völker kommen von selbst und bitten um Unterweisung. Und was sie holen, ist nicht Herrschaft, sondern Recht. Das ist die Umkehrung der üblichen Richtung: Im Alten Orient zogen Vasallen zur Hauptstadt, um Tribut zu bringen, und die Reliefs assyrischer Paläste zeigen genau diese Prozessionen. Hier bringen sie nichts und holen etwas.\n\nDass der Berg des HERRN höher werden soll als alle Berge, ist keine geologische Aussage. Der Tempelberg war und ist ein bescheidener Hügel; der Ölberg gegenüber überragt ihn deutlich. Im Alten Orient galt die Höhe eines Heiligtums als Ausdruck seines Rangs – Zikkurate wurden gebaut, um genau diesen Anspruch zu erheben. Der Text setzt also einen Rangstreit voraus und entscheidet ihn nicht durch Bauwerke, sondern durch die Zukunft.',
+    reception:
+      'Vor dem Gebäude der Vereinten Nationen in New York steht seit 1959 die Bronzeplastik „Schwerter zu Pflugscharen“, ein Geschenk der Sowjetunion, und an der Mauer gegenüber ist der Vers eingemeißelt. Dass ausgerechnet der Staat, der das Wettrüsten mitbetrieb, dieses Bild schenkte, hat die spätere Verwendung nicht behindert, sondern befördert.\n\nIn der DDR wurde die Plastik zum Zeichen der kirchlichen Friedensbewegung. Aufnäher mit dem Motiv, ab 1980 von der evangelischen Kirche verteilt, wurden vom Staat als Provokation behandelt und ihre Träger schikaniert – während der Staat selbst die Skulptur als Friedenssymbol führte. Die Aktion Sühnezeichen und zahlreiche Gruppen der achtziger Jahre trugen den Vers weiter; er gehört zu den wenigen Bibelstellen, die in der deutschen Nachkriegsgeschichte eine unmittelbar politische Wirkung entfaltet haben.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Assyrien führte im 8. Jahrhundert v. Chr. Krieg mit einer Regelmäßigkeit, die neu war: fast jährliche Feldzüge, ein stehendes Heer, Belagerungstechnik und die planmäßige Umsiedlung besiegter Bevölkerungen. Frieden war in diesem System kein Zustand, sondern eine Pause.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ein Dorfschmied arbeitete am selben Amboss für Bauern und für Krieger. Sicheln, Pflugscharen, Speerspitzen und Messer entstanden aus demselben Eisen. Die Umwandlung, von der der Text spricht, war ein Handgriff, keine Utopie.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Heiligtümer standen auf Höhen, und ihre Bedeutung wurde über Höhe ausgedrückt. In Mesopotamien baute man deshalb Stufentürme. Ein Tempel auf einem mittleren Hügel musste seinen Rang anders begründen als durch Bauhöhe.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Wer Recht sprach, herrschte. Königsinschriften rühmen Herrscher als Rechtsetzer; der Kodex Hammurapi wurde als Stele öffentlich aufgestellt. Dass Völker freiwillig kommen, um Weisung zu empfangen, verlagert Herrschaft von der Waffe auf das Urteil.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. acharit ha-jamim',
+        rendered: 'zur letzten Zeit',
+        note: 'Wörtlich „am Ende der Tage“. Der Ausdruck bezeichnet zunächst schlicht eine ferne Zukunft, nicht das Weltende. Erst in späteren Texten und in der Auslegung bekommt er den endzeitlichen Klang, den Luthers Übersetzung anklingen lässt.',
+      },
+      {
+        word: 'hebr. torah',
+        rendered: 'wird das Gesetz ausgehen',
+        note: 'Das Wort meint Weisung und Unterricht, nicht in erster Linie Gesetzesparagraphen. Es stammt aus dem Bereich der priesterlichen Auskunft: Wer eine Frage hatte, holte sich eine Tora. Die Völker kommen also nicht wegen Vorschriften, sondern wegen Rat.',
+      },
+      {
+        word: 'hebr. ittim',
+        rendered: 'Pflugscharen',
+        note: 'Ein seltenes Wort für ein eisernes Ackergerät; ob genau die Schar oder eher eine Hacke gemeint ist, lässt sich nicht sicher entscheiden. Die zweite Umformung betrifft Winzermesser, was Luther mit „Sicheln“ wiedergibt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Rabbinen verstehen den Text als Beschreibung der messianischen Zeit und betonen, dass die Völker nicht unterworfen, sondern belehrt werden. Maimonides nimmt die Verse in seine Darstellung der Endzeit auf und liest sie als Beschreibung einer Weltordnung ohne Krieg, in der die Erkenntnis das Werk der Waffen ablöst.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Justin und Irenäus führen den Vers als erfüllt an: Menschen, die einst Krieg führten, hätten in der Kirche die Waffen niedergelegt. Diese Berufung auf den Text gehört zu den frühesten Belegen für die Gewaltlosigkeit der vorkonstantinischen Christenheit.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther bezieht die Verse auf die Ausbreitung des Evangeliums und den inneren Frieden, den es stiftet, nicht auf eine politische Ordnung. Für ihn bleibt die weltliche Obrigkeit zum Schwert verpflichtet; die Vision beschreibt, was in der Gemeinde beginnt.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die enge Übereinstimmung mit dem Michabuch legt eine gemeinsame ältere Vorlage nahe. Umstritten ist, ob die Verse aus dem 8. Jahrhundert stammen oder erst in nachexilischer Zeit an den Anfang des Jesajabuchs gestellt wurden, um dem Gerichtsteil eine Perspektive voranzustellen.',
+      },
+      {
+        tradition: 'Friedensethische Lesart',
+        text: 'Die historischen Friedenskirchen und die Friedensbewegungen des 20. Jahrhunderts lesen den Text als Handlungsanweisung, nicht als Weissagung: Abrüstung sei nicht abzuwarten, sondern zu beginnen. Kritiker halten dagegen, dass der Text die Umschmiedung als Folge eines Rechtsspruchs schildert, den Menschen nicht herstellen können.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mi', chapter: 4, verse: 3, note: 'Fast wörtlich dieselben Verse' },
+      { book: 'joel', chapter: 3, verse: 10, note: 'Die Umkehrung des Bildes' },
+      { book: 'jes', chapter: 11, verse: 9, note: 'Das Land voll Erkenntnis des HERRN' },
+    ],
+  },
+  {
+    book: 'jes',
+    chapter: 11,
+    from: 1,
+    to: 9,
+    title: '„eine Rute aufgehen von dem Stamm Isais“',
+    historicalShort:
+      'Vom Königshaus ist nur noch ein Stumpf übrig – und aus diesem Stumpf soll ein Trieb kommen. Was folgt, ist zunächst eine Regierungserklärung und dann ein Bild, in dem Raubtiere und Beutetiere nebeneinanderliegen.',
+    historicalLong:
+      'Das Bild setzt beim Baumstumpf an, nicht beim Baum. Isai war der Vater Davids; von seinem Stamm zu reden statt von David selbst heißt, hinter die Dynastie zurückzugehen, zu ihrem Anfang in Bethlehem. Wer so spricht, rechnet damit, dass die Reihe der Könige abgebrochen ist oder abbrechen wird. Das entspricht der Lage Judas in der assyrischen Zeit, in der die Dynastie zwar bestand, aber als Vasall und unter dauerndem Druck.\n\nDie Ausstattung des kommenden Herrschers ist eine Aufzählung von Regierungsfähigkeiten. Weisheit und Verstand, Rat und Stärke, Erkenntnis und Furcht des HERRN – das sind, in drei Paaren geordnet, genau die Eigenschaften, die altorientalische Königsinschriften ihren Herrschern zuschreiben. Ägyptische und mesopotamische Texte rühmen den König als weise, als starken Rat und als frommen Diener der Gottheit. Der Unterschied liegt darin, dass diese Eigenschaften hier nicht behauptet, sondern als Gabe des Geistes beschrieben werden.\n\nDie Regierungserklärung selbst zielt auf die Rechtsprechung, und sie ist ungewöhnlich konkret. Er wird nicht richten nach dem, was seine Augen sehen – das ist eine Absage an das Urteil nach Ansehen der Person, nach Kleidung, Stand und Auftreten. Wer vor Gericht arm war, hatte im Altertum schlechte Aussichten; Bestechung war verbreitet, und die Propheten klagen sie regelmäßig an. Ein Richter, dessen Urteil nicht vom Augenschein abhängt, war die zentrale Hoffnung der Machtlosen.\n\nDas Tierbild in den Versen 6 bis 8 hat einen konkreten Hintergrund. Wölfe, Panther, Bären und Löwen kamen im Land tatsächlich vor; Löwen sind in der Levante bis ins Mittelalter bezeugt. Für Hirten waren Raubtiere kein Symbol, sondern ein Kalkulationsfaktor, und das Gesetz regelt, wie ein Hüter für gerissenes Vieh haftet. Auch die Schlangenlöcher in Vers 8 sind Alltag: Kinder spielten im Freien, Vipern lebten in Steinmauern. Was hier beschrieben wird, ist deshalb kein poetischer Einfall, sondern die Aufhebung einer täglichen Bedrohung.\n\nDer letzte Vers gibt den Grund an, und er verschiebt die Ebene. Nicht die Natur ändert sich, sondern das Land wird voll Erkenntnis. Erkenntnis meint im Hebräischen nicht Wissensbesitz, sondern ein Verhältnis, in dem man einander kennt und entsprechend handelt. Der Vergleich mit dem Wasser, das das Meer bedeckt, beschreibt Vollständigkeit ohne Lücke – ein Bild, das für Menschen an einem Binnenland ohne Seefahrt umso eindrücklicher war.',
+    reception:
+      'Aus diesem Kapitel stammt die Wurzel Jesse, eines der wirkungsreichsten Bildmotive des Mittelalters: ein Stammbaum, der aus dem liegenden Isai emporwächst und in Maria und Christus endet. Fenster in Chartres und Saint-Denis, unzählige Handschriften und Portale zeigen ihn. Das Lied „Es ist ein Ros entsprungen“ von 1599 lebt von derselben Vorstellung.\n\nDie sieben Gaben des Geistes der katholischen Tradition gehen auf die Aufzählung in Vers 2 zurück – wobei die Siebenzahl aus der griechischen und lateinischen Übersetzung stammt, die statt der zweimal genannten Furcht des HERRN einmal Frömmigkeit einsetzten; das hebräische Original zählt sechs. Die Tiervision hat eine eigene Wirkung entfaltet: In der Kunst der Shaker in Nordamerika, bei den rund sechzig Fassungen des „Peaceable Kingdom“ von Edward Hicks und in der modernen Tierethik ist sie das Bild einer Welt ohne Beutegreifen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Löwen, Bären, Wölfe und Panther lebten in der Levante und wurden erst in der Neuzeit ausgerottet. Hirten schliefen bei den Herden, und Schleuder und Stock gehörten zur Ausrüstung. Verluste an Raubtiere waren einkalkuliert und rechtlich geregelt.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Vor Gericht entschied häufig, wer Zeugen aufbieten und wer Geschenke geben konnte. Die Propheten klagen Bestechung und Parteilichkeit immer wieder an. Ein Urteil, das den Augenschein nicht gelten lässt, kehrt die übliche Praxis um.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Herrscher legitimierten sich durch Titel und Eigenschaftslisten, die in Inschriften festgehalten wurden: weise, gerecht, stark, von der Gottheit erwählt. Solche Reihen waren eine feste Gattung, und die Verse 2 bis 5 folgen ihr genau.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Häuser waren aus Feldsteinen und Lehm gebaut, und in den Mauerfugen lebten Schlangen. Bisse waren eine reale Todesursache, besonders bei Kindern. Das Bild vom Säugling an der Otternhöhle beschreibt die Aufhebung einer alltäglichen Gefahr.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. choter',
+        rendered: 'eine Rute',
+        note: 'Ein Trieb, der aus einem gefällten Stamm nachwächst. Das dazugehörige Wort für den Stumpf bezeichnet ausdrücklich den Rest eines abgehauenen Baumes. Das Bild setzt also das Ende der Dynastie voraus, nicht ihre Fortdauer.',
+      },
+      {
+        word: 'hebr. netzer',
+        rendered: 'eine Zweig aus seiner Wurzel',
+        note: 'Ein Schössling. Das Wort ist im Judentum später zu einer messianischen Bezeichnung geworden; das Matthäusevangelium spielt möglicherweise darauf an, wenn es Jesus einen Nazoräer nennt. Sicher ist die Verbindung nicht.',
+      },
+      {
+        word: 'hebr. ruach',
+        rendered: 'der Geist des HERRN',
+        note: 'Dasselbe Wort meint Wind, Atem und Geist. Es bezeichnet eine Kraft, die von außen kommt und jemanden handlungsfähig macht – so wie sie in den Richtererzählungen über einen Anführer kommt, bevor er auszieht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Targume und der Midrasch deuten den Trieb auf den kommenden Messias aus Davids Haus. Betont wird dabei die Beschreibung seiner Rechtsprechung: Er richtet die Armen gerecht. Die Tiervision wird teils buchstäblich als Zustand der kommenden Welt, teils als Bild für den Frieden unter den Völkern verstanden.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter beziehen den Abschnitt einhellig auf Christus, wobei Hieronymus die Wurzel Isais mit Maria verbindet und damit das Bildmotiv des Mittelalters vorbereitet. Die Geistesgaben werden früh zu einem festen Katalog, der in der Firmungstheologie weiterlebt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther liest die Verse als Weissagung auf Christus und betont, dass der Trieb aus einem Stumpf kommt: Gott beginne dort, wo nichts mehr zu erwarten sei. Die Tierbilder deutet er auf die Veränderung der Menschen unter dem Evangelium, nicht auf eine Umgestaltung der Natur.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Ein Teil der Forschung ordnet die Verse der assyrischen Krise des 8. Jahrhunderts zu und liest sie als Hoffnung auf einen besseren Davididen; ein anderer Teil sieht darin eine spätere Ergänzung aus der Zeit nach dem Ende des Königtums, als das Bild vom Stumpf zur Lage passte.',
+      },
+      {
+        tradition: 'Ökologische Lesart',
+        text: 'Die Tiervision wird in der Schöpfungstheologie als Kritik daran gelesen, Fressen und Gefressenwerden für die endgültige Ordnung zu halten. Kritisch wird eingewandt, dass der Text keine Naturbeschreibung liefert, sondern die Aufhebung von Gewalt in Bildern erzählt, die jeder Hirte verstand.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 65, verse: 25, note: 'Das Bild kehrt am Ende des Buches wieder' },
+      { book: 'roem', chapter: 15, verse: 12, note: 'Paulus zitiert die Wurzel Isais' },
+      { book: 'jer', chapter: 23, verse: 5, note: 'Der gerechte Spross für David' },
+    ],
+  },
+  {
+    book: 'jes',
+    chapter: 45,
+    from: 1,
+    to: 7,
+    title: '„zu seinem Gesalbten, dem Kores“',
+    historicalShort:
+      'Ein persischer Großkönig, der von Israels Gott nichts weiß, wird mit dem Titel angeredet, den sonst nur Könige aus Davids Haus und Priester tragen. Das ist die überraschendste Personalentscheidung des Alten Testaments.',
+    historicalLong:
+      'Kyros II. eroberte 539 v. Chr. Babylon, offenbar weitgehend kampflos, und beendete damit das neubabylonische Reich. Über seine Politik gibt der Kyros-Zylinder Auskunft, eine Tonwalze mit babylonischer Keilschrift, heute im Britischen Museum. Dort lässt Kyros verkünden, der Stadtgott Marduk habe ihn erwählt und bei der Hand ergriffen, er habe die Götterbilder in ihre Heiligtümer zurückgebracht und die Verschleppten heimgeschickt. Die Übereinstimmung mit den Formulierungen dieses Kapitels ist auffällig: auch hier wird er bei der rechten Hand ergriffen und beim Namen gerufen. Der Prophet benutzt die Sprache persischer Propaganda und dreht ihre Aussage um – nicht Marduk hat berufen, sondern der Gott Israels, und Kyros weiß nichts davon.\n\nDie Rückführungspolitik der Perser ist auch außerhalb der Bibel bezeugt und war kein Akt der Menschenfreundlichkeit, sondern Verwaltungsklugheit. Ein Reich dieser Ausdehnung ließ sich billiger regieren, wenn lokale Kulte funktionierten und die Bevölkerungen ihren Herrschern dankbar waren. Für die nach Babylon Verschleppten aus Juda bedeutete das die Erlaubnis zur Rückkehr und zum Wiederaufbau des Tempels.\n\nDer Titel, mit dem der Abschnitt beginnt, war für die ersten Hörer schwer erträglich. Gesalbt wurden Könige aus Davids Haus, Hohepriester und gelegentlich Propheten; die Salbung machte den Betreffenden zum Beauftragten Gottes. Diesen Titel einem Fremden zu geben, der Israels Gott nicht kennt, hat in der Prophetie keine Parallele. Der Text sagt zweimal ausdrücklich, dass Kyros ihn nicht kannte – die Berufung hängt nicht an seiner Frömmigkeit.\n\nDie Aussagen in den Versen 5 bis 7 gehören zu den entschiedensten Formulierungen des Monotheismus im Alten Testament. Nicht dass Israel nur einen Gott verehren solle, wird gesagt, sondern dass es keinen anderen gibt. Diese Zuspitzung entsteht in der Exilszeit, unter dem Eindruck der Erfahrung, dass Israels Gott auch dort wirkt, wo sein Tempel zerstört und sein Land verloren ist.\n\nDer siebte Vers ist der schwierigste. Gott schafft das Licht und die Finsternis, gibt Frieden und schafft das Übel. Viele Ausleger sehen darin eine Absage an den persischen Dualismus, der Gut und Böse zwei Prinzipien zuordnete – ob die zoroastrische Lehre zu dieser Zeit schon in dieser Form bestand, ist umstritten. In jedem Fall verweigert der Vers die bequeme Aufteilung: Für alles, was geschieht, gibt es keine zweite zuständige Instanz.',
+    reception:
+      'Der Vers, in dem Gott das Übel schafft, hat der Theologiegeschichte erhebliche Mühe bereitet. Marcion führte ihn im 2. Jahrhundert als Beleg dafür an, dass der Gott des Alten Testaments ein anderer sei als der Vater Jesu Christi; die Kirche antwortete mit der Unterscheidung zwischen physischem Übel, also Unheil und Katastrophe, und moralischem Bösem, das der Vers nicht meine. Das hebräische Wort deckt beides ab, wird aber überwiegend für Unglück gebraucht.\n\nIn der Wirkungsgeschichte des Kyros-Titels liegt eine bis heute nachwirkende Frage: ob Gott sich weltlicher Machthaber bedienen kann, die von ihm nichts wissen. Der Text ist in der politischen Theologie beider Richtungen zitiert worden – zur Rechtfertigung von Bündnissen mit unfrommen Herrschern ebenso wie zur Erinnerung daran, dass solche Herrscher Werkzeuge und nicht Gesalbte im eigentlichen Sinn bleiben. In der amerikanischen Politik der jüngeren Vergangenheit hat der Vergleich mit Kyros eine kontroverse Konjunktur erlebt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Das Perserreich war das größte Staatsgebilde, das die Welt bis dahin gesehen hatte. Es reichte vom Indus bis nach Ägypten und wurde über Satrapien, Reichsstraßen und ein Kuriersystem verwaltet. Lokale Kulte ließ man bestehen, solange die Abgaben flossen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Jede Stadt und jedes Volk hatte seine Gottheit, und eine Niederlage galt als Niederlage dieser Gottheit. Deportierte nahmen daher oft die Götter der Sieger an. Dass die Verschleppten aus Juda das nicht taten, verlangte eine neue Erklärung – und dieses Kapitel gibt sie.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Salbung mit Öl war ein Rechtsakt der Amtseinsetzung, nicht eine fromme Geste. Sie machte aus einem Menschen einen Beauftragten mit Vollmacht. Wer gesalbt war, stand unter besonderem Schutz; ihn anzutasten galt als Frevel.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Babylon war ein Wirtschaftszentrum mit Handelshäusern, Bankgeschäften und einer entwickelten Vertragspraxis. Die Verschleppten aus Juda lebten dort in eigenen Siedlungen; Urkunden aus Al-Jahudu belegen, dass sie Land bewirtschafteten und Geschäfte tätigten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. maschiach',
+        rendered: 'seinem Gesalbten',
+        note: 'Wörtlich der mit Öl Bestrichene. Der Titel steht sonst für Könige aus Davids Haus und für Priester. Auf einen persischen Großkönig angewandt, der Israels Gott nicht kennt, ist er im Alten Testament einmalig.',
+      },
+      {
+        word: 'hebr. bara',
+        rendered: 'schaffe die Finsternis',
+        note: 'Ein Verb, das ausschließlich mit Gott als Handelndem gebraucht wird und dasselbe ist wie im ersten Satz der Bibel. Es bezeichnet ein Hervorbringen ohne Vorlage und ohne Werkstoff.',
+      },
+      {
+        word: 'hebr. ra',
+        rendered: 'schaffe das Übel',
+        note: 'Das Wort deckt Unglück, Katastrophe und moralisch Böses ab. Im Zusammenhang mit Frieden als Gegenbegriff meint es hier am ehesten Unheil. Die griechische Übersetzung wählte einen Ausdruck, der die moralische Seite zurücknimmt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Tradition sieht in Kyros ein Werkzeug, nicht einen Erwählten im eigentlichen Sinn. Der Talmud diskutiert seine Rolle beim Tempelbau und beurteilt ihn zwiespältig: Zunächst habe er den Bau erlaubt, später sei er nachlässig geworden. Der Titel bleibt eine Ausnahme, aus der keine Regel wird.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lesen Kyros als Vorabbildung Christi, weil er die Gefangenen freilässt und den Tempelbau ermöglicht. Zugleich mussten sie den siebten Vers gegen Marcion verteidigen und entwickelten dafür die Unterscheidung zwischen zugelassenem Unheil und gewolltem Bösen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin nimmt den Abschnitt als Beleg für die umfassende Vorsehung: Gott regiert auch durch Menschen, die ihn nicht kennen und nicht kennen wollen. Für ihn ist gerade die Unwissenheit des Kyros der Beweis, dass die Lenkung nicht an menschlicher Absicht hängt.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Kapitel 40 bis 55 werden überwiegend einem anonymen Propheten der späten Exilszeit zugeschrieben. Die genauen Anspielungen auf Kyros und die Nähe zur Sprache des Kyros-Zylinders gelten als eines der stärksten Argumente für diese Zuordnung.',
+      },
+      {
+        tradition: 'Religionsgeschichtlicher Vergleich',
+        text: 'Der siebte Vers wird häufig als Auseinandersetzung mit einem Zwei-Prinzipien-Denken gelesen, wie es die zoroastrische Religion kennt. Ob diese Lehre zur Zeit des Kyros bereits ausgeformt war, ist unter Iranisten strittig; die Stoßrichtung des Verses bleibt davon unberührt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'esr', chapter: 1, verse: 2, note: 'Das Edikt des Kyros zum Tempelbau' },
+      { book: 'jes', chapter: 44, verse: 28, note: 'Kyros als Hirte genannt' },
+      { book: 'am', chapter: 3, verse: 6, note: 'Ist ein Unglück in der Stadt, das der HERR nicht tue?' },
+    ],
+  },
+  {
+    book: 'jer',
+    chapter: 18,
+    from: 1,
+    to: 12,
+    title: '„er arbeitete eben auf der Scheibe“',
+    historicalShort:
+      'Der Prophet wird in eine Werkstatt geschickt und soll zusehen. Was er dort sieht, ist banal: Ein Gefäß misslingt, der Handwerker knetet den Ton zusammen und formt neu. Daraus wird eine Aussage über Geschichte, die weniger deterministisch ist, als das Bild zunächst klingt.',
+    historicalLong:
+      'Töpferei war das verbreitetste Handwerk der antiken Welt und in jeder Stadt vertreten. Die Werkstätten lagen wegen des Rauchs und des Wasserbedarfs meist am Rand der Siedlung, oft im Süden Jerusalems am Hinnomtal, wo Ton und Wasser verfügbar waren. Die Scheibe, von der der Text spricht, bestand aus zwei übereinanderliegenden Steinscheiben; die untere wurde mit dem Fuß gedreht, auf der oberen entstand das Gefäß. Die hebräische Formulierung nennt wörtlich die zwei Steine – eine technisch genaue Angabe, die zeigt, dass der Verfasser die Einrichtung kannte.\n\nKeramik ist für die Archäologie das wichtigste Datierungsmittel, weil Scherben unvergänglich und Formen zeitgebunden sind. Für die Menschen damals war sie das billigste und selbstverständlichste Material: Vorratskrüge, Kochtöpfe, Lampen, Schüsseln. Ein misslungenes Gefäß war kein Verlust, solange der Ton noch feucht war – man drückte ihn zusammen und begann von vorn. Genau dieser alltägliche Vorgang, nicht die Zerstörung eines gebrannten Gefäßes, steht im Zentrum.\n\nDas ist wichtig für die Deutung. Das Bild vom Ton in der Hand des Töpfers klingt nach völliger Verfügungsgewalt, und so ist es oft gelesen worden. Der Text selbst zieht aber eine andere Folgerung. Die Verse 7 bis 10 formulieren zwei symmetrische Sätze: Wenn Gott Unheil ankündigt und das Volk kehrt um, ändert er seinen Plan; wenn er Gutes zusagt und das Volk tut Böses, ändert er ihn ebenso. Die Souveränität des Töpfers besteht gerade darin, umdisponieren zu können. Angekündigtes Unheil ist damit keine Vorhersage, sondern ein Angebot.\n\nDas hebräische Wort für dieses Umdisponieren wird in älteren Übersetzungen mit „reuen“ wiedergegeben. Es beschreibt nicht Schuldgefühl, sondern einen Sinneswandel. Die Vorstellung, dass ein Gott seine Absicht ändert, war in der Umwelt nicht anstößig; sie ist es erst für eine Theologie geworden, die Unveränderlichkeit zu den Wesenseigenschaften Gottes zählt. Das Jonabuch macht genau diese Beweglichkeit zum Thema.\n\nDer Abschnitt fällt in die letzten Jahrzehnte Judas, zwischen dem Untergang Assyriens und der babylonischen Eroberung. Jeremia wirkte in einer Zeit, in der noch Handlungsspielraum bestand und die politische Führung ihn nach seiner Überzeugung falsch nutzte. Die Antwort des Volkes in Vers 12 ist deshalb der eigentliche Schluss: Man hat verstanden und will trotzdem nicht. Das Angebot bleibt bestehen, es wird nur nicht angenommen.',
+    reception:
+      'Paulus greift das Töpferbild im Römerbrief auf und stellt die Frage, ob das Gefäß zum Bildner sagen könne, warum er es so gemacht habe. In der Auslegungsgeschichte hat diese Aufnahme das jeremianische Original oft überlagert: Der Ton wurde zum Sinnbild völliger Passivität, und daraus ist die harte Prädestinationslehre gespeist worden. Der Zusammenhang bei Jeremia, in dem gerade die Umkehr die Form ändert, blieb dabei häufig unbeachtet.\n\nIn der Frömmigkeitsgeschichte ist das Bild in unzählige Lieder und Gebete eingegangen – vom englischen „Have Thine Own Way, Lord“ bis in die deutsche Erweckungsliteratur. Die Werkstattszene selbst hat außerdem eine methodische Wirkung entfaltet: Sie gilt als Beispiel dafür, dass prophetische Erkenntnis nicht aus Visionen allein stammt, sondern aus dem genauen Hinsehen auf einen gewöhnlichen Vorgang.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Der Töpfer arbeitete an einer Doppelscheibe: unten ein schwerer Stein, mit dem Fuß in Drehung gehalten, oben die Arbeitsfläche. Ton wurde gewässert, geknetet und von Steinchen befreit. Ein Fehler zeigte sich sofort in der Form.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Keramik war das Plastik der Antike: billig, überall, zerbrechlich. Ein Haushalt besaß Dutzende Gefäße für Vorräte, Wasser, Kochen und Licht. Scherben lagen überall herum und wurden als Schreibmaterial für Notizen wiederverwendet.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Juda war in den letzten Jahrzehnten vor 587 v. Chr. zwischen Ägypten und Babylon eingeklemmt und wechselte mehrfach die Seite. Jeremias Auftreten fällt in diese Zeit, in der jede Entscheidung des Hofes über das Überleben des Staates mitentschied.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Dass eine Gottheit ihre Absicht ändert, war in der antiken Welt selbstverständlich – man versuchte mit Opfern und Bitten, genau das zu bewirken. Erst die philosophisch geprägte Theologie machte daraus ein Problem.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. jozer',
+        rendered: 'des Töpfers',
+        note: 'Dasselbe Wort steht dort, wo Gott den Menschen aus Erde formt. Töpfer und Schöpfer sind im Hebräischen dieselbe Wurzel; das Bild ist deshalb keine Metapher von außen, sondern greift eine vorhandene Sprachverbindung auf.',
+      },
+      {
+        word: 'hebr. nacham',
+        rendered: 'so soll mich auch reuen',
+        note: 'Das Verb meint einen Sinneswandel, nicht Reue im Sinne von Schuldbewusstsein. Luthers „reuen“ folgt der lateinischen Tradition. Gemeint ist, dass ein angekündigter Plan zurückgenommen wird, weil sich die Lage geändert hat.',
+      },
+      {
+        word: 'hebr. schuv',
+        rendered: 'darum kehre sich ein jeglicher',
+        note: 'Wörtlich umkehren, zurückgehen. Das Wort ist der Grundbegriff für Buße im Alten Testament und beschreibt eine Richtungsänderung im Handeln, nicht eine Gefühlslage. Dieselbe Wurzel steht in Vers 8 für die Abkehr von der Bosheit.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition liest das Kapitel als Grundtext über die Umkehr: Solange der Ton feucht ist, lässt sich neu formen. Die beiden symmetrischen Sätze in den Versen 7 bis 10 gelten als Beleg dafür, dass keine prophetische Unheilsansage unwiderruflich ist.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter verbinden die Stelle mit der Erschaffung des Menschen aus Lehm und lesen sie als Zusage der Neuschöpfung durch die Taufe. Irenäus mahnt, weich zu bleiben: Wer hart wird, lasse sich nicht mehr formen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin betont beides – die unbedingte Verfügungsgewalt des Töpfers und die im Text ausdrücklich genannte Bedingtheit der Ankündigungen. Für ihn löst sich der Widerspruch darin auf, dass Gott die Umkehr selbst wirkt, wo sie geschieht.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Verse 7 bis 10 gelten vielen als deuteronomistische Erweiterung, die das Werkstattbild grundsätzlich auslegt. Der Kern wäre dann eine knappe Zeichenhandlung, der Rahmen die spätere Reflexion über die Bedingtheit prophetischer Rede.',
+      },
+      {
+        tradition: 'Systematische Diskussion',
+        text: 'Der Abschnitt gehört zu den Belegstellen der Debatte über die Unveränderlichkeit Gottes. Die klassische Lehre versteht die Rede vom Sinneswandel als Anpassung an menschliches Verstehen; neuere Entwürfe nehmen sie beim Wort und sprechen von einer Geschichte, in der auch Gottes Handeln offen bleibt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'roem', chapter: 9, verse: 21, note: 'Paulus nimmt das Töpferbild auf' },
+      { book: 'jona', chapter: 3, verse: 10, note: 'Gott lässt sich das Unheil gereuen' },
+      { book: 'jes', chapter: 64, verse: 8, note: 'Wir sind der Ton, du bist unser Töpfer' },
+    ],
+  },
+  {
+    book: 'jer',
+    chapter: 32,
+    from: 6,
+    to: 15,
+    title: '„Noch soll man Häuser, Äcker und Weinberge kaufen“',
+    historicalShort:
+      'Die Babylonier belagern Jerusalem, der Prophet sitzt in Haft, das Land ist verloren – und in dieser Lage kauft er einen Acker, bezahlt in Silber, mit Zeugen und Urkunde. Es ist die teuerste Zeichenhandlung der Bibel.',
+    historicalLong:
+      'Der Zeitpunkt ist im Kapitel genau angegeben: das zehnte Jahr Zedekias, also 588 oder 587 v. Chr., mitten in der Belagerung. Anatot lag wenige Kilometer nordöstlich von Jerusalem und damit im bereits besetzten Gebiet. Ein Acker dort war zu diesem Zeitpunkt praktisch wertlos. Genau das macht den Kauf zur Aussage: Der Prophet, der seit Jahren den Untergang angekündigt hat, investiert in ein Land, dessen Untergang er selbst vorhergesagt hat.\n\nDas Rechtsgeschäft ist mit einer Genauigkeit geschildert, die in der Bibel ihresgleichen sucht. Der Anspruch beruht auf dem Lösungsrecht des nächsten Verwandten, das im dritten Buch Mose geregelt ist: Wenn ein Israelit verarmt und Land verkaufen muss, hat der nächste Angehörige das Vorkaufsrecht, damit der Boden in der Sippe bleibt. Hanameel bietet den Acker deshalb zuerst Jeremia an, und Jeremia erkennt daran, dass die Sache mehr ist als ein Familiengeschäft.\n\nDie Zahlungsweise entspricht dem, was für diese Zeit üblich war. Münzen gab es noch nicht; Silber wurde als Barren, Ring oder Bruchstück abgewogen. Die Angabe siebzehn Silberlinge meint Gewichtseinheiten, und der Text betont, dass auf einer Waage gewogen wurde – die Kontrolle des Gewichts war der entscheidende Vorgang, weshalb die Propheten falsche Waagen so oft anprangern.\n\nDie doppelte Urkunde ist archäologisch gut belegt. Man schrieb den Text zweimal auf ein Blatt Papyrus, rollte den oberen Teil zusammen, verschnürte ihn und versiegelte die Schnur mit Tonbullen; der untere Teil blieb offen lesbar. Bei Streit konnte das Siegel gebrochen und der geschützte Wortlaut mit der Abschrift verglichen werden. Aus Elephantine und aus Ägypten sind solche Doppelurkunden erhalten, und in Jerusalem wurden zahlreiche Tonbullen mit Siegelabdrücken gefunden – manche tragen noch die Abdrücke der Papyrusfasern auf der Rückseite.\n\nDie Aufbewahrung im Tongefäß ist die dritte praktische Einzelheit. Papyrus verrottet in feuchtem Klima; in verschlossenen Krügen konnte er Jahrhunderte überdauern. Genau so wurden die Schriftrollen vom Toten Meer aufbewahrt und gefunden. Der Auftrag, die Urkunden so zu lagern, dass sie lange bleiben, ist deshalb keine Symbolik, sondern eine Archivanweisung – und darin liegt die Botschaft: Es wird jemanden geben, der sie wieder hervorholt.',
+    reception:
+      'Der Ackerkauf ist zum Musterbeispiel für eine Hoffnung geworden, die sich in einer konkreten Handlung ausdrückt statt in Worten. In Predigten und kirchlichen Stellungnahmen wird er regelmäßig herangezogen, wenn es um Investitionen in aussichtslos scheinende Lagen geht – vom Wiederaufbau nach Kriegen bis zu Klimafragen.\n\nDietrich Bonhoeffer nahm 1944 im Gefängnis auf diese Szene Bezug, als er über das Kaufen von Äckern in Zeiten schrieb, in denen alles verloren scheint. In der jüdischen Tradition steht der Abschnitt für die Verbindung zum Land über die Zerstörung hinaus; er wurde in der Diskussion um Rückkehr und Landrecht mehrfach zitiert. Rechtsgeschichtlich ist das Kapitel eine der wichtigsten Quellen für die Praxis des Grundstückskaufs in der Eisenzeit und wird in entsprechenden Darstellungen regelmäßig ausgewertet.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Grundbesitz sollte in der Sippe bleiben. Der nächste Verwandte hatte ein Vorkaufsrecht und zugleich die Pflicht, einen verarmten Angehörigen auszulösen. Dieses Lösungsrecht ist auch die Grundlage der Handlung im Buch Rut.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Es gab noch keine Münzen; Silber wurde nach Gewicht gehandelt, in Barren, Ringen oder Hacksilber. Jedes größere Geschäft schloss deshalb einen Wiegevorgang ein, und die Richtigkeit der Gewichtssteine war ein ständiger Streitpunkt.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Urkunden wurden auf Papyrus geschrieben, gerollt, verschnürt und mit Tonklumpen versiegelt, in die man einen Siegelring drückte. Hunderte solcher Bullen sind gefunden worden; sie tragen Namen, die zum Teil auch in der Bibel vorkommen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Bei einer Belagerung wurde das Umland zuerst besetzt und ausgeplündert. Wer Land vor den Toren besaß, hatte es faktisch verloren, lange bevor die Stadt fiel. Ein Kauf in dieser Lage war wirtschaftlich sinnlos.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. geullah',
+        rendered: 'das nächste Freundrecht',
+        note: 'Das Löserecht des nächsten Verwandten. Dieselbe Wurzel liefert die Bezeichnung für den Erlöser und für Gottes Befreiungshandeln – ein Begriff aus dem Bodenrecht, der zum theologischen Grundwort geworden ist.',
+      },
+      {
+        word: 'hebr. sefer ha-miqnah',
+        rendered: 'den versiegelten Kaufbrief',
+        note: 'Die Kaufurkunde. Der Text unterscheidet die versiegelte Fassung von der offenen Abschrift – die im Alten Orient übliche Doppelausfertigung, bei der eine Seite geschützt und eine einsehbar blieb.',
+      },
+      {
+        word: 'hebr. keli cheres',
+        rendered: 'ein irdenes Gefäß',
+        note: 'Ein Tonkrug. Verschlossene Keramik hielt Papyrus über lange Zeit trocken; dieselbe Aufbewahrungsart hat die Rollen vom Toten Meer erhalten. Der Auftrag zielt auf Jahrzehnte, nicht auf Jahre.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Tradition sieht in dem Kauf die verbürgte Zusage der Rückkehr: Wer ein Feld erwirbt, rechnet mit Erben, die es bebauen. Der Zusammenhang mit dem Löserecht macht die Handlung zugleich zu einer Bestätigung, dass das Land der Sippe zugeordnet bleibt.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Hieronymus deutet den Acker auf die Kirche und den Kauf auf die Erlösung, die einen scheinbar verlorenen Besitz einlöst. Die doppelte Urkunde wird auf das Verhältnis von Altem und Neuem Bund gelesen – verschlossen und offen zugleich.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther hebt hervor, dass Jeremia hier nicht redet, sondern zahlt. Der Glaube zeige sich darin, dass jemand einsetzt, was er hat, gegen den Augenschein. Zugleich weist er darauf hin, dass Jeremia im selben Kapitel Gott fragt, ob das denn Sinn habe.',
+      },
+      {
+        tradition: 'Rechtsgeschichtliche Einordnung',
+        text: 'Der Abschnitt gilt als die genaueste Beschreibung eines Grundstückskaufs im Alten Testament und stimmt in allen Einzelheiten mit dem überein, was aus Urkunden und Siegelfunden bekannt ist. Zeugen, Wägung, Doppelausfertigung und Archivierung entsprechen der Praxis der Zeit.',
+      },
+      {
+        tradition: 'Politische Theologie',
+        text: 'Die Handlung wird als Beispiel dafür gelesen, dass Hoffnung sich in überprüfbaren Handlungen niederschlagen muss, um mehr zu sein als eine Stimmung. Kritisch wird gefragt, ob ein einzelner Kauf in einem belagerten Land etwas bewirkt – der Text beantwortet das nicht, er hält die Urkunde nur auf.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 25, verse: 25, note: 'Das Löserecht des nächsten Verwandten' },
+      { book: 'rut', chapter: 4, verse: 4, note: 'Ein Lösungsgeschäft am Stadttor' },
+      { book: 'jer', chapter: 29, verse: 5, note: 'Bauet Häuser und pflanzt Gärten' },
+    ],
+  },
+  {
+    book: 'hes',
+    chapter: 47,
+    from: 1,
+    to: 12,
+    title: '„da floß ein Wasser heraus unter der Schwelle des Tempels“',
+    historicalShort:
+      'Ein Rinnsal unter der Tempelschwelle wird nach vier Messungen zu einem Strom, den man nicht mehr durchwaten kann. Er fließt in das tote Meer der Region und macht es lebendig – ein Bild mit erstaunlich genauer Geographie.',
+    historicalLong:
+      'Die Vision steht am Ende eines langen Entwurfs für einen neuen Tempel, den Hesekiel im Exil aufzeichnet. Sie ist kein Bauplan mehr, sondern die Beschreibung dessen, was von diesem Gebäude ausgeht. Ein Mann mit einer Messschnur führt den Propheten in Abständen von je tausend Ellen flussabwärts, und der Wasserstand steigt: Knöchel, Knie, Hüfte, dann Schwimmtiefe. Diese Vermessung ist der Kern der Erzählform – das Wunder wird nicht behauptet, sondern in Etappen nachgemessen.\n\nDie Geographie ist real. Vom Tempelberg fällt das Gelände nach Osten steil zum Toten Meer ab, gut tausend Höhenmeter auf rund fünfundzwanzig Kilometer. Die genannten Orte lassen sich verorten: En-Gedi ist die große Oase am Westufer, seit der Bronzezeit besiedelt und für ihre Quellen und Dattelpalmen bekannt. Der zweite Ortsname ist unsicher, dürfte aber ebenfalls am Ufer gelegen haben. Das Wort, das Luther mit „Blachfeld“ wiedergibt, ist der hebräische Name für den Jordangraben.\n\nDas Tote Meer ist mit rund dreißig Prozent Salzgehalt fast lebensfeindlich; Fische, die vom Jordan hineingespült werden, sterben sofort. Zugleich war es ein Wirtschaftsraum: Man gewann Salz, Asphalt und Bitumen, und diese Güter wurden bis nach Ägypten gehandelt. Der Vers 11, der ausdrücklich sagt, dass Teiche und Lachen salzig bleiben, ist deshalb keine Einschränkung der Vision aus Verlegenheit, sondern die Rücksicht auf einen Wirtschaftszweig, den man brauchte.\n\nEine Quelle, die aus dem Heiligtum kommt, gehört in eine weit verbreitete Vorstellungswelt. In Mesopotamien galt der Tempel als Verbindung zur Süßwassertiefe unter der Erde; ugaritische Texte siedeln El an den Quellen der Ströme an. Auch die Erzählung vom Garten am Anfang der Bibel kennt einen Strom, der sich in vier Arme teilt. Hesekiel greift diese Bildwelt auf, gibt ihr aber eine Richtung: Das Wasser bleibt nicht am Heiligtum, es geht dorthin, wo nichts lebt.\n\nDie Bäume am Ufer schließen den Bogen. Sie tragen jeden Monat, ihre Blätter welken nicht und dienen als Heilmittel. Für Menschen, die die jährliche Ernte und die Trockenzeit kannten, war das Ungewöhnlichste daran nicht die Menge, sondern der Rhythmus: eine Vegetation ohne Jahreszeiten und ohne Ausfall. Die Vision beschreibt damit nicht Überfluss, sondern das Ende der Unsicherheit.',
+    reception:
+      'Die Offenbarung des Johannes nimmt das Bild im letzten Kapitel auf: ein Strom des lebendigen Wassers, Bäume mit monatlicher Frucht, Blätter zur Heilung der Völker. Damit steht Hesekiels Vision am Anfang einer Linie, die durch die gesamte christliche Endzeitvorstellung führt und die Bibel gewissermaßen mit demselben Bild schließt, mit dem sie begonnen hat.\n\nIn der Liturgie der Osterzeit wird der Beginn der Vision seit dem Mittelalter als Gesang zur Besprengung mit Weihwasser verwendet; die lateinischen Anfangsworte „Vidi aquam“ haben zahlreiche Vertonungen hervorgebracht. In der Ostkirche gehört der Text zur Wassersegnung. Die Vision hat außerdem eine praktische Wirkungsgeschichte in der Wasserpolitik des Nahen Ostens: Pläne zur Speisung des Toten Meeres, dessen Spiegel seit Jahrzehnten dramatisch sinkt, werden bis in offizielle Dokumente hinein mit diesem Kapitel in Verbindung gebracht.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Vom Tempelberg zum Toten Meer fällt das Gelände über tausend Höhenmeter ab, durch die Judäische Wüste. Das Tote Meer liegt rund vierhundert Meter unter dem Meeresspiegel und ist der tiefste Punkt der Erdoberfläche.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Am Toten Meer gewann man Salz und Asphalt, beides gefragte Handelsgüter; Ägypten brauchte Bitumen für die Einbalsammierung. Fischerei war unmöglich. Eine Region, in der plötzlich Netze ausgespannt werden, kehrt ihre Wirtschaftsweise um.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Tempel galten als Verbindungsstellen zwischen Himmel, Erde und der Wassertiefe darunter. Quellen an Heiligtümern waren deshalb kein Zufall, sondern Bestätigung des Ortes. In Jerusalem lag die Gihonquelle unterhalb des Tempelbergs.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wasser bestimmte den Jahresrhythmus. Nach der Ernte im Frühsommer folgten Monate ohne Regen; Zisternen mussten reichen. Bäume, die monatlich tragen, heben genau diesen Zwang auf, den jeder Haushalt kannte.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. qaw ha-middah',
+        rendered: 'die Meßschnur',
+        note: 'Das Werkzeug der Baumeister und Landvermesser. Der Führer der Vision ist damit als Fachmann gekennzeichnet. Der ganze Tempelentwurf Hesekiels ist als Vermessung angelegt, und auch hier wird nicht geschaut, sondern gemessen.',
+      },
+      {
+        word: 'hebr. rafa',
+        rendered: 'ihre Blätter zur Arznei',
+        note: 'Das Wort für Heilen und Genesen. Es steht im Abschnitt mehrfach – auch dort, wo Luther sagt, die Wasser sollen gesund werden. Heilung betrifft hier nicht Menschen, sondern ein Gewässer.',
+      },
+      {
+        word: 'hebr. arava',
+        rendered: 'durchs Blachfeld',
+        note: 'Der Eigenname des Jordangrabens zwischen See Genezareth und Rotem Meer. Luthers „Blachfeld“ meint ein flaches, offenes Gelände. Die Angabe ist keine Umschreibung, sondern eine Ortsbezeichnung.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Talmud und der Midrasch verbinden die Vision mit den Quellen des künftigen Jerusalem und diskutieren die praktischen Folgen bis hin zur Frage, welche Fische dann rein wären. Die Deutung bleibt überwiegend auf die messianische Zeit bezogen, nicht auf einen inneren Vorgang.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Hieronymus und Gregor der Große lesen das steigende Wasser als Stufen des geistlichen Verständnisses: Anfänger waten, Fortgeschrittene schwimmen. Die vier Messungen wurden zu einem festen Bild für den Weg der Schriftauslegung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Für Luther ist der Strom das Evangelium, das vom Wort ausgeht und wächst, je weiter es kommt. Er betont, dass es klein beginnt – ein Rinnsal unter einer Schwelle – und dass seine Größe nicht am Ursprung abzulesen ist.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Kapitel 40 bis 48 gelten als eigener Block innerhalb des Hesekielbuchs, entstanden im Exil oder kurz danach. Ob sie von Hesekiel selbst oder aus seiner Schule stammen, ist umstritten; ihre Genauigkeit in Maßen und Geographie spricht für Verfasser mit priesterlicher Ausbildung.',
+      },
+      {
+        tradition: 'Ökologische Lesart',
+        text: 'Das Bild von der Heilung eines toten Gewässers wird angesichts des sinkenden Spiegels und der Übernutzung des Jordan als Aufgabe gelesen, nicht nur als Verheißung. Kritisch wird angemerkt, dass der Text ausdrücklich Salzstellen bestehen lässt und damit gegen jede Vorstellung vollständiger Umgestaltung spricht.',
+      },
+    ],
+    crossRefs: [
+      { book: 'offb', chapter: 22, verse: 1, note: 'Der Strom des lebendigen Wassers' },
+      { book: 'sach', chapter: 14, verse: 8, note: 'Lebendige Wasser aus Jerusalem' },
+      { book: 'joel', chapter: 3, verse: 18, note: 'Eine Quelle aus dem Hause des HERRN' },
+    ],
+  },
+  {
+    book: 'dan',
+    chapter: 6,
+    from: 10,
+    to: 24,
+    title: '„offene Fenster gegen Jerusalem“',
+    historicalShort:
+      'Ein hoher Beamter betet weiter wie bisher, obwohl ein Erlass es unter Todesstrafe verbietet. Die Erzählung handelt weniger von Löwen als von der Frage, was ein Untertan tut, wenn Loyalität zum Staat und Treue zu Gott auseinandertreten.',
+    historicalLong:
+      'Die Erzählung spielt am Hof eines Weltreichs, und ihr Rahmen ist genau beobachtet. Die persische Verwaltung war in Satrapien gegliedert, mit Aufsichtsbeamten, die dem König unmittelbar berichteten. Das Motiv der Unabänderlichkeit königlicher Erlasse begegnet auch im Estherbuch und gehört zum Bild, das die jüdische Diasporaliteratur vom Perserreich zeichnet. Historisch ist es allerdings nicht belegt; persische Könige konnten ihre Anordnungen sehr wohl aufheben. Auch die Gestalt des Darius des Meders lässt sich mit den bekannten Herrschern nicht zur Deckung bringen.\n\nDas hat einen Grund. Die Forschung ordnet das Buch in seiner vorliegenden Gestalt weit überwiegend der Zeit um 165 v. Chr. zu, unter der Verfolgung durch Antiochus IV. Er verbot in Judäa die Ausübung der jüdischen Religion, ließ den Tempel für einen anderen Kult umwidmen und stellte Sabbatfeier, Beschneidung und Torabesitz unter Todesstrafe – das erste bekannte Religionsverbot dieser Art in der Geschichte. Vor diesem Hintergrund gelesen ist das Kapitel keine Hofgeschichte aus der Perserzeit, sondern eine Ermutigung an Menschen, die genau in dieser Lage standen.\n\nDie Gebetshaltung ist präzise geschildert und entspricht der Praxis, die sich in der Exilszeit herausbildete. Dreimal am Tag, im Obergemach, mit geöffneten Fenstern in Richtung Jerusalem: Als der Tempel zerstört und die Menschen weit entfernt waren, wurde die Gebetsrichtung zum Ersatz für den Ort. Salomos Tempelweihgebet im ersten Königsbuch sieht diesen Fall ausdrücklich vor. Aus dieser Praxis ist die bis heute gültige Ausrichtung der Synagogen entstanden.\n\nDer Löwengraben ist keine Erfindung. Assyrische und persische Herrscher hielten Löwen in Zwingern für die Jagd, und Reliefs aus Ninive zeigen die Tiere in Käfigen, aus denen sie für die königliche Jagd freigelassen wurden. Hinrichtungen durch Tiere sind für verschiedene antike Reiche bezeugt. Das Versiegeln des Steins mit dem Ring des Königs und der Ringe der Großen ist eine Rechtsförmlichkeit: Sie sollte verhindern, dass eine Partei den Vollzug heimlich rückgängig macht.\n\nDer Schluss gehört zu den Stellen, die man nicht übergehen sollte. Die Ankläger werden samt Frauen und Kindern in denselben Graben geworfen. Das ist die im Perserreich bezeugte Praxis der Sippenhaft und entspricht dem Rechtsempfinden der Zeit, das die Familie als Einheit behandelte. Für heutige Leser steht dieser Vers quer zu der Erzählung, die eben noch von der Unschuld des Angeklagten handelte.',
+    reception:
+      'Daniel in der Löwengrube gehört zu den ältesten Bildmotiven des Christentums und findet sich schon im 3. Jahrhundert auf Sarkophagen und in den römischen Katakomben – meist als Betender zwischen zwei Tieren. In der Zeit der Verfolgungen stand er für die Zuversicht, dass Gott aus der Gewalt des Staates herausführen kann.\n\nDie Szene ist in unzähligen Kinderbibeln, Fenstern und Vertonungen präsent, unter anderem in mittelalterlichen geistlichen Spielen und im berühmten Gemälde von Rubens. In der politischen Auslegung dient das Kapitel als klassischer Beleg für Gehorsamsverweigerung gegenüber einem Gesetz, das den Glauben verbietet; es wurde in der Bekennenden Kirche ebenso zitiert wie in Bürgerrechtsbewegungen. Die Formel vom Gesetz der Meder und Perser ist als Redensart für eine unabänderliche Regel in mehrere Sprachen eingegangen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Das Perserreich wurde über Satrapien verwaltet, deren Statthalter erhebliche Macht besaßen. Kontrollbeamte und Denunziation gehörten zum System. Wer aufstieg, machte sich Feinde, und Anklagen beim König waren ein übliches Mittel der Hofpolitik.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Nach der Zerstörung des Tempels trat die Gebetsrichtung an die Stelle des Gebetsortes. Man betete nach Jerusalem hin, dreimal täglich, zu festen Zeiten. Diese Praxis ist die Wurzel der Ausrichtung von Synagogen bis heute.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Siegel machten Vorgänge unwiderruflich. Ein mit dem Königsring versiegelter Verschluss konnte nicht geöffnet werden, ohne dass es sichtbar wurde. Dass hier zusätzlich die Großen siegeln, sichert beide Seiten gegeneinander ab.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Sippenhaft war verbreitet: Für ein Vergehen konnte die Familie mithaften. Herodot berichtet Entsprechendes aus dem Perserreich. Was am Ende der Erzählung geschieht, war für die ersten Hörer die normale Rechtsfolge.',
+      },
+    ],
+    terms: [
+      {
+        word: 'aram. dat',
+        rendered: 'das Recht der Meder und Perser',
+        note: 'Ein persisches Lehnwort für Gesetz und Erlass, das über das Aramäische in die Bibel kam. Der Text ist an dieser Stelle nicht hebräisch, sondern aramäisch – die Verkehrssprache des Perserreichs.',
+      },
+      {
+        word: 'aram. gob',
+        rendered: 'zu den Löwen in den Graben',
+        note: 'Eine Grube oder Zisterne, kein Käfig. Solche Anlagen dienten der Aufbewahrung von Jagdtieren. Der Zugang von oben und der verschließbare Stein an der Seite entsprechen dem, was aus Darstellungen bekannt ist.',
+      },
+      {
+        word: 'aram. elaha chajja',
+        rendered: 'des lebendigen Gottes',
+        note: 'Die Bezeichnung stellt den Gott Daniels den Bildern gegenüber, die man ansehen, aber nicht befragen kann. Der König selbst gebraucht sie – ein Zug, der in den Hofgeschichten des Buches mehrfach begegnet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Tradition liest das Kapitel als Beispiel der Heiligung des Gottesnamens durch öffentliches Standhalten. Aus dem Vers über die drei täglichen Gebete leitet der Talmud die Ordnung der drei Gebetszeiten ab; die Ausrichtung nach Jerusalem wird zur Halacha.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter deuten den verschlossenen Graben auf das Grab Christi und die Rettung am Morgen auf die Auferstehung. In den Verfolgungszeiten diente die Erzählung als Trostbild; die frühesten Darstellungen in den Katakomben zeigen Daniel in der Haltung des Betenden.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther nutzt das Kapitel in der Frage, wie weit der Obrigkeit zu gehorchen sei: bis dorthin, wo sie Glaubensdinge regelt. Daniel widersetzt sich nicht dem König überhaupt, sondern einem einzelnen Erlass, und trägt die Folge, ohne aufzubegehren.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Unstimmigkeiten in der Person des Darius und die Vorstellung unabänderlicher Erlasse sprechen gegen eine Abfassung in der Perserzeit. Das Buch wird überwiegend in die Verfolgung unter Antiochus IV. um 165 v. Chr. datiert; die Hofgeschichten dürften ältere Erzählungen aufgenommen haben.',
+      },
+      {
+        tradition: 'Politische Ethik',
+        text: 'Der Abschnitt gilt als klassischer Text zum gewaltlosen Ungehorsam: Daniel verheimlicht nichts, ändert nichts und beruft sich auf kein Widerstandsrecht. Kritisch wird auf den Schluss verwiesen, in dem die Ankläger mit ihren Familien getötet werden – die Erzählung teilt die Rechtsvorstellungen ihrer Zeit.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 5, verse: 29, note: 'Man muss Gott mehr gehorchen als den Menschen' },
+      { book: '1koe', chapter: 8, verse: 48, note: 'Beten in Richtung des Tempels aus der Ferne' },
+      { book: 'ps', chapter: 55, verse: 18, note: 'Des Abends, Morgens und Mittags will ich klagen' },
+    ],
+  },
+  {
+    book: 'am',
+    chapter: 8,
+    from: 4,
+    to: 8,
+    title: '„das Maß verringern und den Preis steigern“',
+    historicalShort:
+      'Amos lässt die Händler selbst sprechen, und was sie sagen, ist präzise Betriebswirtschaft: kleineres Maß, höherer Preis, manipulierte Waage, Spreu unter das Korn. Die Feiertage stören dabei nur.',
+    historicalLong:
+      'Das Nordreich Israel erlebte unter Jerobeam II. in der ersten Hälfte des 8. Jahrhunderts v. Chr. eine wirtschaftliche Blüte. Assyrien war vorübergehend geschwächt, die Handelswege liefen, und die Oberschicht in Samaria wurde wohlhabend. Ausgrabungen dort haben aufwendige Elfenbeinarbeiten zutage gefördert, die Amos an anderer Stelle ausdrücklich erwähnt. Zugleich verschob sich die Besitzstruktur: Aus Kleinbauern wurden Pächter und Schuldner. Die Samaria-Ostraka, beschriftete Tonscherben aus der Palastverwaltung, verzeichnen Lieferungen von Öl und Wein aus dem Umland – Belege für ein System, in dem Erträge an wenige Empfänger flossen.\n\nDie Betrugstechniken, die der Text aufzählt, sind alle nachprüfbar. Das Getreidemaß wurde kleiner gemacht als vorgeschrieben, der Gewichtsstein für den Kaufpreis schwerer. Bei Ausgrabungen in Juda und Israel sind Gewichtssteine gefunden worden, deren Masse erheblich von der aufgeprägten Angabe abweicht. Manche Händler führten zwei Sätze mit sich, einen zum Einkaufen und einen zum Verkaufen – das fünfte Buch Mose verbietet ausdrücklich zweierlei Gewicht im Beutel. Der Abschnitt beschreibt also keine Übertreibung, sondern gängige Praxis.\n\nDer Verkauf von Spreu als Korn ist die vierte Technik. Beim Dreschen und Worfeln trennte man Korn von Spelzen; was übrig blieb, war Futter oder Abfall. Es unter das Getreide zu mischen, war für den Käufer schwer zu erkennen und traf besonders die, die kleine Mengen kauften – wer viel kaufte, ließ prüfen.\n\nBemerkenswert ist der Rahmen. Die Händler halten Neumond und Sabbat ein; sie brechen die Feiertagsruhe nicht, sie warten sie ab. Der Vorwurf lautet also nicht, dass sie unfromm wären, sondern dass Frömmigkeit und Geschäft bei ihnen nichts miteinander zu tun haben. Das ist die schärfere Anklage, weil sie nicht durch mehr Religion zu beheben ist. Nebenbei ist diese Stelle einer der frühesten Belege für den Sabbat als arbeitsfreien Tag im Alltag.\n\nDie Wendung vom Armen, der für ein Paar Schuhe erworben wird, kehrt im Amosbuch wieder. Sie beschreibt die Schuldknechtschaft: Wer eine geringfügige Schuld nicht bezahlen konnte, verlor die Freiheit. Der Preis eines Paars Sandalen als Maß für einen Menschen ist bewusst gewählt – nicht die Höhe der Summe empört, sondern ihre Niedrigkeit. Das Erdbeben, mit dem der Abschnitt schließt, ist im Buch schon eingangs erwähnt; Ausgrabungen in Hazor und anderen Orten haben eine Zerstörungsschicht um 760 v. Chr. freigelegt, die damit in Verbindung gebracht wird.',
+    reception:
+      'Amos gilt seit dem 19. Jahrhundert als der Prophet der sozialen Frage, und dieses Kapitel gehört zu den meistzitierten Belegen. In der Arbeiterbewegung, in der Sozialen Frage der Kirchen und in der Befreiungstheologie wurde es herangezogen, um deutlich zu machen, dass Kritik an wirtschaftlicher Ausbeutung nicht von außen an die Bibel herangetragen werden muss.\n\nMartin Luther King zitierte Amos mehrfach, am bekanntesten mit dem Vers über das Recht, das strömen soll wie Wasser; die Zeile steht auf dem Bürgerrechtsdenkmal in Montgomery. Auch die Debatten über fairen Handel und über Verbraucherschutz greifen regelmäßig auf dieses Kapitel zurück. Die Wendung von falschen Gewichten ist über Bibelübersetzungen in den Sprachgebrauch übergegangen, meist ohne dass die Herkunft noch bewusst wäre.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Getreide wurde nach Hohlmaß verkauft, Silber nach Gewicht abgewogen. Beide Größen ließen sich manipulieren, und gefundene Gewichtssteine zeigen erhebliche Abweichungen. Eine unabhängige Eichung durch eine Behörde gab es nicht überall.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Neumond und Sabbat waren Tage ohne Handel. Sie strukturierten den Monat und die Woche. Dass Händler sie einhielten und zugleich auf ihr Ende warteten, zeigt, wie selbstverständlich die Ordnung war – und wie folgenlos.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Wer eine Schuld nicht begleichen konnte, haftete mit seiner Arbeitskraft. Der Gläubiger erhielt Anspruch auf Dienste des Schuldners oder seiner Kinder. Die Beträge, um die es ging, waren oft klein; das Ergebnis war trotzdem der Verlust der Freiheit.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Unter Jerobeam II. war das Nordreich wohlhabend und außenpolitisch entlastet. Reichtum sammelte sich in Samaria, wo Palastarchitektur und Luxusgüter nachgewiesen sind. Wirtschaftlicher Aufschwung und wachsende Ungleichheit fielen zusammen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. efa',
+        rendered: 'das Maß verringern',
+        note: 'Das Hohlmaß für Getreide, rund zwanzig bis zwanzig Liter je nach Zeit und Ort. Wer es kleiner ausführte als vorgeschrieben, gab weniger für denselben Preis – ein Betrug, der ohne Nachmessen nicht auffiel.',
+      },
+      {
+        word: 'hebr. schekel',
+        rendered: 'den Preis steigern',
+        note: 'Ursprünglich eine Gewichtseinheit für Silber, keine Münze. Den Schekel zu vergrößern hieß, mehr Silber für dieselbe Ware zu verlangen. Zusammen mit dem verkleinerten Hohlmaß wirkte der Betrug doppelt.',
+      },
+      {
+        word: 'hebr. ewjon',
+        rendered: 'die Dürftigen um ein Paar Schuhe',
+        note: 'Der Bedürftige, der auf Hilfe angewiesen ist. Die Wendung mit den Sandalen kehrt im zweiten Kapitel des Buches wieder und beschreibt den Preis, für den ein Mensch in die Schuldknechtschaft geriet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition rechnet Maß- und Gewichtsbetrug zu den schwersten Vergehen, weil er sich nicht wiedergutmachen lässt – man weiß nicht mehr, wen man betrogen hat. Aus dieser Erwägung wird die Pflicht abgeleitet, Maße regelmäßig prüfen zu lassen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Basilius und Johannes Chrysostomos zitieren Amos in ihren Predigten gegen Kornhändler, die in Hungerzeiten Vorräte zurückhielten. Für sie ist entscheidend, dass hier keine Ungläubigen reden, sondern Menschen, die den Feiertag halten.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther nimmt in seinen Schriften über Handel und Wucher ähnliche Praktiken aufs Korn und beruft sich auf die prophetische Tradition. Für ihn gehört ehrliches Maß zum ersten Gebot, weil Betrug im Alltag den Gottesdienst am Feiertag entwertet.',
+      },
+      {
+        tradition: 'Archäologische Einordnung',
+        text: 'Gefundene Gewichtssteine mit abweichender Masse, die Samaria-Ostraka und die Zerstörungsschicht eines Erdbebens um die Mitte des 8. Jahrhunderts stützen das Bild, das der Text zeichnet. Die wirtschaftliche Blüte des Nordreichs ist archäologisch gut belegt.',
+      },
+      {
+        tradition: 'Wirtschaftsethische Lesart',
+        text: 'Der Abschnitt wird als Beispiel dafür gelesen, dass Ausbeutung nicht in Ausnahmefällen, sondern in normalen Geschäftsabläufen stattfindet. Die Anklage richtet sich nicht gegen Handel, sondern gegen eine Praxis, die Recht und Frömmigkeit in getrennten Fächern hält.',
+      },
+    ],
+    crossRefs: [
+      { book: 'am', chapter: 5, verse: 24, note: 'Es ströme das Recht wie Wasser' },
+      { book: '5mo', chapter: 25, verse: 13, note: 'Kein zweierlei Gewicht im Beutel' },
+      { book: 'spr', chapter: 11, verse: 1, note: 'Falsche Waage ist dem HERRN ein Greuel' },
+    ],
+  },
+  {
+    book: 'sach',
+    chapter: 8,
+    from: 3,
+    to: 8,
+    title: '„voll Knaben und Mädchen, die auf ihren Gassen spielen“',
+    historicalShort:
+      'Die Hoffnung wird hier nicht in großen Bildern beschrieben, sondern in einer Straßenszene: Alte, die sich auf Stöcke stützen, und Kinder, die spielen. Für eine Stadt, die eine Belagerung hinter sich hatte, ist das eine sehr genaue Auswahl.',
+    historicalLong:
+      'Sacharja trat um 520 v. Chr. auf, in der frühen Perserzeit. Jerusalem war zu dieser Zeit ein Ort von bescheidener Größe; archäologische Schätzungen gehen für die persische Provinz Jehud von einer Bevölkerung im niedrigen fünfstelligen Bereich aus, für die Stadt selbst von wenigen Tausend. Die Mauern lagen in Trümmern, der Tempel war eine Baustelle. Die Rückkehrer aus Babylon stießen auf eine Bevölkerung, die nie weggegangen war, und es gab Streit über Land, Ansprüche und Zuständigkeiten.\n\nVor diesem Hintergrund ist die Auswahl der Bilder aufschlussreich. Alte Menschen und spielende Kinder sind genau die beiden Gruppen, die in Kriegen und Belagerungen zuerst verschwinden. Bei Hungersnöten sterben zuerst die Kleinsten und die Schwächsten; wer verschleppt wurde, war meist im arbeitsfähigen Alter, die anderen blieben zurück oder kamen um. Eine Straße, auf der Greise sitzen und Kinder spielen, beschreibt deshalb keinen idyllischen Zustand, sondern das Gegenteil von Krieg. Es ist die Zusage normaler Lebenserwartung.\n\nDie Lebenserwartung war in dieser Welt niedrig, was vor allem an der hohen Kindersterblichkeit lag. Untersuchungen an Gräberfeldern der Eisenzeit legen nahe, dass ein erheblicher Teil der Kinder das fünfte Lebensjahr nicht erreichte. Wer bis ins hohe Alter kam, war eine Ausnahme und genoss entsprechendes Ansehen. Ein Stock als Gehhilfe war das sichtbare Zeichen dafür, dass jemand lange gelebt hatte.\n\nDie Gasse, von der der Text spricht, war der eigentliche Lebensraum. Häuser waren klein und dunkel; gearbeitet, gehandelt und geredet wurde draußen. Kinder spielten dort, weil es keinen anderen Ort gab. Ausgrabungen haben Spielsteine, Würfel, Rasseln und Tonfiguren zutage gefördert. Wer eine Stadt beschreiben wollte, beschrieb ihre Gassen.\n\nDer sechste Vers formuliert den Einwand, den die Zuhörer selbst hatten. Es scheint unmöglich – und der Prophet bestreitet das nicht. Er stellt die Frage nur weiter: unmöglich für wen? Diese Zurückhaltung ist bemerkenswert. Der Text argumentiert nicht gegen die Erfahrung der Menschen, er verschiebt lediglich den Maßstab. In einer Provinz, die im Perserreich kaum eine Rolle spielte, war die Skepsis der ersten Hörer die vernünftigere Haltung.',
+    reception:
+      'Der Vers von den spielenden Kindern gehört zu den meistzitierten Bibelstellen in kirchlichen Stellungnahmen zu Städtebau, Kinderrechten und Friedensarbeit. Er wird herangezogen, wenn es darum geht, den Zustand einer Gesellschaft nicht an ihren Bauwerken, sondern an ihren Schwächsten zu messen.\n\nIn der jüdischen Tradition ist die Szene mit der Erwartung der Rückkehr verbunden und wird bei Gedenkfeiern zitiert. Nach 1945 hat der Vers in Deutschland eine besondere Rolle gespielt: Er stand über Wiederaufbauinitiativen und über Einrichtungen für Kriegswaisen. In der Städtebaudiskussion des späten 20. Jahrhunderts wurde er zum Argument für kinderfreundliche Quartiere – eine Verwendung, die dem Text seine Zeitbindung nimmt, aber seine Beobachtung ernst nimmt: Eine Stadt, in der Kinder nicht draußen sein können, ist keine heile Stadt.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Das Leben spielte sich auf der Gasse ab. Häuser hatten kleine Fenster und dienten vor allem zum Schlafen und Lagern. Handwerk, Handel, Gespräch und Kinderspiel fanden im Freien statt, und die Straße war entsprechend eng und belebt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Hohes Alter war selten und wurde geachtet; Älteste bildeten das Entscheidungsgremium einer Stadt. Kindersterblichkeit war hoch, und viele Frauen starben im Kindbett. Eine Bevölkerung mit vielen Alten und vielen Kindern war ein Zeichen langer Friedenszeiten.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Jehud war eine kleine, unbedeutende Provinz am Rand des Perserreichs. Der Wiederaufbau des Tempels erfolgte mit persischer Genehmigung, aber ohne große Mittel. Die Zuhörer Sacharjas hatten wenig Anlass, mit einer Wende zu rechnen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Jerusalem lag nach der Zerstörung in Trümmern, die Mauern waren offen, große Teile des Stadtgebiets unbewohnt. Die Siedlung der frühen Perserzeit war deutlich kleiner als die der Königszeit und beschränkte sich auf den Bereich um den Tempelberg.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. emet',
+        rendered: 'eine Stadt der Wahrheit',
+        note: 'Das Wort meint Verlässlichkeit, nicht die Richtigkeit von Aussagen. Eine Stadt der Wahrheit ist eine, auf die man sich verlassen kann – in Recht, Handel und Nachbarschaft.',
+      },
+      {
+        word: 'hebr. rechov',
+        rendered: 'in den Gassen zu Jerusalem',
+        note: 'Der offene Platz oder die breite Straße, im Unterschied zur engen Gasse. Es ist derselbe Ort, an dem nach dem Nehemiabuch das Volk zur Verlesung des Gesetzes zusammenkommt – der öffentliche Raum der Stadt.',
+      },
+      {
+        word: 'hebr. pala',
+        rendered: 'Ist solches unmöglich',
+        note: 'Die Wurzel bezeichnet das Wunderbare, das Außerordentliche, das über die Möglichkeiten hinausgeht. Der Vers gebraucht sie zweimal und stellt damit menschliches und göttliches Vermögen nebeneinander, ohne den Einwand zu bestreiten.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Tradition liest den Abschnitt als Zusage der vollständigen Rückkehr und der Wiederherstellung eines normalen Lebens. Betont wird, dass keine Herrschaft und kein Sieg beschrieben werden, sondern Alter und Kindheit – die beiden Enden des Lebens, die Krieg zuerst zerstört.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter deuten die Stadt der Wahrheit auf die Kirche und die Rückkehr von Ost und West auf die Sammlung der Völker. Hieronymus verbindet die spielenden Kinder mit den Kleinen, denen das Reich gehört, und liest den Abschnitt als Gegenbild zu einer Welt der Erwachsenenmacht.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin hebt den sechsten Vers hervor: Der Prophet nehme den Zweifel der Hörer ernst und widerlege ihn nicht mit Argumenten, sondern mit der Rückfrage nach dem Maßstab. Für ihn liegt darin die eigentliche Struktur des Glaubens.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Kapitel 1 bis 8 werden dem Propheten der frühen Perserzeit zugeordnet und stehen im Zusammenhang mit dem Tempelbau um 520 v. Chr. Die Kapitel 9 bis 14 gelten sprachlich und inhaltlich als jüngerer Anhang von anderer Hand.',
+      },
+      {
+        tradition: 'Sozialethische Lesart',
+        text: 'Der Text wird als Maßstab gelesen: Der Zustand eines Gemeinwesens zeigt sich daran, ob Alte und Kinder sich im öffentlichen Raum aufhalten können. Diese Lesart hat die kirchliche Beteiligung an Debatten über Stadtplanung und Kinderrechte geprägt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 65, verse: 20, note: 'Kein Kind mehr, das nur wenige Tage lebt' },
+      { book: 'neh', chapter: 8, verse: 1, note: 'Die Versammlung auf der breiten Gasse' },
+      { book: 'hag', chapter: 2, verse: 3, note: 'Der Kleinmut angesichts des neuen Tempels' },
+    ],
+  },
+  {
+    book: 'mi',
+    chapter: 7,
+    from: 18,
+    to: 20,
+    title: '„Wo ist solch ein Gott, wie du bist“',
+    historicalShort:
+      'Das Michabuch endet mit einer Frage, die zugleich ein Wortspiel mit dem Namen des Propheten ist. Was folgt, ist ein Bild vom Versenken der Schuld im Meer – und in ihm steckt mehr Erfahrung, als man zunächst hört.',
+    historicalLong:
+      'Der Name Micha ist eine Kurzform und bedeutet ungefähr „Wer ist wie der HERR?“. Die letzten Verse des Buches beginnen mit genau dieser Frage, so dass das Ende auf den Anfang zurückweist. Solche Namensspiele sind in prophetischen Büchern nicht selten; sie signalisieren einen bewussten Buchabschluss. Ob diese Verse vom Propheten des 8. Jahrhunderts stammen oder als Schlussstück später angefügt wurden, ist umstritten – ihre Sprache erinnert an nachexilische Texte.\n\nDie Frage selbst hat eine Geschichte. Sie steht schon im Lied am Schilfmeer nach dem Auszug und begegnet in mehreren Psalmen. In einer Welt, in der Götter zahlreich waren, war sie zunächst ein Vergleich unter Konkurrenten: Wer ist stärker, wer hilft wirksamer? Hier wird sie anders beantwortet. Das Unterscheidungsmerkmal ist nicht Macht, sondern die Bereitschaft, Schuld zu tragen und den Zorn nicht festzuhalten.\n\nDas Bild vom Versenken im Meer ist stärker, als es im Deutschen klingt. Das Meer war der Bereich, aus dem nichts zurückkommt; man kannte weder Taucher noch Bergung. Was in tiefes Wasser fiel, war endgültig verloren. Der Ausdruck beschreibt also keine Verlagerung, sondern das Ende der Zugriffsmöglichkeit – auch für den, der versenkt hat. Zugleich klingt die Erinnerung an das Schilfmeer mit, wo nach der Erzählung die ägyptischen Wagen versanken: Was Israel verfolgte, ging dort unter.\n\nDer letzte Vers beruft sich auf Zusagen an Abraham und Jakob. Das ist juristische Sprache: Treue halten und einen Eid erfüllen, den man den Vätern geschworen hat. Nach dem Untergang des Nordreichs, nach der assyrischen Verwüstung Judas und später nach dem babylonischen Exil war genau das die offene Frage – ob Zusagen, die vor langer Zeit gegeben wurden, noch Bestand haben, wenn die Umstände sich vollständig geändert haben. Das Michabuch endet mit einem Ja auf diese Frage.\n\nDer Aufbau des Buches macht den Schluss noch bemerkenswerter. Micha gehört zu den schärfsten Anklägern des Alten Testaments: Er kündigt an, dass Jerusalem zum Steinhaufen und der Tempelberg zum Waldhügel wird – eine Aussage, die das Jeremiabuch später ausdrücklich zitiert, weil sie so ungeheuerlich war. Dass ein Buch mit solchen Sätzen mit dem Bild vom Versenken der Sünden endet, ist keine Abschwächung; es ist die Behauptung, dass die Anklage nicht das letzte Wort behält.',
+    reception:
+      'Diese Verse werden im Judentum am Neujahrsfest bei der Taschlich-Zeremonie gesprochen: Man geht an ein fließendes Gewässer und schüttelt symbolisch die Taschen aus, während der Vers vom Versenken der Sünden in der Tiefe des Meeres rezitiert wird. Der Brauch ist seit dem späten Mittelalter belegt und hat sich in fast allen jüdischen Gemeinden gehalten.\n\nIn der christlichen Frömmigkeit gehört der Abschnitt zu den klassischen Texten über Vergebung und ist in zahlreiche Lieder eingegangen. Die Formel vom Gott, der die Sünde in die Tiefe des Meeres wirft, wird in Predigten regelmäßig gegen die Vorstellung angeführt, vergebene Schuld bleibe irgendwie bestehen. Die Frage am Anfang des Abschnitts hat außerdem eine eigene Geschichte in der Auseinandersetzung um das Gottesbild: Sie wird zitiert, wo es darum geht, dass Barmherzigkeit kein Zusatz zur Macht ist, sondern deren Kennzeichen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Israel war kein Seefahrervolk und besaß kaum Häfen. Das Meer galt als unberechenbar und bedrohlich. Was hineinfiel, war endgültig weg – es gab keine Möglichkeit, aus der Tiefe etwas zurückzuholen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein Eid war unwiderruflich, und ein Schwur gegenüber Vorfahren band auch die Nachkommen. Verträge zwischen Häusern galten über Generationen. Die Berufung auf einen alten Schwur war deshalb ein rechtliches Argument, nicht bloß eine Erinnerung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Götter wurden verglichen. Wer stärker war, zeigte sich im Ausgang von Schlachten und in der Fruchtbarkeit des Landes. Die Frage nach dem Unvergleichlichen war deshalb zunächst eine Frage nach Wirksamkeit, nicht nach Charakter.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Micha stammte aus Moreschet, einer Kleinstadt im judäischen Hügelland, und redete gegen die Hauptstadt. Sein Blick ist der eines Landbewohners auf eine Elite, die Abgaben eintreibt und Land zusammenkauft – eine Perspektive, die im Buch durchgehend erkennbar ist.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. mi kamocha',
+        rendered: 'Wo ist solch ein Gott, wie du bist',
+        note: 'Wörtlich „Wer ist wie du?“ – zugleich ein Anklang an den Namen des Propheten selbst. Dieselbe Formel steht im Lied nach dem Durchzug durch das Schilfmeer und macht den Buchschluss zur Rückkehr an den Anfang der Geschichte Israels.',
+      },
+      {
+        word: 'hebr. nasa awon',
+        rendered: 'die Sünde vergibt',
+        note: 'Wörtlich Schuld tragen oder aufheben. Vergebung ist im Hebräischen ein Lastenbild: Jemand nimmt weg, was auf einem anderen liegt. Dieselbe Wendung steht in der Selbstvorstellung Gottes nach dem goldenen Kalb.',
+      },
+      {
+        word: 'hebr. chesed',
+        rendered: 'Abraham die Gnade halten',
+        note: 'Die verlässliche Zuwendung innerhalb einer Bindung. Der Vers ordnet sie Abraham zu und die Treue Jakob – zwei Begriffe, die im Alten Testament fast immer zusammenstehen und die Beständigkeit einer Beziehung beschreiben.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die dreizehn Eigenschaften der Barmherzigkeit werden von manchen Auslegern auch aus diesen Versen gezählt. Der Brauch des Taschlich am Neujahrsfest gründet unmittelbar auf Vers 19; die Rabbiner betonen dabei, dass nicht das Wasser die Schuld nimmt, sondern die Umkehr des Menschen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lesen den Abschnitt als Vorwegnahme der Vergebung durch Christus und verbinden die Tiefe des Meeres mit dem Taufwasser. Cyrill von Alexandrien betont, dass die Frage nach dem Unvergleichlichen hier nicht mit Macht, sondern mit Erbarmen beantwortet wird.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther schätzte diese Verse besonders und zog sie gegen das anhaltende Gewissen an: Was versenkt ist, soll nicht wieder heraufgeholt werden. Für ihn ist der Vers ein Beleg dafür, dass Vergebung vollständig ist und nicht in Stufen erfolgt.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Schluss des Buches gilt vielen als späterer Anhang, sprachlich den nachexilischen Texten nahe. Er ordnet die Gerichtsworte des Propheten in einen größeren Bogen ein – ein Verfahren, das bei mehreren Prophetenbüchern zu beobachten ist.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt wird in der Begleitung von Menschen mit Schuldgefühlen häufig herangezogen, weil er keine Bedingung nennt und keine Wiedervorlage kennt. Kritisch wird gefragt, ob dieses Bild dem Opfer einer Tat gerecht wird – der Text spricht von der Beziehung zwischen Gott und dem Schuldigen, nicht vom Ausgleich unter Menschen.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 15, verse: 11, note: 'Wer ist dir gleich unter den Göttern?' },
+      { book: 'ps', chapter: 103, verse: 12, note: 'So fern der Morgen ist vom Abend' },
+      { book: 'mi', chapter: 3, verse: 12, note: 'Zion wird zum Acker gepflügt' },
+    ],
+  },
+  {
+    book: 'hab',
+    chapter: 1,
+    from: 1,
+    to: 4,
+    title: '„HERR, wie lange soll ich schreien“',
+    historicalShort:
+      'Ein Prophetenbuch, das nicht mit einer Botschaft an das Volk beginnt, sondern mit einer Beschwerde an Gott. Der Vorwurf lautet, dass das Recht nicht funktioniert und Gott zusieht.',
+    historicalLong:
+      'Die Eröffnung ist ungewöhnlich. Prophetische Bücher beginnen in der Regel mit einer Sendung: So spricht der HERR. Hier beginnt der Prophet damit, Gott zur Rede zu stellen. Die Form ist die der Klage, wie sie aus den Psalmen bekannt ist – mit dem typischen „Wie lange?“, das dort Dutzende Male begegnet. Das Buch nimmt also eine Gebetsform und macht daraus eine Prophetie; das Ergebnis ist ein Streitgespräch in zwei Runden, in dem Gott antwortet und der Prophet erneut widerspricht.\n\nDer zeitliche Rahmen lässt sich aus dem Buch selbst erschließen. Die Antwort im weiteren Verlauf nennt die Chaldäer, also die Babylonier, als das Werkzeug, das Gott heranführt. Damit gehört das Buch in die Jahrzehnte nach 626 v. Chr., als Babylon unter Nabopolassar aufstieg, und vor die Zerstörung Jerusalems 587 v. Chr. Wahrscheinlich fällt es in die Zeit nach der Schlacht bei Karkemisch 605 v. Chr., als absehbar wurde, dass die neue Großmacht auch nach Juda greifen würde.\n\nDie Klage betrifft die innere Lage Judas. Nach dem Tod Josias 609 v. Chr. war die Reformpolitik zusammengebrochen; sein Sohn Jojakim regierte als ägyptischer, dann als babylonischer Vasall. Das Jeremiabuch beschreibt ihn als Herrscher, der einen Palast durch Fronarbeit ohne Lohn bauen ließ. Die Sätze über verdrehte Urteile und ein ohnmächtiges Gesetz beschreiben also keinen allgemeinen Weltzustand, sondern eine konkrete Rechtspraxis unter einem bestimmten König.\n\nDas Wort, das Luther mit „Last“ übersetzt, ist ein Fachbegriff der prophetischen Sprache. Es bezeichnet eine Ankündigung mit schwerem Inhalt, oft gegen ein fremdes Volk. Hier steht es über einem Text, der zunächst gegen die eigenen Verhältnisse gerichtet ist – und die Antwort Gottes wird die Anklage nicht entkräften, sondern verschärfen: Er lässt ein noch gewalttätigeres Volk kommen.\n\nGenau darin liegt der Grund, warum das Buch berühmt geworden ist. Es beantwortet die Frage nach dem Leid nicht, sondern führt sie weiter, bis der Prophet auf seine Warte steigt und wartet. Was er dann bekommt, ist der Satz über den Gerechten, der aus Glauben leben wird – kein System, sondern eine Haltung im Aushalten. Der Anfang des Buches macht die Wucht dieses Satzes erst verständlich.',
+    reception:
+      'Habakuks Klage wird immer dann zitiert, wenn Theologie sich der Frage nach dem Leid stellt. Sie gilt als biblischer Beleg dafür, dass die Anklage Gottes nicht Unglaube ist, sondern eine Form des Betens. Nach den Katastrophen des 20. Jahrhunderts ist das Buch entsprechend häufig herangezogen worden.\n\nUnter den Schriftrollen vom Toten Meer befindet sich ein Kommentar zu Habakuk, der zu den bedeutendsten Funden gehört: Die Gemeinschaft von Qumran las die Chaldäer als Chiffre für die Römer und die Klage als Beschreibung ihrer eigenen Gegenwart. Damit ist der Text einer der frühesten Belege für eine Auslegung, die biblische Worte auf aktuelle politische Verhältnisse überträgt. In der Musik hat die Klage in Vertonungen von Bußpsalmen und in geistlichen Kantaten Widerhall gefunden; die Frage „Wie lange noch?“ ist über die Bibel hinaus zur Formel des Protests geworden.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Recht wurde im Stadttor gesprochen, von Ältesten oder königlichen Beamten. Es gab keine Berufungsinstanz und keine unabhängige Prüfung. Wer Zeugen bezahlen oder Beamte beeinflussen konnte, gewann – die Klage über verkehrte Urteile beschreibt eine strukturelle Schwäche.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Juda war nach 609 v. Chr. abwechselnd ägyptischer und babylonischer Vasall. Tributzahlungen belasteten die Bevölkerung, und die Hofpolitik wechselte mehrfach die Seite. Innere Willkür und äußere Abhängigkeit verstärkten einander.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Klage war eine anerkannte Gebetsform mit festen Bestandteilen: Anrede, Beschwerde, Bitte, Vertrauensbekundung. Ein Drittel des Psalters besteht daraus. Gott anzuklagen galt nicht als Frevel, sondern als Teil des Gottesdienstes.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Gewalt im Alltag – Übergriffe, Enteignung, Rechtsbeugung – traf zuerst die, die keine Fürsprecher hatten. Die Propheten nennen regelmäßig dieselben Gruppen: Witwen, Waisen, Fremde, Verschuldete. Sie hatten keine Verwandten, die für sie eintraten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. massa',
+        rendered: 'die Last',
+        note: 'Ein Fachbegriff für eine prophetische Ankündigung von schwerem Inhalt, wörtlich das Aufgeladene. Er steht meist über Worten gegen fremde Völker; hier eröffnet er eine Anklage, die sich zunächst gegen die eigenen Verhältnisse richtet.',
+      },
+      {
+        word: 'hebr. chamas',
+        rendered: 'über Frevel',
+        note: 'Gewalttat, Unrecht, Übergriff. Dasselbe Wort steht als Grund für die Flut in der Urgeschichte. Es meint nicht Naturkatastrophen, sondern das, was Menschen einander antun.',
+      },
+      {
+        word: 'hebr. torah pug',
+        rendered: 'ist das Gesetz ohnmächtig',
+        note: 'Das Verb beschreibt ein Erlahmen, ein Kraftloswerden. Nicht die Abschaffung des Rechts wird beklagt, sondern seine Wirkungslosigkeit: Die Regeln bestehen, aber sie setzen sich nicht mehr durch.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition rechnet Habakuk zu denen, die für Israel eintreten und dabei kühn reden. Der Talmud sieht in dem später folgenden Satz über den Gerechten, der aus Glauben lebt, die Zusammenfassung aller Gebote in einem einzigen Grundsatz.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lesen das Buch als Schule des Wartens: Der Prophet stellt seine Frage und wird auf die Warte geschickt. Die Klage selbst wird nicht getadelt; Chrysostomos hebt hervor, dass Gott den Fragenden nicht abweist, sondern antwortet.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Für Luther hat das Buch besonderes Gewicht, weil aus ihm der Satz über den Glauben stammt, den Paulus zweimal zitiert. Seine Auslegung von 1526 verbindet die Anfangsklage mit der Erfahrung der Anfechtung: Das Fragen gehört zum Glauben, nicht zu seinem Gegenteil.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Erwähnung der Chaldäer setzt den Aufstieg Babylons voraus und datiert das Buch in die Jahre um 605 v. Chr. Der Aufbau als zweifacher Dialog mit anschließendem Psalm im dritten Kapitel gilt als kunstvolle Komposition, deren Einheitlichkeit diskutiert wird.',
+      },
+      {
+        tradition: 'Theodizee-Diskussion',
+        text: 'Der Text gehört zu den Grundstellen für die Frage, wie von einem gerechten Gott angesichts von Unrecht geredet werden kann. Bemerkenswert ist, dass die Antwort das Problem zunächst vergrößert: Gott schickt ein noch gewalttätigeres Volk. Eine Auflösung bietet das Buch nicht an.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hab', chapter: 2, verse: 4, note: 'Der Gerechte wird seines Glaubens leben' },
+      { book: 'ps', chapter: 13, verse: 1, note: 'HERR, wie lange willst du mein so gar vergessen?' },
+      { book: 'jer', chapter: 12, verse: 1, note: 'Warum geht es den Gottlosen so wohl?' },
+    ],
+  },
+  {
+    book: 'jer',
+    chapter: 7,
+    from: 1,
+    to: 11,
+    title: '„Hier ist des HERRN Tempel“',
+    historicalShort:
+      'Jeremia stellt sich in das Tempeltor und sagt den Besuchern, dass das Gebäude sie nicht schützt. Die dreimalige Wiederholung der Formel, die er zitiert, klingt nach einer Beschwörung – und genau so soll sie klingen.',
+    historicalLong:
+      'Der Glaube an die Unantastbarkeit Jerusalems hatte eine historische Grundlage. 701 v. Chr. hatte Sanherib das Land verwüstet und Lachisch erobert – seine Reliefs im Palast von Ninive zeigen die Belagerung in allen Einzelheiten –, aber Jerusalem selbst nahm er nicht. Für die folgenden Generationen war das der Beweis, dass die Stadt mit dem Tempel unter besonderem Schutz stand. Diese Überzeugung war hundert Jahre alt, als Jeremia auftrat, und sie war durch ein Ereignis gedeckt, das jeder kannte.\n\nDie Rede greift genau diese Sicherheit an. Die dreimalige Wiederholung der Formel ist rhetorisch: Sie ahmt eine Beschwörung nach, wie sie in der Umwelt üblich war, wo Formeln zur Wirkung dreifach gesprochen wurden. Jeremia unterstellt seinen Hörern damit, den Tempel wie ein Amulett zu gebrauchen. Was er dagegensetzt, ist keine Kultkritik im Sinne einer Abschaffung, sondern eine Bedingung: Der Ort schützt, wenn das Recht am Ort gilt.\n\nDie Liste in Vers 9 ist bemerkenswert. Diebstahl, Mord, Ehebruch, Meineid und fremder Kult – das sind fünf Gebote des Dekalogs, in einer Reihe genannt. Ob Jeremia den Dekalog in der uns bekannten Form kannte, ist umstritten; die Nähe ist jedenfalls auffällig und gilt als einer der wichtigsten Hinweise darauf, dass eine solche Reihe im 7. Jahrhundert bereits umlief.\n\nDer Verweis auf Silo, der wenige Verse später folgt, ist der historische Beleg der Rede. Silo war das große Heiligtum vor Jerusalem gewesen und im 11. Jahrhundert v. Chr. zerstört worden; Ausgrabungen haben die Zerstörungsschicht bestätigt. Jeremias Argument lautet: Es hat schon einmal ein Heiligtum gegeben, an dem der Name Gottes wohnte, und es ist untergegangen. Ein Präzedenzfall wiegt schwerer als eine Theorie.\n\nDie Rede hätte ihn beinahe das Leben gekostet. Das sechsundzwanzigste Kapitel des Buches berichtet von einem Prozess, in dem Priester und Prophetenkollegen die Todesstrafe verlangten, und nennt einen zweiten Propheten, Uria, der für ähnliche Worte hingerichtet wurde. Freigesprochen wurde Jeremia mit dem Hinweis auf Micha, der ein Jahrhundert zuvor dasselbe angekündigt hatte und unbehelligt blieb. Es ist einer der wenigen Fälle, in denen die Bibel ein Gerichtsverfahren gegen einen Propheten dokumentiert – samt Berufung auf einen früheren Fall.',
+    reception:
+      'Jesus zitiert die Wendung von der Mördergrube bei der Tempelaktion, die alle vier Evangelien überliefern. Damit stellt er sich in die Linie dieser Rede, und die Wirkungsgeschichte hat die beiden Szenen eng verbunden. In der Auslegung wird regelmäßig darauf hingewiesen, dass Jeremia wie Jesus nicht gegen den Tempel als solchen redet, sondern gegen sein Verständnis als Schutzraum unabhängig vom Verhalten.\n\nLuthers Übersetzung hat den Ausdruck „Mördergrube“ in die deutsche Sprache eingeführt; die Redensart, aus seinem Herzen keine Mördergrube zu machen, stammt aus dieser Stelle und hat ihre Bedeutung dabei vollständig verschoben. Die Tempelrede gehört außerdem zu den klassischen Texten der Institutionenkritik innerhalb der Kirchen: Sie wird zitiert, wo geistliche Einrichtungen sich auf ihre Heiligkeit berufen, während ihr Umgang mit Menschen dem widerspricht – in der Reformationszeit ebenso wie in den Aufarbeitungsdebatten der Gegenwart.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Ein Heiligtum galt als Ort besonderer Sicherheit. Wer sich an einen Altar flüchtete, konnte Asyl beanspruchen. Die Vorstellung, dass die Anwesenheit der Gottheit einen Ort unangreifbar macht, war in der ganzen antiken Welt verbreitet.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Tempel war zugleich Staatsheiligtum und Wirtschaftsfaktor. Abgaben, Wallfahrten und Opferbetrieb machten ihn zum größten Betrieb der Stadt. Kritik am Tempel war deshalb immer auch Kritik an einer Institution mit Personal und Einkünften.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Fremde, Waisen und Witwen hatten keinen Sippenverband, der für sie eintrat. Deshalb nennen Gesetze und Prophetentexte sie immer wieder zusammen. Wer ihnen Gewalt antat, konnte kaum mit Widerstand rechnen – genau darum ist ihre Erwähnung ein Prüfstein.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Tempeltore waren belebte Orte. Pilger kamen zu den Festen, Händler boten Opfertiere an, Amtsträger hielten sich dort auf. Wer eine Rede an möglichst viele richten wollte, stellte sich genau dorthin.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. heichal',
+        rendered: 'des HERRN Tempel',
+        note: 'Ein Lehnwort aus dem Sumerischen über das Akkadische, ursprünglich „großes Haus“, und ebenso für den Königspalast gebraucht. Der Tempel ist sprachlich das Haus eines Herrschers – ein Zusammenhang, der in der Sache mitschwingt.',
+      },
+      {
+        word: 'hebr. meara parizim',
+        rendered: 'für eine Mördergrube',
+        note: 'Wörtlich eine Höhle von Gewalttätigen. Gemeint ist kein Ort, an dem gemordet wird, sondern das Versteck, in das Räuber sich nach der Tat zurückziehen. Der Vorwurf lautet also: Ihr benutzt den Tempel als Unterschlupf.',
+      },
+      {
+        word: 'hebr. ger jatom almanah',
+        rendered: 'den Fremdlingen, Waisen und Witwen',
+        note: 'Eine feste Dreiergruppe, die in den Gesetzestexten immer wieder zusammensteht. Sie bezeichnet die, die keinen Verwandten hatten, der ihre Rechte durchsetzen konnte. Ihre Behandlung gilt als Maßstab für den Zustand der Gesellschaft.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Tradition liest die Rede als Warnung, den Kult vom Verhalten zu trennen, und verbindet sie mit der Erklärung, der zweite Tempel sei wegen grundlosen Hasses untergegangen. Die Rede gilt nicht als Angriff auf den Tempel, sondern auf seine falsche Verwendung.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter verbinden die Stelle mit der Tempelaktion Jesu und lesen beide als Vorhersage der Zerstörung von 70 n. Chr. Origenes deutet den Tempel zugleich auf den Menschen selbst und die Mördergrube auf ein Herz, in dem Gedanken hausen, die niemand sehen soll.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther nutzt den Abschnitt gegen jede Sicherheit, die sich auf Einrichtungen und Werke stützt. Die dreifache Formel im vierten Vers ist ihm ein Beispiel dafür, wie religiöse Rede zur Beschwörung wird, wenn sie nichts mehr fordert.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Rede ist im Buch zweimal überliefert, hier und in erzählender Form im sechsundzwanzigsten Kapitel mit dem anschließenden Prozess. Diese Doppelung gilt als Beleg dafür, dass ein historischer Vorgang zugrunde liegt, der in verschiedenen Zusammenhängen weitergegeben wurde.',
+      },
+      {
+        tradition: 'Institutionenkritische Lesart',
+        text: 'Der Abschnitt wird als Beispiel dafür gelesen, dass Kritik an einer religiösen Institution von innen kommen kann und dennoch als Angriff behandelt wird. Der berichtete Prozess zeigt, dass es dabei nicht um Meinungen ging, sondern um Existenzen – ein zweiter Prophet wurde für dieselbe Botschaft hingerichtet.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 11, verse: 17, note: 'Jesus zitiert die Mördergrube' },
+      { book: 'jer', chapter: 26, verse: 8, note: 'Der Prozess gegen Jeremia nach dieser Rede' },
+      { book: 'mi', chapter: 3, verse: 11, note: 'Ist nicht der HERR unter uns?' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 12 Abschnitte */
+  {
+    book: 'mt',
+    chapter: 4,
+    from: 1,
+    to: 11,
+    title: '„Der Mensch lebt nicht vom Brot allein“',
+    historicalShort:
+      'Drei Angebote, drei Antworten – und alle drei Antworten stammen aus demselben biblischen Buch, aus zwei nebeneinanderliegenden Kapiteln. Die Szene ist als Gegenstück zur Wüstenzeit Israels gebaut, bis in die Zahl der Tage.',
+    historicalLong:
+      'Die drei Zitate kommen aus dem fünften Buch Mose, aus den Kapiteln sechs und acht – genau den Kapiteln, die auf die vierzig Jahre in der Wüste zurückblicken. Israel hungerte dort, murrte und bekam Manna; Israel versuchte Gott am Wasser von Massa; Israel fiel dem Bilderdienst zu. Die Szene stellt dieselben drei Punkte noch einmal, in derselben Reihenfolge der Themen, und lässt sie anders ausgehen. Vierzig Tage stehen gegen vierzig Jahre. Wer die Herkunft der Zitate kennt, liest keine Prüfung einer Einzelperson, sondern die Wiederholung eines Weges.\n\nDie Wüste Juda, in die die Szene führt, beginnt wenige Kilometer östlich von Jerusalem und fällt steil zum Toten Meer ab. Sie war nicht menschenleer: Hirten zogen mit Herden durch, und in Qumran lebte eine Gemeinschaft, die sich bewusst dorthin zurückgezogen hatte. Die Wüste war der Ort, an den man ging, um sich vorzubereiten – auch Johannes der Täufer wirkte dort. Vierzig Tage ohne Nahrung sind an der äußersten Grenze des medizinisch Möglichen; die Zahl ist zugleich eine biblische Formel für eine abgeschlossene Zeitspanne.\n\nDie zweite Szene spielt auf der Zinne des Tempels. Der herodianische Tempelbezirk war eine gewaltige Plattform; die Südostecke lag nach dem Bericht des Josephus so hoch über dem Kidrontal, dass man nicht hinabsehen konnte, ohne schwindlig zu werden. Die heutige Mauer erreicht dort noch immer beträchtliche Höhe. Was angeboten wird, ist ein öffentliches Schauwunder an dem Ort, an dem die meisten Menschen zusammenkamen – und es wird mit einem Bibelzitat begründet. Der Versucher zitiert einen Psalm; die Antwort zitiert zurück. Der Streit wird also nicht darüber geführt, ob die Schrift gilt, sondern wie sie zu gebrauchen ist.\n\nDas dritte Angebot betrifft die Herrschaft über alle Reiche. Für Menschen im römisch beherrschten Galiläa war das kein abstraktes Bild. Rom herrschte über den gesamten Mittelmeerraum, und der Kaiserkult verlangte religiöse Verehrung für den Herrscher; in Städten wie Caesarea standen entsprechende Tempel. Der Handel, der hier vorgeschlagen wird – Weltherrschaft gegen Anbetung – beschreibt exakt das Geschäft, das das Imperium seinen Untertanen anbot.\n\nDie Gestalt des Versuchers ist zur Zeit des Neuen Testaments fest ausgebildet. Im Alten Testament ist der Widersacher noch eine Funktion am himmlischen Hof: Er tritt als Ankläger auf, wie im Buch Hiob. In den Jahrhunderten dazwischen, unter dem Eindruck persischer und hellenistischer Vorstellungen, wird daraus eine eigenständige Gegenmacht. Die Schriften aus Qumran zeigen dieses Denken in ausgeprägter Form, mit einer Aufteilung der Menschheit in Söhne des Lichts und Söhne der Finsternis.',
+    reception:
+      'Die Erzählung hat die vierzigtägige Fastenzeit geprägt, die sich seit dem 4. Jahrhundert in der Kirche durchsetzte und bis heute den Kalender bestimmt. Der Text wird in den westlichen Kirchen am ersten Fastensonntag gelesen.\n\nIhre größte Wirkung entfaltete die Szene in Dostojewskis „Der Großinquisitor“, jenem Kapitel der „Brüder Karamasow“, in dem der Inquisitor Christus vorwirft, die drei Angebote abgelehnt und den Menschen damit eine Freiheit aufgebürdet zu haben, die sie nicht tragen können: Brot, Wunder und Autorität seien genau das, wonach sie verlangen. Die Deutung, die Dostojewski damit vorgab – die drei Versuchungen als drei Formen der Macht –, ist in der politischen Theologie des 20. Jahrhunderts breit aufgenommen worden. Dass der Versucher selbst die Bibel zitiert, gehört außerdem zu den meistgebrauchten Argumenten gegen jede Auslegung, die sich allein auf den Wortlaut beruft.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Die Judäische Wüste beginnt kurz östlich von Jerusalem und fällt in Terrassen zum Toten Meer ab. Es regnet dort kaum; Vegetation gibt es nur in Wadis. Wer hineinging, tat das mit Absicht – Hirten, Flüchtige oder Gruppen, die sich zurückzogen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Rom beherrschte den gesamten Mittelmeerraum und verlangte in vielen Provinzen kultische Verehrung des Kaisers. Politische Macht und religiöse Anbetung waren nicht getrennt; wer das eine wollte, kam am anderen nicht vorbei.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Fasten war eine geläufige Übung – vor Entscheidungen, in Trauer, als Buße. Die Frommen fasteten regelmäßig, manche zweimal wöchentlich. Ein langes Fasten galt als Vorbereitung auf eine Begegnung mit Gott, wie sie von Mose und Elia erzählt wird.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Brot war das Grundnahrungsmittel und machte den größten Teil der täglichen Kalorien aus. Der Vorschlag, aus Steinen Brot zu machen, zielt nicht auf Luxus, sondern auf das Nötigste – und die Steine der Judäischen Wüste haben tatsächlich oft Laibform.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. peirazō',
+        rendered: 'versucht würde',
+        note: 'Das Wort meint prüfen und erproben ebenso wie zum Bösen verleiten. Dieselbe Wurzel steht in der Bitte des Vaterunsers, die deshalb schwer zu übersetzen ist. Die Erzählung sagt, dass der Geist in diese Prüfung führt – nicht der Versucher.',
+      },
+      {
+        word: 'griech. pterygion',
+        rendered: 'auf die Zinne des Tempels',
+        note: 'Wörtlich ein Flügelchen oder Vorsprung. Welcher Bauteil gemeint ist, lässt sich nicht sicher sagen; in Frage kommt die Südostecke der Tempelplattform, die nach antiken Berichten schwindelerregend über dem Tal aufragte.',
+      },
+      {
+        word: 'griech. proskyneō',
+        rendered: 'niederfällst und mich anbetest',
+        note: 'Das Wort beschreibt die Niederwerfung vor einem Herrscher und die kultische Verehrung zugleich – im Griechischen dasselbe Verb. Genau in dieser Doppeldeutigkeit liegt die Schärfe des dritten Angebots.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lesen die Szene als Umkehrung des Falls im Garten: Wo der erste Mensch im Überfluss unterlag, besteht der zweite im Mangel. Gregor der Große ordnet die drei Angebote den drei Grundversuchungen zu – Genusssucht, Ruhmsucht und Habsucht – und legt damit ein Schema fest, das die Predigtgeschichte lange bestimmte.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther betont, dass der Teufel mit der Schrift kommt und dass deshalb Schriftkenntnis allein nicht schützt. Entscheidend sei, ob ein Wort an der richtigen Stelle steht. Für ihn ist die Szene das Musterbeispiel der Anfechtung, in der das eigene Vertrauen selbst zum Streitpunkt wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Matthäus und Lukas bieten dieselbe Erzählung mit unterschiedlicher Reihenfolge der beiden letzten Szenen; Markus erwähnt die Versuchung nur in zwei Versen. Die ausgeführte Fassung wird der gemeinsamen Spruchquelle zugerechnet und als kunstvolles Schriftgespräch gebaut angesehen.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die Auslegung verweist auf die Wüstenerzählungen als Vorlage: Hunger und Manna, das Versuchen Gottes am Wasser, der Bilderdienst. Die drei Antworten zitieren die Kapitel, die genau diese Ereignisse deuten. Damit steht die Szene ganz innerhalb der Auslegungsweise ihrer Zeit.',
+      },
+      {
+        tradition: 'Politische Lesart',
+        text: 'Seit Dostojewski wird das dritte Angebot als Grundfrage jeder Machtausübung gelesen: ob Herrschaft den Preis wert ist, den sie verlangt. Kirchengeschichtlich wird der Text gegen die Verbindung von geistlicher und weltlicher Macht angeführt – auch gegen Kirchen, die sie eingegangen sind.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 8, verse: 3, note: 'Das erste Zitat und sein Zusammenhang' },
+      { book: 'ps', chapter: 91, verse: 11, note: 'Der Psalm, den der Versucher anführt' },
+      { book: 'hebr', chapter: 4, verse: 15, note: 'Versucht in allem wie wir' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 18,
+    from: 21,
+    to: 35,
+    title: '„siebzigmal siebenmal“',
+    historicalShort:
+      'Auf eine Frage nach der Obergrenze folgt eine Zahl, die keine Grenze mehr ist, und dann ein Gleichnis mit zwei Schuldsummen, die in keinem Verhältnis zueinander stehen: eine astronomisch, die andere alltäglich.',
+    historicalLong:
+      'Die Zahl in Vers 22 ist eine Anspielung. In der Urgeschichte rühmt sich Lamech, ein Nachfahre Kains, er werde siebenundsiebzigmal gerächt – eine Steigerung der Blutrache ins Grenzenlose. Die Antwort kehrt diese Formel um: Was dort für die Vergeltung galt, gilt hier für das Vergeben. Der griechische Ausdruck lässt sich als siebenundsiebzig oder als siebzigmal sieben lesen; die Übersetzungen entscheiden sich unterschiedlich. Gemeint ist in jedem Fall der Verzicht auf Buchführung.\n\nDie erste Schuldsumme sprengt jeden Rahmen. Ein Talent war die größte Recheneinheit der antiken Welt, etwa sechstausend Denare, also der Lohn von rund zwanzig Arbeitsjahren. Zehntausend Talente sind damit rein rechnerisch der Ertrag von Hunderttausenden von Arbeitsjahren. Zum Vergleich: Josephus berichtet, dass die jährlichen Steuereinnahmen aus Galiläa, Peräa, Judäa, Samaria und Idumäa zusammen in einer Größenordnung von wenigen hundert Talenten lagen. Die Zahl ist also keine Übertreibung im Rahmen des Möglichen, sondern der bewusste Sprung ins Absurde – zumal das griechische Wort für zehntausend zugleich die höchste Zahl bezeichnete, die man mit einem Wort ausdrücken konnte.\n\nDie zweite Summe ist demgegenüber alltäglich. Hundert Denare entsprechen etwa hundert Tagelöhnen, also einem Vierteljahreseinkommen eines Arbeiters. Das ist viel Geld für einen einfachen Menschen und ein durchaus realistischer Streitwert – aber gemessen an der ersten Summe ein Nichts. Die Pointe liegt in genau diesem Missverhältnis.\n\nDie Rechtsfolgen, die der Text nennt, entsprechen der Praxis. Der Verkauf von Frau und Kindern zur Schuldtilgung war im Vorderen Orient und in Teilen des römischen Rechtsraums möglich; das Schuldgefängnis ebenso. Die Peiniger in Vers 34 sind keine Erfindung: Folter zur Erzwingung der Preisgabe verborgenen Vermögens ist aus antiken Quellen bezeugt. Der Erzähler malt keine Schreckensvision, sondern beschreibt, was ein Gläubiger tun durfte.\n\nDer Rahmen ist wichtig für die Deutung. Das ganze achtzehnte Kapitel handelt vom Umgang innerhalb der Gemeinde – von den Kleinen, vom verlorenen Schaf, von der Zurechtweisung unter vier Augen. Die Frage nach der Zahl der Vergebungen stellt sich also nicht gegenüber Fremden, sondern gegenüber Menschen, mit denen man dauerhaft zusammenlebt. Das erklärt, warum sie überhaupt gestellt wird: In einer festen Gruppe ist wiederholtes Unrecht durch dieselbe Person der Normalfall.',
+    reception:
+      'Die Bitte um Vergebung im Vaterunser knüpft die göttliche an die menschliche Vergebung – und dieses Gleichnis erzählt, was geschieht, wenn diese Verbindung durchtrennt wird. In der Bußpraxis der Kirche hat der Text eine zwiespältige Wirkung entfaltet: Er wurde für die unbegrenzte Bereitschaft zur Absolution ebenso angeführt wie für die Warnung, dass empfangene Vergebung verwirkt werden kann.\n\nIm 20. Jahrhundert ist das Gleichnis in die Diskussion über Versöhnung nach Massenverbrechen geraten. Die südafrikanische Wahrheits- und Versöhnungskommission berief sich in ihrer Arbeit auf biblische Vergebungstexte; Kritiker wie Simon Wiesenthal und Jean Améry haben grundsätzlich bestritten, dass Vergebung Dritten zusteht. Die Frage, ob dieses Gleichnis unbegrenzte Vergebung fordert oder ob es die Verbindung von empfangener und weitergegebener Nachsicht beschreibt, steht in dieser Debatte im Mittelpunkt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Ein Denar war der Tagelohn eines einfachen Arbeiters und reichte ungefähr, um eine Familie einen Tag zu ernähren. Ein Talent entsprach etwa sechstausend Denaren – der Verdienst von rund zwei Jahrzehnten ohne einen freien Tag.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Zahlungsunfähigkeit hatte drastische Folgen: Haft bis zur Zahlung, Verkauf von Familienmitgliedern, Zwangsarbeit. Ein Gefangener konnte nichts verdienen, weshalb die Haft oft nur dazu diente, Verwandte zum Zahlen zu bewegen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Große Summen wurden von Steuerpächtern und Provinzverwaltern bewegt. Wer ein Gebiet pachtete, haftete für die vereinbarte Summe und trieb sie mit Aufschlag ein. Die Rechnungslegung vor dem Herrn beschreibt genau diesen Vorgang.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehre und Schande regelten das Verhalten in der Öffentlichkeit. Dass der Begnadigte seinen Mitknecht auf offener Straße würgt und dass andere es sehen und melden, ist der Kern der Erzählung: Sein Verhalten war öffentlich und damit unübersehbar.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. myria talanta',
+        rendered: 'zehntausend Pfund',
+        note: 'Das größte Zahlwort mit der größten Münzeinheit – eine Summe, die für einen einzelnen Menschen nicht vorstellbar war. Luthers „Pfund“ verdeckt die Größenordnung; im Griechischen steht das Talent, das etwa sechstausend Tagelöhnen entspricht.',
+      },
+      {
+        word: 'griech. dēnaria',
+        rendered: 'hundert Groschen',
+        note: 'Hundert Denare, also etwa hundert Tagelöhne. Das ist ein spürbarer Betrag für einen Arbeiter, aber gegenüber der ersten Summe verschwindend. Beide Zahlen stehen bewusst im selben Text.',
+      },
+      {
+        word: 'griech. splanchnizomai',
+        rendered: 'Da jammerte den Herrn',
+        note: 'Ein starkes Wort, vom Substantiv für die Eingeweide abgeleitet: Es beschreibt Erbarmen als körperliche Regung. Im Neuen Testament steht es fast ausschließlich für Jesus und für Hauptfiguren in Gleichnissen, die Gottes Handeln abbilden.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos hebt hervor, dass der Knecht nicht um Erlass, sondern um Aufschub bittet und weit mehr bekommt, als er erbeten hat. Augustinus liest das Gleichnis als Auslegung der fünften Vaterunserbitte und betont, dass die Verbindung zwischen empfangener und gewährter Vergebung nicht umgangen werden kann.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther betont das Missverhältnis der Summen und wehrt zugleich die Folgerung ab, der Mensch könne sich Vergebung durch eigenes Vergeben verdienen. Die Weitergabe sei Folge, nicht Bedingung – der Schluss des Gleichnisses beschreibe, was geschieht, wenn jemand die empfangene Gabe nicht als solche behandelt.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die rabbinische Diskussion kannte die Frage nach der Zahl der Vergebungen; genannt werden drei Mal, danach müsse nicht mehr vergeben werden. Der Vorschlag des Petrus von sieben ist vor diesem Hintergrund bereits großzügig, und die Antwort sprengt die Rechnung vollständig.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Gleichnis steht nur bei Matthäus und passt in den Zusammenhang des Gemeindekapitels, das Regeln für das Zusammenleben formuliert. Der Schlussvers gilt vielen als Anwendung durch den Evangelisten, die das Gleichnis auf die Gemeindesituation zuspitzt.',
+      },
+      {
+        tradition: 'Ethische Diskussion',
+        text: 'Die Frage, ob unbegrenzte Vergebung dem Opfer zugemutet werden kann, ist nach den Erfahrungen des 20. Jahrhunderts scharf gestellt worden. Die Auslegung verweist darauf, dass das Gleichnis von einer erlassenen Schuld gegenüber dem Erlassenden handelt und nicht von einem Verzicht auf Recht zugunsten Dritter.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 6, verse: 12, note: 'Die Bitte um Vergebung im Vaterunser' },
+      { book: '1mo', chapter: 4, verse: 24, note: 'Lamechs Rachespruch, den die Zahl umkehrt' },
+      { book: 'kol', chapter: 3, verse: 13, note: 'Wie Christus euch vergeben hat' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 20,
+    from: 1,
+    to: 16,
+    title: '„Es hat uns niemand gedingt“',
+    historicalShort:
+      'Ein Weinbergbesitzer stellt den ganzen Tag über Arbeiter ein und zahlt am Abend allen dasselbe. Die Erzählung schildert einen ganz normalen Arbeitsmarkt – und einen Lohn, der die Regeln dieses Marktes verlässt.',
+    historicalLong:
+      'Tagelöhner waren die unterste Schicht der freien Bevölkerung, schlechter gestellt als Sklaven in großen Haushalten, weil sie keine Versorgung hatten. Sie standen am Morgen auf dem Marktplatz und warteten darauf, gemietet zu werden. Wer bis zum Abend niemanden fand, ging ohne Lohn nach Hause – und damit ohne Essen für die Familie. Die Antwort in Vers 7 ist deshalb keine Ausrede: Es hat sie niemand eingestellt. Die Männer der elften Stunde sind nicht faul, sie sind übriggeblieben.\n\nDie Stundenzählung folgt der antiken Ordnung: Der Tag wird vom Sonnenaufgang an in zwölf Stunden geteilt, deren Länge mit der Jahreszeit schwankt. Die dritte Stunde ist ungefähr neun Uhr, die sechste Mittag, die elfte etwa eine Stunde vor Sonnenuntergang. Wer zur elften Stunde eingestellt wird, arbeitet kaum noch.\n\nDer Denar als Tagelohn ist gut bezeugt und entsprach etwa dem Existenzminimum einer kleinen Familie für einen Tag. Er war weder großzügig noch knauserig, sondern der übliche Satz. Das erste Abkommen ist also ein korrekter Vertrag, und der Besitzer weist am Ende zu Recht darauf hin.\n\nDie Weinlese erklärt die Hektik. Trauben müssen innerhalb weniger Tage gelesen werden, wenn sie reif sind; Regen zur Unzeit kann eine Ernte vernichten. Deshalb war es üblich, kurzfristig zusätzliche Kräfte anzuheuern, auch spät am Tag. Der wiederholte Gang zum Markt ist betriebswirtschaftlich vollkommen plausibel.\n\nDie Auszahlungsreihenfolge dagegen ist es nicht. Das Gesetz schrieb vor, den Tagelohn noch am selben Abend auszuzahlen, weil der Arbeiter davon lebte; das fünfte Buch Mose sagt es ausdrücklich. Dass zuerst die Letzten bezahlt werden, ist jedoch nicht vorgeschrieben, sondern eine Entscheidung des Besitzers – und ohne sie gäbe es keinen Konflikt, denn die Ersten hätten von der Höhe des fremden Lohns nichts erfahren. Der Erzähler baut die Kränkung also bewusst ein. Die Beschwerde selbst ist dabei kein Missverständnis: Die Ersten haben mehr geleistet, und in einer Leistungsordnung haben sie recht. Das Gleichnis bestreitet nicht ihre Rechnung, es bestreitet, dass sie den Maßstab hergibt.',
+    reception:
+      'In der Auslegungsgeschichte wurde das Gleichnis lange auf die Heilsgeschichte gedeutet: Die Stunden seien Zeitalter, die zuletzt Gerufenen die Völker, die Ersten Israel. Diese Lesart hat erhebliche Wirkung entfaltet und ist wegen ihrer antijüdischen Zuspitzung im 20. Jahrhundert weithin aufgegeben worden.\n\nIn der Arbeitsethik hat der Text eine bemerkenswerte Doppelrolle. Er wird angeführt, wenn es um einen Lohn geht, der sich am Bedarf und nicht an der geleisteten Stundenzahl bemisst – in der katholischen Soziallehre zur Frage des Familienlohns ebenso wie in Debatten über ein Grundeinkommen. Zugleich haben Kritiker darauf hingewiesen, dass die Erzählung keine Arbeitsmarktordnung entwirft, sondern einen Gutsherrn zeigt, der frei über sein Eigentum verfügt. Beide Lesarten sind seit dem 19. Jahrhundert nebeneinander im Gebrauch.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Tagelöhner hatten keinen Vertrag über den Tag hinaus und keine Rücklagen. Der Lohn eines Tages ernährte eine Familie einen Tag. Wer eine Woche ohne Anstellung blieb, geriet unmittelbar in Not und musste borgen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Markt war der Ort, an dem Arbeit vermittelt wurde. Man stand dort ab Sonnenaufgang und wartete. Wer angesprochen wurde, ging sofort mit; wer nicht angesprochen wurde, blieb stehen, solange noch Hoffnung bestand.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der Lohn musste noch am selben Tag ausgezahlt werden – das Gesetz begründet es damit, dass der Arbeiter darauf angewiesen sei. Der Prophet Maleachi zählt die Vorenthaltung des Tagelohns zu den Vergehen, die vor Gericht kommen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Weinbau prägte das judäische und galiläische Hügelland. Terrassen, Trockenmauern, Wachtürme und in den Fels gehauene Keltern sind archäologisch überall nachweisbar. Die Lese fiel in den Spätsommer und musste schnell gehen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. dēnarion',
+        rendered: 'einen Groschen zum Tagelohn',
+        note: 'Eine römische Silbermünze, der übliche Tagessatz für einfache Arbeit. Luthers „Groschen“ übertrug den Betrag in die Währung seiner Zeit. Der vereinbarte Lohn ist also weder besonders hoch noch niedrig, sondern marktüblich.',
+      },
+      {
+        word: 'griech. agora',
+        rendered: 'an dem Markte',
+        note: 'Der zentrale Platz einer Stadt, zugleich Markt, Gerichtsort und Treffpunkt. Dort wurde auch Arbeitskraft vermittelt. Wer dort stand, war nicht müßig im Sinne von arbeitsscheu, sondern verfügbar und unvermittelt.',
+      },
+      {
+        word: 'griech. ophthalmos ponēros',
+        rendered: 'Siehst du darum so scheel',
+        note: 'Wörtlich „ist dein Auge böse“ – eine im Judentum geläufige Wendung für Neid und Missgunst, das Gegenteil des „guten Auges“, das großzügig gibt. Luthers „scheel sehen“ trifft die Redewendung genau.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter deuten die Stunden überwiegend als Lebensalter oder als Epochen der Heilsgeschichte. Gregor der Große entwickelt daraus eine ganze Predigt über die Berufung in jedem Lebensalter. Origenes betont daneben, dass niemand von sich aus in den Weinberg geht; alle werden gerufen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther liest das Gleichnis als Angriff auf jede Verdienstrechnung: Wer nach Leistung fragt, hat schon verloren. Die Ersten irren nicht in ihrer Rechnung, sondern darin, dass sie überhaupt rechnen. Für ihn ist der Text ein Beleg gegen die Vorstellung abgestufter Verdienste.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Ein rabbinisches Gleichnis erzählt Ähnliches: Ein König zahlt einem Arbeiter, der nur zwei Stunden gearbeitet hat, den vollen Lohn, weil dieser in zwei Stunden mehr geleistet habe als andere am ganzen Tag. Der Unterschied ist aufschlussreich – dort wird die Gleichheit begründet, hier nicht.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Gleichnis gehört zum Sondergut des Matthäus und ist durch den umgebenden Rahmen mit dem Satz über die Ersten und die Letzten verbunden. Ob dieser Satz ursprünglich dazugehörte, ist umstritten; ohne ihn steht die Erzählung offener.',
+      },
+      {
+        tradition: 'Sozialethische Lesart',
+        text: 'Der Text wird in Debatten über bedarfsorientierte Entlohnung und über Grundsicherung angeführt: Alle bekommen, was zum Leben reicht, unabhängig von der geleisteten Zeit. Dagegen steht der Einwand, dass die Erzählung von der Freiheit eines Eigentümers handelt und keine Ordnung für andere aufstellt.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 24, verse: 15, note: 'Der Tagelohn ist am selben Tag zu zahlen' },
+      { book: 'jak', chapter: 5, verse: 4, note: 'Der vorenthaltene Lohn der Arbeiter schreit' },
+      { book: 'lk', chapter: 15, verse: 29, note: 'Der ältere Bruder mit derselben Rechnung' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 26,
+    from: 36,
+    to: 46,
+    title: '„Meine Seele ist betrübt bis an den Tod“',
+    historicalShort:
+      'In der Nacht vor der Verhaftung geht Jesus in einen Olivenhain und bittet darum, dass ihm erspart bleibt, was kommt. Es ist die Stelle, an der die Evangelien am wenigsten glätten.',
+    historicalLong:
+      'Gethsemane heißt auf Aramäisch ungefähr Ölpresse. Am Fuß des Ölbergs, jenseits des Kidrontals, standen Olivenhaine mit in den Fels gehauenen Pressanlagen; solche Anlagen sind in der Gegend archäologisch nachgewiesen. Zur Passazeit war Jerusalem überfüllt – Schätzungen gehen von einer Vervielfachung der Einwohnerzahl aus –, und viele Pilger übernachteten außerhalb der Mauern. Ein Olivenhain am Hang war ein naheliegender Platz für eine Gruppe aus Galiläa. Nach jüdischem Verständnis musste die Passanacht innerhalb eines erweiterten Stadtgebiets verbracht werden, zu dem der Ölberg gerechnet wurde.\n\nDer Kelch ist ein biblisches Bild mit fester Bedeutung. Bei den Propheten steht der Becher für das Gericht, das jemandem zu trinken gegeben wird; Jesaja, Jeremia und Hesekiel gebrauchen ihn so. Wer die Wendung hörte, dachte nicht an ein Getränk, sondern an ein Verhängnis, das zugeteilt wird. Zugleich stand kurz zuvor ein Kelch beim Mahl auf dem Tisch – die Verbindung ist im Erzählzusammenhang unüberhörbar.\n\nBemerkenswert ist die Offenheit der Darstellung. Antike Berichte über den Tod von Philosophen zeigen den Sterbenden gefasst; Sokrates trinkt den Schierling in Ruhe und tröstet seine Freunde. Auch die jüdische Märtyrerliteratur der Makkabäerzeit schildert Standhaftigkeit ohne Zittern. Vor diesem Hintergrund ist die Schilderung von Trauer und Zagen ungewöhnlich, und sie wurde früh als Angriffsfläche genutzt: Der Philosoph Kelsos spottete im 2. Jahrhundert darüber, dass ein Gott jammere. Dass die Evangelien die Szene dennoch überliefern, gilt vielen Auslegern als Hinweis darauf, dass sie nicht nachträglich erfunden wurde.\n\nDie Anrede an den Vater ist im Markusevangelium in ihrer aramäischen Form erhalten. Sie stammt aus der Familiensprache und ist im Gebet ungewöhnlich, ohne im Judentum ganz zu fehlen. Paulus setzt sie zweimal voraus, was zeigt, dass sie in griechischsprachigen Gemeinden als feststehender Ausdruck weiterlebte.\n\nDie schlafenden Jünger sind mehr als ein Detail. Die Szene wiederholt sich dreimal, und dreimal versagt dieselbe Gruppe – dieselben drei, die nach der Erzählung kurz zuvor Zeugen der Verklärung waren. Der Satz über den willigen Geist und das schwache Fleisch ist dabei kein Vorwurf, sondern eine Feststellung: Er wird als Begründung ausgesprochen, nicht als Anklage.',
+    reception:
+      'Die Ölbergszene gehört zum festen Bestand der Passionsdarstellung in Kunst und Musik. Bach gibt ihr in der Matthäuspassion breiten Raum; Mendelssohn, Haydn und viele andere haben sie vertont. In der bildenden Kunst reicht die Reihe von mittelalterlichen Andachtsbildern über Mantegna und El Greco bis in die Moderne, und der betende Christus im Garten war eines der verbreitetsten Motive der bürgerlichen Wohnkultur des 19. Jahrhunderts.\n\nTheologisch ist die Szene der Prüfstein für die Frage, wie ernst die Rede von der Menschlichkeit Christi gemeint ist. Die altkirchlichen Streitigkeiten um zwei Willen in einer Person wurden wesentlich an diesem Text ausgetragen und auf dem dritten Konzil von Konstantinopel 681 entschieden. Dietrich Bonhoeffer griff die Frage nach den wachenden Jüngern in seinen Briefen aus der Haft auf und deutete sie auf die Aufgabe, in einer Welt ohne Gott bei ihm zu bleiben.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der Ölberg liegt östlich von Jerusalem, getrennt durch das Kidrontal. An seinem Fuß wuchsen Olivenbäume; in den Fels gehauene Pressen sind in der Umgebung erhalten. Von dort blickt man unmittelbar auf den Tempelbezirk.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Zum Passa strömten Zehntausende Pilger nach Jerusalem. Die Stadt konnte sie nicht fassen; man übernachtete in Zelten, bei Verwandten oder im Freien vor den Toren. Eine Gruppe im Olivenhain fiel nicht auf.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Man betete stehend mit erhobenen Händen oder kniend. Sich zu Boden zu werfen war Ausdruck äußerster Not und bei öffentlichen Gebeten selten. Die Beschreibung markiert damit den Ausnahmezustand der Szene.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Zu den Wallfahrtsfesten verlegte der römische Präfekt zusätzliche Truppen nach Jerusalem, weil die Menschenmassen als Unruheherd galten. Verhaftungen fanden bevorzugt nachts und abseits der Menge statt – genau so, wie es im Anschluss geschildert wird.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. Gethsēmani',
+        rendered: 'Gethsemane',
+        note: 'Aus dem Aramäischen, ungefähr „Ölpresse“ oder „Ölkelter“. Der Name bezeichnet also keinen Garten im Sinne einer Zieranlage, sondern einen landwirtschaftlichen Betriebsort mit einer Presse.',
+      },
+      {
+        word: 'griech. potērion',
+        rendered: 'dieser Kelch',
+        note: 'Bei den Propheten steht der Becher für das Gericht, das jemandem zugeteilt wird und das er austrinken muss. Die Bitte zielt also nicht auf ein Getränk, sondern auf ein zugemessenes Geschick.',
+      },
+      {
+        word: 'griech. sarx',
+        rendered: 'das Fleisch ist schwach',
+        note: 'Nicht der Körper im Gegensatz zur Seele, sondern der Mensch in seiner Hinfälligkeit. Der Satz stellt keine zwei Bestandteile gegeneinander, sondern beschreibt einen Menschen, der will und nicht kann.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Szene stand im Zentrum der Auseinandersetzung um den Willen Christi. Maximus Confessor legte dar, dass ein wirklich menschlicher Wille vorhanden sein müsse, der sich dem göttlichen unterordnet, und diese Position setzte sich 681 durch. Ohne echtes Zurückschrecken, so das Argument, wäre die Zustimmung leer.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther sieht hier den Punkt, an dem die Anfechtung am tiefsten geht: nicht Schmerz, sondern das Gefühl der Preisgabe. Für ihn ist der Satz über den Willen des Vaters kein Verzicht auf das eigene Wollen, sondern dessen äußerste Anstrengung.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Szene steht in allen drei ersten Evangelien mit kleinen Unterschieden; Johannes hat sie nicht, spielt aber an anderer Stelle darauf an. Dass die Darstellung dem Ansehen der Hauptfigur widerspricht, gilt als Argument für ein hohes Alter der Überlieferung.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die Anrede des Vaters, die Markus in aramäischer Form bewahrt, gehört in die Sprache des Hauses. Die Klage vor Gott in Todesnot steht in der Linie der Psalmen, die Not aussprechen, ohne sie zu beschönigen – dieselbe Haltung, die auch im Kreuzeswort begegnet.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt gilt als der biblische Text, der Angst ohne Beschönigung ausspricht. In der Begleitung Sterbender wird er häufig herangezogen, weil er das Bitten um Verschonung nicht als Glaubensmangel darstellt und weil die Bitte nicht erfüllt wird.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hebr', chapter: 5, verse: 7, note: 'Gebete mit starkem Geschrei und Tränen' },
+      { book: 'mk', chapter: 14, verse: 36, note: 'Die aramäische Anrede des Vaters' },
+      { book: 'joh', chapter: 12, verse: 27, note: 'Die johanneische Fassung derselben Frage' },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 5,
+    from: 25,
+    to: 34,
+    title: '„Wer hat meine Kleider angerührt?“',
+    historicalShort:
+      'Eine Frau, die seit zwölf Jahren blutet, berührt heimlich von hinten den Mantel eines Fremden. Sie tut damit etwas, das nach den Reinheitsregeln ihrer Zeit nicht vorgesehen war – und wird nicht zurechtgewiesen, sondern angesprochen.',
+    historicalLong:
+      'Das dritte Buch Mose regelt den Umgang mit Blutungen ausführlich. Eine Frau mit anhaltendem Blutfluss galt als unrein, und diese Unreinheit übertrug sich auf ihr Lager, ihren Sitz und auf jeden, der diese berührte. Wichtig ist, was das bedeutete und was nicht: Unreinheit war kein moralisches Urteil und keine Krankheit, sondern ein kultischer Zustand, der den Zugang zum Heiligtum ausschloss und Kontakt regelte. Sie war nicht dauerhaft, sondern durch Waschung und Zeitablauf zu beheben – nur eben nicht bei einer Blutung, die nicht aufhört. Zwölf Jahre lang bedeutete das Ausschluss vom Tempel und weitgehende Absonderung im Alltag.\n\nDie Bemerkung über die Ärzte ist bemerkenswert scharf und findet sich so nur bei Markus; das Lukasevangelium, das nach alter Überlieferung ein Arzt verfasst hat, mildert sie. Antike Medizin behandelte Frauenleiden mit Umschlägen, Räucherungen, Diäten und Amuletten; der Talmud überliefert eine Reihe von Rezepten gegen genau dieses Leiden, darunter das Tragen eines Gerstenkorns aus dem Dung einer weißen Eselin. Behandlungen waren teuer, und dass jemand sein ganzes Vermögen aufbrauchte, war die Regel und nicht die Ausnahme.\n\nDie Berührung des Gewandes gehört in eine verbreitete Vorstellungswelt. Man rechnete damit, dass Kraft an Personen und Gegenständen haftet; Berührungsheilungen sind aus paganen Heilkulten wie dem des Asklepios bekannt. Manche Ausleger vermuten, dass sie gezielt die Quaste am Gewandsaum ergriff, die ein frommer Jude nach dem Gesetz trug. Der Text sagt es nicht ausdrücklich, aber die Vorstellung, dass gerade dieser Zipfel besondere Bedeutung habe, ist belegt.\n\nDie Erzählung schildert einen Vorgang, der ohne Zutun des Geheilten geschieht: Die Kraft geht aus, und er bemerkt es. Das ist theologisch unbequem und wurde entsprechend oft geglättet. Markus hält es fest, und er hält auch die etwas spöttische Rückfrage der Jünger fest, wie man in einem Gedränge fragen könne, wer angerührt habe.\n\nDer Schluss kehrt die Heimlichkeit um. Die Frau muss vortreten und öffentlich sagen, was geschehen ist – vor einer Menge, in der sie zwölf Jahre lang nicht hätte stehen sollen. Die Anrede, die sie erhält, ist im Markusevangelium einmalig: Er nennt sie Tochter. Damit wird sie nicht bloß geheilt, sondern in eine Beziehung und in die Öffentlichkeit zurückgeholt. Der abschließende Satz gebraucht ein Verb, das sowohl gesund machen als auch retten bedeutet.',
+    reception:
+      'Die Frau mit dem Blutfluss gehört zu den frühesten Bildmotiven des Christentums; sie erscheint bereits im 3. Jahrhundert in den römischen Katakomben und auf Sarkophagen. Eusebius berichtet von einer Bronzegruppe in Caesarea Philippi, die sie und Jesus dargestellt habe – eine der wenigen antiken Nachrichten über christliche Rundplastik.\n\nIn der Kirchengeschichte hat der Text eine folgenreiche Nebenwirkung gehabt: Er wurde in der Auseinandersetzung darüber zitiert, ob menstruierende Frauen die Kirche betreten oder kommunizieren dürften. Papst Gregor der Große entschied im 6. Jahrhundert, dass ihnen der Zugang nicht verwehrt werden dürfe, und berief sich dabei auf diese Erzählung. Die feministische Exegese hat die Frau seit den achtziger Jahren als Beispiel für eigenständiges Handeln gelesen: Sie fragt nicht um Erlaubnis, sie nimmt sich, was sie braucht, und der Text gibt ihr recht.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Reinheit und Unreinheit waren keine Frage von Hygiene oder Moral, sondern regelten den Zugang zum Heiligtum. Auch Geburt, Tod und bestimmte Krankheiten machten unrein. Der Zustand endete normalerweise nach festgelegter Zeit und einer Waschung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine dauerhafte Unreinheit bedeutete Ausschluss aus dem Gottesdienst und Einschränkungen im Umgang mit anderen. Für eine Frau kam hinzu, dass sie ohne Kinder und ohne gesicherte Stellung im Haushalt blieb – die zwölf Jahre beschreiben eine soziale Isolation.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ärzte arbeiteten ohne Ausbildungsordnung und wurden nach Behandlung bezahlt. Es gab keine Erstattung und keine Kontrolle. Wer chronisch krank war, verbrauchte sein Vermögen und blieb danach ohne Mittel und ohne Besserung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Mantel war das wichtigste Kleidungsstück und wurde über der Tunika getragen. Fromme Juden trugen an seinen Ecken Quasten, wie das Gesetz es vorschreibt. Sie waren sichtbar und galten manchen als besonders bedeutungsvoll.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. haimorroousa',
+        rendered: 'den Blutgang',
+        note: 'Ein medizinischer Fachausdruck für anhaltenden Blutfluss, wie er auch in antiken Ärzteschriften vorkommt. Der Text benennt damit eine Diagnose, nicht eine Schuld.',
+      },
+      {
+        word: 'griech. dynamis',
+        rendered: 'die Kraft',
+        note: 'Wirkende Kraft, auch das Wort für Wundertaten. Die Erzählung schildert sie als etwas, das ausgeht und bemerkt wird – ein Zug, den die anderen Evangelien abschwächen und der schon in der Antike Anstoß erregte.',
+      },
+      {
+        word: 'griech. sōzō',
+        rendered: 'gesund gemacht',
+        note: 'Dasselbe Verb bedeutet heilen und retten. Der Schlusssatz lässt sich deshalb doppelt lesen, und beide Bedeutungen sind hier gemeint: Die Frau ist gesund, und sie ist zurück in der Gemeinschaft.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Ambrosius und Augustinus deuten die Frau als Bild der Völkerkirche, die sich an Christus wendet, während er zum Haus des Synagogenvorstehers unterwegs ist. Die zwölf Jahre werden mit dem Alter der Tochter des Jairus in Verbindung gebracht, in deren Erzählung diese eingeschoben ist.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther betont, dass die Frau mit unvollkommenem, geradezu abergläubischem Glauben kommt und dennoch nicht abgewiesen wird. Nicht die Richtigkeit ihrer Vorstellung habe geholfen, sondern der, an den sie sich hielt.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die Reinheitsvorschriften betrafen in erster Linie den Zugang zum Tempel; im Alltag Galiläas dürften sie unterschiedlich streng gehandhabt worden sein. Die Auslegung weist darauf hin, dass die Erzählung keine Kritik an diesen Regeln formuliert – sie berichtet, dass in dieser Begegnung eine andere Bewegung stattfindet.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Markus schachtelt zwei Erzählungen ineinander: Die Heilung unterbricht den Weg zur Tochter des Jairus. Diese Technik ist für sein Evangelium kennzeichnend und stellt beide Geschichten in ein gegenseitiges Licht – zwölf Jahre Krankheit und ein zwölfjähriges Mädchen.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Die neuere Auslegung hebt hervor, dass die Frau selbst handelt: Sie plant, sie geht, sie berührt. Sie bittet nicht und wird nicht gebracht. Die abschließende Anrede holt sie aus dem Verborgenen und macht ihre Handlung öffentlich anerkannt.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 15, verse: 25, note: 'Die Vorschrift über anhaltenden Blutfluss' },
+      { book: 'mk', chapter: 5, verse: 41, note: 'Die Erzählung, in die diese eingeschoben ist' },
+      { book: '4mo', chapter: 15, verse: 38, note: 'Die Quasten am Gewandsaum' },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 12,
+    from: 41,
+    to: 44,
+    title: '„zwei Scherflein“',
+    historicalShort:
+      'Jesus setzt sich hin und schaut zu, wie Menschen Geld in den Opferkasten werfen. Was er anschließend sagt, rechnet nicht die Summe, sondern den Rest, der bleibt.',
+    historicalLong:
+      'Der Schauplatz ist der Frauenvorhof des herodianischen Tempels. Die Mischna berichtet, dass dort dreizehn trichterförmige Behälter standen, im Volksmund nach ihrer Form Schofar-Kästen genannt, jeder für eine bestimmte Abgabe: die Tempelsteuer, Vogelopfer, Holz, Weihrauch, freiwillige Gaben. Die Trichter waren aus Metall, und eingeworfene Münzen machten Geräusch – wer viel einwarf, war zu hören. Das erklärt, warum die Szene überhaupt beobachtbar war und warum die Bemerkung über die Reichen mehr ist als eine Vermutung.\n\nDie kleinste Münze im Umlauf war das Lepton, eine winzige Bronzemünze; zwei davon ergaben einen Quadrans, die kleinste römische Münze. Markus fügt diese Umrechnung ausdrücklich hinzu – ein Hinweis darauf, dass er für Leser schrieb, die mit römischem Geld vertrauter waren als mit jüdischem. Der Wert entsprach etwa einem Sechzigstel eines Tagelohns. Es war die geringste Gabe, die überhaupt möglich war, und man hätte auch nur eine der beiden Münzen geben können.\n\nDer Zusammenhang im Markusevangelium ist entscheidend und wird oft übersehen. Unmittelbar davor warnt Jesus vor Schriftgelehrten, die die Häuser der Witwen verzehren; unmittelbar danach kündigt er an, dass vom Tempel kein Stein auf dem anderen bleiben wird. Die Witwe steht zwischen einer Anklage und einer Zerstörungsansage. Ob der Text ihr Verhalten lobt oder beklagt, dass ein System ihr auch das Letzte abnimmt, wird deshalb seit dem 20. Jahrhundert diskutiert. Der Wortlaut der Aussage ist eine Feststellung, kein Aufruf zur Nachahmung.\n\nDie Lage von Witwen war rechtlich prekär. Sie erbten nach jüdischem Recht nicht selbst, sondern hatten Anspruch auf Versorgung aus dem Nachlass ihres Mannes, was von den Erben abhing. Ohne Söhne blieb Nachlese, Almosen oder Arbeit. Die Gesetzestexte nennen sie deshalb regelmäßig zusammen mit Waisen und Fremden, und die frühe Gemeinde richtete nach der Apostelgeschichte eigens eine Versorgung für sie ein.\n\nDer griechische Ausdruck am Ende ist genauer, als Luthers Übersetzung erkennen lässt. Sie warf hinein, wörtlich, ihr ganzes Leben – dasselbe Wort, das Lebensunterhalt und Lebenszeit bezeichnet. Der Satz misst nicht das Gegebene, sondern das Verbleibende. Die Reichen gaben von dem, was überzählig war; sie gab, wovon sie hätte leben müssen.',
+    reception:
+      'Das Scherflein der Witwe ist über Luthers Übersetzung zur Redensart geworden: Wer sein Scherflein beiträgt, gibt wenig, aber alles, was er kann. Die Wendung wird heute meist ohne Kenntnis ihrer Herkunft gebraucht und hat ihre Schärfe dabei verloren.\n\nIn der kirchlichen Kollektenpraxis ist der Text seit der Alten Kirche der Standardbeleg dafür, dass die Höhe einer Gabe nichts über ihren Wert sagt. Zugleich ist er in Spendenaufrufen häufig gegen die Armen verwendet worden, was seit dem 20. Jahrhundert Widerspruch hervorruft: Die Auslegung von Addison Wright und anderen liest die Szene als Klage über einen Tempelbetrieb, der einer Witwe das Letzte nimmt, und verweist auf die unmittelbar folgende Ankündigung seiner Zerstörung. Beide Lesarten bestehen bis heute nebeneinander.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Im Frauenvorhof standen nach der Mischna dreizehn trichterförmige Opferbehälter für verschiedene Zwecke. Wer gab, tat es öffentlich; die Münzen waren hörbar. Freiwillige Gaben kamen zusätzlich zur jährlichen Tempelsteuer.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Tempel war der größte Wirtschaftsbetrieb der Region, mit Tausenden von Beschäftigten und erheblichen Einkünften. Herodes hatte ihn über Jahrzehnte ausbauen lassen; die Arbeiten waren wenige Jahre vor der Zerstörung noch nicht abgeschlossen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Witwen erbten nicht selbst, sondern hatten Versorgungsansprüche gegenüber den Erben. Ohne Söhne war ihre Lage ungesichert. Deshalb nennen die Gesetzestexte sie immer wieder zusammen mit Waisen und Fremden als besonders gefährdet.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Lepton war die kleinste Münze im Umlauf, eine Bronzeprägung von wenigen Millimetern. Man brauchte etwa hundertacht davon für einen Denar. Für einen Laib Brot reichten zwei Lepta nicht.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. gazophylakion',
+        rendered: 'den Gotteskasten',
+        note: 'Ein Wort für Schatzkammer oder Opferbehälter, zusammengesetzt aus einem persischen Lehnwort für Schatz und dem griechischen Wort für bewachen. Gemeint sind hier die Sammelbehälter im Vorhof, nicht die Tempelkasse selbst.',
+      },
+      {
+        word: 'griech. lepta',
+        rendered: 'zwei Scherflein',
+        note: 'Die kleinste Bronzemünze, wörtlich „das Dünne“. Markus rechnet den Wert eigens in römische Währung um – ein Hinweis darauf, dass er für Leser außerhalb Judäas schrieb.',
+      },
+      {
+        word: 'griech. bios',
+        rendered: 'ihre ganze Nahrung',
+        note: 'Das Wort bedeutet zugleich Lebensunterhalt und Leben. Wörtlich steht da, sie habe ihr ganzes Leben hineingeworfen. Die Doppelbedeutung lässt sich im Deutschen nicht mit einem Wort wiedergeben.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lesen die Szene durchweg als Lob: Nicht die Menge zähle, sondern die Gesinnung. Chrysostomos zieht daraus die Folgerung, dass niemand sich mit Armut entschuldigen könne, und Cyprian verwendet den Text in seiner Schrift über das Almosen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther betont, dass Gott nicht die Werke wiegt, sondern die Herzen, und wendet sich gegen jede Bemessung des Verdienstes an der Höhe der Gabe. Zugleich warnt er davor, den Text zu benutzen, um Arme zum Geben zu drängen.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Erzählung steht bei Markus und Lukas, nicht bei Matthäus. Ihre Stellung zwischen der Warnung vor denen, die Witwenhäuser verzehren, und der Ankündigung der Tempelzerstörung gilt vielen als bewusste Komposition des Evangelisten.',
+      },
+      {
+        tradition: 'Sozialkritische Lesart',
+        text: 'Seit den siebziger Jahren wird vertreten, die Szene sei keine Empfehlung, sondern eine Klage: Ein religiöser Betrieb bringt eine Witwe dazu, ihre letzten Mittel abzuliefern, und wird kurz darauf für zerstört erklärt. Der Wortlaut lobt sie nicht ausdrücklich, er stellt fest.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'In der kirchlichen Finanzethik wird der Text als Maßstab herangezogen, der nicht die absolute Höhe, sondern die Belastung bemisst. Daraus ist die Vorstellung eines nach Einkommen gestaffelten Beitrags entstanden, wie sie viele Gemeinden praktizieren.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 12, verse: 40, note: 'Die Warnung vor denen, die Witwenhäuser verzehren' },
+      { book: 'mk', chapter: 13, verse: 2, note: 'Kein Stein wird auf dem anderen bleiben' },
+      { book: '2kor', chapter: 8, verse: 12, note: 'Die Gabe gilt nach dem, was einer hat' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 4,
+    from: 16,
+    to: 30,
+    title: '„Heute ist diese Schrift erfüllt vor euren Ohren“',
+    historicalShort:
+      'Die Antrittspredigt im Heimatort geht schief. Nicht der vorgelesene Text bringt die Zuhörer auf, sondern zwei Beispiele aus dem Alten Testament, in denen Propheten Ausländern halfen und nicht den eigenen Leuten.',
+    historicalLong:
+      'Nazareth war zur Zeit Jesu ein kleines Dorf. Ausgrabungen legen eine Bevölkerung von wenigen hundert Menschen nahe, mit Wohnhöhlen, Zisternen und landwirtschaftlichen Anlagen. Vier Kilometer entfernt lag Sepphoris, die von Herodes Antipas ausgebaute Verwaltungsstadt – eine hellenistisch geprägte Metropole in Sichtweite eines Dorfes, in dem jeder jeden kannte. Das erklärt den Satz über Josephs Sohn: Die Zuhörer kennen die Familie.\n\nDer Ablauf des Gottesdienstes ist genau geschildert und stimmt mit dem überein, was über Synagogen des 1. Jahrhunderts bekannt ist. Man las aus der Tora und anschließend aus den Propheten, stehend; danach setzte sich der Vorlesende, um auszulegen – Sitzen war die Haltung des Lehrenden. Ein Diener reichte die Rolle und nahm sie zurück. Synagogenbauten aus dieser Zeit sind unter anderem in Gamla, Magdala und Masada nachgewiesen; es waren Versammlungsräume mit umlaufenden Bänken, keine Tempel.\n\nDer verlesene Text stammt aus dem einundsechzigsten Kapitel des Jesajabuchs und nennt vier Gruppen: Arme, Gefangene, Blinde, Zerschlagene. Der Schlusssatz spricht vom angenehmen Jahr des Herrn – dem Halljahr des dritten Buches Mose, in dem Schulden erlassen und Land zurückgegeben werden sollten. Damit steht am Anfang des lukanischen Jesusbildes ein Wirtschafts- und Sozialprogramm, und das Evangelium kommt darauf immer wieder zurück. Auffällig ist zugleich, was das Zitat weglässt: Der Jesajatext fährt fort mit einem Tag der Rache; genau an dieser Stelle bricht die Lesung ab.\n\nDie beiden Beispiele in den Versen 25 bis 27 sind der Grund für den Umschwung. Elia wurde zu einer Witwe in phönizisches Gebiet geschickt, Elisa heilte einen syrischen Heerführer – in beiden Fällen ging die Hilfe an Ausländer, während es in Israel genug Bedürftige gab. Diese Auswahl ist provozierend, weil sie den Anspruch der eigenen Leute auf Vorrang bestreitet. Es ist die früheste Stelle im Lukasevangelium, an der die spätere Öffnung zu den Völkern angekündigt wird.\n\nDie Reaktion ist ein Lynchversuch, keine förmliche Hinrichtung. Der Berg, auf dem Nazareth liegt, hat mehrere Abbruchkanten von einigen Metern Höhe; der Sturz von einer Anhöhe war eine bekannte Tötungsart und in der Mischna als Vorstufe der Steinigung beschrieben. Der Text schildert also keinen Prozess, sondern eine erregte Dorfgemeinschaft.',
+    reception:
+      'Die Antrittspredigt ist zum Gründungstext der Befreiungstheologie geworden. Gustavo Gutiérrez und die Bischofsversammlungen von Medellín 1968 und Puebla 1979 beriefen sich darauf, um die Option für die Armen zu begründen. Der Weltkirchenrat hat den Text mehrfach zum Leitwort von Vollversammlungen gemacht.\n\nIn der Wirkungsgeschichte spielt auch die Auslassung eine Rolle: Dass die Lesung vor dem Tag der Rache endet, wird regelmäßig als Auslegungsentscheidung gedeutet. Nelson Mandela und Martin Luther King zitierten die Verse über die Freilassung der Gefangenen; in der Gefängnisseelsorge gehören sie zum festen Bestand. Die beiden Beispiele über Elia und Elisa dagegen sind selten zitiert worden – obwohl sie im Erzählverlauf das eigentliche Ärgernis darstellen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Die Synagoge war Versammlungshaus, Schule und Gericht zugleich. Der Gottesdienst bestand aus Gebet, Lesung aus Tora und Propheten sowie Auslegung. Jeder erwachsene Mann konnte lesen und auslegen; ein Berufsstand von Predigern war nicht nötig.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'In einem Dorf von wenigen hundert Menschen war die Herkunft jedes Einzelnen bekannt. Wer über seinen Stand hinauswuchs, verletzte die Erwartung. Ehre war ein begrenztes Gut: Was einer gewann, fehlte den anderen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Nazareth lag abseits der großen Straßen im galiläischen Bergland, aber nur wenige Kilometer von Sepphoris entfernt, das Herodes Antipas prachtvoll ausbauen ließ. Die Nähe von Dorf und Verwaltungsstadt prägte den Alltag der Region.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Todesurteile lagen bei der römischen Verwaltung; jüdische Gremien durften sie nicht vollstrecken. Was hier geschildert wird, ist deshalb kein Verfahren, sondern Selbstjustiz: Eine Dorfgemeinschaft handelt spontan, ohne Anklage, ohne Zeugen und ohne Urteil.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. synagōgē',
+        rendered: 'in die Schule',
+        note: 'Wörtlich „Versammlung“, dann das Haus, in dem sie stattfindet. Luthers „Schule“ trifft eine Funktion: Dort wurde gelesen, gelernt und ausgelegt. Ein Opferkult fand nicht statt; dafür gab es nur den Tempel.',
+      },
+      {
+        word: 'griech. eniautos dektos',
+        rendered: 'das angenehme Jahr des HERRN',
+        note: 'Ein Anklang an das Halljahr des dritten Buches Mose, in dem Schulden erlassen und Grundbesitz zurückgegeben werden sollte. Der Ausdruck bringt damit eine wirtschaftliche Ordnung in die Antrittsrede hinein.',
+      },
+      {
+        word: 'griech. aphesis',
+        rendered: 'daß sie los sein sollten',
+        note: 'Dasselbe Wort bezeichnet den Erlass von Schulden, die Freilassung von Gefangenen und die Vergebung von Sünden. Im Griechischen fallen diese drei Bedeutungen in einem Begriff zusammen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lesen den Abschnitt als Programm der Erlösung und deuten Arme, Gefangene und Blinde überwiegend geistlich. Origenes bezieht die Blindheit auf die Unwissenheit und die Gefangenschaft auf die Macht der Sünde – eine Deutung, die die soziale Ebene lange in den Hintergrund treten ließ.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther betont das „Heute“: Die Schrift werde nicht erklärt, sondern in Kraft gesetzt. Für ihn ist die Szene ein Beispiel dafür, dass das Wort im Augenblick des Zusprechens geschieht und nicht bloß Vergangenes berichtet.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Lukas stellt die Szene an den Anfang des öffentlichen Wirkens, während Markus und Matthäus sie später berichten. Die Ausgestaltung mit Lesung, Predigt und Konflikt gilt als lukanische Komposition, die das Programm des gesamten Doppelwerks vorwegnimmt.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die geschilderte Gottesdienstordnung entspricht dem, was über Synagogen des 1. Jahrhunderts bekannt ist. Die Auslegung weist darauf hin, dass die Beispiele von Elia und Elisa aus der eigenen Schrift stammen: Der Streit wird innerhalb der Tradition geführt, nicht gegen sie.',
+      },
+      {
+        tradition: 'Befreiungstheologische Lesart',
+        text: 'Der Abschnitt gilt als Schlüsseltext für die Option für die Armen. Betont wird, dass die genannten Gruppen wirtschaftlich und rechtlich bestimmt sind und dass der Verweis auf das Halljahr eine materielle Ordnung meint. Kritiker halten dagegen, dass Lukas den Begriff der Armut an anderen Stellen weiter fasst.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 61, verse: 1, note: 'Der verlesene Text' },
+      { book: '3mo', chapter: 25, verse: 10, note: 'Das Halljahr, auf das er anspielt' },
+      { book: '1koe', chapter: 17, verse: 9, note: 'Die Witwe von Zarpat, auf die er verweist' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 12,
+    from: 13,
+    to: 21,
+    title: '„Du Narr! diese Nacht wird man deine Seele von dir fordern“',
+    historicalShort:
+      'Ein Erbstreit wird abgewiesen, und stattdessen kommt ein Gleichnis über einen Mann, dem alles gelingt. Er redet vier Sätze lang mit sich selbst und kommt darin allein vor – kein Nachbar, kein Arbeiter, kein Gott.',
+    historicalLong:
+      'Die Bitte am Anfang war naheliegend. Erbstreitigkeiten wurden von Schriftgelehrten entschieden, die im Erbrecht bewandert waren; das fünfte Buch Mose regelt das Vorrecht des Erstgeborenen, und die Praxis kannte die ungeteilte Erbengemeinschaft, die häufig zu Konflikten führte. Wer einen angesehenen Lehrer traf, konnte ihn um eine Entscheidung bitten. Die Ablehnung ist deshalb bemerkenswert: Nicht die Frage sei falsch gestellt, sondern die Zuständigkeit werde zurückgewiesen.\n\nDas Gleichnis selbst beschreibt einen wirtschaftlichen Vorgang, den jeder verstand. Eine gute Ernte war das Beste, was passieren konnte – und zugleich ein Problem, weil die Lagerkapazität begrenzt war. Ausgrabungen zeigen Vorratsgruben, Silos und Speicherbauten; große Güter hatten eigene Speicheranlagen. Wer über den eigenen Bedarf hinaus einlagern konnte, wartete auf ein schlechtes Jahr und verkaufte dann teuer. Das war keine Bosheit, sondern die übliche Wirtschaftsweise wohlhabender Grundbesitzer, und die Propheten hatten sie über Jahrhunderte angegriffen.\n\nBemerkenswert ist die Sprache des Selbstgesprächs. In den Versen 17 bis 19 kommen die Wörter „ich“ und „mein“ ein Dutzend Mal vor. Der Mann fragt niemanden, teilt mit niemandem und rechnet mit niemandem. Für Menschen, die in Großfamilien und engen Dorfgemeinschaften lebten, war das nicht bloß egoistisch, sondern eigentümlich: Entscheidungen dieser Größenordnung traf man nicht allein. Der Erzähler zeichnet einen Mann, der sich aus seiner Gemeinschaft herausgerechnet hat.\n\nDie Anrede in Vers 20 gebraucht ein Wort, das in der Weisheitsliteratur eine feste Bedeutung hat. Der Tor ist nicht der Dumme, sondern der, der falsch rechnet, weil er einen Faktor auslässt. Der Psalter sagt, der Tor spreche in seinem Herzen, es sei kein Gott. Genau das tut dieser Mann nicht ausdrücklich – er erwähnt Gott einfach nicht.\n\nDer Schluss knüpft an eine breite antike Diskussion über Besitz an. Der Prediger Salomo hatte längst gefragt, wem zufallen werde, was ein Mensch angesammelt hat; das Buch Jesus Sirach warnt in ähnlicher Weise. Auch außerhalb Israels war das ein Thema: Die stoische Philosophie machte die Unabhängigkeit von äußeren Gütern zu einem Kernstück. Der Text steht damit in einem verbreiteten Gespräch – und setzt einen eigenen Akzent, indem er nicht die Vergänglichkeit beklagt, sondern die Frage nach dem Empfänger stellt.',
+    reception:
+      'Das Gleichnis vom reichen Kornbauern gehört zu den meistgepredigten Texten über den Umgang mit Besitz. In der Alten Kirche diente es Basilius von Caesarea als Grundlage einer berühmten Predigt gegen die Kornspekulation in einer Hungersnot: Die Scheunen der Reichen seien voll, während die Armen stürben, und der zurückgehaltene Vorrat gehöre bereits den Hungernden.\n\nIn der Kunst ist der Stoff mehrfach behandelt worden, unter anderem von Rembrandt in seinem Gemälde des Geldwechslers. Tolstoi verarbeitete das Motiv in der Erzählung „Wieviel Erde braucht der Mensch?“. In der Gegenwart wird das Gleichnis in Debatten über Vermögenskonzentration und über die Grenzen des Wachstums herangezogen; die Frage nach dem, dem alles zufallen wird, hat dabei auch eine ökologische Wendung bekommen.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Getreide wurde in Gruben, Tonkrügen und gemauerten Speichern gelagert. Große Güter besaßen eigene Speicheranlagen. Wer über den Eigenbedarf hinaus einlagern konnte, hatte Marktmacht: Er verkaufte, wenn die Preise stiegen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Erbstreitigkeiten waren häufig, weil Grundbesitz oft ungeteilt blieb. Das Gesetz gab dem Erstgeborenen den doppelten Anteil. Entschieden wurde durch Ortsälteste oder Schriftgelehrte; ein staatliches Gericht war dafür nicht zuständig.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Entscheidungen von Gewicht traf man im Haushaltsverband, nicht allein. Wer über eine Ernte verfügte, verfügte über die Nahrung mehrerer Familien. Ein Selbstgespräch über solche Fragen wirkte auf Zeitgenossen befremdlich.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Erträge schwankten stark mit den Niederschlägen. Auf gute Jahre folgten regelmäßig magere. Vorratshaltung war deshalb vernünftig – die Frage war nur, wem der Vorrat im Notjahr zugutekam.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. pleonexia',
+        rendered: 'vor dem Geiz',
+        note: 'Wörtlich das Mehr-haben-Wollen. Der Begriff meint nicht Sparsamkeit, sondern den Drang, über den eigenen Anteil hinaus zuzugreifen. In den Lasterkatalogen des Neuen Testaments steht er regelmäßig neben Götzendienst.',
+      },
+      {
+        word: 'griech. apothēkas',
+        rendered: 'meine Scheunen',
+        note: 'Speicherbauten für Getreide. Dasselbe Wort steht dort, wo von Vögeln die Rede ist, die weder säen noch ernten noch in Scheunen sammeln. Die beiden Stellen liegen im Lukasevangelium nur wenige Verse auseinander.',
+      },
+      {
+        word: 'griech. aphrōn',
+        rendered: 'Du Narr',
+        note: 'Der Tor der Weisheitsliteratur – nicht der Unwissende, sondern der, der mit einem falschen Bild von der Wirklichkeit rechnet. Der Psalter bestimmt ihn als den, der in seinem Herzen sagt, es sei kein Gott.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Basilius und Ambrosius machen das Gleichnis zum Ausgangspunkt scharfer Predigten über den Besitz: Was zurückgehalten wird, gehöre bereits den Hungernden. Augustinus hebt hervor, dass der Mann keine Sünde im üblichen Sinn begeht – er tut nichts Verbotenes, er rechnet nur ohne Gott und ohne andere.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther unterscheidet zwischen dem Vorsorgen, das er ausdrücklich für geboten hält, und dem Sichern, das an die Stelle des Vertrauens tritt. Für ihn ist nicht der Besitz das Problem, sondern die Frage, worauf jemand sein Leben stellt.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Gleichnis gehört zum Sondergut des Lukas, dessen Evangelium sich mehr als die anderen mit Besitz und Armut befasst. Eine Fassung findet sich auch im Thomasevangelium, dort ohne die Rahmenszene mit dem Erbstreit.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die Frage nach dem, was einem Menschen von seinem Erwerb bleibt, ist in der Weisheitsliteratur breit verhandelt – im Prediger ebenso wie bei Jesus Sirach. Die rabbinische Tradition betont daneben, dass Vorsorge geboten ist und die Grenze dort liegt, wo der Vorrat anderen entzogen wird.',
+      },
+      {
+        tradition: 'Wirtschaftsethische Lesart',
+        text: 'Der Text wird als Kritik an einer Wirtschaftsform gelesen, die Sicherheit durch Anhäufung sucht. Bemerkenswert ist, dass das Gleichnis keine Umverteilung fordert, sondern eine Frage stellt: wem es zufallen wird. Diese Frage hat in der Klimadebatte eine neue Zuspitzung erfahren.',
+      },
+    ],
+    crossRefs: [
+      { book: 'pred', chapter: 2, verse: 18, note: 'Wem ich es lassen muss, der nach mir kommt' },
+      { book: 'lk', chapter: 12, verse: 24, note: 'Die Raben sammeln nicht in Scheunen' },
+      { book: 'jak', chapter: 4, verse: 13, note: 'Ihr wisst nicht, was morgen sein wird' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 18,
+    from: 9,
+    to: 14,
+    title: '„Gott, sei mir Sünder gnädig!“',
+    historicalShort:
+      'Zwei Männer beten im Tempel. Der eine zählt auf, was er tut, und alles davon stimmt. Der andere bringt einen einzigen Satz heraus. Das Gleichnis wird bis heute meistens falsch herum gelesen.',
+    historicalLong:
+      'Der Pharisäer ist kein Heuchler, und der Text stellt ihn auch nicht so dar. Was er sagt, ist zutreffend: Er fastet zweimal wöchentlich und gibt den Zehnten von allem. Beides geht über das Vorgeschriebene hinaus – Pflichtfasten gab es nur am Versöhnungstag, und die Zehntpflicht betraf Ackerfrüchte, nicht alles. Die Pharisäer waren eine Erneuerungsbewegung von Laien, die die Reinheitsvorschriften des Tempels auf den Alltag übertragen wollten. Ihr Ansehen im Volk war hoch, und das Bild, das die Wirkungsgeschichte von ihnen gezeichnet hat, entspricht weder den Quellen noch dem Text.\n\nDer Zöllner dagegen war Teil eines Systems, das als Ausbeutung galt. In Judäa und Galiläa wurden Zölle und Abgaben verpachtet; wer die Pacht ersteigerte, trieb ein und behielt, was über der vereinbarten Summe lag. Eine Preisliste gab es nicht, Beschwerdemöglichkeiten kaum. Die Mischna behandelt Zöllner an mehreren Stellen als rechtlich problematisch, unter anderem weil ihr Geld als möglicherweise geraubt galt. Wiedergutmachung war zudem praktisch unmöglich: Man hätte allen Geschädigten das Genommene zurückgeben müssen und wusste nicht mehr, wer sie waren. Der Mann steht also in einer Lage, aus der es nach den Regeln keinen Ausweg gab.\n\nDie Gebetshaltungen sind genau beobachtet. Man betete stehend, oft mit erhobenen Händen und dem Blick nach oben; die abgewandten Augen und das Schlagen an die Brust sind Trauergesten. Der Text sagt außerdem, der Pharisäer habe bei sich selbst gebetet – der griechische Wortlaut lässt sich sowohl als „für sich“ wie als „zu sich selbst“ verstehen, und die Handschriften sind hier uneinheitlich.\n\nEntscheidend ist das Wort, das der Zöllner gebraucht. Es ist nicht das übliche Wort für Gnade, sondern eines aus der Opfersprache, verwandt mit der Bezeichnung für die Deckplatte der Bundeslade, an der am Versöhnungstag das Blut gesprengt wurde. Wörtlich bittet er: Lass Sühne an mir geschehen. Er steht im Tempelbezirk, wo genau das täglich vollzogen wurde, und beruft sich darauf – nicht auf sich selbst.\n\nDer Schlusssatz gebraucht ein Wort, das in den Paulusbriefen zum Zentralbegriff wird: Er ging gerechtfertigt hinab. Dass Lukas es hier in einer Erzählung Jesu verwendet, ist auffällig und wird in der Forschung viel diskutiert. Das Gleichnis formuliert erzählend, was die Briefe begrifflich entfalten.',
+    reception:
+      'Aus dem Gebet des Zöllners ist im christlichen Osten das Jesusgebet erwachsen, das zu einer der wirkungsreichsten geistlichen Übungen überhaupt wurde: eine kurze Anrufung, unablässig wiederholt, verbunden mit dem Atem. Die Schriften der Philokalia und die russischen Erzählungen eines Pilgers haben es weit über die Ostkirche hinaus bekannt gemacht. Auch in der westlichen Liturgie hat der Satz seinen Platz; das Kyrie eleison steht in derselben Linie.\n\nDie Wirkungsgeschichte hat zugleich erheblichen Schaden angerichtet. Aus dem Pharisäer des Gleichnisses wurde eine Figur, mit der eine ganze religiöse Bewegung karikiert wurde; das deutsche Wort „pharisäisch“ trägt diese Last bis heute. Die Auslegung nach 1945 hat entschieden gegengesteuert und darauf hingewiesen, dass die Pointe sich gegen jede Selbstzufriedenheit richtet – auch gegen die des Lesers, der froh ist, nicht wie der Pharisäer zu sein, und damit genau dessen Gebet wiederholt.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Im Tempel wurden täglich Opfer dargebracht, morgens und nachmittags; die Gebetszeiten richteten sich danach. Man betete stehend, laut oder halblaut, mit erhobenen Händen. Der Vorhof war zu diesen Zeiten belebt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Zölle wurden verpachtet. Der Pächter zahlte eine feste Summe im Voraus und trieb ein, was er konnte; der Überschuss war sein Gewinn. Ohne feste Tarife und ohne Kontrolle war das System auf Übervorteilung angelegt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Pharisäer waren eine angesehene Laienbewegung, die Reinheits- und Zehntvorschriften über das Geforderte hinaus einhielt. Ihr Ansehen beruhte auf Ernsthaftigkeit, nicht auf Heuchelei – das Zerrbild ist späteren Datums.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Wiedergutmachung setzte voraus, dass man den Geschädigten kannte. Ein Zöllner, der über Jahre unbestimmt viele Menschen übervorteilt hatte, konnte diese Bedingung nicht erfüllen. Sein Beruf galt deshalb als kaum umkehrfähig.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. telōnēs',
+        rendered: 'ein Zöllner',
+        note: 'Ein Zollpächter oder dessen Angestellter, nicht ein Steuerbeamter im heutigen Sinn. Er arbeitete auf eigene Rechnung im Auftrag der Verpachtenden und war deshalb doppelt verhasst: als Ausbeuter und als Handlanger der Fremdherrschaft.',
+      },
+      {
+        word: 'griech. hilaskomai',
+        rendered: 'sei mir Sünder gnädig',
+        note: 'Ein Wort aus der Opfersprache, verwandt mit der Bezeichnung für die Deckplatte der Bundeslade. Wörtlich etwa: Lass Sühne an mir geschehen. Der Mann bittet also nicht um Nachsicht, sondern beruft sich auf das, was im Tempel geschieht.',
+      },
+      {
+        word: 'griech. dedikaiōmenos',
+        rendered: 'gerechtfertigt',
+        note: 'Ein Begriff aus dem Gerichtswesen: Er hat den Prozess gewonnen. Dasselbe Wort trägt bei Paulus die Rechtfertigungslehre. Hier steht es in einer Erzählung Jesu und beschreibt einen Ausgang, nicht eine Lehre.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lesen das Gleichnis als Lehre über die Demut. Aus dem Gebet des Zöllners entwickelte die östliche Tradition das Jesusgebet; Johannes Klimakos und die Wüstenväter machen es zur Grundübung. Chrysostomos warnt bereits davor, sich über den Pharisäer zu erheben.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Für Luther ist das Gleichnis der erzählte Kern der Rechtfertigungslehre: Der eine bringt seine Werke, der andere nichts. Entscheidend sei, dass der Zöllner sich nicht bessert, bevor er gerechtfertigt heimgeht – die Reihenfolge ist umgekehrt, als man erwartet.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die neuere Auslegung betont, dass das Gebet des Pharisäers einer bekannten Gattung entspricht: Dankgebete für die Zugehörigkeit zur Tora finden sich auch in rabbinischen Texten und sind dort nicht anstößig. Der Anstoß entsteht erst durch den Vergleich mit dem Danebenstehenden.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Gleichnis gehört zum Sondergut des Lukas und steht in einer Reihe von Erzählungen über Gebet und Umkehr. Der Schlusssatz über Erhöhung und Erniedrigung findet sich mehrfach im Evangelium und dürfte als Anwendung angefügt sein.',
+      },
+      {
+        tradition: 'Kritik der Wirkungsgeschichte',
+        text: 'Die Verwendung des Gleichnisses zur Abwertung des Judentums gilt heute als schwere Fehlrezeption. Die Auslegung nach 1945 weist darauf hin, dass die Figur austauschbar ist: Jede Gruppe, die sich ihrer Ernsthaftigkeit sicher ist, steht an dieser Stelle – und wer sich über den Pharisäer erhebt, betet dessen Gebet.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 51, verse: 19, note: 'Ein zerbrochenes Herz wirst du nicht verachten' },
+      { book: 'lk', chapter: 19, verse: 8, note: 'Zachäus und die Wiedergutmachung' },
+      { book: 'roem', chapter: 3, verse: 24, note: 'Gerechtfertigt ohne Verdienst' },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 9,
+    from: 1,
+    to: 12,
+    title: '„wer hat gesündigt, dieser oder seine Eltern“',
+    historicalShort:
+      'Die Jünger sehen einen blinden Bettler und stellen eine Ursachenfrage. Die Antwort weist die Frage zurück, und was folgt, ist ein Heilungsverfahren, das jeder antike Arzt gekannt hätte.',
+    historicalLong:
+      'Die Frage der Jünger war die naheliegende ihrer Zeit. Dass Krankheit und Behinderung auf Schuld zurückgehen, war eine weit verbreitete Annahme, die sich auf biblische Texte stützen konnte – etwa auf die Rede von der Heimsuchung der Väterschuld an den Kindern. Die Freunde Hiobs argumentieren nach demselben Muster, und das Hiobbuch widerspricht ihnen über vierzig Kapitel hinweg. Der Zusatz „oder seine Eltern“ zeigt, dass die Fragenden das Problem sehen: Ein von Geburt an Blinder kann vorher nichts getan haben. Die rabbinische Diskussion kannte tatsächlich die Erwägung, ob ein Kind schon im Mutterleib sündigen könne.\n\nDie Antwort schneidet die Frage ab. Sie erklärt die Blindheit nicht, sie verweigert die Erklärung. Der griechische Satzbau ist dabei doppeldeutig: Man kann ihn so lesen, dass die Blindheit den Zweck hatte, die Werke Gottes zu offenbaren – oder so, dass die Aussage erst mit dem folgenden Satz einsetzt. Diese Frage der Zeichensetzung, die in den ältesten Handschriften fehlt, hat erhebliche theologische Folgen und wird bis heute diskutiert.\n\nDas Verfahren mit Speichel war medizinisch anerkannt. Plinius der Ältere und Tacitus berichten von Augenbehandlungen mit Speichel; Tacitus erzählt sogar, Kaiser Vespasian habe in Alexandria auf diese Weise einen Blinden geheilt. Auch der Talmud kennt Heilkraft des Speichels, allerdings mit Einschränkungen für den Sabbat. Das Anrühren eines Breis wurde von den Gegnern im weiteren Verlauf des Kapitels als verbotene Arbeit gewertet – der Streit dreht sich also nicht darum, ob geheilt wurde, sondern darum, an welchem Tag.\n\nDer Teich Siloah ist ein realer Ort und archäologisch erfasst. Er lag am Südende der Davidsstadt und wurde von der Gihonquelle über einen unter Hiskia in den Fels getriebenen Tunnel gespeist; die Inschrift der Tunnelbauer wurde 1880 gefunden. 2004 legten Bauarbeiten die Stufen eines großen Beckens aus herodianischer Zeit frei. Das Wasser diente rituellen Waschungen und spielte beim Laubhüttenfest eine besondere Rolle, auf das die vorangehenden Kapitel des Evangeliums Bezug nehmen.\n\nDie Übersetzung des Namens im siebten Vers ist ein Signal. Siloah heißt „gesandt“, und das Johannesevangelium bezeichnet Jesus durchgängig als den Gesandten. Der Blinde wird also zu einem Wasser geschickt, dessen Name das Stichwort des ganzen Buches trägt. Der Evangelist erklärt seinen Lesern die Bedeutung ausdrücklich – ein Hinweis darauf, dass er für Menschen schrieb, die kein Hebräisch konnten.',
+    reception:
+      'Der Blindgeborene ist eines der ältesten christlichen Bildmotive und findet sich schon im 3. Jahrhundert in den Katakomben. In der Alten Kirche gehörte das Kapitel zu den Taufkatechesen: Der Weg vom Sehen zum Bekennen, der sich über das ganze neunte Kapitel erstreckt, wurde als Weg des Taufbewerbers gedeutet. Bis heute wird der Abschnitt in der Fastenzeit gelesen.\n\nTheologisch ist die Antwort auf die Ursachenfrage zu einem der meistzitierten Sätze in der Auseinandersetzung mit Krankheit und Behinderung geworden. Die Disability-Theologie der letzten Jahrzehnte hat die Stelle allerdings auch kritisch gelesen: Die Zurückweisung des Schuldgedankens sei ein Fortschritt, die Deutung der Behinderung als Gelegenheit zur Offenbarung göttlicher Werke jedoch ihrerseits problematisch, weil sie den Betroffenen zum Anlass für etwas anderes macht. Diese Diskussion hat die Übersetzung des dritten Verses zu einer praktischen Frage werden lassen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Blinde konnten die meisten Arbeiten nicht ausüben und waren auf Almosen angewiesen. Man saß an belebten Orten, an Toren oder Tempelzugängen. Betteln war keine Schande, aber es bedeutete lebenslange Abhängigkeit von der Freigebigkeit anderer.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Krankheit galt vielen als Folge von Schuld – eine Annahme, gegen die schon das Hiobbuch anschrieb. Sie war nicht Lehre, sondern verbreitete Alltagsüberzeugung, und sie belastete die Betroffenen zusätzlich zu ihrer Lage.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Augenkrankheiten waren im Mittelmeerraum verbreitet: Staub, Fliegen, Trachom und Mangelernährung. Ärzte behandelten mit Salben, Umschlägen und Spülungen; Speichel galt als wirksames Mittel und wird in antiken Fachschriften erwähnt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Der Teich Siloah lag am unteren Ende der Davidsstadt und wurde über einen Felstunnel von der Gihonquelle gespeist. Er war das wichtigste Wasserreservoir der Stadt und diente auch rituellen Waschungen vor dem Aufstieg zum Tempel.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. Silōam',
+        rendered: 'dem Teich Siloah',
+        note: 'Der Evangelist übersetzt den Namen selbst mit „gesandt“. Das ist kein Zufall: Das Johannesevangelium nennt Jesus durchgehend den Gesandten. Der Blinde wird also zu einem Wasser geschickt, das den Titel dessen trägt, der ihn schickt.',
+      },
+      {
+        word: 'griech. ptyō',
+        rendered: 'spützte er auf die Erde',
+        note: 'Speichel galt in der antiken Medizin als Heilmittel, besonders bei Augenleiden; römische Autoren berichten davon. Das Anrühren eines Breis daraus wurde von den Gegnern als am Sabbat verbotene Tätigkeit gewertet.',
+      },
+      {
+        word: 'griech. egō eimi',
+        rendered: 'Ich bin\'s',
+        note: 'Die Wendung, die im Johannesevangelium sonst Jesus vorbehalten ist und dort auf den Gottesnamen anspielt. Hier spricht sie der Geheilte, um seine Identität zu bestätigen – ein sprachliches Echo, das in der Auslegung viel beachtet wird.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Irenäus deutet den Lehm als Anspielung auf die Erschaffung des Menschen aus Erde: Derselbe, der formte, ergänzt hier, was fehlte. Augustinus liest das ganze Kapitel als Taufkatechese, in der Waschung und Erleuchtung zusammengehören.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther betont die Zurückweisung der Ursachenfrage: Man solle nicht nach dem Warum forschen, sondern nach dem Wozu. Calvin warnt davor, aus dem dritten Vers zu schließen, Gott habe die Blindheit verhängt, um sich in Szene zu setzen.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das neunte Kapitel gilt als kunstvoll gebautes Drama in sieben Szenen und wird häufig als Spiegel der Auseinandersetzung gelesen, in der die johanneische Gemeinde stand: Der Geheilte wird im weiteren Verlauf aus der Synagoge ausgeschlossen – eine Situation des späten 1. Jahrhunderts.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Der Streit im Fortgang des Kapitels dreht sich um die Sabbatfrage, nicht um die Heilung. Nach den überlieferten Regeln war Heilen am Sabbat bei Lebensgefahr erlaubt, bei chronischen Leiden nicht. Eine Blindheit von Geburt an war kein Notfall – daraus entsteht der Konflikt.',
+      },
+      {
+        tradition: 'Auslegung aus der Behindertenperspektive',
+        text: 'Die neuere Diskussion begrüßt die Zurückweisung des Schuldgedankens, fragt aber kritisch nach der Alternative, die der Text bietet. Wer eine Behinderung als Gelegenheit für göttliches Handeln deutet, macht einen Menschen zum Mittel. Die Übersetzung und Zeichensetzung des dritten Verses hat deshalb praktische Folgen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hi', chapter: 4, verse: 7, note: 'Die Vergeltungslehre der Freunde Hiobs' },
+      { book: 'joh', chapter: 9, verse: 34, note: 'Der Ausschluss des Geheilten' },
+      { book: 'lk', chapter: 13, verse: 4, note: 'Waren die achtzehn schuldiger als alle anderen?' },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 17,
+    from: 20,
+    to: 26,
+    title: '„auf daß sie alle eins seien“',
+    historicalShort:
+      'Das längste überlieferte Gebet Jesu endet mit einer Bitte für Menschen, die es noch nicht gibt. Was erbeten wird, ist Einheit – und der angegebene Zweck ist nicht die Eintracht selbst, sondern ihre Wirkung nach außen.',
+    historicalLong:
+      'Das siebzehnte Kapitel schließt die Abschiedsreden ab und ist als Gebet gestaltet. Solche Abschiedsreden vor dem Tod einer bedeutenden Person waren eine bekannte literarische Form: Das fünfte Buch Mose ist so aufgebaut, ebenso Jakobs Segen und zahlreiche Schriften aus der Zeit zwischen den Testamenten. Zum Muster gehören der Rückblick, die Mahnung an die Zurückbleibenden und die Fürbitte. Die Leser des Evangeliums erkannten die Gattung.\n\nDie Lage der Gemeinde, für die dieses Evangelium geschrieben wurde, ist im Text spürbar. Die Bitte gilt ausdrücklich denen, die durch das Wort der ersten Generation glauben werden – also den Späteren, für die die Augenzeugen bereits Vergangenheit sind. Um 90 bis 100 n. Chr. war die Trennung zwischen Synagoge und christlicher Gemeinde weitgehend vollzogen, und innerhalb der Gemeinden gab es erste Spaltungen; der erste Johannesbrief spricht offen davon, dass Leute weggegangen sind. Eine Bitte um Einheit hat vor diesem Hintergrund einen konkreten Anlass.\n\nDer Grund, der zweimal genannt wird, ist bemerkenswert. Die Einheit soll dazu dienen, dass die Welt glaubt und erkennt. Sie ist also nicht Selbstzweck und nicht Binnenangelegenheit, sondern das, woran andere etwas ablesen sollen. Für eine kleine, argwöhnisch beobachtete Gruppe in den Städten des Reichs war das eine überprüfbare Behauptung: Vereine und Kultgemeinschaften waren zahlreich, und ihr Zusammenhalt oder Zerfall war stadtbekannt.\n\nDas Wort für Welt hat im Johannesevangelium einen eigentümlichen Doppelklang. Es bezeichnet die Menschheit, die geliebt wird – und zugleich den Bereich, der ablehnt und nicht erkennt. Beide Bedeutungen stehen in diesen sieben Versen nebeneinander: Die Welt soll glauben, und die Welt kennt Gott nicht. Diese Spannung ist nicht aufgelöst und gehört zur Eigenart des Buches.\n\nAuffällig ist schließlich, was nicht erbeten wird. Es geht nicht um organisatorische Einheit, nicht um eine gemeinsame Ordnung, nicht um übereinstimmende Lehrsätze – all das lag im 1. Jahrhundert ohnehin außerhalb des Vorstellbaren, da die Gemeinden Hausgemeinschaften ohne übergreifende Struktur waren. Der Vergleich, der gezogen wird, ist das Verhältnis zwischen dem Sendenden und dem Gesandten. Was das für die Praxis bedeutet, sagt der Text nicht, und genau darüber wird seit zweitausend Jahren gestritten.',
+    reception:
+      'Kein Bibelvers hat die ökumenische Bewegung so geprägt wie die Bitte, dass alle eins seien. Die Weltmissionskonferenz von Edinburgh 1910 gilt als ihr Anfang, und der 1948 gegründete Ökumenische Rat der Kirchen führt den Vers als Leitwort. Das Zweite Vatikanische Konzil zitiert ihn in seinem Dekret über den Ökumenismus an zentraler Stelle; die jährliche Gebetswoche für die Einheit der Christen ist unmittelbar darauf bezogen.\n\nZugleich ist der Vers Gegenstand eines langen Streits darüber, welche Art von Einheit gemeint ist. Die Rede von der sichtbaren Einheit steht gegen das Modell einer versöhnten Verschiedenheit; die Leuenberger Konkordie von 1973 und die Gemeinsame Erklärung zur Rechtfertigungslehre von 1999 sind Ergebnisse dieser Auseinandersetzung. Kritiker weisen darauf hin, dass der Text keine Kirchenverfassung liefert und dass die Berufung darauf oft die eigene Ordnung als die gemeinte voraussetzt.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die frühen Gemeinden waren Hausgemeinschaften von wenigen Dutzend Menschen, die sich in Privathäusern trafen. Eine übergreifende Organisation gab es nicht. Zusammenhalt entstand über Briefe, Reisende und Gastfreundschaft.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Vereine und Kultgemeinschaften gab es in jeder größeren Stadt: Berufsvereine, Begräbnisvereine, Mysteriengemeinschaften. Sie hatten Statuten und Mitgliedsbeiträge. Ihr Verhalten wurde von der Umgebung beobachtet und beurteilt.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Christliche Gruppen standen unter Beobachtung, weil sie sich der öffentlichen Religion entzogen. Verdächtigungen betrafen Geheimbündelei und mangelnde Loyalität. Innerer Streit machte eine solche Gruppe zusätzlich angreifbar.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Abschiedsreden vor dem Tod waren eine bekannte Form – im Judentum wie in der griechischen Literatur. Man erwartete Rückblick, Mahnung und Segen. Wer das Muster kannte, wusste beim Lesen, wo er sich im Text befand.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. doxa',
+        rendered: 'die Herrlichkeit',
+        note: 'Im Griechischen zunächst Ansehen und Ruf, in der Bibel die Wiedergabe eines hebräischen Wortes, das Gewicht bedeutet. Im Johannesevangelium ist diese Herrlichkeit nicht Glanz, sondern zeigt sich gerade in der Erhöhung am Kreuz.',
+      },
+      {
+        word: 'griech. teteleiōmenoi',
+        rendered: 'vollkommen seien in eins',
+        note: 'Von einem Verb für vollenden, zu Ende führen. Es beschreibt kein makelloses Sein, sondern ein Ankommen am Ziel. Dasselbe Wort steht im letzten Wort am Kreuz: Es ist vollbracht.',
+      },
+      {
+        word: 'griech. kosmos',
+        rendered: 'die Welt kennt dich nicht',
+        note: 'Im Johannesevangelium doppeldeutig: die geliebte Menschheit und zugleich der Bereich, der ablehnt. Beide Bedeutungen stehen in diesem Abschnitt nebeneinander, ohne dass der Text sie auseinanderhält.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Cyprian zieht aus dem Kapitel die Folgerung, dass es außerhalb der einen Kirche keine Rettung gebe; Augustinus deutet die Einheit auf die Liebe, die durch den Geist gestiftet wird. Beide Linien – die institutionelle und die geistliche – bestehen seither nebeneinander.',
+      },
+      {
+        tradition: 'Orthodoxe Tradition',
+        text: 'Die östliche Theologie liest die Verse im Licht der Lehre von den drei Personen: Die Einheit der Kirche bildet die Gemeinschaft der göttlichen Personen ab, ohne die Unterschiede aufzuheben. Daraus folgt ein Kirchenverständnis, das die Einheit in der Gemeinschaft der Ortskirchen sieht, nicht in einer zentralen Leitung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther bestreitet, dass eine äußere Einheitsform gemeint sei, und bestimmt die Einheit vom Wort und den Sakramenten her. Für ihn kann eine sichtbare Einheit sogar zur Verdeckung von Uneinigkeit im Entscheidenden werden.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Kapitel gehört zu den Abschiedsreden, die als Komposition der johanneischen Schule gelten. Die Bitte für die späteren Glaubenden setzt eine Gemeinde voraus, für die die erste Generation Vergangenheit ist; die Spaltungserfahrung ist aus den Johannesbriefen bekannt.',
+      },
+      {
+        tradition: 'Ökumenische Diskussion',
+        text: 'Der Vers ist die meistzitierte Stelle der Bewegung für die Einheit der Kirchen. Umstritten bleibt, ob er sichtbare Einheit fordert oder eine geistliche Gemeinschaft beschreibt. Der Text selbst gibt einen Zweck an – dass die Welt glaube – und überlässt die Form offen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'eph', chapter: 4, verse: 3, note: 'Die Einigkeit im Geist zu halten' },
+      { book: '1kor', chapter: 1, verse: 10, note: 'Paulus gegen die Spaltungen in Korinth' },
+      { book: 'joh', chapter: 13, verse: 35, note: 'Daran wird jedermann erkennen, dass ihr meine Jünger seid' },
+    ],
+  },
+  {
+    book: 'apg',
+    chapter: 9,
+    from: 1,
+    to: 19,
+    title: '„Saul, Saul, was verfolgst du mich?“',
+    historicalShort:
+      'Ein Verfolger auf dem Weg zu einer Verhaftungsaktion wird unterwegs zu Boden geworfen und drei Tage blind. Was er hört, ist keine Belehrung, sondern eine Frage – und eine Gleichsetzung, die alles verändert.',
+    historicalLong:
+      'Damaskus lag rund zweihundertvierzig Kilometer von Jerusalem entfernt, eine Reise von etwa einer Woche. Die Stadt gehörte zur römischen Provinz Syria und besaß eine große jüdische Bevölkerung; Josephus berichtet von zahlreichen Synagogen. Damit ist die Zielsetzung der Reise plausibel: Wer eine Bewegung eindämmen wollte, musste dorthin, wo ihre Anhänger Zuflucht fanden.\n\nRechtlich ist die Sache schwieriger. Die Behörden in Jerusalem hatten in einer anderen Provinz keine Vollstreckungsgewalt. Was die Briefe bewirken konnten, war allenfalls die Unterstützung durch die Synagogenleitung vor Ort, die über eigene Disziplinarmittel verfügte – Auspeitschung, Ausschluss, Übergabe an die örtliche Gerichtsbarkeit. Paulus selbst erwähnt in seinen Briefen, fünfmal die neununddreißig Schläge empfangen zu haben; solche Strafen setzten voraus, dass er sich der Synagogengerichtsbarkeit unterstellte.\n\nDie Bezeichnung der Bewegung als „dieser Weg“ ist ein Selbstname, der in der Apostelgeschichte mehrfach begegnet und sonst kaum. Auch die Gemeinschaft von Qumran nannte ihre Lebensform den Weg. Der Ausdruck beschreibt keine Lehre, sondern eine Lebenspraxis, die von außen erkennbar war – ein Hinweis darauf, wie die frühe Bewegung sich selbst verstand.\n\nDie Wendung vom Stachel, gegen den zu treten sinnlos ist, stammt nicht aus der jüdischen Überlieferung. Sie ist ein griechisches Sprichwort, das sich unter anderem bei Aischylos, Pindar und Euripides findet und den Treibstachel meint, mit dem man Zugtiere antrieb. Dass sie in einer der drei Fassungen der Erzählung auftaucht, gehört zur Sprachwelt des Verfassers, der für ein hellenistisches Publikum schrieb.\n\nDie Apostelgeschichte erzählt die Szene dreimal, mit auffälligen Abweichungen: Einmal hören die Begleiter die Stimme und sehen niemanden, einmal sehen sie das Licht und hören die Stimme nicht. Solche Unterschiede innerhalb eines Buches zeigen, dass es dem Verfasser nicht um Protokollgenauigkeit ging. Paulus selbst spricht in seinen Briefen nüchtern von einer Offenbarung und stellt sie in eine Reihe mit den Erscheinungen vor den anderen Zeugen; von Licht, Sturz und Blindheit sagt er nichts. Entscheidend ist für ihn ein anderer Punkt: Er ist nicht bekehrt worden von einer Religion zur anderen, sondern beauftragt – und die Frage, die er hört, setzt die Verfolgten mit dem Auferstandenen gleich.',
+    reception:
+      'Das Damaskuserlebnis ist zum Inbegriff der plötzlichen Wende geworden. Die Redewendung vom Damaskuserlebnis und die Formel, es falle jemandem wie Schuppen von den Augen, stammen beide aus diesem Kapitel und werden heute überwiegend ohne Bezug zur Bibel gebraucht.\n\nIn der Kunst gehört die Szene zu den großen Themen: Caravaggios Fassung in Santa Maria del Popolo zeigt den Gestürzten unter dem Pferd, obwohl der Text kein Pferd erwähnt – eine Zutat, die sich über die mittelalterliche Ikonographie durchgesetzt hat. Michelangelo malte die Szene in der Cappella Paolina.\n\nTheologisch hat die Erzählung die Vorstellung von Bekehrung geprägt, besonders in den Erweckungsbewegungen, die das plötzliche, datierbare Erlebnis zum Maßstab machten. Die neuere Paulusforschung hat dem widersprochen: Paulus wechselt nicht die Religion, sondern erhält innerhalb des Judentums einen Auftrag an die Völker. Diese Verschiebung, seit den Arbeiten von Krister Stendahl in den sechziger Jahren, hat die Auslegung des Abschnitts erheblich verändert.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Von Jerusalem nach Damaskus waren es rund zweihundertvierzig Kilometer über die Handelswege durch das Jordantal oder über den Golan. Eine solche Reise dauerte etwa eine Woche und führte durch mehrere Verwaltungsgebiete.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Jüdische Gemeinden verfügten über eigene Gerichtsbarkeit in inneren Angelegenheiten, einschließlich körperlicher Strafen und des Ausschlusses. Eine Verhaftung mit Überstellung in eine andere Provinz überschritt diesen Rahmen und setzte örtliche Mitwirkung voraus.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Damaskus war eine große Handelsstadt mit erheblicher jüdischer Bevölkerung und mehreren Synagogen. Die Straße mit dem Namen „die Gerade“ war die von Ost nach West verlaufende Hauptachse der römischen Stadtanlage und ist bis heute erkennbar.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Handauflegung war eine Geste der Segnung, der Heilung und der Beauftragung. Sie wurde vor Zeugen vollzogen und übertrug eine Aufgabe oder eine Gabe. Dass hier ein einfaches Gemeindeglied sie an dem Verfolger vollzieht, ist der eigentliche Bruch.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hē hodos',
+        rendered: 'dieses Weges',
+        note: 'Wörtlich „der Weg“ – ein Selbstname der frühen Bewegung, der in der Apostelgeschichte mehrfach begegnet. Er beschreibt eine Lebensform, nicht ein Lehrgebäude. Auch die Gemeinschaft von Qumran benutzte diesen Ausdruck für sich.',
+      },
+      {
+        word: 'griech. kentron',
+        rendered: 'wider den Stachel zu lecken',
+        note: 'Der Treibstachel für Zugtiere. Die Wendung ist ein griechisches Sprichwort, das sich bei mehreren antiken Dichtern findet, und stammt nicht aus der jüdischen Überlieferung – ein Hinweis auf die Sprachwelt des Verfassers.',
+      },
+      {
+        word: 'griech. skeuos eklogēs',
+        rendered: 'ein auserwähltes Rüstzeug',
+        note: 'Wörtlich ein Gefäß der Auswahl. Das Bild vom Menschen als Gefäß begegnet auch bei Paulus selbst. Es betont, dass der Beauftragte nicht wegen seiner Eignung gewählt wird, sondern für einen Inhalt bestimmt ist.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Augustinus liest die Szene als Musterfall der zuvorkommenden Gnade: Der Mensch wird ergriffen, bevor er sucht. Diese Deutung prägte seine Auseinandersetzung mit Pelagius und über sie die abendländische Gnadenlehre insgesamt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther findet hier die Umkehrung aller Verdienstlogik: Der Eifrigste wird nicht belohnt, sondern niedergeworfen. Calvin hebt zusätzlich hervor, dass die Beauftragung nicht unmittelbar bleibt, sondern über Ananias und die Gemeinde vermittelt wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Apostelgeschichte erzählt die Begebenheit dreimal mit Abweichungen in den Einzelheiten. Paulus selbst berichtet in seinen Briefen knapp und ohne die dramatischen Züge. Die Forschung sieht darin eine literarische Gestaltung des Lukas nach dem Muster antiker Berufungserzählungen.',
+      },
+      {
+        tradition: 'Neuere Paulusforschung',
+        text: 'Seit Krister Stendahl wird betont, dass Paulus nicht die Religion wechselt, sondern einen Auftrag erhält. Er versteht sich weiterhin als Jude und beschreibt seine Erfahrung mit der Sprache prophetischer Berufung – die Anklänge an Jeremia und Jesaja sind in seinen Briefen deutlich.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die Gleichsetzung in Vers 4 – wer die Anhänger verfolgt, verfolgt ihn selbst – hat eine Entsprechung in der Vorstellung, dass Gott mit den Bedrängten leidet. Die Auslegung weist darauf hin, dass die Frage nicht nach Motiven fragt, sondern eine Beziehung feststellt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'gal', chapter: 1, verse: 15, note: 'Paulus über seine Berufung mit anderen Worten' },
+      { book: '1kor', chapter: 15, verse: 8, note: 'Zuletzt ist er auch mir erschienen' },
+      { book: 'apg', chapter: 22, verse: 6, note: 'Die zweite Fassung derselben Erzählung' },
+    ],
+  },
 ];
 
 /**
