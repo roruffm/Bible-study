@@ -1342,6 +1342,126 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Jakobusbrief, meist 80–100 n. Chr.',
     epoch: 'urkirche',
   },
+  '1mo 2,4': {
+    events: 'Urgeschichte, außerhalb der historischen Zeitrechnung erzählt',
+    written: 'Ältere Erzählschicht, nach verbreiteter Annahme vorexilisch, in der vorliegenden Gestalt nachexilisch gerahmt',
+    epoch: 'vorgeschichte',
+  },
+  '1mo 4,3': {
+    events: 'Urgeschichte, außerhalb der historischen Zeitrechnung erzählt',
+    written: 'Alte Erzählüberlieferung, schriftlich gefasst wohl in der Königszeit',
+    epoch: 'vorgeschichte',
+  },
+  '1mo 9,8': {
+    events: 'Urgeschichte, außerhalb der historischen Zeitrechnung erzählt',
+    written: 'Priesterliche Schicht, meist ins 6. Jahrhundert v. Chr. gesetzt',
+    epoch: 'vorgeschichte',
+  },
+  '1mo 18,22': {
+    events: 'Erzelternzeit, im Rahmen der Erzählung in die Mittlere Bronzezeit gestellt',
+    written: 'Wohl späterer Einschub in die ältere Abrahamüberlieferung, exilisch-nachexilisch',
+    epoch: 'erzvaeter',
+  },
+  '1mo 32,22': {
+    events: 'Erzelternzeit, im Rahmen der Erzählung in die Mittlere Bronzezeit gestellt',
+    written: 'Alte Jakobüberlieferung aus dem Ostjordanland, schriftlich in der Königszeit',
+    epoch: 'erzvaeter',
+  },
+  '2mo 16,11': {
+    events: 'Wüstenzeit nach dem Auszug, üblicherweise ins 13. Jahrhundert v. Chr. gesetzt',
+    written: 'Priesterliche und ältere Überlieferung, zusammengefügt in exilisch-nachexilischer Zeit',
+    epoch: 'exodus',
+  },
+  '2mo 32,1': {
+    events: 'Wüstenzeit am Gottesberg, im Rahmen der Erzählung 13. Jahrhundert v. Chr.',
+    written: 'Mit Blick auf den Kult des Nordreichs geformt, in vorliegender Gestalt nachexilisch',
+    epoch: 'exodus',
+  },
+  '2mo 34,4': {
+    events: 'Bundeserneuerung am Gottesberg nach dem Bruch',
+    written: 'Alte Kultformel, in den Zusammenhang der Sinaierzählung eingebaut',
+    epoch: 'exodus',
+  },
+  '3mo 25,8': {
+    events: 'Als Sinaigesetzgebung erzählt',
+    written: 'Heiligkeitsgesetz, überwiegend in die Exils- und frühe Perserzeit gesetzt',
+    epoch: 'exodus',
+  },
+  '4mo 22,21': {
+    events: 'Aufenthalt in den Ebenen Moabs vor dem Einzug ins Westjordanland',
+    written: 'Ältere Überlieferung, die Episode mit der Eselin gilt vielen als eigener Einschub',
+    epoch: 'exodus',
+  },
+  '5mo 8,1': {
+    events: 'Als Abschiedsrede des Mose im Ostjordanland erzählt',
+    written: 'Kernbestand des Deuteronomiums, meist ins 7. Jahrhundert v. Chr. gesetzt',
+    epoch: 'exodus',
+  },
+  '5mo 15,7': {
+    events: 'Als Sozialgesetzgebung der Moserede erzählt',
+    written: 'Deuteronomisches Gesetz, Kernbestand im 7. Jahrhundert v. Chr.',
+    epoch: 'exodus',
+  },
+  'jos 2,8': {
+    events: 'Landnahmeerzählung, im Rahmen der Bibel um 1200 v. Chr.',
+    written: 'Deuteronomistische Bearbeitung älterer Ortsüberlieferung, 7.–6. Jahrhundert v. Chr.',
+    epoch: 'exodus',
+  },
+  'ri 7,2': {
+    events: 'Richterzeit, gewöhnlich ins 12.–11. Jahrhundert v. Chr. gesetzt',
+    written: 'Deuteronomistisches Richterbuch, älterer Erzählkern',
+    epoch: 'richter',
+  },
+  '1sam 1,9': {
+    events: 'Späte Richterzeit am Heiligtum von Silo, 11. Jahrhundert v. Chr.',
+    written: 'Ältere Samuelüberlieferung, deuteronomistisch gerahmt',
+    epoch: 'richter',
+  },
+  '1sam 15,17': {
+    events: 'Frühe Königszeit, um 1000 v. Chr.',
+    written: 'Deuteronomistische Samuelbücher, ältere Überlieferungen verarbeitet',
+    epoch: 'koenige',
+  },
+  '2sam 6,12': {
+    events: 'Frühe Königszeit, um 1000 v. Chr.',
+    written: 'Ältere Ladeerzählung, in die Daviderzählung eingearbeitet',
+    epoch: 'koenige',
+  },
+  '1koe 17,8': {
+    events: 'Königszeit im Nordreich unter Ahab, 9. Jahrhundert v. Chr.',
+    written: 'Nordisraelitischer Prophetenzyklus, in das Königsbuch aufgenommen',
+    epoch: 'koenige',
+  },
+  '2koe 2,9': {
+    events: 'Königszeit im Nordreich, 9. Jahrhundert v. Chr.',
+    written: 'Übergang zwischen Elia- und Elisazyklus, Nordreichüberlieferung',
+    epoch: 'koenige',
+  },
+  'neh 5,1': {
+    events: 'Persische Zeit in Jerusalem, um 445 v. Chr.',
+    written: 'Nehemia-Bericht, ältester Bestandteil des Buches',
+    epoch: 'perser',
+  },
+  'hi 28,12': {
+    events: 'Ohne historischen Ort, in der Zeit der Erzväter angesiedelt',
+    written: 'Selbständiges Weisheitsgedicht, in das Hiobbuch eingefügt',
+    epoch: 'exil',
+  },
+  'ps 24,1': {
+    events: 'Kultischer Gebrauch am Tempel in Jerusalem',
+    written: 'Vorexilischer Kern, im Psalter der Königszeit zugeordnet',
+    epoch: 'koenige',
+  },
+  'ps 130,1': {
+    events: 'Ohne benanntes Ereignis, für den Gebrauch der Pilger bestimmt',
+    written: 'Wallfahrtspsalter, überwiegend nachexilisch zusammengestellt',
+    epoch: 'exil',
+  },
+  'spr 31,10': {
+    events: 'Ohne historischen Anlass, Weisheitsdichtung',
+    written: 'Schlussgedicht des Sprüchebuchs, nachexilische Endgestalt',
+    epoch: 'perser',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
