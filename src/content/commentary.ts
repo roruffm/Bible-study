@@ -1288,6 +1288,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der berühmte Vers 28 ist sprachlich mehrdeutig. Möglich ist auch die Übersetzung „bei denen, die Gott lieben, wirkt Gott alles zum Guten“ – dann ist Gott das handelnde Subjekt, nicht „alle Dinge“. Diese Lesart vermeidet den Eindruck, jedes Ereignis sei an sich gut.\n\nWichtig ist, worauf der Satz folgt. Zwei Verse vorher steht, dass wir nicht wissen, was wir beten sollen, und dass der Geist mit „unaussprechlichem Seufzen“ für uns eintritt – der berühmte Vers steht also nicht am Ende einer Erfolgsbilanz, sondern nach dem Eingeständnis der Ratlosigkeit. Und er ist nicht der Schluss: Was folgt, ist eine Reihe von Fragen ohne Antwort – wer will verdammen, wer will scheiden? –, und die Aufzählung dessen, was nicht trennen kann, nennt ausdrücklich Trübsal, Verfolgung, Hunger und Schwert. Paulus rechnet damit, dass all das eintritt.',
     reception:
       'Der Vers ist ein Trostwort ersten Ranges – und ein Satz, mit dem viel Schaden angerichtet wurde. In der Seelsorge gilt es als Grundregel, ihn Trauernden nicht ungefragt zuzusprechen: Wer eben ein Kind verloren hat, hört „alles dient zum Besten“ als Verharmlosung. Dass er im Text gerade nicht erklärt, wozu ein Leid gut sei, sondern nur, wer daran festhält, wird beim Zitieren oft überhört.\n\nDie Verse 29 und 30 wurden zur Grundlage der Prädestinationslehre. Augustinus, Calvin und die Synode von Dordrecht 1619 leiteten daraus eine doppelte Vorherbestimmung ab; die lutherische Tradition wehrte sich dagegen, und die *Konkordienformel* von 1577 lehnte eine Erwählung zur Verdammnis ausdrücklich ab.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Adoption war im römischen Recht ein voll wirksamer Rechtsakt: Der Angenommene wechselte die Familie, erbte, trug den neuen Namen und verlor die alten Schulden. Kaiser bestimmten so ihre Nachfolger. Wenn Paulus im selben Kapitel von Kindschaft und Erbe spricht, greift er auf diese Rechtsfigur zurück.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Aufzählung dessen, was nicht scheiden kann, endet bei Trübsal, Verfolgung, Hunger, Blöße, Gefahr und Schwert – und zitiert dann Psalm 44 vom Schlachtschaf. Für eine Gemeinde in der Hauptstadt, wenige Jahre vor Neros Verfolgung, war das keine Rhetorik.',
+      },
+    ],
     terms: [
       {
         word: 'griech. synergei',
@@ -1447,6 +1457,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das griechische Wort für „Werk“ in Vers 10 ist poiema – davon kommt „Poesie“. Der Mensch erscheint als Gedicht Gottes, nicht als dessen Werkzeug. Grammatisch ist umstritten, worauf sich „das“ in „das nicht aus euch“ bezieht: auf den Glauben, auf die Rettung oder auf den ganzen Vorgang. Die griechische Form spricht eher für Letzteres. Der unmittelbare Zusammenhang zielt zudem nicht auf den Einzelnen, sondern auf die Gemeinde: Wenige Verse später geht es um die niedergerissene Trennmauer zwischen Juden und Nichtjuden.\n\nDer Abschnitt endet nicht bei Vers 9, sondern bei Vers 10 – und dort stehen die Werke wieder da, nur an anderer Stelle: nicht als Weg zum Heil, sondern als das, wozu Gerettete geschaffen sind. Griechisch heißt es sogar, Gott habe sie „zuvor bereitet, dass wir darin wandeln sollen“; die guten Werke warten schon. Wer nur die Verse 8 und 9 zitiert, macht aus einer Umstellung eine Streichung. Der Brief selbst zieht daraus keine Lehre, sondern eine Ordnung: erst empfangen, dann tun.',
     reception:
       'Diese Verse gehören zum Kernbestand der Reformation und stehen in Luthers Vorreden ebenso wie in unzähligen Gesangbuchliedern. Der Streit, den sie auslösten, wurde 1999 in der *Gemeinsamen Erklärung zur Rechtfertigungslehre* zwischen dem Lutherischen Weltbund und der katholischen Kirche zumindest teilweise beigelegt: Beide Seiten erklärten, dass der Mensch allein aus Gnade angenommen wird und die gegenseitigen Lehrverurteilungen des 16. Jahrhunderts den heutigen Partner nicht mehr treffen.\n\nDie Kehrseite ist ein Missbrauch, den schon Bonhoeffer benannt hat: „billige Gnade“ – Vergebung als Prinzip, das nichts kostet und nichts ändert. Die Verse 8 bis 10 zusammen zu lesen ist die exegetische Antwort darauf.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Gnade war ein Begriff aus dem Wohltäterwesen: Ein Reicher stiftete Bauten oder Getreide, die Stadt setzte ihm eine Ehreninschrift, und beide Seiten blieben verbunden. Jede Zuwendung erwartete eine Gegenleistung, und sei es Dankbarkeit in aller Öffentlichkeit. Eine Gnade ohne diese Erwartung sprengte die Form.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die „Zwischenwand“ wenige Verse später hatte ein Vorbild in Stein: Im Jerusalemer Tempel trennte eine Schranke den Vorhof der Heiden ab, mit Warntafeln, die Nichtjuden bei Todesstrafe das Weitergehen untersagten. Zwei davon sind gefunden worden. Der Brief spricht von einem Bauwerk, das seine Leser kannten.',
+      },
+    ],
     terms: [
       {
         word: 'griech. charis',
@@ -1491,6 +1511,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Aufbau beschreibt eine Bewegung nach unten und wieder nach oben: Entäußerung bis zum Kreuz, dann Erhöhung. Die Kreuzigung war die Hinrichtungsart für Sklaven und Aufrührer; dass ein Loblied ausgerechnet diesen Tod besingt, war kulturell ungeheuerlich. Die Schlusszeile überträgt eine Aussage aus Jesaja 45, die dort ausdrücklich Gott gilt, auf Christus.\n\nDer tiefste Punkt der Bewegung ist mit drei Worten markiert: „ja zum Tode am Kreuz“. Viele Forscher halten gerade diese drei Worte für einen Zusatz des Paulus zu einem übernommenen Lied – sie sprengen das Versmaß. Der Rahmen ist dabei nicht Dogmatik, sondern Streitschlichtung: In Philippi lag die Gemeinde über Kreuz, zwei Frauen werden in Kapitel 4 mit Namen zur Einigung aufgefordert. Der Hymnus steht als Argument in diesem Konflikt, eingeleitet mit „ein jeglicher sei gesinnt“ – gesungene Theologie mit einem sehr praktischen Zweck.',
     reception:
       'Der Hymnus lieferte den christologischen Konzilien ihre Sprache, und der Karfreitag lebt bis heute von seinen Bildern. Bemerkenswerter ist seine politische Wirkung: Die Schlussverse übertragen auf Christus, was in den Städten des Reiches dem Kaiser galt – dass sich ihm jedes Knie beuge und jede Zunge ihn als *Kyrios* bekenne. In Philippi, einer römischen Veteranenkolonie, war das keine fromme Floskel.\n\nDie Aufforderung zur Erniedrigung hat auch Schaden gestiftet: Sie wurde Untergebenen, Frauen und Kolonisierten als Pflicht zum Aushalten gepredigt. Feministische Theologie hat dagegen eingewandt, dass Selbstentleerung nur predigen kann, wer etwas zu entleeren hat – dem Machtlosen ist mit dem Ruf zur Demut nicht geholfen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Philippi war römische Veteranenkolonie: Die Bewohner besaßen das Bürgerrecht, lebten nach römischem Recht und waren stolz darauf. Der Kaiserkult war dort fest verankert. Ein Lied, das einem Hingerichteten den Kaisertitel zuspricht und jedes Knie beugen lässt, hatte an diesem Ort eine Schärfe wie sonst nirgends.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Sich zu erniedrigen war keine anerkannte Tugend, sondern eine Schande: Wer freiwillig Rang aufgab, galt als jemand, der ihn nicht halten konnte. Die antike Ethik empfahl, dem eigenen Stand gemäß zu leben. Der Hymnus lobt genau die Bewegung, die niemand loben wollte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Knechtsgestalt annehmen hieß rechtlich: aufhören, eine Person zu sein. Sklaven konnten nicht klagen, ihre Aussage war nur unter Folter gültig, ihr Körper stand zur Verfügung. Der Abstand zwischen Vers 6 und Vers 7 ist der zwischen dem Höchsten und dem, was gar keinen Stand hat.',
+      },
+    ],
     terms: [
       {
         word: 'griech. morphe',
@@ -1540,6 +1574,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Bemerkenswert ist der Schluss des Kapitels: Nach der langen Aufzählung heißt es, dass sie alle das Verheißene gerade **nicht** erlangt haben. Glaube wird hier also nicht am Erfolg gemessen. Die Beispielreihe wird zunehmend dunkler – am Ende stehen Menschen, die zersägt, gesteinigt und in Fellen umhergetrieben wurden. Der Verfasser ist unbekannt; schon Origenes schrieb im 3. Jahrhundert, das wisse „Gott allein“.\n\nWas auf den Satz folgt, sind keine Glaubenssätze, sondern Lebensläufe – Abel, Henoch, Noah, Abraham, Sara, Mose, Rahab –, und die Auswahl ist bemerkenswert weit: Rahab war eine Prostituierte, Sara hat im Erzählzusammenhang gelacht. Der Verfasser fasst sie alle unter ein einziges Wort: Sie waren „Fremdlinge und Gäste auf Erden“ und haben eine Heimat gesucht, die sie nicht erreicht haben. Auch die Reihenfolge ist bemerkenswert – der Katalog endet nicht mit dem Größten, sondern mit Namenlosen, die in Höhlen und Löchern der Erde umherirrten.',
     reception:
       'Kapitel 11 ist zum Musterkatalog des Glaubens geworden und prägt Predigt und Frömmigkeit bis heute – von mittelalterlichen Heiligenreihen bis zu modernen Vorbildersammlungen. Auffällig ist, wen es aufnimmt: Rahab, eine Prostituierte, und Sara, die im Erzählzusammenhang gelacht hat. Der Katalog ist deutlich weiter als die Frömmigkeit, die sich auf ihn beruft.\n\nIn der Auseinandersetzung mit dem Atheismus ist der Vers oft als Beleg dafür zitiert worden, Glaube sei Fürwahrhalten ohne Grund. Ausleger halten dagegen, dass *elenchos* ein Beweiswort ist und der Verfasser gerade nicht zum blinden Vertrauen aufruft, sondern auf eine Erfahrungsgeschichte verweist.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Kataloge berühmter Vorfahren waren eine feste Gattung: Jesus Sirach lobt die „berühmten Männer“, römische Redner zählten die Ahnen ihrer Stadt auf. Wer so schrieb, wollte Nachahmung wecken. Auffällig ist deshalb, wen dieser Katalog aufnimmt – eine Prostituierte, Betrüger, Gescheiterte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für „Zuversicht“ ist zugleich der juristische Ausdruck für den Grundbestand eines Vermögens oder eine hinterlegte Urkunde; das für „Nichtzweifeln“ stammt aus der Beweisführung. Der Satz ist in der Sprache des Gerichts und des Grundbuchs formuliert, nicht in der des Gefühls.',
+      },
+    ],
     terms: [
       {
         word: 'griech. hypostasis',
@@ -1583,6 +1627,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der scheinbare Widerspruch zu Paulus löst sich weitgehend auf, wenn man die Begriffe vergleicht. Paulus wendet sich gegen „Werke des Gesetzes“ als Bedingung der Zugehörigkeit; Jakobus meint mit „Werken“ die praktische Nächstenliebe als Folge des Glaubens. Luther hielt den Brief dennoch für minderwertig und nannte ihn eine „stroherne Epistel“ – ein Urteil, dem die spätere lutherische Theologie überwiegend nicht gefolgt ist.\n\nPaulus und Jakobus berufen sich auf denselben Vers – 1. Mose 15,6, „Abraham glaubte Gott“ – und ziehen entgegengesetzte Schlüsse. Der Unterschied liegt darin, welche Szene sie jeweils vor Augen haben: Paulus die Zusage an den kinderlosen Abram, Jakobus die Bindung Isaaks auf dem Berg. Jakobus stellt daneben ein zweites Beispiel, das in der Auslegung meist übergangen wird: Rahab, eine Prostituierte aus Jericho, die Kundschafter versteckt. Beide Beispiele sind Handlungen unter Risiko, nicht Beweise der Frömmigkeit.',
     reception:
       'Luther nannte den Jakobusbrief 1522 in seiner Vorrede eine „stroherne Epistel“ und stellte ihn im Anhang seines Neuen Testaments hinter die anderen Schriften – eine Wertung, die er später zurückhaltender formulierte, die aber in der lutherischen Tradition nachwirkte. Das Konzil von Trient antwortete 1546 mit der ausdrücklichen Bekräftigung des Briefes als vollgültiger Schrift.\n\nDie *Gemeinsame Erklärung zur Rechtfertigungslehre* von 1999 hat den Streit entschärft, ohne ihn aufzulösen: Beide Seiten halten fest, dass der Glaube die Werke wirkt und die Werke ihn nicht ersetzen. In der Diakonie und in der christlichen Sozialarbeit ist Jakobus 2 der meistzitierte Begründungstext geblieben.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Beispiel zwei Verse vorher ist konkret: jemand ohne Kleidung und ohne tägliche Nahrung, dem man Gutes wünscht und nichts gibt. In einer Gemeinde, die sich in Privathäusern traf, saßen solche Leute mit im Raum – der Vorwurf ist an Anwesende gerichtet.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der Abschnitt davor beschreibt, wie ein Mann mit goldenem Ring und feinem Kleid einen guten Platz bekommt und ein Armer stehen darf. Der Ring war Standeszeichen der römischen Ritter. Die Gemeinde übernahm damit die Sitzordnung der Umwelt – und genau daran hängt das Kapitel.',
+      },
+    ],
     terms: [
       {
         word: 'griech. erga',
@@ -1627,6 +1681,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz „Gott ist Liebe“ steht zweimal – und beide Male nicht als Definition am Anfang, sondern als Schlussfolgerung aus dem, was Gott getan hat. Das griechische agape war vor dem Neuen Testament ein eher farbloses Wort; erst hier bekommt es sein Gewicht. Der Umkehrschluss wird ausdrücklich abgewehrt: Nicht „Liebe ist Gott“, sondern Gott zeigt sich als der, der zuerst liebt. Der Brief argumentiert dabei bewusst greifbar: Der unsichtbare Gott und der sichtbare Bruder lassen sich nicht gegeneinander ausspielen.\n\nDer Brief zieht eine Grenze, die selten mitzitiert wird: Wer behauptet, Gott zu lieben, und seinen Bruder hasst, heißt in Vers 20 schlicht ein Lügner. Das Wort ist hart, und es steht in einem Schreiben, aus dem Menschen weggegangen sind – Kapitel 2 spricht von solchen, die „von uns ausgegangen“ sind. Ebenso bemerkenswert ist Vers 18: „Furcht ist nicht in der Liebe.“ Der Satz richtet sich gegen eine Frömmigkeit, die vom Angstmachen lebt, und ist in der Seelsorge oft der wichtigere des ganzen Abschnitts.',
     reception:
       'Der Satz „Gott ist Liebe“ ist wohl die meistzitierte Kurzformel des Christentums und steht über Kirchentüren, in Traureden und auf Grabsteinen. Benedikt XVI. machte ihn 2005 zum Titel seiner ersten Enzyklika *Deus caritas est* und verband darin die griechischen Wörter *eros* und *agape* ausdrücklich miteinander.\n\nDie Verkürzung liegt nahe: Der Satz lässt sich so lesen, als sei Liebe ein anderes Wort für Gott – und damit alles gemeint, was Menschen so nennen. Der Brief selbst geht den umgekehrten Weg; er bestimmt, was Liebe ist, von einem bestimmten Ereignis her, nicht von der Erfahrung.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Gemeinden versammelten sich in Privathäusern; ein größerer Raum fasste dreißig bis fünfzig Personen. Wer sich zerstritt, konnte nicht in eine andere Reihe ausweichen. Der Brief schreibt in eine Lage, in der ein Teil der Gruppe bereits weggegangen ist – Kapitel 2 sagt es ausdrücklich.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Bestritten wurde offenbar, dass Christus „im Fleisch“ gekommen sei. Für griechisch geprägtes Denken lag es nahe, das Göttliche vom vergänglichen Leib fernzuhalten. Der Brief macht daraus den Prüfstein – und verbindet ihn unmittelbar mit der Frage, ob jemand seinen Bruder liebt.',
+      },
+    ],
     terms: [
       {
         word: 'griech. hilasmos',
@@ -1670,6 +1734,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Sprache ist bewusst aus dem Alten Testament gespeist, besonders aus Jesaja 65. Auffällig ist die Richtung: Nicht die Menschen steigen auf, sondern Gott zieht ein – „die Hütte Gottes bei den Menschen“. Dass „das Meer nicht mehr ist“, meint nicht das Verschwinden von Ozeanen, sondern das Ende der Chaosmacht, die im Alten Orient für Bedrohung stand.\n\nDie Stadt, die dann beschrieben wird, hat eine auffällige Leerstelle: „einen Tempel sah ich nicht darin“ – in einem Buch, das im Tempelbild denkt, ist das eine Ansage. Ebenso die Tore: Sie stehen offen und werden nie geschlossen, obwohl eine antike Stadt sich gerade durch ihre Mauern definierte. Und die Maße sind absichtlich unmöglich: Länge, Breite und Höhe sind gleich, zwölftausend Stadien – ein Würfel von rund 2200 Kilometern Kantenlänge. Wer hier eine Bauzeichnung sucht, verfehlt die Gattung.',
     reception:
       'Die Deutung dieses Kapitels trennt bis heute christliche Strömungen. Die kirchliche Hauptlinie seit Augustinus liest es als Bild für die vollendete Gemeinschaft mit Gott, nicht als Fahrplan. Der Dispensationalismus des 19. Jahrhunderts – über die Scofield-Bibel weit verbreitet – ordnete es dagegen in eine feste Abfolge künftiger Ereignisse ein, mit erheblichen politischen Folgen bis in die Nahostpolitik hinein.\n\nDaneben steht eine schöpfungstheologische Wirkung: Weil der Text von einer neuen Erde spricht und nicht von deren Abschaffung, ist er in den letzten Jahrzehnten zu einem Kerntext kirchlicher Umweltarbeit geworden. Wer die Erde für Ausschussware hält, so das Argument, liest hier gegen den Wortlaut.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die Offenbarung entsteht in einer Zeit, in der der Kaiserkult in Kleinasien fest verankert war: Ephesus, Pergamon und Smyrna hatten Kaisertempel, und Teilnahme an Festen und Opfern gehörte zum Stadtleben. Wer sich entzog, verlor Aufträge, Vereinszugehörigkeit und Schutz.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Eine antike Stadt war durch ihre Mauer definiert; die Tore wurden bei Sonnenuntergang geschlossen, und wer draußen blieb, war den Gefahren überlassen. Dass die Tore der Stadt am Ende nie geschlossen werden, kehrt ihre Bauweise gegen ihren Zweck – Schutz ohne Ausschluss.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Meer war Verkehrsweg und Bedrohung zugleich: Handel und Reichtum kamen über See, ebenso Stürme, Piraten und die Flotten der Großmacht. In Kapitel 13 steigt das Tier daraus auf, in Kapitel 18 trauern die Seefahrer um Babylon. Dass es „nicht mehr ist“, betrifft beides.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kainos',
@@ -3176,6 +3254,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Aufzählung der Zeugen ist bemerkenswert: über fünfhundert auf einmal, „von denen die meisten noch leben“ – eine Einladung zur Nachfrage. Auffällig ist zugleich, dass die Frauen am Grab, die alle vier Evangelien nennen, in dieser Liste fehlen; ihr Zeugnis galt vor Gericht nichts. Paulus setzt sich selbst ans Ende, als „unzeitige Geburt“.\n\nDie Formel ist an ihrem Aufbau erkennbar: viermal „dass“, parallel gebaut, mit zwei Ereignissen – gestorben, begraben – und zwei Bestätigungen – auferstanden, gesehen worden. Zweimal steht „nach der Schrift“, ohne dass eine Stelle genannt wird. Und sie enthält Wörter, die Paulus sonst nicht gebraucht, sowie den aramäischen Namen Kephas statt Petrus. Genau daran erkennt die Forschung, dass er hier zitiert: Der Text ist älter als der Brief und führt näher an die ersten Jahre heran als jeder andere.',
     reception:
       'Weil Paulus schreibt, viele der fünfhundert lebten noch, ist der Abschnitt in der Apologetik zum Beweisstück geworden: Man könne ja nachfragen. Historiker halten dagegen, dass eine solche Aufforderung an Leser in Korinth praktisch nicht einlösbar war und dass die Formel ein Bekenntnis ist, kein Protokoll.\n\nUnbestritten ist ihr Alter. Die meisten Forscher datieren sie in die 30er Jahre, also in die ersten Jahre nach dem Tod Jesu – auch solche, die die Auferstehung nicht für ein historisches Ereignis halten. Damit ist sicher, dass die Überzeugung nicht über Jahrzehnte gewachsen ist, sondern von Anfang an dastand. Wie sie entstand, bleibt die eigentliche Streitfrage.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Überliefertes wurde mündlich weitergegeben und wörtlich gelernt; Schreiben war teuer und Lesen selten. Die Fachwörter für „empfangen“ und „weitergeben“ entsprechen den hebräischen Ausdrücken der rabbinischen Lehrkette. Paulus beruft sich damit auf ein Verfahren, das jeder Hörer kannte.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Griechische Bildung kannte die Unsterblichkeit der Seele, nicht die Auferstehung des Leibes – für viele Korinther war ein wiederbelebter Körper eher Rückschritt als Hoffnung. Deshalb ist das Kapitel so lang: Es antwortet nicht auf Zweifel an einem Ereignis, sondern auf eine andere Vorstellung vom Menschen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Vor Gericht zählten Zeugen, und Frauen waren als Zeuginnen in vielen Verfahren nicht zugelassen. Eine Formel, die überzeugen sollte, nannte deshalb Männer und ihre Zahl. Dass die Evangelien die Frauen am Grab trotzdem überliefern, gilt umgekehrt als Argument für das Alter dieser Berichte.',
+      },
+    ],
     terms: [
       {
         word: 'griech. paredoka / parelabon',
@@ -3220,6 +3312,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Abschnitt steht in einer Auseinandersetzung mit Gegnern, die sich auf Erfahrungen und Erfolge beriefen. Paulus antwortet mit einer „Narrenrede“: Er zählt auf, worauf er sich berufen könnte, und stellt dann ausgerechnet seine Schwäche in die Mitte. Dass er von der Entrückung in der dritten Person spricht, gehört zu dieser Zurückhaltung.\n\nDie Antwort, die Paulus zitiert, steht im Perfekt: „er hat zu mir gesagt“ – ein für allemal, nicht als Trost von Fall zu Fall. Und sie beantwortet die Bitte nicht, sondern verschiebt sie: Der Pfahl bleibt. Auffällig ist auch die Zuschreibung – der Pfahl heißt „des Satans Engel“ und ist zugleich „gegeben“, also von Gott zugelassen. Der Text löst diese Spannung nicht auf. Was aus einem Menschen wird, der dreimal vergeblich bittet, erzählt er in einem einzigen Satz: „darum bin ich gutes Muts in Schwachheiten“.',
     reception:
       'Der Satz von der Kraft, die in den Schwachen mächtig ist, gehört zu den meistgesprochenen in der Krankenseelsorge und bei Beerdigungen. Er hat auch eine schädliche Verwendung: Wo Leiden als Mittel der Erziehung ausgegeben wird, bekommen Kranke die Verantwortung für ihren Zustand zugewiesen. Der Text selbst sagt weder, wozu der Pfahl gut ist, noch dass Paulus ihn behalten wollte – er hat dreimal um sein Ende gebeten.\n\nWorum es sich handelte, ist seit der Alten Kirche geraten worden: Augenleiden, Malaria, Epilepsie, Anfechtungen, Gegner. Luther las den Pfahl als geistliche Anfechtung, moderne Ausleger meist als körperliches Leiden. Der Text lässt es offen, und diese Offenheit ist wohl der Grund, warum sich so viele darin wiederfinden.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Selbstlob war eine geregelte Kunst: Antike Redelehrer erklärten, wie man sich rühmt, ohne anstößig zu wirken. Paulus übernimmt die Form der Prahlrede und füllt sie mit Schlägen, Schiffbrüchen und Fluchten – ein Verfahren, das nur funktioniert, wenn das Publikum die Gattung kennt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Himmelsreisen gehörten zur religiösen Literatur der Zeit: Das Henochbuch und andere Texte schildern Aufstiege durch mehrere Himmel mit Führung und Unterweisung. Wer damit auftrat, beanspruchte Autorität. Paulus erzählt seine in der dritten Person und bricht sie ab.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ärztliche Hilfe bestand aus Diät, Bädern, Kräutern und Amuletten; chronische Beschwerden blieben. Wer dreimal um Heilung bat, hatte alles getan, was man tun konnte – und musste danach mit dem Leiden leben. Das war der Normalfall, nicht die Ausnahme.',
+      },
+    ],
     terms: [
       {
         word: 'griech. skolops',
@@ -4921,6 +5027,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text nennt ausdrücklich „Throne, Herrschaften, Fürstentümer, Obrigkeiten“ – Bezeichnungen für Mächte, die man als eigenständige Größen fürchtete. Sie werden nicht bestritten, sondern eingeordnet. Der Schluss ist bemerkenswert weit gefasst: versöhnt wird „alles“, was auf Erden und im Himmel ist.\n\nDer Hymnus ist in zwei Strophen gebaut, die parallel laufen: Die erste handelt von der Schöpfung, die zweite von der Versöhnung, und beide beginnen mit „er ist“ und enthalten das Wort „Erstgeborener“. Das Wort meint dabei keinen Zeitpunkt, sondern einen Rang – im Alten Testament heißt auch der König „Erstgeborener“, obwohl er es der Geburt nach nicht ist. Auffällig ist zudem, wo die Gemeinde vorkommt: Sie steht nicht am Anfang, sondern in Vers 18 als Leib, dessen Haupt Christus ist – nach der Schöpfung und vor der Versöhnung. Ein Teil der Forschung hält gerade die Worte „nämlich der Gemeinde“ für einen Einschub des Briefschreibers in ein älteres Lied, das ursprünglich vom Kosmos sprach.',
     reception:
       'Der Hymnus hat den christologischen Streitigkeiten ihre Begriffe geliefert und steht bis heute in den Stundengebeten der katholischen und anglikanischen Kirche. Seit den 1980er Jahren ist er zusätzlich zu einem Kerntext der Schöpfungstheologie geworden: Weil er die Versöhnung ausdrücklich auf „alles“ bezieht, wird er in kirchlichen Umwelterklärungen regelmäßig zitiert.\n\nStrittig ist genau diese Reichweite. Die einen lesen daraus eine Wiederbringung aller Dinge, wie sie Origenes vertrat und wie sie später verurteilt wurde; die anderen halten dagegen, der Text spreche von einer Befriedung der Mächte, nicht von einer Erlösung aller Einzelnen. Der Streit ist so alt wie der Text.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Throne, Herrschaften, Fürstentümer und Obrigkeiten waren für antike Leser keine Metaphern: Man rechnete mit Zwischenmächten zwischen Gott und Welt – Gestirnsmächte, Schicksalskräfte, Dämonen –, die das Leben bestimmten und die man mit Amuletten und Ritualen zu beeinflussen suchte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Kolossä lag im Lykostal in Phrygien, einer Gegend mit alten Kulten und einer jüdischen Gemeinde, die seit der Ansiedlung durch die Seleukiden dort lebte. Der Brief warnt vor Engelverehrung, Speiseregeln und Kalenderfragen – die Mischung, die in einer solchen Kleinstadt naheliegt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Städte des Lykostals lebten von Wolle und Färberei; Laodizea war für schwarze Textilien bekannt, Kolossä gab einer Wollfarbe den Namen. Erdbeben zerstörten die Region im Jahr 60 – Kolossä erholte sich davon nicht mehr und verschwand allmählich.',
+      },
+    ],
     terms: [
       {
         word: 'griech. eikon',
@@ -5028,6 +5148,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Stadt war für drei Dinge bekannt: Bankwesen, schwarze Wolltextilien und eine Augensalbe. Genau darauf zielt der Text – Gold, weiße Kleider und Augensalbe werden angeboten. Nach einem Erdbeben im Jahr 60 n. Chr. lehnte Laodizea römische Hilfsgelder ab und baute aus eigener Kraft wieder auf; „ich bin reich und bedarf nichts“ trifft ein reales Selbstbild.\n\nDer Brief ist der letzte der sieben und der einzige, der kein einziges Lob enthält. Auffällig ist auch, was am Schluss steht: Nach der schärfsten Zurechtweisung des ganzen Buches folgt das Bild vom Klopfen an der Tür – und es ist eine Tür, die nur von innen geöffnet werden kann. Das Mahl, von dem dann die Rede ist, meint die Hauptmahlzeit am Abend, also nicht ein Vorbeikommen, sondern Bleiben. Zurechtweisung und Einladung stehen unmittelbar nebeneinander.',
     reception:
       'Das Bild vom Klopfen an der Tür ist durch William Holman Hunts Gemälde *The Light of the World* von 1853 weltbekannt geworden; Reproduktionen hingen im 19. Jahrhundert in unzähligen Häusern, und die Deutung auf die persönliche Bekehrung stammt weitgehend aus dieser Zeit. Im Text ist der Satz an eine Gemeinde gerichtet, nicht an einen Einzelnen.\n\n„Lauwarm“ ist als Vorwurf in die Alltagssprache eingegangen und wird in Gemeinden regelmäßig für mangelnden Eifer verwendet. Wer die Wasserversorgung von Laodizea kennt, liest anders: Der Vorwurf lautet nicht Halbherzigkeit, sondern Nutzlosigkeit – und er trifft eine Stadt, die sich für unabhängig hielt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Laodizea war Bankenplatz, Textilstadt und für eine Augensalbe bekannt. Nach dem Erdbeben von 60 lehnte die Stadt römische Wiederaufbauhilfe ab und baute aus eigenen Mitteln – Tacitus vermerkt es anerkennend. „Ich bin reich und bedarf nichts“ ist deshalb kein Vorwurf, sondern ein Zitat.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Reste der Fernleitung sind bis heute sichtbar, innen dick verkrustet von Kalk. Wasser war für die Stadt der wunde Punkt: Sie lag verkehrsgünstig im Tal, aber ohne eigene Quelle – bei einer Belagerung wäre sie in Tagen am Ende gewesen. Ihr Wohlstand stand auf einer Leitung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. chliaros',
@@ -5520,6 +5650,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text gehört zum ältesten erhaltenen christlichen Schrifttum. Die Bildsprache – Posaune, Wolken, Entgegenkommen – stammt aus dem Zeremoniell eines Herrscherbesuchs: Die Bürger gingen dem Ankommenden vor die Stadt entgegen und geleiteten ihn herein. Von einem Fortgeholtwerden von der Erde ist im Bild gerade nicht die Rede.\n\nDer Brief ist wahrscheinlich die älteste Schrift des Neuen Testaments, um 50 nach Christus entstanden – älter als jedes Evangelium. Die Sorge, die er beantwortet, war neu: Man hatte damit gerechnet, das Kommende selbst zu erleben, und nun waren Gemeindeglieder gestorben. Paulus verbietet die Trauer nicht; er sagt nur, sie solle nicht sein wie die derer, „die keine Hoffnung haben“. Und er beantwortet die Frage nicht mit einer Zeitangabe: Wenige Verse später steht ausdrücklich, dass der Tag kommt wie ein Dieb in der Nacht.',
     reception:
       'Aus diesen Versen ist im 19. Jahrhundert die Lehre von der Entrückung gewachsen: John Nelson Darby verband sie mit Daniel und der Offenbarung zu einer festen Abfolge künftiger Ereignisse, und die Scofield-Bibel von 1909 machte sie in Nordamerika populär. Die Romanreihe *Left Behind* verkaufte sich ab 1995 über sechzig Millionen Mal.\n\nDie großen Kirchen haben diese Deutung nie übernommen. Ihr Haupteinwand ist sprachlich: Das Wort für „entgegen“ beschreibt in der Antike den Empfang eines Ankommenden vor der Stadt – die Empfangenden bleiben nicht draußen, sondern kehren mit ihm zurück. Damit fällt die Vorstellung eines Fortgeholtwerdens weg.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Trauer war laut und öffentlich: Klagefrauen wurden bezahlt, Kleider zerrissen, Asche gestreut. Grabinschriften der Zeit sprechen oft nüchtern vom Ende – „ich war nicht, ich war, ich bin nicht, es kümmert mich nicht“ ist eine verbreitete Formel. Das ist die Trauer „ohne Hoffnung“, von der der Brief spricht.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Das Wort für das Entgegenkommen bezeichnete den festlichen Empfang eines Herrschers vor den Toren: Die Bürger zogen hinaus, begrüßten ihn und geleiteten ihn in die Stadt. Wer das Bild kannte, verstand die Bewegungsrichtung – man holt jemanden ab und kehrt mit ihm zurück.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Thessalonich war Hafen- und Verwaltungsstadt an der Via Egnatia, der Ost-West-Achse des Reiches. Paulus arbeitete dort nach eigener Angabe Tag und Nacht, um niemandem zur Last zu fallen – vermutlich als Zeltmacher, also im Leder- und Segeltuchhandwerk einer Hafenstadt.',
+      },
+    ],
     terms: [
       {
         word: 'griech. koimomenon',
@@ -5563,6 +5707,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das griechische Wort für die Betreffenden bedeutet wörtlich „ungeordnet“ und stammt aus der Militärsprache: jemand, der aus der Reihe tritt. Paulus verweist auf sein eigenes Beispiel – er habe Tag und Nacht gearbeitet, um niemandem zur Last zu fallen. Als Zeltmacher übte er ein Handwerk aus, was in der griechischen Oberschicht als unter der Würde eines Lehrers galt. Der Abschnitt schließt mit der Mahnung, den Betreffenden nicht als Feind zu behandeln, sondern als Bruder zurechtzuweisen.',
     reception:
       'Der Satz „wer nicht arbeiten will, soll auch nicht essen“ ist einer der folgenreichsten der Bibel – und wurde vor allem außerhalb der Kirche wirksam. Lenin machte ihn zum Grundsatz des Sowjetstaats; er stand in der Verfassung von 1936 und in der DDR-Verfassung von 1968. In der Sozialstaatsdebatte wird er bis heute gegen Leistungsempfänger angeführt.\n\nDer Text meint anderes. Er richtet sich an Gemeindeglieder, die vermutlich wegen der erwarteten Wiederkunft ihre Arbeit niedergelegt hatten und sich von der Gemeinde versorgen ließen; das Wort im Griechischen ist „nicht arbeiten *will*“. Wer nicht kann, ist ausdrücklich nicht gemeint – der Abschnitt endet mit der Mahnung, den Betroffenen nicht als Feind zu behandeln.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer in einer griechischen Stadt nicht arbeitete, lebte oft als Klient von einem Gönner: Man erschien morgens zur Aufwartung, erhielt ein Essen oder etwas Geld und war dafür zu Gefolgschaft verpflichtet. Das war eine anerkannte Lebensform – und genau die, die der Brief in der Gemeinde nicht will.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Handarbeit galt in gebildeten Kreisen als unwürdig; Cicero zählt Handwerk zu den unfreien Beschäftigungen. Dass Paulus auf sein eigenes Arbeiten verweist, ist deshalb ein Argument gegen den Zeitgeschmack – und ein Hinweis darauf, dass die Gemeinde aus Leuten bestand, die davon lebten.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ataktos',
@@ -5602,6 +5756,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das entscheidende griechische Wort authentein kommt im ganzen Neuen Testament nur hier vor; seine Bedeutung reicht von „Autorität ausüben“ bis „sich anmaßen“ und ist deshalb umstritten. Der Schlusssatz über das Gerettetwerden durch Kindergebären gehört zu den schwierigsten des Neuen Testaments; keine der vorgeschlagenen Deutungen hat sich durchgesetzt. Zugleich nennt Paulus in Römer 16 eine Diakonin Phöbe, die Apostelin Junia und mehrere Mitarbeiterinnen.\n\nDer Abschnitt steht in einem Brief, dessen Verfasserschaft zu den umstrittensten Fragen der neutestamentlichen Forschung gehört. Wortschatz, Stil und die vorausgesetzte Gemeindeordnung mit festen Ämtern unterscheiden sich deutlich von den unbestrittenen Paulusbriefen; die Mehrheit der Forschung datiert die Pastoralbriefe deshalb ins späte 1. oder frühe 2. Jahrhundert. Das entscheidet die Sachfrage nicht, verschiebt aber ihren Rahmen: Der Text wäre dann Zeugnis einer Gemeinde, die sich gegenüber ihrer Umwelt ordnet – und nicht das letzte Wort des Apostels, der Junia eine Apostelin nennt.',
     reception:
       'Der Abschnitt ist bis heute das Hauptargument gegen die Ordination von Frauen. Er stand im Zentrum der Auseinandersetzungen, die in den evangelischen Landeskirchen zwischen 1958 und 1991 mit der vollen Gleichstellung endeten, und er prägt die Position der römisch-katholischen und der orthodoxen Kirchen sowie eines Teils der evangelikalen Gemeinden.\n\nAuf der anderen Seite steht der Befund des übrigen Neuen Testaments: Phöbe ist Diakonin, Priska lehrt, Junia heißt Apostelin, und in 1. Korinther 11 wird selbstverständlich vorausgesetzt, dass Frauen im Gottesdienst beten und prophetisch reden. Wie beides zusammengeht, ist die eigentliche Streitfrage – nicht, was hier steht.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Anweisungen zu Kleidung, Haartracht und Schmuck greifen ein bekanntes Thema auf: Moralisten der Zeit – Juvenal, Plutarch, Seneca – schrieben ganze Abschnitte gegen aufwendige Frisuren und Goldschmuck als Zeichen von Sittenverfall. Der Brief bewegt sich in dieser Zeitkritik, nicht außerhalb.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Eine junge Gruppe ohne Rechtsstatus stand unter Beobachtung: Man verdächtigte sie der Umsturzabsicht, der Auflösung von Familien, geheimer Riten. Ein großer Teil der Pastoralbriefe zielt darauf, nach außen unauffällig zu wirken – Kapitel 3 verlangt ausdrücklich ein gutes Zeugnis von denen, die draußen sind.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'In Ephesus, wohin der Brief weist, stand der Artemistempel, eines der Weltwunder, mit Priesterinnen und einem Kult, in dem Frauen eine herausgehobene Rolle spielten. Ein Teil der Auslegung liest die Anweisungen als Abgrenzung gegen dieses Umfeld – belegen lässt sich der Zusammenhang nicht.',
+      },
+    ],
     terms: [
       {
         word: 'griech. authentein',
@@ -5692,6 +5860,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das griechische Wort philanthropia, das Luther mit „Leutseligkeit“ übersetzt, heißt wörtlich „Menschenfreundlichkeit“ und war ein geläufiger Herrschertitel: So rühmte man hellenistische Könige und römische Kaiser. Der Brief überträgt den Titel auf Gott. Auffällig ist auch die Formulierung über die Vergangenheit – „auch wir waren einst“ –, die jede Überheblichkeit gegenüber Außenstehenden von vornherein ausschließt. Kreta hatte in der Antike einen schlechten Ruf, den der Brief an anderer Stelle sogar zitiert.',
     reception:
       'Der Abschnitt ist einer der klassischen Tauftexte und steht in zahlreichen Taufagenden; über die Formel vom „Bad der Wiedergeburt“ ist er in die Sakramentenlehre eingegangen. In der Reformationszeit wurde er als Beleg gegen jede Vorleistung des Menschen angeführt – „nicht um der Werke willen der Gerechtigkeit, die wir getan hatten“.\n\nBemerkenswert ist die Reihenfolge, mit der der Abschnitt beginnt: Erst die Erinnerung daran, was man selbst war, dann die Zuwendung Gottes, dann die Anweisung, niemanden zu schmähen. Die Ethik wird aus der eigenen Vorgeschichte begründet, nicht aus einer Überlegenheit.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Kreta hatte einen schlechten Ruf, und der Brief zitiert ihn in Kapitel 1 sogar mit einem Dichterwort. Solche Vorurteile über ganze Bevölkerungen waren geläufig und wurden in der Rhetorik gepflegt. Der Abschnitt setzt dagegen die Erinnerung an die eigene Vergangenheit – „auch wir waren einst“.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Waschungen und Einweihungsbäder kannten die Mysterienkulte ebenfalls; wer in die Isis- oder Mithrasmysterien aufgenommen wurde, durchlief Reinigungsriten. Vom „Bad der Wiedergeburt“ zu sprechen griff eine Vorstellung auf, die in der Umwelt verbreitet war, und füllte sie neu.',
+      },
+    ],
     terms: [
       {
         word: 'griech. philanthropia',
@@ -5731,6 +5909,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das griechische Wort apologia stammt aus der Gerichtssprache: die Verteidigungsrede eines Angeklagten. Von einer Missionsoffensive ist also nicht die Rede, sondern von der Fähigkeit, auf Nachfrage Auskunft zu geben. Der Zusatz über die Art und Weise ist Teil des Auftrags, nicht Beiwerk.',
     reception:
       'Der Vers ist der Gründungstext der christlichen Apologetik und stand über den Titeln zahlloser Verteidigungsschriften, von Justin dem Märtyrer bis zur Gegenwart. In evangelikalen Kreisen ist er das Leitwort ganzer Ausbildungsprogramme.\n\nWas dabei meist wegfällt, ist die zweite Hälfte: „mit Sanftmut und Ehrfurcht“. Der Brief geht an Gemeinden unter Druck und beschreibt eine Verteidigung, die nicht auf Überlegenheit zielt – gefragt wird nach der Hoffnung, nicht nach Argumenten, und die Antwort soll den Fragenden nicht beschämen.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Statthalter Plinius berichtet um 112 aus Bithynien – einer der angeschriebenen Provinzen –, wie er Christen verhörte: dreimalige Befragung, Opfer vor dem Kaiserbild als Prüfstein, Hinrichtung bei Beharren. Die „Rechenschaft“, von der der Brief spricht, konnte genau so aussehen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Verdächtigt wurde die Gruppe wegen ihrer Absonderung: Wer nicht an Opfermahlzeiten, Festen und Vereinsfeiern teilnahm, galt als menschenfeindlich. Tacitus nennt genau diesen Vorwurf. Die Aufforderung, mit Sanftmut zu antworten, zielt auf diese Alltagslage, nicht auf ein Streitgespräch.',
+      },
+    ],
     terms: [
       {
         word: 'griech. apologia',
@@ -8103,6 +8291,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der zweite Korintherbrief ist der persönlichste Text des Paulus. Er verteidigt sich gegen Gegner, die offenbar mit Rednergabe und Beglaubigungsschreiben auftraten. Seine Antwort dreht den Maßstab um: Gerade die Schwäche sei der Beweis. Die vier Gegensatzpaare in Vers 8–9 sind rhetorisch sorgfältig gebaut – jedes Mal wird ein Zugeständnis gemacht und sofort begrenzt. Die Bildwelt der Tongefäße passt zur Erfahrung eines Handwerkers, der seinen Lebensunterhalt selbst verdiente.',
     reception:
       'Das Bild vom Schatz im irdenen Gefäß ist eines der meistzitierten der Bibel und trägt Buchtitel, Gemeindeprogramme und Predigten über Schwachheit. In der Ökumene ist es zu einer Formel für die Kirche selbst geworden: Der Auftrag ist größer als die Trägerin.\n\nBemerkenswert ist der Zusammenhang. Paulus schreibt an eine Gemeinde, in der ihm seine unscheinbare Erscheinung vorgehalten wurde – „seine leibliche Gegenwart ist schwach und seine Rede verächtlich“, zitiert er die Gegner zwei Kapitel später. Das Bild ist eine Antwort auf einen persönlichen Vorwurf.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Tongefäße waren billige Massenware: gebrannt, unglasiert, für Öl, Korn und Schriftrollen, und bei Bruch weggeworfen. Genau in solchen Krügen haben die Rollen vom Toten Meer zweitausend Jahre überdauert. Der Vergleich nimmt den wertlosesten Gegenstand des Haushalts.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Paulus verteidigt sich gegen Gegner, die ihm seine Erscheinung vorhielten: schwache Gegenwart, verächtliche Rede, so zitiert er sie in Kapitel 10. In einer Kultur, die Redekunst und Auftreten als Beweis der Wahrheit nahm, war das ein ernsthafter Einwand – und das Bild vom Tongefäß ist die Antwort darauf.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ostrakinois skeuesin',
@@ -8199,6 +8397,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Streitpunkt war die Tischgemeinschaft: In Antiochia aßen Juden- und Heidenchristen zusammen, bis Abgesandte aus Jerusalem kamen und Petrus sich zurückzog. Für Paulus stand damit die Sache selbst auf dem Spiel, nicht eine Frage der Ordnung. Wie der Streit ausging, sagt der Text nicht – ein beredtes Schweigen, das viele so deuten, dass Paulus sich in Antiochia nicht durchsetzte. Die Apostelgeschichte erwähnt den Vorfall überhaupt nicht.\n\nDer Bericht ist Teil einer Beweisführung, nicht ein neutraler Rückblick: Paulus erzählt ihn, um zu zeigen, dass sein Evangelium nicht von Jerusalem abhängt. Deshalb ist er einseitig, und deshalb fehlt der Ausgang. Auffällig ist auch, wie er Petrus’ Verhalten nennt – die anderen hätten mit ihm „geheuchelt“, wörtlich: Theater gespielt. Er wirft ihm nicht eine andere Überzeugung vor, sondern dass er gegen seine eigene handelt. Der Vorwurf trifft dabei nicht nur Petrus, sondern auch Barnabas, mit dem Paulus die erste Missionsreise gemacht hatte.',
     reception:
       'Der Streit zweier Apostel war der Alten Kirche unangenehm. Hieronymus deutete ihn als abgesprochenes Schauspiel zur Belehrung der Gemeinde; Augustinus widersprach ihm scharf – wenn Paulus hier täusche, sei kein Satz der Schrift mehr verlässlich. Der Briefwechsel der beiden gehört zu den frühesten Debatten über die Wahrhaftigkeit biblischer Texte.\n\nIn der Reformation wurde der Abschnitt zum Beleg dafür, dass auch Petrus irren konnte – und damit gegen den päpstlichen Anspruch gewendet. Das Konzil von Trient ging darauf nicht ein; in der heutigen katholischen Auslegung gilt der Vorfall als Beispiel dafür, dass Leitungsverantwortung Widerspruch nicht ausschließt.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Der Streit dreht sich um gemeinsames Essen, und Essen war Zugehörigkeit: Speisen, Geschirr, Herkunft des Fleisches, Wein aus fremder Hand – alles hatte Regeln. Wer sich vom Tisch zurückzog, sprach ein Urteil, ohne ein Wort zu sagen. Deshalb ist der Vorgang für Paulus keine Etikettefrage.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Antiochia am Orontes war die drittgrößte Stadt des Reiches mit einer großen jüdischen Gemeinde und der ersten gemischten Christengemeinde überhaupt. Dort wurde der Name „Christen“ geprägt. Was dort entschieden wurde, wirkte auf alle folgenden Gründungen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Jemanden „vor allen“ zurechtzuweisen war in einer Ehrgesellschaft ein schwerer Schritt: Es beschädigte den Ruf des Getadelten dauerhaft. Paulus erzählt es dennoch – und dass der Ausgang fehlt, lesen viele als Hinweis, dass er sich nicht durchsetzte.',
+      },
+    ],
     terms: [
       {
         word: 'griech. hypokrisis',
@@ -8247,6 +8459,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der konkrete Streitpunkt war die Beschneidung von Nichtjuden. Gegner in Galatien verlangten sie als Bedingung der vollen Zugehörigkeit; Paulus sieht darin die Aufhebung dessen, was er verkündigt. Der Nachsatz ist wichtig: Freiheit endet für ihn nicht in Beliebigkeit, sondern in der Liebe, „die durch den Glauben tätig ist“. Wenige Verse später steht der Satz, das ganze Gesetz sei erfüllt in dem einen Wort: Du sollst deinen Nächsten lieben wie dich selbst.\n\nDer Satz steht an einer Naht: Bis Kapitel 4 argumentiert Paulus, ab Kapitel 5 fordert er. Und die Forderung ist grammatisch merkwürdig – „bestehet in der Freiheit“ meint stehenbleiben, nicht losgehen. Freiheit erscheint hier nicht als Ziel, das man erreicht, sondern als Ort, von dem man wieder wegkommen kann. Das Bild vom Joch nimmt dabei etwas auf, was in der jüdischen Tradition positiv besetzt war: das „Joch der Tora“ zu tragen galt als Vorrecht. Paulus nennt es hier knechtisch – und macht damit deutlich, wie zugespitzt seine Lage ist.',
     reception:
       'Luther nannte den Galaterbrief seine „Käthe von Bora“, an die er sich vertraut habe, und legte ihn zweimal ausführlich aus; von hier stammt der Ton seiner Freiheitsschrift von 1520. In der Neuzeit ist der Vers weit über die Theologie hinaus zitiert worden – in Bürgerrechtsbewegungen, in Befreiungstheologien, gelegentlich auch als Werbespruch.\n\nDie Zuspitzung hat eine Schattenseite: Weil Paulus die Beschneidung als „knechtisches Joch“ bezeichnet, ist der Vers in der christlichen Auslegung jahrhundertelang als Abwertung des Judentums gelesen worden. Neuere Auslegung betont, dass Paulus als Jude über die Bedingungen für Nichtjuden streitet – nicht über den Wert der Tora für Israel.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Freiheit war ein Rechtsstand, kein Gefühl: Der Freie konnte Verträge schließen, klagen, erben und wählen; der Sklave war Sache. Zwischen beiden stand der Freigelassene mit eingeschränkten Rechten und Pflichten gegenüber dem früheren Herrn. Wer von Freiheit sprach, sprach in diesen Kategorien.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Beschneidung war im griechisch-römischen Umfeld sozial teuer: Bäder und Sportstätten waren öffentlich, und römische Autoren führen den Brauch unter den Absonderlichkeiten der Juden. Wer sie von erwachsenen Männern verlangte, verlangte einen sichtbaren und schmerzhaften Bruch mit dem eigenen Umfeld.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Juden genossen im Reich anerkannte Sonderrechte – Befreiung vom Kaiserkult, eigene Gerichtsbarkeit, Sabbatruhe. Wer als Nichtjude dazugehörte, stand unter diesem Schutz; wer es nicht tat, war eine Gruppe ohne Status. Auch das stand hinter dem Druck zur Beschneidung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. eleutheria',
@@ -8295,6 +8521,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Philipperbrief entstand in Haft – wo, ist umstritten: Rom, Ephesus und Cäsarea werden vorgeschlagen. Die Gemeinde in Philippi war die erste in Europa und die einzige, von der Paulus Geld annahm. Das Wort für „Güte“ in Vers 5 bezeichnet ein Nachgeben, das über das Geforderte hinausgeht – ein Begriff aus dem Rechtswesen. Der Friede, der „höher ist als alle Vernunft“, wird nicht als Gefühl beschrieben, sondern als Wache, die Herz und Sinne bewahrt.',
     reception:
       'Der Abschnitt gehört zum festen Bestand der Liturgie: „Der Friede Gottes, welcher höher ist denn alle Vernunft“ ist der meistgesprochene Kanzelsegen im deutschsprachigen Protestantismus. Der Aufruf zur Freude eröffnet den dritten Adventssonntag, der nach dem lateinischen Anfang *Gaudete* heißt.\n\nDer Brief ist dabei aus der Haft geschrieben, und wenige Verse vorher werden zwei zerstrittene Frauen namentlich zur Einigung aufgefordert. Die Aufforderung zur Freude steht damit weder in einer heilen Lage noch in einer heilen Gemeinde.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Paulus schreibt aus der Haft. Antike Gefangenschaft kannte keine Verpflegung von Amts wegen: Essen, Kleidung und Botendienste mussten Angehörige oder Freunde bringen. Der Brief ist deshalb auch eine Quittung – die Gemeinde hatte Geld geschickt, und Epaphroditus hatte es überbracht.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Zwei Frauen werden in Kapitel 4 mit Namen zur Einigung aufgefordert; beide hatten laut Text mit Paulus für das Evangelium gekämpft. In einer Hausgemeinde entschied der Streit zweier Gastgeberinnen über die Versammlung selbst – deshalb steht die Sache im Brief und nicht in einer Privatnachricht.',
+      },
+    ],
     terms: [
       {
         word: 'griech. epieikes',
@@ -8343,6 +8579,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Bild vom An- und Ausziehen gehört zur frühchristlichen Taufsprache; in manchen Gemeinden wurde bei der Taufe tatsächlich das Gewand gewechselt. Bemerkenswert ist die Reihenfolge: Zuerst steht die Zusage, erwählt und geliebt zu sein, dann folgt die Aufforderung. Die genannten Eigenschaften sind durchweg soziale Größen – keine lässt sich allein üben. Der Abschnitt schließt mit dem Singen von Psalmen und Liedern, dem frühesten Hinweis auf gottesdienstliche Musik in den Briefen.',
     reception:
       'Der Abschnitt gehört zu den meistgelesenen Trautexten und steht in vielen Gottesdienstordnungen als Ermahnung vor dem Segen. Das Bild vom Anziehen hat die Sprache der Taufliturgie geprägt: Das weiße Taufkleid geht auf diese Verse und ihre Parallelen zurück.\n\nUnmittelbar danach folgt eine Haustafel mit Anweisungen an Frauen, Kinder und Sklaven – Verse, die in der Geschichte zur Rechtfertigung von Unterordnung und Sklaverei gedient haben. Dass beides in einem Atemzug steht, gehört zu den Spannungen, die heutige Auslegung nicht mehr überspielt.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Kleidung zeigte unmittelbar Stand und Herkunft: Toga, Sklaventracht, Provinzkleidung, Farbe und Stoff waren geregelt und teils gesetzlich beschränkt. Wer vom Anziehen sprach, sprach von Zugehörigkeit, die jeder auf der Straße ablesen konnte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Demut, Sanftmut und Geduld standen in der antiken Tugendlehre nicht oben: Milde war die Haltung des Überlegenen gegenüber Unterlegenen, Nachgeben unter Gleichen galt als Schwäche. Eine Gemeinde, die sie füreinander verlangte, verlangte etwas, das die Umwelt nicht anerkannte.',
+      },
+    ],
     terms: [
       {
         word: 'griech. endysasthe',
@@ -8486,6 +8732,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text bewegt sich in der Sprache der antiken Popularphilosophie: Die Autarkie – das Sichgenügenlassen – war ein Grundbegriff der Stoa. Auch das Bild, nichts in die Welt gebracht zu haben und nichts hinaustragen zu können, findet sich mehrfach in griechischer und lateinischer Literatur sowie bei Hiob. Die Pastoralbriefe richten sich an Gemeinden mit fester Ordnung und offenbar auch mit wohlhabenden Mitgliedern; die Warnung ist konkret adressiert.',
     reception:
       'Der Satz von der Wurzel allen Übels ist einer der meistzitierten und meistverkürzten der Bibel. In der verbreiteten Fassung – „Geld ist die Wurzel allen Übels“ – sagt er das Gegenteil dessen, was dasteht, und dient wechselweise als Kapitalismuskritik und als Beleg dafür, dass Reichtum an sich verdächtig sei.\n\nDer Brief argumentiert nüchterner. Er warnt die, die reich werden wollen, weist im selben Kapitel die Reichen an, wohlzutun und mitzuteilen, und stellt der Habgier keine Armut gegenüber, sondern Genügsamkeit – einen Begriff aus der griechischen Philosophie.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Genügsamkeit war ein Fachbegriff der Philosophie: Stoiker und Kyniker priesen die *autarkeia*, die Unabhängigkeit von äußeren Gütern, als Weg zum guten Leben. Der Brief übernimmt das Wort – und bindet es an etwas, das die Philosophen nicht kannten.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Vermögen bestand aus Land, Sklaven, Vieh und verliehenem Geld; Zinssätze von zwölf Prozent waren üblich, in Notlagen mehr. „Reich werden wollen“ hieß in der Praxis meist: anderen Geld leihen und im Zweifel ihr Land nehmen. Die Warnung zielt auf einen sehr bestimmten Weg zum Wohlstand.',
+      },
+    ],
     terms: [
       {
         word: 'griech. autarkeia',
@@ -8534,6 +8790,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text verwendet das Bild des Trankopfers, das über ein Opfer gegossen wurde, und daneben die Wettkampfsprache, die Paulus auch sonst gebraucht – der Siegeskranz war ein Kranz aus Zweigen, nicht aus Gold. Beides zusammen ergibt einen Ton, der zugleich nüchtern und feierlich ist. Ob der historische Paulus diese Zeilen schrieb, ist umstritten; als literarisches Vermächtnis haben sie die christliche Sterbeliturgie tief geprägt.',
     reception:
       'Die Verse gelten als Abschiedswort des Paulus und werden bei Beerdigungen und Verabschiedungen aus dem Dienst gelesen; die drei Sätze über Kampf, Lauf und Glauben stehen auf zahlreichen Grabsteinen. Bildlich stammen sie aus dem Sport: der Faustkampf, der Wettlauf, der Siegeskranz.\n\nOb Paulus sie geschrieben hat, ist umstritten – die Pastoralbriefe werden von der Mehrheit der Forschung später datiert. Als literarisches Vermächtnis wirken sie unabhängig davon: Der Brief zeichnet einen Menschen, der am Ende ist und den Rückblick nicht beschönigt; wenige Verse später steht, dass ihn im ersten Verhör alle verlassen haben.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Beim Trankopfer wurde Wein neben das Opfer auf den Altar gegossen – eine kleine Beigabe, nicht die Hauptsache. Jeder Leser hatte das gesehen, weil es zu fast jedem Opfer gehörte. Das Bild ordnet das eigene Ende bescheiden ein.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wettkämpfe waren allgegenwärtig: Die Isthmischen Spiele bei Korinth, lokale Agone in jeder größeren Stadt, Läufe, Faustkampf, ein Kranz aus Zweigen als Preis. Die drei Bilder von Kampf, Lauf und Krone stammen aus dem Sportbetrieb, nicht aus dem Krieg.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein Angeklagter brauchte Fürsprecher, die vor Gericht für seinen Charakter einstanden – wer allein dastand, war so gut wie verurteilt. Wenn der Brief kurz darauf festhält, dass bei der ersten Verhandlung niemand beistand, beschreibt er eine sehr konkrete Aussichtslosigkeit.',
+      },
+    ],
     terms: [
       {
         word: 'griech. spendomai',
@@ -8630,6 +8900,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Hebräerbrief ist kein Brief, sondern eine kunstvoll gebaute Predigt in ausgesuchtem Griechisch; sein Verfasser ist unbekannt. Origenes schrieb bereits im 3. Jahrhundert, wer ihn geschrieben habe, wisse Gott allein. Der Hohepriestergedanke ist sein eigentliches Thema und begegnet so in keinem anderen neutestamentlichen Text. Der zweischneidige Schwertvergleich stammt aus der Weisheitsliteratur; das Wort für „Schwert“ meint das kurze römische Kurzschwert, nicht das Zweihandschwert der Bilder.\n\nDie beiden Bilder stehen nicht zufällig nebeneinander. Erst das Wort, vor dem nichts verborgen bleibt – „bloß und entdeckt“, wörtlich: mit zurückgebogenem Nacken, wie bei einem Opfertier vor dem Schnitt. Dann der, der nicht von außen urteilt, sondern versucht wurde wie alle. Der Abschnitt läuft auf eine Aufforderung zu, die dazu quersteht: „mit Freudigkeit hinzutreten“. Wo man Furcht erwartet, steht Zutrauen.',
     reception:
       'Der Vergleich mit dem zweischneidigen Schwert ist zur stehenden Wendung für die Wirkung der Bibel geworden und ziert Kanzeln, Buchdeckel und Gemeindebriefe. Er hat auch eine unangenehme Verwendung: als Rechtfertigung dafür, Menschen mit Bibelversen zu bedrängen. Der Text spricht vom Wort Gottes, nicht vom Gebrauch, den jemand davon macht.\n\nDer Hohepriestergedanke, der dem Brief seine Eigenart gibt, hat die katholische Messtheologie geprägt und wurde in der Reformation gerade umgekehrt gewendet: Weil Christus der eine Hohepriester ist, brauche es kein Priestertum, das opfert. Derselbe Brief steht damit auf beiden Seiten einer der ältesten Trennlinien.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Der Hohepriester betrat das Allerheiligste einmal im Jahr; alles andere blieb ihm verwehrt, und dem Volk erst recht. Ein Zugang „mit Freimut“ kehrt die Grundordnung des Tempels um – für Leser, die den Betrieb kannten oder aus Berichten wussten, war das die eigentliche Aussage.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Wort für Schwert meint die kurze römische Klinge, wie sie jeder Legionär trug – gut vierzig Zentimeter, für den Nahkampf. Beim Opfer wurde dem Tier der Nacken zurückgebogen, damit die Kehle frei lag; genau dieses Bild steht in Vers 13 für das Offenliegen vor Gott.',
+      },
+    ],
     terms: [
       {
         word: 'griech. energes',
@@ -8682,6 +8962,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Bildsprache ist die des griechischen Wettkampfs, der in der ganzen Mittelmeerwelt vertraut war: das Ablegen jeder Last, das Laufen mit Ausdauer, der Blick nach vorn. Das griechische Wort für „Zeugen“ ist dasselbe, aus dem „Märtyrer“ wurde – hier steht es noch für Zeugen im weiteren Sinn. Die vorangehende Aufzählung in Kapitel 11 endet ausdrücklich nicht mit Erfolgsgeschichten: Sie nennt Gefolterte, Verspottete, Getötete.',
     reception:
       'Die „Wolke der Zeugen“ ist zu einer stehenden Wendung geworden und trägt Gedenktage, Heiligenkalender und Märtyrerbücher. In der Ökumene wird sie für die Gemeinschaft über Konfessions- und Zeitgrenzen hinweg gebraucht; das ökumenische Martyrologium des 20. Jahrhunderts beruft sich ausdrücklich auf sie.\n\nDas Bild vom Wettlauf hat die christliche Sprache über die Jahrhunderte geprägt – von den Kirchenvätern bis zur Sportkapelle bei Großveranstaltungen. Der Text selbst setzt einen anderen Akzent: Es geht nicht um Sieg, sondern um Ausdauer, und der Vorläufer hat auf dem Weg das Kreuz erduldet.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Bild ist ein Stadion: Ränge voller Zuschauer, ein abgestecktes Feld, ein Lauf über eine festgelegte Strecke. Läufer traten nach antiker Sitte unbekleidet an und legten alles ab, was hinderte – darauf zielt die Aufforderung, „abzulegen, was uns anklebt“.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die „Zeugen“ auf den Rängen sind im Griechischen dasselbe Wort wie die Zeugen vor Gericht; aus ihm wurde im 2. Jahrhundert der Märtyrer. Der Brief spricht zu einer Gemeinde, die Verfolgung erlebt hatte – Kapitel 10 erinnert an Beschlagnahme von Besitz und an Gefangene.',
+      },
+    ],
     terms: [
       {
         word: 'griech. nephos martyron',
@@ -8730,6 +9020,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Jakobusbrief steht der jüdischen Weisheitsliteratur so nahe wie kein anderer neutestamentlicher Text; Christus wird nur zweimal genannt. Das griechische Wort für „Anfechtung“ meint Prüfung wie Versuchung zugleich – dieselbe Doppeldeutigkeit wie in der Bitte des Vaterunsers. Der „Zweifler“ wird mit einer Meereswoge verglichen; das Wort für „zwiespältig“ ist im Griechischen vor Jakobus nicht belegt und könnte eine Neubildung sein.',
     reception:
       'Der Anfang des Jakobusbriefs gehört zu den meistzitierten Texten in der Begleitung von Menschen in Krisen – und zu den heikelsten. Die Aufforderung, Anfechtungen für „eitel Freude“ zu halten, kann als Verbot der Klage ankommen, und in dieser Verwendung ist sie in der Seelsorgeliteratur wiederholt kritisiert worden.\n\nDer Brief selbst ist nüchterner, als der erste Satz klingt: Er verspricht kein gutes Gefühl, sondern beschreibt einen Vorgang – Prüfung wirkt Standhaftigkeit. Und er stellt unmittelbar daneben die Erlaubnis, um Weisheit zu bitten, wenn sie fehlt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Der Brief redet später sehr genau über Tagelöhner, deren Lohn zurückgehalten wird, über Gutsbesitzer und über Reiche, die vor Gericht ziehen. Die Anfechtungen, von denen Kapitel 1 spricht, sind deshalb zuerst wirtschaftlicher Druck – nicht Zweifel im Kopf.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Weisheit war in der jüdischen Tradition etwas, das man lernte, und in der griechischen etwas, das man erwarb – durch Schule, Lehrer und Geld. Sie schlicht zu erbitten, ohne Vorleistung und ohne Rang, war in beiden Zusammenhängen ungewöhnlich.',
+      },
+    ],
     terms: [
       {
         word: 'griech. peirasmois',
@@ -8778,6 +9078,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Text ist die wichtigste neutestamentliche Grundlage der Krankensalbung. Öl war in der Antike zugleich Heilmittel und rituelles Zeichen; die beiden Bedeutungen lassen sich hier nicht trennen. Auffällig ist die Reihenfolge: Nicht ein Einzelner heilt, sondern die Ältesten werden gerufen. Das gegenseitige Bekennen ist ausdrücklich wechselseitig formuliert, nicht auf ein Amt gerichtet.\n\nDer Abschnitt setzt eine Gemeinde voraus, die etwas tun kann: Sie hat Älteste, sie hat Öl, sie hat einen Ort für das Bekennen. Auffällig ist die Zuordnung von Krankheit und Schuld – sie wird nicht behauptet, sondern im Konjunktiv gestreift: „und so er hat Sünden getan“. Der Text rechnet also mit dem Fall, dass keine Schuld im Spiel ist. Und die Reihenfolge ist wechselseitig: nicht ein Amtsträger nimmt Beichte ab, sondern „bekenne einer dem andern“.',
     reception:
       'Aus diesen Versen ist die Krankensalbung geworden, die das Konzil von Trient 1551 als Sakrament bestätigte. Über Jahrhunderte verschob sich ihr Gebrauch zur „Letzten Ölung“ kurz vor dem Tod; das Zweite Vatikanische Konzil kehrte 1963 zur ursprünglichen Ausrichtung auf Kranke zurück und änderte den Namen. In evangelischen Kirchen ist die Salbung seit den 1990er Jahren wieder verbreiteter geworden.\n\nDie Zusage, das Gebet des Glaubens werde helfen, hat eine gefährliche Kehrseite: In Teilen der Heilungsbewegung wird ausbleibende Genesung dem Glauben des Kranken zugeschrieben. Kirchliche Stellungnahmen und die Seelsorgeliteratur widersprechen dem entschieden – der Text macht niemanden für seine Krankheit verantwortlich.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Olivenöl war Heilmittel und Alltagsgegenstand zugleich: Man rieb Wunden damit ein, salbte Kranke, pflegte die Haut und brannte es in Lampen. Der barmherzige Samariter gießt Öl und Wein in die Wunden. Zwischen Medizin und Ritus zu unterscheiden wäre der Zeit fremd gewesen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ärzte gab es in Städten und für die, die zahlen konnten; auf dem Land half die Familie, die Nachbarschaft und der Heilkundige des Ortes. Dass eine Gemeinde ihre Ältesten schickt, ersetzt kein ärztliches Angebot – es beschreibt, was überhaupt zur Verfügung stand.',
+      },
+    ],
     terms: [
       {
         word: 'griech. presbyteroi',
@@ -8826,6 +9136,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Abschnitt reiht mehrere Schriftzitate aneinander, alle über Steine: Jesaja 28, Psalm 118, Jesaja 8. Diese Zusammenstellung war offenbar bereits eine feste Sammlung, denn Paulus verwendet Teile davon ähnlich. Der Höhepunkt überträgt Titel, die im Alten Testament Israel gelten, auf die angeschriebenen Gemeinden in Kleinasien: „auserwähltes Geschlecht, königliches Priestertum“. Das Wort für „Volk“ am Ende stammt aus Hosea – aus „Nicht mein Volk“ wird „Volk Gottes“.\n\nDer Brief geht an Gemeinden in fünf Provinzen Kleinasiens und redet sie an wie Menschen ohne festen Ort: „Fremdlinge und Pilger“. Genau darauf zielt das Bild vom Bau – wer kein Haus hat, wird selbst zu einem. Auffällig ist der Umgang mit dem Stein: In wenigen Versen ist er lebendig, verworfen, auserwählt, Eckstein und Stolperstein zugleich. Das Bild bleibt nicht stehen, es dreht sich; und die Angeredeten sind darin nicht Zuschauer, sondern Baumaterial.',
     reception:
       'Aus Vers 9 ist eine der folgenreichsten Formeln der Reformation geworden: Luther leitete aus dem „königlichen Priestertum“ 1520 ab, dass alle Getauften Priester sind und der geistliche Stand kein höherer ist. Das Zweite Vatikanische Konzil nahm den Gedanken 1964 auf und sprach vom „gemeinsamen Priestertum der Gläubigen“ neben dem Amtspriestertum.\n\nDie Übertragung der Israel-Titel auf die Gemeinde hat zugleich eine dunkle Wirkung: Sie wurde zur Grundlage der Vorstellung, die Kirche sei an Israels Stelle getreten. Der Brief selbst zieht diesen Schluss nicht – er redet Nichtjuden zu, die nach Hosea „nicht mein Volk“ hießen, ohne jemandem etwas abzusprechen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Brief redet die Empfänger als „Fremdlinge und Beisassen“ an – rechtliche Begriffe für Menschen ohne Bürgerrecht am Wohnort: geduldet, steuerpflichtig, ohne Stimme, jederzeit ausweisbar. Ob das ihre tatsächliche Lage oder ein Bild ist, wird diskutiert; verstanden wurde es rechtlich.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Eckstein war das teuerste Stück am Bau: sorgfältig behauen, weil an ihm die Flucht der Mauern hing. Wurde er beim Setzen als untauglich erkannt, blieb er liegen. Das Bild kommt aus der Bauhütte und war jedem geläufig, der eine Stadtmauer entstehen sah.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Angeschrieben sind fünf Provinzen Kleinasiens – ein Gebiet größer als die heutige Türkei westlich von Ankara. Ein Bote brauchte für die Runde Monate. Der Brief rechnet damit, vorgelesen und weitergegeben zu werden, nicht mit einer einzelnen Versammlung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. akrogoniaios',
@@ -8970,6 +9294,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Ausrüstung entspricht der eines römischen Legionärs, wie ihn jeder Leser im Alltag sah. Die Zuordnungen stammen aber aus Jesaja, wo Gott selbst diese Rüstung trägt. Bemerkenswert ist die Auswahl: Gürtel, Panzer, Schuhe, Schild, Helm – lauter Verteidigung; das Schwert ist „das Wort Gottes“, und der Abschnitt mündet in das Gebet. Der genannte Gegner ist ausdrücklich nicht „Fleisch und Blut“, also kein Mensch.\n\nAuffällig ist, wie oft in wenigen Versen das Wort „stehen“ fällt: bestehen, widerstehen, das Feld behalten, „so stehet nun“. Angriff kommt in der ganzen Aufzählung nicht vor. Und die Ausrüstung stammt nicht aus dem Kasernenhof, sondern aus Jesaja – dort trägt Gott selbst Panzer und Helm, und was hier verteilt wird, ist geliehen. Das letzte Stück fällt aus dem Bild: Nach dem Schwert folgt kein weiteres Rüstungsteil, sondern das Gebet.',
     reception:
       'Das Bild hat eine zweischneidige Geschichte. Es hat Märtyrer und Widerstandsgruppen getragen – und es hat Kreuzzugspredigt, Missionsheere und militärische Sprache in Gemeinden geliefert; die Heilsarmee führt sie im Namen. Wo aus dem Bild eine Haltung gegenüber Menschen wurde, ist der Text gegen seinen eigenen Wortlaut verwendet worden: Er sagt ausdrücklich, dass der Kampf nicht gegen Fleisch und Blut geht.\n\nIn Teilen der charismatischen Bewegung ist daraus die „geistliche Kampfführung“ geworden, mit Gebeten gegen territoriale Mächte. Die großen Kirchen sind dem nicht gefolgt; sie lesen den Abschnitt zurückhaltender – als Ermutigung zum Standhalten, nicht als Anleitung zur Dämonenbekämpfung.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die beschriebene Ausrüstung ist die eines römischen Legionärs: Gürtel, Brustpanzer, genagelte Marschstiefel, großer Schild, Helm, Kurzschwert. Soldaten waren in jeder Provinzstadt sichtbar, und wer den Brief hörte, konnte das Bild auf der Straße nachschlagen – es war die Ausrüstung der Besatzungsmacht.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der große Schild war mit Leder bezogen, das vor dem Gefecht gewässert wurde; Brandpfeile erloschen darin. In der Schlachtreihe deckten sich die Schilde gegenseitig – ein einzelner Mann konnte sich damit nicht schützen. Das Bild setzt eine Formation voraus, keine Einzelkämpfer.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Ephesus war für Zauberei berühmt: Die Apostelgeschichte erzählt von der Verbrennung magischer Bücher im Wert von 50.000 Silberstücken, und „Ephesische Schriften“ waren ein feststehender Begriff für Beschwörungsformeln. Von Mächten und Gewalten zu sprechen traf dort eine sehr konkrete Erfahrungswelt.',
+      },
+    ],
     terms: [
       {
         word: 'griech. panoplia',
@@ -12620,6 +12958,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Paulus stellt seiner umfangreichsten Schrift diese beiden Verse als Überschrift voran. Das Zitat stammt aus Habakuk 2,4 und lässt sich im Hebräischen wie im Griechischen auf zweierlei Weise auflösen: aus Glauben leben oder als Gerechter aus Treue. Luther berichtet, er habe die Gerechtigkeit Gottes lange als fordernde Gerechtigkeit verstanden, die ihn richtet, und erst später als geschenkte, die gilt. Die Reihenfolge Juden vornehmlich und auch die Griechen ist im Brief keine Nebenbemerkung, sondern wird in den Kapiteln 9 bis 11 ausführlich verhandelt.',
     reception:
       'An diesem Vers hängt der Beginn der Reformation. Luther beschrieb 1545 im Rückblick, wie er den Ausdruck „Gerechtigkeit Gottes“ zunächst als Forderung verstand und ihn hasste – bis er begriff, dass die Gerechtigkeit geschenkt wird. Diese Einsicht, oft „Turmerlebnis“ genannt, ist der Ausgangspunkt seiner Theologie; ob sie sich auf ein einzelnes Ereignis datieren lässt, bezweifelt die Forschung.\n\nDie neuere Paulusforschung hat die Deutung erweitert: Sie liest die „Gerechtigkeit Gottes“ auch als Gottes Bundestreue gegenüber Israel und sieht in Vers 16 die Reihenfolge „die Juden vornehmlich“ nicht als Höflichkeit, sondern als Programm des ganzen Briefes, das in Kapitel 9 bis 11 entfaltet wird.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Sich einer Sache nicht zu schämen war eine öffentliche Aussage. Scham entschied über den Rang in der Gesellschaft, und eine Botschaft, deren Mittelpunkt ein Gekreuzigter war, galt als beschämend. Paulus beginnt seinen Brief an die Hauptstadt mit einer Trotzformel.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Das griechische Wort für „Evangelium“ bezeichnete die Freudenbotschaft vom Sieg oder von der Thronbesteigung eines Herrschers; die Inschrift von Priene nennt so die Geburt des Augustus. Wer den Begriff besetzte, sprach eine besetzte Vokabel.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Rom hatte damals vielleicht eine Million Einwohner, mit einer jüdischen Gemeinde von einigen Zehntausend in mehreren Synagogen, überwiegend in Trastevere. Der Brief geht nicht an eine Gemeinde, sondern an mehrere Hauskreise, die einander nicht alle kannten – deshalb die lange Grußliste in Kapitel 16.',
+      },
+    ],
     terms: [
       {
         word: 'griech. dikaiosyne theou',
@@ -12767,6 +13119,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Sold meint den Wehrsold, den römische Legionäre erhielten. Das Bild wäre ausgeglichen, wenn im zweiten Teil ein anderer Lohn stünde. Paulus bricht den Vergleich aber ab: Dem Sold steht nicht ein höherer Sold gegenüber, sondern eine Gabe. Damit wird die Logik von Leistung und Bezahlung nicht überboten, sondern verlassen. Der Zusammenhang in Kapitel 6 handelt vom Bild der Sklaverei: Man dient entweder der Sünde oder der Gerechtigkeit, herrenlos ist nach Paulus niemand.',
     reception:
       'Der Vers ist ein Kernstück der Bekehrungspredigt und gehört zu den vier Versen des „Römerbrief-Weges“, der in evangelikalen Gemeinden weltweit zur Einführung in den Glauben verwendet wird. Er steht auf Traktaten, Anstecknadeln und Straßenschildern.\n\nIn der Auslegung wird häufig übersehen, dass der Gegensatz nicht symmetrisch ist. Paulus schreibt nicht „der Sünde Sold ist der Tod, der Gerechtigkeit Sold ist das Leben“ – die zweite Hälfte wechselt das Wort. Genau darin liegt die Aussage: Auf der einen Seite steht ein Anspruch, auf der anderen keiner.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Der Sold eines Legionärs betrug im 1. Jahrhundert 225 Denare im Jahr, ausgezahlt in drei Raten, abzüglich Kosten für Verpflegung, Kleidung und Ausrüstung. Er war ein Anspruch, kein Geschenk – und wurde bei Meutereien zum Streitpunkt. Das Bild kam aus dem Kasernenalltag.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die andere Hälfte des Satzes stammt aus der Welt der Wohltäter: Ein *charisma* war eine Zuwendung ohne Gegenleistung. In einer Gesellschaft, in der jede Gabe eine Gegengabe erwartete, war eine Wohltat ohne Rückzahlungspflicht die Ausnahme – und Paulus stellt genau diese beiden Wirtschaftsformen gegeneinander.',
+      },
+    ],
     terms: [
       {
         word: 'griech. opsonia',
@@ -12914,6 +13276,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Nach elf Kapiteln Darlegung beginnt hier der ermahnende Teil. Paulus nimmt die Sprache des Tempelopfers auf und verschiebt sie: Das Opfer ist lebendig, nicht geschlachtet, und es besteht aus den Leibern der Angeredeten, also aus ihrem konkreten, alltäglichen Leben. Das Wort, das Luther mit vernünftig übersetzt, heißt im Griechischen logikos und wird heute meist mit wortgemäß oder sachgemäß wiedergegeben; die Deutung ist umstritten. Gottesdienst meint hier nicht die Versammlung, sondern den Dienst insgesamt.',
     reception:
       'Der Vers markiert die Wende des Römerbriefs von der Lehre zur Ermahnung und ist zum Kernsatz jeder Rede vom „Gottesdienst im Alltag der Welt“ geworden – eine Formel, die Ernst Käsemann in seiner Auslegung dieses Verses geprägt hat und die die evangelische Kirche seit den 1960er Jahren begleitet.\n\nSeine Sprengkraft liegt in der Umbesetzung: Opferbegriffe werden auf das gewöhnliche Leben angewandt. Damit fällt die Trennung zwischen heiligem Raum und Alltag – ein Gedanke, der von der Alten Kirche über Luthers Berufslehre bis in die Diakonie gewirkt hat.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Opfer waren Alltag: In jeder Stadt wurde geschlachtet, gebraten und verteilt; ein großer Teil des verkauften Fleisches stammte aus Tempeln. Ein Kult ohne Altar war in der antiken Welt kaum vorstellbar – auch die Juden hatten einen. Von einem Opfer zu sprechen, das aus dem eigenen Leben besteht, verschob eine feste Vorstellung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Leib war der Ort, an dem Zugehörigkeit sichtbar wurde: an Kleidung, Haartracht, Beschneidung, an der Frage, mit wem man aß. Wer vom „Darbringen der Leiber“ sprach, sprach deshalb nicht von Innerlichkeit, sondern von dem, was andere sehen konnten.',
+      },
+    ],
     terms: [
       {
         word: 'griech. logike latreia',
@@ -13012,6 +13384,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Kreuzigung war die Hinrichtungsart für Sklaven und Aufständische und galt als äußerste Schande; Cicero schreibt, allein das Wort solle vom Leib eines römischen Bürgers ferngehalten werden. Einen Gekreuzigten zu verkünden war deshalb keine Zumutung an den Glauben, sondern an den guten Geschmack. Paulus nimmt diesen Einwand nicht zurück, sondern macht ihn zum Argument. Der Zusammenhang ist der Streit in Korinth um Weisheit, Rednergabe und Parteibildung.',
     reception:
       'Wie ungeheuerlich die Aussage war, zeigt ein Fund vom Palatin in Rom: ein eingeritztes Spottbild aus dem 2. oder 3. Jahrhundert, das einen Gekreuzigten mit Eselskopf zeigt, daneben die Inschrift „Alexamenos betet seinen Gott an“. Es ist die früheste erhaltene Darstellung einer Kreuzigung überhaupt – eine Karikatur.\n\nAus dem Vers ist in der Theologie des 20. Jahrhunderts die Kreuzestheologie geworden, die Luthers Unterscheidung von *theologia crucis* und *theologia gloriae* aufnimmt: Gott ist dort zu suchen, wo man ihn nicht vermutet. Jürgen Moltmanns *Der gekreuzigte Gott* von 1972 hat diese Linie nach Auschwitz neu formuliert.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Die Kreuzigung war so anstößig, dass Cicero schrieb, das Wort solle vom Leib und vom Ohr des römischen Bürgers fern bleiben. Sie war die Strafe für Sklaven und Aufrührer, öffentlich vollzogen und mit dem Verbot der Bestattung verbunden. Eine Botschaft, die damit warb, warb mit einer Schande.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Korinth war eine Aufsteigerstadt: 146 vor Christus zerstört, 44 vor Christus als römische Kolonie neu gegründet, besiedelt mit Freigelassenen und Veteranen. Wo alte Familienbindung fehlt, zählt Selbstdarstellung – Rhetorik, Weisheit, sichtbarer Erfolg. Genau diese Währung entwertet der Satz.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Rhetorik war das Prestigefach der Zeit: Wanderredner füllten Säle, Städte stritten um die besten Lehrer, und ein Auftritt entschied über Ansehen und Einkommen. Kapitel 1 und 2 wenden sich gegen genau diesen Maßstab – Paulus schreibt, er sei „in Schwachheit und mit großem Zittern“ aufgetreten.',
+      },
+    ],
     terms: [
       {
         word: 'griech. moria',
@@ -13502,6 +13888,20 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz steht mitten in der sogenannten Haustafel, die Frauen, Männern, Kindern, Vätern, Sklaven und Herren jeweils Weisungen gibt. Die Anrede unmittelbar davor lautet: Ihr Knechte, seid gehorsam in allen Dingen euren leiblichen Herren. Wer den Vers als Arbeitsethik zitiert, überträgt ihn aus einem Verhältnis von Zwang in ein Verhältnis von Vertrag. Bemerkenswert ist der Nachsatz in Vers 24 und die Fortsetzung in Kapitel 4,1, die auch den Herren einen Herrn im Himmel vor Augen stellt.',
     reception:
       'Der Vers ist zur Grundlage der protestantischen Berufsethik geworden: Luther leitete daraus ab, dass jede ehrliche Arbeit Gottesdienst ist, und Max Weber machte diese Vorstellung 1905 zum Kern seiner These über die protestantische Ethik und den Geist des Kapitalismus.\n\nDer unmittelbare Zusammenhang ist unbequem. Der Vers steht in einer Haustafel und richtet sich an Sklaven, die ihren Herren gehorchen sollen. Diese Verse gehören zu den Texten, mit denen die Sklaverei in Nordamerika verteidigt wurde – ein Grund, warum die Haustafeln in kirchlichen Erklärungen heute nicht mehr ohne Kommentar zitiert werden.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Sklaven führten in einem Stadthaushalt oft die anspruchsvollsten Arbeiten aus: Buchhaltung, Unterricht, Handwerk, Geschäfte in Vertretung des Herrn. Manche verwalteten Vermögen und legten Geld für den eigenen Freikauf zurück. Der Abschnitt spricht also nicht zu Feldarbeitern, sondern zu Fachkräften ohne Rechte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Erben konnten Sklaven nicht – sie waren selbst Vermögensgegenstand und wurden vererbt. Dass ihnen im selben Satz ein Erbteil zugesagt wird, ist deshalb kein frommer Zusatz, sondern eine Aussage gegen ihre Rechtsstellung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Haustafeln mit Anweisungen an Frauen, Kinder und Sklaven waren eine bekannte Gattung; ähnliche Listen finden sich bei Aristoteles und in der stoischen Popularphilosophie. Neu ist hier nicht die Form, sondern dass die Untergeordneten überhaupt angeredet werden – als Personen, die antworten können.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ek psyches',
