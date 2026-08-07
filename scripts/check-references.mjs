@@ -450,6 +450,9 @@ for (const entry of COMMENTARY) {
   if (!entry.reception) {
     problems.push(`Artikel "${entry.title}": keine Wirkungsgeschichte`);
   }
+  if (!entry.world?.length) {
+    problems.push(`Artikel "${entry.title}": keine Notiz zur Welt des Textes`);
+  }
   for (const term of entry.terms ?? []) {
     // Ohne Sprachangabe steht ein fremdes Wort ohne Anhaltspunkt da.
     if (!/^(hebr\.|aram\.|griech\.|lat\.)/.test(term.word)) {

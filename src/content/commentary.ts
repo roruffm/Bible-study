@@ -9035,6 +9035,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das griechische Wort für Versöhnung stammt aus dem Bereich zerstrittener Parteien, nicht aus dem Opferkult. Auffällig ist die Richtung: Nicht der Mensch versöhnt Gott, sondern Gott versöhnt die Welt mit sich. Der Ausdruck „an Christi Statt“ verwendet die Sprache der Gesandtschaft: Ein Botschafter spricht mit der Vollmacht dessen, der ihn schickt, ohne selbst dessen Rang zu haben. Der Schlussvers gehört zu den dichtesten und am meisten diskutierten Sätzen des Paulus.',
     reception:
       'Der Abschnitt ist der neutestamentliche Grundtext der Versöhnungslehre und steht in kirchlichen Erklärungen zur Friedensarbeit ebenso wie in den Grundlagen von Wahrheits- und Versöhnungskommissionen. In Südafrika berief sich Desmond Tutu ausdrücklich auf ihn.\n\nStrittig ist der letzte Vers: „Er hat den, der von keiner Sünde wusste, für uns zur Sünde gemacht.“ Aus ihm ist die Lehre vom Strafaustausch gewachsen, und an ihm entzündet sich die Kritik daran. Ausleger weisen darauf hin, dass Paulus im selben Abschnitt betont, Gott sei der Handelnde – nicht der, der besänftigt werden muss.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Ein Gesandter sprach mit der Vollmacht dessen, der ihn schickte; seine Person war unantastbar, und was er zusagte, band den Absender. Städte schickten Gesandtschaften an den Kaiser und ließen deren Erfolg in Stein hauen. Das Bild in Vers 20 stammt aus der Diplomatie.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Versöhnung war ein Rechtsvorgang zwischen zerstrittenen Parteien: Vermittler, Bedingungen, öffentliche Bekräftigung. Auffällig ist die Richtung – nicht der Schuldige bittet, sondern der Geschädigte richtet die Bitte aus. Das kehrt die übliche Reihenfolge um.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kaine ktisis',
@@ -9323,6 +9333,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der erste Thessalonicherbrief ist mit großer Wahrscheinlichkeit die älteste erhaltene christliche Schrift, geschrieben um 50 n. Chr. Die Gemeinde beunruhigte, dass Mitglieder starben, bevor Christus wiederkam. Paulus antwortet im vorigen Kapitel darauf und wendet sich hier gegen die Terminfrage. Das Bild vom Dieb stammt aus der Jesusüberlieferung; der Ruf „Friede und Sicherheit“ war römische Propagandasprache – pax et securitas findet sich auf Münzen und Inschriften.',
     reception:
       'Der Abschnitt ist der klassische Text gegen jede Terminberechnung: Wo Paulus über den Zeitpunkt spricht, sagt er ausdrücklich, dass darüber nichts zu schreiben sei. Die Kirchen haben sich in ihren Stellungnahmen zu Endzeitbewegungen regelmäßig darauf berufen.\n\nSeine Folgerung ist praktisch, nicht spekulativ: wachsam sein, nüchtern bleiben, einander trösten und aufbauen. Der letzte dieser Sätze – „tröstet euch untereinander“ – steht am Ende beider Abschnitte über die Wiederkunft in diesem Brief und ist ihr eigentlicher Zweck.',
+    world: [
+      {
+        aspect: 'macht',
+        text: '„Friede und Sicherheit“ war eine römische Losung: Sie erschien auf Münzen und in Ehreninschriften als Leistung des Kaisers. Der Vers zitiert sie und stellt sie unter Vorbehalt – für Leser in einer Provinzhauptstadt an der Via Egnatia war das eine erkennbare Anspielung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Nachtwachen teilten die Dunkelheit in Abschnitte, und Einbrüche geschahen, wenn niemand rechnete; Türen wurden mit Balken verriegelt. Das Bild vom Dieb in der Nacht sagt nichts über einen Zeitpunkt, sondern über die Unmöglichkeit, sich rechtzeitig vorzubereiten.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kleptes en nykti',
@@ -9371,6 +9391,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Gemeinde hatte offenbar gehört, der Tag des Herrn sei bereits da – möglicherweise aufgrund eines gefälschten Briefes, den der Text ausdrücklich erwähnt. Die Antwort schiebt zwei Ereignisse davor: den Abfall und das Auftreten des „Menschen der Sünde“. Wer oder was ihn zurückhält, bleibt offen; die Auslegung hat darin das römische Reich, den Heiligen Geist, die Verkündigung und vieles andere gesehen. Schon Augustinus schrieb, er wisse nicht, was gemeint sei.',
     reception:
       'Die Gestalt des „Menschen der Sünde“ ist mit der Antichrist-Vorstellung verschmolzen und hat eine ausufernde Wirkungsgeschichte: Im Mittelalter wurde sie auf Kaiser und Gegenpäpste bezogen, in der Reformationszeit von Luther auf das Papsttum und von katholischer Seite auf Luther. Beide Zuschreibungen stehen in Bekenntnisschriften des 16. Jahrhunderts.\n\nDer Brief selbst ist in seiner Verfasserschaft umstritten: Sprache und Endzeitvorstellung weichen vom ersten Thessalonicherbrief ab, wo der Tag „wie ein Dieb“ kommt, während hier Vorzeichen genannt werden. Ein Teil der Forschung sieht darin einen späteren Brief, der eine überhitzte Naherwartung dämpfen wollte.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Ein Herrscher, der sich in einen Tempel setzt und göttliche Verehrung fordert, war keine Erfindung: Antiochus IV. ließ 167 den Jerusalemer Tempel umwidmen, und Caligula befahl 40 nach Christus, sein Standbild dort aufzustellen – nur sein Tod verhinderte die Ausführung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Brief warnt vor einem gefälschten Schreiben „als von uns“. Briefe wurden von Boten überbracht, vorgelesen und weitergegeben; eine Prüfung der Echtheit war kaum möglich. Deshalb endet der Brief mit dem Hinweis auf die eigenhändige Unterschrift als Erkennungszeichen.',
+      },
+    ],
     terms: [
       {
         word: 'griech. apostasia',
@@ -9538,6 +9568,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das griechische Wort für „erscheinen“ ist Epiphaneia – ein Begriff aus dem Herrscherkult, mit dem das Auftreten eines Gottes oder eines Kaisers bezeichnet wurde. Der Text setzt ihn zweimal: für das erste Kommen und für die erwartete Wiederkunft. Auffällig ist das Verb „erziehen“: Gnade wird nicht als Freibrief beschrieben, sondern als etwas, das Gewohnheiten formt. Der Abschnitt steht mitten in einer Haustafel und begründet, warum ihre Anweisungen gelten sollen.',
     reception:
       'Der Abschnitt gehört zu den Weihnachtslesungen der katholischen und evangelischen Kirche und hat der Christnachtliturgie einen ihrer festen Texte gegeben. Seine Verbindung von Gnade und Erziehung – die Gnade selbst erzieht – ist in der reformatorischen Auslegung stark betont worden: Sie schließt aus, dass Gnade und Lebensführung auseinanderfallen.\n\nDie Verse davor sind eine Haustafel mit Anweisungen an alte Männer, junge Frauen und Sklaven; Vers 11 begründet sie mit einem „denn“. Das ist der Punkt, an dem heutige Auslegung ansetzt: Die Begründung trägt weiter als die Anweisungen, die sie stützen soll.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Das Wort für „erschienen“ gehörte zur Sprache der Herrscherverehrung: Die Ankunft eines Kaisers in einer Stadt hieß Epiphanie und wurde mit Festen, Opfern und neuer Zeitrechnung begangen. Von einer erschienenen Gnade zu sprechen setzte diesen Vorgang um.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Verse davor ordnen alte Männer, alte Frauen, junge Frauen, junge Männer und Sklaven ein – eine Haustafel. Solche Listen dienten dem Nachweis, dass eine Gruppe die öffentliche Ordnung nicht bedrohte. Der Brief begründet sie mit einem „denn“ und schiebt Vers 11 nach.',
+      },
+    ],
     terms: [
       {
         word: 'griech. epephane',
@@ -9884,6 +9924,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der zweite Petrusbrief gilt in der Forschung überwiegend als die späteste Schrift des Neuen Testaments; schon in der Alten Kirche war seine Zugehörigkeit zum Kanon umstritten. Er greift den Judasbrief großflächig auf. Der Abschnitt reagiert auf Spötter, die das Ausbleiben der Wiederkunft anführten. Die Aussage über die Schriftauslegung – „keine Weissagung geschieht aus eigener Auslegung“ – gehört zu den wirkungsreichsten Sätzen der Kirchengeschichte.',
     reception:
       'Der Brief gilt der Mehrheit der Forschung als das späteste Buch des Neuen Testaments und als nicht von Petrus verfasst; sein Griechisch, seine Aufnahme des Judasbriefs und die vorausgesetzte Sammlung von Paulusbriefen sprechen dafür. Seine Aufnahme in den Kanon war entsprechend umstritten – Eusebius zählt ihn im 4. Jahrhundert zu den bestrittenen Schriften.\n\nVers 20 und 21 sind neben 2. Timotheus 3,16 die wichtigste neutestamentliche Aussage über die Entstehung der Schrift. Der Satz, keine Weissagung geschehe „aus eigener Auslegung“, wurde im Streit um das Lehramt von beiden Seiten gebraucht: als Argument gegen private Bibelauslegung und als Aussage über die Entstehung, nicht über die Deutung.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Vorwurf, mit erdachten Geschichten zu arbeiten, traf Wanderredner und Religionsanbieter regelmäßig; Lukian von Samosata spottet über einen solchen Fall ausführlich. Sich auf Augenzeugenschaft zu berufen war die übliche Verteidigung – und die Standardformel antiker Geschichtsschreibung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Morgenstern gehörte zur Bildsprache der Herrscherverehrung und der Astrologie: Venus als Ankündiger des Tages. Das lateinische Wort dafür ist *lucifer*; erst eine spätere Auslegung von Jesaja 14 machte daraus den Namen eines gefallenen Engels.',
+      },
+    ],
     terms: [
       {
         word: 'griech. mythois',
@@ -9932,6 +9982,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der erste Johannesbrief richtet sich gegen eine Gruppe, die die Gemeinde verlassen hat. Ihre Position lässt sich aus den Sätzen erschließen, die der Brief zitiert und zurückweist: „Wir haben keine Sünde“ und „Wir haben nicht gesündigt“. Vermutlich handelte es sich um eine Frömmigkeit, die sich durch Erkenntnis über die alltägliche Schuld erhaben glaubte. Der Brief antwortet nicht mit Verschärfung, sondern mit dem Angebot des Bekennens – und mit dem Hinweis, dass die Leugnung Gott zum Lügner macht.',
     reception:
       'Die Verse 8 und 9 gehören zum festen Bestand der Beichte und des Sündenbekenntnisses im Gottesdienst; kaum ein Beichtformular kommt ohne sie aus. Ihr Aufbau ist bemerkenswert: Auf jeden Satz, der eine Selbsttäuschung benennt, folgt die Zusage.\n\nDer Brief richtet sich gegen eine Gruppe, die offenbar behauptete, Sünde sei für den Vollkommenen kein Thema mehr. Diese Auseinandersetzung kehrt in der Kirchengeschichte immer wieder – in der Perfektionismusdebatte des Methodismus ebenso wie in heutigen Frömmigkeitsformen, die von Siegesleben sprechen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Licht und Finsternis waren keine Begriffe, sondern Erfahrung: Nach Sonnenuntergang blieb eine Öllampe mit einer Flamme so groß wie eine Kerze, und wer nachts unterwegs war, sah nichts. „Im Licht wandeln“ hieß zuerst: bei Tag gehen, wo man gesehen wird.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Brief widerspricht Leuten, die behaupteten, ohne Sünde zu sein. Vollkommenheitsansprüche gehörten zum religiösen Angebot der Zeit: Mysterienkulte versprachen Reinigung, philosophische Schulen den Weisen ohne Fehler. Der Brief hält dagegen ein Verfahren – Bekennen und Vergeben.',
+      },
+    ],
     terms: [
       {
         word: 'griech. phos',
@@ -12947,6 +13007,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Dreiklang bitten, suchen, anklopfen ist kunstvoll gebaut: Jedes Verb wird in Vers 8 mit der Begründung wiederholt. Im Griechischen stehen Befehlsformen der Dauer, also eher anhaltendes Bitten als ein einmaliger Ruf. Unmittelbar danach folgt der Vergleich mit dem Vater, der seinem Kind kein Stein statt Brot gibt. Die Auslegungsgeschichte hat sich vor allem an der Frage abgearbeitet, wie sich der Satz zu unerhörten Gebeten verhält.',
     reception:
       'An diesem Vers arbeitet sich die Gebetslehre seit der Alten Kirche ab, weil er offenkundig nicht so eintrifft, wie er klingt. Augustinus antwortete, Gott gebe entweder das Erbetene oder etwas Besseres; Thomas von Aquin band die Zusage an das, was zum Heil dient; Luther betonte, dass die Zusage der Verheißung gilt, nicht dem Wunsch. Alle drei Antworten sind bis heute im Gebrauch.\n\nIn der Seelsorge gilt der Vers als heikel. Wo er als Erfolgsregel verstanden wird, gerät ein unerhörtes Gebet zum Beweis mangelnden Glaubens – ein Schluss, den der Text nicht zieht und der Menschen in Krankheit und Trauer zusätzlich belastet.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Das Bild vom Vater, der Brot und Fisch gibt und keinen Stein und keine Schlange, ist genau beobachtet: Runde Fladen sehen Kieseln ähnlich, und der Wels im See Genezareth galt als unreiner Fisch, der einem Aal glich. Die Beispiele stammen vom Küchentisch, nicht aus der Rhetorik.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Anklopfen setzt eine verschlossene Tür voraus – und Häuser wurden bei Dunkelheit verriegelt, weil der Raum zugleich Schlafplatz der ganzen Familie war. Lukas erzählt dieselben Verse mit einem Nachbarn, der nachts nicht aufstehen will. Die Zusage rechnet mit Widerstand.',
+      },
+    ],
     terms: [
       {
         word: 'griech. aiteite',
@@ -12996,6 +13066,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Vergleichbare Sätze finden sich bei Konfuzius, in griechischen Texten und im babylonischen Talmud, wo Hillel sie in der verneinenden Form gibt: Was dir verhasst ist, tue deinem Nächsten nicht. Matthäus formuliert positiv und fordert damit nicht nur Unterlassung, sondern Handeln. Der Zusatz, dies sei das Gesetz und die Propheten, stellt die Regel als Zusammenfassung der ganzen Schrift dar und rahmt zusammen mit Kapitel 5,17 den Hauptteil der Bergpredigt.',
     reception:
       'Die Regel steht in ähnlicher Form in fast allen großen Traditionen: bei Konfuzius, im Mahabharata, bei Hillel, im Buch Tobit, bei Seneca. Das Projekt Weltethos machte sie 1993 zur gemeinsamen Grundlage einer Erklärung, die von Vertretern zahlreicher Religionen unterzeichnet wurde.\n\nPhilosophisch ist sie mehrfach kritisiert worden: Immanuel Kant hielt sie für unzureichend, weil sie voraussetzt, dass die eigenen Wünsche ein tauglicher Maßstab sind – ein Richter, so sein Einwand, müsste danach niemanden verurteilen. Sein kategorischer Imperativ ist der Versuch, die Regel von dieser Schwäche zu befreien.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Zusammenleben lief über Gegenseitigkeit: Wer half, konnte mit Hilfe rechnen, wer einlud, wurde eingeladen. Diese Erwartung regelte Nachbarschaft, Handel und Gastfreundschaft. Die Regel greift also eine geltende Ordnung auf – und die Feldrede bei Lukas schneidet dann ausdrücklich die Gegenleistung ab.',
+      },
+      {
+        aspect: 'recht',
+        text: '„Das ist das Gesetz und die Propheten“ ist eine Formel für die ganze Schrift. Sie so zusammenzufassen war eine anerkannte Schulübung: Man suchte den Grundsatz, aus dem die Einzelbestimmungen folgen. Hillel soll dieselbe Aufgabe mit der verneinten Fassung gelöst haben.',
+      },
+    ],
     terms: [
       {
         word: 'griech. panta',
@@ -13099,6 +13179,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz fällt nach dem Gespräch mit dem reichen jungen Mann und dem Bild vom Kamel und dem Nadelöhr. Die Jünger entsetzen sich und fragen, wer dann selig werden könne – für sie war Reichtum ein Zeichen des Segens, nicht ein Hindernis. Die verbreitete Erklärung, das Nadelöhr sei ein enges Stadttor gewesen, ist erst mittelalterlich und archäologisch nicht belegt; der Vergleich ist bewusst absurd. Der Vers ist also zunächst eine Aussage über Rettung, nicht über die Erfüllbarkeit von Wünschen.',
     reception:
       'Der Satz ist zu einer allgemeinen Ermutigungsformel geworden und steht auf Karten, in Reden und in der Werbung. Sein Zusammenhang ist der schärfste Besitzabschnitt der Evangelien: Ein reicher Mann geht traurig weg, und Jesus sagt, es sei leichter, dass ein Kamel durch ein Nadelöhr gehe.\n\nDie beliebte Erklärung, „Nadelöhr“ sei ein enges Stadttor gewesen, ist eine mittelalterliche Erfindung ohne archäologischen Beleg. Sie entschärft das Bild, das gerade von seiner Unmöglichkeit lebt – und die Antwort in Vers 26 setzt diese Unmöglichkeit voraus.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Reichtum galt als Zeichen des Segens – wer viel hatte, stand offenbar gut mit Gott und konnte großzügig Almosen geben. Deshalb ist die Frage der Jünger, wer denn dann gerettet werden könne, keine Frömmigkeit, sondern folgerichtig: Wenn nicht die Begünstigten, dann niemand.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Kamel war das größte Tier der Region, das Nadelöhr die kleinste Öffnung im Haushalt. Übertreibungen dieser Bauart waren im rabbinischen Sprachgebrauch üblich – dort steht sprichwörtlich der Elefant im Nadelöhr. Es ist eine geläufige Redefigur für das Unmögliche.',
+      },
+    ],
     terms: [
       {
         word: 'griech. adynaton',
@@ -13266,6 +13356,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Verse gehören zum sogenannten längeren Markusschluss, Kapitel 16,9 bis 20. Er fehlt in den beiden ältesten und wichtigsten Handschriften und ist sprachlich deutlich vom übrigen Evangelium unterschieden; die Forschung hält ihn nahezu einhellig für eine spätere Ergänzung des zweiten Jahrhunderts. Das ursprüngliche Markusevangelium endet wahrscheinlich in Vers 8 mit der Furcht der Frauen. Der Zusatz fasst zusammen, was die anderen Evangelien erzählen, und fügt in Vers 16 eine Verknüpfung von Glaube, Taufe und Rettung hinzu, die so sonst nicht formuliert wird.',
     reception:
       'Der Abschnitt gehört zum sogenannten längeren Markusschluss, der in den beiden ältesten vollständigen Handschriften – Codex Sinaiticus und Vaticanus – fehlt und sprachlich vom übrigen Evangelium abweicht. Die meisten Ausgaben drucken ihn ab und markieren ihn; das ursprüngliche Markusevangelium endet wohl mit der Furcht der Frauen am Grab.\n\nDer folgende Vers, der von Schlangen und tödlichem Gift spricht, hat eine eigene und gefährliche Wirkung: In einigen Gemeinden im Süden der USA werden seit 1910 Gottesdienste mit Giftschlangen gefeiert; es hat dabei Todesfälle gegeben. Mehrere Bundesstaaten haben die Praxis verboten.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der ursprüngliche Markusschluss endet damit, dass die Frauen aus Furcht schweigen – ein Ende, das Abschreiber offenbar unbefriedigend fanden. Handschriften überliefern mehrere Fortsetzungen unterschiedlicher Länge. Man sieht hier, wie ein Text unter der Hand seiner Benutzer weiterwuchs.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Abgeschrieben wurde von Hand, oft nach Diktat, auf Papyrus oder Pergament; ein Evangelium kostete ungefähr einen Monatslohn. Wer ein Buch besaß, ließ es abschreiben und verglich es nicht mit anderen Exemplaren – so entstanden Fassungen, die nebeneinander umliefen.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ktisis',
@@ -13315,6 +13415,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz greift wörtlich auf 1. Mose 18,14 zurück, wo dieselbe Frage nach der Geburt Isaaks gestellt wird. Lukas verbindet damit die Ankündigung an Maria mit der ältesten Verheißungsgeschichte Israels: In beiden Fällen wird ein Kind gegen alle Wahrscheinlichkeit angesagt. Das griechische Wort für Ding heißt zugleich Wort oder Sache; wörtlich steht dort, dass kein Wort Gottes kraftlos sein wird. Die Antwort Marias in Vers 38 folgt unmittelbar.',
     reception:
       'Der Vers steht am Ende der Verkündigung an Maria und ist über Weihnachtsgottesdienste und Adventslieder einer der bekanntesten der Bibel. Er wird häufig als allgemeine Zusage der Machbarkeit zitiert – der griechische Wortlaut spricht enger von der Zusage, die Gott gegeben hat.\n\nDie Rückbindung an Sara ist die eigentliche Pointe: Lukas erzählt die Ankündigung an Maria in den Formen der alttestamentlichen Verheißungsgeschichten. Was Maria antwortet – „mir geschehe, wie du gesagt hast“ –, hat in der Auslegungsgeschichte sehr verschiedene Deutungen erfahren: als Vorbild des Gehorsams, in neuerer feministischer Auslegung als Zustimmung, die erbeten und nicht vorausgesetzt wird.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Elisabeth wird ausdrücklich als unfruchtbar und alt eingeführt. Kinderlosigkeit galt als Schande und wurde der Frau zugerechnet; sie bedeutete zugleich keine Versorgung im Alter. Der Satz fällt also nach einer Nachricht, die diese Schande aufhebt – und vor einer, die eine neue schafft.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Von Nazareth ins Bergland Judäas, wohin Maria danach aufbricht, sind es rund 120 Kilometer – vier bis fünf Tagesmärsche durch samaritanisches Gebiet. Dass eine junge Frau diese Strecke zurücklegt, ist ein Vorgang, den Lukas beiläufig erwähnt und der beträchtlich war.',
+      },
+    ],
     terms: [
       {
         word: 'griech. rhema',
@@ -13364,6 +13474,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Lukas stellt die Regel mitten in den Abschnitt über die Feindesliebe: unmittelbar davor steht das Gebot, dem den Mantel zu lassen, der den Rock nimmt, unmittelbar danach die Frage, was für ein Dank es sei, wenn man nur die liebt, von denen man Gegenliebe erwartet. Damit wird die Regel ausdrücklich aus der Rechnung des Gegenseitigen herausgelöst. Bei Matthäus steht derselbe Satz am Ende der Bergpredigt und fasst Gesetz und Propheten zusammen; die Stellung verändert den Sinn erheblich.',
     reception:
       'In der Feldrede steht die Goldene Regel zwischen der Aufforderung, Feinde zu lieben, und der Frage, was für ein Verdienst es sei, die zu lieben, die einen lieben. Damit bekommt sie eine Zuspitzung, die sie bei Matthäus nicht hat: Sie gilt gerade dort, wo keine Gegenseitigkeit zu erwarten ist.\n\nGenau darin liegt die Antwort auf den klassischen Einwand gegen die Regel – dass sie auf Tausch hinauslaufe. Lukas schneidet den Tausch ausdrücklich ab: „leihet, wo ihr nichts dafür hoffet“.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Die Feldrede spricht kurz darauf vom Leihen ohne Hoffnung auf Rückgabe. Darlehen unter Nachbarn waren üblich und wurden mit Pfand besichert – ein Mantel, ein Werkzeug, im Ernstfall der Acker. Auf die Sicherheit zu verzichten hieß, ein reales Verlustrisiko zu tragen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Aufforderung, den Feinden Gutes zu tun, steht in einer Kultur, in der Vergeltung Pflicht war: Wer eine Beleidigung hinnahm, verlor Ansehen für die ganze Familie. Die Regel wird hier also nicht als Klugheit empfohlen, sondern gegen eine geltende Ehrenordnung gestellt.',
+      },
+    ],
     terms: [
       {
         word: 'griech. homoios',
@@ -13404,6 +13524,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Maß, das gedrückt, gerüttelt und überfließend in den Schoß gegeben wird, beschreibt genau, was ein redlicher Händler beim Abmessen von Korn tat: Er drückte nach, schüttelte den Behälter und häufte auf, bis es überlief. Der Schoß meint die aufgenommene Falte des Obergewandes, die als Tragebeutel diente. Im Zusammenhang steht der Satz nicht bei Geld, sondern beim Richten und Verurteilen: Es geht darum, mit welchem Maß man anderen begegnet. Der zweite Halbsatz nennt das ausdrücklich.',
     reception:
       'Der Vers gehört zu den meistzitierten in der Wohlstandsverkündigung, wo er als Ertragsversprechen für Spenden gelesen wird – „geben, um zu bekommen“. Der Zusammenhang widerspricht dem: Unmittelbar davor steht die Aufforderung, ohne Hoffnung auf Rückgabe zu leihen und nicht zu richten.\n\nDas Maß, von dem der Vers spricht, ist im Zusammenhang das Maß des Urteilens. Lukas stellt den Satz in eine Reihe über Richten und Verurteilen, nicht über Kollekten – die Verschiebung ins Finanzielle ist eine spätere Lesart.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Beim Getreidehandel füllte man das Hohlmaß, rüttelte es, drückte nach und ließ überlaufen – oder eben nicht. Betrug beim Messen war das häufigste Vergehen auf dem Markt, und Ämter führten Eichmaße. Der Vers beschreibt das Verhalten eines Händlers, der es gut meint.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der „Schoß“ ist die Bausche des Obergewands über dem Gürtel, die als Tasche diente: Darin trug man Saatgut, Einkäufe, Werkzeug. Wer sie aufhielt, ließ sich etwas hineinschütten. Das Bild kommt vom Marktplatz und war jedem Käufer vertraut.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kolpos',
@@ -13692,6 +13822,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das Gebot der Nächstenliebe steht bereits in 3. Mose 19,18. Der Text nennt das Gebot dennoch neu, weil ein anderer Vergleichspunkt eingeführt wird: nicht wie dich selbst, sondern wie ich euch geliebt habe. Gesprochen wird der Satz beim letzten Mahl, unmittelbar nachdem Jesus den Jüngern die Füße gewaschen hat, und unmittelbar nachdem Judas hinausgegangen ist. Der Kreis, von dem geredet wird, ist ausdrücklich die Gemeinde: einander, nicht alle Menschen.',
     reception:
       'Aus Vers 35 wurde das Erkennungszeichen der frühen Gemeinden; Tertullian überliefert um 200 den Ausruf der Heiden: „Seht, wie sie einander lieben.“ Die Fußwaschung am Gründonnerstag heißt nach dem lateinischen Anfang dieses Verses – *mandatum novum* – bis heute Mandatum; das englische Wort *Maundy Thursday* stammt daher.\n\nDie Einschränkung auf „einander“ ist früh diskutiert worden. Kritiker sahen darin eine Binnenmoral, die den Blick nach außen verstellt; Ausleger halten dagegen, dass Johannes an eine bedrängte, kleine Gemeinschaft schreibt, deren Zusammenhalt ihre Existenzbedingung war – und dass Vers 35 den Blick von außen ausdrücklich einbezieht.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Vereine und Kultgemeinschaften der Antike hatten Satzungen mit gegenseitigen Pflichten: Beiträge, Bestattung der Mitglieder, Beistand vor Gericht. Eine Gruppe, die durch gegenseitige Zuwendung erkennbar sein wollte, bewegte sich in einer bekannten Form – und setzte den Maßstab höher.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Satz fällt, nachdem Judas hinausgegangen ist, in einer Nacht, die mit Verhaftung endet. Die johanneische Gemeinde erlebte später den Ausschluss aus der Synagoge. Der Zusammenhalt, den der Vers verlangt, war für sie die Bedingung des Überlebens, nicht ein Zusatz.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kaine',
@@ -13741,6 +13881,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Friede sei mit euch war und ist der alltägliche Gruß, hebräisch schalom. Der Text nimmt die Formel auf und setzt sie ab: Was hier gegeben wird, gleicht nicht dem, was die Welt gibt. Gemeint ist damit nicht ein innerer Gefühlszustand gegenüber äußerem Frieden; die römische Ordnung der Zeit hieß Pax Romana und war ein durch Waffen gesicherter Frieden. Der Satz steht in den Abschiedsreden, also in einer Situation, in der die Angst der Jünger den ganzen Zusammenhang bestimmt.',
     reception:
       'Der Vers gehört zum festen Bestand des Friedensgrußes in der Liturgie und wurde in der Friedensbewegung der 1980er Jahre zu einem ihrer meistzitierten Sätze – gerade wegen der Absetzung vom Frieden, „wie die Welt gibt“. Die *Pax Romana*, die die ersten Leser kannten, war ein durch Waffen gesicherter Zustand.\n\nIn der Mystik hat der Vers eine andere Linie: Von den Wüstenvätern über Meister Eckhart bis zu heutigen Stilleübungen gilt er als Zusage eines Friedens, der von den Umständen unabhängig ist. Beide Lesarten – die politische und die innerliche – berufen sich auf denselben Satz und stehen bis heute nebeneinander.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die Pax Romana war ein durch Waffen gesicherter Zustand: Der Ara Pacis in Rom feierte sie, und Provinzen bezahlten sie mit Steuern und Truppenpräsenz. Tacitus legt einem britannischen Anführer den Satz in den Mund, die Römer machten eine Wüste und nennten es Frieden.',
+      },
+      {
+        aspect: 'alltag',
+        text: '„Friede sei mit euch“ war der alltägliche Gruß beim Kommen und Gehen, hebräisch schalom. Der Satz nimmt die Verabschiedungsformel auf, die die Jünger an diesem Abend erwarteten – und setzt sie ausdrücklich von dem ab, was sonst damit gemeint war.',
+      },
+    ],
     terms: [
       {
         word: 'griech. eirene',
@@ -13849,6 +13999,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz steht am Ende der Abschiedsreden, unmittelbar vor dem Gebet in Kapitel 17 und der Gefangennahme. Auffällig ist die Zeitform: überwunden ist bereits geschehen, obwohl Verhaftung, Verhör und Hinrichtung noch bevorstehen. Für das Johannesevangelium ist die Erhöhung am Kreuz selbst der Sieg; deshalb kann der Satz vorweggenommen werden. Der erste Teil räumt die Angst ausdrücklich ein: In der Welt habt ihr Angst – das wird nicht bestritten, sondern festgestellt.',
     reception:
       'Der Vers gehört zu den meistgesprochenen Sätzen in Kriegs- und Krisenzeiten und stand in den Feldpostbriefen beider Weltkriege ebenso wie in den Gebeten der Friedensgebete von 1989. Bach setzte ihn in der Kantate BWV 87 an den Anfang und ließ ihn vom Bass als Christuswort singen.\n\nSeine Sprengkraft liegt in der Reihenfolge: Erst wird die Bedrängnis zugegeben, dann folgt der Trost. Die Auslegung hat oft nur die zweite Hälfte zitiert; wer beide liest, findet keinen Satz gegen die Angst, sondern einen daneben.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Wort für Bedrängnis meint wörtlich Druck – wie beim Pressen von Oliven oder Trauben. Für die Angeredeten war das keine Stimmung: Kapitel 16 kündigt Synagogenausschluss und Tötung an, und die frühen Gemeinden erlebten beides.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Siegesmeldungen wurden im Reich in fester Form verkündet: Ein Bote brachte die Nachricht, die Stadt feierte. Das Verb im Vers steht in der vollendeten Form – der Sieg ist gemeldet, bevor die Schlacht sichtbar geschlagen ist. Gesprochen wird der Satz vor der Verhaftung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. thlipsis',
@@ -14075,6 +14235,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Paulus und Silas sitzen in Philippi im Gefängnis, ein Erdbeben öffnet die Türen. Der Wärter will sich das Schwert geben, weil auf Gefangenenflucht die Todesstrafe stand. Seine Frage, was er tun solle, um selig zu werden, meint zunächst wohl ganz handfest die Rettung seines Lebens. Die Antwort schließt das Haus ein: Damit ist der ganze Hausverband gemeint, also Familie, Bedienstete und Sklaven – eine soziale Einheit, nicht eine Kleinfamilie im heutigen Sinn.',
     reception:
       'Der Vers ist der Kerntext für die sogenannte Haustaufe und damit ein Hauptargument der Kirchen, die Kinder taufen: Wo ein „ganzes Haus“ getauft wird, seien Kinder mitgemeint. Baptistische und freikirchliche Traditionen halten dagegen, dass der Text im nächsten Vers vom Verkündigen an alle im Haus spricht – und Verkündigung setze Verstehen voraus.\n\nIn der Erweckungsbewegung ist der Vers zum Standardsatz der Bekehrungsansprache geworden. Sein Zusammenhang ist drastisch: Ein Erdbeben, offene Türen, ein Beamter mit gezogenem Schwert. Die Frage „was muss ich tun, dass ich selig werde?“ fällt in einer Nacht, in der es zunächst um sein Leben geht.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Ein Kerkermeister haftete mit dem eigenen Leben für seine Gefangenen; entkam einer, traf ihn dessen Strafe. Deshalb zieht er das Schwert, als er die Türen offen sieht. Die Frage nach Rettung fällt einem Mann ein, der in diesem Moment um sein Leben fürchtet.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Hausstand umfasste Familie, Bedienstete und Sklaven und entschied gemeinsam – über Kult, Bündnisse und Zugehörigkeit bestimmte der Hausherr. Dass eine Zusage dem „Haus“ gilt, entspricht dieser Ordnung und ist bis heute das Hauptargument im Streit um die Kindertaufe.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ho oikos sou',
@@ -14187,6 +14357,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Vers 23 wird häufig für sich genommen und klingt dann wie ein Urteil. Im Satzbau des Paulus ist er aber nur die erste Hälfte: Der Nebensatz läuft ohne Punkt weiter in die Zusage von Vers 24. Der entscheidende Ausdruck heißt wörtlich geschenkweise, umsonst – dasselbe Wort, das in der Septuaginta für grundlos steht. Der Zusammenhang beginnt in Kapitel 1 mit dem Nachweis, dass Juden wie Heiden gleichermaßen unter der Sünde stehen; das Ziel ist nicht die Beschämung, sondern die Gleichstellung.',
     reception:
       'Der Satz „allzumal Sünder“ gehört zu den bekanntesten Wendungen aus Luthers Übersetzung und ist in die Alltagssprache eingegangen. Theologisch trägt er die Lehre von der Erbsünde mit, obwohl er sie nicht ausspricht – Paulus stellt hier eine Beobachtung fest, keine Herkunftslehre.\n\nDie Wendung „kein Unterschied“ ist in der Wirkungsgeschichte oft überhört worden, obwohl sie im Zusammenhang das Entscheidende sagt: Paulus argumentiert im ganzen Kapitel darauf hin, dass Juden und Nichtjuden auf derselben Grundlage stehen. Der Satz ist zuerst eine Aussage über Gleichheit und erst dann eine über Schuld.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehre war ein knappes Gut, das man sich erwarb und verteidigte; „Ruhm“ meint im Vers genau das – Ansehen vor Gott und Menschen. Dass niemand ihn habe, hebt die Rangordnung auf, nach der sich Menschen sortierten.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das ganze Kapitel argumentiert darauf hin, dass „kein Unterschied“ zwischen Juden und Griechen besteht. In einer Gemeinde, in der beide Gruppen zusammensaßen und über Speisen und Feiertage stritten, war das die eigentliche Streitfrage – nicht die Frage nach dem Sünder.',
+      },
+    ],
     terms: [
       {
         word: 'griech. hysterountai',
@@ -14236,6 +14416,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Paulus argumentiert im Zusammenhang mit einem Gegenbeispiel aus dem Alltag: Für einen Gerechten stirbt kaum jemand, für einen Guten vielleicht. Die Zuwendung Gottes durchbricht diese Rechnung, weil sie den Zeitpunkt umkehrt. Das Wort, das Luther mit preisen wiedergibt, meint erweisen oder beweisen – es geht um einen sichtbaren Nachweis. Der Vers gehört zu den wenigen Stellen, an denen Paulus ausdrücklich von der Liebe Gottes redet; sonst spricht er meist von Gnade.',
     reception:
       'Der Vers gehört zu den vier Stellen des sogenannten Römerbrief-Weges, mit dem in evangelikalen Gemeinden weltweit in den Glauben eingeführt wird, und ist einer der meistzitierten Sätze der Bekehrungspredigt.\n\nIn der Auslegung ist er zugleich das Hauptargument gegen jede Deutung des Kreuzes, in der ein zorniger Gott besänftigt werden muss: Der Satz stellt Gottes Liebe an den Anfang, nicht an das Ende des Vorgangs. Wer die Reihenfolge umdreht, sagt nach diesem Vers etwas anderes als Paulus.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Vers davor sagt, kaum jemand sterbe für einen Gerechten, für einen Guten wage es vielleicht einer. Das Sterben für den Freund galt als höchste Tugend und wurde in Reden und Grabinschriften gefeiert. Der Satz misst sich an diesem Ideal – und verschiebt es auf einen Adressaten, der es nicht verdient.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für „erweisen“ stammt aus der Beweisführung vor Gericht: etwas zusammenstellen und darlegen. Paulus behauptet nicht, dass Gott liebt, sondern führt einen Beleg an – die Argumentationsform ist die eines Anwalts, nicht eines Predigers.',
+      },
+    ],
     terms: [
       {
         word: 'griech. synistesin',
@@ -14344,6 +14534,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Kapitel 7 endet mit dem berühmten Zwiespalt: Das Gute, das ich will, tue ich nicht. Kapitel 8 setzt mit dem Freispruch neu an und wird zum hellsten Teil des Römerbriefs. Der Zusatz die nicht nach dem Fleisch wandeln fehlt in den ältesten Handschriften und wurde wahrscheinlich aus Vers 4 nachgetragen; ohne ihn ist der Freispruch unbedingt formuliert. Fleisch meint bei Paulus keine Leiblichkeit und schon gar nicht Sexualität, sondern den auf sich selbst gestellten Menschen.',
     reception:
       'Kapitel 8 gilt vielen als Höhepunkt des Römerbriefs, und sein erster Satz gehört zu den meistgesprochenen Zusagen in der Seelsorge bei Schuldgefühlen und Skrupeln. Luther nannte den Abschnitt in seiner Vorrede das Herzstück des Briefes.\n\nDie Verse über Fleisch und Geist haben eine problematische Nebenwirkung: Über Jahrhunderte wurden sie als Abwertung des Körpers und der Sexualität gelesen, verstärkt durch die Verbindung mit griechischer Philosophie. Die neuere Auslegung betont, dass *sarx* bei Paulus eine Haltung bezeichnet und nicht ein Körperteil – und dass derselbe Brief die Erlösung des Leibes erwartet, nicht die Erlösung vom Leib.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Das Wort für „Verdammliches“ meint das Strafurteil nach dem Schuldspruch – die Vollstreckung, nicht den Befund. In einem Prozess war das der Moment, in dem entschieden wurde, ob jemand Geldstrafe, Verbannung oder Todesstrafe erhielt. Der Satz spricht keinen Freispruch aus, sondern setzt die Vollstreckung aus.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Wort, das Luther mit „Fleisch“ übersetzt, bezeichnete auch die Verwandtschaft und die Herkunft – „mein Fleisch“ hieß meine Sippe. Die Entgegensetzung von Fleisch und Geist trifft deshalb auch die Frage, woraus jemand seine Zugehörigkeit ableitet: aus Abstammung oder aus etwas anderem.',
+      },
+    ],
     terms: [
       {
         word: 'griech. katakrima',
@@ -14393,6 +14593,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Doppelsatz wirkt formelhaft und wird meist als Zitat einer bereits geprägten Bekenntnisformel verstanden – möglicherweise aus der Taufe. Der Satz Jesus ist der Herr war politisch nicht harmlos: Kyrios war auch ein Titel des römischen Kaisers. Herz meint im hebräischen Denken nicht das Gefühl, sondern den Ort der Entscheidung. Der Zusammenhang in den Kapiteln 9 bis 11 handelt vom Verhältnis zu Israel und mündet in die Aussage, dass Gott seine Zusagen nicht zurücknimmt.',
     reception:
       'Der Vers ist die Grundlage des kürzesten christlichen Bekenntnisses – „Jesus ist Herr“ – und in Taufliturgien seit der Alten Kirche präsent. Im 20. Jahrhundert wurde er politisch: Die Ökumenische Bewegung machte ihn zur Grundformel des Weltkirchenrats, und die Bekennende Kirche stellte ihn 1934 gegen den Führeranspruch.\n\nIn der Bekehrungspraxis mancher Gemeinden ist daraus das „Übergabegebet“ geworden – ein einmaliger, laut gesprochener Satz, an dem die Heilsgewissheit hängt. Paulus argumentiert im Zusammenhang gegen eine solche Verengung: Die Kapitel 9 bis 11 handeln davon, dass Gottes Zusage an Israel gilt, auch wo dieses Bekenntnis nicht fällt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Kyrios war der Titel des Kaisers im griechischsprachigen Osten und begegnete auf Münzen, in Eiden und in Eingaben an Behörden. Wer den Titel einem anderen zusprach, tat das in einer Welt, in der Loyalitätsbekundungen aktenkundig wurden – Plinius’ Berichte zeigen, wie man sie später abfragte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Bekenntnis „mit dem Munde“ war öffentlich: Man sprach es vor Zeugen bei der Taufe, vor Gericht, in der Versammlung. Innerlichkeit ohne Aussage war nach antikem Verständnis keine Zugehörigkeit; erst das gesprochene Wort band – und machte angreifbar.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kyrios',
@@ -14501,6 +14711,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die beiden griechischen Verben sind bewusst gegeneinander gesetzt: sich einer Form anpassen und umgestaltet werden. Das zweite steht im Passiv – die Veränderung wird nicht selbst gemacht. Sinn meint hier den Verstand, das Urteilsvermögen. Das Ziel ist ausdrücklich das Prüfen: Der Text verlangt kein Befolgen von Regeln, sondern die Fähigkeit, im Einzelfall zu unterscheiden, was gut ist. Diese Verbindung von Nonkonformität und Urteilskraft ist im Neuen Testament ungewöhnlich deutlich.',
     reception:
       'Der Vers gehört zu den meistverwendeten Konfirmations- und Ordinationssprüchen und ist in Bekenntnistexten des Widerstands regelmäßig zitiert worden – von der Bekennenden Kirche bis zu Bürgerrechtsbewegungen. Seine Spitze liegt darin, dass er nicht Gehorsam gegen eine Ordnung fordert, sondern Unterscheidungsvermögen.\n\nDie Wendung „dieser Welt“ ist in der Frömmigkeitsgeschichte oft als Aufforderung zum Rückzug gelesen worden – in Kleidung, Musik, Umgang. Der Zusammenhang zielt woandershin: Was folgt, sind Kapitel über Gaben in der Gemeinde, über Feinde, über Obrigkeit und über den Umgang mit Andersdenkenden. Es geht um Urteilsfähigkeit mitten in der Welt, nicht um Abstand von ihr.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Sich nicht gleichzustellen betraf Handfestes: Teilnahme an Vereinsfesten, Opfermahlzeiten, Spielen, Prozessionen. Wer fernblieb, verlor Geschäftsbeziehungen und geriet in den Verdacht der Menschenfeindlichkeit. Der Vers verlangt keine Innerlichkeit, sondern Entscheidungen mit Kosten.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für „prüfen“ stammt aus der Münzprüfung: Man testete Metall auf Echtheit, weil Falschgeld verbreitet war und Wechsler davon lebten, es zu erkennen. Gefordert ist damit ein erlerntes Urteilsvermögen, nicht Gehorsam gegenüber einer Regel.',
+      },
+    ],
     terms: [
       {
         word: 'griech. syschematizesthe',
@@ -14613,6 +14833,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Das griechische Wort meint Versuchung und Prüfung zugleich; im Zusammenhang geht es um die Frage, ob Christen an Opfermahlzeiten in heidnischen Tempeln teilnehmen dürfen. Paulus hat zuvor an die Wüstenzeit Israels erinnert und vor Selbstsicherheit gewarnt. Der Vers ist also zunächst Antwort auf eine konkrete Frage nach religiösem Verhalten, nicht eine allgemeine Aussage über Leid. Das Wort für Ende meint wörtlich den Ausgang, den Fluchtweg.',
     reception:
       'Der Vers wird häufig als Zusage gelesen, Gott lege niemandem mehr auf, als er tragen kann – eine Wendung, die in der Seelsorge an Grenzen stößt, weil Menschen an Belastungen tatsächlich zerbrechen. Der Text sagt etwas Engeres: Er spricht von Versuchung, nicht von Leid, und er verspricht einen Ausweg, nicht ein erträgliches Maß.\n\nDer Zusammenhang ist eine Warnung. Paulus hat gerade an die Wüstengeneration erinnert, die trotz aller Zeichen umkam, und sagt im Vers davor: „Wer sich lässt dünken, er stehe, mag wohl zusehen, dass er nicht falle.“ Der Trost steht unmittelbar hinter einer Mahnung, nicht für sich.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Der Zusammenhang ist der Streit um Fleisch aus Tempeln. In Korinth war ein großer Teil des verkauften Fleisches Opferfleisch, und Vereinsfeiern fanden in Tempelräumen statt; Einladungskarten dazu sind auf Papyrus erhalten. Die Versuchung, von der Paulus spricht, war eine Einladung.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Das Wort für den „Ausgang“ meint den Weg aus einem Engpass – einen Pass, eine Schlucht, aus der man herausfindet. Wer in unwegsamem Gelände reiste, kannte die Lage. Zugesagt ist ein Weg hinaus, nicht ein Ausbleiben der Enge.',
+      },
+    ],
     terms: [
       {
         word: 'griech. peirasmos',
@@ -14662,6 +14892,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Kapitel 15 ist die ausführlichste Darlegung des Neuen Testaments zur Auferstehung. Bemerkenswert ist, wohin sie mündet: nicht in Spekulation über den Zustand nach dem Tod, sondern in eine Aufforderung zur Arbeit. Das Wort, das Luther mit Arbeit übersetzt, meint anstrengende Mühe. Damit wird die Auferstehung zum Grund gegenwärtigen Handelns erklärt. Der Zusammenhang setzt bei den Korinthern eine Gruppe voraus, die die Auferstehung der Toten bestritt.',
     reception:
       'Der Vers beschließt das längste zusammenhängende Kapitel über die Auferstehung im Neuen Testament – und er endet nicht mit einem Ausblick, sondern mit einer Arbeitsanweisung. Diese Wendung ins Praktische ist in der Auslegung oft hervorgehoben worden: Auferstehungshoffnung führt bei Paulus nicht aus der Welt heraus.\n\nIn der Sozialethik und in der Diakonie ist der Vers deshalb ein Standardtext. Er steht in Ordinationsgottesdiensten und in Abschiedsreden ebenso wie in kirchlichen Erklärungen zur Bedeutung von Arbeit, die keinen sichtbaren Ertrag bringt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für „Arbeit“ meint die Mühe bis zur Erschöpfung – Paulus gebraucht es für seine Handarbeit als Zeltmacher ebenso wie für seinen Dienst. In einer Welt, in der die meisten körperlich arbeiteten und der Ertrag jederzeit verloren gehen konnte, war „nicht vergeblich“ eine gewichtige Zusage.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Antike Grabinschriften halten oft nüchtern fest, dass nach dem Tod nichts bleibt und die Mühe umsonst war. Gegen diese verbreitete Stimmung setzt der Schlussvers eines Kapitels über die Auferstehung eine Arbeitsanweisung – und nicht eine Jenseitsschilderung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. kopos',
@@ -14711,6 +14951,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Abschnitt gehört zur ausführlichsten Verteidigungsrede des Paulus. Wenige Kapitel später führt er auf, was ihm widerfahren ist: fünfmal neununddreißig Schläge, dreimal Rutenstreiche, Schiffbruch, Steinigung. Vor diesem Hintergrund ist die Rede vom verderbenden äußerlichen Menschen nicht bildlich gemeint. Die Gegenüberstellung von Sichtbarem und Unsichtbarem klingt platonisch, meint bei Paulus aber keine zwei Welten, sondern zwei Zeiten: das Vergehende und das Kommende.',
     reception:
       'Der Vers gehört zu den meistgesprochenen Texten in der Begleitung chronisch Kranker und Sterbender und steht in vielen Andachtsbüchern für die letzte Lebensphase. Seine Formulierung – „von Tag zu Tag erneuert“ – hat der geistlichen Sprache eine Wendung gegeben, die weit über den Zusammenhang hinaus verwendet wird.\n\nDie Bezeichnung der Trübsal als „leicht“ ist dabei erklärungsbedürftig. Paulus zählt zwei Kapitel später auf, was er darunter versteht: Schläge, Gefängnisse, Schiffbrüche, Hunger. Der Vergleich ist keine Verharmlosung, sondern eine Gewichtung – und er stammt von einem, der die Aufzählung selbst geliefert hat.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Die Lebenserwartung war niedrig, Zahnverlust, Gelenkleiden und schlecht verheilte Brüche waren normal, und Schmerzmittel kannte man kaum. Vom „äußeren Menschen, der verdirbt“ zu sprechen beschrieb einen Vorgang, den jeder an sich beobachtete – meist ab dem vierten Jahrzehnt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Wort für Herrlichkeit übersetzt das hebräische *kabod*, das zugleich Gewicht bedeutet – Ehre wurde in Schwere gemessen, so wie man Silber wog. Paulus spielt damit gegen die „leichte“ Trübsal: Er stellt zwei Gewichte auf dieselbe Waage.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ho exo anthropos',
@@ -14760,6 +15010,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz steht in Klammern innerhalb eines Gedankens über das irdische Haus dieser Hütte und den Bau von Gott. Paulus verhandelt dort, was zwischen Tod und Auferstehung geschieht – eine Frage, auf die das Neue Testament keine einheitliche Antwort gibt. Schauen meint das unmittelbare Sehen, das nach Vers 8 dem Daheimsein bei dem Herrn vorbehalten bleibt. Der Vers formuliert damit einen Zwischenzustand und keine grundsätzliche Geringschätzung der Erfahrung.',
     reception:
       'Der Vers ist einer der meistzitierten Sätze über den Glauben und steht in Konfirmationsurkunden ebenso wie auf Grabsteinen. Er wird oft als Absage an das Nachdenken gelesen – der Zusammenhang stützt das nicht: Paulus spricht über die Spannung zwischen dem gegenwärtigen Leben und dem, was er erwartet, nicht über Erkenntnis.\n\nIn der Apologetik ist der Vers ein Standardargument der Gegenseite: Er wird als Beleg dafür angeführt, dass christlicher Glaube auf Evidenz verzichte. Ausleger halten dagegen, dass Paulus zwei Kapitel später sehr wohl argumentiert, Zeugen aufzählt und Gründe nennt.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Das Bild davor ist die Zeltwohnung, die abgebrochen wird – Paulus’ eigenes Handwerk. Zelte wurden aus Ziegenhaar oder Leder genäht, waren Reisebehausung und wurden bei jedem Aufbruch zerlegt. Das Vergängliche wird also mit dem Gegenstand beschrieben, den er selbst herstellte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Im selben Abschnitt geht es um die Beurteilung nach dem Augenschein: Gegner hielten Paulus seine unscheinbare Erscheinung vor. „Im Glauben wandeln und nicht im Schauen“ steht deshalb auch gegen ein Publikum, das nach Auftreten urteilte.',
+      },
+    ],
     terms: [
       {
         word: 'griech. peripatoumen',
@@ -14809,6 +15069,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Paulus schreibt Frucht, nicht Früchte: Die neun Begriffe sind nicht eine Auswahlliste, sondern Seiten einer Sache. Unmittelbar davor steht eine deutlich längere Liste der Werke des Fleisches; die Gegenüberstellung von Werken und Frucht ist Teil des Arguments, denn Frucht wird nicht gemacht, sondern wächst. Der Zusammenhang ist der Streit, ob Heidenchristen die Beschneidung annehmen müssen. Der Nachsatz, wider solche sei das Gesetz nicht, ist bewusst zurückhaltend formuliert.',
     reception:
       'Die Neunerreihe gehört zum festen Bestand der Katechese und ist in Kirchenfenstern, Gesangbuchliedern und Konfirmandenarbeit tausendfach abgebildet. Die katholische Tradition zählt nach der lateinischen Fassung zwölf Früchte – die Vulgata hat drei Begriffe mehr –, was den Unterschied zwischen den Konfessionen bis in Katechismen hinein sichtbar macht.\n\nDer Nachsatz wird selten mitzitiert: „Wider solche ist das Gesetz nicht.“ Er ist die eigentliche Pointe im Streit des Briefes – wo diese Frucht wächst, ist die Frage nach dem Gesetz erledigt, ohne dass es abgeschafft werden müsste.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Frucht wuchs, Werke wurden gemacht – der Unterschied zwischen den beiden Wörtern im Kapitel ist ein Unterschied zwischen Landwirtschaft und Handwerk. Der Bauer konnte pflanzen, jäten und wässern, aber das Wachsen nicht erzwingen. Genau darauf zielt der Bildwechsel.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Tugendlisten waren eine bekannte Gattung: Stoiker und Popularphilosophen zählten Eigenschaften auf, die den Weisen ausmachen. Auffällig an dieser Liste ist, was fehlt – Tapferkeit, Klugheit, Gerechtigkeit, Mäßigung, also die vier Kardinaltugenden der Antike.',
+      },
+    ],
     terms: [
       {
         word: 'griech. karpos',
@@ -14858,6 +15128,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Doxologie schließt die ersten drei Kapitel ab, bevor die Ermahnungen beginnen. Das griechische Wort für überschwenglich ist eine für Paulus typische Häufung von Steigerungen und lässt sich kaum wörtlich übersetzen. Auffällig ist der zweite Teil: Die Ehre wird nicht nur Gott zugesprochen, sondern ausdrücklich in der Gemeinde – der sichtbaren, konkreten Versammlung. Die Verfasserschaft des Epheserbriefs ist umstritten; Sprache und Gedankenführung unterscheiden sich deutlich von den unbestrittenen Paulusbriefen.',
     reception:
       'Die beiden Verse bilden einen Lobpreis, der Kapitel 1 bis 3 des Briefes abschließt, und werden in vielen Kirchen als Segensformel am Ende des Gottesdienstes gesprochen. In der englischsprachigen Welt gehören sie zu den meistgesungenen Doxologien.\n\nDer Vers wird häufig als Zusage grenzenloser Gebetserhörung zitiert. Der Wortlaut sagt etwas anderes: Er spricht von Gottes Vermögen, nicht von einer Zusage, jedes Anliegen zu erfüllen – und er nennt als Maßstab nicht die Bitte, sondern die Kraft, die schon wirkt.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Lobpreisformeln beendeten Briefe, Gebete und Reden nach festem Muster: Anrede, Zuschreibung, Zeitangabe, Amen. Solche Formeln standen auch in Synagogengebeten und wurden von der Versammlung mitgesprochen. Der Abschnitt ist deshalb kein Einfall, sondern ein liturgischer Schluss.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Brief geht in eine Provinz, in der Ephesus mit dem Artemistempel eines der Weltwunder besaß und der Kaiserkult fest verankert war. Von einer Macht zu sprechen, die über alles Bitten hinausgeht, war in dieser Umgebung eine Aussage über Zuständigkeiten.',
+      },
+    ],
     terms: [
       {
         word: 'griech. hyperekperissou',
@@ -14907,6 +15187,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Philipperbrief ist in Haft geschrieben; wo, ist unklar – Rom, Ephesus und Cäsarea werden erwogen. Die Zuversicht bezieht sich nicht auf den Ausgang des Verfahrens, sondern auf die Gemeinde. Das gute Werk meint im Zusammenhang nicht die Frömmigkeit des Einzelnen, sondern die Teilhabe der Gemeinde am Evangelium, von der Vers 5 spricht. Der Tag Jesu Christi ist der erwartete Tag des Gerichts und der Vollendung; Paulus rechnete mit seiner Nähe.',
     reception:
       'Der Vers gehört zu den meistgewählten Sprüchen bei Taufen, Konfirmationen und Ordinationen, weil er das Gelingen nicht bei den Menschen ansiedelt, denen er zugesprochen wird. In der reformierten Tradition ist er ein Beleg für die Beharrlichkeit der Heiligen – die Lehre, dass Gott einen begonnenen Weg nicht abbricht.\n\nDer Zusammenhang ist ein Dankgebet für eine Gemeinde, die Paulus finanziell unterstützt hat. Das „gute Werk“, von dem er spricht, meint im Zusammenhang zunächst diese Gemeinschaft im Evangelium – nicht die innere Entwicklung eines Einzelnen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Philippi war die erste Gemeinde in Europa, gegründet nach der Begegnung mit Lydia, einer Purpurhändlerin, in deren Haus sie sich traf. Die Gemeinde unterstützte Paulus mehrfach finanziell – als einzige, wie er in Kapitel 4 vermerkt. Das „gute Werk“ meint zuerst diese Gemeinschaft.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Wortpaar „anfangen“ und „vollenden“ stammt aus dem Vereinswesen und dem Bauwesen: Wer eine Stiftung begann, verpflichtete sich zur Fertigstellung, und unvollendete Bauten waren ein bekanntes Ärgernis in den Städten. Der Satz spielt mit dieser Erwartung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. enarxamenos',
@@ -14956,6 +15246,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Die Ermahnung steht unmittelbar vor dem Christushymnus in Vers 5 bis 11, der die Erniedrigung bis zum Kreuzestod besingt. Sie ist damit nicht als allgemeiner Bescheidenheitsappell gemeint, sondern führt auf ein Beispiel zu. Das Wort für eitle Ehre meint leeren Ruhm, das für Demut hatte in der griechischen Umwelt einen abwertenden Klang: Es bezeichnete die Haltung von Untergebenen. Dass sie hier zur Tugend erklärt wird, war eine Umwertung. Vers 4 schränkt ein: nicht nur auf das Seine, sondern auch auf das des anderen.',
     reception:
       'Die Verse führen unmittelbar zum Christushymnus und sind dessen praktische Überschrift. Sie haben die christliche Tugendlehre geprägt: Demut wird in den Katalogen der Kirchenväter an die Spitze gestellt, obwohl sie in der antiken Ethik nicht vorkam.\n\nDie Kehrseite ist gut dokumentiert. Der Ruf zur Selbstzurücknahme ist Untergebenen, Frauen und Kolonisierten als Pflicht gepredigt worden, während er die Mächtigen nicht erreichte. Feministische Theologie hat darauf hingewiesen, dass Selbstzurücknahme nur predigen kann, wer etwas zurückzunehmen hat – und dass Vers 4 ausdrücklich auch das Eigene im Blick behält.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Wort für „eitle Ehre“ meint die Jagd nach leerem Ansehen – ein geläufiger Vorwurf in der antiken Moralkritik. Städte, Vereine und Familien lebten von Ehrzuweisungen: Inschriften, Ehrenplätze, Statuen. Wer den anderen höher achtete, verzichtete auf eine Währung, in der alle rechneten.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Demut war kein Lob: Das griechische Wort bezeichnete die Gesinnung eines Menschen von niedrigem Stand und wurde abwertend gebraucht. Erst das Christentum machte daraus eine Tugend – eine der stärksten Umwertungen der antiken Wertordnung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. tapeinophrosyne',
@@ -15005,6 +15305,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Vers steht am Ende eines Dankes für eine Geldsendung. Die Verse davor nennen ausdrücklich, worum es geht: Paulus schreibt, er habe gelernt, sich genügen zu lassen, und wisse niedrig zu sein wie hoch, satt zu sein wie zu hungern. Das Alles, das er vermag, ist also dieses Wechseln zwischen Fülle und Mangel, nicht die Bewältigung beliebiger Vorhaben. Das Verb, das Luther mit mächtig machen übersetzt, meint stark machen, befähigen.',
     reception:
       'Kaum ein Vers ist häufiger auf Sportartikeln, Tätowierungen und in Interviews nach gewonnenen Spielen zu finden – vor allem in seiner englischen Fassung. Die Verwendung dreht den Sinn um: Aus einem Satz über das Aushalten von Mangel wird eine Zusage der Leistungsfähigkeit.\n\nDer Zusammenhang ist ein Dankesbrief. Paulus schreibt aus der Haft an eine Gemeinde, die ihm Geld geschickt hat, und versichert ihr, er sei auch ohne zurechtgekommen. Der Satz ist eine Aussage über Genügsamkeit – ein Wort, das er im Vers davor ausdrücklich gebraucht.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Dank für Geld war heikel: Wer annahm, geriet in die Rolle des Klienten, der dem Geber auf Dauer verpflichtet blieb – ein Verhältnis mit Rangunterschied. Paulus entzieht sich dem, indem er versichert, auch ohne zurechtzukommen. Der Vers ist ein diplomatisches Manöver.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Reihe davor nennt Sattsein und Hungern, Überfluss und Mangel. Für Reisende war beides der Normalfall: Man aß, wenn eingeladen wurde, und hungerte zwischen den Stationen. Das „alles“ des Verses ist genau diese Bandbreite, nicht jede beliebige Aufgabe.',
+      },
+    ],
     terms: [
       {
         word: 'griech. ischyo',
@@ -15117,6 +15427,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Brief redet Timotheus als jungen, gesundheitlich angeschlagenen und offenbar unsicheren Mitarbeiter an. Vers 8 nennt den Anlass unmittelbar: Er soll sich des Zeugnisses nicht schämen. Das Wort, das Luther mit Zucht übersetzt, heißt im Griechischen Besonnenheit oder gesunder Verstand – gemeint ist Selbstbeherrschung, nicht Disziplinierung durch andere. Die drei Begriffe Kraft, Liebe und Besonnenheit stehen bewusst nebeneinander: Kraft allein wäre zu wenig.',
     reception:
       'Der Vers gehört zu den meistgesprochenen Zusagen bei Ordinationen und Einführungen ins Amt und ist zugleich in der Seelsorge bei Angststörungen ein häufig zitierter Satz. Dort ist er heikel: Wo Angst eine Erkrankung ist, kann der Vers als Vorwurf ankommen, und das Wort meint im Griechischen ausdrücklich nicht die Angst, sondern das Zurückweichen.\n\nDer Zusammenhang ist eine Ermutigung an einen jungen Mitarbeiter, der sich seiner Sache nicht sicher ist – und der Brief nennt im selben Atemzug seine Großmutter Lois und seine Mutter Eunike als die, von denen er den Glauben hat.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Timotheus wird im Brief als jung und kränklich beschrieben, mit einer griechischen und einer jüdischen Seite in der Familie. Wer jung ein Amt übernahm, hatte gegen die Altersordnung anzutreten – Alter begründete Autorität, und ein junger Leiter musste sich gegen die Ältesten behaupten.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Brief spricht von Ketten, von Verlassenwerden und davon, sich des Zeugnisses nicht zu schämen. Die Nähe zu einem Gefangenen war gefährlich: Wer sich zu ihm bekannte, geriet mit ins Verfahren. Das Zurückweichen, vor dem der Vers warnt, war deshalb naheliegend.',
+      },
+    ],
     terms: [
       {
         word: 'griech. deilia',
@@ -15166,6 +15486,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Hebräerbrief zitiert hier eine Zusage, die im Alten Testament mehrfach vorkommt, unter anderem in 5. Mose 31,6 und Josua 1,5. Bemerkenswert ist der Anlass: Der Satz steht nicht bei Trauer oder Verfolgung, sondern als Begründung für ein genügsames Verhältnis zum Besitz. Wer weiß, dass er nicht verlassen wird, muss nicht anhäufen. Vers 6 ergänzt ein Psalmzitat, das die Furcht vor Menschen ausdrücklich benennt. Der Verfasser des Briefes ist unbekannt; die alte Zuschreibung an Paulus gilt heute als unhaltbar.',
     reception:
       'Die Zusage „ich will dich nicht verlassen“ ist ein Zitat und steht so in 5. Mose 31 und Josua 1 – gesagt an Josua vor dem Einzug ins Land. Der Hebräerbrief legt sie einer Gemeinde in den Mund, die Besitz verloren hat, und der Vers danach zitiert Psalm 118. Zwei Sätze, beide aus dem Alten Testament, tragen den Trost.\n\nIn der Frömmigkeitsgeschichte ist der Vers zum Grundtext des Gottvertrauens in wirtschaftlicher Not geworden – in Kriegs- und Nachkriegszeiten, in der Weltwirtschaftskrise, in der Arbeitslosenseelsorge. Der Zusammenhang macht dabei eine Verbindung, die selten mitgesprochen wird: Der Trost gilt denen, die auf Habgier verzichten.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Kapitel 10 erinnert daran, dass die Angeredeten die Beschlagnahme ihres Besitzes hinnahmen. Vermögenseinziehung war eine übliche Strafe und traf ganze Familien. Vor diesem Hintergrund ist die Aufforderung zur Genügsamkeit keine Empfehlung, sondern eine Verarbeitung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Vers danach zitiert Psalm 118: „Der HERR ist mein Helfer, was sollte mir ein Mensch tun?“ Zwei Zitate aus der Schrift tragen also den ganzen Trost – der Verfasser argumentiert nicht, er legt Belege vor, wie es seine Art im ganzen Brief ist.',
+      },
+    ],
     terms: [
       {
         word: 'griech. aphilargyros',
@@ -15215,6 +15545,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der erste Petrusbrief richtet sich an Christen in Kleinasien, die als Fremdlinge angeredet werden und offenbar unter gesellschaftlicher Ausgrenzung litten. Der Vers greift Psalm 55,22 auf. Das Wort für Sorge meint hier die Angst um das Nötige, nicht die Fürsorge. Die Begründung ist auffällig kurz und unbeweisbar: denn er sorgt für euch. Unmittelbar danach folgt die Aufforderung zur Nüchternheit und Wachsamkeit – der Text verbindet Loslassen und Aufmerksamkeit.',
     reception:
       'Der Vers gehört zu den meistgesprochenen Zusagen in der Krankenseelsorge und ist über Psalm 55, den er aufnimmt, mit einer langen Gebetstradition verbunden. Bach nahm den Psalmvers in seine Kantate BWV 71 auf; im Gesangbuch steht er hinter Neumarks Lied „Wer nur den lieben Gott lässt walten“.\n\nDie Verwendung als Beruhigungsformel ist umstritten. Wo der Satz Trauernden oder Erschöpften zugesprochen wird, kann er als Aufforderung ankommen, die eigene Last nicht mehr zu zeigen. Der Brief richtet ihn an Gemeinden unter Druck und stellt ihn zwischen den Aufruf zur Demut und die Warnung vor dem Widersacher – er steht in einer Lage, in der die Sorge begründet ist.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Vers steht zwischen der Aufforderung zur Demut unter der gewaltigen Hand Gottes und der Warnung vor dem Widersacher, der umhergeht wie ein brüllender Löwe. Die Sorge, von der er spricht, ist die einer bedrängten Minderheit – nicht Alltagsunruhe.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Verb meint das Aufwerfen einer Last auf ein Tragtier – dasselbe Wort steht, wenn Kleider auf einen Esel geworfen werden. Wer eine Last schulterte, kannte den Unterschied zwischen Tragen und Aufladen. Das Bild ist eine einzige, entschiedene Bewegung.',
+      },
+    ],
     terms: [
       {
         word: 'griech. epiripsantes',
@@ -15264,6 +15604,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Satz beginnt mit einer Aufforderung zum Hinsehen und ist als Ausruf gebaut. Die Kindschaft wird dabei nicht als Naturzustand beschrieben, sondern als Verleihung: Wir sollen so heißen. Bemerkenswert ist die zweite Hälfte, die im Zitieren meist wegfällt: Aus der Kindschaft folgt nicht Anerkennung, sondern Fremdheit gegenüber der Welt. Die johanneischen Briefe setzen eine Gemeinde voraus, die eine Spaltung hinter sich hat; die scharfen Abgrenzungen erklären sich daraus.',
     reception:
       'Der Vers gehört zum Kernbestand der Tauftheologie und steht in vielen Taufagenden. Die Rede von der Gotteskindschaft hat weit über die Kirche hinaus gewirkt – in der Pädagogik, im Selbstverständnis diakonischer Arbeit, in der Menschenwürdedebatte.\n\nDer zweite Halbsatz wird selten mitgelesen: „Darum kennt euch die Welt nicht.“ Der Brief rechnet damit, dass diese Zugehörigkeit nicht Anerkennung bringt, sondern Fremdheit. In Gemeinden, die um Zustimmung werben, ist das ein unbequemer Zusatz.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Kindschaft war ein Rechtsverhältnis: Sie entschied über Erbe, Namen und Vertretung. Adoption war im römischen Recht voll wirksam und wurde für Nachfolgeregelungen genutzt – bis hin zur Kaiserwahl. Wer „Kind Gottes“ hörte, hörte einen Status, keine Zärtlichkeit.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der zweite Halbsatz rechnet mit Fremdheit: „Darum kennt euch die Welt nicht.“ Wer sich von Festen, Opfermahlzeiten und Vereinsleben fernhielt, wurde nicht verstanden und geriet in Verdacht. Die Zugehörigkeit, die der Vers zusagt, kostete die andere.',
+      },
+    ],
     terms: [
       {
         word: 'griech. potapen',
@@ -15313,6 +15663,16 @@ export const COMMENTARY: CommentaryEntry[] = [
       'Der Jakobusbrief besteht überwiegend aus Mahnungen und ist stilistisch der jüdischen Weisheitsliteratur nahe. In diesem Abschnitt stehen zehn Aufforderungen dicht hintereinander. Das Nahen zu Gott ist ein Ausdruck aus der Priestersprache. Luther nannte den Brief eine stroherne Epistel, weil er Christus und die Rechtfertigung kaum erwähne; er hat ihn dennoch übersetzt und im Kanon belassen. Die Spannung zu Paulus liegt vor allem in Kapitel 2, wo Glaube ohne Werke tot genannt wird.',
     reception:
       'Der Satz vom Widerstehen und Fliehen des Teufels gehört zu den meistzitierten Versen der geistlichen Kampfliteratur und steht in vielen Befreiungsgebeten. Er wird dabei meist von seinem ersten Teil getrennt: „Seid Gott untertan“ steht davor, und der Vers danach spricht von Reinigung und Umkehr.\n\nJakobus zielt im Zusammenhang auf Streit in der Gemeinde – die Verse davor fragen, woher Kriege und Zank kommen, und antworten mit den eigenen Begierden. Das Widerstehen richtet sich damit zunächst nach innen, nicht gegen äußere Mächte.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Verse davor fragen, woher Krieg und Streit unter den Angeredeten kommen, und nennen als Ursache das Begehren. Der Brief spricht in eine Gemeinde mit sozialem Gefälle – Kapitel 2 beschreibt die Sitzordnung nach Kleidung, Kapitel 5 die zurückgehaltenen Löhne der Erntearbeiter.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Sich Gott zu nahen und die Hände zu reinigen ist Priestersprache: Wer zum Altar trat, wusch sich zuvor. Der Brief überträgt diese Handlung auf alle Angeredeten – eine Bewegung, die im Neuen Testament öfter begegnet und den Zugang aus dem Tempel herausnimmt.',
+      },
+    ],
     terms: [
       {
         word: 'griech. antistete',

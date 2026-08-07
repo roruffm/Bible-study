@@ -53,6 +53,10 @@ await page.screenshot({ path: `${OUT}/02-leseansicht-panel.png` });
 await page.getByRole('button', { name: 'Mehr erfahren' }).click();
 const vertieft = (await page.locator('.panel__article').textContent()) ?? '';
 check('Der ausführliche Teil hat mehrere Absätze', await page.locator('.panel__article > div > p').count() >= 3);
+// Die Marken stehen im Quelltext gemischt und werden erst per CSS in
+// Großbuchstaben gesetzt – geprüft wird deshalb der Textinhalt, nicht die
+// Darstellung.
+check('Vertiefung zeigt die Welt des Textes', /Die Welt des Textes/i.test(vertieft) && (await page.locator('.world').count()) >= 2, (await page.locator('.world__aspect').allTextContents()).join(' | '));
 check('Vertiefung zeigt Wörter des Urtextes', vertieft.includes('IM URTEXT') || (await page.locator('.term strong').count()) >= 2, (await page.locator('.term strong').allTextContents()).join(' | '));
 check('Vertiefung nennt den Anhaltspunkt bei Luther', vertieft.includes('bei Luther'), (vertieft.match(/bei Luther[^]{0,30}/) ?? [''])[0]);
 check('Vertiefung zeigt die Wirkungsgeschichte', (await page.locator('.deepen').count()) >= 2 && vertieft.includes('John 3:16'));
