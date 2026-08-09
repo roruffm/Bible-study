@@ -10,7 +10,7 @@ import {
   isOfflineSupported,
   type OfflineStatus,
 } from '../lib/offline';
-import { COMPARISON_LABEL, findBook, TRANSLATION_LABEL } from '../lib/bibleData';
+import { COMPARISONS, findBook, TRANSLATION_LABEL } from '../lib/bibleData';
 import {
   deleteNote,
   getHighlights,
@@ -207,8 +207,8 @@ function OfflineCard() {
       <div className="section-title">Offline lesen</div>
       <p className="settings-row__hint" style={{ marginBottom: '0.7rem' }}>
         Gelesene Kapitel bleiben automatisch gespeichert. Für den vollständigen Text ohne
-        Verbindung lädt der Knopf alle 66 Bücher – rund 4 MB, mit eingeschaltetem englischem
-        Vergleichstext rund 8 MB.
+        Verbindung lädt der Knopf alle 66 Bücher – rund 4 MB, dazu je eingeschaltetem
+        Vergleichstext weitere 4 MB.
       </p>
 
       <div className="tile__value">
@@ -414,25 +414,32 @@ export default function MePage() {
 
             <div className="settings-row">
               <div>
-                <div className="settings-row__label">Englischer Vergleichstext</div>
+                <div className="settings-row__label">Vergleichstexte</div>
                 <div className="settings-row__hint">
-                  Zeigt beim Antippen eines Verses die {COMPARISON_LABEL} dazu.
+                  Erscheinen beim Antippen eines Verses unter dem Luthertext.
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: '0.3rem' }}>
-                {[
-                  { on: true, label: 'Ein' },
-                  { on: false, label: 'Aus' },
-                ].map((choice) => (
-                  <button
-                    key={choice.label}
-                    type="button"
-                    className={`chip${settings.showComparison === choice.on ? ' chip--active' : ''}`}
-                    onClick={() => setSettings({ showComparison: choice.on })}
-                  >
-                    {choice.label}
-                  </button>
-                ))}
+              <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
+                {COMPARISONS.map((comparison) => {
+                  const an = settings.comparisons.includes(comparison.id);
+                  return (
+                    <button
+                      key={comparison.id}
+                      type="button"
+                      className={`chip${an ? ' chip--active' : ''}`}
+                      aria-pressed={an}
+                      onClick={() =>
+                        setSettings({
+                          comparisons: an
+                            ? settings.comparisons.filter((id) => id !== comparison.id)
+                            : [...settings.comparisons, comparison.id],
+                        })
+                      }
+                    >
+                      {comparison.label}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -452,8 +459,8 @@ export default function MePage() {
               <strong>{TRANSLATION_LABEL}</strong>
             </div>
             <div className="settings-row">
-              <span className="settings-row__label">Vergleichstext</span>
-              <strong>{COMPARISON_LABEL}</strong>
+              <span className="settings-row__label">Vergleichstexte</span>
+              <strong>{COMPARISONS.map((c) => c.label).join(', ')}</strong>
             </div>
           </div>
 

@@ -210,15 +210,28 @@ gelesen wird, und benennt, woher eine Lesart kommt.
 Die Anwendung nutzt derzeit die **Lutherbibel 1912** – eine gemeinfreie
 Übersetzung.
 
-Die im Konzept gewünschte Übersetzung **Hoffnung für Alle ist
-urheberrechtlich geschützt** (© Biblica Inc., herausgegeben von Fontis) und
-darf nicht ohne Vereinbarung eingebettet werden. Nötig ist eine Lizenz von
-Biblica/Fontis oder die Anbindung über eine lizenzierte Schnittstelle wie
-[API.Bible](https://scripture.api.bible/).
+Als **Vergleichstexte** liegen zwei weitere gemeinfreie Ausgaben bei:
 
-Als **Vergleichstext** liegt die **King James Version** bei – ebenfalls
-gemeinfrei. Sie erscheint im Vers-Panel unter dem deutschen Wortlaut und lässt
-sich unter *Ich → Darstellung* abschalten.
+| Kennung | Ausgabe | Eigenart |
+|---|---|---|
+| `elb1905` | Elberfelder 1905, unrevidiert | sehr wörtlich, `[Klammern]` um ergänzte Wörter, Gottesname als „Jehova“ |
+| `kjv` | King James Version (1769) | englisch |
+
+Sie erscheinen im Vers-Panel unter dem Luthertext; welche, entscheidet
+*Ich → Darstellung → Vergleichstexte*.
+
+**Hoffnung für Alle lässt sich nicht beilegen.** Die Übersetzung ist
+urheberrechtlich geschützt (© Biblica Inc., herausgegeben von Fontis). Ohne
+Lizenz von Biblica/Fontis oder Anbindung über eine lizenzierte Schnittstelle
+wie [API.Bible](https://scripture.api.bible/) wäre das Einbetten eine
+Urheberrechtsverletzung. Dasselbe gilt für die anderen modernen deutschen
+Übersetzungen – BasisBibel, Gute Nachricht, Neue Genfer, Schlachter 2000. Frei
+verfügbar sind nur Ausgaben um 1900; die Elberfelder 1905 ist davon die
+brauchbarste, weil sie als einzige die Verszählung des Luthertextes teilt.
+
+Sobald eine Lizenz vorliegt, ist der Weg kurz: Datensatz unter
+`public/bibel/<id>/` ablegen und in `COMPARISONS` in `src/lib/bibleData.ts`
+eintragen. An der Oberfläche ändert sich nichts.
 
 Die Architektur ist deshalb von Anfang an **übersetzungs-agnostisch**: Eine
 Übersetzung ist nur ein Datensatz unter `public/bibel/<id>/`. Sobald die
@@ -227,18 +240,19 @@ Lizenz vorliegt, wird die HFA als weiterer Datensatz ergänzt und in
 
 Rohdaten beider Übersetzungen: [wldeh/bible-api](https://github.com/wldeh/bible-api).
 
-### Zur Verszählung des Vergleichs
+### Zur Verszählung der Vergleiche
 
-Beide Fassungen stammen aus derselben Quelle und sind dort nach der
+Alle Fassungen stammen aus derselben Quelle und sind dort nach der
 international üblichen Zählung abgelegt. `node scripts/check-translations.mjs`
-weist nach, dass alle 1189 Kapitel in beiden Fassungen dieselbe Verszahl haben
+weist nach, dass alle 1189 Kapitel in jeder Fassung dieselbe Verszahl haben
 und kein Vers leer ist – eine Stelle steht also unter derselben Nummer.
 
 Das ist eine notwendige, keine hinreichende Bedingung: Zwei Ausgaben können
 gleich viele Verse haben und die Grenzen trotzdem anders ziehen. In den
 Psalmen zählt der deutsche Text die Überschrift zum ersten Vers, die englische
 Ausgabe setzt sie darüber; in Johannes 10 verschiebt sich die Teilung für drei
-Verse. Ein Umrechnungsschlüssel dafür ließe sich nicht ehrlich aufstellen –
+Verse. Die Elberfelder weicht deutlich weniger ab als die King James – sie
+steht in derselben Zähltradition. Ein Umrechnungsschlüssel dafür ließe sich nicht ehrlich aufstellen –
 deshalb führen im Vers-Panel zwei Pfeile zum Nachbarvers, und der Versatz wird
 angezeigt. Das Prüfskript nennt zusätzlich die Kapitel, in denen sich die
 Textmenge am stärksten unterschiedlich verteilt.
@@ -255,7 +269,8 @@ werden dabei 19 KB für den Ausschnitt der biblischen Welt.
 
 ```
 public/bibel/luther1912/   Bibeltext: index.json + eine Datei je Buch
-public/bibel/kjv/          Englischer Vergleichstext, gleicher Aufbau
+public/bibel/elb1905/      Vergleichstext Elberfelder 1905, gleicher Aufbau
+public/bibel/kjv/          Vergleichstext King James Version, gleicher Aufbau
 brand/                     Logo-Vorlage, aus der die Bilder erzeugt werden
 server/
   entgegen-server.mjs      Eigener Server: liefert die App aus, hält den Schlüssel
@@ -264,8 +279,8 @@ server/
 scripts/
   books.mjs                Kanonische Buchliste mit Gruppen und Abkürzungen
   build-bible-data.mjs     Rohdaten → kompaktes App-Format
-  fetch-kjv.mjs            Englischen Vergleichstext aus der Quelle holen
-  check-translations.mjs   Grundtext und Vergleich auf gleiche Zählung prüfen
+  fetch-translation.mjs    Eine Übersetzung aus der Quelle holen
+  check-translations.mjs   Grundtext und Vergleiche auf gleiche Zählung prüfen
   build-map-data.mjs       Natural-Earth-Küstenlinien zuschneiden
   build-singlefile.mjs     Alles in eine einzelne HTML-Datei bündeln
   build-brand.py           Icon und Schriftzug aus der Logo-Vorlage schneiden
@@ -334,13 +349,16 @@ Eine andere Quelle lässt sich so einbinden:
 node scripts/build-bible-data.mjs <quellverzeichnis> <übersetzungs-id>
 ```
 
-Den englischen Vergleichstext erneuert man in zwei Schritten:
+Einen Vergleichstext erneuert man in drei Schritten:
 
 ```bash
-node scripts/fetch-kjv.mjs                          # rund 1200 Kapitel holen
-node scripts/build-bible-data.mjs .rohdaten/en-kjv kjv
+node scripts/fetch-translation.mjs de-elo           # rund 1200 Kapitel holen
+node scripts/build-bible-data.mjs .rohdaten/de-elo elb1905
 node scripts/check-translations.mjs                 # Zählung gegenprüfen
 ```
+
+Bekannte Quell-Kennungen stehen in `scripts/fetch-translation.mjs`;
+`de-elo` ist die Elberfelder, `en-kjv` die King James.
 
 ---
 
@@ -623,6 +641,6 @@ node scripts/test-singlefile.mjs
 ## Nächste Schritte (Phase 4 laut Konzept)
 
 - Gruppenmodus für Hauskreise: geteilte Notizen und Diskussionsfragen
-- Deutscher Zweittext, sobald eine moderne Übersetzung lizenziert ist
+- Moderne deutsche Übersetzung als Vergleich, sobald eine lizenziert ist
 - Vorlesefunktion und Erinnerungen für den Leseplan
 - Weiterer redaktioneller Ausbau der Kontextartikel und des Lexikons

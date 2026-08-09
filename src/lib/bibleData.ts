@@ -57,51 +57,78 @@ export function loadBook(bookId: string): Promise<BookContent> {
   return promise;
 }
 
-/* -------------------------------------------------------- Vergleichstext */
+/* ------------------------------------------------------- Vergleichstexte */
+
+export interface Comparison {
+  /** Kennung und zugleich Verzeichnisname unter `public/bibel/`. */
+  id: string;
+  label: string;
+  /** Kurze Herkunftsangabe, die unter dem Text steht. */
+  note: string;
+}
 
 /**
- * Neben dem Luthertext liegt eine zweite Übersetzung bereit, die im Vers-Panel
- * zum Vergleich eingeblendet wird. Sie stammt aus demselben Rohdatenbestand und
- * folgt derselben Kapitel- und Verszählung – der Vers mit einer bestimmten
- * Nummer ist in beiden Ausgaben derselbe.
+ * Neben dem Luthertext liegen weitere Übersetzungen bereit, die im Vers-Panel
+ * unter dem deutschen Wortlaut erscheinen. Alle stammen aus demselben
+ * Rohdatenbestand und folgen derselben Kapitel- und Verszählung – ein Vers hat
+ * überall dieselbe Nummer. Nachgewiesen wird das von
+ * `scripts/check-translations.mjs`.
  *
- * Zwei Einschränkungen bleiben: In den Psalmen zählt der deutsche Text die
- * Überschrift zum ersten Vers, die englische Ausgabe setzt sie davor; und an
- * einigen Stellen ziehen die Ausgaben die Versgrenze verschieden. Deshalb kann
- * man im Panel zum Nachbarvers weiterblättern.
+ * Eine Einschränkung bleibt: Gleiche Verszahlen heißen noch nicht gleiche
+ * Versgrenzen. In den Psalmen zählt der deutsche Text die Überschrift zum
+ * ersten Vers, die englische Ausgabe setzt sie darüber; in Johannes 10
+ * verschiebt sich die Teilung für drei Verse. Deshalb führen im Panel zwei
+ * Pfeile zum Nachbarvers.
+ *
+ * Eine weitere Übersetzung hinzuzufügen heißt: Datensatz unter
+ * `public/bibel/<id>/` ablegen und hier eintragen. Sonst ändert sich nichts.
+ * Für urheberrechtlich geschützte Ausgaben ist das der Punkt, an dem sie nach
+ * Abschluss einer Lizenz eingehängt werden.
  */
-export const COMPARISON = 'kjv';
+export const COMPARISONS: Comparison[] = [
+  {
+    id: 'elb1905',
+    label: 'Elberfelder 1905',
+    note: 'Deutsch, unrevidierte Ausgabe – gemeinfrei. Wörtlich am Urtext; [eckige Klammern] stehen um ergänzte Wörter.',
+  },
+  {
+    id: 'kjv',
+    label: 'King James Version',
+    note: 'Englisch, Ausgabe von 1769 – gemeinfrei',
+  },
+];
 
-export const COMPARISON_LABEL = 'King James Version';
-
-export const COMPARISON_NOTE = 'Englisch, Ausgabe von 1769 – gemeinfrei';
-
-const COMPARISON_BASE = `${import.meta.env.BASE_URL}bibel/${COMPARISON}`;
+export function findComparison(id: string): Comparison | undefined {
+  return COMPARISONS.find((c) => c.id === id);
+}
 
 const comparisonPromises = new Map<string, Promise<BookContent>>();
 
 /**
- * Steht der Vergleichstext zur Verfügung? In der Einzeldatei-Fassung nicht:
- * Sie trägt nur den Luthertext im Gepäck und würde sonst doppelt so groß.
+ * Stehen die Vergleichstexte zur Verfügung? In der Einzeldatei-Fassung nicht:
+ * Sie trägt nur den Luthertext im Gepäck und wäre sonst um ein Vielfaches
+ * größer.
  */
 export function hasComparison(): boolean {
   return !isSingleFile();
 }
 
-/** Lädt ein Buch des Vergleichstextes – wie `loadBook`, nur aus dem zweiten Bestand. */
-export function loadComparisonBook(bookId: string): Promise<BookContent> {
+/** Lädt ein Buch eines Vergleichstextes – wie `loadBook`, nur aus einem anderen Bestand. */
+export function loadComparisonBook(translation: string, bookId: string): Promise<BookContent> {
   if (!hasComparison()) {
-    return Promise.reject(new Error('Der Vergleichstext ist in dieser Fassung nicht enthalten.'));
+    return Promise.reject(new Error('Vergleichstexte sind in dieser Fassung nicht enthalten.'));
   }
 
-  let promise = comparisonPromises.get(bookId);
+  const key = `${translation}/${bookId}`;
+  let promise = comparisonPromises.get(key);
   if (!promise) {
-    promise = fetch(`${COMPARISON_BASE}/${bookId}.json`).then((r) => {
+    const url = `${import.meta.env.BASE_URL}bibel/${translation}/${bookId}.json`;
+    promise = fetch(url).then((r) => {
       if (!r.ok) throw new Error(`Vergleichstext zu "${bookId}" nicht gefunden (${r.status})`);
       return r.json() as Promise<BookContent>;
     });
-    promise.catch(() => comparisonPromises.delete(bookId));
-    comparisonPromises.set(bookId, promise);
+    promise.catch(() => comparisonPromises.delete(key));
+    comparisonPromises.set(key, promise);
   }
   return promise;
 }

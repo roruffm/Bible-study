@@ -48,17 +48,22 @@ check('Panel zeigt historischen Kontext', kontext.includes('Nikodemus'), kontext
 check('Grundlagen fallen auf die Literatur zum Buch zurück', kontext.includes('Schnackenburg'), (kontext.match(/Grundlagen:[^]{0,60}/) ?? [''])[0]);
 await page.screenshot({ path: `${OUT}/02-leseansicht-panel.png` });
 
-// Der englische Vergleichstext steht unter dem deutschen Vers – über allen
-// Reitern, weil er zum Vers gehört und nicht zu einem Studienschritt.
-const kjv = (await page.locator('.compare').textContent()) ?? '';
-check('Panel zeigt die King James Version', kjv.includes('King James Version') && kjv.includes('For God so loved the world'), (kjv.match(/For God[^]{0,50}/) ?? [''])[0]);
-check('Der Vergleich nennt dieselbe Versnummer', ((await page.locator('.compare__ref').textContent()) ?? '').includes('3:16'), (await page.locator('.compare__ref').textContent()) ?? '');
+// Die Vergleichstexte stehen unter dem deutschen Vers – über allen Reitern,
+// weil sie zum Vers gehören und nicht zu einem einzelnen Studienschritt.
+const vergleiche = await page.locator('.compare__item').count();
+const elb = page.locator('.compare__item', { hasText: 'Elberfelder' });
+const kjvBlock = page.locator('.compare__item', { hasText: 'King James' });
+check('Panel zeigt beide Vergleichstexte', vergleiche === 2, `${vergleiche} Blöcke`);
+check('Darunter die Elberfelder 1905', ((await elb.textContent()) ?? '').includes('sondern ewiges Leben habe'), ((await elb.locator('.compare__text').textContent()) ?? '').slice(0, 50));
+check('Darunter die King James Version', ((await kjvBlock.textContent()) ?? '').includes('For God so loved the world'), ((await kjvBlock.locator('.compare__text').textContent()) ?? '').slice(0, 50));
+check('Der Vergleich nennt dieselbe Versnummer', ((await kjvBlock.locator('.compare__ref').textContent()) ?? '').includes('3:16'), (await kjvBlock.locator('.compare__ref').textContent()) ?? '');
 // Wo die Ausgaben die Versgrenze verschieden ziehen, führen die Pfeile zum
-// Nachbarvers; der Versatz wird dabei ausgewiesen.
-await page.locator('.compare__step .btn').first().click();
-const kjvZurueck = (await page.locator('.compare').textContent()) ?? '';
+// Nachbarvers. Der Versatz gilt je Übersetzung und wird ausgewiesen.
+await kjvBlock.locator('.compare__step .btn').first().click();
+const kjvZurueck = (await kjvBlock.textContent()) ?? '';
 check('Der Pfeil führt zum vorigen englischen Vers', kjvZurueck.includes('eternal life') && kjvZurueck.includes('Verschoben um -1'), (kjvZurueck.match(/That whosoever[^]{0,40}/) ?? [''])[0]);
-await page.locator('.compare__step .btn').last().click();
+check('Der Versatz gilt nur für diese Ausgabe', !((await elb.textContent()) ?? '').includes('Verschoben'), (await elb.locator('.compare__ref').textContent()) ?? '');
+await kjvBlock.locator('.compare__step .btn').last().click();
 
 // „Mehr erfahren“ blendet die Vertiefung ein: weitere Absätze, die Wörter des
 // Urtextes und die Wirkungsgeschichte.

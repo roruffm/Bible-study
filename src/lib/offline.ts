@@ -1,4 +1,4 @@
-import { COMPARISON, hasComparison, loadIndex, TRANSLATION } from './bibleData';
+import { hasComparison, loadIndex, TRANSLATION } from './bibleData';
 import { getSettings } from './storage';
 
 /**
@@ -9,10 +9,9 @@ import { getSettings } from './storage';
  * `downloadAll` lässt sich der gesamte Text auf einmal holen; dann funktioniert
  * die App ohne Netzverbindung vollständig.
  *
- * Ist der englische Vergleichstext eingeschaltet, gehört er dazu – sonst fehlte
- * offline genau das, was im Vers-Panel sichtbar ist. Das verdoppelt die
- * Datenmenge auf rund 8 MB. Wer den Vergleich abgeschaltet hat, lädt weiterhin
- * nur den deutschen Text.
+ * Eingeschaltete Vergleichstexte gehören dazu – sonst fehlte offline genau das,
+ * was im Vers-Panel sichtbar ist. Jede weitere Übersetzung schlägt mit rund
+ * 4 MB zu Buche; wer sie abwählt, lädt entsprechend weniger.
  */
 
 const CACHE_NAME = 'entgegen-bibeltext';
@@ -27,9 +26,8 @@ function bookUrl(bookId: string, translation: string = TRANSLATION): string {
 
 /** Welche Übersetzungen gehören zum Offline-Bestand? */
 function translations(): string[] {
-  return hasComparison() && getSettings().showComparison
-    ? [TRANSLATION, COMPARISON]
-    : [TRANSLATION];
+  if (!hasComparison()) return [TRANSLATION];
+  return [TRANSLATION, ...getSettings().comparisons];
 }
 
 /** Ein Buch zählt erst als vorhanden, wenn alle seine Dateien im Cache liegen. */

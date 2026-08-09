@@ -1,23 +1,19 @@
 import { useEffect, useMemo, useState } from 'react';
-import {
-  COMPARISON_LABEL,
-  COMPARISON_NOTE,
-  hasComparison,
-  loadComparisonBook,
-} from '../lib/bibleData';
-import { useAsync } from '../hooks/useStore';
+import { COMPARISONS, hasComparison, loadComparisonBook, type Comparison } from '../lib/bibleData';
+import { getSettings } from '../lib/storage';
+import { useAsync, usePersisted } from '../hooks/useStore';
 import type { BookMeta, VerseRef } from '../lib/types';
 
 /**
- * Der englische Wortlaut zum angeklickten Vers.
+ * Der Vers in den anderen Übersetzungen, direkt unter dem deutschen Wortlaut.
  *
- * Beide Ausgaben zählen gleich, deshalb steht die englische Fassung
- * grundsätzlich unter derselben Versnummer. An wenigen Stellen ziehen sie die
- * Versgrenze aber verschieden – in den Psalmen etwa gehört die Überschrift im
- * deutschen Text zum ersten Vers, in der englischen Ausgabe steht sie darüber,
- * und in Johannes 10 verschiebt sich die Teilung für drei Verse. Ein fester
- * Umrechnungsschlüssel ließe sich dafür nicht ehrlich aufstellen; stattdessen
- * kann man mit den Pfeilen einen Vers vor- und zurückgehen.
+ * Alle Ausgaben zählen gleich, deshalb steht der Vergleich grundsätzlich unter
+ * derselben Versnummer. An wenigen Stellen ziehen sie die Versgrenze aber
+ * verschieden – in den Psalmen etwa gehört die Überschrift im Luthertext zum
+ * ersten Vers, in der King James steht sie darüber, und in Johannes 10
+ * verschiebt sich die Teilung für drei Verse. Ein fester Umrechnungsschlüssel
+ * ließe sich dafür nicht ehrlich aufstellen; stattdessen kann man je Ausgabe
+ * mit den Pfeilen einen Vers vor- und zurückgehen.
  */
 
 interface Props {
@@ -26,11 +22,56 @@ interface Props {
 }
 
 export default function VerseCompare({ book, ref_ }: Props) {
+  const settings = usePersisted(getSettings);
+  // Die Reihenfolge gibt die Liste der Übersetzungen vor, nicht die Auswahl –
+  // sonst springen die Blöcke, wenn jemand eine Ausgabe ab- und wieder anwählt.
+  const gewaehlt = useMemo(
+    () => COMPARISONS.filter((c) => settings.comparisons.includes(c.id)),
+    [settings.comparisons],
+  );
+
+  if (gewaehlt.length === 0) return null;
+
+  if (!hasComparison()) {
+    return (
+      <section className="compare">
+        <p className="compare__hint">
+          Die Einzeldatei-Fassung trägt nur den deutschen Grundtext in sich. Die Vergleichstexte
+          gibt es in der Web-Fassung.
+        </p>
+      </section>
+    );
+  }
+
+  return (
+    <section className="compare" aria-label="Der Vers in anderen Übersetzungen">
+      {gewaehlt.map((comparison) => (
+        <CompareRow
+          key={comparison.id}
+          comparison={comparison}
+          book={book}
+          ref_={ref_}
+        />
+      ))}
+    </section>
+  );
+}
+
+/** Eine Übersetzung. Jede führt ihren Versatz für sich – er betrifft nur sie. */
+function CompareRow({
+  comparison,
+  book,
+  ref_,
+}: {
+  comparison: Comparison;
+  book: BookMeta;
+  ref_: VerseRef;
+}) {
   const [offset, setOffset] = useState(0);
 
   const { data, error, loading } = useAsync(
-    () => (hasComparison() ? loadComparisonBook(ref_.book) : null),
-    [ref_.book],
+    () => loadComparisonBook(comparison.id, ref_.book),
+    [comparison.id, ref_.book],
   );
 
   // Beim Wechsel des Verses wieder auf die gleiche Nummer zurückspringen.
@@ -40,24 +81,10 @@ export default function VerseCompare({ book, ref_ }: Props) {
   const verseNumber = ref_.verse + offset;
   const text = chapter?.[verseNumber - 1];
 
-  if (!hasComparison()) {
-    return (
-      <section className="compare">
-        <div className="compare__head">
-          <span className="compare__label">{COMPARISON_LABEL}</span>
-        </div>
-        <p className="compare__hint">
-          Die Einzeldatei-Fassung trägt nur den deutschen Text in sich. Den englischen Vergleich
-          gibt es in der Web-Fassung.
-        </p>
-      </section>
-    );
-  }
-
   return (
-    <section className="compare" aria-label={`${COMPARISON_LABEL} zu diesem Vers`}>
+    <div className="compare__item">
       <div className="compare__head">
-        <span className="compare__label">{COMPARISON_LABEL}</span>
+        <span className="compare__label">{comparison.label}</span>
         <span className="compare__ref">
           {book.abbr} {ref_.chapter}:{verseNumber}
         </span>
@@ -67,7 +94,7 @@ export default function VerseCompare({ book, ref_ }: Props) {
             className="btn btn--ghost btn--sm"
             onClick={() => setOffset((o) => o - 1)}
             disabled={!chapter || verseNumber <= 1}
-            aria-label="Einen Vers zurück"
+            aria-label={`${comparison.label}: einen Vers zurück`}
             title="Einen Vers zurück"
           >
             ‹
@@ -77,7 +104,7 @@ export default function VerseCompare({ book, ref_ }: Props) {
             className="btn btn--ghost btn--sm"
             onClick={() => setOffset((o) => o + 1)}
             disabled={!chapter || verseNumber >= chapter.length}
-            aria-label="Einen Vers weiter"
+            aria-label={`${comparison.label}: einen Vers weiter`}
             title="Einen Vers weiter"
           >
             ›
@@ -89,14 +116,18 @@ export default function VerseCompare({ book, ref_ }: Props) {
 
       {error && (
         <p className="compare__hint">
-          Der englische Text ließ sich nicht laden. Ohne Verbindung steht er erst zur Verfügung,
-          wenn das Kapitel einmal geöffnet war.
+          Dieser Text ließ sich nicht laden. Ohne Verbindung steht er erst zur Verfügung, wenn das
+          Kapitel einmal geöffnet war.
         </p>
       )}
 
-      {!loading && !error && (text ? <p className="compare__text">{text}</p> : (
-        <p className="compare__hint">Zu dieser Nummer steht dort kein Vers.</p>
-      ))}
+      {!loading &&
+        !error &&
+        (text ? (
+          <p className="compare__text">{text}</p>
+        ) : (
+          <p className="compare__hint">Zu dieser Nummer steht dort kein Vers.</p>
+        ))}
 
       {offset !== 0 && (
         <p className="compare__hint">
@@ -104,7 +135,7 @@ export default function VerseCompare({ book, ref_ }: Props) {
         </p>
       )}
 
-      <p className="compare__source">{COMPARISON_NOTE}</p>
-    </section>
+      <p className="compare__source">{comparison.note}</p>
+    </div>
   );
 }

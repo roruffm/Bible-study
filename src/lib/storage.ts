@@ -1,5 +1,5 @@
 import type { Highlight, HighlightColor, Note, Settings, VerseRef } from './types';
-import { refKey } from './bibleData';
+import { COMPARISONS, refKey } from './bibleData';
 
 /**
  * Persistenz im Browser. Alle persönlichen Daten – Notizen, Markierungen,
@@ -145,7 +145,7 @@ export const DEFAULT_SETTINGS: Settings = {
   theme: 'hell',
   fontScale: 1,
   showHeadings: true,
-  showComparison: true,
+  comparisons: COMPARISONS.map((c) => c.id),
 };
 
 /** Ohne eigene Wahl richtet sich die App nach der Einstellung des Systems. */
@@ -158,11 +158,28 @@ function preferredTheme(): Settings['theme'] {
 }
 
 export function getSettings(): Settings {
-  return memo('settings', () => ({
-    ...DEFAULT_SETTINGS,
-    theme: preferredTheme(),
-    ...read<Partial<Settings>>('settings', {}),
-  }));
+  return memo('settings', () => {
+    const gespeichert = read<Partial<Settings> & { showComparison?: boolean }>('settings', {});
+    const settings: Settings = {
+      ...DEFAULT_SETTINGS,
+      theme: preferredTheme(),
+      ...gespeichert,
+    };
+
+    /*
+     * Bis Version 1.x gab es einen einzelnen Vergleichstext und dafür einen
+     * Schalter. Wer ihn abgeschaltet hatte, soll ihn nicht dadurch
+     * zurückbekommen, dass die Einstellung zu einer Liste geworden ist.
+     */
+    if (!Array.isArray(gespeichert.comparisons) && gespeichert.showComparison === false) {
+      settings.comparisons = [];
+    }
+    // Kennungen, die es nicht mehr gibt, fallen heraus.
+    settings.comparisons = settings.comparisons.filter((id) =>
+      COMPARISONS.some((c) => c.id === id),
+    );
+    return settings;
+  });
 }
 
 export function setSettings(patch: Partial<Settings>): void {

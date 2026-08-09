@@ -72,16 +72,29 @@ function stripMarginalNotes(text, chapter, verse) {
 }
 
 /**
- * Rund 350 Verse tragen am Anfang einen Marker wie „[32:1]“. Er nennt die
- * abweichende Zählung der gedruckten Lutherbibel – die Quelle nummeriert die
- * Dateien nach der englischen Zählung. Der Marker wird aus dem Fließtext
- * genommen und getrennt festgehalten, damit die Leseansicht sauber bleibt und
- * der Hinweis trotzdem nicht verlorengeht.
+ * Etliche Verse tragen am Anfang einen Marker wie „[32:1]“ oder „(024:2)“. Er
+ * nennt die abweichende Zählung der gedruckten deutschen Ausgabe – die Quelle
+ * nummeriert die Dateien nach der international üblichen Zählung. Der Marker
+ * wird aus dem Fließtext genommen und getrennt festgehalten, damit die
+ * Leseansicht sauber bleibt und der Hinweis trotzdem nicht verlorengeht.
+ *
+ * Die eckige Klammer steht im Luthertext, die runde mit führenden Nullen in
+ * der Elberfelder Ausgabe. In sieben Versen der Elberfelder steht mitten im
+ * Text ein zweiter Marker: Dort fasst diese Ausgabe zwei Verse der anderen
+ * Zählung zusammen. Solche Marker werden entfernt – im Fließtext wären sie
+ * nicht als Zählhinweis zu erkennen, und die Teilung, auf die sie zeigen, gibt
+ * es in unserer Nummerierung ohnehin nicht.
  */
 function extractAltNumbering(text) {
-  const match = text.match(/^\[(\d+):(\d+)\]\s*/);
-  if (!match) return { text, alt: null };
-  return { text: text.slice(match[0].length), alt: `${match[1]},${match[2]}` };
+  const match = text.match(/^[[(](\d+):(\d+)[\])]\s*/);
+  const rest = (match ? text.slice(match[0].length) : text)
+    .replace(/\(\d+:\d+\)\s*/g, '')
+    .trim();
+  if (!match) return { text: rest, alt: null };
+  // Führende Nullen weg: „024“ meint Kapitel 24.
+  const kapitel = Number.parseInt(match[1], 10);
+  const vers = Number.parseInt(match[2], 10);
+  return { text: rest, alt: `${kapitel},${vers}` };
 }
 
 const index = [];

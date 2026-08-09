@@ -14,7 +14,6 @@ import {
   getHighlight,
   getMemoryCard,
   getNotesFor,
-  getSettings,
   removeMemoryCard,
   saveNote,
   toggleHighlight,
@@ -79,7 +78,6 @@ export default function VersePanel({
   const mentioned = useMemo(() => lexiconInVerse(text), [text]);
   const profile = BOOK_PROFILES[ref_.book];
 
-  const settings = usePersisted(getSettings);
   const highlight = usePersisted(() => getHighlight(ref_));
   const notes = usePersisted(() => getNotesFor(ref_));
   const memoryCard = usePersisted(() => getMemoryCard(ref_));
@@ -144,9 +142,9 @@ export default function VersePanel({
             </p>
           )}
 
-          {/* Der englische Wortlaut steht über allen Reitern: Er gehört zum
-              Vers selbst, nicht zu einem einzelnen Studienschritt. */}
-          {settings.showComparison && <VerseCompare book={book} ref_={ref_} />}
+          {/* Die anderen Übersetzungen stehen über allen Reitern: Sie gehören
+              zum Vers selbst, nicht zu einem einzelnen Studienschritt. */}
+          <VerseCompare book={book} ref_={ref_} />
 
           {tab === 'kontext' && (
             <div className="panel__article">

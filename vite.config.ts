@@ -44,10 +44,10 @@ export default defineConfig({
             handler: 'CacheFirst',
             options: {
               cacheName: 'entgegen-bibeltext',
-              // 66 Bücher je Übersetzung, dazu die beiden Verzeichnisse und
-              // die Kartengrundlage – mit Luxus nach oben, damit nichts
-              // verdrängt wird, was jemand offline behalten will.
-              expiration: { maxEntries: 200 },
+              // 66 Bücher je Übersetzung – derzeit drei –, dazu die
+              // Verzeichnisse und die Kartengrundlage. Mit Luxus nach oben,
+              // damit nichts verdrängt wird, was jemand offline behalten will.
+              expiration: { maxEntries: 300 },
               cacheableResponse: { statuses: [0, 200] },
             },
           },

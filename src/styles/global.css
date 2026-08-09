@@ -904,11 +904,18 @@ button {
   margin-bottom: 1rem;
 }
 
-/* Der englische Vergleichstext direkt unter dem deutschen Vers. Er ist
-   abgesetzt, aber nicht weggeräumt: Wer ihn eingeschaltet hat, will ihn beim
-   Lesen sehen, ohne erst einen Reiter zu suchen. */
+/* Die Vergleichstexte direkt unter dem deutschen Vers. Sie sind abgesetzt,
+   aber nicht weggeräumt: Wer sie eingeschaltet hat, will sie beim Lesen sehen,
+   ohne erst einen Reiter zu suchen. Jede Übersetzung bekommt einen eigenen
+   Rahmen, damit bei mehreren klar ist, wo die eine aufhört. */
 .compare {
   margin: -0.4rem 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.compare__item {
   padding: 0.65rem 0.9rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
