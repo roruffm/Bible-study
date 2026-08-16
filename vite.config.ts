@@ -31,6 +31,20 @@ export default defineConfig({
         // 185 KB, ist ausgeschaltet voreingestellt, und ohne Verbindung nützt
         // es ohnehin nichts. Wer die Rückfragen nie einschaltet, lädt es nie.
         globIgnores: ['**/vorschau.png', '**/sprachmodell-*.js'],
+        /*
+         * Workbox speichert Dateien über zwei Megabyte nicht vorab. Genau dort
+         * ist der Hauptcode angekommen, seit die Artikel über eine Million
+         * Zeichen umfassen – ohne diese Anhebung fiele er aus dem Vorab-Cache,
+         * und die App startete ohne Verbindung nicht mehr.
+         *
+         * Naheliegend wäre gewesen, das redaktionelle Material über
+         * `manualChunks` in eine eigene Datei zu legen. Das war auch gebaut und
+         * ist wieder verworfen: Die Einzeldatei-Fassung fügt nur das
+         * Einstiegsskript in die HTML-Seite ein, ein zweiter Chunk bliebe als
+         * unerreichbarer Import zurück, und die Datei startete nicht mehr. Die
+         * angehobene Grenze löst dasselbe Problem, ohne eine Fassung zu opfern.
+         */
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: `${base}index.html`,
         // Datendateien dürfen nicht durch die App-Seite ersetzt werden.
         navigateFallbackDenylist: [/\/(bibel|karten)\/.*\.json$/],

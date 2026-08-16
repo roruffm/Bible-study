@@ -628,7 +628,10 @@ export const COMMENTARY: CommentaryEntry[] = [
         text: 'Die rabbinische Tradition liest den Vers zusammen mit dem Studium: Vertrauen und Lernen sind keine Gegensätze. Wer Tora lernt, verlässt sich gerade nicht auf seinen eigenen Einfall, sondern stellt ihn in ein Gespräch, das seit Generationen läuft.',
       },
     ],
-    crossRefs: [{ book: 'hi', chapter: 28, verse: 28 }],
+    crossRefs: [
+      { book: 'hi', chapter: 28, verse: 28 },
+      { book: 'jes', chapter: 55, verse: 8, note: 'Meine Gedanken sind nicht eure Gedanken' },
+    ],
   },
   {
     book: 'jes',
@@ -1825,7 +1828,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Psalm 1 ist kein Gebet, sondern eine Einleitung: Er stellt dem ganzen Buch zwei Wege gegenüber. Das Bild vom Baum am Wasserlauf stammt aus einer Region, in der Wasser über Leben und Tod entscheidet.',
     historicalLong:
-      'Die Endredaktion des Psalters hat diesen Text bewusst vorangestellt: Wer die 150 Psalmen betet, soll sie als „Weisung“ (Tora) lesen. Der Baum steht nicht am Fluss zufällig, sondern ist „gepflanzt“ – ein Passiv, das auf Gott als Handelnden verweist. Die Gegenüberstellung von Gerechten und Gottlosen ist typisch für die Weisheitsliteratur.',
+      'Die Endredaktion des Psalters hat diesen Text bewusst vorangestellt: Wer die 150 Psalmen betet, soll sie als „Weisung“ (Tora) lesen. Der Baum steht nicht am Fluss zufällig, sondern ist „gepflanzt“ – ein Passiv, das auf Gott als Handelnden verweist. Die Gegenüberstellung von Gerechten und Gottlosen ist typisch für die Weisheitsliteratur.\n\nDas Bild vom Verwehen der Spreu setzt einen Arbeitsvorgang voraus, den jeder kannte. Nach dem Dreschen auf einer freien, harten Tenne wurde das Gemisch aus Korn, Spreu und Häcksel mit einer Schaufel gegen den Wind geworfen. Das schwere Korn fiel zu Boden, die leichte Spreu trieb ab. Tennen lagen deshalb auf Anhöhen, wo abends ein verlässlicher Wind aufkam. Wer den Vers hörte, sah einen Vorgang vor sich, der eine Trennung ohne Werkzeug herbeiführt – der Wind sortiert von selbst.\n\nDer Psalm steht nicht zufällig am Anfang. Er trägt keine Überschrift, nennt keinen Verfasser und keine Lage, sondern stellt eine Alternative auf, unter der alles Folgende gelesen werden soll. Manche Handschriften der Apostelgeschichte zitieren Psalm 2 als „ersten Psalm“, was darauf hindeutet, dass Psalm 1 später vorangestellt wurde. Zusammen bilden die beiden ein Tor: der eine über den Einzelnen und die Weisung, der andere über die Völker und den König.\n\nDie Rede vom Gericht in Vers 5 meint keine Endzeitszene. Gemeint ist die Rechtsversammlung im Tor, in der Bürger als Zeugen und Beisitzer standen. Wer dort nicht bestehen kann, verliert seine Stellung in der Gemeinde – ein Vorgang mit unmittelbaren Folgen für Land, Kredit und Heiratsaussichten. Die spätere Auslegung hat das Bild ins Endzeitliche verschoben; im Text steht zunächst der Alltag einer Dorfgemeinschaft.',
     reception:
       'Weil Psalm 1 dem Psalter vorangestellt ist, hat er der ganzen Sammlung eine Leserichtung gegeben: Die Psalmen sind nicht nur Gebete, sondern Lehrtexte. Im Judentum ist er deshalb bis heute Grundlage der Vorstellung, dass Beten und Lernen zusammengehören.\n\nDie Zweiwegelehre, die er aufstellt, hat eine lange Nachgeschichte – von der Didache im 1. Jahrhundert über mittelalterliche Erbauungsschriften bis zu Bunyans *Pilgerreise*. Ihre Schwäche ist bekannt und wird in der Bibel selbst benannt: Hiob und Psalm 73 widersprechen der Zusage, dass es dem Gerechten wohlgeht.',
     world: [
@@ -1836,6 +1839,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Die drei Verben – wandeln, treten, sitzen – beschreiben eine Bewegung ins Feste: vorbeigehen, stehenbleiben, dazugehören. Der „Sitz der Spötter“ meint eine Runde, in der man Platz nimmt. In einem Dorf entschied genau das über den Ruf einer Familie.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Gedroschen wurde von Mai bis Juli auf einer festgetretenen Tenne, meist mit einem von Rindern gezogenen Dreschschlitten. Anschließend warf man das Gemisch mit Holzschaufeln gegen den Abendwind. Die Arbeit dauerte Wochen und fand öffentlich statt; Tennen waren Treffpunkte und dienten gelegentlich als Gerichtsplatz.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Rechtsversammlung tagte im Stadttor, im Sitzen, vor Zeugen. Wer dort nicht anerkannt war, konnte keine Verträge schließen und keine Ansprüche durchsetzen. „Nicht bestehen im Gericht“ war deshalb keine ferne Drohung, sondern eine Beschreibung wirtschaftlicher Ausgrenzung.',
       },
     ],
     terms: [
@@ -1848,6 +1859,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. tora',
         rendered: 'Gesetz',
         note: 'Weisung, Unterweisung. Luthers „Gesetz“ ist eine der folgenreichsten Übersetzungsentscheidungen der deutschen Bibel: Aus einer Wegweisung wird eine Vorschrift, aus Lust an ihr eine Pflicht.',
+      },
+      {
+        word: 'hebr. mots',
+        rendered: 'wie Spreu',
+        note: 'Die leichten Hüllen, die beim Worfeln abtreiben. Sie sind nicht wertlos – man verfütterte und verbrannte sie –, aber sie bleiben nicht liegen. Das Bild sagt nichts über Verdammnis, sondern über Haltlosigkeit.',
       },
     ],
     interpretations: [
@@ -1863,10 +1879,20 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Christliche Tradition',
         text: 'Die Alte Kirche las den „Mann“ von Vers 1 auch auf Christus hin, der die Weisung vollkommen erfüllt.',
       },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Midrasch verbindet Psalm 1 und 2 zu einer Einheit und zählt sie als einen Psalm; die Klammer ist das Wort „Wohl dem“, das den ersten eröffnet und den zweiten beschließt. Das Sinnen über der Weisung Tag und Nacht wurde zur Grundlage der Lehrhausfrömmigkeit: Studium gilt selbst als Gottesdienst.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Psalm gilt als spät, aus dem Umfeld der Weisheit, und wurde dem Psalter als Vorwort vorangestellt, als dieser zu einem Buch zum Lesen wurde und nicht mehr nur eine Sammlung für den Gottesdienst war. Die Aufforderung zum Sinnen über einem Text setzt eine Schriftkultur voraus.',
+      },
     ],
     crossRefs: [
       { book: 'jer', chapter: 17, verse: 8, note: 'Fast wörtlich dasselbe Bild' },
       { book: 'ps', chapter: 73, verse: 3, note: 'Der Widerspruch zur Erfahrung' },
+      { book: 'jos', chapter: 1, verse: 8, note: 'Tag und Nacht über dem Buch der Weisung' },
+      { book: 'mt', chapter: 3, verse: 12, note: 'Die Worfschaufel in der Predigt des Täufers' },
     ],
   },
   {
@@ -3020,7 +3046,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das Buch endet nicht mit der Umkehr Ninives, sondern mit dem Zorn des Propheten darüber. Jona begründet seine Flucht rückblickend damit, dass er Gottes Erbarmen befürchtet habe.',
     historicalLong:
-      'Der Schlusssatz ist eine Frage, die unbeantwortet bleibt – und er nennt ausdrücklich auch das Vieh der Stadt. Die Erzählung arbeitet durchweg mit Übertreibung: eine Stadt von drei Tagesreisen, Tiere in Bußgewändern, ein Prophet, der die kürzeste Predigt der Bibel hält und damit den größten Erfolg hat.',
+      'Der Schlusssatz ist eine Frage, die unbeantwortet bleibt – und er nennt ausdrücklich auch das Vieh der Stadt. Die Erzählung arbeitet durchweg mit Übertreibung: eine Stadt von drei Tagesreisen, Tiere in Bußgewändern, ein Prophet, der die kürzeste Predigt der Bibel hält und damit den größten Erfolg hat.\n\nDer Wortlaut von Jonas Gebet ist ein wörtliches Zitat. Er sagt Gott ins Gesicht, was am Sinai über ihn gesagt worden war: gnädig, barmherzig, langmütig, von großer Güte, und dass er sich das Übel gereuen lasse. Dieselbe Formel steht in Joel und in mehreren Psalmen, immer als Trost. Hier wird sie zur Anklage. Jona wirft Gott vor, genau der zu sein, als der er sich zu erkennen gegeben hat – und begründet damit seine Flucht.\n\nNinive war zur Zeit der Erzählung längst untergegangen. Die Stadt fiel 612 v. Chr. an ein Bündnis aus Medern und Babyloniern; die Ausgrabungen bei Mosul zeigen die Brandschichten. Für die Hörer war das eine bekannte Tatsache. Eine Erzählung, die Ninive verschont werden lässt, spielt also nicht mit einer offenen Zukunft, sondern stellt eine Frage an die Gegenwart: Ob Gott vergeben darf, auch wo man es ihm nicht gönnt.\n\nDie Größenangabe am Schluss ist auffällig. Hundertzwanzigtausend Menschen wäre für eine antike Stadt außerordentlich; die Mauer Ninives umschloss etwa siebenhundertfünfzig Hektar, was Schätzungen von grob hunderttausend Einwohnern trägt – die Zahl liegt also im plausiblen Bereich, wenn man das Umland mitrechnet. Die Wendung von denen, die rechts und links nicht unterscheiden können, wird meist auf Kinder bezogen, könnte aber auch die ganze Bevölkerung meinen: Menschen, die es nicht besser wissen.\n\nDer allerletzte Halbvers ist der eigentliche Schluss und wird fast immer überlesen: „dazu auch viele Tiere“. Das Buch endet nicht mit dem Menschen, sondern mit dem Vieh. Schon zuvor hatte der König von Ninive Vieh in das Fasten einbezogen – ein Zug, den man für komisch halten kann und der doch die Linie hält: Was Gott leidtut, ist mehr als die Frage nach Schuld.',
     reception:
       'Das Buch wird im Judentum am Nachmittag des Versöhnungstags vollständig gelesen – ein Text über Umkehr, die auch Feinden offensteht, am strengsten Bußtag des Jahres. Die Schlussfrage bleibt dabei unbeantwortet stehen, und die Gemeinde geht mit ihr nach Hause.\n\nDie letzten Worte des Buches – „dazu auch viele Tiere“ – haben eine eigene Wirkung entfaltet: In der theologischen Tierethik gehören sie zu den meistzitierten Sätzen der Bibel, weil Gott sein Erbarmen ausdrücklich auch auf die Tiere der Stadt bezieht.',
     world: [
@@ -3031,6 +3057,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Ninive fiel 612 – die Hörer wussten also, dass die Stadt am Ende doch unterging. Die Erzählung spielt in einer Vergangenheit mit bekanntem Ausgang und fragt trotzdem, ob Gott ihr vergeben dürfe. Das ist die Bauart einer Lehrerzählung, nicht eines Berichts.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Laubhütte, die Jona baut, ist der übliche Feldunterstand: ein Gerüst aus Zweigen, das während der Erntewochen Schatten spendete. Solche Hütten stehen bis heute in Weinbergen der Region. Dass sie nicht ausreichte und eine Pflanze nötig wurde, sagt etwas über die Hitze des Ostwinds.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Assyrien war für Israel der Inbegriff des Feindes: Es zerstörte 722 das Nordreich und deportierte seine Bevölkerung. Eine Erzählung, in der Gott dieser Hauptstadt vergibt, mutet ihren Hörern zu, ausgerechnet dem Vernichter des eigenen Volkes das Erbarmen zu gönnen.',
       },
     ],
     terms: [
@@ -3043,6 +3077,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. chus',
         rendered: 'jammert',
         note: 'Mitleid haben, schonen. Dasselbe Verb steht für Jonas Mitleid mit der Pflanze und für Gottes Mitleid mit der Stadt – die Schlussfrage besteht darin, dass es zweimal dasselbe Wort ist.',
+      },
+      {
+        word: 'hebr. charah lo',
+        rendered: 'er ward zornig',
+        note: 'Wörtlich „es entbrannte ihm“. Dasselbe Verb steht dreimal in diesem Kapitel, jedes Mal für Jona, und die Rückfrage Gottes greift es auf: Ist dir zu Recht entbrannt? Der Zorn wird nicht getadelt, sondern in Frage gestellt.',
       },
     ],
     interpretations: [
@@ -3058,6 +3097,19 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Auslegung auf die Gemeinde hin',
         text: 'Die Frage am Ende richtet sich an die Lesenden: Gönnen wir Gottes Erbarmen auch denen, die wir nicht dafür vorgesehen haben?',
       },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen Jona vor allem typologisch – drei Tage im Fisch als Vorabbildung der Grabesruhe, wie es das Matthäusevangelium nahelegt. Das vierte Kapitel bereitete ihnen Mühe: Einen zornigen Propheten, der recht behalten will, deuteten sie überwiegend als Bild für Israels Widerstand gegen die Aufnahme der Völker – eine Lesart, die heute mit guten Gründen zurückgewiesen wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Sprachlich weist das Buch in die persische Zeit; Aramaismen und späte Wendungen sprechen gegen eine Abfassung im 8. Jahrhundert. Es dürfte damit in eine Zeit gehören, in der über die Abgrenzung der Gemeinde gestritten wurde – dieselbe Zeit, in der Esra und Nehemia strenge Trennung durchsetzten. Das Buch liest sich vor diesem Hintergrund als Gegenstimme.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 34, verse: 6, note: 'Die Formel, die Jona als Vorwurf zitiert' },
+      { book: 'joel', chapter: 2, verse: 13, note: 'Dieselbe Formel als Aufruf zur Umkehr' },
+      { book: 'mt', chapter: 12, verse: 40, note: 'Das Zeichen des Jona' },
     ],
   },
 
@@ -4409,7 +4461,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Gott spricht hier nicht als Richter, sondern als Elternteil: Er hat gehen gelehrt, auf den Arm genommen, die Wange gestreichelt. Dann bricht das angekündigte Gericht mitten im Satz ab.',
     historicalLong:
-      'Der Text zeigt einen inneren Widerstreit – „mein Herz ist anderen Sinnes“ – und begründet den Umschwung ausdrücklich damit, dass Gott „nicht ein Mensch“ ist. Menschliche Konsequenz führte zum Untergang; gerade Gottes Anderssein bricht die Logik der Vergeltung. Für die Auslegungsgeschichte ist das eine der bemerkenswertesten Stellen des Alten Testaments.',
+      'Der Text zeigt einen inneren Widerstreit – „mein Herz ist anderen Sinnes“ – und begründet den Umschwung ausdrücklich damit, dass Gott „nicht ein Mensch“ ist. Menschliche Konsequenz führte zum Untergang; gerade Gottes Anderssein bricht die Logik der Vergeltung. Für die Auslegungsgeschichte ist das eine der bemerkenswertesten Stellen des Alten Testaments.\n\nDas Kapitel bricht mit einer Bildwelt, die Hosea zuvor über Kapitel hinweg aufgebaut hatte. Die ersten Kapitel beschreiben das Verhältnis als Ehe, und zwar als eine zerrüttete: Der Prophet erhält den Auftrag, eine Frau zu nehmen, die ihn verlässt, und seine Kinder bekommen Namen, die das Urteil aussprechen. Hier wechselt das Bild vom Ehepartner zum Kind, und damit ändert sich die Logik: Eine Ehe kann geschieden werden, ein Kind bleibt Kind.\n\nDer Vorwurf gilt dem Baalskult, und der war kein Import von außen. Ausgrabungen in Israel haben Kultgegenstände in Wohnhäusern zutage gefördert, darunter zahllose weibliche Tonfiguren; die Inschriften von Kuntillet Adschrud aus dem 8. Jahrhundert grüßen mit „JHWH und seiner Aschera“. Was Hosea bekämpft, war für viele Zeitgenossen keine fremde Religion, sondern die übliche Frömmigkeit ihres Dorfes.\n\nDie politische Lage schärft das Bild. Das Nordreich schwankte in seinen letzten Jahrzehnten zwischen Ägypten und Assyrien, zahlte Tribut an die eine Seite und suchte Hilfe bei der anderen; Hosea nennt das an anderer Stelle eine törichte Taube, die hin und her flattert. Assyrische Annalen bestätigen die Tributzahlungen. Die Ankündigung, dass Assur König über sie sein werde, war zur Abfassungszeit bereits absehbar.\n\nDer Umschwung in der Mitte des Kapitels ist im Alten Testament ohne Parallele. Nach der Anklage folgt keine Bedingung, kein Aufruf zur Umkehr und keine Frist, sondern eine Selbstaussage: Gott sei Gott und nicht ein Mensch, deshalb komme er nicht, zu verderben. Die Begründung für die Nachsicht ist ausdrücklich, dass Gott anders handelt, als ein Mensch in derselben Lage handeln würde.',
     reception:
       'Matthäus zitiert Vers 1 – „aus Ägypten habe ich meinen Sohn gerufen“ – für die Rückkehr der Familie aus Ägypten. Bei Hosea steht der Satz in der Vergangenheit und meint den Auszug Israels; das Zitat ist ein Musterbeispiel dafür, wie das Neue Testament alttestamentliche Sätze neu besetzt.\n\nTheologisch ist der Abschnitt einer der meistdiskutierten des Alten Testaments, weil er einen Sinneswandel in Gott beschreibt. Die klassische Lehre von der Unveränderlichkeit Gottes hat damit Mühe; die Prozesstheologie des 20. Jahrhunderts und Abraham Joshua Heschels Werk über das „Pathos Gottes“ berufen sich ausdrücklich auf ihn.',
     world: [
@@ -4420,6 +4472,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'macht',
         text: 'Das Nordreich lag in seinen letzten Jahrzehnten: Nach Jerobeam II. folgten sechs Könige in gut zwanzig Jahren, vier davon durch Mord. Zwischen Ägypten und Assyrien wechselte man die Seiten. 722 fiel Samaria. Hosea spricht in diesen Zerfall hinein.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Baalskult war der Kult des Wettergottes, von dem Regen und Ernte abhingen. Er wurde an lokalen Höhenheiligtümern begangen, oft in Verbindung mit dem eigenen Gott. Für Bauern war das keine Frage der Lehre, sondern der Ernteversicherung – man wandte sich an den, der zuständig schien.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Vater, dessen Sohn sich beharrlich widersetzte, konnte ihn nach dem Gesetz den Ältesten übergeben; die Strafe war der Tod. Ob dieser Fall je vollzogen wurde, ist unbekannt – rechtlich war er vorgesehen. Vor diesem Hintergrund ist die Weigerung im Kapitel eine bewusste Abweichung vom geltenden Recht.',
       },
     ],
     terms: [
@@ -4432,6 +4492,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. nichumaj',
         rendered: 'Barmherzigkeit',
         note: 'Trost, Mitleid, Reue – von derselben Wurzel wie „sich erbarmen“ und „seinen Sinn ändern“. Der Vers sagt wörtlich, dass Gottes Mitleid „heiß wird“ oder sich „erregt“.',
+      },
+      {
+        word: 'hebr. chable adam',
+        rendered: 'in Seilen der Liebe',
+        note: 'Wörtlich „mit Stricken eines Menschen“, im Gegensatz zu Stricken, mit denen man Vieh führt. Der Text legt beide Bilder übereinander: die Erziehung eines Kindes und die Führung eines Zugtiers, dem man das Joch am Hals lockert, damit es fressen kann.',
       },
     ],
     interpretations: [
@@ -4447,8 +4512,22 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Neutestamentliche Aufnahme',
         text: 'Matthäus zitiert „Aus Ägypten habe ich meinen Sohn gerufen“ und bezieht es auf Jesus – im Ursprung meint der Satz Israel.',
       },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Hosea ist der einzige Schriftprophet aus dem Nordreich. Sein Buch ist sprachlich schwierig – der hebräische Text gilt als einer der am schlechtesten erhaltenen des Alten Testaments –, und viele Einzelheiten sind umstritten. Der Grundbestand wird ins 8. Jahrhundert gesetzt, die judäischen Bezüge gelten als spätere Bearbeitung.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Die Eheerzählung der ersten Kapitel wird seit den achtziger Jahren kritisch gelesen: Sie stellt die untreue Frau als Bild des Volkes dar und den betrogenen Mann als Bild Gottes, einschließlich Drohungen mit Entblößung und Züchtigung. Dass Kapitel 11 die Bildebene wechselt und vom Kind spricht, wird in dieser Diskussion als bedeutsam hervorgehoben.',
+      },
     ],
-    crossRefs: [{ book: 'mt', chapter: 2, verse: 15 }],
+    crossRefs: [
+      { book: 'mt', chapter: 2, verse: 15 },
+      { book: 'hos', chapter: 1, verse: 2, note: 'Das Ehebild der ersten Kapitel' },
+      { book: '5mo', chapter: 21, verse: 18, note: 'Das Recht über den widerspenstigen Sohn' },
+      { book: 'jes', chapter: 49, verse: 15, note: 'Kann eine Frau ihres Kindes vergessen?' },
+      { book: 'lk', chapter: 15, verse: 20, note: 'Der Vater sieht den Sohn von ferne' },
+    ],
   },
   {
     book: 'am',
@@ -6214,7 +6293,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Brief richtet sich an Christen, die als Minderheit auffielen und deshalb erklären mussten, warum sie anders lebten. Verlangt wird eine Antwort – „mit Sanftmut und Furcht“.',
     historicalLong:
-      'Das griechische Wort apologia stammt aus der Gerichtssprache: die Verteidigungsrede eines Angeklagten. Von einer Missionsoffensive ist also nicht die Rede, sondern von der Fähigkeit, auf Nachfrage Auskunft zu geben. Der Zusatz über die Art und Weise ist Teil des Auftrags, nicht Beiwerk.',
+      'Das griechische Wort apologia stammt aus der Gerichtssprache: die Verteidigungsrede eines Angeklagten. Von einer Missionsoffensive ist also nicht die Rede, sondern von der Fähigkeit, auf Nachfrage Auskunft zu geben. Der Zusatz über die Art und Weise ist Teil des Auftrags, nicht Beiwerk.\n\nDer Brief nennt in seiner Anschrift fünf Provinzen Kleinasiens: Pontus, Galatien, Kappadokien, Asien und Bithynien. Das ist ein Gebiet von der Größe Deutschlands, und es ist genau die Region, aus der der bekannteste römische Bericht über den Umgang mit Christen stammt. Um 112 schrieb der Statthalter Plinius aus Bithynien an Kaiser Trajan und fragte nach dem Verfahren; Trajans Antwort ist ebenfalls erhalten. Sie legt fest, dass nicht gesucht werden soll, wer aber angezeigt wird und beharrt, ist zu bestrafen.\n\nDamit ist die Lage beschrieben, die der Brief voraussetzt. Es gab keine reichsweite Verfolgung, sondern die dauernde Möglichkeit, von Nachbarn angezeigt zu werden. Der Auslöser war meist kein Bekenntnis, sondern Verhalten: die Weigerung, an Opfermahlzeiten teilzunehmen, an Vereinsfeiern, an den Festen der Zünfte. Wer in einer Stadt Handwerk trieb, war in solche Zusammenhänge eingebunden, und wer sich entzog, fiel auf.\n\nDas erklärt die Wortwahl. Gefragt wird nach dem Grund der Hoffnung, nicht nach einem Lehrsatz, und die Frage kommt von jedem – der Text sagt ausdrücklich „jedermann“, nicht „dem Richter“. Es geht also zuerst um die Nachbarin, den Werkstattkollegen, den Hausherrn. Erst wenn diese Erklärung nicht genügte, wurde daraus ein Verfahren.\n\nDer Zusatz über die Art der Antwort ist in diesem Zusammenhang mehr als eine Höflichkeitsregel. Wer als staatsgefährdend galt, konnte sich Überheblichkeit nicht leisten; jedes große Wort konnte zur Anzeige führen. Sanftmut ist hier zugleich Haltung und Überlebensklugheit – und der Brief macht daraus keinen Widerspruch.',
     reception:
       'Der Vers ist der Gründungstext der christlichen Apologetik und stand über den Titeln zahlloser Verteidigungsschriften, von Justin dem Märtyrer bis zur Gegenwart. In evangelikalen Kreisen ist er das Leitwort ganzer Ausbildungsprogramme.\n\nWas dabei meist wegfällt, ist die zweite Hälfte: „mit Sanftmut und Ehrfurcht“. Der Brief geht an Gemeinden unter Druck und beschreibt eine Verteidigung, die nicht auf Überlegenheit zielt – gefragt wird nach der Hoffnung, nicht nach Argumenten, und die Antwort soll den Fragenden nicht beschämen.',
     world: [
@@ -6225,6 +6304,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Verdächtigt wurde die Gruppe wegen ihrer Absonderung: Wer nicht an Opfermahlzeiten, Festen und Vereinsfeiern teilnahm, galt als menschenfeindlich. Tacitus nennt genau diesen Vorwurf. Die Aufforderung, mit Sanftmut zu antworten, zielt auf diese Alltagslage, nicht auf ein Streitgespräch.',
+      },
+      {
+        aspect: 'macht',
+        text: 'In den Provinzen Kleinasiens war der Kaiserkult besonders ausgebaut; Städte bewarben sich um das Recht, einen Tempel für den Kaiser zu errichten. Teilnahme an den Opfern galt als Loyalitätsnachweis, nicht als religiöse Überzeugung. Wer sich entzog, stellte damit nicht seinen Glauben, sondern seine Zuverlässigkeit in Frage.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Fremde Kulte waren in Rom geduldet, solange sie die alten Riten nicht störten. Verdächtig wurde eine Gruppe, wenn sie Menschen aus ihrer Herkunftsreligion herauslöste. Genau das taten die christlichen Gemeinden, und darin lag der Unterschied zu den zahlreichen anderen Kulten der Zeit.',
       },
     ],
     terms: [
@@ -6237,6 +6324,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'griech. prautetos kai phobou',
         rendered: 'Sanftmütigkeit und Furcht',
         note: 'Sanftmut und Ehrfurcht. Die Art der Antwort wird ausdrücklich vorgeschrieben – ein Zusatz, der in der Verwendung des Verses als Aufforderung zur Verteidigung des Glaubens oft übergangen wird.',
+      },
+      {
+        word: 'griech. elpis',
+        rendered: 'der Hoffnung',
+        note: 'Nicht ein Wunsch mit ungewissem Ausgang, sondern ein begründetes Erwarten. Gefragt wird nach dem Grund dieser Erwartung, nicht nach einem Bekenntnis – die Antwort soll erklären, warum jemand unter Druck anders handelt als erwartet.',
       },
     ],
     interpretations: [
@@ -6252,6 +6344,19 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Ethische Beobachtung',
         text: 'Die geforderte Sanftmut schließt Rechthaberei aus. Wie geantwortet wird, gehört zur Antwort.',
       },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Brief wird überwiegend ins späte 1. Jahrhundert gesetzt und einem Schüler des Petrus zugeschrieben; das gepflegte Griechisch und die Kenntnis der Septuaginta sprechen gegen einen galiläischen Fischer als Verfasser. Die geschilderte Lage – örtliche Anfeindung ohne staatliche Verfolgungswelle – passt zu dem, was Plinius aus derselben Region berichtet.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die frühen Apologeten beriefen sich auf den Vers und nahmen ihn beim Wort: Justin, Athenagoras und Tertullian schrieben ihre Verteidigungsschriften ausdrücklich an Kaiser und Statthalter. Bemerkenswert ist, dass sie dabei überwiegend nicht Lehrsätze verteidigten, sondern gegen konkrete Gerüchte anschrieben – Kindermord, Blutschande, Staatsfeindschaft.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 4, verse: 8, note: 'Petrus gibt vor dem Rat Rechenschaft' },
+      { book: 'kol', chapter: 4, verse: 6, note: 'Eure Rede sei allezeit lieblich' },
+      { book: '1petr', chapter: 2, verse: 12, note: 'Der gute Wandel unter den Heiden' },
     ],
   },
   {
@@ -6409,7 +6514,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Nach scharfen Worten gegen eingedrungene Lehren endet der Brief überraschend milde: „Und erbarmt euch etlicher, die da zweifeln.“ Zweifel erscheint als etwas, dem man mit Erbarmen begegnet.',
     historicalLong:
-      'Der Brief zitiert außerbiblische Schriften – das Henochbuch ausdrücklich –, was in der Alten Kirche seine Aufnahme in den Kanon verzögerte. Der abschließende Lobpreis gehört zu den bekanntesten Segensworten und wird bis heute im Gottesdienst verwendet.',
+      'Der Brief zitiert außerbiblische Schriften – das Henochbuch ausdrücklich –, was in der Alten Kirche seine Aufnahme in den Kanon verzögerte. Der abschließende Lobpreis gehört zu den bekanntesten Segensworten und wird bis heute im Gottesdienst verwendet.\n\nDer Brief ist mit fünfundzwanzig Versen eine der kürzesten Schriften des Neuen Testaments und zugleich eine der schwierigsten. Fast der gesamte Mittelteil besteht aus Beispielen des Gerichts – das Volk in der Wüste, die gefallenen Engel, Sodom, Kain, Bileam, Korach –, aneinandergereiht ohne Erklärung. Wer so schreibt, setzt bei seinen Lesern eine gemeinsame Erzählwelt voraus, in der jedes Stichwort genügt.\n\nZwei dieser Stichworte stammen nicht aus der Bibel. Der Streit des Erzengels Michael mit dem Teufel um den Leichnam des Mose gehört zu einer Überlieferung, die in der Himmelfahrt des Mose stand, einer Schrift, die nur bruchstückhaft erhalten ist. Und die Weissagung Henochs zitiert der Brief wörtlich aus dem ersten Henochbuch, das in Qumran in mehreren aramäischen Abschriften gefunden wurde. Beide Schriften waren im Judentum des 1. Jahrhunderts verbreitet, wurden aber später weder von der Synagoge noch von den meisten Kirchen in den Kanon aufgenommen. In der äthiopisch-orthodoxen Kirche gehört das Henochbuch bis heute dazu.\n\nDas hat dem Judasbrief selbst geschadet. Eusebius zählt ihn im 4. Jahrhundert zu den umstrittenen Schriften, und Hieronymus nennt die Henoch-Zitate ausdrücklich als Grund für die Vorbehalte. Luther stellte ihn in seiner Bibelübersetzung mit Hebräerbrief, Jakobusbrief und Offenbarung ans Ende und ohne Nummer im Inhaltsverzeichnis – eine Entscheidung, die er mit dem geringen theologischen Ertrag begründete.\n\nDie Abstufung am Schluss ist dagegen bemerkenswert nüchtern. Der Brief unterscheidet drei Gruppen und drei Verhaltensweisen, und die härteste Formulierung – den Rock zu hassen, der vom Fleisch befleckt ist – bezieht sich auf ein Kleidungsstück, nicht auf einen Menschen. Wer den Brief als Muster für den Umgang mit Abweichung liest, findet hier eine Unterscheidung, die selten mitzitiert wird.',
     reception:
       'Der Judasbrief ist wegen seiner scharfen Polemik und wegen seiner Zitate aus außerkanonischen Schriften – dem Henochbuch und der Himmelfahrt des Mose – in der Alten Kirche umstritten gewesen. Luther zählte ihn zu den Büchern zweiten Ranges. Dass ein biblisches Buch nichtbiblische Schriften als Autorität anführt, gehört zu den lehrreichsten Beobachtungen zur Kanongeschichte.\n\nSein Schlusslobpreis dagegen ist einer der meistgesprochenen Segenstexte überhaupt und beschließt Gottesdienste in fast allen Konfessionen – meist ohne dass die Gemeinde weiß, woher er stammt.',
     world: [
@@ -6421,6 +6526,14 @@ export const COMMENTARY: CommentaryEntry[] = [
         aspect: 'glaube',
         text: 'Der Brief zitiert das Henochbuch und eine Überlieferung über den Streit um den Leichnam des Mose – Schriften, die nicht in den Kanon kamen. Für seine ersten Leser war das unproblematisch: Die Grenze zwischen maßgeblichen und anderen Büchern war noch nicht gezogen.',
       },
+      {
+        aspect: 'macht',
+        text: 'Wandernde Lehrer zogen von Gemeinde zu Gemeinde und lebten von deren Gastfreundschaft. Die Didache regelt, wie lange ein solcher Gast bleiben darf – zwei Tage, wer länger bleibt oder Geld verlangt, ist ein falscher Prophet. Der Brief kämpft gegen ein Problem, das dieses Wanderwesen mit sich brachte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Eine Gemeinde hatte keine Gerichtsbarkeit und keine Zwangsmittel. Wer jemanden ausschloss, konnte ihn nicht daran hindern, weiterzuziehen und anderswo aufzutreten. Deshalb arbeiteten die Briefe mit Warnungen und Empfehlungsschreiben – die einzigen Instrumente, die zur Verfügung standen.',
+      },
     ],
     terms: [
       {
@@ -6431,6 +6544,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'griech. eleate',
         rendered: 'erbarmet',
         note: 'Erbarmt euch. Der Brief unterscheidet drei Gruppen und drei Umgangsweisen: Erbarmen mit den Zweifelnden, Rettung der Gefährdeten, Vorsicht bei den Übrigen. Diese Abstufung ist im Neuen Testament einmalig.',
+      },
+      {
+        word: 'griech. doxa',
+        rendered: 'sei Ehre und Majestät',
+        note: 'Ansehen, Gewicht, Herrlichkeit. Der Schlusslobpreis reiht vier solcher Begriffe aneinander – eine Form, die aus der jüdischen Gebetssprache stammt und in der christlichen Liturgie fortlebt. Solche Ketten steigern nicht, sie umkreisen.',
       },
     ],
     interpretations: [
@@ -6446,6 +6564,19 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Liturgische Rezeption',
         text: 'Der abschließende Lobpreis – „dem, der euch behüten kann ohne Fehl“ – gehört bis heute zu den verbreitetsten Segensworten im Gottesdienst.',
       },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Verfasser nennt sich Bruder des Jakobus und damit indirekt Bruder Jesu. Das gepflegte Griechisch und der Rückblick auf die Apostel als vergangene Größe sprechen gegen eine so frühe Abfassung; die meisten Ausleger setzen den Brief ans Ende des 1. Jahrhunderts. Der zweite Petrusbrief übernimmt weite Teile daraus und lässt dabei die Zitate aus dem Henochbuch weg.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther urteilte hart: Der Brief bringe nichts, was nicht anderswo besser stehe, und zitiere Bücher, die nicht in die Schrift gehören. Calvin verteidigte ihn dagegen und wies darauf hin, dass ein Zitat nicht die ganze Quelle beglaubigt – Paulus zitiere schließlich auch heidnische Dichter.',
+      },
+    ],
+    crossRefs: [
+      { book: '2petr', chapter: 2, verse: 1, note: 'Der Zweite Petrusbrief übernimmt weite Teile' },
+      { book: 'gal', chapter: 6, verse: 1, note: 'Zurechtweisung mit sanftmütigem Geist' },
+      { book: 'jak', chapter: 5, verse: 19, note: 'Den Irrenden zurückbringen' },
     ],
   },
 
@@ -10603,7 +10734,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Diener sieht am Morgen die Stadt umstellt und gerät in Panik. Elisa betet nicht um Rettung, sondern darum, dass dem anderen die Augen aufgehen.',
     historicalLong:
-      'Der Zusammenhang ist eine militärische Lage: Der König von Aram sucht Elisa und lässt Dotan umzingeln. Die Erzählung löst das nicht durch einen Kampf, sondern durch eine veränderte Wahrnehmung – und anschließend durch eine Blendung der Angreifer, die in einem Gastmahl endet, nicht in einer Hinrichtung. Dieser Schluss ist bemerkenswert: Elisa lässt die Gefangenen essen und ziehen, und die Überfälle hören auf.',
+      'Der Zusammenhang ist eine militärische Lage: Der König von Aram sucht Elisa und lässt Dotan umzingeln. Die Erzählung löst das nicht durch einen Kampf, sondern durch eine veränderte Wahrnehmung – und anschließend durch eine Blendung der Angreifer, die in einem Gastmahl endet, nicht in einer Hinrichtung. Dieser Schluss ist bemerkenswert: Elisa lässt die Gefangenen essen und ziehen, und die Überfälle hören auf.\n\nDer Rahmen der Erzählung ist ein Krieg, wie ihn die Levante über Jahrhunderte kannte: kein Feldzug mit Eroberungsziel, sondern wiederkehrende Streifzüge über eine unklare Grenze. Aram, mit der Hauptstadt Damaskus, und Israel stritten über Jahrzehnte um das Ostjordanland und um die Handelswege. Die Mescha-Stele und assyrische Annalen zeigen dieselbe Art von Auseinandersetzung: Überfälle, Tributzahlungen, wechselnde Bündnisse.\n\nIn diesem Krieg war Aufklärung entscheidend. Wer wusste, wo der Gegner sein Lager aufschlug, konnte ausweichen oder zuschlagen. Genau darum geht es in den Versen davor: Der aramäische König verdächtigt einen Verräter in den eigenen Reihen, bis ihm gesagt wird, ein Prophet in Israel kenne sogar die Worte, die er in seiner Schlafkammer rede. Das Aufgebot vor Dotan richtet sich also nicht gegen eine Stadt, sondern gegen einen einzelnen Mann, den man für eine Nachrichtenquelle hält.\n\nDer Berg voller feuriger Wagen greift eine Bildwelt auf, die in der Region geläufig war. Assyrische und aramäische Darstellungen zeigen Gottheiten im Streitwagen über dem Heer; Streitwagen waren die teuerste und angesehenste Waffengattung. Der Text sagt jedoch ausdrücklich nicht, dass diese Wagen eingreifen. Sie stehen da, und das genügt – die Handlung geht anders weiter, mit Blendung, Führung und einem Gastmahl.\n\nDas Ende ist der eigentliche Bruch mit den Erwartungen. Als der König von Israel fragt, ob er die Gefangenen erschlagen solle, verbietet Elisa es und lässt ihnen Brot und Wasser vorsetzen; danach ziehen sie ab, und die Streifzüge hören auf. In der Kriegspraxis des Alten Orients war das ausgeschlossen: Gefangene wurden getötet, verstümmelt oder versklavt. Assyrische Reliefs zeigen es in aller Ausführlichkeit. Die Erzählung setzt an diese Stelle ein Mahl.',
     reception:
       'Der Vers gehört zu den meistzitierten in der geistlichen Kampfliteratur und in Predigten über Angst. Was dabei meist untergeht: Die Feuerwagen kämpfen nicht. Elisa führt das feindliche Heer stattdessen mit Blindheit geschlagen nach Samaria – und lässt ihm dort ein Mahl vorsetzen, statt es zu töten.\n\nGenau dieser Schluss macht den Abschnitt in der Friedensethik interessant: Die Erzählung endet damit, dass die Streifzüge aufhören, weil die Gefangenen freigelassen und bewirtet wurden. Ein Kriegsbericht, der mit einem Essen endet.',
     world: [
@@ -10614,6 +10745,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'alltag',
         text: 'Dotan lag auf einem Hügel über der Ebene, an der Handelsstraße nach Ägypten – demselben Weg, auf dem Josef verkauft wurde. Wer morgens aus der Tür trat, überblickte die Ebene. Der Diener sieht die Umzingelung deshalb sofort und vollständig.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Dotan liegt am Nordrand der Ebene von Dotan, an der Straße von der Jesreelebene nach Samaria. Der Tell wurde in den fünfziger Jahren ausgegraben und zeigt eine durchgehende Besiedlung seit der Bronzezeit. Von der Kuppe überblickt man die Ebene vollständig – ein Ort, an dem man eine Umzingelung tatsächlich mit einem Blick erfassen konnte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Gastfreundschaft verpflichtete: Wer mit jemandem gegessen hatte, stand unter dessen Schutz und durfte ihm nicht schaden. Diese Regel galt über Feindesgrenzen hinweg. Das Mahl am Ende der Erzählung ist deshalb kein Gnadenakt, sondern ein Rechtsvorgang – es beendet den Kriegszustand zwischen den Beteiligten.',
       },
     ],
     terms: [
@@ -10626,6 +10765,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. rekeb esch',
         rendered: 'feuriger Rosse und Wagen',
         note: 'Feuerwagen. Dasselbe Bild steht bei der Entrückung Elias und ist im Alten Orient die Ausstattung eines Gottes im Krieg. Elisa sieht damit, was der Diener nicht sieht – und keiner der Wagen greift ein.',
+      },
+      {
+        word: 'hebr. rabbim',
+        rendered: 'derer ist mehr, die bei uns sind',
+        note: 'Wörtlich „viele sind die mit uns“. Der Satz ist eine Zählaussage, keine Gefühlsäußerung – er behauptet ein Zahlenverhältnis gegen den Augenschein. Der Diener sieht das Aufgebot, der Prophet zählt anders.',
       },
     ],
     interpretations: [
@@ -10640,6 +10784,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Ethische Auslegung',
         text: 'Der Ausgang – ein Gastmahl statt einer Hinrichtung – wird gegen jede Deutung angeführt, die den Text als Kriegserzählung liest.',
+      },
+      {
+        tradition: 'Archäologische Einordnung',
+        text: 'Die Kriege zwischen Aram und Israel im 9. Jahrhundert sind außerbiblisch bezeugt: Die Tel-Dan-Stele, aufgestellt von einem aramäischen König, rühmt Siege über Israel und nennt das „Haus Davids“. Der historische Hintergrund der Elisa-Erzählungen ist damit gut belegt, auch wenn die einzelnen Episoden aus prophetischen Kreisen stammen.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Der Vers gehört zu den meistzitierten Trostworten in Situationen der Unterlegenheit und ist in der Erweckungsbewegung, in Kriegspredigten und in Bürgerrechtsreden gleichermaßen gebraucht worden. Die Auslegung mahnt, den Fortgang mitzulesen: Die feurigen Wagen kämpfen nicht, und der Feind wird bewirtet.',
       },
     ],
     crossRefs: [
@@ -10711,7 +10863,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Psalm endet mit einer Zusage, die über den Tod hinausgreift – vorsichtig formuliert und dennoch weitreichend.',
     historicalLong:
-      'Der Vers steht am Ende eines Vertrauenslieds, das mit der Bitte um Bewahrung beginnt. Die Wendung, Gott werde die Seele nicht dem Totenreich lassen, ist im Alten Testament ungewöhnlich; die meisten Texte kennen keine Hoffnung über den Tod hinaus. Ob der Psalm die Bewahrung vor dem Sterben oder darüber hinaus meint, ist im Hebräischen offen. Die Pfingstpredigt des Petrus zitiert den Psalm ausführlich und bezieht ihn auf die Auferstehung Jesu.',
+      'Der Vers steht am Ende eines Vertrauenslieds, das mit der Bitte um Bewahrung beginnt. Die Wendung, Gott werde die Seele nicht dem Totenreich lassen, ist im Alten Testament ungewöhnlich; die meisten Texte kennen keine Hoffnung über den Tod hinaus. Ob der Psalm die Bewahrung vor dem Sterben oder darüber hinaus meint, ist im Hebräischen offen. Die Pfingstpredigt des Petrus zitiert den Psalm ausführlich und bezieht ihn auf die Auferstehung Jesu.\n\nDer Psalm gehört zu einer kleinen Gruppe, die eine Überschrift trägt, deren Bedeutung niemand mehr kennt: „Miktam“. Sechs Psalmen tragen sie, alle im Umfeld von Verfolgung und Rettung. Die alten Übersetzungen raten – die griechische Bibel macht daraus eine Inschrift auf einer Stele, die lateinische einen Titel. Solche unverstandenen Fachwörter zeigen, wie alt die Sammlung ist: Schon die Übersetzer des 3. Jahrhunderts v. Chr. konnten sie nicht mehr auflösen.\n\nDie Verse davor grenzen sich scharf gegen andere Kulte ab und nennen deren Trankopfer von Blut. In der Levante waren Libationen üblich – Wein, Öl, Milch, in bestimmten Riten auch Blut. Ausgrabungen haben Trankopferrinnen an Altären freigelegt, in Megiddo wie in Ugarit. Der Beter erklärt ausdrücklich, die Namen dieser Gottheiten nicht in den Mund zu nehmen; das Aussprechen eines Namens galt als Teil der Verehrung.\n\nEntscheidend für das Verständnis des Schlussverses ist, was der Psalm nicht sagt. Er spricht davon, dass Gott die Seele nicht dem Totenreich überlässt und den Frommen die Grube nicht sehen lässt – eine Aussage über Bewahrung im Leben, nicht über ein Leben nach dem Tod. Eine ausgeführte Auferstehungshoffnung gibt es im Alten Testament erst spät, im Danielbuch und in einzelnen Stellen bei Jesaja. Die Apostelgeschichte liest den Vers dennoch als Aussage über die Auferstehung – und begründet das ausdrücklich damit, dass Davids Grab bekannt sei, der Satz also einen anderen meinen müsse.\n\nDie Wendung von der Fülle der Freude gehört in die Sprache des Hofes. Wer zur Rechten des Königs stand, gehörte zum engsten Kreis; Reliefs zeigen diese Ordnung, und Bankettszenen aus Assyrien machen die Sitzordnung zum Bild der Rangfolge. Der Psalm überträgt eine Platzanweisung bei Hof auf das Verhältnis zu Gott.',
     reception:
       'Petrus legt in Apostelgeschichte 2 den ganzen Psalm auf die Auferstehung aus, und Paulus tut es in Antiochia ebenso. Damit gehört Psalm 16 zu den frühesten alttestamentlichen Texten, die im Christentum österlich gelesen wurden.\n\nIm Hebräischen ist der Psalm zurückhaltender: Er bittet darum, nicht der Grube überlassen zu werden – also um Bewahrung vor einem vorzeitigen Tod, nicht ausdrücklich um Auferstehung. Der Unterschied zwischen hebräischer und griechischer Fassung ist an dieser Stelle einer der lehrreichsten Fälle für die Frage, wie das Neue Testament die Schrift liest.',
     world: [
@@ -10722,6 +10874,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: '„Die Rechte“ ist die Ehrenseite: Beim Mahl und bei Hofe saß rechts, wer geschätzt wurde. Freude „zu deiner Rechten“ beschreibt deshalb eine Platzierung – Nähe zum Gastgeber, nicht ein Gefühl.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Trankopfer wurden aus flachen Schalen über den Altar oder in eigens gehauene Rinnen gegossen. Solche Rinnen sind an mehreren Kultplätzen der Levante freigelegt worden. Die Ablehnung im Psalm richtet sich damit gegen eine Praxis, die man sehen konnte, nicht gegen eine Lehre.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der Psalm spricht davon, dass das Los auf ein liebliches Erbteil gefallen sei. Landverteilung geschah tatsächlich durch Losentscheid, und der Anteil einer Familie blieb an sie gebunden. Wer sein Los ein schönes nennt, gebraucht eine Formel aus dem Bodenrecht.',
       },
     ],
     terms: [
@@ -10734,6 +10894,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. naim',
         rendered: 'liebliches Wesen',
         note: 'Lieblichkeit, Anmut, Wonne. Ein Wort aus der Poesie, das die deutsche Übersetzung nur umschreiben kann; es beschreibt keinen Zustand, sondern einen Eindruck.',
+      },
+      {
+        word: 'hebr. sova semachot',
+        rendered: 'Freude die Fülle',
+        note: 'Wörtlich „Sättigung an Freuden“ – ein Wort aus dem Bereich des Essens. Der Psalm beschreibt Freude nicht als Stimmung, sondern als Sattwerden, und stellt sie damit neben das Mahl, von dem die vorangehenden Verse sprechen.',
       },
     ],
     interpretations: [
@@ -10748,6 +10913,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Liturgische Rezeption',
         text: 'Der Vers gehört zu den meistgelesenen Texten bei Beerdigungen und in der Osternacht.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition liest den Psalm als Rede über das Leben in der Gegenwart Gottes und bezieht die Wendung vom Weg des Lebens auf das Torastudium. Die christliche Verwendung als Auferstehungsbeleg wurde früh bestritten, weil der hebräische Wortlaut von Bewahrung vor dem Tod spricht, nicht von Rückkehr aus ihm.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Weil die Apostelgeschichte den Psalm zweimal als Schriftbeweis anführt, wurde er in der Alten Kirche einer der Hauptbelege für die Auferstehung. Tertullian und Irenäus argumentieren mit ihm gegen die Vorstellung, der Leib bleibe zurück – gerade die Rede vom Fleisch, das sicher wohnt, war ihnen dafür wichtig.',
       },
     ],
     crossRefs: [
@@ -10818,7 +10991,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Vertrauenslied, das mit einer rhetorischen Frage beginnt und mitten drin in eine Klage umschlägt – im selben Psalm.',
     historicalLong:
-      'Die ersten Verse klingen unerschütterlich, ab Vers 7 wird gebeten und geklagt, am Ende steht die Aufforderung, auf den HERRN zu harren. Diese Bewegung ist typisch für den Psalter: Vertrauen wird nicht als Zustand beschrieben, sondern als etwas, das gegen die Umstände festgehalten wird. Das Bild vom Licht ist im Alten Testament selten als Gottesbezeichnung; häufiger steht es für Rettung und Leben. Der Psalm gehört im Judentum zur Zeit der Bußtage vor dem Neujahrsfest.',
+      'Die ersten Verse klingen unerschütterlich, ab Vers 7 wird gebeten und geklagt, am Ende steht die Aufforderung, auf den HERRN zu harren. Diese Bewegung ist typisch für den Psalter: Vertrauen wird nicht als Zustand beschrieben, sondern als etwas, das gegen die Umstände festgehalten wird. Das Bild vom Licht ist im Alten Testament selten als Gottesbezeichnung; häufiger steht es für Rettung und Leben. Der Psalm gehört im Judentum zur Zeit der Bußtage vor dem Neujahrsfest.\n\nDer Psalm zerfällt deutlich in zwei Teile, und der Bruch liegt zwischen Vers 6 und 7. Der erste Teil spricht über Gott in der dritten Person, ruhig und siegesgewiss; der zweite redet ihn an, mit Bitten, mit der Sorge, verlassen zu werden, und mit dem Hinweis auf falsche Zeugen. Manche Ausleger nehmen deshalb zwei ursprünglich getrennte Psalmen an. Die Endgestalt stellt beides nebeneinander, ohne den Übergang zu erklären.\n\nDie Bilder des ersten Verses stammen aus drei verschiedenen Bereichen und werden im Deutschen leicht als Gefühlsworte gelesen. Licht steht für Rettung und Leben, nicht für Erleuchtung; das Wort für Heil bezeichnet den Ausgang eines Kampfes; und der dritte Ausdruck kommt aus dem Festungsbau. Der Vers stapelt damit drei Bilder für dasselbe: dass jemand durchkommt.\n\nDie Bitte, im Hause des HERRN zu wohnen alle Tage, hat einen rechtlichen Hintergrund. Heiligtümer boten Asyl; wer die Hörner des Altars ergriff, war vorläufig unantastbar, und die Königsbücher erzählen zwei Fälle, in denen genau das geschieht – einmal mit Erfolg, einmal ohne. Für einen zu Unrecht Angeklagten war der Tempel deshalb nicht nur ein frommer Ort, sondern der einzige, an dem er Zeit gewann.\n\nDie falschen Zeugen, die der Psalm nennt, sind der Kern des Problems. Ein Verfahren im Tor kannte keine Ermittlung und keine Sachbeweise; es entschied sich an Aussagen. Das Gesetz verlangte zwei Zeugen und drohte dem falschen Zeugen dieselbe Strafe an, die den Beschuldigten getroffen hätte – ein Hinweis darauf, wie verbreitet und wie gefährlich das Problem war.',
     reception:
       'Im Judentum wird Psalm 27 vom Beginn des Monats Elul bis zum Ende der Herbstfeste zweimal täglich gesprochen – also über sieben Wochen der Selbstprüfung hinweg. Kaum ein Psalm hat einen so festen Platz im Jahreslauf.\n\nIm Christentum ist er vor allem durch seine Musik präsent: Heinrich Schütz, Mendelssohn und zahlreiche Vertonungen des 20. Jahrhunderts. In der Seelsorge wird er wegen seines Bruchs geschätzt – dass ein Psalm, der so fest beginnt, ab Vers 7 ins Bitten kippt, gilt als Erlaubnis, dass Zuversicht und Angst nebeneinander bestehen dürfen.',
     world: [
@@ -10829,6 +11002,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'recht',
         text: 'Vers 12 nennt falsche Zeugen. Ein Verfahren stand und fiel mit ihnen: Es gab keine Ermittlungen, keine Sachbeweise, nur Aussagen vor den Ältesten im Tor. Wer zwei Zeugen kaufte, konnte einen Nachbarn ruinieren – und der Beschuldigte hatte kaum etwas dagegenzusetzen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Psalm spricht von einem Heer, das sich lagert, und von Krieg, der sich erhebt. Belagerungen waren im judäischen Bergland die übliche Form der Kriegführung: Man schnitt eine Stadt von Wasser und Vorräten ab und wartete. Assyrische Reliefs zeigen die Belagerung von Lachisch in allen Einzelheiten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Verlangen, die Schönheit des HERRN zu schauen und seinen Tempel zu betrachten, meint die Teilnahme am Fest: die Prozession, die Opfer, die Musik. Wallfahrer kamen dreimal im Jahr, und für viele war das der einzige Anlass, das eigene Dorf zu verlassen.',
       },
     ],
     terms: [
@@ -10841,6 +11022,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. maoz',
         rendered: 'Kraft',
         note: 'Wörtlich Festung, Zuflucht – ein Wort aus dem Festungsbau, nicht aus der Psychologie. Die drei Bilder des ersten Verses gehören zusammen: Licht, Rettung, feste Stellung.',
+      },
+      {
+        word: 'hebr. jischi',
+        rendered: 'mein Heil',
+        note: 'Rettung, Sieg, Hilfe – dasselbe Wortfeld, aus dem die Namen Josua und Jesus stammen. Gemeint ist kein Zustand des Gerettetseins, sondern ein Eingreifen, das eine Lage wendet.',
       },
     ],
     interpretations: [
@@ -10855,6 +11041,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Dass Zuversicht und Angst in einem Psalm stehen, wird als Erlaubnis gelesen, beides nebeneinander haben zu dürfen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Ambrosius und Augustinus deuteten das Licht des ersten Verses auf Christus und verbanden es mit dem Wort vom Licht der Welt im Johannesevangelium. Der lateinische Anfang wurde im Mittelalter zur Devise: Die Universität Oxford führt ihn bis heute im Wappen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther hob hervor, dass der Psalm nicht bei der Zuversicht bleibt, sondern in die Bitte umschlägt. Für ihn war gerade der Bruch das Wahre daran: Wer beten lernt, lernt auch, dass Zuversicht sich nicht festhalten lässt, sondern jeden Tag neu erbeten werden muss.',
       },
     ],
     crossRefs: [
@@ -10872,7 +11066,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Mitten im Psalm wechselt die Stimme: Nach dem Bekenntnis der Schuld spricht Gott selbst – und verspricht Begleitung mit den Augen.',
     historicalLong:
-      'Der Psalm gehört zu den sieben Bußpsalmen. Nach der Schilderung, wie das Verschweigen der Schuld krank machte, und nach dem Eingeständnis folgt diese Zusage. Das Bild ist genau: nicht ein Zwang wie bei Ross und Maultier, sondern ein Blick. Der letzte Halbvers ist im Hebräischen schwierig und wird sehr unterschiedlich übersetzt. Paulus zitiert den Anfang des Psalms in Römer 4 als Beleg dafür, dass Gerechtigkeit zugerechnet wird.',
+      'Der Psalm gehört zu den sieben Bußpsalmen. Nach der Schilderung, wie das Verschweigen der Schuld krank machte, und nach dem Eingeständnis folgt diese Zusage. Das Bild ist genau: nicht ein Zwang wie bei Ross und Maultier, sondern ein Blick. Der letzte Halbvers ist im Hebräischen schwierig und wird sehr unterschiedlich übersetzt. Paulus zitiert den Anfang des Psalms in Römer 4 als Beleg dafür, dass Gerechtigkeit zugerechnet wird.\n\nDer Psalm gehört zu den sieben Bußpsalmen der kirchlichen Tradition und trägt eine Überschrift, deren Bedeutung unklar ist: „Maskil“. Dreizehn Psalmen tragen sie; das Wort hängt mit der Wurzel für Einsicht zusammen, dieselbe, die in Vers 8 mit „unterweisen“ wiedergegeben ist. Möglicherweise bezeichnet sie ein Lehrgedicht – dann wäre der Vers, in dem jemand Unterweisung verspricht, die Erklärung der Überschrift.\n\nWer in den Versen 8 und 9 spricht, ist im Hebräischen nicht markiert. Es kann Gott sein, der antwortet, oder der Beter, der aus seiner Erfahrung heraus andere belehrt. Beide Lesarten haben Gewicht: Für Gott spricht das Bild vom leitenden Auge, für den Beter der Zusammenhang, denn ein Dankgebet mündet üblicherweise in die Belehrung der Zuhörer. Die Anführungszeichen der Lutherbibel entscheiden, was der Text offenlässt.\n\nDie beiden genannten Tiere sind sorgfältig gewählt. Pferd und Maultier waren keine Bauerntiere, sondern teuer: Das Pferd gehörte zum Streitwagen und zur Oberschicht, das Maultier war das Reittier von Beamten und Königssöhnen. Beide mussten mit Zaum und Gebiss geführt werden, weil sie anders als Rind oder Esel nicht mitgehen, wenn man sie nur ruft. Der Vergleich zielt also nicht auf Dummheit, sondern auf eine bestimmte Art von Widerstand.\n\nDas Verschweigen, von dem der Psalm zu Beginn spricht, hat eine rechtliche Seite, die leicht übersehen wird. Wer eine Verfehlung nicht bekannte, blieb in der Gemeinschaft unter Verdacht; ungeklärte Fälle belasteten das ganze Dorf, weil sie als Ursache für Unglück galten. Das Bekennen war deshalb nicht nur eine innere Erleichterung, sondern die Wiederherstellung eines geklärten Verhältnisses nach außen.',
     reception:
       'Psalm 32 ist der erste der sieben Bußpsalmen und stand in der mittelalterlichen Bußpraxis neben Psalm 51. Paulus zitiert seine ersten Verse in Römer 4 als Beleg dafür, dass Gott ohne Werke gerecht spricht; Augustinus ließ sich den Psalm nach Überlieferung seines Biographen an die Wand neben sein Sterbebett schreiben.\n\nDer Vers selbst ist ein häufiger Konfirmationsspruch. Sein Bild ist bemerkenswert unaufdringlich: Kein Zaum, kein Gebiss, sondern ein Blick – Führung, die Einsicht voraussetzt statt Zwang.',
     world: [
@@ -10883,6 +11077,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'alltag',
         text: 'Verschwiegene Schuld wird im Psalm körperlich beschrieben: verschmachtende Gebeine, Saft, der wie im Sommer vertrocknet. Krankheit galt als Folge ungeklärter Verhältnisse, und Heilung setzte deren Klärung voraus. Der Zusammenhang war für die Hörer selbstverständlich.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Pferde und Maultiere waren Statustiere. Salomo wird für seine Pferdeställe gerühmt, und Königssöhne ritten auf Maultieren. Ein Vergleich mit diesen Tieren traf deshalb nicht die Ungebildeten, sondern die, die etwas darstellten – und die sich am schwersten führen ließen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Krankheit wurde als Zeichen einer gestörten Ordnung gedeutet, und Heilung setzte deren Klärung voraus. Deshalb gehörten Schuldbekenntnis, Opfer und Genesung zusammen. Mesopotamische Beschwörungstexte arbeiten mit derselben Voraussetzung, nennen als Ursache aber meist ein unbekanntes Vergehen gegen irgendeinen Gott.',
       },
     ],
     terms: [
@@ -10895,6 +11097,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. beeni',
         rendered: 'mit meinen Augen',
         note: 'Wörtlich „mit meinem Auge auf dir“. Ein Bild für aufmerksame Begleitung; der Gegensatz im nächsten Vers ist das Pferd, das Zaum und Gebiss braucht, weil es nicht versteht.',
+      },
+      {
+        word: 'hebr. mesig',
+        rendered: 'Zaum und Gebiß',
+        note: 'Das Zaumzeug, mit dem sich ein widerspenstiges Tier lenken lässt. Der hebräische Wortlaut des Verses ist schwierig und in den alten Übersetzungen unterschiedlich wiedergegeben; einig sind sich alle darin, dass hier von erzwungener Führung die Rede ist.',
       },
     ],
     interpretations: [
@@ -10909,6 +11116,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Die Schilderung der psychosomatischen Folgen des Verschweigens – verdorrte Gebeine, Kraftverlust – wird oft als erstaunlich genaue Beobachtung gelesen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Augustinus ließ sich diesen Psalm nach dem Bericht seines Biographen Possidius in seinen letzten Tagen an die Wand seines Zimmers schreiben, um ihn lesen zu können. Als einer der Bußpsalmen prägte er die abendländische Bußpraxis; die Verbindung von Bekenntnis und Erleichterung wurde zum Grundmuster der Beichte.',
+      },
+      {
+        tradition: 'Neutestamentliche Aufnahme',
+        text: 'Paulus zitiert die ersten beiden Verse im Römerbrief als Schriftbeweis dafür, dass Gott ohne Werke zurechnet. Er liest den Psalm damit nicht als Bußtext, sondern als Aussage über die Rechnungsführung Gottes – ein Beispiel dafür, wie ein Zitat den Ton seines Ursprungs verschieben kann.',
       },
     ],
     crossRefs: [
@@ -10926,7 +11141,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Eine Einladung, die nicht argumentiert, sondern zum Ausprobieren auffordert – mit einem Verb, das sonst dem Essen gehört.',
     historicalLong:
-      'Der Psalm ist alphabetisch aufgebaut; jeder Vers beginnt mit dem nächsten Buchstaben. Solche Form dient dem Auswendiglernen und signalisiert Vollständigkeit. Der Vers wurde früh in die Abendmahlsliturgie aufgenommen – schon die Jerusalemer Katechesen des 4. Jahrhunderts nennen ihn als Gesang zur Kommunion. Der erste Petrusbrief zitiert ihn im Zusammenhang mit dem Wachsen im Glauben.',
+      'Der Psalm ist alphabetisch aufgebaut; jeder Vers beginnt mit dem nächsten Buchstaben. Solche Form dient dem Auswendiglernen und signalisiert Vollständigkeit. Der Vers wurde früh in die Abendmahlsliturgie aufgenommen – schon die Jerusalemer Katechesen des 4. Jahrhunderts nennen ihn als Gesang zur Kommunion. Der erste Petrusbrief zitiert ihn im Zusammenhang mit dem Wachsen im Glauben.\n\nDer Vers vom Reichen, der darben muss, wirkt im Deutschen wie eine soziale Aussage. Im Hebräischen steht dort ein anderes Wort: junge Löwen. Sie sind das übliche Bild für die Starken, die sich nehmen, was sie brauchen – Hesekiel und Nahum benutzen es für Herrscher und ihre Truppen. Der Satz sagt also nicht, dass Vermögende Hunger leiden, sondern dass selbst die Raubtiere leer ausgehen können. Luthers Übersetzung folgt hier der griechischen und lateinischen Tradition, die das Wort ebenfalls anders verstanden hat.\n\nDer Psalm gehört zur Gattung des Danklieds, und die hatte einen festen Ort. Wer aus einer Notlage befreit worden war, brachte ein Dankopfer und lud dazu ein; vom Fleisch aß man gemeinsam, und es musste noch am selben Tag verzehrt werden. Daraus ergab sich zwangsläufig eine größere Tischrunde, zu der auch Arme und Fremde gehörten. Vor dieser Runde erzählte der Gerettete, was geschehen war – die Verse davor tun genau das.\n\nDie Aufforderung zu schmecken ist deshalb keine fromme Metapher, sondern eine Einladung an den Tisch, an dem der Beter steht. Erst die spätere Auslegung hat daraus eine Erkenntnistheorie gemacht: dass über Gott nicht zu urteilen ist, ohne sich eingelassen zu haben. Beide Ebenen liegen im Text, aber die zweite setzt die erste voraus.',
     reception:
       'Der Vers ist seit dem 4. Jahrhundert der klassische Kommunionsgesang: Die Jerusalemer Katechesen des Kyrill nennen ihn ausdrücklich, und er steht bis heute in katholischen wie evangelischen Abendmahlsliturgien. Kaum ein anderer Psalmvers ist so eng mit einer einzelnen liturgischen Handlung verbunden.\n\nDer Psalm ist zudem alphabetisch gebaut – jeder Vers beginnt mit dem nächsten Buchstaben –, und ein Buchstabe fehlt. Diese Lücke hat Ausleger seit jeher beschäftigt; eine überzeugende Erklärung gibt es nicht.',
     world: [
@@ -10937,6 +11152,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Der Vers vom Reichen, der darben muss, während die den HERRN Suchenden keinen Mangel haben, war eine Erfahrungsaussage, keine Statistik. Er widerspricht dem, was jeder sah – und wird in derselben Sammlung von Psalm 73 offen bestritten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Fleisch aß man selten und fast nur bei Opfermahlzeiten. Ein Dankopfer musste nach dem Gesetz am Tag der Darbringung verzehrt werden – gekühlt werden konnte nichts. Wer opferte, musste also teilen, ob er wollte oder nicht.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Löwen lebten bis in die Kreuzfahrerzeit in den Dickichten des Jordantals und in der Wüste Juda. Sie waren eine reale Gefahr für Hirten und ein festes Bild für Bedrohung; die Bibel nennt sie über hundertfünfzigmal. Ein hungernder junger Löwe war für die Hörer kein Symbol, sondern eine Beobachtung.',
       },
     ],
     terms: [
@@ -10949,6 +11172,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. tow',
         rendered: 'freundlich',
         note: 'Gut, freundlich, angenehm. Luther wählt „freundlich“, wo andere „gütig“ sagen. Im Zusammenhang des Schmeckens klingt beides mit – gut im Sinn von: bekömmlich.',
+      },
+      {
+        word: 'hebr. kefirim',
+        rendered: 'Reiche müssen darben',
+        note: 'Wörtlich „junge Löwen“. Die griechische Übersetzung las offenbar ein ähnlich geschriebenes Wort für „Reiche“, und Luther folgte ihr. Der hebräische Text steht damit für etwas anderes: dass selbst die Stärksten leer ausgehen können.',
       },
     ],
     interpretations: [
@@ -10963,6 +11191,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Historisch-kritische Forschung',
         text: 'Die Überschrift verbindet den Psalm mit einer Episode aus dem Leben Davids. Solche Zuordnungen sind spätere Zusätze und passen oft nur lose zum Inhalt.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Augustinus deutete das Schmecken auf den inneren Sinn, mit dem der Glaube wahrnimmt – ein Gedanke, der über Bernhard von Clairvaux bis in die Mystik weiterwirkte. Kyrill von Jerusalem bezog den Vers unmittelbar auf die Kommunion und mahnte, das Urteil nicht dem Geschmackssinn zu überlassen, sondern dem Glauben.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Zusage, dass den Gottesfürchtigen nichts mangelt, steht in offenem Widerspruch zur Erfahrung und wird innerhalb des Psalters selbst bestritten. Wer den Vers seelsorglich gebraucht, hat mit dieser Spannung zu rechnen; sie lässt sich nicht durch Auslegung auflösen, sondern nur benennen.',
       },
     ],
     crossRefs: [
@@ -11200,7 +11436,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Vers steht nicht in einem Trostpsalm, sondern in einer Klage über den Verrat eines vertrauten Freundes.',
     historicalLong:
-      'Der Psalm schildert bitter, wie jemand, mit dem der Beter „süße Heimlichkeit“ hatte, sich gegen ihn wandte. Die Wut ist unverstellt, bis hin zum Wunsch, die Feinde möchten lebendig ins Totenreich fahren. Genau dazwischen steht die Aufforderung, die Last abzugeben. Das hebräische Wort meint eher „was dir aufgeladen ist“ als eine innere Sorge. Der erste Petrusbrief nimmt den Vers auf.',
+      'Der Psalm schildert bitter, wie jemand, mit dem der Beter „süße Heimlichkeit“ hatte, sich gegen ihn wandte. Die Wut ist unverstellt, bis hin zum Wunsch, die Feinde möchten lebendig ins Totenreich fahren. Genau dazwischen steht die Aufforderung, die Last abzugeben. Das hebräische Wort meint eher „was dir aufgeladen ist“ als eine innere Sorge. Der erste Petrusbrief nimmt den Vers auf.\n\nDer Psalm nennt die Stadt als Ort des Unheils, und das ist ungewöhnlich. In den Versen davor gehen Gewalt und Hader auf ihren Mauern um, Unrecht und Mühe sind mitten in ihr, Verderben lässt nicht von ihren Gassen. Sonst ist die Stadt in den Psalmen die sichere Seite, die Wüste die gefährliche. Hier steht es umgekehrt: Der Beter wünscht sich fort aus der Stadt in die Einöde.\n\nDer Bruch, den er beklagt, hat eine rechtliche Seite. Wer miteinander gegessen hatte, stand in einer Bindung, die im Alten Orient als beinahe unauflöslich galt; Tischgemeinschaft begründete Schutzpflichten. Der Vorwurf, dass jemand seine Hand an die legte, die mit ihm in Frieden lebten, und seinen Bund entweihte, benutzt Vertragssprache. Der Verrat ist also nicht nur schmerzhaft, sondern nach den Maßstäben der Zeit ein Rechtsbruch.\n\nDie Wendung, dass die Blutgierigen ihr Leben nicht zur Hälfte bringen, setzt eine Vorstellung von Lebenszeit voraus, die man kannte: Siebzig Jahre gelten anderswo als volles Maß. Wer die Hälfte nicht erreicht, stirbt nach dieser Rechnung um die dreißig. Bei einer Lebenserwartung, die durch Kindersterblichkeit stark gedrückt war, aber für Erwachsene durchaus bei sechzig lag, war das eine konkrete Aussage und keine Formel.\n\nDass die Aufforderung, die Last abzugeben, unmittelbar neben dem Wunsch steht, die Feinde möchten in die Grube fahren, hat Ausleger seit jeher beschäftigt. Der Psalm löst die Spannung nicht auf. Er stellt beides nebeneinander und lässt den Beter mit dem letzten Halbvers enden: Ich aber hoffe auf dich.',
     reception:
       'Der erste Petrusbrief nimmt den Vers auf, und über diese Aufnahme ist er in die christliche Gebetssprache eingegangen. Georg Neumarks Lied „Wer nur den lieben Gott lässt walten“ von 1641 ist eine freie Nachdichtung; Bach hat es mehrfach vertont.\n\nDer Zusammenhang wird selten mitgelesen: Der Psalm klagt über einen Verrat aus nächster Nähe – „du, mein Geselle, mein Freund und mein Verwandter“. Der Trostvers steht am Ende einer Erfahrung, die nicht durch Feinde, sondern durch Vertraute verursacht wurde.',
     world: [
@@ -11211,6 +11447,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'raum',
         text: 'Der Wunsch, Flügel zu haben wie eine Taube und in die Wüste zu fliehen, ist konkret: Die Wüste Juda beginnt wenige Kilometer östlich von Jerusalem und war der klassische Zufluchtsort für Verfolgte – David, die Aufständischen, später die Gemeinschaft von Qumran.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Tischgemeinschaft und geteiltes Brot begründeten im Alten Orient Schutzpflichten, die vor Gericht Gewicht hatten. Wer sie brach, galt nicht als treulos im Gefühl, sondern als vertragsbrüchig. Deshalb greift der Psalm zu Wörtern, die sonst in Bündnisurkunden stehen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Klage über Gewalt auf den Mauern und Unrecht in den Gassen beschreibt eine Stadt, in der die Ordnung von innen zerfällt. Für eine Bevölkerung, deren Sicherheit an den Befestigungen hing, war das die verstörendste Vorstellung: Die Bedrohung steht nicht davor, sie ist schon drinnen.',
       },
     ],
     terms: [
@@ -11223,6 +11467,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. jechalkelecha',
         rendered: 'versorgen',
         note: 'Versorgen, aushalten, tragen. Dasselbe Verb steht für das Ernähren in der Hungersnot – die Zusage lautet nicht, dass die Last verschwindet, sondern dass der Beter durchgebracht wird.',
+      },
+      {
+        word: 'hebr. beer schachat',
+        rendered: 'in die tiefe Grube',
+        note: 'Die Grube der Verwesung – eine Umschreibung des Totenreichs. Dasselbe Bild steht für Zisternen, in die man Gefangene warf. Der Wunsch ist damit nicht bloß der Tod des Feindes, sondern sein Verschwinden ohne Rückkehr.',
       },
     ],
     interpretations: [
@@ -11237,6 +11486,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Dass der Trostvers inmitten von Wut und Rachewünschen steht, wird als Realismus gelesen: Abgeben heißt nicht, vorher fromm werden zu müssen.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Überschrift ordnet den Psalm keiner bestimmten Lage zu, doch die Tradition verband ihn mit dem Aufstand Absaloms und dem Rat Ahitofels, der von David abfiel. Ob die Zuordnung trifft, ist offen; sie zeigt jedenfalls, dass man den Text von Anfang an als Erfahrung eines Verrats aus dem engsten Kreis las.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Augustinus las den Psalm auf die Passion hin und den Vertrauten auf Judas, wobei er die Rachewünsche nicht als Bitte, sondern als Vorhersage verstand – eine Umdeutung, mit der die Alte Kirche die Fluchpsalmen insgesamt handhabbar machte. Ob das dem Text gerecht wird, ist seit dem 20. Jahrhundert umstritten.',
       },
     ],
     crossRefs: [
@@ -11254,7 +11511,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Psalm, der dasselbe Wort für „nur“ oder „allein“ sechsmal setzt – eine Konzentrationsübung in Sprache.',
     historicalLong:
-      'Das hebräische Wörtchen „ach“ steht am Anfang mehrerer Verse und schränkt jedes Mal ein: allein Gott, nur er, nichts sonst. Zugleich wird nüchtern festgestellt, dass Menschen „ein Hauch“ sind – Hohe wie Niedrige, und beide zusammen wögen weniger als nichts. Der Psalm endet mit einem Doppelsatz über Macht und Güte Gottes, den die rabbinische Auslegung viel diskutiert hat: Eines sei gehört, zweierlei vernommen.',
+      'Das hebräische Wörtchen „ach“ steht am Anfang mehrerer Verse und schränkt jedes Mal ein: allein Gott, nur er, nichts sonst. Zugleich wird nüchtern festgestellt, dass Menschen „ein Hauch“ sind – Hohe wie Niedrige, und beide zusammen wögen weniger als nichts. Der Psalm endet mit einem Doppelsatz über Macht und Güte Gottes, den die rabbinische Auslegung viel diskutiert hat: Eines sei gehört, zweierlei vernommen.\n\nDie Überschrift nennt Jeduthun. Nach der Chronik war er einer der drei Sängerleiter am Tempel, neben Asaf und Heman, und Stammvater einer Sängerfamilie mit erblichem Dienst. Drei Psalmen tragen seinen Namen. Ob er der Verfasser sein soll oder die Weise, nach der zu singen ist, lässt sich nicht entscheiden – die Angaben in den Psalmenüberschriften sind früh nicht mehr verstanden worden, und schon die griechische Übersetzung rät bei mehreren von ihnen.\n\nDas Wort für Fels, das der Psalm gebraucht, hat in dieser Landschaft eine sehr konkrete Bedeutung. Im judäischen Bergland und in der Wüste östlich davon gibt es Felsnadeln und Steilhänge, auf die man sich zurückziehen konnte und die von unten nicht zu nehmen waren; Masada ist das bekannteste Beispiel. Der Ausdruck steht in den Psalmen dutzendfach für Gott und ist ein Bild aus dem Überlebenswissen, nicht aus der Dichtung.\n\nDer Psalm ist kunstvoll gebaut. Sechsmal steht am Versanfang ein kleines Wörtchen, das „nur“ oder „gewiss“ bedeutet – erst über Gott, dann über die Feinde, dann über den Menschen überhaupt. Es setzt jedes Mal eine Einschränkung und wirkt wie ein wiederkehrender Schlag. Im Deutschen ist die Klammer nicht zu retten, weil Luther das Wort jedes Mal anders wiedergibt.\n\nAm Ende steht ein Satz über das Hören: Gott habe eines geredet, zweierlei habe der Beter gehört – dass Gott die Macht hat und dass bei ihm die Güte ist. Diese Zählformel ist eine Kunstform der Weisheit, in den Sprüchen mehrfach gebraucht. Sie ordnet nicht nur, sie behauptet auch: Macht und Güte fallen hier nicht auseinander.',
     reception:
       'Der Psalm ist über Mendelssohns Motette und über zahlreiche Vertonungen ein fester Bestandteil der Kirchenmusik; im Deutschen ist „Meine Seele ist stille zu Gott“ zu einer Formel geworden, die in Andachtsbüchern und auf Grabsteinen steht.\n\nSelten mitzitiert wird die Mitte des Psalms: eine scharfe Beschreibung von Menschen, die schmeicheln und im Herzen fluchen, und die Feststellung, dass Menschen „leichter als nichts“ sind, wenn man sie auf die Waage legt. Die Stille dieses Psalms ist die eines Menschen, der aufgehört hat, sich zu verteidigen.',
     world: [
@@ -11266,6 +11523,14 @@ export const COMMENTARY: CommentaryEntry[] = [
         aspect: 'arbeit',
         text: 'Die Warnung vor Raub und unrechtem Gut und die Aufforderung, sein Herz nicht an wachsenden Reichtum zu hängen, zielen auf eine bestimmte Gruppe: Leute, die Vermögen bildeten, während andere ihres verloren. Der Psalm ist Vertrauensrede und Sozialkritik zugleich.',
       },
+      {
+        aspect: 'raum',
+        text: 'Die Wüste Juda ist von Steilabbrüchen und freistehenden Felsklötzen durchsetzt, die als Zuflucht dienten. David hält sich nach den Samuelbüchern in genau solchen Bergfesten auf. Wer Gott einen Fels nennt, greift auf eine Erfahrung zurück, die Verfolgte gemacht hatten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Am Tempel gab es einen erblichen Sängerstand mit eigenen Familien, Instrumenten und Diensteinteilungen; die Chronik führt sie namentlich auf. Psalmen waren damit nicht Privatgebete, sondern Repertoire eines Berufsstandes, das über Generationen weitergegeben wurde.',
+      },
     ],
     terms: [
       {
@@ -11276,6 +11541,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. dumija',
         rendered: 'stille',
         note: 'Schweigen, Stillsein. Nicht ein Gefühl der Ruhe, sondern das Aufhören des Redens – im Zusammenhang: das Ende des Streitens mit denen, die den Beter stürzen wollen.',
+      },
+      {
+        word: 'hebr. zur',
+        rendered: 'mein Hort',
+        note: 'Der Fels, genauer: der massive Felsklotz, im Unterschied zum Felsspalt. Luthers „Hort“ ist ein altes Wort für Zuflucht und Schatz zugleich. Dasselbe Bild trägt das Lied des Mose und zahlreiche Psalmen.',
       },
     ],
     interpretations: [
@@ -11290,6 +11560,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Die Stille ist hier kein Rückzug, sondern ein Warten. Das hebräische Wort meint ein Schweigen, das auf Antwort gerichtet ist.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Augustinus las die Stille des Psalms als Schweigen der Seele vor dem, was sie nicht begreift, und verband sie mit seiner Rede von der Unruhe des Herzens. In der monastischen Tradition wurde daraus eine Übung: das innere Verstummen als Voraussetzung des Hörens, lange bevor daraus im Westen eine eigene Gebetsform wurde.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Der Vers hat in der deutschen Kirchenliedtradition ein eigenes Leben; Paul Gerhardts Lieder greifen die Verbindung von Stille und Vertrauen mehrfach auf. In der Neuzeit wird der Psalm oft in der Meditationsbewegung zitiert – meist ohne die zweite Hälfte, in der es um Gewalt, Raub und unrechtes Gut geht.',
       },
     ],
     crossRefs: [
@@ -11683,7 +11961,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Heer rückt an, der König ruft ein Fasten aus – und die Antwort kommt durch einen Leviten mitten in der Versammlung.',
     historicalLong:
-      'Die Chronik erzählt den Feldzug als Gottesdienst: Vorn ziehen die Sänger, nicht die Bewaffneten. Historisch lässt sich der Vorgang nicht überprüfen; die Königsbücher kennen ihn nicht. Für den Chronisten ist er ein Musterfall dafür, wie eine wehrlose Gemeinde in der Perserzeit bestehen kann – ohne Heer, aber mit Gottesdienst. Der Ortsname Berakja, Tal des Lobes, wird eigens erklärt.',
+      'Die Chronik erzählt den Feldzug als Gottesdienst: Vorn ziehen die Sänger, nicht die Bewaffneten. Historisch lässt sich der Vorgang nicht überprüfen; die Königsbücher kennen ihn nicht. Für den Chronisten ist er ein Musterfall dafür, wie eine wehrlose Gemeinde in der Perserzeit bestehen kann – ohne Heer, aber mit Gottesdienst. Der Ortsname Berakja, Tal des Lobes, wird eigens erklärt.\n\nDie Chronik erzählt diese Geschichte als einzige; das Königsbuch, das ihr sonst als Vorlage dient, kennt sie nicht. Das ist für die Einordnung entscheidend. Die Chronikbücher entstanden in persischer Zeit, als Juda eine kleine Tempelprovinz ohne eigenes Heer war. Was dort erzählt wird, ist deshalb weniger Kriegsbericht als Beschreibung dessen, was einer wehrlosen Gemeinde bleibt: Fasten, Versammlung, Gebet, Gesang.\n\nDer Ablauf davor ist entsprechend gestaltet. Der König ruft ein Fasten aus, das ganze Volk versammelt sich mit Frauen und Kindern im Tempelvorhof, und der König spricht ein Gebet, das mit dem Satz endet, man wisse nicht, was zu tun sei, sondern die Augen seien auf Gott gerichtet. Erst danach steht ein Levit auf und gibt die Antwort. Die Chronik lässt damit einen Tempelsänger die Rolle übernehmen, die sonst Propheten haben – ein Zug, der ihr Programm verrät.\n\nDer Marschbefehl selbst ist militärisch präzise formuliert und wird oft überlesen. Das Volk soll hinabziehen, den Gegner treffen, wo das Tal endet, sich aufstellen und stehen. Das ist eine Aufstellung in Schlachtordnung ohne Kampfhandlung. Wer den Satz als Aufforderung zur Untätigkeit liest, überspringt drei Verben.\n\nDas Ende der Erzählung ist im Alten Orient kein Einzelfall. Dass Verbündete im Dunkeln übereinander herfielen, weil sie einander nicht erkannten, ist aus mehreren antiken Berichten bekannt; nächtliche Aufstellungen und Bündnisheere aus verschiedenen Sprachgruppen waren dafür anfällig. Die Chronik deutet das Ergebnis, ohne den Vorgang zu erklären.',
     reception:
       'Der Vers ist ein Standardtext der Ermutigungsliteratur und in charismatischen Kreisen ein Kernwort der „geistlichen Kampfführung“. In der Chronik ist er Teil einer Erzählung, in der Sänger vor dem Heer hergehen und der Kampf sich unter den Feinden selbst entscheidet – eine Darstellung, die die Chronik gegenüber ihren Quellen deutlich ausbaut.\n\nIn der Friedensethik wird derselbe Text anders gelesen: als einer der wenigen Kriegsberichte der Bibel, in dem niemand aus dem eigenen Volk eine Waffe führt. Beide Verwendungen berufen sich auf denselben Vers.',
     world: [
@@ -11694,6 +11972,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'glaube',
         text: 'Vor der Schlacht wurde geopfert und ein Orakel eingeholt; ein Prophet oder Levit gab die Antwort, oft in fester Form: „Fürchtet euch nicht, ich gebe sie in deine Hand.“ Solche Heilsorakel sind auch aus Mari überliefert. Der Text folgt diesem Muster genau.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein ausgerufenes Fasten war eine öffentliche Maßnahme, kein privater Verzicht: Arbeit ruhte, alle kamen zusammen, auch Kinder und Säuglinge. Die Chronik erwähnt das eigens. In einer Notlage war die Versammlung selbst die Handlung, zu der eine Gemeinde fähig war.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Weg von En-Gedi zum Bergland führt über einen steilen Steig, der rund vierhundert Höhenmeter in Serpentinen überwindet. Wer dort mit einem Heer heraufkam, war langsam und weithin sichtbar. Der genannte Treffpunkt am Talausgang ist militärisch die naheliegende Wahl.',
       },
     ],
     terms: [
@@ -11706,6 +11992,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. hitjazzebu',
         rendered: 'Tretet nur hin und steht',
         note: 'Sich aufstellen, Stellung beziehen. Der Befehl lautet nicht „geht weg“, sondern „stellt euch auf und seht zu“ – eine Aufstellung ohne Kampf.',
+      },
+      {
+        word: 'hebr. jeschuat JHWH',
+        rendered: 'das Heil des HERRN',
+        note: 'Wörtlich der Sieg oder die Rettung, die von Gott kommt – dasselbe Wortfeld, aus dem die Namen Josua und Jesus stammen. Gemeint ist kein innerer Zustand, sondern ein Ausgang, den man sehen kann.',
       },
     ],
     interpretations: [
@@ -11720,6 +12011,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Der Text lässt Feinde einander umbringen. Ausleger halten fest, dass hier eine bedrängte Gemeinde ihre Ohnmacht besingt und keine Kriegslehre entwirft.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Rabbinen lasen die Geschichte vor allem als Lehrstück über das Gebet der Gemeinschaft: Nicht der König rettet und nicht das Heer, sondern die versammelte Gemeinde. Der Name Josaphat wird dabei mit der Wurzel für Recht in Verbindung gebracht – ein König, der Richter einsetzt, wie das Kapitel davor erzählt.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Der Satz vom Kampf, der nicht der eigene ist, gehört zu den meistzitierten Versen der Chronik und steht in zahllosen Liedern der Erweckungsbewegung. Er ist zugleich politisch missbraucht worden, um Kriege als Gottes Sache auszugeben – eine Verwendung, die dem Text widerspricht, denn dort wird gerade nicht gekämpft.',
       },
     ],
     crossRefs: [
@@ -11853,7 +12152,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das Herz ist in der Bibel nicht der Sitz des Gefühls, sondern der Ort der Entscheidungen. Es zu behüten heißt, auf die eigenen Weichenstellungen zu achten.',
     historicalLong:
-      'Der Vers steht in einer Reihe von Mahnungen an den „Sohn“ – die Sprüche sind als Unterweisung eines Lehrers an einen Schüler gestaltet. Was folgt, ist eine Aufzählung von Körperteilen: Mund, Augen, Füße. Das Herz kommt zuerst, weil von ihm alles andere abhängt. Der hebräische Ausdruck für „daraus geht das Leben“ meint wörtlich die Quellen des Lebens.',
+      'Der Vers steht in einer Reihe von Mahnungen an den „Sohn“ – die Sprüche sind als Unterweisung eines Lehrers an einen Schüler gestaltet. Was folgt, ist eine Aufzählung von Körperteilen: Mund, Augen, Füße. Das Herz kommt zuerst, weil von ihm alles andere abhängt. Der hebräische Ausdruck für „daraus geht das Leben“ meint wörtlich die Quellen des Lebens.\n\nDie Abfolge der Körperteile ist eine Ordnung, keine Aufzählung. Vom Herzen als Ursprung geht es nach außen: Mund, Augen, Füße. Dieselbe Reihe strukturiert ägyptische Lebenslehren, etwa die Lehre des Amenemope, die in ihrem Aufbau der Spruchsammlung im 22. Kapitel so nahe steht, dass eine literarische Abhängigkeit weithin angenommen wird. Erziehung zielte in dieser Tradition auf das Sichtbare – wer sein Verhalten ordnet, ordnet damit auch sich selbst.\n\nDie Anweisung, die Augen geradeaus zu richten, hat einen konkreten Hintergrund. Wege im Bergland waren unbefestigte Pfade zwischen Terrassenmauern, oft schmal und an Hängen entlang. Wer nach rechts oder links schaute, statt auf den Weg, kam zu Fall. Das Bild vom Wanken weder zur Rechten noch zur Linken stammt zugleich aus der Rechtssprache: Es beschreibt den Richter, der sich nicht beeinflussen lässt, und den König, der nicht vom Gesetz abweicht.\n\nDas Kapitel ist als Rede eines Vaters an den Sohn gestaltet, und diese Form ist mehr als ein Stilmittel. Weisheitslehre wurde im Haushalt weitergegeben und später an Schulen, die vermutlich im Umfeld des Hofes entstanden. Wer als Schreiber oder Beamter arbeiten wollte, brauchte nicht nur Schreibkunst, sondern Benehmen. Die Sprüche sind auch ein Ausbildungsbuch für einen Stand, der Zugang zur Macht hatte und ihn behalten wollte.',
     reception:
       'Der Vers gehört zu den meistzitierten Sprüchen in der Jugendarbeit und in Ratgebern zur Medienerziehung – meist mit der Deutung, man solle auf seine Gefühle achten. Der hebräische Wortlaut zielt anders: Es geht um die Aufmerksamkeit auf das eigene Denken, und die Verse danach sprechen von Mund, Augen und Füßen, also von Gewohnheiten.\n\nIn der monastischen Tradition ist derselbe Vers zum Grundtext der Wachsamkeit geworden: Die Wüstenväter nannten sie *nepsis*, Nüchternheit, und die Ostkirche hat daraus eine ganze Schule geistlicher Übung entwickelt.',
     world: [
@@ -11864,6 +12163,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Die Verse danach nennen Mund, Augen und Füße. Das ist die übliche Aufzählung der Körperteile, an denen sich Charakter zeigte; ägyptische Lehren arbeiten mit derselben Reihe. Erziehung zielte auf beobachtbares Verhalten, nicht auf Innerlichkeit.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Wege waren unbefestigte Trampelpfade zwischen Feldern und Terrassen; ausgebaute Straßen gab es nur auf den großen Handelsachsen. Ein Fehltritt am Hang bedeutete einen gebrochenen Knöchel, und mit einem gebrochenen Knöchel fiel eine Arbeitskraft für Wochen aus. Die Mahnung, den Fuß gerade zu setzen, war zuerst wörtlich zu verstehen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Wendung, weder zur Rechten noch zur Linken zu weichen, stammt aus dem Rechtsleben: So soll ein Richter urteilen und ein König regieren. Sie beschreibt Unbestechlichkeit. Auf einen jungen Menschen angewandt, überträgt der Spruch einen Amtsmaßstab auf die Lebensführung.',
       },
     ],
     terms: [
@@ -11876,6 +12183,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. tozeot chajjim',
         rendered: 'daraus geht das Leben',
         note: 'Wörtlich „die Ausgänge des Lebens“ – ein Bild von Quellen oder Toren. Das Herz ist danach nicht ein Behälter, sondern ein Ursprungsort, aus dem etwas hervorgeht.',
+      },
+      {
+        word: 'hebr. mischmar',
+        rendered: 'mit allem Fleiß',
+        note: 'Wörtlich „mehr als alles, was zu bewachen ist“. Das Wort gehört zur Wachmannschaft: der Posten, die Wache, das Gefängnis. Nicht Sorgfalt ist gemeint, sondern Bewachung – und zwar vorrangig vor allem anderen, was man zu bewachen hätte.',
       },
     ],
     interpretations: [
@@ -11890,6 +12202,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Der Vers wird häufig als Rat zur Abgrenzung gelesen. Der Zusammenhang legt eher nahe, auf das zu achten, was man selbst hervorbringt.',
+      },
+      {
+        tradition: 'Religionsgeschichtlicher Vergleich',
+        text: 'Die ägyptische Lehre des Amenemope aus dem zweiten Jahrtausend v. Chr. arbeitet mit derselben Abfolge von Herz, Mund und Schritt und warnt in ähnlichen Worten vor dem Hitzigen und dem Schweigsamen. Dass die Sprüche im 22. Kapitel dreißig Sprüche ankündigen wie jene Lehre dreißig Kapitel hat, gilt als starkes Argument für eine Aufnahme.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Wüstenväter machten aus dem Bewachen des Herzens einen Fachbegriff: die Wachsamkeit über die Gedanken, aus der später in der Ostkirche die Lehre von der Nüchternheit erwuchs. Euagrios Pontikos systematisierte sie zu einer Beobachtung der Gedanken, aus der über Umwege die abendländische Lehre von den Hauptsünden hervorging.',
       },
     ],
     crossRefs: [
@@ -11907,7 +12227,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Vers über Planung und ihre Grenze – und einer, den man leicht als Absage an jede Planung missversteht.',
     historicalLong:
-      'Das Sprüchebuch enthält mehrere Verse dieser Bauart: Der Mensch plant, Gott lenkt. Sie stehen nicht im Widerspruch zu den vielen Mahnungen, klug und vorausschauend zu handeln, sondern begrenzen sie. Die Weisheit Israels rechnet mit Regelmäßigkeit und mit ihrer Durchbrechung zugleich. Ähnliche Sprüche finden sich in ägyptischen Weisheitstexten, mit denen Kapitel 22 sogar wörtliche Berührungen aufweist.',
+      'Das Sprüchebuch enthält mehrere Verse dieser Bauart: Der Mensch plant, Gott lenkt. Sie stehen nicht im Widerspruch zu den vielen Mahnungen, klug und vorausschauend zu handeln, sondern begrenzen sie. Die Weisheit Israels rechnet mit Regelmäßigkeit und mit ihrer Durchbrechung zugleich. Ähnliche Sprüche finden sich in ägyptischen Weisheitstexten, mit denen Kapitel 22 sogar wörtliche Berührungen aufweist.\n\nDer Spruch gehört zu einer Gruppe, die sich im Kapitel häuft. Gleich der erste Vers sagt Entsprechendes über die Rede, ein weiterer über die Reinheit der eigenen Wege, ein dritter über die Entscheidung durch Losentscheid. Diese Häufung ist keine Nachlässigkeit der Sammler, sondern ein Ordnungsprinzip: Sprüche gleichen Themas wurden nebeneinandergestellt, damit sie einander auslegen.\n\nDas Los ist dabei mehr als ein Bild. Entscheidungen, die man nicht anders treffen konnte, wurden im Alten Israel durch Losverfahren geklärt – Landverteilung, Dienstordnungen der Priester, die Ermittlung eines Schuldigen. In Qumran und an anderen Orten sind kleine beschriftete Steinchen gefunden worden, die vermutlich diesem Zweck dienten. Wer sagt, das Los werde in den Schoß geworfen, die Entscheidung aber komme von Gott, beschreibt ein anerkanntes Rechtsverfahren und deutet es.\n\nDie Sammlung selbst gehört nach ihrer Überschrift zu den Sprüchen Salomos, die „die Männer Hiskias abgeschrieben haben“ – so heißt es zum folgenden Abschnitt ausdrücklich. Das setzt einen Betrieb voraus, in dem ältere Sammlungen kopiert und geordnet wurden. Aus der Königszeit sind Schreibübungen und Abecedarien gefunden worden, etwa in Tel Zajit und Kuntillet Adschrud, die auf eine solche Ausbildung hindeuten.',
     reception:
       'Der Spruch gehört zu den meistzitierten Sätzen über Planung und Führung und steht in Ratgebern ebenso wie in Traueranzeigen nach unerwarteten Todesfällen. In der Frömmigkeitspraxis wird er gelegentlich gegen jede Vorausplanung gewendet; die Sprüche selbst tun das nirgends.\n\nSprüche 16 enthält gleich mehrere Sätze dieser Bauart – über den Plan des Menschen und die Antwort Gottes, über das Los, das in den Schoß geworfen wird. Die Sammlung umkreist damit eine Erfahrung, die sie nicht auflöst: dass Menschen entscheiden und der Ausgang nicht in ihrer Hand liegt.',
     world: [
@@ -11918,6 +12238,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Sprüche 16 gehört zu den Abschnitten über den König: Wie man sich am Hof verhält, wie Herrscherzorn wirkt, wie Pläne scheitern. Die Sammlung entstand vermutlich in der Ausbildung von Beamten – Leute also, deren Karriere von unberechenbaren Entscheidungen abhing.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Los war ein anerkanntes Verfahren, keine Spielerei: Es verteilte Land, ordnete Priesterdienste und ermittelte Schuldige, wenn Zeugen fehlten. Der Vorteil lag darin, dass niemand die Verantwortung trug – und genau deshalb galt die Entscheidung als von Gott gefällt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Schreiben war ein Beruf mit Ausbildung. Übungstafeln und Buchstabenreihen aus der Königszeit zeigen, dass Schüler das Alphabet in fester Reihenfolge lernten. Wer schreiben konnte, hatte Zugang zu Verwaltung und Hof – und die Sprüche sind auch ein Lehrbuch für diesen Weg.',
       },
     ],
     terms: [
@@ -11930,6 +12258,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. jakin zaado',
         rendered: 'gibt, daß er fortgehe',
         note: 'Wörtlich „richtet seinen Schritt“. Nicht das Ziel wird bestimmt, sondern der einzelne Tritt – das Bild ist bescheidener, als die deutsche Fassung nahelegt.',
+      },
+      {
+        word: 'hebr. leb',
+        rendered: 'Des Menschen Herz',
+        note: 'Das Herz ist im Hebräischen der Ort des Planens und Rechnens, nicht des Fühlens. Der Spruch stellt damit nicht Gefühl gegen Führung, sondern menschliche Berechnung gegen den tatsächlichen Verlauf.',
       },
     ],
     interpretations: [
@@ -11944,6 +12277,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Wer den Vers als Vertröstung gebraucht, verfehlt ihn. Er entlastet vom Zwang zur Kontrolle, nicht von der Verantwortung.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition hält beides fest: Alles sei vorhergesehen, und dennoch sei die Freiheit gegeben. Der Satz steht so in den Sprüchen der Väter und wird seit dem Mittelalter als der klassische Versuch gelesen, den Widerspruch nicht aufzulösen, sondern auszuhalten.',
+      },
+      {
+        tradition: 'Religionsgeschichtlicher Vergleich',
+        text: 'Ägyptische Lehren formulieren denselben Gedanken: Der Mensch plant, aber der Gott entscheidet, was geschieht – die Lehre des Amenemope sagt es fast wörtlich. Der Spruch steht damit in einem internationalen Erfahrungsschatz, den Israel teilte und mit dem eigenen Gottesnamen versah.',
       },
     ],
     crossRefs: [
@@ -11961,7 +12302,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der Name Gottes wird zum Bild einer Fluchtburg – und der nächste Vers stellt ihm ausdrücklich den Reichtum gegenüber.',
     historicalLong:
-      'Der „Name“ steht im Alten Testament für die Person selbst, soweit sie sich zu erkennen gibt. Das Bild vom Turm gehört in eine Zeit, in der Städte tatsächlich einen befestigten Kern hatten, in den man sich zurückzog. Der folgende Vers nennt das Gegenstück: „Des Reichen Gut ist ihm eine feste Stadt und wie eine hohe Mauer in seinem Dünkel“ – dieselbe Metapher, einmal tragfähig, einmal Einbildung.',
+      'Der „Name“ steht im Alten Testament für die Person selbst, soweit sie sich zu erkennen gibt. Das Bild vom Turm gehört in eine Zeit, in der Städte tatsächlich einen befestigten Kern hatten, in den man sich zurückzog. Der folgende Vers nennt das Gegenstück: „Des Reichen Gut ist ihm eine feste Stadt und wie eine hohe Mauer in seinem Dünkel“ – dieselbe Metapher, einmal tragfähig, einmal Einbildung.\n\nDas Bild vom starken Turm ist bautechnisch genau. Städte im judäischen Bergland waren mit Kasemattenmauern befestigt, dazu kam an der schwächsten Stelle ein Torhaus mit mehreren Kammern. Ein zusätzlicher Turm im Inneren – archäologisch etwa in Sichem und Tell el-Farah nachgewiesen – diente als letzte Rückzugsstelle, wenn die Mauer gefallen war. Das Richterbuch erzählt, wie die Einwohner von Thebez sich in einen solchen Turm flüchteten und aufs Dach stiegen.\n\nDer folgende Vers stellt dem eine zweite Festung gegenüber, und die Gegenüberstellung ist der eigentliche Spruch. Vermögen bestand aus Land, Vieh, Vorräten und Metall. Eine Dürre über zwei Jahre, ein Heuschreckenzug, ein durchziehendes Heer – jedes davon konnte den Besitz einer Familie in wenigen Wochen auslöschen. Die Sprüche nennen das nicht ungerecht, sondern unzuverlässig: Die Mauer steht nur in der Vorstellung ihres Besitzers.\n\nDer dritte Vers schiebt eine Beobachtung nach, die aus der Hofwelt stammt. Dass dem Sturz der Hochmut vorausgeht und der Ehre die Demut, ist eine Regel für Aufstieg und Fall am Königshof, wie sie ähnlich in ägyptischen Beamtenlehren steht. Die Weisheit Israels teilte diesen Erfahrungsschatz mit ihren Nachbarn; die Sammlung im 22. Kapitel folgt einer ägyptischen Lehre über weite Strecken.',
     reception:
       'Der Vers steht als Bauspruch an Häusern und Stadttoren und hat über Luthers „Ein feste Burg“ eine Verwandtschaft, die oft angenommen, aber nicht belegt ist – Luthers Lied geht auf Psalm 46 zurück.\n\nAuffällig ist die Beobachtung, die der folgende Vers macht: Der Reiche hält seinen Besitz für eine Mauer, und das Wort für „Einbildung“ sagt, was der Spruch davon hält. Die beiden Verse gehören zusammen und werden fast immer getrennt zitiert.',
     world: [
@@ -11972,6 +12313,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'arbeit',
         text: 'Der Vers danach nennt das Vermögen des Reichen eine feste Stadt – „in seiner Einbildung“. Vermögen bestand aus Land, Vieh und Vorräten und war durch Dürre, Krieg und Seuche jederzeit auslöschbar. Der Spruch stellt zwei Sicherheiten nebeneinander und bewertet ihre Haltbarkeit.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Befestigungen waren Herrschaftszeichen. Wer eine Stadt ummauerte, beanspruchte Kontrolle über ihr Umland und band Arbeitskraft für Jahre. Salomo und später Usija werden ausdrücklich als Bauherren gerühmt – eine Stadtmauer war so viel Aussage wie Schutz.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ansehen war ein knappes Gut: Was einer gewann, fehlte einem anderen. Deshalb war Selbstdarstellung riskant, und deshalb warnt die Weisheit so oft davor. Wer sich zu weit vorwagte, forderte die heraus, die dasselbe wollten.',
       },
     ],
     terms: [
@@ -11984,6 +12333,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. bemaskito',
         rendered: 'in seinem Dünkel',
         note: 'Wörtlich „in seiner Einbildung“. Der Vers danach stellt zwei Festungen gegeneinander: den Namen Gottes und das Vermögen des Reichen – die zweite besteht nur in der Vorstellung ihres Besitzers.',
+      },
+      {
+        word: 'hebr. schem JHWH',
+        rendered: 'Der Name des HERRN',
+        note: 'Der Name steht für die Person und ihre Erreichbarkeit. Weil der Gottesname nicht ausgesprochen wurde, ist die Rede vom Namen zugleich eine Umschreibung: Zuflucht ist nicht eine Formel, sondern der, den sie bezeichnet.',
       },
     ],
     interpretations: [
@@ -11998,6 +12352,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Kritische Rückfrage',
         text: 'Der Vers ist gelegentlich fast magisch gebraucht worden. Der Zusammenhang stellt ihn dagegen in eine nüchterne Alternative: Worauf verlässt man sich?',
+      },
+      {
+        tradition: 'Archäologische Einordnung',
+        text: 'Ausgrabungen in Sichem und anderen Orten haben massive Innentürme freigelegt, die als letzte Zuflucht dienten. Sie waren vollständig ummauert, oft ohne Fenster im Erdgeschoss und nur über eine Leiter zugänglich. Der Spruch beschreibt damit eine bekannte Bauform, keine Metapher.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther griff das Bild in „Ein feste Burg ist unser Gott“ auf, wobei die Vorlage dort Psalm 46 ist. Die Verbindung beider Stellen im deutschen Sprachgefühl geht auf dieses Lied zurück – und mit ihr die Verschiebung des Wortes „Schloss“ vom Festungsbau zum Türverschluss.',
       },
     ],
     crossRefs: [
@@ -12068,13 +12430,21 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der letzte Satz des Buches – und viele halten ihn für einen Nachtrag, der ein unbequemes Buch einfangen sollte.',
     historicalLong:
-      'Nach elf Kapiteln über die Flüchtigkeit von allem folgt ein Schluss, der überraschend eindeutig klingt: Gott fürchten und seine Gebote halten. Der Ton unterscheidet sich deutlich vom übrigen Buch, und die Rede vom Gericht über alles Verborgene passt schlecht zu den vorangehenden Kapiteln. Die Aufnahme des Buches in den Kanon war umstritten; dieser Schluss dürfte dabei eine Rolle gespielt haben.',
+      'Nach elf Kapiteln über die Flüchtigkeit von allem folgt ein Schluss, der überraschend eindeutig klingt: Gott fürchten und seine Gebote halten. Der Ton unterscheidet sich deutlich vom übrigen Buch, und die Rede vom Gericht über alles Verborgene passt schlecht zu den vorangehenden Kapiteln. Die Aufnahme des Buches in den Kanon war umstritten; dieser Schluss dürfte dabei eine Rolle gespielt haben.\n\nWann Kohelet geschrieben wurde, lässt sich sprachlich einigermaßen eingrenzen. Das Hebräisch des Buches ist spät und enthält zwei persische Lehnwörter sowie eine Reihe aramäischer Wendungen; die meisten Forscher setzen es deshalb ins 3. Jahrhundert v. Chr., als Judäa unter ptolemäischer Verwaltung stand. Das passt zu dem, was das Buch beschreibt: eine Welt, in der Geld arbeitet, Erbschaften an Unbekannte fallen und Beamtenwillkür zum Alltag gehört.\n\nDie Ptolemäer verpachteten die Steuern ihrer Provinzen an Höchstbietende. Wer den Zuschlag bekam, trieb ein, was er konnte, und behielt den Überschuss – ein System, das aus dem Zenon-Archiv, den Papieren eines ägyptischen Verwaltungsbeamten des 3. Jahrhunderts, in allen Einzelheiten bekannt ist; es enthält sogar Vorgänge aus Palästina. Kohelets Beobachtung, dass über einem Hohen ein Höherer wacht und über beiden noch höhere, ist die Beschreibung dieser Verwaltungspyramide.\n\nGeld spielt im Buch eine Rolle, die es in älteren biblischen Texten nicht hat. Münzen kamen erst in persischer Zeit in Umlauf; die Prägungen aus Jehud sind winzige Silberstücke des 4. Jahrhunderts. Wer Vermögen plötzlich als etwas erleben konnte, das über Nacht verschwindet, dachte anders über Sicherheit nach als ein Bauer, dessen Reichtum in Land und Vieh bestand. Der Satz, dass niemand mitnimmt, was er erworben hat, ist in einer Geldwirtschaft schärfer als in einer Naturalwirtschaft.\n\nDer Schluss ist zudem formal auffällig. Er spricht in der dritten Person über Kohelet, während das Buch sonst in der ersten Person redet, und lobt ihn als Lehrer, der Sprüche prüfte und ordnete. Solche Verfasserlobreden am Ende einer Sammlung sind aus der ägyptischen Weisheitsliteratur bekannt. Der Bearbeiter tut damit zweierlei: Er stellt sein Buch in eine anerkannte Gattung und schiebt zugleich einen Rahmen darum.',
     reception:
       'Die letzten beiden Verse gelten vielen Auslegern als späterer Zusatz eines Bearbeiters, der das skeptische Buch für den Kanon fassbar machen wollte. Ohne sie endet Kohelet mit dem Bild vom zerbrochenen Krug am Brunnen und dem Satz „es ist alles ganz eitel“.\n\nOb das Buch dadurch entschärft oder abgerundet wird, wird seit der Antike gestritten. Die rabbinische Überlieferung berichtet von einer Auseinandersetzung darüber, ob Kohelet überhaupt in den Kanon gehört; der Schluss dürfte dabei den Ausschlag gegeben haben. Was er nicht leistet: die Widersprüche im Buch aufzulösen.',
     world: [
       {
         aspect: 'gesellschaft',
         text: 'Der Nachsatz über das Büchermachen ohne Ende und das viele Studieren, das den Leib müde macht, ist ein Seitenhieb auf den hellenistischen Bildungsbetrieb, der in dieser Zeit nach Judäa kam. Kohelet schließt seine Sammlung mit einer Bemerkung über Sammlungen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Judäa war im 3. Jahrhundert v. Chr. eine kleine Einheit im Ptolemäerreich, verwaltet über Steuerpächter und einen Hohenpriester, der der Krone gegenüber haftete. Wer sich beschweren wollte, musste über mehrere Ebenen hinweg, und jede kostete. Die Erfahrung von Machtlosigkeit gegenüber einer Verwaltung durchzieht das ganze Buch.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Mit dem Hellenismus kam die Geldwirtschaft in die Provinz: Silbermünzen, Pachtverträge, Zinsgeschäfte, Fernhandel. Vermögen konnte schneller wachsen als je zuvor und ebenso schnell verschwinden. Das ältere Bild vom Reichtum als Segen, den man sieht und anfassen kann, passte darauf nicht mehr.',
       },
     ],
     terms: [
@@ -12087,6 +12457,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. kol haadam',
         rendered: 'allen Menschen',
         note: 'Wörtlich „das ist der ganze Mensch“. Der Satz ist unvollständig und wird verschieden ergänzt: Das ist die Pflicht jedes Menschen – oder: Darin besteht der Mensch überhaupt.',
+      },
+      {
+        word: 'hebr. jare',
+        rendered: 'Fürchte Gott',
+        note: 'Nicht Angst, sondern die Anerkennung eines Gegenübers, dem man nicht gewachsen ist. Das Wort ist der Grundbegriff der Weisheitsbücher und steht am Anfang der Sprüche wie am Ende dieses Buches – eine Klammer um die gesamte Weisheitsliteratur.',
       },
     ],
     interpretations: [
@@ -12101,6 +12476,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Theologische Auslegung',
         text: 'Manche lesen den Schluss nicht als Korrektur, sondern als Konsequenz: Gerade weil sich nichts festhalten lässt, bleibt das Naheliegende zu tun.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Hieronymus schrieb den ersten christlichen Kommentar zu Kohelet und benutzte ihn, um eine römische Adlige zum Verzicht auf ihr Vermögen zu bewegen: Wenn alles vergeht, lohnt es nicht, sich daran zu binden. Diese asketische Deutung bestimmte die Auslegung für über tausend Jahre und las das Buch als Absage an die Welt – eine Absage, die es so nicht formuliert, denn es empfiehlt daneben ausdrücklich Essen, Trinken und Freude an der Arbeit.',
+      },
+      {
+        tradition: 'Philosophische Rezeption',
+        text: 'Seit der Aufklärung wird Kohelet als früher Skeptiker gelesen, dessen Fragen denen der griechischen Philosophie ähneln. Schopenhauer und später die Existenzphilosophie beriefen sich darauf. Ob das Buch tatsächlich hellenistisches Denken aufnimmt oder unabhängig zu ähnlichen Beobachtungen kommt, ist umstritten; die Übereinstimmungen sind auffällig, direkte Übernahmen aber nicht nachweisbar.',
       },
     ],
     crossRefs: [
@@ -12230,7 +12613,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Vers über Frieden, der im Hebräischen wörtlich vom „festen Sinn“ spricht – und das Wort für Frieden verdoppelt.',
     historicalLong:
-      'Der Text steht in einem Lied, das nach der Rettung der Stadt gesungen wird. Die hebräische Wendung „Schalom Schalom“ ist eine Verstärkung: vollkommener, dauerhafter Frieden. Das Wort für „fester Sinn“ meint eine gestützte, aufgerichtete Haltung. Der Vers verspricht nicht die Abwesenheit von Bedrohung – das Kapitel spricht ausdrücklich von Zorn und Gericht –, sondern eine Standfestigkeit darin.',
+      'Der Text steht in einem Lied, das nach der Rettung der Stadt gesungen wird. Die hebräische Wendung „Schalom Schalom“ ist eine Verstärkung: vollkommener, dauerhafter Frieden. Das Wort für „fester Sinn“ meint eine gestützte, aufgerichtete Haltung. Der Vers verspricht nicht die Abwesenheit von Bedrohung – das Kapitel spricht ausdrücklich von Zorn und Gericht –, sondern eine Standfestigkeit darin.\n\nDer Vers steht in einem Abschnitt, den die Forschung die Jesaja-Apokalypse nennt: die Kapitel 24 bis 27. Sie fallen aus dem übrigen Buch heraus, weil sie nicht von Assyrien, Ägypten oder Babylon reden, sondern von der Erde als ganzer, von einem Festmahl für alle Völker und davon, dass der Tod verschlungen wird. Die meisten Ausleger setzen sie spät an, in die persische oder frühhellenistische Zeit, als kleine Gemeinwesen die Erfahrung machten, dass ihr Geschick anderswo entschieden wurde.\n\nDas Lied, in dem der Vers steht, ist als Gegenstück zu einem zweiten Städtebild gebaut. Der befestigten Ortschaft, in die das gerechte Volk einziehen darf, steht die hohe Stadt gegenüber, die niedergerissen und dem Fuß der Elenden preisgegeben wird. Welche gemeint ist, sagt der Text nicht; er lässt sie unbenannt und macht sie damit auf jede anwendbar, die sich für uneinnehmbar hält.\n\nDie Wendung, die Luther mit „nach gewisser Zusage“ wiedergibt, lautet im Hebräischen wörtlich etwa „Frieden, Frieden“ – eine Verdoppelung, die im Hebräischen den Superlativ ausdrückt. Der Satz ist knapp bis zur Härte: „festen Sinnes – du bewahrst Frieden, Frieden – denn auf dich ist Vertrauen.“ Jede Übersetzung muss ergänzen, und die Ergänzungen fallen unterschiedlich aus.\n\nDer Fels des folgenden Verses ist im Hebräischen mit einer ungewöhnlichen Wendung verbunden: Gott ist ein „Fels der Ewigkeiten“, wörtlich der Zeitalter. Dieselbe Kombination steht sonst nicht; sie verbindet das Bild der Standfestigkeit mit einer Zeitangabe, die über absehbare Verhältnisse hinausreicht. Für Leser, die mehrere Großreiche hatten kommen und gehen sehen, war das die eigentliche Aussage.',
     reception:
       'Der Vers gehört zu den meistgewählten Konfirmationssprüchen und ist über die englische Fassung „Thou wilt keep him in perfect peace“ in zahlreiche Vertonungen eingegangen. Er steht im sogenannten Jesaja-Apokalypse-Teil, den Kapiteln 24 bis 27, die von einem Weltgericht und einem Festmahl für alle Völker sprechen.\n\nDer Zusammenhang ist entsprechend groß gefasst: Der Friede, von dem hier die Rede ist, gilt einer Stadt in einer Zeit, in der Städte fallen. In der Auslegung wird er meist auf die einzelne Person bezogen – eine Verengung, die den Vers tröstlicher und zugleich kleiner macht.',
     world: [
@@ -12241,6 +12624,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'macht',
         text: 'Die Kapitel 24 bis 27 blicken über Israel hinaus auf ein Gericht über die ganze Erde und ein Festmahl für alle Völker. Solche weltweiten Perspektiven entstehen in Zeiten, in denen Großreiche das Geschick kleiner Länder bestimmten – der Horizont ist der von Menschen, die sich als Spielball erlebten.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Kapitel sprechen davon, dass es dem Priester ergeht wie dem Volk, dem Herrn wie dem Knecht, der Herrin wie der Magd. Das ist die Beschreibung eines Zusammenbruchs, in dem die Standesunterschiede aufhören zu wirken – für eine Gesellschaft, die vollständig über Rang geordnet war, das Bild des Chaos.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Bollwerk war der vorgelagerte Wall vor der eigentlichen Mauer; Angreifer mussten ihn zuerst nehmen. Wer von einer festen Stadt sprach, meinte ein gestaffeltes System aus Graben, Wall, Mauer und Tor. Die Sicherheit einer Stadt ließ sich an ihren Toren ablesen, und jeder Bewohner kannte deren Zustand.',
       },
     ],
     terms: [
@@ -12253,6 +12644,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. jezer samuch',
         rendered: 'nach gewisser Zusage',
         note: 'Wörtlich „festes Sinnen“ oder „gestützter Sinn“ – gemeint ist ein Denken, das sich auf etwas verlässt. Die Übersetzungen gehen hier weit auseinander; Luther deutet auf die Zusage Gottes, andere auf die Haltung des Menschen.',
+      },
+      {
+        word: 'hebr. jezer samuch',
+        rendered: 'Du erhältst stets Frieden',
+        note: 'Wörtlich „ein gestützter Sinn“ oder „ein festgehaltenes Gebilde“ – dasselbe Wort für Sinn oder Trieb, das die rabbinische Lehre vom guten und bösen Trieb prägt. Gemeint ist eine Ausrichtung, die gehalten wird, nicht eine Gemütslage.',
       },
     ],
     interpretations: [
@@ -12268,11 +12664,22 @@ export const COMMENTARY: CommentaryEntry[] = [
         tradition: 'Liturgische Rezeption',
         text: 'Die Verdopplung des Friedensworts hat zahlreiche Vertonungen und Segensformeln geprägt.',
       },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Vers gehört zum festen Bestand der Gebete um Frieden. Das Wort für den gestützten Sinn wurde mit der Lehre von den beiden Trieben verbunden: Wer seinen Trieb auf Gott hin ausrichtet, hält Frieden – nicht als Gefühl, sondern als Ergebnis einer Ausrichtung, die täglich neu vollzogen wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Kapitel 24 bis 27 gelten als späterer Einschub, der das Jesajabuch um einen weltweiten Horizont erweitert. Die Rede vom Verschlingen des Todes und vom Aufstehen der Toten gehört zu den frühesten Ansätzen einer Auferstehungshoffnung im Alten Testament und wird im Neuen Testament aufgenommen.',
+      },
     ],
     crossRefs: [
       { book: 'jes', chapter: 26, verse: 1 },
       { book: 'phil', chapter: 4, verse: 7 },
       { book: 'joh', chapter: 14, verse: 27 },
+      { book: 'jes', chapter: 25, verse: 8, note: 'Der Tod wird verschlungen' },
+      { book: 'phil', chapter: 4, verse: 7, note: 'Der Friede, der höher ist als alle Vernunft' },
+      { book: '1kor', chapter: 15, verse: 54, note: 'Paulus zitiert das Verschlingen des Todes' },
     ],
   },
   {
@@ -12284,7 +12691,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Das Kapitel endet mit einem Bild, das die übliche Reihenfolge umdreht: erst fliegen, dann laufen, dann gehen.',
     historicalLong:
-      'Der Zusammenhang ist der Trost für die Verschleppten in Babylon. Zuvor steht die nüchterne Feststellung, dass auch junge Männer müde werden. Die Steigerung am Ende führt nicht nach oben, sondern nach unten – vom Auffahren mit Flügeln über das Laufen zum Wandeln ohne Ermatten. Viele Ausleger sehen darin die eigentliche Pointe: Das Schwerste ist nicht der Höhenflug, sondern das Weitergehen im Alltag.',
+      'Der Zusammenhang ist der Trost für die Verschleppten in Babylon. Zuvor steht die nüchterne Feststellung, dass auch junge Männer müde werden. Die Steigerung am Ende führt nicht nach oben, sondern nach unten – vom Auffahren mit Flügeln über das Laufen zum Wandeln ohne Ermatten. Viele Ausleger sehen darin die eigentliche Pointe: Das Schwerste ist nicht der Höhenflug, sondern das Weitergehen im Alltag.\n\nDie Verse davor sind eine Streitrede, und sie hat einen politischen Gegner. Nach Jahrzehnten in Babylon war die naheliegende Schlussfolgerung für die Verschleppten, dass Marduk, der Stadtgott der Sieger, sich als stärker erwiesen hatte. Das Kapitel bestreitet das nicht mit einem Bekenntnis, sondern mit Spott: Es beschreibt, wie ein Handwerker ein Götterbild anfertigt, es festnagelt, damit es nicht wackelt, und es dann tragen lässt. Beim babylonischen Neujahrsfest wurden die Bilder tatsächlich in Prozession durch die Stadt getragen – ein Schauspiel, das jeder Bewohner kannte.\n\nDaneben steht eine Reihe von Fragen über die Ausdehnung der Welt, die aus der Verwaltungssprache stammt: Wer hat die Wasser mit der hohlen Hand gemessen, den Himmel mit der Spanne, den Staub mit einem Maß? Messen, Wiegen und Zählen waren die Tätigkeiten, mit denen ein Reich seine Provinzen erfasste. Der Text überträgt sie auf den Schöpfer und stellt die Weltmacht damit in ein Größenverhältnis, in dem sie nicht mehr vorkommt.\n\nDass gerade junge Männer als Beispiel der Erschöpfung genannt werden, hat einen Sinn. Sie waren die Träger jeder militärischen und wirtschaftlichen Hoffnung; auf ihnen ruhte die Erwartung einer Rückkehr. Der Vers nimmt also nicht die Schwachen als Kontrast, sondern die Stärksten – und sagt, dass auch sie an ein Ende kommen. Erst danach folgt die Zusage, und sie gilt nicht denen, die durchhalten, sondern denen, die warten.',
     reception:
       'Der Vers gehört zu den meistgewählten Konfirmationssprüchen und ist über Mendelssohns *Elias* und zahlreiche Gospelfassungen musikalisch weit verbreitet. In den USA ist er der Namensgeber der Hilfsorganisation *Eagles’ Wings* und zahlreicher Programme für Erschöpfte.\n\nAuffällig ist die Reihenfolge im Vers, die selten mitgelesen wird: erst auffahren mit Flügeln, dann laufen, dann gehen. Das Bild steigert sich nicht, es wird bescheidener – und endet bei dem, was am längsten dauert.',
     world: [
@@ -12295,6 +12702,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'glaube',
         text: 'Die Verse davor spotten über Götterbilder, die von Handwerkern gefertigt und auf Wagen transportiert werden müssen – eine Anspielung auf die babylonischen Prozessionen. Gegen einen Gott, den man tragen muss, steht hier einer, der trägt.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Babylon war zur Abfassungszeit die größte Stadt der Welt, mit doppelter Stadtmauer, Prozessionsstraße und dem Stufenturm Etemenanki. Wer aus einer zerstörten Bergstadt dorthin verschleppt worden war, hatte täglich vor Augen, welche Ordnung sich durchgesetzt hatte. Ein Text, der diese Macht für vorübergehend erklärt, redet gegen den Augenschein.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Adler des Verses ist im Hebräischen wahrscheinlich der Gänsegeier, der in der Levante bis heute an Felswänden brütet und mit über zweieinhalb Metern Spannweite stundenlang segelt, ohne die Flügel zu schlagen. Genau das ist das Bild: ein Vogel, der aufsteigt, ohne sich anzustrengen.',
       },
     ],
     terms: [
@@ -12307,6 +12722,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. jachalifu koach',
         rendered: 'kriegen neue Kraft',
         note: 'Wörtlich „sie tauschen Kraft aus“ – dasselbe Verb steht für das Wechseln von Kleidern und für das Nachwachsen von Pflanzen. Die alte Kraft wird nicht verstärkt, sondern ersetzt.',
+      },
+      {
+        word: 'hebr. nescher',
+        rendered: 'wie Adler',
+        note: 'Der Begriff umfasst Adler und Geier. In der Levante ist der Gänsegeier der auffälligste Großvogel; er nutzt die Aufwinde an den Felsabbrüchen des Jordangrabens. Die alte Vorstellung, der Adler erneuere sein Gefieder und werde wieder jung, hat die Auslegung des Verses lange geprägt.',
       },
     ],
     interpretations: [
@@ -12321,6 +12741,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Wirkungsgeschichte in der Musik',
         text: 'Der Vers ist als Chorsatz und Kirchenlied weit verbreitet, unter anderem in Mendelssohns „Elias“.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Das Kapitel eröffnet die Reihe der sieben Trostlesungen, die nach dem Gedenktag der Tempelzerstörung an den folgenden Sabbaten gelesen werden. Der Weg von der Klage zum Trost ist damit liturgisch als Weg über Wochen angelegt – Trost wird nicht behauptet, sondern in Etappen zugesprochen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen das Adlerbild mit einer damals verbreiteten Naturkunde: Der Adler fliege der Sonne entgegen und tauche dann ins Wasser, um verjüngt hervorzugehen – ein Bild der Taufe. Der Physiologus, ein spätantikes Tierbuch, hat diese Vorstellung verbreitet. Zoologisch ist sie falsch, wirkungsgeschichtlich außerordentlich einflussreich.',
       },
     ],
     crossRefs: [
@@ -12338,7 +12766,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Der meistzitierte Zuspruch des Alten Testaments – und im Zusammenhang ein Gerichtsverfahren gegen die Götter der Sieger.',
     historicalLong:
-      'Kapitel 41 ist als Prozess gestaltet: Die Völker und ihre Götter werden vorgeladen und aufgefordert, Vergangenes zu erklären oder Künftiges anzusagen. Sie schweigen. In diese Szene hinein ergeht der Zuspruch an Israel. Die Formel „fürchte dich nicht“ stammt aus dem Heilsorakel, das im Alten Orient einem König vor der Schlacht zugesprochen wurde – hier gilt sie einem besiegten, verschleppten Volk.',
+      'Kapitel 41 ist als Prozess gestaltet: Die Völker und ihre Götter werden vorgeladen und aufgefordert, Vergangenes zu erklären oder Künftiges anzusagen. Sie schweigen. In diese Szene hinein ergeht der Zuspruch an Israel. Die Formel „fürchte dich nicht“ stammt aus dem Heilsorakel, das im Alten Orient einem König vor der Schlacht zugesprochen wurde – hier gilt sie einem besiegten, verschleppten Volk.\n\nDie Form dieses Verses ist genau bestimmbar. Er gehört zur Gattung des Heilsorakels, wie sie aus dem Kult bekannt ist: Ein Priester oder Prophet antwortet auf eine Klage mit einer festen Wortfolge – Anrede, Zuspruch „fürchte dich nicht“, Selbstvorstellung Gottes, Zusage des Beistands. Solche Orakel sind nicht nur biblisch belegt. Aus Mari am Euphrat sind Briefe erhalten, in denen Propheten dem König genau so antworten, und assyrische Orakelsammlungen für Asarhaddon folgen demselben Aufbau.\n\nEntscheidend ist der Adressatenwechsel. In der Umwelt ergingen solche Zusagen an den König; er war der Empfänger göttlichen Beistands, und darauf gründete seine Herrschaft. Hier ergehen sie an ein Volk ohne König, ohne Land und ohne Tempel. Was einmal die Legitimation des Thrones war, wird auf Deportierte übertragen – eine der folgenreichsten Verschiebungen der biblischen Überlieferung.\n\nDer Zusammenhang ist ein Gerichtsverfahren. Das Kapitel eröffnet mit der Aufforderung an die Inseln und Völker, herbeizutreten und miteinander zu rechten; es folgen Fragen, wer den Eroberer aus dem Osten erweckt habe, und der Spott über Handwerker, die einander beim Anfertigen von Götterbildern Mut zusprechen. Mitten in diese Streitszene ist die Zusage gestellt – der Freispruch für die Seite, die keine Beweise vorzubringen hat.\n\nDreimal steht in dem einen Vers ein Verb der Zuwendung: stärken, helfen, halten. Im Hebräischen sind es kurze, gleichgebaute Formen, die wie Schläge aufeinanderfolgen. Die deutsche Übersetzung dehnt sie unvermeidlich. Wer den Vers auswendig lernt, lernt vor allem diesen Rhythmus.',
     reception:
       'Der Vers gehört zu den meistgesprochenen Zusagen in Krankenhäusern, Gefängnissen und Trauerhäusern und steht auf unzähligen Karten und Grabsteinen. Er ist zugleich einer der Verse, mit denen in evangelikalen Kreisen für Mut in Verfolgungssituationen geworben wird.\n\nSein ursprünglicher Zusammenhang ist politisch: Der Abschnitt spricht zu einem Volk im Exil, dessen Staat untergegangen ist, und stellt ihm die aufsteigende Macht des Perserkönigs Kyros als Werkzeug Gottes vor Augen. Der Zuspruch ergeht in eine Weltlage, nicht in ein Innenleben.',
     world: [
@@ -12349,6 +12777,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Die rechte Hand war die des Kriegers und des Helfers; einen Fallenden bei der Rechten zu halten war die übliche Geste des Beistands und erscheint auf Reliefs, wenn eine Gottheit den König stützt. Das Bild stammt aus der Herrscherikonographie, nicht aus dem Familienleben.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der Rahmen des Kapitels ist ein Prozess: Die Völker werden vorgeladen, Beweise gefordert, Zeugen benannt. Solche Streitreden waren im Alten Orient eine literarische Gattung und bildeten das Verfahren im Tor nach – mit Anklage, Verteidigung und Urteil. Die Zusage steht darin an der Stelle des Freispruchs.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Verse davor beschreiben die Herstellung eines Götterbildes als Werkstattbetrieb: Der Schmied ermutigt den Goldschmied, der Hammerschläger den Ambossarbeiter, und am Ende wird das Bild mit Nägeln befestigt, damit es nicht wackelt. Der Spott zielt auf die Arbeitsteilung – ein Gott, an dem mehrere Handwerker beteiligt sind.',
       },
     ],
     terms: [
@@ -12361,6 +12797,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. jemin zidqi',
         rendered: 'rechte Hand meiner Gerechtigkeit',
         note: 'Die Rechte war die Hand des Kriegers und des Helfers. „Gerechtigkeit“ meint dabei nicht ein Urteil, sondern Gottes Treue zum eigenen Wort – die Hand hält, weil eine Zusage gilt.',
+      },
+      {
+        word: 'hebr. tischta',
+        rendered: 'weiche nicht',
+        note: 'Ein seltenes Verb, das ein ängstliches Umherblicken oder Zurückweichen beschreibt. Luthers „weiche nicht“ trifft die Bewegung; gemeint ist weniger Standhaftigkeit als das Aufhören des unruhigen Sich-Umsehens nach Gefahr.',
       },
     ],
     interpretations: [
@@ -12375,6 +12816,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Jüdische Auslegung',
         text: 'Der Zuspruch ergeht an „Israel, mein Knecht“. Die Knechtsbezeichnung ist ein Ehrentitel, kein Zeichen der Erniedrigung.',
+      },
+      {
+        tradition: 'Religionsgeschichtlicher Vergleich',
+        text: 'Die assyrischen Orakelsammlungen für Asarhaddon enthalten fast wörtlich denselben Zuspruch: Fürchte dich nicht, ich bin mit dir, ich halte dich. Der biblische Text übernimmt eine bekannte Form und wendet sie – nicht ein Herrscher wird gestärkt, sondern ein besiegtes Volk.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen den Knecht dieser Kapitel auf Christus hin und die Zusage entsprechend auf die Kirche unter Verfolgung. Cyrill von Alexandrien betont, dass die Zusage nicht Schutz vor Bedrängnis verspricht, sondern Beistand darin – eine Unterscheidung, die in der Märtyrerliteratur immer wieder aufgegriffen wird.',
       },
     ],
     crossRefs: [
@@ -12446,7 +12895,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Ein Satz, der oft als Absage an das Nachdenken gelesen wird – im Zusammenhang geht es um etwas anderes: um die Größe der Vergebung.',
     historicalLong:
-      'Unmittelbar davor steht die Aufforderung an den Gottlosen, umzukehren, weil Gott „viel vergibt“. Genau darauf folgt der Satz von den anderen Gedanken. Gemeint ist also nicht die Unbegreiflichkeit Gottes im Allgemeinen, sondern dass sein Erbarmen menschliche Maßstäbe übersteigt. Das Kapitel beginnt mit der Einladung, ohne Geld zu kaufen, und endet mit dem Bild vom Regen, der nicht leer zurückkehrt.',
+      'Unmittelbar davor steht die Aufforderung an den Gottlosen, umzukehren, weil Gott „viel vergibt“. Genau darauf folgt der Satz von den anderen Gedanken. Gemeint ist also nicht die Unbegreiflichkeit Gottes im Allgemeinen, sondern dass sein Erbarmen menschliche Maßstäbe übersteigt. Das Kapitel beginnt mit der Einladung, ohne Geld zu kaufen, und endet mit dem Bild vom Regen, der nicht leer zurückkehrt.\n\nDer Vers steht nicht am Anfang eines Gedankens, sondern in seiner Mitte, und der Zusammenhang verschiebt seinen Sinn erheblich. Unmittelbar davor ergeht die Aufforderung an den Gottlosen, seinen Weg zu verlassen und umzukehren, weil Gott reichlich vergibt. Erst dann folgt die Begründung: weil seine Gedanken nicht die menschlichen sind. Das Unbegreifliche an Gott ist hier also nicht sein Schweigen, sondern das Ausmaß seiner Vergebung – dass er verzeiht, wo Menschen längst abgerechnet hätten.\n\nDas ist im Zusammenhang des Exils eine politische Aussage. Die Verschleppten hatten eine Deutung ihrer Lage zur Verfügung, die einleuchtete: Man hatte gefehlt, nun trug man die Folgen, und damit war die Sache erledigt. Genau diese Rechnung wird bestritten. Wer nach dem Maß des Menschen rechnet, kommt auf ein Ende der Geschichte; nach dem Maß des Himmels über der Erde bleibt sie offen.\n\nDas Bild von Regen und Schnee, das folgt, ist meteorologisch genau beobachtet. In Jerusalem fällt fast der gesamte Niederschlag zwischen November und März, gelegentlich als Schnee; von Juni bis September regnet es nicht. Wer im Frühjahr säte, hatte den Regen des Winters bereits im Boden. Das Wasser kehrt nicht zurück, weil es verbraucht wird – der Vergleich zielt auf einen abgeschlossenen Vorgang, nicht auf einen Kreislauf.\n\nDer Abschnitt bildet den Schluss des zweiten Teils des Jesajabuchs und nimmt dessen Anfang wieder auf. Kapitel 40 beginnt damit, dass alles Fleisch wie Gras ist und das Wort Gottes bleibt; Kapitel 55 endet damit, dass sein Wort nicht leer zurückkommt. Zwischen diesen beiden Aussagen steht alles, was der Prophet über Kyros, über den Knecht und über die Heimkehr zu sagen hat.',
     reception:
       'Der Vers wird meist als Aussage über Gottes Unbegreiflichkeit zitiert – oft in der Trauerbegleitung, wo er einen unerklärlichen Verlust einordnen soll. In dieser Rolle ist er umstritten: Er kann trösten und ebenso jede Rückfrage abschneiden.\n\nBemerkenswert ist auch das Bild, das unmittelbar folgt: Regen und Schnee fallen und kehren nicht leer zurück, sondern machen die Erde fruchtbar – so gehe auch das Wort Gottes nicht leer zurück. Der Abschnitt endet damit nicht bei der Unerreichbarkeit, sondern bei einer Wirkung, mit der man rechnen kann.',
     world: [
@@ -12457,6 +12906,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'gesellschaft',
         text: 'Das Kapitel beginnt mit einem Marktruf: „Kommt her, kauft ohne Geld!“ So warben Händler auf dem Platz. Der Abschnitt ahmt eine Verkaufsszene nach und stellt sie auf den Kopf – Ware ohne Preis war das Gegenteil dessen, was ein Marktbesucher erwartete.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Wer im babylonischen Exil eine Rückkehr für möglich hielt, stand gegen die Erfahrung von zwei Generationen. Deportierte Völker verschwanden in der Regel: Sie wurden angesiedelt, vermischten sich und tauchten in den Quellen nicht wieder auf. Eine Ansage der Heimkehr widersprach allem, was man über solche Fälle wusste.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Vorstellung, ein Gott könne vollständig vergeben, war nicht selbstverständlich. In der Umwelt beruhigte man erzürnte Gottheiten durch Riten, Opfer und Beschwörungen; babylonische Bußgebete arbeiten mit Formeln, die den Zorn abwenden sollen. Ein Erlass ohne Gegenleistung fiel aus diesem Rahmen.',
       },
     ],
     terms: [
@@ -12469,6 +12926,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. derek',
         rendered: 'Wege',
         note: 'Weg und Verhaltensweise zugleich – im Hebräischen dasselbe Wort. Der Satz spricht deshalb nicht nur von Gottes Unbegreiflichkeit, sondern von seiner anderen Art zu handeln.',
+      },
+      {
+        word: 'hebr. gavhu',
+        rendered: 'soviel der Himmel höher ist',
+        note: 'Hoch sein, erhaben sein. Der Vergleich nennt keinen Abstand in Zahlen, sondern die größte Entfernung, die man kannte. Derselbe Ausdruck steht in den Psalmen für die Reichweite der Güte Gottes – Höhe ist hier ein Maß für Umfang, nicht für Ferne.',
       },
     ],
     interpretations: [
@@ -12483,6 +12945,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Ostkirchliche Auslegung',
         text: 'Die orthodoxe Theologie liest die Stelle als Grundlage der apophatischen Rede: Über Gott lässt sich zutreffender sagen, was er nicht ist.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Abschnitt gehört zu den Trostlesungen nach dem Gedenktag der Tempelzerstörung. Die Rabbinen bezogen die Verse ausdrücklich auf die Umkehr: Der Mensch rechne mit begrenzter Vergebung, Gott aber nicht. Maimonides führt die Stelle in seinen Regeln über die Umkehr an.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las die Verse als Beschreibung dessen, was er die fremde Gerechtigkeit nannte: eine Zurechnung, die der Mensch aus sich heraus weder herstellen noch nachvollziehen kann. Entscheidend war ihm die Reihenfolge – erst die Zusage der Vergebung, dann der Hinweis auf die Unbegreiflichkeit, nicht umgekehrt.',
       },
     ],
     crossRefs: [
@@ -12612,7 +13082,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Zwei Bilder stehen einander gegenüber: ein Strauch in der Wüste und ein Baum am Bach – dieselbe Gegenüberstellung wie in Psalm 1.',
     historicalLong:
-      'Der Baum wird nicht als unbedrängt beschrieben: Hitze und Dürre kommen, aber die Wurzeln reichen ans Wasser. Das Bild stammt aus der Erfahrung des Nahen Ostens, wo Vegetation ausschließlich an Wasserläufen wächst. Die Nähe zu Psalm 1 ist so eng, dass eine literarische Abhängigkeit in der einen oder anderen Richtung angenommen wird. Unmittelbar danach folgt der berühmte Satz vom Herzen als einem trotzigen und verzagten Ding.',
+      'Der Baum wird nicht als unbedrängt beschrieben: Hitze und Dürre kommen, aber die Wurzeln reichen ans Wasser. Das Bild stammt aus der Erfahrung des Nahen Ostens, wo Vegetation ausschließlich an Wasserläufen wächst. Die Nähe zu Psalm 1 ist so eng, dass eine literarische Abhängigkeit in der einen oder anderen Richtung angenommen wird. Unmittelbar danach folgt der berühmte Satz vom Herzen als einem trotzigen und verzagten Ding.\n\nDie beiden Sprüche sind als Paar gebaut, und das Paar hat eine politische Spitze. Der Fluch davor gilt dem, der sich auf Menschen verlässt und Fleisch für seinen Arm hält – im Zusammenhang des Jeremiabuchs heißt das konkret: dem, der auf Bündnisse setzt. Juda schwankte in seinen letzten Jahrzehnten zwischen Ägypten und Babylon und wechselte mehrfach die Seite. Jeremia hielt beide Wege für tödlich und wurde dafür als Verräter behandelt.\n\nDie Landschaftsbilder sind exakt. Der verfluchte Strauch steht auf salzigem Boden in der Steppe – gemeint ist die Araba südlich des Toten Meeres, wo Salzkrusten den Boden versiegeln und nur Halophyten überleben. Der gesegnete Baum steht am Wasserlauf. Beide Standorte liegen in Sichtweite voneinander, wenn man vom judäischen Bergland nach Osten geht: fruchtbare Talgründe und wenige Stunden weiter eine Salzwüste.\n\nDer Baum wird nicht vor der Hitze bewahrt. Der Text sagt ausdrücklich, dass die Hitze kommt und dass ein dürres Jahr kommt – beides bleibt nicht aus. Zugesagt ist nur, dass die Blätter grün bleiben und die Frucht nicht aufhört. Das ist eine bescheidenere Aussage als das, was der Vers in der Frömmigkeitsgeschichte meist tragen musste.\n\nDas Kapitel geht unmittelbar zu einer Warnung über, die dem Bild seine Sicherheit nimmt: Das Innere des Menschen sei unergründlich, und nur Gott prüfe es. Diese Nachbarschaft ist kein Zufall. Wer beide Stücke zusammen liest, bekommt eine Zuversicht, die sich selbst nicht als Besitz missversteht – und die genau deshalb auf etwas außerhalb ihrer selbst angewiesen bleibt.',
     reception:
       'Das Bild vom Baum am Wasser steht fast gleichlautend in Psalm 1 und gehört damit zu den wenigen Texten, die zweimal in der Bibel stehen. Welcher der ältere ist, wird diskutiert; die Ähnlichkeit ist zu groß für einen Zufall.\n\nIn der Frömmigkeitsgeschichte ist der Baum zum Sinnbild eines Lebens geworden, das Trockenzeiten übersteht – in Kirchenfenstern, Gemeindelogos und Konfirmationsurkunden. Der Vers davor wird dabei fast nie mitzitiert: Er ist ein Fluch über den, der sich auf Menschen verlässt, und macht aus dem tröstlichen Bild die zweite Hälfte einer Alternative.',
     world: [
@@ -12623,6 +13093,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'arbeit',
         text: 'Bäume „am Wasser gepflanzt“ standen an Kanälen oder in Talgründen mit Grundwasser; Wurzeln auszustrecken war die Überlebensstrategie in einem Land mit halbjähriger Trockenzeit. Der Baum ist nicht durch seinen Standort sicher, sondern durch eine Bewegung.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Juda war zwischen 609 und 587 abwechselnd ägyptischer und babylonischer Vasall; der Hof zerfiel in Parteien, die auf die eine oder andere Großmacht setzten. Wer vor dem Vertrauen auf Menschen warnte, griff damit unmittelbar in die Außenpolitik ein – und Jeremia wurde entsprechend behandelt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Wasserläufe im Bergland führen nur im Winter Wasser; im Sommer bleibt es im Untergrund. Bäume mit tiefen Wurzeln – Platanen, Pappeln, Feigen – erreichen es und bleiben grün, während die Umgebung verdorrt. Der Unterschied war jeden August mit bloßem Auge zu sehen.',
       },
     ],
     terms: [
@@ -12635,6 +13113,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. schoreschaw',
         rendered: 'gewurzelt',
         note: 'Wörtlich „seine Wurzeln streckt er aus“. Der Baum ist nicht durch seinen Standort sicher, sondern durch eine Bewegung: Er sucht das Wasser.',
+      },
+      {
+        word: 'hebr. mivtacho',
+        rendered: 'des Zuversicht der HERR ist',
+        note: 'Das Wort für Zuversicht kommt von derselben Wurzel wie das Verb im Halbvers davor. Der Satz sagt also zweimal dasselbe mit verschiedenen Wortarten – im Hebräischen ein Mittel der Verstärkung, das die Übersetzung nur umschreiben kann.',
       },
     ],
     interpretations: [
@@ -12649,6 +13132,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Jüdische Auslegung',
         text: 'Der folgende Vers über das unergründliche Herz wird als Warnung vor Selbsttäuschung gelesen – die Zuversicht des Textes ist keine Selbstsicherheit.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen den Baum am Wasser auf die Taufe hin und die Wurzeln auf die Verwurzelung in der Schrift. Hieronymus, der lange in Bethlehem lebte, kannte die beschriebenen Landschaften und verwies in seinem Jeremiakommentar ausdrücklich auf die Salzwüste am Toten Meer als Anschauung des ersten Bildes.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin betont die Reihenfolge: Erst wird der Fluch über das Vertrauen auf Menschen ausgesprochen, dann der Segen. Für ihn liegt darin eine Ordnung der Erkenntnis – man erkenne das Tragfähige erst, wenn das Untragfähige benannt ist. Die Nachbarschaft zum Vers über das unergründliche Herz war ihm dabei besonders wichtig.',
       },
     ],
     crossRefs: [
@@ -12666,7 +13157,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Mitten in einem Buch voller Gerichtsworte steht dieses Kapitel – die dichteste Zusage der Zuwendung im ganzen Alten Testament.',
     historicalLong:
-      'Kapitel 30 und 31 werden als „Trostbüchlein“ zusammengefasst. Das hebräische Wort für die Liebe ist hier nicht das übliche, sondern eines, das Beständigkeit ausdrückt; die Wendung „je und je“ meint eine Liebe ohne Anfangspunkt. Der Abschnitt spricht ausdrücklich zum Nordreich, das seit anderthalb Jahrhunderten nicht mehr bestand – die Zusage gilt also den längst Abgeschriebenen. Wenige Verse später steht die Ankündigung des neuen Bundes.',
+      'Kapitel 30 und 31 werden als „Trostbüchlein“ zusammengefasst. Das hebräische Wort für die Liebe ist hier nicht das übliche, sondern eines, das Beständigkeit ausdrückt; die Wendung „je und je“ meint eine Liebe ohne Anfangspunkt. Der Abschnitt spricht ausdrücklich zum Nordreich, das seit anderthalb Jahrhunderten nicht mehr bestand – die Zusage gilt also den längst Abgeschriebenen. Wenige Verse später steht die Ankündigung des neuen Bundes.\n\nDie Zusage richtet sich an ein Gebiet, das es politisch nicht mehr gab. Das Nordreich war 722 v. Chr. untergegangen, seine Oberschicht deportiert, das Land als assyrische Provinz Samerina neu eingerichtet und mit Umsiedlern aus anderen Reichsteilen aufgefüllt. Die Königsinschriften Sargons II. nennen die Zahl der Verschleppten mit über siebenundzwanzigtausend. Wer hundert Jahre später von einer Rückkehr nach Ephraim spricht, redet über eine Bevölkerung, die es in dieser Form nicht mehr gab.\n\nDas Bild vom Bauen ist doppeldeutig und im Jeremiabuch programmatisch. Schon im Berufungskapitel steht das Wortpaar vom Ausreißen und Einreißen, vom Bauen und Pflanzen – vier Verben, die das ganze Buch gliedern. Hier kehren zwei davon wieder, und zwar in der zweiten Hälfte: bauen und pflanzen. Das ist kein zufälliger Anklang, sondern die Einlösung einer Ankündigung.\n\nDie Aufforderung zum Reigen gehört in einen bestimmten Zusammenhang. Nach einer Ernte oder einem Sieg zogen Frauen mit Handtrommeln aus und sangen; das Lied der Mirjam am Schilfmeer und der Empfang Davids nach dem Sieg über Goliat beschreiben genau diese Szene. Trommel und Tanz waren also nicht allgemeine Fröhlichkeit, sondern eine bestimmte, öffentliche und von Frauen getragene Form des Feierns.\n\nDer letzte Vers kehrt eine jahrhundertealte Spaltung um. Nach der Reichsteilung hatte Jerobeam Heiligtümer in Bethel und Dan eingerichtet, ausdrücklich damit die Bewohner des Nordens nicht mehr nach Jerusalem zogen. Dass nun Wächter auf dem Gebirge Ephraim zur Wallfahrt nach Zion aufrufen, hebt genau diese Trennung auf – und zwar nicht durch Eroberung, sondern durch einen Ruf von dort.',
     reception:
       'Der Vers gehört zu den meistgesprochenen Zusagen in Taufe, Trauung und Seelsorge und ist über zahlreiche Lieder verbreitet. Sein Ort im Buch ist bemerkenswert: Er steht im Trostbüchlein der Kapitel 30 bis 33, gerichtet an das Nordreich, das seit über hundert Jahren nicht mehr existierte.\n\nDie Zusage gilt damit einer Größe, die es politisch nicht mehr gab. In der Auslegung wird das als der eigentliche Punkt gelesen: Die Liebe, von der Jeremia spricht, hängt nicht daran, dass ihr Gegenüber noch da ist.',
     world: [
@@ -12677,6 +13168,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         aspect: 'arbeit',
         text: 'Weinberge an den Bergen Samarias zu pflanzen war eine Ansage auf Jahre: Terrassen anlegen, Steine lesen, Reben ziehen, vier bis fünf Jahre bis zum vollen Ertrag. Wer davon spricht, verspricht keine schnelle Wende, sondern eine, bei der sich Investition wieder lohnt.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Handtrommel war ein Rahmen mit gespannter Haut, klein genug für eine Hand, und wird in der Bibel fast ausschließlich von Frauen geschlagen. Tonfiguren aus Israel und Zypern zeigen Frauen mit genau diesem Instrument. Wer vom Pauken und Tanzen spricht, beschreibt eine Szene, die Frauen anführten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Wallfahrten liefen über feste Wege und Sammelpunkte; Wächter auf Höhen riefen den Aufbruch aus, weil man in Gruppen zog. Aus dem Gebirge Ephraim nach Jerusalem waren es zwei bis drei Tagesmärsche. Der Ruf am Ende des Abschnitts beschreibt einen konkreten organisatorischen Vorgang.',
       },
     ],
     terms: [
@@ -12689,6 +13188,11 @@ export const COMMENTARY: CommentaryEntry[] = [
         word: 'hebr. betulat jisrael',
         rendered: 'Jungfrau Israel',
         note: 'Eine feste Bezeichnung für ein Volk oder eine Stadt, wie „Tochter Zion“. Sie sagt nichts über Unschuld aus, sondern personifiziert – im selben Kapitel wird dieselbe Gestalt zum Tanz aufgefordert.',
+      },
+      {
+        word: 'hebr. notzerim',
+        rendered: 'die Hüter',
+        note: 'Wächter, die Weinberge oder Höhen bewachten und Signale gaben. Dasselbe Wort steht für die Posten, die vor Feinden warnen. Hier rufen sie nicht zur Verteidigung, sondern zum Aufbruch – die Warnfunktion ist in ihr Gegenteil verkehrt.',
       },
     ],
     interpretations: [
@@ -12703,6 +13207,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Seelsorgliche Lesart',
         text: 'Die Formulierung setzt keine Vorleistung voraus und nennt keinen Grund. Genau das macht sie für viele tragfähig.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen die Zusage an das verlorene Nordreich als Vorabbildung der Sammlung der Völker: Was staatlich untergegangen war, wird nicht wiederhergestellt, sondern in eine größere Gemeinschaft aufgenommen. Diese Deutung stützte sich auf die Aufnahme des Kapitels im Hebräerbrief, der den neuen Bund aus demselben Kapitel zitiert.',
+      },
+      {
+        tradition: 'Archäologische Einordnung',
+        text: 'Ausgrabungen im samarischen Bergland zeigen für die Zeit nach 722 eine Fortdauer der Besiedlung in den Dörfern bei gleichzeitigem Bruch in den Zentren. Die Vorstellung, das Nordreich sei vollständig entvölkert worden, gilt heute als überzogen; die Zusage richtete sich damit an Menschen, die tatsächlich noch dort lebten.',
       },
     ],
     crossRefs: [
@@ -13471,7 +13983,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     historicalShort:
       'Derselbe Satz wie bei Matthäus – aber an einer Stelle, die ihn deutlich schärfer macht.',
     historicalLong:
-      'Lukas stellt die Regel mitten in den Abschnitt über die Feindesliebe: unmittelbar davor steht das Gebot, dem den Mantel zu lassen, der den Rock nimmt, unmittelbar danach die Frage, was für ein Dank es sei, wenn man nur die liebt, von denen man Gegenliebe erwartet. Damit wird die Regel ausdrücklich aus der Rechnung des Gegenseitigen herausgelöst. Bei Matthäus steht derselbe Satz am Ende der Bergpredigt und fasst Gesetz und Propheten zusammen; die Stellung verändert den Sinn erheblich.',
+      'Lukas stellt die Regel mitten in den Abschnitt über die Feindesliebe: unmittelbar davor steht das Gebot, dem den Mantel zu lassen, der den Rock nimmt, unmittelbar danach die Frage, was für ein Dank es sei, wenn man nur die liebt, von denen man Gegenliebe erwartet. Damit wird die Regel ausdrücklich aus der Rechnung des Gegenseitigen herausgelöst. Bei Matthäus steht derselbe Satz am Ende der Bergpredigt und fasst Gesetz und Propheten zusammen; die Stellung verändert den Sinn erheblich.\n\nDie Regel war in der Antike bekannt, meist allerdings in der verneinten Form: Was du nicht willst, das man dir tu, das füg auch keinem andern zu. So steht sie bei Hillel, der sie nach dem Talmud einem Fremden als Zusammenfassung der ganzen Tora nannte, so im Buch Tobit, so bei Isokrates und in konfuzianischen Texten. Die Verneinung verlangt Unterlassen; die bejahte Form, die hier steht, verlangt Handeln. Der Unterschied ist praktisch erheblich – wer niemandem schadet, hat die erste Fassung erfüllt, die zweite nicht.\n\nDer Zusammenhang bei Lukas verschärft das noch. Unmittelbar davor stehen Feindesliebe, Segnen der Fluchenden und das Hinhalten der anderen Wange; unmittelbar danach die Frage, was daran Dank verdiene, wenn man denen Gutes tut, die einem Gutes tun. Die Goldene Regel steht damit zwischen zwei Sätzen, die Gegenseitigkeit ausdrücklich ausschließen. Bei Matthäus dagegen bildet sie den Abschluss der Bergpredigt und wird als Summe von Gesetz und Propheten bezeichnet.\n\nDas Wirtschaftliche daran ist nicht nebensächlich. Das Leihen ohne Rückgabeerwartung, von dem die Feldrede spricht, betraf eine Gesellschaft, in der Darlehen der übliche Weg in die Abhängigkeit waren. Wer verzichtete, verzichtete auf eine Sicherheit, die im Ernstfall den Acker des Schuldners bedeutete. Die Regel wird hier also auf einen Bereich angewandt, in dem Gegenseitigkeit sonst zwingend war.',
     reception:
       'In der Feldrede steht die Goldene Regel zwischen der Aufforderung, Feinde zu lieben, und der Frage, was für ein Verdienst es sei, die zu lieben, die einen lieben. Damit bekommt sie eine Zuspitzung, die sie bei Matthäus nicht hat: Sie gilt gerade dort, wo keine Gegenseitigkeit zu erwarten ist.\n\nGenau darin liegt die Antwort auf den klassischen Einwand gegen die Regel – dass sie auf Tausch hinauslaufe. Lukas schneidet den Tausch ausdrücklich ab: „leihet, wo ihr nichts dafür hoffet“.',
     world: [
@@ -13483,12 +13995,30 @@ export const COMMENTARY: CommentaryEntry[] = [
         aspect: 'gesellschaft',
         text: 'Die Aufforderung, den Feinden Gutes zu tun, steht in einer Kultur, in der Vergeltung Pflicht war: Wer eine Beleidigung hinnahm, verlor Ansehen für die ganze Familie. Die Regel wird hier also nicht als Klugheit empfohlen, sondern gegen eine geltende Ehrenordnung gestellt.',
       },
+      {
+        aspect: 'recht',
+        text: 'Das gesellschaftliche Leben der Antike lief über Gegenleistung: Wer eine Wohltat empfing, schuldete eine Erwiderung, und die Erwartung war rechtlich zwar nicht einklagbar, sozial aber verbindlich. Ein Geben ohne Rückerwartung sprengte dieses Gefüge und wurde eher als unklug denn als großzügig gesehen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Zusammenfassungen der ganzen Weisung in einem Satz waren eine bekannte Übung. Rabbinische Überlieferungen berichten von Lehrern, die das Gesetz auf einen Grundsatz zurückführten – Hillel auf die verneinte Goldene Regel, Akiba auf das Gebot der Nächstenliebe. Die Frage war nicht neu, die Antworten unterschieden sich.',
+      },
     ],
     terms: [
       {
         word: 'griech. homoios',
         rendered: 'gleich auch ihr',
         note: 'Ebenso, in gleicher Weise. Lukas stellt die Regel mitten in die Feindesliebe – anders als Matthäus, der sie als Zusammenfassung von Gesetz und Propheten setzt.',
+      },
+      {
+        word: 'griech. kathos thelete',
+        rendered: 'wie ihr wollt',
+        note: 'Wörtlich „so wie ihr wollt“. Maßstab ist der eigene Wunsch, nicht eine Regel von außen – das macht die Anweisung leicht anwendbar und zugleich angreifbar, denn wer Schaden für sich selbst wünscht, käme mit ihr in die Irre.',
+      },
+      {
+        word: 'griech. poiete',
+        rendered: 'also tut ihnen gleich auch ihr',
+        note: 'Ein Tunwort im Befehl, fortdauernd gemeint: nicht einmal so handeln, sondern es zur Gewohnheit machen. Dieselbe Form steht in den Sätzen davor über das Lieben, Segnen und Bitten.',
       },
     ],
     interpretations: [
@@ -13503,6 +14033,14 @@ export const COMMENTARY: CommentaryEntry[] = [
       {
         tradition: 'Wirkungsgeschichte',
         text: 'Die Regel gehört zu den wenigen Sätzen, die in nahezu allen Religionen eine Entsprechung haben. Das Weltethos-Projekt hat sie zum gemeinsamen Nenner erklärt – nicht unwidersprochen.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Hillel, eine Generation vor Jesus, gab die Regel in verneinter Form und fügte hinzu: Das ist die ganze Tora, das Übrige ist Auslegung – geh und lerne. Die Nähe ist unbestritten; strittig ist, ob die bejahte Fassung eine Steigerung darstellt oder ob beide Formen dasselbe meinen und nur verschieden zugespitzt sind.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'In der Didache, einer Gemeindeordnung des frühen 2. Jahrhunderts, steht die Regel gleich am Anfang als Teil des „Weges des Lebens“ – dort in der verneinten Form. Die Väter benutzten sie als Merksatz für die Unterweisung von Taufbewerbern, weil sie ohne Vorkenntnisse verständlich war.',
       },
     ],
     crossRefs: [
@@ -19312,6 +19850,757 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'gal', chapter: 1, verse: 15, note: 'Paulus über seine Berufung mit anderen Worten' },
       { book: '1kor', chapter: 15, verse: 8, note: 'Zuletzt ist er auch mir erschienen' },
       { book: 'apg', chapter: 22, verse: 6, note: 'Die zweite Fassung derselben Erzählung' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 10 Abschnitte */
+  {
+    book: '4mo',
+    chapter: 13,
+    from: 25,
+    to: 33,
+    title: '„wir waren vor unsern Augen wie Heuschrecken“',
+    historicalShort:
+      'Zwölf Kundschafter kommen zurück, alle mit denselben Beobachtungen. Zehn ziehen daraus den Schluss, es sei aussichtslos, zwei den gegenteiligen. Der Streit dreht sich nicht um Tatsachen, sondern um ihre Bewertung.',
+    historicalLong:
+      'Der Bericht ist militärisch aufgebaut. Eine Aufklärungsgruppe zieht vierzig Tage durch das Zielgebiet, meldet Bewohner, Befestigungen und Ertragslage und bringt Belege mit – die Weintraube am Stab ist der Beweis für die Fruchtbarkeit. Genau dieses Verfahren beschreiben auch außerbiblische Quellen: Ägyptische Berichte über Feldzüge nach Kanaan nennen Städte, Mauern und Wasserstellen, und die Amarna-Briefe zeigen, wie sorgfältig man in dieser Region über die Stärke von Nachbarn Buch führte.\n\nDie aufgezählten Völker entsprechen einer geographischen Ordnung, die stimmt. Amalekiter im Süden, im Negev; Hethiter, Jebusiter und Amoriter im Bergland; Kanaaniter an der Küste und im Jordangraben. Diese Verteilung deckt sich mit dem, was über die späte Bronzezeit bekannt ist: Die befestigten Stadtstaaten lagen in den Ebenen und an den Handelswegen, während das Bergland dünner besiedelt und schwerer zu kontrollieren war. Die Kundschafter beschreiben also keine Fantasielandschaft.\n\nDie Befestigungen, von denen sie sprechen, sind archäologisch fassbar. Städte wie Hazor, Lachisch und Megiddo hatten in der Bronzezeit gewaltige Wallanlagen mit Glacis, Kasemattenmauern und mehrkammerigen Toren. Hazor umfasste über achtzig Hektar und war damit um ein Vielfaches größer als jede israelitische Siedlung der frühen Eisenzeit. Für eine Gruppe ohne Belagerungsgerät waren solche Orte tatsächlich nicht einnehmbar – die Mehrheitsmeinung war fachlich vertretbar.\n\nDie Enakiter, auf die sich der Bericht immer wieder beruft, sind schwerer einzuordnen. Sie erscheinen im Alten Testament als auffällig große Menschen im Bergland um Hebron. Ägyptische Ächtungstexte des frühen zweiten Jahrtausends nennen Fürstennamen aus dieser Region, die nicht semitisch klingen. Ob dahinter eine erinnerte Bevölkerungsgruppe steht oder eine Erzählfigur für das Unüberwindliche, lässt sich nicht entscheiden.\n\nDer letzte Satz ist der Kern des Abschnitts, und er ist psychologisch genau. Die Kundschafter sagen zuerst, wie sie sich selbst sahen, und schließen daraus, wie die anderen sie gesehen haben müssen. Über die tatsächliche Wahrnehmung der Gegner wissen sie nichts. Das Kapitel danach berichtet die Folge: Das Volk will umkehren, und die Generation, die so entschied, erreicht das Land nicht mehr.',
+    reception:
+      'Die Erzählung ist zum Musterfall für die Frage geworden, wie aus denselben Beobachtungen entgegengesetzte Schlüsse gezogen werden. In der Predigtgeschichte wird sie meist als Gegensatz von Glaube und Kleinmut ausgelegt; die neuere Auslegung hält dagegen, dass die zehn Kundschafter fachlich recht hatten und dass der Text kein Loblied auf Zuversicht ohne Grundlage ist.\n\nIn der jüdischen Überlieferung ist der Tag, an dem das Volk nach diesem Bericht weinte, mit dem neunten Aw verbunden – demselben Datum, an dem später beide Tempel zerstört wurden. Der Talmud formuliert daraus einen scharfen Satz: Weil sie an jenem Abend ohne Grund weinten, sei ihnen dieser Tag zum Weinen für alle Generationen bestimmt worden. Damit wird die Episode zum Ursprung des größten Trauertags des Judentums.\n\nDie Wendung vom Land, das seine Einwohner frisst, ist in politischen Debatten über Auswanderung und Ansiedlung wiederholt zitiert worden, meist gegen die Absicht des Textes. Die Traube am Stab wiederum wurde 1948 zum Wahrzeichen des israelischen Tourismusministeriums und ist bis heute dessen Zeichen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Kanaan war in der späten Bronzezeit kein Reich, sondern ein Flickenteppich von Stadtstaaten unter lockerer ägyptischer Oberhoheit. Jeder Fürst unterhielt eine kleine Streitwagentruppe und schrieb bei Bedrängnis nach Ägypten um Hilfe. Die Amarna-Briefe sind der erhaltene Schriftverkehr dieses Systems.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Weintrauben, Feigen und Granatäpfel reifen zwischen Juli und September. Dass die Kundschafter alle drei mitbringen, datiert ihre Rückkehr auf den Spätsommer und zeigt zugleich, worauf es ankam: Ein Land wurde nicht nach Schönheit beurteilt, sondern nach Ertrag.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Kades, wohin sie zurückkehren, ist eine Oase am Südrand des Negev mit ergiebigen Quellen. Sie war über Jahrhunderte ein Sammelpunkt für Gruppen, die zwischen Sinai und Bergland zogen. Von dort nach Hebron sind es rund hundert Kilometer durch Trockenland.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Bericht vor der versammelten Gemeinde war ein öffentlicher Vorgang mit Folgen. Die Ältesten entschieden nach dem, was vorgetragen wurde; Widerspruch musste vor allen geäußert werden. Dass zwei gegen zehn auftreten, beschreibt eine Lage, in der die Mehrheitsmeinung bereits gebildet war.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. dibbah',
+        rendered: 'ein böses Geschrei',
+        note: 'Übles Gerede, Verleumdung. Das Wort bezeichnet nicht eine falsche Tatsachenbehauptung, sondern eine Darstellung, die schadet. Die rabbinische Tradition hat daraus den Begriff für die üble Nachrede entwickelt, der bis heute gebraucht wird.',
+      },
+      {
+        word: 'hebr. chagavim',
+        rendered: 'wie Heuschrecken',
+        note: 'Heuschrecken – im Alten Orient das Bild für etwas zugleich Zahlloses und Bedeutungsloses. Der Vergleich ist doppeldeutig: Ein Heuschreckenschwarm kann ein Land verwüsten, ein einzelnes Tier zertritt man.',
+      },
+      {
+        word: 'hebr. eretz sawat chalaw udwasch',
+        rendered: 'darin Milch und Honig fließt',
+        note: 'Die feste Formel für fruchtbares Land, über zwanzigmal im Alten Testament. Milch steht für Weidewirtschaft, Honig wahrscheinlich für Dattel- oder Traubensirup. Beides zusammen beschreibt ein Land, das Vieh und Anbau trägt – nicht Überfluss, sondern Auskommen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Midrasch fragt, warum die Kundschafter überhaupt geschickt wurden, wenn das Land ohnehin zugesagt war, und antwortet, das Volk habe es verlangt. Die Sünde liegt danach nicht im Erkunden, sondern in der Absicht dahinter. Aus dem Wort für das üble Gerede leitet die Tradition eine ausgearbeitete Lehre über die Macht der Rede ab.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Origenes deutete die Kundschafter auf die verschiedenen Weisen, die Schrift zu lesen: Zehn bleiben beim Buchstaben und sehen nur Riesen, zwei erkennen die Verheißung. Josua und Kaleb wurden dabei früh als Vorabbildung der Apostel gelesen, die trotz Widerstands hinausgehen.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Erzählung verbindet mindestens zwei Überlieferungen: eine ältere, in der nur Kaleb und nur das Gebiet um Hebron vorkommt, und eine priesterliche, in der zwölf Stammesvertreter das ganze Land erkunden und Josua hinzutritt. Die Doppelungen im Text sind an mehreren Stellen mit bloßem Auge erkennbar.',
+      },
+      {
+        tradition: 'Archäologische Einordnung',
+        text: 'Die geschilderten Befestigungen entsprechen dem Befund der späten Bronzezeit: massive Wallanlagen in den Ebenen, dünne Besiedlung im Bergland. Die frühe Eisenzeit zeigt dann Hunderte kleiner, unbefestigter Dörfer im Bergland – ein Bild, das eher auf allmähliche Ansiedlung als auf eine Eroberung befestigter Städte hindeutet.',
+      },
+      {
+        tradition: 'Psychologische Lesart',
+        text: 'Der Schlusssatz wird als frühe Beschreibung dessen gelesen, was heute Selbstbild und projizierte Fremdwahrnehmung heißt: Erst sehen sich die Kundschafter klein, dann unterstellen sie den anderen denselben Blick. Kritisch bleibt anzumerken, dass die Erzählung ihre Furcht nicht therapiert, sondern verurteilt.',
+      },
+    ],
+    crossRefs: [
+      { book: '4mo', chapter: 14, verse: 1, note: 'Die Reaktion der Gemeinde' },
+      { book: '5mo', chapter: 1, verse: 22, note: 'Die Rückschau des Mose auf dieselbe Szene' },
+      { book: 'hebr', chapter: 3, verse: 19, note: 'Sie konnten nicht hineinkommen wegen des Unglaubens' },
+    ],
+  },
+  {
+    book: '5mo',
+    chapter: 24,
+    from: 10,
+    to: 22,
+    title: '„daß er in seinem Kleide schlafe und segne dich“',
+    historicalShort:
+      'Dreizehn Verse Sozialrecht, alle mit derselben Bauart: eine Vorschrift, dann die Erinnerung an die eigene Sklaverei. Was geregelt wird, ist Alltag – Pfand, Tagelohn, Nachlese –, und die Begründung ist jedes Mal Geschichte.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einer Vorschrift, die auf den ersten Blick nebensächlich wirkt: Wer ein Pfand nimmt, darf dafür nicht das Haus des Schuldners betreten. Tatsächlich regelt sie das Machtverhältnis. Wer eintritt, sucht sich aus, was er nimmt; wer draußen bleibt, bekommt, was der Schuldner entbehren kann. Aus mesopotamischen Rechtssammlungen sind Bestimmungen über Pfandnahme bekannt, aber keine, die dem Gläubiger das Betreten verbietet. Der Satz schützt nicht die Sache, sondern die Wohnung.\n\nDas Kleid als Pfand ist keine Nebensache. Ein Obergewand war für einen armen Menschen der einzige Schutz gegen die Nachtkälte, die im Bergland auch im Sommer erheblich ist – in Jerusalem fallen die Nachttemperaturen im Winter regelmäßig unter fünf Grad. Ein Ostrakon aus Mesad Haschawjahu bei Aschdod, ein Bittschreiben eines Erntearbeiters aus dem 7. Jahrhundert v. Chr., handelt von genau diesem Fall: Ein Aufseher hat dem Schreiber sein Gewand genommen, und er bittet den Beamten um Rückgabe. Der Text bezeugt damit dieselbe Praxis, gegen die das Gesetz sich richtet.\n\nDie Vorschrift über den Tagelohn setzt eine Wirtschaftsform voraus, in der ein Arbeiter am Abend das Essen des nächsten Tages kaufte. Vorräte hatte er nicht. Deshalb steht die Frist nicht bei einer Woche oder einem Monat, sondern beim Sonnenuntergang. Ausdrücklich eingeschlossen sind Fremde – Menschen ohne Landbesitz und ohne Sippe, die auf Lohnarbeit angewiesen waren und deren Rechtsstellung ungesichert war.\n\nDer Vers über die Haftung von Vätern und Kindern steht mitten in diesen Alltagsregeln und ist rechtsgeschichtlich der bemerkenswerteste des Abschnitts. Sippenhaft war im Alten Orient die Regel; das zweite Königsbuch hebt eigens hervor, dass ein König die Kinder von Mördern nicht töten ließ, und beruft sich dabei auf genau dieses Gebot. Die Bestimmung schränkt damit ein Verfahren ein, das als selbstverständlich galt.\n\nDie Nachleseregeln am Ende sind keine Almosenordnung, sondern eine Eigentumsbeschränkung. Was beim Ernten liegen bleibt, gehört nicht mehr dem Eigentümer; es zurückzuholen ist untersagt. Damit entsteht ein Anspruch, den die Berechtigten selbst geltend machen können, ohne zu bitten – das Buch Rut erzählt genau diesen Vorgang. Der Unterschied zur Wohltätigkeit ist erheblich: Wer sammelt, arbeitet, und niemand muss ihm dafür danken.',
+    reception:
+      'Die Nachleseregeln sind zum meistzitierten biblischen Modell einer Armenversorgung geworden, die ohne Bittstellung auskommt. In der jüdischen Tradition gehören sie zu den Gaben an die Armen, für die die Mischna einen eigenen Traktat führt und die bis in die Einzelheiten geregelt wurden – wie viele Ähren eine Handvoll ist, was als vergessen gilt, wer Anspruch hat.\n\nIn der europäischen Rechtsgeschichte hat das Ährenlesen als Gewohnheitsrecht der Landarmen bis ins 19. Jahrhundert überdauert; seine Abschaffung im Zuge der Agrarreformen war ein umstrittener Vorgang. Jean-François Millets Gemälde der Ährenleserinnen von 1857 machte daraus ein Bild der ländlichen Armut, das seinerzeit als politische Anklage verstanden wurde.\n\nDas Gebot, den Tagelohn noch am selben Tag auszuzahlen, wird in der katholischen Soziallehre und in gewerkschaftlichen Zusammenhängen bis heute angeführt. Der Jakobusbrief greift es auf, wenn er vom vorenthaltenen Lohn spricht, der zum Himmel schreit.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Das Obergewand diente tagsüber als Kleidung und nachts als Decke. Wer nur eines besaß, war ohne es der Kälte ausgesetzt; im Bergland sinken die Temperaturen nachts auch nach heißen Tagen stark. Ein solches Kleidungsstück war deshalb kein Pfand wie jedes andere.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Tagelöhner wurden am Morgen angeworben und am Abend bezahlt. Vom Lohn eines Tages kaufte eine Familie das Essen des nächsten. Wer erst am Wochenende zahlte, zwang seinen Arbeiter zum Borgen – und damit in dieselbe Verschuldung, die die vorigen Verse regeln.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Fremde, Waisen und Witwen hatten keinen Verwandten, der ihre Ansprüche im Tor vertrat. Deshalb nennt der Text sie immer wieder zusammen. Das Beugen ihres Rechts war kein Ausnahmefall, sondern die naheliegende Versuchung: Es hatte keine Folgen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Erinnerung an die eigene Sklaverei steht in diesem Buch immer wieder als Begründung. Sie ersetzt eine Belohnung: Wer so handelt, tut es nicht für einen Vorteil, sondern weil er weiß, wie die andere Seite sich anfühlt. Diese Begründungsform ist im altorientalischen Recht ungewöhnlich.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. avot',
+        rendered: 'ein Pfand',
+        note: 'Das Pfand, das für ein Darlehen hinterlegt wird. Ein eigenes Wort für den Vorgang der Pfandnahme im Haus gibt es nicht; der Text muss ihn umschreiben, was zeigt, dass die Regel neu formuliert wurde.',
+      },
+      {
+        word: 'hebr. zedaqah',
+        rendered: 'eine Gerechtigkeit',
+        note: 'Gerechtigkeit im Sinn eines gemeinschaftsgemäßen Verhaltens. Aus diesem Wort ist im nachbiblischen Hebräisch der Begriff für die Armenabgabe geworden – Wohltun heißt dort nicht Barmherzigkeit, sondern Gerechtigkeit.',
+      },
+      {
+        word: 'hebr. ger',
+        rendered: 'den Fremdlingen',
+        note: 'Der Schutzbürger: jemand, der dauerhaft im Land lebt, aber keinen Landbesitz und keine Sippe hat. Er ist nicht der durchreisende Ausländer, sondern der ansässige Zugewanderte – die Rechtsstellung, die das Deuteronomium am häufigsten schützt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Mischna widmet den Armengaben einen eigenen Traktat und legt fest, was als vergessene Garbe gilt und wie viel am Feldrand stehen bleiben muss. Maimonides ordnet die Nachlese in seine Stufen des Wohltuns ein und stellt sie hoch, weil der Empfänger den Geber nicht kennt und der Geber den Empfänger nicht.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Ambrosius und Basilius führen die Nachleseregeln an, wenn sie über die Grenzen des Eigentums predigen: Was übrig bleibt, gehöre bereits einem anderen. Aus diesem Gedanken hat die mittelalterliche Theologie den Grundsatz entwickelt, dass in Not das Eigentum gemeinsam wird.',
+      },
+      {
+        tradition: 'Rechtshistorische Einordnung',
+        text: 'Verglichen mit dem Kodex Hammurapi und den mittelassyrischen Gesetzen fällt zweierlei auf: die Beschränkung der Pfandnahme zugunsten des Schuldners und die ausdrückliche Aufhebung der Sippenhaft. Beides läuft der sonstigen Rechtspraxis der Region zuwider, während die Sachfragen – Pfand, Lohn, Ernte – dieselben sind.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther zog diese Kapitel in seinen Schriften über Handel und Wucher heran und leitete daraus die Pflicht der Obrigkeit ab, Arbeitslöhne zu sichern. Calvin las die wiederkehrende Erinnerung an Ägypten als Grundmuster christlicher Ethik: Erfahrene Befreiung verpflichtet zu entsprechendem Handeln.',
+      },
+      {
+        tradition: 'Sozialethische Lesart',
+        text: 'Der Abschnitt wird als Beispiel dafür angeführt, dass ein Rechtsanspruch etwas anderes ist als Wohltätigkeit. Die Berechtigten müssen nicht bitten, sondern arbeiten, und der Eigentümer hat kein Ermessen. Kritisch wird angemerkt, dass die Regelung eine Agrargesellschaft voraussetzt und sich nicht ohne weiteres übertragen lässt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'rut', chapter: 2, verse: 2, note: 'Rut macht von der Nachlese Gebrauch' },
+      { book: '2mo', chapter: 22, verse: 25, note: 'Das Kleid als Pfand im Bundesbuch' },
+      { book: 'jak', chapter: 5, verse: 4, note: 'Der vorenthaltene Lohn schreit' },
+    ],
+  },
+  {
+    book: 'jer',
+    chapter: 20,
+    from: 7,
+    to: 13,
+    title: '„HERR, du hast mich überredet“',
+    historicalShort:
+      'Der schärfste Vorwurf, den ein biblischer Prophet gegen Gott erhebt, steht in einem Gebet. Das Wort, das Luther mit „überreden“ wiedergibt, ist im Hebräischen erheblich härter – und die Auslegung streitet seit jeher darüber, wie hart man es fassen darf.',
+    historicalLong:
+      'Der Abschnitt gehört zu einer Reihe von Texten, die man seit dem 19. Jahrhundert die Konfessionen Jeremias nennt: fünf Stücke im ersten Teil des Buches, in denen der Prophet nicht Botschaft ausrichtet, sondern über sein Amt klagt. Solche Selbstaussagen sind in der prophetischen Literatur einzigartig. Andere Propheten berichten von Berufung und Widerstand, aber keiner beschreibt so ausführlich, was das Amt mit ihm macht.\n\nDer Anlass steht unmittelbar davor. Jeremia hatte im Tempelbezirk das Kommen der Babylonier angekündigt; daraufhin ließ ihn Paschhur, der Aufseher über den Tempel, schlagen und für eine Nacht in den Block legen – ein Holzgestell, das Hände, Füße und Hals in gebeugter Haltung festhielt. Solche Vorrichtungen sind aus dem Alten Orient bekannt und dienten der öffentlichen Bloßstellung, nicht der Verwahrung. Der Prophet stand am Tor, für jeden sichtbar.\n\nDas Verb im ersten Vers ist der Streitpunkt. Es bedeutet überreden, verlocken, betören – und wird an anderen Stellen für die Verführung einer unverlobten Frau gebraucht sowie für den Lügengeist, der einen König in die Schlacht lockt. Die deutschen Übersetzungen gehen entsprechend auseinander: von „überredet“ bis „betört“ und „verführt“. Das zweite Verb im selben Satz stammt aus dem Ringkampf: Du warst mir zu stark und hast gewonnen.\n\nDie Wendung von den Schrecken um und um ist ein Zitat seiner eigenen Botschaft. Er hatte den Ausdruck geprägt, um die Bedrohung von allen Seiten anzukündigen; nun geben ihm seine Gegner damit einen Spottnamen. Wer eine Unheilsansage vorträgt, wird selbst zu dem Namen, den er ausgesprochen hat – der Text beschreibt einen Vorgang, den man aus jeder öffentlichen Auseinandersetzung kennt.\n\nDas Feuer in den Gebeinen beschreibt eine Zwangslage, keine Begeisterung. Er hat versucht aufzuhören, und es ging nicht. Danach folgt ein Umschwung zur Zuversicht und ein Lobruf – und unmittelbar nach dem Lobruf, in den folgenden Versen, verflucht derselbe Sprecher den Tag seiner Geburt. Diese Reihenfolge ist nicht geglättet worden, und darin liegt die Eigenart des Textes.',
+    reception:
+      'Die Konfessionen Jeremias sind seit dem 19. Jahrhundert der Ausgangspunkt für die Frage nach der Person des Propheten geworden. Bernhard Duhm las sie als Tagebuch einer Seele, spätere Forschung hat davor gewarnt, moderne Innerlichkeit in antike Texte zu tragen. Unbestritten ist, dass hier eine Sprache verfügbar wird, die es sonst nur in den Klagepsalmen gibt.\n\nIn der Seelsorge und in der Theologie nach 1945 sind diese Verse zu einem Hauptbeleg dafür geworden, dass Anklage gegen Gott zum Glauben gehören kann. Gerhard von Rad nannte Jeremia den Propheten, an dem die Last des Auftrags sichtbar wird. In der Literatur hat Stefan Zweig den Stoff 1917 in seinem Drama „Jeremias“ als Antikriegsstück bearbeitet.\n\nDas Nebeneinander von Lobruf und Fluch im selben Kapitel gilt als Prüfstein jeder Auslegung. Wer den Abschnitt bei Vers 13 enden lässt, bekommt einen Text über überwundenen Zweifel; wer weiterliest, findet keine Auflösung. Die Leseordnungen der Kirchen schneiden an dieser Stelle unterschiedlich.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Block war ein Strafgerät zur öffentlichen Bloßstellung: Der Bestrafte wurde in gekrümmter Haltung festgesetzt, meist an einem belebten Ort. Die Strafe zielte auf Ehrverlust, nicht auf Verwahrung – der Beschämte sollte gesehen werden.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Tempel unterstand einer eigenen Aufsicht mit Polizeigewalt. Wer dort auftrat und die Ordnung störte, hatte es mit dieser Behörde zu tun, nicht mit dem König. Prophetische Auftritte im Tempelbezirk waren deshalb unmittelbar riskant.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Spott war eine wirksame gesellschaftliche Waffe. In einer Gesellschaft, in der Ansehen über Handlungsspielraum entschied, konnte ein Spitzname eine Person aus dem Verkehr ziehen. Dass seine eigenen Bekannten mitmachten, ist der eigentliche Vorwurf des Abschnitts.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Ein Prophet galt als Bote mit Auftrag, nicht als Redner mit Anliegen. Er konnte den Auftrag nicht ablehnen, ohne seine Rolle aufzugeben. Der Versuch aufzuhören, von dem der Text spricht, war deshalb kein Berufswechsel, sondern eine Grundsatzfrage.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. pittitani',
+        rendered: 'du hast mich überredet',
+        note: 'Das Verb reicht von überreden über betören bis verführen; es steht auch für die Verlockung eines Mädchens und für den Geist, der einen König in den Untergang lockt. Die deutschen Übersetzungen wählen unterschiedlich hart – der hebräische Ausdruck lässt beide Seiten zu.',
+      },
+      {
+        word: 'hebr. chazaqtani',
+        rendered: 'du bist mir zu stark gewesen',
+        note: 'Aus dem Ringkampf: jemanden überwältigen, ihm überlegen sein. Zusammen mit dem ersten Verb ergibt sich ein Vorwurf in zwei Stufen – erst überredet, dann überwältigt.',
+      },
+      {
+        word: 'hebr. magor missaviv',
+        rendered: 'schrecken um und um',
+        note: 'Wörtlich „Schrecken ringsum“. Jeremia hatte den Ausdruck selbst geprägt und dem Tempelaufseher als neuen Namen gegeben. Nun benutzen seine Gegner ihn gegen ihn – das Wort kehrt zu seinem Urheber zurück.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die Rabbinen nahmen an der Härte des Vorwurfs Anstoß und milderten das Verb, indem sie es auf die Berufung bezogen: Gott habe Jeremia zugeredet, weil dieser sich für zu jung hielt. Zugleich gilt Jeremia in der Überlieferung als der Prophet, der am meisten für sein Volk litt und dem deshalb am meisten zugestanden wird.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Hieronymus, der einen umfangreichen Jeremiakommentar verfasste, deutete das Verb im Sinn von „überzeugt“ und wehrte jeden Gedanken einer Täuschung ab. Origenes ging weiter und stellte die Frage offen, ob Gott einen Menschen um eines größeren Guten willen in die Irre führen könne – eine Erwägung, die ihm später als bedenklich angerechnet wurde.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther erkannte in diesen Versen die Anfechtung wieder, die er aus eigener Erfahrung beschrieb: dass Gott selbst als der Gegner erlebt wird. Für ihn ist entscheidend, dass die Klage an denselben gerichtet bleibt, der angeklagt wird – der Prophet läuft nicht weg, er redet weiter.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Konfessionen sind in Form und Wortwahl den Klagepsalmen des Einzelnen nahe verwandt. Ob sie auf den Propheten selbst zurückgehen oder eine spätere Gestaltung sind, die ihn zum Vorbild der leidenden Gemeinde macht, ist umstritten. Für beides gibt es gute Gründe, und die Entscheidung verändert die Lesart erheblich.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt wird herangezogen, wo Menschen mit ihrem Glauben in Konflikt geraten sind, weil er weder beschwichtigt noch auflöst. Bemerkenswert ist der Aufbau: Anklage, Zuversicht, Lob – und danach der Fluch über den eigenen Geburtstag. Der Text ordnet nicht, er hält beides fest.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 20, verse: 14, note: 'Der Fluch über den Tag der Geburt' },
+      { book: 'jer', chapter: 1, verse: 6, note: 'Der Einwand bei der Berufung' },
+      { book: 'ps', chapter: 22, verse: 7, note: 'Ich bin ein Spott der Leute' },
+    ],
+  },
+  {
+    book: 'offb',
+    chapter: 5,
+    from: 1,
+    to: 10,
+    title: '„Wer ist würdig, das Buch aufzutun“',
+    historicalShort:
+      'Eine versiegelte Urkunde, die niemand öffnen kann, und ein Seher, der darüber weint. Angekündigt wird ein Löwe – und was auftritt, ist ein geschlachtetes Lamm. Der Bildwechsel ist der Schlüssel zum ganzen Buch.',
+    historicalLong:
+      'Die Buchrolle ist juristisch beschrieben. Sie ist innen und außen beschrieben und mit sieben Siegeln verschlossen. Beides zusammen weist auf eine bestimmte Urkundenform: das Doppeldokument, bei dem der Text zweimal geschrieben, der obere Teil verschnürt und versiegelt und der untere offen lesbar bleibt. Römische Testamente wurden so ausgefertigt und mit den Siegeln von sieben Zeugen verschlossen; die Zahl war im römischen Recht vorgeschrieben. Wer die Bildersprache kannte, sah keine geheimnisvolle Schriftrolle, sondern ein Testament, das eröffnet werden muss.\n\nDas erklärt die Frage nach der Würdigkeit. Es geht nicht um moralische Qualifikation, sondern um Berechtigung: Wer darf die Siegel brechen? Ein Testament öffnete, wer als Erbe oder Vollstrecker dazu befugt war. Dass niemand im Himmel, auf Erden oder unter der Erde gefunden wird, beschreibt eine Rechtslage – der Erbfall bleibt liegen, und deshalb weint der Seher.\n\nDie Ankündigung des Löwen greift den Jakobsegen auf, der Juda einen Löwen nennt, und die Verheißung von der Wurzel Isais. Beides sind Titel eines siegreichen Herrschers, und die Erwartung eines solchen Messias war im Judentum des 1. Jahrhunderts verbreitet; die Psalmen Salomos aus dem 1. vorchristlichen Jahrhundert beschreiben ihn als König, der die Fremdherrschaft zerbricht. Der Seher hört diesen Titel und sieht dann etwas anderes.\n\nDas Lamm trägt die Spuren einer Schlachtung und zugleich sieben Hörner. Das Horn ist im Alten Orient das Zeichen der Macht; Götterbilder und Herrscher tragen Hörnerkronen, und die Zahl sieben steht für Vollständigkeit. Ein geschlachtetes Tier mit voller Macht ist ein Bild, das in sich widersprüchlich ist – und genau diese Spannung durchzieht die Offenbarung. Der Sieg, von dem das Buch spricht, wird durchgehend als bereits errungen und zugleich als noch ausstehend beschrieben.\n\nDer Lobgesang am Ende nennt die Wirkung: Menschen aus jedem Stamm, jeder Sprache, jedem Volk sind erkauft und zu Königen und Priestern gemacht. Der Ausdruck stammt aus dem zweiten Buch Mose, wo er dem ganzen Volk gilt. Für Gemeinden in den Städten Kleinasiens, die politisch nichts galten und deren Mitglieder überwiegend zu den unteren Schichten gehörten, war die Zusage königlicher Stellung eine unmittelbare Umkehrung ihrer Lage.',
+    reception:
+      'Das Lamm ist zum wichtigsten Christussymbol der Kunstgeschichte geworden. Der Genter Altar der Brüder van Eyck von 1432 macht die Anbetung des Lammes zum Mittelpunkt eines der berühmtesten Bildwerke Europas; das Motiv erscheint auf Sarkophagen, in Apsismosaiken und in der Heraldik. Die Formel vom Lamm Gottes gehört seit dem 7. Jahrhundert zur Messliturgie.\n\nHändel setzte den Lobgesang dieses Kapitels an den Schluss des „Messiah“: Würdig ist das Lamm, gefolgt vom Amen-Chor. Zahlreiche Kirchenlieder greifen die Verse auf, darunter „Ehre sei dir, Christe“ und die Sanctus-Vertonungen.\n\nIn der politischen Auslegung ist die Stelle in zwei Richtungen gebraucht worden. Die Herrnhuter machten das Lamm zum Zentrum ihrer Frömmigkeit und leiteten daraus eine Absage an Gewalt ab. Umgekehrt haben Erweckungsbewegungen den Löwen betont und daraus Kampfsprache gewonnen. Der Text selbst stellt beide Bilder nebeneinander und lässt das Lamm den Vorrang.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Römische Testamente wurden von sieben Zeugen gesiegelt und durften erst nach dem Tod des Erblassers geöffnet werden, in Gegenwart der Zeugen. Die Zahl sieben war rechtlich vorgeschrieben. Wer eine siebenfach versiegelte Rolle sah, dachte an eine Erbschaftsurkunde.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Offenbarung entstand in den Städten der Provinz Asia, wo der Kaiserkult besonders ausgebaut war. Ephesus, Smyrna und Pergamon besaßen Kaisertempel, und öffentliche Ämter waren mit Opferpflichten verbunden. Ein Thronsaal mit einem anderen Herrscher in der Mitte war unter diesen Umständen eine politische Aussage.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Vorstellung eines himmlischen Thronsaals mit Ältesten, Wesen und Gesängen stammt aus der jüdischen Apokalyptik; Hesekiel, Daniel und die Henochschriften kennen sie. Solche Bilder waren nicht neu erfunden, sondern gehörten zu einer verbreiteten Bildsprache, die Leser wiedererkannten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Räucherwerk gehörte in jeden antiken Kult und war teuer: Weihrauch kam über die Karawanenwege aus Südarabien. Dass die goldenen Schalen als Gebete der Heiligen gedeutet werden, überträgt einen sichtbaren, kostbaren Vorgang auf etwas, das man nicht sehen kann.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. biblion',
+        rendered: 'ein Buch',
+        note: 'Eine Buchrolle, nicht ein gebundenes Buch. Die Beschreibung – innen und außen beschrieben, siebenfach versiegelt – passt zum römischen Doppeldokument, bei dem der geschützte Wortlaut und eine offene Abschrift auf demselben Blatt standen.',
+      },
+      {
+        word: 'griech. arnion',
+        rendered: 'ein Lamm',
+        note: 'Eine Verkleinerungsform: das Lämmchen. Die Offenbarung gebraucht sie neunundzwanzigmal und nie für ein Opfertier im Kult, sondern immer als Titel. Das Wort ist bewusst klein gewählt – es steht neben Thron, Macht und Gericht.',
+      },
+      {
+        word: 'griech. esphagmenon',
+        rendered: 'wie wenn es erwürgt wäre',
+        note: 'Ein Fachwort aus dem Opferwesen: kultisch geschlachtet, mit durchschnittener Kehle. Die Form beschreibt einen andauernden Zustand – das Lamm steht, und die Wunde ist sichtbar. Luthers „erwürgt“ trifft die Härte, nicht die Technik.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Irenäus las die versiegelte Rolle als die Schrift, die erst durch Christus verständlich wird; Hippolyt und Victorinus von Pettau deuteten die Siegel auf Abschnitte der Heilsgeschichte. Die Verbindung von Löwe und Lamm galt ihnen als Zusammenfassung der beiden Weisen, in denen Christus erscheint – in Niedrigkeit und in Macht.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Offenbarung wird überwiegend in die Zeit Domitians um 95 gesetzt, teils auch früher. Die Sendschreiben der ersten Kapitel zeigen Gemeinden unter örtlichem Druck, nicht unter reichsweiter Verfolgung. Das Buch reagiert damit weniger auf Massenhinrichtungen als auf die tägliche Zumutung, sich am öffentlichen Kult zu beteiligen.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Löwe aus Juda und Wurzel Davids sind messianische Titel aus dem Jakobsegen und dem Jesajabuch. Die Erwartung eines königlichen Befreiers war im 1. Jahrhundert lebendig und politisch aufgeladen. Dass der Text diese Titel aufruft und dann ein geschlachtetes Tier zeigt, ist eine bewusste Enttäuschung der Erwartung.',
+      },
+      {
+        tradition: 'Friedensethische Lesart',
+        text: 'Die historischen Friedenskirchen und Ausleger wie John Howard Yoder haben aus dem Bildwechsel eine Grundregel gemacht: Wo die Offenbarung von Sieg redet, ist er durch Erleiden errungen, nicht durch Zufügen. Kritiker halten dagegen, dass spätere Kapitel des Buches Gewaltbilder in großer Zahl enthalten und die Deutung diese nicht auflöst.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Lobgesang gehört zu den ältesten christlichen Hymnen, die im Neuen Testament überliefert sind. Er ist in die Messliturgie eingegangen und hat über Händels Vertonung eine Wirkung weit über den Gottesdienst hinaus entfaltet.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 49, verse: 9, note: 'Juda, ein junger Löwe' },
+      { book: '2mo', chapter: 19, verse: 6, note: 'Ein Königreich von Priestern' },
+      { book: 'joh', chapter: 1, verse: 29, note: 'Siehe, das ist Gottes Lamm' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 1,
+    from: 1,
+    to: 4,
+    title: '„manchmal und mancherleiweise“',
+    historicalShort:
+      'Der Hebräerbrief beginnt nicht wie ein Brief, sondern wie eine Rede: ein einziger kunstvoller Satz, im Griechischen mit Stabreim gebaut. Was er behauptet, ist eine Verhältnisbestimmung zwischen dem, was vorher gesagt wurde, und dem, was jetzt gilt.',
+    historicalLong:
+      'Der erste Satz reicht im griechischen Original über vier Verse und ist rhetorisch durchgeformt. Er beginnt mit fünf Wörtern, die alle mit demselben Laut anlauten – ein Kunstmittel, das in der antiken Redekunst hoch geschätzt war und das keine Übersetzung nachbilden kann. Luthers „manchmal und mancherleiweise“ versucht wenigstens das Wortpaar zu treffen. Wer so schreibt, wendet sich an ein gebildetes Publikum; der Hebräerbrief hat das beste Griechisch des Neuen Testaments.\n\nDie Schrift ist keine Brief, obwohl sie so endet. Sie hat keine Anschrift, keinen Absender und keinen Gruß, sondern setzt unmittelbar mit dem Thema ein und bezeichnet sich später selbst als Mahnwort. Die Form entspricht der antiken Predigt in der Synagoge: Schriftauslegung, Anwendung, Mahnung, in Abschnitten abwechselnd. Über den Verfasser ist nichts bekannt; schon Origenes schrieb, wer den Brief geschrieben habe, wisse Gott allein. Die Zuschreibung an Paulus, die in der Alten Kirche üblich wurde, gilt heute als ausgeschlossen.\n\nDie Aussagen über den Sohn stammen aus der jüdischen Weisheitstradition. Das Buch der Weisheit beschreibt die Weisheit als Abglanz des ewigen Lichts und Abbild seiner Vollkommenheit; Philo von Alexandrien redet ähnlich über das Wort, durch das Gott die Welt schafft. Der Hebräerbrief überträgt diese Sprache auf eine Person und setzt damit voraus, dass seine Leser die Vorlage kennen.\n\nDer Vergleich mit den Engeln, der in Vers 4 einsetzt und das ganze erste Kapitel bestimmt, wirkt heute abseitig, war es aber nicht. In der Frömmigkeit des 1. Jahrhunderts spielten Engel eine große Rolle: Sie galten als Vermittler der Weisung am Sinai, als himmlische Fürsprecher und, in Qumran, als Mitfeiernde im Gottesdienst. Wer die Bedeutung Christi bestimmen wollte, musste ihn zu dieser Größe ins Verhältnis setzen.\n\nDie Rede vom „letzten“ dieser Tage ordnet die Zeit. Nicht ein Bruch zwischen zwei Religionen wird behauptet, sondern eine Abfolge von Reden desselben Gottes: früher in vielen Teilen und auf viele Weisen, jetzt in einem. Der Brief spricht durchgehend vom Besseren, nicht vom Falschen – ein Unterschied, den die Wirkungsgeschichte oft eingeebnet hat.',
+    reception:
+      'Der Hebräerbrief ist die Schrift, die in der Kirchengeschichte am längsten um ihre Stellung ringen musste. Im Westen wurde er lange abgelehnt, weil der Verfasser unbekannt war; im Osten galt er früh als paulinisch. Erst im 4. Jahrhundert setzte er sich allgemein durch. Luther stellte ihn in seiner Übersetzung ans Ende und ohne Nummer, hielt ihn aber für ein gutes Buch, dessen Verfasser er nicht kannte – und vermutete Apollos.\n\nSeine Wirkung liegt vor allem in der Deutung des Todes Jesu als Opfer und in der Rede vom Hohenpriester. Beides hat die abendländische Theologie und die Messfrömmigkeit tief geprägt; die Reformation griff denselben Text auf, um daraus die Einmaligkeit des Opfers und damit die Absage an das Messopfer zu begründen. Derselbe Brief steht damit auf beiden Seiten eines der größten Konflikte der Kirchengeschichte.\n\nDie ersten Verse sind seit dem Mittelalter die Epistellesung der Weihnachtsmesse am Tag. Bach vertonte sie nicht unmittelbar, doch die Formulierung vom Glanz der Herrlichkeit ist über zahllose Lieder und über Händels „Messiah“ in die kirchliche Sprache eingegangen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Engel galten im Judentum des 1. Jahrhunderts als Vermittler der Weisung am Sinai und als himmlische Fürsprecher. In Qumran verstand sich die Gemeinschaft als Mitfeiernde im himmlischen Gottesdienst. Wer den Rang einer Gestalt bestimmen wollte, verglich sie mit den Engeln – das war kein Nebenthema.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Brief setzt Leser voraus, die Griechisch auf hohem Niveau lesen und die griechische Bibel gut kennen. Das deutet auf eine städtische Gemeinde mit gebildeten Mitgliedern, vielleicht in Rom – der Schluss grüßt von denen aus Italien. Ein Text dieser Machart war nicht für ein Vorlesen an beliebige Zuhörer gedacht.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Ausdruck vom Abglanz stammt aus der Beobachtung von Licht: Ein Spiegel oder poliertes Metall gibt Licht weiter, ohne selbst Quelle zu sein. Poliertes Bronzeblech war der übliche Spiegel der Antike; das Bild setzt diese Alltagserfahrung voraus.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Rede vom Sitzen zur Rechten stammt aus der Hofsprache: Der Platz zur Rechten des Herrschers gehörte dem Mitregenten oder Thronfolger. Reliefs und Siegel zeigen diese Ordnung. Ein Sitzen nach vollbrachter Arbeit bedeutet zugleich, dass die Sache abgeschlossen ist.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. polymeros kai polytropos',
+        rendered: 'manchmal und mancherleiweise',
+        note: 'Wörtlich „vielteilig und vielgestaltig“. Die beiden Wörter beginnen im Griechischen mit demselben Laut wie die drei folgenden – ein Stabreim über fünf Wörter, mit dem der Verfasser sofort zeigt, welche Sprachebene er beansprucht.',
+      },
+      {
+        word: 'griech. apaugasma',
+        rendered: 'der Glanz seiner Herrlichkeit',
+        note: 'Abglanz oder Ausstrahlung. Das Wort steht sonst im Neuen Testament nicht, wohl aber im Buch der Weisheit über die Weisheit Gottes. Es beschreibt Licht, das von einer Quelle ausgeht und von ihr nicht zu trennen ist.',
+      },
+      {
+        word: 'griech. charakter',
+        rendered: 'das Ebenbild seines Wesens',
+        note: 'Ursprünglich das Prägewerkzeug, dann der Abdruck, den es hinterlässt – etwa auf einer Münze. Das Bild ist genauer als „Ebenbild“: Gemeint ist nicht Ähnlichkeit, sondern ein Abdruck, der dem Stempel genau entspricht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Verse gehörten zu den Hauptbelegen in den Auseinandersetzungen des 4. Jahrhunderts über das Verhältnis von Vater und Sohn. Athanasius führte den Abglanz und den Abdruck gegen Arius an: Ein Abglanz sei nicht später als das Licht. Die Formulierungen des Bekenntnisses von Nizäa stehen dieser Sprache nahe.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Verfasser, Adressaten und Abfassungsort sind unbekannt; die Zuschreibung an Paulus ist wegen Stil, Wortschatz und Gedankenführung ausgeschlossen. Vorgeschlagen wurden Barnabas, Apollos und – seit Adolf von Harnack – Priscilla, was erklären würde, warum kein Name genannt ist. Beweisen lässt sich keine dieser Vermutungen.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die Bilder vom Abglanz und vom Abdruck stammen aus der hellenistisch-jüdischen Weisheitsliteratur; das Buch der Weisheit gebraucht sie für die Weisheit Gottes. Der Brief bewegt sich damit innerhalb einer jüdischen Denkform und nicht außerhalb – ein Befund, der die ältere Deutung des Briefes als Absage an das Judentum in Frage stellt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther urteilte zwiespältig: ein trefflich Buch, aber nicht apostolisch, und in der Bußfrage schwierig. Calvin dagegen schätzte den Brief hoch und nutzte gerade den Anfang, um die Einheit der beiden Testamente zu begründen: Es redet derselbe Gott, in Stufen, nicht in Widersprüchen.',
+      },
+      {
+        tradition: 'Kritik der Wirkungsgeschichte',
+        text: 'Der Brief ist über Jahrhunderte gebraucht worden, um dem Judentum die Gültigkeit abzusprechen. Die Auslegung nach 1945 hält dagegen, dass er durchgehend vom Besseren spricht und nirgends vom Falschen, und dass sein Vergleich innerhalb einer gemeinsamen Schrift geführt wird, die er als maßgeblich voraussetzt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joh', chapter: 1, verse: 3, note: 'Alle Dinge sind durch dasselbe gemacht' },
+      { book: 'kol', chapter: 1, verse: 15, note: 'Das Ebenbild des unsichtbaren Gottes' },
+      { book: 'ps', chapter: 110, verse: 1, note: 'Setze dich zu meiner Rechten' },
+    ],
+  },
+  {
+    book: 'hi',
+    chapter: 2,
+    from: 11,
+    to: 13,
+    title: '„redeten nichts mit ihm“',
+    historicalShort:
+      'Drei Freunde kommen von weit her, erkennen den Kranken nicht wieder und setzen sich sieben Tage schweigend zu ihm. Es ist der einzige Abschnitt des Buches, in dem sie alles richtig machen.',
+    historicalLong:
+      'Die drei Namen und Herkunftsorte weisen nach Süden und Osten, nicht nach Israel. Theman lag in Edom und war für seine Weisheit bekannt; Jeremia fragt spöttisch, ob dort keine Weisheit mehr sei. Suah und Naema lassen sich nicht sicher verorten, klingen aber nach arabischem oder aramäischem Raum. Auch Hiob selbst stammt aus dem Land Uz, das außerhalb Israels liegt. Das Buch spielt bewusst nicht im eigenen Volk – die Frage, um die es geht, wird als eine menschliche und nicht als eine innerisraelitische gestellt.\n\nDas Verhalten der Freunde folgt den überlieferten Trauerriten genau. Sie erheben ihre Stimme und weinen, zerreißen ihre Kleider und werfen Staub auf ihr Haupt – dieselben drei Handlungen begegnen in mehreren Trauerszenen des Alten Testaments und sind auch aus Ugarit bezeugt. Es sind keine Ausbrüche des Gefühls, sondern vorgeschriebene Zeichen, die für alle sichtbar machen, dass hier ein Todesfall oder ein gleichwertiges Unglück vorliegt.\n\nDie sieben Tage sind ebenfalls Ritus. Das ist die Dauer der Totenklage; für Jakob und für Saul wird sie ausdrücklich genannt. Die Freunde behandeln Hiob also wie einen Toten, obwohl er lebt – eine genaue Beobachtung dessen, was schwere Krankheit gesellschaftlich bedeutete. Aus dieser Frist ist die jüdische Trauerwoche geworden, die bis heute so gehalten wird und in der Besucher schweigen, bis der Trauernde selbst zu sprechen beginnt.\n\nDie Begründung des Schweigens steht ausdrücklich im Text: Sie sahen, dass der Schmerz sehr groß war. Es ist also keine Verlegenheit und kein Mangel an Worten, sondern eine Einschätzung der Lage. Erst als Hiob im folgenden Kapitel selbst zu reden beginnt und seinen Geburtstag verflucht, antworten sie – und von da an geht es über neunundzwanzig Kapitel schief.\n\nDass ausgerechnet die Freunde am Ende getadelt werden, während sie zu Beginn alles richtig machen, gehört zur Bauart des Buches. Gott wirft ihnen im letzten Kapitel vor, nicht recht von ihm geredet zu haben, und stellt Hiob gegen sie – jenen Hiob, der geklagt und angeklagt hat. Was verurteilt wird, ist die fromme Erklärung, nicht die Klage.',
+    reception:
+      'Aus den sieben Tagen dieses Abschnitts ist die jüdische Trauerwoche geworden, das Sitzen Schiwa. Ihre Regeln sind bis in Einzelheiten ausgearbeitet: Der Trauernde sitzt niedrig, Spiegel werden verhängt, und Besucher warten, bis er selbst spricht. Der Talmud leitet diese Zurückhaltung ausdrücklich aus dem Verhalten der Freunde Hiobs her.\n\nIn der Seelsorgeausbildung gehört der Abschnitt zum Grundbestand. Er wird als Beispiel dafür gelesen, dass Anwesenheit ohne Erklärung eine eigene Form der Hilfe ist – und dass der Bruch bei den Freunden nicht mit dem Kommen, sondern mit dem Reden beginnt. Die Formel vom „Hiobs Trost“ ist im Deutschen zur Redensart für den gutgemeinten Zuspruch geworden, der nicht hilft.\n\nDie Wendung „Hiobsbotschaft“ stammt aus den vorangehenden Kapiteln und ist ohne Kenntnis der Erzählung in die Alltagssprache übergegangen. In der Literatur hat Joseph Roths Roman „Hiob“ von 1930 den Stoff in das Ostjudentum des frühen 20. Jahrhunderts verlegt.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Trauerriten waren festgelegt und öffentlich: Kleider zerreißen, Staub oder Asche auf den Kopf, barfuß gehen, Fasten, laute Klage. Professionelle Klagefrauen wurden hinzugezogen. Wer diese Zeichen unterließ, verweigerte dem Toten die Ehre – Trauer war eine Pflicht mit Formvorschriften.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Schwere Hautkrankheiten führten zur Absonderung: Der Kranke lebte außerhalb der Siedlung, oft auf dem Aschenplatz vor dem Ort. Hiob sitzt dort. Die Freunde erkennen ihn von ferne nicht wieder – ein Hinweis darauf, dass sie ihn schon aus der Entfernung suchen mussten.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Theman lag im Bergland Edoms südöstlich des Toten Meeres und war als Sitz von Weisen bekannt. Von dort nach Uz, wo immer das lag, waren es Tagesreisen. Dass die drei sich verabreden und gemeinsam aufbrechen, setzt einen Nachrichtenaustausch über größere Entfernungen voraus.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Weisheit war international. Ägyptische, babylonische und edomitische Lehren zirkulierten über Sprachgrenzen hinweg, und ein babylonischer Text über den leidenden Gerechten stellt dieselbe Frage wie das Hiobbuch. Dass die Gesprächspartner Ausländer sind, ist deshalb kein Zufall.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. lanud lo ulenachamo',
+        rendered: 'ihn zu beklagen und zu trösten',
+        note: 'Das erste Verb meint ein Mitschwingen, wörtlich ein Sich-Hin-und-Her-Bewegen – die Bewegung des Klagenden. Trösten heißt im Hebräischen nicht beruhigen, sondern Atem holen lassen. Beides beschreibt Handlungen, nicht Reden.',
+      },
+      {
+        word: 'hebr. schivat jamim',
+        rendered: 'sieben Tage und sieben Nächte',
+        note: 'Die volle Frist der Totenklage, wie sie für Jakob und für Saul genannt wird. Aus ihr ist die jüdische Trauerwoche geworden. Dass sie einem Lebenden gilt, sagt alles über die Einschätzung seiner Lage.',
+      },
+      {
+        word: 'hebr. kaav',
+        rendered: 'daß der Schmerz sehr groß war',
+        note: 'Schmerz, sowohl körperlich als auch seelisch – das Hebräische unterscheidet hier nicht. Der Text nennt ihn als Grund für das Schweigen: Nicht die Freunde hatten nichts zu sagen, sondern die Lage ließ nichts zu.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Talmud leitet aus dem Verhalten der Freunde die Regel ab, dass Besucher eines Trauernden erst sprechen, wenn dieser beginnt. Zugleich wird gefragt, woher sie von seinem Unglück wussten; eine Antwort lautet, sie hätten drei Bäume gepflanzt, deren Zustand ihnen Auskunft gab – eine Erzählung, die die Verbundenheit betont.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Gregor der Große widmete dem Hiobbuch ein Werk in fünfunddreißig Büchern, das die Auslegung des Mittelalters bestimmte. Die Freunde deutete er auf die Häretiker, deren Worte zunächst richtig klingen; ihr anfängliches Schweigen galt ihm dagegen als Vorbild geistlicher Zurückhaltung.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Rahmenerzählung in Prosa und die Reden in Versen unterscheiden sich in Sprache und Gottesbild so deutlich, dass die meisten Ausleger eine ältere Volkserzählung annehmen, in die der Dichter die Redegänge eingefügt hat. Dieser Abschnitt bildet die Naht zwischen beiden Teilen.',
+      },
+      {
+        tradition: 'Religionsgeschichtlicher Vergleich',
+        text: 'Aus Mesopotamien sind mehrere Texte über den leidenden Gerechten erhalten, darunter das Gedicht „Ich will preisen den Herrn der Weisheit“ und eine babylonische Theodizee in Dialogform. Die Fragen ähneln sich; der Unterschied liegt im Ausgang – dort endet es mit der Wiederherstellung durch den Gott, hier mit einer Rede, die keine Antwort gibt.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt gilt als der wichtigste biblische Text über Beistand ohne Erklärung. Betont wird, dass die Freunde nichts falsch machen, solange sie schweigen, und dass ihr Fehler mit dem Versuch beginnt, das Leiden verständlich zu machen. Die Fortsetzung des Buches ist dann die Vorführung dieses Versuchs über neunundzwanzig Kapitel.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hi', chapter: 3, verse: 1, note: 'Hiob bricht das Schweigen' },
+      { book: 'hi', chapter: 42, verse: 7, note: 'Der Tadel an die Freunde am Ende' },
+      { book: 'roem', chapter: 12, verse: 15, note: 'Weinet mit den Weinenden' },
+    ],
+  },
+  {
+    book: 'spr',
+    chapter: 6,
+    from: 6,
+    to: 11,
+    title: '„Gehe hin zur Ameise, du Fauler“',
+    historicalShort:
+      'Ein Lehrsatz über Fleiß, der seinen Beweis nicht aus der Überlieferung holt, sondern aus der Naturbeobachtung – und der ausdrücklich vermerkt, dass das Vorbild ohne Aufsicht auskommt.',
+    historicalLong:
+      'Die Beobachtung ist zutreffender, als man lange annahm. Die in der Levante verbreitete Ernteameise sammelt tatsächlich Getreidekörner und legt sie in unterirdischen Kammern an; sie beißt die Keimlinge ab, damit die Vorräte nicht auswachsen, und trägt feucht gewordene Körner zum Trocknen nach draußen. Naturforscher des 19. Jahrhunderts hielten die biblische Aussage für eine Legende, bis der englische Naturkundler John Traherne Moggridge in den siebziger Jahren des 19. Jahrhunderts die Vorratshaltung dieser Art im Mittelmeerraum beschrieb.\n\nDas Argument des Spruchs liegt aber nicht in der Naturkunde, sondern in dem Nebensatz über die fehlende Aufsicht. Drei Ämter werden genannt: Fürst, Aufseher, Herrscher – die Kette der Vorgesetzten, die einen Arbeiter antreibt. Die Ameise hat keinen davon und arbeitet trotzdem. Für eine Gesellschaft, in der Arbeit weithin unter Aufsicht geschah – Fronarbeit, Sklavenarbeit, Tagelohn unter einem Aufseher –, ist das die eigentliche Pointe: ein Vorbild, das aus eigenem Antrieb handelt.\n\nDer Zeitrahmen ist landwirtschaftlich genau. Im Sommer bereiten, in der Ernte einsammeln – das entspricht dem Ablauf im Bergland: Gerste im April, Weizen im Mai und Juni, Obst und Trauben im Spätsommer. Danach kommt eine lange Zeit, in der nichts wächst. Wer die wenigen Wochen der Ernte verschlief, hatte kein zweites Zeitfenster; die Folge war nicht Bequemlichkeit, sondern Hunger.\n\nDas Bild vom Kommen der Armut ist militärisch. Der Spruch vergleicht sie mit einem Wegelagerer und einem bewaffneten Mann – wörtlich mit einem Mann mit Schild. Armut erscheint damit nicht als Zustand, in den man langsam gleitet, sondern als Überfall, der plötzlich da ist. Das entspricht der Erfahrung einer Wirtschaft ohne Rücklagen: Zwischen Auskommen und Not lag oft nur eine Missernte.\n\nAuffällig ist der Verzicht auf jede religiöse Begründung. Der Spruch beruft sich nicht auf ein Gebot und nicht auf Gottes Willen, sondern auf ein Insekt. Diese Art zu argumentieren – aus der Beobachtung der Welt heraus – ist für die Weisheitsliteratur kennzeichnend und unterscheidet sie von Gesetz und Prophetie.',
+    reception:
+      'Die Ameise als Vorbild des Fleißes ist über diesen Spruch in die europäische Bildsprache eingegangen und trifft dort auf eine zweite Wurzel: die Fabel von Grille und Ameise, die auf Äsop zurückgeht und die La Fontaine im 17. Jahrhundert zu einem der bekanntesten Gedichte der französischen Literatur machte. Beide Traditionen haben sich vermischt, und in Schulbüchern des 19. Jahrhunderts stehen sie regelmäßig nebeneinander.\n\nIn der protestantischen Arbeitsethik hat der Spruch eine erhebliche Rolle gespielt. Benjamin Franklin nahm ihn in seine Sammlung von Sprichwörtern auf, und die Verbindung von Fleiß, Vorsorge und Frömmigkeit prägte die Erziehungsliteratur des 18. und 19. Jahrhunderts. Kritisch ist dagegen eingewandt worden, dass die Sprüche Armut an vielen Stellen ausdrücklich nicht auf Faulheit zurückführen, sondern auf Unrecht und Gewalt – wer diesen Spruch verallgemeinert, liest das Buch gegen sich selbst.\n\nIn der jüdischen Überlieferung wird die Ameise als Beispiel für Redlichkeit angeführt: Sie nehme kein fremdes Korn. Aus dieser Deutung ist eine ganze Reihe von Erzählungen entstanden, in denen kleine Tiere Tugenden verkörpern, die Menschen abgehen.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Die Ernte im Bergland dauerte wenige Wochen und verlangte alle Hände: schneiden, binden, zur Tenne bringen, dreschen, worfeln, einlagern. Wer in dieser Zeit ausfiel, konnte nichts nachholen. Der Jahreslauf kannte nur ein einziges Zeitfenster für den Ertrag.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Arbeit geschah in der Regel unter Aufsicht: Fronarbeit für den König, Feldarbeit unter einem Aufseher, Tagelohn unter einem Vorarbeiter. Die drei im Spruch genannten Ämter beschreiben genau diese Kette. Ein Wesen, das ohne sie arbeitet, war das Gegenbild zum Alltag.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Armut galt in der Weisheitsliteratur nicht durchweg als selbstverschuldet. Dieselbe Sammlung nennt an anderen Stellen Rechtsbeugung, Gewalt und den ungerechten Richter als Ursachen. Der Spruch von der Ameise ist eine Stimme unter mehreren, nicht die Lehre des Buches.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Ernteameise ist in der Levante weit verbreitet und legt Vorratskammern unter der Erde an. Ihre Straßen sind an Feldrändern gut zu sehen, im Sommer besonders in den Morgenstunden. Wer aufgefordert wird hinzugehen und zuzusehen, kann das tatsächlich tun.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. nemalah',
+        rendered: 'zur Ameise',
+        note: 'Die Ameise, im Alten Testament nur an dieser Stelle und in einem weiteren Spruch genannt, wo sie zu den kleinen und doch weisen Tieren gezählt wird. Gemeint ist die Ernteameise, deren Vorratshaltung sich beobachten lässt.',
+      },
+      {
+        word: 'hebr. azel',
+        rendered: 'du Fauler',
+        note: 'Der Träge – eine feste Gestalt der Sprüche, die dort etwa vierzehnmal auftritt und immer mit Spott behandelt wird. Sie steckt die Hand in die Schüssel und bringt sie nicht zum Mund; sie behauptet, ein Löwe sei auf der Gasse. Der Faule ist eine Figur, kein Vorwurf an einen Einzelnen.',
+      },
+      {
+        word: 'hebr. isch magen',
+        rendered: 'wie ein gewappneter Mann',
+        note: 'Wörtlich „ein Mann des Schildes“ – ein Bewaffneter. Der Mangel kommt nicht schleichend, sondern wie ein Überfall. Das erste Glied des Vergleichs ist ein Umherziehender, wohl ein Wegelagerer; beide Bilder stammen aus der Erfahrung ungesicherter Straßen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Weisheitliche Auslegung',
+        text: 'Die Sprüche begründen nicht mit Geboten, sondern mit Beobachtung: Wer sehen will, kann nachprüfen. Diese Art zu argumentieren unterscheidet die Weisheit von Gesetz und Prophetie und macht sie über Volksgrenzen hinweg anschlussfähig – dieselben Argumente stehen in ägyptischen und mesopotamischen Sammlungen.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Midrasch fragt, was genau an der Ameise zu lernen sei, und antwortet mit ihrer Redlichkeit: Sie rühre kein Korn an, das eine andere gesammelt habe. Damit verschiebt sich der Akzent von der Arbeitsleistung auf die Rechtschaffenheit – ein Zug, der in der christlichen Rezeption meist fehlt.',
+      },
+      {
+        tradition: 'Naturkundliche Einordnung',
+        text: 'Die Vorratshaltung der Ernteameise wurde im 19. Jahrhundert bestritten, weil die in Mitteleuropa heimischen Arten keine Körner sammeln. Erst Beobachtungen im Mittelmeerraum bestätigten die biblische Angabe. Der Fall gilt als Beispiel dafür, wie regionale Erfahrung über die Bewertung eines Textes entscheidet.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Spruch ist regelmäßig gebraucht worden, um Armut als selbstverschuldet darzustellen. Dagegen steht, dass die Sprüche selbst an zahlreichen Stellen andere Ursachen nennen – Rechtsbeugung, Gewalt, Missernte – und dass sie mehrfach zur Fürsprache für die Armen auffordern. Ein einzelner Spruch trägt keine Sozialtheorie.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las den Spruch im Zusammenhang seiner Lehre vom Beruf: Arbeit ist kein Fluch, sondern der Ort, an dem ein Mensch seinen Nächsten versorgt. Die Ameise dient ihm als Beispiel dafür, dass die Schöpfung selbst ihre Ordnung zeigt, ohne dass es dazu eines Befehls bedarf.',
+      },
+    ],
+    crossRefs: [
+      { book: 'spr', chapter: 30, verse: 25, note: 'Die Ameisen als kleines und weises Volk' },
+      { book: 'spr', chapter: 13, verse: 23, note: 'Unrecht als Ursache von Armut' },
+      { book: '2thess', chapter: 3, verse: 10, note: 'Wer nicht arbeiten will, soll auch nicht essen' },
+    ],
+  },
+  {
+    book: '3mo',
+    chapter: 11,
+    from: 1,
+    to: 8,
+    title: '„Das sind die Tiere, die ihr essen sollt“',
+    historicalShort:
+      'Zwei Merkmale entscheiden über Reinheit bei Landtieren: gespaltene Klaue und Wiederkäuen. Beide müssen zutreffen. Warum, sagt der Text nicht – und genau diese Lücke hat Jahrtausende von Erklärungsversuchen hervorgebracht.',
+    historicalLong:
+      'Die Regel ist als Klassifikation aufgebaut, nicht als Liste. Erst wird das Kriterium genannt, dann werden die Grenzfälle aufgezählt – Kamel, Klippdachs, Hase, Schwein –, also gerade die Tiere, die eines der beiden Merkmale erfüllen und das andere nicht. Wer eine Ordnung lehren will, tut genau das: Er nennt die Regel und dann die Fälle, an denen sie sich bewährt. Der Text ist ein Lehrstück, kein Speisezettel.\n\nDie zoologischen Angaben sind nach heutigem Verständnis teils ungenau. Klippdachs und Hase sind keine Wiederkäuer; beide bewegen jedoch beim Fressen ständig die Kiefer, und der Hase betreibt eine Form der Wiederaufnahme des Kots, die den Eindruck bestätigen konnte. Die Einteilung folgt der Beobachtung, nicht der modernen Systematik – und das ist kein Mangel, sondern die Arbeitsweise antiker Naturkunde.\n\nDas Schwein hat unter allen genannten Tieren die größte Wirkung entfaltet. Archäologisch ist die Sache gut fassbar: In den Dörfern des israelitischen Berglands der frühen Eisenzeit fehlen Schweineknochen fast vollständig, während sie in den philistäischen Siedlungen der Küstenebene in erheblicher Zahl vorkommen. Die Unterscheidung war also gelebte Praxis, lange bevor sie in dieser Form aufgeschrieben wurde, und sie markierte eine Grenze zwischen Nachbarn.\n\nDie Erklärungsversuche gehen weit auseinander. Der Philosoph Philo und später Maimonides führten hygienische und ethische Gründe an; die neuere Forschung, angestoßen von der Anthropologin Mary Douglas, sieht darin eher ein Ordnungssystem: Rein ist, was seiner Gattung vollständig entspricht, unrein das Zwischending. Der Text selbst nennt keinen Grund außer einem – Heiligkeit, verstanden als Abgesondertsein. Am Ende des Kapitels steht die Begründung: weil Gott heilig ist.\n\nEntscheidend für das Verständnis ist, was unrein nicht heißt. Es bedeutet nicht schmutzig, nicht giftig und nicht sündhaft. Es bezeichnet einen Zustand, der vom Heiligtum fernhält – dieselbe Kategorie, in die Geburt, Tod und bestimmte Krankheiten fallen. Ein Kamel war nicht böse; man aß es nicht, weil es auf der anderen Seite einer Linie stand, die durch die gesamte Ordnung dieses Buches gezogen ist.',
+    reception:
+      'Die Speisegebote sind zu einem der sichtbarsten Merkmale jüdischer Lebensweise geworden und haben in der Geschichte immer wieder als Prüfstein gedient: Die Erzählungen aus der Makkabäerzeit berichten von Menschen, die eher starben, als Schweinefleisch zu essen. Aus den knappen Regeln dieses Kapitels ist über die rabbinische Auslegung ein ausgearbeitetes Rechtsgebiet entstanden.\n\nIm frühen Christentum wurde die Frage zum ersten großen Konflikt. Die Apostelgeschichte erzählt die Vision des Petrus mit den unreinen Tieren, Paulus streitet mit Petrus in Antiochien über die Tischgemeinschaft, und der Römerbrief widmet dem Umgang mit unterschiedlichen Essgewohnheiten ein ganzes Kapitel. Die Entscheidung, die Regeln für Heidenchristen nicht verbindlich zu machen, gehört zu den folgenreichsten der Kirchengeschichte.\n\nIn der Religionswissenschaft ist das Kapitel durch das Buch „Reinheit und Gefährdung“ von Mary Douglas, 1966, zu einem der meistdiskutierten Texte überhaupt geworden. Ihre These, dass Reinheitssysteme Ordnungssysteme sind und Unreinheit das Deplatzierte bezeichnet, hat weit über die Bibelwissenschaft hinaus gewirkt.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Fleisch stand selten auf dem Tisch; die tägliche Kost bestand aus Brot, Oliven, Zwiebeln, Hülsenfrüchten und Milchprodukten. Die Speiseregeln betrafen deshalb weniger den Alltag als besondere Gelegenheiten – und gerade dort, bei Festen und Gastmählern, waren sie sichtbar.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer nicht mit anderen essen kann, gehört nicht dazu. Gemeinsame Mahlzeiten waren die Grundform gesellschaftlicher Bindung, von Vertragsabschlüssen bis zu Familienfesten. Speiseregeln zogen deshalb unvermeidlich eine soziale Grenze – das war ihre Wirkung, ob beabsichtigt oder nicht.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Schweine brauchen Wasser, Schatten und Abfälle; sie eignen sich für sesshafte Dorfwirtschaft mit ausreichend Feuchtigkeit, nicht für Weidewirtschaft im Trockenland. Ein Teil der Forschung sieht darin einen wirtschaftlichen Grund, der später religiös gefasst wurde.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Reinheit war keine Frage der Moral, sondern des Zugangs zum Heiligtum. Auch Geburt und Berührung eines Toten machten unrein, ohne dass jemand etwas falsch gemacht hätte. Der Zustand endete durch Waschung und Zeitablauf; er war Teil des Lebens, nicht dessen Störung.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. tame',
+        rendered: 'das ist euch unrein',
+        note: 'Nicht schmutzig, nicht böse, sondern kultisch unzugänglich – ein Zustand, der vom Heiligtum fernhält. Dieselbe Kategorie umfasst Geburt, Tod und bestimmte Krankheiten. Die deutsche Wiedergabe mit „unrein“ legt eine moralische Wertung nahe, die der Begriff nicht enthält.',
+      },
+      {
+        word: 'hebr. maalat gerah',
+        rendered: 'wiederkäut',
+        note: 'Wörtlich „das Wiedergekäute heraufbringen“. Die Einteilung folgt der Beobachtung: Bei Klippdachs und Hase erweckt die ständige Kieferbewegung denselben Eindruck. Antike Naturkunde ordnete nach dem, was sich sehen ließ.',
+      },
+      {
+        word: 'hebr. mafris parsah',
+        rendered: 'die Klauen spaltet',
+        note: 'Den Huf durchgehend gespalten haben. Beide Merkmale müssen zusammenkommen; ein Tier mit nur einem gilt als Zwischenform. Genau darin sieht die neuere Forschung das Ordnungsprinzip: Rein ist, was seiner Gattung vollständig entspricht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Die rabbinische Tradition zählt die Speisegebote zu den Vorschriften, für die kein Grund angegeben ist und die deshalb aus Gehorsam gehalten werden. Maimonides führte dennoch gesundheitliche Erwägungen an, während andere Ausleger jede Begründung ablehnten: Gerade das Fehlen eines einleuchtenden Grundes mache sie zum Zeichen der Zugehörigkeit.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Der Barnabasbrief und Clemens von Alexandrien deuteten die Tiere allegorisch: Das Wiederkäuen stehe für das Wiederholen der Schrift, die gespaltene Klaue für die Unterscheidung von Gut und Böse. Diese Auslegung erlaubte es, den Text zu behalten und die Praxis aufzugeben – eine Lösung, die für das ganze Kapitel bestimmend wurde.',
+      },
+      {
+        tradition: 'Religionswissenschaftliche Deutung',
+        text: 'Mary Douglas hat die Speisegebote als System gelesen, in dem Reinheit Vollständigkeit der Gattung bedeutet: Tiere, die den Merkmalen ihrer Klasse nicht vollständig entsprechen, fallen heraus. Später hat sie ihre Deutung selbst geändert und stärker den Schutz der Tiere betont. Beide Fassungen werden weiter diskutiert.',
+      },
+      {
+        tradition: 'Archäologische Einordnung',
+        text: 'Die Auswertung von Tierknochen zeigt für die frühe Eisenzeit ein klares Bild: In den Bergdörfern fehlen Schweineknochen nahezu vollständig, in den philistäischen Städten der Küste sind sie häufig. Die Speisegrenze ist damit archäologisch nachweisbar, lange bevor sie schriftlich fixiert wurde.',
+      },
+      {
+        tradition: 'Neutestamentliche Aufnahme',
+        text: 'Die Frage, ob die Speiseregeln für Nichtjuden gelten, war der erste große Streit der frühen Kirche. Die Apostelgeschichte erzählt die Vision des Petrus, das Apostelkonzil trifft eine Kompromissregelung, und Paulus mahnt im Römerbrief, einander wegen des Essens nicht zu verurteilen. Die Entscheidung fiel gegen die Verbindlichkeit – nicht gegen die Regel selbst.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 10, verse: 14, note: 'Die Vision des Petrus' },
+      { book: 'mk', chapter: 7, verse: 15, note: 'Was zum Munde eingeht, verunreinigt nicht' },
+      { book: '5mo', chapter: 14, verse: 3, note: 'Dieselbe Ordnung im Deuteronomium' },
+    ],
+  },
+  {
+    book: 'hes',
+    chapter: 33,
+    from: 1,
+    to: 11,
+    title: '„ich habe dich zum Wächter gesetzt“',
+    historicalShort:
+      'Ein Bild aus dem Kriegsalltag wird zur Amtsbeschreibung: Der Wächter auf der Mauer haftet nicht für den Ausgang, sondern dafür, dass er bläst. Was daraus für einen Propheten folgt, wird Vers für Vers durchgerechnet.',
+    historicalLong:
+      'Der Wächter war eine reale Einrichtung. Städte unterhielten Posten auf Mauern und Türmen, und in unsicheren Zeiten kamen Signalstationen auf Höhen hinzu. Die Lachisch-Ostraka, beschriebene Tonscherben aus der Zeit kurz vor 587 v. Chr., erwähnen genau ein solches System: Ein Offizier meldet, dass er die Feuerzeichen von Lachisch beobachte, die Signale von Aseka aber nicht mehr sehe. Das ist die Lage, die der Text voraussetzt – ein Land, in dem man auf Warnzeichen wartete.\n\nDas Horn, mit dem gewarnt wird, ist das Widderhorn, das nur wenige Töne hervorbringt. Es diente zum Alarm, zur Versammlung und zum Angriffszeichen. Ein Wächter musste nicht erklären, was kommt; er musste blasen. Genau darauf beruht die Haftungsregel des Abschnitts: Er ist für das Signal verantwortlich, nicht für die Reaktion.\n\nDie Rechtsfigur, die der Text entwickelt, ist präzise. Wer gewarnt wird und nicht hört, trägt die Folgen selbst – sein Blut sei auf seinem Kopf. Wer nicht gewarnt wird, geht ebenfalls zugrunde, aber die Verantwortung wandert: Sein Blut wird von der Hand des Wächters gefordert. Das ist die Sprache des Blutrechts, in dem die Frage nach dem Haftenden im Mittelpunkt steht. Der Prophet wird damit in eine Position gebracht, in der er für fremdes Leben mithaftet.\n\nDer zweite Teil des Abschnitts nennt den Grund, warum das Thema überhaupt aufgeworfen wird. Die Angesprochenen sagen, ihre Sünden lägen auf ihnen und sie vergingen darunter – wie können wir denn leben? Das ist die Stimmung der Verschleppten nach 587: Die Katastrophe war eingetreten, die Deutung als verdiente Strafe hatte sich durchgesetzt, und daraus folgte Lähmung. Der Abschnitt antwortet nicht mit einer Widerlegung, sondern mit einer Zusage über Gottes Absicht.\n\nDie Stellung im Buch ist bedeutsam. Dasselbe Wächterwort steht bereits im dritten Kapitel, bei der Berufung. Hier wird es wiederholt, unmittelbar bevor die Nachricht vom Fall Jerusalems eintrifft. Zwischen beiden Stellen liegt das Gericht; nach der zweiten beginnt der Trostteil des Buches. Die Wiederholung markiert damit einen Einschnitt: Dasselbe Amt gilt weiter, aber sein Inhalt ändert sich vom Warnen zum Aufrichten.',
+    reception:
+      'Das Wächteramt ist zur klassischen Beschreibung des geistlichen Amtes geworden. Die Kirchenordnungen der Reformationszeit berufen sich darauf, und in der Bekennenden Kirche wurde es zur Begründung des öffentlichen Widerspruchs herangezogen – das Stuttgarter Schuldbekenntnis von 1945 nimmt die Sprache auf, wenn es vom Versäumnis des Zeugnisses spricht.\n\nDietrich Bonhoeffer und andere haben aus dem Bild eine politische Verpflichtung abgeleitet: Wer sieht und schweigt, wird mitschuldig. In der Ökumene wird der Text bis heute in Stellungnahmen zu Menschenrechten und Klimafragen aufgerufen – oft mit der Wendung vom Wächteramt der Kirche.\n\nDer Satz, dass Gott keinen Gefallen am Tod des Gottlosen hat, gehört zu den meistzitierten Versen Hesekiels und steht in zahlreichen Bußliturgien. Er wird regelmäßig gegen Vorstellungen eines auf Strafe zielenden Gottes angeführt. Kritisch wird angemerkt, dass derselbe Prophet Gerichtsworte von großer Härte enthält und dass beides im selben Buch nebeneinander steht.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Vor der Eroberung Jerusalems arbeitete Juda mit einem Netz von Signalstationen auf Höhen. Die Lachisch-Ostraka bezeugen es: Ein Posten meldet, die Feuerzeichen einer Nachbarstadt seien ausgeblieben. Wer diese Zeichen versäumte, kostete Menschenleben.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Blutrecht fragte nach dem Haftenden, nicht nach der Absicht. Wer für ein Leben verantwortlich war und es nicht schützte, konnte belangt werden. Der Abschnitt überträgt diese Haftungslogik auf das Reden – eine Übertragung, die für die Hörer juristisch nachvollziehbar war.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Verschleppten in Babylonien lebten in eigenen Siedlungen und behielten ihre Ältestenverfassung; Hesekiel empfängt mehrfach Besuch von Ältesten, die ihn befragen. Die im Text zitierte Redensart stammt aus solchen Zusammenkünften – der Prophet antwortet auf einen Satz, den man tatsächlich sagte.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Widderhorn erzeugt nur wenige Töne und trägt weit. Es hing in jeder Stadt bereit und wurde für Alarm, Versammlung und Feste gebraucht. Sein Klang war eindeutig als Signal erkennbar, auch für den, der die Ursache nicht sah.',
+      },
+    ],
+    terms: [
+      {
+        word: 'hebr. zofeh',
+        rendered: 'ihrem Wächter',
+        note: 'Der Späher auf Mauer oder Turm, dessen Aufgabe das Beobachten und Melden ist – nicht der Wachmann am Tor, der abwehrt. Dasselbe Wort steht bei Jesaja für den, der auf die Warte gestellt wird und Bericht gibt.',
+      },
+      {
+        word: 'hebr. damo mijado avaqesch',
+        rendered: 'sein Blut will ich von deiner Hand fordern',
+        note: 'Eine Formel aus dem Blutrecht: Die Verantwortung für ein Leben wird eingefordert. Sie steht sonst gegenüber dem Totschläger; hier trifft sie den, der nicht geredet hat. Unterlassen wird damit rechtlich wie Handeln behandelt.',
+      },
+      {
+        word: 'hebr. schuv',
+        rendered: 'daß sich der Gottlose bekehre',
+        note: 'Umkehren, zurückgehen – der Grundbegriff für Buße im Alten Testament. Gemeint ist eine Richtungsänderung im Handeln, nicht eine Gefühlslage. Im Hesekielbuch steht das Wort besonders dicht; das Kapitel gebraucht es mehrfach.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Der Abschnitt gehört zu den Grundtexten über die Pflicht zur Zurechtweisung, die als Gebot verstanden wird: Wer sieht, dass ein anderer fehlgeht, und schweigt, macht sich die Sache zu eigen. Zugleich wird gefragt, wie weit diese Pflicht reicht – die Rabbinen diskutieren, wann Zurechtweisung geboten ist und wann sie schadet.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Gregor der Große machte das Wächterbild zur Grundlage seiner Pastoralregel, dem einflussreichsten Handbuch der Amtsführung im Mittelalter. Für ihn ist der Prediger ein Späher, der von einer erhöhten Stelle aus sieht, was andere nicht sehen – und der eben deshalb haftet.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Reformatoren leiteten aus dem Text die Pflicht zur öffentlichen Predigt gegen Missstände ab, auch gegenüber der Obrigkeit. Luther beruft sich darauf, wenn er seinen Widerspruch begründet: Ein Amt, das schweigt, wo es reden müsste, verfehlt seine Bestimmung.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Wächterwort steht zweimal im Buch, im dritten und im dreiunddreißigsten Kapitel. Die Wiederholung gilt als bewusste Gliederung: Sie markiert den Übergang vom Gerichts- zum Heilsteil, der unmittelbar mit der Nachricht vom Fall Jerusalems einsetzt. Ob beide Fassungen auf den Propheten zurückgehen, ist umstritten.',
+      },
+      {
+        tradition: 'Politische Ethik',
+        text: 'Aus dem Abschnitt ist die Rede vom Wächteramt der Kirche erwachsen, die in der Bekennenden Kirche und später in Menschenrechtsfragen aufgerufen wurde. Kritisch wird gefragt, wer dieses Amt beansprucht und mit welchem Recht – der Text setzt eine Einsetzung voraus und nicht eine Selbstermächtigung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hes', chapter: 3, verse: 17, note: 'Dasselbe Wächterwort bei der Berufung' },
+      { book: 'hes', chapter: 18, verse: 23, note: 'Kein Gefallen am Tod des Gottlosen' },
+      { book: 'apg', chapter: 20, verse: 26, note: 'Paulus beruft sich auf dieselbe Haftungsformel' },
+    ],
+  },
+  {
+    book: 'roem',
+    chapter: 7,
+    from: 14,
+    to: 25,
+    title: '„Ich elender Mensch!“',
+    historicalShort:
+      'Zwölf Verse über einen Menschen, der das Gute will und das Böse tut. Wer dieses Ich ist – Paulus selbst, ein Nichtchrist, ein Christ oder eine Rolle –, ist eine der ältesten und folgenreichsten Streitfragen der Auslegungsgeschichte.',
+    historicalLong:
+      'Der Abschnitt steht in der Gegenwartsform, während der ganze vorangehende Teil des Kapitels in der Vergangenheit erzählt. Dieser Wechsel ist der Ausgangspunkt jeder Deutung. Redet Paulus von einem überwundenen Zustand oder von einem gegenwärtigen? Und redet er von sich? Die griechische Rhetorik kannte ein Stilmittel, bei dem ein Redner in der ersten Person spricht, ohne sich selbst zu meinen – die Prosopopöie, das Reden in einer angenommenen Rolle. Quintilian beschreibt sie ausführlich. Ein erheblicher Teil der neueren Forschung liest den Abschnitt so.\n\nDie Beschreibung selbst hat Parallelen außerhalb der Bibel. Ovid lässt Medea sagen, sie sehe das Bessere und billige es, folge aber dem Schlechteren; Epiktet beschreibt den Menschen, der tut, was er nicht will. Diese Sätze waren gebildeten Lesern geläufig. Paulus greift damit eine bekannte Beschreibung menschlicher Zwiespältigkeit auf und stellt sie in einen anderen Rahmen: Nicht die Schwäche des Willens ist bei ihm die Erklärung, sondern eine Macht, die er Sünde nennt und die er ausdrücklich vom Ich unterscheidet.\n\nDas Gesetz kommt in diesen Versen erstaunlich gut weg. Es ist geistlich, es ist gut, der innere Mensch hat Lust daran. Das ist bemerkenswert, weil der Römerbrief in der Wirkungsgeschichte oft als Abrechnung mit dem Gesetz gelesen wurde. Der Abschnitt sagt das Gegenteil: Das Problem liegt nicht bei der Weisung, sondern bei dem, der sie hören und nicht befolgen kann.\n\nDer Ausruf am Ende gehört zur Gattung der Klage. Wer wird mich erlösen von dem Leibe dieses Todes – das ist eine Frage, keine Feststellung, und sie bekommt sofort eine Antwort. Manche Ausleger haben vermutet, die Wendung spiele auf eine antike Strafe an, bei der ein Lebender an einen Toten gebunden wurde; belegt ist diese Strafe bei Vergil und bei Cicero für einen etruskischen Brauch, ihre Verbindung mit dieser Stelle bleibt aber Vermutung.\n\nDas achte Kapitel schließt unmittelbar an und beginnt mit der Feststellung, dass keine Verdammnis mehr sei. Wer den Abschnitt für sich liest, bekommt eine Beschreibung der Ausweglosigkeit; wer über die Kapitelgrenze hinausliest – die es im Original nicht gab –, bekommt eine Bewegung. Die Kapiteleinteilung stammt aus dem 13. Jahrhundert und geht auf Stephen Langton zurück.',
+    reception:
+      'Kaum ein Abschnitt der Bibel hat die abendländische Selbstwahrnehmung so geprägt. Augustinus las ihn zunächst als Rede über den Menschen ohne Christus, änderte seine Meinung im Streit mit Pelagius und bezog ihn danach auf den Christen, der im Kampf bleibt. Diese späte Deutung wurde für das Mittelalter und für die Reformation maßgeblich.\n\nLuther fand darin seine Formel vom Menschen, der zugleich gerecht und Sünder ist, und die Bekenntnisschriften folgen ihm. Die Frömmigkeitsgeschichte des Protestantismus ist ohne diese Verse kaum zu denken – bis hin zu Bachs Kantaten und zur pietistischen Selbstprüfung.\n\nDie neuere Forschung hat diese Linie in Frage gestellt. Krister Stendahl argumentierte 1963, dass Paulus kein von Gewissensnot geplagter Mensch westlicher Prägung war und dass die Deutung auf das innere Ringen eine Rückprojektion Augustins und Luthers ist. Seither wird der Abschnitt vielfach als Rollenrede über den Menschen unter dem Gesetz gelesen, nicht als Selbstbericht. Beide Lesarten sind gegenwärtig in Gebrauch, und die Entscheidung zwischen ihnen verändert das Bild des Paulus erheblich.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Brief geht an eine Gemeinde in Rom, die aus Juden- und Heidenchristen bestand und in der es Spannungen zwischen beiden gab. Kaiser Claudius hatte Juden um 49 aus der Stadt gewiesen; nach seinem Tod kehrten sie zurück und fanden Gemeinden vor, die ohne sie weitergegangen waren. Der Brief redet in diese Lage hinein.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Weisung galt im Judentum nicht als Last, sondern als Gabe; Psalm 119 besingt sie über hundertsechsundsiebzig Verse. Wer den Abschnitt als Abrechnung mit dem Gesetz liest, unterstellt eine Haltung, die weder die Psalmen noch Paulus selbst an anderer Stelle erkennen lassen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der Begriff, den Paulus für Sünde gebraucht, ist der einer Macht, die versklavt – wörtlich ist der Sprecher „unter die Sünde verkauft“. Schuldknechtschaft und Sklavenverkauf waren in der römischen Welt Alltag, und die Rechtsstellung eines Verkauften war eindeutig: Er verfügte nicht mehr über sich.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Paulus schreibt aus Korinth an die Hauptstadt des Reiches, in der er noch nie gewesen war. Der Brief ist der längste und förmlichste, den er verfasst hat, und er stellt sich darin einer Gemeinde vor, deren Unterstützung er für seine geplante Reise nach Spanien suchte.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. sarkinos',
+        rendered: 'ich bin aber fleischlich',
+        note: 'Wörtlich „aus Fleisch gemacht“, nicht „fleischlich gesinnt“. Das Wort bezeichnet die Beschaffenheit des Menschen als vergänglichen, anfälligen Geschöpfs – nicht eine sittliche Neigung und schon gar nicht den Körper im Gegensatz zur Seele.',
+      },
+      {
+        word: 'griech. katergazomai',
+        rendered: 'was ich hasse, das tue ich',
+        note: 'Ein verstärktes Wort für Tun: hervorbringen, zustande bringen. Paulus wechselt in diesen Versen zwischen mehreren Verben des Tuns, was im Deutschen kaum wiederzugeben ist. Die Häufung erzeugt den Eindruck eines Kreisens.',
+      },
+      {
+        word: 'griech. talaiporos',
+        rendered: 'Ich elender Mensch',
+        note: 'Ein Ausruf aus der Klagesprache, der auch in griechischen Tragödien begegnet. Er leitet keine Verzweiflung ein, sondern eine Frage – und die Frage bekommt im selben Atemzug eine Antwort.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die griechischen Väter, unter ihnen Chrysostomos und Theodor von Mopsuestia, lasen den Abschnitt als Rede über den Menschen vor Christus. Augustinus vertrat zunächst dieselbe Auffassung und änderte sie im Streit mit Pelagius: Danach spricht der Christ, weil auch er im Kampf bleibt. Diese Wende hat die westliche Theologie bestimmt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther gewann aus dem Abschnitt seine Formel vom Menschen, der zugleich gerechtfertigt und Sünder ist. Für ihn beschreibt der Text die Erfahrung jedes Getauften, und die Kapitelgrenze zum achten Kapitel ist der entscheidende Schritt: Die Klage bleibt bestehen, die Verdammnis nicht.',
+      },
+      {
+        tradition: 'Neuere Paulusforschung',
+        text: 'Seit Krister Stendahls Aufsatz über das introspektive Gewissen des Westens wird bestritten, dass Paulus hier von sich redet. Die Sprache passt zur rhetorischen Rollenrede, das Judentum kannte keine Lehre vom unerfüllbaren Gesetz, und Paulus nennt sich selbst an anderer Stelle untadelig nach dem Gesetz. Der Abschnitt beschriebe dann die Lage des Menschen unter dem Gesetz, von außen betrachtet.',
+      },
+      {
+        tradition: 'Religionsgeschichtlicher Vergleich',
+        text: 'Die Beschreibung des Zwiespalts hat Parallelen bei Ovid, Epiktet und in der stoischen Popularphilosophie. Der Unterschied liegt in der Erklärung: Wo die Philosophie mangelnde Einsicht oder schwachen Willen annimmt, spricht Paulus von einer Macht, die er ausdrücklich vom Ich unterscheidet.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt wird geschätzt, weil er den Widerspruch zwischen Wollen und Tun nicht auflöst und nicht moralisiert. Kritisch wird angemerkt, dass er auch zur Entlastung missbraucht werden kann – die Unterscheidung zwischen dem Ich und der Sünde in ihm eignet sich dafür, Verantwortung abzuschieben.',
+      },
+    ],
+    crossRefs: [
+      { book: 'roem', chapter: 8, verse: 1, note: 'Die Antwort im nächsten Kapitel' },
+      { book: 'gal', chapter: 5, verse: 17, note: 'Fleisch und Geist widerstreiten einander' },
+      { book: 'phil', chapter: 3, verse: 6, note: 'Untadelig nach der Gerechtigkeit im Gesetz' },
     ],
   },
 ];

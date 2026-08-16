@@ -1582,6 +1582,56 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Apostelgeschichte, um 80–90 n. Chr.',
     epoch: 'urkirche',
   },
+  '4mo 13,25': {
+    events: 'Wüstenzeit, Aufenthalt in Kades',
+    written: 'Ältere Überlieferung mit priesterlicher Bearbeitung',
+    epoch: 'exodus',
+  },
+  '5mo 24,10': {
+    events: 'Als Sozialgesetzgebung der Moserede erzählt',
+    written: 'Deuteronomisches Gesetz, Kernbestand im 7. Jahrhundert v. Chr.',
+    epoch: 'exodus',
+  },
+  'jer 20,7': {
+    events: 'Späte Königszeit in Jerusalem, um 600 v. Chr.',
+    written: 'Jeremiaüberlieferung, Konfessionen im ersten Buchteil',
+    epoch: 'koenige',
+  },
+  'offb 5,1': {
+    events: 'Vision auf Patmos, Gemeinden in der Provinz Asia',
+    written: 'Offenbarung des Johannes, überwiegend um 95 n. Chr. gesetzt',
+    epoch: 'roemer',
+  },
+  'hebr 1,1': {
+    events: 'Ohne benannten Anlass; Adressaten unbekannt',
+    written: 'Vor 95 n. Chr., da Clemens von Rom den Brief bereits kennt',
+    epoch: 'roemer',
+  },
+  'hi 2,11': {
+    events: 'Ohne historischen Ort, in der Zeit der Erzväter angesiedelt',
+    written: 'Rahmenerzählung älter, Redegänge meist exilisch-nachexilisch',
+    epoch: 'exil',
+  },
+  'spr 6,6': {
+    events: 'Ohne historischen Anlass, Weisheitsdichtung',
+    written: 'Sammlung der Sprüche, Kernbestand in der Königszeit',
+    epoch: 'koenige',
+  },
+  '3mo 11,1': {
+    events: 'Als Sinaigesetzgebung erzählt',
+    written: 'Priesterschrift, überwiegend in die Exils- und frühe Perserzeit gesetzt',
+    epoch: 'exodus',
+  },
+  'hes 33,1': {
+    events: 'Babylonisches Exil, um den Fall Jerusalems 587 v. Chr.',
+    written: 'Hesekielbuch, Übergang vom Gerichts- zum Heilsteil',
+    epoch: 'exil',
+  },
+  'roem 7,14': {
+    events: 'Paulus schreibt aus Korinth an die Gemeinde in Rom',
+    written: 'Römerbrief, um 56–58 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

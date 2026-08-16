@@ -15,12 +15,19 @@
  *   export const PATCHES = {
  *     '1mo 1,1': {
  *       longAdd: 'Ein weiterer Absatz …',      // wird als Absatz angehängt
+ *       longPara: { 2: 'Ersetzt Absatz zwei' },
  *       world: [{ aspect: 'macht', text: '…' }],
  *       terms: [{ word: 'hebr. bara', rendered: 'schuf', note: '…' }],
  *       reception: 'Was der Text bewirkt hat …',
  *       interpretations: [{ tradition: '…', text: '…' }],
  *     },
  *   };
+ *
+ * `world`, `terms` und `reception` legen das jeweilige Feld neu an und
+ * verweigern die Arbeit, wenn es schon da ist. Zum **Anhängen** an ein
+ * vorhandenes Feld dienen `worldAdd`, `termsAdd`, `receptionAdd` und
+ * `crossRefsAdd`; letzteres legt die Liste an, falls der Artikel noch keine
+ * Querverweise hat.
  *
  * Das Skript prüft nichts inhaltlich – dafür ist `check-references.mjs` da.
  * Es prüft nur, dass jeder Schlüssel genau einen Artikel trifft und dass kein
@@ -81,8 +88,28 @@ function findLine(entry, regex) {
   return -1;
 }
 
+/**
+ * Hängt Zeilen an eine bestehende Liste an – unmittelbar vor deren schließende
+ * Klammer. Gibt zurück, ob die Liste überhaupt gefunden wurde.
+ */
+function appendToList(entry, kopf, block) {
+  const open = findLine(entry, kopf);
+  if (open < 0) return false;
+  let close = -1;
+  for (let i = open + 1; i <= entry.end; i++) {
+    if (lines[i] === '    ],') {
+      close = i;
+      break;
+    }
+  }
+  if (close < 0) throw new Error(`${entry.key}: Ende der Liste ${kopf} nicht gefunden`);
+  lines.splice(close, 0, ...block);
+  entry.end += block.length;
+  return true;
+}
+
 const keys = Object.keys(PATCHES);
-let stats = { long: 0, terms: 0, reception: 0, interp: 0, world: 0 };
+let stats = { long: 0, terms: 0, reception: 0, interp: 0, world: 0, xref: 0 };
 
 // Von hinten nach vorn, damit eingefügte Zeilen die noch offenen Positionen
 // nicht verschieben.
@@ -100,6 +127,48 @@ for (const key of keys) {
 for (const entry of [...entries].reverse()) {
   const patch = PATCHES[entry.key];
   if (!patch) continue;
+
+  /*
+   * Von hinten nach vorn durch den Artikel: Querverweise stehen als letztes
+   * Feld, deshalb werden sie zuerst angefasst. So bleiben alle noch nicht
+   * benutzten Zeilennummern gültig.
+   */
+  if (patch.crossRefsAdd?.length) {
+    const block = patch.crossRefsAdd.map((x) => {
+      const note = x.note ? `, note: ${lit(x.note)}` : '';
+      return `      { book: ${lit(x.book)}, chapter: ${x.chapter}, verse: ${x.verse}${note} },`;
+    });
+
+    /*
+     * Ein Teil der Artikel führt die Querverweise einzeilig – `crossRefs: [{ … }],`.
+     * Ohne diesen Schritt fände `appendToList` die Liste nicht und legte eine
+     * zweite daneben an; TypeScript bricht dann mit doppeltem Feld ab.
+     */
+    const einzeilig = findLine(entry, /^    crossRefs: \[\{.*\],$/);
+    if (einzeilig >= 0) {
+      const inhalt = lines[einzeilig].slice('    crossRefs: ['.length, -2).trim();
+      lines.splice(einzeilig, 1, '    crossRefs: [', `      ${inhalt},`, '    ],');
+      entry.end += 2;
+    }
+
+    if (!appendToList(entry, /^    crossRefs: \[$/, block)) {
+      // Noch keine Querverweise: die Liste hinter den Auslegungen anlegen.
+      const open = findLine(entry, /^    interpretations: \[$/);
+      if (open < 0) throw new Error(`${entry.key}: interpretations nicht gefunden`);
+      let close = -1;
+      for (let i = open + 1; i <= entry.end; i++) {
+        if (lines[i] === '    ],') {
+          close = i;
+          break;
+        }
+      }
+      if (close < 0) throw new Error(`${entry.key}: Ende von interpretations nicht gefunden`);
+      const neu = ['    crossRefs: [', ...block, '    ],'];
+      lines.splice(close + 1, 0, ...neu);
+      entry.end += neu.length;
+    }
+    stats.xref += patch.crossRefsAdd.length;
+  }
 
   /* --- zusätzliche Auslegungen: vor die schließende Klammer der Liste --- */
   if (patch.interpretations?.length) {
@@ -121,6 +190,44 @@ for (const entry of [...entries].reverse()) {
     ]);
     lines.splice(close, 0, ...block);
     stats.interp += patch.interpretations.length;
+  }
+
+  /* --- an vorhandene Listen anhängen, weiter von hinten nach vorn --- */
+  if (patch.termsAdd?.length) {
+    const block = patch.termsAdd.flatMap((t) => [
+      '      {',
+      `        word: ${lit(t.word)},`,
+      ...(t.rendered ? [`        rendered: ${lit(t.rendered)},`] : []),
+      `        note: ${lit(t.note)},`,
+      '      },',
+    ]);
+    if (!appendToList(entry, /^    terms: \[$/, block)) {
+      throw new Error(`${entry.key}: terms gibt es noch nicht – "terms" statt "termsAdd" benutzen`);
+    }
+    stats.terms += patch.termsAdd.length;
+  }
+
+  if (patch.worldAdd?.length) {
+    const block = patch.worldAdd.flatMap((w) => [
+      '      {',
+      `        aspect: ${lit(w.aspect)},`,
+      `        text: ${lit(w.text)},`,
+      '      },',
+    ]);
+    if (!appendToList(entry, /^    world: \[$/, block)) {
+      throw new Error(`${entry.key}: world gibt es noch nicht – "world" statt "worldAdd" benutzen`);
+    }
+    stats.world += patch.worldAdd.length;
+  }
+
+  if (patch.receptionAdd) {
+    const zeile = findLine(entry, /^    reception:$/);
+    if (zeile < 0) throw new Error(`${entry.key}: reception gibt es noch nicht`);
+    const wertZeile = lines[zeile + 1];
+    if (!/^      '.*',$/.test(wertZeile)) throw new Error(`${entry.key}: reception ist mehrzeilig`);
+    const alt = unlit(wertZeile.slice(7, -2));
+    lines[zeile + 1] = `      ${lit(`${alt}\n\n${patch.receptionAdd}`)},`;
+    stats.reception++;
   }
 
   /* --- Urtext und Wirkungsgeschichte: hinter den ausführlichen Teil --- */
@@ -197,5 +304,5 @@ writeFileSync(FILE, lines.join('\n'));
 console.log(
   `Ergänzt: ${keys.length} Artikel – ${stats.long} Absätze, ${stats.world} Notizen zur Welt, ` +
     `${stats.terms} Urtext-Wörter, ${stats.reception} Wirkungsgeschichten, ` +
-    `${stats.interp} Auslegungen`,
+    `${stats.interp} Auslegungen, ${stats.xref} Querverweise`,
 );
