@@ -1632,6 +1632,91 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Römerbrief, um 56–58 n. Chr.',
     epoch: 'urkirche',
   },
+  '2joh 1,1': {
+    events: 'Gemeinden Kleinasiens nach einer Spaltung',
+    written: 'Johanneische Schule, um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2joh 1,12': {
+    events: 'Gemeinden Kleinasiens, Briefverkehr über Boten',
+    written: 'Johanneische Schule, um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '3joh 1,1': {
+    events: 'Gemeinden Kleinasiens, Netz aus Häusern und Boten',
+    written: 'Johanneische Schule, um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '3joh 1,13': {
+    events: 'Gemeinden Kleinasiens, Streit um Aufnahme und Ausschluss',
+    written: 'Johanneische Schule, um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phlm 1,1': {
+    events: 'Paulus in Haft, Onesimus auf dem Weg zurück nach Kolossä',
+    written: 'Um 55–61 n. Chr., je nach angenommenem Haftort',
+    epoch: 'urkirche',
+  },
+  'phlm 1,22': {
+    events: 'Paulus in Haft, Rückkehr des Onesimus nach Kolossä',
+    written: 'Um 55–61 n. Chr., je nach angenommenem Haftort',
+    epoch: 'urkirche',
+  },
+  'jud 1,1': {
+    events: 'Gemeinden mit wandernden Lehrern, Ort unbekannt',
+    written: 'Überwiegend ans Ende des 1. Jahrhunderts gesetzt',
+    epoch: 'urkirche',
+  },
+  'tit 1,1': {
+    events: 'Kreta, um 60–65 n. Chr. angenommen',
+    written: 'zwischen 63 und 100 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'tit 1,10': {
+    events: 'Kreta, um 60–65 n. Chr. angenommen',
+    written: 'zwischen 63 und 100 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'tit 2,1': {
+    events: 'Kreta, um 60–65 n. Chr. angenommen',
+    written: 'zwischen 63 und 100 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'tit 3,1': {
+    events: 'Kreta, um 60–65 n. Chr. angenommen',
+    written: 'zwischen 63 und 100 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'tit 3,9': {
+    events: 'Kreta und Nikopolis, um 60–65 n. Chr. angenommen',
+    written: 'zwischen 63 und 100 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '2thess 1,1': {
+    events: 'Thessalonich, um 50–51 n. Chr.',
+    written: 'um 51 n. Chr. oder gegen Ende des 1. Jahrhunderts',
+    epoch: 'urkirche',
+  },
+  '2thess 1,5': {
+    events: 'Thessalonich, um 50–51 n. Chr.',
+    written: 'um 51 n. Chr. oder gegen Ende des 1. Jahrhunderts',
+    epoch: 'urkirche',
+  },
+  '2thess 2,13': {
+    events: 'Thessalonich, um 50–51 n. Chr.',
+    written: 'um 51 n. Chr. oder gegen Ende des 1. Jahrhunderts',
+    epoch: 'urkirche',
+  },
+  '2thess 3,1': {
+    events: 'Thessalonich, um 50–51 n. Chr.',
+    written: 'um 51 n. Chr. oder gegen Ende des 1. Jahrhunderts',
+    epoch: 'urkirche',
+  },
+  '2thess 3,14': {
+    events: 'Thessalonich, um 50–51 n. Chr.',
+    written: 'um 51 n. Chr. oder gegen Ende des 1. Jahrhunderts',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

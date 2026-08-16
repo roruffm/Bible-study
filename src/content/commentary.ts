@@ -9878,7 +9878,7 @@ export const COMMENTARY: CommentaryEntry[] = [
     book: 'tit',
     chapter: 2,
     from: 11,
-    to: 14,
+    to: 15,
     title: '„Es ist erschienen die heilsame Gnade“',
     historicalShort:
       'Ein dichter, fast liedhafter Abschnitt, der Gnade und Lebensführung unmittelbar aneinanderbindet – die Gnade „erzieht“.',
@@ -21123,6 +21123,1266 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'roem', chapter: 8, verse: 1, note: 'Die Antwort im nächsten Kapitel' },
       { book: 'gal', chapter: 5, verse: 17, note: 'Fleisch und Geist widerstreiten einander' },
       { book: 'phil', chapter: 3, verse: 6, note: 'Untadelig nach der Gerechtigkeit im Gesetz' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 7 Abschnitte */
+  {
+    book: '2joh',
+    chapter: 1,
+    from: 1,
+    to: 3,
+    title: '„der auserwählten Frau und ihren Kindern“',
+    historicalShort:
+      'Ein Brief ohne Verfassernamen an eine Empfängerin ohne Namen. Ob die „auserwählte Frau“ eine Person ist oder eine Gemeinde, wird seit der Antike gestritten – und beide Lesarten haben gute Gründe.',
+    historicalLong:
+      'Antike Briefe begannen nach festem Muster: Absender im Nominativ, Empfänger im Dativ, dann ein Gruß. Tausende von Papyrusbriefen aus Ägypten zeigen dieselbe Form, von Geschäftsbriefen bis zu Nachrichten von Soldaten an ihre Mütter. Der zweite Johannesbrief hält sich genau daran und weicht an einer Stelle ab: Der Absender nennt keinen Namen, sondern nur ein Amt oder ein Alter – der Älteste.\n\nWer das ist, lässt sich nicht mehr feststellen. Papias von Hierapolis unterschied im frühen 2. Jahrhundert zwischen dem Apostel Johannes und einem „Presbyter Johannes“; Eusebius zitiert die Stelle und schließt daraus auf zwei verschiedene Männer und zwei Gräber in Ephesus. Diese Unterscheidung ist bis heute umstritten. Sicher ist nur, dass der Absender bei den Angeschriebenen so bekannt war, dass ein Titel genügte.\n\nDie Empfängerin ist der zweite Streitpunkt. Für eine wirkliche Frau spricht, dass der Brief sie und ihre Kinder anredet und am Ende die Kinder ihrer Schwester grüßen lässt; wohlhabende Frauen als Gastgeberinnen von Hausgemeinden sind mehrfach bezeugt – Lydia in Philippi, Nympha in Kolossä, Priska in Rom. Für eine Gemeinde spricht der Wechsel zwischen Einzahl und Mehrzahl in der Anrede und die Tatsache, dass die Bibel Städte und Gemeinden regelmäßig als Frauen anspricht. Die Auslegung ist bis heute geteilt.\n\nDer Gruß selbst ist erweitert. Der übliche griechische Brief wünschte schlicht Freude, der jüdische Frieden. Die christlichen Briefe verbinden Gnade und Frieden; hier kommt Barmherzigkeit hinzu, wie sonst nur in den Timotheusbriefen. Und der Wunsch steht nicht im Konjunktiv, sondern im Futur: Es wird mit uns sein. Aus einem Wunsch ist eine Feststellung geworden.\n\nDas Wort, um das die drei Verse kreisen, ist die Wahrheit – viermal in drei Versen, insgesamt fünfmal im Brief. Es meint bei Johannes nicht die Richtigkeit von Sätzen, sondern eine Wirklichkeit, in der man sich aufhält: Man liebt in der Wahrheit, man wandelt in ihr, sie bleibt in uns. Der Brief kämpft wenige Verse später gegen Leute, die bestreiten, dass Christus im Fleisch gekommen sei – und dieser Streit gibt dem Wort seine Schärfe.',
+    reception:
+      'Der Brief gehörte zu den umstrittenen Schriften. Eusebius zählt ihn im 4. Jahrhundert zu denen, deren Anerkennung strittig war, und in den syrischen Kirchen fehlte er lange; die älteste syrische Bibelausgabe kennt ihn nicht. Aufgenommen wurde er wohl vor allem wegen seiner Nähe zum ersten Johannesbrief und zum Evangelium.\n\nDie Frage nach der „auserwählten Frau“ hat eine eigene Geschichte. Clemens von Alexandrien las sie als Gemeinde, andere Ausleger nahmen eine Frau namens Kyria oder Eklekte an – beides sind belegte Namen. In der neueren Auslegung hat die zweite Möglichkeit an Gewicht gewonnen, seit die Rolle von Frauen als Gastgeberinnen der frühen Hausgemeinden genauer untersucht worden ist.\n\nDie größte Wirkung des Briefes ist unbeabsichtigt: Der Satz wenige Verse später, man solle Irrlehrer nicht ins Haus aufnehmen und nicht grüßen, ist über Jahrhunderte zur Begründung von Ausschluss und Ketzerverfolgung geworden. Der Gegensatz zu Gastfreundschaft und Grußgebot anderswo im Neuen Testament ist offenkundig und in der Auslegung nie befriedigend aufgelöst worden.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Briefe folgten einem festen Bauplan: Absender, Empfänger, Gruß, Dank, Hauptteil, Schlussgruß. Papyrusfunde aus Ägypten überliefern Tausende davon. Wer davon abwich – etwa keinen Namen nannte –, tat das absichtlich, und die Leser bemerkten es.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Gemeinden versammelten sich in Privathäusern, und wer eines besaß, das dreißig oder vierzig Menschen fasste, gehörte zur wohlhabenden Minderheit. Mehrfach sind Frauen als Gastgeberinnen genannt. Sie bestimmten damit auch, wer Zutritt hatte.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Streit im Hintergrund betraf die Frage, ob Christus wirklich einen Leib hatte. Wer Materie für minderwertig hielt, konnte sich das nicht vorstellen. Ignatius von Antiochien bekämpft dieselbe Auffassung wenige Jahre später in Briefen an dieselbe Gegend.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Absender ohne Namen setzt voraus, dass sein Ansehen bekannt ist. Zugleich beruft sich dieser Brief auf kein Amt mit Zwangsmitteln: Er kann bitten, warnen und einen Besuch ankündigen – mehr stand einer Gemeindeleitung um 100 nicht zur Verfügung.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. presbyteros',
+        rendered: 'Der Älteste',
+        note: 'Das Wort bezeichnet ein Lebensalter und eine Stellung zugleich; welche gemeint ist, lässt der Brief offen. Papias unterschied im 2. Jahrhundert einen Presbyter Johannes vom Apostel – die Unterscheidung steht am Anfang einer bis heute offenen Frage.',
+      },
+      {
+        word: 'griech. eklekte kyria',
+        rendered: 'der auserwählten Frau',
+        note: 'Beide Wörter sind auch als Eigennamen belegt. Der Ausdruck lässt sich deshalb dreifach lesen: als Titel für eine Gemeinde, als Anrede an eine Frau namens Kyria oder an eine namens Eklekte. Der Brief entscheidet die Frage nicht.',
+      },
+      {
+        word: 'griech. aletheia',
+        rendered: 'in der Wahrheit',
+        note: 'Bei Johannes kein Prädikat von Sätzen, sondern ein Bereich, in dem man sich aufhält: Man liebt in ihr, wandelt in ihr, sie bleibt in uns. Das Wort steht in diesen drei Versen viermal und gibt dem kurzen Brief seinen Ton.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der zweite und der dritte Johannesbrief sind in Form und Länge echte antike Privatbriefe und stammen mit hoher Wahrscheinlichkeit vom selben Verfasser. Ihre Nähe zum ersten Brief und zum Evangelium ist unbestritten, die Identität des Absenders nicht. Die meisten Ausleger rechnen mit einer johanneischen Schule in Kleinasien.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Clemens von Alexandrien verstand die Anrede als Bezeichnung einer Gemeinde und ihrer Glieder; Hieronymus schwankte. Die Väter interessierten sich vor allem für die Abgrenzung im Hauptteil und lasen den Brief als Anleitung zum Umgang mit Irrlehre – eine Lesart, die ihm eine schwere Wirkungsgeschichte eingetragen hat.',
+      },
+      {
+        tradition: 'Feministische Exegese',
+        text: 'Die Anrede an eine Frau und ihre Kinder wird seit den achtziger Jahren als Hinweis auf eine Hausgemeinde unter weiblicher Leitung gelesen. Zusammen mit Lydia, Nympha, Priska und Phöbe ergibt sich ein Bild, in dem Frauen in der ersten Generation Versammlungsorte bereitstellten und damit über Zugang und Gastrecht entschieden.',
+      },
+      {
+        tradition: 'Kanongeschichtliche Beobachtung',
+        text: 'Beide kleinen Johannesbriefe gehörten zu den zuletzt anerkannten Schriften. In der syrischen Kirche fehlten sie über Jahrhunderte, und Eusebius führt sie unter den umstrittenen. Ihr Weg in den Kanon zeigt, dass Kürze und fehlender Verfassername lange gegen eine Schrift sprachen.',
+      },
+    ],
+    crossRefs: [
+      { book: '3joh', chapter: 1, verse: 1, note: 'Derselbe Absender, derselbe Titel' },
+      { book: '1joh', chapter: 4, verse: 2, note: 'Christus im Fleisch gekommen' },
+      { book: 'kol', chapter: 4, verse: 15, note: 'Nympha und die Gemeinde in ihrem Haus' },
+    ],
+  },
+  {
+    book: '2joh',
+    chapter: 1,
+    from: 12,
+    to: 13,
+    title: '„nicht mit Briefen und Tinte“',
+    historicalShort:
+      'Der Schluss sagt, warum der Brief kurz ist: Der Verfasser will lieber kommen und reden. Was wie eine Höflichkeitsformel klingt, benennt eine Einsicht über die Grenzen des Schreibens – und wiederholt sich im Schwesterbrief fast wörtlich.',
+    historicalLong:
+      'Die Angabe über Tinte ist keine Redensart. Antike Tinte bestand aus Ruß, Wasser und Gummiarabikum; sie wurde als trockener Block gehandelt und vor dem Gebrauch angerieben. Geschrieben wurde mit einem zugeschnittenen Schilfrohr auf Papyrus, der aus Ägypten kam und nicht billig war. Ein Brief war damit ein Vorgang mit Aufwand: Material beschaffen, schreiben, oft von einem Schreiber diktieren lassen, dann einen zuverlässigen Boten finden, der ihn trägt.\n\nGenau dieser Bote ist der unsichtbare Teil jedes antiken Briefes. Eine Post für Privatleute gab es nicht; das kaiserliche Kuriersystem stand nur der Verwaltung offen. Wer schreiben wollte, wartete auf einen Reisenden in die richtige Richtung und vertraute ihm das Schreiben an. Der Bote las den Brief in der Regel vor und beantwortete Rückfragen – er war Teil der Nachricht, nicht bloß ihr Transport.\n\nDas erklärt, warum Briefe der Zeit so oft einen baldigen Besuch ankündigen. Schriftliche Mitteilung galt als Notlösung. Paulus schreibt an mehreren Stellen Ähnliches, und in den Papyrusbriefen aus Ägypten ist die Wendung, man wolle das Weitere mündlich besprechen, ein Gemeinplatz. Der zweite und der dritte Johannesbrief enden beide so, mit fast denselben Worten – ein Hinweis darauf, dass beide aus derselben Hand stammen.\n\nDer Schlussgruß bringt eine weitere Person ins Spiel: die Kinder der Schwester. Wer die Empfängerin für eine Gemeinde hält, liest hier den Gruß der Nachbargemeinde; wer eine Frau annimmt, liest den Gruß einer Familie. Beide Lesarten setzen dasselbe voraus – ein Netz von Hausgemeinden in Kleinasien, das über Boten, Briefe und Besuche zusammenhielt.\n\nDie Wendung von der vollkommenen Freude ist bei Johannes ein festes Motiv. Sie steht im Evangelium mehrfach und im ersten Brief gleich am Anfang, immer im Zusammenhang mit Gemeinschaft. Vollkommen wird die Freude danach nicht durch Erkenntnis, sondern durch Anwesenheit – und dieser Gedanke, nicht die Bescheidenheit des Schreibers, ist der eigentliche Grund für den Schluss.',
+    reception:
+      'Der Satz vom Schreiben, das die Begegnung nicht ersetzt, hat in der Briefkultur der Kirche eine lange Nachwirkung. Bereits Ignatius von Antiochien und später die Wüstenväter greifen ihn auf; in der Reformationszeit erscheint er in Widmungsbriefen, und die pietistische Korrespondenz des 18. Jahrhunderts zitiert ihn regelmäßig.\n\nIn der Gegenwart wird der Vers in Debatten über Gemeinde im Netz herangezogen – als biblisches Argument dafür, dass vermittelte Kommunikation an eine Grenze stößt. Die Auslegung mahnt zur Vorsicht: Der Verfasser schreibt schließlich einen Brief und hält ihn nicht für wertlos. Was er sagt, ist nicht, dass Schreiben nichts taugt, sondern dass es auf etwas anderes zuläuft.\n\nBemerkenswert ist zudem, dass gerade dieser Schluss die beiden kleinen Johannesbriefe verbindet und damit ein textkritisches Argument liefert: Die Übereinstimmung im Formularteil zweier so kurzer Schreiben gilt als starker Hinweis auf denselben Verfasser.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Tinte bestand aus Ruß, Wasser und Gummi, gehandelt als trockener Block und vor Gebrauch angerieben. Geschrieben wurde mit zugeschnittenem Schilfrohr auf Papyrus aus Ägypten. Ein Bogen kostete den Gegenwert einiger Stunden Arbeit – Schreiben war kein beiläufiger Vorgang.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Kaufleute, Soldaten auf Marsch und Pilger nahmen Schreiben mit, wenn ihr Weg passte. Papyrusfunde aus Ägypten zeigen Briefe, die monatelang unterwegs waren, und Klagen über solche, die nie ankamen. Wichtige Post wurde deshalb oft doppelt losgeschickt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Gemeinden Kleinasiens lagen an gut ausgebauten Straßen; zwischen Ephesus, Smyrna und Pergamon waren es je zwei bis drei Tagesreisen. Ein angekündigter Besuch war damit keine Floskel, sondern eine realistische Planung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Grüße am Briefende nannten Namen und stellten Beziehungen her: Wer grüßte, bezeugte damit Zugehörigkeit. In einer Welt ohne Mitgliederlisten waren solche Namensnennungen das Verzeichnis, über das Gemeinden voneinander wussten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. melanos',
+        rendered: 'mit Briefen und Tinte',
+        note: 'Wörtlich „das Schwarze“ – das griechische Wort für Tinte benennt schlicht ihre Farbe. Sie wurde aus Ruß angerieben und ließ sich mit einem feuchten Schwamm wieder abwischen, solange sie frisch war.',
+      },
+      {
+        word: 'griech. pepleromene',
+        rendered: 'unsere Freude vollkommen sei',
+        note: 'Erfüllt, vollgemacht – dasselbe Wort steht mehrfach im Johannesevangelium und am Anfang des ersten Johannesbriefes. Die Freude gilt dort nie als Einzelbesitz, sondern wird durch Gemeinschaft vollständig.',
+      },
+      {
+        word: 'griech. adelphes',
+        rendered: 'die Kinder deiner Schwester',
+        note: 'Wer die Anrede als Gemeinde liest, hört hier den Gruß einer Nachbargemeinde; wer eine Frau annimmt, den einer Familie. Der Satz ist der letzte Anhaltspunkt in der Frage – und er entscheidet sie nicht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die fast wörtliche Übereinstimmung der Briefschlüsse im zweiten und dritten Johannesbrief gilt als starkes Argument für denselben Verfasser. Beide folgen zudem dem Bauplan des antiken Privatbriefs so genau, dass sie als Musterbeispiele der Gattung im Neuen Testament gelten.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen den Schluss als Ausdruck der Sehnsucht nach der Gemeinschaft und verbanden ihn mit den Aussagen des Evangeliums über die vollkommene Freude. Die praktische Seite – dass Schreiben teuer, langsam und auf Boten angewiesen war – lag ihnen so nahe, dass sie sie nicht erwähnten.',
+      },
+      {
+        tradition: 'Kommunikationsgeschichtliche Beobachtung',
+        text: 'Die frühen Gemeinden hingen an Briefen, Boten und Besuchen; keines der drei Mittel funktionierte allein. Die Briefe des Paulus setzen dieselbe Dreiheit voraus. Der Schluss dieses Briefes benennt damit keine Geringschätzung des Schreibens, sondern seine Stellung in einer Reihe.',
+      },
+      {
+        tradition: 'Gegenwärtige Anwendung',
+        text: 'In Debatten über Gemeinde im Netz wird der Vers als Beleg für die Grenze vermittelter Kommunikation angeführt. Dagegen ist einzuwenden, dass der Verfasser schreibt und seinen Brief für nützlich hält; die Aussage betrifft die Reihenfolge, nicht den Wert.',
+      },
+    ],
+    crossRefs: [
+      { book: '3joh', chapter: 1, verse: 13, note: 'Fast derselbe Schluss im Schwesterbrief' },
+      { book: '1joh', chapter: 1, verse: 4, note: 'Damit unsere Freude vollkommen sei' },
+      { book: 'roem', chapter: 1, verse: 11, note: 'Paulus sehnt sich danach, zu kommen' },
+    ],
+  },
+  {
+    book: '3joh',
+    chapter: 1,
+    from: 1,
+    to: 4,
+    title: '„daß dir’s wohl gehe und du gesund seist“',
+    historicalShort:
+      'Der Briefanfang übernimmt eine Wunschformel, die in antiken Privatbriefen tausendfach steht – und hängt eine Bemerkung an, die sie umdreht: wie es denn deiner Seele wohl geht.',
+    historicalLong:
+      'Die Formel ist keine christliche Erfindung. Griechische Privatbriefe beginnen fast durchgängig mit einem Gesundheitswunsch: Vor allem wünsche ich, dass du gesund bist. Die Papyri aus Oxyrhynchos und dem Fajum überliefern sie in zahllosen Varianten, oft verbunden mit einem Hinweis auf ein Gebet an eine Gottheit. Ein Soldat schreibt so an seine Mutter, ein Verwalter an seinen Herrn, ein Sohn an den Vater. Der dritte Johannesbrief benutzt genau diese Eröffnung.\n\nDer Zusatz verschiebt sie. Der Wunsch für Leib und Geschäfte wird an dem gemessen, was ohnehin gut steht – dem inneren Zustand des Angeschriebenen. Damit kehrt der Satz die übliche Rangfolge um, ohne den Gesundheitswunsch abzuwerten. Für die Auslegungsgeschichte ist das folgenreich geworden: Der Vers ist zum meistzitierten biblischen Beleg für die Verbindung von körperlichem und geistlichem Wohlergehen geworden, oft in einer Zuspitzung, die der Text nicht hergibt.\n\nGajus ist ein sehr häufiger römischer Vorname, und im Neuen Testament tragen ihn mindestens drei verschiedene Personen: ein Mazedonier in Ephesus, ein Reisebegleiter aus Derbe, ein Gastgeber des Paulus in Korinth. Ob einer von ihnen gemeint ist, lässt sich nicht entscheiden. Sicher ist nur, dass dieser Gajus ein Haus besaß, in dem er Reisende aufnehmen konnte – der Brief lobt ihn genau dafür.\n\nDie Brüder, die kommen und berichten, sind der Kern des Vorgangs. In einem Netz von Hausgemeinden ohne übergreifende Verwaltung waren durchreisende Verkündiger die Verbindung zwischen den Orten. Sie brachten Nachrichten, prüften und wurden geprüft. Was sie bezeugen, ist deshalb kein frommer Eindruck, sondern eine Auskunft mit Folgen: Sie entscheidet darüber, wie ein Ort in der Gemeinschaft dasteht.\n\nDas Wort für Wahrheit steht in diesen vier Versen viermal, wie im Schwesterbrief. Es bezeichnet auch hier keine Lehrmeinung, sondern eine Lebensweise: Man wandelt in der Wahrheit. Der Brief wird gleich darauf einen Konflikt schildern, in dem es um Verhalten geht und nicht um Lehre – die Wortwahl bereitet das vor.',
+    reception:
+      'Der Wunsch aus Vers 2 hat eine schwere Wirkungsgeschichte. In der Wohlstandsverkündigung des 20. Jahrhunderts wurde er zum Kernbeleg dafür, dass Gott materielles Gedeihen und Gesundheit zusage; einzelne Prediger haben ganze Lehrgebäude darauf gestützt. Die Auslegung hält dagegen, dass es sich um die übliche Höflichkeitsformel eines antiken Briefes handelt und dass ein Briefanfang keine Verheißung ist.\n\nDaneben steht eine ältere und ruhigere Linie. Die Verbindung von leiblichem und geistlichem Wohl hat die kirchliche Krankenpflege begleitet; Ordensregeln und Hospitalordnungen des Mittelalters berufen sich darauf, und in der Diakoniegeschichte des 19. Jahrhunderts erscheint der Vers über Krankenhauseingängen.\n\nDer vierte Vers – keine größere Freude, als dass die Kinder in der Wahrheit wandeln – gehört zu den verbreitetsten Sprüchen bei Konfirmation und Taufe, gewöhnlich ohne die Kenntnis, dass mit den Kindern nicht die leiblichen gemeint sind, sondern Menschen, die der Absender zum Glauben geführt hat.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Der Gesundheitswunsch am Briefanfang war Pflicht, nicht Zuneigung. Papyri überliefern ihn tausendfach, oft mit dem Zusatz, man bete täglich für den Empfänger. Wer ihn wegließ, wirkte unhöflich; wer ihn abwandelte, sagte damit etwas.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Reisende Verkündiger hielten das Netz der Gemeinden zusammen. Sie brachten Nachrichten, Empfehlungsschreiben und Beurteilungen. Ein Bericht über einen Gastgeber war deshalb kein Lob unter Freunden, sondern eine Auskunft, die anderswo Folgen hatte.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wer Gäste aufnahm, trug die Kosten: Verpflegung, Nachtlager, oft Reisezehrung für den Weiterweg. Bei mehreren Besuchern im Jahr summierte sich das erheblich. Gastfreundschaft war eine wirtschaftliche Leistung und wurde entsprechend gewürdigt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Krankheit galt weithin als Sache der Götter; Heilkulte wie der des Asklepios verzeichneten Heilungsberichte auf Stelen, und Tempelschlaf war eine anerkannte Behandlung. Ein Gebet um Gesundheit im Briefkopf bewegte sich in diesem allgemeinen Rahmen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. euodousthai',
+        rendered: 'daß dir’s wohl gehe',
+        note: 'Wörtlich „einen guten Weg haben“ – ursprünglich vom Reisen, dann übertragen auf das Gelingen von Geschäften. Der Ausdruck gehört zur Standardformel antiker Briefe und sagt für sich genommen nichts über eine Zusage aus.',
+      },
+      {
+        word: 'griech. hygiainein',
+        rendered: 'du gesund seist',
+        note: 'Gesund sein – dasselbe Wort steckt in „Hygiene“. In den Pastoralbriefen wird es auf die Lehre übertragen: die gesunde Lehre. Hier steht es im wörtlichen Sinn, wie in jedem Brief der Zeit.',
+      },
+      {
+        word: 'griech. tekna',
+        rendered: 'meine Kinder',
+        note: 'Gemeint sind nicht leibliche Kinder, sondern Menschen, die der Absender zum Glauben geführt hat. Paulus gebraucht das Bild ebenso. Die Verwendung des Verses bei Taufe und Konfirmation verschiebt diesen Sinn.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der dritte Johannesbrief ist formal der reinste Privatbrief des Neuen Testaments: Absender, einzelner Empfänger, Gesundheitswunsch, Anlass, Schlussgruß. Er wurde deshalb in der Formgeschichte immer wieder als Musterbeispiel behandelt – und zeigt zugleich, wie sehr christliche Kommunikation den Formen ihrer Umwelt folgte.',
+      },
+      {
+        tradition: 'Kritik der Wirkungsgeschichte',
+        text: 'Die Verwendung von Vers 2 als Zusage von Gesundheit und Wohlstand ist innerkirchlich scharf zurückgewiesen worden. Der Einwand ist einfach: Ein Briefanfang ist keine Verheißung, und dieselbe Formel steht in Tausenden nichtchristlicher Briefe. Wer sie zur Lehre macht, macht aus einer Höflichkeit ein Versprechen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen den Vers als Mahnung zur Rangordnung: Zuerst gehe es der Seele gut, dann sei auch das Übrige recht. Aus dieser Auslegung ist die Verbindung von Seelsorge und Krankenpflege erwachsen, wie sie in den Hospitälern der Alten Kirche und später in den Ordensregeln ihren Ort fand.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Einordnung',
+        text: 'Der Brief zeigt, wie das Netz der frühen Gemeinden funktionierte: über Häuser, Boten und Beurteilungen. Wer aufnahm, ermöglichte Verbreitung; wer verweigerte, verhinderte sie. Die scheinbar privaten Höflichkeiten des Briefanfangs sind Teil dieses Netzes und nicht Beiwerk.',
+      },
+    ],
+    crossRefs: [
+      { book: '3joh', chapter: 1, verse: 5, note: 'Der Anlass des Briefes' },
+      { book: '1kor', chapter: 4, verse: 15, note: 'Paulus als Vater durch das Evangelium' },
+      { book: '2joh', chapter: 1, verse: 4, note: 'Dieselbe Freude über den Wandel in der Wahrheit' },
+    ],
+  },
+  {
+    book: '3joh',
+    chapter: 1,
+    from: 13,
+    to: 14,
+    title: '„Grüße die Freunde bei Namen“',
+    historicalShort:
+      'Der letzte Satz des kürzesten Buches der Bibel ist eine Anweisung zur Namensnennung. Was wie eine Nebensächlichkeit aussieht, beschreibt, wie eine Gemeinschaft ohne Register zusammenhielt.',
+    historicalLong:
+      'Namentliche Grüße sind in antiken Briefen üblich und keineswegs beiläufig. Sie stellten Beziehungen her, bestätigten Zugehörigkeit und bezeugten öffentlich, wer zu wem gehörte – in einer Welt ohne Mitgliederverzeichnisse war das die einzige Form der Feststellung. Der Römerbrief endet mit einer Liste von sechsundzwanzig Namen; auch dort ist die Aufzählung keine Höflichkeit, sondern eine Beglaubigung.\n\nDie Bezeichnung, die dieser Brief für die Gemeinde wählt, ist im Neuen Testament einmalig: die Freunde. Sonst heißen die Angeredeten Brüder, Heilige, Berufene, Jünger. Der Ausdruck hat einen eigenen Klang: In der griechischen Welt bezeichnete Freundschaft ein Verhältnis mit gegenseitigen Pflichten, über das Aristoteles zwei Bücher seiner Ethik schrieb, und philosophische Schulen nannten ihre Mitglieder so. Das Johannesevangelium nimmt das Wort ausdrücklich auf, wenn Jesus sagt, er nenne die Seinen nicht mehr Knechte, sondern Freunde.\n\nDie Schreibgeräte werden hier anders genannt als im Schwesterbrief. Dort ist von Papier und Tinte die Rede, hier von Tinte und Rohrfeder. Beides zusammen ergibt das vollständige Bild: Ein zugeschnittenes Schilfrohr, dessen Spitze gespalten wurde, dazu angeriebene Rußtinte und ein Bogen Papyrus. Wer schrieb, saß dabei meist nicht an einem Tisch – Darstellungen zeigen Schreiber mit der Rolle auf dem Knie.\n\nDer Friedensgruß am Schluss ist die griechische Wiedergabe des hebräischen Schalom und war in jüdischen Briefen die übliche Schlussformel. Christliche Briefe übernehmen sie; heidnische griechische Briefe enden dagegen meist mit einem schlichten Lebewohl. Der Brief endet damit in einer jüdischen Form – ein kleines Zeichen dafür, wo diese Gemeinden herkamen.\n\nDass ausgerechnet dieses Schreiben, das von einem Streit um Aufnahme und Ausschluss handelt, mit der Aufforderung endet, jeden einzeln zu grüßen, ist kein Zufall. Der Konflikt im Hauptteil betrifft einen Mann, der Leute aus der Gemeinde stößt. Dagegen steht am Ende eine Anweisung, die niemanden auslässt.',
+    reception:
+      'Die Wendung von den Freunden hat in der Kirchengeschichte eine besondere Nachwirkung gehabt. Die Quäker nennen sich seit dem 17. Jahrhundert Religiöse Gesellschaft der Freunde und berufen sich dabei auf das Johannesevangelium und auf diesen Briefschluss. Auch in der Frömmigkeitssprache des Pietismus ist die Anrede als Freund verbreitet.\n\nDer dritte Johannesbrief ist mit zweihundertneunzehn griechischen Wörtern das kürzeste Buch der Bibel – der zweite folgt mit wenigen mehr. Beide passten damit auf ein einziges Blatt Papyrus üblicher Größe, was manche Ausleger für den eigentlichen Grund der Kürze halten: Der Verfasser schrieb, was auf den Bogen ging.\n\nDie Anweisung, namentlich zu grüßen, wird in der Gemeindepraxis bis heute angeführt, wenn es um Fürbitte mit Namen geht. In der Ökumene ist der Vers zudem zitiert worden, wo es um die Anerkennung einzelner statt ganzer Kirchen ging.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Freundschaft war in der griechischen Welt ein Verhältnis mit Pflichten: Beistand, Gastrecht, gegenseitige Vertretung. Philosophische Schulen nannten ihre Mitglieder Freunde. Das Wort trug damit mehr Gewicht, als die deutsche Entsprechung heute nahelegt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Geschrieben wurde mit einem zugeschnittenen Schilfrohr, dessen Spitze gespalten war, auf Papyrus, den man aus Ägypten bezog. Ein Bogen üblicher Größe fasste ungefähr so viel Text, wie diese beiden kleinen Briefe umfassen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Friedensgruß am Schluss ist die griechische Form des hebräischen Schalom. Jüdische Briefe endeten so, heidnische griechische meist mit einem schlichten Lebewohl. Die Formel verrät, in welcher Tradition ein Schreiben steht.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ohne Mitgliederlisten war die Namensnennung die einzige Form der Feststellung, wer dazugehört. Grüße in Briefen erfüllten damit eine Aufgabe, die später Register und Urkunden übernahmen – sie hielten fest, mit wem man in Gemeinschaft stand.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. philoi',
+        rendered: 'Es grüßen dich die Freunde',
+        note: 'Im Neuen Testament einmalig als Bezeichnung für eine Gemeinde. Sonst heißen die Angeredeten Brüder oder Heilige. Das Johannesevangelium bereitet den Gebrauch vor, wenn Jesus die Seinen nicht mehr Knechte, sondern Freunde nennt.',
+      },
+      {
+        word: 'griech. kalamos',
+        rendered: 'mit der Tinte und der Feder',
+        note: 'Das Schreibrohr: ein zugeschnittenes Schilfrohr mit gespaltener Spitze, das Tinte hielt und regelmäßig nachgeschnitten werden musste. Dasselbe Wort bezeichnet auch das Rohr, mit dem gemessen wird.',
+      },
+      {
+        word: 'griech. eirene',
+        rendered: 'Friede sei mit dir',
+        note: 'Die griechische Wiedergabe des hebräischen Schalom – kein Zustand innerer Ruhe, sondern Unversehrtheit und Wohlergehen im Ganzen. Als Briefschluss ist die Formel jüdisch, nicht griechisch.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Brief ist mit rund zweihundertzwanzig griechischen Wörtern das kürzeste Buch der Bibel und passte damit auf einen einzigen Papyrusbogen. Manche Ausleger halten das für den Grund der Kürze: Es ging nicht mehr auf das Blatt, und ein zweiter Bogen hätte den Aufwand verdoppelt.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter widmeten dem Schluss wenig Aufmerksamkeit; ihr Interesse galt der Frage nach dem Verfasser. Erst die neuere Forschung hat die Formularteile antiker Briefe als Quelle ernst genommen und darin gefunden, was über Gemeindeleben sonst nirgends steht.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Die Bezeichnung als Freunde hat der Religiösen Gesellschaft der Freunde ihren Namen gegeben; die Quäker berufen sich seit dem 17. Jahrhundert darauf. Auch der Sprachgebrauch des Pietismus, der Mitchristen als Freunde anredet, geht auf diese Linie zurück.',
+      },
+      {
+        tradition: 'Beobachtung zur Gemeinde',
+        text: 'Dass ein Brief über Ausschluss aus der Gemeinde mit der Anweisung endet, jeden einzeln zu grüßen, wird als bewusster Gegenakzent gelesen. Wo der Hauptteil von einem berichtet, der Leute hinausstößt, steht am Schluss eine Aufforderung, niemanden auszulassen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joh', chapter: 15, verse: 15, note: 'Ich sage hinfort nicht, dass ihr Knechte seid' },
+      { book: 'roem', chapter: 16, verse: 3, note: 'Die lange Grußliste des Römerbriefs' },
+      { book: '2joh', chapter: 1, verse: 12, note: 'Der fast gleichlautende Schluss' },
+    ],
+  },
+  {
+    book: 'phlm',
+    chapter: 1,
+    from: 1,
+    to: 7,
+    title: '„der Gemeinde in deinem Hause“',
+    historicalShort:
+      'Der kürzeste Paulusbrief beginnt mit einer Anrede, die mehr sagt, als sie zu sagen scheint: Er geht nicht nur an Philemon, sondern an drei Personen und an die Versammlung in seinem Haus. Was gleich folgen wird, ist damit von Anfang an keine Privatsache.',
+    historicalLong:
+      'Paulus nennt sich hier nicht Apostel, wie sonst in seinen Briefanfängen, sondern Gefangener. Das ist der einzige Fall unter seinen Briefen, und es ist eine bewusste Wahl: Statt seiner Vollmacht stellt er seine Lage voran. Der ganze Brief arbeitet danach mit dieser Ausgangsposition – er könnte befehlen, wie er später ausdrücklich sagt, und bittet stattdessen.\n\nDie Mitangeschriebenen sind der eigentliche Kunstgriff. Appia ist wahrscheinlich Philemons Frau, Archippus vielleicht sein Sohn oder ein Gemeindeleiter; der Kolosserbrief nennt ihn noch einmal und erinnert ihn an einen Dienst. Dazu kommt die Gemeinde, die sich in Philemons Haus versammelt. Ein Brief mit dieser Anschrift wurde in der Versammlung vorgelesen. Philemons Entscheidung über den entlaufenen Sklaven Onesimus fiel damit vor Zeugen.\n\nHausgemeinden dieser Art sind für das 1. Jahrhundert die Regel; eigene Versammlungsgebäude gibt es erst ab dem 3. Jahrhundert, das älteste bekannte in Dura Europos am Euphrat. Wer ein Haus mit einem Speisesaal besaß, konnte dreißig bis vierzig Menschen aufnehmen; größere Räume waren selten. Philemon gehörte damit zur wohlhabenden Minderheit – er besaß ein Haus und mindestens einen Sklaven.\n\nDer Dankteil ist nach den Regeln antiker Redekunst gebaut. Ein Redner, der etwas erbitten wollte, gewann zunächst das Wohlwollen des Angesprochenen; die Lehrbücher nennen das die captatio benevolentiae. Paulus lobt Philemons Liebe und seinen Glauben und hält fest, dass durch ihn die Herzen der Heiligen erquickt worden seien – und gebraucht am Ende des Briefes genau dasselbe Wort noch einmal, wenn er um Erquickung für sich selbst bittet. Das Lob ist damit zugleich die Vorbereitung der Bitte.\n\nDer Brief ist die einzige erhaltene Schrift des Paulus an eine einzelne Person in einer konkreten Angelegenheit. Er ist damit die genaueste Quelle für die Frage, wie ein Apostel in einem Einzelfall vorging – und zugleich der Text, an dem sich die Auseinandersetzung um die christliche Haltung zur Sklaverei über Jahrhunderte entzündet hat.',
+    reception:
+      'Der Philemonbrief steht im Zentrum der Debatte um Sklaverei und Christentum. Bis ins 19. Jahrhundert wurde er von Sklavenhaltern angeführt: Paulus schicke den Entlaufenen zurück und fordere keine Freilassung. Die Abolitionisten lasen denselben Text umgekehrt – als Aufforderung, den Sklaven nicht mehr als Sklaven, sondern als geliebten Bruder aufzunehmen, was das Verhältnis von innen her aufhebe.\n\nIn den Vereinigten Staaten war der Brief in den Jahrzehnten vor dem Bürgerkrieg einer der meistdiskutierten biblischen Texte überhaupt; Predigten und Streitschriften beider Seiten beriefen sich darauf. Diese Geschichte wirkt bis in die gegenwärtige Auslegung nach und hat die Frage geschärft, was ein Text sagt und was er unterlässt.\n\nIn der Alten Kirche stand der Brief dagegen im Ruf der Bedeutungslosigkeit. Hieronymus verteidigte ihn gegen den Vorwurf, er enthalte nichts Erbauliches, und Chrysostomos schrieb drei Predigten darüber, um zu zeigen, dass gerade das Kleine der Prüfstein sei.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Gemeinden trafen sich in Privathäusern; eigene Bauten gibt es erst ab dem 3. Jahrhundert. Ein Speisesaal fasste dreißig bis vierzig Menschen. Wer das Haus stellte, gehörte zu den Wohlhabenden und hatte damit auch Einfluss darauf, was dort geschah.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein entlaufener Sklave war rechtlos: Der Herr durfte ihn züchtigen, brandmarken oder töten, und wer ihn aufnahm, machte sich schadenersatzpflichtig. Ein Fürsprecher konnte allerdings vermitteln – Plinius der Jüngere schrieb einen fast gleich gebauten Brief für einen entlaufenen Freigelassenen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Dass Paulus sich Gefangener nennt statt Apostel, ist rhetorisch berechnet. Er verzichtet auf die Vollmacht, auf die er sich berufen könnte, und schafft damit eine Lage, in der Philemon freiwillig handeln muss. Der Brief sagt das später ausdrücklich.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Briefe wurden in der Versammlung vorgelesen; stilles Lesen war unüblich. Wer mehrere Empfänger nannte, sorgte dafür, dass alle mithörten. Die Anschrift dieses Briefes entscheidet damit bereits, dass die Sache öffentlich verhandelt wird.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. desmios',
+        rendered: 'der Gebundene Christi Jesu',
+        note: 'Der Gefesselte, der Häftling. Paulus nennt sich sonst am Briefanfang Apostel oder Knecht Christi; hier stellt er seine Lage voran. Der Titel ist zugleich Tatsache und Argument – wer aus der Haft schreibt, bittet anders als einer, der befiehlt.',
+      },
+      {
+        word: 'griech. ekklesia',
+        rendered: 'der Gemeinde in deinem Hause',
+        note: 'Das Wort meint ursprünglich die Bürgerversammlung einer griechischen Stadt. Auf eine Gruppe in einem Privathaus angewandt, überträgt es einen politischen Begriff auf einen Raum, in dem sonst der Hausherr allein bestimmte.',
+      },
+      {
+        word: 'griech. anapepautai',
+        rendered: 'sind erquickt durch dich',
+        note: 'Ausruhen lassen, Erleichterung verschaffen – ein Wort aus dem Alltag der Arbeit. Paulus gebraucht es am Ende des Briefes noch einmal, wenn er dasselbe für sich erbittet. Das Lob im Dankteil bereitet damit die Bitte vor.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Brief gilt als unbestritten paulinisch und ist mit dem Kolosserbrief eng verbunden: Beide nennen dieselben Personen. Ob Paulus aus Rom, Ephesus oder Cäsarea schrieb, ist offen; Ephesus liegt Kolossä am nächsten und wäre für einen entlaufenen Sklaven am ehesten erreichbar gewesen.',
+      },
+      {
+        tradition: 'Rhetorische Analyse',
+        text: 'Der Aufbau folgt den Regeln der antiken Bittrede: Wohlwollen gewinnen, den Fall darlegen, an das bessere Selbstverständnis appellieren, ein Angebot machen. Plinius der Jüngere schrieb wenige Jahrzehnte später einen fast identisch gebauten Brief in derselben Sache – die Parallele wird in der Auslegung regelmäßig herangezogen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Hieronymus musste den Brief gegen den Vorwurf verteidigen, er tauge nicht zur Erbauung. Chrysostomos widmete ihm drei Predigten und hob hervor, dass Paulus nicht befiehlt, obwohl er könnte – für ihn war das die eigentliche Lehre des Schreibens.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Brief fordert an keiner Stelle die Abschaffung der Sklaverei und nicht einmal ausdrücklich die Freilassung des Einzelnen. Diese Leerstelle ist von Sklavenhaltern über Jahrhunderte genutzt worden. Die Gegenposition verweist auf die Bezeichnung des Sklaven als Bruder und darauf, dass ein solches Verhältnis das Eigentumsrecht von innen aushöhlt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'phlm', chapter: 1, verse: 16, note: 'Nicht mehr als Knecht, sondern als Bruder' },
+      { book: 'kol', chapter: 4, verse: 17, note: 'Archippus wird noch einmal genannt' },
+      { book: 'roem', chapter: 16, verse: 5, note: 'Eine weitere Gemeinde in einem Haus' },
+    ],
+  },
+  {
+    book: 'phlm',
+    chapter: 1,
+    from: 22,
+    to: 25,
+    title: '„bereite mir die Herberge“',
+    historicalShort:
+      'Der Schluss enthält den entscheidenden Satz des ganzen Briefes, und er steht beiläufig da: Paulus kündigt an, selbst zu kommen. Wer das liest, weiß, dass die Sache nachgeprüft wird.',
+    historicalLong:
+      'Die Bitte um ein Quartier ist rhetorisch der stärkste Zug des Briefes. Sie steht nach der eigentlichen Bitte um Onesimus und verändert deren Gewicht: Was Philemon entscheidet, wird der Absender bei seinem nächsten Besuch sehen. In der antiken Bittrede ist das ein bekanntes Mittel – man kündigt an, wiederzukommen, und macht die Zusage damit überprüfbar, ohne zu drohen.\n\nDie Namen im Schlussgruß stimmen fast vollständig mit denen im Kolosserbrief überein: Epaphras, Markus, Aristarchus, Demas, Lukas. Das ist einer der Hauptgründe, beide Schreiben derselben Situation zuzuordnen. Zwei dieser Namen haben eine eigene Nachgeschichte. Markus gilt seit dem 2. Jahrhundert als Verfasser des zweiten Evangeliums, Lukas als der des dritten und der Apostelgeschichte; beide Zuschreibungen stützen sich auf Papias und auf spätere Überlieferung, nicht auf die Schriften selbst.\n\nDemas wird hier noch als Mitarbeiter genannt. Der zweite Timotheusbrief berichtet später, er habe Paulus verlassen und die gegenwärtige Welt liebgewonnen. Ob dieselbe Person gemeint ist, lässt sich nicht sichern; die Verbindung hat der Auslegungsgeschichte jedenfalls eine Gestalt geliefert, an der das Abfallen von der Sache beschrieben wurde.\n\nEpaphras heißt hier Mitgefangener. Ob das wörtlich zu verstehen ist oder ein Bild für die geteilte Lage, wird diskutiert; im Kolosserbrief erscheint er als Gründer der Gemeinde in Kolossä. Antike Haft war überfüllt und ungetrennt: Untersuchungsgefangene, Schuldner und Verurteilte saßen zusammen, und wer Besuch bekam, teilte das Gebrachte oft mit anderen.\n\nDer Schlusssegen ist knapp und folgt der Form, die Paulus in allen seinen Briefen gebraucht. Bemerkenswert ist nur die Mehrzahl: Die Gnade sei mit eurem Geist. Der Brief, der eine einzelne Entscheidung eines einzelnen Mannes betrifft, endet damit wieder bei der Versammlung, an die er von Anfang an mit adressiert war.',
+    reception:
+      'Der Brief ist im Kanon geblieben, obwohl er lange als unbedeutend galt – und gerade seine Beiläufigkeit macht ihn heute wertvoll. Er ist die einzige Quelle, die zeigt, wie Paulus in einem privaten Konflikt vorging: mit Lob, Zurückhaltung, einem Angebot, für den Schaden aufzukommen, und der Ankündigung eines Besuchs.\n\nDie Frage, wie es ausging, ist nicht überliefert. Dass der Brief aufbewahrt und weitergegeben wurde, spricht dafür, dass Philemon der Bitte nachkam – ein abschlägig beschiedenes Schreiben hätte man kaum gesammelt. Im frühen 2. Jahrhundert erwähnt Ignatius von Antiochien einen Bischof von Ephesus namens Onesimus; ob es derselbe Mann ist, lässt sich nicht entscheiden, wird aber seit dem 19. Jahrhundert immer wieder erwogen.\n\nDie Bitte um eine Herberge hat in der Gastfreundschaftstradition der Kirche einen festen Platz. Benedikt verweist in seiner Regel auf die Aufnahme von Gästen als Aufnahme Christi selbst, und die Hospize der Klöster beriefen sich auf dieselbe Linie – ein Zusammenhang, der von diesem beiläufigen Satz mitgetragen wird.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Wer reiste, war auf Privatquartiere angewiesen: Gasthäuser galten als schmutzig, teuer und unsicher. Ein Quartier vorzubereiten hieß, ein Zimmer freizumachen, Verpflegung zu besorgen und mit einem Aufenthalt von Tagen oder Wochen zu rechnen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Antike Haft war Untersuchungshaft und diente nicht der Strafe. Gefangene saßen ungetrennt, wurden nicht verpflegt und waren auf Besucher angewiesen. Wer Freunde hatte, überstand sie; wer keine hatte, verhungerte oder erkrankte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Namen im Schlussgruß waren mehr als Höflichkeit: Sie bezeugten, wer zum Kreis gehörte, und verbanden entfernte Gemeinden. Dieselben fünf Namen stehen im Kolosserbrief – ein Netz, das über Briefe sichtbar wird.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Kolossä lag im Lykostal in Phrygien, rund zweihundert Kilometer östlich von Ephesus an der Straße nach Osten. Ein Bote brauchte für diese Strecke etwa eine Woche; für einen entlaufenen Sklaven war Ephesus die nächstgelegene große Stadt, in der man untertauchen konnte.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. xenian',
+        rendered: 'bereite mir die Herberge',
+        note: 'Das Gastquartier, abgeleitet vom Wort für den Fremden. Gemeint ist keine bezahlte Unterkunft, sondern ein Zimmer im Haus des Gastgebers. Die Bitte setzt voraus, dass Philemon Platz hat – und dass er ihn bereitstellt.',
+      },
+      {
+        word: 'griech. synaichmalotos',
+        rendered: 'mein Mitgefangener',
+        note: 'Wörtlich der Mitkriegsgefangene. Ob Epaphras tatsächlich in Haft saß oder ob das Wort die geteilte Lage bezeichnet, ist umstritten. Paulus gebraucht es auch für andere Mitarbeiter an Stellen, wo eine wirkliche Haft nicht bezeugt ist.',
+      },
+      {
+        word: 'griech. synergoi',
+        rendered: 'meine Gehilfen',
+        note: 'Mitarbeiter – ein Wort, das Paulus für Männer und Frauen gleichermaßen gebraucht und das kein Rangverhältnis bezeichnet. Es beschreibt Menschen, die dieselbe Arbeit tun, nicht Untergebene.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Rhetorische Analyse',
+        text: 'Die Ankündigung des Besuchs am Ende einer Bitte ist ein bekanntes Mittel der antiken Empfehlungsrede: Sie macht die Erfüllung überprüfbar, ohne zu drohen. Der Brief nutzt daneben weitere Mittel – das Wortspiel mit dem Namen Onesimus, der „nützlich“ bedeutet, und das Angebot, für den Schaden persönlich aufzukommen.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Übereinstimmung der Namen mit dem Kolosserbrief ordnet beide Schreiben derselben Lage zu. Da der Kolosserbrief in seiner Verfasserschaft umstritten ist, der Philemonbrief aber nicht, wird die Beziehung auch umgekehrt genutzt: Der echte Brief stützt die Angaben des fraglichen.',
+      },
+      {
+        tradition: 'Kirchengeschichtliche Vermutung',
+        text: 'Ignatius von Antiochien nennt um 110 einen Bischof von Ephesus namens Onesimus. Seit dem 19. Jahrhundert wird erwogen, ob es derselbe Mann ist und ob er die Sammlung der Paulusbriefe veranlasst haben könnte – was erklären würde, warum dieses kurze Privatschreiben überhaupt erhalten blieb. Beweisen lässt sich das nicht.',
+      },
+      {
+        tradition: 'Wirkungsgeschichte',
+        text: 'Die Bitte um ein Gastquartier hat in der Gastfreundschaftstradition der Kirche einen festen Platz. Die Benediktsregel verweist auf die Aufnahme des Gastes als Aufnahme Christi; die Hospize der Klöster und später die Herbergen der Diakonie stehen in dieser Linie.',
+      },
+    ],
+    crossRefs: [
+      { book: 'kol', chapter: 4, verse: 10, note: 'Fast dieselben Namen im Schlussgruß' },
+      { book: '2tim', chapter: 4, verse: 10, note: 'Demas hat mich verlassen' },
+      { book: 'hebr', chapter: 13, verse: 2, note: 'Gastfrei zu sein vergesset nicht' },
+    ],
+  },
+  {
+    book: 'jud',
+    chapter: 1,
+    from: 1,
+    to: 16,
+    title: '„daß ihr für den Glauben kämpfet“',
+    historicalShort:
+      'Ein Brief, der ankündigt, über das gemeinsame Heil schreiben zu wollen, und stattdessen eine Warnung schreibt. Was folgt, ist eine Kette von Beispielen aus Texten, von denen zwei nicht in der Bibel stehen.',
+    historicalLong:
+      'Der Verfasser nennt sich Bruder des Jakobus und damit indirekt Bruder Jesu – ein Anspruch, den er auffällig zurückhaltend formuliert: Knecht Jesu Christi, nicht Bruder. Die Evangelien nennen vier Brüder mit Namen, darunter Jakobus und Judas. Jakobus leitete nach Paulus und nach Josephus die Gemeinde in Jerusalem und wurde 62 hingerichtet. Eusebius überliefert zudem eine Nachricht des Hegesipp, wonach Enkel dieses Judas unter Domitian verhört und wieder freigelassen wurden, weil sie schwielige Hände hatten und offenkundig Kleinbauern waren.\n\nDie Beispielreihe folgt einem festen Muster jüdischer Mahnrede: Man führt Fälle aus der Geschichte an, in denen Ungehorsam Folgen hatte. Die Auswahl ist allerdings eigenwillig. Neben dem Volk in der Wüste, Sodom, Kain und Korach stehen zwei Stoffe, die nicht aus der Bibel stammen: der Streit des Erzengels Michael mit dem Teufel um den Leichnam des Mose und ein wörtliches Zitat aus dem ersten Henochbuch. Beide Schriften waren im Judentum des 1. Jahrhunderts verbreitet – von Henoch sind in Qumran elf aramäische Handschriften gefunden worden –, kamen aber später weder in die jüdische noch in die meisten christlichen Kanones. In der äthiopisch-orthodoxen Kirche gehört Henoch bis heute dazu.\n\nDie Bilder für die Gegner sind aus der Natur genommen und alle nach demselben Muster gebaut: etwas, das seinen Zweck verfehlt. Wolken ohne Wasser über einem Land, das auf Regen wartet; Bäume im Herbst ohne Frucht; Wellen, die nur Schaum auswerfen; Sterne, die von ihrer Bahn abkommen und nach denen man deshalb nicht mehr steuern kann. In einer Welt, die nach Gestirnen navigierte und vom Winterregen lebte, war jedes dieser Bilder eine handfeste Enttäuschung.\n\nDer Vorwurf selbst betrifft das Verhalten, nicht die Lehre. Genannt werden das Ausnutzen der Gnade, die Verachtung von Herrschaft, das Prassen bei den gemeinsamen Mahlzeiten und das Ansehen der Person um des Vorteils willen. Die Liebesmahle, von denen die Rede ist, waren die Zusammenkünfte der Gemeinde, bei denen jeder beitrug, was er konnte. Wer nahm, ohne beizutragen, belastete die Ärmsten – Paulus beschreibt in Korinth dasselbe Problem.\n\nDie Wendung vom Glauben, der einmal übergeben ist, gehört zu den frühesten Aussagen darüber, dass es einen festen Bestand an Überlieferung gibt. Das Wort für kämpfen stammt aus dem Wettkampf. Es ist über die Jahrhunderte oft zur Rechtfertigung von Härte gebraucht worden – der Brief selbst verlangt wenige Verse später ausdrücklich Erbarmen.',
+    reception:
+      'Die Zitate aus nichtkanonischen Schriften haben dem Brief seine Anerkennung erschwert. Eusebius zählt ihn im 4. Jahrhundert zu den umstrittenen, Hieronymus nennt die Henoch-Zitate ausdrücklich als Grund für die Vorbehalte, und Luther stellte ihn ans Ende seiner Bibel. Zugleich ist er damit das stärkste Zeugnis dafür, dass die Grenzen der maßgeblichen Schriften im 1. Jahrhundert noch nicht gezogen waren.\n\nDer zweite Petrusbrief übernimmt weite Teile des Judasbriefes und lässt dabei genau die Stellen weg, die aus Henoch und der Mose-Überlieferung stammen. Diese Beobachtung gilt als eines der klarsten Beispiele literarischer Abhängigkeit im Neuen Testament – und zugleich als Beleg dafür, dass sich das Empfinden für Kanongrenzen bereits verschob.\n\nDer Aufruf, für den überlieferten Glauben zu kämpfen, ist zur Losung ganzer Bewegungen geworden. Der Fundamentalismus des frühen 20. Jahrhunderts berief sich darauf, ebenso spätere Abgrenzungsbewegungen. Die Auslegung weist regelmäßig darauf hin, dass derselbe Brief die Abstufung von Erbarmen, Rettung und Vorsicht kennt – und dass er mit einem Segenswort endet, nicht mit einem Urteil.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Liebesmahle waren gemeinsame Essen, zu denen jeder beitrug, was er konnte. Sie waren die Hauptform der Zusammenkunft und zugleich Versorgung der Ärmsten. Wer nahm, ohne beizutragen, belastete sichtbar die anderen – dasselbe Problem beschreibt Paulus in Korinth.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das erste Henochbuch war im Judentum des 1. Jahrhunderts weit verbreitet; in Qumran wurden elf aramäische Handschriften gefunden. Es in einem Brief zu zitieren war für die ersten Leser unproblematisch – die Unterscheidung zwischen maßgeblichen und anderen Büchern war noch nicht getroffen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Wolken ohne Regen, unfruchtbare Bäume im Herbst, Sterne außerhalb ihrer Bahn: Die Bilder stammen aus einer Landschaft, die vom Winterregen lebte, und aus einer Seefahrt, die nach Gestirnen navigierte. Jedes benennt ein Versprechen, das nicht eingelöst wird.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Wandernde Lehrer zogen von Gemeinde zu Gemeinde und lebten von deren Gastfreundschaft. Eine Gemeinde konnte niemanden zwingen und niemanden an der Weiterreise hindern; sie konnte nur warnen und Briefe schreiben. Genau das tut dieser Text.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. pareisedysan',
+        rendered: 'nebeneingeschlichen',
+        note: 'Ein seltenes Wort: sich seitlich hineinschleichen, unbemerkt eindringen. Es beschreibt keinen offenen Gegner, sondern jemanden, der bereits dazugehört – das eigentliche Problem des Briefes ist die Nähe, nicht die Feindschaft.',
+      },
+      {
+        word: 'griech. agapais',
+        rendered: 'bei euren Liebesmahlen',
+        note: 'Die gemeinsamen Mahlzeiten der Gemeinde, benannt nach dem Wort für Liebe. Sie verbanden Sättigung und Feier und waren zugleich die Armenversorgung. Der Vorwurf, sich dort selbst zu weiden, trifft damit einen sozialen Nerv.',
+      },
+      {
+        word: 'griech. asteres planetai',
+        rendered: 'irre Sterne',
+        note: 'Wörtlich Wandelsterne – im Griechischen die Bezeichnung für die Planeten, die sich nicht wie die Fixsterne bewegen. Wer nach dem Himmel navigierte, konnte sich auf sie nicht verlassen. Aus demselben Wort stammt unser Planet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Rückblick auf die Apostel als vergangene Größe und das gepflegte Griechisch sprechen gegen eine sehr frühe Abfassung; die meisten Ausleger setzen den Brief ans Ende des 1. Jahrhunderts. Wer an der Verfasserschaft des Herrenbruders festhält, verweist auf die Kürze und die durchgehend jüdische Denkform.',
+      },
+      {
+        tradition: 'Kanongeschichtliche Beobachtung',
+        text: 'Der Brief zitiert wörtlich aus dem ersten Henochbuch und setzt eine Erzählung über den Leichnam des Mose voraus. Dass er trotzdem aufgenommen wurde, zeigt, wie offen die Grenzen noch waren; dass der zweite Petrusbrief bei der Übernahme genau diese Stellen wegließ, zeigt, wie schnell sie sich schlossen.',
+      },
+      {
+        tradition: 'Jüdischer Hintergrund',
+        text: 'Die Aufzählung warnender Beispiele aus der Geschichte ist eine eingeführte Form jüdischer Mahnrede; das Buch Jesus Sirach und mehrere Qumrantexte arbeiten ebenso. Auch die Verbindung von Engelfall, Sodom und Korach begegnet in dieser Literatur mehrfach – der Brief greift eine bekannte Reihe auf.',
+      },
+      {
+        tradition: 'Kritik der Wirkungsgeschichte',
+        text: 'Der Aufruf zum Kämpfen für den überlieferten Glauben ist zur Losung von Abgrenzungsbewegungen geworden, die sich auf ihn beriefen, ohne den Schluss mitzulesen. Dort steht eine Abstufung – Erbarmen mit den Zweifelnden, Rettung der Gefährdeten, Vorsicht bei den Übrigen –, die im Neuen Testament einmalig ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jud', chapter: 1, verse: 22, note: 'Die Abstufung am Schluss' },
+      { book: '2petr', chapter: 2, verse: 4, note: 'Die Übernahme im Zweiten Petrusbrief' },
+      { book: '1kor', chapter: 11, verse: 21, note: 'Dasselbe Problem beim Gemeindemahl in Korinth' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 5 Abschnitte */
+  {
+    book: 'tit',
+    chapter: 1,
+    from: 1,
+    to: 9,
+    title: '„besetzen die Städte hin und her mit Ältesten“',
+    historicalShort:
+      'Ein Auftrag an einen Mitarbeiter auf einer Insel mit rund hundert Städten: Er soll Älteste einsetzen. Die Liste der Anforderungen, die folgt, ist die früheste erhaltene Stellenbeschreibung einer christlichen Gemeindeleitung.',
+    historicalLong:
+      'Kreta war zur Zeit des Briefes römische Provinz, seit 27 v. Chr. mit der Kyrenaika zu einer Verwaltungseinheit verbunden, verwaltet von Gortyn aus. Die Insel galt als dicht besiedelt; Homer sprach von hundert Städten, und die archäologischen Befunde bestätigen eine ungewöhnliche Zahl von Kleinstädten mit eigener Verfassung. Eine jüdische Bevölkerung ist seit dem 2. Jahrhundert v. Chr. bezeugt, und die Apostelgeschichte nennt Kreter unter den Pfingstbesuchern in Jerusalem. Wie das Christentum dorthin kam, ist unbekannt.\n\nDie Anweisung, in jeder Stadt Älteste einzusetzen, setzt eine bestimmte Lage voraus: Es gibt bereits Gemeinden, aber sie haben keine feste Leitung. Das war um die Mitte des 1. Jahrhunderts der Normalfall. Die frühesten Gemeinden kannten keine Ämter im späteren Sinn, sondern Gastgeber, Wanderprediger und Menschen mit anerkannten Gaben. Erst der Übergang in die zweite und dritte Generation machte dauerhafte Zuständigkeiten nötig – und genau an dieser Nahtstelle steht der Brief.\n\nDas Wort für Ältester stammt aus der Synagoge und aus der griechischen Stadtverwaltung zugleich. In beiden bezeichnete es ein Gremium, keinen Einzelnen. Auffällig ist, dass der Brief im nächsten Satz vom Bischof im Singular spricht, ohne den Wechsel zu erklären. Die verbreitetste Erklärung lautet, dass beide Wörter hier noch dieselbe Sache meinen und die spätere Unterscheidung zwischen Priestern und Bischöfen noch nicht besteht.\n\nDie Anforderungsliste selbst hat eine Vorgeschichte außerhalb der Bibel. Vergleichbare Kataloge sind aus der hellenistischen Popularphilosophie bekannt: Onasander beschreibt in einer Schrift über den Feldherrn dessen Tugenden in fast derselben Form, und Listen für Ärzte, Steuerpächter und Feldherren folgen demselben Muster. Bemerkenswert ist deshalb weniger, was gefordert wird, als was nicht gefordert wird – von Frömmigkeitsübungen, Visionen oder besonderer Begabung ist keine Rede. Verlangt wird bürgerliche Unauffälligkeit.\n\nDer Grund dafür ergibt sich aus der Lage der Gemeinden. Sie waren klein, standen unter Verdacht und lebten in Häusern, deren Türen für die Nachbarschaft nicht verschlossen waren. Ein Leiter, dessen Familie als verwahrlost galt oder der als Trinker bekannt war, gefährdete alle. Die Formel vom Mann einer Frau ist in diesem Zusammenhang zu lesen: Sie schließt vermutlich weder Wiederverheiratung nach Verwitwung noch grundsätzlich Unverheiratete aus, sondern zielt auf eheliche Zuverlässigkeit in einer Gesellschaft, in der Männern erhebliche Freiheiten zugestanden wurden.\n\nDer Briefanfang selbst ist für einen so kurzen Text ungewöhnlich schwer. Er spannt einen Bogen von der Zeit vor der Welt bis zur gegenwärtigen Predigt und nennt Gott und Christus in einem Atemzug „unser Heiland“. Das Wort Heiland – griechisch soter – war im Osten des Reiches ein Kaisertitel; Augustus und seine Nachfolger wurden auf Inschriften so genannt. Wer es hier zweimal auf Gott und Christus anwendet, macht eine Aussage, die jeder Leser einordnen konnte.',
+    reception:
+      'Die Anforderungsliste ist eines der wirkungsreichsten Stücke des Neuen Testaments. Von der Alten Kirche über das kanonische Recht bis in die Kirchenordnungen der Reformation und die Statuten moderner Freikirchen dient sie als Maßstab für die Prüfung von Kandidaten. Der Text der Ordinationsformulare in vielen Kirchen zitiert sie bis heute wörtlich.\n\nDie Formel vom Mann einer Frau hat eine besonders verwickelte Geschichte. Die lateinische Kirche las sie seit dem 4. Jahrhundert als Verbot der zweiten Ehe für Kleriker und begründete mit ihr Schritt für Schritt den Zölibat; die östlichen Kirchen zogen dieselbe Linie enger und ließen verheiratete Priester zu, aber keine Wiederverheiratung. In der Neuzeit ist sie zur Kernstelle der Debatte über geschiedene Amtsträger geworden, und seit dem 20. Jahrhundert wird gestritten, ob sie Frauen vom Leitungsamt ausschließt oder nur die damalige Selbstverständlichkeit spiegelt, dass Hausvorstände Männer waren.\n\nDie Angabe, Paulus habe Titus auf Kreta zurückgelassen, lässt sich in keine bekannte Reise der Apostelgeschichte einfügen. Aus dieser Schwierigkeit entstand seit dem 17. Jahrhundert die Annahme einer vierten Missionsreise nach einer ersten römischen Gefangenschaft – und, als Gegenposition, die These, die Pastoralbriefe stammten von einem Schüler, der das Ansehen des Apostels für die Ordnungsfragen einer späteren Zeit in Anspruch nahm. Beide Positionen werden bis heute vertreten.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Kreta ist 250 Kilometer lang und von einem Gebirgszug geteilt; die Städte lagen an der Nordküste und in den Ebenen. Der Seeweg nach Rom führte an der Insel vorbei, doch der Winter schloss die Häfen. Wer im Oktober nicht fort war, blieb bis März.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Provinz Kreta und Kyrenaika wurde vom Senat verwaltet, nicht vom Kaiser – ein Zeichen dafür, dass sie als befriedet galt und keine Legion brauchte. Für die Städte hieß das lokale Selbstverwaltung mit Ratsversammlungen, in denen dieselben Titel gebraucht wurden wie im Brief.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Ruf eines Mannes hing am Zustand seines Hauses. Wer seine Kinder nicht im Griff hatte, galt als unfähig, öffentliche Verantwortung zu tragen; Cicero und Plutarch argumentieren genauso. Der Brief übernimmt diesen Maßstab, statt ihm einen eigenen entgegenzusetzen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Vorwurf unehrlicher Hantierung zielt auf Gewinn aus dem Amt. Wanderprediger, die sich bezahlen ließen, waren ein bekanntes Ärgernis; Lukian von Samosata spottet über einen, der von Gemeinden lebte. Wer eine Kasse führte, stand unter besonderem Verdacht.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. presbyteros / episkopos',
+        rendered: 'Ältesten',
+        note: 'Zwei Wörter für dieselben Personen: das erste aus der Synagoge und der Stadtverfassung, das zweite aus der Verwaltungssprache – ein episkopos war ursprünglich ein Aufseher über Kassen oder Bauten. Der Wechsel innerhalb von zwei Versen gilt als Beleg dafür, dass die spätere Unterscheidung noch nicht bestand.',
+      },
+      {
+        word: 'griech. oikonomos theou',
+        rendered: 'Haushalter Gottes',
+        note: 'Der Verwalter eines großen Hauses, oft selbst ein Sklave, mit Vollmacht über Vorräte, Personal und Geld. Das Bild sagt zweierlei: Der Leiter verfügt über anvertrautes, nicht über eigenes Gut, und er ist rechenschaftspflichtig.',
+      },
+      {
+        word: 'griech. soter',
+        rendered: 'unsers Heilandes',
+        note: 'Retter oder Erhalter. Der Titel wurde im Osten des Reiches Göttern, Ärzten und vor allem dem Kaiser gegeben; Inschriften nennen Augustus „Retter der Welt“. Der Brief legt ihn in vier Kapiteln sechsmal Gott und Christus bei.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Mehrheit der Forschung hält die Pastoralbriefe für Schreiben eines Paulusschülers aus dem späten 1. oder frühen 2. Jahrhundert; Wortschatz, Stil und der Grad der Ämterbildung weichen von den unbestrittenen Paulusbriefen ab. Eine Minderheit hält an der Verfasserschaft fest und rechnet mit einer Freilassung aus der römischen Haft und weiteren Reisen. Beide Seiten arbeiten mit denselben Daten und gewichten sie verschieden.',
+      },
+      {
+        tradition: 'Katholische Lesart',
+        text: 'Die Stelle gilt als Zeugnis dafür, dass die apostolische Sendung in eingesetzten Ämtern weitergegeben wurde. Das Zweite Vatikanische Konzil beruft sich in seiner Lehre über die Bischöfe auf diesen Zusammenhang. Dass Ältester und Bischof hier noch gleichbedeutend erscheinen, wird als frühe Stufe einer Entwicklung verstanden, deren Ziel die spätere Ordnung war.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin las den Abschnitt als Beweis, dass die Kirche geordnete, aber schlichte Leitung braucht und dass keine Weihe, sondern Prüfung und Berufung durch die Gemeinde den Dienst begründet. Die reformierten Kirchenordnungen übernahmen die Liste als Prüfkatalog. Luther betonte, dass hier keine besondere Heiligkeit verlangt werde, sondern Tauglichkeit.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'In baptistischen und brüderlichen Gemeinden ist die Mehrzahl der Ältesten das entscheidende Wort: Leitung ist gemeinschaftlich, nicht auf eine Person konzentriert. Die Anforderungsliste wird als bindender Maßstab gelesen, den jede Gemeinde selbst anwendet, ohne übergeordnete Instanz.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Die Ausleger weisen darauf hin, dass die Liste ein Haus voraussetzt, dem ein Mann vorsteht, und damit die römische Hausordnung in die Gemeinde einträgt. Wo frühere Texte Frauen als Gastgeberinnen und Mitarbeiterinnen nennen, verschwinden sie hier aus der Leitung. Ob das eine Anpassung an gesellschaftlichen Druck war oder eine bewusste Entscheidung, wird verschieden beurteilt.',
+      },
+    ],
+    crossRefs: [
+      { book: '1tim', chapter: 3, verse: 1, note: 'Die zweite, ausführlichere Liste' },
+      { book: 'apg', chapter: 14, verse: 23, note: 'Älteste in jeder Gemeinde eingesetzt' },
+      { book: '1petr', chapter: 5, verse: 2, note: 'Weidet die Herde, nicht um schändlichen Gewinns willen' },
+      { book: 'apg', chapter: 2, verse: 11, note: 'Kreter unter den Pfingstbesuchern' },
+    ],
+  },
+  {
+    book: 'tit',
+    chapter: 1,
+    from: 10,
+    to: 16,
+    title: '„Die Kreter sind immer Lügner“',
+    historicalShort:
+      'Ein Zitat aus einem heidnischen Dichter wird gegen die Bewohner der Insel gewendet, auf der der Empfänger arbeitet. Der Satz ist zugleich ein berühmtes Rätsel der Logik – und ein hartes Stück Wirkungsgeschichte.',
+    historicalLong:
+      'Der zitierte Satz stammt aus der Antike selbst und wurde schon dort weitergereicht. Zugeschrieben wird er Epimenides von Knossos, einem halb sagenhaften Weisen des 6. Jahrhunderts v. Chr., dem man Wunder, einen fünfzigjährigen Schlaf und die Reinigung Athens von einer Seuche nachsagte. Ob die Zeile wirklich von ihm stammt, ist ungewiss; Kallimachos verwendet den ersten Teil im 3. Jahrhundert v. Chr. in einem Zeushymnus. Der Vorwurf der Lüge hatte dort einen bestimmten Anlass: Die Kreter zeigten ein Grab des Zeus, was für die übrige griechische Welt Gotteslästerung war, weil Zeus nicht sterben kann.\n\nDaraus wurde ein Sprichwort. Das griechische Verb kretizein, kretisch reden, bedeutete schlicht lügen; ähnliche Spottwörter gab es für andere Landschaften. Antike Ethnographie arbeitete durchweg mit solchen Zuschreibungen: Plutarch, Livius und Polybios versehen ganze Völker mit festen Eigenschaften, und Polybios erklärt die kretische Habsucht sogar aus der Verfassung der Insel. Wer den Satz zitierte, tat also etwas Alltägliches – und etwas, das nach heutigem Verständnis ein ethnisches Vorurteil ist.\n\nDie Logik hat daran später ein Problem entdeckt. Wenn ein Kreter sagt, alle Kreter lügen immer, dann widerlegt der Satz sich selbst, sobald er wahr sein soll. Die Antike kannte das Paradox in einer verwandten Form als Lügner-Antinomie; Chrysipp widmete ihm mehrere Bücher, und Philetas von Kos soll daran zugrunde gegangen sein. In der Neuzeit steht es am Anfang der Arbeiten von Bertrand Russell und Kurt Gödel über die Grenzen formaler Systeme. Der Brief selbst zeigt kein Interesse an dieser Seite; er zitiert die Zeile als Charakterurteil und bestätigt sie ausdrücklich.\n\nDie Gegner, um die es geht, werden nur unscharf beschrieben. Genannt werden jüdische Fabeln, Gebote von Menschen und Streit über Reinheit – dazu der Vorwurf, ganze Häuser zu verkehren und Geld zu nehmen. Man hat darin eine Frühform der späteren gnostischen Systeme gesehen, andere denken an judenchristliche Lehrer, die Speise- und Reinheitsregeln durchsetzen wollten, wieder andere an Spekulationen über Stammbäume, wie sie das Buch der Jubiläen und andere jüdische Schriften der Zeit pflegen. Sicher ist nur, dass der Streit in Häusern ausgetragen wurde, also in den Wohnungen, in denen sich die Gemeinden versammelten.\n\nDer Satz vom Reinen, dem alles rein ist, greift eine Debatte auf, die das ganze frühe Christentum durchzieht. Er steht in einer Linie mit dem Streit über Speisegesetze in Antiochien und mit der Vision des Petrus in Joppe. Neu ist die Zuspitzung: Nicht die Sache ist rein oder unrein, sondern der Mensch, der mit ihr umgeht. Das ist eine Verlagerung, die die jüdische Reinheitsordnung nicht bestreitet, sondern von innen her entwertet – und die im 2. Jahrhundert zum Argument dafür wurde, dass Christen die Gebote nicht mehr halten mussten.',
+    reception:
+      'Das Kreterzitat hat eine unglückliche Karriere gemacht. Als biblisch bestätigtes Werturteil über ein ganzes Volk diente es über Jahrhunderte als Beispiel dafür, dass die Schrift ethnische Charakterurteile deckt; noch Kommentare des 19. Jahrhunderts erklären den kretischen Nationalcharakter im Ernst. Die neuere Auslegung liest den Vers dagegen fast durchgehend als Zitat einer zeitgenössischen Redensart, für dessen Inhalt der Text nicht einsteht – wobei die ausdrückliche Bestätigung im nächsten Halbsatz diese Entlastung erschwert.\n\nIn der Philosophie ist der Vers zum Standardbeispiel geworden. Von den mittelalterlichen Logikern über die insolubilia-Traktate des 14. Jahrhunderts bis zu Russells Typentheorie und Gödels Unvollständigkeitssätzen wird er zitiert, meist ohne Rücksicht darauf, dass der Bibeltext nicht auf Logik zielt. Douglas Hofstadter hat ihn 1979 einem breiten Publikum bekannt gemacht.\n\nDer Satz über die Reinen hat eine ganz andere Wirkung entfaltet. Augustinus zog ihn heran, um zu zeigen, dass die Gesinnung über den Wert einer Handlung entscheidet; Luther zitierte ihn gegen Speise- und Fastengebote, und in den Streitigkeiten der Reformationszeit über Zeremonien war er ein Hauptargument. Kritiker halten dagegen, dass er sich leicht dazu missbrauchen lässt, jede Handlung durch die richtige Absicht zu rechtfertigen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Antike Völkerkunde ordnete jedem Volk feste Eigenschaften zu: Kreter galten als verlogen, Kappadokier als dumm, Karthager als treulos. Solche Urteile standen in Handbüchern und Reden und galten als Wissen, nicht als Beleidigung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Kreter zeigten ein Grab des Zeus auf dem Berg Iuktas. Für die übrige griechische Welt war das ein Skandal, denn Götter sterben nicht. Aus diesem Streit stammt der Vorwurf der Lüge ursprünglich – ein religiöser, kein moralischer Vorwurf.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Kreta lebte von Schafzucht, Öl, Wein und – nach antiken Berichten – von Söldnerdienst und Seeraub. Polybios führt die Habsucht der Kreter auf ihre Verfassung zurück, die privaten Gewinn zuließ, wo andere Städte ihn beschränkten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Reinheitsfragen betrafen den Alltag unmittelbar: Was auf den Tisch kam, mit wem man aß, wer ein Haus betreten durfte. Wer die Regeln änderte, änderte den Tagesablauf ganzer Familien – deshalb wurde darüber so heftig gestritten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. Kretes aei pseustai',
+        rendered: 'Die Kreter sind immer Lügner',
+        note: 'Eine Zeile im Hexameter, zugeschrieben Epimenides von Knossos, teilweise auch bei Kallimachos. Das Verb kretizein bedeutete im Griechischen schlicht lügen. Der Brief nennt den Dichter „ihren eigenen Propheten“ – wohl ironisch.',
+      },
+      {
+        word: 'griech. mythoi Ioudaikoi',
+        rendered: 'jüdischen Fabeln',
+        note: 'Das Wort mythos bezeichnet erzählte Überlieferung ohne Anspruch auf Tatsächlichkeit. Womit die Gegner sich beschäftigten, bleibt offen: Erweiterungen biblischer Erzählungen, Stammbaumspekulationen oder Reinheitsregeln kommen in Frage.',
+      },
+      {
+        word: 'griech. katharos',
+        rendered: 'rein',
+        note: 'Im Griechischen zugleich kultisch, körperlich und sittlich gebraucht. Der Satz spielt mit dieser Mehrdeutigkeit: Er verschiebt die Reinheit von den Dingen auf den Menschen und trifft damit die Grundlage der Speise- und Berührungsregeln.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt gilt als Beispiel für Polemik nach festen Mustern: Die Gegner werden mit Standardvorwürfen belegt – Geldgier, Schwatzhaftigkeit, Umtriebe in Häusern –, die sich in fast gleicher Form bei Philosophen gegen ihre Konkurrenten finden. Über die tatsächlichen Lehren der Gegner lässt sich daraus wenig gewinnen.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Hieronymus, der selbst einen Kommentar zu diesem Brief schrieb, verteidigte das Zitat eines heidnischen Dichters mit dem Hinweis, auch Paulus habe in Athen so gesprochen: Wahrheit bleibe Wahrheit, gleich wer sie sagt. Chrysostomos betonte, der Tadel gelte nicht dem Volk, sondern denen, die in der Gemeinde Unruhe stifteten.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las den Satz vom Reinen als Kernstelle gegen selbstgemachte Gebote und Zeremonien; die Reinheit komme aus dem Glauben, nicht aus der Enthaltung. Calvin mahnte zugleich, aus dem Satz keine Freiheit zur Willkür abzuleiten – rein sei, wer das Gewissen nicht gegen sich habe.',
+      },
+      {
+        tradition: 'Philosophische Rezeption',
+        text: 'Als Lügner-Paradox ist die Zeile aus der Geschichte der Logik nicht wegzudenken. Ob ein Kreter, der diesen Satz sagt, ihn wahr machen kann, führt auf Widersprüche, die erst mit der Unterscheidung von Sprachebenen im 20. Jahrhundert handhabbar wurden. Der biblische Text stellt diese Frage nicht.',
+      },
+      {
+        tradition: 'Postkoloniale Kritik',
+        text: 'Die Ausleger halten fest, dass hier ein Missionar die verächtliche Redensart der Kolonialmacht über die Einheimischen übernimmt und mit apostolischer Autorität bekräftigt. Dass ein solcher Satz im Kanon steht, sei nicht wegzuerklären, sondern als Warnung zu lesen: Auch Verkündigung übernimmt die Vorurteile ihrer Zeit.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 17, verse: 28, note: 'Ein weiteres Zitat aus einem griechischen Dichter' },
+      { book: 'mk', chapter: 7, verse: 15, note: 'Nichts, was von außen kommt, macht unrein' },
+      { book: 'apg', chapter: 10, verse: 15, note: 'Was Gott gereinigt hat, mache du nicht gemein' },
+      { book: '1tim', chapter: 4, verse: 4, note: 'Alle Kreatur Gottes ist gut' },
+    ],
+  },
+  {
+    book: 'tit',
+    chapter: 2,
+    from: 1,
+    to: 10,
+    title: '„Den Knechten sage“ – Alter, Geschlecht, Stand',
+    historicalShort:
+      'Eine Ordnung nach Alter, Geschlecht und Stand: alte Männer, alte Frauen, junge Frauen, junge Männer, Sklaven. Solche Listen gab es in der Philosophie der Zeit – und die Frage, warum das Christentum sie übernahm, ist bis heute offen.',
+    historicalLong:
+      'Was hier steht, heißt in der Forschung Haustafel. Die Gattung ist älter als das Christentum: Aristoteles behandelt in der Politik die drei Verhältnisse Mann–Frau, Vater–Kind, Herr–Sklave als Grundlage der Hausgemeinschaft, und die stoische Pflichtenlehre baute daraus feste Kataloge. Seneca, Hierokles und Epiktet schreiben ähnliche Listen; das Haus galt als der Ort, an dem sich Tugend bewährt, und als Modell des Staates im Kleinen.\n\nDer Zuschnitt hier ist ungewöhnlich. Statt der drei Paare stehen fünf Gruppen, geordnet nach Alter und Geschlecht, und die Anweisungen richten sich nicht an Hausväter über ihre Untergebenen, sondern an alle einzeln. Auffällig ist auch, dass die Sklaven am ausführlichsten bedacht sind und dass ihnen ein Zweck genannt wird: Sie sollen die Lehre zieren. Ein Mensch ohne Rechte wird damit als Träger des öffentlichen Ansehens der Gemeinde angesprochen – eine Zumutung und eine Aufwertung zugleich.\n\nDer Hintergrund ist der Verdacht, unter dem die Gemeinden standen. Neue Kulte galten in Rom als staatsgefährdend, wenn sie Häuser spalteten. Der Vorwurf, Christen brächten Frauen und Sklaven gegen ihre Herren auf, ist bei Celsus im 2. Jahrhundert ausdrücklich belegt, und Tacitus und Sueton spiegeln dieselbe Stimmung. Die zweimal genannte Absicht – damit das Wort Gottes nicht verlästert werde, damit der Widersacher nichts zu sagen habe – benennt das Motiv offen: Es geht um den Ruf nach außen.\n\nDie Anweisung an die älteren Frauen ist die einzige Stelle, die eine Aufgabe überträgt. Sie sollen gute Lehrerinnen sein und die jüngeren unterweisen – ein anerkannter Unterricht von Frauen für Frauen, in einer Gesellschaft, in der Mädchen oft mit dreizehn oder vierzehn verheiratet wurden und ihre Schwiegermütter die einzigen Lehrerinnen der Haushaltsführung waren. Zugleich steht daneben die Warnung vor Weinsucht, die für ältere Frauen ein verbreiteter Spott der Zeit war; römische Satiriker greifen ihn regelmäßig auf.\n\nDas Wort für häuslich, mit dem die jungen Frauen bedacht werden, ist textkritisch umstritten. Ein Teil der Handschriften hat oikourous, Hüterinnen des Hauses, ein anderer oikourgous, im Haus arbeitend. Der Unterschied ist ein Buchstabe und in der Sache erheblich: Das erste Wort bezeichnet ein Ideal aus der klassischen griechischen Literatur, das zweite eine Tätigkeit. Die kritischen Ausgaben bevorzugen heute die zweite Lesart.\n\nDie Anweisung an die Sklaven schließlich verlangt Unterordnung und verbietet Unterschlagung – ein realistischer Punkt, denn Haussklaven verwalteten Einkäufe und Kassen, und kleiner Diebstahl galt als ihr übliches Mittel. Was der Text nicht tut, ist ebenso bemerkenswert: Er sagt den Herren nichts. Anders als die Haustafeln in Epheser und Kolosser fehlt hier die Gegenanweisung völlig.',
+    reception:
+      'Die Haustafeln gehören zu den umkämpftesten Texten des Neuen Testaments. In der Reformationszeit wurden sie zur Grundlage der Drei-Stände-Lehre: Luther sah in ihnen die göttliche Ordnung von Haus, Obrigkeit und Kirche beschrieben und ließ sie in den Kleinen Katechismus aufnehmen. Bis ins 19. Jahrhundert dienten sie in Predigt und Schulunterricht als Beschreibung der von Gott gewollten Gesellschaft.\n\nDie Anweisung an die Sklaven wurde in den Sklavereidebatten des 18. und 19. Jahrhunderts von beiden Seiten in Anspruch genommen. Verteidiger der Sklaverei in den amerikanischen Südstaaten führten sie als Beleg dafür an, dass die Schrift die Einrichtung nicht verurteile; Abolitionisten hielten dagegen, dass eine Anweisung an Betroffene keine Billigung des Zustands sei, und verwiesen auf den Philemonbrief. Die Debatte hat den Text bis heute belastet.\n\nSeit dem 20. Jahrhundert ist er vor allem ein Prüfstein der Auslegungslehre. Die Frage lautet, ob solche Anordnungen zeitbedingte Anpassung an die Umwelt sind oder überzeitliche Weisung – und die Antwort darauf entscheidet weit über diesen Text hinaus, etwa in den Auseinandersetzungen über die Stellung von Frauen in Kirche und Ehe. Zugleich weisen Ausleger darauf hin, dass die klassische Haustafel den Hausvater anredet, dieser Text aber jede Gruppe selbst – was ihn, gemessen an Aristoteles, eher aufwertend als bestätigend liest.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das römische Haus war eine Rechts- und Wirtschaftseinheit unter einem Hausvater, dem Frau, Kinder, Sklaven und Freigelassene zugeordnet waren. Wer diese Ordnung störte, galt als Gefahr für den Staat, denn der Staat verstand sich als Haus im Großen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Mädchen wurden früh verheiratet, oft mit dreizehn oder vierzehn, an deutlich ältere Männer. Was sie über Haushalt, Kinder und Umgang mit dem Mann wussten, lernten sie von älteren Frauen. Der Auftrag an die alten Frauen beschreibt insofern eine bestehende Praxis.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Haussklaven führten Einkäufe, verwalteten Vorräte und Geld. Kleiner Diebstahl galt als übliches Risiko und wird in Komödien und Rechtstexten dauernd verhandelt. Das Verbot der Veruntreuung trifft damit den Punkt, an dem Vertrauen im Haushalt entschied.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Rom beobachtete fremde Kulte danach, ob sie Häuser spalteten. Der Bacchanalienskandal von 186 v. Chr. hatte zu massenhaften Hinrichtungen geführt. Eine Gemeinde, der man Aufwiegelung von Frauen und Sklaven vorwerfen konnte, war deshalb in Gefahr.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. sophron',
+        rendered: 'züchtig',
+        note: 'Das Wort und seine Ableitungen stehen im Abschnitt fünfmal. Es bezeichnet in der griechischen Ethik die Beherrschung der eigenen Antriebe und gilt seit Platon als eine der vier Grundtugenden. Der Brief macht sie zum Leitwort für alle Altersgruppen.',
+      },
+      {
+        word: 'griech. kalodidaskaloi',
+        rendered: 'gute Lehrerinnen',
+        note: 'Ein Wort, das sonst nirgends belegt ist. Es setzt aus „gut“ und „lehrend“ eine Aufgabe für ältere Frauen zusammen – ein anerkannter Unterricht, auch wenn er auf den Kreis der jüngeren Frauen beschränkt bleibt.',
+      },
+      {
+        word: 'griech. oikourgous / oikourous',
+        rendered: 'häuslich',
+        note: 'Die Handschriften schwanken um einen Buchstaben: „im Haus arbeitend“ oder „das Haus hütend“. Die zweite Form ist ein Ideal aus der klassischen Literatur, die erste eine Tätigkeitsangabe. Heutige Ausgaben bevorzugen die erste.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt zeigt eine Gemeinde, die sich auf Dauer einrichtet und ihre Außenwirkung bedenkt. Die Forschung spricht von bürgerlicher Konsolidierung: Die Naherwartung tritt zurück, an ihre Stelle treten Ordnung und Unauffälligkeit. Ob das als Verrat an einem freieren Anfang oder als notwendige Überlebensbedingung zu werten ist, wird verschieden beantwortet.',
+      },
+      {
+        tradition: 'Lutherische Auslegung',
+        text: 'Luther nahm die Haustafel in den Kleinen Katechismus auf und verstand sie als Beschreibung der Stände, in denen der Glaube sich bewährt. Der Dienst im Haus sei nicht geringer als der im Kloster – ein Gedanke, der die Bewertung weltlicher Arbeit nachhaltig verändert hat. Die Kehrseite ist die Festschreibung bestehender Verhältnisse als göttliche Ordnung.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Der Text gilt als Beleg dafür, wie sich die frühe Bewegung an die Umwelt anpasste. Wo ältere Briefe Frauen als Apostelinnen, Diakoninnen und Gemeindeleiterinnen nennen, werden sie hier auf Haus und Ehe verwiesen. Zugleich betonen manche Auslegerinnen, dass hier Frauen ein eigener Lehrauftrag zugesprochen wird, den spätere Ordnungen strichen.',
+      },
+      {
+        tradition: 'Befreiungstheologische Lesart',
+        text: 'Dass den Sklaven Anweisungen gegeben werden, den Herren aber nicht, wird als Zeichen dafür gelesen, dass der Text aus der Sicht der Bessergestellten geschrieben ist. Er verlangt Anpassung von denen, die ohnehin nichts zu sagen haben. Die Aufforderung, die Lehre zu zieren, wird dagegen als unerwartete Würdigung verstanden: Der Ruf des Ganzen hängt an den Geringsten.',
+      },
+      {
+        tradition: 'Evangelikale Auslegung',
+        text: 'Die Anweisungen werden als bleibende Weisung für ein geordnetes Leben verstanden, das dem Evangelium Glaubwürdigkeit verschafft. Betont wird der doppelte Zweck: Die Lehre soll nicht verlästert, sondern geziert werden – Lebensführung als Argument. Über die Frage, welche Einzelheiten zeitbedingt sind, wird auch innerhalb dieser Auslegung gestritten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'eph', chapter: 5, verse: 22, note: 'Die ausführlichste Haustafel des Neuen Testaments' },
+      { book: 'kol', chapter: 3, verse: 18, note: 'Dieselbe Gattung, mit Anweisung auch an die Herren' },
+      { book: '1petr', chapter: 2, verse: 18, note: 'Sklaven im Blick auf den Ruf nach außen' },
+      { book: 'phlm', chapter: 1, verse: 16, note: 'Ein Sklave als Bruder' },
+    ],
+  },
+  {
+    book: 'tit',
+    chapter: 3,
+    from: 1,
+    to: 2,
+    title: '„den Fürsten und der Obrigkeit untertan“',
+    historicalShort:
+      'Zwei Verse über das Verhältnis zum Staat – knapper als der berühmte Abschnitt im Römerbrief und ohne dessen theologische Begründung. Was folgt, ist keine Staatslehre, sondern eine Anweisung zum Auftreten.',
+    historicalLong:
+      'Die Gemeinden auf Kreta lebten in einer senatorischen Provinz mit ausgeprägter Selbstverwaltung. Die beiden griechischen Wörter, die Luther mit Fürsten und Obrigkeit übersetzt, bezeichnen weniger den Kaiser in Rom als die örtlichen Amtsträger: Ratsherren, Stadtbeamte, den Statthalter und seine Leute. Der Alltag berührte den Staat über Steuern, Gerichte, Marktaufsicht und die öffentlichen Feste, bei denen die Teilnahme zugleich Bürgerpflicht und Gottesdienst war.\n\nDas Wort für gehorsam sein ist im Griechischen ein anderes als das für untertan sein. Das erste meint das Befolgen konkreter Anordnungen, das zweite die Anerkennung einer Rangordnung. Beides zusammen beschreibt eine Haltung, die keine Begeisterung verlangt und keine Zustimmung zur Herrschaft selbst. Auffällig ist, was nicht gesagt wird: Es fehlt jede Aussage darüber, dass die Obrigkeit von Gott eingesetzt sei, wie sie der Römerbrief macht. Hier steht nur die praktische Weisung.\n\nDer zweite Vers erweitert den Kreis über die Behörden hinaus auf alle Menschen. Niemand lästern, nicht hadern, gelinde sein – das sind Begriffe aus der griechischen Rhetorik und Ethik. Besonders das Wort für gelinde bezeichnet die Fähigkeit, auf das eigene Recht zu verzichten, wo strenges Recht Unrecht schaffen würde. Aristoteles behandelt sie als Korrektiv des Gesetzes; sie galt als Tugend guter Richter und großzügiger Herrscher. Von einer bedrängten Minderheit wird sie hier als Alltagshaltung verlangt.\n\nDer historische Ort ist entscheidend. Christen waren keine anerkannte Religionsgemeinschaft; sie hatten keinen Rechtsstatus, keine Vertretung, keine Möglichkeit zu klagen. Wer als Unruhestifter auffiel, konnte ohne großen Aufwand belangt werden. Plinius der Jüngere beschreibt zwei Generationen später, wie ein Statthalter mit Anzeigen gegen Christen verfuhr: Wer beim Namen blieb, wurde hingerichtet. Vor diesem Hintergrund ist die Anweisung weniger Loyalitätserklärung als Überlebensregel.\n\nZugleich beschreibt der nächste Satz des Briefes, wie die Angeredeten selbst gewesen seien: unverständig, ungehorsam, irregehend, in Bosheit und Neid. Die Anweisung zur Sanftmut wird also nicht aus Überlegenheit begründet, sondern aus der Erinnerung an die eigene Vergangenheit. Diese Verknüpfung ist für den Abschnitt kennzeichnend und wird in der Auslegung oft übersehen, weil die beiden Verse meist für sich zitiert werden.',
+    reception:
+      'Die Stelle ist der kleine Bruder von Römer 13 und hat dessen Wirkungsgeschichte geteilt, ohne je dieselbe Berühmtheit zu erlangen. In den Obrigkeitslehren der Reformationszeit wurde sie regelmäßig mitzitiert; die Augsburgische Konfession führt sie unter den Belegstellen für die Pflicht des Christen gegenüber der weltlichen Ordnung.\n\nIm 20. Jahrhundert stand sie im Zentrum derselben Auseinandersetzung wie der Römerbrieftext. Deutsche Christen beriefen sich nach 1933 auf beide Stellen, um Gehorsam gegen den Staat zu fordern; die Bekennende Kirche hielt in der Barmer Erklärung dagegen, dass der Staat nicht Herr über die Verkündigung sei. Nach 1945 wurde die Auslegung durchgängig um die Frage nach der Grenze des Gehorsams erweitert und in der Regel mit dem Satz aus der Apostelgeschichte verbunden, man müsse Gott mehr gehorchen als den Menschen.\n\nDie zweite Hälfte hat eine eigene, stillere Wirkung. Die Aufforderung, gegen alle Menschen sanftmütig zu sein, wurde in der Alten Kirche als Kennzeichen christlichen Auftretens hervorgehoben; der Brief an Diognet beschreibt Christen in ähnlichen Worten. In der Friedensethik der Täufer und Quäker gehört sie zu den Kernstellen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Kreta war senatorische Provinz ohne Legion, verwaltet von Gortyn aus. Die Christen begegneten dem Staat vor allem als Stadtrat, Marktaufsicht und Steuerpächter – nicht als fernem Kaiser, sondern als Nachbarn mit Amt.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Christen hatten keinen Rechtsstatus. Anders als die jüdischen Gemeinden, denen Rom eigene Rechte zugestand, konnten sie sich auf nichts berufen. Eine Anzeige genügte, um in ein Verfahren zu geraten, dessen Ausgang vom Statthalter abhing.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Öffentliche Feste, Opfer und Spiele waren Bürgerpflicht und Gottesdienst zugleich. Wer fernblieb, galt als menschenfeindlich. Der Vorwurf des Hasses gegen das Menschengeschlecht, den Tacitus überliefert, hat hier seinen Ursprung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Streit wurde in kleinen Städten öffentlich ausgetragen und blieb im Gedächtnis. Wer als Händelsucher galt, schadete allen, die zu ihm gehörten. Die Warnung vor dem Hadern zielt auf diese Öffentlichkeit, nicht auf innere Sanftmut.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. archais exousiais',
+        rendered: 'den Fürsten und der Obrigkeit',
+        note: 'Zwei Begriffe für Amtsgewalt, hier auf die örtliche Verwaltung bezogen: Ratsherren, Beamte, Statthalter. Dieselben Wörter bezeichnen bei Paulus anderswo überirdische Mächte – der Zusammenhang entscheidet.',
+      },
+      {
+        word: 'griech. epieikeis',
+        rendered: 'gelinde',
+        note: 'Die Fähigkeit, auf das eigene Recht zu verzichten, wo strenges Recht Unrecht schüfe. Aristoteles behandelt sie als Korrektiv des Gesetzes; sie galt als Tugend guter Richter. Der Brief verlangt sie von Menschen ohne jede Macht.',
+      },
+      {
+        word: 'griech. praytes',
+        rendered: 'Sanftmütigkeit',
+        note: 'In der griechischen Ethik die Mitte zwischen Jähzorn und Gleichgültigkeit – nicht Schwäche, sondern beherrschter Zorn. Das Neue Testament gebraucht das Wort auffällig oft und verbindet es mit Stärke, nicht mit Nachgiebigkeit.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Weisung gehört zum Bemühen der zweiten Generation, den Gemeinden ein unauffälliges Auftreten zu sichern. Anders als Römer 13 fehlt jede theologische Begründung der staatlichen Gewalt; es geht um Verhalten, nicht um Legitimation. Diese Zurückhaltung wird von manchen Auslegern als bewusst gelesen.',
+      },
+      {
+        tradition: 'Lutherische Auslegung',
+        text: 'Die Stelle wird der weltlichen Ordnung zugeordnet, in der der Christ als Bürger lebt, während das Evangelium sein Gewissen bindet. Gehorsam gilt, solange die Obrigkeit nicht Glauben und Verkündigung antastet. Die Barmer Erklärung von 1934 hat diese Grenze gegen den damaligen Missbrauch der Stelle ausdrücklich festgehalten.',
+      },
+      {
+        tradition: 'Täuferische und pazifistische Auslegung',
+        text: 'Mennoniten und Quäker lesen den Abschnitt von seiner zweiten Hälfte her: Sanftmut gegen alle Menschen sei das eigentliche Thema, Gehorsam gegenüber Ämtern nur ein Sonderfall davon. Wo der Staat Gewalt verlangt, endet die Gefolgschaft; das Christentum sei kein Ordnungsfaktor, sondern eine eigene Lebensform.',
+      },
+      {
+        tradition: 'Katholische Soziallehre',
+        text: 'Die Enzykliken verbinden die Stelle mit der Pflicht zum Gemeinwohl: Christen sollen sich am öffentlichen Leben beteiligen, nicht nur nicht stören. Zugleich wird das Widerstandsrecht gegen ungerechte Gesetze festgehalten – ein Gedanke, der schon bei Thomas von Aquin ausgearbeitet ist.',
+      },
+      {
+        tradition: 'Politische Theologie',
+        text: 'Kritiker halten fest, dass solche Texte über Jahrhunderte zur Ruhigstellung der Beherrschten gedient haben. Sie verweisen darauf, dass hier eine machtlose Minderheit angeredet wird und dass die Übertragung auf Staatskirchen mit Zwangsmitteln die Lage umkehrt: Aus einer Überlebensregel wurde ein Herrschaftsmittel.',
+      },
+    ],
+    crossRefs: [
+      { book: 'roem', chapter: 13, verse: 1, note: 'Die ausführliche Parallele' },
+      { book: '1petr', chapter: 2, verse: 13, note: 'Untertan um des Herrn willen' },
+      { book: 'apg', chapter: 5, verse: 29, note: 'Die Grenze des Gehorsams' },
+      { book: 'tit', chapter: 3, verse: 3, note: 'Die Begründung im nächsten Satz' },
+    ],
+  },
+  {
+    book: 'tit',
+    chapter: 3,
+    from: 9,
+    to: 15,
+    title: '„komm eilend zu mir gen Nikopolis“',
+    historicalShort:
+      'Der Schluss nennt vier Namen, einen Ort und einen Winter. Solche Angaben sind das stärkste Argument derer, die den Brief für echt halten – und das schwierigste Problem für die, die es nicht tun.',
+    historicalLong:
+      'Nikopolis, die Siegesstadt, war eine Gründung des Augustus. Er ließ sie 31 v. Chr. an der Stelle errichten, an der sein Heer vor der Seeschlacht bei Actium gelagert hatte, und siedelte die Bevölkerung ganzer Landschaften Westgriechenlands dorthin um. Die Stadt bekam Spiele nach olympischem Vorbild, einen Hafen an zwei Buchten und den Rang einer freien Stadt. Sie war damit ein Verkehrsknoten zwischen Italien und Griechenland – ein sinnvoller Ort, um zu überwintern und im Frühjahr weiterzureisen. Epiktet, der Stoiker, hielt dort später seine Schule.\n\nDie Angabe über den Winter ist keine Nebensache. Die Schifffahrt im Mittelmeer ruhte nach römischer Auffassung zwischen November und März; Vegetius nennt den 11. November als Ende und den 10. März als Beginn der sicheren Fahrt. Wer im Herbst nicht am Ziel war, saß fest. Reisepläne der antiken Briefe sind deshalb immer auch Jahreszeitpläne, und die Aufforderung, eilend zu kommen, hat einen praktischen Grund.\n\nVier Personen werden genannt. Artemas kommt sonst im Neuen Testament nicht vor; sein Name leitet sich von der Göttin Artemis her, was auf eine heidnische Herkunft deutet. Tychikus begegnet mehrfach als Überbringer von Briefen. Zenas trägt den Titel eines Gesetzeskundigen – unklar bleibt, ob damit ein jüdischer Schriftgelehrter oder ein römischer Jurist gemeint ist; beide Berufe hießen im Griechischen so. Apollos schließlich ist aus Korinth und Ephesus bekannt, ein gebildeter Redner aus Alexandria.\n\nDie Anweisung, die beiden mit Fleiß abzufertigen, meint die Ausstattung für die Weiterreise: Wegzehrung, Geld, Empfehlungsschreiben, gegebenenfalls Begleitung. Solche Unterstützung reisender Verkündiger ist im dritten Johannesbrief mit demselben Wort beschrieben und war die materielle Grundlage der frühchristlichen Verbindung zwischen den Gemeinden. Ohne Herbergsnetz und Reisekasse gab es keine gemeinsame Bewegung.\n\nDie Warnung vor törichten Fragen und Geschlechtsregistern greift den Anfang des Briefes wieder auf. Stammbaumforschung war in der jüdischen Überlieferung ein ernstes Geschäft, das über Priesterwürde und Heiratsfähigkeit entschied; Josephus betont eigens, dass er seine Abstammung aus öffentlichen Registern belegen kann. In hellenistischen Kreisen wuchsen daraus Spekulationen über Reihen himmlischer Wesen, wie sie später die gnostischen Systeme ausbauten. Der Brief entscheidet den Streit nicht, er bricht ihn ab.\n\nDas Wort, das Luther mit ketzerisch übersetzt, meint an dieser Stelle noch nicht falsche Lehre, sondern die Bildung einer Partei. Es kommt vom Wählen und bezeichnete zunächst eine philosophische Schulrichtung – Josephus nennt Pharisäer und Sadduzäer mit demselben Wort. Erst allmählich verengte es sich zum Begriff der Häresie. Was hier gefordert wird, ist deshalb nicht ein Lehrurteil, sondern der Ausschluss eines Menschen, der nach zwei Ermahnungen weiter spaltet.',
+    reception:
+      'Die Anweisung, einen spaltenden Menschen nach zweimaliger Ermahnung zu meiden, ist zur Grundlage kirchlicher Verfahren geworden. Das mittelalterliche Kirchenrecht verband sie mit der Regel aus dem Matthäusevangelium zu einem festen Ablauf; die reformatorischen Kirchenordnungen und später die Gemeindeordnungen der Freikirchen übernahmen ihn. Die Zahl zwei bekam dabei Gewicht: Sie begrenzte das Verfahren und verhinderte endlose Auseinandersetzung.\n\nDie Übersetzungsgeschichte des Wortes ist folgenreich. Die lateinische Bibel gab es mit haereticus wieder, und von dort wanderte es in die europäischen Sprachen als Ketzer. Damit wurde aus einer Anweisung über Parteibildung eine Vollmacht gegen Andersdenkende. Die Reformatoren kritisierten diesen Gebrauch und wurden ihrerseits mit demselben Vers bedacht; die neuere Auslegung betont übereinstimmend, dass die Stelle Verhalten meint, nicht Lehrmeinung.\n\nNikopolis selbst blieb der Kirche in Erinnerung. Die Stadt hatte einen Bischofssitz, ihre Basiliken mit Mosaikböden aus dem 5. und 6. Jahrhundert sind ausgegraben, und die Ausgrabungen im heutigen Preveza zeigen eine bedeutende spätantike Gemeinde. Die griechisch-orthodoxe Überlieferung verbindet den Ort ausdrücklich mit dieser Briefstelle.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Nikopolis lag an der Meerenge von Actium mit zwei Häfen, einem zum Ionischen Meer, einem zum Ambrakischen Golf. Wer von Italien nach Griechenland wollte, kam hier vorbei. Augustus hatte die Stadt nach seinem Sieg von 31 v. Chr. gegründet und mit umgesiedelter Bevölkerung gefüllt.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Von November bis März ruhte die Seefahrt. Wer reiste, plante um diese Sperre herum und überwinterte, wo er im Herbst ankam. Eine Einladung zum Überwintern war deshalb eine Einladung für vier Monate, nicht für einen Besuch.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Abstammung entschied über Rang. In jüdischen Familien belegten Register die Priesterwürde und die Heiratsfähigkeit; in griechischen Städten hing das Bürgerrecht an der Herkunft. Streit über Stammbäume war deshalb Streit über Ansprüche.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Reisende Verkündiger lebten von der Ausstattung durch die Gemeinden: Wegzehrung, Sandalen, ein Empfehlungsbrief, manchmal Geld für die Schiffspassage. Wer sie ausrüstete, wurde als Teilhaber ihrer Arbeit betrachtet.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hairetikos anthropos',
+        rendered: 'Einen ketzerischen Menschen',
+        note: 'Das Wort kommt vom Wählen und bezeichnete zunächst eine Schulrichtung; Josephus nennt so die Pharisäer. Gemeint ist hier ein Mensch, der Partei bildet und spaltet, nicht einer mit abweichender Lehrmeinung. Die lateinische Übersetzung mit haereticus hat die Verengung zum Ketzerbegriff angestoßen.',
+      },
+      {
+        word: 'griech. nomikos',
+        rendered: 'den Schriftgelehrten',
+        note: 'Ein Gesetzeskundiger. Das Wort bezeichnet im jüdischen Zusammenhang den Ausleger der Tora, im römischen den Juristen. Welcher Beruf bei Zenas gemeint ist, lässt sich nicht entscheiden – beide sind für einen Mitarbeiter denkbar.',
+      },
+      {
+        word: 'griech. genealogiai',
+        rendered: 'der Geschlechtsregister',
+        note: 'Abstammungsreihen. In jüdischen Kreisen ein ernstes Rechtsgeschäft, in hellenistischen der Ausgangspunkt für Spekulationen über Reihen himmlischer Wesen. Der Brief nennt beides unnütz, ohne den Inhalt zu erörtern.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Namen und Reisepläne sind der Kern der Debatte über die Echtheit. Wer den Brief für ein späteres Schreiben hält, muss erklären, warum ein Verfasser so beiläufige und unbekannte Angaben erfindet; die übliche Antwort verweist auf die Gattung des fingierten Briefes, die solche Züge zur Glaubwürdigkeit nutzte. Wer ihn für echt hält, sieht darin Reste einer sonst unbekannten Reise nach der Apostelgeschichte.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos betonte an der Meidungsregel die Begrenzung: Zweimal ermahnen sei Pflicht, ein drittes Mal überflüssig, weil dann nicht Unwissenheit, sondern Wille im Spiel sei. Hieronymus las die Stelle als Beleg dafür, dass sich ein Spalter selbst richtet und die Kirche nur feststellt, was er schon getan hat.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther und Calvin bestanden darauf, dass die Stelle nicht Gewalt gegen Andersdenkende rechtfertigt, sondern das geistliche Mittel des Abstandhaltens meint. Calvin fügte hinzu, die Gemeinde müsse zuerst prüfen, ob der Streit von der Sache oder vom Ehrgeiz komme – nicht jede Meinungsverschiedenheit sei Spaltung.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die griechische Tradition liest den Abschnitt vom Winter in Nikopolis her als Bild der Sammlung vor dem Aufbruch: Zeiten des Wartens gehören zum Dienst. Der Ort selbst wird in der Überlieferung als frühe Gemeindegründung geführt; die Ausgrabungen bezeugen eine bedeutende spätantike Kirche.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'Der Schlussvers über den Stand guter Werke, wo man ihrer bedarf, wird als Zusammenfassung des ganzen Briefes gelesen: Nicht Spekulation, sondern brauchbare Hilfe im nächsten Umkreis. Diakonische Traditionen von den mittelalterlichen Hospitälern bis zur inneren Mission berufen sich darauf.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 18, verse: 15, note: 'Das Verfahren bei Streit in der Gemeinde' },
+      { book: '3joh', chapter: 1, verse: 6, note: 'Reisende ausrüsten, wie es Gott würdig ist' },
+      { book: 'apg', chapter: 18, verse: 24, note: 'Apollos aus Alexandria' },
+      { book: '1tim', chapter: 1, verse: 4, note: 'Fabeln und Geschlechtsregister' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 5 Abschnitte */
+  {
+    book: '2thess',
+    chapter: 1,
+    from: 1,
+    to: 4,
+    title: '„daß wir uns euer rühmen unter den Gemeinden“',
+    historicalShort:
+      'Ein zweiter Brief an dieselbe Stadt, mit denselben drei Absendern – und mit einer Danksagung, die von wachsendem Glauben unter fortdauernder Verfolgung spricht.',
+    historicalLong:
+      'Thessalonich war die Hauptstadt der römischen Provinz Makedonien, eine freie Stadt mit eigenem Rat und eigenen Beamten, die den altmakedonischen Titel Politarchen trugen – ein Wort, das lange als Erfindung des Lukas galt, bis Inschriften es bestätigten. Die Stadt lag an der Via Egnatia, der Heerstraße von der Adria zum Bosporus, und besaß den besten Hafen der Nordägäis. Wer hier Fuß fasste, war an das Nachrichtennetz des Reiches angeschlossen.\n\nDie Gemeinde war jung. Nach der Apostelgeschichte entstand sie binnen weniger Wochen und geriet sofort in Bedrängnis: Ein Auflauf zwang die Missionare zur Flucht bei Nacht, und der Gastgeber Jason musste Bürgschaft leisten. Der Vorwurf lautete, sie handelten gegen die Erlasse des Kaisers und riefen einen anderen König aus. In einer Stadt, deren Freiheit von römischem Wohlwollen abhing, war das ein gefährlicher Vorwurf – die dauernde Trübsal, von der der Brief spricht, hat hier ihren wahrscheinlichen Grund.\n\nDer Briefanfang wiederholt fast wörtlich den des ersten Schreibens: dieselben drei Absender, dieselbe Anschrift, derselbe Gruß. Silvanus ist wohl der Silas der Apostelgeschichte, ein römischer Bürger aus Jerusalem; Timotheus stammte aus Lystra und hatte eine jüdische Mutter und einen griechischen Vater. Dass drei Namen stehen, war üblich und bedeutete nicht gemeinsame Abfassung, sondern gemeinsame Verantwortung für die Botschaft.\n\nGenau diese Nähe zum ersten Brief ist der Ausgangspunkt der Echtheitsdebatte. Etwa ein Drittel des zweiten Briefes hat wörtliche Entsprechungen im ersten – so eng, wie es sonst zwischen zwei Paulusbriefen nicht vorkommt. Wer den Brief für echt hält, erklärt das mit dem kurzen Abstand von wenigen Monaten. Wer ihn für später hält, sieht darin die Arbeitsweise eines Verfassers, der den ersten Brief vor sich liegen hatte, und verweist zusätzlich auf die Unterschiede in der Erwartung des Endes.\n\nDie Danksagung selbst weicht in einem Punkt vom Üblichen ab. Paulus schreibt sonst schlicht, er danke; hier steht, man sei zum Danken verpflichtet, wie es sich gebühre. Diese Wendung stammt aus dem Kanzleistil öffentlicher Ehrenbeschlüsse: Städte beschlossen, es sei recht und billig, einem Wohltäter zu danken. Der Ton ist damit förmlicher als im ersten Brief – ein Beobachtungspunkt, den beide Seiten der Echtheitsdebatte für sich anführen.',
+    reception:
+      'Der zweite Thessalonicherbrief hat seine Wirkung fast ausschließlich über die Endzeitkapitel entfaltet; der Anfang blieb im Schatten. Immerhin ist die Verbindung von wachsendem Glauben und anhaltender Verfolgung ein Motiv, das die Märtyrerliteratur der Alten Kirche aufgreift: Tertullian formuliert es als Satz, das Blut der Christen sei Same.\n\nIn der neueren Forschung ist der Briefanfang zum Prüfstein geworden. Seit Johann Ernst Christian Schmidt 1801 zum ersten Mal Zweifel an der Verfasserschaft äußerte, wird die Überschneidung mit dem ersten Brief statistisch untersucht; im 20. Jahrhundert kamen Stilanalysen und Wortfrequenzstudien hinzu. Ein Konsens ist nicht erreicht, doch die Frage hat die Aufmerksamkeit auf ein allgemeines Problem gelenkt: Wie unterscheidet man Selbstzitat von Nachahmung?\n\nDie Politarchen, die Lukas für Thessalonich nennt, sind ein Standardbeispiel dafür geworden, wie archäologische Funde eine literarische Angabe stützen können. Seit dem 19. Jahrhundert sind über siebzig Inschriften mit dem Titel gefunden worden, mehrere davon in Thessalonich selbst.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Thessalonich lag am Thermäischen Golf, am Kreuzungspunkt der Via Egnatia mit der Straße ins Innere Makedoniens. Der Hafen war ganzjährig nutzbar. Von hier erreichte man Philippi in drei Tagen, Rom in etwa drei Wochen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Als freie Stadt behielt Thessalonich eigene Beamte und blieb von der Einquartierung römischer Truppen verschont. Diese Freiheit war ein Geschenk, das entzogen werden konnte – weshalb der Rat auf jeden Verdacht der Illoyalität empfindlich reagierte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehrenbeschlüsse für Wohltäter waren ein fester Bestandteil des Stadtlebens: Der Rat erklärte förmlich, es sei recht und geziemend, jemandem zu danken. Der Brief benutzt genau diese Formel für den Dank an Gott.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'In Thessalonich sind Kulte der Kabiren, der ägyptischen Götter und des Kaisers bezeugt. Ein Tempel für die vergöttlichten Kaiser stand im Stadtzentrum. Wer sich fernhielt, entzog sich nicht nur einem Kult, sondern dem öffentlichen Leben.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. eucharistein opheilomen',
+        rendered: 'Wir sollen Gott danken',
+        note: 'Wörtlich: Wir sind verpflichtet zu danken. Die Wendung stammt aus dem Stil städtischer Ehrenbeschlüsse und ist förmlicher als das schlichte „ich danke“ der übrigen Paulusbriefe – ein Beobachtungspunkt in der Echtheitsdebatte.',
+      },
+      {
+        word: 'griech. hyperauxanei',
+        rendered: 'wächst sehr',
+        note: 'Ein Wort, das sonst nirgends im Neuen Testament steht: über das Maß hinaus wachsen. Das Bild stammt aus dem Pflanzenbau und beschreibt einen Bestand, der die Erwartung übertrifft.',
+      },
+      {
+        word: 'griech. diogmois kai thlipsesin',
+        rendered: 'Verfolgungen und Trübsalen',
+        note: 'Das erste Wort meint aktives Nachstellen, das zweite den Druck der Umstände. Zusammen beschreiben sie keine amtliche Christenverfolgung – die gab es damals noch nicht –, sondern gesellschaftliche Ausgrenzung mit gelegentlicher Gewalt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Verfasserfrage ist offen. Für die Echtheit sprechen der geringe zeitliche Abstand und die genaue Kenntnis der Lage in Thessalonich; dagegen die auffällige literarische Abhängigkeit vom ersten Brief, der förmlichere Ton und eine Endzeiterwartung, die Zeichen und Vorzeichen kennt, wo der erste Brief mit einem plötzlichen Ende rechnet. Die Mehrheit neigt heute zur zweiten Auffassung, doch die Gegenposition ist gut vertreten.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos, der über beide Briefe predigte, sah in der Verbindung von wachsendem Glauben und wachsender Bedrängnis die Regel des christlichen Lebens: Nicht trotz, sondern in der Bedrängnis nehme die Liebe zu. Das Rühmen des Apostels vor anderen Gemeinden verstand er als Ermutigung durch Beispiel, nicht als Lob der Person.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin hob hervor, dass der Dank Gott gilt und nicht den Menschen: Was gelobt wird, ist Gottes Werk an ihnen. Damit sei jedes Selbstlob ausgeschlossen. Zugleich betonte er den Nutzen des Beispiels – Gemeinden lernten voneinander, und das Weitersagen sei ein Dienst.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Lesart',
+        text: 'Die Ausleger fragen nach der Art der Bedrängnis. Belegt sind keine Prozesse, sondern Ausgrenzung: Verlust von Kundschaft, Bruch mit der Familie, Ausschluss von Vereinen und Festen. In einer Stadt, in der Wirtschaft und Kult zusammenhingen, konnte das die Existenz kosten – ohne dass ein Beamter eingreifen musste.',
+      },
+      {
+        tradition: 'Ökumenische Auslegung',
+        text: 'Der Anfang gilt als Modell dafür, wie Gemeinden voneinander sprechen: nicht im Vergleich, sondern als Zeugnis. Dass die Bedrängten den Unbedrängten als Beispiel dienen, hat in der Solidarität mit verfolgten Kirchen eine praktische Gestalt gefunden.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 17, verse: 5, note: 'Der Auflauf in Thessalonich' },
+      { book: '1thess', chapter: 1, verse: 2, note: 'Die Danksagung des ersten Briefes' },
+      { book: '2kor', chapter: 8, verse: 1, note: 'Die Gemeinden Makedoniens als Beispiel' },
+      { book: 'apg', chapter: 16, verse: 1, note: 'Herkunft des Timotheus' },
+    ],
+  },
+  {
+    book: '2thess',
+    chapter: 1,
+    from: 5,
+    to: 12,
+    title: '„mit Feuerflammen, Rache zu geben“',
+    historicalShort:
+      'Der härteste Abschnitt der Thessalonicherbriefe: Wer den Bedrängten Trübsal antut, soll Trübsal empfangen. Die Sprache stammt aus der Prophetie – und wirft die Frage auf, was Gerechtigkeit für Machtlose heißt.',
+    historicalLong:
+      'Die Bilder dieses Abschnitts sind nicht neu erfunden. Das Erscheinen vom Himmel her, das Feuer, die Engel der Macht, das Verderben vor dem Angesicht des Herrn – jedes einzelne Stück stammt aus dem Alten Testament, vor allem aus Jesaja. Die Wendung vom Angesicht des Herrn und von der Herrlichkeit seiner Macht ist ein fast wörtliches Zitat aus einem Kapitel, in dem Jesaja beschreibt, wie die Menschen sich in Felsklüfte verkriechen. Der Verfasser setzt voraus, dass seine Leser diese Sprache kennen.\n\nDer Gedanke der Vergeltung folgt einer Regel, die die antike Rechtsvorstellung durchzieht: Gleiches mit Gleichem. Wer Trübsal antut, soll Trübsal empfangen; das griechische Wortspiel ist im Deutschen kaum wiederzugeben. Diese Regel war kein Rachegedanke, sondern das Grundmuster von Gerechtigkeit überhaupt – auch das römische Recht bemaß Strafe am Vergehen. Neu ist, wer sie anwendet: nicht die Bedrängten selbst, sondern Gott. Die Bedrängten sollen ausdrücklich nichts tun.\n\nGenau darin liegt die politische Pointe. Eine Gruppe ohne Rechtsschutz, die vor keinem Gericht klagen kann, spricht das Urteil nicht selbst, sondern vertagt es. Solche Texte sind aus der jüdischen Literatur der Zeit gut bekannt: Die Apokalypsen entstehen regelmäßig in Lagen, in denen Recht nicht zu bekommen ist. Was von außen wie Rachsucht aussieht, ist von innen die Weigerung, sich mit dem bestehenden Zustand abzufinden – und zugleich der Verzicht auf Selbstjustiz.\n\nDer Ausdruck, der mit Rache übersetzt wird, ist im Griechischen ein Rechtsbegriff und meint die Wiederherstellung einer verletzten Ordnung, nicht persönliche Vergeltung. Ähnliches gilt für das Wort, das Luther mit Pein wiedergibt: Es bezeichnet eine gerichtlich verhängte Strafe. Die Wendung vom ewigen Verderben ist deshalb seit der Antike umstritten – ob sie ein Ende der Existenz meint oder einen Zustand ohne Ende, lässt der Wortlaut offen, und beide Deutungen sind alt.\n\nDer Schluss des Abschnitts kehrt zurück in die Gegenwart. Gebetet wird nicht um das Gericht, sondern darum, dass Gott die Gemeinde ihrer Berufung würdig mache. Der Name des Herrn soll an ihnen gepriesen werden und sie an ihm – eine Formulierung, die in einer Stadt mit Kaiserkult einen bestimmten Klang hatte. Ruhm und Ehre waren dort öffentliche Güter, um die konkurriert wurde; der Brief verschiebt sie an eine andere Adresse.',
+    reception:
+      'Der Abschnitt gehört zu den am häufigsten zitierten Belegen für die Lehre vom Gericht. Von der Alten Kirche über die mittelalterlichen Darstellungen des Jüngsten Gerichts bis in die Predigt der Erweckungsbewegungen liefert er die Bildersprache: Feuer, Engel, die Trennung vom Angesicht Gottes. Michelangelos Weltgericht in der Sixtinischen Kapelle und Dies irae als Sequenz der Totenmesse stehen in dieser Linie.\n\nZugleich ist er ein Hauptstück der Auseinandersetzung um die Ewigkeit der Strafe. Der lateinische Westen las das ewige Verderben seit Augustinus als endlose Strafe; Origenes hatte dagegen eine Wiederherstellung aller Dinge vertreten, die im 6. Jahrhundert verurteilt wurde. Seit dem 19. Jahrhundert vertreten Vertreter der bedingten Unsterblichkeit die Auffassung, das Verderben bedeute das Ende der Existenz. Alle drei Positionen berufen sich auf diesen Vers.\n\nIm 20. Jahrhundert hat der Abschnitt eine neue Aufmerksamkeit in der Diskussion über die Sprache der Unterdrückten gefunden. Ausleger aus Lateinamerika und Südafrika haben darauf hingewiesen, dass die Härte solcher Texte anders klingt, wenn man sie von der Seite derer liest, denen Unrecht geschieht, und dass die Alternative zur Gerichtserwartung nicht Milde, sondern Resignation wäre.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Wer kein Bürgerrecht und keinen Patron hatte, kam vor Gericht kaum zu seinem Recht. Prozesse kosteten Geld und Beziehungen. Für die meisten Bewohner des Reiches war Gerechtigkeit deshalb keine Erfahrung, sondern eine Erwartung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Jüdische Apokalypsen der Zeit – Henoch, die Himmelfahrt des Mose, später der vierte Esra – malen dasselbe Bild: Gott greift ein, weil niemand sonst eingreift. Die Gattung entsteht typischerweise in Zeiten, in denen politische Hoffnung ausgeschlossen ist.',
+      },
+      {
+        aspect: 'macht',
+        text: 'In Thessalonich stand ein Tempel für die vergöttlichten Kaiser; die Ankunft eines Herrschers hieß Parusie und wurde mit Fackeln, Gesandtschaften und Ehrenbeschlüssen begangen. Der Brief benutzt genau dieses Wort für die Wiederkunft Christi.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehre und Schande regelten das öffentliche Leben. Wer verachtet wurde, verlor Geschäftsbeziehungen und Heiratsaussichten. Die Zusage, verherrlicht zu werden, zielt auf diese Währung – und verlegt ihre Verteilung in die Zukunft.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. endeigma tes dikaias kriseos',
+        rendered: 'welches anzeigt, daß Gott recht richten wird',
+        note: 'Ein Rechtsbegriff: endeigma ist der Beweis, der vor Gericht vorgelegt wird. Das erlittene Unrecht selbst gilt als Beweisstück für die Rechtmäßigkeit des kommenden Urteils – ein juristisches, kein tröstendes Bild.',
+      },
+      {
+        word: 'griech. ekdikesis',
+        rendered: 'Rache zu geben',
+        note: 'Wörtlich: das Recht wiederherstellen. Der Begriff stammt aus der Gerichtssprache und meint nicht persönliche Vergeltung, sondern die Ahndung durch die zuständige Instanz. Luthers „Rache“ trägt heute einen Beiklang, den das griechische Wort nicht hat.',
+      },
+      {
+        word: 'griech. olethros aionios',
+        rendered: 'das ewige Verderben',
+        note: 'Beide Wörter sind umstritten: olethros kann Vernichtung oder Ruin bedeuten, aionios kann endlose Dauer oder Zugehörigkeit zum kommenden Äon meinen. Auf dieser Doppeldeutigkeit ruht ein großer Teil des Streits über die Ewigkeit der Strafe.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt ist ein Musterbeispiel apokalyptischer Sprache: Bilder aus dem Alten Testament, Kontrastierung von Bedrängern und Bedrängten, Vertagung des Urteils. Solche Texte beschreiben nicht Vorgänge, sondern deuten eine Gegenwart. Ihr Sitz im Leben ist die Ohnmacht, nicht die Spekulation.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Augustinus stützte auf diesen Vers seine Lehre von der ewigen Strafe und wandte sich ausdrücklich gegen die Meinung, das Verderben habe ein Ende. Chrysostomos betonte dagegen den Trost: Der Abschnitt sei an Verfolgte gerichtet und wolle sie aufrichten, nicht ihre Gegner ängstigen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las die Stelle als Zuspruch an die Angefochtenen und warnte davor, sie als Drohmittel zu gebrauchen. Calvin hob hervor, dass die Gemeinde nicht selbst vergilt, und leitete daraus die Pflicht ab, auf Rache zu verzichten – gerade weil Gott sie sich vorbehält.',
+      },
+      {
+        tradition: 'Befreiungstheologische Lesart',
+        text: 'Die Härte des Textes wird nicht abgemildert, sondern als Sprache der Opfer verstanden. Wer Unrecht nicht erlebt, empfindet solche Sätze als anstößig; wer es erlebt, hört darin die Weigerung, das Unrecht als endgültig hinzunehmen. Der Verzicht auf Selbstjustiz bleibt dabei ausdrücklich Teil der Aussage.',
+      },
+      {
+        tradition: 'Universalistische Auslegung',
+        text: 'Vertreter einer Hoffnung auf Wiederherstellung aller – von Origenes über Gregor von Nyssa bis zu neueren Theologen – verweisen darauf, dass die verwendeten Wörter keine Endlosigkeit erzwingen und dass andere Stellen des Neuen Testaments von der Versöhnung des Alls sprechen. Die Position war und ist eine Minderheitsmeinung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 2, verse: 10, note: 'Vor dem Schrecken des HERRN und seiner herrlichen Majestät' },
+      { book: 'jes', chapter: 66, verse: 15, note: 'Der HERR kommt mit Feuer' },
+      { book: 'roem', chapter: 12, verse: 19, note: 'Die Rache ist mein' },
+      { book: 'offb', chapter: 6, verse: 10, note: 'Wie lange richtest du nicht?' },
+    ],
+  },
+  {
+    book: '2thess',
+    chapter: 2,
+    from: 13,
+    to: 17,
+    title: '„es sei durch unser Wort oder Brief“',
+    historicalShort:
+      'Nach dem düsteren Endzeitkapitel ein Umschwung: Dank, Erwählung, und die Aufforderung, an dem festzuhalten, was mündlich oder schriftlich weitergegeben wurde. Der letzte Halbsatz ist zu einer Grundfrage der Konfessionen geworden.',
+    historicalLong:
+      'Der Abschnitt setzt bewusst gegen das Vorangehende. Eben war von Verführung, Lüge und Verderben die Rede; nun steht dagegen die Erwählung von Anfang an. Das griechische Wort für Anfang schwankt in den Handschriften zwischen „von Anfang“ und „als Erstlinge“ – ein Unterschied von zwei Buchstaben. Die zweite Lesart würde bedeuten, dass die Thessalonicher die ersten Bekehrten Makedoniens waren; die erste verlegt die Erwählung vor alle Zeit. Die Ausgaben entscheiden sich verschieden.\n\nDas Wort, das hier mit Satzungen übersetzt wird, ist paradosis – Überlieferung, wörtlich: das Weitergegebene. Der Begriff stammt aus dem rabbinischen Umfeld, wo die Weitergabe der Lehre von Lehrer zu Schüler eine feste Kette bildete; die Mischna beginnt mit einer solchen Kette von Mose bis zu den Weisen. Paulus gebraucht das Wort und die zugehörigen Verben mehrfach, wenn er von dem spricht, was er empfangen und weitergegeben hat – etwa beim Abendmahlsbericht und beim Auferstehungszeugnis.\n\nDer Zusatz, das Weitergegebene könne mündlich oder brieflich erfolgt sein, hat einen praktischen Sinn. Der Brief wehrt sich wenige Verse zuvor gegen ein untergeschobenes Schreiben, das der Gemeinde die Nachricht gebracht habe, der Tag des Herrn sei schon da. In einer Welt ohne Beglaubigung war das ein reales Problem: Wer einen Brief brachte, konnte alles behaupten. Die Formel sichert deshalb die Verbindlichkeit dessen, was die Missionare selbst gesagt und geschrieben haben, gegen fremde Zusätze.\n\nHistorisch beschreibt sie eine Lage vor der Entstehung eines Kanons. Um 50 gab es keine christlichen Schriften außer wenigen Briefen; die Evangelien waren noch nicht geschrieben. Was die Gemeinden wussten, wussten sie aus mündlicher Verkündigung, bekräftigt durch gelegentliche Briefe. Mündlich und schriftlich standen nicht in Konkurrenz, sondern waren zwei Wege desselben Vorgangs. Die spätere Frage, ob die Schrift allein genügt, ist auf dieser Grundlage noch gar nicht stellbar.\n\nDer Schluss ist ein Segenswunsch mit einer ungewöhnlichen Wortstellung: Christus wird vor Gott dem Vater genannt, und beide Namen stehen bei einem Verb im Singular. Solche Formulierungen sind in der Debatte über die frühe Christologie herangezogen worden, weil sie eine enge Zuordnung voraussetzen, ohne sie zu erklären. Die Wendung vom ewigen Trost, die dort steht, kommt sonst im Neuen Testament nicht vor.',
+    reception:
+      'Der Satz über Wort und Brief wurde im 16. Jahrhundert zu einem Schlüsseltext der Konfessionspolemik. Das Konzil von Trient erklärte 1546, die Wahrheit des Evangeliums sei in geschriebenen Büchern und in ungeschriebenen Überlieferungen enthalten, und berief sich dabei auf diese Stelle. Die Reformatoren hielten dagegen, gemeint sei nicht ein zweiter Überlieferungsstrom, sondern dieselbe apostolische Botschaft auf zwei Wegen – und die Prüfung müsse an der Schrift erfolgen.\n\nDie Auseinandersetzung ist im 20. Jahrhundert entschärft, aber nicht beendet worden. Das Zweite Vatikanische Konzil sprach 1965 von einer einzigen heiligen Hinterlassenschaft, die aus derselben Quelle fließe, und rückte damit von der Vorstellung zweier getrennter Quellen ab. Evangelische Stellungnahmen haben ihrerseits anerkannt, dass die Schrift selbst aus einem Überlieferungsprozess hervorging und ohne ihn nicht zu verstehen ist. Die ökumenischen Gespräche über Schrift und Tradition beziehen sich regelmäßig auf diesen Vers.\n\nDie Erwählungsaussage hat eine eigene, ebenso lange Geschichte. Sie gehört zu den Belegstellen der augustinischen und reformierten Prädestinationslehre; die Dordrechter Lehrregeln von 1619 zitieren sie. Ausleger, die die Erwählung auf die Gemeinschaft statt auf den Einzelnen beziehen, verweisen darauf, dass der Vers in der Mehrzahl spricht und auf eine bestimmte Gemeinde zielt.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Lehre wurde mündlich weitergegeben und auswendig behalten. Schulen von Philosophen wie Rabbinen bewahrten die Worte ihres Lehrers in festen Formeln; wer sie änderte, galt als unzuverlässig. Schriftliches diente der Sicherung, nicht als Ersatz.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Brief war nur so glaubwürdig wie sein Überbringer. Fälschungen waren bekannt und schwer zu widerlegen; Cicero beklagt untergeschobene Schreiben unter seinem Namen. Deshalb enthielten Briefe Kennzeichen, an denen die Empfänger sie prüfen konnten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Um das Jahr 50 existierte keine christliche Schriftensammlung. Als Heilige Schrift galt die griechische Fassung des Alten Testaments; alles über Jesus kam aus mündlicher Verkündigung. Die ersten Evangelien entstanden erst zwei Jahrzehnte später.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Vorlesen war ein Handwerk. Texte wurden ohne Worttrennung geschrieben, sodass der Vorleser den Sinn erst durch Betonung herstellte. Wer einen Brief überbrachte, las ihn vor und legte ihn damit zugleich aus.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. paradoseis',
+        rendered: 'an den Satzungen',
+        note: 'Das Weitergegebene, die Überlieferung. Dasselbe Wort steht im Evangelium kritisch für die „Satzungen der Ältesten“ und bei Paulus zustimmend für das apostolische Zeugnis. Der Begriff selbst ist neutral; entscheidend ist, was weitergegeben wird.',
+      },
+      {
+        word: 'griech. ap arches / aparchen',
+        rendered: 'von Anfang',
+        note: 'Die Handschriften schwanken um zwei Buchstaben: „von Anfang an“ oder „als Erstlingsgabe“. Im zweiten Fall wären die Thessalonicher die ersten Bekehrten der Provinz. Beide Lesarten sind alt und gut bezeugt.',
+      },
+      {
+        word: 'griech. paraklesin aionian',
+        rendered: 'einen ewigen Trost',
+        note: 'Die Wendung steht nur hier. Das Wort paraklesis bedeutet zugleich Trost, Zuspruch und Ermutigung – dasselbe Wort, von dem sich der Beistand im Johannesevangelium herleitet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Lesart',
+        text: 'Die Stelle gilt als Beleg dafür, dass die apostolische Botschaft nicht auf die Schrift beschränkt war. Das Konzil von Trient führte sie 1546 ausdrücklich an. Das Zweite Vatikanische Konzil formulierte vorsichtiger: Schrift und Überlieferung entspringen derselben Quelle und bilden ein Ganzes, das der Kirche anvertraut ist.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Reformatoren bestritten nicht, dass es mündliche apostolische Verkündigung gab, sondern die Folgerung, spätere kirchliche Lehren ließen sich darauf zurückführen. Gemeint sei dieselbe Botschaft in zwei Formen; alles Spätere müsse sich an der Schrift prüfen lassen. Calvin nannte die Berufung auf ungeschriebene Überlieferung eine Tür, durch die alles hereinkomme.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die östliche Tradition versteht Überlieferung nicht als Sammlung zusätzlicher Sätze, sondern als das Leben der Kirche selbst – Liturgie, Ikonen, Konzilien, Heiligenleben –, in dem die Schrift ihren Ort hat. Der Vers wird als Beschreibung dieses Ganzen gelesen, nicht als Aufteilung in zwei Quellen.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Satz spiegelt eine Zeit ohne Kanon. Mündliche und briefliche Verkündigung waren zwei Wege derselben Mission; die spätere Frage nach ihrem Verhältnis ist dem Text fremd. Zugleich zeigt der Zusammenhang, dass bereits gefälschte Schreiben im Umlauf waren – ein Hinweis darauf, wie früh die Autorität von Briefen umstritten war.',
+      },
+      {
+        tradition: 'Ökumenische Auslegung',
+        text: 'Die Gespräche des 20. Jahrhunderts haben die Alternative Schrift oder Überlieferung als falsch gestellt bezeichnet. Die Schrift ist selbst Ergebnis eines Überlieferungsprozesses, und Überlieferung ohne Prüfung an der Schrift verliert ihren Maßstab. Der Vers wird deshalb heute häufiger als Ausgangspunkt gemeinsamer Verständigung denn als Streitfall zitiert.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 11, verse: 23, note: 'Ich habe empfangen und euch gegeben' },
+      { book: '1kor', chapter: 15, verse: 3, note: 'Die weitergegebene Osterformel' },
+      { book: '2thess', chapter: 2, verse: 2, note: 'Das untergeschobene Schreiben' },
+      { book: 'mk', chapter: 7, verse: 8, note: 'Satzungen der Menschen, kritisch gebraucht' },
+    ],
+  },
+  {
+    book: '2thess',
+    chapter: 3,
+    from: 1,
+    to: 5,
+    title: '„daß das Wort des HERRN laufe“',
+    historicalShort:
+      'Eine Bitte um Fürbitte, mit einem Bild aus dem Stadion: Das Wort soll laufen. Dazwischen steht ein nüchterner Satz über die Grenzen der Verkündigung – der Glaube ist nicht jedermanns Ding.',
+    historicalLong:
+      'Das Verb, das Luther mit laufen übersetzt, gehört in die Welt der Wettkämpfe. Griechische Städte hatten Stadien, und der Lauf war die älteste und angesehenste Disziplin; die Olympiaden wurden nach den Siegern im Stadionlauf gezählt. Die Wendung stammt aber aus dem Psalter, wo Gottes Wort schnell läuft. Der Brief verbindet beides: Die Botschaft soll sich bewegen wie ein Läufer, ungehindert und schnell.\n\nDas zweite Verb, mit gepriesen werden wiedergegeben, meint wörtlich verherrlicht werden – dasselbe Wort, das für die Ehrung von Wohltätern und Herrschern gebraucht wurde. Zusammen ergibt sich ein doppeltes Bild: Ausbreitung und Anerkennung. Bemerkenswert ist, dass nicht die Verkündiger, sondern das Wort selbst zum handelnden Subjekt wird. Diese Redeweise findet sich mehrfach in der Apostelgeschichte, wo das Wort wächst, sich mehrt und mächtig wird.\n\nDer Absender schreibt vermutlich aus Korinth. Nach der Apostelgeschichte reisten die Missionare von Thessalonich über Beröa und Athen dorthin, und in Korinth kam es zu heftigem Widerstand, der vor den Statthalter Gallio gebracht wurde – ein Ereignis, das sich über eine Inschrift aus Delphi auf die Jahre 51 oder 52 datieren lässt und damit einen der wenigen festen Punkte der frühchristlichen Zeitrechnung liefert. Die Bitte, von unverständigen und argen Menschen erlöst zu werden, hat vor diesem Hintergrund einen konkreten Anlass.\n\nDer Satz, der Glaube sei nicht jedermanns Ding, ist im Griechischen knapper und schärfer: Nicht aller Sache ist der Glaube. Er zieht eine nüchterne Bilanz. Nach Jahren der Mission war deutlich, dass die Botschaft nicht überall ankam; die Reden der Apostelgeschichte enden ebenso oft mit Spott wie mit Zustimmung. Der Vers erklärt das nicht, er stellt es fest – und geht sofort zu dem über, worauf Verlass ist.\n\nDer Übergang geschieht über ein Wortspiel, das im Deutschen verschwindet. Auf die Menschen, die nicht treu sind, folgt der Herr, der treu ist; im Griechischen stehen Glaube und Treue als dasselbe Wortfeld nebeneinander. Die Bewahrung vor dem Argen, um die es dann geht, kann sprachlich das Böse oder den Bösen meinen – dieselbe Zweideutigkeit wie in der letzten Bitte des Vaterunsers, und sie ist in beiden Fällen nicht auflösbar.',
+    reception:
+      'Die Bitte, das Wort möge laufen, ist zu einer der bekanntesten Missionslosungen geworden. Die Bibelgesellschaften des 19. Jahrhunderts führten sie im Namen und im Wappen; die Herrnhuter Losungen und zahllose Sendungsfeiern zitieren sie. In der katholischen Missionstheologie wird sie mit dem Gedanken verbunden, dass nicht die Sendboten, sondern das Wort selbst wirkt.\n\nDer Satz über den Glauben, der nicht jedermanns Ding ist, hat eine gegenläufige Wirkung. In der reformierten Tradition wurde er als Hinweis auf die Erwählung gelesen; in der Erweckungsbewegung dagegen als Mahnung, den Erfolg nicht zum Maßstab zu machen. Im 20. Jahrhundert kam eine dritte Lesart hinzu: Ausleger verstehen den Satz als Absage an jede Form von Zwang – wenn Glaube nicht allen zugänglich ist, kann er niemandem auferlegt werden.\n\nDie Bewahrung vor dem Argen ist über die Vaterunser-Auslegung mit der Frage nach dem Bösen verbunden. Ob eine Macht oder ein Zustand gemeint ist, wird seit Origenes diskutiert. Die liturgischen Texte der Kirchen halten die Zweideutigkeit meist offen; die deutschen Übersetzungen entscheiden sich unterschiedlich.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Wettläufe gehörten zum Stadtleben. Jede größere Stadt hatte ein Stadion, Sieger wurden mit Kränzen, Freiplätzen und Steuerfreiheit geehrt. Das Bild vom laufenden Wort war deshalb sofort verständlich und positiv besetzt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Korinth lag am Isthmus zwischen zwei Meeren; Schiffe wurden über eine gepflasterte Rampe von einer Bucht zur anderen gezogen. Wer dort predigte, sprach zu Menschen aus dem ganzen Mittelmeerraum – und was dort begann, reiste weiter.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Gallio-Inschrift aus Delphi nennt den Statthalter von Achaia und datiert seine Amtszeit. Sie ist der wichtigste feste Punkt für die Zeitrechnung der frühen Kirche und erlaubt es, den Aufenthalt in Korinth auf 50 bis 52 einzugrenzen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Fürbitte füreinander war in jüdischen Gemeinden fest verankert und wurde in den Synagogen öffentlich gehalten. Dass ein Lehrer seine Schüler um Gebet bittet, kehrt das gewohnte Gefälle um und ist in den Paulusbriefen ein wiederkehrender Zug.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. trechei',
+        rendered: 'laufe',
+        note: 'Ein Wort aus dem Wettkampf. Die Wendung stammt aus dem Psalter, wo Gottes Wort schnell läuft. Das Bild macht die Botschaft zum handelnden Subjekt – nicht die Boten breiten sie aus, sie breitet sich aus.',
+      },
+      {
+        word: 'griech. ou panton he pistis',
+        rendered: 'der Glaube ist nicht jedermanns Ding',
+        note: 'Wörtlich: Nicht aller Sache ist der Glaube. Ein knapper Feststellungssatz ohne Erklärung. Das Wort pistis bedeutet zugleich Glaube und Treue – ein Anklang, den der folgende Satz über die Treue des Herrn aufnimmt.',
+      },
+      {
+        word: 'griech. apo tou ponerou',
+        rendered: 'vor dem Argen',
+        note: 'Grammatisch nicht zu entscheiden: „vor dem Bösen“ als Sache oder „vor dem Bösen“ als Person. Dieselbe Zweideutigkeit steht in der letzten Bitte des Vaterunsers und ist dort ebenso wenig auflösbar.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt gehört zum brieflichen Formular: Fürbittwunsch, Zuversichtsäußerung, Segenswunsch. Die Bitte um Bewahrung vor bestimmten Menschen lässt sich mit der Lage in Korinth verbinden, wenn der Brief von dort stammt. Wer eine spätere Abfassung annimmt, liest die Angaben als Nachahmung des paulinischen Stils.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos hob hervor, dass der Apostel um Gebet bittet und sich damit von den Angeredeten abhängig macht: Das sei keine Höflichkeit, sondern Ausdruck davon, dass die Sache allen gemeinsam gehöre. Den Satz über den Glauben las er als Trost für Prediger, die keinen Erfolg haben.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Der Satz, dass der Glaube nicht aller Sache ist, gilt als Hinweis darauf, dass Glaube Gottes Werk und nicht menschliche Leistung ist. Die Dordrechter Lehrregeln stellen ihn in diesen Zusammenhang. Betont wird zugleich die Treue Gottes im folgenden Vers als der eigentliche Grund der Zuversicht.',
+      },
+      {
+        tradition: 'Missionstheologische Lesart',
+        text: 'Dass nicht die Boten, sondern das Wort läuft, hat die neuere Missionstheologie als Entlastung gelesen: Ausbreitung ist nicht Leistung einer Organisation. Die Bibelgesellschaften des 19. Jahrhunderts machten den Vers zu ihrer Losung, und die Übersetzungsarbeit berief sich darauf.',
+      },
+      {
+        tradition: 'Religionsfreiheitliche Auslegung',
+        text: 'Aus der Feststellung, dass Glaube nicht allen zugänglich ist, wird seit der Aufklärung die Folgerung gezogen, dass er niemandem auferlegt werden kann. Täuferische und baptistische Traditionen führen den Vers unter den Belegen für die Freiwilligkeit des Glaubens und gegen jede staatliche Erzwingung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 147, verse: 15, note: 'Sein Wort läuft schnell' },
+      { book: 'apg', chapter: 18, verse: 12, note: 'Gallio in Korinth' },
+      { book: 'mt', chapter: 6, verse: 13, note: 'Erlöse uns von dem Übel' },
+      { book: '1kor', chapter: 1, verse: 9, note: 'Getreu ist Gott' },
+    ],
+  },
+  {
+    book: '2thess',
+    chapter: 3,
+    from: 14,
+    to: 18,
+    title: '„Der Gruß mit meiner, des Paulus, Hand“',
+    historicalShort:
+      'Der Brief endet mit einem Echtheitszeichen: einem eigenhändigen Gruß. Dass gerade dieser Satz in einem Brief steht, dessen Echtheit umstritten ist, gehört zu den Merkwürdigkeiten des Neuen Testaments.',
+    historicalLong:
+      'Antike Briefe wurden diktiert. Ein geübter Schreiber arbeitete mit Kurzschrift und übertrug den Text anschließend ins Reine; Cicero verdankte seinem Sekretär Tiro ein ganzes Notationssystem. Der Absender setzte am Ende eigenhändig einen Gruß, oft mit sichtbar ungeübterer Hand – das war zugleich Unterschrift und Beglaubigung. Papyrusbriefe zeigen diesen Handwechsel deutlich, und in Verträgen war er rechtlich erheblich.\n\nIm Corpus der Paulusbriefe ist der Handwechsel mehrfach ausdrücklich vermerkt. Im Galaterbrief weist der Absender sogar auf die großen Buchstaben hin, mit denen er schreibe. Der Römerbrief nennt den Schreiber beim Namen: Tertius grüßt selbst. Hier aber wird der eigenhändige Gruß zum Kennzeichen erklärt, das in allen Briefen stehe – eine Aussage, die es sonst nicht gibt.\n\nDer Grund liegt zwei Kapitel früher. Dort warnt der Brief vor einem Schreiben, das angeblich von den Absendern stamme und behaupte, der Tag des Herrn sei bereits gekommen. Fälschungen waren in der Antike verbreitet und ein bekanntes Ärgernis: Es gab untergeschobene Briefe Platons, Ciceros und ganzer Philosophenschulen. Wer eine Gemeinde erreichen wollte, musste sich beglaubigen können, und ein Handzeichen war das einzige verfügbare Mittel.\n\nHier setzt die Debatte an. Ein Teil der Forschung hält gerade diesen Nachdruck für verdächtig: Ein echter Brief brauche keine Versicherung seiner Echtheit, ein gefälschter dagegen sehr wohl. Andere halten dagegen, dass die Warnung vor der Fälschung eine erlebte Erfahrung voraussetzt und dass ein Fälscher kaum die Aufmerksamkeit auf die Frage der Beglaubigung lenken würde. Beide Argumente sind seit dem 19. Jahrhundert in Gebrauch und lassen sich nicht entscheiden.\n\nDie Anweisung davor betrifft den Umgang mit denen, die sich der Weisung entziehen. Sie sollen gekennzeichnet und gemieden werden, damit sie beschämt werden – aber ausdrücklich nicht als Feinde gelten, sondern als Brüder ermahnt werden. Scham war in einer Gesellschaft, die Ehre öffentlich verhandelte, ein wirksames und begrenztes Mittel; sie zielte auf Rückkehr, nicht auf Ausschluss. Der Zusatz, der den Ausschluss sofort wieder eingrenzt, ist in der Auslegungsgeschichte oft überlesen worden.',
+    reception:
+      'Der eigenhändige Gruß hat die Textkritik beschäftigt wie kaum ein anderer Schlusssatz. Seit Friedrich Schleiermacher und Ferdinand Christian Baur wird er als Argument in beide Richtungen gebraucht, und noch die Kommentare des 21. Jahrhunderts referieren dieselbe Abwägung. Die Diskussion hat die allgemeine Frage geschärft, wie in der Antike zwischen echter und untergeschobener Autorschaft unterschieden wurde – und wie modern der Begriff der Fälschung überhaupt ist.\n\nDie Anweisung zur Meidung ist in die Kirchenzucht eingegangen. Die Täufergemeinden des 16. Jahrhunderts entwickelten daraus das Meidungsgebot, das in der Schleitheimer Übereinkunft von 1527 festgeschrieben wurde und bis heute bei Amischen und einigen mennonitischen Gruppen praktiziert wird. Der begrenzende Zusatz – nicht als Feind, sondern als Bruder – war dabei stets der Streitpunkt: An ihm entzündete sich 1693 die Spaltung zwischen Amischen und Mennoniten.\n\nDer Friedenswunsch am Schluss, allenthalben und auf allerlei Weise, ist in die Liturgien eingegangen. Er erscheint in östlichen und westlichen Formularen als Segensformel und begegnet in der evangelischen Tradition regelmäßig am Ende von Gottesdiensten.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Diktiert wurde in Kurzschrift, dann ins Reine übertragen. Ein geübter Schreiber schaffte etwa siebzig Silben in der Minute. Sekretäre waren oft Sklaven oder Freigelassene; ihr Name erscheint nur ausnahmsweise im Brief selbst.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der eigenhändige Schlusssatz hatte in Verträgen Beweiskraft. Papyri zeigen den Handwechsel als sichtbaren Bruch im Schriftbild; Zeugen bestätigten ihn. Ohne dieses Zeichen galt ein Schreiben als anfechtbar.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Untergeschobene Briefe waren ein bekanntes Ärgernis. Von Platon, den Kynikern und Cicero kursierten Fälschungen; ganze Sammlungen erfundener Philosophenbriefe sind erhalten. Wer einen Brief empfing, prüfte Bote, Handschrift und Inhalt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Scham war ein soziales Steuerungsmittel. In überschaubaren Gemeinschaften wirkte der Entzug des Umgangs unmittelbar. Der Text setzt darauf – und begrenzt es zugleich, indem er den Gemiedenen ausdrücklich Bruder nennt.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. te eme cheiri Paulou',
+        rendered: 'mit meiner, des Paulus, Hand',
+        note: 'Der Handwechsel am Briefende: Der Absender übernimmt den Griffel vom Schreiber. In Papyri ist der Wechsel am Schriftbild erkennbar. Hier wird er ausdrücklich zum Erkennungszeichen erklärt – einmalig im Neuen Testament.',
+      },
+      {
+        word: 'griech. semeioústhe',
+        rendered: 'den zeigt an',
+        note: 'Wörtlich: Zeichnet ihn an, merkt ihn euch. Das Wort stammt aus der Verwaltungssprache und meint das Vormerken in einer Liste. Ob eine förmliche Feststellung gemeint ist oder nur ein Achtgeben, bleibt offen.',
+      },
+      {
+        word: 'griech. me hos echthron',
+        rendered: 'nicht als einen Feind',
+        note: 'Der Satz begrenzt die vorangehende Anweisung sofort wieder. Gemeint ist ein Abstand, der auf Rückkehr zielt. Dieser Zusatz war der Streitpunkt in allen späteren Auseinandersetzungen über Kirchenzucht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Betonung der Eigenhändigkeit wird von der einen Seite als Beleg für Echtheit gelesen – ein Fälscher hätte kaum auf die Frage aufmerksam gemacht –, von der anderen als klassisches Merkmal einer Fälschung. Die Argumente heben sich weitgehend auf; entschieden wird die Frage meist über andere Beobachtungen, vor allem über die Endzeiterwartung.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos betonte den mildernden Zusatz: Die Meidung sei ein Heilmittel, kein Urteil, und wer sie anwende, müsse den anderen weiterhin als Bruder ansprechen. Augustinus verwendete dieselbe Unterscheidung in der Auseinandersetzung mit den Donatisten.',
+      },
+      {
+        tradition: 'Täuferische Auslegung',
+        text: 'Die Schleitheimer Übereinkunft von 1527 macht die Meidung zu einem Kennzeichen der Gemeinde: Wer sich der Ermahnung entzieht, wird ausgeschlossen, damit die Gemeinde rein bleibt. Die Frage, wie weit die Meidung reicht – bis in Ehe und Familie oder nur in die Gemeindeversammlung –, führte 1693 zur Trennung von Amischen und Mennoniten.',
+      },
+      {
+        tradition: 'Lutherische Auslegung',
+        text: 'Luther bestand darauf, dass Kirchenzucht auf Umkehr zielt und nie zur Vernichtung des Rufes werden darf. Die Bekenntnisschriften ordnen sie dem Predigtamt zu und knüpfen sie an ein geordnetes Verfahren. Der eigenhändige Gruß wurde als Beispiel apostolischer Sorgfalt gelesen.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'Neuere Ausleger lesen den Abschnitt als Lehrstück über den Umgang mit Konflikt: Benennen statt Verschweigen, Abstand statt Bruch, Ermahnung statt Verurteilung. Kritisch wird angemerkt, dass Beschämung als Mittel in modernen Gemeinschaften anders wirkt als in einer Ehrkultur und leicht in Ausgrenzung umschlägt.',
+      },
+    ],
+    crossRefs: [
+      { book: '2thess', chapter: 2, verse: 2, note: 'Die Warnung vor dem gefälschten Brief' },
+      { book: 'gal', chapter: 6, verse: 11, note: 'Mit wie großen Buchstaben ich euch schreibe' },
+      { book: 'roem', chapter: 16, verse: 22, note: 'Tertius, der Schreiber, grüßt' },
+      { book: 'mt', chapter: 18, verse: 15, note: 'Das Verfahren bei Streit' },
     ],
   },
 ];
