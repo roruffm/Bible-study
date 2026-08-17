@@ -16291,7 +16291,7 @@ export const COMMENTARY: CommentaryEntry[] = [
   {
     book: 'phil',
     chapter: 4,
-    from: 13,
+    from: 10,
     to: 13,
     title: '„Ich vermag alles durch den, der mich mächtig macht“',
     historicalShort:
@@ -25903,6 +25903,1376 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: '1petr', chapter: 3, verse: 15, note: 'Rechenschaft über die Hoffnung' },
       { book: 'kol', chapter: 3, verse: 22, note: 'Die Anweisung an die Knechte' },
       { book: 'apg', chapter: 20, verse: 4, note: 'Tychikus und Aristarchus als Begleiter' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 9 Abschnitte */
+  {
+    book: 'phil',
+    chapter: 1,
+    from: 1,
+    to: 5,
+    title: '„samt den Bischöfen und Dienern“',
+    historicalShort:
+      'Der einzige Briefanfang des Neuen Testaments, der neben der Gemeinde Amtsträger nennt – und die früheste Erwähnung von Bischöfen und Diakonen überhaupt.',
+    historicalLong:
+      'Philippi war eine römische Kolonie mit italischem Recht. Nach der Schlacht von 42 vor Christus, in der Antonius und Oktavian die Cäsarmörder besiegten, wurden dort Veteranen angesiedelt; nach Actium kamen weitere hinzu. Die Stadt war klein, aber stolz: Ihre Beamten trugen lateinische Titel, Latein war Amtssprache, und die Inschriften zeigen eine Bevölkerung aus römischen Siedlern, Thrakern und Griechen. Eine jüdische Gemeinde war offenbar so klein, dass es keine Synagoge gab – die Apostelgeschichte berichtet von einer Gebetsstätte am Fluss vor der Stadt.\n\nDie Anrede nennt Bischöfe und Diakone. Das ist die früheste Erwähnung dieser beiden Bezeichnungen nebeneinander und der einzige Briefanfang, der Amtsträger aufführt. Beide Wörter sind keine kirchlichen Prägungen: episkopos war der Aufseher über Kassen, Bauten oder Verwaltungen, diakonos der Beauftragte, der einen Auftrag ausführt – in Vereinen bezeichneten beide Titel gewählte Funktionen. Auffällig ist die Mehrzahl bei den Bischöfen: Die spätere Ordnung mit einem Bischof je Gemeinde besteht noch nicht.\n\nWarum sie hier genannt werden, sagt der Brief nicht. Die verbreitete Vermutung verbindet es mit dem Schluss: Die Gemeinde hatte mehrfach Geld geschickt, und wer eine Kasse führt, wird genannt. Eine andere Erklärung verweist auf den Streit zwischen zwei Frauen, den der Brief später ausdrücklich anspricht – dann wären die Amtsträger als Verantwortliche angeredet.\n\nDas Wort für Gemeinschaft, das die Danksagung trägt, gehört ebenfalls in die Wirtschaftssprache. Es bezeichnet die Teilhaberschaft an einem Unternehmen. Der Briefschluss nimmt es wieder auf und rechnet dort ausdrücklich mit Ausgabe und Einnahme. Der Brief ist damit unter anderem ein Dankschreiben für Geld – die früheste erhaltene Quittung der Kirchengeschichte, wie Ausleger gelegentlich anmerken.\n\nDer Ton ist von allen Paulusbriefen der wärmste. Es fehlt jeder Vorwurf, jede Zurechtweisung der Gemeinde als ganzer; stattdessen stehen Dank, Freude und Zuneigung. Das Wort für Freude und das zugehörige Verb kommen in vier Kapiteln sechzehnmal vor – in einem Brief, der aus dem Gefängnis geschrieben ist.',
+    reception:
+      'Der Vers ist in allen Auseinandersetzungen über die Ämterverfassung zitiert worden. Dass Bischöfe in der Mehrzahl erscheinen, war für die reformatorische Seite ein Hauptargument gegen die Vorstellung, das Bischofsamt sei von Anfang an als Einzelamt eingesetzt gewesen; die katholische Auslegung versteht die Stelle als frühe Stufe einer Entwicklung. Die Feststellung selbst ist unstrittig: Ein Bischof je Gemeinde ist erstmals bei Ignatius von Antiochien um 110 belegt.\n\nDas Diakonat hat seine biblische Grundlage vor allem in diesem Vers und im dritten Kapitel des ersten Timotheusbriefs. Die Wiederentdeckung des Amtes im 19. Jahrhundert – die Diakonissenanstalten Theodor Fliedners, die Diakonenausbildung der Inneren Mission – berief sich darauf, ebenso die Erneuerung des ständigen Diakonats durch das Zweite Vatikanische Konzil.\n\nDie Gemeinde in Philippi ist die erste in Europa gewesen. Diese Feststellung hat in der europäischen Kirchengeschichte eine eigene Wirkung entfaltet, von mittelalterlichen Chroniken bis zu Gedenkfeiern der Gegenwart; die Ausgrabungen in Philippi mit ihren Basiliken und dem angeblichen Gefängnis des Paulus sind seit dem 19. Jahrhundert Ziel von Reisen. Die Stätte gehört seit 2016 zum Weltkulturerbe.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Philippi war römische Kolonie mit italischem Recht: Die Bürger galten rechtlich, als lebten sie in Italien, und zahlten keine Grundsteuer. Ihre Beamten trugen lateinische Titel, Amtssprache war Latein. Der Stolz darauf ist in den Inschriften greifbar.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Vereine wählten Aufseher und Beauftragte und regelten ihre Aufgaben in Satzungen: Kasse, Versammlungsraum, Bestattung der Mitglieder. Die Titel episkopos und diakonos stammen aus diesem Umfeld und waren keine religiösen Wörter.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wanderprediger finanzierten sich über Gönner, Handarbeit oder Sammlungen. Jede Form hatte ihren Preis: Gönner erwarteten Ehrungen, Handarbeit kostete Ansehen, Sammlungen schufen Rechenschaftspflicht. Der Brief zeigt, wie sorgfältig dieses Feld beackert wurde.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Philippi lag an der Via Egnatia, etwa 15 Kilometer vom Hafen Neapolis entfernt, in einer Ebene mit Sümpfen und Goldminen im Umland. Wer von Kleinasien nach Rom reiste, kam hier durch.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. episkopois kai diakonois',
+        rendered: 'den Bischöfen und Dienern',
+        note: 'Aufseher und Beauftragte – Titel aus dem Vereinswesen, keine kirchlichen Prägungen. Die früheste Erwähnung beider nebeneinander. Die Mehrzahl bei den Aufsehern zeigt, dass die spätere Ordnung mit einem Bischof je Gemeinde noch nicht besteht.',
+      },
+      {
+        word: 'griech. koinonia eis to euangelion',
+        rendered: 'eure Gemeinschaft am Evangelium',
+        note: 'Teilhaberschaft. Der Ausdruck stammt aus der Wirtschaftssprache und meint die Beteiligung an einem gemeinsamen Unternehmen – der Briefschluss rechnet dieselbe Sache in Ausgabe und Einnahme ab.',
+      },
+      {
+        word: 'griech. doulos',
+        rendered: 'Knechte',
+        note: 'Sklaven. Anders als sonst nennt sich der Absender hier nicht Apostel; er stellt sich mit Timotheus auf dieselbe Stufe. In einem Brief ohne Zurechtweisung ist der Verzicht auf den Amtstitel bemerkenswert.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Brief gehört zu den unbestrittenen Paulusbriefen. Umstritten ist der Ort der Abfassung: Rom, Cäsarea oder Ephesus kommen in Frage. Für Ephesus spricht die Nähe zu Philippi, die den mehrfachen Austausch von Nachrichten erklärt; für Rom die Erwähnung des Richthauses und des Kaiserhauses.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Nennung von Bischöfen und Diakonen gilt als frühe Stufe der Ämterordnung, die sich zu der bei Ignatius bezeugten Gestalt entwickelte. Das Zweite Vatikanische Konzil erneuerte den ständigen Diakonat und berief sich dabei auf die neutestamentlichen Zeugnisse, unter denen dieser Vers das älteste ist.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Mehrzahl der Bischöfe war ein Hauptargument gegen die Vorstellung, das Bischofsamt sei als Einzelamt eingesetzt worden. Betont wird zugleich, dass die Anrede zuerst der ganzen Gemeinde gilt und die Amtsträger nachgeordnet genannt werden.',
+      },
+      {
+        tradition: 'Diakoniegeschichtliche Lesart',
+        text: 'Der Vers gehört zu den Gründungstexten des Diakonats. Die Wiederentdeckung des Amtes im 19. Jahrhundert – Fliedners Diakonissenanstalt, die Ausbildung von Diakonen in der Inneren Mission – berief sich darauf, ohne dass der Text über die Aufgaben etwas sagt.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Lesart',
+        text: 'Der Brief ist ein Dankschreiben für Geld, und die Erwähnung der Amtsträger passt dazu: Wer eine Kasse führt, wird genannt. Diese nüchterne Erklärung ist in der neueren Auslegung verbreitet und stellt die Stelle in den Zusammenhang der Finanzierung der Mission.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 16, verse: 12, note: 'Die Gründung der Gemeinde in Philippi' },
+      { book: 'phil', chapter: 4, verse: 15, note: 'Die Abrechnung am Briefschluss' },
+      { book: '1tim', chapter: 3, verse: 1, note: 'Anforderungen an Bischöfe und Diakone' },
+      { book: 'apg', chapter: 16, verse: 13, note: 'Die Gebetsstätte am Fluss' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 1,
+    from: 7,
+    to: 20,
+    title: '„in dem ganzen Richthause“',
+    historicalShort:
+      'Ein Gefangener berichtet, seine Haft habe der Sache genützt – und dass andere aus Neid predigen. Seine Antwort darauf ist ungewöhnlich gelassen.',
+    historicalLong:
+      'Das Wort, das Luther mit Richthaus übersetzt, lautet im Griechischen praitorion und ist aus dem Lateinischen entlehnt. Es bezeichnete ursprünglich das Zelt des Feldherrn, dann den Amtssitz eines Statthalters und schließlich die kaiserliche Garde – die Prätorianer. Welche Bedeutung hier gilt, entscheidet über den Ort der Abfassung: Meint es die Garde, spricht das für Rom; meint es einen Amtssitz, kommen Cäsarea oder Ephesus in Frage. Der Gruß am Briefende von denen aus dem Hause des Kaisers wird meist für Rom angeführt, doch kaiserliche Sklaven und Freigelassene arbeiteten in allen Provinzen.\n\nDie Frage nach dem Ort ist nicht nebensächlich. Von Rom nach Philippi waren es etwa fünf Wochen; der Brief setzt aber mehrere Reisen hin und her voraus – die Nachricht von der Haft, die Sendung des Epaphroditus, die Nachricht von seiner Krankheit, die Rücksendung. Das ergibt bei einer Entfernung von tausendfünfhundert Kilometern eine sehr lange Zeit. Von Ephesus aus wären es sieben bis zehn Tage gewesen. Die Ephesus-Hypothese hat deshalb Anhänger, obwohl eine Gefangenschaft dort nirgends bezeugt ist.\n\nDer Bericht, dass andere aus Neid predigen, um ihm Trübsal zuzufügen, gibt einen seltenen Einblick in innerchristliche Konkurrenz. Wer diese Leute waren, sagt der Text nicht; er wirft ihnen keine falsche Lehre vor, sondern falsche Beweggründe. Die Antwort – Hauptsache, Christus wird verkündigt – ist in der Auslegungsgeschichte oft als Großmut gelesen worden und ebenso oft als Hinweis darauf, dass die Sache über der Person steht.\n\nDie Haftbedingungen lassen sich aus den Angaben erschließen. Der Gefangene kann Besuch empfangen, Briefe schreiben und Boten aussenden; er ist also nicht in strenger Verwahrung. Zugleich rechnet er mit einem Todesurteil. Das entspricht der custodia militaris, bei der ein Gefangener an einen Soldaten gefesselt war und in gemieteten Räumen wohnen konnte – die Apostelgeschichte beschreibt für Rom genau das.\n\nDer Abschnitt endet mit einer Wendung, die in der Rechtssprache verankert ist: Er hoffe, in nichts zu Schanden zu werden. Das Wort meint das Unterliegen vor Gericht mit dem Verlust der Ehre. Es setzt eine bevorstehende Verhandlung voraus – und die Formulierung, Christus werde an seinem Leibe groß gemacht, es sei durch Leben oder Tod, hält beide Ausgänge offen.',
+    reception:
+      'Der Satz, es komme darauf an, dass Christus verkündigt werde, gleich mit welchem Beweggrund, ist in der Kirchengeschichte oft angeführt worden, wenn Konkurrenz zwischen Predigern oder Missionsgesellschaften zu schlichten war. Augustinus zog ihn in der Auseinandersetzung mit den Donatisten heran, um zu begründen, dass die Wirksamkeit der Verkündigung nicht am Charakter des Verkündigers hängt – ein Gedanke, der später in der Lehre von der Wirksamkeit der Sakramente unabhängig vom Spender wiederkehrt.\n\nDie Frage nach dem Ort der Gefangenschaft hat die Forschung seit dem 19. Jahrhundert beschäftigt. Die Ephesus-Hypothese wurde 1900 zuerst vorgetragen und hat sich seither als ernsthafte Alternative gehalten, ohne sich durchzusetzen. In Ephesus wird bis heute ein Turm als Paulusgefängnis gezeigt; ein Beleg dafür fehlt.\n\nDie Beschreibung der Haft hat in der Gefangenenseelsorge eine eigene Wirkung entfaltet. Dass ein Gefangener seine Lage als Förderung der Sache beschreibt, ist in Briefen aus Haft immer wieder aufgegriffen worden – Dietrich Bonhoeffers Aufzeichnungen aus Tegel bewegen sich in diesem Zusammenhang, ohne die Stelle durchgängig zu zitieren.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Bei der militärischen Verwahrung war ein Gefangener an einen Soldaten gefesselt und konnte in gemieteten Räumen wohnen, Besuch empfangen und Briefe schreiben. Die Wache wechselte, und mit ihr die Zuhörer.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Prätorianergarde umfasste mehrere tausend Mann und war die einzige Truppe in Rom selbst. Sie bewachte den Kaiser, führte Hinrichtungen aus und hatte politisches Gewicht – Kaiser wurden von ihr eingesetzt und beseitigt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Von Rom nach Philippi rechnete man etwa fünf Wochen, von Ephesus sieben bis zehn Tage. Der Brief setzt mehrere Reisen hin und her voraus – ein Grund, warum der Ort der Abfassung umstritten ist.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Zum Haus des Kaisers gehörten Tausende von Sklaven und Freigelassenen in Verwaltung, Rechnungswesen und Dienst – nicht die Familie. Sie arbeiteten in Rom und in den Provinzen; Grabinschriften nennen sie zu Hunderten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. praitorion',
+        rendered: 'in dem ganzen Richthause',
+        note: 'Aus dem Lateinischen entlehnt: das Zelt des Feldherrn, der Amtssitz eines Statthalters oder die kaiserliche Garde. Welche Bedeutung gilt, entscheidet über den Ort der Abfassung – und ist nicht zu klären.',
+      },
+      {
+        word: 'griech. prokopen',
+        rendered: 'zur Förderung',
+        note: 'Fortschritt, Vorankommen. Das Wort stammt aus der Militärsprache – das Vorrücken einer Truppe – und wurde von den Stoikern für den Fortschritt im Tugendstreben gebraucht. Hier ist es die Sache selbst, die vorankommt.',
+      },
+      {
+        word: 'griech. aischynthesomai',
+        rendered: 'zu Schanden werde',
+        note: 'Vor Gericht unterliegen und dabei die Ehre verlieren. Der Ausdruck setzt eine bevorstehende Verhandlung voraus; der Zusatz „durch Leben oder durch Tod“ hält beide Ausgänge offen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Ort der Gefangenschaft ist offen. Rom passt zu Prätorium und Kaiserhaus, Ephesus zu den vielen Reisen zwischen Absender und Gemeinde. Eine ephesinische Haft ist nirgends bezeugt, aber der zweite Korintherbrief erwähnt Todesgefahr in Asien. Die Frage bleibt ungelöst.',
+      },
+      {
+        tradition: 'Altkirchliche Auslegung',
+        text: 'Augustinus zog den Satz über die Verkündigung aus falschen Beweggründen gegen die Donatisten heran: Die Wirkung hänge nicht am Charakter des Verkündigers. Aus diesem Gedanken ist die Lehre erwachsen, dass Sakramente unabhängig von der Würdigkeit des Spenders gelten.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las den Abschnitt als Beleg dafür, dass das Wort selbst wirkt und nicht der Mensch, der es sagt. Zugleich betonte er die Unbefangenheit gegenüber der eigenen Lage: Der Gefangene beklagt sich nicht, sondern fragt, was der Sache nützt.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt beschreibt eine Lage ohne Ausweg und deutet sie um, ohne sie zu beschönigen. In der Gefangenenseelsorge und in der Begleitung schwer Kranker wird er herangezogen – meist mit dem Hinweis, dass die Umdeutung vom Betroffenen selbst kommt und niemandem vorgehalten werden darf.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Gelassenheit gegenüber den Konkurrenten wird gelegentlich zu weit gelesen: Der Text spricht von falschen Beweggründen bei richtiger Botschaft, nicht von falscher Botschaft. Der Galaterbrief desselben Verfassers zeigt, wie scharf er im zweiten Fall reagiert.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 28, verse: 16, note: 'Die Haft in Rom mit einem Soldaten' },
+      { book: '2kor', chapter: 1, verse: 8, note: 'Todesgefahr in Asien' },
+      { book: 'phil', chapter: 4, verse: 22, note: 'Die aus des Kaisers Hause' },
+      { book: 'gal', chapter: 1, verse: 8, note: 'Der andere Ton bei falscher Botschaft' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 1,
+    from: 21,
+    to: 30,
+    title: '„Christus ist mein Leben, und Sterben ist mein Gewinn“',
+    historicalShort:
+      'Ein Mensch wägt zwischen Leben und Tod ab und entscheidet sich für das Leben – aus einem Grund, der nicht bei ihm liegt.',
+    historicalLong:
+      'Die Abwägung zwischen Leben und Sterben war ein bekanntes Thema der antiken Philosophie. Die Stoiker erörterten den vernünftigen Ausgang aus dem Leben ausführlich: Seneca schreibt darüber in mehreren Briefen, und der Freitod galt in bestimmten Lagen als ehrenhafte, vernünftige Entscheidung. Der Abschnitt bewegt sich in dieser Denkform und weicht an einem Punkt ab: Die Entscheidung fällt nicht nach dem eigenen Vorteil, sondern nach dem Nutzen für andere.\n\nDas Wort für Gewinn stammt aus dem Kaufmannswesen. Der ganze Vers ist als Rechnung gebaut – Leben ist dies, Sterben ist Gewinn –, und derselbe Wortschatz kehrt im dritten Kapitel wieder, wo Gewinn und Schaden gegeneinandergestellt werden. Wer so formuliert, benutzt die Sprache der Bilanz für eine Frage, die sich nicht bilanzieren lässt.\n\nDer Ausdruck „abscheiden“ ist mehrdeutig und deshalb genau gewählt. Er bezeichnet das Losmachen eines Schiffes vom Ankerplatz, das Abbrechen eines Zeltlagers und die Lösung von Fesseln – alle drei Bilder passen zur Lage eines Gefangenen. Das zugehörige Substantiv steht im zweiten Timotheusbrief für das eigene Ende.\n\nDer Satz, bei Christus zu sein sei viel besser, setzt eine Vorstellung vom Zustand nach dem Tod voraus, die im Neuen Testament sonst kaum ausgeführt wird. Der erste Thessalonicherbrief spricht von Entschlafenen, die bei der Wiederkunft auferstehen; hier ist von einem unmittelbaren Beisammensein die Rede. Beide Vorstellungen stehen unausgeglichen nebeneinander, und die spätere Lehre vom Zwischenzustand ist der Versuch, sie zu ordnen.\n\nDer Schluss wechselt zur Gemeinde und gebraucht ein politisches Wort. Die Aufforderung, würdig des Evangeliums zu wandeln, lautet im Griechischen wörtlich: Führt euer Bürgerleben würdig. Das Verb ist von der Bürgerschaft abgeleitet und kommt im Neuen Testament nur zweimal vor. In einer römischen Kolonie, deren Bewohner auf ihr Bürgerrecht stolz waren, hatte es einen genauen Klang – und der Brief nimmt es im dritten Kapitel wieder auf, wenn er das Bürgerrecht im Himmel nennt.',
+    reception:
+      'Der Vers vom Leben und Sterben gehört zu den meistgesprochenen Sätzen bei Bestattungen und steht auf zahllosen Grabsteinen. Er ist mehrfach vertont worden; Bach schrieb über den Gedanken die Kantate „Christus, der ist mein Leben“, deren Choral bis heute im Gesangbuch steht.\n\nDie Abwägung zwischen Bleiben und Gehen ist in der Sterbebegleitung ein Grundtext geworden. Sie zeigt einen Menschen, der den Tod nicht fürchtet und das Leben trotzdem wählt, und zwar wegen anderer. In der Diskussion über Sterbehilfe wird der Abschnitt von beiden Seiten angeführt: als Beleg dafür, dass der Tod kein Übel ist, und als Beleg dafür, dass die Entscheidung nicht beim Einzelnen liegt.\n\nDer Satz, es sei der Gemeinde gegeben, nicht nur zu glauben, sondern auch zu leiden, hat eine schwierige Wirkungsgeschichte. In Verfolgungszeiten war er Trost; in Zeiten ohne Verfolgung ist er zur Verklärung von Leid gebraucht worden. Die Märtyrerakten der Alten Kirche zitieren ihn regelmäßig, und die Berichte über die Christen in Lyon von 177 stehen ihm nahe.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Tod war allgegenwärtig: Die durchschnittliche Lebenserwartung lag bei etwa dreißig Jahren, gerechnet mit der hohen Kindersterblichkeit. Wer das dreißigste Jahr erreichte, konnte mit weiteren zwanzig rechnen. Über das Sterben zu sprechen war alltäglich.',
+      },
+      {
+        aspect: 'macht',
+        text: 'In einer römischen Kolonie war das Bürgerrecht der wichtigste Besitz: Es schützte vor Prügelstrafe, gab Zugang zum Gericht und befreite von Abgaben. Das Wort vom Bürgerleben traf in Philippi einen Nerv.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für Gewinn stammt aus dem Handel. Kaufleute führten Bücher mit Gewinn und Verlust; derselbe Wortschatz kehrt im dritten Kapitel wieder. Die Rechnung ist die Denkform des Abschnitts.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Grabinschriften der Zeit reichen von der nüchternen Feststellung, danach sei nichts, bis zur Hoffnung auf ein Fortleben bei den Göttern. Eine verbindliche Lehre gab es nicht; jede Familie und jeder Kult sagte darüber etwas anderes.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kerdos',
+        rendered: 'Gewinn',
+        note: 'Ein Wort aus dem Handel. Der Vers ist als Rechnung gebaut, und derselbe Wortschatz kehrt im dritten Kapitel wieder, wo Gewinn und Schaden gegeneinanderstehen.',
+      },
+      {
+        word: 'griech. analysai',
+        rendered: 'abzuscheiden',
+        note: 'Losmachen: ein Schiff vom Ankerplatz, ein Zeltlager, Fesseln. Alle drei Bilder passen zur Lage eines Gefangenen. Das Substantiv dazu steht im zweiten Timotheusbrief für das eigene Ende.',
+      },
+      {
+        word: 'griech. politeuesthe',
+        rendered: 'Wandelt',
+        note: 'Wörtlich: führt euer Bürgerleben. Das Verb ist von der Bürgerschaft abgeleitet und steht im Neuen Testament nur zweimal. In einer römischen Kolonie mit stolzem Bürgerrecht war der Klang genau.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt bewegt sich in der Denkform der stoischen Erörterung über Leben und Tod und weicht an einem Punkt ab: Die Entscheidung fällt nach dem Nutzen für andere. Die Vorstellung eines unmittelbaren Beisammenseins nach dem Tod steht unausgeglichen neben der Erwartung einer künftigen Auferstehung.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Märtyrerakten zitieren den Vers regelmäßig; er gehörte zum Sprachvorrat derer, die vor Gericht standen. Chrysostomos betonte die Wahl zugunsten der Gemeinde: Der Apostel ziehe die Mühe dem Ausruhen vor, weil andere ihn brauchen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther predigte über den Vers als Beschreibung des Glaubens, der den Tod nicht mehr fürchtet, und verband ihn mit dem Trost der Auferstehung. Der Choral „Christus, der ist mein Leben“ von 1609 hat diese Auslegung in Lied und Bestattungsliturgie getragen.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt zeigt jemanden, der zwischen Bleiben und Gehen abwägt und das Bleiben wählt, und zwar wegen anderer. In der Sterbebegleitung wird das als Modell gelesen, in dem der Wunsch zu gehen ausgesprochen werden darf, ohne dass er das letzte Wort behält.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Satz, es sei gegeben, um Christi willen zu leiden, ist in Verfolgungszeiten Trost gewesen und in Zeiten ohne Verfolgung zur Verklärung von Leid gebraucht worden. Ausleger halten fest, dass der Text von Widerstand gegen die Gemeinde spricht, nicht von Krankheit oder Unglück.',
+      },
+    ],
+    crossRefs: [
+      { book: 'phil', chapter: 3, verse: 20, note: 'Das Bürgerrecht im Himmel' },
+      { book: '1thess', chapter: 4, verse: 16, note: 'Die Entschlafenen bei der Wiederkunft' },
+      { book: 'lk', chapter: 23, verse: 43, note: 'Heute wirst du mit mir im Paradies sein' },
+      { book: '2tim', chapter: 4, verse: 6, note: 'Dasselbe Wort für den Aufbruch' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 2,
+    from: 1,
+    to: 2,
+    title: '„daß ihr eines Sinnes seid“',
+    historicalShort:
+      'Zwei Verse, die eine Bitte vorbereiten – und die Einmütigkeit einer Gemeinde zur Freude eines Gefangenen erklären.',
+    historicalLong:
+      'Die beiden Verse bilden im Griechischen einen einzigen Satz: eine vierfache Bedingung, dann die Bitte. Solche Häufungen waren ein Mittel der Rhetorik; sie steigern die Erwartung und machen die Bitte, die folgt, unausweichlich. Die vier genannten Größen – Zuspruch, Trost, Gemeinschaft des Geistes, Erbarmen – sind keine Aufzählung von Gütern, sondern Bedingungen, die als erfüllt vorausgesetzt werden.\n\nDas Wort für die Einmütigkeit, das viermal in verschiedenen Wendungen wiederkehrt, gehört in die politische Sprache. Griechische Städte hatten einen eigenen Begriff dafür – homonoia, Gleichgesinntheit –, und sie war ein Dauerthema: Städte prägten Münzen mit diesem Wort, schlossen Eintrachtsverträge und ließen Reden darüber halten. Dion von Prusa hielt mehrere solcher Reden vor zerstrittenen Städten. Der Brief greift diesen Sprachgebrauch auf und wendet ihn auf eine Gemeinde an.\n\nDass Einmütigkeit ein Thema war, sagt der Brief selbst. Im vierten Kapitel werden zwei Frauen mit Namen genannt, die sich uneins sind, und ein Dritter wird gebeten, ihnen beizustehen. Der Streit muss über den Kreis der Beteiligten hinaus bekannt gewesen sein, sonst hätte er nicht in einem Brief gestanden, der öffentlich vorgelesen wurde. Die beiden Verse hier bereiten diese Ermahnung vor, ohne die Namen zu nennen.\n\nDas Wort, das Luther mit herzlicher Liebe wiedergibt, meint im Griechischen die Eingeweide – den Sitz des Mitgefühls im antiken Denken. Es kehrt im Brief mehrfach wieder und ist eines der Wörter, die dem Schreiben seinen persönlichen Ton geben. Empfinden wurde körperlich gedacht, nicht als seelischer Vorgang.\n\nDie Bitte ist bemerkenswert bescheiden formuliert: Erfüllt meine Freude. Der Absender bittet nicht um Gehorsam und beruft sich nicht auf sein Amt – er sagt, was ihn freuen würde. Unmittelbar danach folgt der Christushymnus, in dem der Verzicht auf den eigenen Rang beschrieben wird; die Bitte und das Lied gehören zusammen.',
+    reception:
+      'Die Häufung im ersten Vers ist in der Liturgie aufgenommen worden; einzelne Wendungen stehen in Gebeten und Segensformeln. Wirkungsgeschichtlich bedeutender ist die Verbindung mit dem folgenden Hymnus: Die beiden Verse sind der Grund, warum das Lied überliefert wurde – sie machen es zur Begründung einer Bitte um Einmütigkeit und nicht zu einer Lehre über die Person Christi.\n\nDer Begriff der Einmütigkeit hat in der ökumenischen Bewegung eine eigene Rolle gespielt. Er beschreibt eine Übereinstimmung, die nicht Gleichförmigkeit ist – die antiken Städte, die Eintrachtsverträge schlossen, blieben selbständig. Diese Unterscheidung ist in den Dokumenten über versöhnte Verschiedenheit aufgenommen worden.\n\nIn der Gemeindepraxis gehören die Verse zu den Standardtexten bei Konflikten. Kritisch wird angemerkt, dass die Aufforderung zur Einmütigkeit dazu dienen kann, berechtigten Widerspruch zu unterdrücken. Ausleger verweisen darauf, dass der Brief die beiden streitenden Frauen namentlich nennt und beide gleich anredet – er nimmt keine Partei und erklärt den Streit auch nicht für unwichtig.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Parteiungen zerrissen antike Städte regelmäßig: Familien, Zünfte und Stadtviertel standen gegeneinander, und Rom griff ein, wenn es zu Unruhen kam. Wer zur Eintracht rief, benannte das größte innenpolitische Problem seiner Zeit.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Wort für herzliche Liebe meint die Eingeweide – im antiken Denken der Sitz des Mitgefühls. Empfinden wurde körperlich gedacht: Man spürte Erbarmen im Bauch, nicht im Herzen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Brief wurde vor der versammelten Gemeinde vorgelesen. Was darin stand, wussten danach alle. Dass ein Streit zweier Frauen darin erwähnt wird, setzt voraus, dass er ohnehin bekannt war.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Rhetorik war Schulfach. Die Häufung von Bedingungen vor einer Bitte war eine gelernte Figur, die jeder Gebildete erkannte. Wer so schrieb, zeigte Können – und machte die Bitte schwerer abzuschlagen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. to auto phronete',
+        rendered: 'daß ihr eines Sinnes seid',
+        note: 'Dasselbe denken, gleichgesinnt sein. Das Verb steht im Brief zehnmal und trägt sein Hauptanliegen. In der politischen Sprache bezeichnete das verwandte Wort homonoia die Eintracht zwischen Städten und Parteien.',
+      },
+      {
+        word: 'griech. splanchna kai oiktirmoi',
+        rendered: 'herzliche Liebe und Barmherzigkeit',
+        note: 'Wörtlich: Eingeweide und Erbarmen. Das erste Wort bezeichnet den Sitz des Mitgefühls im antiken Denken. Der Brief gebraucht es mehrfach; es gibt ihm seinen persönlichen Ton.',
+      },
+      {
+        word: 'griech. paraklesis',
+        rendered: 'Ermahnung',
+        note: 'Zuspruch, Trost, Ermutigung – alles zugleich. Dasselbe Wort steht hinter der Bezeichnung des Geistes als Beistand. Luthers „Ermahnung“ trifft nur eine Seite.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die beiden Verse sind die rhetorische Vorbereitung des Christushymnus und zugleich der Ermahnung an die beiden streitenden Frauen im vierten Kapitel. Sie zeigen, dass Einmütigkeit das Hauptanliegen des Briefes ist – ein Anliegen, das sich an einem konkreten Konflikt entzündet.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos hob hervor, dass der Apostel um seine eigene Freude bittet und sich damit klein macht: Er befehle nicht, er bitte. Diese Beobachtung verband er mit dem folgenden Hymnus, in dem der Verzicht auf den eigenen Rang beschrieben wird.',
+      },
+      {
+        tradition: 'Ökumenische Auslegung',
+        text: 'Der Begriff der Einmütigkeit wird als Übereinstimmung verstanden, die nicht Gleichförmigkeit ist – die antiken Städte, die Eintrachtsverträge schlossen, blieben selbständig. Diese Unterscheidung ist in die Rede von der versöhnten Verschiedenheit eingegangen.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'Der Text gehört zu den Standardstellen bei Gemeindekonflikten. Betont wird, dass der Brief beide Streitenden gleich anredet, keine Partei nimmt und einen Dritten zur Vermittlung bittet – ein Verfahren, das ohne Schuldzuweisung auskommt.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Aufforderung zur Einmütigkeit kann dazu dienen, berechtigten Widerspruch als Störung abzutun. Ausleger halten dagegen, dass der Brief den Streit nicht für unwichtig erklärt, sondern ihn benennt und Hilfe organisiert – Einmütigkeit heißt hier nicht Schweigen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'phil', chapter: 4, verse: 2, note: 'Evodia und Syntyche' },
+      { book: 'phil', chapter: 2, verse: 6, note: 'Der Hymnus als Begründung' },
+      { book: 'roem', chapter: 12, verse: 16, note: 'Habt einerlei Sinn untereinander' },
+      { book: '1kor', chapter: 1, verse: 10, note: 'Dass ihr alle einerlei Rede führt' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 2,
+    from: 12,
+    to: 30,
+    title: '„schaffet, daß ihr selig werdet, mit Furcht und Zittern“',
+    historicalShort:
+      'Ein Satz, der wie eine Aufforderung zur Selbsterlösung klingt – gefolgt von einem, der sie zurücknimmt. Danach zwei Menschen, die zwischen Gemeinde und Gefängnis unterwegs sind.',
+    historicalLong:
+      'Die beiden Verse gehören zusammen und sind einzeln nicht zu verstehen. Der erste fordert auf, an der eigenen Rettung zu arbeiten; der zweite sagt, dass Gott das Wollen und das Vollbringen wirkt. Die Reihenfolge ist bemerkenswert: Die Aufforderung steht voran, die Begründung folgt. Wer den ersten Satz allein zitiert, macht daraus eine Leistungslehre; wer nur den zweiten nimmt, macht den Menschen zum Zuschauer. Der Text lässt beides nicht zu.\n\nDas Verb im ersten Satz meint bearbeiten, herausarbeiten – es wird für den Bergbau und die Landwirtschaft gebraucht. Die Wendung mit Furcht und Zittern stammt aus der griechischen Bibel, wo sie die Haltung vor Gott bezeichnet, und ist bei Paulus mehrfach belegt; sie meint keine Angst um das eigene Heil, sondern die Ernsthaftigkeit vor einer Sache, die nicht in der eigenen Hand liegt. Auffällig ist zudem die Mehrzahl: Angeredet ist die Gemeinde, nicht der Einzelne.\n\nDas Bild von den Lichtern in der Welt greift ein Wort aus dem Danielbuch auf, wo die Verständigen leuchten werden wie des Himmels Glanz. Das griechische Wort bezeichnet die Gestirne. Die Wendung vom verkehrten Geschlecht stammt aus dem Lied des Mose im fünften Buch Mose – dort ist es Israel selbst, das so genannt wird. Der Brief überträgt den Ausdruck auf die Umwelt der Gemeinde.\n\nDas Bild vom Trankopfer, das folgt, ist kultisch genau: Wein wurde neben oder über das Opfer auf den Altar gegossen, eine Beigabe, nicht die Hauptsache. Wer sein eigenes Sterben so beschreibt, ordnet es dem Glauben der Gemeinde als Opfer zu und macht sich selbst zum Zusatz. Dasselbe Bild steht im zweiten Timotheusbrief.\n\nDer Rest des Kapitels handelt von zwei Menschen. Timotheus wird gelobt mit einem Satz, der andere schlecht aussehen lässt: Sie suchen alle das Ihre. Epaphroditus war als Bote der Gemeinde mit Geld gekommen, wurde todkrank und kehrt nun zurück; der Brief bittet ausdrücklich, ihn ehrenvoll aufzunehmen – ein Hinweis darauf, dass seine vorzeitige Rückkehr als Versagen hätte gelten können. Die Krankheit wird ohne jede Deutung berichtet: kein Grund, kein Sinn, nur die Feststellung, dass Gott sich erbarmt hat. In einem Brief, der viel vom Leiden spricht, ist das bemerkenswert nüchtern.',
+    reception:
+      'Der Satz von der Furcht und dem Zittern hat eine große und zwiespältige Wirkung entfaltet. Er ist in der katholischen Frömmigkeit als Mahnung zur Wachsamkeit gelesen worden, in der reformatorischen als Beschreibung des Ernstes, mit dem Glaube gelebt wird. Søren Kierkegaard machte die Wendung 1843 zum Titel seines Buches über Abraham und gab ihr damit eine philosophische Nachwirkung, die über die Theologie hinausreicht.\n\nDie Verbindung der beiden Verse ist zum Musterfall für die Frage nach dem Verhältnis von Gnade und Handeln geworden. Augustinus zitierte sie gegen Pelagius, Trient gegen die Reformation, die Reformatoren gegen Trient. Alle Seiten berufen sich auf denselben Zusammenhang und gewichten die beiden Sätze verschieden.\n\nDie Erzählung von Epaphroditus hat eine stillere Wirkung. Sie ist einer der wenigen neutestamentlichen Texte, die von einer Krankheit berichten, die nicht geheilt wird und für die keine Erklärung angeboten wird – die Genesung wird als Erbarmen bezeichnet, das Kranksein selbst bleibt unerklärt. In der Krankenseelsorge wird das regelmäßig hervorgehoben, weil es der Erwartung widerspricht, dass Krankheit eine Bedeutung haben muss.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Das Verb für „schaffet“ meint bearbeiten, herausarbeiten – es steht für Bergbau und Ackerbau. Ein Erz wird aus dem Berg herausgearbeitet, ein Feld bearbeitet. Das Bild setzt eine Sache voraus, die da ist und bearbeitet wird.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Wein war Alltagsgetränk und Kultgabe zugleich; man mischte ihn mit Wasser und trank ihn zu jeder Mahlzeit. Ihn auszugießen statt zu trinken, war ein sichtbarer Verzicht – und in jedem Kult des Mittelmeerraums bekannt.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Krankheit war meist unbehandelbar. Ärzte kannten Wundversorgung, Diät und einige Mittel; bei Fieber und inneren Erkrankungen blieb Abwarten. Wer todkrank wurde und wieder gesund, hatte Glück gehabt – das sagt auch dieser Text.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Bote, der mit Geld geschickt wurde und vorzeitig zurückkam, musste sich erklären. Die ausdrückliche Bitte, ihn ehrenvoll aufzunehmen, setzt voraus, dass seine Rückkehr als Versagen hätte gelten können.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. katergazesthe',
+        rendered: 'schaffet',
+        note: 'Bearbeiten, herausarbeiten – ein Wort aus Bergbau und Landwirtschaft. Es meint nicht das Herstellen aus dem Nichts, sondern das Bearbeiten einer vorhandenen Sache; der folgende Vers nennt, wer sie gegeben hat.',
+      },
+      {
+        word: 'griech. meta phobou kai tromou',
+        rendered: 'mit Furcht und Zittern',
+        note: 'Eine Wendung aus der griechischen Bibel für die Haltung vor Gott. Sie meint nicht Angst um das eigene Heil, sondern Ernst gegenüber einer Sache, die nicht in der eigenen Hand liegt. Kierkegaard machte sie 1843 zum Buchtitel.',
+      },
+      {
+        word: 'griech. phosteres',
+        rendered: 'Lichter',
+        note: 'Die Gestirne. Das Wort stammt aus dem Schöpfungsbericht der griechischen Bibel, wo Sonne und Mond so heißen. Der Vergleich stellt die Gemeinde in den Nachthimmel, nicht in eine Lampe.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die beiden Verse sind ein einziger Gedanke: Aufforderung und Begründung. Die Mehrzahl zeigt, dass die Gemeinde angeredet ist und nicht der Einzelne – es geht um das Zusammenleben, das der ganze Brief verhandelt, nicht um individuelle Heilsgewissheit.',
+      },
+      {
+        tradition: 'Augustinische Tradition',
+        text: 'Augustinus zitierte die Stelle gegen Pelagius: Gott wirke das Wollen selbst, also sei auch der gute Wille Gabe. Diese Auslegung hat die abendländische Gnadenlehre bestimmt und wurde in der Reformation aufgenommen.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Konzil von Trient führte den Vers gegen die Auffassung an, der Mensch verhalte sich zur Gnade rein empfangend. Betont wird, dass die Aufforderung ernst gemeint ist und dass Mitwirkung nicht Selbsterlösung bedeutet.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Reformatoren lasen die Reihenfolge umgekehrt: Der zweite Vers erklärt den ersten, nicht umgekehrt. Was zu tun ist, ist zu tun – aber das Können kommt von anderswoher. Furcht und Zittern verstanden sie als Ernst, nicht als Ungewissheit.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Die Erzählung von Epaphroditus berichtet eine Krankheit ohne Deutung: kein Grund, kein Sinn, nur das Erbarmen bei der Genesung. In der Krankenseelsorge wird das hervorgehoben, weil es der verbreiteten Erwartung widerspricht, Krankheit müsse eine Bedeutung haben.',
+      },
+    ],
+    crossRefs: [
+      { book: 'dan', chapter: 12, verse: 3, note: 'Die Verständigen werden leuchten' },
+      { book: '5mo', chapter: 32, verse: 5, note: 'Das verkehrte Geschlecht im Lied des Mose' },
+      { book: '2tim', chapter: 4, verse: 6, note: 'Dasselbe Bild vom Trankopfer' },
+      { book: 'phil', chapter: 4, verse: 18, note: 'Epaphroditus als Überbringer der Gabe' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 3,
+    from: 1,
+    to: 11,
+    title: '„und achte es für Kot“',
+    historicalShort:
+      'Der schärfste Ton des Briefes, ein Lebenslauf in sechs Zeilen und ein Wort, das die Übersetzer seit jeher in Verlegenheit bringt.',
+    historicalLong:
+      'Der Ton wechselt unvermittelt. Nach zwei Kapiteln voller Dank und Freude folgt eine dreifache Warnung mit einem Schimpfwort: Hunde, böse Arbeiter, Zerschneidung. Der Bruch ist so scharf, dass ein Teil der Forschung annimmt, hier beginne ein ursprünglich eigener Brief, der später mit den anderen zusammengefügt wurde – der Philipperbrief wäre dann aus zwei oder drei Schreiben zusammengesetzt. Andere erklären den Wechsel aus der Sache: Wenn die Warnung dringend war, konnte der Ton wechseln.\n\nDie drei Schimpfwörter sind sorgfältig gewählt. Hunde war im jüdischen Sprachgebrauch eine Bezeichnung für Nichtjuden; der Ausdruck wird hier gegen die gewendet, die auf ihrer jüdischen Herkunft bestehen. Das Wort für Zerschneidung ist ein Wortspiel: Es klingt im Griechischen fast wie das Wort für Beschneidung und meint das bloße Zerschneiden von Fleisch. Solche Wortspiele waren ein anerkanntes Mittel der Polemik; Ausleger weisen darauf hin, dass die Schärfe innerjüdisch bleibt – der Streit läuft zwischen zwei Auffassungen desselben Glaubens.\n\nDer Lebenslauf, der folgt, ist die genaueste Selbstauskunft des Neuen Testaments. Beschneidung am achten Tag – also von Geburt an jüdisch, kein Proselyt; aus dem Stamm Benjamin, dem Stamm des ersten Königs; Hebräer von Hebräern, also aramäischsprachig erzogen; nach dem Gesetz Pharisäer; nach dem Eifer Verfolger; nach der Gerechtigkeit untadelig. Der letzte Punkt ist der bemerkenswerteste: Der Verfasser beschreibt seine Zeit vor der Umkehr nicht als Scheitern am Gesetz, sondern als Erfolg darin. Das steht der verbreiteten Vorstellung entgegen, ein zerbrochenes Gewissen habe ihn zur Umkehr geführt – eine Vorstellung, die vor allem auf Luthers eigene Erfahrung zurückgeht und die die Forschung seit dem 20. Jahrhundert kritisch prüft.\n\nDas Wort, das Luther mit Kot übersetzt, ist im Griechischen derb. Es bezeichnet Abfall, Küchenabfall und menschlichen Kot; die lateinische Bibel gibt es mit stercora wieder. Übersetzungen haben es abgemildert – Dreck, Unrat, Müll –, doch die Wortwahl ist Teil der Aussage. Sie steht in einem Satz, der mit Buchhaltungsbegriffen arbeitet: Gewinn und Schaden, gerechnet und geachtet.\n\nDer Schluss beschreibt das Ziel und ist auffällig zurückhaltend formuliert: damit ich gelange zur Auferstehung – mit einer griechischen Partikel, die einen Vorbehalt ausdrückt. Nach dem Anspruch der vorangehenden Sätze folgt keine Gewissheit, sondern ein Wenn. Der nächste Abschnitt nimmt genau das auf.',
+    reception:
+      'Der Lebenslauf ist die wichtigste Quelle für die Biographie des Paulus und Ausgangspunkt der Debatte über seine Bekehrung. Die klassische Auslegung von Augustinus bis Luther verstand sie als Befreiung von einem geplagten Gewissen; Krister Stendahl wies 1963 in einem viel diskutierten Aufsatz darauf hin, dass die Texte selbst kein solches Gewissen kennen, und sprach vom introspektiven Gewissen des Westens als einer Rückprojektion. Aus dieser Kritik ist die neue Paulusperspektive hervorgegangen, die den Streit um das Gesetz als Frage nach der Zugehörigkeit der Heiden liest, nicht als Frage nach dem geplagten Einzelnen.\n\nDas Schimpfwort für den Abfall hat den Übersetzern seit jeher Mühe gemacht. Die Lutherbibel hat sich für Kot entschieden und hält daran fest; englische Ausgaben schwanken zwischen dung, rubbish und stärkeren Wörtern. Die Diskussion darüber gilt als Musterbeispiel für die Frage, wie weit eine Übersetzung derb sein darf, wenn der Ausgangstext es ist.\n\nDie Wendung von der Gemeinschaft der Leiden Christi hat die Mystik geprägt. Von Bernhard von Clairvaux über Franz von Assisi bis zu Teresa von Ávila ist sie zur Beschreibung eines Weges geworden, auf dem der Glaubende dem Leiden Christi ähnlich wird; die Stigmatisierungsberichte des Mittelalters berufen sich darauf. Die reformatorische Auslegung hat diese Linie abgelehnt und den Vers auf die Bedrängnisse der Verkündigung bezogen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Hunde streunten in Rudeln um die Städte und fraßen Abfall; sie galten als unrein. Im jüdischen Sprachgebrauch war das Wort eine Bezeichnung für Nichtjuden – hier wird es gegen die gewendet, die auf ihrer Herkunft bestehen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Beschneidung am achten Tag war das Zeichen der Zugehörigkeit von Geburt an. Wer als Erwachsener übertrat, wurde ebenfalls beschnitten, blieb aber unterscheidbar. Die Angabe im Lebenslauf grenzt gegen Proselyten ab.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der ganze Abschnitt rechnet: Gewinn, Schaden, gerechnet, geachtet. Kaufleute führten Bücher mit zwei Spalten. Wer seine Herkunft in diese Form bringt, behandelt sie als Posten, die umgebucht werden.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Stamm Benjamin war der Stamm des ersten Königs und blieb nach der Reichsteilung bei Juda. Die Angabe ist keine Nebensache: Sie behauptet eine Herkunft aus der Kernschicht des Volkes.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. katatome',
+        rendered: 'die Zerschneidung',
+        note: 'Ein Wortspiel: Der Ausdruck klingt fast wie das Wort für Beschneidung und meint das bloße Zerschneiden von Fleisch. Solche Wortspiele waren ein anerkanntes Mittel der Polemik.',
+      },
+      {
+        word: 'griech. skybala',
+        rendered: 'für Kot',
+        note: 'Abfall, Küchenabfall, menschlicher Kot. Ein derbes Wort, das die lateinische Bibel mit stercora wiedergibt. Übersetzungen haben es oft abgemildert; die Wortwahl ist Teil der Aussage.',
+      },
+      {
+        word: 'griech. kata dikaiosynen … amemptos',
+        rendered: 'nach der Gerechtigkeit im Gesetz gewesen unsträflich',
+        note: 'Die Zeit vor der Umkehr wird nicht als Scheitern beschrieben, sondern als Erfolg. Das steht der verbreiteten Vorstellung entgegen, ein geplagtes Gewissen habe zur Umkehr geführt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der scharfe Tonwechsel hat zu der Annahme geführt, der Philipperbrief sei aus zwei oder drei ursprünglich eigenen Schreiben zusammengesetzt. Der Lebenslauf ist die genaueste Selbstauskunft des Neuen Testaments und die wichtigste Quelle für die Frage, was die Umkehr eigentlich veränderte.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las den Abschnitt als Kernstelle der Rechtfertigungslehre: Eigene Gerechtigkeit gegen zugerechnete. Die eigene Erfahrung eines geplagten Gewissens floss dabei in die Auslegung ein – ein Zusammenhang, den die Forschung des 20. Jahrhunderts herausgearbeitet hat.',
+      },
+      {
+        tradition: 'Neue Paulusperspektive',
+        text: 'Krister Stendahl wies 1963 darauf hin, dass der Text kein geplagtes Gewissen kennt, sondern ein untadeliges. Der Streit gehe nicht um die Frage, wie der Einzelne vor Gott besteht, sondern darum, ob Heiden ohne Beschneidung dazugehören. Diese Lesart hat die Paulusforschung seither bestimmt.',
+      },
+      {
+        tradition: 'Jüdische Auslegung',
+        text: 'Jüdische Ausleger halten fest, dass die Polemik innerjüdisch bleibt: Ein Jude streitet mit Juden über die richtige Auslegung. Die spätere Verwendung solcher Sätze durch eine Mehrheitskirche gegen eine Minderheit ist ein anderer Vorgang und lässt sich nicht mit dem Text rechtfertigen.',
+      },
+      {
+        tradition: 'Mystische Tradition',
+        text: 'Die Wendung von der Gemeinschaft der Leiden Christi ist zur Beschreibung eines Weges geworden, auf dem der Glaubende dem Leiden Christi ähnlich wird. Die Stigmatisierungsberichte des Mittelalters berufen sich darauf; die reformatorische Auslegung hat diese Linie abgelehnt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 22, verse: 3, note: 'Eine zweite Selbstauskunft' },
+      { book: 'gal', chapter: 1, verse: 13, note: 'Der Eifer als Verfolger' },
+      { book: 'roem', chapter: 7, verse: 19, note: 'Der klassische Beleg der Gewissensdeutung' },
+      { book: 'phil', chapter: 3, verse: 12, note: 'Der Vorbehalt im nächsten Abschnitt' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 3,
+    from: 12,
+    to: 21,
+    title: '„Unser Wandel aber ist im Himmel“',
+    historicalShort:
+      'Ein Bild vom Wettlauf, ein hartes Wort über Gegner und ein Satz über die Bürgerschaft, der in einer römischen Kolonie besonders klang.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einer Zurücknahme: Nicht dass ich es schon ergriffen hätte. Nach dem Anspruch des vorigen Abschnitts ist das eine bewusste Korrektur, und sie richtet sich wahrscheinlich gegen Leute, die Vollkommenheit für erreichbar hielten – wenige Verse später wird das Wort ironisch aufgenommen: die unser vollkommen sind.\n\nDas Bild vom Wettlauf ist genau. Der Läufer streckt sich nach vorn, vergisst, was hinter ihm liegt, und läuft auf ein Ziel zu; das griechische Wort für das Ziel bezeichnet die Marke, auf die der Läufer blickt. Der Kranz wurde nach dem Lauf von einem Kampfrichter überreicht, der ihn auf einem Tisch bereithielt und den Namen des Siegers ausrief. In Philippi gab es Spiele; die Bildwelt war vertraut.\n\nDas Wort über die Feinde des Kreuzes ist hart und wird ausdrücklich unter Tränen gesagt. Wer gemeint ist, bleibt offen. Die Beschreibung – ihr Gott ist der Bauch, ihre Ehre ist ihre Schande, sie sind irdisch gesinnt – passt auf mehrere Gruppen: auf solche, die Speisegebote in den Mittelpunkt stellten, auf solche, die die Freiheit als Freibrief lasen, oder auf einen Gemeinplatz der antiken Polemik gegen Genussmenschen. Die Ausleger sind sich uneins; sicher ist nur, dass es nicht um Heiden geht, sondern um Menschen im Umfeld der Gemeinde.\n\nDer Satz vom Bürgerrecht im Himmel ist der Höhepunkt des Kapitels. Das griechische Wort bezeichnet die Bürgerschaft, den Staat, dem man angehört, und die Bürgerrechte, die daraus folgen. In Philippi, einer römischen Kolonie, deren Bewohner rechtlich behandelt wurden, als lebten sie in Italien, war das keine blasse Metapher. Der Zusatz, man erwarte von dort einen Retter, verschärft es: Retter war ein Kaisertitel, und die Ankunft eines Herrschers hieß Parusie – beide Wörter stehen hier nebeneinander.\n\nDer Schlussvers spricht vom Leib. Das Wort, das Luther mit nichtig wiedergibt, meint erniedrigt, in Niedrigkeit befindlich – dasselbe Wort steht im Christushymnus für die Erniedrigung Christi. Der Leib wird nicht abgeschafft, sondern verwandelt; das ist gegen jede Vorstellung gesagt, die Erlösung als Befreiung vom Körper versteht. In der Alten Kirche war dieser Vers ein Hauptargument gegen die Auffassung, die Auferstehung sei rein geistig.',
+    reception:
+      'Der Satz vom Bürgerrecht im Himmel gehört zu den meistzitierten des Neuen Testaments. In der Alten Kirche wurde er zur Beschreibung der Fremdheit der Christen in der Welt; der Brief an Diognet beschreibt sie im zweiten Jahrhundert als Menschen, die in ihrem Vaterland wohnen wie Fremde. Augustinus baute darauf seine Rede von den zwei Bürgerschaften, die den Gottesstaat trägt.\n\nIn der Neuzeit hat der Vers zwei entgegengesetzte Wirkungen entfaltet. Die eine führte zum Rückzug: Wer im Himmel zu Hause ist, hat auf Erden nichts zu bestellen. Die andere führte zum Widerstand: Wer einem anderen Gemeinwesen angehört, ist von den Ansprüchen des irdischen nicht restlos zu vereinnahmen. Die Bekennende Kirche und die Bürgerrechtsbewegungen des 20. Jahrhunderts haben die zweite Linie in Anspruch genommen.\n\nDas Wettlaufbild ist in die Frömmigkeitssprache eingegangen und hat der christlichen Lebensbeschreibung ein Grundmuster gegeben: das Leben als Lauf mit einem Ziel. Bunyans Pilgerreise und zahllose Lieder arbeiten damit. Kritisch angemerkt wird, dass ein Wettlauf Konkurrenz voraussetzt – der Text spricht allerdings vom Ziel, nicht von Mitbewerbern.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Das Wort für Bürgerrecht bezeichnete den Staat, dem man angehörte, und die Rechte daraus. In Philippi wurden die Bürger behandelt, als lebten sie in Italien: kein Grundzins, Zugang zum römischen Gericht, Schutz vor Prügelstrafe.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Kaiserkult war im Osten die Regel: Tempel, Priesterschaften und Feste für die vergöttlichten Herrscher gehörten zum Stadtbild. Wer sich fernhielt, entzog sich nicht einer Meinung, sondern einer Bürgerpflicht.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Bei Wettläufen hielt ein Kampfrichter den Kranz auf einem Tisch bereit und rief den Namen des Siegers aus. Philippi hatte Spiele; die Bildwelt vom Laufen, Ziel und Preis war jedem geläufig.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Vorstellung, Erlösung bedeute Befreiung vom Körper, war verbreitet: Der Leib galt als Gefängnis der Seele. Der Schlussvers spricht dagegen von einer Verwandlung des Leibes – ein Hauptargument der Alten Kirche gegen eine rein geistige Auferstehung.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. politeuma',
+        rendered: 'Wandel',
+        note: 'Bürgerschaft, Gemeinwesen, Bürgerrecht. Luthers „Wandel“ verdeckt den politischen Klang. In einer römischen Kolonie war das Wort alles andere als blass.',
+      },
+      {
+        word: 'griech. skopon',
+        rendered: 'dem vorgesteckten Ziel',
+        note: 'Die Marke, auf die der Läufer blickt. Das Wort stammt aus dem Wettkampf und aus dem Bogenschießen. Es beschreibt nicht das Ende der Strecke, sondern den Punkt, auf den man sieht.',
+      },
+      {
+        word: 'griech. tapeinoseos',
+        rendered: 'nichtigen',
+        note: 'Wörtlich: der Niedrigkeit. Dasselbe Wort steht im Christushymnus für die Erniedrigung Christi. Der Leib wird nicht abgeschafft, sondern aus der Niedrigkeit in die Herrlichkeit verwandelt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die ausdrückliche Zurücknahme jeder Vollkommenheit richtet sich wahrscheinlich gegen Leute, die sie für erreichbar hielten; das Wort wird wenige Verse später ironisch aufgenommen. Wer die Feinde des Kreuzes sind, lässt sich nicht bestimmen – die Beschreibung folgt weitgehend polemischen Gemeinplätzen.',
+      },
+      {
+        tradition: 'Altkirchliche Auslegung',
+        text: 'Der Vers vom Bürgerrecht wurde zur Beschreibung der Fremdheit der Christen. Der Brief an Diognet nennt sie Menschen, die in ihrem Vaterland wohnen wie Fremde und jede Fremde als Vaterland haben. Der Schlussvers über den verwandelten Leib diente gegen eine rein geistige Auferstehungsvorstellung.',
+      },
+      {
+        tradition: 'Augustinische Tradition',
+        text: 'Augustinus baute auf dem Gedanken der zwei Bürgerschaften seinen Gottesstaat auf: zwei Gemeinwesen, unterschieden durch das, was sie lieben, ineinander verflochten bis zum Ende. Die Wirkung dieses Entwurfs auf das politische Denken Europas ist kaum zu überschätzen.',
+      },
+      {
+        tradition: 'Politische Theologie',
+        text: 'Dass Retter und Ankunft Kaisertitel waren, ist in der neueren Auslegung stark betont worden. Der Satz beansprucht damit für die Gemeinde eine Zugehörigkeit, die neben der römischen steht – nicht als Aufruf zum Aufstand, aber als Grenze dessen, was Rom fordern kann.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Rede vom Bürgerrecht im Himmel hat auch zum Rückzug aus der Verantwortung gedient: Wer dort zu Hause ist, kümmert sich hier nicht. Ausleger halten dagegen, dass der Text von einer Bürgerschaft spricht, deren Ordnung hier gelebt wird – der ganze Brief handelt vom Zusammenleben.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 9, verse: 24, note: 'Dasselbe Wettlaufbild' },
+      { book: 'phil', chapter: 2, verse: 8, note: 'Dasselbe Wort für Erniedrigung' },
+      { book: 'phil', chapter: 1, verse: 27, note: 'Das Bürgerleben, schon einmal genannt' },
+      { book: '1kor', chapter: 15, verse: 51, note: 'Wir werden verwandelt werden' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 4,
+    from: 1,
+    to: 3,
+    title: '„Die Evodia ermahne ich, und die Syntyche“',
+    historicalShort:
+      'Zwei Frauen werden mit Namen genannt, weil sie sich streiten – und im selben Atemzug als Mitkämpferinnen für das Evangelium bezeichnet.',
+    historicalLong:
+      'Es ist der einzige Ort im Neuen Testament, an dem ein Streit zwischen zwei namentlich genannten Personen offen in einem Brief steht, der vor der Gemeinde verlesen wurde. Beide Namen sind griechisch und für Frauen belegt: Evodia bedeutet Wohlweg oder guter Duft, Syntyche glückliches Zusammentreffen. Beide sind in Inschriften Makedoniens bezeugt.\n\nDie Anrede ist auffällig gleichmäßig. Das Verb steht zweimal, für jede einzeln – der Brief nimmt keine Partei und nennt den Gegenstand des Streits nicht. Wer die Ermahnung liest, erfährt nur, dass es ihn gibt und dass er beigelegt werden soll. Ob das Rücksicht ist oder ob der Gegenstand allen bekannt war, lässt sich nicht sagen.\n\nBemerkenswert ist die Beschreibung, die folgt. Beide haben mit ihm für das Evangelium gekämpft – das griechische Wort ist von der Wettkampfarena abgeleitet und bezeichnet den gemeinsamen Einsatz. Damit werden zwei Frauen als Mitarbeiterinnen in der Verkündigung bezeichnet, nicht als Unterstützerinnen im Hintergrund. Das passt zur Gründungsgeschichte der Gemeinde: Nach der Apostelgeschichte war die erste Bekehrte in Philippi Lydia, eine Purpurhändlerin, in deren Haus sich die Gemeinde traf.\n\nMakedonien ist in dieser Hinsicht auffällig. Inschriften zeigen dort Frauen als Stifterinnen, Priesterinnen und Vereinsvorsteherinnen häufiger als in anderen Landschaften; die Rechtsstellung von Frauen war günstiger als etwa in Athen. Die Forschung hat daraus geschlossen, dass die Rolle von Frauen in der Gemeinde von Philippi kein Zufall ist, sondern der Umgebung entspricht.\n\nDer angesprochene Dritte ist ein Rätsel. Das griechische Wort für treuer Geselle lautet syzygos und ist auch als Eigenname möglich – dann hieße die Anrede: Syzygos, du deinem Namen gemäß. Vorschläge, wer gemeint sei, gibt es seit der Antike: Epaphroditus, Lukas, der Bischof der Gemeinde, sogar die Ehefrau des Absenders, wobei die letzte Deutung an einer Aussage im ersten Korintherbrief scheitert. Klemens, der ebenfalls genannt wird, ist mit dem römischen Klemens des ersten Klemensbriefs verbunden worden; ein Beleg dafür fehlt.',
+    reception:
+      'Die Stelle ist in der Debatte über die Rolle von Frauen in der frühen Kirche eine der wichtigsten. Dass zwei Frauen als Mitkämpferinnen für das Evangelium bezeichnet werden, steht neben den Nennungen von Phöbe, Junia und Priska und gehört zu den Belegen dafür, dass Frauen in der ersten Generation Verkündigungsaufgaben hatten. Die Auslegungsgeschichte hat diese Stellen lange marginalisiert; seit den 1970er Jahren sind sie systematisch untersucht worden.\n\nDas Buch des Lebens, das am Schluss genannt wird, ist ein altes Bild. Es steht in den Psalmen, bei Daniel und mehrfach in der Offenbarung und stammt aus der Verwaltungspraxis: Städte führten Bürgerlisten, aus denen gestrichen wurde, wer starb oder das Bürgerrecht verlor. Die Verbindung mit dem Bürgerrecht im Himmel, das ein Kapitel zuvor genannt wird, ist kaum zufällig.\n\nDas Rätsel um den treuen Gefährten hat eine lange Auslegungsgeschichte. Clemens von Alexandrien vermutete die Ehefrau des Apostels; Chrysostomos dachte an den Bischof der Gemeinde. Die Deutung als Eigenname wird seit dem 19. Jahrhundert erwogen. Entschieden ist nichts, und die Vorschläge sagen oft mehr über ihre Zeit als über den Text.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Frauen konnten in Makedonien über Vermögen verfügen, Verträge schließen und als Stifterinnen auftreten; Inschriften nennen sie häufiger als in anderen Landschaften. Ihre Rechtsstellung war günstiger als etwa in Athen, wo eine Frau lebenslang einen Vormund brauchte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Vermittlung durch einen Dritten war ein anerkanntes Verfahren. Städte riefen auswärtige Schiedsrichter, Familien baten Angesehene um Schlichtung. Wer einen Streit an einen Vermittler gab, verlor dabei kein Gesicht – das war der Sinn der Einrichtung.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Lydia, die erste Bekehrte in Philippi, handelte mit Purpur – einem Luxusgut, für das Schnecken zu Tausenden verarbeitet wurden. Wer damit handelte, hatte Kapital und Verbindungen. Ihr Haus wurde der erste Versammlungsort.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Streit in einer Gruppe von wenigen Dutzend Menschen, die sich wöchentlich in einem Haus trafen, war nicht zu verbergen. Dass er in einem Brief steht, der vorgelesen wurde, setzt voraus, dass ohnehin alle davon wussten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. synethlesan',
+        rendered: 'gekämpft haben',
+        note: 'Wörtlich: gemeinsam im Wettkampf gestanden. Das Wort ist von der Arena abgeleitet und bezeichnet den gemeinsamen Einsatz – nicht Unterstützung im Hintergrund, sondern Beteiligung an derselben Sache.',
+      },
+      {
+        word: 'griech. gnesie syzyge',
+        rendered: 'mein treuer Geselle',
+        note: 'Wörtlich: echter Joch-Genosse. Das Wort ist auch als Eigenname möglich; dann hieße die Anrede „Syzygos, du deinem Namen gemäß“. Wer gemeint ist, wird seit der Antike geraten.',
+      },
+      {
+        word: 'griech. biblo zoes',
+        rendered: 'dem Buch des Lebens',
+        note: 'Ein Bild aus der Verwaltungspraxis: die Bürgerliste, aus der gestrichen wird, wer stirbt oder das Recht verliert. Es steht in den Psalmen, bei Daniel und mehrfach in der Offenbarung.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Stelle ist der einzige offen benannte Personenstreit des Neuen Testaments. Der Brief nennt den Gegenstand nicht und nimmt keine Partei; er redet beide gleich an und bittet einen Dritten um Vermittlung. Dass beide als Mitkämpferinnen bezeichnet werden, ist die wichtigste Auskunft.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Zwei Frauen werden als Mitkämpferinnen für das Evangelium bezeichnet – ein Ausdruck, der sonst für Mitarbeiter in der Verkündigung steht. Zusammen mit Phöbe, Junia und Priska gehört die Stelle zu den Belegen dafür, dass Frauen in der ersten Generation solche Aufgaben hatten.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Clemens von Alexandrien vermutete hinter dem treuen Gefährten die Ehefrau des Apostels; Chrysostomos dachte an den Bischof der Gemeinde und hob hervor, dass der Streit ohne Schuldzuweisung behandelt wird. Beide Deutungen sagen mehr über ihre Zeit als über den Text.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'Das Verfahren, das der Text zeigt, ist bemerkenswert: benennen, keine Partei nehmen, einen Dritten bitten, beide bei ihrer gemeinsamen Vergangenheit behaften. In Anleitungen zur Konfliktbearbeitung in Gemeinden wird es regelmäßig als Muster angeführt.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Dass ein Streit zweier Frauen im Brief steht und andere Konflikte nicht, ist Auslegern aufgefallen. Ob die Namensnennung Wertschätzung ist oder Bloßstellung, wird verschieden beurteilt; der Zusatz über ihren Einsatz für das Evangelium spricht für das erste.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 16, verse: 14, note: 'Lydia, die erste Bekehrte' },
+      { book: 'roem', chapter: 16, verse: 1, note: 'Phöbe, Diakonin in Kenchreä' },
+      { book: 'roem', chapter: 16, verse: 7, note: 'Junia, angesehen unter den Aposteln' },
+      { book: 'phil', chapter: 3, verse: 20, note: 'Das Bürgerrecht im Himmel' },
+    ],
+  },
+  {
+    book: 'phil',
+    chapter: 4,
+    from: 14,
+    to: 23,
+    title: '„nach der Rechnung der Ausgabe und Einnahme“',
+    historicalShort:
+      'Der Briefschluss ist eine Quittung – in der Sprache der Buchhaltung, gefolgt von der Sprache des Opferkults.',
+    historicalLong:
+      'Der Abschnitt ist die ausführlichste Äußerung des Neuen Testaments über Geld zwischen einem Verkündiger und einer Gemeinde. Er ist heikel: Wer Gaben annimmt, gerät in Abhängigkeit, und wer sie zurückweist, kränkt. Der Text löst das Problem, indem er ausdrücklich sagt, er suche nicht das Geschenk – und die Gabe dann dennoch würdigt.\n\nDie verwendeten Wörter stammen fast durchweg aus der Buchhaltung. Die Wendung von Ausgabe und Einnahme ist ein technischer Ausdruck kaufmännischer Bücher; das Wort für „ich habe alles“ ist die übliche Formel auf Quittungen und steht so zu Hunderten auf ägyptischen Papyri; das Wort für Frucht bezeichnet auch den Zinsertrag. Wer diese Sprache benutzt, behandelt die Gabe als Vorgang mit zwei Seiten und stellt die Gemeinde nicht in die Rolle der Wohltäterin, sondern der Teilhaberin.\n\nDann wechselt die Sprache. Die Gabe heißt ein süßer Geruch, ein angenehmes Opfer – Ausdrücke aus dem Opferkult, die in der griechischen Bibel für das Brandopfer stehen. Damit wird das Geld nicht ihm gegeben, sondern Gott; der Empfänger tritt aus dem Verhältnis heraus. Diese Verschiebung ist die eigentliche Lösung des Problems.\n\nDer Satz über das Genügen ist der bekannteste des Abschnitts. Das griechische Wort autarkeia war ein Grundbegriff der Stoa und der Kyniker: die Unabhängigkeit von äußeren Umständen, das Sich-selbst-Genügen. Der Text übernimmt ihn und ändert die Begründung – er habe es gelernt, und zwar durch Erfahrung in beiden Richtungen, und die Kraft dazu komme von anderswoher. Das Wort für „gelernt“ ist im Griechischen ein Fachausdruck aus den Mysterien und bezeichnet die Einweihung.\n\nDer Gruß von denen aus dem Hause des Kaisers steht am Schluss. Zum Haus des Kaisers gehörten nicht Verwandte, sondern Tausende von Sklaven und Freigelassenen in Verwaltung, Rechnungswesen, Küche und Bauwesen – in Rom und in den Provinzen. Dass es unter ihnen Christen gab, ist die früheste Nachricht dieser Art; Grabinschriften kaiserlicher Freigelassener sind zu Hunderten erhalten, und einige zeigen im zweiten Jahrhundert christliche Zeichen.',
+    reception:
+      'Der Satz, dass er alles vermöge durch den, der ihn mächtig macht, ist zu einem der meistzitierten Sätze der Bibel geworden – und zu einem der am häufigsten aus dem Zusammenhang gerissenen. Er steht auf Sportlerbekleidung, in Motivationsliteratur und in der Wohlstandsverkündigung als Zusage von Erfolg. Im Zusammenhang steht er zwischen Sattsein und Hungern und beschreibt die Fähigkeit, beides auszuhalten.\n\nDie Abrechnungssprache des Abschnitts hat die kirchliche Praxis der Kollekte geprägt. Sie zeigt, dass Geldsammlungen von Anfang an zur Sache gehörten und dass sie abgerechnet wurden; die Kollekte für Jerusalem, die mehrere Briefe erwähnen, ist der größte solche Vorgang. Die Umdeutung der Gabe zum Opfer ist in die Liturgie eingegangen – die Darbringung der Gaben im Gottesdienst greift diese Bewegung auf.\n\nDer Begriff der autarkeia hat eine eigene Geschichte. Von der Stoa über die Klosterregeln bis zur Genügsamkeitsethik der Gegenwart wird er gebraucht; die Unterscheidung, die der Text vornimmt – gelernt, nicht erreicht, und aus fremder Kraft, nicht aus eigener –, geht dabei häufig verloren. In der Diskussion über Konsum und Suffizienz ist der Abschnitt seit den 1980er Jahren wieder aufgegriffen worden.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Geld zu versenden war aufwendig. Münzen mussten von einem Boten getragen werden, der dafür haftete; Wechselbriefe gab es nur zwischen Bankiers. Eine Sendung über hunderte Kilometer setzte Vertrauen und einen zuverlässigen Menschen voraus.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Kaiserliche Sklaven hatten eine eigentümliche Stellung: rechtlich unfrei, aber mit Zugang zu Macht und Geld. Manche verwalteten Provinzkassen. Ein Freigelassener des Kaisers konnte wohlhabender sein als ein freier Handwerker.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der süße Geruch war die feste Wendung für das Brandopfer, dessen Rauch aufsteigt. Sie steht durchgehend in der griechischen Bibel. Die Gabe wird damit Gott zugeordnet und nicht dem Empfänger.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Wer Geld annahm, geriet in Abhängigkeit. Wohltäter erwarteten Ehrungen und Gefolgschaft; das Verhältnis zwischen Patron und Klient war rechtlich und gesellschaftlich geregelt. Eine Gabe ohne Gegenleistung war ungewöhnlich.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. eis logon doseos kai lempseos',
+        rendered: 'nach der Rechnung der Ausgabe und Einnahme',
+        note: 'Ein technischer Ausdruck der Buchhaltung. Er behandelt die Gabe als Vorgang mit zwei Seiten und stellt die Gemeinde nicht als Wohltäterin dar, sondern als Teilhaberin.',
+      },
+      {
+        word: 'griech. apecho de panta',
+        rendered: 'Denn ich habe alles',
+        note: 'Die übliche Quittungsformel der antiken Geschäftssprache; sie steht zu Hunderten auf ägyptischen Papyri und bedeutet: vollständig erhalten, nichts steht mehr offen. Der Satz beendet die Abrechnung förmlich.',
+      },
+      {
+        word: 'griech. osmen euodias',
+        rendered: 'ein süßer Geruch',
+        note: 'Die feste Wendung für das Brandopfer in der griechischen Bibel. Mit ihr wechselt der Abschnitt von der Buchhaltung in den Kult – die Gabe geht an Gott, nicht an den Empfänger.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt ist die ausführlichste Äußerung des Neuen Testaments über Geld zwischen Verkündiger und Gemeinde. Die Verschiebung von der Buchhaltungs- zur Opfersprache löst das Problem der Abhängigkeit: Die Gabe geht an Gott, der Empfänger tritt aus dem Verhältnis heraus.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos predigte über die Zurückhaltung, mit der die Gabe angenommen wird, und hielt sie dem Klerus seiner Zeit vor. Die Umdeutung zum Opfer verstand er als Schutz für beide Seiten: Der Gebende bekommt keinen Anspruch, der Nehmende keine Schuld.',
+      },
+      {
+        tradition: 'Monastische Tradition',
+        text: 'Der Satz über das Genügen ist in die Ordensregeln eingegangen. Betont wird die Doppelrichtung: Nicht nur Mangel, auch Überfluss will gelernt sein. Diese Beobachtung unterscheidet den Text von einer bloßen Armutslehre.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Satz, alles zu vermögen, ist einer der am häufigsten aus dem Zusammenhang gerissenen der Bibel. Er steht zwischen Sattsein und Hungern und beschreibt die Fähigkeit, beides auszuhalten – nicht die Zusage, alles zu erreichen. Die Verwendung in der Wohlstandsverkündigung kehrt seinen Sinn um.',
+      },
+      {
+        tradition: 'Sozialethische Lesart',
+        text: 'Die Genügsamkeit des Abschnitts ist seit den 1980er Jahren in der Diskussion über Konsum und Suffizienz wieder aufgegriffen worden. Hervorgehoben wird, dass der Text sie als Lernvorgang beschreibt und nicht als Haltung, die man hat oder nicht hat.',
+      },
+    ],
+    crossRefs: [
+      { book: '2kor', chapter: 11, verse: 9, note: 'Die Brüder aus Makedonien versorgten mich' },
+      { book: '1kor', chapter: 9, verse: 15, note: 'Der Verzicht auf Unterhalt' },
+      { book: 'phil', chapter: 1, verse: 5, note: 'Die Gemeinschaft am Evangelium vom ersten Tag an' },
+      { book: 'phil', chapter: 2, verse: 25, note: 'Epaphroditus als Überbringer' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 9 Abschnitte */
+  {
+    book: '1tim',
+    chapter: 1,
+    from: 1,
+    to: 11,
+    title: '„dem Gerechten kein Gesetz gegeben ist“',
+    historicalShort:
+      'Der Auftrag, in Ephesus zu bleiben und falsche Lehrer zu stoppen – und eine Lasterliste, die der Reihenfolge der Zehn Gebote folgt.',
+    historicalLong:
+      'Ephesus war die größte Stadt der Provinz Asia, Sitz des Statthalters und Standort des Artemistempels, eines der sieben Weltwunder. Die Apostelgeschichte berichtet von einem mehrjährigen Aufenthalt dort und von einem Aufruhr der Silberschmiede, deren Geschäft mit Devotionalien litt. Eine christliche Gemeinde bestand also seit Jahrzehnten, und mehrere neutestamentliche Schriften sind mit der Stadt verbunden – der Epheserbrief, die Sendschreiben der Offenbarung, die johanneische Überlieferung.\n\nDie Gegner werden mit denselben Stichworten beschrieben wie im Titusbrief: Fabeln und Geschlechtsregister, endlose Streitfragen. Stammbaumforschung war in der jüdischen Überlieferung ein ernstes Geschäft, weil sie über Priesterwürde und Heiratsfähigkeit entschied; in hellenistischen Kreisen wuchsen daraus Spekulationen über Reihen himmlischer Wesen, wie sie die gnostischen Systeme des zweiten Jahrhunderts ausbauten. Der Brief geht auf den Inhalt nicht ein – ein Zug, der die Pastoralbriefe kennzeichnet und der die Bestimmung der Gegner so schwierig macht.\n\nDie Lasterliste, die folgt, ist ungewöhnlich gebaut. Nach drei allgemeinen Paaren folgen Vatermörder und Muttermörder, Totschläger, Unzüchtige, Menschendiebe, Lügner, Meineidige – die Reihenfolge entspricht der zweiten Tafel der Zehn Gebote: Elterngebot, Tötungsverbot, Ehebruchsverbot, Diebstahlsverbot, Verbot des falschen Zeugnisses. Der Brief liest die Gebote also als Beschreibung dessen, was sie verbieten, und ordnet ihnen Menschen zu.\n\nDas Wort für Menschendiebe bezeichnet den Sklavenhändler oder genauer den, der Menschen raubt, um sie zu verkaufen. Es steht nur hier im Neuen Testament. Die Zuordnung ist bemerkenswert: Der Brief legt das Diebstahlsverbot auf den Menschenraub aus – eine Auslegung, die auch die jüdische Überlieferung kennt, wo das achte Gebot auf den Menschenraub bezogen wird.\n\nDas Wort, das Luther mit Knabenschänder wiedergibt, ist eine seltene Bildung und wörtlich mit „Männerbetter“ zu übersetzen. Es taucht in der erhaltenen Literatur zuerst im Neuen Testament auf; seine Bestandteile stammen aus der griechischen Fassung des dritten Buchs Mose. Was genau bezeichnet wird, ist umstritten und seit den 1950er Jahren Gegenstand einer intensiven Debatte: Die Vorschläge reichen von einer allgemeinen Bezeichnung gleichgeschlechtlicher Handlungen zwischen Männern über die in der Antike verbreitete Praxis mit Knaben bis zu einer Bezeichnung für Männer, die andere Männer sexuell ausbeuten. Die Stellung der Vokabel zwischen Unzucht und Menschenraub ist in dieser Debatte mehrfach als Argument angeführt worden.',
+    reception:
+      'Der Satz, dem Gerechten sei kein Gesetz gegeben, hat eine lange Auslegungsgeschichte. Er wurde in der Reformationszeit gegen die Vorstellung angeführt, das Gesetz binde auch den Glaubenden; die lutherische Lehre vom dreifachen Gebrauch des Gesetzes hat ihn im Blick, wenn sie zwischen dem bürgerlichen, dem anklagenden und dem anleitenden Gebrauch unterscheidet. Antinomistische Bewegungen zogen aus dem Vers weitergehende Folgerungen, die Luther selbst zurückwies.\n\nDie Lasterliste hat in der Debatte über gleichgeschlechtliche Beziehungen eine zentrale Rolle bekommen. Das Wort für Knabenschänder wird seit den 1950er Jahren sprachgeschichtlich untersucht; seine Übersetzung hat sich in den englischen Bibelausgaben mehrfach geändert, was eine eigene Diskussion über die Rolle von Übersetzungen in kirchlichen Auseinandersetzungen ausgelöst hat. Ein Konsens besteht nicht.\n\nDie Nennung der Menschendiebe ist in der Sklavereidebatte des 18. und 19. Jahrhunderts von Abolitionisten angeführt worden. Sie argumentierten, der Sklavenhandel werde hier ausdrücklich unter die schwersten Vergehen gerechnet; die Gegenseite verwies auf die Haustafeln. John Wesley und die Quäker haben diese Stelle regelmäßig zitiert.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Ephesus hatte vielleicht zweihunderttausend Einwohner, einen Hafen, ein Theater für fünfundzwanzigtausend Menschen und den Artemistempel. Die Stadt war Sitz des Statthalters und Umschlagplatz für ganz Kleinasien.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Menschenraub war ein Gewerbe. Piraten und Räuberbanden verkauften Gefangene an Sklavenhändler; die großen Märkte lagen auf Delos und in Ephesus. Der Handel war legal, der Raub freier Menschen dagegen strafbar.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Abstammung entschied über Rang und Rechte. In jüdischen Familien belegten Register die Priesterwürde und die Heiratsfähigkeit; Josephus betont eigens, seine Herkunft aus öffentlichen Verzeichnissen belegen zu können.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die zweite Tafel der Zehn Gebote regelt das Zusammenleben: Eltern, Leben, Ehe, Eigentum, Zeugenaussage. Die Lasterliste folgt dieser Reihenfolge und ordnet den Verboten Menschen zu, statt Handlungen zu nennen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. andrapodistais',
+        rendered: 'den Menschendieben',
+        note: 'Wer Menschen raubt, um sie zu verkaufen. Das Wort steht nur hier im Neuen Testament. Die Zuordnung legt das Diebstahlsverbot auf den Menschenraub aus – eine Auslegung, die auch die jüdische Überlieferung kennt.',
+      },
+      {
+        word: 'griech. arsenokoitais',
+        rendered: 'den Knabenschändern',
+        note: 'Eine seltene Bildung, wörtlich „Männerbetter“; ihre Bestandteile stammen aus der griechischen Fassung des dritten Buchs Mose. Was genau bezeichnet wird, ist seit den 1950er Jahren umstritten und in keiner Richtung entschieden.',
+      },
+      {
+        word: 'griech. nomos ou keitai',
+        rendered: 'kein Gesetz gegeben ist',
+        note: 'Wörtlich: kein Gesetz ist gesetzt. Der Ausdruck stammt aus der Rechtssprache und meint die Erlassung eines Gesetzes. Gemeint ist nicht, dass der Gerechte über dem Gesetz stehe, sondern dass es nicht seinetwegen erlassen wurde.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Gegner werden mit denselben Stichworten beschrieben wie im Titusbrief, ohne dass auf den Inhalt eingegangen wird. Das ist für die Pastoralbriefe kennzeichnend und macht ihre Bestimmung schwierig. Die Lasterliste folgt der zweiten Tafel des Dekalogs – ein Aufbau, der jüdische Schulung voraussetzt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Satz vom Gerechten, dem kein Gesetz gegeben ist, gehört zu den Grundstellen der Lehre vom Gebrauch des Gesetzes. Luther unterschied den bürgerlichen und den anklagenden Gebrauch; die späteren Bekenntnisschriften fügten den anleitenden hinzu. Antinomistische Folgerungen wies Luther selbst zurück.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Gesetz gilt als gut und bleibend; der Vers wird so gelesen, dass es dem Gerechten nicht als Zwang begegnet, weil er ohnehin tut, was es verlangt. Thomas von Aquin entfaltet den Gedanken in seiner Lehre vom neuen Gesetz, das im Herzen geschrieben ist.',
+      },
+      {
+        tradition: 'Abolitionistische Rezeption',
+        text: 'Die Nennung der Menschendiebe wurde in den Sklavereidebatten von Abolitionisten angeführt: Der Sklavenhandel werde hier unter die schwersten Vergehen gerechnet. John Wesley und die Quäker zitierten die Stelle regelmäßig; die Gegenseite verwies auf die Haustafeln.',
+      },
+      {
+        tradition: 'Gegenwärtige Auslegungsdebatte',
+        text: 'Das Wort für Knabenschänder steht im Zentrum der Auseinandersetzung über gleichgeschlechtliche Beziehungen. Seine Seltenheit, seine Bildung aus dem dritten Buch Mose und seine Stellung in der Liste sind sprachlich untersucht worden, ohne dass ein Konsens entstanden wäre. Übersetzungen haben sich mehrfach geändert – ein Vorgang, der selbst Gegenstand der Debatte ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 19, verse: 23, note: 'Der Aufruhr der Silberschmiede in Ephesus' },
+      { book: '2mo', chapter: 20, verse: 12, note: 'Die zweite Tafel der Gebote' },
+      { book: '1kor', chapter: 6, verse: 9, note: 'Dasselbe seltene Wort in einer anderen Liste' },
+      { book: 'tit', chapter: 1, verse: 14, note: 'Dieselben Stichworte über die Gegner' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 1,
+    from: 12,
+    to: 20,
+    title: '„am Glauben Schiffbruch erlitten“',
+    historicalShort:
+      'Ein Rückblick auf die eigene Vergangenheit als Verfolger, ein Lobpreis und zwei Namen, die dem Satan übergeben werden.',
+    historicalLong:
+      'Der Rückblick unterscheidet sich von dem im Philipperbrief. Dort wird die Zeit vor der Umkehr als untadelig beschrieben, hier als Lästerung und Verfolgung, und ausdrücklich mit dem Zusatz, es sei aus Unwissenheit geschehen. Dieser Zusatz hat einen rechtlichen Hintergrund: Das Gesetz unterscheidet zwischen der Sünde aus Versehen, für die ein Opfer vorgesehen ist, und dem Sündigen mit erhobener Hand, für das keines vorgesehen ist. Der Satz ordnet die eigene Vergangenheit der ersten Gruppe zu.\n\nDie Selbstbezeichnung als vornehmster der Sünder ist in der Gegenwartsform formuliert – nicht: ich war, sondern: ich bin. Diese Wendung hat eine große Wirkung in der Frömmigkeitsgeschichte entfaltet. Sie steht in Beichtformularen und Gebeten und wird in der katholischen Messe vor dem Empfang der Kommunion in verwandter Form gesprochen.\n\nDer Lobpreis in Vers siebzehn ist wahrscheinlich eine übernommene Formel. Er nennt Gott den König der Äonen, unvergänglich, unsichtbar, allein – Ausdrücke, die in der hellenistisch-jüdischen Literatur vorgeprägt sind und in griechischen Gebetstexten begegnen. Die Häufung solcher Prädikate ist ein Kennzeichen der Pastoralbriefe und unterscheidet sie von den unbestrittenen Paulusbriefen, wo Lobpreisungen knapper ausfallen.\n\nDas Bild vom Schiffbruch am Glauben ist im Neuen Testament einmalig. Es war für Leser einer Hafenstadt unmittelbar verständlich: Schiffbruch war die häufigste Katastrophe der Seefahrt, und die Apostelgeschichte erzählt einen ausführlich. Das Bild setzt voraus, dass der Glaube ein Schiff ist, auf dem man fährt – nicht ein Besitz, den man hat.\n\nDie Übergabe an den Satan ist die härteste Maßnahme, die das Neue Testament kennt; sie steht sonst nur im ersten Korintherbrief. Was gemeint ist, sagt der Text nicht genau: Ausschluss aus der Gemeinde, Preisgabe an Krankheit oder eine förmliche Verfluchung sind vorgeschlagen worden. Der genannte Zweck ist bemerkenswert – dass sie gezüchtigt werden, nicht mehr zu lästern. Das Ziel ist Besserung, nicht Vernichtung, und dieselbe Absicht nennt der Korintherbrief.',
+    reception:
+      'Der Satz vom vornehmsten der Sünder ist zu einer der bekanntesten Selbstbeschreibungen der christlichen Frömmigkeit geworden. John Newton, der ehemalige Sklavenhändler, ließ sich eine Grabinschrift setzen, die den Gedanken aufnimmt; das Lied Amazing Grace steht in derselben Linie. In der orthodoxen Liturgie wird der Vers vor dem Empfang der Kommunion gesprochen.\n\nDie Übergabe an den Satan ist zur Grundlage des Kirchenbanns geworden. Das mittelalterliche Kirchenrecht baute darauf ein förmliches Verfahren auf, das mit der Exkommunikation endete; die Formulare der Bannbullen nehmen die Wendung auf. Die Reformatoren übernahmen die Kirchenzucht, bestritten aber die Vorstellung, ein Mensch werde damit dem Verderben preisgegeben – der Text nennt Besserung als Zweck.\n\nDas Bild vom Schiffbruch hat die Frömmigkeitssprache geprägt. Es steht in Predigten, Liedern und Erbauungsschriften und hat der Rede vom Glaubensschiff und vom sicheren Hafen ihren Ort gegeben; die Darstellung der Kirche als Schiff geht auf diese und verwandte Stellen zurück. Das Kirchenschiff als Bezeichnung des Hauptraums bewahrt die Vorstellung im Wortschatz.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Schiffbruch war die häufigste Katastrophe der Seefahrt. Zwischen November und März ruhte der Verkehr; wer außerhalb dieser Zeit fuhr, riskierte alles. Die Apostelgeschichte erzählt einen Schiffbruch über ein ganzes Kapitel.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Auch das römische Recht kannte die Unterscheidung zwischen vorsätzlichem und nicht vorsätzlichem Handeln und bemaß die Strafe danach. Wer vor Gericht auf Unwissenheit verwies, verfolgte eine anerkannte Verteidigungslinie – kein Freispruch, aber ein Milderungsgrund.'
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ausschluss aus einer Gemeinschaft traf hart: Wer aus einem Verein oder einer Synagoge ausgeschlossen wurde, verlor Unterstützung, Herberge auf Reisen und Bestattung. Der Ausschluss war ein soziales Urteil, kein bloß religiöses.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Lobpreisformeln mit gehäuften Prädikaten – unvergänglich, unsichtbar, allein weise – begegnen in hellenistisch-jüdischen Gebetstexten und in griechischen Hymnen. Wer so betete, benutzte eine geläufige Form.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. protos',
+        rendered: 'der vornehmste',
+        note: 'Der Erste, der Vornehmste. Der Satz steht in der Gegenwartsform: nicht ich war, sondern ich bin. Diese Wendung ist in Beichtformulare und in die orthodoxe Kommunionvorbereitung eingegangen.',
+      },
+      {
+        word: 'griech. enauagesan',
+        rendered: 'Schiffbruch erlitten',
+        note: 'Ein Wort aus der Seefahrt, im Neuen Testament nur hier auf den Glauben angewandt. Das Bild setzt voraus, dass der Glaube ein Schiff ist, auf dem man fährt – kein Besitz, den man hat.',
+      },
+      {
+        word: 'griech. paredoka to satana',
+        rendered: 'dem Satan übergeben',
+        note: 'Die härteste Maßnahme des Neuen Testaments, sonst nur im ersten Korintherbrief. Was gemeint ist – Ausschluss, Preisgabe an Krankheit, förmliche Verfluchung –, sagt der Text nicht. Der genannte Zweck ist Besserung.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Rückblick weicht von dem im Philipperbrief ab, wo die Zeit vor der Umkehr als untadelig beschrieben wird. Die gehäuften Lobpreisformeln und die Betonung der eigenen Sünderschaft gelten als Kennzeichen einer späteren Schicht, die das Bild des Apostels für die eigene Zeit gestaltet.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen den Satz vom vornehmsten der Sünder als Muster der Demut und als Trost: Wenn dieser Barmherzigkeit fand, findet sie jeder. Chrysostomos betonte den Zusatz über die Unwissenheit und leitete daraus die Pflicht ab, Unwissenheit von Bosheit zu unterscheiden.',
+      },
+      {
+        tradition: 'Kirchenrechtliche Rezeption',
+        text: 'Die Übergabe an den Satan wurde zur Grundlage des Banns. Das mittelalterliche Kirchenrecht entwickelte daraus ein förmliches Verfahren, dessen Formulare die Wendung aufnehmen. Die Reformatoren behielten die Kirchenzucht, bestritten aber die Preisgabe an das Verderben.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther las den Abschnitt als Beschreibung des Christen überhaupt: Sünder und begnadigt zugleich, in der Gegenwartsform. Die Selbstbezeichnung als vornehmster der Sünder verstand er nicht als Rangfrage, sondern als Ausdruck dessen, dass jeder in seiner eigenen Sünde der Erste ist.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Zweck der harten Maßnahme wird ausdrücklich genannt: dass sie nicht mehr lästern. In Auseinandersetzungen über Gemeindezucht ist das der entscheidende Punkt – wo der Ausschluss zum Ziel wird statt zum Mittel, arbeitet er gegen den Text.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 5, verse: 5, note: 'Die zweite Stelle über die Übergabe an den Satan' },
+      { book: 'phil', chapter: 3, verse: 6, note: 'Der andere Rückblick auf dieselbe Zeit' },
+      { book: 'apg', chapter: 27, verse: 41, note: 'Ein erzählter Schiffbruch' },
+      { book: '4mo', chapter: 15, verse: 30, note: 'Sündigen mit erhobener Hand' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 2,
+    from: 1,
+    to: 7,
+    title: '„für die Könige und alle Obrigkeit“',
+    historicalShort:
+      'Die Anweisung, für Herrscher zu beten – und einer der wenigen Sätze, die von Gottes Willen zur Rettung aller sprechen.',
+    historicalLong:
+      'Fürbitte für den Herrscher war jüdische Praxis. Der Prophet Jeremia forderte die Verschleppten auf, für die Stadt zu beten, in die sie geführt worden waren; im Tempel wurde bis zum Ausbruch des Aufstands täglich ein Opfer für den Kaiser dargebracht, das Rom bezahlte. Josephus berichtet, dass die Einstellung dieses Opfers im Jahr 66 als Kriegserklärung galt. Die Anweisung hier steht in dieser Linie und passt sich einer bewährten Praxis an.\n\nBemerkenswert ist, was nicht verlangt wird. Gebetet wird für den Kaiser, nicht zu ihm – der Unterschied war entscheidend und wurde von christlichen Schriftstellern des zweiten Jahrhunderts immer wieder betont. Tertullian schreibt, man bete für den Kaiser zum wahren Gott, und Origenes antwortet auf denselben Vorwurf ähnlich. Diese Unterscheidung war die Grenze, an der die Loyalität endete.\n\nDas Ziel, ein ruhiges und stilles Leben zu führen, ist nüchtern formuliert. Es geht nicht um das Wohl des Reiches, sondern um die Möglichkeit, unbehelligt zu leben. Für eine Gruppe ohne Rechtsstatus war das keine Bequemlichkeit, sondern die Bedingung des Überlebens. Zwei der genannten Wörter stammen aus der politischen Sprache und bezeichnen die Ruhe eines Gemeinwesens ohne Aufruhr.\n\nDer Satz, Gott wolle, dass allen Menschen geholfen werde, gehört zu den meistdiskutierten des Neuen Testaments. Er steht in Spannung zu Aussagen über die Erwählung, und die Auslegungsgeschichte hat mehrere Wege gefunden: Augustinus deutete „alle Menschen“ als Menschen aus allen Ständen; die Reformierten folgten ihm; die lutherische und die katholische Tradition nahmen den Satz beim Wort und unterschieden zwischen dem Willen Gottes und seiner Verwirklichung. Der Streit ist alt und nicht entschieden.\n\nDer folgende Vers ist wahrscheinlich eine Bekenntnisformel: ein Gott, ein Mittler, der Mensch Christus Jesus. Die Betonung des Menschseins ist auffällig und wird durch das Wort für Mittler verstärkt, das aus dem Rechtswesen stammt – ein Mittler ist, wer zwischen zwei Parteien vermittelt und beiden verbunden ist. Das Wort für Lösegeld, das folgt, ist eine verstärkte Form des Ausdrucks aus dem Markusevangelium und stammt aus dem Sklavenfreikauf.',
+    reception:
+      'Die Fürbitte für die Obrigkeit ist in alle Liturgien eingegangen. Die frühen Kirchenordnungen führen sie an fester Stelle, das römische Messbuch und die evangelischen Agenden ebenso. In Zeiten der Verfolgung diente sie als Nachweis der Loyalität; in Zeiten der Staatskirche wurde sie zur Huldigung, und die Frage, wie für einen ungerechten Herrscher zu beten sei, ist immer wieder aufgebrochen. Die Bekennende Kirche stritt nach 1933 darüber, ob der Name des Machthabers in der Fürbitte zu nennen sei.\n\nDer Satz über Gottes Willen zur Rettung aller ist eine der Hauptstellen im Streit über Erwählung und Verwerfung. Die Dordrechter Synode von 1619 deutete ihn einschränkend, die lutherische Konkordienformel von 1577 nahm ihn beim Wort; Vertreter einer universalen Hoffnung berufen sich bis heute darauf. Der Satz vom einen Mittler wurde in der Reformationszeit gegen die Anrufung von Heiligen angeführt – ein Argument, dem die katholische Seite entgegenhielt, Fürbitte sei etwas anderes als Vermittlung.\n\nIn der Religionstheologie ist die Verbindung beider Sätze wichtig geworden: Gott will die Rettung aller, und es gibt einen Mittler. Wie beides zusammengeht, ist die Grundfrage der Debatte über das Verhältnis zu anderen Religionen. Das Zweite Vatikanische Konzil hat sie aufgenommen, ohne sie aufzulösen; evangelikale und pluralistische Entwürfe ziehen entgegengesetzte Folgerungen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Juden waren vom Kaiseropfer befreit; ihnen genügte das Gebet für den Herrscher. Dieses Vorrecht war über Generationen erstritten und wurde in Erlassen bestätigt. Solange Christen als jüdische Gruppe galten, deckte es sie mit ab.'
+      },
+      {
+        aspect: 'glaube',
+        text: 'In den Prozessen des zweiten Jahrhunderts genügte eine Handvoll Weihrauch vor dem Kaiserbild zum Freispruch. Plinius berichtet, wer opferte und Christus fluchte, wurde entlassen. Die Verweigerung war der ganze Tatbestand.'
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für Mittler stammt aus dem Rechtswesen: der Vermittler zwischen zwei Parteien, der Bürge, der Schiedsrichter. Er gehört beiden Seiten an und ist deshalb in der Lage, zwischen ihnen zu stehen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Angezeigt wurde von Nachbarn, nicht von Behörden. Rom verfolgte niemanden von Amts wegen; es reagierte auf Klagen. Wer keinen Anlass gab, blieb in der Regel unbehelligt – und darauf zielt die Anweisung.'
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. mesites',
+        rendered: 'ein Mittler',
+        note: 'Der Vermittler zwischen zwei Parteien, ein Begriff aus dem Rechtswesen. Er gehört beiden Seiten an – deshalb betont der Satz das Menschsein: der Mensch Christus Jesus.',
+      },
+      {
+        word: 'griech. antilytron',
+        rendered: 'zur Erlösung',
+        note: 'Eine verstärkte Form des Wortes für Lösegeld, das aus dem Sklavenfreikauf stammt. Die Vorsilbe betont den Tausch: an Stelle von. Das Wort steht nur hier im Neuen Testament.',
+      },
+      {
+        word: 'griech. eremon kai hesychion bion',
+        rendered: 'ein ruhiges und stilles Leben',
+        note: 'Zwei Wörter aus der politischen Sprache für die Ruhe eines Gemeinwesens ohne Aufruhr. Sie beschreiben kein inneres Befinden, sondern äußere Verhältnisse – die Bedingung, unbehelligt zu leben.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Anweisung steht in der Linie jüdischer Praxis und passt in eine Zeit, in der Gemeinden ihre Stellung im Reich klären mussten. Der Bekenntnissatz vom einen Gott und einen Mittler ist wahrscheinlich übernommen; sein Bau mit den gegenüberstehenden Gliedern spricht dafür.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Tertullian und Origenes führten den Vers gegen den Vorwurf der Illoyalität an: Christen beteten für den Kaiser zum wahren Gott und opferten ihm nicht. Diese Unterscheidung war die Grenze, an der die Anpassung endete – und an der Prozesse entschieden wurden.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Satz vom einen Mittler wurde gegen die Anrufung von Heiligen angeführt. Die Konkordienformel nahm den Willen Gottes zur Rettung aller beim Wort und unterschied ihn von seiner Verwirklichung; damit widersprach sie einer doppelten Vorherbestimmung.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Augustinus deutete „alle Menschen“ als Menschen aus allen Ständen und Völkern; die Dordrechter Synode folgte ihm. Andernfalls, so das Argument, wäre Gottes Wille wirkungslos. Innerhalb derselben Tradition ist diese Deutung immer wieder bestritten worden.',
+      },
+      {
+        tradition: 'Religionstheologische Rückfrage',
+        text: 'Die Verbindung beider Sätze – Gott will die Rettung aller, und es gibt einen Mittler – ist die Grundfrage der Debatte über andere Religionen. Das Zweite Vatikanische Konzil nahm sie auf, ohne sie aufzulösen; evangelikale und pluralistische Entwürfe ziehen entgegengesetzte Folgerungen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 29, verse: 7, note: 'Suchet der Stadt Bestes' },
+      { book: 'roem', chapter: 13, verse: 1, note: 'Die Obrigkeit als Ordnung' },
+      { book: 'mk', chapter: 10, verse: 45, note: 'Das Lösegeld für viele' },
+      { book: '2petr', chapter: 3, verse: 9, note: 'Er will nicht, dass jemand verloren werde' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 3,
+    from: 1,
+    to: 16,
+    title: '„so jemand ein Bischofsamt begehrt“',
+    historicalShort:
+      'Die ausführlichste Ämterordnung des Neuen Testaments – und am Ende ein Lied in sechs Zeilen, das älter ist als der Brief.',
+    historicalLong:
+      'Die Anforderungsliste hat dieselbe Bauform wie die im Titusbrief und geht wahrscheinlich auf eine gemeinsame Vorlage zurück. Vergleichbare Kataloge sind aus der hellenistischen Popularphilosophie bekannt: Onasander beschreibt in einer Schrift über den Feldherrn dessen Tugenden in fast derselben Form. Verlangt wird bürgerliche Unauffälligkeit, nicht besondere Begabung – ein Befund, der in der Auslegung immer wieder überrascht hat.\n\nDrei Punkte gehen über den Titusbrief hinaus. Erstens die Warnung vor dem Neuling: Wer zu schnell aufsteigt, gerät in Gefahr. Das setzt eine Gemeinde voraus, die lange genug besteht, um zwischen Alteingesessenen und Neuen zu unterscheiden. Zweitens das gute Zeugnis von denen draußen – die Meinung der Nachbarschaft wird zur Bedingung für ein Gemeindeamt gemacht. Drittens der Vergleich mit dem eigenen Haus: Wer dem nicht vorstehen kann, kann auch die Gemeinde nicht versorgen. Das Wort für Versorgen ist dasselbe, das im Gleichnis vom barmherzigen Samariter für die Pflege des Verletzten steht.\n\nDer Abschnitt über die Diakone bringt einen Vers, der seit der Antike umstritten ist. Die Rede von den Frauen kann bedeuten: die Ehefrauen der Diakone, oder: die Diakoninnen. Das Griechische hat kein eigenes Wort für Diakonin – der Römerbrief nennt Phöbe mit der männlichen Form. Für die zweite Deutung spricht, dass der Vers mitten im Abschnitt über die Diakone steht und mit derselben Wendung eingeleitet wird wie diese; dagegen, dass unmittelbar danach wieder von den Diakonen die Rede ist. Plinius der Jüngere erwähnt um 112 zwei Sklavinnen, die bei den Christen ministrae hießen – das lateinische Wort für Dienerinnen.\n\nDas Bild von der Gemeinde als Pfeiler und Grundfeste der Wahrheit hatte in Ephesus einen sichtbaren Bezug. Der Artemistempel ruhte auf mehr als hundert Säulen, von denen einige gestiftet und mit dem Namen des Stifters versehen waren; er galt als eines der sieben Weltwunder. Wer eine Versammlung in Wohnhäusern so bezeichnete, stellte sie neben das größte Bauwerk der Stadt.\n\nDer Schluss ist ein Lied. Sechs Zeilen, alle gleich gebaut, alle mit einem Verb im Passiv, paarweise gegeneinandergestellt: Fleisch und Geist, Engel und Heiden, Welt und Herrlichkeit. Rhythmus und Wortwahl zeigen, dass hier ein bereits umlaufender Text zitiert wird. Der Anfang ist textkritisch berühmt: Ein Teil der Handschriften hat „welcher“, ein anderer „Gott“ – im Griechischen unterscheiden sich beide Wörter in der Großschrift nur durch zwei Striche. Die älteren Handschriften haben „welcher“; die späteren, aus denen Luther übersetzte, „Gott“.',
+    reception:
+      'Die Anforderungsliste ist bis heute Maßstab der Ordinationsprüfung in vielen Kirchen. Die Formel vom Mann einer Frau wurde in der lateinischen Kirche seit dem vierten Jahrhundert als Verbot der zweiten Ehe gelesen und trug zur Entwicklung des Zölibats bei; die östlichen Kirchen lassen verheiratete Priester zu, aber keine Wiederverheiratung. Seit dem 20. Jahrhundert wird gestritten, ob die Formel Frauen vom Amt ausschließt oder nur die Selbstverständlichkeit spiegelt, dass Hausvorstände Männer waren.\n\nDer Vers über die Frauen im Diakonenabschnitt ist eine Kernstelle der Debatte über das Diakonat der Frau. Die Alte Kirche kannte Diakoninnen; die Apostolischen Konstitutionen des vierten Jahrhunderts enthalten ein Weihegebet für sie, und in den östlichen Kirchen bestand das Amt bis ins Mittelalter. Die Wiedereinführung wird in mehreren Kirchen diskutiert; die katholische Kirche hat dazu seit 2016 zwei Kommissionen eingesetzt.\n\nDie Textvariante am Anfang des Liedes ist ein Standardbeispiel der Textkritik. Die Lesart „Gott ist offenbart im Fleisch“ war in der Reformationszeit ein Hauptbeleg für die Gottheit Christi; als die älteren Handschriften bekannt wurden, entfiel sie. Isaac Newton behandelte den Fall zusammen mit dem Comma Johanneum in seiner Abhandlung über zwei Verfälschungen der Schrift. Die Lutherbibel folgte lange der späteren Lesart; heutige Ausgaben drucken „er“.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Ruf in der Nachbarschaft entschied über Geschäfte und Heiraten. Dass ein Gemeindeamt ein gutes Zeugnis von denen draußen verlangt, macht die Meinung der Umgebung zur Bedingung – ein bemerkenswerter Vorgang für eine verdächtigte Gruppe.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Der Artemistempel in Ephesus ruhte auf mehr als hundert Säulen und galt als eines der sieben Weltwunder. Einige Säulen waren gestiftet und trugen den Namen des Stifters. Das Bild vom Pfeiler hatte einen sichtbaren Bezug.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wer einem Haus vorstand, verwaltete Vorräte, Personal und Geld, schlichtete Streit und vertrat es nach außen. Diese Aufgaben ließen sich beobachten. Ein Bewerber wurde deshalb an etwas gemessen, das die Nachbarschaft kannte.'
+      },
+      {
+        aspect: 'glaube',
+        text: 'Frühe Gemeinden sangen. Plinius berichtet um 112 aus derselben Provinz, Christen sängen wechselweise ein Lied an Christus. Mehrere Briefe enthalten Stücke, die sich durch Rhythmus und Wortwahl als Zitate zu erkennen geben.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. mias gynaikos andra',
+        rendered: 'eines Weibes Mann',
+        note: 'Wörtlich: Mann einer Frau. Die Formel wurde als Verbot der zweiten Ehe, als Forderung ehelicher Treue und als Ausschluss Unverheirateter gelesen. Ihre Auslegung hat die Zölibatsgeschichte des Westens mitbestimmt.',
+      },
+      {
+        word: 'griech. gynaikas hosautos',
+        rendered: 'ihre Weiber',
+        note: 'Wörtlich: die Frauen desgleichen. Der Vers steht mitten im Abschnitt über die Diakone und wird mit derselben Wendung eingeleitet. Ob Ehefrauen oder Diakoninnen gemeint sind, ist seit der Antike umstritten.',
+      },
+      {
+        word: 'griech. hos ephanerothe',
+        rendered: 'Gott ist offenbart',
+        note: 'Die älteren Handschriften haben „welcher“, die späteren „Gott“; in der Großschrift unterscheiden sich beide Wörter nur durch zwei Striche. Die Lutherbibel folgte lange der späteren Lesart, heutige Ausgaben der älteren.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Liste geht wahrscheinlich mit der im Titusbrief auf eine gemeinsame Vorlage zurück und folgt hellenistischen Tugendkatalogen. Die Warnung vor dem Neuling setzt eine über Jahre bestehende Gemeinde voraus – ein Argument für eine späte Abfassung.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Stelle gilt als Zeugnis der Ämterordnung und wird in der Lehre über Bischöfe und Diakone herangezogen. Der Vers über die Frauen ist eine Kernstelle der Debatte über das Diakonat der Frau; seit 2016 haben zwei Kommissionen dazu gearbeitet.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Betont wird, dass keine besondere Heiligkeit verlangt wird, sondern Tauglichkeit und ein guter Ruf. Die reformierten Kirchenordnungen übernahmen die Liste als Prüfkatalog, den die Gemeinde selbst anwendet. Die Formel vom Mann einer Frau wurde gegen den Zölibat gewendet.',
+      },
+      {
+        tradition: 'Orthodoxe Tradition',
+        text: 'Die östlichen Kirchen kannten Diakoninnen mit eigenem Weihegebet; die Apostolischen Konstitutionen überliefern es. Das Amt bestand bis ins Mittelalter und wird in mehreren orthodoxen Kirchen wieder erörtert. Verheiratete Priester sind zugelassen, Bischöfe müssen unverheiratet sein.',
+      },
+      {
+        tradition: 'Textkritik',
+        text: 'Die Variante am Anfang des Liedes ist ein Standardbeispiel. Die Lesart „Gott ist offenbart im Fleisch“ war ein Hauptbeleg für die Gottheit Christi, bis die älteren Handschriften bekannt wurden. Der Fall zeigt, wie eine Textform theologische Argumente tragen kann, die ohne sie anders begründet werden müssen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'tit', chapter: 1, verse: 6, note: 'Die parallele Liste' },
+      { book: 'roem', chapter: 16, verse: 1, note: 'Phöbe, Diakonin in Kenchreä' },
+      { book: 'phil', chapter: 2, verse: 6, note: 'Ein zweites zitiertes Lied' },
+      { book: 'lk', chapter: 10, verse: 34, note: 'Dasselbe Wort für Versorgen' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 4,
+    from: 1,
+    to: 16,
+    title: '„die da gebieten, nicht ehelich zu werden“',
+    historicalShort:
+      'Eine Absage an religiös begründete Askese – und die Anweisung an einen jungen Mann, sich sein Amt nicht absprechen zu lassen.',
+    historicalLong:
+      'Die beschriebene Lehre lässt sich genauer fassen als sonst in diesem Brief: Ehe- und Speiseverbote. Beides gehört zusammen und ist im zweiten Jahrhundert breit belegt. Mehrere Richtungen, die die Kirchengeschichte gnostisch nennt, lehnten die Ehe ab, weil Fortpflanzung die Seele weiter in die Materie binde; die Enkratiten, deren Name von der Enthaltsamkeit kommt, machten den Verzicht zur Bedingung der Taufe. Auch die apokryphen Paulusakten mit ihrer Thekla-Erzählung bewegen sich in dieser Richtung.\n\nDie Antwort greift auf den Schöpfungsbericht zurück: Alle Kreatur Gottes ist gut. Der Satz zitiert das wiederkehrende Urteil des ersten Kapitels der Bibel und zieht daraus eine Folgerung für den Alltag – nichts sei zu verwerfen, was mit Danksagung genommen werde. Das Tischgebet erscheint damit nicht als Frömmigkeitsübung, sondern als der Vorgang, in dem eine Speise ihren Ort bekommt. Die Formulierung, sie werde durch Gottes Wort und Gebet geheiligt, setzt beides voraus: den Schöpfungsbericht und den gesprochenen Segen.\n\nDer Satz über die leibliche Übung ist häufig missverstanden worden. Das griechische Wort bezeichnet das Training im Gymnasium – die körperliche Ertüchtigung, die zur griechischen Bildung gehörte und die Städte in eigenen Anlagen betrieben. Der Vergleich ist nicht abwertend gemeint: Er räumt der Übung einen begrenzten Nutzen ein und stellt ihr eine andere gegenüber. Das Wort für Übung in der Frömmigkeit ist dasselbe – der Satz spielt mit dem Bild und behält es bei.\n\nDie Anweisung, niemand solle die Jugend des Angeredeten verachten, setzt ein reales Problem voraus. In einer Gesellschaft, in der Alter über das Gehör entschied und Ämter an Lebensjahre gebunden waren, war ein junger Leiter ungewöhnlich; das griechische Wort für Jugend konnte bis zum vierzigsten Lebensjahr reichen. Die Antwort verweist nicht auf Vollmacht, sondern auf Lebensführung: Vorbild sein in Wort, Wandel, Liebe, Glaube, Keuschheit.\n\nDie Anweisung zum Lesen meint das öffentliche Vorlesen im Gottesdienst. Sie ist der früheste Beleg dafür, dass die Versammlung ein festes Programm hatte: Lesung, Ermahnung, Lehre. Vorgelesen wurde die griechische Fassung des Alten Testaments und daneben, wie andere Stellen zeigen, apostolische Briefe. Aus dieser Reihenfolge ist die Struktur des Wortgottesdienstes hervorgegangen, die alle großen Kirchen bis heute teilen.',
+    reception:
+      'Die Absage an Ehe- und Speiseverbote hat in der Reformationszeit große Bedeutung bekommen. Luther führte den Abschnitt gegen Zölibat und Fastengebote an und nannte ihn eine Weissagung auf das Papsttum – eine Deutung, die in die Bekenntnisschriften einging und dort bis heute steht. Die katholische Seite hielt dagegen, der Text richte sich gegen die Verachtung der Schöpfung, nicht gegen freiwillige Enthaltsamkeit; das Konzil von Trient unterschied ausdrücklich zwischen beidem.\n\nDer Satz, alle Kreatur Gottes sei gut, ist einer der wichtigsten Belege gegen jede Abwertung des Leiblichen. Er wurde gegen manichäische und katharische Lehren angeführt, die die Materie für böse hielten, und ist in der Schöpfungstheologie des 20. Jahrhunderts wieder aufgegriffen worden. In der Diskussion über Ernährungsvorschriften und über den Umgang mit dem Körper wird er regelmäßig zitiert.\n\nDie Anweisung zum öffentlichen Lesen hat die Gestalt des Gottesdienstes geprägt. Justin der Märtyrer beschreibt um 155 eine Versammlung, in der die Erinnerungen der Apostel und die Schriften der Propheten gelesen werden, solange die Zeit reicht; danach folgt die Auslegung. Diese Ordnung geht auf die hier beschriebene Praxis zurück und steht am Anfang der Leseordnungen aller Kirchen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Gymnasium war Sportstätte und Schule zugleich und gehörte zur Ausstattung jeder griechischen Stadt. Junge Männer trainierten dort täglich; die Anlage war ein Ort der Bildung und der gesellschaftlichen Beziehungen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Vor der Mahlzeit wurde gesegnet. Die jüdische Praxis kannte feste Segenssprüche über Brot und Wein; die Gemeinden übernahmen sie. Was gesegnet wurde, war damit eingeordnet – ein alltäglicher Vorgang mit weitreichender Bedeutung.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Rat einer Stadt bestand aus Männern mit Vermögen und Jahren; Mindestalter waren in den Stadtrechten festgeschrieben. Wer jung eine Aufgabe übernahm, verdankte sie in der Regel seiner Familie – und musste sich das vorhalten lassen.'
+      },
+      {
+        aspect: 'glaube',
+        text: 'Enthaltsamkeit galt weithin als Zeichen besonderer Nähe zum Göttlichen. Priesterinnen der Vesta blieben unverheiratet, Isispriester enthielten sich zeitweise, und Philosophen rühmten den Verzicht. Wer Askese forderte, hatte die Bildung seiner Zeit auf seiner Seite.'
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. somatike gymnasia',
+        rendered: 'die leibliche Übung',
+        note: 'Das Training im Gymnasium. Der Vergleich wertet es nicht ab, sondern räumt ihm begrenzten Nutzen ein. Das Wort für die Übung in der Frömmigkeit ist dasselbe – der Satz behält das Bild bei.',
+      },
+      {
+        word: 'griech. te anagnosei',
+        rendered: 'mit Lesen',
+        note: 'Das öffentliche Vorlesen im Gottesdienst, nicht das stille Lesen. Der früheste Beleg für ein festes Programm der Versammlung: Lesung, Ermahnung, Lehre – die Grundform des Wortgottesdienstes.',
+      },
+      {
+        word: 'griech. kekausteriasmenon',
+        rendered: 'Brandmal',
+        note: 'Mit dem Brenneisen gezeichnet. Sklaven und Verbrecher wurden gebrandmarkt; zugleich meint das Wort in der Medizin das Ausbrennen einer Wunde, die danach gefühllos bleibt. Beide Bilder passen auf ein Gewissen, das nichts mehr meldet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die beschriebene Lehre – Ehe- und Speiseverbote – ist im zweiten Jahrhundert breit belegt und lässt sich genauer fassen als die Gegner sonst in diesem Brief. Das gilt als Argument für eine späte Abfassung, weil solche Bewegungen erst dann greifbar werden.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther führte den Abschnitt gegen Zölibat und Fastengebote an und deutete ihn als Weissagung auf das Papsttum; die Bekenntnisschriften haben das übernommen. Der Satz von der guten Schöpfung galt ihm als Grundsatz gegen jede religiös begründete Enthaltung.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Text richte sich gegen die Verachtung der Schöpfung, nicht gegen freiwillige Enthaltsamkeit; das Konzil von Trient unterschied beides ausdrücklich. Die Ehelosigkeit um des Himmelreichs willen wird auf andere Stellen gestützt und als Gabe, nicht als Bedingung verstanden.',
+      },
+      {
+        tradition: 'Schöpfungstheologische Lesart',
+        text: 'Der Satz, alle Kreatur Gottes sei gut, ist gegen manichäische und katharische Lehren angeführt worden, die die Materie für böse hielten. Im 20. Jahrhundert wurde er in der Schöpfungstheologie wieder aufgegriffen und gegen jede Abwertung des Leiblichen gewendet.',
+      },
+      {
+        tradition: 'Liturgiegeschichtliche Einordnung',
+        text: 'Die Reihenfolge Lesung, Ermahnung, Lehre ist der früheste Beleg für ein festes Programm der Versammlung. Justin beschreibt um 155 dieselbe Ordnung ausführlicher. Aus ihr sind die Leseordnungen aller großen Kirchen hervorgegangen.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 1, verse: 31, note: 'Und siehe da, es war sehr gut' },
+      { book: 'kol', chapter: 2, verse: 21, note: 'Du sollst das nicht anrühren' },
+      { book: '1tim', chapter: 5, verse: 23, note: 'Die praktische Gegenprobe zur Askese' },
+      { book: '2tim', chapter: 1, verse: 6, note: 'Die Gabe durch Handauflegung' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 5,
+    from: 1,
+    to: 16,
+    title: '„Ehre die Witwen, welche rechte Witwen sind“',
+    historicalShort:
+      'Eine Ordnung für die Versorgung von Witwen – der ausführlichste Text des Neuen Testaments über kirchliche Sozialarbeit und ihre Grenzen.',
+    historicalLong:
+      'Witwen ohne Familie waren in der antiken Welt praktisch mittellos. Eine Frau konnte in der Regel nicht erben, sondern erhielt ihre Mitgift zurück, falls sie noch vorhanden war; die Versorgung lag bei den Söhnen oder bei der Herkunftsfamilie. Wer beides nicht hatte, war auf Almosen angewiesen. Die hebräische Bibel stellt Witwen deshalb regelmäßig neben Waisen und Fremdlinge unter besonderen Schutz, und die frühen Gemeinden übernahmen diese Fürsorge: Die Apostelgeschichte berichtet von einer täglichen Versorgung und von dem Streit darüber, der zur Einsetzung von sieben Männern führte.\n\nDer Abschnitt beschreibt ein Verfahren mit klaren Regeln, und die erste ist eine Entlastung: Wer Angehörige hat, wird von ihnen versorgt. Die Begründung greift auf das Elterngebot zurück – Kinder sollen den Eltern vergelten. Der Satz, wer die Seinen nicht versorge, habe den Glauben verleugnet und sei ärger als ein Heide, ist einer der schärfsten des Briefes und wendet sich gegen die Vorstellung, Frömmigkeit entbinde von familiären Pflichten.\n\nDie Aufnahme in die Liste ist an Bedingungen geknüpft: mindestens sechzig Jahre, einmal verheiratet gewesen, ein Zeugnis guter Werke. Die Altersgrenze entspricht dem, was in der Antike als Beginn des Alters galt; Frauen heirateten früh und waren mit sechzig oft seit Jahrzehnten verwitwet. Die Aufzählung der Werke – Kinder aufgezogen, gastfrei gewesen, Füße gewaschen, Bedrängten geholfen – beschreibt keine Ämter, sondern gelebte Praxis.\n\nDie Liste war offenbar mehr als ein Verzeichnis von Empfängerinnen. Der Text spricht von Erwählung und von einem gebrochenen ersten Glauben bei denen, die wieder heiraten – das setzt eine Art Verpflichtung voraus. In der Alten Kirche entwickelte sich daraus ein Witwenstand mit festen Aufgaben: Gebet, Besuch von Kranken, Unterweisung von Frauen. Die Kirchenordnungen des dritten und vierten Jahrhunderts regeln ihn ausführlich.\n\nDer Abschnitt über die jungen Witwen ist der härteste. Ihnen wird Müßiggang, Herumlaufen und Geschwätzigkeit vorgeworfen und geraten, wieder zu heiraten. Sozialgeschichtlich lässt sich das einordnen: Junge Frauen ohne Ehemann waren in einer Ehrgesellschaft dem Gerede ausgesetzt, und die Gemeinde hatte Grund, das zu fürchten – der Text nennt den Widersacher ausdrücklich. Ausleger weisen zugleich darauf hin, dass die Vorwürfe dem festen Vorrat antiker Polemik gegen Frauen entstammen und über die Betroffenen wenig aussagen. Bemerkenswert bleibt der Widerspruch zum ersten Korintherbrief, der Witwen ausdrücklich rät, unverheiratet zu bleiben.',
+    reception:
+      'Der Witwenstand der Alten Kirche geht auf diesen Abschnitt zurück. Die Kirchenordnungen des dritten und vierten Jahrhunderts – die Syrische Didaskalie, die Apostolischen Konstitutionen – regeln Aufnahme, Pflichten und Versorgung ausführlich. Aus diesem Stand ist mittelbar das Diakonissenamt hervorgegangen, das im 19. Jahrhundert wiederbelebt wurde; Theodor Fliedner berief sich bei der Gründung seiner Anstalt 1836 auf die neutestamentlichen Zeugnisse.\n\nDer Satz über die Versorgung der eigenen Angehörigen ist in die Sozialethik eingegangen. Er begründet den Vorrang der Familie vor der Gemeinschaft und ist damit einer der biblischen Anhaltspunkte für das, was die katholische Soziallehre Subsidiarität nennt: Was die kleinere Einheit leisten kann, soll die größere ihr nicht abnehmen. Zugleich beschreibt der Abschnitt, was geschieht, wenn die kleinere Einheit fehlt.\n\nDie Anweisungen an die jungen Witwen sind kritisch geprüft worden. Sie stehen im Widerspruch zum ersten Korintherbrief, der Witwen zur Ehelosigkeit rät, und die Vorwürfe entstammen dem Vorrat antiker Frauenpolemik. In der feministischen Auslegung gilt der Abschnitt als Beispiel dafür, wie Gemeinden auf gesellschaftlichen Druck reagierten und die Freiräume beschnitten, die eine frühere Zeit kannte.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Das römische Recht kannte Erleichterungen für Witwen mit Kindern, verlangte von jungen Witwen aber die Wiederverheiratung binnen zwei Jahren; die Ehegesetze des Augustus banden daran Rechtsvorteile. Wer unverheiratet blieb, verstieß gegen die Erwartung des Staates.'
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Mädchen heirateten früh, oft mit dreizehn oder vierzehn, an deutlich ältere Männer. Verwitwung im mittleren Alter war die Regel; mit sechzig Jahren war eine Frau häufig seit Jahrzehnten allein.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die frühen Gemeinden führten Listen und verteilten regelmäßig. Eine römische Quelle des dritten Jahrhunderts nennt für die dortige Gemeinde über anderthalbtausend versorgte Witwen und Bedürftige – ein Verwaltungsvorgang von erheblichem Umfang.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Füße zu waschen war die Aufgabe des niedrigsten Sklaven im Haus. Dass diese Handlung unter den guten Werken einer Witwe genannt wird, beschreibt praktische Gastfreundschaft und nicht ein Amt.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. chera ontos',
+        rendered: 'rechte Witwen',
+        note: 'Wörtlich: wirklich Witwe. Der Ausdruck unterscheidet zwischen Frauen ohne jede Versorgung und solchen mit Angehörigen. Er begründet eine Bedürftigkeitsprüfung, keine Rangordnung.',
+      },
+      {
+        word: 'griech. katalegestho',
+        rendered: 'erwählt werden',
+        note: 'In eine Liste eingetragen werden – ein Wort aus der Verwaltung und aus der Aushebung von Soldaten. Es setzt ein förmliches Verzeichnis voraus, das mehr war als eine Empfängerliste.',
+      },
+      {
+        word: 'griech. amoibas apodidonai',
+        rendered: 'den Eltern Gleiches vergelten',
+        note: 'Wörtlich: Gegengaben erstatten. Der Ausdruck stammt aus dem Bereich gegenseitiger Verpflichtungen und greift das Elterngebot auf: Was Eltern aufgewendet haben, wird zurückgegeben.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt beschreibt ein Verfahren mit Bedürftigkeitsprüfung, Altersgrenze und Verzeichnis – ein Zeichen dafür, dass die Gemeinde eine Größe erreicht hatte, die Verwaltung nötig machte. Die Rede von Erwählung und gebrochenem Gelübde setzt einen Stand voraus, nicht nur eine Empfängergruppe.',
+      },
+      {
+        tradition: 'Altkirchliche Auslegung',
+        text: 'Aus dem Abschnitt ist der Witwenstand hervorgegangen, den die Kirchenordnungen des dritten und vierten Jahrhunderts ausführlich regeln: Gebet, Krankenbesuch, Unterweisung von Frauen. Mittelbar geht auf ihn auch das Diakonissenamt zurück.',
+      },
+      {
+        tradition: 'Sozialethische Lesart',
+        text: 'Der Vorrang der Familie vor der Gemeinschaft ist einer der biblischen Anhaltspunkte für das Subsidiaritätsprinzip. Zugleich beschreibt der Text, was geschieht, wenn die kleinere Einheit fehlt – die größere tritt ein, und zwar geordnet.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Die Anweisungen an die jungen Witwen stehen im Widerspruch zum ersten Korintherbrief, der Witwen zur Ehelosigkeit rät. Die Vorwürfe entstammen dem Vorrat antiker Frauenpolemik. Der Abschnitt gilt als Beispiel dafür, wie Gemeinden unter gesellschaftlichem Druck Freiräume beschnitten, die eine frühere Zeit kannte.',
+      },
+      {
+        tradition: 'Diakonische Tradition',
+        text: 'Der Abschnitt ist der ausführlichste Text des Neuen Testaments über organisierte Fürsorge. Er zeigt, dass Hilfe Regeln braucht, wenn sie über den Einzelfall hinausgeht, und dass diese Regeln selbst umstritten sind – ein Befund, den die Diakonie seither teilt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 6, verse: 1, note: 'Der Streit um die tägliche Versorgung' },
+      { book: '1kor', chapter: 7, verse: 8, note: 'Der Rat an Witwen, unverheiratet zu bleiben' },
+      { book: 'jak', chapter: 1, verse: 27, note: 'Waisen und Witwen als Maßstab' },
+      { book: '2mo', chapter: 20, verse: 12, note: 'Das Elterngebot' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 5,
+    from: 17,
+    to: 25,
+    title: '„Trinke nicht mehr Wasser, sondern auch ein wenig Wein“',
+    historicalShort:
+      'Regeln für den Umgang mit Ältesten – Bezahlung, Beschwerdeverfahren, Zurückhaltung bei der Einsetzung – und ein Rat zum Magen, der aus dem Rahmen fällt.',
+    historicalLong:
+      'Der Abschnitt regelt drei Dinge, die jede Gemeinschaft ordnen muss: Bezahlung, Beschwerden, Einsetzung. Die doppelte Ehre, von der die Rede ist, meint wahrscheinlich Ehre und Honorar zugleich; das griechische Wort deckt beides ab, und die folgende Begründung mit zwei Zitaten über den Lohn macht das eindeutig. Damit ist der früheste Beleg dafür gegeben, dass Gemeindeleiter bezahlt wurden – ein Vorgang, den andere Briefe desselben Corpus für die Anfangszeit ausdrücklich ablehnen.\n\nDie beiden Zitate sind bemerkenswert. Das erste stammt aus dem fünften Buch Mose und verbietet, dem dreschenden Ochsen das Maul zu binden; das zweite lautet, ein Arbeiter sei seines Lohnes wert – ein Wort, das im Lukasevangelium steht. Beide werden mit der Formel „die Schrift spricht“ eingeleitet. Wenn sich das auch auf das zweite bezieht, wäre dies die früheste Stelle, an der ein Wort aus einem Evangelium als Schrift zitiert wird. Die Ausleger sind uneins, ob die Formel beide Zitate deckt.\n\nDas Beschwerdeverfahren übernimmt eine Regel des biblischen Rechts: keine Anklage ohne zwei oder drei Zeugen. Sie schützt vor Verleumdung und ist im fünften Buch Mose für Kapitalverfahren vorgeschrieben. Ihre Anwendung auf Gemeindeleiter ist eine Schutzregel, die zugleich eine Schwierigkeit schafft: Vergehen, die ohne Zeugen geschehen, bleiben unbelangt. In der Aufarbeitung von Missbrauchsfällen im 20. und 21. Jahrhundert ist diese Kehrseite von Kirchen ausdrücklich benannt worden.\n\nDie Warnung, niemandem zu schnell die Hände aufzulegen, betrifft die Einsetzung. Sie steht in einem Zusammenhang mit dem Satz, man mache sich sonst fremder Sünden teilhaftig – wer jemanden einsetzt, haftet mit. Der letzte Vers des Abschnitts nimmt das auf: Manche Sünden sind offenbar, andere kommen erst später heraus. Das ist eine nüchterne Feststellung über die Grenzen jeder Prüfung.\n\nDer Rat zum Wein steht ohne Verbindung zum Übrigen und wirkt wie eine eingeschobene Bemerkung. Er hat einen medizinischen Hintergrund: Wein galt in der antiken Heilkunde als Mittel gegen Magenbeschwerden, und Wasser war in vielen Städten verunreinigt – man mischte deshalb Wein hinein, um es genießbar zu machen. Zugleich ist der Rat im Zusammenhang des Briefes eine Spitze: Ein Kapitel zuvor werden Speiseverbote als Lehre von Dämonen bezeichnet. Wer Askese ablehnt, kann nicht selbst zum reinen Wassertrinker werden.',
+    reception:
+      'Die doppelte Ehre ist zur Grundlage der Besoldung kirchlicher Amtsträger geworden. Das mittelalterliche Kirchenrecht leitete daraus den Anspruch auf Unterhalt ab; die reformatorischen Kirchenordnungen regelten Pfarrbesoldung mit Berufung auf diese Stelle, und Luther kämpfte in den 1520er Jahren darum, dass Gemeinden ihre Prediger tatsächlich bezahlten.\n\nDie Zeugenregel ist in das Kirchenrecht eingegangen und hat eine zwiespältige Geschichte. Sie schützte Amtsträger vor Verleumdung und erschwerte zugleich die Aufklärung von Vergehen, die ohne Zeugen geschehen. In der Aufarbeitung sexualisierter Gewalt haben mehrere Kirchen seit den 2000er Jahren festgestellt, dass die Regel zur Vertuschung beigetragen hat, und ihre Verfahren geändert.\n\nDer Rat zum Wein hat eine eigene Wirkungsgeschichte. In den Abstinenzbewegungen des 19. Jahrhunderts, besonders in den Vereinigten Staaten, war er ein Problem: Er widerspricht der Forderung völliger Enthaltung. Die Auslegung reagierte mit der These, gemeint sei unvergorener Traubensaft – eine Deutung, die sprachlich nicht zu halten ist und die den historischen Zusammenhang übergeht, in dem Wein als Heilmittel und als Wasserzusatz gebraucht wurde.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für Ehre deckt Ansehen und Honorar zugleich ab. Vereine zahlten ihren Beamten Aufwandsentschädigungen, Städte ihren Ärzten und Lehrern Gehälter. Bezahlung war kein Widerspruch zur Ehre, sondern ihr Ausdruck.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Keine Anklage ohne zwei oder drei Zeugen – die Regel steht im fünften Buch Mose für Kapitalverfahren. Sie schützte vor Verleumdung und machte zugleich alles unbelangbar, was ohne Zeugen geschah.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wein wurde fast immer mit Wasser gemischt, üblich waren ein Teil Wein auf zwei bis drei Teile Wasser. Ungemischt zu trinken galt als barbarisch. „Ein wenig Wein“ beschreibt damit kein Zugeständnis an den Genuss, sondern die normale Zubereitung.'
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer jemanden empfahl oder einsetzte, haftete für ihn. Empfehlungsbriefe waren verbindlich, und ein Empfehlender, dessen Kandidat versagte, verlor selbst an Ansehen. Die Warnung vor zu schneller Handauflegung greift diese Haftung auf.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. diples times',
+        rendered: 'zweifacher Ehre',
+        note: 'Das Wort deckt Ansehen und Honorar zugleich ab; die folgenden Zitate über den Lohn machen die zweite Bedeutung eindeutig. Der früheste Beleg dafür, dass Gemeindeleiter bezahlt wurden.',
+      },
+      {
+        word: 'griech. legei he graphe',
+        rendered: 'es spricht die Schrift',
+        note: 'Die Formel leitet zwei Zitate ein: eines aus dem fünften Buch Mose, eines, das im Lukasevangelium steht. Deckt sie beide, wäre dies die früheste Stelle, an der ein Evangelienwort als Schrift zitiert wird.',
+      },
+      {
+        word: 'griech. cheiras tacheos medeni epitithei',
+        rendered: 'Die Hände lege niemand zu bald auf',
+        note: 'Die Warnung betrifft die Einsetzung in ein Amt. Der Zusatz über die fremden Sünden macht deutlich, warum: Wer einsetzt, haftet mit für den Eingesetzten.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt setzt eine Gemeinde mit bezahlten Leitern, einem Beschwerdeverfahren und einer geregelten Einsetzung voraus. Das ist eine deutlich entwickeltere Ordnung als in den unbestrittenen Paulusbriefen und gehört zu den Beobachtungen, die für eine späte Abfassung sprechen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die doppelte Ehre wurde zur Grundlage der Pfarrbesoldung. Luther kämpfte in den 1520er Jahren darum, dass Gemeinden ihre Prediger tatsächlich bezahlten, und führte die Stelle regelmäßig an. Betont wird zugleich, dass die Bezahlung an die Arbeit gebunden ist, nicht an den Stand.',
+      },
+      {
+        tradition: 'Kirchenrechtliche Rezeption',
+        text: 'Die Zeugenregel ist in das Kirchenrecht eingegangen und hat eine zwiespältige Geschichte: Sie schützt vor Verleumdung und erschwert die Aufklärung von Vergehen ohne Zeugen. Mehrere Kirchen haben seit den 2000er Jahren festgestellt, dass sie zur Vertuschung beitrug, und ihre Verfahren geändert.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'Der Schlussvers ist eine nüchterne Feststellung über die Grenzen jeder Prüfung: Manches kommt erst später heraus. In Auswahlverfahren für kirchliche Ämter wird er als Warnung vor der Illusion vollständiger Sicherheit gelesen.',
+      },
+      {
+        tradition: 'Auslegungsgeschichtliche Anmerkung',
+        text: 'Der Rat zum Wein war in den Abstinenzbewegungen des 19. Jahrhunderts ein Problem. Die These, gemeint sei unvergorener Traubensaft, ist sprachlich nicht zu halten und übergeht den Zusammenhang, in dem Wein als Heilmittel und als Wasserzusatz gebraucht wurde.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 25, verse: 4, note: 'Das erste Zitat vom dreschenden Ochsen' },
+      { book: 'lk', chapter: 10, verse: 7, note: 'Der Arbeiter ist seines Lohnes wert' },
+      { book: '5mo', chapter: 19, verse: 15, note: 'Zwei oder drei Zeugen' },
+      { book: '1kor', chapter: 9, verse: 9, note: 'Dasselbe Zitat, anders angewandt' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 6,
+    from: 1,
+    to: 5,
+    title: '„die da meinen, Gottseligkeit sei ein Gewerbe“',
+    historicalShort:
+      'Anweisungen an Sklaven, eine Absage an das Geschäft mit der Frömmigkeit – und der berühmteste Satz der Bibel über das Geld, meist falsch zitiert.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einer Anweisung an Sklaven und behandelt einen Sonderfall: gläubige Herren. Die Sorge ist, dass die Bruderschaft im Glauben die Rangordnung im Haus außer Kraft setzt und die Sklaven ihre Herren geringachten. Das lässt sich lesen als Beleg dafür, dass genau das geschah – eine Anweisung ergeht gegen etwas, das vorkommt. Der Philemonbrief zeigt dieselbe Spannung von der anderen Seite.\n\nDer Vorwurf, jemand halte die Frömmigkeit für ein Gewerbe, trifft eine bekannte Erscheinung. Wanderredner und Religionsanbieter lebten von ihren Auftritten; Lukian von Samosata schildert einen Betrüger, der ein Orakel erfindet und damit reich wird. Der vorige Abschnitt hatte gerade die Bezahlung von Ältesten geregelt – der Brief unterscheidet also zwischen Unterhalt für Arbeit und Gewinnabsicht.\n\nDie Wendung vom Joch, unter dem die Sklaven stehen, ist im Griechischen ein feststehender Ausdruck für die Unfreiheit. Sie beschreibt keine Metapher, sondern einen Rechtszustand: Ein Sklave war Sache, konnte verkauft und verpfändet werden, und seine Ehe hatte keinen rechtlichen Bestand. Dass ihm überhaupt eine Anweisung gegeben wird, setzt voraus, dass er als Person angeredet werden kann – was das Recht nicht vorsah.\n\nDie Begründung ist bemerkenswert. Es wird nicht mit der Ordnung des Hauses argumentiert und nicht mit einem Lohn, sondern mit dem Ruf: damit der Name Gottes und die Lehre nicht verlästert werden. Das war die Sorge einer Gruppe, deren Bestand vom Wohlwollen der Nachbarschaft abhing. Der Vorwurf, neue Kulte spalteten Häuser, ist bei Celsus ausdrücklich belegt und bei Tacitus und Sueton mitzuhören.\n\nDie Beschreibung der Gegner arbeitet mit medizinischen Bildern. Das Wort, das Luther mit Seuche wiedergibt, bezeichnet eine Krankheit; der Gegner ist demnach nicht bösartig, sondern krank – aufgeblasen und fiebrig nach Streitfragen. Dieselbe Bildwelt gebraucht der zweite Timotheusbrief mit dem Wundbrand. Sie erklärt nichts über die Lehren, sagt aber etwas über die Wirkung, die dem Streit zugeschrieben wird: Er greift um sich.',
+    reception:
+      'Der Vorwurf, Frömmigkeit als Gewerbe zu betreiben, ist in allen Auseinandersetzungen über kirchliche Einkünfte zitiert worden: gegen den Ablasshandel, gegen bezahlte Seelenmessen, gegen Pfründen und in der Neuzeit gegen die Wohlstandsverkündigung. Er ist zugleich schwer zu handhaben, weil derselbe Brief zwei Kapitel zuvor die Bezahlung von Ältesten ausdrücklich regelt – die Grenze zwischen Unterhalt und Gewinnabsicht muss jede Zeit selbst ziehen.\n\nDie medizinische Bildsprache über die Gegner hat eine eigene Wirkung entfaltet. Häresie als Krankheit zu beschreiben, ist in der altkirchlichen Literatur verbreitet; Epiphanius von Salamis nannte sein Werk gegen die Irrlehren Arzneikasten und ordnete achtzig Richtungen wie Krankheitsbilder. Die Metapher erklärt nichts, aber sie legt eine Behandlung nahe – und hat in der Kirchengeschichte entsprechend gewirkt.\n\nDie Anweisung an die Sklaven hat, wie die Haustafeln, in den Sklavereidebatten beiden Seiten gedient. Bemerkenswert ist, dass hier ausdrücklich der Fall gläubiger Herren behandelt wird: Die Gleichheit im Glauben und die Ungleichheit im Recht stehen unaufgelöst nebeneinander. Abolitionisten führten an, dass ein Verhältnis, das nur mit solcher Mühe zu halten ist, im Kern nicht haltbar sei.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Wenn Herr und Sklave in derselben Versammlung saßen und einander Bruder nannten, geriet die Hausordnung unter Druck. Die Anweisung ergeht gegen etwas, das vorkam – sonst wäre sie nicht nötig gewesen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Tempel waren Wirtschaftsbetriebe: Opfertiere, Weihgaben, Wechselstuben, Herbergen und Heilbetrieb. Priesterämter wurden in manchen Städten versteigert. Religion und Erwerb waren selbstverständlich verbunden – die Empörung des Textes ist die Ausnahme, nicht die Regel.'
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Tagelöhner verdiente etwa einen Denar am Tag, gerade genug für eine Familie. Rücklagen waren unmöglich; Krankheit oder eine schlechte Ernte bedeuteten Schulden. Für die Mehrheit war Genügsamkeit keine Wahl.'
+      },
+      {
+        aspect: 'glaube',
+        text: 'Bei der Taufe sprach der Täufling ein Bekenntnis vor der Gemeinde. Die frühen Kirchenordnungen überliefern die Fragen und Antworten. Das gute Bekenntnis vor vielen Zeugen meint wahrscheinlich diesen Vorgang.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hypo zygon',
+        rendered: 'unter dem Joch',
+        note: 'Ein feststehender Ausdruck für die Unfreiheit. Das Joch verband zwei Zugtiere und stand seit alters für Herrschaft; die Wendung beschreibt keinen Vergleich, sondern einen Rechtszustand.',
+      },
+      {
+        word: 'griech. porismos',
+        rendered: 'ein Gewerbe',
+        note: 'Erwerbsquelle, Mittel zum Gewinn. Der Vorwurf lautet, dass Frömmigkeit als Geschäftsmodell betrieben werde – und er steht unmittelbar nach einem Abschnitt, der die Bezahlung von Ältesten regelt.',
+      },
+      {
+        word: 'griech. noson peri zeteseis',
+        rendered: 'die Seuche der Fragen',
+        note: 'Wörtlich: krank in Bezug auf Streitfragen. Ein medizinisches Bild: Der Gegner erscheint nicht als bösartig, sondern als fiebrig. Dieselbe Bildwelt gebraucht der zweite Timotheusbrief mit dem Wundbrand.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Anweisung an Sklaven mit gläubigen Herren zeigt, dass die Gleichheit in der Versammlung die Hausordnung unter Druck setzte. Der Vorwurf des Gewerbes steht unmittelbar nach der Regelung der Bezahlung – der Brief unterscheidet zwischen Unterhalt für Arbeit und Gewinnabsicht.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos las die Anweisung an die Sklaven mit gläubigen Herren als besonders schwer: Gerade wo Gleichheit erfahren werde, sei die Versuchung groß, sie auszuspielen. Zugleich hielt er den Herren vor, dass die Anweisung sie nicht entlaste – der Brief nenne die Bruderschaft ausdrücklich.',
+      },
+      {
+        tradition: 'Kirchengeschichtliche Anmerkung',
+        text: 'Häresie als Krankheit zu beschreiben, ist in der altkirchlichen Literatur verbreitet. Epiphanius von Salamis nannte sein Werk gegen die Irrlehren Arzneikasten und ordnete achtzig Richtungen wie Krankheitsbilder. Die Metapher erklärt nichts über die Lehren, legt aber eine Behandlung nahe – und hat entsprechend gewirkt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Vorwurf, Frömmigkeit als Gewerbe zu betreiben, wurde gegen Ablasshandel und Seelenmessen gewendet. Zugleich bestanden die Reformatoren darauf, dass Prediger ein Auskommen brauchen – die Grenze zwischen Unterhalt und Gewinnabsicht sei zu ziehen, nicht die Bezahlung abzuschaffen.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Lesart',
+        text: 'Die Begründung der Sklavenanweisung ist nicht die Hausordnung und nicht ein Lohn, sondern der Ruf nach außen. Das zeigt eine Gemeinde, die um ihren Bestand fürchtet. Ob damit ein Zustand gebilligt oder nur ausgehalten wird, ist die Frage, an der sich die Auslegung des Abschnitts seit jeher scheidet.',
+      },
+    ],
+    crossRefs: [
+      { book: 'tit', chapter: 2, verse: 9, note: 'Eine weitere Anweisung an Sklaven' },
+      { book: 'phlm', chapter: 1, verse: 16, note: 'Der Sklave als Bruder' },
+      { book: '2tim', chapter: 2, verse: 17, note: 'Dasselbe medizinische Bild vom Umsichgreifen' },
+      { book: '1tim', chapter: 5, verse: 17, note: 'Die geregelte Bezahlung der Ältesten' },
+    ],
+  },
+  {
+    book: '1tim',
+    chapter: 6,
+    from: 13,
+    to: 21,
+    title: '„der unter Pontius Pilatus bezeugt hat ein gutes Bekenntnis“',
+    historicalShort:
+      'Der Briefschluss nennt Pilatus, häuft Gottesprädikate, weist die Reichen zurecht und warnt vor einer „fälschlich so genannten Erkenntnis“.',
+    historicalLong:
+      'Die Nennung des Pilatus ist auffällig. Außerhalb der Evangelienerzählungen kommt sein Name im Neuen Testament nur hier und in zwei Reden der Apostelgeschichte vor. Er verankert das Bekenntnis in einem Datum: Pilatus war von 26 bis 36 Statthalter von Judäa; eine 1961 in Cäsarea gefundene Inschrift nennt ihn mit dem Amtstitel Präfekt. Aus dieser Nennung ist der Satz der Glaubensbekenntnisse geworden, der Christus unter Pontius Pilatus leiden lässt – die einzige Person außer Maria, die in den Bekenntnissen namentlich vorkommt.\n\nDie Häufung der Gottesprädikate im Schlussteil hat Vorbilder in der hellenistisch-jüdischen Literatur. Der allein Gewaltige, der König der Könige und Herr der Herren, der allein Unsterblichkeit hat und in unzugänglichem Licht wohnt – diese Reihe stammt aus einer Gebetsform, die Philon und die griechische Fassung des Alten Testaments kennen. Die Titel König der Könige und Herr der Herren waren zudem Titel des persischen Großkönigs und später der Partherherrscher; sie hier auf Gott anzuwenden, hat einen politischen Klang.\n\nDie Anweisung an die Reichen ist bemerkenswert nüchtern. Sie verlangt nicht, den Besitz aufzugeben, sondern nennt drei Dinge: nicht stolz sein, nicht auf den unsicheren Reichtum hoffen, Gutes tun und gern geben. Das griechische Wort für den ungewissen Reichtum ist scharf: Es meint die Unzuverlässigkeit einer Sache, auf die man sich nicht stützen kann. Die Formulierung, Gott gebe reichlich zum Genießen, steht dabei ausdrücklich gegen jede Auffassung, die den Genuss selbst verdächtigt – im selben Brief, der zwei Kapitel zuvor Speiseverbote zurückweist.\n\nDer Schlusssatz warnt vor der fälschlich so genannten Gnosis. Das Wort bedeutet einfach Erkenntnis und war ein Allerweltsbegriff; erst im zweiten Jahrhundert wurde es zur Selbstbezeichnung bestimmter Richtungen. Dass der Brief den Ausdruck kritisch gebraucht, hat viele Ausleger veranlasst, hier eine Anspielung auf diese Bewegungen zu sehen und den Brief entsprechend spät anzusetzen. Andere halten dagegen, dass das Wort auch vorher gebraucht wurde und keine Bewegung bezeichnen muss.\n\nDer Brief endet ohne persönlichen Gruß, ohne Namen, ohne Reisepläne – anders als der zweite Timotheusbrief, der damit gefüllt ist. Der Schluss ist eine einzige Zeile: Die Gnade sei mit dir. Diese Kargheit ist in der Verfasserdebatte ein Argument: Ein Schreiben, das als Amtsanweisung gestaltet ist, braucht keine persönlichen Nachrichten.',
+    reception:
+      'Die Nennung des Pilatus ist über diesen Vers und die Evangelien in die Glaubensbekenntnisse gelangt. Das Apostolische und das Nizänische Bekenntnis nennen ihn beide; damit ist ein römischer Beamter die einzige Person außer Maria, deren Name im Bekenntnis der Christenheit steht. Der Sinn dieser Nennung ist die Datierung: Sie bindet das Bekannte an einen nachprüfbaren Zeitpunkt und wehrt jeder Auffassung, die das Geschehen aus der Geschichte herauslöst.\n\nDie Anweisung an die Reichen ist zu einem Grundtext der kirchlichen Vermögensethik geworden. Sie verlangt keine Enteignung und keinen Verzicht, sondern eine bestimmte Haltung und ein bestimmtes Verhalten; die katholische Soziallehre und die evangelische Wirtschaftsethik berufen sich gleichermaßen darauf. Die Wendung, Gott gebe reichlich zum Genießen, ist in Tischgebeten und Erntedankliturgien aufgenommen worden.\n\nDer Ausdruck von der fälschlich so genannten Erkenntnis hat Karriere gemacht. Irenäus nannte sein großes Werk gegen die Gnostiker um 180 „Entlarvung und Widerlegung der fälschlich so genannten Erkenntnis“ und zitierte damit diesen Vers im Titel. Über ihn ist der Begriff Gnosis als Bezeichnung einer ganzen Bewegung in die Kirchengeschichte eingegangen – ein Fall, in dem ein Vers dem Gegner den Namen gab.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Ein Statthalter hatte in seiner Provinz die volle Gerichtsgewalt über Nichtbürger, einschließlich der Todesstrafe. Er reiste zu Gerichtstagen, hörte Klagen und entschied ohne Berufungsinstanz. Sein Urteil war endgültig.'
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Herrschertitel waren genau geregelt und wurden auf Münzen, Inschriften und in Eingaben geführt. Wer einen Titel gebrauchte, der einem anderen zustand, machte eine politische Aussage – ob er wollte oder nicht.'
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Vermögen war unsicher: Ernten fielen aus, Schiffe sanken, Häuser brannten, Bürgerkriege zerstörten Besitz. Das Wort für den ungewissen Reichtum beschreibt eine Erfahrung, nicht eine moralische Wertung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Wer Wissen besaß, das anderen fehlte, hatte Ansehen. Philosophenschulen, Mysterien und Heilkundige beanspruchten je eigene Erkenntnis und grenzten sich damit ab. Der Streit um die richtige Erkenntnis war zugleich ein Streit um Rang.'
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. epi Pontiou Pilatou',
+        rendered: 'unter Pontius Pilatus',
+        note: 'Die einzige Nennung des Statthalters außerhalb der Evangelien und der Apostelgeschichtsreden. Über diesen Vers und die Evangelien ist der Name in die Glaubensbekenntnisse gelangt – als Datierung.',
+      },
+      {
+        word: 'griech. ploutou adeloteti',
+        rendered: 'den ungewissen Reichtum',
+        note: 'Wörtlich: der Unsicherheit des Reichtums. Das Wort meint die Unzuverlässigkeit einer Sache, auf die man sich nicht stützen kann. Es beschreibt eine Erfahrung, keine Wertung.',
+      },
+      {
+        word: 'griech. pseudonymou gnoseos',
+        rendered: 'der falsch berühmten Kunst',
+        note: 'Wörtlich: der fälschlich so genannten Erkenntnis. Irenäus machte den Ausdruck um 180 zum Titel seines Werks gegen die Gnostiker – so gab dieser Vers einer ganzen Bewegung ihren Namen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Schluss ohne persönlichen Gruß, die gehäuften Gottesprädikate und der Ausdruck von der fälschlich so genannten Erkenntnis gelten als Hinweise auf eine späte Abfassung. Gegen die letzte Beobachtung wird eingewandt, dass das Wort Gnosis auch vorher gebräuchlich war und keine Bewegung bezeichnen muss.',
+      },
+      {
+        tradition: 'Bekenntnisgeschichtliche Einordnung',
+        text: 'Die Nennung des Pilatus ist über diesen Vers in die Glaubensbekenntnisse gelangt. Ihr Sinn ist die Datierung: Sie bindet das Bekannte an einen nachprüfbaren Zeitpunkt und wehrt jeder Auffassung, die das Geschehen aus der Geschichte herauslöst.',
+      },
+      {
+        tradition: 'Katholische Soziallehre',
+        text: 'Die Anweisung an die Reichen verlangt keine Enteignung, sondern eine Haltung und ein Verhalten: nicht stolz sein, nicht auf Besitz bauen, geben. Die Soziallehre liest darin die soziale Verpflichtung des Eigentums, ohne das Eigentum selbst in Frage zu stellen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Betont wird die Wendung, Gott gebe reichlich zum Genießen. Sie steht gegen jede Auffassung, die den Genuss selbst verdächtigt, und passt zu der Absage an Speiseverbote zwei Kapitel zuvor. Luther zitierte sie gegen die Verachtung irdischer Güter.',
+      },
+      {
+        tradition: 'Kirchengeschichtliche Anmerkung',
+        text: 'Irenäus nannte sein Werk gegen die Gnostiker um 180 nach diesem Vers. Damit gab die Stelle einer ganzen Bewegung ihren Namen – ein Fall, in dem eine polemische Wendung zur wissenschaftlichen Bezeichnung wurde und bis heute Verwirrung stiftet, weil die so Bezeichneten sich selbst anders nannten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joh', chapter: 18, verse: 37, note: 'Das Verhör vor Pilatus' },
+      { book: 'offb', chapter: 19, verse: 16, note: 'König der Könige und Herr der Herren' },
+      { book: '1tim', chapter: 4, verse: 4, note: 'Alle Kreatur Gottes ist gut' },
+      { book: 'lk', chapter: 12, verse: 33, note: 'Schätze im Himmel sammeln' },
     ],
   },
 ];

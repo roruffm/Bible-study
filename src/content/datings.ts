@@ -1313,7 +1313,7 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Philipperbrief, meist 55–62 n. Chr.',
     epoch: 'urkirche',
   },
-  'phil 4,13': {
+  'phil 4,10': {
     events: 'Aus der Haft, um 55–62 n. Chr.',
     written: 'Philipperbrief, meist 55–62 n. Chr.',
     epoch: 'urkirche',
@@ -1945,6 +1945,96 @@ export const DATINGS: Record<string, Dating> = {
   'kol 4,1': {
     events: 'Kolossä im Lykostal, um 60 n. Chr.',
     written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'phil 1,1': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 1,7': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 1,21': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 2,1': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 2,12': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 3,1': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 3,12': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 4,1': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'phil 4,14': {
+    events: 'Philippi in Makedonien; Abfassung in Gefangenschaft',
+    written: 'um 55–62 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1tim 1,1': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 1,12': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 2,1': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 3,1': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 4,1': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 5,1': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 5,17': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 6,1': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '1tim 6,13': {
+    events: 'Ephesus, angenommene Lage nach 62 n. Chr.',
+    written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
     epoch: 'urkirche',
   },
 };
