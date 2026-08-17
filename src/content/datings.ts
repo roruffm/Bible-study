@@ -1782,6 +1782,101 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 50 n. Chr. in Korinth',
     epoch: 'urkirche',
   },
+  '1joh 1,1': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 2,1': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 2,12': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 2,18': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 3,2': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 3,11': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 4,1': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 5,1': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1joh 5,13': {
+    events: 'Kleinasien, Ende des 1. Jahrhunderts',
+    written: 'um 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 1,1': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 1,9': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 1,19': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 2,1': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 3,1': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 3,13': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 4,1': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 4,9': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 5,1': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'jak 5,17': {
+    events: 'Judenchristliche Gemeinden der Diaspora',
+    written: 'zwischen 50 und 100 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
