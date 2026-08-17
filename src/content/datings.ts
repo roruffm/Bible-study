@@ -2477,6 +2477,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 56 oder 57 n. Chr.',
     epoch: 'urkirche',
   },
+  'roem 3,21': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 3,25': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 4,1': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 5,1': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 5,9': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 6,1': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
