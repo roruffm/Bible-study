@@ -2092,6 +2092,71 @@ export const DATINGS: Record<string, Dating> = {
     written: 'zwischen 65 und 95 n. Chr.',
     epoch: 'urkirche',
   },
+  'gal 1,1': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 1,11': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 2,1': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 3,1': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 3,15': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 4,1': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 4,12': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 4,21': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 5,7': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 5,16': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 5,24': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 6,1': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'gal 6,11': {
+    events: 'Gemeinden in Galatien',
+    written: 'zwischen 48 und 56 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
