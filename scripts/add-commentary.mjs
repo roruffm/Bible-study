@@ -13,15 +13,19 @@
  * `CommentaryEntry` und trägt zusätzlich `dating` mit `events`, `written` und
  * `epoch` – das wandert nach `datings.ts`, nicht in den Artikel.
  *
- * Geprüft wird hier nur die Form: dass Pflichtfelder da sind und dass der
- * Abschnitt nicht schon existiert. Alles Inhaltliche – Stellenangaben, Zitate
- * im Titel, Anhaltspunkte der Urtext-Wörter, doppelte Absätze – prüft
- * `check-references.mjs`.
+ * Geprüft wird alles, was sich vor dem Schreiben prüfen lässt: Pflichtfelder,
+ * Überschneidungen mit vorhandenen Abschnitten, Zitate im Titel, Anhaltspunkte
+ * der Urtext-Wörter, Stellenangaben der Querverweise und Absätze, die dasselbe
+ * sagen. Der Grund ist praktisch: Findet `check-references.mjs` diese Fehler
+ * erst hinterher, muss die Korrektur in einer Datei mit über anderthalb
+ * Millionen Zeichen erfolgen statt in der Vorlage, aus der die Artikel kommen.
+ * Nichts wird geschrieben, solange eine Beanstandung offen ist.
  */
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { doppelteAbsaetze, fehlendeAnhaltspunkte, stelleFehlt } from './lib/textpruefung.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const COMMENTARY_FILE = join(ROOT, 'src', 'content', 'commentary.ts');
@@ -42,27 +46,88 @@ function lit(text) {
 let commentary = readFileSync(COMMENTARY_FILE, 'utf8');
 let datings = readFileSync(DATINGS_FILE, 'utf8');
 
-/* ------------------------------------------------------------ Formprüfung */
+/* -------------------------------------------------------------- Prüfungen */
+
+const beanstandungen = [];
+
+/**
+ * Die Versbereiche des vorhandenen Bestandes.
+ *
+ * Die Sammlung wird hier nicht gebündelt, sondern gelesen: Die Datei hat ein
+ * festes Format, und ein Auszug aus vier Zeilen genügt, um zu wissen, welcher
+ * Abschnitt schon belegt ist. Das ist der häufigste Fehler beim Nachtragen –
+ * ein neuer Bereich überdeckt einen älteren Artikel zu einem einzelnen Vers.
+ */
+const belegt = [];
+for (const m of commentary.matchAll(
+  /^ {4}book: '([^']+)',\n {4}chapter: (\d+),\n {4}from: (\d+),\n {4}to: (\d+),\n {4}title: '((?:[^'\\]|\\.)*)'/gm,
+)) {
+  belegt.push({
+    book: m[1],
+    chapter: Number(m[2]),
+    from: Number(m[3]),
+    to: Number(m[4]),
+    title: m[5].replace(/\\'/g, "'"),
+  });
+}
+if (belegt.length === 0) throw new Error('Der Bestand ließ sich nicht lesen');
 
 const PFLICHT = ['book', 'chapter', 'from', 'to', 'title', 'historicalShort', 'historicalLong'];
 for (const a of ARTICLES) {
   const key = `${a.book} ${a.chapter},${a.from}`;
+  const melde = (text) => beanstandungen.push(`${key}: ${text}`);
+
   for (const feld of PFLICHT) {
-    if (!a[feld]) throw new Error(`${key}: "${feld}" fehlt`);
+    if (!a[feld]) melde(`"${feld}" fehlt`);
   }
-  // Die Mindesttiefe, die check-references verlangt – hier schon gemeldet,
-  // damit der Fehler an der Quelle auftaucht und nicht erst am Ende.
-  if (!a.world?.length) throw new Error(`${key}: keine Notiz zur Welt des Textes`);
-  if (!a.terms?.length) throw new Error(`${key}: kein Wort aus dem Urtext`);
-  if (!a.reception) throw new Error(`${key}: keine Wirkungsgeschichte`);
-  if (!a.interpretations || a.interpretations.length < 3) {
-    throw new Error(`${key}: weniger als drei Auslegungen`);
+  if (!a.world?.length) melde('keine Notiz zur Welt des Textes');
+  if (!a.terms?.length) melde('kein Wort aus dem Urtext');
+  if (!a.reception) melde('keine Wirkungsgeschichte');
+  if (!a.interpretations || a.interpretations.length < 3) melde('weniger als drei Auslegungen');
+  if (!a.dating) melde('keine Datierung');
+  if (datings.includes(`  '${key}': {`)) melde('Datierung gibt es schon');
+  if (!a.book || !a.chapter || !a.from || !a.to) continue;
+
+  // Der Abschnitt selbst muss es geben, und er muss frei sein.
+  const fehler = stelleFehlt(a.book, a.chapter, a.to);
+  if (fehler) {
+    melde(fehler);
+    continue;
   }
-  if (!a.dating) throw new Error(`${key}: keine Datierung`);
-  if (commentary.includes(`    book: '${a.book}',\n    chapter: ${a.chapter},\n    from: ${a.from},`)) {
-    throw new Error(`${key}: gibt es schon`);
+  if (a.to < a.from) melde('der Versbereich läuft rückwärts');
+  for (const b of belegt) {
+    if (b.book === a.book && b.chapter === a.chapter && a.from <= b.to && b.from <= a.to) {
+      melde(`überschneidet sich mit "${b.title}" (${b.from}–${b.to})`);
+    }
   }
-  if (datings.includes(`  '${key}': {`)) throw new Error(`${key}: Datierung gibt es schon`);
+  for (const b of ARTICLES) {
+    if (b === a) continue;
+    if (b.book === a.book && b.chapter === a.chapter && a.from <= b.to && b.from <= a.to) {
+      melde(`überschneidet sich mit "${b.title}" aus demselben Stapel`);
+    }
+  }
+
+  // Zitate im Titel und Anhaltspunkte der Urtext-Wörter müssen im Bereich stehen.
+  for (const was of fehlendeAnhaltspunkte(a)) {
+    melde(`${was} steht so nicht in ${a.book} ${a.chapter},${a.from}–${a.to}`);
+  }
+
+  // Querverweise, die es nicht gibt, fallen sonst erst am Ende auf.
+  for (const ref of a.crossRefs ?? []) {
+    const fehlt = stelleFehlt(ref.book, ref.chapter, ref.verse);
+    if (fehlt) melde(`Querverweis: ${fehlt}`);
+  }
+
+  // Kein Absatz darf wiederholen, was ein anderer schon sagt.
+  for (const kette of doppelteAbsaetze(a)) {
+    melde(`zwei Absätze sagen dasselbe – „…${kette}…“`);
+  }
+}
+
+if (beanstandungen.length > 0) {
+  console.error(`Nichts geschrieben. ${beanstandungen.length} Beanstandungen:\n`);
+  for (const b of beanstandungen) console.error(`  - ${b}`);
+  process.exit(1);
 }
 
 /* ---------------------------------------------------------------- Artikel */

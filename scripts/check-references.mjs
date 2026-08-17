@@ -19,6 +19,7 @@ import { tmpdir } from 'node:os';
 import { pathToFileURL } from 'node:url';
 import { fileURLToPath } from 'node:url';
 import { buildSync } from 'esbuild';
+import { doppelteAbsaetze, loose } from './lib/textpruefung.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TRANSLATION = process.argv[2] ?? 'luther1912';
@@ -324,18 +325,6 @@ for (const gospel of GOSPELS) {
   gospelText.set(gospel.id, data.chapters);
 }
 
-/** Für den Vergleich: Groß/klein, Umlaute und Zeichensetzung ausblenden. */
-function loose(value) {
-  return value
-    .toLowerCase()
-    .replace(/ä/g, 'ae')
-    .replace(/ö/g, 'oe')
-    .replace(/ü/g, 'ue')
-    .replace(/ß/g, 'ss')
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-}
-
 for (const pericope of SYNOPSIS) {
   const where = `Perikope "${pericope.title}"`;
   let volltext = '';
@@ -470,31 +459,9 @@ for (const entry of COMMENTARY) {
  * Ketten von acht Wörtern – kürzere Übereinstimmungen sind bei einem Thema
  * unvermeidlich, längere sind es nicht.
  */
-{
-  const KETTE = 8;
-  const ketten = (text) => {
-    const w = loose(text).split(' ').filter(Boolean);
-    const out = new Set();
-    for (let i = 0; i + KETTE <= w.length; i++) out.add(w.slice(i, i + KETTE).join(' '));
-    return out;
-  };
-  for (const entry of COMMENTARY) {
-    const teile = [
-      entry.historicalShort,
-      ...(entry.historicalLong ?? '').split(/\n\s*\n/),
-      ...(entry.reception ?? '').split(/\n\s*\n/),
-      ...(entry.world ?? []).map((w) => w.text),
-    ].filter((t) => t && t.trim());
-    for (let a = 0; a < teile.length; a++) {
-      for (let b = a + 1; b < teile.length; b++) {
-        const gemeinsam = [...ketten(teile[a])].filter((k) => ketten(teile[b]).has(k));
-        if (gemeinsam.length > 0) {
-          problems.push(
-            `Artikel "${entry.title}": zwei Absätze sagen dasselbe – „…${gemeinsam[0]}…“`,
-          );
-        }
-      }
-    }
+for (const entry of COMMENTARY) {
+  for (const kette of doppelteAbsaetze(entry)) {
+    problems.push(`Artikel "${entry.title}": zwei Absätze sagen dasselbe – „…${kette}…“`);
   }
 }
 
