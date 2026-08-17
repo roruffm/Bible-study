@@ -2347,6 +2347,56 @@ export const DATINGS: Record<string, Dating> = {
     written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
     epoch: 'urkirche',
   },
+  '2kor 1,1': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 1,12': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 2,1': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 2,12': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 3,1': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 3,12': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 4,1': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 4,13': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 5,1': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 5,8': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

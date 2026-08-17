@@ -32159,6 +32159,819 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'hebr', chapter: 2, verse: 3, note: 'Die zweite Generation' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: '2kor',
+    chapter: 1,
+    from: 1,
+    to: 11,
+    title: '„der Vater der Barmherzigkeit und Gott alles Trostes“',
+    historicalShort:
+      'Statt des üblichen Dankes ein jüdischer Lobspruch – und die Andeutung einer Todesgefahr, die nie erklärt wird.',
+    historicalLong:
+      'Der zweite Korintherbrief ist das persönlichste Schreiben des Paulus und zugleich das schwerste. Er setzt eine Auseinandersetzung voraus, die zwischen dem ersten Brief und diesem stattgefunden hat: ein Besuch, der gescheitert ist, ein Brief unter Tränen, der nicht erhalten ist, ein Zwischenfall mit einer Person, deren Namen der Text nicht nennt. Wer den Brief liest, hört eine Seite eines Gesprächs und muss die andere erschließen.\n\nDer Anfang weicht von der Gewohnheit ab. Sonst folgt auf den Gruß ein Dank an Gott für die Gemeinde; hier steht ein Lobspruch, der mit Gelobt sei Gott beginnt. Diese Form ist jüdisch: Die Segenssprüche des Gebets beginnen so, und der Ausdruck Vater der Barmherzigkeit ist eine Wendung, die in jüdischen Gebeten bis heute vorkommt. Paulus greift damit zur Sprache der Synagoge, wo er sonst der Briefsitte folgt.\n\nDas Wort für Trost und Trösten steht in diesen wenigen Versen zehnmal. Es bedeutet mehr als Beileid: herbeirufen, zusprechen, ermutigen, auch vor Gericht beistehen. Der Ausdruck bezeichnet keine Stimmung, sondern eine Handlung – jemand tritt hinzu. Aus derselben Wurzel kommt die Bezeichnung des Beistands im Johannesevangelium.\n\nDie Todesgefahr in Asien wird angedeutet und nicht erklärt. Vorgeschlagen wurden eine schwere Krankheit, eine Haft in Ephesus, der Aufruhr der Silberschmiede, ein Tierkampf. Paulus selbst nennt an anderer Stelle Kämpfe mit wilden Tieren in Ephesus, ohne das zu erläutern. Sicher ist nur, dass die Gemeinde wusste, wovon die Rede war, und dass er das Erlebnis als Todesurteil beschreibt – das griechische Wort ist ein Ausdruck des Gerichtswesens.',
+    reception:
+      'Der Eingangslobspruch ist in die Liturgie eingegangen und begegnet in Trauergottesdiensten fast aller Kirchen. Die Wendung, dass wir trösten können mit dem Trost, mit dem wir getröstet wurden, ist zum Grundsatz der Seelsorgeausbildung und der Selbsthilfebewegung geworden; Gruppen von Betroffenen für Betroffene berufen sich seit dem 20. Jahrhundert darauf.\n\nDie Sätze über die Todesgefahr haben in der Literatur der Anfechtung eine große Rolle gespielt. Luther bezog sie auf die eigene Erfahrung, und die pietistische Erbauungsliteratur las sie als Beschreibung des inneren Zerbrechens, das dem Vertrauen vorangeht. In der neueren Auslegung wird betont, dass Paulus nichts erklärt und nichts verklärt.\n\nDie Frage, welches Ereignis gemeint ist, hat eine eigene Forschungsgeschichte. Eine Haft in Ephesus ist nicht bezeugt, wird aber von vielen angenommen, weil sie mehrere Angaben in den Briefen erklärt. Die Diskussion darüber ist seit dem frühen 20. Jahrhundert nicht abgeschlossen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Jüdische Gebete beginnen mit einer Lobformel: Gelobt seist du, Herr. Wer so anhob, betete und schrieb nicht; die Form war jedem Synagogenbesucher vertraut.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für das Todesurteil gehört in die Gerichtssprache und bezeichnet den Spruch, nicht die Vollstreckung. Paulus beschreibt seine Lage damit als eine, in der die Entscheidung schon gefallen schien.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Achaja war römische Provinz mit Korinth als Verwaltungssitz; die Stadt war 44 vor Christus als Kolonie neu gegründet worden. Ein Brief an Korinth erreichte über sie die Gemeinden der ganzen Provinz.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Fürbitte war ein öffentlicher Vorgang: Man betete namentlich für Abwesende, für Reisende und für Gefangene. Der Dank vieler Personen für eine Errettung setzt voraus, dass viele davon wussten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. eulogetos ho theos',
+        rendered: 'Gelobet sei Gott',
+        note: 'Die Form des jüdischen Segensspruchs, mit dem Gebete beginnen. Paulus verlässt hier die Briefsitte und greift zur Sprache des Gottesdienstes.',
+      },
+      {
+        word: 'griech. paraklesis',
+        rendered: 'Gott alles Trostes',
+        note: 'Das Wort meint das Herbeirufen und Beistehen, auch vor Gericht. Aus derselben Wurzel stammt die Bezeichnung des Beistands im Johannesevangelium.',
+      },
+      {
+        word: 'griech. to apokrima tou thanatou',
+        rendered: 'wir müßten sterben',
+        note: 'Wörtlich der Bescheid des Todes, ein Ausdruck des Gerichtswesens. Paulus beschreibt keine Stimmung, sondern eine Lage, in der das Urteil gesprochen schien.',
+      },
+      {
+        word: 'griech. en te Asia',
+        rendered: 'die uns in Asien widerfahren ist',
+        note: 'Gemeint ist die römische Provinz mit Ephesus als Hauptstadt. Was dort geschah, sagt der Text nicht; die Gemeinde wusste es offenbar.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Leiden des Apostels hat Anteil am Leiden Christi und kommt der Gemeinde zugute; darin liegt der Gedanke der stellvertretenden Hingabe. Der Trost ist Gabe, die weitergegeben werden soll.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Trost kommt von außen, nicht aus dem Menschen; darum kann er weitergegeben werden. Luther las die Verse über das Verzagen als Beschreibung der Anfechtung, in der nur die Zusage trägt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Teilhabe am Leiden Christi ist Weg zur Teilhabe an seiner Auferstehung. Der Beistand des Geistes wirkt in der Bedrängnis und nicht an ihr vorbei.',
+      },
+      {
+        tradition: 'Seelsorgliche Rezeption',
+        text: 'Der Satz vom Weitergeben des empfangenen Trostes ist zum Grundsatz der Seelsorgeausbildung und der Selbsthilfegruppen geworden. Erfahrung wird darin zur Befähigung, nicht zur Zuständigkeit.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Brief setzt einen Zwischenbesuch und einen verlorenen Tränenbrief voraus, die im ersten Korintherbrief noch nicht im Blick sind. Welches Ereignis in Asien gemeint ist, bleibt offen; eine Haft in Ephesus wird häufig angenommen, ist aber nicht bezeugt.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 15, verse: 32, note: 'Der Kampf mit wilden Tieren' },
+      { book: 'apg', chapter: 19, verse: 23, note: 'Der Aufruhr in Ephesus' },
+      { book: 'jes', chapter: 40, verse: 1, note: 'Tröstet mein Volk' },
+      { book: '2kor', chapter: 4, verse: 8, note: 'Bedrängt, aber nicht erdrückt' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 1,
+    from: 12,
+    to: 24,
+    title: '„bei mir ist Ja Ja, und Nein ist Nein“',
+    historicalShort:
+      'Der Vorwurf, unzuverlässig zu sein – und die Antwort, die aus einer Reiseplanung eine Frage der Treue Gottes macht.',
+    historicalLong:
+      'Der Abschnitt reagiert auf einen konkreten Vorwurf. Paulus hatte einen Besuch angekündigt, der so nicht stattfand; nach dem ursprünglichen Plan wollte er zweimal nach Korinth kommen, auf dem Weg nach Mazedonien und zurück. Er kam anders, und die Gemeinde deutete das als Wortbruch. Für eine Stadt, in der Empfehlungsschreiben, Zusagen und Verpflichtungen den Umgang regelten, war das kein Nebenpunkt: Wer sein Wort nicht hielt, verlor sein Ansehen.\n\nDie Verteidigung greift zu einem Wort aus der Rechtssprache. Der Ausdruck für den Beschluss oder die Absicht bezeichnet in Urkunden das Vorhaben einer Partei; wer leichtfertig plante, galt als unzuverlässiger Vertragspartner. Paulus bestreitet nicht die Änderung, sondern die Deutung: Er habe nicht nach dem Fleisch geplant, also nicht nach Vorteil und Laune.\n\nDann geschieht der bemerkenswerte Schritt. Aus der Frage nach der Verlässlichkeit eines Menschen wird eine Frage nach der Verlässlichkeit Gottes. Wenn die Verkündigung ein Ja und Nein zugleich wäre, stünde nicht der Verkündiger in Frage, sondern die Botschaft. Der Satz, dass alle Zusagen Gottes in Christus Ja sind, ist die theologische Mitte des Abschnitts – und sie steht in einer Auseinandersetzung um einen Reiseplan.\n\nDer Schluss nennt vier Bilder aus dem Rechts- und Geschäftsleben: befestigen, salben, versiegeln, ein Pfand geben. Das Siegel machte Eigentum kenntlich, das Pfand war die Anzahlung, die den Rest verbürgte – ein Wort, das im Griechischen aus dem semitischen Handelsverkehr stammt und im Neugriechischen bis heute den Verlobungsring bezeichnet. Der Geist erscheint damit nicht als Erlebnis, sondern als Anzahlung auf etwas Ausstehendes.',
+    reception:
+      'Der Vers über das Ja und Amen in Christus ist zu einem der meistgebrauchten Bibelworte geworden. Er steht in Liedern, auf Traubriefen und in Konfirmationssprüchen; die Wendung Ja und Amen ist in die deutsche Umgangssprache übergegangen, dort allerdings mit dem Beiklang widerspruchsloser Zustimmung, den der Text nicht hat.\n\nDer Satz über das Ja Ja und Nein Nein hat in der Auseinandersetzung um den Eid eine Rolle gespielt. Täufer, Mennoniten und Quäker verweigerten den Eid und beriefen sich auf ihn und auf die Bergpredigt; das führte über Jahrhunderte zu Prozessen, Verbannungen und schließlich zur Einführung der Beteuerung anstelle des Eides in modernen Rechtsordnungen.\n\nDas Bild vom Geist als Anzahlung hat die Lehre von der Hoffnung geprägt. Es beschreibt die Gegenwart als Vorschuss und nicht als Erfüllung; Karl Rahner und Jürgen Moltmann haben in der Theologie des 20. Jahrhunderts von hier aus argumentiert. Der letzte Satz, dass Apostel keine Herren über den Glauben sind, wird in Auseinandersetzungen über geistlichen Machtmissbrauch angeführt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Verträge nannten die Absicht der Parteien ausdrücklich; wer ohne Grund davon abwich, galt als unzuverlässig und konnte belangt werden. Zusagen waren ein Vermögenswert.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Anzahlung verbürgte den Rest einer Summe und machte den Vertrag verbindlich; das Wort stammt aus dem semitischen Handelsverkehr. Wer sie annahm, war gebunden.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Von Ephesus nach Korinth fuhr man in wenigen Tagen über die Ägäis, nach Mazedonien führte der Weg weiter nach Norden. Eine doppelte Zwischenlandung in Korinth war eine Ehre für die Gemeinde und ein Aufwand für den Reisenden.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ansehen hing an der Verlässlichkeit des gegebenen Wortes; Redner warfen einander Wankelmut vor, weil er den Charakter traf. Der Vorwurf gegen Paulus zielte auf seine Person, nicht auf seinen Kalender.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. elaphria',
+        rendered: 'Bin ich aber leichtfertig gewesen',
+        note: 'Das Wort für Leichtigkeit im Sinn von Wankelmut. Es war ein geläufiger Vorwurf in der Redekunst und traf das Ansehen einer Person.',
+      },
+      {
+        word: 'griech. to nai nai kai to ou ou',
+        rendered: 'Ja Ja, und Nein ist Nein',
+        note: 'Eine Wendung, die auch in der Bergpredigt steht. Sie beschreibt Rede ohne Hintergedanken und ist in der Geschichte der Eidverweigerung angeführt worden.',
+      },
+      {
+        word: 'griech. arrabon',
+        rendered: 'das Pfand, den Geist',
+        note: 'Die Anzahlung, die den Rest verbürgt – ein Wort aus dem Handelsverkehr. Im Neugriechischen bezeichnet es bis heute den Verlobungsring.',
+      },
+      {
+        word: 'griech. ouch hoti kyrieuomen',
+        rendered: 'Nicht daß wir Herren seien über euren Glauben',
+        note: 'Das Verb bezeichnet Herrschaft über Untergebene. Paulus weist damit eine Vollmacht ausdrücklich zurück, die man ihm zugetraut hätte.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Treue Gottes verbürgt die Verkündigung, auch wenn der Bote scheitert; das Amt lebt nicht von der Zuverlässigkeit des Menschen. Der Geist als Angeld begründet die Hoffnung auf Vollendung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Amen liegt in Christus und nicht im Menschen, der es spricht; darin liegt die Gewissheit des Glaubens. Der Satz, dass niemand Herr über den Glauben sein soll, wurde zum Argument gegen kirchlichen Gewissenszwang.',
+      },
+      {
+        tradition: 'Täuferische Auslegung',
+        text: 'Das Wort über Ja und Nein wurde zusammen mit der Bergpredigt zur Begründung der Eidverweigerung. Die Praxis hat über Jahrhunderte Verfolgung nach sich gezogen und in modernen Rechtsordnungen zur Beteuerung geführt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Salbung, Versiegelung und Angeld werden auf die Firmung bezogen, die in den östlichen Kirchen unmittelbar auf die Taufe folgt. Der Geist ist Gegenwart des Künftigen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt lässt eine Reiseplanung rekonstruieren, die von der im ersten Korintherbrief genannten abweicht, und gehört zu den Belegen für einen Zwischenbesuch. Die vier Bilder am Schluss stammen sämtlich aus dem Rechts- und Geschäftsleben.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 16, verse: 5, note: 'Der ursprüngliche Reiseplan' },
+      { book: 'mt', chapter: 5, verse: 37, note: 'Eure Rede sei Ja, ja' },
+      { book: 'eph', chapter: 1, verse: 14, note: 'Der Geist als Pfand' },
+      { book: '2kor', chapter: 2, verse: 1, note: 'Der Verzicht auf den Besuch' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 4 Abschnitte */
+  {
+    book: '2kor',
+    chapter: 2,
+    from: 1,
+    to: 11,
+    title: '„daß ihr die Liebe an ihm beweiset“',
+    historicalShort:
+      'Ein Streitfall in der Gemeinde, ein Brief unter Tränen und die Bitte, die verhängte Strafe zu beenden.',
+    historicalLong:
+      'Der Abschnitt gibt den genauesten Blick in einen Konflikt einer frühen Gemeinde, den das Neue Testament enthält. Rekonstruierbar ist folgender Ablauf: Paulus kam zu einem Zwischenbesuch, bei dem ihn eine Person öffentlich angriff; die Gemeinde stellte sich nicht hinter ihn. Er reiste ab, schrieb einen Brief unter Tränen, den Titus überbrachte, und die Gemeinde reagierte, indem sie den Betreffenden bestrafte. Jetzt bittet er, die Strafe aufzuheben.\n\nDer Brief unter Tränen ist nicht erhalten. Ältere Auslegung setzte ihn mit dem ersten Korintherbrief gleich, was am Ton scheitert; verbreitet ist heute die Annahme, dass er verloren ist oder dass Teile davon in den Kapiteln zehn bis dreizehn dieses Briefes stehen, deren Ton scharf abweicht. Der Streit über die Einheit des zweiten Korintherbriefs hängt an dieser Frage.\n\nDie Strafe, von der die Rede ist, wird mit einem Wort bezeichnet, das aus dem Vereinsrecht stammt: Rüge, Verweis, Ausschluss. Vereine und Synagogen kannten abgestufte Maßnahmen, und die Formel von vielen deutet auf einen Mehrheitsbeschluss. Die frühen Gemeinden waren rechtlich Vereine und handelten in solchen Fällen wie diese.\n\nBemerkenswert ist die Begründung des Abbruchs. Paulus argumentiert nicht damit, dass die Strafe unrecht war, sondern dass sie genug ist. Wer zu lange gestraft wird, versinkt in Traurigkeit, und daraus zieht der Satan Gewinn – das griechische Wort dafür stammt aus dem Geschäftsleben und bedeutet übervorteilen. Nicht die Milde, sondern die Härte erscheint hier als das Einfallstor.',
+    reception:
+      'Der Abschnitt ist zum Grundtext des kirchlichen Umgangs mit Ausschluss und Wiederaufnahme geworden. Die Bußordnungen der Alten Kirche, die mittelalterliche Praxis des Bannes und die reformatorischen Kirchenzuchtordnungen berufen sich darauf; die Genfer Ordnung von 1541 nennt die Wiederaufnahme ausdrücklich als Ziel jeder Zucht. In den Freikirchen ist er die zentrale Stelle in der Frage nach dem Umgang mit Ausgeschlossenen.\n\nIm 20. Jahrhundert ist die Perspektive gewechselt. Wo früher die Strenge begründet wurde, wird heute die Grenze der Strafe hervorgehoben; kirchliche Ordnungen zur Wiederaufnahme und Stellungnahmen zum Umgang mit Verfehlungen zitieren den Satz, dass es genug ist. In der Auseinandersetzung um Fälle sexualisierter Gewalt wird zugleich gewarnt, den Text zur schnellen Vergebung gegen die Betroffenen zu wenden.\n\nDie Frage nach dem Tränenbrief gehört zu den bekanntesten Rätseln der neutestamentlichen Forschung. Aus ihr ist die Teilungshypothese erwachsen, nach der der zweite Korintherbrief aus mehreren Schreiben zusammengesetzt ist – eine Annahme, die seit dem 19. Jahrhundert vertreten und ebenso lange bestritten wird.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Vereine kannten abgestufte Maßnahmen von der Rüge bis zum Ausschluss, meist durch Mehrheitsbeschluss der Versammlung. Die frühen Gemeinden waren rechtlich solche Vereine und verfuhren ebenso.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein öffentlicher Angriff auf einen Gastredner war eine Ehrverletzung, auf die die Gastgeber antworten mussten. Blieb die Antwort aus, war der Angegriffene bloßgestellt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für Übervorteilen stammt aus dem Geschäftsleben und beschreibt den Vorteil, den einer aus dem Nachteil eines anderen zieht. Es setzt Berechnung voraus, nicht Zufall.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Zwischen Ephesus und Korinth verkehrten Schiffe regelmäßig; ein Brief und eine Antwort brauchten Wochen. Konflikte wurden deshalb über große Abstände hinweg verhandelt, mit Boten als Zwischenglied.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. dia pollon dakryon',
+        rendered: 'mit viel Tränen',
+        note: 'Der Hinweis auf einen Brief, der nicht erhalten ist. Ob Teile davon in den letzten Kapiteln dieses Schreibens stehen, ist die Hauptfrage der Forschung zum zweiten Korintherbrief.',
+      },
+      {
+        word: 'griech. epitimia',
+        rendered: 'von vielen also gestraft',
+        note: 'Ein Ausdruck des Vereinsrechts für eine verhängte Maßnahme. Die Formel von vielen deutet auf einen Beschluss der Versammlung.',
+      },
+      {
+        word: 'griech. katapothe',
+        rendered: 'in allzu große Traurigkeit versinke',
+        note: 'Wörtlich verschlungen werden. Das Wort beschreibt kein Nachlassen, sondern ein Verschwinden – die Härte selbst wird zur Gefahr.',
+      },
+      {
+        word: 'griech. pleonektethomen',
+        rendered: 'daß wir nicht übervorteilt werden',
+        note: 'Ein Wort aus dem Geschäftsleben für den unrechtmäßigen Vorteil. Der Satan erscheint hier nicht als Versucher zur Sünde, sondern als einer, der aus übertriebener Strenge Gewinn zieht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Vergebung und Wiederaufnahme gehören zur Vollmacht der Kirche; das Bußsakrament zielt auf die Rückkehr in die Gemeinschaft. Die Strafe ist Mittel und nie Zweck.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Kirchenzucht dient der Umkehr und endet mit ihr; Calvin machte die Wiederaufnahme in Genf zur ausdrücklichen Regel. Wo Strafe zur Dauer wird, verfehlt sie ihren Sinn.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'Der Abschnitt regelt Ausschluss und Wiederaufnahme als Sache der ganzen Gemeinde, nicht eines Amtes. Er ist die meistzitierte Stelle in Gemeindeordnungen zu diesem Thema.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Buße ist ein Heilungsweg mit Stufen, an dessen Ende die volle Teilnahme steht. Der geistliche Vater begleitet ihn, damit niemand von der Traurigkeit verschlungen wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Aus dem Abschnitt lassen sich ein Zwischenbesuch, ein verlorener Brief und ein Gemeindebeschluss erschließen. Der scharfe Tonwechsel in den letzten Kapiteln hat zu der Annahme geführt, dass mehrere Schreiben zusammengefügt wurden.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 5, verse: 5, note: 'Der frühere Fall von Ausschluss' },
+      { book: '2kor', chapter: 7, verse: 8, note: 'Der Brief, der betrübt hat' },
+      { book: 'mt', chapter: 18, verse: 15, note: 'Das Verfahren bei Verfehlungen' },
+      { book: 'gal', chapter: 6, verse: 1, note: 'Zurechtbringen mit Sanftmut' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 2,
+    from: 12,
+    to: 17,
+    title: '„der uns allezeit Sieg gibt“',
+    historicalShort:
+      'Ein abgebrochener Reisebericht kippt in ein Bild vom römischen Triumphzug – mit dem Verkündiger als Mitgeführtem.',
+    historicalLong:
+      'Der Bericht setzt an und bricht ab. Paulus erzählt von Troas, wo sich eine Gelegenheit zur Verkündigung bot, und dass er sie nicht nutzte, weil er Titus nicht antraf und keine Ruhe fand. Dann springt der Text: Der Faden wird erst fünf Kapitel später wieder aufgenommen. Solche Einschübe sind für den Brief kennzeichnend und gehören zu den Beobachtungen, die zur Frage nach seiner Einheit geführt haben.\n\nDas Bild, das an die Stelle tritt, ist das des römischen Triumphzugs. Ein siegreicher Feldherr zog durch Rom, vor ihm die Beute und die Gefangenen, entlang der Strecke brannten Weihrauch und Räucherwerk. Das griechische Verb bedeutet im Triumphzug mitführen – und zwar nicht als Sieger, sondern als Mitgeführter. Luther übersetzt Sieg gibt und dreht die Blickrichtung um; im Griechischen ist Paulus der, der hinter dem Wagen geht.\n\nDaraus folgt das Bild vom Geruch. Für die einen im Zug bedeutete der Duft des Weihrauchs Sieg und Rückkehr, für die Gefangenen das Ende. Derselbe Geruch, zwei Bedeutungen. Der Ausdruck hat zugleich einen zweiten Klang: Im Opferwesen ist der angenehme Geruch die Formel für ein angenommenes Opfer. Beide Bildwelten überlagern sich.\n\nDer Schluss nennt einen Vorwurf, der den ganzen Brief durchzieht. Das Wort für die, die das Wort verfälschen, stammt aus dem Weinhandel und bezeichnet den Händler, der den Wein streckt. Es setzt voraus, dass in Korinth andere Verkündiger auftraten, die Geld nahmen und deren Auftreten Paulus als Geschäft beschreibt. Wer diese Gegner waren, ist eine der offenen Fragen der Forschung.',
+    reception:
+      'Das Bild vom Triumphzug ist über Jahrhunderte falsch verstanden worden, weil Luthers Übersetzung und die lateinische Fassung den Verkündiger zum Sieger machen. Erst die Arbeiten des 20. Jahrhunderts haben die Bedeutung des Verbs geklärt; seither wird der Vers als Beschreibung des Apostels als eines Gefangenen gelesen, der im Zug eines anderen mitgeführt wird. Das hat die Auslegung des ganzen Briefes verändert.\n\nDer Geruch des Lebens und des Todes ist in der Liturgie aufgenommen worden und steht hinter der Weihrauchsymbolik der östlichen und westlichen Kirchen. In der Predigtgeschichte diente der Vers der Rede von der doppelten Wirkung des Wortes, das aufrichtet und richtet – ein Gedanke, den die reformatorische Lehre von Gesetz und Evangelium entfaltet hat.\n\nDer Vorwurf des Verfälschens hat in der Geschichte der Kirchenkritik ein langes Nachleben. Er wurde gegen Ablasshandel, gegen bezahlte Predigt und in der Neuzeit gegen Verkündigungsformen angeführt, die Wohlstand versprechen. Das Bild vom gestreckten Wein ist dabei meist verlorengegangen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Im römischen Triumphzug führte der Feldherr Beute und Gefangene mit; entlang der Strecke brannte Weihrauch. Die Gefangenen wurden am Ende oft hingerichtet – der Zug war für sie kein Fest.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Weinhändler streckten den Wein mit Wasser, um den Gewinn zu erhöhen; Städte erließen Verordnungen dagegen. Das Wort für Verfälschen stammt aus diesem Gewerbe.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Troas war Hafenstadt an der Nordwestecke Kleinasiens und Umschlagplatz für den Verkehr nach Mazedonien. Wer nach Europa wollte, wartete dort auf ein Schiff.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der angenehme Geruch war im Opferwesen die feste Formel dafür, dass ein Opfer angenommen ist. Räucherwerk gehörte zu jedem größeren Kult und war ein teures Handelsgut.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. thriambeuonti hemas',
+        rendered: 'der uns allezeit Sieg gibt',
+        note: 'Das Verb bedeutet im Triumphzug mitführen, und zwar als Gefangenen. Luther dreht die Blickrichtung um; im Griechischen geht Paulus hinter dem Wagen.',
+      },
+      {
+        word: 'griech. osme',
+        rendered: 'den Geruch seiner Erkenntnis',
+        note: 'Derselbe Duft bedeutet für die einen Sieg, für die anderen Ende. Das Wort trägt zugleich den Klang der Opferformel vom angenehmen Geruch.',
+      },
+      {
+        word: 'griech. kapeleuontes',
+        rendered: 'die das Wort Gottes verfälschen',
+        note: 'Ein Wort aus dem Weinhandel für das Strecken der Ware. Der Vorwurf lautet nicht auf Irrlehre, sondern auf Geschäftemacherei.',
+      },
+      {
+        word: 'griech. thyra aneogmene',
+        rendered: 'mir eine Tür aufgetan war',
+        note: 'Ein bei Paulus mehrfach gebrauchtes Bild für eine Gelegenheit zur Verkündigung. Dass er sie ungenutzt lässt, ist die eigentliche Nachricht des Satzes.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Apostel ist in den Zug Christi eingereiht und wirkt in dessen Vollmacht, nicht in eigener. Der Geruch der Erkenntnis wird auf die Ausbreitung des Glaubens durch die Kirche bezogen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Doppelwirkung des Wortes – Leben und Tod – entspricht der Unterscheidung von Gesetz und Evangelium. Der Prediger verfügt über keine der beiden Wirkungen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Weihrauch der Liturgie nimmt das Bild auf: Der Duft steigt auf und erfüllt den Raum, ohne dass jemand ihn festhält. Erkenntnis ist Teilhabe, nicht Besitz.',
+      },
+      {
+        tradition: 'Kirchenkritische Rezeption',
+        text: 'Der Vorwurf der Geschäftemacherei ist gegen Ablasshandel, bezahlte Predigt und Wohlstandsverkündigung angeführt worden. Er zielt auf die Verbindung von Verkündigung und Einkommen, nicht auf die Lehre.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der abgebrochene Reisebericht wird erst im siebten Kapitel fortgesetzt – eine der Beobachtungen, die zur Annahme mehrerer zusammengefügter Schreiben geführt haben. Die Bedeutung des Triumphverbs ist erst im 20. Jahrhundert geklärt worden.',
+      },
+    ],
+    crossRefs: [
+      { book: '2kor', chapter: 7, verse: 5, note: 'Die Fortsetzung des Berichts' },
+      { book: '1kor', chapter: 16, verse: 9, note: 'Eine große Tür ist mir aufgetan' },
+      { book: 'eph', chapter: 5, verse: 2, note: 'Zu einem süßen Geruch' },
+      { book: '2kor', chapter: 11, verse: 13, note: 'Die anderen Verkündiger' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 3,
+    from: 1,
+    to: 11,
+    title: '„nicht in steinerne Tafeln, sondern in fleischerne Tafeln des Herzens“',
+    historicalShort:
+      'Wer keine Empfehlungsschreiben vorweisen kann, macht die Gemeinde selbst zum Brief.',
+    historicalLong:
+      'Der Abschnitt setzt eine Praxis voraus, die den antiken Reiseverkehr trug: das Empfehlungsschreiben. Wer in eine fremde Stadt kam, brauchte jemanden, der für ihn bürgte; Papyri aus Ägypten enthalten hunderte solcher Briefe, oft mit derselben Formel. Ohne ein solches Schreiben war ein Fremder ein Bettler oder ein Betrüger. Offenbar traten in Korinth Verkündiger mit Empfehlungsschreiben auf, und Paulus hatte keine – oder wollte keine.\n\nSeine Antwort ist ein Bild: Die Gemeinde selbst ist der Brief. Das Bild wird zweimal gedreht. Erst ist der Brief in sein Herz geschrieben, dann ist er von Christus geschrieben, mit dem Geist statt mit Tinte, auf Herzen statt auf Steintafeln. Die letzte Wendung stammt aus zwei Prophetenbüchern: Jeremia spricht vom Gesetz im Herzen, Hesekiel vom steinernen Herz, das zu einem fleischernen wird.\n\nDaraus entwickelt sich der Gegensatz von Buchstabe und Geist. Der Satz, dass der Buchstabe tötet und der Geist lebendig macht, ist einer der folgenreichsten der Bibel. Im Zusammenhang meint er nicht die Unterscheidung von Wortlaut und Sinn, sondern zwei Ordnungen: die auf Steintafeln geschriebene und die vom Geist gewirkte. Die spätere Auslegung hat daraus eine Lehre vom mehrfachen Schriftsinn gemacht, die der Text nicht trägt.\n\nDer Vergleich mit Mose stützt sich auf die Erzählung vom Glanz seines Gesichts nach dem Aufenthalt auf dem Berg. Paulus fügt einen Zug hinzu, der dort nicht steht: dass dieser Glanz verging. Das griechische Wort ist zweideutig – es kann außer Kraft gesetzt werden oder verblassen bedeuten –, und an dieser Zweideutigkeit hängt, ob der Text vom Ende einer Ordnung oder vom Nachlassen eines Glanzes spricht.',
+    reception:
+      'Der Satz vom tötenden Buchstaben ist zur Grundlage der allegorischen Schriftauslegung geworden. Origenes las ihn im dritten Jahrhundert als Anweisung, hinter dem Wortlaut den geistlichen Sinn zu suchen; daraus entstand die mittelalterliche Lehre vom vierfachen Schriftsinn, die die Auslegung bis zur Reformation bestimmte. Luther kehrte das um und bestand auf dem Wortsinn, wobei er den Vers auf Gesetz und Evangelium bezog. In der Umgangssprache ist der Buchstabe, der tötet, zum Wort gegen Formalismus geworden – ein dritter Sinn, den weder Origenes noch Luther meinten.\n\nDer Gegensatz von steinernem und fleischernem Herzen hat die Frömmigkeitssprache geprägt und steht hinter der pietistischen Herzensreligion ebenso wie hinter Bekehrungserzählungen aller Jahrhunderte. Die beiden Prophetenworte, aus denen er stammt, gehören zu den meistgelesenen Texten des Alten Testaments in christlichen Gottesdiensten.\n\nDie Gegenüberstellung der beiden Ämter hat schwere Folgen gehabt. Sie wurde als Abwertung des Gesetzes und damit des Judentums gelesen, obwohl Paulus dem älteren Amt ausdrücklich Herrlichkeit zuspricht. Die Erklärungen der Kirchen seit 1965 und die Arbeiten der neueren Paulusforschung heben hervor, dass der Text zwei Herrlichkeiten vergleicht und keine bestreitet.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Empfehlungsschreiben waren im Reiseverkehr unentbehrlich; ohne sie war ein Fremder ohne Kredit und ohne Quartier. Papyri aus Ägypten überliefern hunderte davon, oft mit gleichlautenden Wendungen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Geschrieben wurde mit Rußtinte auf Papyrus, für Dauerhaftes meißelte man in Stein. Der Gegensatz von Tinte und Steintafel war also ein Gegensatz zwischen dem Vergänglichen und dem Bleibenden – der Text dreht ihn um.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Steintafeln vom Sinai wurden nach der Überlieferung in der Bundeslade aufbewahrt und galten als das Herzstück des Heiligtums. Von ihnen zu reden hieß, von der Grundlage des Bundes zu reden.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Beglaubigungen entschieden über Zugang: Wer einen Brief des Statthalters vorwies, wurde vorgelassen. Autorität war an Papier gebunden, und wer keines hatte, musste anders überzeugen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. epistolai systatikai',
+        rendered: 'der Lobebriefe an euch',
+        note: 'Die Empfehlungsschreiben des antiken Reiseverkehrs. Ohne sie war ein Fremder ohne Kredit; Paulus ersetzt sie durch die Gemeinde selbst.',
+      },
+      {
+        word: 'griech. plaxin kardiais sarkinais',
+        rendered: 'in fleischerne Tafeln des Herzens',
+        note: 'Eine Verbindung zweier Prophetenworte: das Gesetz im Herzen bei Jeremia und das steinerne Herz, das fleischern wird, bei Hesekiel.',
+      },
+      {
+        word: 'griech. to gramma apoktennei',
+        rendered: 'der Buchstabe tötet',
+        note: 'Im Zusammenhang sind zwei Ordnungen gemeint, nicht Wortlaut und Sinn. Die allegorische Auslegung hat den Satz seit Origenes anders gebraucht.',
+      },
+      {
+        word: 'griech. ten katargoumenen',
+        rendered: 'die doch aufhört',
+        note: 'Das Verb kann außer Kraft gesetzt werden oder verblassen bedeuten. An dieser Zweideutigkeit hängt, ob vom Ende einer Ordnung oder vom Nachlassen eines Glanzes die Rede ist.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Geist erschließt den Sinn der Schrift, der über den Wortlaut hinausgeht; die Väter haben von hier aus die geistliche Auslegung begründet. Das ältere Amt ist Vorbereitung und nicht Gegensatz.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Buchstabe und Geist sind Gesetz und Evangelium, nicht Wortlaut und tieferer Sinn. Luther wandte den Vers gegen die allegorische Auslegung, für die er zuvor als Beleg gedient hatte.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Schrift wird im Geist gelesen, in dem sie geschrieben ist; das ist Sache der ganzen Kirche und nicht des einzelnen Auslegers. Der Glanz des Mose weist auf die Verklärung voraus.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Tora ist Gabe und Leben, nicht Buchstabe, der tötet; die Gegenüberstellung wird als innerchristliche Zuspitzung angesehen. Dass Paulus dem älteren Amt ausdrücklich Herrlichkeit zuspricht, wird in neueren Gesprächen hervorgehoben.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt reagiert auf Verkündiger, die sich mit Empfehlungsschreiben auswiesen; wer sie waren, ist eine der offenen Fragen. Die Aussage über das Vergehen des Glanzes steht so nicht im zweiten Buch Mose und ist eine Deutung des Paulus.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 31, verse: 33, note: 'Das Gesetz ins Herz geschrieben' },
+      { book: 'hes', chapter: 36, verse: 26, note: 'Ein fleischernes Herz' },
+      { book: '2mo', chapter: 34, verse: 29, note: 'Der Glanz auf dem Gesicht des Mose' },
+      { book: 'roem', chapter: 7, verse: 6, note: 'Im neuen Wesen des Geistes' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 3,
+    from: 12,
+    to: 18,
+    title: '„wo aber der Geist des HERRN ist, da ist Freiheit“',
+    historicalShort:
+      'Die Decke auf dem Gesicht des Mose wird zum Bild fürs Lesen – und der Satz über die Freiheit steht am Ende einer schwierigen Auslegung.',
+    historicalLong:
+      'Paulus greift die Erzählung vom zweiten Buch Mose auf: Mose verhüllte sein Gesicht, wenn er zum Volk sprach, und nahm die Decke ab, wenn er vor Gott trat. Dort ist der Grund die Furcht des Volkes vor dem Glanz. Paulus gibt einen anderen an: damit sie das Ende dessen nicht sähen, was vergeht. Das ist eine Deutung, die über den Text hinausgeht, und sie ist die schwierigste Stelle des ganzen Briefes.\n\nDann verschiebt sich das Bild. Die Decke liegt nicht mehr auf dem Gesicht des Mose, sondern über der Lesung und schließlich auf dem Herzen der Hörer. Aus einem Gegenstand wird ein Vorgang des Verstehens. Der Text spricht dabei von Verstockung, ein Wort, das im Passiv steht und offenlässt, wer verhärtet.\n\nDiese Verse sind in der Auslegungsgeschichte schwer belastet. Sie wurden zum Beleg dafür gemacht, dass Juden die eigene Schrift nicht verstehen könnten – eine Verwendung, die in der Kunst als Bild der verbundenen Augen der Synagoge an mittelalterlichen Kathedralen erscheint. Die neuere Auslegung hebt hervor, dass Paulus von sich selbst und seinem Volk spricht, dass er die Decke als aufhebbar beschreibt und dass er im Römerbrief ausdrücklich an der bleibenden Erwählung Israels festhält.\n\nDer letzte Vers wechselt in eine andere Sprache. Die Verklärung von einer Klarheit zur anderen benutzt ein Verb, das Verwandlung bedeutet – dasselbe, das in den Verklärungserzählungen der Evangelien steht. Das Wort für spiegeln kann anschauen oder widerspiegeln heißen; beide Bedeutungen sind belegt, und die Übersetzungen entscheiden sich verschieden. Der Satz über die Freiheit, der davor steht, ist aus diesem Zusammenhang herausgelöst worden und lebt seither ein eigenes Leben.',
+    reception:
+      'Der Satz über die Freiheit gehört zu den meistzitierten Bibelworten überhaupt. Er steht auf Kirchentagslosungen, in Erklärungen zur Religionsfreiheit und in politischen Reden; die evangelische Kirche wählte ihn mehrfach zur Jahreslosung. In der Auslegung wird darauf hingewiesen, dass er im Zusammenhang die Freiheit des unverhüllten Zugangs meint und nicht die politische Freiheit – was seiner Wirkung keinen Abbruch getan hat.\n\nDie Verse über die Decke haben eine schwere Wirkungsgeschichte. Sie stehen hinter der Darstellung der Synagoge mit verbundenen Augen, die an den Kathedralen von Straßburg, Bamberg und Paris zu sehen ist, und hinter der Vorstellung, das Judentum sei blind für die eigene Schrift. Kirchliche Erklärungen seit dem Zweiten Vatikanischen Konzil und die Arbeiten der neueren Paulusforschung haben diese Deutung ausdrücklich zurückgewiesen.\n\nDer Schlussvers über die Verwandlung von Herrlichkeit zu Herrlichkeit ist in der östlichen Theologie zum Kerntext der Lehre von der Vergöttlichung geworden. Gregor von Nyssa entwickelte daraus die Vorstellung eines unendlichen Fortschreitens, und die Ikonentheologie beruft sich darauf: Wer anschaut, wird verwandelt.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'In der Synagoge wurde die Tora in Abschnitten vorgelesen und übersetzt; die Lesung war der Mittelpunkt der Versammlung. Wenn vom Lesen des Mose die Rede ist, ist dieser Gottesdienst gemeint.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Verhüllung des Gesichts diente dem Schutz vor Sonne und Staub, aber auch der Abgrenzung; verhüllt trat man vor Höhergestellte. Eine Decke abzunehmen war eine Geste des Vertrauens.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Spiegel bestanden aus poliertem Bronzeblech und gaben ein trübes Bild; Korinth war für seine Spiegelherstellung bekannt. Wer sich spiegelte, sah sich unscharf.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Vorlesen war die übliche Form des Lesens, auch allein; Texte waren ohne Wortabstände geschrieben. Verstehen hing deshalb am Hören und an dem, der vortrug.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kalymma',
+        rendered: 'die Decke vor sein Angesicht',
+        note: 'Im zweiten Buch Mose schützt sie das Volk vor dem Glanz. Paulus verschiebt sie vom Gesicht auf die Lesung und schließlich auf das Herz der Hörer.',
+      },
+      {
+        word: 'griech. eporothe',
+        rendered: 'ihre Sinne sind verstockt',
+        note: 'Ein Wort aus der Medizin für das Verhärten von Gewebe. Es steht im Passiv und lässt offen, wer verhärtet.',
+      },
+      {
+        word: 'griech. eleutheria',
+        rendered: 'da ist Freiheit',
+        note: 'Im Zusammenhang die Freiheit des unverhüllten Zugangs. Der Satz ist herausgelöst worden und wird seither auch politisch gebraucht.',
+      },
+      {
+        word: 'griech. metamorphoumetha',
+        rendered: 'wir werden verklärt',
+        note: 'Dasselbe Verb steht in den Verklärungserzählungen der Evangelien. Es beschreibt eine Verwandlung der Gestalt, nicht eine Steigerung des Gefühls.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Decke wird im Verstehen der Schrift von Christus her weggenommen; die Kirche liest die Schriften Israels als ihre eigenen. Nostra aetate hat 1965 jede Deutung zurückgewiesen, die daraus eine Verwerfung Israels macht.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Geist macht das Wort erst wirksam; ohne ihn bleibt Lesen ohne Erkenntnis. Die Freiheit ist Freiheit des Gewissens vor Gott und nicht Beliebigkeit.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Schlussvers ist der Kerntext der Lehre von der Vergöttlichung: Wer anschaut, wird verwandelt. Gregor von Nyssa entwickelte daraus die Vorstellung eines Weges ohne Ende.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Vorstellung, das Judentum lese verhüllt, wird als Zuschreibung von außen abgewiesen; die Tora wird in ihrer eigenen Auslegungsgeschichte verstanden. Die bildliche Darstellung der Synagoge mit verbundenen Augen gilt als Ausdruck dieser Zuschreibung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Paulus liest die Erzählung vom Glanz des Mose über ihren Wortlaut hinaus und fügt das Vergehen des Glanzes hinzu. Neuere Forschung betont, dass er von der eigenen Herkunft spricht und im Römerbrief an der bleibenden Erwählung Israels festhält.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 34, verse: 33, note: 'Die Decke auf dem Gesicht' },
+      { book: 'roem', chapter: 11, verse: 25, note: 'Die Verstockung zum Teil' },
+      { book: 'roem', chapter: 11, verse: 29, note: 'Die Berufung ohne Reue' },
+      { book: 'mt', chapter: 17, verse: 2, note: 'Die Verklärung auf dem Berg' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 4 Abschnitte */
+  {
+    book: '2kor',
+    chapter: 4,
+    from: 1,
+    to: 6,
+    title: '„der Gott dieser Welt“',
+    historicalShort:
+      'Ein Ausdruck ohne Gegenstück im Neuen Testament – und ein Bild, das die Schöpfung mit der Erkenntnis zusammenbringt.',
+    historicalLong:
+      'Der Abschnitt verteidigt die Art der Verkündigung gegen einen Vorwurf, der in Korinth erhoben wurde: Paulus arbeite mit Hintergedanken. Die Wörter, die er zurückweist, stammen aus der Sprache der Redekunst und des Handels – Schlauheit, Verfälschen, verborgene Schande. Wer öffentlich auftrat, stand unter dem Verdacht, mit Kunstgriffen zu arbeiten; die Kritik an den Rednern war ein fester Bestandteil der Bildungssprache seit Platon.\n\nDer Ausdruck vom Gott dieser Welt ist im Neuen Testament ohne Gegenstück und war für die Alte Kirche ein Problem. Wenn eine andere Macht Gott genannt wird, liegt der Gedanke zweier Götter nahe, und die Anhänger Marcions und gnostische Gruppen lasen den Vers so. Die Kirchenväter suchten Auswege: Manche zogen den Satz anders zusammen, um Gott zum Subjekt zu machen. Der übliche Text lässt diesen Ausweg nicht zu und meint eine untergeordnete Macht, deren Zeit befristet ist.\n\nDas Wort für das Verblenden stammt aus der Medizin und beschreibt das Erblinden. Es setzt fort, was im vorigen Kapitel mit der Decke begonnen hat: Unglaube erscheint nicht als Entscheidung, sondern als Unfähigkeit zu sehen. Zugleich vermeidet der Text jede Zuweisung an Personen – er nennt keine Gruppe.\n\nDer Schlussvers verbindet die Schöpfung mit der Erkenntnis. Der Satz, dass Gott das Licht aus der Finsternis hervorleuchten hieß, zitiert den Anfang der Bibel; derselbe Gott lässt es in Herzen leuchten. Manche Ausleger haben darin eine Anspielung auf die Berufung des Paulus vor Damaskus gesehen, die in der Apostelgeschichte als Lichterscheinung erzählt wird. Der Text nennt sie nicht, aber die Wortwahl legt sie nahe.',
+    reception:
+      'Der Ausdruck vom Gott dieser Welt hat eine lange Geschichte des Missverständnisses. Marcion und gnostische Gruppen lasen ihn im zweiten Jahrhundert als Beleg für einen zweiten, minderen Schöpfergott; Irenäus und Tertullian antworteten darauf ausführlich. In der Neuzeit ist der Vers zum festen Bestandteil einer Redeweise geworden, die politische und wirtschaftliche Mächte als Götzen bezeichnet.\n\nDer Satz über das Licht in den Herzen gehört zu den Grundtexten der christlichen Lehre von der Erkenntnis. Augustinus baute darauf seine Vorstellung von der inneren Erleuchtung, die das Denken des Mittelalters bestimmte; Bonaventura entfaltete sie, Thomas von Aquin schwächte sie zugunsten der Erfahrung ab. In der Mystik und im Quäkertum ist daraus die Rede vom inneren Licht geworden.\n\nDer Satz, dass die Verkündiger nicht sich selbst predigen, ist zum Prüfstein der Predigtlehre geworden und steht in Ordinationsformularen und Predigtlehrbüchern. Er wird in der Auseinandersetzung über Personenkult in Gemeinden angeführt, seit dem 20. Jahrhundert besonders gegenüber Verkündigern mit großer Ausstrahlung.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Wanderredner zogen von Stadt zu Stadt, hielten Schauvorträge und lebten von Eintritt und Stiftungen; die Städte ehrten die berühmten unter ihnen mit Statuen. Wer auftrat, wurde an diesem Gewerbe gemessen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für Verfälschen wurde für gestreckte Ware und gefälschte Maße gebraucht. Marktaufseher prüften Gewichte und verhängten Strafen; die Vorstellung war jedem geläufig.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Dass eine untergeordnete Macht über den gegenwärtigen Weltlauf herrscht, war eine verbreitete Vorstellung der jüdischen Apokalyptik. Sie bestritt Gottes Herrschaft nicht, sondern befristete die des anderen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Erblindung war häufig; Augenkrankheiten gehörten zu den verbreitetsten Leiden, und Salben wurden vielerorts verkauft. Das Bild vom Blenden war deshalb keine Metapher aus der Ferne.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ho theos tou aionos toutou',
+        rendered: 'der Gott dieser Welt',
+        note: 'Ohne Gegenstück im Neuen Testament. Der Ausdruck hat die Alte Kirche beschäftigt, weil er als Beleg für zwei Götter gelesen werden konnte.',
+      },
+      {
+        word: 'griech. etyphlosen',
+        rendered: 'der Ungläubigen Sinn verblendet hat',
+        note: 'Ein Wort aus der Medizin für das Erblinden. Unglaube erscheint damit als Unfähigkeit zu sehen und nicht als Entscheidung.',
+      },
+      {
+        word: 'griech. eikon tou theou',
+        rendered: 'das Ebenbild Gottes',
+        note: 'Dasselbe Wort steht in der Schöpfungserzählung vom Menschen. Es bezeichnet nicht Ähnlichkeit, sondern Vertretung: Das Bild steht für den, den es zeigt.',
+      },
+      {
+        word: 'griech. ek skotous phos lampsei',
+        rendered: 'das Licht aus der Finsternis hervorleuchten',
+        note: 'Ein Anklang an den Anfang der Bibel. Erkenntnis wird damit als Schöpfungsakt beschrieben, nicht als Ergebnis von Nachdenken.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Erleuchtung des Herzens ist Gnadenwirken und Voraussetzung des Glaubens; Augustinus hat daraus seine Erkenntnislehre entwickelt. Der Gott dieser Welt bezeichnet eine geschöpfliche Macht mit befristeter Zeit.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Mensch kann sich nicht selbst erleuchten; das Licht kommt von außen wie am ersten Schöpfungstag. Die Verkündigung hat deshalb nichts vorzuweisen als das Wort.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Licht auf dem Angesicht Christi verbindet den Text mit der Verklärung; Erkenntnis ist Anschauung. Die Erleuchtung ist zugleich der alte Name der Taufe.',
+      },
+      {
+        tradition: 'Altkirchliche Streitfrage',
+        text: 'Marcion und gnostische Gruppen lasen den Ausdruck als Hinweis auf einen zweiten Schöpfergott. Irenäus und Tertullian antworteten mit der Unterscheidung zwischen dem einen Gott und einer untergeordneten, befristeten Macht.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Wortwahl legt eine Anspielung auf die Berufung des Paulus nahe, die der Text selbst nicht erzählt. Die zurückgewiesenen Vorwürfe lassen erkennen, was ihm in Korinth vorgehalten wurde.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 1, verse: 3, note: 'Es werde Licht' },
+      { book: 'apg', chapter: 9, verse: 3, note: 'Das Licht vor Damaskus' },
+      { book: 'kol', chapter: 1, verse: 15, note: 'Das Ebenbild des unsichtbaren Gottes' },
+      { book: 'joh', chapter: 12, verse: 31, note: 'Der Fürst dieser Welt' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 4,
+    from: 13,
+    to: 15,
+    title: '„Ich glaube, darum rede ich“',
+    historicalShort:
+      'Drei Verse über den Zusammenhang von Vertrauen und Sprechen – gewonnen aus einer griechischen Psalmfassung.',
+    historicalLong:
+      'Das Zitat stammt aus einem Klagepsalm und lautet in der griechischen Fassung anders als im hebräischen Text; dort steht eher: Ich vertraute, auch als ich sprach. Paulus liest die griechische Form und gewinnt daraus einen Zusammenhang von Glauben und Reden, der seine eigene Lage beschreibt. Wer glaubt, kann nicht schweigen – das ist die Begründung dafür, dass er trotz allem weiterredet.\n\nDer Psalm selbst ist ein Dank nach überstandener Todesnot und gehört zu den Liedern, die beim Dankopfer gesprochen wurden. Er passt damit genau in den Zusammenhang des Kapitels, in dem von Bedrängnis und Bewahrung die Rede ist. Paulus nennt den Zusammenhang nicht, setzt ihn aber voraus – seine Leser kannten die Psalmen aus dem Gottesdienst.\n\nDie Aussage über die Auferweckung ist eine der wenigen Stellen, an denen Paulus die eigene Zukunft ausdrücklich einbezieht und nicht nur die der Gemeinde. Das Wort für darstellen kommt aus dem Rechtswesen und beschreibt das Vorführen vor einen Richter oder Herrscher. Er rechnet also mit einer Szene, in der Verkündiger und Gemeinde gemeinsam vorgeführt werden – nebeneinander und nicht gegenüber.\n\nDer letzte Vers nennt den Zweck des Ganzen. Die Gnade soll sich ausbreiten und durch viele Menschen Dank hervorrufen. Das griechische Wort für die Ausbreitung ist ein Ausdruck des Überflusses, wie er in Rechnungen und Bilanzen für einen Überschuss steht. Dank erscheint damit nicht als Pflicht, sondern als Ergebnis: Je mehr erreicht werden, desto mehr Stimmen.',
+    reception:
+      'Der Satz vom Glauben, das zum Reden führt, ist zum Leitwort der Verkündigung geworden. Augustinus zitiert ihn häufig, und in der Reformation diente er als Begründung dafür, dass jeder Christ vom Glauben reden darf und soll. In der Bekennenden Kirche und in Kirchen unter Verfolgung wurde er zum Wort gegen das Schweigen.\n\nIn der Musikgeschichte hat der Vers eine eigene Spur. Heinrich Schütz vertonte ihn 1629 als Motette, und der Psalm, aus dem er stammt, gehört zu den meistvertonten Dankliedern der Bibel. In der Liturgie steht er in Gottesdiensten zur Ordination und zur Einführung in Ämter.\n\nDie Verbindung von Auferweckung und gemeinsamem Vorgeführtwerden ist in der Auslegung der Fürbitte aufgenommen worden. Sie beschreibt Verkündiger und Hörende als eine Gemeinschaft mit gemeinsamer Zukunft, nicht als zwei Stände – ein Gedanke, den die Ämterdiskussion des 20. Jahrhunderts wieder aufgegriffen hat.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Die Psalmen wurden im Gottesdienst gesungen und waren dadurch auswendig bekannt; ein angefangenes Zitat rief das ganze Lied auf. Wer diesen Vers hörte, hörte ein Danklied nach überstandener Not mit.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Wer vor eine Amtsperson gebracht wurde, erschien in Begleitung: Fürsprecher, Zeugen und Angehörige standen mit. Allein zu erscheinen galt als schlechtes Zeichen für den Ausgang.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Ausdruck für das Überfließen stammt aus Abrechnungen und bezeichnet den Überschuss über das Erwartete hinaus. Kaufleute führten Bücher mit dieser Größe.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Öffentliches Danken gehörte zum Leben einer Stadt: Wer errettet wurde, stiftete eine Tafel oder brachte ein Opfer und ließ es bezeugen. Dank vieler Personen war ein sichtbarer Vorgang.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. episteusa dio elalesa',
+        rendered: 'Ich glaube, darum rede ich',
+        note: 'Das Zitat folgt der griechischen Psalmfassung; der hebräische Text lautet anders. Aus dieser Fassung gewinnt Paulus den Zusammenhang von Glauben und Reden.',
+      },
+      {
+        word: 'griech. to auto pneuma tes pisteos',
+        rendered: 'denselbigen Geist des Glaubens',
+        note: 'Dasselbe Vertrauen wie beim Beter des Psalms. Der Ausdruck stellt den Apostel neben die Beter Israels, statt ihn von ihnen abzuheben.',
+      },
+      {
+        word: 'griech. parastesei',
+        rendered: 'wird uns darstellen samt euch',
+        note: 'Ein Wort des Rechtswesens für das Vorführen vor eine höhere Instanz. Verkündiger und Gemeinde stehen dabei nebeneinander.',
+      },
+      {
+        word: 'griech. pleonasasa',
+        rendered: 'die überschwengliche Gnade',
+        note: 'Ein Ausdruck des Überflusses aus der Sprache der Abrechnung. Gnade wird als etwas beschrieben, das über das Erwartete hinausgeht und sich vermehrt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Glaube drängt zum Zeugnis; darin liegt die Sendung aller Getauften. Die Danksagung vieler ist der Zielpunkt, auf den die Verkündigung zuläuft.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Wer glaubt, redet – daraus ist das allgemeine Priestertum abgeleitet worden. Der Vers stand in der Reformation gegen die Beschränkung des Redens auf einen Stand.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Geist des Glaubens verbindet die Beter aller Zeiten; der Psalm wird in der Liturgie mitgesprochen. Die gemeinsame Auferweckung ist Grund des Gedenkens der Entschlafenen.',
+      },
+      {
+        tradition: 'Theologie unter Verfolgung',
+        text: 'Der Vers ist zum Wort gegen das Schweigen geworden, in der Bekennenden Kirche wie in Kirchen unter Diktaturen. Reden erscheint darin nicht als Mut, sondern als Folge des Glaubens.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Das Zitat hängt an der griechischen Psalmfassung und wäre nach dem hebräischen Text so nicht möglich. Die Erwartung, gemeinsam vorgeführt zu werden, verbindet die Zukunft des Apostels mit der der Gemeinde.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 116, verse: 10, note: 'Der zitierte Psalmvers' },
+      { book: '1kor', chapter: 6, verse: 14, note: 'Gott wird auch uns auferwecken' },
+      { book: 'roem', chapter: 10, verse: 10, note: 'Mit dem Munde bekennt man' },
+      { book: '2kor', chapter: 1, verse: 11, note: 'Der Dank durch viele Personen' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 5,
+    from: 1,
+    to: 6,
+    title: '„unser irdisch Haus dieser Hütte“',
+    historicalShort:
+      'Zelt und Haus, Nacktheit und Überkleidung – Bilder für das, wofür die Sprache keine Begriffe hat.',
+    historicalLong:
+      'Der Abschnitt sucht Worte für einen Zustand, den niemand beschrieben hat. Paulus arbeitet mit zwei Bildreihen. Die erste ist die vom Bauen: das Zelt, das abgebrochen wird, und das Haus, das nicht von Menschenhand ist. Zeltmacherei war sein Handwerk, was die Bildwahl erklären mag; das Zelt steht in der jüdischen Überlieferung zugleich für die Stiftshütte und für die Vergänglichkeit.\n\nDie zweite Reihe ist die vom Kleid, und hier kreuzen sich die Bilder. Paulus will nicht entkleidet, sondern überkleidet werden. Dahinter steht eine Frage, die in Korinth offenbar strittig war: was zwischen Tod und Auferstehung geschieht. Die griechische Vorstellung von der Seele, die den Körper verlässt, kannte darauf eine Antwort, die jüdische Erwartung der Auferstehung eine andere. Der Text wehrt die erste ausdrücklich ab – Nacktsein ist nicht das Ziel.\n\nDas Wort für die Fremde beschreibt in Urkunden den, der außerhalb seiner Heimatgemeinde lebt; das Gegenwort bezeichnet den Ansässigen. Beide Begriffe stammen aus dem Bürgerrecht und beschreiben keine Stimmung, sondern eine Rechtsstellung. Das Bild vom Leben in der Fremde hat von hier aus seine Wirkung entfaltet.\n\nAuffällig ist die Wiederholung des Bildes vom Pfand, das schon im ersten Kapitel stand. Der Geist ist die Anzahlung auf etwas, das noch aussteht. Damit ist die Spannung des ganzen Abschnitts benannt: Was jetzt da ist, verbürgt etwas, das jetzt nicht da ist. Das Wort für Seufzen, das zweimal fällt, beschreibt kein Klagen über die Welt, sondern die Ungeduld dessen, der auf eine Zusage wartet.',
+    reception:
+      'Die Frage, was zwischen Tod und Auferstehung geschieht, ist an diesem Abschnitt über Jahrhunderte verhandelt worden. Die westliche Tradition entwickelte die Vorstellung eines Zwischenzustands und schließlich die Lehre von der Läuterung; die Reformatoren bestritten sie, wobei Luther zeitweise von einem Schlaf der Seelen sprach und Calvin von einem wachen Sein bei Christus. Die orthodoxe Tradition hält beides in der Schwebe. Der Text selbst entscheidet die Frage nicht.\n\nDie Bilder von Zelt und Haus sind in die Sprache der Bestattung eingegangen. Die Rede von der irdischen Hütte steht in Grabinschriften und Kirchenliedern seit dem 17. Jahrhundert; Paul Gerhardt und andere haben sie aufgenommen. In der neueren Auslegung wird betont, dass der Text kein Entkommen aus dem Leib erhofft, sondern seine Verwandlung.\n\nDie Ablehnung des Nacktseins ist in der Auseinandersetzung mit der Vorstellung von der unsterblichen Seele wichtig geworden. Oscar Cullmann stellte 1956 in einer vielbeachteten Schrift Unsterblichkeit der Seele und Auferstehung der Toten gegeneinander und berief sich unter anderem auf diese Verse; die Debatte darüber hat die Theologie des 20. Jahrhunderts durchzogen.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Zelte wurden aus Ziegenhaar oder Leder genäht und waren teures Gerät; Paulus verdiente nach der Apostelgeschichte damit seinen Unterhalt. Ein Zelt abzubrechen war Alltag und kein Bild von außen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ohne Bürgerrecht war man Fremder mit Aufenthalt auf Zeit; die Begriffe des Textes stammen aus dieser Ordnung. Die Rede vom Leben in der Fremde beschreibt eine Rechtsstellung, keine Empfindung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Griechische Grabinschriften sprechen vom Körper als Gewand oder Gefängnis der Seele; die jüdische Erwartung setzte dagegen auf die Auferstehung des ganzen Menschen. Beide Vorstellungen standen im ersten Jahrhundert nebeneinander.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Anzahlung machte einen Vertrag verbindlich und verfiel, wenn der Käufer zurücktrat. Wer sie gegeben hatte, war gebunden – das Bild setzt eine Verpflichtung des Gebers voraus.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. he epigeios hemon oikia tou skenous',
+        rendered: 'unser irdisch Haus dieser Hütte',
+        note: 'Das Zelt steht in der jüdischen Überlieferung für das Heiligtum und für die Vergänglichkeit. Für einen Zeltmacher war es zugleich ein Bild aus der Werkstatt.',
+      },
+      {
+        word: 'griech. ependysasthai',
+        rendered: 'daß wir damit überkleidet werden',
+        note: 'Nicht ausziehen, sondern darüberziehen. Damit wehrt der Text die Vorstellung ab, das Ziel sei ein Dasein ohne Leib.',
+      },
+      {
+        word: 'griech. stenazomen',
+        rendered: 'sehnen wir uns und sind beschwert',
+        note: 'Das Wort für Seufzen beschreibt die Ungeduld dessen, der auf eine Zusage wartet, nicht das Klagen über die Welt. Es steht im Römerbrief auch von der Schöpfung.',
+      },
+      {
+        word: 'griech. ekdemoumen apo tou kyriou',
+        rendered: 'so wallen wir ferne vom HERRN',
+        note: 'Ein Begriff des Bürgerrechts für den, der außerhalb seiner Gemeinde lebt. Das Gegenwort bezeichnet den Ansässigen; beide beschreiben Rechtsstellungen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Abschnitt gehört zu den Grundlagen der Lehre vom Zwischenzustand und der Läuterung. Die Hoffnung richtet sich auf die Auferstehung des Leibes und nicht auf ein Fortleben ohne ihn.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Geist als Anzahlung ist die einzige Sicherheit, die der Glaubende hat; alles andere steht aus. Luther hielt die Frage nach dem Zwischenzustand für nicht entscheidbar.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Was zwischen Tod und Auferstehung geschieht, bleibt Geheimnis; das Gedenken der Entschlafenen hält die Verbindung offen. Das Ziel ist die Verwandlung des ganzen Menschen.',
+      },
+      {
+        tradition: 'Philosophische Rückfrage',
+        text: 'Der Text weist die griechische Vorstellung von der befreiten Seele ausdrücklich ab. Oscar Cullmann hat daraus 1956 die These entwickelt, Unsterblichkeit der Seele und Auferstehung der Toten seien Gegensätze.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt zeigt eine Verschiebung gegenüber dem ersten Thessalonicherbrief, in dem Paulus mit dem eigenen Erleben der Wiederkunft rechnet. Ob das eine Entwicklung seines Denkens oder eine andere Fragestellung anzeigt, wird verschieden beurteilt.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 15, verse: 53, note: 'Dies Verwesliche muss anziehen' },
+      { book: 'roem', chapter: 8, verse: 23, note: 'Wir seufzen und warten' },
+      { book: '2kor', chapter: 1, verse: 22, note: 'Das Pfand im Herzen' },
+      { book: 'apg', chapter: 18, verse: 3, note: 'Das Handwerk der Zeltmacher' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 5,
+    from: 8,
+    to: 16,
+    title: '„vor dem Richtstuhl Christi“',
+    historicalShort:
+      'Ein Gericht, das auch die Gemeinde meint – und der Satz, dass niemand mehr nach dem Fleisch beurteilt wird.',
+    historicalLong:
+      'Der Richtstuhl war in einer griechischen Stadt eine steinerne Tribüne auf dem Markt, von der aus der Statthalter Recht sprach. In Korinth ist eine solche Anlage ausgegraben worden, und die Apostelgeschichte erzählt, wie Paulus dort selbst stand, als Gallio den Prozess gegen ihn abwies. Wer den Ausdruck hörte, sah einen bestimmten Platz vor sich, keinen Begriff. Bemerkenswert ist die Reichweite: Alle sollen dort erscheinen, die Gemeinde eingeschlossen.\n\nDie folgenden Verse antworten auf einen Vorwurf. Paulus zitiert offenbar, was in Korinth über ihn gesagt wurde: Er sei von Sinnen. Der Gegenbegriff bedeutet besonnen sein und war ein Grundwort der griechischen Sittenlehre. Ekstatische Zustände wurden in der Antike verschieden bewertet – in manchen Kulten galten sie als Nähe zur Gottheit, in der Bildungssprache als Kontrollverlust. Paulus ordnet beides zu: das eine Gott, das andere der Gemeinde.\n\nDann folgt der Satz, der den Abschnitt trägt. Das Verb, das Luther mit dringen übersetzt, bedeutet einengen und zusammenhalten; es beschreibt einen Druck von beiden Seiten, der keinen Ausweg lässt. Die Liebe erscheint damit nicht als Antrieb, sondern als Zwang. Der Zusatz, dass mit dem Tod des einen alle gestorben sind, ist eine Aussage über Zugehörigkeit: Was einem geschieht, geschieht der Gruppe.\n\nDer Schluss ist einer der rätselhaftesten Sätze des Paulus. Christus nach dem Fleisch zu kennen kann heißen, ihn nach menschlichen Maßstäben zu beurteilen, oder ihn als irdische Person gekannt zu haben. Die zweite Lesart hat zu der Frage geführt, ob Paulus Jesus vor der Kreuzigung begegnet ist – der Satzbau lässt beides zu, und die Auslegung ist geteilt.',
+    reception:
+      'Der Richtstuhl Christi hat die Bildkunst des Weltgerichts geprägt, die an den Portalen mittelalterlicher Kirchen und in der Sixtinischen Kapelle ihren Höhepunkt fand. In der protestantischen Auslegung war der Vers ein Problem, weil er ein Gericht nach Werken für Glaubende voraussetzt; die übliche Lösung lautet, dass über den Lohn und nicht über das Heil entschieden wird.\n\nDer Satz von der Liebe, die keinen Ausweg lässt, ist zum Wahlspruch von Missionsgesellschaften und Ordensgemeinschaften geworden. Er steht über dem Eingang von Krankenhäusern und diakonischen Einrichtungen; die Herrnhuter Brüdergemeine machte ihn zu einem ihrer Leitworte, und Albert Schweitzer führte ihn zur Begründung seines Aufbruchs nach Lambarene an.\n\nDie Wendung, niemanden mehr nach dem Fleisch zu kennen, ist in der Auseinandersetzung um Rassentrennung und Standesunterschiede angeführt worden. Sie wurde in der amerikanischen Bürgerrechtsbewegung und in der Aufarbeitung der Apartheid zitiert, weil sie jede Beurteilung nach äußeren Merkmalen für erledigt erklärt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Richtstuhl war eine steinerne Tribüne am Markt, von der der Statthalter Recht sprach; in Korinth ist sie ausgegraben worden. Wer den Ausdruck hörte, hatte einen bestimmten Ort vor Augen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Ekstatische Zustände galten in manchen Kulten als Zeichen göttlicher Nähe und in der Bildungssprache als Verlust der Selbstbeherrschung. Beide Bewertungen standen nebeneinander, und der Vorwurf konnte beides meinen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Nach dem Fleisch zu urteilen hieß, nach Herkunft, Vermögen, Bildung und Aussehen zu urteilen – den Maßstäben, nach denen Ansehen verteilt wurde. Eine Stadt ordnete ihre Bürger genau danach.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Verb, das Luther mit dringen wiedergibt, beschreibt das Einengen einer Herde oder eines Weges. Es setzt zwei Seiten voraus, zwischen denen kein Ausweichen bleibt.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. to bema tou Christou',
+        rendered: 'vor dem Richtstuhl Christi',
+        note: 'Die steinerne Tribüne der Stadt, von der aus Recht gesprochen wurde. Die Apostelgeschichte erzählt, wie Paulus in Korinth selbst davor stand.',
+      },
+      {
+        word: 'griech. exestemen',
+        rendered: 'tun wir zu viel',
+        note: 'Wörtlich außer sich sein. Der Ausdruck greift offenbar einen Vorwurf auf, der in Korinth erhoben wurde, und ordnet ihn Gott zu.',
+      },
+      {
+        word: 'griech. synechei hemas',
+        rendered: 'die Liebe Christi dringt in uns',
+        note: 'Das Verb bedeutet einengen und zusammenhalten. Die Liebe erscheint als Druck von beiden Seiten, der keinen Ausweg lässt, nicht als Gefühl.',
+      },
+      {
+        word: 'griech. kata sarka',
+        rendered: 'niemand nach dem Fleisch',
+        note: 'Beurteilung nach Herkunft, Stand und Aussehen. Ob der Satz auch eine persönliche Begegnung mit Jesus meint, lässt der Satzbau offen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Gericht nach den Werken ist ernst gemeint und betrifft die Getauften; darin liegt der Ernst des sittlichen Lebens. Die Liebe Christi ist der Grund der Sendung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Gericht entscheidet über den Lohn, nicht über das Heil, das im Glauben gegeben ist. Der Satz, dass einer für alle gestorben ist, trägt die Rechtfertigungslehre.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Tod des einen für alle wird als Aufnahme der ganzen Menschheit in seinen Tod verstanden. Das Gericht ist Begegnung mit dem, der bereits gestorben ist.',
+      },
+      {
+        tradition: 'Sozialethische Deutung',
+        text: 'Niemanden mehr nach dem Fleisch zu kennen, ist gegen Rassentrennung und Standesunterschiede angeführt worden. Der Satz erklärt jede Beurteilung nach äußeren Merkmalen für erledigt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt greift Vorwürfe auf, die in Korinth erhoben wurden, und lässt so die Gegenseite erkennen. Ob der Schlussvers eine persönliche Begegnung mit Jesus andeutet, ist seit dem 19. Jahrhundert umstritten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 18, verse: 12, note: 'Paulus vor dem Richtstuhl in Korinth' },
+      { book: 'roem', chapter: 14, verse: 10, note: 'Wir werden alle vor den Richtstuhl gestellt' },
+      { book: 'gal', chapter: 2, verse: 20, note: 'Ich lebe, doch nun nicht ich' },
+      { book: 'roem', chapter: 6, verse: 4, note: 'Mit ihm begraben durch die Taufe' },
+    ],
+  },
 ];
 
 /**
