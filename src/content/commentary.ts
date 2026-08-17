@@ -30127,6 +30127,1062 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'phil', chapter: 1, verse: 20, note: 'Der Freimut im Reden' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 6 Abschnitte */
+  {
+    book: 'hebr',
+    chapter: 1,
+    from: 5,
+    to: 14,
+    title: '„dienstbare Geister“',
+    historicalShort:
+      'Sieben Schriftworte hintereinander, alle aus den Psalmen und dem Gesetz – eine Beweiskette, wie sie eine Predigt in der Synagoge führte.',
+    historicalLong:
+      'Der Abschnitt besteht fast nur aus Zitaten. Sieben Stellen werden aneinandergereiht, jede mit einer knappen Einleitungsformel, und aus ihrer Zusammenstellung ergibt sich der Schluss. Diese Bauform hat einen Namen in der rabbinischen Auslegung: Perlenschnur, ein Verfahren, bei dem Stellen aus Gesetz, Propheten und Schriften an einem gemeinsamen Stichwort aufgereiht werden. Der Verfasser zitiert durchweg nach der griechischen Bibel, auch dort, wo diese vom hebräischen Text abweicht; an einer Stelle steht sein Wortlaut nur in einer Fassung, die vollständig erst durch einen Fund aus Qumran bekannt wurde.\n\nDie Frage, warum ein Text soviel Mühe auf den Rang der Engel verwendet, hat die Ausleger lange beschäftigt. Der Hintergrund ist jüdisch: In der Zeit des zweiten Tempels wuchs die Bedeutung der Engel erheblich. Sie überbringen das Gesetz, führen die Gebete empor, sind Fürsten der Völker; die Qumrangemeinde erwartete, mit ihnen gemeinsam Gottesdienst zu feiern, und in mehreren Schriften tragen einzelne von ihnen Namen und Ämter. Wer dieser Vorstellungswelt nahestand, für den war die Einordnung des Sohnes gegenüber den Engeln keine Nebenfrage.\n\nDie Zitate gehören zu zwei Gruppen. Die einen sind Königspsalmen, die bei der Thronbesteigung gesprochen wurden und den König als Sohn Gottes anreden – eine Sprache, die im Alten Orient verbreitet war und in Israel bewusst begrenzt blieb. Die anderen stammen aus Schöpfungs- und Klagepsalmen und reden von der Vergänglichkeit der Welt. Der Verfasser legt beide dem Sohn zu und gewinnt daraus eine Aussage über Anfang und Ende.\n\nDer letzte Vers dreht die Blickrichtung. Nachdem neun Verse den Abstand vergrößert haben, werden die Engel als Diener bezeichnet, und zwar als Diener derer, die das Heil erben sollen. Das Wort dafür kommt aus dem Kultbetrieb und bezeichnet den Dienst am Heiligtum. Damit ist der Bogen zum Hauptthema des Briefes gespannt, das erst später ausgeführt wird.',
+    reception:
+      'Die Zitatenkette wurde in den Auseinandersetzungen des vierten Jahrhunderts zum Hauptarsenal. Athanasius führte gegen Arius vor allem die Anrede des Sohnes als Gott an, und die Formel des Konzils von Nizäa von 325 argumentiert in dieser Linie; die Gegenseite verwies auf das Wort von der Salbung, das einen Unterschied voraussetze. Der Streit um denselben Vers zieht sich durch die gesamte trinitarische Debatte.\n\nDie Aussage über die dienenden Geister ist zur Grundlage der Lehre von den Schutzengeln geworden, die in der Alten Kirche ausgebildet und im Mittelalter breit entfaltet wurde. Das Fest der Schutzengel geht auf das 16. Jahrhundert zurück. Die Reformatoren behielten den Engelglauben, lehnten aber die Anrufung ab; Luther predigte über die Engel und bestritt zugleich jede Verehrung.\n\nIn der Neuzeit hat der Abschnitt eine andere Rolle bekommen. Weil er zeigt, wie frühe Christen die Schriften lasen, ist er ein Hauptbeispiel in der Frage geworden, ob und wie sich das Neue Testament an den Wortsinn seiner Vorlagen hält. Die Antworten reichen von der Annahme eines tieferen Schriftsinns bis zu dem Urteil, hier werde nach Regeln zitiert, die heute nicht mehr gelten.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'In den Schriften vom Toten Meer haben Engel Namen, Ränge und Aufgaben; die Sabbatopferlieder beschreiben ihren Gottesdienst im himmlischen Heiligtum. Wer so dachte, sah in ihnen keine Randfiguren, sondern die eigentlichen Bewohner der oberen Welt.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Bei der Thronbesteigung eines Königs im Alten Orient wurde die Sohnschaft der Gottheit ausgerufen; ägyptische Krönungstexte tun das förmlich. Israel übernahm die Sprache und band sie an einen einzelnen Tag der Einsetzung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Gewand war teuer und wurde geflickt, gewendet und vererbt; im Testament stand, wer welchen Mantel bekam. Der Vergleich der Welt mit einem alternden Kleid traf deshalb etwas Vertrautes und Kostbares zugleich.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Schemel unter den Füßen des Thronenden gehörte zur Herrschaftsdarstellung; auf Reliefs stehen darauf die Namen unterworfener Völker. Der Ausdruck war keine Metapher, sondern eine Beschreibung von Möbeln.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. prototokos',
+        rendered: 'den Erstgeborenen',
+        note: 'Kein Zeitwort, sondern ein Rangwort: Der Erstgeborene hat den doppelten Erbteil und die Vertretung des Hauses. In den Psalmen heißt so der König, nicht der Zuerstgeborene.',
+      },
+      {
+        word: 'griech. hrabdos euthytetos',
+        rendered: 'das Zepter deines Reichs',
+        note: 'Der Stab war Herrschaftszeichen und Messgerät zugleich; das beigefügte Wort bedeutet gerade im Sinne von aufrecht. Herrschaft und Geradheit hängen im Bild zusammen.',
+      },
+      {
+        word: 'griech. hypopodion ton podon sou',
+        rendered: 'zum Schemel deiner Füße',
+        note: 'Aus einem Psalm, der im Neuen Testament häufiger zitiert wird als jede andere Stelle des Alten Testaments. Das Bild stammt aus der Thronsaalkunst des Alten Orients.',
+      },
+      {
+        word: 'griech. leitourgika pneumata',
+        rendered: 'dienstbare Geister',
+        note: 'Das Wort für den Dienst am Heiligtum, aus dem später Liturgie wurde. Die Engel werden damit nicht herabgesetzt, sondern einer Aufgabe zugeordnet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Altkirchliche Auslegung',
+        text: 'Die Anrede des Sohnes als Gott galt als Schriftbeweis für seine Gottheit und wurde auf den Konzilien des vierten Jahrhunderts entsprechend gebraucht. Die Väter lasen die Zitate als Rede des Vaters über den Sohn.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther betonte den letzten Vers: Die Engel dienen den Erben des Heils, also den Christen. Daraus folgt Trost, nicht Verehrung, und die Anrufung der Engel wird abgelehnt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Engelwelt gehört zur Ordnung der Schöpfung und wird in der Liturgie mitgefeiert; die Ikonographie bildet ihre Ränge ab. Der Text ordnet sie ein, ohne sie zu entwerten.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die zitierten Psalmen sprechen im ursprünglichen Zusammenhang vom König Israels oder von Gott selbst. Ihre Übertragung auf eine einzelne Person gilt als Deutung, die aus dem Text nicht folgt, sondern an ihn herangetragen wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Kette folgt der rabbinischen Technik des Aneinanderreihens und zitiert durchweg die griechische Bibel. Ein Zitat entspricht einer Textfassung, die erst durch die Funde von Qumran vollständig bekannt wurde – ein Hinweis darauf, welche Textformen im ersten Jahrhundert umliefen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 2, verse: 7, note: 'Du bist mein Sohn' },
+      { book: '2sam', chapter: 7, verse: 14, note: 'Die Zusage an das Königshaus' },
+      { book: 'ps', chapter: 110, verse: 1, note: 'Der meistzitierte Vers' },
+      { book: 'ps', chapter: 102, verse: 26, note: 'Die Welt als alterndes Kleid' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 2,
+    from: 1,
+    to: 9,
+    title: '„für alle den Tod schmeckte“',
+    historicalShort:
+      'Die erste von fünf eingeschobenen Warnungen – und ein Psalm über den Menschen, der auf einen einzelnen bezogen wird.',
+    historicalLong:
+      'Der Brief wechselt hier zum ersten Mal von der Darlegung zur Mahnung. Dieser Wechsel wiederholt sich fünfmal und gibt dem Schreiben seinen Rhythmus; der Verfasser nennt sein Werk am Ende ein Wort der Ermahnung, was in der Apostelgeschichte die Bezeichnung für eine Synagogenpredigt ist. Der Hebräerbrief ist deshalb kein Brief im üblichen Sinn, sondern eine ausgearbeitete Rede mit einem angehängten Briefschluss.\n\nDie Schlussfolgerung geht vom Kleineren zum Größeren, ein Verfahren, das in der rabbinischen Auslegung an erster Stelle der Regeln steht. Wenn schon das durch Engel überbrachte Wort verbindlich war, dann erst recht dieses. Dass das Gesetz durch Engel gegeben wurde, steht so nicht in den fünf Büchern Mose, sondern ist eine Auslegung, die in der griechischen Fassung des Segens Moses angelegt ist und in der Zeit des zweiten Tempels allgemein geteilt wurde; sie findet sich ebenso bei Josephus wie in zwei weiteren Schriften des Neuen Testaments.\n\nDer dritte Vers enthält eine der wichtigsten Angaben zur Herkunft des Briefes. Der Verfasser rechnet sich zu denen, die das Wort von Hörern empfangen haben, nicht vom Herrn selbst. Er gehört also nicht zur ersten Generation. Das ist der Hauptgrund, warum die Zuschreibung an Paulus, die im Osten früh vertreten und im Westen lange bestritten wurde, heute allgemein aufgegeben ist.\n\nDer zitierte Psalm redet vom Menschen überhaupt und von seiner Stellung in der Schöpfung. Die griechische Fassung erlaubt, den Ausdruck über die geringe Zeit sowohl räumlich – ein wenig niedriger – als auch zeitlich – eine kurze Zeit lang – zu verstehen. Der Verfasser nutzt diese Doppeldeutigkeit und liest den Psalm auf einen einzelnen hin, ohne die allgemeine Aussage zu streichen: Was vom Menschen gesagt ist, sieht man an einem verwirklicht.',
+    reception:
+      'Der Satz, dass er für alle den Tod geschmeckt habe, ist zum Kernwort der Frage nach der Reichweite des Heils geworden. Die reformierte Lehre von der begrenzten Versöhnung, wie sie die Synode von Dordrecht 1619 festhielt, musste ihn eigens auslegen; Arminianer und später die methodistische Bewegung führten ihn dagegen an. Der Streit ist bis heute nicht beigelegt und verläuft an diesem Vers entlang.\n\nEinzelne Handschriften und mehrere Kirchenväter lesen an dieser Stelle statt von Gottes Gnaden die Worte ohne Gott. Origenes kannte beide Fassungen, und die Lesart hat im 20. Jahrhundert neue Aufmerksamkeit gefunden, weil sie den Tod als Gottverlassenheit deutet. Die meisten Ausgaben folgen der anderen Lesart, vermerken die Abweichung aber.\n\nDie Warnung vor dem Abdriften hat in der Bußgeschichte gewirkt. Sie gehört zu den Stellen, mit denen in der Alten Kirche die Frage verhandelt wurde, ob es nach der Taufe eine zweite Umkehr gibt; die Schrift Der Hirte des Hermas antwortet darauf im zweiten Jahrhundert mit einer einmaligen Ausnahme.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Das Bild vom Abtreiben kommt aus der Seefahrt: Ein Schiff, das an der Einfahrt vorbeigetrieben wird, findet keinen Hafen. Küstenschifffahrt hing an solchen Punkten, und Strömung und Wind entschieden über Ankunft oder Verlust.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein Vertrag galt als fest, wenn Zeugen ihn bestätigten; das griechische Wort für festgeworden ist ein Ausdruck des Vertragsrechts. Die Frage nach der Verbindlichkeit eines Wortes war eine Rechtsfrage, nicht nur eine des Vertrauens.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine Botschaft galt so viel wie die Kette derer, die sie überbrachten; Zeugen wurden namentlich genannt und ihre Zuverlässigkeit geprüft. Wer sich auf Hörer der ersten Stunde berief, gab damit seine Quellenlage an.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Dass Engel bei der Gesetzgebung am Sinai mitwirkten, war im Judentum der Zeit verbreitet und wird bei Josephus wie im Jubiläenbuch vorausgesetzt. Es erhöhte das Gesetz und stellte zugleich einen Abstand zwischen Gott und Mose her.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. me pote pararyomen',
+        rendered: 'damit wir nicht dahinfahren',
+        note: 'Ein Wort aus der Schifffahrt für das Vorbeitreiben am Ziel. Gemeint ist kein Abfall durch Entscheidung, sondern ein allmähliches Wegtreiben ohne Absicht.',
+      },
+      {
+        word: 'griech. endikon misthapodosian',
+        rendered: 'seinen rechten Lohn empfangen',
+        note: 'Ein Ausdruck der Rechtssprache für die zugemessene Vergeltung. Das Wort steht in diesem Brief dreimal und meint sowohl Strafe als auch Belohnung.',
+      },
+      {
+        word: 'griech. brachy ti',
+        rendered: 'eine kleine Zeit niedriger',
+        note: 'Im Griechischen zugleich räumlich und zeitlich zu lesen: ein wenig geringer oder kurze Zeit geringer. Der Verfasser nutzt beide Bedeutungen im selben Abschnitt.',
+      },
+      {
+        word: 'griech. hyper pantos geusetai thanatou',
+        rendered: 'den Tod schmeckte',
+        note: 'Eine Redewendung des Judentums für das Sterben, die den Tod als etwas beschreibt, das man zu sich nimmt. Sie betont die Erfahrung, nicht das Ereignis.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Tod für alle wird auf die unbegrenzte Heilsabsicht Gottes bezogen; wie sie den Einzelnen erreicht, bleibt Gottes Sache. Die Warnung gilt als Aufruf zur Beharrlichkeit, nicht als Drohung mit dem Verlust.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Die Frage lautet, ob das für alle den Umfang der Absicht oder den der Wirkung angibt. Die Beschlüsse von Dordrecht unterscheiden beides: hinreichend für alle, wirksam für die Erwählten – eine Auslegung, die den Vers offen lässt.',
+      },
+      {
+        tradition: 'Methodistische Auslegung',
+        text: 'John Wesley las den Vers wörtlich als Aussage über jeden Menschen und machte ihn zum Hauptargument gegen die Lehre von der doppelten Vorherbestimmung. Die Warnung setzt entsprechend die Möglichkeit voraus, verlorenzugehen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Erniedrigung um ein Weniges wird auf die Menschwerdung bezogen und der Psalm auf den Menschen im Ganzen gelesen: Was in Christus geschieht, betrifft die Gattung. Der Tod wird von innen her überwunden.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der dritte Vers ordnet den Verfasser der zweiten Generation zu und schließt die Verfasserschaft des Paulus aus. Der Selbstbezeichnung als Wort der Ermahnung entnimmt man, dass eine Predigt vorliegt, kein Brief.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 8, verse: 5, note: 'Was ist der Mensch' },
+      { book: 'gal', chapter: 3, verse: 19, note: 'Das Gesetz durch Engel geordnet' },
+      { book: 'apg', chapter: 7, verse: 53, note: 'Empfangen durch Engel' },
+      { book: 'hebr', chapter: 13, verse: 22, note: 'Das Wort der Ermahnung' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 2,
+    from: 10,
+    to: 18,
+    title: '„ein treuer Hoherpriester“',
+    historicalShort:
+      'Warum der Retter selbst leiden musste – und die erste Nennung des Titels, um den der ganze Brief kreist.',
+    historicalLong:
+      'Der Abschnitt beantwortet einen Einwand, den die Umwelt sofort erhoben hätte: Wie kann ein Gekreuzigter der Anführer des Heils sein. Die griechische Vorstellung von Gott schloss Leiden aus; die Unerschütterlichkeit der Gottheit war ein Grundsatz der Philosophie, und Kelsos hielt den Christen im zweiten Jahrhundert genau das vor. Der Text bestreitet den Grundsatz nicht durch Argumente, sondern durch eine Umkehrung: Es ziemte sich so.\n\nDas Wort für den Anführer bezeichnet den Gründer einer Stadt, den Ahnherrn eines Geschlechts und den Anführer einer Truppe. In den griechischen Städten hatte der Stadtgründer einen eigenen Kult; sein Grab lag auf dem Marktplatz. Luther übersetzt mit Herzog, was den militärischen Klang trifft. Das Wort für vollkommen machen kommt aus dem Kult und beschreibt die Einsetzung des Priesters in sein Amt – beide Begriffe zusammen deuten das Leiden als Weihe.\n\nDie drei Zitate stammen aus einem Klagepsalm und aus dem Prophetenbuch Jesaja. Ihre Auswahl folgt einem Stichwort: In allen dreien redet einer von Geschwistern oder Kindern. Der Verfasser gewinnt daraus die Aussage, dass Christus sich nicht schämt, die Menschen Brüder zu nennen – ein Ehrbegriff, der in einer Gesellschaft, in der Ehre und Schande alles regelten, schwerer wog als heute.\n\nDer Schluss nennt zum ersten Mal den Titel, der das Hauptthema des Briefes bildet. Dass ein Hoherpriester barmherzig sein müsse, war keine Selbstverständlichkeit: Die Hohenpriester der letzten Jahrzehnte des Tempels stammten aus wenigen Familien, wurden von der römischen Verwaltung eingesetzt und abgesetzt und galten weiten Kreisen als Vertreter der Macht. Die Qumranschriften erwarteten einen anderen Priester, weil sie den amtierenden für unrechtmäßig hielten.',
+    reception:
+      'Die Aussage, dass Christus versucht wurde und deshalb helfen kann, ist zum Kern der seelsorglichen Verwendung des Briefes geworden. Sie steht in Krankengebeten, in Sterbeliturgien und in der Tröstungsliteratur seit der Alten Kirche. Die Frage, ob er wirklich versucht werden konnte oder nur den Anschein erweckte, hat die Streitigkeiten des fünften Jahrhunderts um die zwei Naturen mitbestimmt; das Konzil von Chalkedon formulierte 451 gegen die Auflösung der menschlichen Seite.\n\nDer Satz über die Furcht des Todes, die zu Knechten macht, hat in der Neuzeit eigene Wirkung entfaltet. Die Existenzphilosophie las darin eine Beschreibung menschlicher Grundangst, und Rudolf Bultmann bezog ihn in seiner Auslegung darauf. In der Debatte über Sterbebegleitung wird er von Hospizbewegungen aufgenommen.\n\nDas Wort vom Herzog des Heils hat die Kirchenlieddichtung geprägt und begegnet in Passionsliedern wie in Missionsliedern. In der deutschen Sprachgeschichte ist Luthers Wahl bemerkenswert: Er greift zu einem weltlichen Führungstitel, wo die lateinische Fassung vom Urheber sprach.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehre und Schande regelten das Ansehen; wer sich einer Verbindung schämte, löste sie öffentlich. Eine Erklärung, sich der Brüderschaft nicht zu schämen, war deshalb ein förmlicher Akt und keine Gefühlsäußerung.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Hohepriester wurde in dieser Zeit vom römischen Statthalter oder vom Herrscherhaus eingesetzt und wieder abgesetzt; die Amtskleidung lagerte zeitweise unter römischer Aufsicht. Das Amt war deshalb mit Herrschaft verbunden, nicht mit Nähe.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Gründer einer griechischen Stadt erhielt nach seinem Tod einen eigenen Kult, sein Grab lag mitten in der Stadt. Wer vom Anführer des Heils hörte, kannte diese Figur aus dem Stadtbild.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Sterblichkeit war allgegenwärtig: Etwa die Hälfte der Kinder erreichte das Erwachsenenalter nicht, und Grabinschriften nennen häufig ein Alter unter dreißig Jahren. Die Rede von der lebenslangen Todesfurcht beschrieb keine Stimmung, sondern eine Lage.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. archegon tes soterias',
+        rendered: 'den Herzog der Seligkeit',
+        note: 'Das Wort meint den Stadtgründer, den Stammvater und den Truppenführer zugleich. Luther wählt den weltlichen Führungstitel und trifft damit den Klang eines Vorangehenden, dem andere folgen.',
+      },
+      {
+        word: 'griech. dia pathematon teleiosai',
+        rendered: 'durch Leiden vollkommen machte',
+        note: 'Das Verb beschreibt in der griechischen Bibel die Einsetzung eines Priesters in sein Amt. Vollkommen heißt hier also nicht fehlerlos gemacht, sondern zum Dienst eingesetzt.',
+      },
+      {
+        word: 'griech. sarkos kai haimatos',
+        rendered: 'Fleisch und Blut',
+        note: 'Eine feste jüdische Wendung für den Menschen in seiner Hinfälligkeit. Sie steht der Rede von Geist und Seele entgegen und meint den ganzen Menschen als sterbliches Wesen.',
+      },
+      {
+        word: 'griech. eis to hilaskesthai tas hamartias',
+        rendered: 'zu versöhnen die Sünden des Volks',
+        note: 'Das Verb gehört zum Versöhnungstag und bedeutet sühnen oder gnädig stimmen. Wer der Handelnde ist – Gott oder der Priester – entscheidet über die ganze Deutung des Opfers.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Titel des Hohenpriesters begründet das Verständnis des Priestertums Christi, an dem das kirchliche Amt teilhat. Das Leiden ist der Weg, auf dem er in dieses Amt eingesetzt wird.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Priestertum Christi ist einmalig und unvertretbar; von ihm her wird das Priestertum aller Gläubigen begründet, nicht ein besonderer Stand. Die Barmherzigkeit des Hohenpriesters ist der Trost des Angefochtenen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Dass er Fleisch und Blut annahm, ist der Kern der Erlösung: Was nicht angenommen ist, wird nicht geheilt. Der Tod wird von innen überwunden, indem der Unsterbliche ihn teilt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Zitatengruppe ist über das Stichwort der Geschwister verbunden und folgt damit einer bekannten Auslegungstechnik. Der Hohepriestertitel ist die eigentümliche Leistung dieses Briefes und findet sich im übrigen Neuen Testament nicht.',
+      },
+      {
+        tradition: 'Seelsorgliche Rezeption',
+        text: 'Der Schlussvers wird als Zusage gelesen, dass Erfahrung und nicht Distanz zum Helfen befähigt. In der Begleitung Sterbender und in der Krankenhausseelsorge ist er einer der meistgebrauchten Verse des Neuen Testaments.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 22, verse: 23, note: 'Ich will deinen Namen verkündigen' },
+      { book: 'jes', chapter: 8, verse: 18, note: 'Ich und die Kinder' },
+      { book: 'hebr', chapter: 4, verse: 15, note: 'Versucht in allem' },
+      { book: 'phil', chapter: 2, verse: 7, note: 'Die Entäußerung' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 3,
+    from: 1,
+    to: 11,
+    title: '„so verstocket eure Herzen nicht“',
+    historicalShort:
+      'Ein Vergleich mit Mose, der ihn nicht herabsetzt, und ein Psalm über die Wüstengeneration, der zum Prüfstein wird.',
+    historicalLong:
+      'Der Vergleich mit Mose ist heikler, als er wirkt. Mose galt im Judentum als der größte der Propheten, der mit Gott von Angesicht zu Angesicht redete; Philon von Alexandria nennt ihn König, Gesetzgeber, Hoherpriester und Prophet in einer Person. Der Verfasser greift ihn nicht an, sondern nennt ihn ausdrücklich treu und benutzt für ihn ein Wort, das in der griechischen Bibel ein Ehrentitel ist. Der Unterschied liegt in der Stellung: im Haus oder über dem Haus.\n\nDas Bild vom Haus hat im Griechischen wie im Hebräischen zwei Bedeutungen, das Gebäude und die Hausgemeinschaft. Der Verfasser spielt mit beiden. Wenn er sagt, dass die Angesprochenen dieses Haus sind, kehrt er vom Gebäude zur Gemeinschaft zurück und macht aus einem Lehrsatz eine Aussage über die Hörer.\n\nDer zitierte Psalm gehört zu den Texten, die im Gottesdienst am Sabbatvorabend gesprochen wurden und den Auszug aus Ägypten vergegenwärtigen. Der Verfasser führt ihn nicht als Wort Davids ein, sondern als Rede des Heiligen Geistes in der Gegenwart. Diese Redeweise ist für den Brief kennzeichnend: Die Schrift spricht, und zwar jetzt.\n\nDie Ereignisse, auf die der Psalm anspielt, stehen im vierten Buch Mose: der Streit um das Wasser und die Weigerung, in das Land zu ziehen, nachdem die Kundschafter zurückgekehrt waren. Die griechische Übersetzung hat die hebräischen Ortsnamen Massa und Meriba nicht übernommen, sondern ihre Bedeutung übersetzt – Versuchung und Verbitterung. Damit wurden aus zwei Orten zwei Verhaltensweisen, und der Verfasser baut seine ganze Mahnung auf dieser Übersetzung auf.',
+    reception:
+      'Der Ruf des Heute ist zum Kennwort der Bußpredigt geworden. Die Regel des Benedikt stellt ihn an den Anfang ihres Vorworts, und im Stundengebet vieler Kirchen wird der Psalm täglich zu Beginn gesprochen – so bleibt der Vers die erste Zeile, die ein Mönch am Tag hört. In der Erweckungsbewegung wurde daraus der Aufruf zur Entscheidung in dieser Stunde.\n\nDer Vergleich mit Mose hat in der Auseinandersetzung zwischen Kirche und Judentum eine unglückliche Wirkungsgeschichte. Er wurde als Herabsetzung gelesen und in Streitschriften gegen das Judentum verwendet, obwohl der Text Mose ausdrücklich treu nennt. In den kirchlichen Erklärungen zum Verhältnis zum Judentum seit 1965 wird auf diese Verzerrung eigens hingewiesen.\n\nDie Wüstengeneration als warnendes Beispiel gehört zu den festen Bildern der Predigtgeschichte. Sie steht in den Briefen des Paulus, bei den Kirchenvätern und in der Auswanderungsliteratur des 19. Jahrhunderts, wo Gemeinden ihren Weg als Wüstenzug beschrieben.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Haus war die Grundeinheit der antiken Gesellschaft und umfasste Verwandte, Bedienstete und Unfreie unter einem Verwalter. Wer von Treue im Haus sprach, sprach von einer Stellung mit Vollmacht, nicht von Gefühlen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Wüste zwischen Ägypten und dem Kulturland ist Steinwüste, kein Sand; Wasserstellen liegen tagesweit auseinander und führen nicht verlässlich. Ein Streit um Wasser war dort kein Zeichen von Undankbarkeit, sondern von Todesnot.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der zitierte Psalm gehörte zum Gottesdienst am Sabbatvorabend und wurde regelmäßig gesprochen. Die Hörer kannten ihn nicht aus dem Buch, sondern aus der Wiederholung.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ein Baumeister genoss höheres Ansehen als das Bauwerk; Inschriften nennen seinen Namen an Tempeln und Brücken. Der Vergleich zwischen Erbauer und Haus griff auf eine geläufige Rangordnung des Handwerks zurück.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ton apostolon kai archierea',
+        rendered: 'des Apostels und Hohenpriesters',
+        note: 'Die einzige Stelle des Neuen Testaments, an der Christus selbst Apostel heißt. Das Wort bedeutet Gesandter und stellt ihn damit neben Mose, der ebenfalls gesandt wurde.',
+      },
+      {
+        word: 'griech. hos therapon',
+        rendered: 'als ein Knecht',
+        note: 'Nicht das übliche Wort für den Unfreien, sondern ein Ehrentitel, den die griechische Bibel Mose gibt. Es bezeichnet den vertrauten Dienst eines Freien, nicht Zwang.',
+      },
+      {
+        word: 'griech. semeron ean tes phones autou akousete',
+        rendered: 'Heute, so ihr hören werdet seine Stimme',
+        note: 'Das Wort Heute trägt die ganze Mahnung. Der Verfasser bezieht es nicht auf die Zeit Davids, sondern auf den Tag, an dem der Text vorgelesen wird.',
+      },
+      {
+        word: 'griech. en to parapikrasmo',
+        rendered: 'in der Verbitterung',
+        note: 'Die griechische Bibel übersetzt hier den Ortsnamen Meriba, statt ihn stehen zu lassen. Aus einem Platz in der Wüste wird so eine Haltung, an die man sich erinnert.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Heute wird liturgisch verstanden: In der Feier wird das Wort gegenwärtig, und die Warnung trifft die Hörenden unmittelbar. Die Regel des Benedikt hat diese Lesart in die klösterliche Praxis übersetzt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Verstockung ist kein Verhängnis, sondern geschieht am Wort: Wer hört und sich verschließt, verhärtet sich. Luther liest den Abschnitt als Beschreibung dessen, was Predigt bewirken kann.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Mose bleibt der größte Prophet, und der Psalm mahnt Israel innerhalb des Bundes, nicht gegen ihn. Eine Auslegung, die aus dem Vergleich eine Ablösung macht, wird als Überdehnung des Textes betrachtet.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Mose und Christus stehen im Verhältnis von Vorbild und Verwirklichung; der Knecht im Haus weist auf den Sohn über dem Haus voraus. Das ist keine Herabsetzung, sondern eine Ordnung der Zeit.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die gesamte Argumentation hängt an der griechischen Übersetzung, die aus den Ortsnamen Massa und Meriba Verhaltensbegriffe machte. Im hebräischen Text wäre die Beweisführung so nicht möglich – ein Musterfall für die Arbeit des Verfassers mit seiner Bibel.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 95, verse: 7, note: 'Der zitierte Psalm' },
+      { book: '4mo', chapter: 12, verse: 7, note: 'Mose, treu in meinem Hause' },
+      { book: '4mo', chapter: 14, verse: 22, note: 'Die Weigerung nach den Kundschaftern' },
+      { book: '2mo', chapter: 17, verse: 7, note: 'Massa und Meriba' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 3,
+    from: 12,
+    to: 19,
+    title: '„Betrug der Sünde“',
+    historicalShort:
+      'Die Anwendung des Psalms auf die Hörer – mit einer Anweisung, die das Gegenmittel nicht bei einem Amt, sondern bei allen sucht.',
+    historicalLong:
+      'Der Abschnitt legt den zitierten Psalm Wort für Wort aus, indem er Fragen stellt und beantwortet. Diese Form ist aus den Kommentaren von Qumran bekannt, wo ein Prophetenwort zeilenweise auf die eigene Gemeinschaft gedeutet wird. Der Verfasser geht ebenso vor: Er greift Stichworte auf – heute, hören, verstocken, Ruhe – und fragt jeweils, wer gemeint sei.\n\nBemerkenswert ist die Anweisung, sich gegenseitig zu ermahnen, und zwar täglich. Sie richtet sich nicht an Vorsteher, sondern an alle. In den Vereinsordnungen der Zeit war das Zurechtweisen Sache gewählter Aufseher; die Gemeinderegel von Qumran kennt dagegen die Pflicht jedes Mitglieds, den anderen zurechtzuweisen, und zwar am selben Tag. Die Nähe ist auffällig und wird in der Forschung seit den Funden am Toten Meer diskutiert.\n\nDer Ausdruck vom Betrug der Sünde beschreibt einen Vorgang, keine Tat. Verstockung geschieht danach nicht durch einen Entschluss, sondern durch Täuschung über die eigene Lage – deshalb die tägliche Wiederholung. Das griechische Wort für verstockt werden steht im Passiv, was offenlässt, wer verhärtet: die Sünde, der Mensch selbst oder Gott. Diese Offenheit hat der Auslegungsgeschichte viel zu schaffen gemacht.\n\nDie Schlussfrage nennt den Grund des Scheiterns: Unglaube. Das griechische Wort kann Unglaube und Untreue bedeuten, weil es in derselben Wurzel steht wie das Wort für Treue, mit dem zuvor Mose und Christus beschrieben wurden. Die Verbindung ist beabsichtigt: Der Untreue der Wüstengeneration steht die Treue derer gegenüber, um die der ganze Abschnitt kreist.',
+    reception:
+      'Die Pflicht zur gegenseitigen täglichen Ermahnung ist in der Ordensgeschichte und in der Gemeinschaftsbewegung aufgenommen worden. Die Brüdergemeine in Herrnhut baute darauf ihre Einrichtung der Banden, kleiner Gruppen mit wechselseitiger Aussprache; John Wesley übernahm das Modell für die methodistischen Klassen, und über sie ist es in die Selbsthilfebewegungen des 20. Jahrhunderts gelangt.\n\nDie Frage, ob ein Getaufter endgültig abfallen kann, hängt auch an diesem Abschnitt und an seinen Fortsetzungen. Die Novatianer und später die Donatisten schlossen daraus auf eine Kirche der Reinen; Augustinus argumentierte dagegen. In der reformierten Lehre vom Beharren der Heiligen wird der Text als Warnung gelesen, die gerade das Beharren bewirkt.\n\nDer Ausdruck vom Betrug der Sünde ist in die Frömmigkeitssprache übergegangen und in Beichtspiegeln und Erbauungsbüchern verbreitet. Er beschreibt Sünde als Täuschungsvorgang und nicht als Einzelhandlung – eine Sicht, die in der modernen Auseinandersetzung mit Abhängigkeit und Sucht neu aufgegriffen wurde.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'In Vereinen war das Zurechtweisen Sache gewählter Aufseher, und Satzungen regelten Verfahren und Bußgelder. Eine Pflicht, die jedem Mitglied auferlegt wird, war die Ausnahme und findet ihre nächste Entsprechung in der Gemeinderegel vom Toten Meer.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Tag war durch Arbeit von Sonnenaufgang bis Sonnenuntergang gefüllt, gemeinsame Zeit gab es am Abend. Eine tägliche gegenseitige Aussprache setzte voraus, dass man nahe beieinander wohnte und arbeitete.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Kommentare aus Qumran legen Prophetenworte Zeile für Zeile auf die eigene Gemeinschaft aus und fragen jeweils, wer gemeint sei. Diese Auslegungsform war im ersten Jahrhundert lebendig und nicht auf eine Gruppe beschränkt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Der Weg aus Ägypten bis an die Grenze des Kulturlandes ließ sich in Wochen zurücklegen; die vierzig Jahre sind keine Wegstrecke, sondern eine Strafzeit. Wer die Entfernungen kannte, hörte das mit.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. apate tes hamartias',
+        rendered: 'Betrug der Sünde',
+        note: 'Das Wort meint die Täuschung, auch die Verlockung durch Reichtum. Sünde erscheint hier als handelnde Größe, die über die eigene Lage hinwegtäuscht.',
+      },
+      {
+        word: 'griech. metochoi tou Christou',
+        rendered: 'Christi teilhaftig geworden',
+        note: 'Das Wort bezeichnet den Teilhaber, im Geschäftsleben den Kompagnon. Es setzt einen gemeinsamen Anteil voraus, nicht nur eine Zugehörigkeit.',
+      },
+      {
+        word: 'griech. ten archen tes hypostaseos',
+        rendered: 'das angefangene Wesen',
+        note: 'Ein Wort mit weitem Feld: Grundlage, Unterbau, Zuversicht, im Rechtswesen die Urkunde über einen Anspruch. Alle Bedeutungen passen, und die Übersetzungen entscheiden sich verschieden.',
+      },
+      {
+        word: 'griech. di apistian',
+        rendered: 'um des Unglaubens willen',
+        note: 'Das Wort bedeutet Unglaube und Untreue zugleich und steht in derselben Wurzel wie die Treue, die zuvor Mose und Christus zugesprochen wurde. Der Gegensatz ist gewollt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Warnung gilt Getauften und setzt voraus, dass Gnade verloren gehen kann; darin liegt der Ernst der Buße. Die gegenseitige Ermahnung gehört zu den Werken der Barmherzigkeit.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Die Warnung ist das Mittel, durch das Gott die Seinen bewahrt; sie widerspricht dem Beharren der Heiligen nicht, sondern wirkt es. Wer endgültig abfällt, zeigt damit, dass die Teilhabe nicht bestand.',
+      },
+      {
+        tradition: 'Täuferische und freikirchliche Auslegung',
+        text: 'Der Text wird als Beleg gelesen, dass Zugehörigkeit nicht gesichert ist und die Gemeinde darum füreinander einzustehen hat. Aus der täglichen Ermahnung sind Formen verbindlicher Kleingruppen entstanden.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Verstockung wird als Erkrankung des Herzens verstanden, gegen die das gemeinsame Leben und die Beichte helfen. Der Weg ist geöffnet und muss gegangen werden; Sicherheit ist nicht der biblische Begriff.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt ist eine Auslegung des zuvor zitierten Psalms nach der Frage-Antwort-Technik, wie sie die Kommentare vom Toten Meer zeigen. Die Nähe zur dortigen Ermahnungspflicht gehört zu den auffälligsten Berührungen zwischen dem Brief und den Funden.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 95, verse: 8, note: 'Die Zeile, die ausgelegt wird' },
+      { book: '4mo', chapter: 14, verse: 29, note: 'Die Leiber in der Wüste' },
+      { book: '1kor', chapter: 10, verse: 5, note: 'Die Wüstengeneration als Beispiel' },
+      { book: 'hebr', chapter: 12, verse: 15, note: 'Aufeinander sehen' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 4,
+    from: 1,
+    to: 11,
+    title: '„ist noch eine Ruhe vorhanden“',
+    historicalShort:
+      'Aus einem Wort des Psalms und einem Satz der Schöpfungserzählung wird ein Begriff, den es vorher nicht gab.',
+    historicalLong:
+      'Der Verfasser verbindet zwei Stellen über ein gemeinsames Wort. Im Psalm schwört Gott, jene sollten nicht zu seiner Ruhe kommen; in der Schöpfungserzählung ruht Gott am siebten Tag. Dass zwei Texte über ein gleiches Stichwort zusammengelesen werden, ist die zweite der klassischen rabbinischen Auslegungsregeln. Aus der Verbindung folgt: Die Ruhe, von der der Psalm spricht, ist nicht das Land, sondern die Ruhe Gottes selbst.\n\nDie Beweisführung arbeitet mit der Zeit. Wenn Josua die Väter zur Ruhe gebracht hätte, so das Argument, wäre der Psalm überflüssig, der Jahrhunderte später von einem Heute spricht. Also steht die Ruhe noch aus. Diese Art zu schließen setzt voraus, dass in der Schrift kein Wort umsonst steht – ein Grundsatz der zeitgenössischen jüdischen Auslegung.\n\nEine Feinheit geht in der Übersetzung verloren: Josua und Jesus sind im Griechischen derselbe Name. Der Satz über Josua trägt deshalb einen Doppelklang, den jeder griechische Hörer bemerkte, und Luther muss ihn durch die Namenswahl auflösen. Die Kirchenväter haben aus dieser Namensgleichheit eine ganze Typologie entwickelt.\n\nDas Wort, das der Verfasser für die verbleibende Ruhe bildet, ist im Griechischen vor ihm nicht belegt: eine Sabbatfeier. Es verschiebt den Begriff vom Ausruhen zum Feiern. Damit greift er eine Erwartung auf, die im Judentum der Zeit ausgesprochen war – mehrere Schriften nennen die kommende Welt einen Tag, der ganz Sabbat ist – und macht daraus den Zielpunkt seiner Mahnung. Der letzte Satz stellt dann beides nebeneinander: sich anstrengen, um zur Ruhe zu kommen.',
+    reception:
+      'Der Begriff der bleibenden Sabbatruhe hat die christliche Vorstellung vom Ziel der Geschichte geprägt. Augustinus schließt seinen Gottesstaat mit dem Bild des siebten Tages, der kein Ende hat; die mittelalterliche Geschichtstheologie zählte Weltalter bis zu diesem Sabbat, und der Chiliasmus des 17. Jahrhunderts erwartete ihn als Zeitraum in der Geschichte.\n\nIm Streit um den Sonntag ist der Abschnitt von beiden Seiten gebraucht worden. Wer den Sabbat als bleibendes Gebot ansieht – die Siebenten-Tags-Adventisten seit dem 19. Jahrhundert – liest ihn als Bestätigung; die Mehrheitstradition seit den Kirchenvätern versteht die Ruhe als geistliche Größe, die das Halten eines bestimmten Tages nicht fordert. Beide Seiten berufen sich auf denselben Vers.\n\nDie Namensgleichheit von Josua und Jesus hat eine breite Auslegungsliteratur hervorgebracht. Origenes widmete dem Buch Josua Predigten, die durchweg auf diese Entsprechung gebaut sind; im Mittelalter gehörte Josua zu den neun Helden, und die Bildkunst stellte ihn neben Christus. Die moderne Auslegung sieht darin eher ein Sprachspiel als eine Sachaussage.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Mehrere jüdische Schriften der Zeit beschreiben die kommende Welt als einen Tag, der ganz Sabbat ist. Die Vorstellung war vorhanden, ehe der Brief sie aufnahm, und war für seine Hörer keine Neuerung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Sabbat war die einzige regelmäßige arbeitsfreie Zeit, die eine Gesellschaft ohne Wochenende kannte; römische Schriftsteller spotteten darüber als Faulheit. Für Unfreie und Tagelöhner war er der einzige geschützte Tag.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Das Land östlich und westlich des Jordan galt als das Ziel des Zuges; Josuas Landverteilung schloss ihn ab. Wer den Psalm hörte, dachte zuerst an dieses Land und nicht an einen Zustand.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wer nicht arbeitete, aß nicht; Vorräte für mehr als wenige Tage hatten die wenigsten. Eine Aufforderung, sich um die Ruhe zu bemühen, klang deshalb weniger widersprüchlich als heute.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. sabbatismos',
+        rendered: 'noch eine Ruhe vorhanden',
+        note: 'Ein vor diesem Brief nicht belegtes Wort, gebildet aus dem Sabbat: eine Sabbatfeier. Es verschiebt den Sinn vom Aufhören der Arbeit zum Begehen eines Festes.',
+      },
+      {
+        word: 'griech. katepausen ho theos',
+        rendered: 'Gott ruhte am siebenten Tage',
+        note: 'Das Zitat aus der Schöpfungserzählung liefert das Stichwort, über das die Argumentation läuft. Die Ruhe Gottes hat dort kein Ende – daran hängt der ganze Schluss.',
+      },
+      {
+        word: 'griech. Iesous',
+        rendered: 'Josua',
+        note: 'Im Griechischen steht hier derselbe Name wie für Jesus. Der Doppelklang war für die ersten Hörer unüberhörbar und geht in jeder Übersetzung verloren.',
+      },
+      {
+        word: 'griech. spoudasomen',
+        rendered: 'lasset uns nun Fleiß tun',
+        note: 'Ein Wort für Eifer und Eile. Dass man sich anstrengen soll, um zur Ruhe zu kommen, ist ein gewollter Widerspruch, an dem die Mahnung hängt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Ruhe ist das ewige Leben, auf das die Kirche zugeht; der Sonntag ist ihr Vorgeschmack, nicht ihre Erfüllung. Augustinus hat diese Deutung im letzten Buch des Gottesstaates ausgeführt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Ruhe wird im Glauben schon betreten und bleibt zugleich ausstehend. Calvin betont den Doppelcharakter: begonnen und nicht vollendet, weshalb die Mahnung zur Anstrengung nicht dem Glauben widerspricht.',
+      },
+      {
+        tradition: 'Adventistische Auslegung',
+        text: 'Weil die Ruhe mit dem siebten Tag der Schöpfung begründet wird, gilt der Sabbat als bleibendes Gebot. Der Text wird als Bestätigung der Ordnung gelesen, nicht als ihre Ablösung.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Der Sabbat ist Gabe und Zeichen des Bundes; die kommende Welt als Sabbat ohne Ende gehört zur eigenen Überlieferung. Eine Auslegung, die daraus die Aufhebung des Tages ableitet, wird als Umdeutung angesehen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Argumentation verbindet zwei Stellen über ein gemeinsames Stichwort nach der zweiten der rabbinischen Auslegungsregeln und setzt voraus, dass kein Wort der Schrift überflüssig ist. Das Wort für die Sabbatfeier ist eine Neubildung des Verfassers.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 2, verse: 2, note: 'Gott ruhte am siebenten Tag' },
+      { book: 'ps', chapter: 95, verse: 11, note: 'Der Schwur über die Ruhe' },
+      { book: 'jos', chapter: 21, verse: 44, note: 'Der Herr gab ihnen Ruhe' },
+      { book: 'mt', chapter: 11, verse: 28, note: 'Ich will euch erquicken' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 4 Abschnitte */
+  {
+    book: 'hebr',
+    chapter: 5,
+    from: 1,
+    to: 10,
+    title: '„hat er doch an dem, was er litt Gehorsam gelernt“',
+    historicalShort:
+      'Was einen Hohenpriester ausmacht – und der Satz, an dem die Auslegung seit dem vierten Jahrhundert am schwersten trägt.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einer Beschreibung des Amtes, wie sie jeder Leser bestätigt hätte: Der Hohepriester wird aus den Menschen genommen, er opfert für andere, und weil er selbst schwach ist, opfert er auch für sich. Der letzte Punkt bezieht sich auf den Versöhnungstag, an dem der Hohepriester zuerst für sein eigenes Haus und dann für das Volk Sühne schaffte. Die Ordnung dieses Tages steht im dritten Buch Mose und war der einzige Tag im Jahr, an dem ein Mensch das Allerheiligste betrat.\n\nDie zweite Bedingung ist die Berufung. Sie ist historisch aufgeladen: Im ersten Jahrhundert war das Hohepriesteramt käuflich geworden. Herodes und danach die römischen Statthalter setzten die Amtsträger ein und ab; zwischen 37 vor und 70 nach Christus wechselten mehr als zwanzig Hohepriester, meist aus vier Familien. Wer schrieb, dass niemand sich die Ehre selbst nimmt, sagte damit auch etwas über die Gegenwart.\n\nDas Zitat vom Priester nach der Ordnung Melchisedeks stammt aus einem Königspsalm. Melchisedek erscheint im ersten Buch Mose nur in drei Versen: König von Salem und Priester des höchsten Gottes, der Abraham Brot und Wein bringt. In den Schriften vom Toten Meer ist er zu einer himmlischen Gestalt geworden, die am Ende der Tage Gericht hält. Der Verfasser wählt also eine Figur, deren Deutung in seiner Zeit in Bewegung war.\n\nDer siebte Vers spielt auf ein Gebet in Todesangst an, ohne einen Ort zu nennen; die Ähnlichkeit mit den Erzählungen vom Ölberg ist unübersehbar, die Wortwahl folgt ihnen aber nicht. Der Satz, dass der Sohn Gehorsam lernen musste, hat den größten Widerspruch hervorgerufen. Im Griechischen steht ein Wortspiel: gelitten und gelernt klingen fast gleich, und die Verbindung von Leiden und Lernen war ein Sprichwort, das schon bei Aischylos steht.',
+    reception:
+      'Der Satz über das Lernen des Gehorsams gehörte zu den Stellen, die in den Streitigkeiten des vierten und fünften Jahrhunderts am meisten Mühe machten. Die Arianer führten ihn als Beweis für die Nachrangigkeit des Sohnes an; Gregor von Nazianz und Kyrill antworteten, das Lernen betreffe die angenommene menschliche Natur. Die Formel von Chalkedon 451 versucht beides zu halten, ohne den Vers zu entschärfen.\n\nDie Beschreibung des Priesteramtes – aus den Menschen genommen, für die Menschen eingesetzt – ist zum Grundtext der katholischen Priesterlehre geworden und steht am Anfang des Dekrets über den Dienst der Priester von 1965. In der Reformation wurde derselbe Text gegen den Opfercharakter der Messe gewendet: Wenn dieser Priester einmal für immer eingesetzt ist, braucht es keinen weiteren.\n\nDer Vers über das Gebet mit starkem Geschrei und Tränen hat die Passionsfrömmigkeit geprägt und ist in der Musik der Karwoche vielfach vertont worden. In der Seelsorge wird er als Erlaubnis gelesen, im Gebet nicht gefasst sein zu müssen.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Das Hohepriesteramt wurde in dieser Zeit vergeben und entzogen; die Familien Boethos, Hanan, Phiabi und Kamith stellten die meisten Träger. Der Amtssitz wechselte manchmal jährlich, was dem Amt seine Selbstverständlichkeit nahm.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Am Versöhnungstag betrat der Hohepriester einmal im Jahr das Allerheiligste, zuvor opferte er für sich und sein Haus. Die Mischna beschreibt, wie er die Nacht davor wach gehalten wurde, damit er rein blieb.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Milch und feste Speise waren im Unterricht der Philosophen ein geläufiges Bild für Anfänger und Fortgeschrittene; Epiktet gebraucht es ebenso wie Philon. Wer so redete, sprach die Sprache der Schule.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Lautes Weinen gehörte zur öffentlichen Klage und war keine Sache der Beherrschung; Klagefrauen wurden dafür bezahlt. Ein Gebet mit Geschrei und Tränen war deshalb keine Entgleisung, sondern eine erkennbare Form.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. metriopathein',
+        rendered: 'mitfühlen',
+        note: 'Ein Wort der Philosophie für das rechte Maß im Gefühl, zwischen Mitleid und Kälte. Es meint nicht Weichheit, sondern die Fähigkeit, nicht aufzubrausen.',
+      },
+      {
+        word: 'griech. kata ten taxin Melchisedek',
+        rendered: 'nach der Ordnung Melchisedeks',
+        note: 'Das Wort für Ordnung meint die Art oder Klasse, nicht eine Nachfolge. Melchisedek hat in der Schrift weder Vorgänger noch Nachfolger – darauf baut der Brief später seine ganze Beweisführung.',
+      },
+      {
+        word: 'griech. emathen aph hon epathen',
+        rendered: 'hat er doch an dem, was er litt Gehorsam gelernt',
+        note: 'Im Griechischen ein Gleichklang von leiden und lernen. Die Verbindung war sprichwörtlich und steht schon bei Aischylos; der Verfasser greift eine bekannte Wendung auf.',
+      },
+      {
+        word: 'griech. teleiotheis',
+        rendered: 'da er vollendet war',
+        note: 'Dasselbe Wort, das in der griechischen Bibel die Einsetzung eines Priesters bezeichnet. Vollendung heißt hier Amtseinsetzung und nicht sittliche Vervollkommnung.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die beiden Bedingungen – aus den Menschen genommen und von Gott berufen – gelten als Beschreibung jedes Priestertums; das Konzilsdekret über den Priesterdienst beginnt mit diesem Vers. Das Opfer Christi wird in der Messe gegenwärtig gesetzt, nicht wiederholt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Weil dieser Hohepriester einmalig eingesetzt ist, ist jedes weitere Opferpriestertum überflüssig. Der Text wurde in der Reformation zum Hauptargument gegen die Messe als Opfer.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Lernen des Gehorsams betrifft die angenommene menschliche Natur und ist Teil des Weges, auf dem die Menschheit geheilt wird. Der Vers wird nicht abgeschwächt, sondern als Kern der Heilsordnung gelesen.',
+      },
+      {
+        tradition: 'Altkirchliche Streitfrage',
+        text: 'Arius und seine Anhänger lasen den Vers als Beleg dafür, dass der Sohn dem Vater nachgeordnet sei. Die Gegenseite antwortete mit der Unterscheidung der Naturen; die Auseinandersetzung hat die Formeln von Nizäa und Chalkedon mitgeprägt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt setzt den Tempelbetrieb als bekannt voraus, spricht aber nie von seiner Zerstörung – ein Argument für eine Abfassung vor 70, dem andere Beobachtungen widersprechen. Die Anspielung auf das Gebet in Todesangst kennt die Überlieferung, nicht aber ihren Wortlaut.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 110, verse: 4, note: 'Der Priester nach Melchisedeks Ordnung' },
+      { book: '1mo', chapter: 14, verse: 18, note: 'Melchisedek mit Brot und Wein' },
+      { book: '3mo', chapter: 16, verse: 6, note: 'Der Hohepriester opfert für sich selbst' },
+      { book: 'mk', chapter: 14, verse: 36, note: 'Das Gebet in Todesangst' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 5,
+    from: 11,
+    to: 14,
+    title: '„die ersten Buchstaben der göttlichen Worte“',
+    historicalShort:
+      'Ein Tadel im Ton des Schulmeisters: Die Hörer sollten längst lehren und brauchen selbst noch den Anfangsunterricht.',
+    historicalLong:
+      'Der Verfasser unterbricht seine Darlegung mit einem Vorwurf, der aus dem Unterricht kommt. Das Bild von Milch und fester Speise war in den Philosophenschulen geläufig: Epiktet gebraucht es für Schüler, die über den Anfang nicht hinauskommen, und Philon von Alexandria wendet es auf die Auslegung der Schrift an. Wer diesen Vergleich hörte, verstand ihn als Schultadel und nicht als Beleidigung.\n\nDer Ausdruck für die ersten Buchstaben meint wörtlich die Elemente – Buchstaben des Alphabets, Grundbestandteile der Welt, Anfangsgründe eines Faches. Im Elementarunterricht lernten Kinder zuerst die Buchstaben, dann Silben, dann ganze Wörter; Schreibtafeln aus Ägypten zeigen diese Übungen. Der Vorwurf lautet also, die Angesprochenen müssten das Alphabet noch einmal durchgehen.\n\nDie Wendung, sie sollten längst Lehrer sein, setzt voraus, dass die Gemeinde nicht neu ist. Sie gehört zu den Angaben, aus denen die Forschung auf eine zweite oder dritte Generation schließt: eine Gruppe mit Geschichte, mit Verfolgungserfahrung in der Vergangenheit und mit nachlassender Spannkraft in der Gegenwart. Dasselbe Bild vom Rückfall in den Anfangszustand steht auch in den Briefen des Paulus, dort aber gegen eine junge Gemeinde gerichtet.\n\nDer letzte Vers beschreibt, was Reife ausmacht: geübte Sinne, die unterscheiden können. Das Wort für Übung stammt aus dem Sport und bezeichnet das Training im Ringkampf; das Wort für Sinne meint die Wahrnehmungsorgane. Zusammen ergibt sich ein Bild, das die Antike in der Ethik gern gebrauchte: Urteilsfähigkeit ist keine Kenntnis, sondern eine eingeübte Fertigkeit.',
+    reception:
+      'Die Unterscheidung von Milch und fester Speise ist in der christlichen Bildungsgeschichte zu einem Ordnungsprinzip geworden. Clemens von Alexandria baute darauf sein Stufenmodell der Unterweisung, Origenes unterschied Anfänger und Fortgeschrittene, und im Mittelalter wurde daraus die Einteilung in einen schlichten und einen tieferen Schriftsinn. Die katechetische Literatur der Reformation ordnete Kleinen und Großen Katechismus nach demselben Gedanken.\n\nDie Rede von den geübten Sinnen ist zur Grundlage einer christlichen Lehre von der Unterscheidung geworden. Die Ordenstradition, besonders die ignatianische Unterscheidung der Geister, beruft sich darauf; auch in der evangelischen Ethik des 20. Jahrhunderts wird der Vers gebraucht, wenn es um Urteilsfähigkeit statt um Regeln geht.\n\nZugleich hat der Tadel eine Karriere als rhetorisches Mittel gemacht. Prediger aller Jahrhunderte haben ihn gegen ihre Gemeinden gewendet, und in der Erweckungsliteratur des 19. Jahrhunderts ist er ein feststehender Vorwurf gegen die Namenschristen. Dass der Verfasser gleich anschließend das Gegenteil beteuert und die Angeredeten seiner besseren Erwartung versichert, kam dabei selten vor.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Elementarunterricht begann mit Buchstaben, ging zu Silben und dann zu Wörtern; Schreibtafeln aus Ägypten zeigen die immer gleiche Reihenfolge. Wer als Erwachsener zum Alphabet zurückgeschickt wurde, war blamiert.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ringkämpfer trainierten täglich in der Palästra, und das Wort für Übung kam aus diesem Betrieb. Was der Text von den Sinnen verlangt, ist im Bild die Arbeit eines Sportlers, nicht die Begabung eines Klugen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Kinder wurden bis ins dritte Lebensjahr gestillt, oft von Ammen, die vertraglich verpflichtet wurden; feste Speise war der Einschnitt zur Selbständigkeit. Das Bild hatte deshalb einen genauen Sitz im Familienleben.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Philon von Alexandria unterscheidet mit demselben Bild zwischen dem Buchstabensinn der Schrift und ihrer tieferen Bedeutung. Die Sprache des Briefes gehört damit in die jüdische Bildungswelt des griechischen Sprachraums.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. nothroi tais akoais',
+        rendered: 'weil ihr so unverständig seid',
+        note: 'Wörtlich träge an den Ohren. Nicht Dummheit ist gemeint, sondern Schwerhörigkeit im übertragenen Sinn: ein Nachlassen der Aufmerksamkeit.',
+      },
+      {
+        word: 'griech. ta stoicheia tes arches',
+        rendered: 'die ersten Buchstaben der göttlichen Worte',
+        note: 'Das Wort bezeichnet Buchstaben, Grundbestandteile und Anfangsgründe zugleich. Luther entscheidet sich für die Buchstaben und trifft damit den Schulzusammenhang.',
+      },
+      {
+        word: 'griech. gala',
+        rendered: 'daß man euch Milch gebe',
+        note: 'Das Bild stammt aus dem Philosophenunterricht und war für Anfänger geläufig. In den Briefen des Paulus steht es gegen eine junge Gemeinde, hier gegen eine alte.',
+      },
+      {
+        word: 'griech. gegymnasmena',
+        rendered: 'geübte Sinne',
+        note: 'Ein Wort aus dem Sport, verwandt mit Gymnastik. Unterscheidungsfähigkeit erscheint damit als trainierte Fertigkeit und nicht als Kenntnis.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Abschnitt begründet eine Stufenordnung der Unterweisung: Katechese, Vertiefung, Unterscheidung. Die Tradition der Exerzitien nimmt die geübten Sinne als Ziel geistlicher Bildung auf.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Tadel gilt nicht mangelndem Wissen, sondern nachlassendem Hören auf das Wort. Luther bezog das Bild auf die Predigt: Wer sie nicht mehr aufnimmt, fällt in den Anfang zurück.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Reifung wird als Weg der Gewöhnung an das Gute verstanden, der Übung und Zeit braucht. Unterscheidung gilt als Gabe, die im gemeinsamen Leben und unter geistlicher Begleitung wächst.',
+      },
+      {
+        tradition: 'Pädagogische Rezeption',
+        text: 'Clemens von Alexandria und Origenes bauten daraus ein Modell abgestufter Unterweisung, das die christliche Bildungsgeschichte bis zur Katechismusliteratur bestimmt hat. Der Vers gilt als frühester Beleg für einen christlichen Lehrplan.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Bemerkung, die Angeredeten sollten längst lehren, setzt eine Gemeinde mit Geschichte voraus und wird als Hinweis auf die zweite Generation gewertet. Das Milchbild gehört zum festen Bestand hellenistischer Schulrhetorik.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 3, verse: 2, note: 'Milch statt fester Speise' },
+      { book: '1petr', chapter: 2, verse: 2, note: 'Die vernünftige lautere Milch' },
+      { book: 'hebr', chapter: 6, verse: 1, note: 'Der Anfang, den man verlassen soll' },
+      { book: 'phil', chapter: 1, verse: 10, note: 'Prüfen, was das Beste sei' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 6,
+    from: 1,
+    to: 12,
+    title: '„wiederum zu erneuern zur Buße“',
+    historicalShort:
+      'Der härteste Satz des Neuen Testaments über den Abfall – und die Frage, die daraus die Bußpraxis von Jahrhunderten gemacht hat.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einer Liste, die aussieht wie ein Lehrplan für Neugetaufte: Buße, Glaube, Waschungen, Handauflegung, Auferstehung, Gericht. Auffällig ist, dass in dieser Aufzählung nichts steht, was nur christlich wäre. Alle sechs Punkte hätte auch ein jüdischer Lehrer unterschrieben; das Wort für Taufe steht sogar im Plural und meint Waschungen, wie sie in Qumran und in pharisäischen Kreisen üblich waren. Der Verfasser will diesen Grund nicht bestreiten, sondern hinter sich lassen.\n\nDann folgt der Satz, der die Auslegungsgeschichte belastet hat. Vier Kennzeichen beschreiben die, um die es geht – erleuchtet, der himmlischen Gabe teilhaftig, des Geistes teilhaftig, das Wort und die Kräfte der kommenden Welt geschmeckt. Erleuchtung war in der Alten Kirche ein Name für die Taufe. Die Beschreibung lässt sich kaum anders verstehen als von Getauften; genau das macht die Härte aus.\n\nDas Bild vom Kreuzigen und Verspotten setzt eine öffentliche Handlung voraus. In der römischen Verwaltung gab es ein Verfahren, in dem ein Angeklagter den Vorwurf des Christseins durch ein Opfer vor dem Kaiserbild ausräumen konnte; der Statthalter Plinius beschreibt es um 112 in einem Brief an Trajan. Wer sich so löste, tat das vor Zeugen. Der Text redet damit womöglich nicht von einem inneren Verlust, sondern von einem förmlichen Widerruf.\n\nDer Vergleich mit dem Ackerland ist aus der Landwirtschaft genommen und folgt einer bekannten Regel: Ein Feld, das nach Regen nur Dornen trägt, wird abgebrannt – nicht vernichtet, sondern durch Feuer gereinigt, damit es wieder tragen kann. Ob dieser Nebensinn mitschwingt, ist umstritten. Unmittelbar danach wechselt der Ton völlig: Der Verfasser versichert den Angeredeten, er erwarte von ihnen Besseres, und erinnert an ihre erwiesene Arbeit.',
+    reception:
+      'Kein Text hat die frühe Bußpraxis so bestimmt. Im zweiten und dritten Jahrhundert galt weithin, dass nach der Taufe eine schwere Sünde nicht wieder vergeben werden könne; die Schrift Der Hirte des Hermas erlaubt eine einmalige Ausnahme. Nach der Verfolgung unter Decius um 250 wurde die Frage der Wiederaufnahme derer, die geopfert hatten, zur Kirchenspaltung: Novatian lehnte sie ab, Cornelius von Rom und Cyprian ließen sie unter Bußauflagen zu. Der lateinische Westen hat den Hebräerbrief auch deshalb lange nicht in den Kanon aufgenommen.\n\nDie Reformation las den Abschnitt neu. Calvin bezog ihn auf Menschen, die alle Zeichen der Zugehörigkeit hatten, ohne je zum Glauben gekommen zu sein; die reformierte Lehre vom Beharren der Heiligen beruht auf dieser Unterscheidung. Die arminianische Seite hielt dagegen, dass die vier Kennzeichen sich nicht anders als von wirklich Glaubenden verstehen ließen. Der Streit ist unentschieden und verläuft bis heute an dieser Stelle.\n\nIn der Seelsorge hat der Text Schaden angerichtet. Menschen haben ihn auf sich bezogen und daraus geschlossen, für sie sei keine Umkehr mehr möglich – ein Kummer, der in der Beichtliteratur des Mittelalters ebenso begegnet wie in der Erweckungsbewegung. Puritanische Seelsorger antworteten mit dem Argument, dass gerade die Sorge um diese Frage zeige, dass der Fall nicht eingetreten sei.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Ein Feld, das nur Dornen trug, wurde abgebrannt; das Feuer vernichtete Wurzeln und Samen und machte den Boden wieder tragfähig. Bauern kannten das als Verfahren, nicht als Untergang.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Vor Gericht konnte ein Angeklagter den Vorwurf des Christseins durch Opfer und Anrufung des Kaiserbildes ausräumen; der Statthalter Plinius schildert das Verfahren um 112. Ein solcher Widerruf war öffentlich und aktenkundig.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Waschungen gehörten zum Alltag der jüdischen Frömmigkeit; in Jerusalem und in Qumran sind Tauchbäder in großer Zahl ausgegraben worden. Die Aufzählung des Briefes nennt sie im Plural und meint diese Praxis.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Handauflegung diente der Einsetzung in ein Amt und der Aufnahme in eine Gemeinschaft; in der Synagoge wurde damit ein Lehrer bestätigt. Sie war eine öffentliche Geste vor Zeugen, kein privater Segen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. baptismon didaches',
+        rendered: 'von der Taufe, von der Lehre',
+        note: 'Im Griechischen steht der Plural eines Wortes, das Waschungen bezeichnet. Gemeint sind eher die jüdischen Reinigungsbäder als die eine christliche Taufe.',
+      },
+      {
+        word: 'griech. photisthentas',
+        rendered: 'die, so einmal erleuchtet sind',
+        note: 'In der Alten Kirche der geläufige Ausdruck für die Getauften; Justin gebraucht ihn schon um 150. Daran hängt, ob der Abschnitt von Getauften redet.',
+      },
+      {
+        word: 'griech. adynaton',
+        rendered: 'es ist unmöglich',
+        note: 'Das Wort ist unbedingt und wird nicht abgeschwächt. Ob die Unmöglichkeit bei Gott oder bei den Menschen liegt, sagt der Satz nicht – dort setzt die gesamte Auslegungsdebatte an.',
+      },
+      {
+        word: 'griech. anastaurountas',
+        rendered: 'den Sohn Gottes wiederum kreuzigen',
+        note: 'Das Verb kann kreuzigen oder wieder kreuzigen bedeuten. Die zweite Bedeutung hat die abendländische Auslegung geprägt, die erste ist die geläufigere im Griechischen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Text beschreibt die Schwere des Abfalls, hebt aber die Möglichkeit der Buße nicht auf; die Kirche hat sich früh gegen die Strenge der Novatianer entschieden. Das Bußsakrament setzt voraus, dass Umkehr nach der Taufe möglich bleibt.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Die vier Kennzeichen beschreiben Menschen, die alle äußeren Wirkungen erfahren haben, ohne wiedergeboren zu sein. Calvin liest den Abschnitt so und hält daran fest, dass wirklich Glaubende bewahrt bleiben.',
+      },
+      {
+        tradition: 'Arminianische und methodistische Auslegung',
+        text: 'Die Beschreibung lässt sich nur von Glaubenden verstehen, also ist ein endgültiger Abfall möglich. Die Warnung ist ernst gemeint und nicht hypothetisch.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Gemeint ist nicht die Sünde des Schwachen, sondern die bewusste Lossagung. Die Kirche kennt für sie einen langen Weg der Wiederaufnahme, verweigert sie aber nicht.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt zielt auf eine bestimmte Lage: den öffentlichen Widerruf unter Druck, wie ihn römische Verfahren vorsahen. Die sechs Grundstücke der Lehre enthalten nichts spezifisch Christliches und werden als Katechismus jüdischer Herkunft gedeutet.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hebr', chapter: 10, verse: 26, note: 'Die Warnung noch einmal' },
+      { book: 'mt', chapter: 12, verse: 31, note: 'Die Lästerung des Geistes' },
+      { book: '1joh', chapter: 5, verse: 16, note: 'Die Sünde zum Tode' },
+      { book: 'jes', chapter: 5, verse: 6, note: 'Der Weinberg voller Dornen' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 6,
+    from: 13,
+    to: 20,
+    title: '„einen sichern und festen Anker unsrer Seele“',
+    historicalShort:
+      'Gott legt einen Eid ab – und das Bild vom Anker, das in die Katakomben und in die Wappen der Christenheit gewandert ist.',
+    historicalLong:
+      'Nach der Warnung wechselt der Verfasser zur Zusage und begründet sie mit einem Rechtsgedanken. Ein Eid wird bei einem Höheren geschworen; er beendet den Streit, weil eine Instanz angerufen wird, die über den Parteien steht. Das war antike Rechtspraxis: Wo Beweise fehlten, entschied der Eid, und Verträge aus Ägypten enthalten Eidesformeln mit Namen von Gottheiten und des Kaisers. Wenn Gott schwört, fehlt der Höhere, also schwört er bei sich selbst – ein Gedanke, den schon Philon von Alexandria ausführt.\n\nDie angeführte Zusage an Abraham steht im ersten Buch Mose nach der Bindung Isaaks. Sie ist die einzige Stelle, an der Gott ausdrücklich bei sich selbst schwört, und wurde im Judentum entsprechend hervorgehoben. Der Verfasser zieht daraus zwei unwandelbare Stücke: die Zusage und den Eid. Dass Gott nicht lügen kann, ist dabei keine Einschränkung seiner Macht, sondern eine Aussage über seine Beständigkeit.\n\nDas Bild vom Anker ist im Neuen Testament einmalig. Anker waren aus Holz mit Bleistock oder ganz aus Eisen und wurden bei Sturm oder vor einem Hafen geworfen; ein Schiff, das nicht einlaufen konnte, wurde vor der Küste durch Anker gehalten, bis das Wetter umschlug. Die Redewendung, die Hoffnung sei ein Anker, war in der griechischen Literatur bekannt. Neu ist, wohin dieser Anker reicht.\n\nDenn der Satz führt das Bild in den Tempel hinüber: hinter den Vorhang. Damit ist der Vorhang vor dem Allerheiligsten gemeint, den nur der Hohepriester einmal im Jahr durchschritt. Ein Anker, der ins Allerheiligste greift, verbindet zwei Bildwelten, die nicht zusammenpassen; das ist beabsichtigt. Der Vorläufer ist im Griechischen ein militärischer Ausdruck für den vorausgeschickten Späher – wer voraus ist, kommt nicht allein an.',
+    reception:
+      'Der Anker ist zum ältesten und häufigsten christlichen Bildzeichen geworden. In den römischen Katakomben ist er hunderte Male eingeritzt, oft mit einem Fisch verbunden, und er diente in der Verfolgungszeit als verdecktes Kreuzzeichen, weil seine Form es enthält. Später wanderte er in Bischofswappen, in die Sinnbilder der drei göttlichen Tugenden und in die Zeichensprache der Seefahrerkirchen.\n\nDer Gedanke, dass Gott sich durch einen Eid selbst bindet, ist in der Bundestheologie des 17. Jahrhunderts entfaltet worden. Die reformierten Bekenntnisschriften bauen darauf ihre Lehre von der Heilsgewissheit: Nicht das Gefühl des Glaubenden trägt, sondern die Zusage, die Gott sich selbst auferlegt hat. Der Text steht deshalb in Trostschriften für Angefochtene an erster Stelle.\n\nDas Bild vom Vorläufer ist in der Auslegung der Himmelfahrt aufgenommen worden. Die Osterpredigten der griechischen Väter deuten es so, dass ein Mensch bereits dort ist, wohin die anderen unterwegs sind; Johannes Chrysostomus vergleicht ihn mit dem Boten, der voranläuft und den Weg offenhält.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Wo Beweise fehlten, entschied der Eid; Verträge aus Ägypten enthalten Eidesformeln bei Gottheiten und beim Kaiser. Ein Meineid war deshalb nicht nur Lüge, sondern Angriff auf die Rechtsordnung.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Der Bleistock eines großen Ankers wog mehrere Zentner, und Schiffe führten mehrere davon mit; Taucher holten verlorene Stücke wieder herauf. Ein Anker war teures Gerät, dessen Verlust im Bordbuch vermerkt wurde.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Vorhang vor dem Allerheiligsten war nach der Beschreibung des Josephus ein gewaltiges buntes Gewebe. Er markierte eine Grenze, die nur einmal im Jahr und nur von einem Menschen überschritten wurde.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Vorläufer war im Heer der vorausgeschickte Späher oder der Reiter, der die Ankunft eines Zuges meldete. Das Wort setzt voraus, dass andere folgen – ein Einzelner allein wäre kein Vorläufer.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. omosen kath heautou',
+        rendered: 'schwur er bei sich selbst',
+        note: 'Weil kein Höherer da ist, bei dem geschworen werden könnte. Philon von Alexandria hat denselben Gedanken ausgeführt; er gehört zur jüdischen Auslegung der Stelle.',
+      },
+      {
+        word: 'griech. dyo pragmaton ametatheton',
+        rendered: 'zwei Stücke, die nicht wanken',
+        note: 'Ein Ausdruck des Rechtswesens für das Unabänderliche einer Urkunde. Gemeint sind die Zusage und der Eid, die zusammen die Sicherheit ergeben.',
+      },
+      {
+        word: 'griech. ankyran tes psyches',
+        rendered: 'einen sichern und festen Anker unsrer Seele',
+        note: 'Die einzige Stelle des Neuen Testaments mit diesem Bild. Es war als Redewendung geläufig, wird hier aber in den Tempel weitergeführt, wohin kein Anker reicht.',
+      },
+      {
+        word: 'griech. prodromos',
+        rendered: 'der Vorläufer',
+        note: 'Ein militärisches Wort für den vorausgeschickten Späher. Der Hohepriester ging allein hinter den Vorhang; ein Vorläufer geht voran, damit andere nachkommen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Eintritt des Vorläufers wird auf die Himmelfahrt bezogen: Die Menschheit ist in Christus schon am Ziel. Der Anker gehört zu den ältesten Sinnbildern der Hoffnung in der kirchlichen Kunst.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Die Selbstbindung Gottes durch den Eid ist der Grund der Heilsgewissheit; sie liegt außerhalb des Glaubenden. Die Bundestheologie des 17. Jahrhunderts hat daraus ihre Trostlehre entwickelt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Vorläufer öffnet den Weg, den die Kirche geht; die Grenze des Allerheiligsten ist überschritten und bleibt offen. Der Vorhang wird in der Ikonostase als Erinnerung an diese Grenze bewahrt.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Der Eid bei sich selbst nach der Bindung Isaaks gehört zu den zentralen Stellen der Überlieferung und begründet die bleibende Treue Gottes zu Israel. Die Auslegung des Briefes weitet die Zusage aus, statt sie zu ersetzen – ob das ihr Sinn ist, wird bestritten.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt verbindet römisches Vertragsrecht, griechische Seefahrtsbilder und den Tempelkult in einem Satz. Diese Mischung ist für den Brief kennzeichnend und weist auf einen gebildeten Verfasser im griechischsprachigen Judentum.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 22, verse: 16, note: 'Ich habe bei mir selbst geschworen' },
+      { book: 'hebr', chapter: 9, verse: 3, note: 'Der Vorhang und das Allerheiligste' },
+      { book: 'ps', chapter: 110, verse: 4, note: 'Der Priester in Ewigkeit' },
+      { book: 'roem', chapter: 4, verse: 20, note: 'Abraham und die Verheißung' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'hebr',
+    chapter: 7,
+    from: 1,
+    to: 10,
+    title: '„ohne Vater, ohne Mutter, ohne Geschlecht“',
+    historicalShort:
+      'Aus drei Versen des ersten Buches Mose und dem, was dort nicht steht, wird die Schlüsselfigur des ganzen Briefes.',
+    historicalLong:
+      'Melchisedek kommt in der hebräischen Bibel an zwei Stellen vor: in drei Versen der Abrahamsgeschichte und in einer Zeile eines Königspsalms. Mehr ist über ihn nicht überliefert. Genau darauf baut der Verfasser. Er liest die Erzählung nach einer Regel, die im Judentum ausgesprochen war: Was die Schrift verschweigt, verschweigt sie mit Absicht. Weil keine Eltern, kein Stammbaum, keine Geburt und kein Tod genannt sind, erscheint Melchisedek als einer ohne Anfang und Ende.\n\nDiese Auslegungsweise ist nicht seine Erfindung. Philon von Alexandria deutet dieselben Verse allegorisch auf die Vernunft als König; in Qumran ist ein Text gefunden worden, in dem Melchisedek eine himmlische Gestalt ist, die im letzten Jubeljahr Befreiung ausruft und Gericht hält. Die Figur war also bereits in Bewegung, als der Brief entstand, und seine Hörer kannten sie vermutlich nicht nur aus dem ersten Buch Mose.\n\nDer zweite Teil führt einen Rangbeweis. Er stützt sich auf zwei Selbstverständlichkeiten des Alltags: Wer den Zehnten empfängt, steht über dem, der ihn gibt, und wer segnet, über dem, der gesegnet wird. Beides war unbestritten. Daraus folgt, dass Melchisedek über Abraham steht – und weil Levi als Nachkomme im Stammvater beschlossen war, auch über dem levitischen Priestertum. Der Gedanke, dass die Nachkommen in den Lenden des Vorfahren enthalten sind, ist ein bekanntes Denkmuster der Zeit und wurde im Erbrecht ebenso vorausgesetzt wie in der Frage nach der Schuld der Generationen.\n\nDer Verfasser sagt ausdrücklich, dass Melchisedek dem Sohn Gottes verglichen sei, und nicht umgekehrt. Er behauptet also keine Erscheinung Christi in der Urzeit, sondern arbeitet mit einer Textfigur. Die Kirchenväter sind später über diese Zurückhaltung hinausgegangen; einige Gruppen hielten Melchisedek für eine Erscheinung des Heiligen Geistes oder für eine höhere Macht, was im vierten Jahrhundert eigens verurteilt wurde.',
+    reception:
+      'Die Deutung Melchisedeks als Vorbild Christi ist über die Väter in die Liturgie eingegangen. Der römische Messkanon nennt ihn seit dem sechsten Jahrhundert neben Abel und Abraham; Brot und Wein, die er Abraham brachte, wurden früh auf die Eucharistie bezogen, so schon bei Cyprian im dritten Jahrhundert. In der Bildkunst steht er auf zahlreichen Altären als Gegenstück zum Abendmahl.\n\nIm Mittelalter wurde die Stelle zur Grundlage der Zehntpflicht. Weil Abraham dem Priester den Zehnten gab, ehe es ein Gesetz gab, galt der Zehnte als älter als das Gesetz und damit als bleibend; Konzilien und Landrechte beriefen sich darauf, und die Bauernkriege des 16. Jahrhunderts richteten sich unter anderem gegen diese Begründung. In freikirchlichen Kreisen wird sie bis heute für den Zehnten angeführt.\n\nDie Formel ohne Vater und ohne Mutter hat eine Wirkung entfaltet, die weit vom Text wegführt. Sie wurde auf die Gottheit Christi, auf Maria und in mystischen Schriften auf die Seele bezogen. Zugleich ist sie Gegenstand jüdischer Einwände: Ein Schweigen des Textes lässt sich, so das Argument, nicht in eine Aussage verwandeln.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Ein Zehnter der Beute an ein Heiligtum war im Alten Orient und in Griechenland üblich; Städte weihten ein Zehntel des Kriegsgewinns an einen Tempel. Was Abraham tut, folgt einer verbreiteten Regel.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Im Erbrecht galten die Nachkommen als im Vorfahren enthalten; Ansprüche und Verpflichtungen gingen so über Generationen. Der Schluss, dass Levi im Stammvater bereits zahlte, folgt dieser Denkweise.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Salem wurde in der Überlieferung mit Jerusalem gleichgesetzt, das schon vor der Eroberung durch David eine Stadt mit eigenem Königtum war. Ein Priesterkönig war im Alten Orient keine Besonderheit, sondern der Regelfall.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Jubeljahr sollte alle fünfzig Jahre Schulden erlassen und Land zurückgeben; ob es je durchgeführt wurde, ist unsicher. Als Hoffnungsbild blieb es lebendig und verband Priestertum mit Befreiung.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. apator ametor agenealogetos',
+        rendered: 'ohne Vater, ohne Mutter, ohne Geschlecht',
+        note: 'Die drei Wörter beschreiben, was im Text fehlt, nicht was von der Person gilt. In der Papyrussprache bezeichnete das erste ein Kind ohne bekannten Vater – ein amtlicher Ausdruck.',
+      },
+      {
+        word: 'griech. basileus Salem',
+        rendered: 'ein König Salems',
+        note: 'Der Verfasser übersetzt beide Namen: Gerechtigkeit und Friede. Solche Namensdeutungen waren ein anerkanntes Auslegungsmittel und begegnen ebenso bei Philon.',
+      },
+      {
+        word: 'griech. dekaten',
+        rendered: 'den Zehnten',
+        note: 'Der Abgabesatz war im Alten Orient und in Griechenland verbreitet, besonders bei Kriegsbeute. Das Gesetz Israels ordnete ihn später den Leviten zu.',
+      },
+      {
+        word: 'griech. en te osphyi tou patros',
+        rendered: 'in den Lenden des Vaters',
+        note: 'Eine feste Wendung für die noch ungeborenen Nachkommen. Sie setzt voraus, dass eine Handlung des Vorfahren die Nachkommen rechtlich betrifft.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Melchisedek gilt als Vorbild des Priestertums Christi und wird im Messkanon genannt; Brot und Wein werden auf die Eucharistie bezogen. Diese Deutung reicht bis in das dritte Jahrhundert zurück.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Vergleich dient allein dem Nachweis, dass es ein Priestertum außerhalb der levitischen Ordnung gibt. Luther wandte sich gegen die Ausdeutung von Brot und Wein, weil der Text davon nichts sagt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Melchisedek erscheint als Bild des ewigen Priesters, das der Geschichte vorangeht. Die Väter warnten zugleich davor, ihn selbst zu einer göttlichen Gestalt zu machen.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Aus dem Schweigen der Erzählung lässt sich keine Aussage über die Person gewinnen; die rabbinische Überlieferung identifiziert Melchisedek verbreitet mit Sem, dem Sohn Noahs. Das Priestertum bleibt an Aaron gebunden.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt wendet die Regel an, dass das Schweigen der Schrift bedeutsam ist, und steht damit im selben Auslegungsbetrieb wie Philon und die Texte aus Qumran. Die Beweisführung ist für ihre Zeit regelgerecht und für die heutige Auslegung fremd.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 14, verse: 20, note: 'Der Zehnte an Melchisedek' },
+      { book: 'ps', chapter: 110, verse: 4, note: 'Der Priester in Ewigkeit' },
+      { book: '4mo', chapter: 18, verse: 21, note: 'Der Zehnte für die Leviten' },
+      { book: 'hebr', chapter: 5, verse: 6, note: 'Die erste Nennung der Ordnung' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 7,
+    from: 11,
+    to: 28,
+    title: '„wo das Priestertum verändert wird“',
+    historicalShort:
+      'Die schärfste Aussage des Neuen Testaments über das Gesetz – und der Grund, warum sie im Brief keinen Angriff darstellt.',
+    historicalLong:
+      'Der Verfasser zieht die Folgerung aus dem Psalmwort. Wenn Jahrhunderte nach der Einsetzung Aarons ein anderer Priester angekündigt wird, dann war die erste Ordnung nicht am Ziel. Und weil Priestertum und Gesetz zusammengehören – das Gesetz regelt Opfer, Reinheit und Zugang durch die Priester –, zieht die Änderung des einen die des anderen nach sich. Das ist ein Rechtsgedanke: Wird die Zuständigkeit verändert, ändert sich die Ordnung.\n\nDer Hinweis auf den Stamm Juda ist historisch bemerkenswert. Er setzt voraus, dass die Herkunft Jesu aus Juda bekannt und unbestritten war, und er nennt ausdrücklich, dass Mose diesem Stamm nichts über das Priestertum gesagt hat. Damit ist die Beweisführung erst nötig geworden: Ein Priester aus Juda ist nach dem Gesetz undenkbar, also braucht es eine andere Ordnung.\n\nDie Aussage, das vorige Gebot werde aufgehoben, weil es schwach und nutzlos sei, ist im Neuen Testament ohne Gegenstück in dieser Schärfe. Sie ist aber nicht polemisch gemeint. Das griechische Wort für aufheben stammt aus dem Rechtswesen und bezeichnet die Außerkraftsetzung einer Bestimmung durch eine neuere; die Kritik gilt der Leistungsfähigkeit, nicht der Herkunft. Der Verfasser bestreitet nirgends, dass das Gesetz von Gott kommt.\n\nDer Schluss stellt beide Ordnungen nebeneinander. Dort viele Priester, weil der Tod sie ablöst; hier einer, der bleibt. Dort tägliche Opfer und Opfer für die eigenen Sünden; hier ein einziges. Die Bemerkung über das tägliche Opfern trifft genau genommen nicht den Versöhnungstag, sondern den laufenden Tempelbetrieb, in dem morgens und abends geopfert wurde. Der letzte Satz nennt das Gegenüber beim Namen: Menschen mit Schwachheit auf der einen Seite, ein durch Eid eingesetzter Sohn auf der anderen.',
+    reception:
+      'Der Satz über die Veränderung des Gesetzes ist in der Kirchengeschichte weit über seinen Zusammenhang hinaus gebraucht worden. Marcion führte ihn im zweiten Jahrhundert für die Verwerfung des Alten Testaments an; die Kirche wies das zurück und behielt den Vers, weil er nach ihrer Lesart nur die Kultordnung betrifft. In der mittelalterlichen Lehre wurde daraus die Unterscheidung von Zeremonial-, Gerichts- und Sittengesetz, von denen nur die ersten beiden als abgelöst galten.\n\nDie Aussage, dass er lebt und für die Seinen bittet, ist zur Grundlage der Lehre von der Fürbitte Christi geworden. Sie steht in der Trostliteratur der Reformation an zentraler Stelle, weil sie den Blick vom Gewissen des Glaubenden auf eine gegenwärtige Tätigkeit lenkt. Zugleich diente sie in der Auseinandersetzung um die Heiligenanrufung: Wenn dieser eine bittet, so das reformatorische Argument, braucht es keine weiteren Fürsprecher.\n\nIn der Auseinandersetzung mit dem Judentum hat der Abschnitt schweren Schaden angerichtet, weil er als Erklärung der Ungültigkeit der Tora gelesen wurde. Die kirchlichen Erklärungen seit 1965 halten dagegen fest, dass der Bund Gottes mit Israel nicht gekündigt ist; die Auslegung des Kapitels ist seither Gegenstand des christlich-jüdischen Gesprächs.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Eine ältere Bestimmung konnte durch eine jüngere außer Kraft gesetzt werden; das Wort dafür gehört in die Sprache der Erlasse. Städte veröffentlichten solche Aufhebungen auf Steintafeln neben dem alten Text.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Im Tempel wurde morgens und abends ein Lamm geopfert, dazu kamen Einzel- und Festopfer; der Betrieb lief ununterbrochen. Von täglichen Opfern zu sprechen, beschrieb den Alltag und nicht den Versöhnungstag.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Priester waren keine Berufsgruppe, sondern eine Abstammungsgemeinschaft; Listen der Priesterfamilien wurden geführt, und wer seine Herkunft nicht belegen konnte, verlor das Amt. Nach der Rückkehr aus Babylon wurden solche Fälle eigens verzeichnet.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Bürge trat im Rechtsverkehr für die Erfüllung eines Vertrages ein und haftete mit dem eigenen Vermögen. Das Wort, das der Brief für Jesus gebraucht, stammt aus diesen Urkunden.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. metatithemenes tes hierosynes',
+        rendered: 'wo das Priestertum verändert wird',
+        note: 'Das Verb bedeutet versetzen oder übertragen. Es beschreibt keinen Bruch, sondern eine Verlagerung der Zuständigkeit von einer Ordnung in eine andere.',
+      },
+      {
+        word: 'griech. athetesis',
+        rendered: 'wird das vorige Gebot aufgehoben',
+        note: 'Ein Ausdruck des Rechtswesens für die Außerkraftsetzung einer Bestimmung. Er bewertet die Herkunft des Gebots nicht, sondern seine Reichweite.',
+      },
+      {
+        word: 'griech. engyos',
+        rendered: 'Ausrichter',
+        note: 'Wörtlich der Bürge, der im Rechtsverkehr mit seinem Vermögen für einen Vertrag einsteht. Luther wählt Ausrichter und verschiebt es damit vom Haften zum Vollziehen.',
+      },
+      {
+        word: 'griech. eis to pantelis',
+        rendered: 'selig machen immerdar',
+        note: 'Der Ausdruck lässt sich zeitlich lesen – für immer – oder dem Maß nach: vollständig. Die Übersetzungen entscheiden sich verschieden, und beide Bedeutungen passen zum Zusammenhang.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Änderung betrifft die Kultordnung, nicht das Sittengesetz; das Priestertum Christi erfüllt, was das levitische vorbildete. Die Fürbitte des lebenden Hohenpriesters ist Grund der Fürbitte der Kirche.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Weil dieser eine Priester lebt und bittet, sind weitere Fürsprecher überflüssig; der Text wurde in der Reformation gegen die Heiligenanrufung angeführt. Die Einmaligkeit des Opfers ist der Kern der Argumentation.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das unvergängliche Priestertum wird von der Auferstehung her verstanden: Was bleibt, ist nicht ein Amt, sondern ein Lebender. Die Liturgie versteht sich als Teilhabe an seinem gegenwärtigen Dienst.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Tora ist nicht aufgehoben, und ein Priestertum außerhalb Aarons ist in ihr nicht vorgesehen. Die Beweisführung des Briefes gilt als innerchristliche Deutung, die für das Judentum keine Geltung beansprucht.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt spricht vom Tempelbetrieb in der Gegenwartsform, was für eine Abfassung vor 70 spräche; andere beobachten, dass der Verfasser die Ordnung aus der Schrift und nicht aus der Anschauung kennt. Die Frage ist nicht entschieden.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 110, verse: 4, note: 'Der Eid über den Priester' },
+      { book: 'roem', chapter: 8, verse: 34, note: 'Er tritt für uns ein' },
+      { book: '2mo', chapter: 29, verse: 38, note: 'Das tägliche Opfer' },
+      { book: 'hebr', chapter: 9, verse: 12, note: 'Das eine Opfer' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 8,
+    from: 1,
+    to: 13,
+    title: '„ein neues Testament“',
+    historicalShort:
+      'Das längste Schriftzitat des Neuen Testaments – und der Ausdruck, aus dem der Name unserer Bibelteile geworden ist.',
+    historicalLong:
+      'Der Verfasser nennt selbst, was für ihn die Hauptsache ist: ein Hoherpriester, der zur Rechten sitzt. Sitzen ist dabei der entscheidende Punkt. Im Tempel gab es für die diensttuenden Priester keine Sitzgelegenheit; der Dienst war nie abgeschlossen. Ein sitzender Priester ist ein Priester, dessen Arbeit getan ist – ein Bild, das der Brief später ausdrücklich ausführt.\n\nDie Vorstellung eines himmlischen Heiligtums, dessen Abbild das irdische ist, hat zwei Wurzeln. Die eine liegt im zweiten Buch Mose, wo Mose ein Muster auf dem Berg gezeigt wird; die jüdische Überlieferung hat daraus ein himmlisches Heiligtum entwickelt, und die Sabbatopferlieder aus Qumran beschreiben den Gottesdienst dort. Die andere ist griechisch: Platons Unterscheidung von Urbild und Abbild war Gemeingut der gebildeten Sprache. Der Brief verbindet beides, ohne eines von beidem auszubuchstabieren.\n\nDas Zitat aus dem Prophetenbuch Jeremia ist mit fünf Versen das längste zusammenhängende Schriftzitat des Neuen Testaments. Es stammt aus der Zeit nach dem Untergang Jerusalems 587 vor Christus und antwortet auf eine Katastrophe: Der Bund ist gebrochen, und die Zusage lautet auf einen neuen, der nicht mehr auf Tafeln, sondern in die Herzen geschrieben ist. Im Judentum wurde diese Stelle nicht als Ablösung der Tora gelesen, sondern als Zusage ihrer Verinnerlichung.\n\nDas griechische Wort, das hier Testament übersetzt, bedeutet zunächst Verfügung und Vermächtnis, in der griechischen Bibel steht es für den Bund. Aus der lateinischen Wiedergabe mit testamentum sind die Namen Altes und Neues Testament entstanden – eine Buchbezeichnung, die auf diesen Vers zurückgeht. Der Schlusssatz, das Erste sei alt geworden und nahe am Verschwinden, ist der schärfste des Kapitels; das griechische Wort beschreibt das Altern eines Menschen.',
+    reception:
+      'Aus diesem Zitat stammt die Einteilung der christlichen Bibel. Melito von Sardes verwendet um 170 zum ersten Mal die Bezeichnung Alter Bund für die Schriften Israels, Tertullian übersetzt sie mit testamentum, und seit dem dritten Jahrhundert heißen die beiden Teile so. Die Bezeichnung hat eine Wertung eingetragen, die im Zitat selbst nicht steht; mehrere Kirchen und Bibelausgaben sprechen deshalb seit dem 20. Jahrhundert von Erstem Testament oder von der Hebräischen Bibel.\n\nDer Schlusssatz über das Alte, das nahe am Verschwinden ist, hat die Ersetzungslehre gestützt, nach der die Kirche an die Stelle Israels getreten sei. Diese Lehre ist nach 1945 in fast allen Kirchen ausdrücklich zurückgewiesen worden; die Erklärung Nostra aetate von 1965 und zahlreiche evangelische Synodalbeschlüsse halten fest, dass Gottes Bund mit Israel ungekündigt bleibt. Die Auslegung des Verses gehört seither zu den schwierigsten Aufgaben der Predigt.\n\nDie Zusage vom Gesetz im Herzen hat eine eigene, breitere Wirkung gehabt. Sie steht hinter der Rede vom Gewissen als innerer Stimme, hinter pietistischen Vorstellungen von der Herzensfrömmigkeit und in der Aufklärung hinter dem Gedanken einer inneren Verpflichtung ohne äußeren Zwang.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Der Tempeldienst war in vierundzwanzig Abteilungen geordnet, die einander wochenweise ablösten; das Los entschied über die einzelnen Verrichtungen. Kein Priester war für sich allein zuständig, und keiner war je fertig.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Stiftshütte war ein zerlegbares Zeltheiligtum mit Rahmen, Decken und Vorhängen, das mitgeführt wurde. Ihre Maße und Bauteile sind im zweiten Buch Mose auf mehreren Kapiteln beschrieben.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein Testament regelte den Übergang von Besitz nach dem Tod und wurde vor Zeugen versiegelt; ein Bund dagegen war ein Vertrag unter Lebenden. Das griechische Wort deckt beides ab, was die Übersetzungen bis heute beschäftigt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Lesen und Schreiben beherrschte nur eine Minderheit; Verträge wurden vorgelesen und mit Zeugen bestätigt. Eine Zusage, alle würden Gott kennen, ohne belehrt zu werden, hob eine Grenze auf, die den Alltag bestimmte.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ekathisen en dexia',
+        rendered: 'der da sitzt zu der Rechten',
+        note: 'Das Sitzen ist der Kern der Aussage: Es zeigt einen abgeschlossenen Dienst. Priester standen, solange sie im Amt waren.',
+      },
+      {
+        word: 'griech. hypodeigmati kai skia',
+        rendered: 'dem Vorbilde und dem Schatten',
+        note: 'Zwei Wörter für Abbild und Schatten, die an Platons Unterscheidung von Urbild und Abbild erinnern. Der Brief verbindet damit griechische Denkform und die Musteroffenbarung am Berg.',
+      },
+      {
+        word: 'griech. diatheken kainen',
+        rendered: 'ein neues Testament',
+        note: 'Das Wort bedeutet Verfügung, Vermächtnis und in der griechischen Bibel Bund. Die lateinische Wiedergabe mit testamentum hat den Namen der beiden Bibelteile hervorgebracht.',
+      },
+      {
+        word: 'griech. gerraskon',
+        rendered: 'alt und überjahrt',
+        note: 'Das Verb beschreibt das Altern eines Menschen. Es ist der schärfste Ausdruck des Kapitels und die Grundlage seiner belasteten Wirkungsgeschichte.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der neue Bund erfüllt den alten und hebt ihn nicht auf; die Kirche versteht sich als in Israel eingepflanzt. Nostra aetate hat 1965 die Ersetzungslehre ausdrücklich zurückgewiesen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Gesetz im Herzen ist Werk des Geistes und nicht Leistung des Menschen; darin liegt der Unterschied zwischen Buchstabe und Geist. Der neue Bund ist ganz Zusage.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das himmlische Heiligtum ist Gegenstand der Liturgie, die als Teilnahme am oberen Gottesdienst verstanden wird. Der irdische Kult ist nicht wertlos, sondern Abbild.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Zusage bei Jeremia gilt Israel und Juda und meint die Verinnerlichung der Tora, nicht ihre Ablösung. Dass ein christlicher Text sie als Ankündigung des eigenen Bundes liest, wird als Aneignung angesehen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Das Zitat folgt der griechischen Fassung und weicht an mehreren Stellen vom hebräischen Text ab, unter anderem in der Wendung über das Nichtachten. Diese Abweichungen tragen die Argumentation des Verfassers mit.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jer', chapter: 31, verse: 31, note: 'Die Zusage des neuen Bundes' },
+      { book: '2mo', chapter: 25, verse: 40, note: 'Das Muster auf dem Berge' },
+      { book: 'ps', chapter: 110, verse: 1, note: 'Setze dich zu meiner Rechten' },
+      { book: '2kor', chapter: 3, verse: 6, note: 'Diener des neuen Bundes' },
+    ],
+  },
 ];
 
 /**

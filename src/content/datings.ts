@@ -2222,6 +2222,71 @@ export const DATINGS: Record<string, Dating> = {
     written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
     epoch: 'urkirche',
   },
+  'hebr 1,5': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 2,1': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 2,10': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 3,1': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 3,12': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 4,1': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 5,1': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 5,11': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 6,1': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 6,13': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 7,1': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 7,11': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
+  'hebr 8,1': {
+    events: 'Empfängerkreis umstritten, am ehesten Rom oder Kleinasien',
+    written: 'zwischen 60 und 90 n. Chr., vor der Erwähnung bei Clemens um 96',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

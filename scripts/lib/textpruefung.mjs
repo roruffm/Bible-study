@@ -112,6 +112,33 @@ export function stelleFehlt(bookId, chapter, verse) {
   return null;
 }
 
+/* --------------------------------------------------------- Seiten der Welt */
+
+let seitenCache = null;
+
+/**
+ * Die erlaubten Seiten der Lebenswelt, aus der Typdeklaration gelesen.
+ *
+ * Die Liste steht in `commentary.ts` und soll nicht zweimal gepflegt werden.
+ * Ein erfundener Wert fällt sonst erst beim Übersetzen auf – also nach dem
+ * Schreiben, und das ist genau der Umweg, den diese Datei vermeiden soll.
+ */
+export function seitenDerWelt() {
+  if (!seitenCache) {
+    const quelle = readFileSync(join(ROOT, 'src', 'content', 'commentary.ts'), 'utf8');
+    const block = quelle.match(/export type WorldAspect =([^;]+);/);
+    if (!block) throw new Error('WorldAspect ließ sich nicht lesen');
+    seitenCache = new Set([...block[1].matchAll(/'([a-z]+)'/g)].map((m) => m[1]));
+  }
+  return seitenCache;
+}
+
+/** Notizen eines Artikels, deren Seite es nicht gibt. */
+export function unbekannteSeiten(entry) {
+  const erlaubt = seitenDerWelt();
+  return (entry.world ?? []).map((w) => w.aspect).filter((a) => !erlaubt.has(a));
+}
+
 /**
  * Alle Zitate und Anhaltspunkte eines Artikels, die im Versbereich stehen
  * müssen: Bibelworte im Titel und das, was ein Urtext-Wort im deutschen Text

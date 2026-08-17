@@ -14,9 +14,9 @@
  * `epoch` – das wandert nach `datings.ts`, nicht in den Artikel.
  *
  * Geprüft wird alles, was sich vor dem Schreiben prüfen lässt: Pflichtfelder,
- * Überschneidungen mit vorhandenen Abschnitten, Zitate im Titel, Anhaltspunkte
- * der Urtext-Wörter, Stellenangaben der Querverweise und Absätze, die dasselbe
- * sagen. Der Grund ist praktisch: Findet `check-references.mjs` diese Fehler
+ * Seiten der Lebenswelt, Überschneidungen mit vorhandenen Abschnitten, Zitate
+ * im Titel, Anhaltspunkte der Urtext-Wörter, Stellenangaben der Querverweise
+ * und Absätze, die dasselbe sagen. Der Grund ist praktisch: Findet `check-references.mjs` diese Fehler
  * erst hinterher, muss die Korrektur in einer Datei mit über anderthalb
  * Millionen Zeichen erfolgen statt in der Vorlage, aus der die Artikel kommen.
  * Nichts wird geschrieben, solange eine Beanstandung offen ist.
@@ -25,7 +25,12 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { doppelteAbsaetze, fehlendeAnhaltspunkte, stelleFehlt } from './lib/textpruefung.mjs';
+import {
+  doppelteAbsaetze,
+  fehlendeAnhaltspunkte,
+  stelleFehlt,
+  unbekannteSeiten,
+} from './lib/textpruefung.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const COMMENTARY_FILE = join(ROOT, 'src', 'content', 'commentary.ts');
@@ -81,6 +86,9 @@ for (const a of ARTICLES) {
     if (!a[feld]) melde(`"${feld}" fehlt`);
   }
   if (!a.world?.length) melde('keine Notiz zur Welt des Textes');
+  for (const seite of unbekannteSeiten(a)) {
+    melde(`"${seite}" ist keine Seite der Lebenswelt`);
+  }
   if (!a.terms?.length) melde('kein Wort aus dem Urtext');
   if (!a.reception) melde('keine Wirkungsgeschichte');
   if (!a.interpretations || a.interpretations.length < 3) melde('weniger als drei Auslegungen');
