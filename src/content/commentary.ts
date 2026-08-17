@@ -31183,6 +31183,982 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: '2kor', chapter: 3, verse: 6, note: 'Diener des neuen Bundes' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'hebr',
+    chapter: 9,
+    from: 1,
+    to: 10,
+    title: '„das äußerliche Heiligtum“',
+    historicalShort:
+      'Eine Führung durch das Zeltheiligtum – aufgezählt wird, was drinsteht, und ausdrücklich nicht gedeutet.',
+    historicalLong:
+      'Der Verfasser beschreibt nicht den Tempel in Jerusalem, sondern die Stiftshütte, wie sie im zweiten Buch Mose steht. Das ist eine Entscheidung: Der Tempel war ein steinernes Bauwerk mit Höfen und Hallen, das Zelt ein zerlegbarer Bau der Wüstenzeit. Wer über den Kult reden wollte, ohne über die Gegenwart zu reden, wählte das Zelt – und der Brief spricht durchweg von ihm.\n\nDie Aufzählung enthält Einzelheiten, die nicht ganz zur Vorlage passen. Das Räucheraltar oder Räucherfass wird ins Allerheiligste gestellt, während das zweite Buch Mose es davor kennt; die Bundeslade enthält nach der Beschreibung Krug, Stab und Tafeln, während das erste Buch der Könige nur die Tafeln nennt. Ob der Verfasser einer anderen Überlieferung folgt, dem Ort des Gebrauchs am Versöhnungstag oder schlicht aus dem Gedächtnis zitiert, ist umstritten und seit den Kirchenvätern diskutiert.\n\nAuffällig ist der Abbruch. Nachdem er die Cherubim genannt hat, bricht der Verfasser ab: davon sei jetzt nicht im Einzelnen zu reden. Damit lehnt er ausdrücklich ab, was in seiner Zeit üblich war. Philon von Alexandria deutet jedes Stück des Heiligtums allegorisch – der Leuchter auf die Planeten, der Vorhang auf die Elemente –, und Josephus tut Ähnliches. Der Brief kennt diese Auslegungsweise und benutzt sie nicht.\n\nSeine eigene Deutung ist anderer Art. Sie fragt nicht, wofür ein Gegenstand steht, sondern was die Einrichtung des Raums bedeutet: Solange es einen Vorraum gibt, in den täglich gegangen wird, und einen inneren Raum, der einmal im Jahr einem Einzigen offensteht, ist der Weg gerade nicht offen. Der geschlossene Vorhang ist das Argument. Der Schlussvers nennt, was der Kult leistet und was nicht: äußere Reinheit ja, ein reines Gewissen nein.',
+    reception:
+      'Die Beschreibung ist über Jahrhunderte die Grundlage der bildlichen Darstellung der Stiftshütte gewesen. Mittelalterliche Bibelhandschriften, die Rekonstruktionen der Gelehrten des 17. Jahrhunderts und die Modelle, die im 19. Jahrhundert durch die Erweckungsversammlungen wanderten, folgen ihr; die Abweichungen vom zweiten Buch Mose wurden dabei meist stillschweigend ausgeglichen.\n\nDer Verzicht auf die allegorische Ausdeutung ist selbst zum Gegenstand geworden. Die Kirchenväter haben ihn nicht durchgehalten: Origenes deutet jedes Gerät geistlich, und die mittelalterliche Auslegung sah in Leuchter, Tisch und Lade eine Lehre von Kirche, Sakrament und Schrift. Die Reformatoren kehrten zum Text zurück und lehnten die Ausdeutung ab, weil der Brief selbst sie ablehnt.\n\nDie Unterscheidung zwischen äußerer Reinheit und gereinigtem Gewissen hat in der Frömmigkeitsgeschichte weit gewirkt. Sie steht hinter der reformatorischen Kritik an Werken, hinter der pietistischen Herzensreligion und in der Neuzeit hinter der Unterscheidung von Ritual und Ethik, die auch in der Religionswissenschaft gebraucht wird.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Das Zeltheiligtum bestand aus einem Vorraum und einem inneren Raum, getrennt durch einen Vorhang; das Ganze war zerlegbar und wurde getragen. Der Tempel in Jerusalem übernahm diese Zweiteilung in Stein.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Auf dem Tisch lagen zwölf Brote, die wöchentlich erneuert und von den Priestern gegessen wurden. Der Leuchter mit sieben Armen brannte ständig; nach der Eroberung Jerusalems wurde er im Triumphzug nach Rom getragen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Philon und Josephus deuteten die Geräte des Heiligtums auf Gestirne und Elemente und machten den Kult so für gebildete Griechen verständlich. Diese Auslegung war das gängige Verfahren, wenn man den Tempel erklären wollte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Reinheitsvorschriften über Speise, Trank und Waschungen regelten den Zugang zum Heiligtum und den Umgang untereinander. Sie waren kein Nebengebiet, sondern der Rahmen des täglichen Lebens.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. to hagion kosmikon',
+        rendered: 'das äußerliche Heiligtum',
+        note: 'Wörtlich ein weltliches Heiligtum, also eines, das zu dieser Welt gehört. Luther gibt es mit äußerlich wieder und trifft damit die Absicht: nicht wertlos, aber diesseitig.',
+      },
+      {
+        word: 'griech. parabole',
+        rendered: 'ein Gleichnis auf die gegenwärtige Zeit',
+        note: 'Das Wort für Gleichnis oder Hinweis. Das Heiligtum steht nicht für etwas anderes, sondern zeigt an, wie es um die Gegenwart bestellt ist.',
+      },
+      {
+        word: 'griech. syneidesin',
+        rendered: 'nach dem Gewissen',
+        note: 'Ein Wort der griechischen Philosophie für das Mitwissen um sich selbst. Der Brief macht es zum Maßstab: Ein Opfer, das dorthin nicht reicht, bleibt äußerlich.',
+      },
+      {
+        word: 'griech. kairou diorthoseos',
+        rendered: 'bis auf die Zeit der Besserung',
+        note: 'Ein Ausdruck für die Zurechtbringung, auch für die Reform eines Gemeinwesens. Er beschreibt die alte Ordnung als befristet, nicht als falsch.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das irdische Heiligtum ist Vorbild des himmlischen und behält darin seinen Wert; die Liturgie führt seine Ordnung fort. Der Text begründet den sakramentalen Zugang, den er zugleich übersteigt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der geschlossene Vorhang zeigt, dass der Kult den Zugang gerade nicht öffnete. Luther liest daraus, dass äußere Ordnungen das Gewissen nicht erreichen – das wurde zum Maßstab seiner Kritik.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Kirchenraum bewahrt die Zweiteilung: Die Ikonostase entspricht dem Vorhang und wird zu bestimmten Zeiten geöffnet. Das Heiligtum ist Abbild und wird nicht abgeschafft.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Reinheitsvorschriften sind Gebote und keine Vorstufe; ihr Sinn liegt in der Heiligung des Alltags, nicht in einer noch ausstehenden Zeit. Die Beschreibung des Briefes weicht zudem in Einzelheiten vom Text der Tora ab.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Verfasser beschreibt das Zelt der Wüstenzeit und nicht den Tempel seiner Gegenwart – ein Hinweis darauf, dass er den Kult aus der Schrift und nicht aus eigener Anschauung kennt. Die Abweichungen bei Räucheraltar und Lade werden verschieden erklärt.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 25, verse: 22, note: 'Der Gnadenstuhl zwischen den Cherubim' },
+      { book: '3mo', chapter: 16, verse: 2, note: 'Der Zugang einmal im Jahr' },
+      { book: '2mo', chapter: 26, verse: 33, note: 'Der Vorhang zwischen den Räumen' },
+      { book: 'hebr', chapter: 10, verse: 20, note: 'Der Weg durch den Vorhang' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 9,
+    from: 11,
+    to: 28,
+    title: '„ohne Blut vergießen geschieht keine Vergebung“',
+    historicalShort:
+      'Der Kern der Opferdeutung des Briefes – und ein Wortspiel, das die Übersetzungen bis heute auseinandertreibt.',
+    historicalLong:
+      'Der Abschnitt setzt das Blut der Tieropfer und das Blut Christi in ein Verhältnis, das nicht Steigerung, sondern Ablösung ist. Dahinter steht die Ordnung des Versöhnungstages: Der Hohepriester nahm Blut vom Stier und vom Bock, ging damit hinter den Vorhang und sprengte es auf die Deckplatte der Lade. Ein zweiter Bock wurde in die Wüste geschickt. Daneben nennt der Verfasser die Asche der roten Kuh, ein Reinigungsmittel für die Berührung mit Toten, das im vierten Buch Mose beschrieben wird und in der Mischna einen eigenen Traktat hat.\n\nIm Zentrum steht ein Wortspiel, das sich nicht übersetzen lässt. Das griechische Wort für Bund bedeutet auch Testament, und der Verfasser wechselt mitten im Satz die Bedeutung: Erst geht es um den Bund, den ein Mittler stiftet, dann um das Testament, das erst mit dem Tod des Erblassers Kraft bekommt. Luther entscheidet sich durchgehend für Testament, andere Übersetzungen für Bund, und einige wechseln wie das Griechische. Die Auslegung hängt an dieser Wahl.\n\nDer Satz, ohne Blutvergießen geschehe keine Vergebung, ist kein Zitat, sondern eine Zusammenfassung des Verfassers, und er schränkt selbst ein: fast alles werde mit Blut gereinigt. Das Gesetz kennt Ausnahmen – für Arme reichte Mehl als Sündopfer. Wer den Satz als Grundgesetz liest, überdehnt ihn; wer die Einschränkung übersieht, verwechselt eine Beobachtung mit einem Prinzip.\n\nDer Schluss stellt drei Einmaligkeiten nebeneinander: Der Mensch stirbt einmal, danach folgt das Gericht; Christus ist einmal geopfert; er wird ein zweites Mal erscheinen. Das Wort für einmal trägt den ganzen Abschnitt und steht dem alle Jahre des Versöhnungstages gegenüber. Die Erwartung des zweiten Erscheinens ist dabei am Bild des Versöhnungstages entlanggedacht: Das Volk wartete draußen, bis der Hohepriester zurückkam.',
+    reception:
+      'Der Satz über das Blutvergießen ist zum meistzitierten Vers der Opfertheologie geworden. Anselm von Canterbury baute im elften Jahrhundert seine Lehre von der Genugtuung auf dieser Linie auf, die protestantische Orthodoxie entfaltete daraus die Lehre vom stellvertretenden Strafleiden, und die Erweckungsbewegung machte ihn zum Kernsatz ihrer Predigt. Seit dem 19. Jahrhundert steht dieselbe Linie in der Kritik: Eine Versöhnung, die Blut verlangt, sei ein Gottesbild, das man nicht mehr teilen könne. Die Auseinandersetzung ist innerhalb der Kirchen bis heute offen.\n\nDie Aussage vom einmaligen Opfer wurde in der Reformation zum Hauptargument gegen die Messe als Opferhandlung; das Konzil von Trient antwortete 1562 mit der Unterscheidung zwischen dem blutigen Opfer am Kreuz und seiner unblutigen Vergegenwärtigung. Die Formel steht bis heute im Zentrum der ökumenischen Gespräche über das Abendmahl.\n\nDer Vers, dass dem Menschen bestimmt ist, einmal zu sterben, gehört zu den meistgebrauchten Sätzen der Begräbnisliturgie. Er hat zugleich der Auseinandersetzung mit Vorstellungen von Seelenwanderung gedient, seit Tertullian und bis in die Diskussionen des 20. Jahrhunderts.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Am Versöhnungstag wurde Blut hinter den Vorhang getragen und gesprengt, ein zweiter Bock in die Wüste geschickt. Die Asche einer roten Kuh diente der Reinigung nach der Berührung mit Toten und hat in der Mischna einen eigenen Traktat.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein römisches Testament wurde vor Zeugen versiegelt und erst nach dem Tod des Erblassers geöffnet; bis dahin blieb es wirkungslos und änderbar. Genau diese Regel nutzt der Text für sein Wortspiel.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Opfertiere kosteten Geld: Ein Stier war ein Vermögen, ein Taubenpaar erschwinglich. Das Gesetz sah gestaffelte Opfer vor, und für die Ärmsten genügte Mehl – Blut war nicht ausnahmslos gefordert.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Während der Hohepriester im Allerheiligsten war, wartete das Volk im Hof auf sein Herauskommen; sein Erscheinen zeigte an, dass die Sühne angenommen war. Das Bild vom zweiten Erscheinen folgt diesem Ablauf.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. diatheke',
+        rendered: 'ein Mittler des neuen Testaments',
+        note: 'Dasselbe Wort meint Bund und Testament. Der Verfasser wechselt mitten im Gedankengang die Bedeutung; jede Übersetzung muss sich entscheiden und verliert dabei die andere Seite.',
+      },
+      {
+        word: 'griech. choris haimatekchysias',
+        rendered: 'ohne Blut vergießen',
+        note: 'Ein Wort, das vor diesem Brief nicht belegt ist. Der Satz ist kein Zitat, sondern eine Zusammenfassung, die der Verfasser selbst mit einem fast einschränkt.',
+      },
+      {
+        word: 'griech. hapax',
+        rendered: 'einmal in das Heilige eingegangen',
+        note: 'Das Schlüsselwort des Abschnitts, dem alle Jahre des Versöhnungstages entgegengesetzt. Es beschreibt nicht Seltenheit, sondern Unwiederholbarkeit.',
+      },
+      {
+        word: 'griech. antitypa',
+        rendered: 'ein Gegenbild des wahrhaftigen',
+        note: 'Das Gegenstück zum Urbild, im Druckwesen später der Abdruck. Das irdische Heiligtum ist danach nicht Fälschung, sondern Abdruck des Wirklichen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Opfer ist einmalig und wird in der Messe unblutig vergegenwärtigt, nicht wiederholt; so hat es das Konzil von Trient bestimmt. Der Mittler des neuen Bundes handelt gegenwärtig für die Seinen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Einmaligkeit schließt jede Wiederholung aus; der Text war das Hauptargument gegen das Messopfer. Luther liest das Wort durchgehend als Testament, weil der Tod des Erblassers den Gedankengang trägt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Liturgie ist Teilnahme am einen Opfer, nicht seine Wiederholung; das Blut reinigt, indem es Leben mitteilt. Der Akzent liegt auf der Heilung, nicht auf der Bezahlung.',
+      },
+      {
+        tradition: 'Kritische Theologie',
+        text: 'Seit dem 19. Jahrhundert wird gefragt, ob eine Versöhnung durch Blut ein Gottesbild voraussetzt, das dem Neuen Testament sonst widerspricht. Gegenstimmen halten fest, dass der Text nicht von einem zornigen Gott redet, der befriedigt wird, sondern von einem, der selbst handelt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt nutzt das Doppelte des griechischen Wortes für Bund und Testament in einer Weise, die nur im Griechischen möglich ist; im hebräischen Denken gibt es diesen Übergang nicht. Das gilt als Beleg für die griechische Bildung des Verfassers.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 16, verse: 15, note: 'Das Blut hinter dem Vorhang' },
+      { book: '4mo', chapter: 19, verse: 9, note: 'Die Asche der roten Kuh' },
+      { book: '2mo', chapter: 24, verse: 8, note: 'Das Blut des Bundes' },
+      { book: '3mo', chapter: 5, verse: 11, note: 'Mehl als Opfer für die Armen' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'hebr',
+    chapter: 10,
+    from: 1,
+    to: 18,
+    title: '„den Leib aber hast du mir bereitet“',
+    historicalShort:
+      'Ein Psalmzitat, das nur in der griechischen Fassung so lautet – und darauf ruht die Schlussfolgerung des ganzen Briefes.',
+    historicalLong:
+      'Der Verfasser bringt seine Beweisführung zum Abschluss und beginnt mit einer Beobachtung, die jeder Tempelbesucher machen konnte: Die Opfer wiederholen sich. Aus der Wiederholung schließt er, dass sie nicht ans Ziel bringen; was wirkt, muss nicht erneuert werden. Das ist kein Angriff auf den Kult, sondern eine Folgerung aus seiner Ordnung. Der jährliche Versöhnungstag hält die Erinnerung an die Sünde wach, statt sie zu beenden.\n\nDas Zitat stammt aus einem Psalm und lautet im hebräischen Text anders: Dort heißt es, Gott habe dem Beter die Ohren gegraben oder geöffnet – ein Bild für Gehorsam. Die griechische Übersetzung hat daraus einen Leib gemacht, den Gott bereitet hat. Wie es zu dieser Abweichung kam, ist ungeklärt; erwogen werden ein Lesefehler, eine sinngemäße Wiedergabe oder eine abweichende hebräische Vorlage. Der Verfasser arbeitet mit der griechischen Fassung, und seine Deutung auf den Leib Christi ist ohne sie nicht möglich.\n\nDer Gegensatz zwischen Opfer und Gehorsam, den der Psalm ausspricht, ist im Alten Testament weit verbreitet. Die Propheten Amos, Hosea, Jesaja und Micha sagen Ähnliches, und das Wort, Gehorsam sei besser als Opfer, steht im ersten Buch Samuel. Der Brief steht damit in einer Linie der Kultkritik, die aus Israel selbst kommt und nicht von außen an es herangetragen wird.\n\nDie Schlussfolgerung wird in zwei Bildern zugespitzt. Die Priester stehen und opfern immer wieder; dieser sitzt, weil sein Werk getan ist. Und weil nach der Zusage bei Jeremia der Sünden nicht mehr gedacht wird, ist ein weiteres Opfer gegenstandslos. Das Zitat aus Jeremia, das im achten Kapitel in voller Länge stand, wird hier nur noch mit den beiden entscheidenden Zeilen wiederholt – eine Klammer um den Hauptteil des Briefes.',
+    reception:
+      'Der Vers vom bereiteten Leib ist zu einem Grundtext der Lehre von der Menschwerdung geworden. Die Kirchenväter zitierten ihn gegen die Auffassung, Christus habe nur einen Scheinleib gehabt; Ambrosius und Augustinus verwenden ihn so. In der Liturgie steht er in der Weihnachtszeit, und Händel vertonte ihn im Messias.\n\nDie Aussage, dass durch das eine Opfer nichts mehr zu opfern bleibt, ist die schärfste Waffe der Reformation im Streit um die Messe gewesen. Die Confessio Augustana führt sie 1530 an, und die englischen Artikel von 1571 sprechen von einem vollkommenen und ausreichenden Opfer. Das Konzil von Trient hielt dagegen die unblutige Vergegenwärtigung fest, und die ökumenischen Gespräche des 20. Jahrhunderts haben an dieser Stelle die größte Annäherung erreicht, ohne den Unterschied aufzulösen.\n\nDie Abweichung des Zitats vom hebräischen Text gehört zu den bekanntesten Fällen ihrer Art und ist seit Hieronymus diskutiert. Sie ist zu einem Standardbeispiel in der Frage geworden, welche Textfassung als maßgeblich gilt – eine Frage, die in der Reformation, in der katholischen Bibelwissenschaft und in der heutigen Übersetzungspraxis verschieden beantwortet wird.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Der Versöhnungstag kehrte jedes Jahr wieder, und mit ihm das Bekenntnis der Sünden des ganzen Volkes. Die Wiederholung war Teil des Kalenders und wurde nicht als Mangel empfunden.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Priester standen im Dienst, oft stundenlang; im Tempel gab es für sie keine Sitzgelegenheit. Die Gegenüberstellung von Stehen und Sitzen beschreibt zwei Arbeitshaltungen, nicht zwei Stimmungen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die griechische Übersetzung der Schriften war für die meisten Juden außerhalb des Landes die Bibel; Hebräisch konnten wenige. Wer zitierte, zitierte griechisch, auch wenn der Wortlaut abwich.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Eine Schuld galt als getilgt, wenn die Urkunde durchgestrichen oder zerstört wurde; danach war eine erneute Forderung unzulässig. Der Gedanke, dass nach der Vergebung kein Opfer mehr nötig ist, folgt dieser Logik.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. soma de katertiso moi',
+        rendered: 'den Leib aber hast du mir bereitet',
+        note: 'Im hebräischen Psalm stehen an dieser Stelle die geöffneten Ohren. Die Abweichung der griechischen Fassung trägt die ganze Deutung des Abschnitts.',
+      },
+      {
+        word: 'griech. anamnesis hamartion',
+        rendered: 'ein Gedächtnis der Sünden',
+        note: 'Dasselbe Wort steht in den Abendmahlsworten für das Gedächtnis Christi. Hier bezeichnet es, was die Wiederholung des Opfers bewirkt: Erinnerung statt Erledigung.',
+      },
+      {
+        word: 'griech. skian ton mellonton agathon',
+        rendered: 'den Schatten von den zukünftigen Gütern',
+        note: 'Der Schatten ist kein Trugbild, sondern der Umriss eines wirklichen Gegenstandes. Er setzt voraus, dass etwas da ist, das ihn wirft.',
+      },
+      {
+        word: 'griech. ephapax',
+        rendered: 'geheiligt auf einmal',
+        note: 'Eine Verstärkung des Wortes für einmal: ein für allemal. Es steht dem täglich und dem alle Jahre des Kults ausdrücklich gegenüber.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das eine Opfer wird in der Messe gegenwärtig, nicht wiederholt; das Gedächtnis ist dabei kein bloßes Erinnern, sondern eine Vergegenwärtigung. Der bereitete Leib begründet die Wirklichkeit der Menschwerdung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Wo Vergebung ist, ist kein Opfer mehr – dieser Satz war der Kern der Kritik am Messopfer. Das Abendmahl ist Gabe und Zusage, nicht Darbringung.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Liturgie ist Teilnahme am einen Opfer, das den Zeiten enthoben ist; Wiederholung und Vergegenwärtigung sind darum keine Gegensätze. Der Leib, den Gott bereitet hat, ist der Ort der Heilung der Menschheit.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Kritik an einem Kult ohne Gehorsam stammt aus der eigenen Prophetie und hebt die Opfer nicht auf. Nach der Zerstörung des Tempels traten Gebet, Umkehr und Wohltat an ihre Stelle, ohne dass die Tora aufgehoben wäre.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Beweisführung hängt an einer Lesart der griechischen Bibel, die vom hebräischen Text abweicht. Der Fall gilt als Musterbeispiel dafür, wie neutestamentliche Argumentation an einer bestimmten Textfassung hängt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 40, verse: 7, note: 'Der zitierte Psalm' },
+      { book: '1sam', chapter: 15, verse: 22, note: 'Gehorsam ist besser als Opfer' },
+      { book: 'jer', chapter: 31, verse: 34, note: 'Ihrer Sünde nicht mehr gedenken' },
+      { book: 'hos', chapter: 6, verse: 6, note: 'Liebe und nicht Opfer' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 10,
+    from: 19,
+    to: 39,
+    title: '„nicht verlassen unsere Versammlung“',
+    historicalShort:
+      'Die Anwendung: dreimal lasset uns, dann die schärfste Warnung des Briefes und die Erinnerung an eine überstandene Verfolgung.',
+    historicalLong:
+      'Der Abschnitt wendet die Lehre in Anweisungen. Drei Aufforderungen stehen nebeneinander – hinzugehen, festhalten, aufeinander achten –, und in der Auslegungsgeschichte sind sie früh auf Glaube, Hoffnung und Liebe verteilt worden. Das Wort für hinzugehen kommt aus dem Kult und bezeichnet das Herantreten des Priesters an den Altar; hier tun es alle.\n\nDie Bemerkung über das Fernbleiben von der Versammlung ist die älteste Nachricht über ein Problem, das die Kirche seither begleitet. Der Grund wird nicht genannt. Denkbar ist Furcht vor Anzeige, denkbar ist Ermüdung, denkbar ist der Rückzug in die Synagoge, aus der die Angeredeten vermutlich kamen. Die Warnung vor dem mutwilligen Sündigen legt eher die erste Erklärung nahe: Wer in einem Verfahren stand, konnte sich durch Widerruf lösen, und der Text spricht von einem Verhalten, das eine Erkenntnis voraussetzt.\n\nDie Warnung selbst folgt wieder dem Schluss vom Kleineren zum Größeren und beruft sich auf das Gesetz: Ein Verstoß gegen die Tora wurde auf zwei oder drei Zeugen hin geahndet. Die drei Ausdrücke, mit denen der Abfall beschrieben wird – mit Füßen treten, das Blut für gemein achten, den Geist schmähen –, sind Rechtsbegriffe der Beleidigung. Es geht nicht um einen Fehltritt, sondern um eine öffentliche Verächtlichmachung.\n\nDer Schluss erinnert an eine überstandene Verfolgungszeit und nennt Einzelheiten: öffentliche Bloßstellung, Solidarität mit Gefangenen, Beschlagnahme von Besitz. Von Todesopfern ist nicht die Rede – der Brief sagt an anderer Stelle ausdrücklich, sie hätten noch nicht bis aufs Blut widerstanden. Das passt zu dem, was über die Vertreibung der Juden aus Rom unter Claudius im Jahr 49 bekannt ist, und weniger zu den Hinrichtungen unter Nero. Es ist eines der Argumente für Rom als Ort der Adressaten.',
+    reception:
+      'Der Vers über das Nichtverlassen der Versammlung ist der meistzitierte Text der Gemeindepädagogik. Er steht in Kirchenordnungen seit der Alten Kirche, in den Bußbüchern des Mittelalters, in reformatorischen Zuchtordnungen und in der heutigen Diskussion über sinkende Gottesdienstbesuche. Während der Pandemie ab 2020 wurde er auf beiden Seiten der Auseinandersetzung um Versammlungsverbote angeführt.\n\nDie Warnung vor dem mutwilligen Sündigen hat zusammen mit der früheren Warnung des Briefes die Bußgeschichte bestimmt. Sie steht hinter der frühen Praxis, schwere Sünden nach der Taufe nicht mehr zu vergeben, und hinter den langen Bußzeiten der Alten Kirche. In der Seelsorge ist sie bis heute die Stelle, an der Menschen zu fragen beginnen, ob für sie noch Umkehr möglich sei.\n\nDas Zitat vom Gerechten, der aus Glauben leben wird, stammt aus dem Prophetenbuch Habakuk und ist derselbe Vers, den Paulus zweimal anführt. Über den Römerbrief ist er zum Losungswort der Reformation geworden; hier steht er in anderem Zusammenhang und meint das Durchhalten, nicht die Rechtfertigung. Der Unterschied ist in der Auslegung des 20. Jahrhunderts genau herausgearbeitet worden.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Beschlagnahme von Vermögen war eine übliche Nebenfolge von Verurteilungen und traf oft die Familie mit. Eine Gemeinde, die den Raub ihrer Güter erlebt hatte, war wirtschaftlich geschwächt, nicht nur eingeschüchtert.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Wort für Schauspiel bezeichnet die öffentliche Zurschaustellung im Theater. Bloßstellung war eine anerkannte Strafform, die den gesellschaftlichen Stand vernichtete, ohne den Körper anzutasten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Versammlungen fanden in Privathäusern statt, meist am ersten Tag der Woche vor Arbeitsbeginn. Wer fernblieb, fiel auf, weil die Gruppen klein waren und die Teilnehmer einander kannten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Gefangene wurden nicht verpflegt; Essen, Kleidung und Bestechungsgeld mussten von Angehörigen gebracht werden. Wer Gefangene besuchte, machte sich sichtbar und setzte sich selbst aus.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. parresian eis ten eisodon',
+        rendered: 'die Freudigkeit zum Eingang',
+        note: 'Das Wort für das Rederecht des freien Bürgers, hier auf den Zugang zum Heiligtum übertragen. Was dem Hohenpriester einmal im Jahr zustand, gilt jetzt allen.',
+      },
+      {
+        word: 'griech. me enkataleipontes ten episynagogen',
+        rendered: 'nicht verlassen unsere Versammlung',
+        note: 'Das Wort für Versammlung ist mit dem für Synagoge verwandt. Ob der Rückzug in die Synagoge gemeint ist oder das Fernbleiben überhaupt, lässt der Text offen.',
+      },
+      {
+        word: 'griech. hekousios hamartanonton',
+        rendered: 'so wir mutwillig sündigen',
+        note: 'Das Gesetz unterscheidet zwischen versehentlicher und absichtlicher Übertretung; für die zweite gab es kein Opfer. Der Text folgt dieser Unterscheidung genau.',
+      },
+      {
+        word: 'griech. theatrizomenoi',
+        rendered: 'ein Schauspiel wurdet',
+        note: 'Wörtlich zur Schau gestellt wie im Theater. Der Ausdruck beschreibt eine Strafform, die auf den Verlust der Ehre zielt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der gemeinsame Gottesdienst ist Pflicht und Gabe zugleich; das Kirchengebot der Sonntagsmesse beruft sich auf diesen Vers. Die Warnung begründet die Notwendigkeit der Buße, hebt ihre Möglichkeit aber nicht auf.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Zugang zum Heiligtum steht allen offen – das ist der Kern des Priestertums aller Getauften. Die Versammlung ist notwendig, weil das Wort gehört und einander zugesprochen werden muss.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'Die gegenseitige Wahrnehmung und das Ermahnen werden als Aufgabe aller Mitglieder gelesen, nicht als Amtshandlung. Aus dem Vers ist die Betonung verbindlicher Gemeinschaft und regelmäßiger Zusammenkunft erwachsen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der neue und lebendige Weg durch den Vorhang wird auf die Menschwerdung bezogen: Sein Fleisch ist der Zugang. Die Versammlung ist der Ort, an dem dieser Weg begangen wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die genannten Erfahrungen – Bloßstellung, Beschlagnahme, Gefangenschaft, aber keine Toten – lassen sich mit den Ereignissen in Rom um 49 verbinden und gehören zu den Hinweisen auf den Empfängerkreis. Das Zitat aus Habakuk steht hier für das Durchhalten und nicht für die Rechtfertigung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hab', chapter: 2, verse: 4, note: 'Der Gerechte wird seines Glaubens leben' },
+      { book: '5mo', chapter: 32, verse: 35, note: 'Die Rache ist mein' },
+      { book: '4mo', chapter: 15, verse: 30, note: 'Die Sünde mit erhobener Hand' },
+      { book: 'hebr', chapter: 12, verse: 4, note: 'Noch nicht bis aufs Blut' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'hebr',
+    chapter: 11,
+    from: 4,
+    to: 16,
+    title: '„daß sie Gäste und Fremdlinge auf Erden wären“',
+    historicalShort:
+      'Der Anfang der Zeugenreihe – und die Deutung, die aus Nomaden Menschen auf dem Weg zu einer Stadt macht.',
+    historicalLong:
+      'Die Aufzählung folgt einer Gattung, die in der jüdischen Literatur der Zeit ausgebildet war: das Lob der Väter. Das Buch Jesus Sirach enthält ein solches Kapitel, ebenso das erste Makkabäerbuch und Schriften Philons; auch die griechische Rhetorik kannte die Reihe von Beispielen als Mittel der Überredung. Neu ist hier das Gliederungswort. Jeder Abschnitt beginnt mit durch den Glauben – achtzehnmal im ganzen Kapitel –, und dieses Wort ordnet Gestalten zusammen, die sonst nichts verbindet.\n\nDie Auswahl folgt der Reihenfolge des ersten Buches Mose, greift aber teilweise über den Text hinaus. Dass Abel noch redet, obwohl er tot ist, spielt auf sein Blut an, das aus der Erde schreit. Von Henoch heißt es dort nur, Gott habe ihn hinweggenommen; die Deutung, er habe den Tod nicht gesehen, folgt der griechischen Übersetzung und einer breiten Überlieferung, die in den Henochbüchern ausgebaut wurde.\n\nDer sechste Vers ist die einzige Definition im Kapitel und nennt zwei Bedingungen: dass Gott ist, und dass er die Suchenden belohnt. Beide Sätze wären in der griechischen Philosophie diskutabel gewesen; die Existenz einer Gottheit bestritten wenige, ihre Zuwendung zu Einzelnen viele. Epikur hielt die Götter für unbeteiligt, und der Vorwurf des Atheismus traf in der Antike meist nicht die Leugnung, sondern die Verweigerung des Kults.\n\nDie Deutung Abrahams ist die eigentümlichste des Abschnitts. Nach dem ersten Buch Mose zieht er in ein Land, das ihm zugesagt wird; hier wartet er auf eine Stadt mit Fundamenten. Aus einem Nomaden wird ein Mensch, dessen Ziel nicht auf der Landkarte liegt. Der Ausdruck für Gäste und Fremdlinge stammt aus dem Bürgerrecht und bezeichnet Leute ohne Bürgerstatus – wer so lebte, hatte kein Klagerecht, kein Erbrecht und keinen Schutz außer durch einen Gastgeber.',
+    reception:
+      'Das Kapitel ist zum Grundtext der christlichen Vorstellung vom Leben als Pilgerschaft geworden. Augustinus baut darauf seine Unterscheidung zweier Städte, die mittelalterliche Frömmigkeit prägte daraus die Rede vom Jammertal, und die Wallfahrt gab dem Bild eine Praxis. In der englischen Literatur ist John Bunyans Pilgerreise von 1678 die berühmteste Umsetzung; sie war jahrhundertelang nach der Bibel das meistgelesene Buch protestantischer Haushalte.\n\nDie Selbstbezeichnung als Fremdlinge hat Minderheiten Sprache gegeben. Die Täufer des 16. Jahrhunderts, die Hugenotten nach 1685, die Herrnhuter und die Auswanderer nach Nordamerika beschrieben ihre Lage mit diesen Versen; die englischen Siedler von 1620 nannten sich Pilger nach diesem Kapitel. Zugleich ist die Deutung kritisiert worden: Wer sich als Gast auf Erden versteht, kann sich der Verantwortung für sie entziehen – ein Einwand, der in der politischen Theologie des 20. Jahrhunderts formuliert wurde.\n\nDie Nennung Saras hat eine eigene Geschichte. Der griechische Text ist an dieser Stelle grammatisch schwierig, und die Handschriften weichen ab; ältere Übersetzungen bezogen die Aussage auf Abraham, weil der gebrauchte Ausdruck sonst die Zeugung bezeichnet. Neuere Ausgaben nennen Sara als Handelnde, und die feministische Auslegung hat den Fall als Beispiel dafür angeführt, wie Übersetzungsentscheidungen Frauen aus Texten entfernen können.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Ein Fremder ohne Bürgerrecht hatte kein Klagerecht, konnte kein Land erwerben und war auf einen Gastgeber angewiesen, der für ihn eintrat. Die beiden Wörter des Textes bezeichnen genau diese Rechtsstellungen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Eine Stadt mit Fundamenten war das Gegenteil des Zeltlagers: Mauern, Straßenraster, Wasserleitung, ein Gründer, dessen Name überliefert wurde. Städtegründungen waren in hellenistischer Zeit ein Herrschaftsmittel und wurden gefeiert.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Lob der Vorfahren war eine feste Redegattung; das Buch Jesus Sirach führt eine solche Reihe, und griechische Redner zählten Beispiele auf, um zur Nachahmung zu bewegen. Die Hörer kannten die Form.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Zelt aus Ziegenhaar wurde in Bahnen gewebt, konnte erweitert werden und hielt Jahrzehnte. Nomadisches Wohnen war keine Notlage, sondern eine Wirtschaftsform mit eigener Ausstattung.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. misthapodotes',
+        rendered: 'ein Vergelter',
+        note: 'Wörtlich einer, der den Lohn auszahlt – ein Wort aus dem Arbeitsleben. Der Glaube rechnet damit, dass Gott sich zuwendet, nicht nur, dass er ist.',
+      },
+      {
+        word: 'griech. xenoi kai parepidemoi',
+        rendered: 'Gäste und Fremdlinge auf Erden',
+        note: 'Zwei Begriffe des Bürgerrechts: der Fremde ohne Status und der Zugezogene mit Aufenthalt auf Zeit. Beide bezeichnen Menschen ohne Klage- und Erbrecht.',
+      },
+      {
+        word: 'griech. tous themelious echousan polin',
+        rendered: 'eine Stadt, die einen Grund hat',
+        note: 'Gemeint sind die Fundamente. Der Gegensatz ist das Zelt, das man abbricht – nicht Himmel gegen Erde, sondern Dauer gegen Wanderschaft.',
+      },
+      {
+        word: 'griech. technites kai demiourgos',
+        rendered: 'der Baumeister und Schöpfer',
+        note: 'Zwei Wörter aus dem Bauwesen: der Handwerker und der öffentliche Werkmeister. Das zweite ist bei Platon der Weltbildner und war gebildeten Lesern von dort vertraut.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Kirche versteht sich als pilgerndes Volk Gottes, das unterwegs ist; das Zweite Vatikanische Konzil hat dieses Bild in den Vordergrund gerückt. Die Väter des Glaubens gehören zur Gemeinschaft der Heiligen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Glaube der Väter ist derselbe wie der der Christen: Vertrauen auf eine Zusage, die noch nicht eingelöst ist. Damit ist eine Trennung zwischen dem Glauben vor und nach Christus abgewiesen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Gerechten des Alten Bundes werden in der Liturgie namentlich bedacht und gelten als Teil derselben Gemeinschaft. Das Warten auf die Stadt ist Ausdruck der Ausrichtung des ganzen Lebens.',
+      },
+      {
+        tradition: 'Politische Theologie',
+        text: 'Die Selbstbezeichnung als Fremdlinge hat Minderheiten getragen und ist zugleich kritisiert worden, weil sie zur Weltflucht werden kann. Die Gegenposition liest sie als Freiheit gegenüber bestehenden Ordnungen, nicht als Rückzug aus ihnen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Das Kapitel folgt der Gattung des Väterlobs und ordnet sie unter ein einziges Stichwort. Die Deutung Abrahams auf eine himmlische Stadt geht über das erste Buch Mose hinaus und zeigt die Denkweise des Verfassers.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 4, verse: 10, note: 'Das Blut Abels schreit' },
+      { book: '1mo', chapter: 5, verse: 24, note: 'Henoch, den Gott wegnahm' },
+      { book: '1mo', chapter: 12, verse: 1, note: 'Der Ruf an Abraham' },
+      { book: '1petr', chapter: 2, verse: 11, note: 'Gäste und Fremdlinge' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 11,
+    from: 17,
+    to: 31,
+    title: '„Durch den Glauben fielen die Mauern Jerichos“',
+    historicalShort:
+      'Von der Bindung Isaaks bis zur Prostituierten in Jericho – eine Reihe, die nicht nach Ansehen ausgewählt ist.',
+    historicalLong:
+      'Die Bindung Isaaks steht am Anfang und ist die schwerste Stelle des Kapitels. Der Verfasser deutet sie eigenwillig: Abraham habe damit gerechnet, dass Gott Tote auferwecken kann. Das steht nicht im ersten Buch Mose. Es entspricht aber einer jüdischen Auslegung, die in mehreren Quellen greifbar ist und Isaak als Opfer versteht, das freiwillig mitgeht; in rabbinischen Texten wird die Bindung als Verdienst betrachtet, auf das sich Israel berufen kann. Der Brief nimmt diesen Deutungsstrang auf und wendet ihn auf die Auferstehung.\n\nMose bekommt den größten Raum. Die Erzählung folgt dem zweiten Buch Mose, verschiebt aber Gewichte. Die Weigerung, Sohn der Tochter des Pharao zu heißen, ist als Entscheidung dargestellt, als Verzicht auf eine Laufbahn – für Leser im römischen Reich ein verständliches Bild, weil Adoption ein üblicher Weg zu Rang und Vermögen war. Dass er die Schmach Christi höher achtete als die Schätze Ägyptens, ist die kühnste Formulierung des Kapitels und wurde schon in der Alten Kirche unterschiedlich erklärt.\n\nDer Satz, Mose habe Ägypten verlassen, ohne den Zorn des Königs zu fürchten, steht in Spannung zum Bibeltext, nach dem er nach dem Totschlag floh, weil er sich fürchtete. Manche Ausleger beziehen den Vers deshalb auf den Auszug mit dem Volk, andere nehmen eine Umdeutung an. Solche Spannungen sind für das Kapitel kennzeichnend: Es erzählt die Geschichten nicht nach, sondern liest sie auf ein Stichwort hin.\n\nDen Abschluss bildet Rahab. Sie ist eine Frau, eine Kanaaniterin und eine Prostituierte – nach den Maßstäben der Zeit dreifach ohne Ansehen. Dass sie in einer Ehrenreihe steht, ist bemerkenswert und geschieht ebenso im Jakobusbrief und im Stammbaum bei Matthäus. In der rabbinischen Überlieferung gilt sie als Beispiel gelungener Umkehr.',
+    reception:
+      'Die Bindung Isaaks ist einer der meistbearbeiteten Stoffe der Kunst und der Philosophie. Rembrandt und Caravaggio haben ihn gemalt, Kierkegaard machte ihn 1843 in Furcht und Zittern zum Fall, an dem sich Glaube und Ethik trennen. In der jüdischen Überlieferung wird die Bindung am Neujahrsfest gelesen und in den Klageliedern nach den Verfolgungen des Mittelalters auf die Märtyrer bezogen.\n\nDer Fall der Mauern Jerichos ist zum Bild politischer Hoffnung geworden. Das Spiritual Joshua fit the battle of Jericho entstand in der Sklaverei der amerikanischen Südstaaten und wurde in der Bürgerrechtsbewegung gesungen; Prediger benutzten das Bild für den Fall von Unrechtsordnungen. Die archäologische Frage, ob die Mauern zur fraglichen Zeit überhaupt standen, wird seit den Grabungen des 20. Jahrhunderts verhandelt und ist ungeklärt.\n\nRahabs Aufnahme in die Reihe hat eine eigene Wirkungsgeschichte. Clemens von Rom nennt sie um 96 als Beispiel für Glauben und Gastfreundschaft; in der Auslegungsgeschichte wurde sie zur Vorläuferin der Kirche aus den Völkern. In der neueren Auslegung wird betont, dass der Text ihren Beruf nennt und nicht beschönigt.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Adoption war in Rom ein Weg zu Rang und Vermögen; auch Kaiser wurden auf diesem Weg eingesetzt. Wer eine solche Stellung ausschlug, gab eine Laufbahn auf, die man nicht zweimal bekam.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Städte wie Jericho hatten Mauern aus Lehmziegeln auf steinernem Sockel; ihre Zerstörung bedeutete das Ende der Selbständigkeit. Belagerungen dauerten Monate, ein Fall nach sieben Tagen war unerhört.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Prostitution war in Städten des Alten Orients rechtlich geduldet und wirtschaftlich verbreitet; Herbergen und Bordelle waren oft dasselbe Haus. Rahabs Haus an der Mauer war ein Ort, an dem Fremde nicht auffielen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Blut an den Türpfosten beim Passa war ein Schutzzeichen, wie es der Alte Orient auch sonst kannte. Das Fest wurde jährlich im Haus begangen und war die wichtigste Erinnerung an den Auszug.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ton monogene',
+        rendered: 'den Eingeborenen',
+        note: 'Wörtlich den Einziggeborenen. Isaak war nicht Abrahams einziger Sohn, aber der einzige der Verheißung; dasselbe Wort steht im Johannesevangelium von Christus.',
+      },
+      {
+        word: 'griech. en parabole',
+        rendered: 'zum Vorbilde wiederbekam',
+        note: 'Wörtlich gleichnisweise. Das Wiederbekommen Isaaks wird als Bild der Auferstehung gelesen, nicht als sie selbst.',
+      },
+      {
+        word: 'griech. ton oneidismon tou Christou',
+        rendered: 'die Schmach Christi',
+        note: 'Die kühnste Wendung des Kapitels: die Schmähung, die Mose trug, mit der Christi gleichgesetzt. Ob das eine Vorwegnahme meint oder die Zugehörigkeit zum Volk Gottes, ist umstritten.',
+      },
+      {
+        word: 'griech. he porne',
+        rendered: 'die Hure Rahab',
+        note: 'Der Text nennt den Beruf ausdrücklich und beschönigt ihn nicht. Ihre Aufnahme in eine Ehrenreihe war nach den Maßstäben der Zeit ein Bruch.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Bindung Isaaks gilt als Vorabbildung der Hingabe des Sohnes; die Väter des Glaubens gehören zur Heilsgeschichte, die auf Christus zuläuft. Rahab wird als Zeichen der Berufung der Völker gelesen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Alle Genannten haben nichts vorzuweisen als Vertrauen; darin liegt die Pointe. Luther betonte, dass die Reihe Sünder enthält und keine Tugendgalerie ist.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Bindung wird am Neujahrsfest gelesen und als Ausdruck der Treue Abrahams und Isaaks verstanden; die Deutung auf eine Auferstehung ist eine christliche Zuspitzung. Rahab gilt in der Überlieferung als Beispiel gelungener Umkehr.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Dass zwei Frauen – Sara und Rahab – in der Reihe stehen, wird als Hinweis darauf gelesen, dass Glaube nicht an Stand und Ansehen hängt. Zugleich wird bemerkt, wie oft die Überlieferung ihre Rolle abgeschwächt hat.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt weicht mehrfach von den Erzählungen ab, auf die er sich beruft, unter anderem bei der Flucht des Mose. Das Kapitel erzählt nicht nach, sondern ordnet die Überlieferung einem Stichwort unter.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 22, verse: 2, note: 'Die Bindung Isaaks' },
+      { book: '2mo', chapter: 2, verse: 11, note: 'Mose und sein Volk' },
+      { book: 'jos', chapter: 6, verse: 20, note: 'Der Fall der Mauern' },
+      { book: 'jak', chapter: 2, verse: 25, note: 'Rahab und ihre Werke' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 11,
+    from: 32,
+    to: 40,
+    title: '„deren die Welt nicht wert war“',
+    historicalShort:
+      'Der Schluss kippt: Erst die Siege, dann die Gescheiterten – und das eine ist so sehr Glaube wie das andere.',
+    historicalLong:
+      'Der Verfasser bricht die Aufzählung mit einer rhetorischen Wendung ab: Die Zeit reiche nicht. Diese Formel gehörte zum Handwerk des Redners und findet sich bei Demosthenes ebenso wie bei Cicero. Dann nennt er sechs Namen in einer Reihenfolge, die weder der Bibel noch der Zeit folgt – Barak vor Gideon wäre chronologisch richtig, hier steht es umgekehrt. Die Namen sind Stichworte, keine Geschichtsschreibung.\n\nDie erste Liste zählt Erfolge auf: Königreiche bezwungen, Löwenrachen verstopft, Feuerkraft gelöscht, dem Schwert entronnen. Jeder Ausdruck lässt sich einer Erzählung zuordnen – Daniel in der Löwengrube, die drei Männer im Feuerofen, Elia auf der Flucht. Diese Reihe entspricht dem, was Hörer von einer Aufzählung großer Gestalten erwarteten.\n\nDann kippt der Text. Mitten im Satz wechselt er zu denen, die nichts erreicht haben: gefoltert, verspottet, gesteinigt, zersägt. Die Zersägung spielt auf eine Überlieferung über den Propheten Jesaja an, die in der Schrift nicht steht, sondern in einer späteren Schrift erzählt wird. Die Folterszene mit der Weigerung, sich loszukaufen, folgt dem zweiten Makkabäerbuch, das die Hinrichtung von Märtyrern unter Antiochus IV. schildert. Der Verfasser rechnet also mit Kenntnis von Schriften, die nicht zur hebräischen Bibel gehören.\n\nDer Schlusssatz ist der überraschendste. Alle Genannten haben die Zusage nicht empfangen, und das wird nicht als Mangel dargestellt, sondern als Verbindung: Sie sollten nicht ohne die Späteren vollendet werden. Das Wort für vollenden ist dasselbe, das im Brief die Einsetzung ins Amt bezeichnet. Wer glaubt, gehört danach in eine Gemeinschaft, die über die Zeiten reicht und ihr Ziel nicht einzeln erreicht.',
+    reception:
+      'Der Satz, dass die Welt ihrer nicht wert war, ist zum Ehrenwort der Märtyrerverehrung geworden. Er steht auf Grabinschriften der Alten Kirche, in den Akten der Blutzeugen und später auf Denkmälern für Verfolgte – von den Waldensern über die Hugenotten bis zu Gedenktafeln für Widerstandskämpfer des 20. Jahrhunderts.\n\nDer Umschlag der Aufzählung hat theologisch weit gewirkt. Er verhindert, dass Glaube mit Erfolg gleichgesetzt wird, und wird in der Auseinandersetzung mit Verkündigungsformen angeführt, die Wohlergehen versprechen. Dietrich Bonhoeffer und andere Theologen des 20. Jahrhunderts haben diesen Teil des Kapitels dem ersten ausdrücklich vorgezogen.\n\nDie Anspielungen auf das zweite Makkabäerbuch und auf die Überlieferung vom Tod Jesajas gehören zu den Belegen dafür, welche Schriften im ersten Jahrhundert gelesen wurden. Sie spielen in der Frage nach dem Umfang des Kanons eine Rolle: Die katholische und die orthodoxe Kirche zählen die Makkabäerbücher zur Bibel, die reformatorischen Kirchen und das Judentum nicht. Der Brief zitiert sie nicht als Schrift, setzt sie aber als bekannt voraus.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Unter Antiochus IV. wurden ab 167 vor Christus jüdische Bräuche verboten und Zuwiderhandelnde hingerichtet; das zweite Makkabäerbuch schildert einzelne Fälle ausführlich. Diese Erinnerung war im ersten Jahrhundert lebendig.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein Angeklagter konnte sich durch Widerruf oder Zahlung lösen; wer das ausschlug, entschied sich gegen den ihm angebotenen Ausweg. Die Wendung von der abgelehnten Erlösung beschreibt genau diese Lage.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Schafpelze und Ziegenfelle waren die Kleidung der Ärmsten und zugleich das Kennzeichen der Propheten; Elia wird so beschrieben. Wer sie trug, war entweder mittellos oder erkennbar außerhalb der Ordnung.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Klüfte und Höhlen der judäischen Berge boten Verfolgten Schutz; in den Schluchten am Toten Meer sind Verstecke aus mehreren Jahrhunderten gefunden worden. Wüste war deshalb nicht nur Ort der Prüfung, sondern der Zuflucht.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. epileipsei me ho chronos',
+        rendered: 'Die Zeit würde mir zu kurz',
+        note: 'Eine feste Redewendung der antiken Rhetorik für den Abbruch einer Aufzählung. Sie sagt nicht, dass der Stoff fehlt, sondern dass er reicht.',
+      },
+      {
+        word: 'griech. etympanisthesan',
+        rendered: 'zerschlagen',
+        note: 'Eine Hinrichtungsart, bei der der Verurteilte auf ein Gerüst gespannt und erschlagen wurde. Das zweite Makkabäerbuch beschreibt sie, und der Ausdruck stammt von dort.',
+      },
+      {
+        word: 'griech. epristhesan',
+        rendered: 'zerhackt',
+        note: 'Wörtlich zersägt. Der Ausdruck spielt auf eine Überlieferung über den Tod des Propheten Jesaja an, die nicht in der Bibel, sondern in einer späteren Schrift steht.',
+      },
+      {
+        word: 'griech. me choris hemon teleiothosin',
+        rendered: 'daß sie nicht ohne uns vollendet würden',
+        note: 'Dasselbe Wort, das im Brief die Einsetzung ins Priesteramt beschreibt. Das Ziel wird gemeinsam erreicht oder gar nicht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Gemeinschaft der Heiligen umfasst die Zeugen aller Zeiten; dass sie nicht ohne uns vollendet werden, begründet die Verbundenheit über den Tod hinaus. Die Märtyrerverehrung hat hier ihren biblischen Anhalt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Umschlag der Aufzählung ist entscheidend: Glaube zeigt sich ebenso im Scheitern wie im Sieg. Luther las den zweiten Teil als Trost für die Angefochtenen und Bedrängten.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Zeugen sind gegenwärtig, nicht vergangen; die Liturgie nennt sie und rechnet sie zur versammelten Gemeinde. Die Vollendung ist ein gemeinsames Geschehen.',
+      },
+      {
+        tradition: 'Theologie des Widerstands',
+        text: 'Der Satz von der Welt, die ihrer nicht wert war, ist zum Ehrenwort für Verfolgte geworden. Er wird gegen Verkündigungsformen angeführt, die Glauben mit Erfolg und Wohlergehen verbinden.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Anspielungen auf das zweite Makkabäerbuch und auf die Überlieferung vom Tod Jesajas zeigen, welche Schriften der Verfasser voraussetzt. Sie werden nicht als Schrift zitiert, aber als bekannt behandelt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ri', chapter: 6, verse: 14, note: 'Die Berufung Gideons' },
+      { book: 'dan', chapter: 6, verse: 23, note: 'Der Rachen der Löwen' },
+      { book: 'dan', chapter: 3, verse: 27, note: 'Die Kraft des Feuers' },
+      { book: 'hebr', chapter: 12, verse: 1, note: 'Die Wolke der Zeugen' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 5 Abschnitte */
+  {
+    book: 'hebr',
+    chapter: 12,
+    from: 4,
+    to: 17,
+    title: '„eine bittere Wurzel“',
+    historicalShort:
+      'Leiden als Erziehung gedeutet – ein Trost, der über Jahrhunderte auch zur Rechtfertigung von Schlägen gebraucht wurde.',
+    historicalLong:
+      'Der Verfasser deutet die Bedrängnis der Gemeinde mit einem Zitat aus dem Buch der Sprüche. Der Gedanke, dass Züchtigung ein Zeichen der Zuwendung sei, war in der jüdischen Weisheit fest verankert und in der griechischen Erziehungslehre ebenso. Das griechische Wort dafür meint zunächst Erziehung überhaupt und erst in zweiter Linie Strafe; die Übersetzung mit Züchtigung verengt es. Wer im ersten Jahrhundert von der Erziehung eines Sohnes sprach, sprach von Unterricht, Zucht und körperlicher Strafe in einem Zug.\n\nDer Vergleich mit den leiblichen Vätern setzt die Rechtslage voraus. Der römische Hausvater hatte eine Züchtigungsgewalt, die kaum begrenzt war; Erziehungsschriften der Zeit raten zur Mäßigung, unterstellen die Gewalt aber. Der Text nutzt diese Selbstverständlichkeit für einen Schluss: Wenn schon ein irdischer Vater nach seinem Gutdünken erzieht, dann erzieht der andere zum Nutzen.\n\nDie Anweisungen ab dem zwölften Vers stammen aus zwei Prophetenbüchern und aus dem Buch der Sprüche und sind medizinisch gefärbt. Von lässigen Händen und müden Knien spricht Jesaja, vom geraden Weg für die Füße die Sprüche. Das Bild vom Lahmen, der wieder gesund wird statt auszurenken, kommt aus der Heilkunde; das griechische Wort beschreibt das Ausrenken eines Gelenks. Es geht also um eine Gemeinschaft, in der ein Angeschlagener geheilt und nicht verloren wird.\n\nDie bittere Wurzel ist ein Zitat aus dem fünften Buch Mose, wo sie den Abfall zum Götzendienst bezeichnet. Esau steht als Beispiel für eine Entscheidung, die sich nicht rückgängig machen lässt: Der Verkauf der Erstgeburt für eine Mahlzeit ist im ersten Buch Mose eine Szene voller Alltag – Hunger, Linsen, ein Handel. Die Bemerkung, er habe keinen Raum zur Buße gefunden, obwohl er unter Tränen suchte, bezieht sich nach dem Wortlaut auf den Segen und nicht auf sein Seelenheil; die Auslegungsgeschichte hat das oft übersehen.',
+    reception:
+      'Die Deutung des Leidens als väterliche Erziehung hat die christliche Seelsorge über Jahrhunderte bestimmt und trägt bis heute Trostbriefe und Predigten bei Krankheit und Verlust. Zugleich ist sie einer der am schärfsten kritisierten Gedanken der Bibel: Wer Leid als Erziehungsmaßnahme deutet, kann Betroffenen die Klage nehmen und Täter entlasten. Die Auseinandersetzung darüber ist seit dem 20. Jahrhundert innerhalb der Theologie offen geführt worden.\n\nDer Vers, dass Gott züchtigt, wen er liebt, ist außerdem zur Rechtfertigung der Prügelstrafe geworden. Erziehungsschriften des Pietismus, Schulordnungen und Predigten führten ihn an; in der Debatte über die körperliche Züchtigung von Kindern, die in Deutschland 2000 zum gesetzlichen Verbot führte, war er ein Streitpunkt zwischen kirchlichen Stellungnahmen. Die Verschiebung der Wortbedeutung von Erziehung zu Strafe hat daran Anteil.\n\nDie bittere Wurzel ist als Redewendung in die Frömmigkeitssprache eingegangen und bezeichnet dort meist die Verbitterung eines Einzelnen. Im Text steht sie für etwas anderes, nämlich für das, was eine ganze Gemeinschaft vergiftet; die Verengung auf das Innenleben ist neuzeitlich.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Erziehung schloss Unterricht, Zucht und Schläge in einem Begriff zusammen; der Schulmeister mit der Rute ist eine feste Figur antiker Bildwerke. Wer erzogen wurde, gehörte dazu – ungeschlagen blieb, wer niemanden hatte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Der römische Hausvater hatte eine Züchtigungsgewalt, die rechtlich kaum begrenzt war. Ein Kind ohne anerkannten Vater hatte keinen Erbanspruch, und der Text spielt genau darauf an.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ausgerenkte Gelenke waren eine häufige Verletzung bei Bauarbeit und Landwirtschaft; Ärzte richteten sie mit Zug und Gegenzug. Das Bild vom Lahmen, der gesund wird, kommt aus dieser Praxis.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Linsengericht war Armenkost und schnell bereitet. Die Erzählung vom Verkauf der Erstgeburt spielt in einer Küche und nicht bei einer Verhandlung – das macht ihre Schärfe aus.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. paideia',
+        rendered: 'die Züchtigung des HERRN',
+        note: 'Das Wort meint zunächst Erziehung und Bildung, erst in zweiter Linie Strafe. Luthers Züchtigung verengt es – an dieser Verengung hängt ein Teil der Wirkungsgeschichte.',
+      },
+      {
+        word: 'griech. nothoi',
+        rendered: 'so seid ihr Bastarde',
+        note: 'Ein Rechtsbegriff für Kinder ohne anerkannten Vater, die kein Erbrecht hatten. Der Vergleich ist hart, weil er eine Rechtsstellung und nicht eine Beleidigung aufruft.',
+      },
+      {
+        word: 'griech. ektrape',
+        rendered: 'daß nicht jemand strauchle wie ein Lahmer',
+        note: 'Das Verb beschreibt in der Heilkunde das Ausrenken eines Gelenks. Das Bild rechnet mit Angeschlagenen in der Gemeinde, die geheilt oder verloren werden.',
+      },
+      {
+        word: 'griech. rhiza pikrias',
+        rendered: 'eine bittere Wurzel',
+        note: 'Ein Zitat aus dem fünften Buch Mose, wo es den Abfall zum Götzendienst meint. Der Ausdruck bezeichnet, was eine Gemeinschaft vergiftet, nicht die Stimmung eines Einzelnen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Leiden wird in die Erziehung Gottes eingeordnet und gewinnt damit Sinn, ohne gut genannt zu werden. Die geistliche Begleitung nimmt den Gedanken auf, warnt aber vor seiner Anwendung auf fremdes Leid.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Anfechtung gehört zum Glauben und ist kein Zeichen des Verworfenseins; Luther hat das aus dieser Stelle immer wieder abgeleitet. Zugleich gilt, dass Gott sich unter dem Gegenteil verbirgt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Erziehung wird als Heilung verstanden, nicht als Strafe: Gott handelt wie ein Arzt, dessen Behandlung wehtut. Das Ziel ist die Teilhabe an seiner Heiligkeit.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Deutung von Leid als Erziehung wird als gefährlich beurteilt, wo sie Betroffenen die Klage nimmt oder Gewalt rechtfertigt. Dass der Vers zur Begründung der Prügelstrafe diente, gilt als Warnung vor seiner unmittelbaren Anwendung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt setzt eine Gemeinde unter Druck voraus, die noch keine Todesopfer hatte, und deutet ihre Lage mit dem geläufigen Erziehungsgedanken der Weisheitsliteratur. Die Aussage über Esau betrifft den Segen und nicht sein Heil.',
+      },
+    ],
+    crossRefs: [
+      { book: 'spr', chapter: 3, verse: 11, note: 'Das zitierte Wort von der Zucht' },
+      { book: '5mo', chapter: 29, verse: 18, note: 'Die Wurzel, die Galle trägt' },
+      { book: '1mo', chapter: 25, verse: 33, note: 'Esau verkauft die Erstgeburt' },
+      { book: 'jes', chapter: 35, verse: 3, note: 'Stärkt die müden Hände' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 12,
+    from: 18,
+    to: 29,
+    title: '„ihr seid gekommen zu dem Berge Zion“',
+    historicalShort:
+      'Zwei Berge gegeneinandergestellt – der eine im Gewitter, der andere voller Festversammlung.',
+    historicalLong:
+      'Der Abschnitt stellt zwei Szenen nebeneinander. Die erste ist die Gesetzgebung am Sinai nach dem zweiten Buch Mose: Feuer, Dunkel, Sturm, Posaunenhall und die Absperrung des Berges, an der jedes Tier getötet wurde, das sie überschritt. Der Verfasser nennt den Berg nicht beim Namen; er beschreibt ihn durch das, was man wahrnehmen konnte – anfassbar, brennend, laut. Der Satz, Mose selbst habe gezittert, steht nicht in der Sinaierzählung, sondern im fünften Buch Mose bei der Herstellung des goldenen Kalbs.\n\nDie zweite Szene ist eine Aufzählung von sieben Größen, an die die Angeredeten schon gekommen sind: Zion, die Stadt, die Engel, die Festversammlung der Erstgeborenen, Gott als Richter, die Geister der vollendeten Gerechten und der Mittler. Das Wort für die Versammlung bezeichnet die Festversammlung einer griechischen Stadt oder das Publikum bei den Spielen. Es beschreibt kein stilles Gegenüber, sondern eine Menge.\n\nEntscheidend ist die Zeitform: Ihr seid gekommen, nicht ihr werdet kommen. Das himmlische Jerusalem ist nach diesem Text keine Zukunft, sondern eine Gegenwart, an der die Gemeinde bereits teilhat. Diese Vorstellung ist in Qumran vorbereitet, wo die Gemeinschaft mit den Engeln als gegenwärtig beschrieben wird, und im Judentum der Zeit verbreitet.\n\nDer Schluss zitiert den Propheten Haggai über ein Erschüttern von Himmel und Erde und deutet das Wort noch einmal so, dass das Geschaffene weicht und das Unbewegliche bleibt. Der letzte Satz, Gott sei ein verzehrendes Feuer, stammt aus dem fünften Buch Mose. Er steht nach der ganzen Zusage und nicht davor – der Brief endet seinen Hauptteil nicht mit Beruhigung.',
+    reception:
+      'Die Gegenüberstellung der beiden Berge ist zur Grundfigur der christlichen Rede von Gesetz und Evangelium geworden. Die Bildkunst der Reformation hat sie aufgenommen: Lucas Cranachs Tafeln zeigen links den Sinai mit Blitzen, rechts das Kreuz und die Stadt. In der Auslegungsgeschichte war sie zugleich der Einsatzpunkt für die Herabsetzung des Judentums als Religion der Furcht – eine Deutung, die dem Text nicht entspricht, weil er beide Berge auf denselben Gott bezieht.\n\nDas himmlische Jerusalem hat die Stadtvorstellung des Abendlandes geprägt. Augustinus baute darauf sein Bild der Gottesstadt, mittelalterliche Kirchen wurden als Abbild dieser Stadt gebaut und ausgemalt, und in der Neuzeit prägte sie die Namensgebung ganzer Siedlungen. Das Wort von der Festversammlung ist über die Liturgie in die Vorstellung vom Gottesdienst als Teilnahme an einer himmlischen Feier eingegangen.\n\nDer Schlusssatz vom verzehrenden Feuer ist in der Predigtgeschichte in beide Richtungen gebraucht worden: als Drohung im Bußruf und als Bild reinigender Nähe in der Mystik. Johannes vom Kreuz und die englische Dichtung des 17. Jahrhunderts haben ihn in der zweiten Weise gelesen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Die Absperrung des Sinai war so streng, dass ein Tier, das sie überschritt, getötet werden musste. Heilige Bezirke mit Betretungsverboten waren im Alten Orient und in Griechenland üblich und durch Grenzsteine markiert.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Festversammlung einer griechischen Stadt kam zu Spielen, Prozessionen und Opfern zusammen; das Wort beschreibt eine feiernde Menge. Es hat mit Andacht wenig und mit Öffentlichkeit viel zu tun.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Bürgerlisten verzeichneten, wer zur Stadt gehörte; wer eingetragen war, hatte Anteil an Verteilungen und Rechten. Die Rede von den im Himmel Angeschriebenen greift dieses Verzeichnis auf.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Zion bezeichnete ursprünglich den Burgberg Jerusalems und wurde später zum Namen für den Tempelberg und die Stadt. Die Verlagerung des Namens war schon in den Psalmen vollzogen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. panegyrei',
+        rendered: 'zu einer Menge vieler tausend Engel',
+        note: 'Das Wort bezeichnet die Festversammlung einer Stadt bei Spielen oder Prozessionen. Es bringt Lärm und Öffentlichkeit in eine Szene, die man sich still vorstellen könnte.',
+      },
+      {
+        word: 'griech. ekklesia prototokon',
+        rendered: 'der Gemeinde der Erstgeborenen',
+        note: 'Erstgeborener ist Rangbezeichnung, nicht Reihenfolge. Die Angeredeten gehören danach zu denen mit vollem Erbanteil, obwohl sie zuletzt gekommen sind.',
+      },
+      {
+        word: 'griech. proseleluthate',
+        rendered: 'ihr seid gekommen',
+        note: 'Perfekt: ein Zustand, der eingetreten ist. Der Text redet nicht von einem künftigen Ziel, sondern von einer bereits vollzogenen Ankunft.',
+      },
+      {
+        word: 'griech. pyr katanaliskon',
+        rendered: 'ein verzehrend Feuer',
+        note: 'Ein Zitat aus dem fünften Buch Mose. Es steht am Ende der Zusage und nicht vor ihr – die Nähe, von der der Abschnitt redet, bleibt gefährlich.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Liturgie ist Teilnahme an der himmlischen Festversammlung; das Konzil hat diesen Gedanken in die Liturgiekonstitution aufgenommen. Die Gemeinschaft mit Engeln und Heiligen ist gegenwärtig und nicht erst künftig.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die beiden Berge stehen für Gesetz und Evangelium; die Bildtafeln der Reformation haben das ins Auge gefasst. Zugleich warnt der Schluss davor, das Evangelium für harmlos zu halten.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Gottesdienst wird als Eintritt in das himmlische Jerusalem verstanden, das die Kirche im Raum abbildet. Das Feuer ist Bild der reinigenden Gegenwart, nicht der Vernichtung.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Sinaierzählung ist keine Szene der Angst, sondern der Bundesschluss und wird am Wochenfest gefeiert. Die Gegenüberstellung zweier Berge gilt als christliche Konstruktion, die dem Sinai nicht gerecht wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Vorstellung einer gegenwärtigen Gemeinschaft mit den Engeln findet sich in den Schriften vom Toten Meer und gehört zum Judentum der Zeit. Das Zitat über Mose stammt nicht aus der Sinaierzählung, sondern aus dem Bericht über das goldene Kalb.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 19, verse: 16, note: 'Feuer, Rauch und Posaunenhall' },
+      { book: '5mo', chapter: 9, verse: 19, note: 'Ich erschrak und zitterte' },
+      { book: 'hag', chapter: 2, verse: 6, note: 'Noch einmal will ich bewegen' },
+      { book: '5mo', chapter: 4, verse: 24, note: 'Ein verzehrendes Feuer' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 13,
+    from: 1,
+    to: 4,
+    title: '„ohne ihr Wissen Engel beherbergt“',
+    historicalShort:
+      'Vier Sätze über Gastfreundschaft, Gefangene und die Ehe – knapp wie eine Hausordnung.',
+    historicalLong:
+      'Der Schlussteil beginnt mit kurzen Anweisungen ohne Begründung, wie sie in Sammlungen von Gemeinderegeln üblich waren. Die erste betrifft die Geschwisterliebe, ein Wort, das im Griechischen zunächst die Zuneigung unter leiblichen Geschwistern bezeichnete und von den frühen Gemeinden auf die Gruppe übertragen wurde. Diese Übertragung war ungewöhnlich: Vereine nannten sich Freunde oder Mitglieder, selten Brüder.\n\nDie Gastfreundschaft war in einer Welt ohne verlässliche Herbergen eine Lebensnotwendigkeit. Gasthäuser hatten einen schlechten Ruf und galten als Orte der Prostitution und des Diebstahls; wer reiste, suchte private Aufnahme und wies sich durch Empfehlungsschreiben aus. Für die frühen Gemeinden war das die Grundlage ihres Zusammenhangs über Städte hinweg: Reisende Verkündiger und Briefträger wurden aufgenommen und weitergeschickt.\n\nDer Hinweis auf die unwissentlich beherbergten Engel spielt auf Abraham und auf Lot an, wo Gäste sich als Boten Gottes erweisen. Ähnliche Erzählungen kennt die griechische Überlieferung: Zeus und Hermes kehren bei Philemon und Baucis ein, und wer sie abweist, wird bestraft. In Kleinasien war diese Geschichte verbreitet, und die Apostelgeschichte erzählt, wie die Bewohner von Lystra zwei Reisende für Götter hielten.\n\nDie Anweisung zu den Gefangenen ist erstaunlich konkret. Gefangene wurden nicht verpflegt; Angehörige mussten Nahrung, Kleidung und Bestechungsgeld bringen. Wer das für einen Beschuldigten tat, machte sich sichtbar und geriet selbst in Verdacht. Der Zusatz, man solle so denken, als sei man mitgefangen, verlangt genau diese Preisgabe der eigenen Sicherheit.',
+    reception:
+      'Der Vers über die unwissentlich beherbergten Engel ist zum meistzitierten Wort der christlichen Gastfreundschaft geworden. Die Regel des Benedikt schreibt vor, jeden Gast wie Christus aufzunehmen, und stützt sich auf diese Linie; mittelalterliche Klöster unterhielten Pilgerhäuser, und die Hospize der Ritterorden gehen darauf zurück. Bis heute steht der Vers über den Eingängen von Herbergen und Gästehäusern.\n\nIn der Debatte über Flucht und Migration ist er seit den 1980er Jahren einer der am häufigsten angeführten Bibeltexte. Kirchen, die Kirchenasyl gewähren, berufen sich auf ihn ebenso wie Erklärungen zur Aufnahme von Geflüchteten; Gegenstimmen halten fest, dass der Text die Gemeinde und nicht den Staat anspricht.\n\nDas Gedenken an die Gefangenen hat eine eigene Traditionslinie. Die Alte Kirche machte den Gefangenenbesuch zu einem der Werke der Barmherzigkeit; im Mittelalter entstanden Orden zum Freikauf von Gefangenen, und im 20. Jahrhundert beriefen sich kirchliche Menschenrechtsarbeit und Organisationen für politische Gefangene auf diesen Vers.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Die Straßen des Reiches waren mit Stationen im Abstand einer Tagesreise ausgebaut, doch die staatliche Post stand nur Beamten offen. Alle anderen waren auf Bekannte, Empfehlungen und Zufall angewiesen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Gefangene erhielten keine Verpflegung; Essen, Decken und Geld für die Wächter mussten von außen kommen. Ohne Angehörige oder Freunde war Haft lebensgefährlich.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Vereine nannten ihre Mitglieder Freunde, Verehrer oder Genossen; die Anrede als Brüder war selten und in den frühen Gemeinden auffällig. Sie beanspruchte für Fremde die Sprache der Familie.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ehebruch war nach römischem Recht seit Augustus ein öffentliches Delikt und konnte mit Verbannung geahndet werden; die Anzeige lag beim Ehemann oder Vater. Die Ehe war damit auch eine staatliche Angelegenheit.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. philadelphia',
+        rendered: 'in der brüderlichen Liebe',
+        note: 'Zunächst die Zuneigung unter leiblichen Geschwistern. Ihre Übertragung auf eine Gruppe von Nichtverwandten war für die Umwelt der frühen Gemeinden ungewöhnlich.',
+      },
+      {
+        word: 'griech. philoxenias',
+        rendered: 'Gastfrei zu sein',
+        note: 'Wörtlich die Liebe zum Fremden, das Gegenwort zur Fremdenfeindschaft. Es beschreibt eine anerkannte Tugend der antiken Welt, die hier zur Pflicht der Gemeinde wird.',
+      },
+      {
+        word: 'griech. elathon xenisantes angelous',
+        rendered: 'ohne ihr Wissen Engel beherbergt',
+        note: 'Eine Anspielung auf Abraham und auf Lot. Vergleichbare Erzählungen von unerkannt einkehrenden Göttern waren in Kleinasien verbreitet.',
+      },
+      {
+        word: 'griech. hos syndedemenoi',
+        rendered: 'als die Mitgebundenen',
+        note: 'Wörtlich als Mitgefesselte. Verlangt ist nicht Mitleid aus sicherer Entfernung, sondern das Denken aus derselben Lage heraus.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Gastfreundschaft und Gefangenenbesuch gehören zu den Werken der Barmherzigkeit; die Ordensregeln haben sie zur Lebensform gemacht. Die Ehe steht unter dem Schutz Gottes und ist deshalb unantastbar.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Weisungen sind Beispiele dessen, was der Glaube tut, und keine Bedingungen. Luther hob hervor, dass die Ehe hier ausdrücklich für alle gilt, auch für die Geistlichen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Im Gast wird Christus aufgenommen; die Ikone der drei Besucher bei Abraham verbindet Gastfreundschaft und Gottesbegegnung. Das Gedenken der Gefangenen gehört zum Fürbittengebet der Liturgie.',
+      },
+      {
+        tradition: 'Diakonische Rezeption',
+        text: 'Der Vers über die Engel ist zum Leitwort der Arbeit mit Geflüchteten geworden und wird in Erklärungen zum Kirchenasyl angeführt. Gegenstimmen betonen, dass er die Gemeinde anspricht und nicht die staatliche Ordnung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Reihe knapper Weisungen ohne Begründung entspricht der Form von Gemeinderegeln, wie sie mehrere Briefe des Neuen Testaments enthalten. Die Nennung der Gefangenen passt zu den zuvor beschriebenen Erfahrungen der Gemeinde.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 18, verse: 2, note: 'Die drei Besucher bei Abraham' },
+      { book: '1mo', chapter: 19, verse: 2, note: 'Lot nimmt die Boten auf' },
+      { book: 'mt', chapter: 25, verse: 36, note: 'Ich war im Gefängnis' },
+      { book: 'roem', chapter: 12, verse: 13, note: 'Herbergt gern' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 13,
+    from: 7,
+    to: 16,
+    title: '„draußen vor dem Tor“',
+    historicalShort:
+      'Der Ort der Hinrichtung wird zum Ort der Zugehörigkeit – der eigenwilligste Gedanke des Schlusskapitels.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einer Erinnerung an verstorbene Vorsteher, deren Ende betrachtet werden soll. Das griechische Wort bezeichnet den Ausgang eines Lebens; ob damit ein Martyrium gemeint ist, sagt der Text nicht, legt es aber nahe. Der folgende Satz über Jesus Christus gestern und heute und in Ewigkeit gehört zu den bekanntesten Sätzen des Neuen Testaments und ist rhythmisch gebaut wie eine Bekenntnisformel.\n\nDie Warnung vor fremden Lehren nennt einen einzigen Gegenstand: Speisen. Was gemeint ist, bleibt offen. In Frage kommen jüdische Speisegebote, Opfermahlzeiten im Tempel oder asketische Vorschriften, wie sie andere Briefe des Neuen Testaments bekämpfen. Der Verfasser bestreitet nicht ihre Berechtigung, sondern ihren Nutzen: Sie machen das Herz nicht fest.\n\nDas Bild vom Altar, von dem die Diener der Stiftshütte nicht essen dürfen, greift eine Ordnung des Versöhnungstages auf. Bei den Opfern, deren Blut ins Heiligtum getragen wurde, durfte das Fleisch nicht gegessen werden; die Leiber wurden außerhalb des Lagers verbrannt. Aus dieser Vorschrift zieht der Verfasser eine Ortsangabe: Der Ort, an dem die Reste des Sühnopfers hinkamen, ist der Ort der Kreuzigung – draußen, vor dem Tor.\n\nUnd dann kehrt er das Vorzeichen um. Was Ausschluss war, wird zum Ziel: Lasst uns zu ihm hinausgehen und seine Schmach tragen. Der Satz ist die schärfste Absage an jede Form von Zugehörigkeit, die Schutz verspricht. Er wird begründet mit einem Satz, der das ganze Kapitel trägt: Wir haben hier keine bleibende Stadt. Für Leser in Rom oder in Kleinasien war die Stadt die Grundlage von Recht, Versorgung und Ansehen – der Verzicht darauf ist keine fromme Wendung, sondern eine Ansage.',
+    reception:
+      'Der Ruf, hinauszugehen aus dem Lager, ist zur Losung von Aufbrüchen und Absonderungen geworden. Die Täufer des 16. Jahrhunderts, die Trennung der Freikirchen von den Staatskirchen, die Brüderbewegung des 19. Jahrhunderts und Gemeinden im Widerstand des 20. Jahrhunderts haben sich darauf berufen. In der Befreiungstheologie und in der Theologie nach der Apartheid steht der Vers für die Entscheidung, sich an die Seite der Ausgeschlossenen zu stellen.\n\nDer Satz von Jesus Christus, der gestern und heute und in Ewigkeit derselbe ist, gehört zu den meistgebrauchten Bibelworten überhaupt. Er steht auf Grundsteinen, Kirchenportalen und Grabmalen, wurde zur Jahreslosung gewählt und findet sich in zahllosen Liedern. In der Auslegung wird darauf hingewiesen, dass der Satz im Zusammenhang gegen wechselnde Lehren steht und nicht als Aussage über Unveränderlichkeit an sich gemeint ist.\n\nDas Lobopfer der Lippen hat die Vorstellung vom Gottesdienst nach dem Ende des Tempels geprägt. Dieselbe Wendung findet sich in den Schriften vom Toten Meer und in der rabbinischen Literatur, wo Gebet und Wohltat an die Stelle der Opfer treten. Die frühe Kirche hat diesen Gedanken aufgenommen; er steht hinter der Vorstellung von Gebet und Nächstenhilfe als Opferdienst.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Hinrichtungen fanden vor den Toren statt, weil Blut die Stadt verunreinigte; Gräberfelder lagen ebenfalls außerhalb. Wer draußen starb, war auch räumlich ausgeschlossen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Lager der Wüstenzeit war nach Stämmen geordnet, mit dem Heiligtum in der Mitte; was unrein war, musste hinaus. Diese Ordnung blieb das Bild, in dem über Zugehörigkeit gesprochen wurde, lange nachdem es kein Lager mehr gab.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Stadt war die Grundlage von Rechtsschutz, Getreideversorgung und Ansehen; ihr Bürgerrecht war erblich oder wurde verliehen. Auf sie zu verzichten hieß, den Rahmen des eigenen Lebens aufzugeben.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Opferfleisch war für viele die einzige Gelegenheit, Fleisch zu essen; Priester und Opfernde teilten es. Ein Altar, von dem nicht gegessen werden darf, war deshalb eine auffällige Aussage.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ten ekbasin tes anastrophes',
+        rendered: 'ihr Ende schaut an',
+        note: 'Wörtlich der Ausgang ihres Wandels. Ob damit ein Martyrium gemeint ist, sagt der Text nicht ausdrücklich, legt es aber durch den Zusammenhang nahe.',
+      },
+      {
+        word: 'griech. exo tes pyles',
+        rendered: 'draußen vor dem Tor',
+        note: 'Eine Ortsangabe, die zur Zusage wird. Hinrichtungsstätten und Gräber lagen außerhalb der Mauern, weil Blut und Tod die Stadt verunreinigten.',
+      },
+      {
+        word: 'griech. menousan polin',
+        rendered: 'keine bleibende Stadt',
+        note: 'Die Stadt war Grundlage von Recht, Versorgung und Ansehen. Der Satz ist deshalb keine fromme Wendung, sondern der Verzicht auf den Rahmen des Lebens.',
+      },
+      {
+        word: 'griech. karpon cheileon',
+        rendered: 'die Frucht der Lippen',
+        note: 'Ein Ausdruck aus dem Prophetenbuch Hosea, der schon dort das Bekenntnis an die Stelle des Opfers setzt. Dieselbe Wendung findet sich in den Schriften vom Toten Meer.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Altar, von dem geredet wird, ist auf das Kreuz und auf die Eucharistie bezogen worden. Das Lobopfer der Lippen gehört zur Messe, die Gebet und Hingabe verbindet.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Opfer der Christen besteht in Bekenntnis und Wohltun, nicht in einer kultischen Handlung. Der Hinausgang aus dem Lager wurde in der Reformation auf die Trennung von einer verfälschten Kirche bezogen.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'Der Ruf, hinauszugehen, gilt als Begründung der Trennung von Staatskirchen und der Bereitschaft, gesellschaftliche Anerkennung aufzugeben. Er ist eine der meistzitierten Stellen der Täufer- und Brüderbewegung.',
+      },
+      {
+        tradition: 'Befreiungstheologische Deutung',
+        text: 'Der Ort außerhalb des Tores wird als der Ort der Ausgeschlossenen gelesen; wer dorthin geht, verlässt die Seite der Sicherheit. Die Theologie nach der Apartheid hat den Vers in diesem Sinn aufgenommen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt gewinnt seine Pointe aus einer Vorschrift des dritten Buches Mose über die Verbrennung außerhalb des Lagers. Der Streit über Speisen lässt sich nicht sicher zuordnen und gehört zu den offenen Fragen des Briefes.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 16, verse: 27, note: 'Verbrannt außerhalb des Lagers' },
+      { book: 'hos', chapter: 14, verse: 3, note: 'Die Frucht unserer Lippen' },
+      { book: 'joh', chapter: 19, verse: 20, note: 'Die Stätte nahe bei der Stadt' },
+      { book: 'hebr', chapter: 11, verse: 10, note: 'Die Stadt mit Fundamenten' },
+    ],
+  },
+  {
+    book: 'hebr',
+    chapter: 13,
+    from: 17,
+    to: 25,
+    title: '„den großen Hirten der Schafe“',
+    historicalShort:
+      'Der Briefschluss – mit dem einzigen Satz des ganzen Schreibens, der ausdrücklich von der Auferstehung redet.',
+    historicalLong:
+      'Der Schluss macht aus der Rede einen Brief. Bis hierher gab es keinen Absender, keinen Empfänger und keine Grüße; jetzt folgen Bitte um Fürbitte, ein Segenswunsch, eine Reisenotiz und Grüße. Diese Form ist der Grund, warum die Schrift überhaupt als Brief überliefert wurde. Der Verfasser nennt sein Werk selbst ein Wort der Ermahnung – in der Apostelgeschichte ist das der Ausdruck für eine Predigt in der Synagoge.\n\nDie Anweisung, den Vorstehern zu gehorchen, ist zurückhaltend formuliert. Das gebrauchte Wort meint eher überzeugt werden als gehorchen, und die Begründung ist nicht ihr Amt, sondern ihre Rechenschaftspflicht. Titel wie Bischof, Ältester oder Diakon kommen im ganzen Brief nicht vor; die Vorsteher werden nur durch ihre Aufgabe beschrieben. Das gilt als Hinweis auf eine Gemeindeverfassung, die noch nicht festgelegt war.\n\nDer Segenswunsch enthält den einzigen ausdrücklichen Hinweis des Briefes auf die Auferstehung. Das ist bemerkenswert, weil das ganze Schreiben von der Erhöhung zur Rechten Gottes spricht, ohne den Weg dorthin zu erwähnen. Der Ausdruck vom großen Hirten stammt aus dem Prophetenbuch Jesaja, wo von Mose gesagt wird, Gott habe ihn mit seiner Herde aus dem Meer heraufgeführt; der Brief überträgt das Bild.\n\nDie Notiz über Timotheus und die Grüße aus Italien sind die einzigen persönlichen Angaben. Die Wendung lässt sich in zwei Richtungen lesen: Grüße von Italienern, die in Italien sind, oder von solchen, die von dort stammen und anderswo leben. Die zweite Lesart ist sprachlich näher und legt nahe, dass der Brief nach Rom gerichtet ist und die Grüße von ausgewanderten Römern stammen. Sie ist eines der stärksten Argumente für Rom als Ziel.',
+    reception:
+      'Der Segenswunsch vom Gott des Friedens gehört zu den am häufigsten gesprochenen Segensformeln im Gottesdienst und steht in den Agenden fast aller Kirchen. Das Bild vom großen Hirten hat die Darstellung Christi als Hirte mitgeprägt, die zu den frühesten christlichen Bildmotiven gehört und in den Katakomben hundertfach erscheint.\n\nDie zurückhaltende Formulierung über die Vorsteher hat in den Auseinandersetzungen um das kirchliche Amt eine Rolle gespielt. Reformatorische und freikirchliche Auslegung führen an, dass der Brief keine Ämtertitel kennt und Leitung an Rechenschaft bindet; die Gegenseite verweist auf die Pflicht zum Gehorsam, die der Vers ausspricht. Beide Lesarten hängen an der Bedeutung eines einzigen Verbs.\n\nDie Grüße aus Italien sind bis heute das Hauptargument in der Frage nach dem Empfängerkreis. Der erste Clemensbrief aus Rom zitiert den Hebräerbrief um 96 als bekannt, was für eine frühe Verbreitung dort spricht. Zugleich hat der Westen den Brief lange nicht als apostolisch anerkannt; erst im vierten Jahrhundert setzte sich seine Aufnahme durch.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Vereinsvorsteher legten am Jahresende Rechenschaft über Kasse und Führung ab; Inschriften halten solche Prüfungen fest. Leitung war an Nachweis gebunden, nicht an Rang allein.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ein Hirte führte die Herde voran, kannte die Tiere einzeln und haftete für Verluste; der Beruf galt als niedrig und mühsam. Das Bild vom großen Hirten war deshalb kein erhabenes, sondern ein vertrautes.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Zwischen Italien und dem Osten verkehrten Schiffe von Frühjahr bis Herbst; im Winter ruhte der Verkehr weitgehend. Grüße von Landsleuten aus der Ferne setzten diesen Reiseverkehr voraus.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Entlassung aus der Haft konnte durch Freispruch, Fristablauf oder Fürsprache erfolgen und wurde brieflich weitergemeldet. Die Notiz über Timotheus ist eine solche Nachricht.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. peithesthe tois hegoumenois',
+        rendered: 'Gehorcht euren Lehrern',
+        note: 'Das Verb bedeutet eher sich überzeugen lassen als gehorchen. Die Begründung ist nicht das Amt, sondern die Rechenschaft, die die Vorsteher abzulegen haben.',
+      },
+      {
+        word: 'griech. ton poimena ton megan',
+        rendered: 'den großen Hirten der Schafe',
+        note: 'Der Ausdruck stammt aus dem Prophetenbuch Jesaja, wo er auf Mose bezogen ist, den Gott mit seiner Herde heraufführte. Der Brief überträgt das Bild.',
+      },
+      {
+        word: 'griech. ho logos tes parakleseos',
+        rendered: 'das Wort der Ermahnung',
+        note: 'In der Apostelgeschichte die Bezeichnung für eine Predigt in der Synagoge. Der Verfasser nennt sein Werk damit selbst eine Rede und nicht einen Brief.',
+      },
+      {
+        word: 'griech. hoi apo tes Italias',
+        rendered: 'die Brüder aus Italien',
+        note: 'Der Ausdruck lässt sich als in Italien oder als von dort stammend lesen. Die zweite Lesart ist sprachlich näher und spricht dafür, dass der Brief nach Rom ging.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Anweisung an die Gemeinde begründet die Ordnung des Amtes, das über die Seelen wacht und Rechenschaft schuldet. Der Segenswunsch wird als Ausdruck der Sendung durch den auferstandenen Herrn gelesen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Dass der Brief keine Ämtertitel nennt und Leitung an Rechenschaft bindet, gilt als Hinweis darauf, dass Autorität am Wort hängt und nicht am Stand. Der Segen ist Zuspruch und nicht Verleihung von Vollmacht.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Bild vom großen Hirten steht im Zentrum der bischöflichen Sendung, die als Nachahmung dieses Hirtendienstes verstanden wird. Die Erwähnung der Auferstehung schließt den Brief mit dem Osterbekenntnis.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'Weil das gebrauchte Verb Überzeugung meint, wird die Stelle als Beschreibung geistlicher Leitung ohne Zwangsgewalt gelesen. Verantwortung fällt an die ganze Gemeinde zurück.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Briefschluss ist an eine Rede angehängt worden und macht aus ihr ein Schreiben; der Verfasser bezeichnet sein Werk selbst als Wort der Ermahnung. Die Grüße aus Italien sind das Hauptargument dafür, dass Rom der Empfängerort ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 63, verse: 11, note: 'Der Hirte seiner Herde' },
+      { book: 'apg', chapter: 13, verse: 15, note: 'Ein Wort der Ermahnung' },
+      { book: 'joh', chapter: 10, verse: 11, note: 'Der gute Hirte' },
+      { book: 'hebr', chapter: 2, verse: 3, note: 'Die zweite Generation' },
+    ],
+  },
 ];
 
 /**
