@@ -32972,6 +32972,901 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'roem', chapter: 6, verse: 4, note: 'Mit ihm begraben durch die Taufe' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: '2kor',
+    chapter: 6,
+    from: 1,
+    to: 13,
+    title: '„als die nichts innehaben, und doch alles haben“',
+    historicalShort:
+      'Eine Liste von achtundzwanzig Umständen des Dienstes – und die genaueste Aufzählung dessen, was ein Wanderverkündiger aushielt.',
+    historicalLong:
+      'Der Abschnitt enthält die erste von mehreren Leidenslisten des Briefes. Solche Aufzählungen waren eine bekannte Form: Die kynischen und stoischen Wanderphilosophen führten auf, was sie ertrugen, um damit ihre Glaubwürdigkeit zu belegen. Epiktet und Seneca schreiben in dieser Weise, und die Form hieß in der Rhetorik Peristasenkatalog, Aufzählung der Umstände. Paulus übernimmt die Form und füllt sie anders: Was bei den Philosophen den unerschütterlichen Weisen zeigt, zeigt hier einen, der eben nicht unerschüttert ist.\n\nDie Liste hat drei Teile. Zuerst neun Nöte von außen – Bedrängnis, Schläge, Gefängnisse, Aufruhr, Arbeit, Wachen, Fasten. Manches ist unfreiwillig, manches gewählt; Wachen und Fasten gehören zum Zweiten. Dann acht Gaben, die den Dienst tragen. Zuletzt sieben Gegensatzpaare, in denen jeweils der Anschein und die Wirklichkeit auseinandertreten. Diese letzte Reihe ist rhythmisch gebaut und gehört zum sprachlich Dichtesten, was von Paulus erhalten ist.\n\nDas Zitat vom Tag des Heils stammt aus dem Prophetenbuch Jesaja und spricht dort von der Rückkehr aus dem Exil. Paulus zieht es in die Gegenwart: Jetzt ist die Zeit. Das griechische Wort für diesen Zeitpunkt bezeichnet den günstigen Augenblick und nicht die fortlaufende Zeit – ein Begriff, der in der Rhetorik und in der Medizin für den entscheidenden Moment stand.\n\nDer Schluss wechselt vom Katalog zur persönlichen Anrede, und zwar mit dem Namen: O ihr Korinther. Paulus nennt eine Gemeinde nur an zwei weiteren Stellen so unmittelbar beim Namen. Das Bild vom weiten und vom engen Herzen ist im Hebräischen zu Hause, wo Enge für Bedrängnis und Weite für Rettung steht.',
+    reception:
+      'Die Reihe der Gegensätze gehört zu den meistvertonten und meistzitierten Stellen der Paulusbriefe. Sie steht in Ordinationsgottesdiensten, in der Literatur über den geistlichen Beruf und in Texten über die Lage von Christen unter Verfolgung. Die Wendung von denen, die nichts haben und doch alles besitzen, ist in die Ordensregeln der Armutsbewegungen eingegangen; Franz von Assisi und seine Nachfolge lasen sie als Beschreibung ihres Standes.\n\nDer Satz, dass jetzt die Zeit des Heils sei, ist zum Kernwort der Bußpredigt und der Erweckungsbewegung geworden. Er steht am Beginn der Fastenzeit in der Liturgie vieler Kirchen und wurde in der Erweckungsbewegung des 19. Jahrhunderts zum Aufruf zur Entscheidung in dieser Stunde – eine Verwendung, die den Zusammenhang der Rückkehr aus dem Exil beiseitelässt.\n\nDie Leidensliste ist in der Forschung zur biographischen Quelle geworden. Sie nennt Gefängnisse im Plural und Schläge, von denen die Apostelgeschichte nur einen Teil berichtet; daraus wird geschlossen, dass über das Leben des Paulus weit weniger überliefert ist, als er selbst voraussetzt.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Wanderphilosophen führten auf, was sie ertrugen, um ihre Glaubwürdigkeit zu belegen; die Form hatte in der Redekunst einen eigenen Namen. Wer so sprach, folgte einem bekannten Muster und wurde daran gemessen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Prügelstrafe traf, wer kein römisches Bürgerrecht geltend machte; Synagogen verhängten neununddreißig Schläge, römische Behörden Rutenschläge. Beides war Verwaltungshandeln, nicht Ausnahme.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Handwerker arbeiteten von Sonnenaufgang bis Sonnenuntergang; wer daneben predigte, tat es früh, spät oder in der Pause. Die genannten Wachen sind keine Frömmigkeitsübung, sondern die Folge dieser Einteilung.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Aufruhr war in Städten häufig und gefährlich: Es gab keine Polizei, und die Menge handelte selbst. Wer als Fremder in Verdacht geriet, hatte wenig Schutz.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kairos euprosdektos',
+        rendered: 'die angenehme Zeit',
+        note: 'Das Wort bezeichnet den günstigen Augenblick, nicht die fortlaufende Zeit. In der Medizin stand es für den Moment, in dem eine Behandlung wirkt.',
+      },
+      {
+        word: 'griech. en hypomone polle',
+        rendered: 'in großer Geduld',
+        note: 'Wörtlich das Daruntherbleiben: aushalten, ohne wegzugehen. Es ist die Überschrift der ganzen Liste und keine Einzeltugend.',
+      },
+      {
+        word: 'griech. hos planoi kai aletheis',
+        rendered: 'als die Verführer, und doch wahrhaftig',
+        note: 'Der Vorwurf, ein Verführer zu sein, war ein Rechtsbegriff und traf Wanderredner regelmäßig. Paulus nimmt ihn auf, statt ihn zu bestreiten.',
+      },
+      {
+        word: 'griech. peplatyntai',
+        rendered: 'unser Herz ist weit',
+        note: 'Enge und Weite sind hebräische Bilder für Bedrängnis und Rettung. Das weite Herz meint keinen Gefühlszustand, sondern Raum für andere.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Aufzählung beschreibt das Amt als Teilhabe am Leiden Christi; sie steht in Ordinationsliturgien und in der Ordenstradition. Die Armut, die alles besitzt, wurde zur Losung der Bettelorden.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Gegensätze zeigen, dass der Dienst unter dem Gegenteil dessen steht, was er ist; das gehört zur Kreuzestheologie. Der Tag des Heils ist der Tag, an dem die Predigt gehört wird.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Reihe wird als Weg der Askese gelesen, auf dem Freiwilliges und Unfreiwilliges zusammenkommen. Die Freude in der Trübsal gilt als Kennzeichen der Heiligen.',
+      },
+      {
+        tradition: 'Erweckungsbewegung',
+        text: 'Der Satz, dass jetzt der Tag des Heils sei, wurde zum Aufruf zur Entscheidung in dieser Stunde. Der ursprüngliche Zusammenhang der Rückkehr aus dem Exil tritt dabei zurück.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Liste folgt der antiken Aufzählung der Umstände, wie sie Wanderphilosophen gebrauchten, kehrt ihren Sinn aber um. Sie nennt Erfahrungen, von denen die Apostelgeschichte nur einen Teil berichtet, und gilt deshalb als biographische Quelle ersten Ranges.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 49, verse: 8, note: 'Der Tag des Heils' },
+      { book: '2kor', chapter: 11, verse: 23, note: 'Die zweite Leidensliste' },
+      { book: '1kor', chapter: 4, verse: 11, note: 'Hunger, Durst und Blöße' },
+      { book: 'apg', chapter: 16, verse: 23, note: 'Schläge und Gefängnis in Philippi' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 6,
+    from: 14,
+    to: 18,
+    title: '„Ziehet nicht am fremden Joch mit den Ungläubigen“',
+    historicalShort:
+      'Fünf Fragen, eine Zitatenkette – und ein Abschnitt, den viele Ausleger für einen Fremdkörper halten.',
+    historicalLong:
+      'Kein anderer Abschnitt des Briefes hat so viel Verdacht auf sich gezogen. Er unterbricht eine Bewegung: Vorher öffnet Paulus sein Herz, nachher fährt er mit derselben Anrede fort, als sei nichts dazwischen. Der Ton ist scharf statt werbend, das Vokabular ungewöhnlich – mehrere Wörter kommen sonst bei Paulus nicht vor –, und die Vorstellung einer Trennung von Reinen und Unreinen erinnert an die Schriften vom Toten Meer. Ein Teil der Forschung hält den Abschnitt deshalb für ein eingefügtes Stück, ein anderer für echt und bewusst hart gesetzt.\n\nDas Bild vom ungleichen Joch stammt aus einem Verbot im fünften Buch Mose, Rind und Esel nicht zusammen anzuspannen. Zwei Tiere verschiedener Größe unter einem Joch verletzen einander und ziehen schief; das Gesetz schützt die Tiere. Übertragen beschreibt es eine Verbindung, in der die Ungleichheit selbst der Schaden ist.\n\nDie fünf Fragen sind rhythmisch gebaut und benutzen jeweils ein anderes Gegensatzpaar. Belial ist dabei kein griechisches Wort, sondern ein hebräisches: Nichtsnutz, Verderben. In den Schriften vom Toten Meer ist es der Name des Widersachers und kommt dort hundertfach vor; im Neuen Testament steht es nur hier. Das ist eines der stärksten Argumente derer, die eine fremde Vorlage annehmen.\n\nDie Zitatenkette am Ende setzt vier Stellen aus dem dritten Buch Mose, aus Hesekiel, aus Jesaja und aus dem zweiten Buch Samuel zusammen. Der Schluss erweitert dabei die Zusage an das Königshaus: Aus Sohn werden Söhne und Töchter. Diese Erweiterung ist bemerkenswert, weil sie eine Verheißung, die einem Einzelnen galt, auf die ganze Gemeinde ausdehnt und dabei ausdrücklich beide Geschlechter nennt.',
+    reception:
+      'Die Weisung vom ungleichen Joch ist über Jahrhunderte auf die Ehe bezogen worden, obwohl der Text nicht von ihr spricht. Kirchenordnungen untersagten die Mischehe, katholische und evangelische Behörden verlangten Dispens oder Erklärungen, und in freikirchlichen Kreisen wird der Vers bis heute in der Frage nach der Partnerwahl angeführt. Andere Auslegungen bezogen ihn auf Geschäftsverbindungen, auf Bündnisse und auf die Mitgliedschaft in Vereinen und Logen.\n\nDer Ruf, auszugehen und sich abzusondern, ist zur Losung von Trennungsbewegungen geworden. Die Puritaner, die Täufer, die Brüderbewegung und die Fundamentalisten des frühen 20. Jahrhunderts beriefen sich darauf; in der amerikanischen Auseinandersetzung um die ökumenische Bewegung war er das Hauptargument der Separatisten. Gegenstimmen halten fest, dass die zitierte Stelle bei Jesaja vom Auszug aus Babylon spricht und keine Regel für den Umgang mit Nachbarn aufstellt.\n\nDie Erweiterung der Zusage auf Söhne und Töchter ist in der neueren Auslegung hervorgehoben worden. Sie gehört zu den Stellen, an denen eine an einen König gerichtete Verheißung ausdrücklich auf Frauen mit ausgedehnt wird, und wird in Arbeiten zur Stellung der Frau in den frühen Gemeinden angeführt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Ein Joch war Maßarbeit: Es wurde für ein bestimmtes Gespann gezimmert und passte keinem anderen. Das Bild setzt voraus, dass zwei Zugtiere aufeinander abgestimmt sein müssen, nicht nur nebeneinanderstehen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Gemeinschaft am Toten Meer trennte die Söhne des Lichts von den Söhnen der Finsternis und regelte den Umgang mit Außenstehenden bis ins Einzelne. Wer sich anschloss, gab Besitz und Nachbarschaft auf.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Vereine, Zünfte und Nachbarschaften waren mit Opfern und Festmahlzeiten verbunden; wer fernblieb, fiel aus dem wirtschaftlichen Netz. Absonderung hatte deshalb einen berechenbaren Preis.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Korinth hatte Tempel für Apollo, Aphrodite und Asklepios sowie einen Kaiserkult; Statuen und Altäre standen im Straßenbild. Die Frage nach dem Tempel Gottes und den Götzen war keine gedachte.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. me ginesthe heterozygountes',
+        rendered: 'Ziehet nicht am fremden Joch',
+        note: 'Ein Wort, das auf das Verbot im fünften Buch Mose zurückgeht, Rind und Esel zusammenzuspannen. Von Ehe ist im Text nicht die Rede.',
+      },
+      {
+        word: 'hebr. Belial',
+        rendered: 'Wie stimmt Christus mit Belial',
+        note: 'Ein hebräisches Wort für Nichtsnutz und Verderben, in den Schriften vom Toten Meer der Name des Widersachers. Es steht nur an dieser Stelle im Neuen Testament.',
+      },
+      {
+        word: 'griech. naos theou',
+        rendered: 'der Tempel des lebendigen Gottes',
+        note: 'Das Wort meint nicht die Anlage, sondern das innerste Haus des Heiligtums. Die Gemeinde tritt damit an die Stelle des Allerheiligsten, nicht des Vorhofs.',
+      },
+      {
+        word: 'griech. eis hyious kai thygateras',
+        rendered: 'meine Söhne und Töchter',
+        note: 'Die zitierte Zusage an das Königshaus spricht nur vom Sohn. Die Erweiterung auf Töchter ist ein Zusatz, der die Verheißung auf die ganze Gemeinde ausdehnt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Weisung betrifft die Unvereinbarkeit von Christusdienst und Götzendienst, nicht den Umgang mit Andersglaubenden. Die Ehe zwischen Getauften und Ungetauften wurde geregelt, aber nicht mit diesem Vers verboten.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Absonderung gilt der Sache und nicht den Personen; Luther wandte sich gegen eine Auslegung, die den Umgang mit Nachbarn untersagt. Die Zitatenkette beschreibt die Zusage, nicht die Bedingung.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'Der Ruf zum Ausgehen und Absondern ist als Auftrag zur Trennung von Verbindungen gelesen worden, die den Glauben gefährden – von Logen bis zu Kirchenbünden. Er war das Hauptargument separatistischer Bewegungen des 20. Jahrhunderts.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Die Erweiterung der Königszusage auf Söhne und Töchter wird als bewusste Ausdehnung gelesen. Sie zeigt, dass Verheißungen in den frühen Gemeinden nicht auf Männer beschränkt verstanden wurden.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Wortschatz, Ton und die Nähe zu den Schriften vom Toten Meer haben zu der Annahme geführt, dass hier ein fremdes Stück eingefügt wurde. Andere halten den Abschnitt für echt und die Härte für beabsichtigt; entschieden ist die Frage nicht.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 22, verse: 10, note: 'Rind und Esel nicht zusammen' },
+      { book: 'jes', chapter: 52, verse: 11, note: 'Gehet aus von ihnen' },
+      { book: 'hes', chapter: 37, verse: 27, note: 'Ich will unter ihnen wohnen' },
+      { book: '2sam', chapter: 7, verse: 14, note: 'Die Zusage an das Königshaus' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 7,
+    from: 1,
+    to: 16,
+    title: '„göttliche Traurigkeit wirkt zur Seligkeit“',
+    historicalShort:
+      'Die Erleichterung, als Titus mit guten Nachrichten kommt – und die Unterscheidung zweier Arten von Trauer.',
+    historicalLong:
+      'Der Reisebericht, der im zweiten Kapitel abgebrochen war, wird hier fortgesetzt. Paulus fand in Mazedonien keine Ruhe, bis Titus eintraf; die Ungewissheit über die Wirkung des Tränenbriefs hatte ihn nicht schlafen lassen. Der Satz von Streit außen und Furcht innen ist eine der offensten Selbstbeschreibungen des Neuen Testaments – kein Vorbild an Gelassenheit, sondern ein Mensch, der auf Nachricht wartet.\n\nDie Unterscheidung zweier Arten von Traurigkeit ist die theologische Mitte des Abschnitts. Die eine führt zur Umkehr, die andere zum Tod. Das griechische Wort für Umkehr bedeutet wörtlich Sinnesänderung; das andere Wort, das der Text daneben stellt, bezeichnet das Bereuen im Sinn von Bedauern. Paulus sagt, die Sinnesänderung sei eine, die man nicht bedauert – ein Wortspiel, das im Deutschen nur umständlich wiederzugeben ist.\n\nDie sieben Wirkungen, die er aufzählt, sind bemerkenswert unfromm: Eifer, Verteidigung, Entrüstung, Furcht, Sehnsucht, Einsatz, Bestrafung. Umkehr erscheint hier nicht als Gefühl, sondern als Reihe von Handlungen einer Gemeinschaft, die eine Sache in Ordnung bringt. Das letzte Wort meint die Ahndung und verweist auf den Beschluss, von dem im zweiten Kapitel die Rede war.\n\nAuffällig ist die Bemerkung über den Zweck des Briefes: Er sei nicht um des Täters und nicht um des Geschädigten willen geschrieben, sondern damit der Einsatz der Gemeinde offenbar werde. Wer die Beteiligten waren, sagt der Text nicht. Die alte Auslegung setzte den Täter mit dem Mann aus dem ersten Korintherbrief gleich, der mit der Frau seines Vaters lebte; das ist heute weitgehend aufgegeben, weil der Ton nicht passt und Paulus selbst als der Geschädigte erscheint.',
+    reception:
+      'Die Unterscheidung zweier Arten von Traurigkeit ist zur Grundlage der Bußlehre geworden. Die mittelalterliche Theologie entwickelte daraus das Begriffspaar von vollkommener und unvollkommener Reue, das im Konzil von Trient festgehalten wurde; die Reformatoren bestritten die Unterscheidung nicht, verlagerten aber den Grund von der Reue auf die Zusage der Vergebung. In der Seelsorge ist der Vers bis heute die Stelle, an der zwischen fruchtbarer Reue und lähmender Scham unterschieden wird.\n\nDie moderne Psychologie hat die Unterscheidung aufgegriffen. Die Trennung von Schuldgefühl, das zur Wiedergutmachung führt, und Scham, die den Menschen lähmt, wird in der Literatur zur Traumafolgenforschung mit diesem Text in Verbindung gebracht; kirchliche Beratungsstellen arbeiten damit.\n\nDer Abschnitt ist zugleich ein Hauptbeleg in der Frage nach der Einheit des Briefes. Dass der Reisebericht aus dem zweiten Kapitel hier ohne Übergang fortgesetzt wird, gehört zu den Beobachtungen, aus denen die Annahme mehrerer zusammengefügter Schreiben erwachsen ist. Die Diskussion läuft seit dem 18. Jahrhundert.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Mazedonien lag an der Via Egnatia, der großen Ost-West-Straße des Reiches; wer aus Korinth kam, war tagelang unterwegs. Auf einen Boten zu warten hieß, wochenlang nichts zu wissen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Bote überbrachte nicht nur den Brief, sondern berichtete über Stimmung und Lage; sein Eindruck war Teil der Nachricht. Titus ist damit weniger Postbote als Unterhändler.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für Bestrafung meint die Ahndung eines Vergehens durch die Gemeinschaft. Es verweist auf den Beschluss, den die Versammlung gefasst hatte, und nicht auf ein Gefühl.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Trauer war öffentlich: Man zerriss Kleider, streute Asche und klagte laut. Die Rede von einer Traurigkeit, die zum Tod führt, beschrieb für die Hörer etwas Sichtbares.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kata theon lype',
+        rendered: 'göttliche Traurigkeit',
+        note: 'Wörtlich Traurigkeit Gott gemäß. Nicht ihre Stärke unterscheidet sie von der anderen, sondern ihre Richtung: Sie führt zu einer Änderung.',
+      },
+      {
+        word: 'griech. metanoian ametameleton',
+        rendered: 'einen Reue, die niemand gereut',
+        note: 'Zwei verwandte Wörter im Wortspiel: die Sinnesänderung, die man nicht bedauert. Im Deutschen lässt sich der Gleichklang nicht nachbilden.',
+      },
+      {
+        word: 'griech. exothen machai esothen phoboi',
+        rendered: 'auswendig Streit, inwendig Furcht',
+        note: 'Eine der offensten Selbstbeschreibungen des Neuen Testaments. Der Satz beschreibt keine Gelassenheit, sondern das Warten auf Nachricht.',
+      },
+      {
+        word: 'griech. ekdikesin',
+        rendered: 'Eifer, Rache',
+        note: 'Das Wort meint die Ahndung durch die Gemeinschaft, nicht persönliche Vergeltung. Es verweist auf den Beschluss der Versammlung.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die beiden Arten der Traurigkeit stehen hinter der Unterscheidung vollkommener und unvollkommener Reue, die das Konzil von Trient festhielt. Reue führt zur Beichte und zur Wiedergutmachung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Nicht die Reue macht die Umkehr gültig, sondern die Zusage der Vergebung; sonst wird die Traurigkeit selbst zum Werk. Luther betonte, dass Reue ohne Glauben zur Verzweiflung führt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die heilsame Traurigkeit gehört zum Weg der Umkehr und wird von den Wüstenvätern als Gabe der Tränen beschrieben. Sie ist Anfang der Heilung, nicht Strafe.',
+      },
+      {
+        tradition: 'Seelsorgliche Rezeption',
+        text: 'Die Unterscheidung wird auf das Verhältnis von Schuld und Scham bezogen: Das eine führt zur Wiedergutmachung, das andere lähmt. Beratungsstellen arbeiten mit dieser Unterscheidung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Reisebericht aus dem zweiten Kapitel wird hier ohne Übergang fortgesetzt – ein Hauptbeleg für die Annahme zusammengefügter Schreiben. Die alte Gleichsetzung des Täters mit dem Mann aus dem ersten Korintherbrief ist weitgehend aufgegeben.',
+      },
+    ],
+    crossRefs: [
+      { book: '2kor', chapter: 2, verse: 13, note: 'Der abgebrochene Bericht' },
+      { book: '2kor', chapter: 2, verse: 6, note: 'Der Beschluss der Gemeinde' },
+      { book: 'mt', chapter: 27, verse: 3, note: 'Die Reue des Judas' },
+      { book: 'roem', chapter: 2, verse: 4, note: 'Die Güte Gottes leitet zur Buße' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: '2kor',
+    chapter: 8,
+    from: 1,
+    to: 15,
+    title: '„daß es gleich sei“',
+    historicalShort:
+      'Die Sammlung für Jerusalem – und der einzige Text des Neuen Testaments, der einen Ausgleich zwischen Gemeinden fordert.',
+    historicalLong:
+      'Der Abschnitt gehört zu einem Vorhaben, das Paulus über Jahre beschäftigte: eine Geldsammlung der Gemeinden aus den Völkern für die Gemeinde in Jerusalem. Sie war beim Treffen der Apostel vereinbart worden und hatte eine doppelte Bedeutung – wirtschaftliche Hilfe für eine verarmte Gemeinde und ein sichtbares Zeichen, dass die Christen aus den Völkern zu Israel gehören. Paulus hat die Sammlung schließlich selbst nach Jerusalem gebracht, und die Reise endete mit seiner Verhaftung.\n\nDie Sprache ist auffällig. Paulus gebraucht kein einziges Mal ein Wort für Geld, Steuer oder Abgabe. Er spricht von Gnade, Gemeinschaft, Dienst, Segen – acht verschiedene Ausdrücke im Verlauf beider Kapitel, jeder aus einem anderen Bereich. Das ist keine Verlegenheit, sondern Absicht: Eine Zahlung, die als Abgabe erschiene, hätte die Gemeinde in Jerusalem zum Empfänger und die anderen zu Untergebenen gemacht.\n\nDas Beispiel der mazedonischen Gemeinden – Philippi, Thessalonich, Beröa – ist ein Werbemittel und zugleich eine soziale Angabe. Diese Gemeinden waren arm; Mazedonien war seit den römischen Bürgerkriegen wirtschaftlich ausgezehrt, und die Bergwerke lagen in staatlicher Hand. Dass gerade sie gaben, wird gegen das reichere Korinth gestellt.\n\nDie Begründung im neunten Vers ist einer der dichtesten Sätze des Paulus: Er wurde arm, damit ihr reich würdet. Das Wort für arm werden bezeichnet den Absturz in die Bettelarmut, nicht bescheidene Verhältnisse. Der Schlussgedanke ist der ungewöhnlichste: Es soll ein Ausgleich sein. Das griechische Wort bezeichnet die Gleichheit im Sinn der ausgleichenden Gerechtigkeit und war ein Begriff der politischen Theorie – Aristoteles verhandelt ihn in der Nikomachischen Ethik.',
+    reception:
+      'Der Gedanke des Ausgleichs zwischen Gemeinden ist zur Grundlage der kirchlichen Entwicklungsarbeit geworden. Die Werke der Kirchen, der Finanzausgleich zwischen Landeskirchen und die Erklärungen des Weltkirchenrats zur wirtschaftlichen Gerechtigkeit berufen sich darauf. Das Zitat vom Manna, mit dem Paulus schließt, verstärkt das: Wer viel sammelte, hatte nicht mehr – die Ordnung der Wüstenzeit kannte keinen Vorrat.\n\nDer Vers über den, der arm wurde, ist in die Weihnachtsliturgie und in die Armutsbewegungen eingegangen. Franz von Assisi machte ihn zur Begründung seines Verzichts, und die Bettelorden führten ihn in ihren Auseinandersetzungen mit der Amtskirche an. In der Befreiungstheologie des 20. Jahrhunderts wurde er zum Kernsatz der Rede von der Option für die Armen.\n\nDie Sammlung selbst ist in der Forschung ein eigenes Thema geworden. Sie zeigt, dass die frühen Gemeinden nicht nur brieflich, sondern wirtschaftlich verbunden waren, und sie wirft die Frage auf, ob sie in Jerusalem überhaupt angenommen wurde – die Apostelgeschichte schweigt darüber, obwohl sie die Reise ausführlich erzählt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Korinth lag auf der Landenge zwischen zwei Meeren; Schiffe wurden über eine gepflasterte Schleppbahn von einem Hafen zum anderen gezogen. Die Stadt lebte von Umschlag, Gebühren und Werkstätten und galt als wohlhabend.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Geldtransporte über See waren gefährlich und wurden von mehreren Begleitern geführt, die einander beaufsichtigten. Wer öffentliche Gelder verwaltete, musste Rechenschaft ablegen und Zeugen benennen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wohltätigkeit war Sache der Stifter und diente ihrem Ansehen; der Name des Gebers stand auf der Inschrift. Eine Sammlung vieler kleiner Beiträge ohne Namensnennung war ein anderes Verfahren.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Juden in der ganzen Welt zahlten jährlich eine halbe Doppeldrachme an den Tempel in Jerusalem; die Transporte waren organisiert und geschützt. Eine Sammlung für Jerusalem hatte deshalb ein Vorbild, dem sie ähnelte und widersprach.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ten charin',
+        rendered: 'die Gnade Gottes, die in den Gemeinden',
+        note: 'Dasselbe Wort bezeichnet im Text die Gabe Gottes und die Geldgabe der Gemeinden. Paulus vermeidet jedes Wort für Geld oder Abgabe.',
+      },
+      {
+        word: 'griech. koinonia',
+        rendered: 'Gemeinschaft der Handreichung',
+        note: 'Der Begriff meint Teilhabe und war im Geschäftsleben die Bezeichnung für eine Gesellschaft mit gemeinsamem Kapital. Beides klingt mit.',
+      },
+      {
+        word: 'griech. eptocheusen',
+        rendered: 'ward er doch arm um euretwillen',
+        note: 'Das Verb bezeichnet den Absturz in die Bettelarmut, nicht bescheidene Verhältnisse. Das zugehörige Hauptwort meint den Bettler.',
+      },
+      {
+        word: 'griech. isotes',
+        rendered: 'ein Ausgleich',
+        note: 'Ein Begriff der politischen Theorie für die ausgleichende Gerechtigkeit; Aristoteles verhandelt ihn ausführlich. Er meint nicht Gleichmacherei, sondern das Aufheben von Mangel.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Sammlung gilt als Urbild kirchlicher Solidarität; die Soziallehre leitet daraus die allgemeine Bestimmung der Güter ab. Der Vers über die Armut Christi steht im Zentrum der Rede von der Option für die Armen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Geben folgt aus dem Empfangenen und ist kein Verdienst; Paulus gebietet ausdrücklich nicht. Der Ausgleich zwischen Gemeinden wurde zur Begründung der kirchlichen Armenkasten.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Herabstieg Christi in die Armut ist Teil der Selbstentäußerung, die die Menschheit erhebt. Almosen gelten als Teilnahme an diesem Weg und gehören zur Askese.',
+      },
+      {
+        tradition: 'Befreiungstheologische Deutung',
+        text: 'Der Ausgleich wird als Forderung nach struktureller Umverteilung gelesen, nicht als Aufruf zur Mildtätigkeit. Das Mannazitat stützt das: Die Ordnung der Wüstenzeit kannte keinen Vorrat.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Sammlung war beim Apostelkonvent vereinbart worden und sollte die Einheit der Gemeinden aus Juden und Völkern sichtbar machen. Ob sie in Jerusalem angenommen wurde, ist unbekannt – die Apostelgeschichte schweigt darüber.',
+      },
+    ],
+    crossRefs: [
+      { book: 'gal', chapter: 2, verse: 10, note: 'Gedenket der Armen' },
+      { book: '2mo', chapter: 16, verse: 18, note: 'Das Manna und der Ausgleich' },
+      { book: '1kor', chapter: 16, verse: 1, note: 'Die Anweisung zur Sammlung' },
+      { book: 'apg', chapter: 24, verse: 17, note: 'Almosen für mein Volk gebracht' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 8,
+    from: 16,
+    to: 24,
+    title: '„daß es redlich zugehe“',
+    historicalShort:
+      'Drei Boten, ein Wahlverfahren und die Sorge, dass niemand über die Verwendung des Geldes reden kann.',
+    historicalLong:
+      'Der Abschnitt beschreibt eine Vorkehrung, die selten Beachtung findet: die Sicherung der Sammlung gegen den Verdacht der Unterschlagung. Paulus schickt nicht einen Boten, sondern drei, und einer von ihnen ist von den Gemeinden gewählt worden. Das griechische Wort dafür bezeichnet die Wahl durch Handaufheben in der Volksversammlung – ein Verfahren des griechischen Stadtrechts, das hier auf eine Gemeindeangelegenheit angewandt wird.\n\nDie Begründung ist ausdrücklich: Niemand soll etwas nachreden können. Der Satz, es solle redlich zugehen nicht nur vor Gott, sondern auch vor Menschen, zitiert das Buch der Sprüche in der griechischen Fassung. Damit ist eine Regel formuliert, die über die eigene Gewissheit hinausgeht: Es genügt nicht, im Recht zu sein; der Anschein zählt mit.\n\nDer Hintergrund ist ein Vorwurf, der im Brief mehrfach durchscheint. Paulus nahm von den Gemeinden kein Geld für sich, was in Korinth als Zeichen mangelnder Wertschätzung gedeutet wurde; zugleich sammelte er Geld für Jerusalem, und offenbar wurde gemunkelt, er bereichere sich dabei. Im zwölften Kapitel weist er den Verdacht ausdrücklich zurück.\n\nDie beiden ungenannten Brüder haben die Auslegung seit jeher beschäftigt. Vorgeschlagen wurden Lukas, Barnabas, Apollos und andere; sicher ist nichts. Bemerkenswert ist, dass Paulus sie nicht benennt, ihre Beauftragung aber ausführlich beschreibt – der Vorgang zählt, nicht die Person. Die Wendung, sie seien Boten der Gemeinden, benutzt dasselbe Wort, das sonst Apostel heißt.',
+    reception:
+      'Der Abschnitt ist zur Grundlage kirchlicher Finanzordnung geworden. Die Bestimmungen über Rechnungsprüfung, Vieraugenprinzip und Kassenführung in Kirchenordnungen berufen sich darauf, und in den Auseinandersetzungen um Finanzskandale in Kirchen und kirchlichen Werken wird er regelmäßig angeführt. Der Grundsatz, dass Redlichkeit auch nach außen sichtbar sein muss, ist in Transparenzstandards gemeinnütziger Organisationen eingegangen.\n\nDas Wahlverfahren durch Handaufheben ist in der Verfassungsgeschichte der Kirchen ein Argument gewesen. Reformierte und kongregationalistische Ordnungen führten es an, um die Wahl von Ältesten und Pfarrern durch die Gemeinde zu begründen; die Gegenseite verwies darauf, dass es hier um eine Finanzangelegenheit und nicht um ein geistliches Amt geht.\n\nDie Frage nach den beiden ungenannten Brüdern hat eine lange Auslegungsgeschichte. Origenes vermutete Lukas, andere Barnabas; die Vermutungen sagen mehr über die jeweilige Zeit als über den Text. Die neuere Auslegung betont, dass die Anonymität zum Verfahren gehört: Nicht Personen bürgen, sondern die Ordnung.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Städte wählten Gesandte und Kassenführer durch Handaufheben in der Volksversammlung; das Verfahren war urkundlich festgehalten. Dasselbe Wort steht hier für die Beauftragung des Bruders.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wer fremdes Geld über Land brachte, reiste in Begleitung; Banken gab es für solche Wege nicht. Ein Transport von mehreren Provinzen her erforderte Planung und mehrere Verantwortliche.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Verdacht der Bereicherung traf Wanderlehrer regelmäßig; Lukian von Samosata beschreibt einen solchen Fall spöttisch. Wer Geld einsammelte, musste dem Gerede zuvorkommen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Städte verlangten von Beamten Rechenschaft am Ende der Amtszeit; wer sie verweigerte, durfte die Stadt nicht verlassen. Rechenschaft war eine Bedingung öffentlicher Aufgaben, nicht ein Zeichen des Misstrauens.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. cheirotonetheis',
+        rendered: 'verordnet von den Gemeinden',
+        note: 'Wörtlich durch Handaufheben gewählt, ein Verfahren der griechischen Volksversammlung. Es beschreibt eine Wahl und keine Einsetzung von oben.',
+      },
+      {
+        word: 'griech. stellomenoi touto',
+        rendered: 'Also verhüten wir',
+        note: 'Ein Wort aus der Seefahrt für das Einholen der Segel, übertragen für Vorsorge. Es beschreibt eine bewusste Vorkehrung, keine Reaktion.',
+      },
+      {
+        word: 'griech. kala enopion anthropon',
+        rendered: 'nicht allein vor dem HERRN sondern auch vor den Menschen',
+        note: 'Ein Zitat aus dem Buch der Sprüche in griechischer Fassung. Es macht den Anschein zur Pflicht und nicht nur die Sache selbst.',
+      },
+      {
+        word: 'griech. apostoloi ekklesion',
+        rendered: 'welche Boten sind der Gemeinden',
+        note: 'Dasselbe Wort, das sonst Apostel heißt, steht hier für Beauftragte einer Gemeinde. Es zeigt, dass der Titel ursprünglich eine Aufgabe und keinen Rang bezeichnete.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Sorgfalt bei der Verwaltung fremder Güter gehört zur Verantwortung des Amtes; das Kirchenrecht kennt entsprechende Vorschriften. Die Beauftragung durch die Gemeinden zeigt deren Anteil.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Die Wahl durch Handaufheben ist zur Begründung gemeindlicher Wahlrechte angeführt worden. Reformierte und kongregationalistische Ordnungen berufen sich darauf.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Boten der Gemeinden handeln in deren Auftrag und legen ihnen Rechenschaft ab; das Amt bleibt an die Gemeinschaft gebunden. Die Sammlung selbst ist ein liturgischer Vorgang.',
+      },
+      {
+        tradition: 'Kirchenrechtliche Rezeption',
+        text: 'Der Abschnitt gilt als frühester Beleg für das Vieraugenprinzip in kirchlicher Finanzverwaltung. Er wird in Transparenzstandards und in Auseinandersetzungen um Finanzskandale angeführt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Vorkehrungen setzen einen Verdacht voraus, den Paulus im zwölften Kapitel ausdrücklich zurückweist. Die Anonymität der beiden Brüder gehört zum Verfahren: Nicht Personen bürgen, sondern die Ordnung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'spr', chapter: 3, verse: 4, note: 'Gunst vor Gott und Menschen' },
+      { book: '2kor', chapter: 12, verse: 17, note: 'Habe ich euch übervorteilt' },
+      { book: 'apg', chapter: 20, verse: 4, note: 'Die Begleiter der Reise' },
+      { book: 'roem', chapter: 12, verse: 17, note: 'Auf das Gute bedacht vor jedermann' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 9,
+    from: 1,
+    to: 15,
+    title: '„einen fröhlichen Geber hat Gott lieb“',
+    historicalShort:
+      'Werbung mit Wettbewerb, ein Bild aus der Landwirtschaft und der meistzitierte Satz über das Geben.',
+    historicalLong:
+      'Das neunte Kapitel behandelt dasselbe Thema wie das achte und beginnt doch wie eine Neueinführung: Über die Sammlung brauche er eigentlich nicht zu schreiben. Diese Doppelung hat zu der Annahme geführt, dass zwei ursprünglich getrennte Schreiben zusammengefügt wurden – eines an Korinth, eines an die Gemeinden der Provinz Achaja. Andere Ausleger halten die Wiederholung für rhetorisch und beabsichtigt.\n\nDie Werbung arbeitet mit Wettbewerb, und zwar in beide Richtungen. Im achten Kapitel wird Mazedonien als Vorbild vor Korinth gestellt, hier Korinth als Vorbild vor Mazedonien. Dahinter steht ein Gedanke, der in griechischen Städten die Stiftungen trug: der Wetteifer um Ehre. Paulus benutzt ihn und stellt zugleich klar, dass es nicht um Zwang gehen soll.\n\nDas Bild vom Säen und Ernten ist im Alten Orient verbreitet und meint zunächst nichts Frommes: Wer Saatgut zurückhält, weil er hungert, erntet weniger. Die Entscheidung, im Frühjahr Korn in die Erde zu werfen statt es zu essen, war für Kleinbauern jedes Jahr existentiell. Der Vers spricht in ein Wissen hinein, das jeder hatte.\n\nDer Satz über den fröhlichen Geber ist ein Zitat aus dem Buch der Sprüche, das nur in der griechischen Fassung so lautet; der hebräische Text hat an dieser Stelle etwas anderes. Das Wort für fröhlich ist dasselbe, aus dem das Fremdwort hilarisch stammt, und beschreibt eine heitere, gelöste Haltung. Der Gegenbegriff ist nicht Geiz, sondern Zwang: nicht aus Betrübnis und nicht aus Nötigung.',
+    reception:
+      'Der Satz über den fröhlichen Geber gehört zu den meistzitierten Bibelworten in Spendenaufrufen. Er steht auf Kollektenbeuteln, in Bettelbriefen kirchlicher Werke und in der Literatur zum Kirchenbeitrag; Kritiker halten fest, dass die Fröhlichkeit im Text eine Beschreibung ist und keine Bedingung, mit der sich Druck ausüben lässt.\n\nDas Bild von Säen und Ernten hat eine zweischneidige Wirkungsgeschichte. In der Wohlstandsverkündigung des 20. und 21. Jahrhunderts wurde daraus die Vorstellung, Spenden brächten materiellen Ertrag; Fernsehprediger machten den Vers zum Kern eines Geschäftsmodells. Die Gegenposition verweist auf den Zusammenhang: Der Ertrag, von dem der Text spricht, ist die Danksagung anderer und nicht der eigene Gewinn.\n\nDer Schlusssatz von der unaussprechlichen Gabe ist in die Weihnachtsliturgie eingegangen und wird in Kirchenliedern aufgenommen. Das griechische Wort für unaussprechlich kommt im Neuen Testament nur hier vor und bezeichnet etwas, für das die Sprache nicht reicht – ein bemerkenswerter Abschluss für zwei Kapitel über Geld.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Wer im Frühjahr Saatgut aß statt es auszusäen, hatte im nächsten Jahr nichts; Kleinbauern standen jedes Jahr vor dieser Entscheidung. Das Bild vom Säen war deshalb keine Erbaulichkeit, sondern Erfahrung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Städte wetteiferten um Stiftungen, und Inschriften nennen den Geber und die Summe. Der Wetteifer um Ehre trug einen großen Teil der öffentlichen Bauten und Feste.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Abgaben wurden eingetrieben, notfalls mit Gewalt; Steuerpächter hatten einen entsprechenden Ruf. Eine Gabe ausdrücklich nicht aus Zwang zu verlangen, hob sie von dem ab, was Menschen sonst zahlten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Dankgebete für empfangene Wohltat wurden öffentlich gesprochen und auf Tafeln festgehalten. Dass viele für eine Gabe danken, war ein sichtbarer und zählbarer Vorgang.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hilaron doten',
+        rendered: 'einen fröhlichen Geber',
+        note: 'Ein Zitat aus dem Buch der Sprüche, das nur in der griechischen Fassung so lautet. Das Wort beschreibt eine heitere, gelöste Haltung; aus ihm stammt das Fremdwort hilarisch.',
+      },
+      {
+        word: 'griech. me ek lypes e ex anankes',
+        rendered: 'nicht mit Unwillen oder aus Zwang',
+        note: 'Der Gegenbegriff zur Fröhlichkeit ist nicht Geiz, sondern Nötigung. Damit ist eine Gabe, die durch Druck zustande kommt, ausdrücklich ausgeschlossen.',
+      },
+      {
+        word: 'griech. eulogian kai me hos pleonexian',
+        rendered: 'ein Segen und nicht ein Geiz',
+        note: 'Das Wort für Segen bezeichnet auch eine reichliche Gabe. Der Gegenbegriff meint die Habgier des Gebers, der möglichst wenig geben will.',
+      },
+      {
+        word: 'griech. anekdiegeto dorea',
+        rendered: 'seine unaussprechliche Gabe',
+        note: 'Ein Wort, das im Neuen Testament nur hier vorkommt: unerzählbar, nicht auszuführen. Zwei Kapitel über Geld enden mit dem Eingeständnis, dass die Sprache nicht reicht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Almosen gehört zu den Werken der Barmherzigkeit und ist Ausdruck der Gerechtigkeit, nicht der Großzügigkeit. Die Freiwilligkeit gehört zu seinem Wesen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Gabe folgt aus dem Empfangenen; Zwang macht sie zunichte. Der Vers stand gegen die Praxis erzwungener Abgaben und gegen den Ablass.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Geben ist Teil der Danksagung, die die Liturgie trägt; die Gabe kehrt als Lobpreis zu Gott zurück. Der Schlusssatz vom Unaussprechlichen gehört zur apophatischen Redeweise.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Wohlstandsverkündigung hat aus dem Bild von Säen und Ernten ein Versprechen materiellen Ertrags gemacht. Dagegen wird geltend gemacht, dass der Ertrag im Text die Danksagung anderer ist und nicht der eigene Gewinn.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Neueinsatz des Kapitels über dasselbe Thema gilt als Hinweis darauf, dass zwei Schreiben zusammengefügt wurden – eines an Korinth, eines an die Provinz. Andere halten die Wiederholung für rhetorisch beabsichtigt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'spr', chapter: 22, verse: 8, note: 'Der fröhliche Geber' },
+      { book: 'ps', chapter: 112, verse: 9, note: 'Er streut aus und gibt den Armen' },
+      { book: 'jes', chapter: 55, verse: 10, note: 'Samen dem Säemann' },
+      { book: 'gal', chapter: 6, verse: 7, note: 'Was der Mensch sät' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: '2kor',
+    chapter: 10,
+    from: 1,
+    to: 18,
+    title: '„die Briefe, sprechen sie, sind schwer und stark“',
+    historicalShort:
+      'Der Tonwechsel: Ab hier wird der Brief scharf – und zitiert wörtlich, was die Gegner über Paulus sagten.',
+    historicalLong:
+      'Mit dem zehnten Kapitel bricht der Ton um. Bis hierher war der Brief versöhnt und dankbar; jetzt folgen vier Kapitel Verteidigung, Spott und Angriff. Der Sprung ist so hart, dass die Forschung seit dem 18. Jahrhundert vermutet, hier beginne ein anderes Schreiben – möglicherweise der verlorene Tränenbrief, der dann nachträglich angehängt worden wäre. Andere halten den Umschwung für rhetorisch und erklären ihn damit, dass Paulus zuletzt die Minderheit anspricht, die ihm noch widersteht.\n\nDer zehnte Vers ist ein wörtliches Zitat aus dem Munde der Gegner und damit eine der wenigen Stellen, an denen wir hören, wie Paulus auf andere wirkte: Seine Briefe seien gewichtig, sein persönliches Auftreten schwach, seine Rede nichts wert. Das war in einer Kultur, die den Redner nach Stimme, Haltung und Auftritt beurteilte, ein vernichtendes Urteil. Rhetoriklehrbücher der Zeit widmen der körperlichen Erscheinung eigene Abschnitte.\n\nDie Bildsprache am Anfang ist militärisch. Waffen, Festungen, Belagerung, Gefangennahme – Paulus beschreibt seinen Dienst als Feldzug und lässt zugleich offen, dass die Waffen nicht fleischlich sind. Das Bild von der Festung, die geschleift wird, war jedem vertraut, der von römischen Belagerungen gehört hatte; Städte in Kleinasien und Judäa hatten sie erlebt.\n\nDer zweite Teil des Kapitels handelt von Zuständigkeitsgrenzen. Paulus gebraucht ein Wort, das das Messband und den abgesteckten Bereich bezeichnet; daraus ist später das Wort Kanon geworden. Er beansprucht Korinth als sein Arbeitsgebiet, weil er dort zuerst war, und wirft den Gegnern vor, sich mit fremder Arbeit zu schmücken. Dahinter steht eine Verabredung, von der der Galaterbrief berichtet: eine Aufteilung der Arbeitsgebiete zwischen den Aposteln.',
+    reception:
+      'Das Zitat über die schwache Erscheinung hat die Vorstellung von Paulus geprägt. Eine Schrift des zweiten Jahrhunderts beschreibt ihn als klein, kahlköpfig, krummbeinig und mit zusammengewachsenen Augenbrauen – ein Bild, das die Kunst über Jahrhunderte aufnahm und das seinen Ausgang bei diesem Vers hat. Ob die Beschreibung Erinnerung oder Ausmalung ist, lässt sich nicht entscheiden.\n\nDer Satz über das Gefangennehmen jedes Gedankens ist zu einem Kernwort der christlichen Wissenschaftslehre geworden. Die mittelalterliche Vorstellung von der Philosophie als Magd der Theologie berief sich darauf, ebenso die Bildungsprogramme reformierter Hochschulen. In der Neuzeit wird er von Bewegungen angeführt, die eine eigene christliche Weltanschauung begründen; Kritiker sehen darin eine Wendung gegen das freie Denken, die der Text nicht deckt.\n\nDas Wort für das abgesteckte Gebiet hat eine große Karriere gemacht: Aus ihm wurde der Begriff Kanon für die Liste der biblischen Bücher und für die Kirchenrechtssätze. Der Gedanke, dass Verkündigung Zuständigkeitsgrenzen kennt, ist in der Missionsgeschichte zum Streitpunkt geworden, zuletzt in der Auseinandersetzung über Missionsarbeit in Gebieten mit alten Kirchen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Redner wurde nach Stimme, Haltung, Gestik und Auftritt beurteilt; Lehrbücher widmeten der Erscheinung eigene Kapitel. Wer klein und leise war, hatte es schwer, gleich was er sagte.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Römische Belagerungen schleiften Stadtmauern und führten die Bewohner als Gefangene ab; Städte in Kleinasien und Judäa hatten das erlebt. Das Bild von der zerstörten Festung war Erinnerung, nicht Metapher.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Landvermesser steckten Gebiete mit Messband und Grenzsteinen ab; die Aufteilung von Provinzen und Kolonien war ein amtlicher Vorgang. Aus dem Wort für das Messband ist später der Begriff Kanon geworden.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wer eine Werkstatt in fremdem Gebiet eröffnete, verletzte Absprachen der Zünfte und musste mit Widerstand rechnen. Zuständigkeitsgrenzen waren im Handwerk selbstverständlich.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. he parousia tou somatos asthenes',
+        rendered: 'die Gegenwart des Leibes ist schwach',
+        note: 'Ein wörtliches Zitat der Gegner – eine der wenigen Stellen, an denen zu hören ist, wie Paulus auf andere wirkte. In einer Kultur des Auftritts war das Urteil vernichtend.',
+      },
+      {
+        word: 'griech. ochyromaton',
+        rendered: 'zu zerstören Befestigungen',
+        note: 'Das Wort für Festungswerke. Das Bild kommt aus der Belagerung und beschreibt kein Überzeugen, sondern ein Schleifen.',
+      },
+      {
+        word: 'griech. aichmalotizontes pan noema',
+        rendered: 'nehmen gefangen alle Vernunft',
+        note: 'Wörtlich jeden Gedanken kriegsgefangen machen. Der Satz ist in der Bildungsgeschichte in beide Richtungen gebraucht worden.',
+      },
+      {
+        word: 'griech. kanonos',
+        rendered: 'nach dem Ziel der Regel',
+        note: 'Das Wort bezeichnet das Messband und den abgesteckten Bereich. Aus ihm ist der Begriff Kanon für die Liste der biblischen Bücher geworden.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Vollmacht des Apostels dient dem Aufbau und nicht der Zerstörung; darin liegt das Maß jedes kirchlichen Amtes. Die Zuständigkeitsordnung wurde zur Grundlage kirchlicher Gebietsverfassung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Schwäche des Auftritts gehört zur Sache: Das Wort wirkt, nicht der Redner. Luther las das Zitat der Gegner als Bestätigung dafür, dass Gott sich der geringen Mittel bedient.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Gefangennehmen der Gedanken wird als Weg der geistlichen Nüchternheit gelesen: Der Mensch übt, seine Gedanken zu prüfen. Das ist eine asketische und keine wissenschaftspolitische Aussage.',
+      },
+      {
+        tradition: 'Bildungsgeschichtliche Rezeption',
+        text: 'Der Satz über die gefangenen Gedanken hat die Vorstellung von der Philosophie als Magd der Theologie gestützt und dient bis heute Programmen einer eigenen christlichen Weltanschauung. Kritiker halten dagegen, dass der Text von Verkündigung spricht und nicht von Erkenntnistheorie.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der harte Tonwechsel hat seit dem 18. Jahrhundert zu der Annahme geführt, hier beginne ein eigenes Schreiben, möglicherweise der verlorene Tränenbrief. Andere erklären ihn rhetorisch als Wendung an eine verbliebene Minderheit.',
+      },
+    ],
+    crossRefs: [
+      { book: 'gal', chapter: 2, verse: 9, note: 'Die Aufteilung der Arbeitsgebiete' },
+      { book: 'jer', chapter: 9, verse: 23, note: 'Wer sich rühmt, rühme sich des HERRN' },
+      { book: '1kor', chapter: 2, verse: 3, note: 'In Schwachheit und Furcht' },
+      { book: 'roem', chapter: 15, verse: 20, note: 'Nicht auf fremdem Grund bauen' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 11,
+    from: 1,
+    to: 21,
+    title: '„der Satan verstellt sich zum Engel des Lichtes“',
+    historicalShort:
+      'Die Auseinandersetzung mit fremden Verkündigern – und die Frage, warum Paulus kein Geld nahm.',
+    historicalLong:
+      'Paulus kündigt an, was er im Folgenden tut: sich rühmen, und zwar wissentlich töricht. Die Selbstanklage der Torheit ist ein rhetorisches Mittel, das die antike Redekunst kannte; wer sich selbst loben musste, kündigte es an und entschuldigte sich, weil Eigenlob als Verstoß galt. Plutarch hat darüber eine eigene Schrift verfasst. Der ganze folgende Abschnitt ist als Parodie gebaut: Paulus rühmt sich nach den Maßstäben der Gegner, um sie vorzuführen.\n\nDer Kern des Streits ist das Geld. Paulus nahm von den Korinthern nichts und lebte von seiner Handarbeit sowie von Zuwendungen aus Mazedonien. Was er als Verzicht meinte, wurde in Korinth gegen ihn gewendet: Ein Lehrer, der nichts nimmt, gilt nichts – denn Bezahlung war das Zeichen der Wertschätzung, und Wanderlehrer lebten von Honoraren. Zugleich war die Annahme von Geld ein Abhängigkeitsverhältnis, in das er nicht eintreten wollte. Der Satz, er habe andere Gemeinden beraubt, ist Selbstironie mit einem militärischen Wort für Kriegsbeute.\n\nDas Bild von der Verlobung der Gemeinde greift auf die Prophetenbücher zurück, in denen Israel die Braut Gottes ist. Paulus tritt darin als Brautvater auf, der die Braut unversehrt übergibt. Der Hinweis auf die Schlange und Eva folgt einer jüdischen Auslegungstradition, die die Verführung im Paradies erotisch deutete; sie ist in mehreren Schriften der Zeit belegt.\n\nDie Bezeichnung der Gegner als überaus große Apostel ist ironisch, ihre Identität aber unklar. Der Text nennt sie Hebräer, Israeliten, Same Abrahams – sie waren also Juden, wie Paulus. Ob es Abgesandte aus Jerusalem waren, hellenistisch-jüdische Wanderredner oder eine Gruppe mit eigener Botschaft, ist eine der meistverhandelten Fragen der Paulusforschung. Der Vorwurf lautet nicht auf falsche Lehre im Einzelnen, sondern auf einen anderen Jesus und einen anderen Geist.',
+    reception:
+      'Der Satz vom Satan, der sich als Engel des Lichts verstellt, ist zu einem der bekanntesten Bibelworte geworden und in die Umgangssprache eingegangen. Er ist in der Ketzerpolemik aller Jahrhunderte gebraucht worden, in den Hexenprozessen der frühen Neuzeit und in der Auseinandersetzung mit religiösen Sondergemeinschaften. Die Kehrseite ist offensichtlich: Ein Argument, das den Gegner zum verkleideten Satan erklärt, beendet jedes Gespräch.\n\nDie Frage der Bezahlung von Verkündigern ist an diesem Kapitel über Jahrhunderte verhandelt worden. Die Bettelorden führten den Verzicht des Paulus an, die Reformatoren begründeten mit anderen Stellen das Recht auf Unterhalt, und in der Missionsgeschichte war der Streit über bezahlte und unbezahlte Mitarbeiter ein Dauerthema. Die Beobachtung, dass Bezahlung Abhängigkeit schafft, wird in der heutigen Debatte über kirchliche Finanzierung aufgenommen.\n\nDer Vergleich mit Eva hat eine belastete Wirkungsgeschichte. Er wurde mit anderen Stellen verbunden, um Frauen als besonders verführbar darzustellen; die Ausleger der Alten Kirche und des Mittelalters haben das ausgebaut. Der Text selbst spricht die ganze Gemeinde an und nicht die Frauen, was in der neueren Auslegung hervorgehoben wird.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Eigenlob galt als Verstoß gegen den Anstand; wer es tun musste, kündigte es an und entschuldigte sich. Plutarch schrieb eine ganze Abhandlung darüber, wie man sich unanstößig selbst lobt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wanderlehrer lebten von Honoraren, und die Höhe galt als Maß ihres Rangs; wer umsonst lehrte, weckte Verdacht. Handarbeit dagegen galt in gebildeten Kreisen als niedrig.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Verlobung war rechtlich bindend und wurde vom Vater der Braut geschlossen; er haftete für ihre Unversehrtheit bis zur Hochzeit. Das Bild setzt diese Rolle voraus.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Das Wort für Berauben stammt aus dem Kriegswesen und meint die Beute, die einer besiegten Stadt abgenommen wird. Paulus gebraucht es über sich selbst und übertreibt damit absichtlich.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hoi hyperlian apostoloi',
+        rendered: 'die hohen Apostel',
+        note: 'Wörtlich die übermäßig großen Apostel – eine ironische Bildung. Wer damit gemeint ist, gehört zu den meistverhandelten Fragen der Paulusforschung.',
+      },
+      {
+        word: 'griech. esylesa',
+        rendered: 'habe andere Gemeinden beraubt',
+        note: 'Ein Wort aus dem Kriegswesen für das Ausplündern einer besiegten Stadt. Paulus gebraucht es über sich selbst und übertreibt absichtlich.',
+      },
+      {
+        word: 'griech. metaschematizetai eis angelon photos',
+        rendered: 'verstellt sich zum Engel des Lichtes',
+        note: 'Das Verb bezeichnet den Wechsel der äußeren Gestalt, wie beim Kostüm eines Schauspielers. Der Satz ist in der Ketzerpolemik aller Jahrhunderte gebraucht worden.',
+      },
+      {
+        word: 'griech. en aphrosyne',
+        rendered: 'als in der Torheit',
+        note: 'Die angekündigte Torheit ist ein rhetorisches Mittel: Wer sich selbst loben musste, entschuldigte es vorher. Der ganze folgende Abschnitt ist als Parodie gebaut.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Sorge um die Unversehrtheit der Gemeinde begründet die Wachsamkeit des Amtes gegenüber Irrlehre. Der Verzicht auf Unterhalt gilt als Rat und nicht als Gebot.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Kennzeichen des falschen Verkündigers ist ein anderes Evangelium, nicht eine andere Person. Luther gebrauchte den Vers vom verstellten Engel gegen Schwärmer wie gegen Rom.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Verstellung des Widersachers ist ein Hauptthema der Wüstenväter: Täuschung geschieht durch scheinbar Gutes. Unterscheidung der Geister ist deshalb eine erlernbare Kunst.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Der Vergleich mit Eva ist mit anderen Stellen verbunden worden, um Frauen als besonders verführbar darzustellen. Der Text selbst spricht die ganze Gemeinde an; die Zuspitzung auf Frauen stammt aus der Auslegungsgeschichte.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Gegner waren Juden und traten mit Empfehlungsschreiben und rhetorischem Anspruch auf; ihre Zuordnung ist umstritten. Der Streit um die Bezahlung zeigt, wie stark die Erwartungen der Stadt die Bewertung des Apostels bestimmten.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 3, verse: 13, note: 'Die Schlange betrog mich' },
+      { book: 'gal', chapter: 1, verse: 8, note: 'Ein anderes Evangelium' },
+      { book: '1kor', chapter: 9, verse: 12, note: 'Wir haben das Recht nicht gebraucht' },
+      { book: 'apg', chapter: 18, verse: 3, note: 'Die Arbeit als Zeltmacher' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 11,
+    from: 22,
+    to: 33,
+    title: '„in einem Korbe zum Fenster hinaus“',
+    historicalShort:
+      'Die dichteste Aufzählung eines Lebens im Neuen Testament – und ein Ende, das jede Heldenerzählung zerstört.',
+    historicalLong:
+      'Diese Liste ist die wichtigste biographische Quelle über Paulus, die es gibt, und sie sprengt das Bild, das die Apostelgeschichte zeichnet. Von fünf Auspeitschungen in der Synagoge, drei römischen Rutenstrafen, drei Schiffbrüchen und einem Tag und einer Nacht auf offener See berichtet dort nichts. Die Apostelgeschichte kennt eine Steinigung und eine Rutenstrafe; alles andere ist nur hier erhalten. Der Schluss daraus ist ernüchternd: Der größte Teil der Lebensgeschichte des Paulus ist nicht überliefert.\n\nDie neununddreißig Streiche sind eine genaue Angabe. Das Gesetz erlaubt vierzig; die rabbinische Praxis zog einen ab, um bei einem Zählfehler nicht darüber zu kommen. Dass Paulus diese Strafe fünfmal empfing, bedeutet zugleich, dass er sich fünfmal der Gerichtsbarkeit der Synagoge unterworfen hat – er hätte sich ihr entziehen können, indem er die Gemeinschaft verließ. Er tat es nicht.\n\nDie Aufzählung der Gefahren ist in acht Gliedern gebaut, die von der Natur über Menschen bis zu den falschen Brüdern führen. Reisen war im ersten Jahrhundert trotz der römischen Straßen gefährlich: Flüsse ohne Brücken, Räuber in unbewachten Abschnitten, Schiffe, die von November bis März nicht fuhren. Am Ende der Reihe steht nicht ein Naturereignis, sondern eine Enttäuschung.\n\nDer letzte Satz ist der bemerkenswerteste. Wer sich rühmen will, endet mit einer Heldentat; Paulus endet mit einer Flucht im Korb. Die Anspielung ist doppelt: In Rom gab es eine militärische Auszeichnung für den Soldaten, der als erster eine belagerte Mauer erstieg. Paulus wurde in umgekehrter Richtung über die Mauer gelassen, hinunter statt hinauf, im Futterkorb. Wer die Auszeichnung kannte, hörte die Parodie.',
+    reception:
+      'Die Leidensliste ist zum Kern des Paulusbildes geworden. Sie steht in Märtyrerakten, in der Ordensliteratur und in Missionsberichten; die Aufzählung der Gefahren wurde in der frühen Neuzeit von Reisenden und Missionaren auf sich bezogen. In der Kunst ist die Flucht im Korb ein eigenes Bildmotiv, das in mittelalterlichen Handschriften und auf Kirchenfenstern erscheint.\n\nDer Satz, sich der Schwachheit zu rühmen, ist zur Grundformel der Kreuzestheologie geworden. Luther entfaltete ihn in der Heidelberger Disputation von 1518, und im 20. Jahrhundert nahmen Dietrich Bonhoeffer und die Theologie nach den Weltkriegen ihn auf. In der Behindertentheologie seit den 1990er Jahren wird er neu gelesen: als Widerspruch gegen die Gleichsetzung von Wert und Leistungsfähigkeit.\n\nDie Angabe über den Statthalter des Königs Aretas ist historisch wertvoll, weil sie den einzigen festen Punkt in der frühen Zeitrechnung des Paulus liefert. Aretas IV. herrschte über die Nabatäer bis 40 nach Christus; die Flucht muss davor liegen. Auf dieser Angabe beruht die gesamte Datierung seiner Wirksamkeit.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Die Geißelung wurde in der Synagoge vollzogen, der Verurteilte gebeugt an eine Säule gebunden; ein Vorleser sprach dabei Schriftworte. Es war eine gottesdienstliche Handlung und keine Verwaltungsstrafe.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Schifffahrt ruhte von November bis März; Flüsse hatten selten Brücken, und unbewachte Straßenabschnitte galten als Räubergebiet. Reisen war trotz der römischen Straßen ein Wagnis.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Damaskus war Handelsstadt am Rand der Wüste und Ausgangspunkt der Karawanenwege nach Arabien. Wer dort verfolgt wurde, hatte keine offene Landschaft zur Flucht, sondern musste durch oder über die Mauer.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Aretas IV. herrschte über das Reich der Nabatäer mit der Hauptstadt Petra und hatte Einfluss bis Damaskus. Seine Regierungszeit endete 40 nach Christus und liefert den einzigen festen Zeitpunkt der frühen Paulusjahre.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. tessarakonta para mian',
+        rendered: 'vierzig Streiche weniger eins',
+        note: 'Die genaue Angabe folgt der rabbinischen Praxis, einen Schlag abzuziehen, um die erlaubte Zahl nicht zu überschreiten. Sie zeigt, dass Paulus als Jude vor jüdischen Gerichten stand.',
+      },
+      {
+        word: 'griech. kindynois en pseudadelphois',
+        rendered: 'in Gefahr unter den falschen Brüdern',
+        note: 'Das letzte Glied der Reihe nennt keine Naturgefahr, sondern eine Enttäuschung. Es steht bewusst am Ende.',
+      },
+      {
+        word: 'griech. he episystasis moi he kath hemeran',
+        rendered: 'daß ich täglich werde angelaufen',
+        note: 'Ein Wort für den Auflauf einer Menge, hier übertragen auf den täglichen Andrang von Anliegen. Die Sorge um die Gemeinden erscheint als eigene Last neben den Gefahren.',
+      },
+      {
+        word: 'griech. en sargane',
+        rendered: 'in einem Korbe',
+        note: 'Ein geflochtener Korb für Futter oder Waren. Wer die römische Auszeichnung für den ersten Mann auf der Mauer kannte, hörte die Umkehrung.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Leiden des Apostels ergänzen, was an den Bedrängnissen Christi noch aussteht; darin liegt der Gedanke des Mitleidens. Die Liste hat die Märtyrerverehrung geprägt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Ruhm der Schwachheit ist der Kern der Kreuzestheologie: Gott handelt unter dem Gegenteil. Luther entfaltete das 1518 in der Heidelberger Disputation.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Mitleiden mit den Schwachen gilt als Kennzeichen der Liebe, die den Menschen mit Christus verbindet. Die Reihe beschreibt einen Weg und keine Bilanz.',
+      },
+      {
+        tradition: 'Behindertentheologische Deutung',
+        text: 'Der Ruhm der Schwachheit wird gegen die Gleichsetzung von Wert und Leistungsfähigkeit gelesen. Seit den 1990er Jahren gehört der Vers zu den Grundtexten dieser Richtung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Liste nennt Ereignisse, von denen die Apostelgeschichte nichts berichtet, und zeigt, wie lückenhaft die Überlieferung ist. Die Angabe über Aretas liefert den einzigen festen Zeitpunkt für die frühen Jahre.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 25, verse: 3, note: 'Vierzig Schläge und nicht mehr' },
+      { book: 'apg', chapter: 9, verse: 25, note: 'Die Flucht über die Mauer' },
+      { book: 'apg', chapter: 27, verse: 41, note: 'Der Schiffbruch vor Malta' },
+      { book: '2kor', chapter: 12, verse: 9, note: 'Kraft in den Schwachen' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: '2kor',
+    chapter: 12,
+    from: 11,
+    to: 21,
+    title: '„ich suche nicht das Eure, sondern euch“',
+    historicalShort:
+      'Der Abschluss der Verteidigung – mit einer Liste von acht Zuständen, die Paulus in Korinth zu finden fürchtet.',
+    historicalLong:
+      'Paulus zieht die Bilanz seines erzwungenen Selbstlobs und nennt es beim Namen: Er sei zum Narren geworden, und die Gemeinde habe ihn dazu gebracht. Der Satz, er sei nichts, steht unmittelbar neben der Behauptung, er stehe den überaus großen Aposteln in nichts nach. Diese Doppelung ist kein Widerspruch, sondern das Ergebnis der ganzen Argumentation: Der Anspruch gilt, aber nicht aus eigenem Vermögen.\n\nDie Zeichen des Apostels, die er nennt, sind bemerkenswert geordnet. An erster Stelle steht die Geduld, dann folgen Zeichen, Wunder und Krafttaten. Die Reihenfolge ist gegen die Erwartung gebaut: Was die Gegner offenbar vorwiesen, kommt bei ihm an zweiter Stelle. Wunder werden nicht bestritten, aber nachgeordnet.\n\nDer Streit um das Geld kehrt in verschärfter Form wieder. Offenbar war der Vorwurf erhoben worden, Paulus habe zwar selbst nichts genommen, sich aber über die Sammlung schadlos gehalten – ein Verdacht, den er mit einer Reihe von Fragen zurückweist und der erklärt, warum das achte Kapitel die Vorkehrungen so ausführlich beschreibt. Der Satz, Eltern sammelten für die Kinder und nicht umgekehrt, greift eine Rechtsregel auf: Die Mitgift und das Erbe gingen von oben nach unten.\n\nDie Liste am Schluss zählt acht Zustände auf, die eine Gemeinde zerstören – Streit, Eifersucht, Zornausbrüche, Rivalität, Verleumdung, Geflüster, Aufgeblasenheit, Unordnung. Es sind durchweg Wörter aus dem Bereich der Rede und des Ansehens, nicht der Lehre. Was Paulus fürchtet, ist keine Irrlehre, sondern eine Gemeinde, die sich selbst zerredet.',
+    reception:
+      'Der Satz, dass er nicht das Ihre, sondern sie selbst suche, ist zum Leitwort der Seelsorge geworden und steht in Ordinationsansprachen und in der Literatur über geistliche Begleitung. Er wird zugleich in der Auseinandersetzung über kirchliche Mitgliederwerbung und über Spendenpraxis angeführt.\n\nDie Zeichen des Apostels sind in der Frage nach den Kennzeichen echter Sendung immer wieder verhandelt worden. In der Auseinandersetzung um charismatische Bewegungen des 20. Jahrhunderts wurde die Stelle von beiden Seiten gebraucht: als Beleg dafür, dass Wunder zum Dienst gehören, und als Beleg dafür, dass die Geduld an erster Stelle steht. Beide Lesarten sind vom Wortlaut gedeckt.\n\nDie Liste der acht Zustände ist in Gemeindeordnungen und in der Literatur über Konflikte in Gemeinden aufgenommen worden. Sie gilt als früheste Beschreibung dessen, was heute Gruppendynamik heißt, und wird in der kirchlichen Beratungsarbeit gebraucht, weil sie den Streit nicht bei der Lehre, sondern beim Umgang miteinander ansetzt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Mitgift und Erbe gingen von den Eltern an die Kinder; ein Kind, das die Eltern versorgte, tat es aus Pflicht und nicht aus Vermögen. Der Satz über das Sammeln greift diese Ordnung auf.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Ruf einer Person entschied über Geschäfte, Ämter und Heiraten; Verleumdung war deshalb kein Kavaliersdelikt, sondern konnte eine Existenz zerstören. Die genannten Übel gehören sämtlich in dieses Feld.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wer Geld für andere sammelte, stand unter dem Verdacht, einen Anteil einzubehalten; Vereinskassierer wurden entsprechend überwacht. Der Vorwurf gegen Paulus folgt dem üblichen Argwohn.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Wundertäter zogen als Wanderheiler durch die Städte und konnten damit ihren Lebensunterhalt verdienen; Aristides und Lukian berichten davon. Wer Zeichen vorwies, hatte Zulauf.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ou zeto ta hymon alla hymas',
+        rendered: 'ich suche nicht das Eure, sondern euch',
+        note: 'Ein Wortspiel, das im Deutschen erhalten bleibt: das Eure gegen euch. Der Satz ist zum Leitwort der Seelsorge geworden.',
+      },
+      {
+        word: 'griech. ta semeia tou apostolou',
+        rendered: 'eines Apostels Zeichen',
+        note: 'Die Aufzählung setzt die Geduld an die erste Stelle und die Wunder danach. Diese Reihenfolge ist gegen die Erwartung gebaut.',
+      },
+      {
+        word: 'griech. panourgos',
+        rendered: 'tückisch bin',
+        note: 'Wörtlich zu allem fähig, in der Alltagssprache der gerissene Betrüger. Paulus zitiert damit offenbar einen Vorwurf und nimmt ihn ironisch auf.',
+      },
+      {
+        word: 'griech. psithyrismoi',
+        rendered: 'Ohrenblasen',
+        note: 'Ein lautmalendes Wort für das Flüstern hinter dem Rücken. Luthers Ohrenblasen trifft den Vorgang genau: nicht offene Rede, sondern Zuträgerei.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Hirte gibt sich selbst hin und sucht nicht das Seine; darin liegt das Maß des geistlichen Amtes. Die Zeichen des Apostels gehören zur Beglaubigung der Sendung.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Geduld steht vor den Wundern – daran misst sich echte Sendung. Luther wandte den Abschnitt gegen jede Berufung auf Zeichen ohne das Wort.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Hingabe für die Seelen der anderen ist die Aufgabe des geistlichen Vaters. Die aufgezählten Übel gelten als Leidenschaften, die durch Übung geheilt werden.',
+      },
+      {
+        tradition: 'Pfingstlerische Auslegung',
+        text: 'Die Zeichen und Wunder werden als bleibende Kennzeichen apostolischen Dienstes gelesen. Die Gegenposition verweist darauf, dass Paulus sie der Geduld nachordnet – beide Lesarten sind vom Wortlaut gedeckt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Verteidigung gegen den Verdacht der Bereicherung erklärt, warum das achte Kapitel die Vorkehrungen bei der Sammlung so ausführlich beschreibt. Die Liste der Übel betrifft den Umgang miteinander und nicht die Lehre.',
+      },
+    ],
+    crossRefs: [
+      { book: '2kor', chapter: 8, verse: 20, note: 'Die Vorkehrungen bei der Sammlung' },
+      { book: '1kor', chapter: 4, verse: 15, note: 'Ich habe euch gezeugt' },
+      { book: 'gal', chapter: 5, verse: 20, note: 'Die verwandte Liste' },
+      { book: '2kor', chapter: 11, verse: 9, note: 'Ich bin niemand beschwerlich gewesen' },
+    ],
+  },
+  {
+    book: '2kor',
+    chapter: 13,
+    from: 1,
+    to: 14,
+    title: '„Versuchet euch selbst, ob ihr im Glauben seid“',
+    historicalShort:
+      'Die Ankündigung des dritten Besuchs – und der Segen, der bis heute in fast jedem Gottesdienst gesprochen wird.',
+    historicalLong:
+      'Der Brief endet mit einer Ankündigung, die einer Ladung gleicht. Paulus zitiert die Regel aus dem fünften Buch Mose, nach der zwei oder drei Zeugen eine Sache entscheiden – die Grundregel des jüdischen Prozessrechts. Ob er damit ein förmliches Verfahren in Aussicht stellt oder seine drei Besuche selbst als die drei Zeugen versteht, ist seit den Kirchenvätern umstritten. Beides ist sprachlich möglich.\n\nDer vierte Vers fasst zusammen, worauf der ganze Brief hinausläuft: gekreuzigt aus Schwachheit, lebend aus Gottes Kraft. Der Satz ist parallel gebaut und überträgt die Aussage über Christus unmittelbar auf den Apostel und die Gemeinde. Damit ist die Auseinandersetzung um Auftreten und Wirkung entschieden – nicht durch einen Nachweis von Stärke, sondern durch eine Umkehrung des Maßstabs.\n\nDie Aufforderung zur Selbstprüfung dreht die Richtung um. Die Korinther hatten Paulus geprüft; jetzt sollen sie sich selbst prüfen. Das griechische Wort für untüchtig stammt aus der Metallprüfung und bezeichnet Münzen oder Metall, die den Test nicht bestehen. Der Ausdruck war im Handel geläufig, weil Falschgeld und gestrecktes Silber verbreitet waren.\n\nDer Schlusssegen ist der einzige dreigliedrige Segen des Neuen Testaments, der Christus, Gott und den Geist nebeneinanderstellt, und er nennt sie in dieser Reihenfolge – Christus zuerst. Er ist kein Bekenntnis zur Dreieinigkeit, die als Lehre erst Jahrhunderte später formuliert wurde, aber er gehört zu den Texten, aus denen sie erwachsen ist. Der heilige Kuss, der unmittelbar davorsteht, war die Begrüßung unter Verwandten; auf eine Versammlung von Nichtverwandten angewandt, war er eine auffällige Geste.',
+    reception:
+      'Der Schlusssegen ist der meistgesprochene Bibeltext im christlichen Gottesdienst nach dem Vaterunser. Er steht im Eröffnungsteil der römischen Messe seit der Liturgiereform von 1969, in den Ordnungen der evangelischen Kirchen, in der anglikanischen und in orthodoxen Formularen. In den trinitarischen Auseinandersetzungen des vierten Jahrhunderts diente er als Schriftbeleg, obwohl er keine Aussage über das Verhältnis der drei enthält.\n\nDie Aufforderung zur Selbstprüfung hat eine große und zwiespältige Wirkung entfaltet. Sie steht hinter der Beichtvorbereitung, hinter der puritanischen Praxis der Selbstprüfung vor dem Abendmahl und hinter Tagebüchern der Frömmigkeit. Zugleich hat sie Menschen in quälende Selbstbeobachtung geführt; die Seelsorgeliteratur des 20. Jahrhunderts warnt vor einer Anwendung, die aus der Prüfung eine dauernde Unsicherheit macht.\n\nDer heilige Kuss ist in der Alten Kirche fester Bestandteil der Liturgie gewesen und wurde vor der Gabenbereitung ausgetauscht; Justin beschreibt ihn um 150. Später wurde er auf die Geistlichen beschränkt, aus Sorge vor Missdeutung nach Geschlechtern getrennt und schließlich durch Handschlag oder Verbeugung ersetzt. Der Friedensgruß der heutigen Liturgien geht darauf zurück.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Zwei oder drei Zeugen entschieden nach der Tora eine Sache; ein einzelner Zeuge genügte nie. Die Regel galt in Synagogengerichten und wurde in Gemeindeordnungen übernommen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Münzen wurden geprüft, gewogen und angeritzt, weil Falschgeld und gestrecktes Silber verbreitet waren. Das Wort für untüchtig stammt aus dieser Prüfung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wer wen küssen durfte, war genau geregelt: Rangunterschiede zeigten sich darin, ob man Hand, Wange oder Mund küsste. Ein Gruß ohne solche Abstufung hob Standesunterschiede sichtbar auf.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein angekündigter Besuch war ein förmlicher Vorgang: Man bereitete Unterkunft, Verpflegung und Versammlung vor. Einen dritten Besuch anzukündigen hieß, der Gemeinde Zeit zum Handeln zu geben.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. epi stomatos dyo martyron',
+        rendered: 'in zweier oder dreier Zeugen Mund',
+        note: 'Die Grundregel des jüdischen Prozessrechts aus dem fünften Buch Mose. Ob Paulus ein Verfahren ankündigt oder seine drei Besuche meint, ist seit den Kirchenvätern umstritten.',
+      },
+      {
+        word: 'griech. adokimoi',
+        rendered: 'daß ihr untüchtig seid',
+        note: 'Ein Wort aus der Metallprüfung für Münzen, die den Test nicht bestehen. Der Ausdruck war im Handel geläufig, weil Falschgeld verbreitet war.',
+      },
+      {
+        word: 'griech. en philemati hagio',
+        rendered: 'mit dem heiligen Kuß',
+        note: 'Die Begrüßung unter Verwandten, auf die Gemeinde übertragen. In der Alten Kirche wurde sie fester Bestandteil der Liturgie und ist der Ursprung des Friedensgrußes.',
+      },
+      {
+        word: 'griech. he koinonia tou hagiou pneumatos',
+        rendered: 'die Gemeinschaft des heiligen Geistes',
+        note: 'Der Ausdruck lässt offen, ob die Gemeinschaft mit dem Geist oder die vom Geist gewirkte Gemeinschaft gemeint ist. Beide Deutungen sind alt und werden bis heute vertreten.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Segen eröffnet die Messe und ist Ausdruck des trinitarischen Glaubens; die Formel gehört zum ältesten liturgischen Bestand. Die Selbstprüfung gehört zur Vorbereitung auf die Kommunion.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Selbstprüfung führt nicht zur Selbstbeobachtung, sondern zur Frage nach Christus; wer ihn findet, hat das Ergebnis. Der Segen wurde in die Gottesdienstordnungen übernommen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Gemeinschaft des Geistes ist die Wirklichkeit der Kirche und wird in der Liturgie erbeten. Der Friedenskuss vor der Gabenbereitung bewahrt die Geste des Textes.',
+      },
+      {
+        tradition: 'Puritanische Rezeption',
+        text: 'Die Aufforderung zur Selbstprüfung wurde zur Grundlage einer ausgebauten Praxis der Gewissenserforschung mit Tagebüchern und Prüffragen. Die Seelsorge des 20. Jahrhunderts warnt davor, daraus dauernde Unsicherheit zu machen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der dreigliedrige Segen ist der einzige seiner Art im Neuen Testament und nennt Christus zuerst. Er ist kein Bekenntnis zur Dreieinigkeit, gehört aber zu den Texten, aus denen sie erwachsen ist.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 19, verse: 15, note: 'Zwei oder drei Zeugen' },
+      { book: '1kor', chapter: 11, verse: 28, note: 'Der Mensch prüfe sich selbst' },
+      { book: 'roem', chapter: 16, verse: 16, note: 'Grüßt euch mit dem heiligen Kuss' },
+      { book: 'mt', chapter: 28, verse: 19, note: 'Die dreigliedrige Taufformel' },
+    ],
+  },
 ];
 
 /**

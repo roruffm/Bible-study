@@ -2397,6 +2397,61 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 55 oder 56 n. Chr., aus Mazedonien',
     epoch: 'urkirche',
   },
+  '2kor 6,1': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 6,14': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 7,1': {
+    events: 'Korinth und Mazedonien, nach einem gescheiterten Besuch',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 8,1': {
+    events: 'Korinth und Mazedonien, Sammlung für die Gemeinde in Jerusalem',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 8,16': {
+    events: 'Korinth und Mazedonien, Sammlung für die Gemeinde in Jerusalem',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 9,1': {
+    events: 'Korinth und Mazedonien, Sammlung für die Gemeinde in Jerusalem',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 10,1': {
+    events: 'Korinth, Auseinandersetzung mit fremden Verkündigern',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 11,1': {
+    events: 'Korinth, Auseinandersetzung mit fremden Verkündigern',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 11,22': {
+    events: 'Korinth, Auseinandersetzung mit fremden Verkündigern',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 12,11': {
+    events: 'Korinth, vor dem dritten Besuch des Paulus',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
+  '2kor 13,1': {
+    events: 'Korinth, vor dem dritten Besuch des Paulus',
+    written: 'um 55 oder 56 n. Chr., aus Mazedonien',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
