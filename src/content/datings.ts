@@ -1717,6 +1717,71 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 51 n. Chr. oder gegen Ende des 1. Jahrhunderts',
     epoch: 'urkirche',
   },
+  '2petr 1,1': {
+    events: 'unbestimmt, angenommener Ort Rom',
+    written: 'zwischen 100 und 150 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2petr 1,12': {
+    events: 'unbestimmt, angenommener Ort Rom',
+    written: 'zwischen 100 und 150 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2petr 2,1': {
+    events: 'unbestimmt, angenommener Ort Rom',
+    written: 'zwischen 100 und 150 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2petr 2,12': {
+    events: 'unbestimmt, angenommener Ort Rom',
+    written: 'zwischen 100 und 150 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2petr 3,1': {
+    events: 'unbestimmt, angenommener Ort Rom',
+    written: 'zwischen 100 und 150 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '2petr 3,16': {
+    events: 'unbestimmt, angenommener Ort Rom',
+    written: 'zwischen 100 und 150 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1thess 1,1': {
+    events: 'Thessalonich, um 49–50 n. Chr.',
+    written: 'um 50 n. Chr. in Korinth',
+    epoch: 'urkirche',
+  },
+  '1thess 2,1': {
+    events: 'Thessalonich, um 49–50 n. Chr.',
+    written: 'um 50 n. Chr. in Korinth',
+    epoch: 'urkirche',
+  },
+  '1thess 2,13': {
+    events: 'Thessalonich, um 49–50 n. Chr.',
+    written: 'um 50 n. Chr. in Korinth',
+    epoch: 'urkirche',
+  },
+  '1thess 3,1': {
+    events: 'Thessalonich, um 49–50 n. Chr.',
+    written: 'um 50 n. Chr. in Korinth',
+    epoch: 'urkirche',
+  },
+  '1thess 4,1': {
+    events: 'Thessalonich, um 49–50 n. Chr.',
+    written: 'um 50 n. Chr. in Korinth',
+    epoch: 'urkirche',
+  },
+  '1thess 5,12': {
+    events: 'Thessalonich, um 49–50 n. Chr.',
+    written: 'um 50 n. Chr. in Korinth',
+    epoch: 'urkirche',
+  },
+  '1thess 5,23': {
+    events: 'Thessalonich, um 49–50 n. Chr.',
+    written: 'um 50 n. Chr. in Korinth',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

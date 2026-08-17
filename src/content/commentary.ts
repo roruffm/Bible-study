@@ -22403,6 +22403,996 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'mt', chapter: 18, verse: 15, note: 'Das Verfahren bei Streit' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 6 Abschnitte */
+  {
+    book: '2petr',
+    chapter: 1,
+    from: 1,
+    to: 11,
+    title: '„teilhaftig werdet der göttlichen Natur“',
+    historicalShort:
+      'Der Briefanfang enthält den kühnsten Satz des Neuen Testaments über das Ziel des Menschen – und eine Tugendkette, die aus der griechischen Ethik stammt. Beides zusammen macht ihn zum meistdiskutierten Abschnitt der Schrift.',
+    historicalLong:
+      'Der Brief tritt unter dem Namen Simon Petrus auf und redet an einer Stelle von der bevorstehenden Ablegung der Hütte, an einer anderen von der Stimme auf dem heiligen Berg. Die Mehrheit der Forschung hält ihn dennoch für ein Schreiben aus dem zweiten Jahrhundert: Sein Griechisch ist gehoben und mit seltenen Wörtern durchsetzt, er setzt eine Sammlung von Paulusbriefen voraus, die als Schrift gelten, und er verarbeitet den Judasbrief. Schon Eusebius zählte ihn im vierten Jahrhundert zu den bestrittenen Schriften, und Hieronymus berichtete von Zweifeln wegen des abweichenden Stils gegenüber dem ersten Petrusbrief.\n\nDer Anfang ist von der Sprache der hellenistischen Verwaltung und Ehreninschriften durchtränkt. Wörter wie Herrlichkeit und Tugend, teure Verheißungen, göttliche Kraft begegnen so oder ähnlich auf Beschlüssen zu Ehren von Wohltätern. Eine Inschrift aus Stratonikeia in Kleinasien rühmt Zeus und Hekate für ihre Kraft und Tugend in fast denselben Worten. Der Verfasser schreibt für Leser, die diesen Ton kannten, und verwendet ihn bewusst.\n\nDie Formel von der Teilhabe an der göttlichen Natur steht ohne Parallele im Neuen Testament. Ihr Ausdruck stammt aus der griechischen Philosophie: Platon nennt als Ziel des Lebens die Angleichung an Gott, die Stoa spricht vom Funken göttlicher Vernunft im Menschen, und in den Mysterienkulten wurde eine Vergöttlichung des Eingeweihten erwartet. Der Brief nimmt die Wendung auf, bindet sie aber an Verheißungen und an das Fliehen der vergänglichen Lust – er beschreibt keinen natürlichen Zustand des Menschen, sondern ein Geschenk mit einer Bedingung. Das griechische Wort für Teilhaber bezeichnet dabei den Partner einer Gesellschaft, nicht einen Verschmolzenen.\n\nDie Tugendreihe, die folgt, ist eine bekannte Kunstform. Die Rhetorik nannte sie Sorites oder Kettenschluss: Jedes Glied nimmt das vorige auf und fügt eines hinzu. Solche Ketten stehen in der Mischna, bei Philon und in stoischen Handbüchern. Ihre Glieder sind hier fast durchweg Begriffe der griechischen Ethik – Tugend, Erkenntnis, Mäßigkeit, Geduld –, und erst die letzten beiden, brüderliche und allgemeine Liebe, gehören der christlichen Überlieferung an. Die Reihe beginnt mit dem Glauben und endet mit der Liebe; alles dazwischen stammt aus der Umwelt.\n\nDer Ton des Abschnitts ist auffällig anspruchsvoll. Er verlangt Fleiß, spricht von Festmachen der Berufung und stellt Blindheit als Folge des Unterlassens in Aussicht. Das steht in Spannung zur paulinischen Rede von der Gnade ohne Werke und ist einer der Gründe, warum der Brief in der Reformationszeit zurückhaltend behandelt wurde. Wer ihn in seine Zeit stellt, liest ihn anders: Er kämpft gegen Leute, die aus der Freiheit einen Freibrief machten, und antwortet darauf mit Nachdruck auf die Lebensführung.',
+    reception:
+      'Der Satz von der Teilhabe an der göttlichen Natur ist die biblische Grundlage der ostkirchlichen Lehre von der Vergöttlichung. Athanasius formulierte im vierten Jahrhundert den Satz, Gott sei Mensch geworden, damit der Mensch Gott werde; Gregor von Nyssa, Maximus Confessor und Gregor Palamas bauten daraus eine Lehre aus, die im Osten bis heute den Mittelpunkt der Heilslehre bildet. Palamas unterschied im 14. Jahrhundert zwischen dem unzugänglichen Wesen Gottes und seinen Energien, an denen der Mensch teilhat – eine Unterscheidung, die den Vers vor dem Vorwurf schützen sollte, er mache den Menschen zu Gott.\n\nDer Westen ist zurückhaltender geblieben. Augustinus kennt den Gedanken, ordnet ihn aber der Gnadenlehre unter; die Scholastik sprach von der geschaffenen Gnade und vermied die Formel. Erst im 20. Jahrhundert ist die Vergöttlichungslehre im Westen wiederentdeckt worden, zunächst über die ökumenischen Kontakte zur Orthodoxie, dann in der katholischen Theologie. Der Katechismus der katholischen Kirche zitiert Athanasius ausdrücklich.\n\nDie Tugendkette hat eine eigene Wirkung entfaltet. Sie steht in Katechismen und Erbauungsbüchern, und die methodistische Tradition hat aus ihr eine Stufenlehre der Heiligung gewonnen. Kritisch angemerkt wird, dass eine Reihe von Eigenschaften leicht als Leistungsprogramm gelesen wird – der Brief selbst stellt den Glauben an den Anfang und sagt vorher, dass alles geschenkt sei.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'In den Mysterienkulten wurde der Eingeweihte in einer Feier dem Gott gleichgestellt; Apuleius beschreibt, wie ein Isisgeweihter im Gewand des Gottes vor die Gemeinde tritt. Wer von Teilhabe an göttlicher Natur sprach, benutzte eine Sprache, die die Umwelt kannte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehrenbeschlüsse rühmten Wohltäter für Herrlichkeit, Tugend und Wohltat und ließen die Formeln in Stein setzen. Die Wörter des Briefanfangs stammen aus diesem Umfeld – für die Leser klang der Text nach einer öffentlichen Ehrung.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Bildersprache der Kette stammt aus der Schulrhetorik: Der Kettenschluss war eine Übungsform, die man im Unterricht lernte. Wer sie verwendete, zeigte Bildung – und wandte sich an Leser, die Bildung schätzten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Wort für Mäßigkeit meint die Beherrschung von Essen, Trinken und Begehren. In einer Gesellschaft, in der Gastmähler den gesellschaftlichen Verkehr trugen und Trunkenheit dazugehörte, war das keine Selbstverständlichkeit, sondern eine sichtbare Abweichung.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. theias koinonoi physeos',
+        rendered: 'teilhaftig werdet der göttlichen Natur',
+        note: 'Die kühnste Formulierung des Neuen Testaments über das Ziel des Menschen und ohne Parallele darin. Das Wort koinonos bezeichnet den Teilhaber einer Gesellschaft – einen Geschäftspartner, keinen Verschmolzenen. Die Ostkirche hat darauf ihre Lehre von der Vergöttlichung gegründet.',
+      },
+      {
+        word: 'griech. arete',
+        rendered: 'Tugend',
+        note: 'Der Grundbegriff der griechischen Ethik: die Tauglichkeit, in der eine Sache ihre Bestimmung erfüllt. Im Neuen Testament steht das Wort nur viermal, davon dreimal in diesem Brief – ein Hinweis darauf, wie stark er in der Umgangssprache der Bildung schreibt.',
+      },
+      {
+        word: 'griech. enkrateia',
+        rendered: 'Mäßigkeit',
+        note: 'Selbstbeherrschung, wörtlich das Bei-Kräften-Sein über sich selbst. Bei den Stoikern eine Kardinaltugend, in der christlichen Überlieferung später auf Enthaltsamkeit verengt. Im Galaterbrief steht dasselbe Wort am Ende der Frucht des Geistes.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Vers ist die Kernstelle der Lehre von der Theosis: Der Mensch ist dazu bestimmt, an Gott teilzuhaben, ohne mit ihm eins zu werden. Gregor Palamas sicherte diesen Gedanken mit der Unterscheidung zwischen Gottes Wesen und seinen Energien. Die Liturgie, die Ikonen und die Askese des Ostens sind auf dieses Ziel hin geordnet.',
+      },
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt zeigt eine Gemeinde, die sich in der griechischen Bildungswelt eingerichtet hat und deren Sprache benutzt. Die Frage, ob damit fremde Vorstellungen übernommen oder nur fremde Wörter gefüllt werden, ist die Grundfrage der Beurteilung dieses Briefes. Die Antwort fällt je nach Bewertung der sogenannten Hellenisierung verschieden aus.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther zählte den Brief zu den geringeren Schriften und ließ ihn in seiner Bibelvorrede hinter den Hauptbüchern zurücktreten. Die Betonung des eigenen Fleißes stand seiner Rechtfertigungslehre entgegen. Spätere lutherische Ausleger haben darauf hingewiesen, dass der Abschnitt mit dem Geschenktsein beginnt und der Fleiß erst danach kommt.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Teilhabe an der göttlichen Natur wird als Beschreibung der heiligmachenden Gnade verstanden. Der Katechismus zitiert den Vers im Zusammenhang mit der Gotteskindschaft. Die Tugendreihe gilt als Beleg dafür, dass Gnade den Menschen tatsächlich verändert und nicht nur zugerechnet wird.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Ausleger fragen, ob die Sprache der Vergöttlichung dem biblischen Denken entspricht, das Gott und Geschöpf sonst scharf unterscheidet. Andere halten dagegen, der Brief selbst ziehe diese Grenze, indem er von Teilhabe spricht und nicht von Verwandlung des Wesens. Die Debatte ist zwischen Ost und West nie abgeschlossen worden.',
+      },
+    ],
+    crossRefs: [
+      { book: '1joh', chapter: 3, verse: 2, note: 'Wir werden ihm gleich sein' },
+      { book: 'gal', chapter: 5, verse: 22, note: 'Die Frucht des Geistes als andere Reihe' },
+      { book: 'roem', chapter: 5, verse: 3, note: 'Eine kürzere Kette derselben Bauart' },
+      { book: '2petr', chapter: 1, verse: 16, note: 'Die Berufung auf Augenzeugenschaft' },
+    ],
+  },
+  {
+    book: '2petr',
+    chapter: 1,
+    from: 12,
+    to: 15,
+    title: '„solange ich in dieser Hütte bin“',
+    historicalShort:
+      'Vier Verse über das eigene Sterben und über die Sorge, dass etwas in Erinnerung bleibt. Sie geben dem ganzen Brief seine Form – und sind zugleich das Merkmal einer antiken Textgattung.',
+    historicalLong:
+      'Die Ankündigung des eigenen Todes und die Sorge um das, was danach bleibt, machen aus diesem Schreiben ein Testament. Die Gattung war verbreitet: Das erste Buch Mose lässt Jakob vor seinem Tod die Söhne segnen, das fünfte lässt Mose eine lange Abschiedsrede halten, und die jüdische Literatur der Zeit hat daraus eine eigene Form entwickelt – das Testament der zwölf Patriarchen, das Testament Moses, das Testament Hiobs. Ihr Aufbau ist fast immer gleich: Ankündigung des Todes, Rückblick, Warnung vor kommender Verführung, Ermahnung.\n\nGenau diesem Aufbau folgt der Brief. Auf die Ankündigung folgt der Rückblick auf die Verklärung, dann die ausführliche Warnung vor falschen Lehrern, dann die Antwort auf die Spötter und schließlich eine Schlussermahnung. Wer die Gattung kennt, liest den Text nicht als Nachricht, sondern als Vermächtnis – und die antike Leserschaft wusste, dass Testamente großer Gestalten in aller Regel nachträglich verfasst wurden. Ob das den Verfasser entlastet oder ihn zum Fälscher macht, ist eine der schwierigsten Fragen der neutestamentlichen Ethik.\n\nDas Bild von der Hütte gehört zur Sprache über den Leib. Ein Zelt wird aufgeschlagen und wieder abgebrochen; das Wort für Ablegen stammt aus derselben Bildwelt und beschreibt das Ausziehen eines Kleides. Der zweite Korintherbrief gebraucht dasselbe Bild ausführlich. Es setzt voraus, dass der Mensch nicht mit seinem Leib zusammenfällt – ein Gedanke, der der griechischen Anthropologie näher steht als der hebräischen, in der der Mensch als Ganzes lebt und stirbt.\n\nDer Hinweis, der Herr habe ihm sein Ende eröffnet, bezieht sich vermutlich auf das Schlusskapitel des Johannesevangeliums, in dem Petrus angekündigt wird, ein anderer werde ihn gürten und führen, wohin er nicht wolle. Der Evangelist deutet den Satz ausdrücklich auf die Todesart. Dass ein Brief darauf anspielt, setzt voraus, dass diese Überlieferung bereits umlief – ein weiteres Argument für eine späte Abfassung.\n\nDas Wort für den Abschied ist im Griechischen exodos, dasselbe, mit dem das zweite Buch Mose überschrieben ist. Es kann Auszug, Aufbruch und Tod bedeuten. Im Lukasevangelium spricht die Verklärungsszene davon, dass Mose und Elia mit Jesus über seinen exodos redeten, den er in Jerusalem erfüllen sollte. Da der Brief unmittelbar danach auf die Verklärung zu sprechen kommt, ist die Wortwahl kaum zufällig.',
+    reception:
+      'Das Bild vom Leib als Zelt hat eine lange Nachwirkung in der Sterbeliteratur. Es steht in Trostschriften der Kirchenväter, in mittelalterlichen Anleitungen zum guten Sterben und in Kirchenliedern bis in die Gegenwart. Seine Stärke ist die Selbstverständlichkeit, mit der es das Ende beschreibt; seine Schwäche ist die Nähe zur Vorstellung, der Leib sei bloße Behausung – eine Abwertung, die weder das Alte noch das Neue Testament sonst vertritt.\n\nDie Verse haben zudem eine praktische Wirkung entfaltet. Die Sorge, dass etwas nach dem eigenen Tod im Gedächtnis bleibt, ist in der Alten Kirche als Begründung für das Aufschreiben der Überlieferung verstanden worden; Irenäus und Eusebius argumentieren ähnlich, wenn sie erklären, warum die Evangelien niedergeschrieben wurden. Aus diesem Zusammenhang stammt die alte Zuordnung des Markusevangeliums zu Petrus, die Papias überliefert.\n\nIn der neueren Diskussion sind diese Verse zum Prüfstein der Frage nach der Pseudepigraphie geworden. Wer sie für die Worte des Petrus hält, hat einen Text vor sich, der seinen bevorstehenden Tod kennt. Wer sie für später hält, muss beantworten, wie eine Gemeinde mit einem Schreiben umging, das unter fremdem Namen umlief – ob sie es als Fälschung ansah oder als anerkannte Form, in der ein Schüler das Erbe seines Lehrers weitergibt. Beide Positionen sind ausführlich vertreten worden.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Testamente großer Gestalten waren eine gelesene Literaturform. Sie standen in Bibliotheken neben Geschichtswerken, und niemand erwartete, dass Jakob oder Mose sie selbst verfasst hatten. Die Grenze zwischen Vermächtnis und Fälschung verlief anders als heute.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Zelte waren im Osten des Reiches nichts Fremdes: Hirten, Soldaten, Händler und Pilger lebten zeitweise darin. Ein Zelt abzubrechen dauerte eine Stunde. Das Bild vom Tod als Abbruch setzt diese Alltagserfahrung voraus.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Was nicht aufgeschrieben wurde, ging verloren. Erinnerung war Arbeit: Schüler lernten die Worte ihres Lehrers auswendig, Gemeinden bewahrten Formeln, und erst die zweite Generation griff regelmäßig zur Schriftrolle.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Tod eines Apostels war für die Gemeinden ein Einschnitt: Mit den Augenzeugen verschwand die letzte unmittelbare Verbindung. Die Frage, worauf man sich danach stützt, treibt mehrere Schriften des Neuen Testaments um.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. skenoma',
+        rendered: 'Hütte',
+        note: 'Ein Zelt oder eine vorläufige Behausung. Dasselbe Wort bezeichnet in der griechischen Bibel die Stiftshütte. Das Bild sagt zweierlei: Der Aufenthalt ist zeitlich begrenzt, und der Ort ist bewohnt.',
+      },
+      {
+        word: 'griech. exodos',
+        rendered: 'nach meinem Abschied',
+        note: 'Auszug, Aufbruch, Tod – und der griechische Name des zweiten Buchs Mose. Im Lukasevangelium sprechen Mose und Elia bei der Verklärung über den exodos Jesu. Da der Brief gleich danach auf die Verklärung kommt, ist das Wort wohl bewusst gewählt.',
+      },
+      {
+        word: 'griech. hypomnesis',
+        rendered: 'zu erinnern',
+        note: 'Das Wachrufen von etwas bereits Gewusstem, nicht die Vermittlung von Neuem. Der Brief betont dreimal, er wolle nur erinnern – ein Anspruch, der bescheiden klingt und zugleich Autorität beansprucht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt gibt dem Brief die Form eines Testaments und ist damit das stärkste Argument für seine Einordnung in eine bekannte Gattung. Wer die Gattung ernst nimmt, liest ihn als Werk eines Schülers, das die Autorität des Lehrers für die Fragen einer späteren Zeit in Anspruch nimmt – ein in der Antike verbreitetes und nicht durchweg als betrügerisch geltendes Verfahren.',
+      },
+      {
+        tradition: 'Traditionelle Auslegung',
+        text: 'Wer an der Verfasserschaft des Petrus festhält, liest den Abschnitt als letzte Sorge eines Mannes, der seinen Tod vor Augen hat. Der Verweis auf die Ankündigung des Herrn wird dann als Erinnerung an ein persönliches Wort verstanden. Diese Lesart hat in der Alten Kirche und in konservativen Auslegungen bis heute Vertreter.',
+      },
+      {
+        tradition: 'Ethische Rückfrage',
+        text: 'Die Frage, ob ein Text unter fremdem Namen ehrlich sein kann, ist alt und ungelöst. Antike Autoren wie Galen und Tertullian kannten und beklagten Fälschungen; zugleich wurden Schülerschriften unter dem Namen des Lehrers verbreitet, ohne dass jemand Anstoß nahm. Wo die Grenze verlief, hing vom Zweck ab – und darüber lässt sich im Einzelfall streiten.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Unabhängig von der Verfasserfrage beschreiben die Verse etwas Allgemeines: die Sorge, dass das Eigene mit dem eigenen Tod verschwindet, und die Entscheidung, dagegen etwas zu tun. Das Mittel, das der Text wählt, ist nüchtern – erinnern, wiederholen, aufschreiben.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Das Bild vom Zelt, das abgebrochen wird, ist in Bestattungsliturgien und Kirchenliedern fest verankert. Es erlaubt, vom Sterben zu sprechen, ohne es zu beschönigen, und wird deshalb auch dort gebraucht, wo andere Bilder zu tröstlich klingen.',
+      },
+    ],
+    crossRefs: [
+      { book: '2kor', chapter: 5, verse: 1, note: 'Das irdische Haus dieser Hütte' },
+      { book: 'joh', chapter: 21, verse: 18, note: 'Die Ankündigung an Petrus' },
+      { book: '2tim', chapter: 4, verse: 6, note: 'Ein zweites Vermächtnis in Briefform' },
+      { book: '5mo', chapter: 31, verse: 14, note: 'Mose vor seinem Tod' },
+    ],
+  },
+  {
+    book: '2petr',
+    chapter: 2,
+    from: 1,
+    to: 11,
+    title: '„die nebeneinführen werden verderbliche Sekten“',
+    historicalShort:
+      'Das Kapitel greift den Judasbrief fast durchgehend auf und reiht Beispiele göttlichen Gerichts aneinander: gefallene Engel, die Sintflut, Sodom. Die Härte des Tons hat eine lange und belastete Wirkungsgeschichte.',
+    historicalLong:
+      'Der literarische Befund ist eindeutig: Von den fünfundzwanzig Versen des Judasbriefs findet sich der größte Teil in diesem Kapitel wieder, teils wörtlich, teils umgestellt. Die Forschung ist sich weitgehend einig, dass der zweite Petrusbrief den Judasbrief benutzt und nicht umgekehrt – unter anderem, weil er dessen Zitate aus außerkanonischen Schriften tilgt. Judas nennt das Henochbuch und die Himmelfahrt Moses ausdrücklich; hier fehlen beide Bezüge, obwohl der Gedanke bleibt. Das spricht für einen Bearbeiter, dem die Berufung auf solche Schriften unangenehm war.\n\nDie Beispielreihe folgt einem festen Muster jüdischer Predigt. Engel, die sündigten, die Generation der Sintflut, die Städte der Ebene – dieselbe Aufzählung steht bei Jesus Sirach, im Buch der Jubiläen und bei Philon. Sie diente dazu, an bekannten Fällen zu zeigen, dass Gott straft. Der erste Fall bezieht sich auf eine Erzählung im ersten Buch Mose, in der Gottessöhne Menschentöchter nehmen; das Henochbuch hat daraus eine ausführliche Geschichte vom Fall der Wächterengel entwickelt, die in der Zeit des Neuen Testaments allgemein bekannt war.\n\nDas Wort, das Luther mit Hölle übersetzt, ist an dieser Stelle nicht das übliche. Es lautet Tartaros und stammt aus der griechischen Mythologie: der Ort unter dem Hades, in den Zeus die Titanen stürzte. Er kommt im ganzen Neuen Testament nur hier vor. Der Verfasser greift damit einen Begriff auf, den seine Leser aus Homer und Hesiod kannten, und setzt ihn für den Gewahrsam der gefallenen Engel ein – ein weiteres Beispiel für seine Bereitschaft, griechische Bildung zu benutzen.\n\nDie Figur des Lot wird bemerkenswert verändert. Im ersten Buch Mose ist er zwiespältig gezeichnet: Er wählt das fruchtbare Land, bietet seine Töchter an, zögert beim Aufbruch. Hier heißt er dreimal gerecht und wird als Mann beschrieben, der unter dem Treiben seiner Umgebung litt. Diese Aufwertung ist nicht neu erfunden; die Weisheit Salomos und Philon deuten Lot ähnlich. Sie zeigt, wie sehr die Auslegung der Zeit die Gestalten der alten Erzählungen bereits umgeformt hatte.\n\nWer die Gegner waren, lässt sich nur vermuten. Genannt werden Verleugnung des Herrn, Ausschweifung, Geldgier und die Verachtung der Herrschaft; später ist von einem Freiheitsversprechen die Rede. Ein Teil der Forschung denkt an eine Frühform gnostischer Lehre, ein anderer an eine libertinistische Auslegung paulinischer Freiheitssätze – der Brief selbst erwähnt kurz darauf, dass in den Paulusbriefen manches schwer zu verstehen sei und verdreht werde. Die Beschreibung folgt allerdings weitgehend festen Polemikmustern und ist als Quelle über die Gegner nur begrenzt brauchbar.',
+    reception:
+      'Das Kapitel gehört zu den härtesten Texten des Neuen Testaments und ist entsprechend gebraucht worden. Von der Ketzerpolemik der Alten Kirche über die Inquisition bis in konfessionelle Streitschriften der Neuzeit lieferte es die Vokabeln: Verderben, Verdammnis, Schandflecken, unvernünftige Tiere. Dass die Beschreibung aus einem festen Vorrat von Vorwürfen stammt und über die tatsächlichen Positionen der Gegner wenig aussagt, ist erst in der neueren Forschung deutlich geworden.\n\nDie Erwähnung der gefallenen Engel hat eine eigene Geschichte. Über diesen Vers und die Parallele im Judasbrief blieb die Henoch-Überlieferung in der christlichen Vorstellungswelt lebendig, obwohl das Buch selbst nur in der äthiopischen Kirche kanonisch wurde. Die mittelalterliche Dämonenlehre, Miltons Paradise Lost und ein großer Teil der abendländischen Vorstellung vom Engelsturz gehen mittelbar darauf zurück.\n\nDer Gedanke, Gott habe an Sodom ein Beispiel gesetzt, hat Verfolgung begründet. Die Deutung der Erzählung auf gleichgeschlechtliche Handlungen ist selbst schon eine Auslegung – die hebräische Bibel nennt an anderer Stelle Hochmut und die Verweigerung der Hilfe für Arme als Schuld Sodoms –, aber sie wurde über Jahrhunderte zur Grundlage von Strafrecht und Ausgrenzung. Die neuere Auslegung weist auf den Zusammenhang hin, in dem der Vers hier steht: Er zielt auf Gericht über Ungerechtigkeit, nicht auf eine Sexuallehre.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Das Henochbuch, entstanden zwischen dem 3. und 1. vorchristlichen Jahrhundert, erzählt vom Fall der Wächterengel und ihrer Bestrafung. Es war in Qumran mehrfach vorhanden und weit verbreitet; wer von gefallenen Engeln sprach, setzte diese Erzählung voraus.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wanderlehrer, die von Gemeinden lebten, waren ein bekanntes Problem. Die Didache regelt, wie lange sie bleiben dürfen und wann sie als falsch gelten – nämlich sobald sie Geld verlangen. Der Vorwurf der Geldgier war deshalb konkret und überprüfbar.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für Sekten heißt im Griechischen Schulrichtungen. Josephus nennt Pharisäer und Sadduzäer so, ohne Tadel. Erst der Zusatz „verderblich“ macht daraus einen Vorwurf – der Begriff selbst beschreibt Parteibildung, nicht Irrlehre.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Sodom und Gomorra wurden am Südende des Toten Meeres vermutet, in einer Gegend mit Asphaltvorkommen, Schwefelquellen und Erdbeben. Strabon und Josephus beschreiben die Landschaft als verbrannt. Die Erzählung hatte für antike Leser eine sichtbare Kulisse.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. tartarosas',
+        rendered: 'zur Hölle verstoßen',
+        note: 'Ein Verb, gebildet aus Tartaros – dem Ort unter dem Hades, in den nach Homer und Hesiod die Titanen gestürzt wurden. Es steht nur an dieser Stelle im ganzen Neuen Testament und stammt aus der griechischen Mythologie, nicht aus der Bibel.',
+      },
+      {
+        word: 'griech. haireseis apoleias',
+        rendered: 'verderbliche Sekten',
+        note: 'Wörtlich: Schulrichtungen des Verderbens. Das erste Wort bezeichnet in der Umgangssprache neutral eine Partei oder Denkschule; erst die Verbindung macht es zum Vorwurf. Von hier führt der Weg zum späteren Begriff der Häresie.',
+      },
+      {
+        word: 'griech. doxas',
+        rendered: 'die Majestäten',
+        note: 'Wörtlich: Herrlichkeiten. Gemeint sind vermutlich Engelmächte. Der Vorwurf lautet, die Gegner sprächen respektlos über Wesen, über die selbst Engel kein Urteil fällen – eine Anspielung, die ohne die außerbiblische Überlieferung kaum verständlich ist.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Kapitel ist eine Bearbeitung des Judasbriefs, die dessen Bezüge auf außerkanonische Schriften glättet. Die Polemik folgt festen Mustern der antiken Streitrede und lässt kaum Rückschlüsse auf die Gegner zu. Der Text ist deshalb eine bessere Quelle für die Sorgen der Gemeinde als für die Lehren, die sie bekämpfte.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen das Kapitel als Anleitung zur Unterscheidung und beriefen sich darauf in den Auseinandersetzungen ihrer Zeit. Augustinus zog die Beispielreihe heran, um zu zeigen, dass Gottes Geduld ein Ende hat. Die Rede von den gefallenen Engeln wurde zum Baustein der Dämonenlehre.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin las das Kapitel als Warnung an die Gemeinde, nicht als Aufforderung zur Verfolgung: Das Urteil bleibe Gott vorbehalten, der Gemeinde bleibe die Unterscheidung. Luther, der dem Brief ohnehin zurückhaltend gegenüberstand, betonte, dass falsche Lehre an ihren Früchten erkannt werde und nicht an ihrer Abweichung von einer Formel.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Ausdrücke des Kapitels – unvernünftige Tiere, Schandflecken, verfluchte Leute – entmenschlichen die Gegner. Ausleger halten fest, dass solche Sprache in der Kirchengeschichte reale Folgen hatte und dass ein Text, der im Kanon steht, damit nicht gerechtfertigt ist. Die Frage, wie mit solchen Stellen umzugehen ist, gehört zu den offenen Problemen der Bibelauslegung.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Lesart',
+        text: 'Auffällig ist, wie oft von Geld die Rede ist: Gewinn, Geiz, Lohn der Ungerechtigkeit, prassen mit fremdem Gut. Der Streit hatte offenbar eine wirtschaftliche Seite. Wandernde Lehrer, die sich aushalten ließen, belasteten kleine Gemeinden; wer dagegen auftrat, kämpfte auch um die Verwendung gemeinsamer Mittel.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jud', chapter: 1, verse: 4, note: 'Die Vorlage, fast wörtlich' },
+      { book: '1mo', chapter: 19, verse: 24, note: 'Der Untergang Sodoms' },
+      { book: '1mo', chapter: 6, verse: 2, note: 'Die Gottessöhne und die Menschentöchter' },
+      { book: 'hes', chapter: 16, verse: 49, note: 'Die Schuld Sodoms nach Hesekiel' },
+    ],
+  },
+  {
+    book: '2petr',
+    chapter: 2,
+    from: 12,
+    to: 22,
+    title: '„Der Hund frißt wieder, was er gespieen hat“',
+    historicalShort:
+      'Der Schluss des Kapitels arbeitet mit zwei Sprichwörtern und der Gestalt Bileams. Er stellt zugleich die schwerste Frage des Briefes: Kann man verlieren, was man einmal erkannt hat?',
+    historicalLong:
+      'Bileam ist eine der eigentümlichsten Gestalten des Alten Testaments. Im vierten Buch Mose wird er von einem moabitischen König gerufen, um Israel zu verfluchen, und segnet es stattdessen; seine Eselin sieht den Engel, den er nicht sieht, und spricht. Der Text dort zeichnet ihn nicht durchweg negativ. Erst die spätere Überlieferung machte ihn zum Inbegriff des Propheten, der sich bezahlen lässt: Ein anderes Kapitel desselben Buches gibt ihm die Schuld an der Verführung Israels, und die rabbinische Literatur behandelt ihn als Gegenbild des Mose. Auf diese ausgeformte Gestalt greift der Brief zurück, nicht auf die Erzählung selbst.\n\nDer Fund von Deir Alla im Jordantal hat die Sache 1967 unerwartet erweitert. Auf verputzten Wandbruchstücken aus dem 8. Jahrhundert vor Christus steht ein Text in aramäischer Schrift über einen Seher namens Bileam, Sohn des Beor, der nachts eine Vision empfängt. Es ist die einzige außerbiblische Erwähnung einer Person, die auch in der Bibel vorkommt und dort in derselben Rolle erscheint. Bileam war also eine Figur, die über Israel hinaus bekannt war.\n\nDie beiden Sprichwörter am Schluss sind von verschiedener Herkunft. Das erste steht wörtlich im Buch der Sprüche und beschreibt einen Toren, der seine Torheit wiederholt. Das zweite ist nicht biblisch; ähnliche Wendungen über die Sau finden sich in der griechischen Literatur, unter anderem bei Heraklit, und im Ahikar-Roman, einer weit verbreiteten aramäischen Weisheitsschrift. Der Verfasser stellt also einen biblischen und einen außerbiblischen Spruch nebeneinander – wie schon im Titusbrief das Kreterzitat.\n\nBeide Tiere galten als unrein. Hund und Schwein stehen im jüdischen Sprachgebrauch für das Verächtliche schlechthin, und die Bilder sind entsprechend hart. Zugleich enthalten sie eine Beobachtung, die den Vergleich trägt: Die Tiere kehren zu dem zurück, was ihrer Natur entspricht. Der Vorwurf lautet damit nicht nur, dass jemand zurückgefallen sei, sondern dass die Umkehr nie tief ging.\n\nDamit ist die schwierigste Frage des Kapitels gestellt. Der Text sagt, es wäre besser gewesen, den Weg der Gerechtigkeit nicht erkannt zu haben, und dass das Letzte ärger geworden sei als das Erste. Dieselbe Frage – ob ein Abfall nach der Erkenntnis rückgängig zu machen ist – behandelt der Hebräerbrief an zwei Stellen ebenso schroff, und sie hat im 3. Jahrhundert einen Kirchenstreit ausgelöst: Wie sollte man mit denen umgehen, die in der Verfolgung geopfert hatten und danach zurückkehren wollten? Der Streit spaltete die Kirche Roms und Karthagos und führte zu eigenen Kirchenbildungen.',
+    reception:
+      'Bileam ist über diese Stelle und die Parallelen in Judas und der Offenbarung zum feststehenden Bild des käuflichen Verkündigers geworden. Im Mittelalter erscheint er in Predigten gegen Simonie, also gegen den Handel mit geistlichen Ämtern; Dante setzt keine eigene Bileamsgestalt, aber die Simonisten in einen eigenen Höllengraben. In der Reformationszeit dient der Name als Schimpfwort gegen bezahlte Prediger der jeweils anderen Seite.\n\nDie Frage nach dem Abfall nach der Erkenntnis hat die Kirche mehrfach gespalten. Im 3. Jahrhundert ging es um die Wiederaufnahme derer, die in der Verfolgung nachgegeben hatten; Novatian in Rom und die Donatisten in Nordafrika lehnten sie ab, die Mehrheitskirche ließ sie zu. In der Reformationszeit stritten Arminianer und Calvinisten darüber, ob ein Gläubiger endgültig verloren gehen kann; die Dordrechter Synode entschied 1619 zugunsten der Beharrlichkeit der Heiligen, die Methodisten vertraten später die Gegenposition. Alle Seiten zitieren diesen Vers.\n\nDie beiden Tiersprichwörter sind ins Sprichwörtliche übergegangen. Die Wendung vom Hund, der zu seinem Gespei zurückkehrt, ist in mehreren europäischen Sprachen geläufig; in der englischen Fassung der King James Version hat sie eine besonders breite Wirkung entfaltet und wird bis heute in Redensarten und Buchtiteln zitiert.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Hunde waren keine Haustiere, sondern streunten in Rudeln um die Städte und fraßen Abfall. Sie standen für das Verächtliche; jemanden einen Hund zu nennen war eine schwere Beleidigung, die im Alten Testament mehrfach vorkommt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Schweine wurden in nichtjüdischen Gegenden in großer Zahl gehalten und galten als besonders ertragreich. Für jüdische Ohren war das Tier der Inbegriff der Unreinheit – ein Bild, das die Trennlinie zwischen den Lebenswelten mitzog.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Seher, der gegen Bezahlung Flüche sprach, war im Alten Orient ein anerkannter Beruf. Könige beschäftigten solche Fachleute vor Feldzügen. Die Bileamerzählung setzt diesen Berufsstand voraus, und der Vorwurf des Lohns trifft ihn im Kern.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Versprechen der Freiheit, das der Text den Gegnern zuschreibt, hatte in der Philosophie einen guten Klang: Der Weise ist frei, auch als Sklave. Wer Freiheit versprach, sprach damit die Sprache der Bildung – und traf einen Nerv in Gemeinden mit vielen Unfreien.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hodo tou Balaam',
+        rendered: 'dem Wege Bileams',
+        note: 'Bileam gilt in der jüdischen Auslegung der Zeit als der Prophet, der sich bezahlen ließ. Der Ausdruck ist eine feste Wendung geworden; Judasbrief und Offenbarung gebrauchen sie ebenfalls, jeweils mit anderem Akzent.',
+      },
+      {
+        word: 'griech. eleutherian epangellomenoi',
+        rendered: 'verheißen ihnen Freiheit',
+        note: 'Ein Schlagwort mit doppeltem Klang: In der Philosophie bezeichnete Freiheit die Unabhängigkeit des Weisen, in den Paulusbriefen die Befreiung vom Gesetz. Der Brief wirft den Gegnern vor, das zweite mit dem ersten zu verwechseln.',
+      },
+      {
+        word: 'griech. paroimia',
+        rendered: 'Sprichwort',
+        note: 'Ein geprägter Merksatz aus dem Volksmund. Der Brief zitiert zwei davon nebeneinander – einen aus dem Buch der Sprüche, einen ohne biblische Vorlage, der in ähnlicher Form in der griechischen und aramäischen Weisheitsliteratur begegnet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt setzt die Bearbeitung des Judasbriefs fort und erweitert sie um die beiden Sprichwörter. Die Rede vom Rückfall lässt vermuten, dass die Gegner aus der Gemeinde selbst kamen – der Konflikt ist ein innerer, kein Streit mit Außenstehenden.',
+      },
+      {
+        tradition: 'Altkirchliche Auslegung',
+        text: 'Die Väter bezogen den Abschnitt auf die Frage der Buße nach schwerer Sünde. Die Strengeren – Tertullian in seiner späten Zeit, Novatian, später die Donatisten – lasen ihn als Ausschluss zweiter Umkehr. Die Mehrheitskirche setzte sich mit der Auffassung durch, dass Buße möglich bleibt, und verwies auf die Barmherzigkeit als Grundzug des Evangeliums.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Die Dordrechter Lehrregeln lehren, dass Erwählte nicht endgültig fallen können; die hier beschriebenen Menschen hätten demnach nie wirklich gehört. Die Sprichwörter vom Hund und von der Sau werden in diesem Sinn gelesen: Die Natur des Tieres hat sich nie geändert, nur sein Verhalten für eine Zeit.',
+      },
+      {
+        tradition: 'Arminianische und methodistische Auslegung',
+        text: 'Die Gegenposition liest den Text beim Wort: Wer entronnen war, kann wieder verflochten werden, und die Warnung wäre sinnlos, wenn der Fall unmöglich wäre. John Wesley zog daraus die Folgerung, dass Gnade nicht zwingt und der Mensch bis zuletzt in Verantwortung steht.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Satz, es wäre besser gewesen, nicht erkannt zu haben, hat Menschen mit Zweifeln oder Rückfällen schwer belastet. Ausleger halten dagegen, dass der Abschnitt Lehrer im Blick hat, die andere mitreißen, und nicht Einzelne, die an ihrem Glauben irre werden – und dass die Sorge, betroffen zu sein, gerade dagegen spricht, es zu sein.',
+      },
+    ],
+    crossRefs: [
+      { book: '4mo', chapter: 22, verse: 28, note: 'Die redende Eselin' },
+      { book: 'spr', chapter: 26, verse: 11, note: 'Das erste der beiden Sprichwörter' },
+      { book: 'hebr', chapter: 6, verse: 4, note: 'Dieselbe Frage nach dem Abfall' },
+      { book: 'offb', chapter: 2, verse: 14, note: 'Die Lehre Bileams in Pergamon' },
+    ],
+  },
+  {
+    book: '2petr',
+    chapter: 3,
+    from: 1,
+    to: 7,
+    title: '„Wo ist die Verheißung seiner Zukunft?“',
+    historicalShort:
+      'Der Einwand der Spötter ist wörtlich zitiert und trifft einen wunden Punkt: Die erwartete Wiederkunft ist ausgeblieben. Der Abschnitt ist die erste ausdrückliche Auseinandersetzung damit.',
+    historicalLong:
+      'Die frühesten christlichen Texte rechnen mit einem baldigen Ende. Der erste Thessalonicherbrief spricht von „wir, die wir leben und übrigbleiben“, und mehrere Worte in den Evangelien setzen voraus, dass die Generation der Hörer es erleben wird. Zwei Menschenalter später war diese Generation gestorben. Der Einwand, den der Brief zitiert, benennt genau das: Seit die Väter entschlafen sind, bleibt alles, wie es war. Mit den Vätern ist wahrscheinlich nicht die Erzväter-Generation gemeint, sondern die erste christliche – die Augenzeugen.\n\nDer Vorwurf ist philosophisch besser gestützt, als er klingt. Die verbreitete Auffassung der Zeit, vor allem bei Aristotelikern und in Teilen der Popularphilosophie, hielt die Welt für unvergänglich; Veränderungen liefen in Kreisläufen ab, ein Ende war nicht vorgesehen. Die Stoiker rechneten zwar mit einem Weltbrand, aber als wiederkehrendem Vorgang, nicht als einmaligem Ende. Wer bestritt, dass die Welt auf ein Ziel zuläuft, stand damit auf dem Boden gebildeter Ansichten.\n\nDie Antwort greift zur Schöpfungserzählung und zur Sintflut. Ihr Argument lautet: Die Welt ist schon einmal untergegangen, also ist die Behauptung falsch, es bleibe alles beim Alten. Das setzt eine bestimmte Lesart des Schöpfungsberichts voraus, in dem die Erde aus dem Wasser hervorgeht und in dem die Flut die Wasser wieder zusammenkommen lässt. Antike jüdische Auslegung hat diesen Zusammenhang mehrfach so gezogen; Philon beschreibt die Erde als aus dem Wasser bestehend.\n\nDie Ankündigung des Feuers ist neu. Die hebräische Bibel kennt Gerichtsfeuer, aber keinen Weltbrand; das Bild vom Ende der Welt im Feuer stammt aus der Stoa, wo die Ekpyrosis eine feste Lehre war – der Kosmos verbrennt und entsteht neu. Persische Vorstellungen kannten Ähnliches. Der Brief übernimmt das Bild, verändert aber den Sinn: Bei ihm ist das Feuer Gericht und einmalig, kein Naturvorgang in ewiger Wiederkehr.\n\nDie Lösung, die wenige Verse später folgt, arbeitet mit einem Psalmwort: Tausend Jahre sind vor Gott wie ein Tag. Aus einem Zeitproblem wird ein Maßstabsproblem, und die Verzögerung wird als Geduld gedeutet, die Umkehr ermöglichen soll. Diese Antwort ist in der Kirchengeschichte doppelt gebraucht worden – zur Beruhigung und, in der Verbindung des Tages mit tausend Jahren, als Grundlage von Weltzeitberechnungen, die vom 2. Jahrhundert bis in die Neuzeit immer wieder Endtermine hervorgebracht haben.',
+    reception:
+      'Der Abschnitt ist der Ausgangspunkt aller späteren Erörterungen über das Ausbleiben des Endes. Albert Schweitzer machte 1906 die Naherwartung und ihre Enttäuschung zum Schlüssel seiner Darstellung der Leben-Jesu-Forschung; die Frage, wie das Christentum diesen Bruch verarbeitet hat, gehört seither zu den Grundfragen der Forschung. Rudolf Bultmann antwortete mit der Entmythologisierung, andere mit der Rede von einer bereits angebrochenen Endzeit.\n\nDas Psalmwort von den tausend Jahren hat eine gegenteilige Wirkung entfaltet. Aus der Gleichung eines Tages mit tausend Jahren und den sechs Schöpfungstagen wurde seit dem 2. Jahrhundert eine Weltwoche von sechstausend Jahren errechnet; der Barnabasbrief, Irenäus und Hippolyt rechnen so. Über die mittelalterlichen Weltchroniken bis zu Berechnungen der Neuzeit hat diese Deutung immer wieder Endtermine hervorgebracht, die sämtlich verstrichen sind.\n\nDie Ankündigung, die Elemente würden im Feuer vergehen, hat in der Neuzeit eine unerwartete Aktualität bekommen. Nach 1945 wurde sie in Predigten und Streitschriften auf die Atombombe bezogen; in der Umweltdebatte seit den 1970er Jahren wurde umgekehrt gefragt, ob die Erwartung eines Weltendes die Verantwortung für die Erde untergräbt. Die kirchlichen Stellungnahmen betonen seither, dass der Text von einem Gericht spricht, nicht von einer Erlaubnis zur Zerstörung, und dass er unmittelbar in die Erwartung eines neuen Himmels und einer neuen Erde mündet.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Die Stoa lehrte den Weltbrand: Der Kosmos verbrennt und entsteht in gleicher Gestalt neu. Diese Lehre war Allgemeingut der gebildeten Welt. Wer vom Feuer am Ende sprach, benutzte ein bekanntes Bild – und änderte es, indem er die Wiederholung strich.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Tod der ersten Generation war ein Einschnitt. Wer als Kind Augenzeugen gehört hatte, war nun selbst alt; Gemeinden mussten erklären, warum das Versprochene ausblieb. Ähnliche Krisen sind aus anderen Bewegungen mit Naherwartung gut dokumentiert.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Wer die Zukunft deutet, beansprucht Deutungshoheit über die Gegenwart. Der Streit um das Ausbleiben des Endes war deshalb auch ein Streit darüber, wer in der Gemeinde das Wort führt – die Bewahrer der Überlieferung oder ihre Kritiker.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Zeitmessung war grob. Man rechnete nach Regierungsjahren, Ernten und Olympiaden; Uhren maßen ungleich lange Stunden je nach Jahreszeit. Ein Zeitmaß wie „tausend Jahre wie ein Tag“ traf auf ein Publikum, dem Genauigkeit ohnehin fremd war.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. parousia',
+        rendered: 'seiner Zukunft',
+        note: 'Wörtlich Anwesenheit oder Ankunft. Der Begriff bezeichnete den offiziellen Besuch eines Herrschers in einer Stadt, der mit Ehrengesandtschaften begangen wurde. Luthers „Zukunft“ meint noch das Zukommen, nicht die Zeit danach.',
+      },
+      {
+        word: 'griech. empaiktai',
+        rendered: 'Spötter',
+        note: 'Wörtlich: die ihr Spiel treiben. Das Wort steht in der griechischen Bibel für Menschen, die Heiliges verhöhnen. Der Judasbrief gebraucht es ebenso – ein weiterer Berührungspunkt der beiden Schreiben.',
+      },
+      {
+        word: 'griech. pyri teroumenoi',
+        rendered: 'zum Feuer behalten',
+        note: 'Aufbewahrt für das Feuer. Das Bild vom Weltbrand stammt aus der stoischen Kosmologie, wo es Ekpyrosis heißt und einen wiederkehrenden Vorgang meint. Hier ist es einmalig und ein Gerichtsakt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt ist das deutlichste Zeugnis für die Krise der Naherwartung. Er zeigt, dass der Einwand innerhalb der Gemeinden erhoben wurde und dass eine Antwort nötig war. Die Lösung – Verzögerung als Geduld – ist die Antwort geblieben, die sich durchgesetzt hat, und findet sich in ähnlicher Form auch in jüdischen Texten der Zeit.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter nahmen den Abschnitt als Beleg dafür, dass Gottes Zeitrechnung eine andere ist. Zugleich rechneten mehrere von ihnen mit dem Vers die Dauer der Welt aus. Augustinus wandte sich gegen solche Berechnungen und verwies auf das Wort, es stehe nicht den Menschen zu, Zeit und Stunde zu wissen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther erwartete das Ende zu seinen Lebzeiten und las den Abschnitt als Trost gegen den Spott der Gegenwart. Calvin betonte die Geduld Gottes und warnte vor Berechnungen. Beide verstanden das Ausbleiben nicht als Widerlegung, sondern als Aufschub mit Absicht.',
+      },
+      {
+        tradition: 'Ökologische Rückfrage',
+        text: 'Seit den 1970er Jahren wird gefragt, ob die Erwartung eines Weltendes im Feuer die Verantwortung für die Erde untergräbt. Kritiker verweisen auf Kreise, die daraus ein Desinteresse an Umweltfragen ableiten. Die kirchlichen Stellungnahmen halten dagegen, dass der Text auf einen neuen Himmel und eine neue Erde zielt, in der Gerechtigkeit wohnt – also auf Erneuerung, nicht auf Vernichtung.',
+      },
+      {
+        tradition: 'Religionsgeschichtliche Einordnung',
+        text: 'Der Umgang mit enttäuschter Naherwartung ist über das Christentum hinaus untersucht worden. Bewegungen, deren angekündigter Termin verstreicht, reagieren typischerweise nicht mit Auflösung, sondern mit Neudeutung – ein Muster, das die Sozialpsychologie seit den 1950er Jahren beschreibt. Der Abschnitt zeigt diesen Vorgang in einem sehr frühen Beispiel.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 90, verse: 4, note: 'Tausend Jahre sind wie der Tag' },
+      { book: '1thess', chapter: 4, verse: 15, note: 'Wir, die wir leben und übrigbleiben' },
+      { book: 'apg', chapter: 1, verse: 7, note: 'Es gebührt euch nicht, Zeit oder Stunde zu wissen' },
+      { book: '2petr', chapter: 3, verse: 13, note: 'Ein neuer Himmel und eine neue Erde' },
+    ],
+  },
+  {
+    book: '2petr',
+    chapter: 3,
+    from: 16,
+    to: 18,
+    title: '„wie auch die andern Schriften“',
+    historicalShort:
+      'Drei Schlussverse mit einer beiläufigen Bemerkung von großer Tragweite: Die Briefe des Paulus werden neben die Schriften gestellt. Das ist der früheste Beleg dafür, dass christliche Texte als Heilige Schrift galten.',
+    historicalLong:
+      'Der Satz setzt zweierlei voraus. Erstens, dass es eine Sammlung von Paulusbriefen gab, die als Ganzes bekannt war – der Text sagt „in allen Briefen“. Zweitens, dass diese Sammlung mit dem verglichen werden konnte, was für Juden und Christen bis dahin allein Schrift hieß: das Alte Testament in griechischer Fassung. Beides zusammen macht die Stelle zum frühesten Zeugnis für einen entstehenden christlichen Kanon.\n\nWann eine solche Sammlung entstand, ist umstritten. Der erste Klemensbrief kennt um 96 mindestens den ersten Korintherbrief, Ignatius von Antiochien um 110 mehrere; Marcion stellte um 140 eine eigene Ausgabe von zehn Paulusbriefen zusammen, was voraussetzt, dass er sie vorfand. Die Bemerkung hier passt in diese Zeitspanne und ist eines der Argumente für eine späte Datierung des Briefes.\n\nDas Eingeständnis, in den Paulusbriefen sei manches schwer zu verstehen, ist bemerkenswert offen. Es benennt ein Problem, das die Kirchengeschichte begleitet hat: Die Sätze über Gesetz, Freiheit und Gnade ließen sich in verschiedene Richtungen ziehen. Marcion las sie als Absage an das Alte Testament, andere als Freibrief zur Lebensführung; der Jakobusbrief scheint gegen eine Auslegung anzuschreiben, die Glauben ohne Werke behauptet. Der Brief nimmt hier Partei, ohne die Autorität des Paulus anzutasten.\n\nDas Wort für verdrehen stammt aus der Folterpraxis und aus dem Handwerk: Es bezeichnet das Verdrehen an der Winde und wurde übertragen für das Verzerren einer Aussage gebraucht. Wer die Schrift so behandelt, tut ihr Gewalt an – so das Bild. Der Vorwurf der Verdrehung ist seither eine der beständigsten Waffen in theologischen Auseinandersetzungen, und beide Seiten haben ihn regelmäßig gegeneinander erhoben.\n\nDer Schlussvers ist ein Lobpreis. Anders als die üblichen Briefformeln fehlt jeder persönliche Gruß, jeder Name, jeder Reiseplan – ein weiterer Zug, der den Brief von den echten Paulusbriefen unterscheidet und ihn eher als Rundschreiben oder Traktat erscheinen lässt. Die Zuschreibung von Ehre nun und in Ewigkeit an Christus ist für einen so frühen Text ungewöhnlich: Doxologien gelten in der Regel Gott.',
+    reception:
+      'Der Satz ist in allen Kanondebatten zitiert worden. Er zeigt, dass die Einordnung christlicher Schriften neben das Alte Testament nicht durch einen Beschluss geschah, sondern durch Gebrauch: Man las sie im Gottesdienst, berief sich auf sie und behandelte sie irgendwann wie Schrift. Die erste erhaltene Liste, das Muratorische Fragment, stammt vermutlich aus dem späten 2. Jahrhundert; Athanasius nennt 367 in einem Osterbrief zum ersten Mal genau die siebenundzwanzig Bücher des heutigen Neuen Testaments.\n\nDie Bemerkung über das schwere Verständnis hat eine doppelte Wirkung gehabt. Sie diente als Begründung dafür, die Auslegung an ein Lehramt zu binden: Wenn die Schrift schwierig ist, braucht es eine Instanz. Sie diente ebenso als Mahnung zur Demut gegenüber dem eigenen Verständnis. Die Reformatoren hielten der ersten Folgerung entgegen, das Nötige sei klar genug – Luther sprach von der Klarheit der Schrift –, ohne zu bestreiten, dass es schwierige Stellen gibt.\n\nDer Vorwurf des Verdrehens hat eine unrühmliche Karriere gemacht. Er ist in nahezu jeder innerchristlichen Auseinandersetzung erhoben worden, von den altkirchlichen Streitigkeiten über die Reformation bis in die Gegenwart, und funktioniert stets gleich: Er erklärt die Gegenseite nicht für irrend, sondern für unredlich. Ausleger weisen darauf hin, dass der Text selbst die Schwierigkeit einräumt und damit dem Vorwurf eine Grenze setzt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Eine Briefsammlung entstand durch Abschreiben und Tauschen: Gemeinden ließen Kopien anfertigen und schickten sie weiter. Ein Kodex mit zehn Briefen war ein teures Stück Arbeit, dessen Herstellung Wochen dauerte und Geld kostete.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Was im Gottesdienst vorgelesen wurde, galt allmählich als maßgeblich. Ein förmlicher Beschluss ging dem nicht voraus; die Praxis entschied, und Listen entstanden erst, als die Praxis strittig wurde.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für Verdrehen stammt aus der Sprache der Folter und der Seilwinde. Übertragen bezeichnete es das gewaltsame Umbiegen einer Aussage – ein Bild, das voraussetzt, dass ein Text einen erkennbaren Sinn hat, gegen den man handeln kann.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Für die Gemeinden war das Alte Testament in griechischer Fassung die Heilige Schrift. Christliche Texte danebenzustellen, war ein Vorgang ohne Vorbild und geschah zunächst ohne Erklärung – dieser Vers gibt einen der wenigen Hinweise darauf, wie beiläufig er verlief.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. tas loipas graphas',
+        rendered: 'die andern Schriften',
+        note: 'Wörtlich: die übrigen Schriften. Das Wort graphe bezeichnet im Neuen Testament durchweg die Heilige Schrift. Die Paulusbriefe werden damit derselben Gattung zugerechnet – der früheste Beleg für diesen Schritt.',
+      },
+      {
+        word: 'griech. streblousin',
+        rendered: 'verdrehen',
+        note: 'Ein Wort aus der Werkstatt und der Folterkammer: an der Winde drehen, verrenken. Übertragen meint es das gewaltsame Umbiegen einer Aussage. Es steht nur an dieser Stelle im Neuen Testament.',
+      },
+      {
+        word: 'griech. dysnoeta',
+        rendered: 'schwer zu verstehen',
+        note: 'Schwer zu begreifen. Auch dieses Wort kommt nur hier vor. Es benennt eine Schwierigkeit, ohne sie einer Seite anzulasten – die Verdrehung wird erst denen zugeschrieben, die ungelehrt und leichtfertig sind.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Stelle ist ein Datierungsargument ersten Ranges: Sie setzt eine bekannte Sammlung von Paulusbriefen voraus und behandelt sie wie Schrift. Beides passt nicht in die Lebenszeit des Petrus, sondern in die erste Hälfte des zweiten Jahrhunderts. Zugleich ist sie eine Quelle für den Kanonprozess, über den sonst wenig Direktes überliefert ist.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Schwierigkeit der Schrift wird als Begründung dafür verstanden, dass Auslegung nicht der Willkür überlassen bleiben kann. Die Verbindung mit dem Vers über die Weissagung, die nicht aus eigener Auslegung stammt, hat in der katholischen Lehre vom Lehramt eine feste Rolle.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Reformatoren räumten schwierige Stellen ein, bestritten aber, dass daraus die Notwendigkeit einer lehramtlichen Instanz folgt. Luther unterschied zwischen der äußeren Klarheit der Schrift und der inneren Verstehensfähigkeit des Menschen: Nicht der Text sei dunkel, sondern der Leser. Dunkle Stellen seien von klaren her auszulegen.',
+      },
+      {
+        tradition: 'Kanongeschichtliche Einordnung',
+        text: 'Der Vers zeigt einen Vorgang im Werden. Es gibt keinen Beschluss, keine Instanz, keine Liste – nur die beiläufige Feststellung, dass die Briefe wie die übrigen Schriften behandelt werden. Der Kanon entstand über Jahrhunderte aus Gebrauch, Streit und Abgrenzung, und erst im 4. Jahrhundert liegen förmliche Aufzählungen vor.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Ein Text, der selbst unter fremdem Namen auftritt, wirft anderen Unredlichkeit im Umgang mit Schriften vor – diese Spannung ist von Auslegern wiederholt benannt worden. Wer die Gattung des Testaments als anerkannte Form versteht, sieht darin keinen Widerspruch; wer sie als Fälschung wertet, schon. Eine Auflösung ist nicht in Sicht.',
+      },
+    ],
+    crossRefs: [
+      { book: '2tim', chapter: 3, verse: 16, note: 'Alle Schrift von Gott eingegeben' },
+      { book: '2petr', chapter: 1, verse: 20, note: 'Keine Weissagung aus eigener Auslegung' },
+      { book: 'jak', chapter: 2, verse: 17, note: 'Eine mögliche Frontlinie der Paulusdeutung' },
+      { book: 'apg', chapter: 17, verse: 11, note: 'Die Schriften prüfen' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 7 Abschnitte */
+  {
+    book: '1thess',
+    chapter: 1,
+    from: 1,
+    to: 10,
+    title: '„wie ihr bekehrt seid zu Gott von den Abgöttern“',
+    historicalShort:
+      'Der Anfang des wahrscheinlich ältesten erhaltenen christlichen Textes überhaupt. In zehn Versen steht, wovon eine junge Gemeinde lebte – und woraus sie kam.',
+    historicalLong:
+      'Der erste Thessalonicherbrief gilt der Forschung überwiegend als die früheste Schrift des Neuen Testaments, geschrieben um das Jahr 50, also rund zwanzig Jahre nach der Kreuzigung und zwei Jahrzehnte vor dem ersten Evangelium. Damit ist er das älteste erhaltene Zeugnis christlichen Glaubens überhaupt. Was in ihm steht und was fehlt, ist deshalb von besonderem Gewicht: Es gibt keine Erzählungen über das Leben Jesu, keine Gleichnisse, keine Wunderberichte – aber Tod, Auferweckung und Wiederkunft stehen bereits fest.\n\nDie Gemeinde war wenige Monate alt. Nach der Apostelgeschichte predigte Paulus drei Sabbate lang in der Synagoge, bevor ein Auflauf ihn zur Flucht zwang; ob das die ganze Aufenthaltsdauer war, ist umstritten, denn der Brief erwähnt eigene Handarbeit und eine Unterstützung aus Philippi, was auf mehrere Monate deutet. Der Zusatz, sie hätten sich von den Abgöttern bekehrt, zeigt außerdem, dass die Gemeinde überwiegend aus Nichtjuden bestand – Juden hätten sich nicht von Götzen abzuwenden brauchen.\n\nGenau dieser Schritt hatte Folgen, die heute schwer vorstellbar sind. Religion war in einer griechischen Stadt keine Privatsache. Die Zunft hatte ihren Schutzgott, das Haus seine Hausgötter, die Stadt ihre Feste, und der Kaiserkult verband beides mit der Loyalität gegenüber Rom. Wer aufhörte teilzunehmen, kündigte gesellschaftliche Beziehungen auf. Der Vorwurf, Christen seien menschenfeindlich und atheistisch, hat hier seinen Ursprung – atheos hieß nicht, wer keinen Gott hatte, sondern wer die Götter der anderen nicht anerkannte.\n\nDie Dreiheit Glaube, Liebe, Hoffnung erscheint hier zum ersten Mal in der erhaltenen Literatur, und sie steht nicht als Aufzählung von Tugenden, sondern jeweils mit einem Tätigkeitswort verbunden: Werk des Glaubens, Arbeit der Liebe, Geduld der Hoffnung. Das Wort für Arbeit meint Mühe bis zur Erschöpfung. Die spätere Verwendung als Trias der drei göttlichen Tugenden hat diese Verbindung mit Anstrengung meist abgestreift.\n\nDer Schluss des Kapitels ist vermutlich eine bereits geprägte Formel: Umkehr von den Götzen, Dienst am lebendigen Gott, Warten auf den Sohn vom Himmel. Ihr Aufbau entspricht der Missionspredigt an Nichtjuden, wie sie die Apostelgeschichte in Lystra und Athen schildert. Auffällig ist die Bezeichnung Gottes als lebendig und wahr – eine Formel aus der jüdischen Auseinandersetzung mit dem Götterkult, die voraussetzt, dass die anderen Götter tot und unwirklich sind.',
+    reception:
+      'Die Trias Glaube, Liebe, Hoffnung ist über den ersten Korintherbrief in die gesamte christliche Ethik eingegangen. Die Scholastik machte daraus die drei eingegossenen Tugenden, die den vier antiken Kardinaltugenden gegenüberstehen; Thomas von Aquin behandelt sie ausführlich, und der Katechismus der katholischen Kirche folgt dieser Ordnung. In der Kunst erscheinen sie seit dem Mittelalter als drei Frauengestalten mit Kreuz, Anker und Herz.\n\nDass dieser Brief als ältester Text des Neuen Testaments gilt, hat die Forschung seit dem 19. Jahrhundert beschäftigt. Ferdinand Christian Baur bestritt seine Echtheit, weil er ihm zu wenig Theologie enthielt; diese Position hat sich nicht gehalten, und heute gehört er zu den sieben unbestrittenen Paulusbriefen. Seine Bedeutung liegt gerade in dem, was fehlt: Rechtfertigung, Gesetz, Beschneidung kommen nicht vor. Das hat die Frage aufgeworfen, ob diese Themen bei Paulus erst durch spätere Auseinandersetzungen in den Vordergrund traten.\n\nDie Formel von der Umkehr von den Götzen ist in der Missionsgeschichte immer wieder aufgenommen worden, mit sehr unterschiedlichen Folgen. Sie hat Übersetzungsarbeit und Bildungswerke begründet und ebenso die Zerstörung von Kultstätten und die Verächtlichmachung fremder Religionen. Die Missionstheologie des 20. Jahrhunderts hat sich von der zweiten Linie ausdrücklich distanziert, ohne die Aussage selbst aufzugeben.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Thessalonich war freie Stadt mit eigenem Rat und den altmakedonischen Politarchen als Beamten. Diese Freiheit hing vom Wohlwollen Roms ab. Ein Verdacht auf Illoyalität konnte sie kosten – weshalb der Rat auf Unruhen empfindlich reagierte.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'In der Stadt sind Kulte der Kabiren, ägyptischer Götter und des vergöttlichten Kaisers bezeugt. Das Wort „atheos“ traf nicht den, der keinen Gott hatte, sondern den, der die Götter der Stadt nicht anerkannte – ein Vorwurf mit rechtlichen Folgen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Handwerker gehörten Zünften an, die einen Schutzgott hatten und dessen Feste feierten. Wer nicht mitmachte, verlor Aufträge und Netzwerke. Der Bruch mit den Götzen war deshalb zuerst ein wirtschaftlicher Vorgang.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Via Egnatia führte mitten durch die Stadt, der Hafen war ganzjährig nutzbar. Nachrichten aus Thessalonich erreichten Philippi in drei Tagen und Korinth in gut einer Woche – die Bemerkung, ihr Glaube sei überall bekannt geworden, hat eine verkehrstechnische Grundlage.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. pistis, agape, elpis',
+        rendered: 'Werk im Glauben',
+        note: 'Die früheste Nennung der Dreiheit in der erhaltenen Literatur. Sie steht hier nicht als Tugendkatalog, sondern jeweils mit einem Tätigkeitswort verbunden – Werk, Mühe, Standhalten.',
+      },
+      {
+        word: 'griech. kopos',
+        rendered: 'Arbeit',
+        note: 'Nicht gewöhnliche Tätigkeit, sondern Mühe bis zur Erschöpfung. Dasselbe Wort steht für die Feldarbeit und für die Anstrengung des Wettkämpfers. Der Ausdruck „Arbeit der Liebe“ meint Erschöpfung, nicht Gefühl.',
+      },
+      {
+        word: 'griech. eidola',
+        rendered: 'den Abgöttern',
+        note: 'Wörtlich: Abbilder, Schattengestalten. Ein Wort der jüdischen Polemik, das den fremden Göttern die Wirklichkeit abspricht. Die Anhänger dieser Kulte hätten sich selbst nie so bezeichnet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Brief ist das älteste erhaltene christliche Schriftstück und deshalb eine Quelle ersten Ranges für die Frühzeit. Bemerkenswert ist, was fehlt: keine Rechtfertigungslehre, kein Gesetzesstreit, keine Erzählung über Jesus. Daraus wird gefolgert, dass diese Themen bei Paulus aus späteren Auseinandersetzungen erwuchsen, während Tod, Auferweckung und Wiederkunft von Anfang an feststanden.',
+      },
+      {
+        tradition: 'Katholische Tradition',
+        text: 'Die Dreiheit Glaube, Liebe, Hoffnung ist als Lehre von den theologischen Tugenden ausgebaut worden: Sie werden nicht erworben, sondern geschenkt, und sie richten den Menschen unmittelbar auf Gott aus. Thomas von Aquin ordnet ihnen die vier Kardinaltugenden unter, die aus der antiken Ethik stammen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Betont wird die Reihenfolge im dritten Vers: Dem Glauben folgt das Werk, nicht umgekehrt. Zugleich ist der Text ein Beleg dafür, dass Glaube bei Paulus nie ohne Folgen gedacht ist. Luther predigte über den Brief vor allem die Erwählungsaussage in Vers vier.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Lesart',
+        text: 'Die Bekehrung von den Götzen war ein sozialer Bruch mit messbaren Folgen: Verlust von Zunftbindungen, Kundschaft, Familienrückhalt und Festgemeinschaft. Die genannten Trübsale sind vor diesem Hintergrund keine innere Anfechtung, sondern die wirtschaftliche und gesellschaftliche Ausgrenzung einer kleinen Gruppe.',
+      },
+      {
+        tradition: 'Missionstheologische Rückfrage',
+        text: 'Die Formel von der Umkehr von den Götzen hat eine belastete Geschichte. Sie hat Übersetzung und Bildung getragen und ebenso die Zerstörung fremder Kultstätten begründet. Die Missionstheologie seit der Mitte des 20. Jahrhunderts fragt deshalb, wie sich das Bekenntnis zum einen Gott aussprechen lässt, ohne die Religion anderer zu verächtlichen.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 13, verse: 13, note: 'Die bekanntere Fassung der Trias' },
+      { book: 'apg', chapter: 17, verse: 1, note: 'Die Gründung der Gemeinde' },
+      { book: 'apg', chapter: 14, verse: 15, note: 'Dieselbe Predigtform vor Nichtjuden' },
+      { book: '1thess', chapter: 4, verse: 16, note: 'Das Warten auf den Sohn vom Himmel' },
+    ],
+  },
+  {
+    book: '1thess',
+    chapter: 2,
+    from: 1,
+    to: 12,
+    title: '„wie eine Amme ihr Kind pflegt“',
+    historicalShort:
+      'Eine Verteidigung gegen Vorwürfe, die nicht ausgesprochen werden – und zwei Bilder, die aus dem Haushalt stammen: die Amme und der Vater. Der Abschnitt zeigt, womit ein Wanderprediger zu kämpfen hatte.',
+    historicalLong:
+      'Der Ton ist der einer Rechtfertigung, doch die Anklage fehlt. Der Text bestreitet der Reihe nach Irrtum, Unlauterkeit, List, Schmeichelei, Habgier und Ehrsucht. Genau diese Vorwürfe wurden in der Antike gegen Wanderredner erhoben, und zwar routinemäßig. Dion von Prusa, ein Redner derselben Zeit, unterscheidet in einer Rede die echten Philosophen von den Schmeichlern, Geldschneidern und Ruhmsüchtigen und zählt dieselben Punkte auf. Der Abschnitt ist deshalb wahrscheinlich keine Antwort auf konkrete Angriffe, sondern eine Abgrenzung gegen ein bekanntes Berufsbild.\n\nDie Kyniker prägten dieses Bild besonders. Sie zogen in zerlumpter Kleidung von Stadt zu Stadt, hielten Reden auf Marktplätzen und lebten von Almosen; ihre Gegner warfen ihnen vor, aus der Bedürfnislosigkeit ein Geschäft zu machen. Lukian von Samosata beschreibt in einer bissigen Schrift einen solchen Mann, der sich von Gemeinden aushalten lässt. Wer im ersten Jahrhundert als Wanderlehrer auftrat, wurde zunächst in diese Schublade gesteckt.\n\nDagegen setzt der Text die eigene Handarbeit. Tag und Nacht gearbeitet zu haben, um niemandem zur Last zu fallen, ist mehr als ein Hinweis auf Fleiß: Es ist der Nachweis, dass keine Bezahlung floss. Für einen Lehrer war das ungewöhnlich und aus Sicht der Gebildeten sogar herabsetzend, denn Handwerk galt als unfrei. Zugleich bedeutete es, dass die Verkündigung in der Werkstatt stattfand – zwischen Zuschnitt und Naht, nicht auf einer Rednerbühne.\n\nDas Bild der Amme ist genau gewählt. Es steht dort nicht das Wort für Mutter, sondern für die Amme, die ein Kind stillt und aufzieht; der Zusatz sagt jedoch, sie pflege ihre eigenen Kinder. Ammen waren in wohlhabenden Häusern angestellte Frauen, oft Sklavinnen, die ein fremdes Kind versorgten – die Wendung verbindet also berufliche Fürsorge mit eigener Zuneigung. Wenige Verse später steht der Vater, der ermahnt und tröstet. Beide Rollen zusammen decken die antike Erziehung ab: Die Amme nährt, der Vater weist an.\n\nDie Zurückweisung des Anspruchs auf Ehre hat einen konkreten Hintergrund. Lehrer wurden in griechischen Städten geehrt, bekamen Ehrenplätze, Standbilder und Steuerfreiheit; wer Ansehen suchte, folgte damit den Regeln. Auf diese Möglichkeit ausdrücklich zu verzichten, war eine Aussage über das Verhältnis zur Gemeinde: Sie sollte nicht Publikum sein und nicht Geldgeber, sondern Hausgenossenschaft.',
+    reception:
+      'Das Bild von der Amme hat in der Frömmigkeitsgeschichte eine bemerkenswerte Wirkung entfaltet, weil es einem Apostel eine weibliche Rolle gibt. Mittelalterliche Mystik – Bernhard von Clairvaux, Julian von Norwich – griff mütterliche Bilder für Christus und für geistliche Leitung auf und berief sich unter anderem auf diese Stelle. In der neueren Diskussion über Sprache und Bilder für Gott und Amt wird sie regelmäßig angeführt.\n\nDer Verzicht auf Unterhalt ist zu einem Streitpunkt geworden. Der erste Korintherbrief begründet ausführlich, dass Verkündiger ein Recht auf Lebensunterhalt haben, und verzichtet dennoch darauf; die spätere Kirche hat das Recht durchgesetzt und den Verzicht zur Ausnahme erklärt. In der Reformationszeit wurde die Stelle gegen den Ablasshandel und gegen bezahlte Seelenmessen angeführt, im 19. Jahrhundert von Erweckungspredigern gegen kirchliche Pfründen. Freikirchliche Bewegungen mit unbezahlten Predigern berufen sich bis heute darauf.\n\nDie Abgrenzung gegen Schmeichelei und Menschengefälligkeit ist in der Predigtlehre ein fester Topos. Sie steht in Handreichungen zur Homiletik von der Alten Kirche bis in die Gegenwart und wird meist mit dem Satz verbunden, das Wort dürfe nicht dem Geschmack der Hörer angepasst werden. Kritisch wird angemerkt, dass sich mit diesem Grundsatz auch jede Rücksichtslosigkeit rechtfertigen lässt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Handwerk galt in gebildeten Kreisen als unfrei; Cicero zählt es zu den unwürdigen Beschäftigungen. Ein Lehrer, der mit den Händen arbeitete, verlor an Ansehen – und gewann die Unabhängigkeit von Gönnern.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ammen wurden in wohlhabenden Häusern angestellt, oft Sklavinnen, und blieben nach dem Abstillen häufig als Erzieherinnen. Verträge über Ammendienste sind in ägyptischen Papyri zu Dutzenden erhalten, mit Laufzeit und Bezahlung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wanderredner waren ein bekannter Berufsstand mit schlechtem Ruf. Städte ehrten die angesehenen unter ihnen mit Standbildern; über die übrigen spottete man. Wer neu auftrat, musste sich gegen dieses Bild abgrenzen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ehre war eine Währung mit Wechselkurs: Ehrenplätze im Theater, Steuerfreiheit, Aufnahme in den Rat. Darauf zu verzichten hieß, auf Einfluss zu verzichten – und machte die eigene Stellung von der Zustimmung der Gemeinde abhängig.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. trophos',
+        rendered: 'eine Amme',
+        note: 'Die Frau, die ein Kind stillt und aufzieht. Der Zusatz „ihre eigenen Kinder“ verbindet den bezahlten Dienst mit eigener Zuneigung. Das Wort für Mutter steht nicht da.',
+      },
+      {
+        word: 'griech. en barei einai',
+        rendered: 'schwer sein',
+        note: 'Wörtlich: Gewicht haben – und damit doppeldeutig. Es kann heißen, jemandem zur Last fallen, und ebenso, Ansehen beanspruchen. Beide Bedeutungen passen in den Zusammenhang, und die Übersetzungen entscheiden sich verschieden.',
+      },
+      {
+        word: 'griech. anthropois areskontes',
+        rendered: 'den Menschen gefallen',
+        note: 'Ein feststehender Vorwurf gegen Redner, die ihrem Publikum nach dem Mund reden. In den Papyri bezeichnet das verwandte Wort den Schmeichler bei Hofe. Der Galaterbrief gebraucht es ebenso.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt folgt einem bekannten Muster der Selbstempfehlung: Der Redner grenzt sich von den üblichen Vorwürfen gegen seinen Berufsstand ab. Ob dahinter konkrete Angriffe standen, ist umstritten; die enge Übereinstimmung mit der zeitgenössischen Philosophenpolemik spricht eher für eine allgemeine Abgrenzung.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos hob das Ammenbild hervor und zog daraus Folgerungen für die Amtsführung: Wer leitet, müsse zuerst nähren und tragen, bevor er fordert. Er verband den Abschnitt mit der Warnung vor Prunk und Einkünften und predigte ihn vor einem Klerus, dem er beides vorwarf.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Verzicht auf Unterhalt wurde in der Reformationszeit gegen kirchliche Einkünfte und den Ablasshandel angeführt. Zugleich bestanden die Reformatoren darauf, dass Prediger ein Auskommen brauchen; Luther kämpfte um die Besoldung der Pfarrer. Der Verzicht galt als Freiheit, nicht als Regel.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Dass ein Apostel sich mit einer Amme vergleicht, ist mehrfach hervorgehoben worden. Es zeigt, dass die Sprache über Leitung im frühen Christentum nicht ausschließlich männlich besetzt war und dass Fürsorge, nicht Befehl, als Bild taugte. Kritisch wird angemerkt, dass die tatsächliche Rolle von Frauen in den Gemeinden davon unberührt blieb.',
+      },
+      {
+        tradition: 'Praktische Auslegung',
+        text: 'Der Abschnitt wird in der Ausbildung von Verkündigern als Prüfstein gelesen: Wem will ich gefallen, und wovon lebe ich? Kritisch wird angemerkt, dass der Grundsatz, nicht Menschen gefallen zu wollen, sich leicht dazu missbrauchen lässt, jede Rückmeldung abzuweisen – der Text selbst nennt im selben Atemzug Sanftmut und Zuneigung.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 9, verse: 12, note: 'Das Recht auf Unterhalt und der Verzicht darauf' },
+      { book: 'apg', chapter: 18, verse: 3, note: 'Das Handwerk des Zeltmachens' },
+      { book: 'gal', chapter: 1, verse: 10, note: 'Menschen gefallen oder Gott' },
+      { book: '2thess', chapter: 3, verse: 8, note: 'Tag und Nacht gearbeitet' },
+    ],
+  },
+  {
+    book: '1thess',
+    chapter: 2,
+    from: 13,
+    to: 20,
+    title: '„Krone des Ruhms“ – und ein Abschnitt voller Streit',
+    historicalShort:
+      'Zwischen Dank und Sehnsucht steht der schärfste Satz gegen Juden im ganzen Corpus der Paulusbriefe. Ob er von Paulus stammt, ist eine der meistdiskutierten Fragen der Forschung.',
+    historicalLong:
+      'Die Verse fünfzehn und sechzehn fallen aus allem heraus, was sonst in den unbestrittenen Paulusbriefen steht. Dort heißt es von den Juden, sie hätten Jesus und die Propheten getötet, sie gefielen Gott nicht und seien allen Menschen zuwider; und der Zorn sei über sie gekommen bis zum Ende. Derselbe Verfasser schreibt im Römerbrief, er wünschte sich selbst verflucht zu sein für seine Brüder, und stellt fest, dass Gott sein Volk nicht verstoßen hat und seine Gaben nicht bereut. Der Widerspruch ist offenkundig.\n\nEin Teil der Forschung hält den Abschnitt deshalb für eine spätere Einfügung. Als Gründe werden genannt: der Bruch im Gedankengang, die Häufung von Wendungen, die sonst nicht vorkommen, und vor allem die Bemerkung vom Zorn, der bis zum Ende gekommen sei – die man auf die Zerstörung Jerusalems im Jahr 70 bezogen hat, also auf ein Ereignis zwanzig Jahre nach Abfassung. Andere widersprechen: Handschriftlich fehlt der Abschnitt nirgends, der Vorwurf des Prophetenmordes steht schon in der hebräischen Bibel selbst, und Wendungen wie „allen Menschen zuwider“ finden sich fast wörtlich bei Tacitus als heidnischer Vorwurf gegen Juden, den ein jüdischer Verfasser in polemischer Zuspitzung aufgreifen konnte.\n\nUnbestritten ist die Wirkung. Der Satz gehört zu den Texten, die über Jahrhunderte den christlichen Antijudaismus mit biblischer Autorität versorgt haben – zusammen mit dem Blutruf im Matthäusevangelium und einzelnen Stellen des Johannesevangeliums. Kirchliche Erklärungen nach 1945 haben sich davon ausdrücklich gelöst; das Zweite Vatikanische Konzil erklärte 1965, den Juden dürfe weder die Schuld am Tod Jesu kollektiv angelastet noch dürften sie als von Gott verworfen dargestellt werden.\n\nDer Zusammenhang, in dem der Satz steht, ist ein anderer als der spätere Gebrauch. Es geht um die Erfahrung der Gemeinde in Thessalonich, die von ihren eigenen Landsleuten bedrängt wird – der Text sagt ausdrücklich „von euren Blutsfreunden“. Der Vergleich mit den Gemeinden in Judäa soll trösten: Ihr seid nicht die ersten. Was als Trostvergleich beginnt, entgleist in den beiden folgenden Versen zur Pauschalanklage.\n\nDer Schluss des Kapitels kehrt zum persönlichen Ton zurück. Die Wendung von der Krone des Ruhms stammt aus dem Wettkampf: Der Sieger erhielt einen Kranz. Was hier als Kranz bezeichnet wird, ist die Gemeinde selbst. Das Bild ordnet die eigene Arbeit einem Ziel unter, das nicht in der Gegenwart liegt, und es erklärt zugleich, warum der Brief so oft von Wiedersehen spricht: Die Verbindung zu diesen Menschen ist nicht Mittel, sondern Ergebnis.',
+    reception:
+      'Kaum ein Abschnitt des Neuen Testaments hat eine so klar benennbare Schadenswirkung. Von der altkirchlichen Adversus-Iudaeos-Literatur über mittelalterliche Predigten bis in die Propaganda des 20. Jahrhunderts wurde er als Beleg dafür angeführt, dass Gottes Zorn über die Juden gekommen sei. Nach 1945 haben die Kirchen sich davon gelöst: Das Zweite Vatikanische Konzil, die Rheinische Synode von 1980 und zahlreiche weitere Erklärungen halten fest, dass der Bund Gottes mit Israel ungekündigt ist.\n\nDie Frage der Echtheit ist seit dem 19. Jahrhundert in Bewegung. Die Interpolationsthese wurde vor allem nach 1970 einflussreich; ihre Gegner verweisen darauf, dass eine Streichung aus Gründen der Wirkungsgeschichte kein textkritisches Argument ist. In der Kommentarliteratur stehen beide Positionen nebeneinander, und die meisten Ausleger halten heute fest, dass die Frage offen bleibt und die Verantwortung für den Umgang mit dem Text davon unberührt ist.\n\nDas Bild von der Krone des Ruhms hat eine ganz andere Karriere gemacht. Es steht in Grabinschriften, in Liedern und in Ordinationsformularen; Chrysostomos predigte darüber, dass ein Lehrer keinen anderen Lohn habe als die Menschen, die er gewonnen hat. In der Seelsorgeausbildung wird der Vers gelegentlich kritisch gelesen: Menschen als eigenen Ruhm zu betrachten, kann in eine Abhängigkeit führen, die dem Dienst nicht guttut.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Vorwurf, dem Menschengeschlecht feindlich zu sein, war ein Standardtopos gegen Gruppen, die sich absonderten. Tacitus erhebt ihn gegen Juden, später gegen Christen. Er beschreibt weniger die Beschuldigten als die Erwartung, dass alle mitfeiern.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Bedrängnis in Thessalonich ging nach dem Wortlaut von den eigenen Landsleuten aus, nicht von Behörden. Solcher Druck brauchte keine Verwaltung: Ausschluss aus Vereinen, Kündigung von Aufträgen, Anzeigen bei den Politarchen genügten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Kranz des Siegers bestand aus Zweigen und war binnen Tagen welk. Sein Wert lag im Ansehen, das er brachte: Ehrenplätze, Steuerfreiheit, ein Standbild. Wer eine Gemeinde seinen Kranz nennt, überträgt diese ganze Vorstellung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Vorwurf des Prophetenmordes stammt aus der hebräischen Bibel selbst: Propheten klagen Israel an, seine Boten getötet zu haben. Innerhalb der eigenen Überlieferung ist er Selbstkritik; von außen erhoben wird er zur Anklage.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. symphyletai',
+        rendered: 'euren Blutsfreunden',
+        note: 'Wörtlich: die Angehörigen desselben Stammes, die Landsleute. Der Ausdruck macht deutlich, dass die Bedrängnis in Thessalonich von der eigenen Stadtbevölkerung ausging, nicht von einer anderen Gruppe.',
+      },
+      {
+        word: 'griech. pasin anthropois enantioi',
+        rendered: 'allen Menschen zuwider',
+        note: 'Fast wörtlich der Vorwurf, den Tacitus gegen Juden und später gegen Christen erhebt. Ob ihn ein jüdischer Verfasser polemisch aufgreifen konnte oder ob hier eine spätere Hand schrieb, ist der Kern der Echtheitsdebatte.',
+      },
+      {
+        word: 'griech. stephanos kaucheseos',
+        rendered: 'Krone des Ruhms',
+        note: 'Der Kranz des Siegers im Wettkampf, nicht das Diadem eines Herrschers. Für beides gibt es im Griechischen verschiedene Wörter. Was hier den Kranz ausmacht, sind die Menschen selbst.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Verse fünfzehn und sechzehn stehen im Widerspruch zu den Kapiteln neun bis elf des Römerbriefs. Ein Teil der Forschung hält sie für eine spätere Einfügung nach der Zerstörung Jerusalems; ein anderer verweist auf die fehlende handschriftliche Stütze für diese Annahme und liest sie als polemische Zuspitzung in akuter Bedrängnis. Die Frage ist offen.',
+      },
+      {
+        tradition: 'Kirchliche Stellungnahmen nach 1945',
+        text: 'Das Zweite Vatikanische Konzil hielt 1965 fest, dass die Juden weder kollektiv für den Tod Jesu verantwortlich zu machen noch als verworfen darzustellen sind. Die Rheinische Synode sprach 1980 vom ungekündigten Bund. Diese Erklärungen sind ausdrücklich als Antwort auf eine Auslegungsgeschichte formuliert, zu der dieser Vers gehört.',
+      },
+      {
+        tradition: 'Jüdische Kritik',
+        text: 'Jüdische Ausleger haben darauf hingewiesen, dass hier ein Jude über Juden schreibt und dass innerjüdische Polemik – in den Propheten, in Qumran, bei Josephus – hart sein kann, ohne die Zugehörigkeit zu bestreiten. Verheerend wurde sie erst, als eine Mehrheitskirche sie gegen eine Minderheit richtete, die sich nicht wehren konnte.',
+      },
+      {
+        tradition: 'Trostgeschichtliche Lesart',
+        text: 'Der Vergleich mit den Gemeinden in Judäa hat eine seelsorgliche Absicht: Die Bedrängten sollen wissen, dass sie nicht allein sind und dass ihre Lage nichts über die Richtigkeit ihres Weges aussagt. Diese Funktion des Textes ist von seiner späteren Verwendung völlig verschieden.',
+      },
+      {
+        tradition: 'Hermeneutische Rückfrage',
+        text: 'Der Abschnitt gehört zu den Texten, an denen sich die Frage stellt, was mit schädlichen Stellen im Kanon zu geschehen hat. Die Vorschläge reichen von der Streichung aus dem Lesungsplan über die Kommentierung im Gottesdienst bis zur ausdrücklichen Widerrede. Einig sind sich die Ausleger darin, dass Verschweigen keine Lösung ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'roem', chapter: 11, verse: 1, note: 'Hat Gott sein Volk verstoßen? Das sei ferne!' },
+      { book: 'roem', chapter: 9, verse: 3, note: 'Ich wünschte, verflucht zu sein für meine Brüder' },
+      { book: 'mt', chapter: 23, verse: 37, note: 'Die Prophetenmord-Klage in innerjüdischer Form' },
+      { book: 'phil', chapter: 4, verse: 1, note: 'Die Gemeinde als Freude und Krone' },
+    ],
+  },
+  {
+    book: '1thess',
+    chapter: 3,
+    from: 1,
+    to: 13,
+    title: '„daß wir zu Athen allein gelassen würden“',
+    historicalShort:
+      'Ein Kapitel über Warten und Nachrichten: ein Mitarbeiter wird geschickt, Monate vergehen, dann kommt er zurück. Es zeigt, wie eine Bewegung ohne Post zusammenhielt.',
+    historicalLong:
+      'Die Reiseangaben lassen sich mit der Apostelgeschichte verbinden. Nach der Flucht aus Thessalonich ging es über Beröa nach Athen und von dort nach Korinth. Der Brief sagt, man habe es in Athen nicht mehr ausgehalten und Timotheus zurückgeschickt. Eine Reise von Athen nach Thessalonich dauerte zu Fuß etwa zwei Wochen, per Schiff bei günstigem Wind weniger; mit Aufenthalt und Rückweg vergingen leicht zwei Monate. In dieser Zeit gab es keine Möglichkeit zu erfahren, ob die junge Gemeinde noch bestand.\n\nDas ist der eigentliche Gegenstand des Kapitels. Ohne Post, ohne Boten, ohne Nachricht war Ungewissheit der Normalzustand. Wer eine Gemeinde zurückließ, wusste über Monate nichts. Der Text beschreibt diesen Zustand mit ungewöhnlicher Offenheit: Man habe es nicht ertragen, man habe gefürchtet, die Arbeit sei vergeblich. Solche Sätze finden sich in den Paulusbriefen selten; hier stehen sie ohne Abschwächung.\n\nTimotheus wird mit zwei Titeln eingeführt, Bruder und Mitarbeiter Gottes – wobei die Handschriften an dieser Stelle schwanken; ein Teil bietet die kühnere Formulierung, ein anderer die vorsichtigere „Diener Gottes“. Abschreiber haben die kühnere offenbar gemildert. Timotheus stammte aus Lystra, hatte eine jüdische Mutter und einen griechischen Vater und begleitete Paulus über Jahre; sein Name steht in sechs Briefen im Absender.\n\nDie Erwähnung Satans als Hindernis ist bemerkenswert nüchtern. Was den Reiseplan durchkreuzte, wird nicht erklärt – Krankheit, Reiseverbot, Bürgschaftsauflagen der Politarchen kommen in Frage; die Apostelgeschichte berichtet, dass der Gastgeber Jason Bürgschaft leisten musste, was einer Rückkehr entgegenstehen konnte. Der Text verzichtet auf eine Erklärung und nennt stattdessen eine Macht. Das ist keine Ausrede, sondern die zeittypische Art, Widerstände zu deuten, die sich nicht auflösen lassen.\n\nDas Kapitel endet mit einem Gebetswunsch, der die beiden Hälften des Briefes verbindet. Er bittet um wachsende Liebe untereinander und gegen jedermann – der Zusatz weitet den Kreis über die Gemeinde hinaus – und um Herzen, die untadelig sind bei der Ankunft des Herrn. Damit steht das Thema, das die folgenden Kapitel bestimmt, zum ersten Mal ausdrücklich da.',
+    reception:
+      'Das Kapitel ist in der Missionsgeschichte immer wieder als Beschreibung des Wartens gelesen worden. Briefe von Missionaren des 18. und 19. Jahrhunderts, deren Nachricht ein halbes Jahr unterwegs war, greifen die Wendungen auf; die Herrnhuter Korrespondenz und die Berichte der Basler Mission zitieren sie regelmäßig. Mit der Telegrafie und später dem Flugverkehr hat sich die Erfahrung geändert, die der Text beschreibt, nicht aber die Sache.\n\nDie Rolle des Timotheus hat zur Ausbildung eines eigenen Bildes geführt: der Mitarbeiter, der geht, wohin der Lehrer nicht kann. In Ordinations- und Aussendungsgottesdiensten wird der Abschnitt gelesen; die Wendung vom Mitarbeiter Gottes gehört zu den meistzitierten Selbstbezeichnungen kirchlicher Dienste, obwohl gerade sie textkritisch unsicher ist.\n\nDer Schlusswunsch ist in die Liturgie eingegangen. Seine Bitte um untadelige Herzen bei der Ankunft steht in Adventsgebeten mehrerer Traditionen. Der Zusatz „und gegen jedermann“ wird in der ethischen Auslegung hervorgehoben: Er verhindert, dass die Liebe innerhalb der Gemeinde zur Abgrenzung nach außen wird – eine Grenze, die andere Texte des Neuen Testaments nicht so deutlich ziehen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Von Athen nach Thessalonich sind es rund 500 Kilometer über Land. Zu Fuß bedeutete das etwa zwei Wochen, mit dem Schiff bei gutem Wind wenige Tage – im Winter gar nicht. Reisepläne waren immer auch Wetterpläne.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Eine Post für Privatleute gab es nicht. Wer eine Nachricht schicken wollte, brauchte einen Menschen, der ohnehin in die Richtung reiste, oder schickte einen eigenen Boten – was Zeit, Geld und Vertrauen kostete.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Nach der Apostelgeschichte musste der Gastgeber Jason in Thessalonich Bürgschaft stellen. Solche Auflagen konnten die Rückkehr eines Beschuldigten faktisch verhindern, ohne dass ein Urteil nötig war.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Athen war zu dieser Zeit eine Universitätsstadt mit großer Vergangenheit und geringer Bedeutung. Wer dort allein zurückblieb, war nicht verlassen, sondern ohne die Menschen, mit denen er gearbeitet hatte – und das sagt der Text auch.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. synergon tou theou',
+        rendered: 'unsern Gehilfen',
+        note: 'Mitarbeiter Gottes. Die Handschriften schwanken zwischen dieser kühnen Form und dem vorsichtigeren „Diener Gottes“; die schwierigere Lesart gilt in der Textkritik meist als die ursprünglichere, weil Abschreiber eher glätten als verschärfen.',
+      },
+      {
+        word: 'griech. saleuthenai',
+        rendered: 'weich würde',
+        note: 'Wörtlich: ins Wanken geraten, erschüttert werden – das Wort steht für Erdbeben und für Schiffe im Sturm. Gemeint ist nicht Charakterschwäche, sondern das Nachgeben unter Druck.',
+      },
+      {
+        word: 'griech. ho peirazon',
+        rendered: 'der Versucher',
+        note: 'Wörtlich: der Prüfende. Dasselbe Wort steht in der Versuchungsgeschichte der Evangelien. Es bezeichnet keine Eigenschaft, sondern eine Rolle – und lässt offen, wer oder was sie ausfüllt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Das Kapitel ist eine der wenigen Stellen, an denen sich die Bewegungen der frühen Mission genau nachzeichnen lassen. Die Angaben lassen sich weitgehend mit der Apostelgeschichte verbinden, weichen aber in Einzelheiten ab – etwa in der Frage, wo Timotheus wann war. Solche Abweichungen gelten als Hinweis darauf, dass Lukas eigene Quellen verarbeitete.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Chrysostomos hob hervor, wie offen der Apostel seine Angst ausspricht, und zog daraus den Schluss, dass Sorge um andere keine Schwäche ist. Die Bemerkung, man sei erst dann lebendig, wenn die Gemeinde feststehe, las er als Beschreibung geistlicher Vaterschaft.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Calvin betonte, dass der Glaube der Gemeinde hier als Trost für den Verkündiger erscheint und nicht umgekehrt. Das Verhältnis sei gegenseitig; wer lehrt, empfängt. Die Bitte am Schluss, Gott möge die Liebe wachsen lassen, verstand er als Absage an die Vorstellung, Liebe lasse sich befehlen.',
+      },
+      {
+        tradition: 'Seelsorgliche Lesart',
+        text: 'Der Abschnitt beschreibt Ungewissheit, ohne sie aufzulösen. Er nennt die Furcht, umsonst gearbeitet zu haben, und lässt sie stehen, bis Nachricht kommt. In der Begleitung von Menschen, die auf Nachrichten warten – über Kranke, Vermisste, Angehörige in der Ferne –, ist das ein selten gewordener Ton.',
+      },
+      {
+        tradition: 'Ethische Auslegung',
+        text: 'Der Zusatz „und gegen jedermann“ im Schlusswunsch wird regelmäßig hervorgehoben. Er verhindert, dass die Liebe innerhalb der Gemeinde zur Grenze nach außen wird. Damit steht dieser frühe Text an einem Punkt, an dem spätere Schriften desselben Kanons zurückhaltender sind.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 17, verse: 15, note: 'Der Aufenthalt in Athen' },
+      { book: 'apg', chapter: 17, verse: 9, note: 'Die Bürgschaft des Jason' },
+      { book: '1kor', chapter: 3, verse: 9, note: 'Wir sind Gottes Mitarbeiter' },
+      { book: '1thess', chapter: 5, verse: 23, note: 'Der zweite, ähnliche Segenswunsch' },
+    ],
+  },
+  {
+    book: '1thess',
+    chapter: 4,
+    from: 1,
+    to: 12,
+    title: '„arbeitet mit euren eigenen Händen“',
+    historicalShort:
+      'Anweisungen für den Alltag einer Gemeinde, die eben erst entstanden ist: Umgang mit Sexualität, Ehrlichkeit im Geschäft, eigene Arbeit. Alle drei betreffen den Ruf nach außen.',
+    historicalLong:
+      'Der Abschnitt setzt voraus, dass die Angeredeten aus einer anderen religiösen Welt kommen. Was er verlangt, war für Juden selbstverständlich und für Griechen nicht. Sexuelle Normen unterschieden sich erheblich: Für einen verheirateten Mann galt der Umgang mit Sklavinnen, Prostituierten und Unverheirateten in weiten Teilen der griechisch-römischen Welt als unproblematisch, solange die Ehefrau eines anderen Bürgers nicht betroffen war. Die jüdische Ethik zog die Grenze anders. Der Text steht auf dieser zweiten Seite und begründet sie nicht mit Sitte, sondern mit der Heiligung.\n\nDer vierte Vers ist einer der umstrittensten des Briefes. Wörtlich steht dort, jeder solle wissen, sein Gefäß in Heiligung und Ehre zu erwerben oder zu besitzen. Was mit Gefäß gemeint ist, ist seit der Antike strittig: der eigene Leib, die eigene Ehefrau oder – nach einer dritten, im Griechischen möglichen Deutung – das Geschlechtsorgan. Für die zweite Lesart spricht, dass rabbinische Texte das Wort gelegentlich so gebrauchen und dass das Verb „erwerben“ zur Eheschließung passt; für die erste, dass derselbe Verfasser den Leib anderswo ein Gefäß nennt. Die Übersetzungen entscheiden sich verschieden, und die Wahl verändert den Sinn erheblich.\n\nDer nächste Vers wechselt unvermittelt zum Geschäftsleben: Niemand solle zu weit greifen und den Bruder übervorteilen. Ob damit ein neues Thema beginnt oder ob der Handel im Bild bleibt, wird ebenfalls diskutiert. Der Wortlaut spricht eher für einen Themenwechsel; das griechische Wort meint das Überschreiten einer Grenze und wurde für Grundstücksstreitigkeiten wie für Betrug gebraucht.\n\nDie Anweisung, still zu sein, das Eigene zu tun und mit den Händen zu arbeiten, hat einen politischen Klang. Die Wendung, das Eigene zu besorgen, war in der griechischen Ethik eine feste Formel für den Rückzug aus der öffentlichen Betätigung; Platon gebraucht sie im Zusammenhang mit der Gerechtigkeit im Staat. Für eine Gruppe unter Verdacht bedeutete das: nicht auffallen. Zugleich wird Handarbeit ausdrücklich gelobt – gegen die verbreitete Auffassung, sie sei eines freien Mannes unwürdig.\n\nDie Begründung steht am Schluss und ist doppelt: ehrbar wandeln gegenüber denen draußen und niemandes bedürfen. Das erste zielt auf den Ruf, das zweite auf die wirtschaftliche Unabhängigkeit. Beides zusammen beschreibt eine Gemeinde, die sich selbst trägt und keinen Anlass zu Anzeigen gibt – die Überlebensbedingung einer nicht anerkannten Gruppe.',
+    reception:
+      'Der Abschnitt hat die christliche Sexualethik mitgeprägt, vor allem über das Wort für Unzucht, das im Griechischen weit gefasst ist und alle außerehelichen Verbindungen umfasst. Die Alte Kirche machte daraus einen scharfen Gegensatz zur Umwelt; die Kirchenordnungen der Reformationszeit und die katholische Moraltheologie bauten darauf auf. Neuere Auslegung weist darauf hin, dass der Text keine Definition liefert, sondern eine Richtung angibt, und dass die Übersetzung des vierten Verses seit jeher unsicher ist.\n\nDie Anweisung zur Handarbeit ist in der Ordensgeschichte wirksam geworden. Die Regel Benedikts verlangt Handarbeit für alle Mönche und beruft sich unter anderem auf diese Stelle; die Formel vom Beten und Arbeiten hat hier eine ihrer Wurzeln. In der Reformationszeit diente der Vers als Argument gegen den Bettel und für die Arbeitspflicht, mit ambivalenten Folgen – die Armenordnungen des 16. Jahrhunderts verbanden Fürsorge mit Arbeitszwang.\n\nDie Wendung, das Eigene zu tun und still zu sein, ist verschieden gelesen worden. In Zeiten der Bedrängnis galt sie als Klugheitsregel; in Zeiten der Anpassung ist sie als Aufforderung zum politischen Rückzug kritisiert worden. Ausleger halten fest, dass sie an eine Minderheit ohne Rechtsschutz gerichtet ist und dass ihre Übertragung auf Mehrheitskirchen die Lage umkehrt.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die sexuellen Normen der griechisch-römischen Welt schützten vor allem die Ehe des Bürgers und die Abstammung seiner Erben. Umgang mit Sklavinnen und Prostituierten galt weithin als unbedenklich. Die jüdische Ethik zog die Grenze anders – und dieser Unterschied war den Beteiligten bewusst.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Handarbeit galt in gebildeten Kreisen als unwürdig, in der jüdischen Überlieferung dagegen als selbstverständlich: Rabbinen übten ein Handwerk aus. Der Abschnitt folgt der zweiten Linie und lobt ausdrücklich, was die Umwelt geringschätzte.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für Übervorteilen bezeichnet das Überschreiten einer Grenze und wurde für Grundstücksstreit wie für Betrug gebraucht. Prozesse darüber waren häufig; wer keinen Patron hatte, verlor sie meist.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Wendung, das Eigene zu besorgen, war eine feste Formel für den Verzicht auf öffentliche Betätigung. Für eine Gruppe ohne Rechtsstatus bedeutete Unauffälligkeit Schutz – und zugleich den Verzicht darauf, gehört zu werden.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. to heautou skeuos ktasthai',
+        rendered: 'sein Gefäß zu behalten',
+        note: 'Der umstrittenste Ausdruck des Briefes. Das Gefäß kann den eigenen Leib, die Ehefrau oder das Geschlechtsorgan meinen; das Verb kann erwerben oder besitzen heißen. Alle Kombinationen sind vertreten worden, und die Übersetzungen entscheiden sich bis heute verschieden.',
+      },
+      {
+        word: 'griech. porneia',
+        rendered: 'die Hurerei',
+        note: 'Ein Sammelbegriff für sexuelle Verbindungen außerhalb der Ehe. Er ist weiter gefasst als das deutsche Wort und benennt keine einzelne Handlung – deshalb ist er in Auslegungsstreitigkeiten so beweglich.',
+      },
+      {
+        word: 'griech. hesychazein',
+        rendered: 'daß ihr stille seid',
+        note: 'Ruhig sein, sich zurückhalten – in der politischen Sprache der Verzicht auf öffentliche Betätigung. Dasselbe Wort steht später für das kontemplative Leben; die östliche Mystik des Hesychasmus hat ihren Namen davon.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt zeigt, was eine Gemeinde aus Nichtjuden neu lernen musste. Die Anweisungen betreffen genau die Punkte, an denen jüdische und griechische Sitte auseinandergingen. Der wiederholte Verweis auf den Ruf nach außen macht deutlich, dass es zugleich um das Überleben einer verdächtigten Gruppe ging.',
+      },
+      {
+        tradition: 'Kirchenväter',
+        text: 'Die Väter lasen den vierten Vers überwiegend auf den eigenen Leib und machten daraus eine Lehre von der Selbstbeherrschung. Chrysostomos verband ihn mit dem Bild vom Gefäß, das zu ehren ist, weil es Gott gehört. Die Deutung auf die Ehefrau wurde ebenfalls vertreten, blieb aber Minderheitsmeinung.',
+      },
+      {
+        tradition: 'Monastische Tradition',
+        text: 'Die Regel Benedikts verlangt Handarbeit für alle und beruft sich auf die Weisung, mit den eigenen Händen zu arbeiten. Müßiggang gilt dort als Feind der Seele. Aus dieser Linie stammt die Verbindung von Gebet und Arbeit, die das abendländische Klosterwesen bestimmt hat.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Wird das Gefäß als Ehefrau verstanden, spricht der Text über Frauen als Gegenstand des Erwerbs. Diese Lesart ist deshalb kritisch geprüft worden; ihre Vertreterinnen und Vertreter verweisen darauf, dass sie die antiken Eheverhältnisse genau wiedergibt, ihre Gegner darauf, dass der Verfasser anderswo von gegenseitiger Verpflichtung der Ehepartner spricht.',
+      },
+      {
+        tradition: 'Sozialethische Rückfrage',
+        text: 'Die Verbindung von Arbeit, Unauffälligkeit und Unabhängigkeit ist in der Sozialgeschichte des Protestantismus wirksam geworden – auch dort, wo sie zur Arbeitspflicht für Arme wurde. Ausleger halten fest, dass der Text an eine bedrängte Minderheit gerichtet ist und keine Sozialordnung entwirft.',
+      },
+    ],
+    crossRefs: [
+      { book: '2thess', chapter: 3, verse: 10, note: 'Dieselbe Frage, schärfer gestellt' },
+      { book: '1kor', chapter: 6, verse: 18, note: 'Fliehet die Hurerei' },
+      { book: 'eph', chapter: 4, verse: 28, note: 'Arbeiten, um geben zu können' },
+      { book: '1thess', chapter: 2, verse: 9, note: 'Das eigene Beispiel' },
+    ],
+  },
+  {
+    book: '1thess',
+    chapter: 5,
+    from: 12,
+    to: 22,
+    title: '„prüfet aber alles, und das Gute behaltet“',
+    historicalShort:
+      'Eine Reihe kurzer Anweisungen zum Schluss, darunter drei Sätze über den Umgang mit Prophetie – und die knappste Regel des Neuen Testaments für den Umgang mit allem Neuen.',
+    historicalLong:
+      'Die Reihe kurzer Mahnungen am Briefende ist eine bekannte Form. Griechische Briefe schlossen häufig mit Merksätzen, und die jüdische Weisheitsliteratur reihte Weisungen in gleicher Weise. Bemerkenswert ist hier weniger die Form als das, was sie ordnet: Sie beschreibt eine Gemeinde ohne Ämterordnung. Die Angesprochenen werden nicht mit Titeln genannt, sondern mit Tätigkeiten – die an euch arbeiten, euch vorstehen, euch ermahnen. Zwanzig Jahre nach der Kreuzigung gab es offenbar Leitung, aber noch keine Bezeichnungen dafür.\n\nDas Wort für Vorstehen ist doppeldeutig. Es kann leiten heißen und ebenso sich kümmern, für jemanden eintreten; im Römerbrief steht dasselbe Wort in einer Liste von Gaben, und im Bereich der antiken Vereine bezeichnete das verwandte Substantiv den Patron, der eine Gruppe schützte und ihr Räume stellte. Wahrscheinlich sind Menschen gemeint, die ihr Haus zur Verfügung stellten und dadurch faktisch Verantwortung trugen.\n\nDie drei Sätze über den Geist gehören zusammen. Den Geist nicht dämpfen, Prophetie nicht verachten, alles prüfen: Das ist eine Regel für den Umgang mit unmittelbarer Rede in der Versammlung. Prophetie war in den frühen Gemeinden verbreitet; der erste Korintherbrief beschreibt sie ausführlich, die Didache regelt sie, und die Apostelgeschichte nennt mehrere Prophetinnen und Propheten. Die Gefahr lag auf beiden Seiten – Unterdrückung und Leichtgläubigkeit –, und der Text nimmt beide ernst.\n\nDas Wort für Prüfen stammt aus der Metallprobe: Münzen wurden auf Echtheit getestet. Es setzt voraus, dass die Gemeinde selbst urteilsfähig ist; ein Amt, das entscheidet, ist nicht vorgesehen. Diese Zumutung – jeder prüft, die Versammlung entscheidet – gehört zu den bemerkenswertesten Zügen des ältesten christlichen Textes und ist in der weiteren Geschichte schrittweise durch Instanzen ersetzt worden.\n\nDer letzte Satz der Reihe wird in der Lutherfassung mit „Meidet allen bösen Schein“ wiedergegeben, was seit Jahrhunderten missverstanden wird. Das griechische Wort bedeutet nicht Anschein, sondern Erscheinungsform oder Art; der Satz sagt also, man solle sich von jeder Art des Bösen fernhalten, nicht von allem, was böse aussehen könnte. Die Fehldeutung hat eine eigene Wirkung entfaltet und ganze Frömmigkeitsstile geprägt, in denen der äußere Eindruck über das Verhalten entschied.',
+    reception:
+      'Der Satz „prüfet alles und das Gute behaltet“ ist zu einer der meistzitierten Bibelstellen der Neuzeit geworden – oft ohne den Zusammenhang. Er steht in Wahlsprüchen von Universitäten und Zeitschriften und wurde in der Aufklärung als biblische Erlaubnis zum eigenständigen Denken gelesen. Im Zusammenhang meint er das Prüfen prophetischer Rede in der Versammlung, nicht die freie Prüfung aller Dinge; die weitergehende Verwendung ist eine Ausweitung, aber keine Verkehrung.\n\nDie drei Sätze über Geist und Prophetie sind in allen Auseinandersetzungen über charismatische Erscheinungen herangezogen worden – im Montanismus des 2. Jahrhunderts, bei den Schwärmern der Reformationszeit, in der Erweckungsbewegung und in der Pfingstbewegung seit 1906. Beide Seiten finden hier ihren Satz: die einen das Verbot des Dämpfens, die anderen das Gebot des Prüfens. Dass der Text beides nebeneinanderstellt, ist selten mitzitiert worden.\n\nDie Wendung vom bösen Schein hat eine eigene, unglückliche Geschichte. Aus einem Verbot des Bösen wurde ein Gebot der Unauffälligkeit; im Pietismus und in Teilen des Protestantismus entstanden daraus umfangreiche Regeln über Kleidung, Umgang und Vergnügen. Die Revisionen der Lutherbibel haben die Stelle mehrfach geändert; neuere Übersetzungen geben sie mit „meidet das Böse in jeder Gestalt“ wieder.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Antike Vereine hatten Patrone, die Räume stellten und Kosten trugen, und Beamte mit Titeln. Die frühen Gemeinden übernahmen die Struktur teilweise, aber die Titel zunächst nicht – hier werden Menschen nach ihrer Tätigkeit benannt, nicht nach einem Amt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Prophetische Rede in der Versammlung war verbreitet und nicht auf das Christentum beschränkt: Orakelstätten, Seher und ekstatische Kulte gehörten zur religiösen Umwelt. Die Frage, wie man echte von falscher Rede unterscheidet, stellte sich überall.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für Prüfen stammt aus der Münzprobe. Falschgeld und untergewichtige Stücke waren verbreitet; Städte beschäftigten Prüfer. Wer eine Münze annahm, wog und biss sie – Prüfen war ein alltäglicher Handgriff.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der heilige Kuss, den der Briefschluss erwähnt, war ein Gruß unter Verwandten und Nahestehenden. In einer Versammlung von Freien und Sklaven, Männern und Frauen war er eine Aussage über Zugehörigkeit – und wurde von außen argwöhnisch beobachtet.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. proistamenous',
+        rendered: 'euch vorstehen',
+        note: 'Vorstehen oder sich kümmern – beides ist möglich. Das verwandte Substantiv bezeichnet im Vereinswesen den Patron, der eine Gruppe schützt. Ein Amtstitel ist es nicht; die frühesten Gemeinden kannten Leitung ohne Bezeichnung.',
+      },
+      {
+        word: 'griech. dokimazete',
+        rendered: 'prüfet',
+        note: 'Aus der Münzprobe: auf Echtheit testen. Das Wort setzt voraus, dass die Prüfenden urteilsfähig sind, und überträgt die Entscheidung der Versammlung, nicht einer Instanz.',
+      },
+      {
+        word: 'griech. apo pantos eidous ponerou',
+        rendered: 'allen bösen Schein',
+        note: 'Wörtlich: von jeder Art des Bösen. Das Wort eidos meint Gestalt oder Erscheinungsform, nicht Anschein. Luthers „Schein“ hat eine folgenreiche Fehldeutung angestoßen, die neuere Übersetzungen korrigieren.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Der Abschnitt zeigt eine Gemeinde ohne feste Ämter, in der Leitung über Tätigkeit und nicht über Titel bestimmt wird. Verglichen mit den Pastoralbriefen, die eine Generation später Anforderungslisten für Bischöfe und Älteste enthalten, lässt sich hier der Anfang einer Entwicklung beobachten.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Aufforderung zum Prüfen wurde in der Reformationszeit gegen den Anspruch auf unbedingten Gehorsam angeführt: Die Gemeinde habe zu prüfen, was ihr gesagt wird. Luther verband sie mit dem Grundsatz, dass das Gewissen an Gottes Wort gebunden ist und an nichts sonst.',
+      },
+      {
+        tradition: 'Pfingstlich-charismatische Auslegung',
+        text: 'Das Verbot, den Geist zu dämpfen, gehört zu den Grundstellen der Bewegung. Prophetische Rede in der Versammlung wird als bleibende Möglichkeit verstanden, nicht als Erscheinung der Anfangszeit. Zugleich wird der Prüfauftrag ernst genommen; die meisten Gemeinden dieser Richtung haben dafür eigene Verfahren.',
+      },
+      {
+        tradition: 'Aufklärungsrezeption',
+        text: 'Der Satz vom Prüfen aller Dinge ist seit dem 18. Jahrhundert als biblische Erlaubnis zum eigenständigen Urteil gelesen worden und steht in Wahlsprüchen von Zeitschriften und Hochschulen. Diese Verwendung geht über den Zusammenhang hinaus, in dem es um prophetische Rede geht – widerspricht ihm aber nicht.',
+      },
+      {
+        tradition: 'Übersetzungskritik',
+        text: 'Die Wendung vom bösen Schein ist eines der bekanntesten Beispiele dafür, wie eine Übersetzung Frömmigkeit formt. Aus einem Verbot des Bösen wurde eine Sorge um den äußeren Eindruck, und aus dieser Sorge entstanden Regelwerke über Kleidung und Umgang. Neuere Ausgaben geben den Vers anders wieder.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 14, verse: 29, note: 'Propheten reden, die andern urteilen' },
+      { book: '1joh', chapter: 4, verse: 1, note: 'Prüfet die Geister' },
+      { book: 'roem', chapter: 12, verse: 2, note: 'Dasselbe Wort für prüfen' },
+      { book: 'roem', chapter: 12, verse: 8, note: 'Vorstehen als Gabe' },
+    ],
+  },
+  {
+    book: '1thess',
+    chapter: 5,
+    from: 23,
+    to: 28,
+    title: '„Geist ganz samt Seele und Leib“',
+    historicalShort:
+      'Der Briefschluss enthält eine Dreiteilung des Menschen, die es sonst so nicht gibt, und die Anweisung, den Brief öffentlich vorlesen zu lassen – die früheste Spur der gottesdienstlichen Lesung.',
+    historicalLong:
+      'Die Aufzählung von Geist, Seele und Leib hat eine lange Auslegungsgeschichte ausgelöst. Aus ihr ist die Lehre von der Dreiteilung des Menschen entstanden, die in der Alten Kirche vertreten und später überwiegend abgelehnt wurde. Gegen sie spricht, dass die Bibel sonst zweiteilig oder gar nicht teilt: Das Doppelgebot zählt Herz, Seele und Kraft und meint damit den ganzen Menschen, nicht drei Bestandteile. Wahrscheinlich ist auch hier eine Häufung gemeint, die Vollständigkeit ausdrückt – das vorangestellte Wort „durch und durch“ deutet darauf hin.\n\nDie Frage ist dennoch nicht bedeutungslos, denn an ihr hängt, wie über den Menschen gesprochen wird. Wo christliche Theologie eine Teilung übernahm, entstanden Folgeprobleme: die Abwertung des Leibes als Gefängnis, die Vorstellung einer von Natur aus unsterblichen Seele und die Schwierigkeit, daneben noch von der Auferstehung des Leibes zu reden. Die hebräische Bibel spricht vom Menschen als lebendigem Wesen und kennt keinen Teil, der ohne die anderen bestünde. Der Vers ist einer der Orte, an denen dieser Streit über Jahrhunderte geführt wurde.\n\nDie Beschwörung, den Brief allen Brüdern vorlesen zu lassen, ist ungewöhnlich scharf formuliert – das griechische Wort meint einen Eid. Sie ist zugleich die früheste Nachricht darüber, was mit einem apostolischen Brief geschah: Er wurde in der Versammlung vorgelesen. Damit beginnt die gottesdienstliche Lesung christlicher Texte, aus der über zwei Jahrhunderte der Kanon erwuchs. Warum die Anweisung so nachdrücklich ausfällt, ist unklar; vermutlich sollte sichergestellt werden, dass niemand übergangen wird.\n\nDer heilige Kuss war in mehreren Briefen der Gruß beim Zusammenkommen. In einer Versammlung, in der Freie und Sklaven, Männer und Frauen, Alte und Junge nebeneinanderstanden, war er eine Aussage über Zugehörigkeit, die von außen argwöhnisch betrachtet wurde. Die späteren Gemeindeordnungen regelten ihn genau – Männer küssten Männer, Frauen Frauen –, ein Hinweis darauf, dass es Anlass zu Gerede gab. In den Liturgien lebt er als Friedensgruß fort.\n\nDie Zusage, dass der Berufende treu ist und es auch tun wird, schließt den Brief. Sie ist knapp und ohne Begründung. Nach vier Kapiteln über Bedrängnis, Ungewissheit und Erwartung steht am Ende kein Argument, sondern eine Behauptung über die Verlässlichkeit dessen, der begonnen hat.',
+    reception:
+      'Die Dreiteilung von Geist, Seele und Leib ist in der Alten Kirche von Irenäus und Origenes vertreten worden. Nach den Auseinandersetzungen um Apollinaris von Laodicea, der Christus die menschliche Vernunftseele absprach, setzte sich im Westen die Zweiteilung durch; ein Konzil in Konstantinopel verurteilte 869 eine Form der Dreiteilung. Wiederaufgenommen wurde sie im 19. Jahrhundert in Teilen des Pietismus und in der Brüderbewegung, wo sie bis heute Anhänger hat, und über Watchman Nee in großen Teilen der chinesischen Hauskirchen.\n\nDie Anweisung zur Vorlesung ist kanongeschichtlich von Gewicht. Aus dem gottesdienstlichen Gebrauch – nicht aus einem Beschluss – ist die Autorität christlicher Schriften gewachsen. Der Kolosserbrief erwähnt bereits den Tausch von Briefen zwischen Gemeinden, und die Offenbarung nennt den, der vorliest, ausdrücklich selig. Die erste erhaltene Kanonliste stammt aus dem späten 2. Jahrhundert.\n\nDer heilige Kuss ist in den Liturgien als Friedensgruß erhalten geblieben, wenn auch in veränderter Form. Die römische Messe kennt ihn seit früher Zeit, die östlichen Liturgien ebenfalls; die Reformation ließ ihn weitgehend fallen, und die liturgischen Erneuerungen des 20. Jahrhunderts haben ihn als Händedruck oder Umarmung wieder eingeführt. Die Debatten darüber, wie er in gemischten Versammlungen zu gestalten sei, sind so alt wie die Sache selbst.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Kuss war ein Gruß unter Verwandten. Ihn auf eine Versammlung von Freien und Sklaven zu übertragen, hieß, Verwandtschaft zu behaupten, wo keine bestand. Die späteren Gemeindeordnungen regelten ihn genau – ein Zeichen dafür, dass es Anstoß gab.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Vorgelesen wurde laut und für alle. Die meisten Menschen konnten nicht lesen, Schätzungen gehen von zehn bis zwanzig Prozent aus. Ein Brief erreichte seine Empfänger deshalb über eine Stimme, nicht über Augen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die griechische Philosophie unterschied Leib und Seele und wertete die Seele höher. Die hebräische Bibel kennt diese Trennung nicht. Wo beide Denkweisen aufeinandertrafen, entstanden Fragen, die die Theologie über Jahrhunderte beschäftigt haben.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Wort für die Beschwörung meint einen Eid. Eide waren im Rechtsleben allgegenwärtig und banden verbindlich. Ihn für die Vorlesung eines Briefes einzusetzen, gibt der Anweisung ein ungewöhnliches Gewicht.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. pneuma, psyche, soma',
+        rendered: 'Geist ganz samt Seele und Leib',
+        note: 'Die einzige Stelle im Neuen Testament mit dieser Dreiheit. Ob eine Lehre vom dreiteiligen Menschen gemeint ist oder eine Häufung, die Vollständigkeit ausdrückt, ist seit der Alten Kirche strittig. Das vorangestellte „durch und durch“ spricht für das zweite.',
+      },
+      {
+        word: 'griech. holoteleis',
+        rendered: 'durch und durch',
+        note: 'Ein Wort, das nur hier steht: vollständig bis zum Ziel. Es setzt den Ton für die folgende Aufzählung und legt nahe, dass es um Ganzheit geht und nicht um Bestandteile.',
+      },
+      {
+        word: 'griech. enorkizo',
+        rendered: 'Ich beschwöre euch',
+        note: 'Wörtlich: Ich nehme euch unter Eid. Ein sehr starker Ausdruck, der im Neuen Testament nur hier vorkommt. Warum die Anweisung zur Vorlesung so nachdrücklich ausfällt, sagt der Text nicht.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Historisch-kritische Einordnung',
+        text: 'Die Dreiheit ist wahrscheinlich rhetorisch und nicht anthropologisch gemeint: Der Verfasser häuft Begriffe, um Vollständigkeit auszudrücken, wie es Segensformeln häufig tun. Die Anweisung zur Vorlesung ist dagegen historisch aufschlussreich – sie zeigt, dass Briefe von Anfang an für die Versammlung bestimmt waren.',
+      },
+      {
+        tradition: 'Altkirchliche Auslegung',
+        text: 'Irenäus und Origenes vertraten eine Dreiteilung des Menschen und ordneten dem Geist die Verbindung zu Gott zu. Nach den christologischen Auseinandersetzungen des 4. Jahrhunderts setzte sich die Zweiteilung durch, weil die Dreiteilung Christus einen Bestandteil abzusprechen erlaubte.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Reformatoren lasen den Vers als Segenswunsch für den ganzen Menschen und lehnten eine Bestandteilslehre ab. Calvin bemerkte ausdrücklich, hier sei nicht die Rede von Teilen der Seele, sondern von Vollständigkeit. Die Betonung der Ganzheit entsprach ihrem Widerstand gegen die Abwertung des Leibes.',
+      },
+      {
+        tradition: 'Brüderbewegung und Pietismus',
+        text: 'Im 19. Jahrhundert wurde die Dreiteilung wiederentdeckt und zur Grundlage einer Frömmigkeitslehre gemacht, in der der Geist als Ort der Gottesbeziehung von Seele und Leib unterschieden wird. Über Watchman Nee hat sie große Verbreitung in China gefunden. Kritiker halten sie für eine Übertragung griechischer Vorstellungen in den Text.',
+      },
+      {
+        tradition: 'Liturgische Rezeption',
+        text: 'Der Segenswunsch steht in zahlreichen Gottesdienstordnungen als Schlusssegen. Der heilige Kuss lebt als Friedensgruß fort. Beides zusammen macht den Briefschluss zu einem der wirkungsreichsten Abschnitte in der Gestaltung des Gottesdienstes.',
+      },
+    ],
+    crossRefs: [
+      { book: 'kol', chapter: 4, verse: 16, note: 'Briefe zwischen Gemeinden tauschen' },
+      { book: 'roem', chapter: 16, verse: 16, note: 'Der heilige Kuss' },
+      { book: 'offb', chapter: 1, verse: 3, note: 'Selig, der da liest' },
+      { book: '1thess', chapter: 3, verse: 13, note: 'Der erste, ähnliche Segenswunsch' },
+    ],
+  },
 ];
 
 /**
