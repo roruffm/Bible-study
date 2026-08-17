@@ -14,9 +14,9 @@
  * `epoch` – das wandert nach `datings.ts`, nicht in den Artikel.
  *
  * Geprüft wird alles, was sich vor dem Schreiben prüfen lässt: Pflichtfelder,
- * Seiten der Lebenswelt, Überschneidungen mit vorhandenen Abschnitten, Zitate
- * im Titel, Anhaltspunkte der Urtext-Wörter, Stellenangaben der Querverweise
- * und Absätze, die dasselbe sagen. Der Grund ist praktisch: Findet `check-references.mjs` diese Fehler
+ * Seiten der Lebenswelt, Epochen der Zeitleiste, Überschneidungen mit
+ * vorhandenen Abschnitten, Zitate im Titel, Anhaltspunkte der Urtext-Wörter,
+ * Stellenangaben der Querverweise und Absätze, die dasselbe sagen. Der Grund ist praktisch: Findet `check-references.mjs` diese Fehler
  * erst hinterher, muss die Korrektur in einer Datei mit über anderthalb
  * Millionen Zeichen erfolgen statt in der Vorlage, aus der die Artikel kommen.
  * Nichts wird geschrieben, solange eine Beanstandung offen ist.
@@ -27,6 +27,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   doppelteAbsaetze,
+  epocheFehlt,
   fehlendeAnhaltspunkte,
   stelleFehlt,
   unbekannteSeiten,
@@ -93,6 +94,8 @@ for (const a of ARTICLES) {
   if (!a.reception) melde('keine Wirkungsgeschichte');
   if (!a.interpretations || a.interpretations.length < 3) melde('weniger als drei Auslegungen');
   if (!a.dating) melde('keine Datierung');
+  const epoche = epocheFehlt(a.dating?.epoch);
+  if (epoche) melde(epoche);
   if (datings.includes(`  '${key}': {`)) melde('Datierung gibt es schon');
   if (!a.book || !a.chapter || !a.from || !a.to) continue;
 

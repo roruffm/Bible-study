@@ -2682,6 +2682,16 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 54 oder 55 n. Chr.',
     epoch: 'urkirche',
   },
+  'mk 1,1': {
+    events: 'Galiläa, Beginn des öffentlichen Auftretens Jesu, um 28 n. Chr.',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 1,21': {
+    events: 'Galiläa, Beginn des öffentlichen Auftretens Jesu, um 28 n. Chr.',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

@@ -139,6 +139,30 @@ export function unbekannteSeiten(entry) {
   return (entry.world ?? []).map((w) => w.aspect).filter((a) => !erlaubt.has(a));
 }
 
+let epochenCache = null;
+
+/**
+ * Die Epochen der Zeitleiste.
+ *
+ * Eine Datierung verweist mit ihrer Epoche auf die Zeitleiste; steht dort
+ * nichts, geht der Sprung ins Leere. Wie bei den Seiten der Lebenswelt wird
+ * die Liste aus der Quelle gelesen und nicht zweimal gepflegt.
+ */
+export function epochen() {
+  if (!epochenCache) {
+    const quelle = readFileSync(join(ROOT, 'src', 'content', 'timeline.ts'), 'utf8');
+    epochenCache = new Set([...quelle.matchAll(/^ {4}id: '([a-z]+)',$/gm)].map((m) => m[1]));
+    if (epochenCache.size === 0) throw new Error('Die Epochen ließen sich nicht lesen');
+  }
+  return epochenCache;
+}
+
+/** Prüft die Epoche einer Datierung. Gibt eine Beanstandung zurück oder null. */
+export function epocheFehlt(epoche) {
+  if (!epoche) return null;
+  return epochen().has(epoche) ? null : `Epoche "${epoche}" gibt es nicht`;
+}
+
 /**
  * Alle Zitate und Anhaltspunkte eines Artikels, die im Versbereich stehen
  * müssen: Bibelworte im Titel und das, was ein Urtext-Wort im deutschen Text
