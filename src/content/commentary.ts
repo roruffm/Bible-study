@@ -36470,6 +36470,332 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'phil', chapter: 3, verse: 17, note: 'Seid meine Nachfolger' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: '1kor',
+    chapter: 5,
+    from: 1,
+    to: 13,
+    title: '„ein wenig Sauerteig den ganzen Teig versäuert“',
+    historicalShort:
+      'Ein Fall, den nach Paulus nicht einmal die Umwelt duldete – und der schärfste Ausschluss des Neuen Testaments.',
+    historicalLong:
+      'Der Fall ist konkret: Ein Gemeindeglied lebt mit der Frau seines Vaters. Gemeint ist die Stiefmutter, nicht die Mutter; das dritte Buch Mose verbietet diese Verbindung ausdrücklich, und auch das römische Recht kannte sie als Verbrechen. Paulus schreibt, nicht einmal unter den Völkern komme so etwas vor – eine Übertreibung, die zeigt, wie sehr ihn die Sache aufbrachte.\n\nWas ihn ebenso beschäftigt, ist die Reaktion der Gemeinde: Sie ist aufgeblasen. Warum, sagt der Text nicht. Möglich ist, dass die Verbindung als Beweis der Freiheit galt, die im Brief mehrfach begegnet; möglich ist auch, dass der Betreffende ein wohlhabendes Mitglied war, dem man nicht widersprach. Rechtlich war eine solche Verbindung nach römischem Recht nur möglich, wenn der Vater tot oder die Ehe geschieden war.\n\nDer Beschluss ist der schärfste, den das Neue Testament kennt: Übergabe an den Satan zum Verderben des Fleisches. Was damit gemeint ist, wird verschieden gedeutet – Ausschluss aus der Gemeinde und damit aus dem Schutzbereich, eine erwartete Krankheit, oder der Tod. Der Zusatz nennt das Ziel: damit der Geist gerettet werde. Die Maßnahme ist damit auf Rettung angelegt und nicht auf Vernichtung.\n\nDas Bild vom Sauerteig kommt aus dem Passa. Vor dem Fest wurde jedes Haus nach Gesäuertem durchsucht und alles entfernt; die Mischna beschreibt das Verfahren mit einer Kerze. Paulus verbindet das mit dem Passalamm und sagt: Ihr seid ungesäuert – seid es also. Dass er das Fest voraussetzt, ist bemerkenswert für einen Brief an eine überwiegend nichtjüdische Gemeinde.',
+    reception:
+      'Der Abschnitt ist die Grundlage der kirchlichen Ausschlusspraxis geworden. Die Bußordnungen der Alten Kirche, der Bann des Mittelalters, die reformatorischen Zuchtordnungen und die Gemeindeordnungen der Freikirchen berufen sich darauf. Der Ausdruck vom Übergeben an den Satan stand in mittelalterlichen Bannformeln; die Rückkehr des Ausgeschlossenen war dabei stets das erklärte Ziel, wurde in der Praxis aber oft nicht erreicht.\n\nDie Unterscheidung zwischen drinnen und draußen ist in der Ethik wichtig geworden. Paulus lehnt es ausdrücklich ab, die Gesellschaft zu richten; die Zucht gilt nur innerhalb der Gemeinde. Dieser Satz wird in der Auseinandersetzung darüber angeführt, wie weit Kirchen gesellschaftliche Verhältnisse beurteilen sollen – von beiden Seiten.\n\nDie Verbindung von Passa und Kreuz hat die Osterliturgie geprägt. Die Bezeichnung Christi als Osterlamm steht im Osterlob, in Hymnen und in der Bildkunst; das Lamm mit der Siegesfahne geht auf diese Linie zurück. Auch die Reinigung des Hauses vor dem Fest hat in christlichen Bräuchen des Frühjahrsputzes eine Spur hinterlassen.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Verwandtschaftsgrade bestimmten, wer wen heiraten durfte; Verstöße konnten Erbansprüche vernichten und die Kinder rechtlos machen. Solche Verbindungen betrafen deshalb nicht nur die Beteiligten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das Passalamm wurde am Nachmittag vor dem Fest geschlachtet und am Abend im Familienkreis gegessen. Solange der Tempel stand, geschah das in Jerusalem; die Zahl der Festpilger war entsprechend groß.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer aus einem Verein ausgeschlossen wurde, verlor Beistand, Bestattungskasse und gesellschaftliche Verbindungen. Ausschluss war deshalb eine wirtschaftliche und keine bloß symbolische Maßnahme.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Sauerteig wurde als Rest vom vorigen Backen aufbewahrt und weitergegeben; ein kleines Stück reichte für einen ganzen Teig. Das Bild beschreibt einen alltäglichen Vorgang in der Küche.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. gynaika tou patros',
+        rendered: 'seines Vaters Weib',
+        note: 'Gemeint ist die Stiefmutter, nicht die Mutter. Das dritte Buch Mose verbietet die Verbindung, und auch das römische Recht kannte sie als Verbrechen.',
+      },
+      {
+        word: 'griech. paradounai to satana',
+        rendered: 'ihn zu übergeben dem Satan',
+        note: 'Was gemeint ist, wird verschieden gedeutet: Ausschluss aus dem Schutzbereich der Gemeinde, eine erwartete Krankheit oder der Tod. Der Zusatz nennt als Ziel die Rettung.',
+      },
+      {
+        word: 'griech. mikra zyme',
+        rendered: 'ein wenig Sauerteig',
+        note: 'Ein Sprichwort, das Paulus zweimal gebraucht. Sauerteig wurde als Rest vom vorigen Backen weitergegeben; ein kleines Stück reichte für den ganzen Teig.',
+      },
+      {
+        word: 'griech. to pascha hemon',
+        rendered: 'ein Osterlamm',
+        note: 'Die früheste Gleichsetzung Christi mit dem Passalamm im Neuen Testament. Sie setzt bei einer überwiegend nichtjüdischen Gemeinde die Kenntnis des Festes voraus.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Ausschluss dient der Umkehr und ist auf Wiederaufnahme angelegt; das Kirchenrecht kennt entsprechende Verfahren. Die Verbindung von Passa und Kreuz prägt die Osterliturgie.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Kirchenzucht gehört zur Gemeinde und nicht zur weltlichen Obrigkeit; Calvin baute die Genfer Ordnung darauf. Ziel ist immer die Rückkehr des Ausgeschlossenen.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'Der Abschnitt begründet die Gemeindezucht als Sache aller Mitglieder. Die Unterscheidung zwischen drinnen und draußen wird betont: Über Außenstehende urteilt die Gemeinde nicht.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Ausschluss von der Kommunion ist ein Heilmittel und keine Strafe; er wird vom geistlichen Vater begleitet. Die Wiederaufnahme geschieht nach einem Weg der Buße.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Warum die Gemeinde nicht eingriff, sagt der Text nicht; erwogen werden ein Freiheitsverständnis, das im Brief mehrfach begegnet, und die Stellung eines wohlhabenden Mitglieds. Die Passa-Anspielung setzt Kenntnis jüdischer Bräuche voraus.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 18, verse: 8, note: 'Die Frau des Vaters' },
+      { book: '5mo', chapter: 17, verse: 7, note: 'Tue das Böse aus deiner Mitte' },
+      { book: '2mo', chapter: 12, verse: 15, note: 'Das Entfernen des Sauerteigs' },
+      { book: 'mt', chapter: 18, verse: 17, note: 'Das Verfahren bei Verfehlungen' },
+    ],
+  },
+  {
+    book: '1kor',
+    chapter: 6,
+    from: 1,
+    to: 20,
+    title: '„ihr seid teuer erkauft“',
+    historicalShort:
+      'Prozesse zwischen Gemeindegliedern, eine Lasterliste mit zwei umstrittenen Wörtern und ein Satz über den Leib.',
+    historicalLong:
+      'Der erste Teil betrifft Zivilprozesse. In einer griechischen Stadt war das Gericht öffentlich und ein Schauplatz des Ansehens; wer klagte, tat es meist gegen Rangniedrigere, und Prozesse gehörten zum Alltag der Besitzenden. Vereine und Synagogen hatten eigene Schiedsverfahren, und die jüdische Gemeinschaft entschied Streitigkeiten unter sich. Paulus erwartet dasselbe – und geht dann weiter: Besser wäre, Unrecht zu leiden. Dieser Satz hat kein Gegenstück in der antiken Rechtsauffassung.\n\nDie Lasterliste im neunten und zehnten Vers enthält zwei Wörter, um die seit Jahrzehnten gestritten wird. Das erste bedeutet wörtlich weich und wurde in der Antike für Verweichlichte, Feiglinge, Verschwender und auch für den passiven Teil gleichgeschlechtlicher Beziehungen gebraucht; die Bandbreite ist groß. Das zweite ist vor diesem Brief nicht belegt und offenbar eine Neubildung aus zwei Wörtern, die in der griechischen Fassung des dritten Buches Mose nebeneinanderstehen, wo gleichgeschlechtlicher Verkehr verboten wird. Luther übersetzt Weichlinge und Knabenschänder und trifft damit eine Deutung, die im 16. Jahrhundert naheliegend war.\n\nDie Auslegung ist geteilt und folgt derselben Linie wie beim ersten Kapitel des Römerbriefs. Die eine Seite hält fest, dass die Wortbildung auf das Verbot im dritten Buch Mose zurückgeht und gleichgeschlechtliche Handlungen als solche meint. Die andere verweist auf die Bandbreite des ersten Wortes und darauf, dass die sichtbaren Formen in der Antike von Machtgefälle und Ausbeutung geprägt waren, weshalb der Text nicht auf gleichberechtigte Partnerschaften ziele. Beide Seiten verweisen auf denselben Befund und werten ihn verschieden.\n\nDer zweite Teil des Kapitels antwortet auf zwei Sätze, die Paulus offenbar zitiert: Alles ist mir erlaubt, und: Die Speise dem Bauch. Es sind Parolen aus Korinth, die er aufnimmt und begrenzt. Der Schluss stellt dem eine andere Bestimmung des Leibes gegenüber – als Tempel und als teuer erkauftes Eigentum. Das Wort für Erkaufen stammt aus dem Sklavenmarkt; der Freikauf eines Sklaven durch einen Tempel war ein bekanntes Verfahren.',
+    reception:
+      'Die beiden Wörter der Lasterliste stehen im Zentrum der kirchlichen Auseinandersetzungen über Homosexualität. Ihre Übersetzung hat sich mehrfach verschoben: In englischen Bibeln erschien ab 1946 das Wort homosexuell, das vorher nirgends stand und den modernen Begriff einer Veranlagung einträgt; neuere Ausgaben sind davon zurückgetreten. Der Fall zeigt, wie Übersetzungsentscheidungen eine Debatte prägen können, und wird von beiden Seiten angeführt.\n\nDas Verbot von Prozessen unter Christen hat eigene Rechtsgeschichte gemacht. Die Alte Kirche baute Schiedsgerichte auf, die Bischöfe entschieden Zivilsachen, und Konstantin gab diesen Entscheidungen 318 staatliche Anerkennung. Daraus entwickelte sich die kirchliche Gerichtsbarkeit des Mittelalters. Mennoniten und Quäker haben bis in die Neuzeit auf Prozesse verzichtet.\n\nDer Satz vom Leib als Tempel des Heiligen Geistes ist in die Frömmigkeitssprache und in die Ethik übergegangen. Er wird in Fragen der Sexualität, aber auch in der Diskussion über Gesundheit, Sucht und Körperlichkeit angeführt. In der Auslegung wird betont, dass die Anrede hier im Singular steht, während sie im dritten Kapitel die Gemeinde meinte.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Ein Richterkollegium wurde aus Bürgerlisten besetzt, und die Auswahl hing am Vermögen; Ärmere kamen selten hinein. Wer klagte, rechnete mit Richtern aus seiner eigenen Schicht.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Preis eines Sklaven richtete sich nach Alter, Ausbildung und Gesundheit und wurde beim Verkauf öffentlich genannt. Wer teuer erkauft war, gehörte einem Herrn, der etwas gewagt hatte.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die sichtbaren Formen gleichgeschlechtlicher Beziehungen waren von Machtgefälle geprägt: Erwachsene mit Jugendlichen, Herren mit Sklaven, Kunden mit Prostituierten. Der passive Teil galt als entehrt.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Korinth hatte einen Ruf als Stadt der Prostitution, der teils auf die alte, zerstörte Stadt zurückging; ein eigenes Verb bedeutete, korinthisch zu leben. Wie weit der Ruf der römischen Kolonie entsprach, ist unsicher.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. malakoi',
+        rendered: 'die Weichlinge',
+        note: 'Wörtlich die Weichen. Das Wort wurde für Verweichlichte, Feiglinge, Verschwender und für den passiven Teil gleichgeschlechtlicher Beziehungen gebraucht; die Bandbreite ist groß.',
+      },
+      {
+        word: 'griech. arsenokoitai',
+        rendered: 'die Knabenschänder',
+        note: 'Vor diesem Brief nicht belegt und offenbar neu gebildet aus zwei Wörtern, die in der griechischen Fassung des dritten Buches Mose nebeneinanderstehen. Luthers Übersetzung trifft eine Deutung, die im 16. Jahrhundert naheliegend war.',
+      },
+      {
+        word: 'griech. panta moi exestin',
+        rendered: 'Ich habe alles Macht',
+        note: 'Offenbar eine Parole aus Korinth, die Paulus zitiert und begrenzt. Er bestreitet sie nicht, sondern stellt ihr zweimal einen Einwand entgegen.',
+      },
+      {
+        word: 'griech. egorasthete times',
+        rendered: 'ihr seid teuer erkauft',
+        note: 'Ein Ausdruck aus dem Sklavenmarkt. Der Freikauf durch einen Tempel war ein bekanntes Verfahren und in Inschriften vielfach belegt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Leib ist Tempel des Geistes und in seiner Würde unantastbar; daraus folgt die Bewertung der Sexualität. Zur Frage gleichgeschlechtlicher Beziehungen hält die Lehre an der Unterscheidung von Neigung und Handlung fest.',
+      },
+      {
+        tradition: 'Traditionelle Auslegung',
+        text: 'Die Neubildung des zweiten Wortes geht auf das Verbot im dritten Buch Mose zurück und meint gleichgeschlechtliche Handlungen als solche. Diese Lesart wird in orthodoxen, evangelikalen und großen Teilen der weltweiten Kirchen vertreten.',
+      },
+      {
+        tradition: 'Revidierende Auslegung',
+        text: 'Die Bandbreite des ersten Wortes und die von Machtgefälle geprägten Formen der antiken Praxis sprechen dagegen, den Text auf gleichberechtigte Partnerschaften zu beziehen. Zahlreiche Kirchen in Europa und Nordamerika folgen dieser Linie.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Satz, dass etliche von ihnen so gewesen seien, ist die Pointe: Die Liste beschreibt eine Vergangenheit. Luther betonte, dass das Abgewaschensein vor der Aufzählung steht und nicht danach.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Übersetzungsgeschichte ist selbst ein Befund: In englischen Bibeln erschien ab 1946 das Wort homosexuell, das den modernen Begriff einer Veranlagung einträgt; neuere Ausgaben sind davon zurückgetreten. Die Parolen im zwölften und dreizehnten Vers gelten als Zitate aus Korinth.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 18, verse: 22, note: 'Das Verbot im dritten Buch Mose' },
+      { book: '1mo', chapter: 2, verse: 24, note: 'Die zwei werden ein Fleisch' },
+      { book: '1kor', chapter: 10, verse: 23, note: 'Dieselbe Parole noch einmal' },
+      { book: '1kor', chapter: 3, verse: 16, note: 'Die Gemeinde als Tempel' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: '1kor',
+    chapter: 7,
+    from: 1,
+    to: 24,
+    title: '„Ein jeglicher bleibe in dem Beruf, darin er berufen ist“',
+    historicalShort:
+      'Die erste Antwort auf einen Brief aus Korinth – und die einzige Stelle, an der Paulus zwischen Herrenwort und eigener Meinung unterscheidet.',
+    historicalLong:
+      'Mit diesem Kapitel wechselt der Brief. Bis hierher hat Paulus auf mündliche Nachrichten reagiert; jetzt beantwortet er ein Schreiben. Der erste Satz ist vermutlich ein Zitat daraus: Es ist gut für einen Menschen, keine Frau zu berühren. Wenn das zutrifft, redet nicht Paulus, sondern eine Gruppe in Korinth, die Enthaltsamkeit für den höheren Weg hielt – und seine Antwort ist eine Einschränkung, keine Forderung.\n\nDie Verse über die Ehe sind für die Antike ungewöhnlich symmetrisch. Sechsmal steht dieselbe Aussage über beide Seiten: Mann und Frau, Frau und Mann. Der Satz, die Frau verfüge über den Leib des Mannes, ist ohne Gegenstück in der antiken Literatur; das Verfügungsrecht lief sonst in eine Richtung. Auch die Anweisung, sich nicht zu entziehen, gilt beiden gleichermaßen.\n\nIm zehnten und zwölften Vers unterscheidet Paulus ausdrücklich zwischen einem Wort des Herrn und der eigenen Anweisung. Diese Unterscheidung ist im Neuen Testament einmalig und wichtig für die Frage, wie Überlieferung und Auslegung zusammenhingen: Er kennt ein Verbot der Scheidung als Herrenwort, hat aber für den Fall einer Ehe mit einem Nichtglaubenden keine Vorlage und entscheidet selbst.\n\nDer Abschnitt über den Stand ist sozialgeschichtlich der schwierigste. Wer als Sklave berufen wurde, soll sich nicht sorgen – und dann folgt ein Satz, dessen Griechisch offen ist: Wenn du frei werden kannst, so gebrauche es viel lieber. Was gebrauchen soll, sagt der Text nicht. Luther und die meisten heutigen Übersetzungen ergänzen die Freiheit; ein Teil der Ausleger hat die Sklaverei ergänzt. Beide Lesarten sind grammatisch möglich, und an ihnen hing viel.',
+    reception:
+      'Der Satz über den Stand ist zur Grundlage der Berufslehre geworden. Luther übersetzte das griechische Wort mit Beruf und verband damit die Vorstellung, dass die alltägliche Arbeit selbst Berufung ist – eine Verschiebung, die im Deutschen bis heute nachwirkt und die Wirtschaftsgeschichte beschäftigt hat; Max Weber machte sie 1905 zum Ausgangspunkt seiner Untersuchung über die protestantische Ethik. Im Griechischen steht kein Wort für Erwerbstätigkeit.\n\nDer offene Satz über die Freilassung ist ein Musterfall der Auslegungsgeschichte. Sklavereibefürworter in den amerikanischen Südstaaten lasen ihn als Anweisung, im Stand zu bleiben; Abolitionisten lasen ihn als Aufforderung, die Freiheit zu ergreifen. Die Handschriften helfen nicht, weil die Lücke im Text selbst liegt. Heute folgen die meisten Übersetzungen der zweiten Lesart.\n\nDie Symmetrie der Aussagen über Mann und Frau ist in der neueren Auslegung hervorgehoben worden. Sie steht quer zu den Haustafeln anderer Briefe und wird in der Frage nach der Stellung der Frau bei Paulus regelmäßig angeführt. Die Unterscheidung zwischen Herrenwort und eigener Anweisung gehört zu den wichtigsten Belegen dafür, wie in den frühen Gemeinden mit Überlieferung umgegangen wurde.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Nach römischem Recht konnten beide Seiten die Scheidung erklären, und sie war formlos möglich; Augustus versuchte, sie durch Gesetze zu erschweren. Eine Ehe endete, wenn einer sie beendete.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehelosigkeit galt als Auffälligkeit; Augustus belegte Unverheiratete mit Nachteilen im Erbrecht und begünstigte Kinderreiche. Wer ledig blieb, musste sich erklären.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Freilassung war häufig und wurde vor Zeugen oder im Tempel beurkundet; viele Sklaven sparten dafür jahrelang. Der Freigelassene blieb dem früheren Herrn zu Diensten verpflichtet.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Zeitweiliger Verzicht auf ehelichen Verkehr zugunsten von Gebet und Fasten war im Judentum bekannt und geregelt. Die Anweisung, sich nur zeitweilig und einvernehmlich zu entziehen, folgt dieser Linie.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kalon anthropo gynaikos me haptesthai',
+        rendered: 'daß er kein Weib berühre',
+        note: 'Vermutlich ein Zitat aus dem Brief der Korinther. Wenn das zutrifft, ist die Antwort eine Einschränkung dieser Position und nicht ihre Aufstellung.',
+      },
+      {
+        word: 'griech. ouk exousiazei',
+        rendered: 'Das Weib ist ihres Leibes nicht mächtig',
+        note: 'Die Aussage steht symmetrisch für beide Seiten. Dass eine Frau über den Leib ihres Mannes verfügt, ist in der antiken Literatur ohne Gegenstück.',
+      },
+      {
+        word: 'griech. lego ego ouch ho kyrios',
+        rendered: 'sage ich, nicht der HERR',
+        note: 'Die einzige Stelle, an der Paulus ausdrücklich zwischen einem überlieferten Herrenwort und der eigenen Anweisung unterscheidet.',
+      },
+      {
+        word: 'griech. mallon chresai',
+        rendered: 'so brauche es viel lieber',
+        note: 'Was gebraucht werden soll, sagt der Text nicht. Ergänzt wurde die Freiheit oder die Sklaverei; beide Lesarten sind grammatisch möglich.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Ehe ist gut und die Ehelosigkeit ein Rat für die, denen sie gegeben ist; daraus ist die Wertschätzung des ehelosen Standes erwachsen. Die Unauflöslichkeit der Ehe folgt dem Herrenwort.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther übersetzte das Wort für den Stand mit Beruf und machte damit die alltägliche Arbeit zur Berufung. Die Ehelosigkeit ist Gabe und nicht höherer Stand; das war ein Kernpunkt der Reformation.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Ehe und Mönchtum sind zwei Wege, die beide zum Ziel führen; die Ehe wird als Geheimnis gefeiert. Der zeitweilige Verzicht gehört zur Fastenordnung.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Rezeption',
+        text: 'Der offene Satz über die Freilassung wurde in den amerikanischen Südstaaten für das Bleiben im Stand und von Abolitionisten für das Ergreifen der Freiheit angeführt. Die Lücke liegt im Text selbst; die meisten heutigen Übersetzungen folgen der zweiten Lesart.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der erste Vers gilt weithin als Zitat aus dem Brief der Korinther. Die Unterscheidung zwischen Herrenwort und eigener Anweisung zeigt, wie in den frühen Gemeinden mit Überlieferung umgegangen wurde.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 10, verse: 9, note: 'Das Herrenwort zur Scheidung' },
+      { book: 'gal', chapter: 3, verse: 28, note: 'Nicht Jude noch Grieche, nicht Knecht noch Freier' },
+      { book: 'phlm', chapter: 1, verse: 16, note: 'Der Sklave als Bruder' },
+      { book: '1kor', chapter: 6, verse: 20, note: 'Teuer erkauft' },
+    ],
+  },
+  {
+    book: '1kor',
+    chapter: 7,
+    from: 25,
+    to: 40,
+    title: '„Die Zeit ist kurz“',
+    historicalShort:
+      'Der Rat zur Ehelosigkeit – begründet nicht mit dem Wert der Enthaltsamkeit, sondern mit der Kürze der Zeit.',
+    historicalLong:
+      'Paulus sagt ausdrücklich, dass er für diesen Teil kein Herrenwort hat und seine Meinung äußert. Die Begründung, die er gibt, ist nicht die Höherwertigkeit der Ehelosigkeit, sondern die Lage: die gegenwärtige Not und die Kürze der Zeit. Das Wort für Not bezeichnet eine Zwangslage; ob eine Hungersnot, eine Verfolgung oder die erwartete Endzeit gemeint ist, sagt der Text nicht.\n\nDer Ausdruck, die Zeit sei zusammengedrängt, stammt aus der Seefahrt und beschreibt das Reffen der Segel. Was folgt, ist eine Reihe von fünf Sätzen mit derselben Form: als ob nicht. Wer eine Frau hat, sei, als hätte er keine; wer weint, als weinte er nicht; wer kauft, als besäße er nichts. Diese Form hat Entsprechungen in der stoischen Ethik, die zur inneren Distanz von den Dingen riet – bei Paulus ist die Begründung eine andere: nicht die Gleichgültigkeit des Weisen, sondern das Vergehen der Weltgestalt.\n\nDie Verse über die Sorge sind praktisch gemeint. Wer verheiratet ist, hat Verpflichtungen; das war in einer Zeit ohne Institutionen buchstäblich zu nehmen, weil Haushalt, Versorgung und Verwandtschaft alles regelten. Der Zusatz, er wolle keinen Strick um den Hals werfen, ist ein Bild aus dem Tierfang und wehrt jede Verpflichtung ab.\n\nDie Verse sechsunddreißig bis achtunddreißig sind die dunkelsten des Kapitels. Es geht um einen Mann und seine Jungfrau, und drei Deutungen stehen nebeneinander: ein Vater und seine Tochter, ein Verlobter und seine Braut, oder ein Paar, das in geistlicher Gemeinschaft ohne Ehe zusammenlebt. Die letzte Praxis ist aus späteren Jahrhunderten belegt und wurde von Synoden verboten; ob sie schon hier vorausgesetzt ist, bleibt offen.',
+    reception:
+      'Die Wertschätzung der Ehelosigkeit hat die Kirchengeschichte des Westens geprägt. Aus dem Rat wurde in der Alten Kirche ein Ideal, das Mönchtum und schließlich die Pflicht zum Zölibat für Priester; das Zweite Laterankonzil machte sie 1139 verbindlich. Die Reformatoren wandten sich dagegen und beriefen sich darauf, dass Paulus ausdrücklich seine Meinung äußert und die Ehelosigkeit eine Gabe nennt.\n\nDie Reihe der Sätze mit dem als ob nicht ist zu einer Grundfigur christlicher Weltbeziehung geworden. Sie steht hinter der Ordensarmut, hinter der pietistischen Rede von der Welt und in der Neuzeit hinter der Frage nach einem Verhältnis zur Welt, das weder Flucht noch Anpassung ist. Dietrich Bonhoeffer und die Theologie des 20. Jahrhunderts haben daran angeknüpft.\n\nDie Kürze der Zeit als Begründung hat die Auslegung beschäftigt, seit deutlich wurde, dass das erwartete Ende ausblieb. Wer die Naherwartung ernst nimmt, muss fragen, ob die Empfehlung an sie gebunden ist. Die Antworten reichen von der Beibehaltung des Rats bis zu der Auffassung, dass er mit seiner Voraussetzung entfällt.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Die Schifffahrt ruhte von November bis März, und wer eine Reise plante, rechnete mit einem festen Zeitfenster. Zeit war für Reisende und Händler eine begrenzte Größe, nicht eine offene.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Haushalt, Versorgung im Alter und Verwandtschaft regelten alles, was später Institutionen übernahmen. Wer heiratete, übernahm damit Verpflichtungen, die keine andere Stelle abnahm.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Bild vom Strick um den Hals stammt aus dem Tierfang: eine Schlinge, die zuzieht. Es beschreibt eine Bindung, die man nicht mehr lösen kann.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Über die Verheiratung einer Tochter entschied der Vater; die Verlobung war rechtlich bindend und wurde vor Zeugen geschlossen. Wer eine mündige Tochter unverheiratet ließ, geriet in Erklärungsnot.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. dia ten enestosan ananken',
+        rendered: 'um der gegenwärtigen Not willen',
+        note: 'Das Wort bezeichnet eine Zwangslage. Ob eine Hungersnot, eine Verfolgung oder die erwartete Endzeit gemeint ist, sagt der Text nicht.',
+      },
+      {
+        word: 'griech. ho kairos synestalmenos estin',
+        rendered: 'Die Zeit ist kurz',
+        note: 'Wörtlich zusammengedrängt, ein Wort aus der Seefahrt für das Reffen der Segel. Die verbleibende Fläche wird kleiner.',
+      },
+      {
+        word: 'griech. hos me',
+        rendered: 'als hätten sie keine',
+        note: 'Die Form kehrt fünfmal wieder. Sie hat Entsprechungen in der stoischen Ethik, wird hier aber nicht mit Gleichmut begründet, sondern mit dem Vergehen der Weltgestalt.',
+      },
+      {
+        word: 'griech. brochon epibalo',
+        rendered: 'einen Strick um den Hals werfe',
+        note: 'Ein Bild aus dem Tierfang: die Schlinge, die zuzieht. Paulus wehrt damit jede Verpflichtung auf seinen Rat ausdrücklich ab.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Ehelosigkeit um des Reiches Gottes willen gilt als Weg besonderer Hingabe; daraus sind Mönchtum und Zölibat erwachsen. Das Zweite Laterankonzil machte den Zölibat 1139 verbindlich.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Paulus äußert ausdrücklich seine Meinung und nennt die Ehelosigkeit eine Gabe; daraus lässt sich keine Pflicht ableiten. Luther führte das gegen den Zölibat an.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Ehelosigkeit gehört zum Mönchtum, aus dem die Bischöfe gewählt werden; Priester können verheiratet sein. Beide Wege werden nebeneinander bejaht.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Der Rat ist mit der Kürze der Zeit begründet. Ob er ohne diese Voraussetzung gilt, ist die Frage – die Antworten reichen von der Beibehaltung bis zu der Auffassung, dass er mit seiner Begründung entfällt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Reihe der Sätze mit dem als ob nicht hat Entsprechungen in der stoischen Ethik, ist aber anders begründet. Die Verse über den Mann und seine Jungfrau lassen drei Deutungen zu und gehören zu den dunkelsten des Briefes.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 19, verse: 12, note: 'Um des Himmelreichs willen' },
+      { book: '1thess', chapter: 4, verse: 15, note: 'Die Erwartung der Wiederkunft' },
+      { book: '1kor', chapter: 7, verse: 7, note: 'Ehelosigkeit als Gabe' },
+      { book: 'roem', chapter: 13, verse: 11, note: 'Die Stunde ist da' },
+    ],
+  },
 ];
 
 /**
