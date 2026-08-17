@@ -2542,6 +2542,51 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 56 oder 57 n. Chr.',
     epoch: 'urkirche',
   },
+  'roem 12,3': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 13,8': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 14,1': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 10,1': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 10,11': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 15,1': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 15,14': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 16,1': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
+  'roem 16,17': {
+    events: 'Korinth, vor der Reise nach Jerusalem und dem geplanten Zug nach Spanien',
+    written: 'um 56 oder 57 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

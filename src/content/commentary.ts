@@ -35331,6 +35331,738 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'roem', chapter: 9, verse: 4, note: 'Was Israel gehört' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'roem',
+    chapter: 12,
+    from: 3,
+    to: 21,
+    title: '„überwinde das Böse mit Gutem“',
+    historicalShort:
+      'Sieben Gaben, dreißig kurze Anweisungen – und ein Rätselwort über feurige Kohlen.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einem Wortspiel, das sich im Deutschen nur andeuten lässt: Niemand soll überdenken, sondern besonnen denken. Vier Formen desselben Verbstamms stehen in einem Satz. Die Besonnenheit war eine der vier Kardinaltugenden der griechischen Ethik, und Paulus knüpft an einen Begriff an, den seine Leser aus der Philosophie kannten.\n\nDie Liste der Gaben ist die kürzeste der drei, die Paulus überliefert. Sie unterscheidet sich von der im ersten Korintherbrief: Dort stehen Wunder und Zungenrede voran, hier stehen Dienen, Lehren, Ermahnen, Geben, Vorstehen und Barmherzigkeitsüben – lauter unspektakuläre Tätigkeiten. Das Bild vom Leib ist dasselbe wie in Korinth, aber der Ton ist ruhiger.\n\nAb dem neunten Vers folgen kurze Anweisungen ohne Verbindung. Im Griechischen stehen meist Partizipien, was in der Alltagssprache für Befehle ungewöhnlich ist; die nächste Entsprechung findet sich in rabbinischen Sammlungen von Regeln. Mehrere der Anweisungen haben Parallelen in der Bergpredigt, ohne dass Paulus sie als Herrenworte kennzeichnet – ein Hinweis darauf, dass solche Sätze umliefen, ehe die Evangelien geschrieben wurden.\n\nDas Wort von den feurigen Kohlen ist ein Zitat aus dem Buch der Sprüche und seit der Antike umstritten. Drei Deutungen stehen nebeneinander: Es meint die Scham, die den Feind brennt; es meint einen ägyptischen Bußritus, bei dem ein Reuiger eine Schale mit Kohlen auf dem Kopf trug; oder es meint tatsächlich eine Strafe, die dem Feind zugedacht wird. Die dritte Lesart passt schlecht zum Zusammenhang, ist aber im Sprüchebuch nicht auszuschließen.',
+    reception:
+      'Der Schlussvers ist zu einem der bekanntesten Sätze der Friedensethik geworden. Er steht in den Schriften der historischen Friedenskirchen, bei Tolstoi, bei Gandhi in der Auseinandersetzung mit dem Christentum und bei Martin Luther King, der ihn in seinen Predigten zur gewaltfreien Bürgerrechtsbewegung anführte. Die Übersetzung überwinden trifft dabei genau: Es ist ein Wort des Kampfes und nicht des Rückzugs.\n\nDie Anweisung, nicht selbst zu vergelten, sondern Raum zu geben, hat in der Rechtsgeschichte gewirkt. Sie wurde als Begründung dafür angeführt, dass Strafe Sache der Obrigkeit und nicht des Verletzten ist – ein Gedanke, den der Anfang des dreizehnten Kapitels fortsetzt. Der Verzicht auf Selbstjustiz ist damit theologisch begründet worden, lange bevor er rechtlich durchgesetzt war.\n\nDie Gabenliste ist in der Gemeindepraxis des 20. Jahrhunderts neu entdeckt worden. Aus ihr und den beiden anderen Listen sind Verfahren zur Bestimmung von Gaben entstanden, die in vielen Gemeinden angewandt werden. Kritiker halten fest, dass die Listen untereinander verschieden sind und offenbar keine Vollständigkeit beanspruchen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Selbsteinschätzung war eine öffentliche Angelegenheit: Rang, Sitzordnung und Redereihenfolge hingen daran, und wer sich zu hoch einordnete, wurde herabgesetzt. Bescheidenheit war deshalb auch eine Vorsichtsmaßnahme.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Herd musste ständig glimmen, weil Feuermachen mühsam war; wer die Glut verlor, holte Kohlen beim Nachbarn und trug sie in einer Schale auf dem Kopf. Aus dieser Praxis wird die Wendung von den Kohlen erklärt.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Selbstjustiz war verbreitet, und Blutrache galt in vielen Gegenden als Pflicht der Familie. Der Verzicht darauf setzte voraus, dass eine andere Instanz die Sache übernimmt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ein Körper wurde als Zusammenspiel von Gliedern mit verschiedenen Aufgaben gedacht; antike Ärzte beschrieben ihn so, und Redner benutzten das Bild für den Staat. Es war das geläufigste Gleichnis für eine Gemeinschaft.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. me hyperphronein alla sophronein',
+        rendered: 'daß niemand weiter von sich halte',
+        note: 'Ein Wortspiel mit vier Formen desselben Stammes: nicht überdenken, sondern besonnen denken. Die Besonnenheit war eine der vier Kardinaltugenden.',
+      },
+      {
+        word: 'griech. metron pisteos',
+        rendered: 'das Maß des Glaubens',
+        note: 'Ob das Maß den Umfang des Glaubens oder den Maßstab meint, an dem sich jeder misst, ist offen. Beide Deutungen sind alt.',
+      },
+      {
+        word: 'griech. dote topon te orge',
+        rendered: 'gebet Raum dem Zorn Gottes',
+        note: 'Im Griechischen steht nur Zorn ohne Zusatz. Luther ergänzt Gottes und entscheidet damit eine Frage, die der Text offenlässt.',
+      },
+      {
+        word: 'griech. anthrakas pyros',
+        rendered: 'feurige Kohlen',
+        note: 'Ein Zitat aus dem Buch der Sprüche, seit der Antike umstritten: Scham, ein ägyptischer Bußritus mit einer Kohlenschale, oder eine Strafe für den Feind.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Gaben dienen dem Aufbau der Gemeinschaft und sind auf die Einheit hin geordnet. Der Verzicht auf Vergeltung gehört zu den Weisungen, die die kirchliche Soziallehre auf das öffentliche Leben bezieht.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Anweisungen sind Beschreibung des neuen Lebens und keine Bedingungen. Luther bezog den Verzicht auf Vergeltung auf den persönlichen Bereich und trennte ihn vom Amt der Obrigkeit.',
+      },
+      {
+        tradition: 'Friedenskirchliche Auslegung',
+        text: 'Der Schlussvers gilt als Kern christlicher Ethik und lässt keine Ausnahme zu; Mennoniten, Quäker und die Bruderschaften berufen sich darauf. Martin Luther King führte ihn in der Bürgerrechtsbewegung an.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Weisungen beschreiben den Weg der Tugend, auf dem der Mensch dem Bild Gottes wieder ähnlich wird. Die Speisung des Feindes gilt als höchste Form der Barmherzigkeit.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Anweisungen stehen im Griechischen überwiegend als Partizipien, was der Form rabbinischer Regelsammlungen entspricht. Mehrere haben Parallelen in der Bergpredigt, ohne als Herrenworte gekennzeichnet zu sein.',
+      },
+    ],
+    crossRefs: [
+      { book: 'spr', chapter: 25, verse: 21, note: 'Speise deinen Feind' },
+      { book: '5mo', chapter: 32, verse: 35, note: 'Die Rache ist mein' },
+      { book: '1kor', chapter: 12, verse: 8, note: 'Die andere Gabenliste' },
+      { book: 'mt', chapter: 5, verse: 44, note: 'Segnet, die euch verfolgen' },
+    ],
+  },
+  {
+    book: 'roem',
+    chapter: 13,
+    from: 8,
+    to: 14,
+    title: '„die Nacht ist vorgerückt“',
+    historicalShort:
+      'Die Liebe als Erfüllung des Gesetzes – und der Satz, an dem Augustinus umkehrte.',
+    historicalLong:
+      'Nach den Anweisungen über die staatliche Ordnung nimmt Paulus das Bild der Schuld auf: Man solle niemandem etwas schuldig bleiben außer der Liebe. Das ist ein Wortspiel mit dem vorher Gesagten über Steuern und Abgaben. Die Liebe ist die einzige Schuld, die man nicht abtragen kann, weil sie mit dem Zahlen wächst.\n\nDie Zusammenfassung des Gesetzes im Gebot der Nächstenliebe ist keine Erfindung des Paulus. Das Zitat stammt aus dem dritten Buch Mose, Rabbi Hillel soll es als Zusammenfassung der ganzen Tora bezeichnet haben, und die Evangelien überliefern es als Antwort Jesu auf die Frage nach dem größten Gebot. Paulus zählt dabei nur die Gebote der zweiten Tafel auf – die, die das Verhältnis zum Nächsten regeln.\n\nDas Bild von der Nacht, die vorgerückt ist, gehört zur Erwartung der nahen Wende. Paulus rechnet damit, dass das Ende näher gekommen ist als bei der Bekehrung seiner Leser. Diese Naherwartung ist in den frühen Briefen deutlicher als in den späteren; hier steht sie nicht als Drohung, sondern als Begründung einer Lebensweise – man verhält sich, wie man sich am Tag verhält.\n\nDer Schlussvers hat Kirchengeschichte gemacht. Augustinus berichtet in seinen Bekenntnissen, er habe in einem Garten in Mailand eine Kinderstimme gehört, die sagte: Nimm und lies. Er schlug den Römerbrief auf und traf auf diese Zeilen; damit endete sein Ringen. Das Jahr war 386, und die Wirkung dieses Augenblicks auf die abendländische Theologie ist kaum zu überschätzen.',
+    reception:
+      'Die Szene im Garten von Mailand ist eine der berühmtesten Bekehrungserzählungen der Weltliteratur und hat ein Muster geschaffen: die zufällig aufgeschlagene Bibelstelle als Wendepunkt. Petrarca beschreibt eine ähnliche Erfahrung, und in der pietistischen Erbauungsliteratur ist das Verfahren zur Praxis geworden. Kritiker haben es als Bibelorakel bezeichnet.\n\nDie Zusammenfassung des Gesetzes in der Nächstenliebe ist zum meistzitierten ethischen Satz der Bibel geworden. Sie steht in der Begründung der Menschenrechte, in Sozialenzykliken und in der Auseinandersetzung über das Verhältnis von Recht und Ethik. Die Beobachtung, dass das Gebot aus dem dritten Buch Mose stammt und in der jüdischen Überlieferung dieselbe Rolle spielt, ist im christlich-jüdischen Gespräch wichtig geworden.\n\nDie Naherwartung des Abschnitts hat die Auslegung beschäftigt, seit deutlich wurde, dass das erwartete Ende nicht kam. Die Antworten reichen von der Annahme, Paulus habe sich geirrt, über die Deutung auf die Nähe des eigenen Todes bis zu der Auffassung, die Nähe sei qualitativ und nicht zeitlich gemeint. Albert Schweitzer machte die Naherwartung 1906 zum Schlüssel seiner Deutung des Urchristentums.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Schulden wurden urkundlich festgehalten, und wer nicht zahlen konnte, verlor Besitz oder Freiheit. Von einer Schuld zu sprechen, die man nie abträgt, war ein bewusster Widerspruch zur Rechtslage.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Nachts war die Stadt unbeleuchtet und galt als Zeit der Gelage und der Übergriffe; wer bei Tag trank, machte sich lächerlich. Die Anweisung, wie am Tag zu wandeln, nahm eine bekannte Grenze auf.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Soldat legte die Rüstung bei Tagesanbruch an; die Wache endete mit dem ersten Licht. Das Bild von den Waffen des Lichts folgt diesem Ablauf.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Gebot der Nächstenliebe aus dem dritten Buch Mose galt in der jüdischen Überlieferung als Zusammenfassung der Tora; Hillel formulierte es in der Form der Goldenen Regel. Paulus zitiert eine anerkannte Auslegung.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. medeni meden opheilete',
+        rendered: 'Seid niemand nichts schuldig',
+        note: 'Ein Wortspiel mit dem vorher Gesagten über Abgaben. Die Liebe ist die einzige Schuld, die mit dem Zahlen wächst.',
+      },
+      {
+        word: 'griech. pleroma nomou he agape',
+        rendered: 'die Liebe des Gesetzes Erfüllung',
+        note: 'Das Wort für Erfüllung meint das Vollmaß. Die Liebe ersetzt das Gesetz nicht, sondern bringt es zu seinem Ziel.',
+      },
+      {
+        word: 'griech. he nyx proekopsen',
+        rendered: 'die Nacht ist vorgerückt',
+        note: 'Ein Bild aus dem Nachtwachdienst. Es setzt voraus, dass der Tag berechenbar näher kommt, und gehört zur Naherwartung der frühen Gemeinden.',
+      },
+      {
+        word: 'griech. endysasthe ton kyrion',
+        rendered: 'ziehet an den HERRN Jesus Christus',
+        note: 'Das Bild vom Anziehen eines Gewandes, wie es auch in der Tauflehre begegnet. Diese Zeile las Augustinus 386 im Garten in Mailand.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Liebe ist die Form aller Tugenden und bringt das Gesetz zu seinem Ziel; Augustinus und Thomas haben das entfaltet. Die Szene im Garten von Mailand gehört zur Gründungsgeschichte der abendländischen Theologie.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Liebe erfüllt das Gesetz, weil sie tut, was es fordert – sie schafft es nicht ab. Luther betonte, dass sie aus dem Glauben folgt und nicht ihn begründet.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Anziehen Christi wird auf die Taufe und auf das tägliche Leben bezogen; die Liturgie singt den Vers bei der Taufe. Der Tag, der naht, ist die Auferstehung.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Das Gebot der Nächstenliebe steht in der Tora und gilt dort als ihre Zusammenfassung; Hillel gab ihm die Form der Goldenen Regel. Dass Paulus es zitiert, wird als Zeichen seiner Herkunft gelesen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Naherwartung ist deutlich und hat die Auslegung beschäftigt, seit klar wurde, dass das erwartete Ende ausblieb. Albert Schweitzer machte sie 1906 zum Schlüssel seiner Deutung des Urchristentums.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 19, verse: 18, note: 'Liebe deinen Nächsten wie dich selbst' },
+      { book: 'gal', chapter: 5, verse: 14, note: 'Dasselbe Gebot als Zusammenfassung' },
+      { book: 'mt', chapter: 22, verse: 39, note: 'Das andere Gebot ist dem gleich' },
+      { book: '1thess', chapter: 5, verse: 8, note: 'Die Waffen des Lichts' },
+    ],
+  },
+  {
+    book: 'roem',
+    chapter: 14,
+    from: 1,
+    to: 23,
+    title: '„Den Schwachen im Glauben nehmet auf“',
+    historicalShort:
+      'Ein Streit über Essen und Feiertage – und die Regel, dass der Stärkere nachgibt.',
+    historicalLong:
+      'Der Streit, den Paulus behandelt, lässt sich aus dem Text rekonstruieren: Die einen essen alles, die anderen nur Gemüse; die einen halten bestimmte Tage, die anderen nicht. Wahrscheinlich geht es um jüdische Speisegebote und um den Sabbat, dazu um die Frage nach Fleisch, das aus Tempelopfern stammte – in römischen Fleischmärkten war das die Regel, und wer sichergehen wollte, aß kein Fleisch.\n\nDie Zusammensetzung der römischen Gemeinde erklärt die Schärfe. Nach der Ausweisung unter Claudius um 49 war die Gemeinde eine Zeitlang ohne die jüdischen Glieder; als diese zurückkehrten, fanden sie eine Gemeinschaft vor, die ihre Ordnungen nicht mehr kannte. Der Streit ist damit kein theoretischer, sondern der zwischen zwei Gruppen mit unterschiedlicher Geschichte.\n\nDie Begriffe sind bemerkenswert. Paulus nennt die eine Seite schwach und rechnet sich selbst zu den Starken; zugleich verlangt er von den Starken die Rücksicht. Wer schwach heißt, wird nicht belehrt, sondern geschützt. Das griechische Wort für aufnehmen bedeutet, jemanden bei sich zu Hause zu empfangen – die Anweisung betrifft die Gastfreundschaft und damit die gemeinsame Mahlzeit.\n\nDie Sätze über die Freiheit sind so scharf, wie sie klingen: Nichts ist an sich unrein. Das steht in einem Brief an eine Gemeinde mit jüdischen Gliedern und ist eine erhebliche Aussage. Sie wird aber sofort begrenzt: Wer es für unrein hält, für den ist es unrein, und wer gegen sein Gewissen handelt, sündigt. Die Freiheit gilt, und sie endet dort, wo sie einen anderen beschädigt.',
+    reception:
+      'Das Kapitel ist zur Grundlage der kirchlichen Lehre von den Mitteldingen geworden – von Fragen, die nicht heilsentscheidend sind. Melanchthon entwickelte den Begriff, und im Streit über die Frage, wie weit man in solchen Dingen nachgeben darf, spaltete sich das Luthertum in den 1550er Jahren. Die Formel Concordia von 1577 legte fest, dass in Zeiten des Bekenntnisses auch Mitteldinge nicht nachgegeben werden dürfen.\n\nDie Regel, dass der Stärkere Rücksicht nimmt, ist in ökumenischen Gesprächen und in Gemeindekonflikten immer wieder angeführt worden – bei Fragen der Musik, der Kleidung, des Alkohols und in den Auseinandersetzungen um Abendmahlspraxis. Sie wird zugleich kritisiert: Wer immer nachgibt, überlässt dem Empfindlichsten die Entscheidung. Die Kritik ist alt und hat in der Auslegung eigene Antworten gefunden.\n\nDer Satz, dass alles Sünde ist, was nicht aus dem Glauben kommt, hat eine eigene Wirkungsgeschichte. Augustinus zog daraus den Schluss, dass die Tugenden der Heiden glänzende Laster seien; die Reformatoren nahmen den Satz auf, die katholische Seite widersprach. Die Aufklärung hat ihn als Beispiel für die Abwertung menschlicher Sittlichkeit angegriffen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Fleisch aus römischen Märkten stammte in der Regel aus Tempelopfern; nur ein Teil wurde auf dem Altar verbrannt, der Rest verkauft. Wer sichergehen wollte, aß Gemüse.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die gemeinsame Mahlzeit war der Kern des Gemeindelebens; wer nicht mitessen konnte, war ausgeschlossen. Ein Streit über Speisen betraf deshalb die Zugehörigkeit und nicht den Geschmack.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Sabbat und die Feste waren im römischen Reich als jüdische Eigenart bekannt und wurden teils geachtet, teils verspottet. Ein Fest zu halten oder nicht, war öffentlich sichtbar.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Nach der Ausweisung unter Claudius war die römische Gemeinde eine Zeitlang ohne ihre jüdischen Glieder. Als diese zurückkehrten, trafen zwei Gruppen mit unterschiedlicher Geschichte aufeinander.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. proslambanesthe',
+        rendered: 'nehmet auf',
+        note: 'Das Wort meint, jemanden bei sich zu Hause zu empfangen. Die Anweisung betrifft die Gastfreundschaft und damit die gemeinsame Mahlzeit.',
+      },
+      {
+        word: 'griech. ton asthenounta te pistei',
+        rendered: 'Den Schwachen im Glauben',
+        note: 'Paulus rechnet sich zu den Starken und verlangt von ihnen die Rücksicht. Wer schwach heißt, wird nicht belehrt, sondern geschützt.',
+      },
+      {
+        word: 'griech. ouden koinon di heautou',
+        rendered: 'daß nichts gemein ist an sich selbst',
+        note: 'Das Wort gemein bedeutet unrein im kultischen Sinn. Der Satz ist scharf und wird sofort durch die Rücksicht auf das Gewissen des anderen begrenzt.',
+      },
+      {
+        word: 'griech. ouk ek pisteos hamartia estin',
+        rendered: 'Was aber nicht aus dem Glauben geht, das ist Sünde',
+        note: 'Im Zusammenhang meint Glaube die Überzeugung, im Recht zu sein. Augustinus zog daraus weitergehende Folgerungen über die Tugenden der Heiden.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Gewissen ist auch dann zu achten, wenn es irrt; niemand darf gegen sein Gewissen zum Handeln gezwungen werden. Der Abschnitt gehört zu den Grundlagen der katholischen Gewissenslehre.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Freiheit in Mitteldingen gilt, aber sie steht unter der Liebe. Der Streit um die Frage, wie weit Nachgeben erlaubt ist, hat das Luthertum in den 1550er Jahren gespalten.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Fastenordnungen dienen der Übung und nicht der Trennung; wer sie hält, richtet nicht die anderen. Der Abschnitt begründet die Rücksicht innerhalb einer gemeinsamen Ordnung.',
+      },
+      {
+        tradition: 'Freikirchliche Auslegung',
+        text: 'Der Abschnitt wird auf Streitfragen über Alkohol, Musik und Lebensstil angewandt. Die Regel, dass der Stärkere zurücktritt, wird zugleich kritisch gesehen, weil sie dem Empfindlichsten die Entscheidung überlässt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Streit betrifft wahrscheinlich Speisegebote, den Sabbat und Fleisch aus Tempelopfern. Die Zusammensetzung der römischen Gemeinde nach der Ausweisung unter Claudius erklärt seine Schärfe.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 8, verse: 9, note: 'Der Streit um das Opferfleisch' },
+      { book: 'jes', chapter: 45, verse: 23, note: 'Mir sollen alle Knie sich beugen' },
+      { book: 'kol', chapter: 2, verse: 16, note: 'Niemand richte euch über Speise' },
+      { book: 'roem', chapter: 15, verse: 1, note: 'Wir Starken sollen tragen' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'roem',
+    chapter: 10,
+    from: 1,
+    to: 8,
+    title: '„Christus ist des Gesetzes Ende“',
+    historicalShort:
+      'Ein Wort mit zwei Bedeutungen, an dem sich entscheidet, ob das Gesetz aufhört oder ans Ziel kommt.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einem Gebet für Israel und mit einer Feststellung, die kein Vorwurf ist: Sie eifern um Gott. Das griechische Wort für Eifer ist positiv besetzt und beschreibt in der jüdischen Überlieferung eine Tugend; Pinhas und die Makkabäer heißen Eiferer. Paulus fügt hinzu: nicht nach Erkenntnis. Er bestreitet also die Ausrichtung nicht, sondern ihre Grundlage.\n\nDas Wort im vierten Vers ist eines der folgenreichsten des Neuen Testaments. Es kann Ende bedeuten – Aufhören, Schluss – und Ziel: das, worauf etwas zuläuft. Beide Bedeutungen sind im Griechischen geläufig, und beide sind hier möglich. Luther entscheidet sich für Ende, die östliche Tradition und ein Teil der neueren Forschung für Ziel. Am Ausgang dieser Frage hängt, ob das Gesetz durch Christus beendet oder erfüllt ist.\n\nDie folgende Auslegung ist die kühnste Schriftverwendung des Briefes. Paulus nimmt einen Text aus dem fünften Buch Mose, der sagt, das Gebot sei nicht im Himmel und nicht jenseits des Meeres, sondern nahe – im Mund und im Herzen. Er deutet das Hinaufsteigen auf die Menschwerdung und das Hinabsteigen auf die Auferweckung. Die Vorlage spricht von der Erreichbarkeit der Tora; Paulus überträgt sie auf die Erreichbarkeit Christi.\n\nBemerkenswert ist, dass er dieselbe Vorlage benutzt, die im Judentum auf die Tora und in der Weisheitsliteratur auf die Weisheit bezogen wurde. Das Buch Baruch enthält eine Auslegung derselben Stelle, die fragt, wer in den Himmel gestiegen sei, um die Weisheit zu holen. Paulus folgt einem bekannten Auslegungsmuster und setzt an die Stelle der Weisheit Christus.',
+    reception:
+      'Die Übersetzung des Wortes für Ende oder Ziel ist ein Dauerstreit der Auslegung. Wer Ende liest, kommt zu einer Ablösung des Gesetzes; wer Ziel liest, zu seiner Erfüllung. Die Reformation folgte überwiegend der ersten Lesart, die östlichen Kirchen der zweiten. Die neuere Forschung neigt zunehmend zu Ziel oder hält beide Bedeutungen für gleichzeitig gemeint – ein Wort, das aufhört und ans Ziel kommt.\n\nDie Auslegung des Textes aus dem fünften Buch Mose ist ein Musterbeispiel dafür, wie das frühe Christentum die Schriften Israels las. Sie folgt einem Verfahren, das in Qumran und in der Weisheitsliteratur belegt ist, und ersetzt den ursprünglichen Gegenstand durch Christus. In der Auseinandersetzung über die Grenzen legitimer Auslegung wird die Stelle regelmäßig angeführt.\n\nDer Satz über den Eifer ohne Erkenntnis ist in der Kirchengeschichte oft gegen das Judentum gewendet worden. Die neuere Auslegung hebt hervor, dass Paulus damit auch sich selbst beschreibt: Er nennt seinen eigenen früheren Eifer an anderer Stelle mit demselben Wort. Der Satz ist damit eher eine Selbstaussage als ein Urteil über andere.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Der Eifer für Gott war eine anerkannte Tugend; Pinhas und die Makkabäer galten als Eiferer und wurden dafür gerühmt. Das Wort ist positiv besetzt und wird hier nicht als Vorwurf gebraucht.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Weisheit galt in der jüdischen Literatur der Zeit als Größe, die bei Gott war und zu den Menschen kam; ganze Bücher sind ihr gewidmet. Sie war der Gegenstand, auf den solche Auslegungen üblicherweise zuliefen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Der Himmel galt als oberste Schicht des Weltgebäudes, die Tiefe als Bereich der Toten unter der Erde. Wer beides nennt, spannt den Bogen über das ganze Weltbild der Zeit.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Auswendiglernen war die übliche Form der Aneignung; Kinder lernten die Tora sprechend, nicht lesend. Ein Wort im Mund und im Herzen zu haben, beschrieb einen alltäglichen Vorgang.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. zelon theou',
+        rendered: 'daß sie eifern um Gott',
+        note: 'Der Eifer ist in der jüdischen Überlieferung eine Tugend. Paulus gebraucht dasselbe Wort an anderer Stelle für seinen eigenen früheren Weg.',
+      },
+      {
+        word: 'griech. telos nomou',
+        rendered: 'Christus ist des Gesetzes Ende',
+        note: 'Das Wort bedeutet Ende und Ziel zugleich. Luther entscheidet sich für Ende, die östliche Tradition und ein Teil der neueren Forschung für Ziel.',
+      },
+      {
+        word: 'griech. eis ten abysson',
+        rendered: 'hinab in die Tiefe',
+        note: 'Der Bereich der Toten unter der Erde. In der Vorlage aus dem fünften Buch Mose steht das Meer; Paulus ändert es und deutet auf die Auferweckung.',
+      },
+      {
+        word: 'griech. engys sou to rhema',
+        rendered: 'Das Wort ist dir nahe',
+        note: 'Die Vorlage spricht von der Erreichbarkeit der Tora. Paulus überträgt die Aussage auf die Erreichbarkeit Christi und folgt damit einem bekannten Auslegungsmuster.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Christus ist das Ziel, auf das das Gesetz zuläuft; es wird erfüllt und nicht verworfen. Die Erreichbarkeit des Wortes begründet die Zugänglichkeit des Heils für alle.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther übersetzt Ende und liest den Vers als Abschluss des Weges der Werke. Die eigene Gerechtigkeit aufzurichten ist der Kern dessen, was der Glaube ablegt.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Wort meint das Ziel: Christus ist die Vollendung des Gesetzes, nicht sein Abbruch. Die Bewegung des Textes von oben nach unten wird auf Menschwerdung und Auferstehung bezogen.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Stelle aus dem fünften Buch Mose spricht von der Nähe der Tora und ist ein Kerntext des Selbstverständnisses. Ihre Übertragung auf Christus gilt als Umdeutung eines Textes, der etwas anderes sagt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Doppeldeutigkeit des Wortes für Ende und Ziel ist nicht auflösbar und wird von einem Teil der Forschung als beabsichtigt angesehen. Die Auslegung folgt einem Verfahren, das aus Qumran und der Weisheitsliteratur bekannt ist.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 30, verse: 12, note: 'Das Gebot ist nicht im Himmel' },
+      { book: '3mo', chapter: 18, verse: 5, note: 'Wer sie tut, wird dadurch leben' },
+      { book: 'phil', chapter: 3, verse: 6, note: 'Nach dem Eifer ein Verfolger' },
+      { book: 'mt', chapter: 5, verse: 17, note: 'Nicht auflösen, sondern erfüllen' },
+    ],
+  },
+  {
+    book: 'roem',
+    chapter: 10,
+    from: 11,
+    to: 21,
+    title: '„Wie lieblich sich die Füße“',
+    historicalShort:
+      'Eine Kette von vier Fragen über das Hören – und die Grundlage aller christlichen Missionstheologie.',
+    historicalLong:
+      'Die Kette von vier Fragen ist rückwärts gebaut: vom Anrufen zum Glauben, vom Glauben zum Hören, vom Hören zum Verkündigen, vom Verkündigen zur Sendung. Diese Form heißt in der antiken Rhetorik Kettenschluss und war ein bekanntes Mittel; jedes Glied setzt das nächste voraus. Am Ende steht nicht der Mensch, der sich entscheidet, sondern die Sendung.\n\nDas Zitat über die lieblichen Füße stammt aus dem Prophetenbuch Jesaja und beschreibt dort den Boten, der über die Berge kommt und den Fall Babylons meldet. Boten waren Läufer; die Nachricht eines Sieges oder einer Niederlage kam zu Fuß, und die Füße des Boten zu preisen war eine anschauliche Wendung. Paulus zitiert den Vers verkürzt und im Plural.\n\nDer siebzehnte Vers ist zum Grundsatz der reformatorischen Predigtlehre geworden: Der Glaube kommt aus dem Hören. Im Griechischen steht ein Wort, das sowohl das Hören als auch das Gehörte bedeutet, also die Botschaft selbst. Beide Bedeutungen sind gemeint und lassen sich im Deutschen nicht zugleich wiedergeben.\n\nDer Schluss stellt zwei Zitate nebeneinander, die verschieden ausfallen. Das eine aus Jesaja sagt, Gott sei von denen gefunden worden, die ihn nicht suchten. Das andere, ebenfalls aus Jesaja, beschreibt Gott mit ausgestreckten Händen gegenüber einem widersprechenden Volk. Das letzte Bild ist das eines Wartenden, nicht eines Richtenden – und es ist der letzte Satz vor dem Kapitel, das die Frage nach der Verstoßung verneint.',
+    reception:
+      'Der siebzehnte Vers ist zur Kurzformel der reformatorischen Theologie geworden. Luther leitete daraus die Vorordnung des Hörens vor dem Sehen ab und begründete damit die Zentralstellung der Predigt im Gottesdienst; die evangelischen Kirchenräume mit der Kanzel im Mittelpunkt sind eine Folge davon. Die katholische Auslegung stellt Wort und Sakrament nebeneinander.\n\nDie Kette der Fragen ist der Grundtext der Missionstheologie. Sie steht in den Gründungsschriften der Missionsgesellschaften des 18. und 19. Jahrhunderts, in der Weltmissionskonferenz von Edinburgh 1910 und in den Erklärungen zur Evangelisation. In der Auseinandersetzung um die Mission unter Juden wird sie ebenso angeführt wie in deren Ablehnung – die einen betonen die Notwendigkeit des Hörens, die anderen den Zusammenhang mit dem elften Kapitel.\n\nDas Wort von den lieblichen Füßen ist in die Ikonographie eingegangen und begegnet auf Darstellungen von Boten und Missionaren. In der Musik ist es mehrfach vertont worden, am bekanntesten in Händels Messias, wo es als Sopranarie steht.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Nachrichten kamen zu Fuß; Läufer legten Strecken von vielen Meilen zurück, und ihr Erscheinen auf einem Hügel war der erste Hinweis auf den Ausgang einer Schlacht. Die Füße des Boten zu preisen, war deshalb anschaulich.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Kettenschluss war ein bekanntes Mittel der Redekunst: Jedes Glied setzt das nächste voraus, bis eine Ursache erreicht ist. Zuhörer erkannten die Form und folgten ihr.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Lesen konnten wenige; Texte wurden vorgelesen, und Wissen wurde gehört. Dass der Glaube aus dem Hören kommt, beschrieb den einzigen Weg, auf dem die meisten Menschen etwas erfuhren.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Gesandter sprach mit der Vollmacht dessen, der ihn schickte; ohne Sendung war seine Rede belanglos. Die Frage nach der Sendung ist deshalb keine formale.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hoi podes ton euangelizomenon',
+        rendered: 'die Füße derer, die den Frieden verkündigen',
+        note: 'Ein Zitat aus Jesaja, wo es den Boten meint, der über die Berge kommt. Paulus zitiert verkürzt und im Plural.',
+      },
+      {
+        word: 'griech. ex akoes',
+        rendered: 'der Glaube aus der Predigt',
+        note: 'Das griechische Wort bedeutet zugleich das Hören und das Gehörte. Beide Bedeutungen sind gemeint und lassen sich im Deutschen nicht zugleich wiedergeben.',
+      },
+      {
+        word: 'griech. ean me apostalosin',
+        rendered: 'wo sie nicht gesandt werden',
+        note: 'Aus demselben Stamm kommt das Wort Apostel. Am Ende der Kette steht nicht der Entschluss des Verkündigers, sondern die Sendung.',
+      },
+      {
+        word: 'griech. exepetasa tas cheiras mou',
+        rendered: 'habe ich meine Hände ausgestreckt',
+        note: 'Die Haltung des Bittenden oder des Wartenden. Der letzte Satz des Kapitels zeigt Gott nicht richtend, sondern mit offenen Armen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Sendung geht der Verkündigung voraus und ist an die Kirche gebunden; daraus folgt die Ordnung des Amtes. Wort und Sakrament stehen nebeneinander.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Glaube kommt aus dem Hören – daraus folgt die Zentralstellung der Predigt. Luther leitete daraus die Vorordnung des Hörens vor dem Sehen ab.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Verkündigung geschieht im Gottesdienst und im Leben der Gemeinschaft; das Hören ist Teil einer umfassenderen Teilhabe. Das Bild der ausgestreckten Hände wird auf die Geduld Gottes bezogen.',
+      },
+      {
+        tradition: 'Missionstheologische Rezeption',
+        text: 'Die Kette der Fragen ist der Grundtext der neuzeitlichen Mission und steht in den Gründungsschriften der Missionsgesellschaften. In der Frage der Mission unter Juden wird sie von beiden Seiten angeführt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Kette folgt der rhetorischen Form des Kettenschlusses. Der Schluss stellt zwei Jesajazitate nebeneinander, deren zweites Gott als Wartenden zeigt – unmittelbar vor dem Kapitel, das die Verstoßung Israels verneint.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 52, verse: 7, note: 'Wie lieblich sind die Füße der Boten' },
+      { book: 'jes', chapter: 65, verse: 1, note: 'Ich bin gefunden von denen' },
+      { book: 'joel', chapter: 3, verse: 5, note: 'Wer den Namen des HERRN anruft' },
+      { book: 'roem', chapter: 11, verse: 1, note: 'Die Frage nach der Verstoßung' },
+    ],
+  },
+  {
+    book: 'roem',
+    chapter: 15,
+    from: 1,
+    to: 13,
+    title: '„nehmet euch untereinander auf“',
+    historicalShort:
+      'Vier Schriftzitate über die Völker – und die Zusammenfassung dessen, worauf der ganze Brief zuläuft.',
+    historicalLong:
+      'Der Abschnitt schließt den Streit über Speisen und Tage ab und zieht die Folgerung. Paulus rechnet sich ausdrücklich zu den Starken und verlangt von ihnen das Tragen. Das Wort dafür meint sowohl aushalten als auch mittragen; beide Bedeutungen sind hier möglich, und die Übersetzungen entscheiden verschieden.\n\nDas Christuszitat ist ein Psalmvers, der einem Leidenden in den Mund gelegt wird. Bemerkenswert ist die Begründung, die Paulus anfügt: Was in der Schrift steht, sei zur Belehrung geschrieben. Damit ist ausgesprochen, was seine ganze Schriftverwendung voraussetzt – dass die Schriften Israels für die Gemeinden aus den Völkern gelten.\n\nDie vier Zitate im neunten bis zwölften Vers sind sorgfältig ausgewählt: eines aus dem Gesetz, eines aus den Propheten, zwei aus den Psalmen. Alle vier nennen die Völker, und alle vier stellen sie neben Israel, nicht an seine Stelle. Diese Zusammenstellung ist die Antwort auf den Streit des vierzehnten Kapitels: Wer wen aufnimmt, entscheidet sich nicht an Speisen, sondern an dem, was die Schrift über die Völker sagt.\n\nDer achte Vers ist einer der klarsten des Briefes zur Frage nach Israel. Christus sei ein Diener der Beschneidung geworden – ein Diener also derer, die den Bund tragen –, um die Zusagen an die Väter zu bestätigen. Nicht die Aufhebung der Zusagen wird behauptet, sondern ihre Bestätigung. Das Wort für bestätigen stammt aus dem Vertragsrecht.',
+    reception:
+      'Der Satz, dass alles Frühere zur Belehrung geschrieben sei, ist zur Grundlage der christlichen Verwendung des Alten Testaments geworden. Er steht in den Bekenntnisschriften, in Katechismen und in den Auseinandersetzungen mit allen Versuchen, die Schriften Israels abzustoßen – von Marcion im zweiten Jahrhundert bis zu den Deutschen Christen im 20. Jahrhundert.\n\nDie Aufforderung, einander aufzunehmen, wie Christus aufgenommen hat, ist zum Leitwort ökumenischer Gespräche und der Gastfreundschaft am Abendmahlstisch geworden. Sie wird in Erklärungen zur Kirchengemeinschaft angeführt und in der Auseinandersetzung um die Zulassung zum Abendmahl von beiden Seiten gebraucht.\n\nDie vier Zitate über die Völker haben in der Missionsgeschichte gewirkt und sind zugleich im christlich-jüdischen Gespräch wichtig geworden, weil sie die Völker neben Israel stellen und nicht an seine Stelle. Der achte Vers mit seiner Aussage über die Bestätigung der Zusagen gehört zu den regelmäßig zitierten Stellen in den kirchlichen Erklärungen seit 1965.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Verträge wurden vor Zeugen bekräftigt und mit einem Siegel versehen; erst dann waren sie einklagbar. Eine mündliche Zusage galt, wurde aber durch den Akt unangreifbar.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer einen Gast aufnahm, übernahm Verantwortung für ihn und trat für ihn ein. Die Aufforderung, einander aufzunehmen, meint deshalb mehr als Duldung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Erwartung, dass die Völker zum Zion kommen und Gott loben, gehört zur prophetischen Hoffnung. Die vier Zitate stellen die Völker neben Israel und nicht an seine Stelle.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Das Wort für Tragen wurde von Lastträgern gebraucht, die Waren auf dem Rücken schleppten. Es meint Aushalten und Mittragen zugleich.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. bastazein',
+        rendered: 'der Schwachen Gebrechlichkeit tragen',
+        note: 'Das Wort meint aushalten und mittragen zugleich; beide Bedeutungen sind möglich. Es stammt aus der Welt der Lastträger.',
+      },
+      {
+        word: 'griech. eis ten hemeteran didaskalian',
+        rendered: 'uns zur Lehre geschrieben',
+        note: 'Der Satz begründet, warum die Schriften Israels für Gemeinden aus den Völkern gelten. Er ist zur Grundlage der christlichen Verwendung des Alten Testaments geworden.',
+      },
+      {
+        word: 'griech. diakonon peritomes',
+        rendered: 'ein Diener gewesen der Juden',
+        note: 'Wörtlich ein Diener der Beschneidung. Der Zweck wird ausdrücklich genannt: die Zusagen an die Väter zu bestätigen, nicht sie abzulösen.',
+      },
+      {
+        word: 'griech. bebaiosai',
+        rendered: 'zu bestätigen die Verheißungen',
+        note: 'Ein Ausdruck des Vertragsrechts für die Bekräftigung einer bestehenden Zusage. Er setzt voraus, dass sie gilt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Einheit der Kirche gründet in der Aufnahme durch Christus und nicht in der Übereinstimmung in allen Fragen. Die Schriften Israels bleiben Wort Gottes für die Kirche.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Satz über die Schrift als Lehre begründet die Geltung des Alten Testaments und wurde gegen jede Abstoßung angeführt. Das Tragen der Schwachen ist Werk der Liebe und kein Zugeständnis.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Aufnahme durch Christus ist Grund und Maß der Gemeinschaft; sie geschieht in der Liturgie. Die Völker treten in ein Lob ein, das schon gesungen wird.',
+      },
+      {
+        tradition: 'Ökumenische Rezeption',
+        text: 'Die Aufforderung, einander aufzunehmen, ist Leitwort in Gesprächen über Kirchengemeinschaft und in der Auseinandersetzung um die Zulassung zum Abendmahl. Beide Seiten führen sie an.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die vier Zitate stammen aus Gesetz, Propheten und Psalmen und nennen sämtlich die Völker neben Israel. Der achte Vers spricht von der Bestätigung der Zusagen an die Väter und nicht von ihrer Ablösung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 69, verse: 10, note: 'Die Schmähungen sind auf mich gefallen' },
+      { book: '5mo', chapter: 32, verse: 43, note: 'Freut euch, ihr Heiden' },
+      { book: 'jes', chapter: 11, verse: 10, note: 'Die Wurzel Isais' },
+      { book: 'roem', chapter: 14, verse: 1, note: 'Der Streit, der hier endet' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'roem',
+    chapter: 15,
+    from: 14,
+    to: 33,
+    title: '„auf daß ich nicht auf einen fremden Grund baute“',
+    historicalShort:
+      'Der Reiseplan, der Zweck des Briefes – und die Sorge vor dem, was in Jerusalem auf ihn wartet.',
+    historicalLong:
+      'Hier nennt Paulus, warum er schreibt. Er hat sein Arbeitsgebiet im Osten für abgeschlossen erklärt – von Jerusalem bis nach Illyrien, dem heutigen Albanien und Kroatien – und sucht einen Ausgangspunkt für den Westen. Rom soll ihn geleiten, ein Wort, das im Reiseverkehr die Ausstattung mit Vorräten, Empfehlungen und Begleitern bezeichnet. Der Brief ist also auch ein Antrag.\n\nDie Beschreibung des eigenen Dienstes benutzt Kultsprache. Paulus nennt sich einen Priester, der den Dienst am Evangelium versieht, damit die Völker eine wohlgefällige Opfergabe werden. Das ist im Neuen Testament ohne Gegenstück: Sonst gebraucht Paulus keine Priestersprache für sich. Die Wortwahl ist hier durchgehend kultisch und beschreibt die Mission als Opferhandlung.\n\nDer Grundsatz, nicht auf fremdem Grund zu bauen, wird mit einem Jesajazitat begründet. Er erklärt zugleich, warum Paulus so lange nicht nach Rom gekommen ist: Dort war das Evangelium schon. Der Satz ist in der Missionsgeschichte ein Streitpunkt geworden, weil er gegen die Arbeit in Gebieten spricht, in denen bereits Kirchen bestehen.\n\nDer Schluss ist von einer Sorge bestimmt, die sich als berechtigt erwies. Paulus bittet um Fürbitte, dass er vor den Ungläubigen in Judäa gerettet werde und dass seine Sammlung angenommen werde. Beides fiel anders aus, als er hoffte: Nach der Apostelgeschichte wurde er in Jerusalem verhaftet und kam als Gefangener nach Rom. Ob die Sammlung angenommen wurde, wird nirgends berichtet.',
+    reception:
+      'Dieser Arbeitsgrundsatz ist zum Dauerstreit der Missionsgeschichte geworden. Angeführt wurde er gegen die katholische Arbeit in orthodoxen Gebieten, gegen protestantische in katholischen Ländern und im 20. Jahrhundert gegen westliche Missionsgesellschaften in Ländern mit alten Kirchen. Die Gegenposition verweist darauf, dass hier ein persönlicher Arbeitsgrundsatz steht und keine allgemeine Regel.\n\nDie Priestersprache in der Beschreibung des eigenen Dienstes ist in der katholischen Amtstheologie aufgenommen worden; die Wendung vom priesterlichen Dienst am Evangelium steht in Dokumenten über das Priesteramt. Die reformatorische Auslegung liest sie als Bild und leitet daraus kein Opferpriestertum ab.\n\nDie Sorge um Jerusalem hat die Forschung zu der Frage geführt, was aus der Sammlung wurde. Die Apostelgeschichte erzählt die Reise ausführlich, erwähnt die Sammlung aber nur beiläufig und sagt nichts über ihre Annahme. Manche schließen daraus, dass sie zurückgewiesen wurde; andere halten das Schweigen für ein Zeichen dafür, dass sie unstrittig war. Entschieden ist die Frage nicht.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Illyrien lag an der Ostküste der Adria und markierte den Rand des griechischsprachigen Gebiets. Von Jerusalem bis dorthin sind es zu Land und zu Wasser etwa zweitausend Kilometer.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer eine Reise unterstützte, gab Vorräte, Geld, Empfehlungsschreiben und oft Begleiter mit; dafür gab es ein eigenes Wort. Eine Gemeinde als Ausgangspunkt zu gewinnen, war eine wirtschaftliche Frage.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Erwartung, dass die Völker Gaben nach Jerusalem bringen, gehört zur prophetischen Hoffnung. Die Sammlung des Paulus konnte in diesem Licht gelesen werden und war deshalb mehr als Geld.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Judäa war in diesen Jahren unruhig; Aufstandsbewegungen wuchsen, und ein Jahrzehnt später begann der Krieg. Wer aus der Diaspora mit Geld anreiste, konnte leicht in Verdacht geraten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hierourgounta to euangelion',
+        rendered: 'priesterlich zu warten des Evangeliums',
+        note: 'Die einzige Stelle, an der Paulus Priestersprache auf den eigenen Dienst anwendet. Die Völker erscheinen dabei als Opfergabe.',
+      },
+      {
+        word: 'griech. ep allotrion themelion',
+        rendered: 'auf einen fremden Grund',
+        note: 'Ein Bild aus dem Bauwesen. Der Grundsatz erklärt, warum Paulus so lange nicht nach Rom kam, und ist in der Missionsgeschichte umstritten geblieben.',
+      },
+      {
+        word: 'griech. propemphthenai',
+        rendered: 'von euch dorthin geleitet werden',
+        note: 'Ein Fachwort des Reiseverkehrs für die Ausstattung mit Vorräten, Geld und Begleitern. Der Brief ist damit auch ein Antrag.',
+      },
+      {
+        word: 'griech. synagonisasthai',
+        rendered: 'daß ihr helfet kämpfen mit Beten',
+        note: 'Ein Wort aus dem Wettkampf für das Mitkämpfen an der Seite eines anderen. Fürbitte erscheint als Beteiligung, nicht als Wunsch.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der priesterliche Dienst am Evangelium wird auf das Amt bezogen; Konzilsdokumente über das Priestertum führen die Wendung an. Die Sammlung gilt als Urbild kirchlicher Solidarität.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Priestersprache ist Bild und begründet kein Opferpriestertum. Der Grundsatz vom fremden Grund gilt als persönliche Arbeitsregel des Apostels.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Grundsatz, nicht auf fremdem Grund zu bauen, wird als Regel kirchlicher Zuständigkeit gelesen und in der Auseinandersetzung um Mission in orthodoxen Gebieten angeführt. Die Ordnung der Kirchen soll gewahrt bleiben.',
+      },
+      {
+        tradition: 'Missionstheologische Debatte',
+        text: 'Der Vers wird gegen Mission in Gebieten mit bestehenden Kirchen angeführt und ebenso bestritten. Die Auseinandersetzung darüber gehört zu den Dauerthemen der ökumenischen Bewegung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt nennt den Zweck des Briefes: Rückhalt für die Reise nach Spanien. Die Sorge um Jerusalem erwies sich als berechtigt – die Apostelgeschichte erzählt von der Verhaftung und schweigt über die Annahme der Sammlung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 21, verse: 33, note: 'Die Verhaftung in Jerusalem' },
+      { book: 'jes', chapter: 52, verse: 15, note: 'Welchen nicht verkündigt ward' },
+      { book: '2kor', chapter: 9, verse: 12, note: 'Die Sammlung und ihr Zweck' },
+      { book: 'roem', chapter: 1, verse: 13, note: 'Bisher verhindert' },
+    ],
+  },
+  {
+    book: 'roem',
+    chapter: 16,
+    from: 1,
+    to: 16,
+    title: '„welche sind berühmte Apostel“',
+    historicalShort:
+      'Sechsundzwanzig Namen aus einer Gemeinde, die Paulus nie besucht hatte – darunter neun Frauen.',
+    historicalLong:
+      'Diese Namensliste ist die wichtigste sozialgeschichtliche Quelle über eine frühe Gemeinde, die es gibt. Sechsundzwanzig Personen werden genannt, davon neun Frauen; mehrere Namen sind aus römischen Sklaven- und Freigelassenenlisten bekannt, andere weisen auf griechische oder jüdische Herkunft. Zwei Haushalte werden nach ihren Herren genannt – ein Zeichen, dass die Betreffenden unfrei waren. Die Gemeinde bestand also aus mehreren Gruppen in verschiedenen Häusern und über die sozialen Schichten hinweg.\n\nPhöbe wird zuerst genannt und mit zwei Titeln versehen. Der erste ist das Wort, aus dem später Diakon wurde; es steht hier ohne weibliche Endung, also in derselben Form wie bei Männern. Der zweite bezeichnet die Patronin – eine Frau, die einen Verein oder eine Gruppe wirtschaftlich unterstützt und rechtlich vertritt. Vermutlich hat sie den Brief nach Rom gebracht und ihn dort vorgelesen und erklärt.\n\nDer siebte Vers hat eine eigene Geschichte. Andronikus und die zweite Person werden als angesehen unter den Aposteln bezeichnet. Der Name lautet im Griechischen Junia – ein verbreiteter Frauenname; die männliche Form Junias ist als Name nirgends belegt. Alle Handschriften und alle Kirchenväter bis ins Mittelalter lasen eine Frau; Johannes Chrysostomus rühmt sie ausdrücklich. Erst in der Neuzeit wurde daraus in Ausgaben und Übersetzungen ein Mann, weil eine Apostelin nicht vorstellbar schien. Die heutigen Ausgaben sind zur alten Lesart zurückgekehrt.\n\nPriska und Aquila werden mit ihr zuerst genannt, und in vier von sechs Nennungen im Neuen Testament steht ihr Name vor seinem – ungewöhnlich in einer Zeit, in der die Reihenfolge Rang anzeigte. Sie waren nach der Apostelgeschichte aus Rom ausgewiesen worden, hatten in Korinth mit Paulus gearbeitet und waren nach Rom zurückgekehrt.',
+    reception:
+      'Die Liste ist im 20. Jahrhundert zum wichtigsten Text über die Stellung von Frauen in den frühen Gemeinden geworden. Neun Frauen werden genannt, mehrere mit Tätigkeitsangaben; das Wort für Arbeiten, das Paulus für vier von ihnen gebraucht, verwendet er sonst für seine eigene Verkündigungsarbeit. In den Auseinandersetzungen um Ordination und Leitungsämter wird die Stelle regelmäßig angeführt.\n\nDer Fall Junia ist ein Musterbeispiel dafür, wie Auslegung einen Text verändern kann. Von der Alten Kirche bis ins Mittelalter las man eine Frau; ab dem 13. Jahrhundert und verstärkt in der Neuzeit wurde daraus ein Mann, ohne dass sich am Text etwas geändert hätte. Erst seit den 1970er Jahren ist die alte Lesart wiederhergestellt und in den kritischen Ausgaben durchgesetzt.\n\nÜber Phöbe ist eine eigene Literatur entstanden. Dass sie mit dem Titel bezeichnet wird, aus dem das Diakonenamt wurde, hat in den Debatten über die Weihe von Frauen zum Diakonat Gewicht; eine päpstliche Kommission hat die Frage seit 2016 zweimal untersucht. Die Bezeichnung als Patronin zeigt zudem, dass sie über eigenes Vermögen verfügte.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine Patronin unterstützte einen Verein wirtschaftlich und vertrat ihn nach außen; Inschriften nennen Frauen in dieser Rolle bei Berufsvereinen und Synagogen. Das Amt setzte eigenes Vermögen voraus.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Haushalte wurden nach ihrem Herrn benannt; wer als von jemandes Gesinde bezeichnet wird, war unfrei oder freigelassen. Zwei solche Gruppen erscheinen in der Liste.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Kenchreä war der östliche Hafen von Korinth; von dort fuhren Schiffe in die Ägäis. Eine Reise nach Rom führte über Land und See und dauerte Wochen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Priska und Aquila waren Zeltmacher wie Paulus; Werkstätten dienten zugleich als Treffpunkt und Wohnung. Handwerksbetriebe waren Orte, an denen sich Gruppen bildeten.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. diakonon tes ekklesias',
+        rendered: 'im Dienste der Gemeinde',
+        note: 'Das Wort, aus dem später Diakon wurde, steht hier in derselben Form wie bei Männern. Es bezeichnet eine Aufgabe in der Gemeinde von Kenchreä.',
+      },
+      {
+        word: 'griech. prostatis',
+        rendered: 'sie hat auch vielen Beistand getan',
+        note: 'Der Titel der Patronin, die einen Verein wirtschaftlich unterstützt und rechtlich vertritt. Er setzt eigenes Vermögen und Ansehen voraus.',
+      },
+      {
+        word: 'griech. Iounian',
+        rendered: 'den Junias',
+        note: 'Der Name lautet im Griechischen Junia, ein verbreiteter Frauenname; die männliche Form ist nirgends belegt. Alle alten Handschriften und Väter lasen eine Frau.',
+      },
+      {
+        word: 'griech. episemoi en tois apostolois',
+        rendered: 'welche sind berühmte Apostel',
+        note: 'Der Ausdruck kann heißen angesehen unter den Aposteln oder angesehen bei den Aposteln. Die alte Auslegung las durchweg die erste Bedeutung.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Phöbe und die genannten Frauen zeigen die Beteiligung von Frauen am Aufbau der frühen Gemeinden. Die Frage der Weihe von Frauen zum Diakonat ist seit 2016 zweimal von einer päpstlichen Kommission untersucht worden.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Amt der Diakonin hat in den östlichen Kirchen bis ins Mittelalter bestanden und wird gegenwärtig wieder erörtert. Junia wird als Heilige verehrt, und Johannes Chrysostomus rühmt sie ausdrücklich.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Liste zeigt eine Gemeinde ohne festgelegte Ämterordnung, in der Aufgaben nach Gaben verteilt sind. Daraus ist in der Neuzeit ein Argument für die Ordination von Frauen geworden.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Der Fall Junia gilt als Musterbeispiel dafür, wie Auslegung einen Text verändert: Aus einer Apostelin wurde in der Neuzeit ein Mann, ohne dass sich der Wortlaut änderte. Seit den 1970er Jahren ist die alte Lesart wiederhergestellt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Liste ist die wichtigste sozialgeschichtliche Quelle über eine frühe Gemeinde: sechsundzwanzig Namen, neun Frauen, mehrere Haushalte, Freie und Unfreie. Dass Paulus so viele Personen in einer Gemeinde kennt, die er nie besucht hat, wird verschieden erklärt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'apg', chapter: 18, verse: 2, note: 'Aquila und Priscilla in Korinth' },
+      { book: '1kor', chapter: 16, verse: 19, note: 'Die Gemeinde in ihrem Haus' },
+      { book: 'apg', chapter: 18, verse: 26, note: 'Priscilla als Lehrerin' },
+      { book: 'phil', chapter: 4, verse: 3, note: 'Frauen, die mitgekämpft haben' },
+    ],
+  },
+  {
+    book: 'roem',
+    chapter: 16,
+    from: 17,
+    to: 27,
+    title: '„Ich, Tertius, grüße euch“',
+    historicalShort:
+      'Der Schreiber meldet sich zu Wort – und ein Schlusslobpreis, der in den Handschriften an drei verschiedenen Stellen steht.',
+    historicalLong:
+      'Der zweiundzwanzigste Vers ist eine Seltenheit: Der Schreiber, der den Brief nach Diktat aufgenommen hat, grüßt in eigener Sache. Briefe wurden fast immer diktiert; ein Schreiber kostete Geld und war ausgebildet, und die Arbeit war langsam, weil auf Papyrus mit Rohrfeder geschrieben wurde. Dass ein Schreiber selbst zu Wort kommt, ist im Neuen Testament einmalig und in der antiken Briefliteratur selten.\n\nDie Namen im Schlussteil erlauben eine Ortsbestimmung. Gajus als Gastgeber und Erastus als Stadtkämmerer weisen nach Korinth; in Korinth ist eine Pflasterinschrift gefunden worden, die einen Erastus als Stifter nennt, der ein städtisches Amt bekleidete. Ob es dieselbe Person ist, lässt sich nicht beweisen, ist aber möglich – und wäre der einzige archäologische Beleg für eine im Neuen Testament genannte Person außerhalb der Herrscherhäuser.\n\nDie Warnung vor denen, die Spaltungen anrichten, unterbricht die Grüße und fällt im Ton aus dem Rahmen. Ihr Vorwurf ist nicht Irrlehre im Einzelnen, sondern dass sie ihrem Bauch dienen und mit schönen Worten arbeiten – beides Vorwürfe aus der antiken Polemik gegen Wanderredner. Manche Ausleger halten den Abschnitt für später eingefügt.\n\nDer Schlusslobpreis ist textgeschichtlich der bewegteste Abschnitt des Neuen Testaments. Er steht in den Handschriften am Ende des vierzehnten, des fünfzehnten oder des sechzehnten Kapitels, in einigen an zwei Stellen, in anderen gar nicht. Das hängt mit Marcion zusammen, der im zweiten Jahrhundert eine gekürzte Fassung des Briefes verbreitete, die nach dem vierzehnten Kapitel endete. Aus den Spuren dieser Kürzung erklärt sich, warum der Römerbrief in verschiedenen Längen umlief.',
+    reception:
+      'Der Gruß des Tertius ist zum Anknüpfungspunkt für die Frage geworden, wie die Briefe des Neuen Testaments entstanden sind. Die Forschung hat daraus geschlossen, dass Schreiber mehr als Werkzeuge waren und dass Diktat, Nachschrift und Überarbeitung ineinandergriffen; das hat Folgen für die Frage nach der Verfasserschaft der umstrittenen Briefe.\n\nDie Erastus-Inschrift in Korinth gehört zu den bekanntesten archäologischen Funden mit möglichem Bezug zum Neuen Testament. Sie wurde 1929 gefunden und nennt einen Erastus, der das Pflaster auf eigene Kosten legen ließ. Ob es sich um dieselbe Person handelt, wird seit Jahrzehnten diskutiert; das Amt, das die Inschrift nennt, entspricht nicht genau dem im Brief genannten.\n\nDie Textgeschichte des Schlusses hat die neutestamentliche Textkritik geprägt. Sie zeigt, dass Briefe im zweiten Jahrhundert in verschiedenen Fassungen umliefen und dass Kürzungen wie die Marcions Spuren hinterlassen haben. Der Fall gilt als Musterbeispiel dafür, wie sich Textüberlieferung rekonstruieren lässt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Geschrieben wurde mit Rohrfeder und Rußtinte auf Papyrus; ein ausgebildeter Schreiber kostete Geld, und ein langer Brief brauchte Tage. Diktieren war die übliche Form des Schreibens.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Stadtkämmerer verwaltete die Kasse einer Stadt und war ein angesehener Beamter. Dass ein Gemeindeglied dieses Amt bekleidete, sagt etwas über die soziale Streubreite der Gemeinde.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wanderredner wurden regelmäßig beschuldigt, ihrem Bauch zu dienen und mit schönen Worten zu arbeiten; die Vorwürfe gehörten zum festen Bestand der Polemik. Wer sie erhob, benutzte eine bekannte Form.',
+      },
+      {
+        aspect: 'raum',
+        text: 'In Korinth wurde 1929 eine Pflasterinschrift gefunden, die einen Erastus als Stifter nennt. Ob es dieselbe Person ist, wird seit Jahrzehnten diskutiert.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ho grapsas ten epistolen',
+        rendered: 'der ich diesen Brief geschrieben habe',
+        note: 'Der Schreiber grüßt in eigener Sache – im Neuen Testament einmalig. Briefe wurden fast immer diktiert, und Schreiber blieben sonst ungenannt.',
+      },
+      {
+        word: 'griech. oikonomos tes poleos',
+        rendered: 'der Stadt Rentmeister',
+        note: 'Der Verwalter der städtischen Kasse, ein angesehenes Amt. Eine Inschrift aus Korinth nennt einen Erastus als Stifter eines Pflasters.',
+      },
+      {
+        word: 'griech. te heauton koilia',
+        rendered: 'sondern ihrem Bauche',
+        note: 'Ein Vorwurf aus der antiken Polemik gegen Wanderredner. Er zielt auf den Lebensunterhalt und nicht auf die Lehre.',
+      },
+      {
+        word: 'griech. mysteriou chronois aioniois sesigemenou',
+        rendered: 'das von der Welt her verschwiegen gewesen ist',
+        note: 'Der Schlusslobpreis steht in den Handschriften an drei verschiedenen Stellen und fehlt in einigen ganz. Das hängt mit einer gekürzten Fassung zusammen, die im zweiten Jahrhundert umlief.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Schluss fasst zusammen, was der Brief entfaltet hat: das offenbarte Geheimnis und den Gehorsam des Glaubens unter allen Völkern. Die Warnung vor Spaltungen gehört zur Sorge um die Einheit.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Lobpreis kehrt zum Anfang des Briefes zurück und schließt den Bogen. Die Warnung gilt denen, die neben der empfangenen Lehre Trennungen anrichten.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Geheimnis, das offenbart wird, ist der Plan Gottes für alle Völker; die Liturgie nimmt den Lobpreis auf. Einheit ist Gabe und Aufgabe zugleich.',
+      },
+      {
+        tradition: 'Textgeschichtliche Einordnung',
+        text: 'Marcion verbreitete im zweiten Jahrhundert eine Fassung des Briefes, die nach dem vierzehnten Kapitel endete. Die wandernde Stellung des Schlusslobpreises in den Handschriften ist eine Spur dieser Kürzung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die genannten Namen weisen nach Korinth als Ort der Abfassung. Der Gruß des Schreibers zeigt, dass Diktat, Nachschrift und Überarbeitung ineinandergriffen – eine Beobachtung mit Folgen für die Frage nach der Verfasserschaft anderer Briefe.',
+      },
+    ],
+    crossRefs: [
+      { book: '1kor', chapter: 1, verse: 14, note: 'Gajus in Korinth getauft' },
+      { book: 'apg', chapter: 19, verse: 22, note: 'Erastus als Mitarbeiter' },
+      { book: 'roem', chapter: 1, verse: 5, note: 'Der Gehorsam des Glaubens am Anfang' },
+      { book: 'gal', chapter: 6, verse: 11, note: 'Paulus schreibt mit eigener Hand' },
+    ],
+  },
 ];
 
 /**
