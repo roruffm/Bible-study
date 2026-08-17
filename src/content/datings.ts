@@ -2657,6 +2657,31 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 54 oder 55 n. Chr.',
     epoch: 'urkirche',
   },
+  '1kor 12,1': {
+    events: 'Ephesus, Antwort auf Nachrichten und Anfragen aus Korinth',
+    written: 'um 54 oder 55 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1kor 14,1': {
+    events: 'Ephesus, Antwort auf Nachrichten und Anfragen aus Korinth',
+    written: 'um 54 oder 55 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1kor 15,12': {
+    events: 'Ephesus, Antwort auf Nachrichten und Anfragen aus Korinth',
+    written: 'um 54 oder 55 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1kor 15,35': {
+    events: 'Ephesus, Antwort auf Nachrichten und Anfragen aus Korinth',
+    written: 'um 54 oder 55 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1kor 16,1': {
+    events: 'Ephesus, Antwort auf Nachrichten und Anfragen aus Korinth',
+    written: 'um 54 oder 55 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
