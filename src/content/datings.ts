@@ -1877,6 +1877,76 @@ export const DATINGS: Record<string, Dating> = {
     written: 'zwischen 50 und 100 n. Chr.',
     epoch: 'urkirche',
   },
+  '2tim 1,1': {
+    events: 'Rom, angenommene zweite Gefangenschaft, um 64–67 n. Chr.',
+    written: 'zwischen 65 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '2tim 1,8': {
+    events: 'Rom, angenommene zweite Gefangenschaft, um 64–67 n. Chr.',
+    written: 'zwischen 65 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '2tim 2,1': {
+    events: 'Rom, angenommene zweite Gefangenschaft, um 64–67 n. Chr.',
+    written: 'zwischen 65 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '2tim 2,14': {
+    events: 'Rom, angenommene zweite Gefangenschaft, um 64–67 n. Chr.',
+    written: 'zwischen 65 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '2tim 3,1': {
+    events: 'Rom, angenommene zweite Gefangenschaft, um 64–67 n. Chr.',
+    written: 'zwischen 65 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '2tim 4,1': {
+    events: 'Rom, angenommene zweite Gefangenschaft, um 64–67 n. Chr.',
+    written: 'zwischen 65 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  '2tim 4,9': {
+    events: 'Rom, angenommene zweite Gefangenschaft, um 64–67 n. Chr.',
+    written: 'zwischen 65 und 110 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'kol 1,1': {
+    events: 'Kolossä im Lykostal, um 60 n. Chr.',
+    written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'kol 1,21': {
+    events: 'Kolossä im Lykostal, um 60 n. Chr.',
+    written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'kol 2,1': {
+    events: 'Kolossä im Lykostal, um 60 n. Chr.',
+    written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'kol 2,16': {
+    events: 'Kolossä im Lykostal, um 60 n. Chr.',
+    written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'kol 3,1': {
+    events: 'Kolossä im Lykostal, um 60 n. Chr.',
+    written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'kol 3,18': {
+    events: 'Kolossä im Lykostal, um 60 n. Chr.',
+    written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'kol 4,1': {
+    events: 'Kolossä im Lykostal, um 60 n. Chr.',
+    written: 'zwischen 60 und 80 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
