@@ -2037,6 +2037,61 @@ export const DATINGS: Record<string, Dating> = {
     written: 'zwischen 63 und 110 n. Chr., je nach Verfasserfrage',
     epoch: 'urkirche',
   },
+  '1petr 1,1': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 1,13': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 2,11': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 2,18': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 3,1': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 3,8': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 3,18': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 4,1': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 4,12': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 5,1': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
+  '1petr 5,8': {
+    events: 'Gemeinden in Nord- und Innerkleinasien',
+    written: 'zwischen 65 und 95 n. Chr.',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
