@@ -36796,6 +36796,413 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'roem', chapter: 13, verse: 11, note: 'Die Stunde ist da' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: '1kor',
+    chapter: 8,
+    from: 1,
+    to: 13,
+    title: '„Das Wissen bläst auf, aber die Liebe bessert“',
+    historicalShort:
+      'Der Streit um das Opferfleisch – eine Frage, an der Zugehörigkeit, Geschäft und Gewissen zugleich hingen.',
+    historicalLong:
+      'Fleisch war in einer antiken Stadt fast immer Opferfleisch. Nur ein Teil des Tieres kam auf den Altar, der Rest wurde von den Priestern verkauft oder bei Festmahlzeiten in den Tempelbezirken gegessen; in Korinth sind Speiseräume im Bezirk des Asklepios ausgegraben worden. Wer Fleisch aß, aß mit hoher Wahrscheinlichkeit Opferfleisch – und wer Einladungen ausschlug, verlor Geschäftsverbindungen und Ansehen.\n\nDie Frage war deshalb keine des Speiseplans. Vereine, Zünfte und Nachbarschaften feierten mit Opfern; ein Handwerker, der nicht kam, fiel aus dem Netz. Das erklärt, warum die Sache im Brief so viel Raum einnimmt und im Aposteldekret der Apostelgeschichte eigens geregelt wird.\n\nDie ersten Verse sind offenbar ein Gespräch mit Zitaten. Wir alle haben Erkenntnis, ein Götze ist nichts, es gibt nur einen Gott – das sind Sätze, die die Korinther geschrieben haben dürften. Paulus bestreitet sie nicht; er stellt ihnen einen anderen Maßstab entgegen. Der Satz vom Wissen, das aufbläst, und der Liebe, die aufbaut, ist ein Wortspiel: beide Verben kommen aus dem Bauwesen und der Backstube.\n\nDer sechste Vers ist eine Bekenntnisformel, die das jüdische Bekenntnis zur Einzigkeit Gottes aufnimmt und teilt: ein Gott, der Vater, und ein Herr, Jesus Christus. Beide Titel stammen aus demselben Bekenntnis, in dem Gott Herr genannt wird. Diese Aufspaltung ist theologiegeschichtlich außerordentlich früh und gehört zu den ältesten Zeugnissen dafür, wie Christus in das Bekenntnis zum einen Gott hineingenommen wurde.',
+    reception:
+      'Der Grundsatz, dass die Liebe der Erkenntnis vorgeordnet ist, gehört zu den meistzitierten Sätzen des Briefes. Er steht in der Auseinandersetzung über theologische Bildung, über Rechthaberei in Gemeinden und in der Ethik überhaupt; Augustinus machte ihn zu einem Grundsatz seiner Schriftauslegung.\n\nDie Rücksicht auf das schwache Gewissen ist zur Grundregel der christlichen Freiheitslehre geworden. Sie kehrt im Römerbrief wieder und wird in Streitfragen über Alkohol, Kleidung, Musik und Lebensstil angeführt. Kritisiert wird, dass die Regel dem Empfindlichsten die Entscheidung überlässt; die Gegenposition verweist darauf, dass Paulus die Freiheit ausdrücklich bejaht und nur ihre Ausübung begrenzt.\n\nDie Bekenntnisformel im sechsten Vers ist in den trinitarischen Auseinandersetzungen des vierten Jahrhunderts vielfach angeführt worden – von beiden Seiten. Wer die Gottheit Christi betonte, verwies auf die Zuordnung zum einen Gott; die Gegenseite auf die Unterscheidung zwischen Gott und Herr. Das Konzil von Nizäa formulierte 325 in erkennbarer Anlehnung an diesen Vers.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Nur ein Teil des Opfertieres kam auf den Altar; der Rest wurde verkauft oder bei Festmahlzeiten gegessen. Wer Fleisch kaufte, kaufte mit hoher Wahrscheinlichkeit Opferfleisch.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Vereine, Zünfte und Nachbarschaften feierten mit Opfern und gemeinsamen Mahlzeiten. Ein Handwerker, der fernblieb, verlor Aufträge und Verbindungen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'In Korinth sind im Bezirk des Asklepios Speiseräume mit steinernen Liegen ausgegraben worden. Man aß dort in kleinen Gruppen, und Einladungen wurden schriftlich ausgesprochen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Das tägliche jüdische Bekenntnis nennt Gott einen und Herrn. Die Formel im sechsten Vers teilt beide Titel auf Gott und Christus auf – ein außerordentlich früher Vorgang.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. he gnosis physioi',
+        rendered: 'Das Wissen bläst auf',
+        note: 'Ein Wortspiel: Das eine Verb kommt vom Aufgehen des Teigs, das andere vom Bauen. Wissen macht groß, Liebe macht fest.',
+      },
+      {
+        word: 'griech. eidolothyton',
+        rendered: 'von dem Götzenopfer',
+        note: 'Ein Wort, das offenbar in jüdisch-christlichen Kreisen gebildet wurde; die Umwelt sprach neutral vom Geopferten. Schon die Bezeichnung enthält ein Urteil.',
+      },
+      {
+        word: 'griech. heis theos ho pater',
+        rendered: 'nur einen Gott, den Vater',
+        note: 'Die Formel nimmt das tägliche jüdische Bekenntnis auf und teilt seine Titel: ein Gott und ein Herr. Sie gehört zu den frühesten Zeugnissen dieser Zuordnung.',
+      },
+      {
+        word: 'griech. syneidesis asthenes',
+        rendered: 'weil es so schwach ist',
+        note: 'Das Gewissen erscheint hier als Urteilsvermögen, das trainiert oder untrainiert sein kann. Schwach heißt unsicher, nicht falsch.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das Gewissen ist auch dann zu achten, wenn es irrt; niemand darf gegen sein Gewissen zum Handeln gebracht werden. Die Liebe ist der Maßstab, an dem sich Erkenntnis bewährt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Freiheit gilt und wird nicht bestritten, aber sie steht unter der Liebe. Luther unterschied zwischen dem Recht und seinem Gebrauch.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Erkenntnis ohne Liebe führt in die Irre; die Väter machen das zum Grundsatz der Theologie. Die Bekenntnisformel wird auf die Beziehung von Vater und Sohn bezogen.',
+      },
+      {
+        tradition: 'Kritische Rückfrage',
+        text: 'Die Regel, auf den Schwachen Rücksicht zu nehmen, überlässt dem Empfindlichsten die Entscheidung. Dagegen wird gehalten, dass Paulus die Freiheit ausdrücklich bejaht und nur ihre Ausübung begrenzt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die ersten Verse enthalten mehrere Sätze, die als Zitate aus dem Brief der Korinther gelten. Die Bekenntnisformel im sechsten Vers ist eines der ältesten Zeugnisse dafür, wie Christus in das Bekenntnis zum einen Gott hineingenommen wurde.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 6, verse: 4, note: 'Der HERR ist einer' },
+      { book: 'apg', chapter: 15, verse: 29, note: 'Die Regelung des Aposteldekrets' },
+      { book: 'roem', chapter: 14, verse: 15, note: 'Verdirb nicht den, für den Christus starb' },
+      { book: '1kor', chapter: 10, verse: 25, note: 'Der Fleischmarkt' },
+    ],
+  },
+  {
+    book: '1kor',
+    chapter: 9,
+    from: 1,
+    to: 27,
+    title: '„Ich bin jedermann allerlei geworden“',
+    historicalShort:
+      'Der Verzicht auf ein Recht – und ein Grundsatz, der zur Mission und zur Anpassung zugleich gebraucht wurde.',
+    historicalLong:
+      'Das Kapitel wirkt wie eine Abschweifung und ist keine. Paulus führt sich selbst als Beispiel für das, was er im vorigen verlangt hat: Er hat ein Recht und übt es nicht aus. Das Recht ist der Unterhalt durch die Gemeinde, und er begründet es fünffach – aus dem Alltag, aus dem Gesetz, aus dem Tempeldienst, aus einer Anordnung des Herrn und aus dem Verhältnis von geistlichen und leiblichen Gütern.\n\nDas Zitat über den Ochsen stammt aus dem fünften Buch Mose und verbietet, einem dreschenden Tier das Maul zu verbinden. Die Frage, ob Gott sich um Ochsen sorge, klingt schroff; sie folgt einer Auslegungsregel, nach der ein Gebot über Tiere erst recht für Menschen gilt. Die rabbinische Literatur argumentiert an derselben Stelle ähnlich.\n\nDer Satz, allen alles geworden zu sein, ist der berühmteste des Kapitels und der zweischneidigste. Er beschreibt eine Anpassung an die Lebensweise der Angesprochenen – wie ein Jude unter Juden, wie ein Gesetzloser unter Gesetzlosen – und wird sofort begrenzt: nicht ohne Gesetz vor Gott. In der antiken Ethik war die Anpassung an wechselnde Gesellschaften ein Vorwurf; Schmeichler wurden so beschrieben. Paulus nimmt einen belasteten Begriff auf.\n\nDer Schluss benutzt Bilder aus dem Sport, die in Korinth besonders naheliegen: Die Isthmischen Spiele fanden alle zwei Jahre in der Nähe statt und waren nach Olympia die bedeutendsten Griechenlands. Der Siegeskranz war aus Fichtenzweigen oder Sellerie und verwelkte; das Training war streng geregelt, und wer sich nicht daran hielt, wurde von den Kampfrichtern ausgeschlossen. Das Wort, das Paulus dafür gebraucht, ist dasselbe wie das für die nicht bestandene Metallprüfung.',
+    reception:
+      'Der Satz, allen alles zu werden, ist zum Leitwort der Missionsgeschichte geworden. Er steht hinter den Anpassungsstrategien der Jesuiten in China und Indien im 17. Jahrhundert, deren Zulassung einheimischer Riten in Rom einen jahrzehntelangen Streit auslöste und 1704 verboten wurde; im 20. Jahrhundert steht er hinter dem Begriff der Inkulturation, den das Zweite Vatikanische Konzil aufnahm.\n\nZugleich ist der Satz zum Vorwurf geworden. Wer sich allen anpasst, hat kein Profil – das wird Kirchen entgegengehalten, die sich gesellschaftlichen Erwartungen anpassen. Die Auslegung verweist auf die Grenze, die Paulus selbst zieht, und auf den Zweck: Es geht nicht um Zustimmung, sondern um Zugang.\n\nDie Sportbilder haben die Frömmigkeitssprache stark geprägt. Der Wettlauf, der Kampfpreis, der unvergängliche Kranz stehen in Kirchenliedern, auf Grabsteinen und in Predigten; das Bild vom Kämpfer, der seinen Leib in Zucht nimmt, ist in der Askesetradition aufgenommen und teilweise sehr wörtlich genommen worden.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Wer an den Spielen teilnahm, musste zehn Monate im Voraus trainieren und das vor den Kampfrichtern beschwören. Die Vorbereitung war öffentlich und überprüfbar.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Beim Dreschen liefen Rinder über das Getreide oder zogen einen Schlitten; ihnen das Maul zu verbinden war verboten. Das Gebot schützte das Tier bei der Arbeit.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wanderlehrer lebten von Honoraren, und wer keine nahm, galt als geringer. Die Anpassung an wechselnde Gesellschaften war zugleich ein Vorwurf, mit dem man Schmeichler beschrieb.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Faustkampf kannte keine Gewichtsklassen und keine Runden; gekämpft wurde mit Lederriemen um die Hände, bis einer aufgab. Ein Schlag in die Luft war das Bild für vergebliche Mühe.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ou kemoseis boun aloonta',
+        rendered: 'Du sollst dem Ochsen nicht das Maul verbinden',
+        note: 'Ein Zitat aus dem fünften Buch Mose. Die Folgerung vom Tier auf den Menschen entspricht einer anerkannten Auslegungsregel, die auch die rabbinische Literatur anwendet.',
+      },
+      {
+        word: 'griech. tois pasin gegona panta',
+        rendered: 'Ich bin jedermann allerlei geworden',
+        note: 'In der antiken Ethik war die Anpassung an wechselnde Gesellschaften ein Vorwurf gegen Schmeichler. Paulus nimmt einen belasteten Begriff auf und begrenzt ihn sofort.',
+      },
+      {
+        word: 'griech. phtharton stephanon',
+        rendered: 'eine vergängliche Krone',
+        note: 'Der Siegeskranz der Isthmischen Spiele bestand aus Fichtenzweigen oder Sellerie. Er verwelkte binnen Tagen und war doch das höchste Ziel der Athleten.',
+      },
+      {
+        word: 'griech. adokimos',
+        rendered: 'selbst verwerflich werde',
+        note: 'Dasselbe Wort wie für die nicht bestandene Metallprüfung. Im Sport bezeichnete es den, den die Kampfrichter vom Wettkampf ausschlossen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Verzicht auf ein Recht gehört zur Freiheit des Amtes; der Unterhalt der Diener der Kirche bleibt gleichwohl begründet. Die Anpassung an die Angesprochenen ist Grundlage der Inkulturation.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Ein Recht zu haben und nicht zu gebrauchen, ist der Kern christlicher Freiheit. Luther entfaltete das in seiner Schrift über die Freiheit eines Christenmenschen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Zucht des Leibes gehört zum asketischen Weg, der nicht Selbstzweck ist, sondern dem Ziel dient. Die Sportbilder werden in der Väterliteratur breit aufgenommen.',
+      },
+      {
+        tradition: 'Missionstheologische Rezeption',
+        text: 'Der Satz vom Allen-alles-Werden begründet die Anpassung an fremde Kulturen; die Jesuitenmission in China und Indien berief sich darauf, wurde aber 1704 in Rom gestoppt. Der Begriff der Inkulturation steht in dieser Linie.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Das Kapitel ist keine Abschweifung, sondern das Beispiel zum vorigen: ein Recht, das nicht ausgeübt wird. Die Sportbilder sind in Korinth besonders naheliegend, weil die Stadt die Isthmischen Spiele ausrichtete.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 25, verse: 4, note: 'Das Gebot über den Ochsen' },
+      { book: 'lk', chapter: 10, verse: 7, note: 'Der Arbeiter ist seines Lohnes wert' },
+      { book: '1kor', chapter: 8, verse: 9, note: 'Die Freiheit und der Anstoß' },
+      { book: '2tim', chapter: 4, verse: 8, note: 'Die Krone der Gerechtigkeit' },
+    ],
+  },
+  {
+    book: '1kor',
+    chapter: 10,
+    from: 14,
+    to: 33,
+    title: '„Der gesegnete Kelch, welchen wir segnen“',
+    historicalShort:
+      'Die früheste Beschreibung des Abendmahls als Gemeinschaft – und eine praktische Regel für den Fleischmarkt.',
+    historicalLong:
+      'Der Abschnitt bringt die früheste Aussage über die Wirkung des Abendmahls, die das Neue Testament enthält – noch vor dem Einsetzungsbericht im nächsten Kapitel. Das Wort, das dabei fällt, bedeutet Teilhabe und Gemeinschaft zugleich; im Geschäftsleben bezeichnete es die Gesellschaft mit gemeinsamem Kapital. Kelch und Brot werden in dieser Reihenfolge genannt, umgekehrt als im Einsetzungsbericht – ein Hinweis darauf, dass die Ordnung noch nicht festlag.\n\nDer siebzehnte Vers zieht daraus eine Folgerung über die Gemeinde: Weil es ein Brot ist, sind die vielen ein Leib. Das Bild vom Leib, das im zwölften Kapitel entfaltet wird, ist hier vom Mahl her begründet. Die Verbindung von Mahl und Gemeinschaft war in der Antike selbstverständlich – wer zusammen aß, gehörte zusammen, und deshalb war die Frage, an welchem Tisch man saß, keine Nebensache.\n\nGenau das ist das Argument gegen die Teilnahme an Opfermahlzeiten. Paulus hatte im achten Kapitel gesagt, ein Götze sei nichts; jetzt sagt er, was die Völker opfern, opferten sie den Dämonen. Das ist kein Widerspruch: Die Gottheiten sind nichts, aber hinter dem Kult stehen Mächte. Der Gedanke findet sich in einem Lied im fünften Buch Mose, das Paulus offenbar vor Augen hat.\n\nDer Schluss ist praktisch und überraschend nüchtern. Auf dem Fleischmarkt soll man kaufen, ohne zu fragen; bei einer Einladung essen, ohne nachzuforschen. Nur wenn jemand ausdrücklich darauf hinweist, soll man verzichten – und zwar um seinetwillen. Die Begründung ist ein Psalmvers über die Erde, die dem Herrn gehört. Er stand nach der Mischna am Anfang des Tischgebets; wer Fleisch mit Dank aß, hatte es damit dem Schöpfer zugeordnet.',
+    reception:
+      'Der sechzehnte Vers ist einer der Hauptbelege in allen Auseinandersetzungen über das Abendmahl. Das Wort für Gemeinschaft steht im Zentrum: Die katholische und die orthodoxe Auslegung verstehen es als reale Teilhabe an Leib und Blut, Luther betonte die Gegenwart Christi in Brot und Wein, Zwingli las das Mahl als Gedächtnis und Bekenntnis, Calvin als geistliche Teilhabe durch den Geist. Das Marburger Religionsgespräch von 1529 scheiterte an dieser Frage.\n\nDer siebzehnte Vers ist zum Kernsatz der ökumenischen Bewegung geworden: ein Brot, ein Leib. Die Erklärung von Lima über Taufe, Eucharistie und Amt von 1982 argumentiert von hier aus, und die Frage nach der Abendmahlsgemeinschaft zwischen den Kirchen wird an ihm verhandelt.\n\nDie praktische Regel für den Fleischmarkt hat in der Ethik eine eigene Bedeutung bekommen. Sie zeigt eine Haltung, die weder ängstlich nachforscht noch die Bedenken anderer übergeht, und wird in Fragen des Konsums – von Lebensmitteln bis zu Herstellungsbedingungen – als Muster angeführt. Der Grundsatz, nicht das Eigene zu suchen, ist dabei der Maßstab.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Bei einer Einladung wurde nach Rang platziert, und die Speisenfolge konnte sich nach dem Ansehen der Gäste richten. Wer zu Tisch lag, war in eine Ordnung eingefügt.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Auf dem Fleischmarkt lag Opferfleisch neben anderem; die Herkunft war der Ware nicht anzusehen. In Korinth ist eine Inschrift gefunden worden, die eine solche Markthalle nennt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Altar war der Ort, an dem Opfernde und Gottheit zusammenkamen; wer vom Opfer aß, trat in diese Gemeinschaft ein. Das galt im Tempel Israels wie in den Heiligtümern der Umwelt.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Lied im fünften Buch Mose sagt, Israel habe Dämonen geopfert und nicht Gott. Der Gedanke, dass hinter fremden Kulten Mächte stehen, ist von dort übernommen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. koinonia tou haimatos',
+        rendered: 'die Gemeinschaft des Blutes Christi',
+        note: 'Das Wort bedeutet Teilhabe und Gemeinschaft zugleich; im Geschäftsleben bezeichnete es die Gesellschaft mit gemeinsamem Kapital. An seiner Deutung hängen die Abendmahlslehren.',
+      },
+      {
+        word: 'griech. heis artos',
+        rendered: 'ein Brot ist',
+        note: 'Aus dem einen Brot folgt der eine Leib. Das Bild von der Gemeinde als Leib ist hier vom Mahl her begründet.',
+      },
+      {
+        word: 'griech. daimoniois',
+        rendered: 'das opfern sie den Teufeln',
+        note: 'Die Gottheiten sind nichts, aber hinter dem Kult stehen Mächte. Der Gedanke stammt aus einem Lied im fünften Buch Mose.',
+      },
+      {
+        word: 'griech. en makello',
+        rendered: 'was feil ist auf dem Fleischmarkt',
+        note: 'Ein lateinisches Lehnwort für die Markthalle. In Korinth ist eine Inschrift gefunden worden, die eine solche Halle nennt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Gemeinschaft mit Leib und Blut Christi ist real; daraus folgt die Lehre von der Wandlung und die Bindung der Kommunion an die Kirchengemeinschaft. Der eine Leib ist Ziel und Voraussetzung zugleich.',
+      },
+      {
+        tradition: 'Lutherische Auslegung',
+        text: 'Christus ist in Brot und Wein wahrhaft gegenwärtig; Luther berief sich im Marburger Gespräch von 1529 auf diesen Vers. Die Gemeinschaft ist Gabe und nicht Leistung der Feiernden.',
+      },
+      {
+        tradition: 'Reformierte Auslegung',
+        text: 'Die Teilhabe geschieht geistlich durch den Heiligen Geist; Calvin hielt an einer wirklichen Gemeinschaft fest, ohne eine leibliche Gegenwart in den Elementen zu lehren. Zwingli las das Mahl als Gedächtnis und Bekenntnis.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Mahl ist Teilhabe am verklärten Leib; die Anrufung des Geistes über den Gaben steht im Zentrum der Liturgie. Die Gemeinschaft am Tisch setzt die Gemeinschaft im Glauben voraus.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Kelch und Brot stehen hier in umgekehrter Reihenfolge zum Einsetzungsbericht – ein Hinweis darauf, dass die Ordnung noch nicht festlag. Der Abschnitt enthält die früheste Aussage über die Wirkung des Mahls im Neuen Testament.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 32, verse: 17, note: 'Sie opferten den Dämonen' },
+      { book: 'ps', chapter: 24, verse: 1, note: 'Die Erde ist des HERRN' },
+      { book: '1kor', chapter: 11, verse: 24, note: 'Der Einsetzungsbericht' },
+      { book: '1kor', chapter: 12, verse: 12, note: 'Der eine Leib und die vielen Glieder' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: '1kor',
+    chapter: 10,
+    from: 1,
+    to: 12,
+    title: '„vom geistlichen Fels, der mitfolgte“',
+    historicalShort:
+      'Die Wüstengeneration als Warnung – und ein Fels, der nach jüdischer Überlieferung mitwanderte.',
+    historicalLong:
+      'Paulus erinnert an die Wüstenzeit und beschreibt sie mit Wörtern aus dem Gemeindeleben: getauft, geistliche Speise, geistlicher Trank. Wolke und Meer werden zur Taufe, das Manna zum Brot, das Wasser aus dem Felsen zum Trank. Die Absicht ist eine Warnung: Sie hatten alles, was ihr habt – und die meisten kamen um.\n\nDer Fels, der mitfolgte, spielt auf eine jüdische Überlieferung an. Im vierten Buch Mose gibt Gott zweimal Wasser aus einem Felsen, einmal am Anfang und einmal am Ende der Wanderung; die Auslegung schloss daraus, dass es derselbe Fels war und dass er mitwanderte. Diese Deutung ist in rabbinischen Texten und bei Philon von Alexandria belegt. Paulus setzt sie voraus und geht darüber hinaus: Der Fels war Christus.\n\nDie vier Beispiele – Götzendienst, Unzucht, Versuchung, Murren – folgen der Reihenfolge der Erzählungen im zweiten und vierten Buch Mose. Bei der Zahl der Umgekommenen weicht der Text ab: Das vierte Buch Mose nennt vierundzwanzigtausend, hier stehen dreiundzwanzigtausend. Erklärungen reichen von einem Gedächtnisfehler über eine andere Textfassung bis zu der Annahme, Paulus zähle die an einem Tag Umgekommenen.\n\nDas Wort, das Luther mit Vorbild übersetzt, ist der Abdruck eines Stempels; daraus ist der Begriff der Typologie geworden – der Lehre, dass Ereignisse der Schrift auf spätere vorausweisen. Der Zusatz, dass die Angeredeten die sind, auf die das Ende der Zeiten gekommen ist, ordnet die eigene Zeit in diesen Zusammenhang ein.',
+    reception:
+      'Der Abschnitt ist die Grundlage der typologischen Schriftauslegung geworden. Er nennt das Verfahren beim Namen und wendet es vor: Die Ereignisse der Wüstenzeit sind Abdrücke dessen, was kommt. Über Origenes und die Kirchenväter wurde daraus eine Auslegungslehre, die die mittelalterliche Bibelauslegung, die Bildprogramme der Kathedralen und die Kirchenlieddichtung geprägt hat.\n\nDie Verbindung von Wolke, Meer und Taufe steht in der Osternachtliturgie, in der der Durchzug durchs Rote Meer als Lesung vor der Taufe steht. Die Bildkunst hat das aufgenommen; auf frühchristlichen Sarkophagen und in mittelalterlichen Bibeln steht der Meerdurchzug neben der Taufe.\n\nDer mitwandernde Fels hat eine eigene Auslegungsgeschichte. Er gilt als Beispiel dafür, dass Paulus jüdische Auslegungstraditionen kannte und verwendete, die nicht in der Schrift stehen. In der Auseinandersetzung über die Grenzen legitimer Auslegung wird die Stelle regelmäßig angeführt: Ein Text, der selbst über den Wortlaut hinausgeht, macht die Frage nach den Regeln unausweichlich.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Das Manna wurde als Brot aus dem Himmel bezeichnet und in der Auslegung mit der Weisheit und der Tora verbunden. Speise und Trank der Wüstenzeit hatten längst eine geistliche Deutung, ehe Paulus schrieb.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Wasser war in der Steinwüste zwischen Ägypten und dem Kulturland die entscheidende Frage; Quellen lagen tagesweit auseinander. Eine Wasserversorgung, die mitwandert, war das größte denkbare Wunder.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Wüstenzeit war das gemeinsame Gedächtnis Israels und wurde jährlich beim Passa vergegenwärtigt. Wer sie aufrief, sprach von etwas, das jeder kannte.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Wort für Vorbild bezeichnet den Abdruck eines Stempels in Wachs oder Ton. Siegel und Stempel waren im Rechtsverkehr täglich in Gebrauch.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. eis ton Mousen ebaptisthesan',
+        rendered: 'auf Mose getauft',
+        note: 'Ein Ausdruck ohne Vorbild: Die Wüstenzeit wird mit Begriffen des Gemeindelebens beschrieben. Wolke und Meer werden zur Taufe.',
+      },
+      {
+        word: 'griech. petras akolouthouses',
+        rendered: 'vom geistlichen Fels, der mitfolgte',
+        note: 'Eine Anspielung auf die jüdische Überlieferung vom mitwandernden Felsen. Paulus setzt sie voraus und geht darüber hinaus.',
+      },
+      {
+        word: 'griech. typoi',
+        rendered: 'uns zum Vorbilde',
+        note: 'Der Abdruck eines Stempels. Aus diesem Wort ist der Begriff der Typologie geworden – die Lehre, dass Ereignisse der Schrift auf spätere vorausweisen.',
+      },
+      {
+        word: 'griech. ta tele ton aionon',
+        rendered: 'das Ende der Welt',
+        note: 'Wörtlich die Enden der Zeitalter. Die eigene Gegenwart wird als der Punkt beschrieben, an dem die Zeitalter zusammenlaufen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Abschnitt begründet die typologische Auslegung, die die Schriften Israels auf Christus hin liest. Die Osternacht stellt den Meerdurchzug als Lesung vor die Taufe.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Warnung ist der Kern: Wer meint zu stehen, sehe zu, dass er nicht falle. Luther bezog den Abschnitt auf die Sicherheit derer, die sich auf Sakramente verlassen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Ereignisse der Wüstenzeit sind Vorabbildungen, die in der Liturgie gegenwärtig werden; die Hymnen der Osterzeit greifen sie auf. Christus ist im Alten Bund gegenwärtig.',
+      },
+      {
+        tradition: 'Jüdische Perspektive',
+        text: 'Die Überlieferung vom mitwandernden Felsen gehört zur eigenen Auslegung und meint Gottes Fürsorge. Ihre Identifizierung mit Christus wird als Umdeutung angesehen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Zahl der Umgekommenen weicht vom vierten Buch Mose ab; Erklärungen reichen vom Gedächtnisfehler bis zu einer anderen Textfassung. Der Fels zeigt, dass Paulus jüdische Auslegungstraditionen kannte, die nicht in der Schrift stehen.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 17, verse: 6, note: 'Wasser aus dem Felsen' },
+      { book: '4mo', chapter: 20, verse: 11, note: 'Der Fels am Ende der Wanderung' },
+      { book: '4mo', chapter: 25, verse: 9, note: 'Die Zahl der Umgekommenen' },
+      { book: 'hebr', chapter: 3, verse: 17, note: 'Die Wüstengeneration als Warnung' },
+    ],
+  },
+  {
+    book: '1kor',
+    chapter: 11,
+    from: 1,
+    to: 16,
+    title: '„eine Macht auf dem Haupt“',
+    historicalShort:
+      'Die Kopfbedeckung beim Beten – ein Abschnitt, dessen Begründungen einander widersprechen und dessen Schlüsselwort niemand sicher deutet.',
+    historicalLong:
+      'Der Abschnitt setzt voraus, was er nebenbei sagt: Frauen beten und weissagen im Gottesdienst. Das ist die Ausgangslage, und sie wird nicht bestritten; strittig ist nur die Kopfbedeckung. Was genau gemeint ist – ein Schleier, ein Tuch, oder aufgestecktes gegenüber offenem Haar –, sagt der Text nicht, und die Ausleger sind geteilt.\n\nDie Begründungen sind auffällig verschieden und ziehen in verschiedene Richtungen. Zuerst eine Rangordnung mit dem Wort Haupt, das im Griechischen Oberhaupt und Ursprung bedeuten kann. Dann eine Schöpfungsordnung. Dann ein rätselhafter Hinweis auf die Engel. Dann die Feststellung, dass im Herrn keines ohne das andere ist – was die Rangordnung wieder relativiert. Dann ein Verweis auf die Natur, also auf das, was üblich ist. Zuletzt der Hinweis, man habe eben keine solche Gewohnheit. Wer eine geschlossene Argumentation sucht, findet sie nicht.\n\nDer zehnte Vers ist einer der dunkelsten des Neuen Testaments. Wörtlich steht: Die Frau soll eine Vollmacht auf dem Kopf haben. Luther übersetzt Macht und lässt es stehen. Die Deutungen reichen von der Vollmacht zu beten über ein Zeichen der Unterordnung bis zu einem Schutz gegen die Engel; die Wendung um der Engel willen wird mit einer Stelle in den Qumranschriften verbunden, nach der bei der Versammlung Engel zugegen sind.\n\nDer soziale Hintergrund ist deutlicher als die Begründung. In der römischen Welt bedeckte man beim Opfer den Kopf – Männer wie Frauen; Statuen des Augustus als Priester zeigen ihn so. Im jüdischen Bereich war die Kopfbedeckung der Frau in der Öffentlichkeit üblich, und unbedecktes Haar konnte als Zeichen der Verfügbarkeit gelten. Beides zusammen erklärt, warum die Frage in einer gemischten Gemeinde Streit auslöste.',
+    reception:
+      'Die Kopfbedeckung von Frauen im Gottesdienst hat sich über Jahrhunderte auf diesen Abschnitt gestützt. Sie war in der katholischen Kirche bis zur Neuordnung des Kirchenrechts 1983 vorgeschrieben, in orthodoxen und in vielen konservativen protestantischen Gemeinden ist sie es bis heute; die Mennoniten und andere Gruppen halten daran fest. Die Mehrheit der Kirchen sieht darin heute eine zeitbedingte Ordnung.\n\nDer eigentlich folgenreiche Befund ist ein anderer: Der Text setzt voraus, dass Frauen in der Versammlung beten und prophetisch reden. Das steht in Spannung zu dem Schweigegebot im vierzehnten Kapitel desselben Briefes – eine Spannung, die die Auslegung seit jeher beschäftigt und zu der Vermutung geführt hat, dass jene Verse später eingefügt wurden. In der Debatte über die Ordination von Frauen wird der Abschnitt regelmäßig angeführt.\n\nDas Wort Haupt hat eine eigene Debatte. Ob es Oberhaupt oder Ursprung bedeutet, ist seit den 1970er Jahren Gegenstand ausführlicher Untersuchungen; beide Bedeutungen sind im Griechischen belegt, und die Häufigkeitsverhältnisse werden verschieden bewertet. An dieser Frage hängen die Auslegungen der Ehe- und Ämterordnung in mehreren Briefen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'In der römischen Religion bedeckte man beim Opfer den Kopf; Statuen des Augustus als Priester zeigen ihn mit über den Kopf gezogener Toga. Für Männer war die Bedeckung also kultisch üblich.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Frisuren zeigten Stand und Vermögen: Aufwendige Flechtwerke, Perücken und Haarnadeln aus Elfenbein waren Zeichen der Oberschicht. Eine Regel über das Haar traf deshalb immer auch eine Rangfrage.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Geschorenes Haar war Zeichen der Schande und traf verurteilte Ehebrecherinnen und Sklavinnen. Der Vergleich im Text ruft eine Strafe auf und keine Frisur.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Nach einer Regel aus den Qumranschriften waren bei der Versammlung Engel zugegen, weshalb bestimmte Personen ausgeschlossen blieben. Die Wendung um der Engel willen wird damit verbunden.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kephale',
+        rendered: 'eines jeglichen Mannes Haupt',
+        note: 'Das Wort kann Oberhaupt und Ursprung bedeuten; beide Bedeutungen sind belegt. An dieser Frage hängen die Auslegungen mehrerer Briefe.',
+      },
+      {
+        word: 'griech. exousian echein epi tes kephales',
+        rendered: 'eine Macht auf dem Haupt',
+        note: 'Wörtlich eine Vollmacht auf dem Kopf. Die Deutungen reichen von der Vollmacht zu beten über ein Zeichen der Unterordnung bis zu einem Schutz; Luther lässt das Wort stehen.',
+      },
+      {
+        word: 'griech. dia tous angelous',
+        rendered: 'um der Engel willen',
+        note: 'Einer der dunkelsten Ausdrücke des Neuen Testaments. Verbunden wird er mit der Vorstellung, dass bei der Versammlung Engel zugegen sind.',
+      },
+      {
+        word: 'griech. proseuchomene e propheteuousa',
+        rendered: 'das da betet oder weissagt',
+        note: 'Der Text setzt voraus, dass Frauen in der Versammlung beten und prophetisch reden. Das steht in Spannung zum Schweigegebot im vierzehnten Kapitel.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Kopfbedeckung war bis zur Neuordnung des Kirchenrechts 1983 vorgeschrieben und gilt heute als zeitbedingte Ordnung. Die Aussage über das Haupt wird auf eine Ordnung bezogen, die die Gleichheit nicht aufhebt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Anweisung betrifft eine Sitte und keine bleibende Ordnung; darauf verweist der letzte Vers, der auf die Gewohnheit der Gemeinden zurückgreift. Die Gleichrangigkeit im elften und zwölften Vers wird betont.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Kopfbedeckung gehört zur gottesdienstlichen Ordnung und wird als Zeichen der Ehrfurcht verstanden. Sie ist in den meisten Gemeinden bis heute üblich.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Der entscheidende Befund ist, dass Frauen beten und prophetisch reden – die Kopfbedeckung ist die Nebenfrage. Die Spannung zum Schweigegebot im vierzehnten Kapitel wird als Hinweis darauf gelesen, dass jene Verse später eingefügt wurden.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Begründungen ziehen in verschiedene Richtungen und ergeben keine geschlossene Argumentation. Der römische Brauch, beim Opfer den Kopf zu bedecken, und die jüdische Sitte der Verhüllung trafen in einer gemischten Gemeinde aufeinander.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 2, verse: 22, note: 'Die Frau vom Manne genommen' },
+      { book: '1kor', chapter: 14, verse: 34, note: 'Das Schweigegebot' },
+      { book: 'apg', chapter: 21, verse: 9, note: 'Vier Töchter, die weissagten' },
+      { book: 'gal', chapter: 3, verse: 28, note: 'Nicht Mann noch Frau' },
+    ],
+  },
 ];
 
 /**
