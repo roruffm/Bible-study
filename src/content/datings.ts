@@ -2692,6 +2692,31 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 70 n. Chr., am ehesten in Rom',
     epoch: 'roemer',
   },
+  'mk 2,13': {
+    events: 'Galiläa, erste Auseinandersetzungen mit den Schriftgelehrten',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 3,1': {
+    events: 'Galiläa, erste Auseinandersetzungen mit den Schriftgelehrten',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 3,20': {
+    events: 'Galiläa, erste Auseinandersetzungen mit den Schriftgelehrten',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 4,1': {
+    events: 'Galiläa, Lehre am See in Gleichnissen',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 4,21': {
+    events: 'Galiläa, Lehre am See in Gleichnissen',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
