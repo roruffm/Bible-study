@@ -2157,6 +2157,71 @@ export const DATINGS: Record<string, Dating> = {
     written: 'zwischen 48 und 56 n. Chr.',
     epoch: 'urkirche',
   },
+  'eph 1,1': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 1,15': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 2,1': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 2,11': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 3,1': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 3,14': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 4,1': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 4,17': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 5,1': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 5,15': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 5,22': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 6,1': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
+  'eph 6,19': {
+    events: 'Kleinasien, angenommener Empfängerkreis um Ephesus',
+    written: 'zwischen 60 und 90 n. Chr., je nach Verfasserfrage',
+    epoch: 'urkirche',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
