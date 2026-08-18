@@ -48686,6 +48686,494 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'mt', chapter: 24, verse: 27, note: 'Das Blitzwort und die Endzeitrede bei Matthäus, dort im Tempel gehalten.' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 18,
+    from: 1,
+    to: 8,
+    title: '„Rette mich von meinem Widersacher!“',
+    historicalShort:
+      'Eine Witwe bringt einen Richter, der weder Gott noch Menschen achtet, allein durch Beharrlichkeit dazu, ihr Recht zu verschaffen. Das Gleichnis schließt mit einer Frage, die nicht mehr vom Beten handelt, sondern davon, ob Glaube übrigbleibt.',
+    historicalLong:
+      'Die Beschreibung des Richters ist eine feste Formel für einen Menschen ohne jede Bindung; Josephus verwendet sie in ähnlicher Weise. Rechtsprechung lag in den Ortschaften bei angesehenen Männern oder bei einem Kollegium von Ältesten, in den hellenistisch geprägten Städten daneben bei eingesetzten Richtern. Es gab keine Anwälte im heutigen Sinn und kein geregeltes Verfahren, das eine Partei erzwingen konnte. Wer Einfluß hatte, konnte einen Termin bekommen; wer keinen hatte, konnte warten. Bestechung war so verbreitet, daß die Prophetenbücher sie immer wieder anklagen.\n\nDie Witwe steht in der schwächsten denkbaren Lage. Ohne Mann fehlte ihr die Person, die sie nach außen vertrat; Ansprüche aus dem Ehevertrag mußte sie gegen die Verwandtschaft des Verstorbenen durchsetzen. Genau deshalb gehören Witwe, Waise und Fremder in der Tora zur festen Dreiergruppe derer, deren Recht ausdrücklich geschützt wird, und die Propheten messen an ihrer Behandlung die Verfassung des Gemeinwesens. Was die Frau verlangt, ist keine Wohltat: das griechische Verb bedeutet, ihr zu ihrem Recht zu verhelfen.\n\nDer entscheidende Satz ist im Deutschen kaum wiederzugeben. Der Richter gibt nach, weil er fürchtet, die Witwe werde ihm am Ende ins Gesicht schlagen; das griechische Wort stammt aus der Fachsprache des Faustkampfs und bezeichnet den Schlag unter das Auge. Luther mildert das zu betäuben ab. Die Übertreibung ist komisch gemeint: ein Mann, der vor niemandem Angst hat, fürchtet die Fäuste einer Witwe.\n\nDie Anwendung ist nicht einfach. Sie läuft nicht auf einen Vergleich hinaus, sondern auf einen Gegensatz: wenn schon dieser Richter nachgibt, wieviel mehr wird Gott seinen Erwählten Recht schaffen. Daß sie Tag und Nacht rufen, setzt eine bedrängte Gemeinde voraus, und die Frage, ob Gott zögere, ist die Frage der Klagepsalmen. Der Schlußsatz wendet die Sache noch einmal um. Nach der Zusage, es werde schnell geschehen, steht die offene Frage, ob der Menschensohn bei seinem Kommen überhaupt noch Glauben finden wird; die Zuversicht des Gleichnisses bekommt damit einen Riß.',
+    reception:
+      'In der Geschichte des Gebets gehört die Stelle zu den Grundtexten. Die Wendung, allezeit zu beten und nicht müde zu werden, hat die monastische Praxis des Stundengebets ebenso begründet wie die Anleitungen der neuzeitlichen Frömmigkeit; Teresa von Ávila führt sie im Weg der Vollkommenheit an. Zugleich ist der Einwand alt: Augustin fragt, warum Gott gebeten werden müsse, wenn er ohnehin weiß, was nötig ist, und antwortet, das Bitten verändere nicht Gott, sondern den Bittenden. Der pastorale Einwand, das Gleichnis lasse Gott als jemanden erscheinen, den man mürbe machen muß, wird seit den Kirchenvätern erhoben und mit dem Hinweis beantwortet, daß der Vergleich ein Gegensatz ist.\n\nSeit den siebziger Jahren wird die Witwe anders gelesen. Sie erscheint nicht als geduldig Leidende, sondern als jemand, der ein Recht einklagt und ein Gericht so lange behelligt, bis es tätig wird. In dieser Auslegung ist das Gleichnis kein Text über Frömmigkeit, sondern über Hartnäckigkeit gegenüber Institutionen. Bürgerrechts- und Frauenbewegungen haben die Figur in diesem Sinn aufgegriffen, und in der lateinamerikanischen Basisarbeit wurde sie zum Bild für Angehörige, die bei Behörden nach Verschwundenen fragen und nicht aufhören.\n\nDie Schlußfrage nach dem Glauben auf Erden hat eine eigene Geschichte. Sie wurde in Zeiten kirchlicher Krise regelmäßig zitiert, von den Bußpredigten des Mittelalters bis in die Debatten über die Entkirchlichung im zwanzigsten Jahrhundert. In der Auslegung wird darauf hingewiesen, daß der Satz keine Antwort gibt, sondern eine Frage stellt, und daß er sich an die Hörenden richtet.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Ein Prozeß begann damit, daß eine Partei den Richter aufsuchte. Es gab keine Ladungspflicht und keine Frist, in der entschieden werden mußte. Wer über Beziehungen oder Geld verfügte, konnte das Verfahren beschleunigen; alle anderen waren auf das Wohlwollen des Richters angewiesen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine Witwe verlor mit dem Mann ihre rechtliche Vertretung. Ihr stand aus dem Ehevertrag eine Abfindung zu, doch sie mußte sie gegen die Erben durchsetzen. Ohne erwachsene Söhne blieb ihr oft nur die Rückkehr in die Familie ihres Vaters.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Klage über das Ausbleiben Gottes ist eine eigene Gebetsform. Die Psalmen fragen offen, wie lange es noch dauere, und die Apokalypsen lassen die Getöteten unter dem Altar rufen. Das Gleichnis knüpft an diese Sprache an.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Wer Recht sprach, verfügte über eine Macht, die kaum kontrolliert wurde. Eine Berufungsinstanz gab es für gewöhnliche Streitsachen nicht. Die Prophetenbücher machen deshalb die Behandlung der Schutzlosen zum Maßstab, an dem sie die Herrschenden messen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kritēs tis ēn en tini polei',
+        rendered: 'ein Richter in einer Stadt',
+        note: 'Die Angabe bleibt bewußt unbestimmt. Die anschließende Beschreibung ist eine geprägte Formel für einen Menschen ohne jede Bindung.',
+      },
+      {
+        word: 'griech. chēra',
+        rendered: 'eine Witwe',
+        note: 'Witwe, Waise und Fremdling bilden in der Tora die feste Gruppe derer, deren Recht ausdrücklich geschützt wird. Die Wahl der Figur ist damit sofort verständlich.',
+      },
+      {
+        word: 'griech. hypōpiazē me',
+        rendered: 'betäube mich',
+        note: 'Wörtlich mir unter das Auge schlagen, ein Ausdruck aus dem Faustkampf. Luthers betäuben nimmt der Wendung ihre komische Schärfe.',
+      },
+      {
+        word: 'griech. tōn eklektōn autou',
+        rendered: 'seine Auserwählten',
+        note: 'Ein Ausdruck der Bedrängnisliteratur für die Gemeinde, die auf das Eingreifen Gottes wartet. Er setzt eine Lage voraus, in der Recht nicht zu erlangen ist.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die einleitende Zweckangabe und die Schlußfrage gelten als Rahmen des Evangelisten. Das Gleichnis selbst dürfte ursprünglich vom Vertrauen darauf gehandelt haben, daß Gott Recht schafft; die Anwendung auf das beharrliche Beten ist die Deutung, die Lukas ihm gibt.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Stelle gehört zu den Grundlagen der Lehre vom Bittgebet. Der Katechismus führt sie an und hält fest, daß das Beharren im Gebet nicht Gott umstimmt, sondern den Beter für das Empfangen bereitet.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird der Gegensatz zwischen dem Richter und Gott. Luther las die Erzählung als Trost für Angefochtene: gerade wenn Gott zu schweigen scheint, sei am Zusagewort festzuhalten.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter verbinden die Aufforderung zum unaufhörlichen Gebet mit der Anweisung des Paulus und leiten daraus die Praxis des immer wiederholten kurzen Gebets ab. Das Beharren gilt als Übung, nicht als Druckmittel.',
+      },
+      {
+        tradition: 'feministisch',
+        text: 'Die Auslegung hebt hervor, daß die Witwe fordert und nicht bittet und daß sie es ist, die den Ausgang bewirkt. Der Text zeige eine Frau als handelnde Klägerin und nicht als Empfängerin von Mitleid.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 24, verse: 17, note: 'Das Recht des Fremdlings und der Waise soll nicht gebeugt, der Witwe nicht das Kleid gepfändet werden.' },
+      { book: 'jes', chapter: 1, verse: 17, note: 'Schafft dem Waisen Recht und führt der Witwe Sache: die prophetische Forderung im Hintergrund.' },
+      { book: 'ps', chapter: 13, verse: 2, note: 'Herr, wie lange willst du mein so gar vergessen: die Klage, an die die Frage anknüpft.' },
+      { book: 'offb', chapter: 6, verse: 10, note: 'Die Getöteten rufen, wie lange Gott noch zögere: dieselbe Frage in apokalyptischer Sprache.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 18,
+    from: 15,
+    to: 30,
+    title: '„daß ein Kamel gehe durch ein Nadelöhr“',
+    historicalShort:
+      'Kinder werden zu Jesus gebracht und von den Jüngern abgewehrt; ein wohlhabender Ratsherr fragt nach dem ewigen Leben und geht traurig fort. Aus beiden Szenen ergibt sich dieselbe Aussage über den Zugang zum Reich Gottes.',
+    historicalLong:
+      'Lukas spricht nicht wie Markus von Kindern, sondern von Säuglingen. Das Berühren zum Segen war ein verbreiteter Brauch; angesehene Lehrer wurden darum gebeten. Der Widerstand der Jünger erklärt sich nicht aus Kinderfeindlichkeit, sondern aus der Vorstellung, der Lehrer solle seine Zeit nicht mit Menschen ohne Anliegen verbringen. Für das Verständnis des Verses ist die Lage von Kindern in der Antike entscheidend. Die Sterblichkeit war hoch, ein erheblicher Teil starb im ersten Lebensjahr. Kinder hatten keine Rechtsstellung, der Vater entschied über die Annahme des Neugeborenen, und die Aussetzung war in der griechisch-römischen Welt rechtlich möglich, wenn auch im Judentum verworfen. Wer wie ein Kind das Reich Gottes annimmt, nimmt es also ohne Anspruch und ohne Stand; von Unschuld oder Reinheit ist nicht die Rede.\n\nDer Fragende ist bei Lukas ein Oberster, also Mitglied eines leitenden Gremiums; Matthäus macht einen jungen Mann daraus, Markus läßt ihn unbestimmt. Die Rückfrage, warum er ihn gut nenne, hat der Alten Kirche Mühe bereitet, weil sie so klingt, als weise Jesus die Bezeichnung von sich; Matthäus formuliert sie deshalb um. Die aufgezählten Gebote stammen sämtlich aus der zweiten Tafel, betreffen also das Verhältnis zu Menschen. Die Reihenfolge weicht vom hebräischen Text ab und stellt den Ehebruch vor den Mord, wie es einige griechische Handschriften und auch Paulus tun.\n\nDas Bild vom Kamel im Nadelöhr ist eine bewußte Unmöglichkeit: das größte Lasttier der Gegend und die kleinste Öffnung des Alltags. Zwei verbreitete Erklärungen halten der Prüfung nicht stand. Ein enges Stadttor in Jerusalem mit dem Namen Nadelöhr taucht erst in mittelalterlichen Auslegungen auf und ist weder archäologisch noch in älteren Quellen belegt. Die Vermutung, im Urtext habe ein fast gleichlautendes Wort für Schiffstau gestanden, stützt sich auf späte Handschriften. Dagegen spricht ein rabbinischer Vergleich, der einen Elefanten durch ein Nadelöhr gehen läßt und damit dieselbe Übertreibung verwendet; die Unmöglichkeit ist gewollt.\n\nDie Zusage an Petrus fällt bei Lukas nüchterner aus als bei Markus. Dort werden Häuser, Brüder, Schwestern, Mütter, Kinder und Äcker hundertfach genannt, ausdrücklich verbunden mit Verfolgungen. Lukas läßt die Zahl und die Verfolgungen weg und spricht von vielfältigem Empfangen. Zugleich nimmt er in die Aufzählung dessen, was verlassen wird, die Ehefrau auf, die bei Markus fehlt.',
+    reception:
+      'Die Aufforderung an den Reichen steht am Anfang des christlichen Mönchtums. Nach dem Bericht des Athanasius hörte Antonius um 270 in einem Gottesdienst in Ägypten die entsprechende Stelle des Matthäusevangeliums verlesen, verkaufte seinen Besitz und ging in die Wüste; von ihm aus wurde sie zum Gründungstext ungezählter Ordensberufungen. Schon vorher hatte Klemens von Alexandrien um 200 eine Abhandlung mit der Frage geschrieben, welcher Reiche gerettet werde. Er entschied, nicht der Besitz an sich sei verwerflich, sondern die Bindung des Herzens an ihn, und legte damit die Linie fest, der die Mehrheitskirche gefolgt ist. Der Einwand dagegen lautet seit jeher, daß der Text selbst diese Unterscheidung nicht macht.\n\nDie Legende vom Nadelöhr als einem kleinen Tor hat sich über die Kanzel weiter gehalten als über die Forschung. Sie erlaubt, das Wort abzumildern: das Kamel könne hindurch, wenn es die Last ablege und niederknie. Weil ein solches Tor nicht nachweisbar ist, gilt die Deutung in der Auslegung als überholt; in Predigten und Andachtsbüchern begegnet sie weiterhin.\n\nIm zwanzigsten Jahrhundert ist die Stelle zum Prüfstein gegensätzlicher Positionen geworden. Die lateinamerikanische Theologie las sie als Aussage über Besitzverhältnisse und nicht über Gesinnungen. Umgekehrt hat die Wohlstandsverkündigung, die seit den fünfziger Jahren vor allem in Nordamerika entstand und heute weltweit verbreitet ist, Reichtum als Zeichen des Segens gedeutet; ihre Vertreter berufen sich auf andere Texte und legen diesen als Warnung vor Habgier aus. Aus allen großen Kirchen ist dieser Deutung widersprochen worden.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Kinder hatten keine eigene Rechtsstellung und gehörten bis zur Volljährigkeit vollständig in die Verfügung des Vaters. In der griechisch-römischen Welt war die Aussetzung Neugeborener rechtlich möglich; jüdische Quellen lehnen sie einhellig ab und heben sich darin von der Umwelt ab.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Oberster gehörte einem leitenden Gremium an, sei es dem Rat einer Stadt oder der Leitung einer Synagoge. Mit dem Amt verband sich Vermögen, denn öffentliche Aufgaben waren mit eigenen Mitteln zu bestreiten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Kamel war das größte Lasttier der Region und trug bis zu zweihundert Kilogramm über weite Strecken. Die Nähnadel aus Bronze oder Knochen mit ihrem winzigen Öhr gehörte in jeden Haushalt. Beides zusammen ergibt das äußerste Gefälle.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Vermögen bestand vor allem aus Land, Vieh und Vorräten, nicht aus Geld. Der Verkauf von allem, was einer hat, bedeutete deshalb den Verlust der Erwerbsgrundlage und nicht nur den Verzicht auf Bequemlichkeit.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. archōn tis',
+        rendered: 'ein Oberster',
+        note: 'Mitglied eines leitenden Gremiums. Nur Lukas gibt diese Auskunft; Matthäus spricht von einem jungen Mann.',
+      },
+      {
+        word: 'griech. oudeis agathos ei mē heis ho theos',
+        rendered: 'Niemand ist gut denn der einige Gott',
+        note: 'Die Rückfrage hat in der Alten Kirche Auseinandersetzungen ausgelöst. Matthäus formt sie um, damit sie nicht als Zurückweisung der Bezeichnung erscheint.',
+      },
+      {
+        word: 'griech. dia trēmatos belonēs',
+        rendered: 'durch ein Nadelöhr',
+        note: 'Lukas verwendet das Wort für die chirurgische Nadel. Ein Stadttor dieses Namens ist nicht belegt; die Übertreibung ist beabsichtigt.',
+      },
+      {
+        word: 'griech. thēsauron en ouranois',
+        rendered: 'einen Schatz im Himmel',
+        note: 'Ein geläufiges Bild der jüdischen Literatur für das, was durch Almosen unverlierbar hinterlegt wird.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas folgt hier eng dem Markusevangelium und nimmt kleine Veränderungen vor: der Fragende wird zum Amtsträger, die hundertfache Vergeltung und die Verfolgungen entfallen, die Ehefrau tritt in die Liste des Verlassenen ein. Das Auslassen der Verfolgungen wird häufig auf eine ruhigere Lage der Gemeinde zurückgeführt.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Weisung an den Reichen gilt als evangelischer Rat, der in den Ordensgelübden verwirklicht wird, während für alle die Pflicht zur Sozialbindung des Eigentums bleibt. Die Soziallehre führt die Stelle regelmäßig an.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Die Reformatoren bestritten die Aufteilung in Gebot und Rat. Der Text zeige, daß niemand von sich aus in das Reich Gottes gelangt; die Antwort liege in dem Satz, daß bei Gott möglich ist, was bei Menschen unmöglich bleibt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter verbinden die Szene mit der Lehre vom rechten Gebrauch der Güter. Reichtum an sich sei nicht verwerflich, wohl aber das Behalten des Überflusses, während andere Mangel leiden; Basilius und Chrysostomos formulieren das scharf.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Gelesen wird der Text als Aussage über Verhältnisse und nicht über Gesinnungen. Die Traurigkeit des Reichen zeige, daß es um wirkliches Eigentum geht; jede Deutung, die den Verzicht ins Innere verlegt, nehme dem Wort seinen Gegenstand.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 10, verse: 15, note: 'Dieselbe Szene bei Markus, dort mit Kindern statt Säuglingen.' },
+      { book: '2mo', chapter: 20, verse: 12, note: 'Die Gebote der zweiten Tafel, aus denen die aufgezählten stammen.' },
+      { book: 'mk', chapter: 10, verse: 30, note: 'Die hundertfache Vergeltung samt Verfolgungen, die Lukas nicht übernimmt.' },
+      { book: 'lk', chapter: 12, verse: 33, note: 'Verkaufet, was ihr habt: dieselbe Weisung, dort an die Jünger insgesamt.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 18,
+    from: 31,
+    to: 43,
+    title: '„Du Sohn Davids, erbarme dich mein!“',
+    historicalShort:
+      'Zum dritten Mal kündigt Jesus sein Leiden an, und zum dritten Mal verstehen die Zwölf nichts. Unmittelbar darauf ruft ein Blinder am Weg vor Jericho ihn mit einem Königstitel an und sieht, was die Jünger nicht sehen.',
+    historicalLong:
+      'Die dritte Ansage nennt zum ersten Mal die Heiden als die, denen Jesus überantwortet wird, und zählt die Einzelheiten der Mißhandlung auf. Nur Lukas stellt sie ausdrücklich unter die Erfüllung dessen, was die Propheten geschrieben haben. Ebenso auffällig ist eine Auslassung: das Wort vom Menschensohn, der sein Leben als Lösegeld für viele gibt, das bei Markus unmittelbar in diesem Zusammenhang steht, fehlt bei Lukas an dieser wie an jeder anderen Stelle. Die Forschung hat daraus geschlossen, daß Lukas den Tod Jesu weniger als Sühnegeschehen und stärker als das Geschick des verworfenen Gerechten deutet; unbestritten ist diese Folgerung nicht.\n\nDie Bemerkung über das Unverständnis der Zwölf ist dreifach ausgeführt: sie verstanden nichts, die Rede war ihnen verborgen, sie wußten nicht, was gesagt war. Das Verborgensein steht im Passiv und meint, daß es ihnen entzogen war. Damit steht das Nichtsehen der Nächsten unmittelbar neben dem Sehen des Blinden.\n\nAn dieser Stelle weichen die Evangelien deutlich voneinander ab. Bei Markus geschieht die Heilung, als Jesus Jericho verläßt, und der Blinde heißt Bartimäus; bei Matthäus sind es zwei Blinde beim Verlassen der Stadt; Lukas erzählt sie beim Herannahen und nennt keinen Namen. Für Lukas hat das einen erzählerischen Grund: er braucht die Stadt noch, weil in ihr die Begegnung mit Zachäus folgt. Als Erklärung des Unterschieds ist außerdem darauf hingewiesen worden, daß es zwei Ortslagen gab, die alte Siedlung und die etwa zwei Kilometer entfernte herodianische Stadt, so daß man zwischen beiden zugleich aus der einen heraus- und in die andere hineinging.\n\nJericho war eine wohlhabende Oasenstadt mit Balsamgärten, einem Winterpalast der Herodianer und einem Zollposten. Über sie lief der Weg der Pilger, die aus Galiläa durch das Jordantal nach Jerusalem zogen. Bettler saßen deshalb an dieser Straße mit gutem Grund: an Festtagen kamen viele vorbei, und das Almosen galt als Pflicht.\n\nDie Anrede Sohn Davids ist die einzige öffentliche Verwendung dieses Titels im Lukasevangelium vor dem Einzug in Jerusalem. Sie ist politisch aufgeladen, weil sie den Anspruch auf das Königtum berührt, und wohl deshalb versucht die Menge, den Rufenden zum Schweigen zu bringen. Zugleich hatte der Titel eine Verbindung zur Heilung: Salomo, der Sohn Davids, galt in der Überlieferung als Meister über Dämonen. Am Schluß folgt der Geheilte nach und lobt Gott, wird also zum Jünger.',
+    reception:
+      'Aus dem Ruf des Blinden ist eines der meistgesprochenen Gebete der Christenheit geworden. Die östliche Tradition hat ihn mit dem Gebet des Zöllners aus demselben Kapitel verbunden und daraus die kurze Anrufung geformt, die als Jesusgebet die Frömmigkeit des Ostens seit dem sechsten Jahrhundert prägt: Herr Jesus Christus, erbarme dich meiner. Die Sammlung der Philokalie, 1782 in Venedig gedruckt, und die russischen Aufzeichnungen eines Pilgers aus dem neunzehnten Jahrhundert haben sie weit über die Klöster hinaus bekannt gemacht. Auch das Kyrie eleison der westlichen Messe steht in derselben sprachlichen Linie.\n\nDie Unterschiede zwischen den drei Fassungen der Erzählung gehören zu den Standardbeispielen der Auseinandersetzung um die Zuverlässigkeit der Evangelien. Vom achtzehnten Jahrhundert an haben Kritiker sie als Beleg für Widersprüche angeführt, apologetische Autoren mit der Lage der beiden Ortschaften oder mit zwei getrennten Vorfällen geantwortet. Die heutige Auslegung erklärt die Abweichungen meist aus dem Aufbau der Bücher: jeder Evangelist ordnet die Szene dort ein, wo sie in seinem Erzählgang gebraucht wird.\n\nDie Verbindung von Blindheit und Erkenntnis hat die christliche Bildsprache tief geprägt und ist dafür kritisiert worden. Aus der Behindertenbewegung und der Blindenselbsthilfe kommt seit den achtziger Jahren der Einwand, daß Blindheit als Bild für Verstocktheit und Unglauben gebraucht wird und daß diese Metaphorik auf blinde Menschen zurückfällt. Kirchliche Arbeitshilfen zur inklusiven Sprache greifen das inzwischen auf.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Jericho liegt gut zweihundertfünfzig Meter unter dem Meeresspiegel an einer starken Quelle. Die Wärme des Jordangrabens erlaubte Dattelpalmen und Balsamsträucher, deren Harz teuer gehandelt wurde. Herodes ließ dort einen Winterpalast anlegen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Betteln war für Menschen ohne Arbeitsfähigkeit die einzige Möglichkeit des Unterhalts und keine Randerscheinung. Wer bettelte, suchte Plätze mit vielen Vorübergehenden, vor allem an Wallfahrtswegen und Stadttoren, weil dort Almosen als religiöse Pflicht galten.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Wer jemanden öffentlich Sohn Davids nannte, berührte den Anspruch auf das Königtum, das Rom vergeben hatte. Solche Rufe konnten als Aufwiegelung ausgelegt werden, was die Versuche der Umstehenden erklärt, den Mann zum Schweigen zu bringen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Daß das Geschick des Leidenden in den Schriften vorgezeichnet sei, wird von Lukas mehrfach betont. Diese Deutung hat ihre Wurzeln in den Klagepsalmen und in den Liedern vom leidenden Knecht des Jesajabuchs.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. paradothēsetai tois ethnesin',
+        rendered: 'überantwortet werden den Heiden',
+        note: 'Zum ersten Mal wird die römische Beteiligung ausdrücklich genannt. Die Kreuzigung war eine römische, keine jüdische Strafform.',
+      },
+      {
+        word: 'griech. ēn to rhēma touto kekrymmenon',
+        rendered: 'die Rede war ihnen verborgen',
+        note: 'Die Leideform läßt offen, wer verbirgt, und meint im biblischen Sprachgebrauch meist Gott selbst. Das Unverständnis erscheint damit nicht als bloßes Versagen.',
+      },
+      {
+        word: 'griech. typhlos tis ekathēto para tēn hodon',
+        rendered: 'saß ein Blinder am Wege',
+        note: 'Markus nennt ihn Bartimäus und läßt die Heilung beim Verlassen Jerichos geschehen. Lukas braucht die Stadt noch für die folgende Erzählung.',
+      },
+      {
+        word: 'griech. huie Dauid',
+        rendered: 'Sohn Davids',
+        note: 'Ein königlicher Titel mit politischem Gewicht. Zugleich stand Salomo als Sohn Davids in der Überlieferung für Macht über Dämonen und Krankheit.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas übernimmt die Erzählung aus Markus, verschiebt sie an den Stadteingang und läßt den Namen fort. Das Fehlen des Lösegeldworts an dieser Stelle gilt als Hinweis darauf, daß er den Tod Jesu anders deutet als Markus; wie weit dieser Unterschied reicht, ist umstritten.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Szene wird als Weg vom Rufen über das Bekenntnis zur Nachfolge gelesen. Daß der Geheilte mitgeht und Gott lobt, gilt als Muster für den Weg des Glaubenden von der Bitte zur Gemeinschaft.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Hervorgehoben wird der Zuspruch, daß der Glaube geholfen habe, verbunden mit der Beharrlichkeit des Rufenden gegen den Widerstand der Umstehenden. Die Blindheit der Jünger dient als Beispiel dafür, daß Nähe zu Jesus noch kein Verstehen bedeutet.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Aus diesem Ruf und dem Gebet des Zöllners hat die östliche Kirche das Jesusgebet gebildet. Es wird als Weg der Sammlung geübt, in dem die Bitte um Erbarmen unablässig wiederholt wird.',
+      },
+      {
+        tradition: 'historisch-kontextuell',
+        text: 'Der Titel Sohn Davids wird auf die Erwartung eines königlichen Befreiers bezogen, die in der Bevölkerung lebendig war. Die Erzählung läßt offen, ob der Rufende diese Erwartung teilt; sie zeigt aber, wie schnell die Umstehenden die politische Sprengkraft bemerken.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 10, verse: 46, note: 'Die Heilung des Bartimäus, dort beim Verlassen Jerichos und mit Namen.' },
+      { book: 'mk', chapter: 10, verse: 45, note: 'Das Lösegeldwort, das Lukas an dieser Stelle nicht übernimmt.' },
+      { book: 'lk', chapter: 19, verse: 1, note: 'Zachäus in Jericho: der Grund, warum Lukas die Stadt noch nicht verlassen läßt.' },
+      { book: '2sam', chapter: 7, verse: 12, note: 'Die Verheißung an David, auf der der Titel Sohn Davids beruht.' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 19,
+    from: 1,
+    to: 9,
+    title: '„Zachäus, steig eilend hernieder“',
+    historicalShort:
+      'In Jericho lädt Jesus sich beim obersten Zöllner der Stadt ein. Die Menge nimmt Anstoß, und der Gastgeber erklärt öffentlich, die Hälfte seines Vermögens den Armen zu geben und Betrogenen das Vierfache zu erstatten.',
+    historicalLong:
+      'Der Titel, den Lukas ihm gibt, ist sonst in keinem griechischen Text belegt: oberster Zöllner. Gemeint ist der Pächter, der die Erhebung für einen Bezirk übernommen hatte und unter sich weitere Einnehmer beschäftigte. Jericho war für eine solche Stelle einträglich. Die Stadt lag an der Grenze zwischen dem Gebiet des Antipas jenseits des Jordans und dem römisch verwalteten Judäa, sie war Umschlagplatz für den Balsamhandel, dessen Harz zu den teuersten Waren der Zeit gehörte, und über sie lief die Straße der galiläischen Pilger.\n\nDer Name geht auf ein hebräisches Wort für rein oder gerecht zurück und war als jüdischer Name gebräuchlich; die Spannung zwischen Name und Beruf dürfte den ersten Hörern aufgefallen sein. Die Bemerkung, er sei klein von Person gewesen, läßt im Griechischen grammatisch offen, von wem die Rede ist, wird aber seit jeher auf Zachäus bezogen. Der Baum, auf den er steigt, ist der Maulbeerfeigenbaum, ein weit ausladender Baum mit tiefsitzenden Ästen, der im Jordantal wegen seiner billigen Früchte und seines Holzes angebaut wurde. Daß ein vermögender Mann in aller Öffentlichkeit auf einen Baum klettert, war eine Blamage; in einer Gesellschaft, in der Ansehen sorgfältig gehütet wurde, gibt er es damit preis.\n\nDie Aussage in Vers acht ist der schwierigste Punkt der Erzählung. Die beiden Verben stehen im Griechischen in der Gegenwartsform. Man kann sie als Ankündigung lesen, dann beschreibt der Satz eine Umkehr im Augenblick. Man kann sie auch als Beschreibung einer ständigen Übung lesen, dann sagt Zachäus, was er längst tut, und verteidigt sich gegen den Vorwurf der Umstehenden. Im zweiten Fall wäre die Erzählung keine Bekehrungsgeschichte, sondern die Rechtfertigung eines Mannes, über den man falsch redet. Beide Deutungen werden vertreten; die erste ist die verbreitetere, die zweite grammatisch gut begründet.\n\nDas Maß der Erstattung ist auffällig hart. Wer freiwillig zurückgibt, was er unrechtmäßig erlangt hat, schuldet nach dem dritten Buch Mose die Sache und ein Fünftel darüber. Das Vierfache steht dort als Strafe für den überführten Dieb, der ein Schaf gestohlen und geschlachtet hat, und auch das römische Recht kannte den vierfachen Ersatz beim auf frischer Tat ertappten Dieb. Zachäus legt sich also nicht das Maß der freiwilligen Rückgabe auf, sondern das des Verurteilten. Der Zuspruch am Schluß nennt ihn Abrahams Sohn und stellt ihn damit ausdrücklich in das Bundesvolk, aus dem der Vorwurf der Umstehenden ihn herausgerückt hatte.',
+    reception:
+      'In der byzantinischen Kirche eröffnet diese Erzählung den Weg auf die Fastenzeit. Der Sonntag des Zachäus steht am Beginn der vorbereitenden Wochen vor der Großen Fastenzeit und wird jährlich gelesen; die Reihenfolge ist seit dem Mittelalter fest. Im Westen ist der Text vor allem als Kirchweihevangelium gebraucht worden, weil in ihm ein Haus zur Wohnung wird.\n\nDie Erstattung hat Rechtsgeschichte gemacht. Aus dem Grundsatz, daß eine Sünde nicht vergeben wird, solange das Genommene nicht zurückgegeben ist, wurde in der lateinischen Kirche eine feste Regel der Bußpraxis; sie geht auf eine Formulierung Augustins zurück und wurde in das kirchliche Recht aufgenommen. Beichtväter hatten die Rückerstattung als Bedingung der Lossprechung einzufordern, und die Handbücher des Spätmittelalters behandeln in eigenen Abschnitten, wie sie zu bemessen sei, wenn der Geschädigte nicht mehr auffindbar ist.\n\nIn der Gegenwart wird die Stelle regelmäßig in Auseinandersetzungen über Wiedergutmachung angeführt, von der Rückgabe entzogenen Eigentums bis zu Debatten über die Folgen von Kolonialherrschaft und Sklaverei. Kirchliche Stellungnahmen aus verschiedenen Ländern berufen sich darauf, daß im Text nicht das Bedauern, sondern die Rückgabe die Umkehr sichtbar macht. Umgekehrt ist eingewandt worden, daß eine Einzelgeschichte über einen Mann, der aus eigenem Antrieb handelt, für Fragen der gesellschaftlichen Verantwortung wenig hergibt.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Die Erhebung von Zöllen wurde verpachtet. Der Pächter zahlte die veranschlagte Summe voraus und behielt, was er darüber hinaus einnahm. Unter ihm arbeiteten Einnehmer an den Stationen; das ganze Gefüge lebte vom Aufschlag.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Oase wird von einer starken Quelle gespeist und liegt gut zweihundertfünfzig Meter unter dem Meeresspiegel. Die Wärme des Grabens erlaubte zwei Ernten im Jahr und Pflanzen, die sonst nirgends im Land gediehen; das machte den Ort seit Jahrtausenden begehrt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein erwachsener Mann von Rang lief nicht und kletterte nicht. Beides galt als würdelos, weil es Eile und Anstrengung zeigte. Wer sich so verhielt, gab die äußeren Zeichen seines Standes preis, und die Umstehenden bemerkten es.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Für unrechtmäßig Erlangtes sah die Tora Rückgabe zuzüglich eines Fünftels vor, wenn der Betreffende sich selbst anzeigte. Das Vierfache galt dem überführten Dieb; auch im römischen Recht war es der Satz für den auf frischer Tat Ergriffenen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. architelōnēs',
+        rendered: 'ein Oberster der Zöllner',
+        note: 'Das Wort ist außerhalb dieser Stelle nicht belegt. Gemeint ist der Pächter eines ganzen Bezirks, der weitere Einnehmer beschäftigt.',
+      },
+      {
+        word: 'griech. epi sykomorean',
+        rendered: 'auf einen Maulbeerbaum',
+        note: 'Der Maulbeerfeigenbaum trug billige Früchte und wurde im Jordantal angebaut. Seine tiefsitzenden Äste machten ihn leicht besteigbar.',
+      },
+      {
+        word: 'griech. apodidōmi tetraploun',
+        rendered: 'vierfältig wieder',
+        note: 'Das Maß der Strafe für den überführten Dieb. Wer freiwillig erstattete, schuldete nach der Tora nur die Sache und ein Fünftel.',
+      },
+      {
+        word: 'griech. huios Abraam',
+        rendered: 'Abrahams Sohn',
+        note: 'Die Zusage stellt ihn ausdrücklich in das Bundesvolk zurück. Dieselbe Wendung in weiblicher Form gilt der gekrümmten Frau in der Synagoge.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Erzählung gehört zum Sondergut. Umstritten bleibt die Zeitform der Verben in der Erklärung des Zachäus: sie kann eine Ankündigung oder eine bestehende Gewohnheit bezeichnen. Davon hängt ab, ob der Text eine Umkehr oder eine Verteidigung schildert.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Stelle gilt als Beispiel für die Verbindung von Umkehr und Wiedergutmachung. Die Bußpraxis hat daraus die Regel abgeleitet, daß die Lossprechung die Rückgabe des Genommenen voraussetzt, soweit sie möglich ist.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird die Reihenfolge: Jesus lädt sich ein, bevor irgend etwas versprochen wird. Die Rückgabe erscheint als Folge der Zuwendung und nicht als deren Bedingung.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Der Sonntag des Zachäus eröffnet den Weg auf die Große Fastenzeit. Die Väter deuten das Besteigen des Baums als Bild für das Verlangen, das jede Rücksicht auf das eigene Ansehen fahren läßt.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Im Mittelpunkt steht, daß die Umkehr in Vermögensverhältnissen sichtbar wird. Die Hälfte des Besitzes und die vierfache Erstattung seien der Maßstab, an dem sich zeigt, ob eine Zuwendung folgenlos bleibt.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 22, verse: 1, note: 'Vier Schafe für ein Schaf: das Strafmaß, das Zachäus auf sich selbst anwendet.' },
+      { book: '3mo', chapter: 6, verse: 5, note: 'Rückgabe zuzüglich eines Fünftels bei freiwilliger Anzeige, das mildere Maß.' },
+      { book: 'lk', chapter: 13, verse: 16, note: 'Die Tochter Abrahams in der Synagoge: dieselbe Zusage in weiblicher Form.' },
+      { book: 'lk', chapter: 5, verse: 27, note: 'Die Berufung des Zöllners Levi und das Mahl in seinem Haus, früh im Evangelium.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 19,
+    from: 11,
+    to: 27,
+    title: '„Wir wollen nicht, daß dieser über uns herrsche“',
+    historicalShort:
+      'Ein Thronanwärter reist ins Ausland, um sich die Herrschaft bestätigen zu lassen, und übergibt zehn Knechten je ein Pfund. Nach seiner Rückkehr rechnet er ab und läßt die Bürger, die gegen ihn Botschaft geschickt hatten, vor seinen Augen töten.',
+    historicalLong:
+      'Die Einleitung nennt den Anlaß: man erwartete, das Reich Gottes werde sich sogleich zeigen, weil Jerusalem nahe war. Gegen diese Erwartung ist das Gleichnis gerichtet. Es verbindet zwei Erzählstränge, die auch getrennt vorkommen: die Reise eines Thronanwärters und die Prüfung anvertrauten Kapitals. Matthäus überliefert nur den zweiten, mit weit größeren Summen.\n\nDer erste Strang hat ein genaues Vorbild. Nach dem Tod des Herodes im Jahr vier vor Christus reiste sein Sohn Archelaus nach Rom, um sich die Nachfolge von Augustus bestätigen zu lassen. Ihm nach ging eine Gesandtschaft von fünfzig Männern aus Judäa mit der Bitte, ihn nicht einzusetzen; Josephus berichtet den Vorgang ausführlich. Augustus gab Archelaus Judäa, Samarien und Idumäa, allerdings nicht als König, sondern als Ethnarchen. Archelaus regierte hart und wurde im Jahr sechs abgesetzt. Er hatte in Jericho einen Palast erneuert, also genau dort, wo Lukas dieses Gleichnis erzählen läßt. Die ersten Hörer konnten das Bild kaum überhören.\n\nDie anvertraute Summe ist klein. Eine Mine entsprach hundert Drachmen und damit etwa drei Monatslöhnen; zehn Knechte erhalten je eine. Der Ertrag steht in keinem Verhältnis zur Belohnung, denn ausgezahlt wird nicht in Geld, sondern in Städten. Der dritte hat sein Pfund in ein Tuch gewickelt aufbewahrt, was rechtlich nicht ohne weiteres falsch war; das Vergraben oder Verwahren anvertrauten Geldes galt in der rabbinischen Rechtslehre als sichere Aufbewahrung. Der Vorwurf lautet, er habe es nicht einmal auf den Tisch der Geldwechsler gelegt, wo es Zinsen getragen hätte, was wiederum an das Zinsverbot der Tora rührt.\n\nDer letzte Vers ist der brutalste des Evangeliums. Er gehört zum Strang des Thronanwärters und beschreibt, was ein Herrscher nach der Bestätigung mit seinen Gegnern tut. Für die Auslegung entsteht daraus eine Grundfrage: ist der Edle eine Gestalt für Christus, dann ordnet dieser die Hinrichtung seiner Gegner an; ist er es nicht, dann führt das Gleichnis die Herrschaftsweise eines Klientelfürsten vor, und der dritte Knecht wäre derjenige, der sie beim Namen nennt. Beide Lesarten haben ihre Anhänger; entschieden ist die Frage nicht.',
+    reception:
+      'Aus der lutherischen Übersetzung ist die Redewendung hervorgegangen, mit seinem Pfund zu wuchern. Sie hat sich vollständig von der Erzählung gelöst und meint heute, vorhandene Fähigkeiten zu nutzen. Denselben Weg ging im Englischen das Wort für die bei Matthäus genannte Geldeinheit, das über die Auslegung dieses Gleichnisses zur Bezeichnung für Begabung wurde und von dort in andere Sprachen zurückwirkte.\n\nDas Gleichnis ist über Jahrhunderte als Text über den Umgang mit anvertrauten Gaben gepredigt worden. Im neunzehnten Jahrhundert trat eine wirtschaftliche Deutung hinzu, die im Handeln der ersten beiden Knechte ein Lob unternehmerischer Tüchtigkeit fand. Dagegen ist eingewandt worden, daß der Text von einem Herrn spricht, der erntet, was er nicht gesät hat, und daß dieses Urteil im Gleichnis unwidersprochen bleibt.\n\nDer Schlußvers hat eine dunkle Geschichte. Er wurde neben dem Nötigungswort aus dem Gastmahlgleichnis herangezogen, wenn kirchliche und weltliche Gewalt gegen Abweichende begründet werden sollte, und erscheint in Sammlungen von Belegstellen zum Ketzerrecht. In der neueren Predigt wird er meist übergangen; Ausleger, die ihn nicht überspringen wollen, verweisen entweder auf die Bildwelt der Königsherrschaft oder darauf, daß hier ein Gewaltherrscher und nicht Gott spricht.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die Fürsten der Region herrschten von Roms Gnaden. Ihre Einsetzung mußte der Kaiser bestätigen, und die Bewerber reisten dafür selbst nach Rom. Gegenparteien konnten Gesandtschaften schicken; die Entscheidung fiel im Rat des Kaisers.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Wer fremdes Geld verwahrte, haftete für Verlust. Nach rabbinischer Rechtsauffassung galt das Vergraben als sicherste Form der Aufbewahrung und entlastete den Verwahrer; der Vorwurf im Gleichnis trifft also nicht eine rechtswidrige Handlung.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Unfreie und Freigelassene betrieben mit dem Geld ihres Herrn Handel und Bankgeschäfte. Der ihnen überlassene Bestand blieb rechtlich Eigentum des Herrn, konnte aber zum Erwerb der Freiheit angespart werden.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Eine Mine entsprach hundert Drachmen, also ungefähr drei Monatslöhnen eines Tagelöhners. Das Schweißtuch war ein Leinentuch, wie es zum Abwischen des Gesichts diente und in dem man Kleinigkeiten verknotete.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. anthrōpos tis eugenēs',
+        rendered: 'Ein Edler',
+        note: 'Ein Mann von vornehmer Herkunft. Der Zug ins ferne Land, um ein Reich zu empfangen, entspricht der Reise herodianischer Thronanwärter nach Rom.',
+      },
+      {
+        word: 'griech. deka mnas',
+        rendered: 'zehn Pfund',
+        note: 'Eine Mine waren hundert Drachmen. Bei Matthäus lauten die Summen auf Talente und sind rund sechzigmal so hoch.',
+      },
+      {
+        word: 'griech. en soudariō apokeimenēn',
+        rendered: 'im Schweißtuch behalten',
+        note: 'Ein Leinentuch zum Abwischen des Gesichts, in dem man Kleines verknotete. Das Aufbewahren galt rechtlich als sichere Verwahrung.',
+      },
+      {
+        word: 'griech. epi trapezan',
+        rendered: 'in die Wechselbank',
+        note: 'Wörtlich auf den Tisch der Geldwechsler. Verzinsliche Einlagen waren üblich, standen aber im Widerspruch zum Zinsverbot der Tora unter Volksgenossen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas verbindet ein Gleichnis vom anvertrauten Geld, das auch Matthäus überliefert, mit einer Erzählung vom Thronanwärter. Die Anspielung auf Archelaus gilt als sicher; strittig ist, ob beide Stränge schon in der Überlieferung verbunden waren oder erst vom Evangelisten zusammengefügt wurden.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Auslegung bezieht das Gleichnis auf die Verantwortung für empfangene Gaben in der Zeit bis zur Wiederkunft. Der Schlußvers wird als Bildelement der Herrschererzählung verstanden und nicht als Handlungsanweisung.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird der Gegensatz zwischen dem Vertrauen der ersten beiden und der Furcht des dritten. Nicht der Ertrag entscheide, sondern das Bild, das jeder sich vom Herrn macht; die Furcht selbst lähmt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter deuten die Pfunde auf die Gaben des Geistes, die in der Kirche verschieden ausgeteilt sind. Das Verstecken gilt als Bild für die Trägheit, die das Empfangene nicht weitergibt.',
+      },
+      {
+        tradition: 'sozialgeschichtlich',
+        text: 'In dieser Lesart ist der Edle kein Gottesbild, sondern die genaue Beschreibung eines Klientelfürsten. Der dritte Knecht spreche als einziger aus, wie das System funktioniert, und werde dafür bestraft; das Gleichnis führe Herrschaft vor, statt sie zu empfehlen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 25, verse: 14, note: 'Die Parallele vom anvertrauten Geld, dort mit Talenten und ohne den Thronanwärter.' },
+      { book: 'lk', chapter: 8, verse: 18, note: 'Wer da hat, dem wird gegeben: derselbe Satz in anderem Zusammenhang.' },
+      { book: '3mo', chapter: 25, verse: 36, note: 'Das Zinsverbot, an das der Vorwurf über die Wechselbank rührt.' },
+      { book: 'apg', chapter: 1, verse: 6, note: 'Die Frage nach der Aufrichtung des Reiches: dieselbe Erwartung, gegen die das Gleichnis steht.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 19,
+    from: 28,
+    to: 48,
+    title: '„so werden die Steine schreien“',
+    historicalShort:
+      'Auf einem jungen Esel zieht Jesus vom Ölberg nach Jerusalem hinab, während die Jünger ihn als König begrüßen. Vor der Stadt weint er über sie und sagt ihre Belagerung an; im Tempel treibt er die Händler hinaus und lehrt dort täglich.',
+    historicalLong:
+      'Das Reittier ist ein Füllen, auf dem noch niemand gesessen hat. Diese Angabe hat einen kultischen Hintergrund: für heilige Zwecke wurden Tiere verlangt, die noch kein Joch getragen hatten. Anders als Matthäus und Johannes zitiert Lukas den Sacharjavers vom König, der demütig auf einem Esel kommt, nicht ausdrücklich; das Bild spricht für sich. Der Satz, mit dem die Jünger das Tier holen sollen, ist mehrdeutig: das griechische Wort für Herr kann auch den Besitzer meinen, so daß die Botschaft ebenso gut heißen könnte, sein Eigentümer brauche es. Manche Ausleger vermuten deshalb eine vorher getroffene Absprache.\n\nLukas erzählt die Szene deutlich zurückhaltender als die anderen. Palmzweige kommen nur bei Johannes vor, Zweige von den Feldern bei Markus; hier werden allein Kleider ausgebreitet, wie es beim Ausrufen eines Königs im zweiten Königsbuch geschieht. Und es ist nicht die Stadt, die jubelt, sondern die Schar der Jünger. In den Ruf aus dem hundertachtzehnten Psalm schiebt Lukas das Wort König ein und läßt darauf einen Satz folgen, der den Gesang der Engel bei der Geburt aufnimmt und zugleich verschiebt: dort Friede auf Erden, hier Friede im Himmel. Auf der Erde wird gleich darauf keiner sein.\n\nDenn unmittelbar folgt die Klage. Die Beschreibung nennt einen Wall, den die Feinde um die Stadt aufwerfen, die Einschließung von allen Seiten, die Schleifung und den Tod der Kinder. Titus ließ im Sommer 70 tatsächlich eine Mauer um Jerusalem errichten, um jeden Ausbruch zu verhindern; Josephus berichtet, sie sei in drei Tagen entstanden und habe den Hunger in der Stadt entschieden. Für die meisten Ausleger ist das der stärkste Einzelhinweis darauf, daß Lukas nach dem Jahr 70 schreibt. Dagegen wird eingewandt, daß die verwendeten Ausdrücke sämtlich aus den Belagerungsschilderungen der Propheten stammen und deshalb kein Wissen um den Ausgang voraussetzen. Beide Argumente haben Gewicht; die Mehrheit folgt dem ersten.\n\nDie Tempelszene ist bei Lukas die kürzeste der vier Fassungen: keine umgestoßenen Tische, keine ausgetriebenen Tiere, zwei Verse. Was dort geschah, war notwendiger Betrieb. Die jährliche Tempelabgabe mußte in tyrischem Silber entrichtet werden, weil dessen Feingehalt verläßlich war, weshalb Wechsler bereitstanden; Tauben waren das Opfer der Armen und der Wöchnerinnen und wurden im Vorhof verkauft. Das Zitat verbindet einen Vers aus dem Jesajabuch mit einem aus der Tempelrede des Jeremia, die sich gegen die Meinung richtet, das Heiligtum schütze vor den Folgen des eigenen Handelns. Das griechische Wort hinter Mördergrube meint die Höhle von Räubern und wurde später auch für Aufständische gebraucht. Lukas läßt Jesus danach täglich im Tempel lehren; der Ort wird für mehrere Tage zur Bühne.',
+    reception:
+      'Der Einzug ist zum Palmsonntag geworden. Die Pilgerin Egeria beschreibt gegen Ende des vierten Jahrhunderts, wie die Gemeinde in Jerusalem sich am Nachmittag auf dem Ölberg versammelte und mit Zweigen singend in die Stadt hinabzog; von dort verbreitete sich die Prozession über die ganze Kirche. Im Westen entwickelten sich daraus Palmweihe, Palmesel und die Umzüge, die in vielen Gegenden bis heute stattfinden.\n\nDie Klage über die Stadt hat der Kirche über Jahrhunderte als Beweis gedient, daß die Zerstörung Jerusalems die Strafe für die Ablehnung Jesu gewesen sei. Eusebius von Caesarea führt sie im vierten Jahrhundert in dieser Weise an, und von ihm aus zieht sich die Deutung durch Predigt, Kunst und Schulunterricht bis in die Neuzeit; sie hat der Vorstellung eines verworfenen Volkes zugearbeitet. Gegen sie wird eingewandt, daß der Text nicht von einem Richter, sondern von einem Weinenden erzählt, daß die Sprache aus den Prophetenbüchern stammt, in denen die Klage über die eigene Stadt eine feste Form ist, und daß Lukas keinen Zusammenhang von Schuld und Strafe formuliert. Die Erklärungen der Kirchen seit den sechziger Jahren haben die Strafdeutung ausdrücklich zurückgewiesen. An der Stelle, an der die Überlieferung das Weinen ansetzt, wurde 1955 am Westhang des Ölbergs die Kapelle Dominus Flevit errichtet, deren Fenster den Blick auf die Stadt freigibt.\n\nDie Tempelszene ist in der Kirchengeschichte immer dann herangezogen worden, wenn Geld und Heiligtum in Widerspruch gerieten. Sie steht hinter der Kritik am Ablaßhandel, hinter reformatorischen Streitschriften und hinter modernen Auseinandersetzungen über kirchlichen Besitz. In der lateinamerikanischen Theologie wird sie als der eine Fall gelesen, in dem Jesus tätliche Gewalt gegen Sachen anwendet; über ihre Reichweite für Fragen des gewaltfreien Handelns wird seit langem gestritten.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der Ölberg liegt der Stadt im Osten gegenüber, getrennt durch das Kidrontal, und überragt sie um etwa siebzig Meter. Wer von Bethanien kommt, sieht Jerusalem und den Tempelbezirk beim Übertreten des Kamms mit einem Mal vor sich liegen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Bei der Belagerung des Jahres 70 ließ Titus einen durchgehenden Wall um Jerusalem errichten, damit niemand entkommen konnte. Solche Umschließungen gehörten zum römischen Belagerungsverfahren und sind auch von anderen Feldzügen bekannt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Jeder erwachsene Jude entrichtete jährlich eine halbe Schekel Tempelabgabe. Sie war in tyrischem Silber zu zahlen, dessen Gehalt als verläßlich galt, weshalb im Vorhof gewechselt wurde. Tauben waren das vorgeschriebene Opfer der Armen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Kleider auf den Weg zu breiten war die Gebärde, mit der ein König ausgerufen wurde; das zweite Königsbuch schildert sie bei der Erhebung Jehus. Wer sie vollzog, wußte, was er tat, und die Umstehenden wußten es auch.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. pōlon',
+        rendered: 'ein Füllen',
+        note: 'Ein junges Tier, auf dem noch niemand geritten ist. Für kultische Zwecke wurden Tiere verlangt, die noch kein Joch getragen hatten.',
+      },
+      {
+        word: 'griech. ho kyrios autou chreian echei',
+        rendered: 'Der HERR bedarf sein',
+        note: 'Das griechische Wort für Herr kann auch den Besitzer bezeichnen. Der Satz läßt offen, ob eine Vollmacht beansprucht oder eine Absprache eingelöst wird.',
+      },
+      {
+        word: 'griech. charaka',
+        rendered: 'eine Wagenburg schlagen',
+        note: 'Gemeint ist ein Belagerungswall aus Erde und Pfählen. Luther greift zu einem Ausdruck des Kriegswesens seiner eigenen Zeit.',
+      },
+      {
+        word: 'griech. spēlaion lēstōn',
+        rendered: 'zur Mördergrube',
+        note: 'Wörtlich Höhle von Räubern, ein Zitat aus der Tempelrede des Jeremia. Dasselbe Wort bezeichnet später auch die Aufständischen des jüdischen Kriegs.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Beschreibung der Belagerung gilt der Mehrheit als Hinweis auf eine Abfassung nach dem Jahr 70. Die Gegenposition verweist darauf, daß sämtliche Ausdrücke den Belagerungsschilderungen der Prophetenbücher entstammen und daher kein Wissen um den Ausgang voraussetzen.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Der Einzug wird als Offenbarung des Königtums gelesen, das sich in Niedrigkeit zeigt. Die Liturgie des Palmsonntags stellt ihn unmittelbar neben die Passion und macht den Umschlag zum Thema des Tages.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird der Gegensatz zwischen dem königlichen Ruf und dem Reittier. Die Tempelszene diente in der Reformationszeit als Beleg gegen die Verbindung von Heiligtum und Geldgeschäft; Luther bezog sie unmittelbar auf den Ablaß.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Der Palmsonntag zählt zu den zwölf großen Festen. Die Gesänge des Tages verbinden den Einzug mit der Auferweckung des Lazarus am Vortag und lesen beide als Vorwegnahme des Osterfestes.',
+      },
+      {
+        tradition: 'jüdisch-christlicher Dialog',
+        text: 'Zurückgewiesen wird die Deutung der Klageworte als Ankündigung einer Strafe, die das Volk als ganzes trifft. Der Text zeige einen, der über seine Stadt weint, in der Sprache der Propheten, die selbst zu ihrem Volk gehörten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'sach', chapter: 9, verse: 9, note: 'Der König kommt arm und reitet auf einem Esel: das Bild, das Lukas nicht zitiert, aber voraussetzt.' },
+      { book: '2koe', chapter: 9, verse: 13, note: 'Die Kleider unter Jehu bei seiner Ausrufung zum König: dieselbe Gebärde.' },
+      { book: 'hab', chapter: 2, verse: 11, note: 'Die Steine in der Mauer werden schreien: der Hintergrund des Antwortworts.' },
+      { book: 'jer', chapter: 7, verse: 11, note: 'Die Tempelrede gegen die Mördergrube, aus der das Zitat stammt.' },
+    ],
+  },
 ];
 
 /**

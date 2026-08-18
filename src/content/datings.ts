@@ -3337,6 +3337,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Endzeitrede setzt die Zerstörung Jerusalems bereits voraus.',
     epoch: 'roemer',
   },
+  'lk 18,1': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., am Ende der Reise kurz vor Jericho und Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; es folgt hier weithin dem Aufriß des Markusevangeliums und verändert ihn in Einzelheiten.',
+    epoch: 'roemer',
+  },
+  'lk 18,15': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., am Ende der Reise kurz vor Jericho und Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; es folgt hier weithin dem Aufriß des Markusevangeliums und verändert ihn in Einzelheiten.',
+    epoch: 'roemer',
+  },
+  'lk 18,31': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., am Ende der Reise kurz vor Jericho und Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; es folgt hier weithin dem Aufriß des Markusevangeliums und verändert ihn in Einzelheiten.',
+    epoch: 'roemer',
+  },
+  'lk 19,1': {
+    events: 'Die Szenen gehören in die letzten Tage vor dem Passafest, etwa im Jahr 30 n. Chr., in Jericho und beim Einzug in Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gehört zu den Hauptargumenten für diesen Ansatz.',
+    epoch: 'roemer',
+  },
+  'lk 19,11': {
+    events: 'Die Szenen gehören in die letzten Tage vor dem Passafest, etwa im Jahr 30 n. Chr., in Jericho und beim Einzug in Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gehört zu den Hauptargumenten für diesen Ansatz.',
+    epoch: 'roemer',
+  },
+  'lk 19,28': {
+    events: 'Die Szenen gehören in die letzten Tage vor dem Passafest, etwa im Jahr 30 n. Chr., in Jericho und beim Einzug in Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gehört zu den Hauptargumenten für diesen Ansatz.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
