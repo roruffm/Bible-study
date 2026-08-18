@@ -3417,6 +3417,31 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Passionserzählung weicht in Aufbau und Einzelheiten mehrfach von Markus ab.',
     epoch: 'roemer',
   },
+  'lk 23,1': {
+    events: 'Die Verhandlung und die Hinrichtung fallen auf einen Freitag im Frühjahr, nach überwiegender Annahme im Jahr 30 n. Chr.; Pilatus war von 26 bis 36 Statthalter, Antipas bis 39 Tetrarch.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Passionserzählung enthält mehrere Stücke, die kein anderes Evangelium kennt.',
+    epoch: 'roemer',
+  },
+  'lk 23,26': {
+    events: 'Die Verhandlung und die Hinrichtung fallen auf einen Freitag im Frühjahr, nach überwiegender Annahme im Jahr 30 n. Chr.; Pilatus war von 26 bis 36 Statthalter, Antipas bis 39 Tetrarch.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Passionserzählung enthält mehrere Stücke, die kein anderes Evangelium kennt.',
+    epoch: 'roemer',
+  },
+  'lk 23,44': {
+    events: 'Die Verhandlung und die Hinrichtung fallen auf einen Freitag im Frühjahr, nach überwiegender Annahme im Jahr 30 n. Chr.; Pilatus war von 26 bis 36 Statthalter, Antipas bis 39 Tetrarch.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Passionserzählung enthält mehrere Stücke, die kein anderes Evangelium kennt.',
+    epoch: 'roemer',
+  },
+  'lk 24,1': {
+    events: 'Die Ereignisse werden auf den Tag nach dem Sabbat und den folgenden Abend gelegt, nach überwiegender Annahme im Frühjahr des Jahres 30 n. Chr.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; sein Schluß führt unmittelbar auf die Apostelgeschichte desselben Verfassers zu.',
+    epoch: 'roemer',
+  },
+  'lk 24,36': {
+    events: 'Die Ereignisse werden auf den Tag nach dem Sabbat und den folgenden Abend gelegt, nach überwiegender Annahme im Frühjahr des Jahres 30 n. Chr.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; sein Schluß führt unmittelbar auf die Apostelgeschichte desselben Verfassers zu.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
