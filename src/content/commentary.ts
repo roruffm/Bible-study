@@ -49662,6 +49662,332 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'joh', chapter: 8, verse: 1, note: 'Jesus geht an den Ölberg: dieselbe Gewohnheit in einem anderen Evangelium.' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 22,
+    from: 1,
+    to: 23,
+    title: '„das tut zu meinem Gedächtnis“',
+    historicalShort:
+      'Judas verabredet die Auslieferung, zwei Jünger richten das Passamahl her, und beim Mahl deutet Jesus Brot und Kelch auf seinen Tod. Der lukanische Text dieser Verse gehört zu den textkritisch schwierigsten des Neuen Testaments.',
+    historicalLong:
+      'Lukas nennt das Fest der ungesäuerten Brote und das Passa in einem Atemzug. Genau genommen sind es zwei Feiern: am vierzehnten Nisan wurden die Lämmer im Tempel geschlachtet, am Abend begann das Mahl, und daran schlossen sich sieben Tage an, in denen kein gesäuertes Brot gegessen wurde. Im Sprachgebrauch der Zeit gingen beide Namen längst ineinander über. Luther setzt für das Passa das Wort Ostern ein, das aus einem germanischen Frühlingsfest stammt und den ursprünglichen Bezug verdeckt.\n\nDaß der Satan in Judas fährt, sagen nur Lukas und Johannes. Bei Lukas hat der Satz eine bauliche Funktion: nach der Versuchung in der Wüste hieß es, der Teufel sei von ihm gewichen bis zu einer bestimmten Zeit. Jetzt kehrt er zurück. Über die Beweggründe des Judas sagt der Text nichts; Lukas nennt anders als Matthäus auch keine Summe. Erwähnt werden dagegen die Hauptleute, mit denen Judas verhandelt: die Befehlshaber der Tempelwache, einer bewaffneten Ordnungstruppe unter der Aufsicht der Priesterschaft. Diese Kenntnis der Verhältnisse ist für Lukas kennzeichnend.\n\nDas Erkennungszeichen bei der Vorbereitung ist gut gewählt. Wasser zu tragen war Frauenarbeit; ein Mann mit einem Krug fiel in der Gasse auf. Der Raum, in den er führt, ist ein großes Obergemach mit Polstern, also die Ausstattung eines wohlhabenden Hauses. Ob eine Verabredung dahintersteht oder ein Vorherwissen erzählt wird, läßt der Text offen.\n\nDer Bericht vom Mahl hat eine Besonderheit, die in keiner Übersetzung sichtbar wird. In einigen wenigen alten Handschriften, vor allem im Codex Bezae und in altlateinischen Zeugen, fehlt alles nach den Worten das ist mein Leib; dieser Kurztext kennt nur einen Kelch, und zwar den vor dem Brot. Der längere Text mit der Fortsetzung über das Gedächtnis und dem zweiten Kelch steht dagegen in den ältesten griechischen Handschriften. Im neunzehnten Jahrhundert hielten führende Textforscher den Kurztext für ursprünglich; heute gilt überwiegend der längere als der echte. In ihm folgt Lukas einer Reihenfolge mit zwei Kelchen, die zum Ablauf des Passamahls paßt, bei dem mehrmals getrunken wurde.\n\nDie Wendung, dies zum Gedächtnis zu tun, steht im Neuen Testament nur hier und im ersten Korintherbrief. Paulus führt sie um das Jahr fünfundfünfzig als etwas an, das er selbst empfangen hat; damit ist sie älter als jedes Evangelium. Der Kelch wird als neuer Bund in seinem Blut bezeichnet, was zwei Texte zusammenführt: die Verheißung eines neuen Bundes bei Jeremia und das Blut des Bundes, mit dem Mose das Volk besprengt. Auffällig ist zuletzt, daß die Ansage des Verrats bei Lukas nach dem Mahl steht, bei Markus davor. Judas empfängt also Brot und Kelch.',
+    reception:
+      'An diesen Versen ist die Reformation auseinandergebrochen. Beim Religionsgespräch in Marburg im Oktober 1529 einigten sich Luther und Zwingli über vierzehn Artikel und scheiterten am fünfzehnten. Luther bestand darauf, daß das ist wörtlich zu nehmen sei, und schrieb die Worte auf den Tisch; Zwingli verstand sie als bedeutet und las das Mahl als Gedächtnisfeier. Calvin vertrat später eine dritte Position, nach der Christus im Mahl wirklich, aber geistlich gegenwärtig ist. Aus dieser Nichteinigung folgte die Trennung der lutherischen und der reformierten Kirchen, die erst mit der Leuenberger Konkordie von 1973 im europäischen Protestantismus überwunden wurde.\n\nDie katholische Lehre bestimmte auf dem Konzil von Trient 1551, daß sich in der Feier die ganze Substanz von Brot und Wein verwandelt. Die Ostkirchen halten an der Realpräsenz fest, ohne sie mit den Mitteln der aristotelischen Philosophie zu bestimmen, und betonen die Anrufung des Geistes über den Gaben. Der Text der Kommission für Glauben und Kirchenverfassung des Weltkirchenrats, 1982 in Lima verabschiedet, formulierte eine weitgehende Annäherung in der Sache; die Frage der gemeinsamen Feier blieb davon unberührt. Ein Vorschlag des Ökumenischen Arbeitskreises evangelischer und katholischer Theologen aus dem Jahr 2019, unter bestimmten Bedingungen wechselseitige Teilnahme zu ermöglichen, wurde von römischer Seite 2020 zurückgewiesen.\n\nDas Wort vom Gedächtnis hat über die Streitfragen hinaus die Gestalt jedes christlichen Gottesdienstes bestimmt. Es steht in allen überlieferten Meßformularen des Ostens und des Westens, in den evangelischen Agenden und in den Ordnungen der Freikirchen. Kein anderer Satz des Neuen Testaments wird häufiger gesprochen.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Am Nachmittag des vierzehnten Nisan wurden im Tempel die Lämmer geschlachtet, in Gruppen und unter großem Andrang. Das Mahl fand danach in den Häusern statt, in Tischgemeinschaften von mindestens zehn Personen, weil ein Lamm sonst nicht aufgezehrt worden wäre.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wasser holten die Frauen, meist zweimal täglich, in Krügen auf dem Kopf oder der Schulter. Ein Mann mit einem Wasserkrug war deshalb in der Gasse leicht zu erkennen; Männer trugen Wasser eher in Schläuchen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Die Tempelwache war eine bewaffnete Ordnungstruppe aus Leviten unter der Aufsicht eines Vorstehers. Sie sorgte für die Reinhaltung der Vorhöfe, schloß nachts die Tore und konnte Festnahmen vornehmen, solange sie den Bezirk nicht verließ.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Zum Fest waren die Häuser überfüllt. Wer einen großen Obergeschoßraum besaß, stellte ihn Pilgern zur Verfügung; nach der Überlieferung durfte für die Unterkunft zum Passa kein Entgelt genommen werden.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hē heortē tōn azymōn hē legomenē pascha',
+        rendered: 'das da Ostern heißt',
+        note: 'Luther setzt für das Passa das Wort Ostern ein, das auf einen germanischen Frühlingsnamen zurückgeht. Der Bezug zum jüdischen Fest wird dadurch verdeckt.',
+      },
+      {
+        word: 'griech. stratēgois',
+        rendered: 'Hauptleuten',
+        note: 'Die Befehlshaber der Tempelwache. Lukas kennt die Ordnung des Tempelbetriebs genauer als die übrigen Evangelisten.',
+      },
+      {
+        word: 'griech. anagaion mega estrōmenon',
+        rendered: 'einen großen Saal',
+        note: 'Ein Obergeschoßraum mit Polstern zum Liegen. Solche Räume gab es nur in größeren Häusern der Oberstadt.',
+      },
+      {
+        word: 'griech. eis tēn emēn anamnēsin',
+        rendered: 'zu meinem Gedächtnis',
+        note: 'Die Wendung steht nur hier und im ersten Korintherbrief. Das griechische Wort meint mehr als Erinnerung: das Vergangene wird gegenwärtig gesetzt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Zwei Fragen stehen im Vordergrund: der abweichende Kurztext einiger Handschriften und die Frage, ob es überhaupt ein Passamahl war, da das Johannesevangelium die Kreuzigung auf den Rüsttag legt, an dem die Lämmer geschlachtet wurden. Beide Fragen sind nicht abschließend geklärt.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Trient bestimmte 1551, daß sich in der Feier die ganze Substanz von Brot und Wein in Leib und Blut Christi wandelt. Das Gedächtnis ist danach kein Erinnern, sondern die Vergegenwärtigung des einen Opfers.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Luther hielt am wörtlichen Verständnis des ist fest, ohne die Verwandlungslehre zu übernehmen. Zwingli las die Worte bildlich, Calvin lehrte eine wirkliche, aber geistliche Gegenwart. Die Leuenberger Konkordie von 1973 erklärte den Streit im europäischen Protestantismus für beigelegt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die östliche Feier legt das Gewicht auf die Anrufung des Heiligen Geistes über den Gaben. Die Gegenwart Christi wird bekannt, ihre Weise aber ausdrücklich als Geheimnis behandelt, das nicht philosophisch zu bestimmen sei.',
+      },
+      {
+        tradition: 'täuferisch',
+        text: 'Die Täufer und die aus ihnen hervorgegangenen Freikirchen verstehen die Feier als Gedächtnismahl der Gemeinde. Der Nachdruck liegt auf der Gemeinschaft der Teilnehmenden und auf der Verpflichtung, die sie miteinander eingehen.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 12, verse: 6, note: 'Die Anweisung zum Schlachten des Passalammes am vierzehnten Tag des Monats.' },
+      { book: 'jer', chapter: 31, verse: 31, note: 'Die Verheißung eines neuen Bundes, die im Kelchwort aufgenommen wird.' },
+      { book: '2mo', chapter: 24, verse: 8, note: 'Das Blut des Bundes, mit dem Mose das Volk besprengt.' },
+      { book: '1kor', chapter: 11, verse: 23, note: 'Die älteste erhaltene Fassung der Einsetzungsworte, von Paulus als übernommene Überlieferung angeführt.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 22,
+    from: 24,
+    to: 38,
+    title: '„hier sind zwei Schwerter“',
+    historicalShort:
+      'Am Tisch entsteht ein Streit über den Rang, dem Jesus die Umkehrung der üblichen Ordnung entgegenhält. Er sagt Petrus das Versagen und die Umkehr voraus und beendet das Gespräch mit einem Wort über Schwerter, das seither auf entgegengesetzte Weise gebraucht wurde.',
+    historicalLong:
+      'Den Streit über den Rang erzählt auch Markus, dort aber unterwegs und ausgelöst durch die Bitte zweier Jünger um die Ehrenplätze. Lukas verlegt ihn an den Tisch des letzten Mahls, also an die Stelle, an der das Johannesevangelium die Fußwaschung berichtet. Der Ausdruck, den Luther mit gnädige Herren wiedergibt, ist genauer als er klingt: es handelt sich um einen wirklichen Ehrentitel. Wohltäter nannten sich hellenistische Könige, und Städte verliehen die Bezeichnung an Männer, die Bauten stifteten oder Getreide bezahlten; zwei ptolemäische Herrscher führten sie im Namen. Wer Wohltäter hieß, stand in einem Verhältnis, das Gegenleistung und Ergebenheit einschloß. Genau dieses System wird bestritten.\n\nDie Zusage an die Zwölf, auf Stühlen zu sitzen und die zwölf Stämme zu richten, ist nicht nur als Gericht zu verstehen. Das griechische Wort deckt wie das hebräische Vorbild auch das Regieren ab, so wie die Richter des gleichnamigen Buches nicht Prozesse führten, sondern anführten.\n\nDas Wort an Simon steht im Griechischen in doppelter Form: der Satan hat euch alle begehrt, gebeten aber wird für dich. Das Bild vom Sichten meint das Worfeln, bei dem das Gedroschene in die Luft geworfen wird, damit der Wind die Spreu forttreibt. Bemerkenswert ist die Reihenfolge: die Umkehr wird zugesagt, bevor das Versagen überhaupt angekündigt ist. Der Auftrag, danach die Brüder zu stärken, gehört zu den drei Stellen, auf die sich die römische Lehre vom besonderen Amt des Petrus stützt; das Erste Vatikanische Konzil führte sie 1870 an.\n\nDer Schluß ist der schwierigste Teil. Jesus erinnert an die Aussendung ohne Beutel, Tasche und Schuhe und kehrt sie um: nun soll man Beutel und Tasche nehmen und notfalls das Gewand verkaufen, um ein Schwert zu kaufen. Als Begründung folgt ein Zitat aus dem Lied vom leidenden Knecht, er sei unter die Übeltäter gerechnet worden. Damit ist eine Deutung nahegelegt: er muß als Bewaffneter erscheinen, damit sich erfüllt, was geschrieben steht. Für eine wörtliche Bewaffnung sind zwei Schwerter bei zwölf Männern sinnlos, und wenige Verse später untersagt er den Gebrauch der Waffe ausdrücklich. Der abschließende Satz ist mehrdeutig: er kann heißen, zwei Schwerter genügten, oder, in einer aus dem Semitischen bekannten Wendung, es sei genug der Rede.',
+    reception:
+      'Aus den zwei Schwertern wurde eine der folgenreichsten Lehren des Mittelalters. Bernhard von Clairvaux gebrauchte das Bild um 1150 in seiner Schrift an Papst Eugen III.: der Kirche gehörten beide Schwerter, das geistliche werde von ihr selbst, das weltliche für sie geführt. Bonifaz VIII. machte daraus 1302 in der Bulle Unam Sanctam eine Rechtsbehauptung und leitete daraus den Vorrang der geistlichen über die weltliche Gewalt ab; die Bulle entstand im Streit mit dem französischen König Philipp IV. und gehört zu den weitestgehenden päpstlichen Machtansprüchen überhaupt. Die Reformatoren wiesen die Auslegung zurück, und in der katholischen Theologie ist sie seit langem aufgegeben; die Erklärung des Zweiten Vatikanischen Konzils über die Religionsfreiheit von 1965 setzt einen anderen Rahmen.\n\nDas Schwertwort ist daneben in jeder Auseinandersetzung über Gewalt und Selbstverteidigung angeführt worden. Es diente zur Rechtfertigung der Kreuzzüge ebenso wie später der Begründung eines Rechts auf Notwehr, und es wird von Vertretern der Gewaltfreiheit mit dem Hinweis zurückgewiesen, daß Jesus im Garten den Gebrauch der Waffe abbricht und den Verletzten heilt. Die Mennoniten und die Quäker führen diese Verbindung seit dem sechzehnten und siebzehnten Jahrhundert an.\n\nDas Wort über die Wohltäter hat eine stillere Wirkung entfaltet. Es steht hinter der Bezeichnung Diakonie und hinter dem Titel, den Päpste seit Gregor dem Großen führen: Knecht der Knechte Gottes. Die Spannung zwischen diesem Titel und der tatsächlichen Ausübung von Herrschaft ist in der Kirchengeschichte oft genug bemerkt worden.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Der Titel Wohltäter wurde von Städten an Herrscher und reiche Bürger verliehen, die Bauten, Getreidespenden oder Spiele bezahlten. Er wurde in Inschriften festgehalten und begründete ein dauerhaftes Verhältnis von Gunst und Dankespflicht.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Bei Tisch war der Rang aller Anwesenden sichtbar. Wer bediente, stand unten; wer lag, oben. Ein Streit um die Reihenfolge war deshalb kein Wortgefecht über Eitelkeiten, sondern eine Auseinandersetzung über die Ordnung der Gruppe.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Beim Worfeln wurde das gedroschene Getreide mit der Schaufel gegen den Abendwind geworfen. Die leichte Spreu trieb davon, die schweren Körner fielen zurück. Das Bild vom Sichten setzt diesen Vorgang voraus.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Das Tragen von Waffen war nicht allgemein verboten, doch bewaffnete Gruppen unter römischer Verwaltung erregten Verdacht. Wer mit Schwertern aufgegriffen wurde, konnte als Räuber oder Aufrührer behandelt werden, und dafür galt das Kreuz.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. euergetai',
+        rendered: 'gnädige Herren',
+        note: 'Wörtlich Wohltäter. Ein wirklicher Ehrentitel hellenistischer Herrscher und städtischer Stifter, nicht eine allgemeine Bezeichnung für Mächtige.',
+      },
+      {
+        word: 'griech. tou siniasai hōs ton siton',
+        rendered: 'sichten wie den Weizen',
+        note: 'Das Worfeln des gedroschenen Korns im Wind. Das Bild meint eine Prüfung, die trennt, nicht eine Vernichtung.',
+      },
+      {
+        word: 'griech. agorasatō machairan',
+        rendered: 'kaufe ein Schwert',
+        note: 'Die Umkehrung der früheren Aussendungsregel. Ob wörtlich, ironisch oder als Erfüllungsaussage gemeint, ist seit der Alten Kirche strittig.',
+      },
+      {
+        word: 'griech. hikanon estin',
+        rendered: 'Es ist genug',
+        note: 'Der Satz kann heißen, zwei Schwerter genügten, oder nach semitischem Sprachgebrauch, das Gespräch sei beendet.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas verlegt den Rangstreit an den Tisch des letzten Mahls und schafft damit eine Szene, die dem Bericht von der Fußwaschung im Johannesevangelium entspricht. Das Schwertwort gilt als Sondergut und als eines der schwierigsten Stücke der Überlieferung.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Der Auftrag, die Brüder zu stärken, zählt zu den Belegstellen für das besondere Amt des Petrus und seiner Nachfolger. Die Zwei-Schwerter-Lehre, die im Mittelalter aus dieser Stelle abgeleitet wurde, wird heute nicht mehr vertreten.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird, daß die Fürbitte dem Versagen vorausgeht: der Glaube hält nicht, weil Petrus stark wäre, sondern weil für ihn gebeten ist. Die Ableitung eines weltlichen Herrschaftsanspruchs aus dem Schwertwort wurde ausdrücklich verworfen.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter lesen den Rangstreit zusammen mit der Selbsterniedrigung Christi. Der Dienst bei Tisch gilt als Bild des Amtes, und die Bezeichnung Diener ist in den östlichen Kirchen Bestandteil der Amtsbezeichnungen geblieben.',
+      },
+      {
+        tradition: 'friedenskirchlich',
+        text: 'Mennoniten, Quäker und verwandte Gemeinschaften lesen das Schwertwort im Licht dessen, was unmittelbar folgt: im Garten wird der Gebrauch der Waffe abgebrochen und der Verwundete geheilt. Die zwei Schwerter dienten der Erfüllung eines Prophetenworts, nicht der Bewaffnung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 10, verse: 42, note: 'Dieselbe Belehrung über die Herrschenden, dort unterwegs nach Jerusalem.' },
+      { book: 'jes', chapter: 53, verse: 12, note: 'Er ist unter die Übeltäter gerechnet: das Zitat, mit dem das Schwertwort begründet wird.' },
+      { book: 'mt', chapter: 16, verse: 18, note: 'Das Wort vom Felsen, die bekannteste der Stellen zum besonderen Auftrag des Petrus.' },
+      { book: 'lk', chapter: 10, verse: 4, note: 'Die Aussendung ohne Beutel, Tasche und Schuhe, die hier ausdrücklich umgekehrt wird.' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 22,
+    from: 39,
+    to: 53,
+    title: '„doch nicht mein, sondern dein Wille geschehe“',
+    historicalShort:
+      'Auf dem Ölberg betet Jesus darum, daß der Kelch an ihm vorübergehe, und fügt sich zugleich. Die Festnahme folgt; als ein Begleiter zuschlägt, bricht er den Widerstand ab und heilt den Verletzten.',
+    historicalLong:
+      'Lukas nennt den Ort nicht beim Namen. Wo Markus und Matthäus Gethsemane schreiben, heißt es hier nur, er sei nach seiner Gewohnheit an den Ölberg gegangen. Gethsemane bedeutet Ölpresse; an den Hängen lagen umfriedete Gärten mit Preßanlagen, die zur Erntezeit genutzt wurden und außerhalb der Saison Schutz boten.\n\nDie Darstellung ist kürzer und gefaßter als bei Markus. Dort geht Jesus dreimal beten, nimmt drei Jünger beiseite und spricht davon, daß seine Seele betrübt sei bis an den Tod. Lukas hat ein einziges Gebet, keine Auswahl von Vertrauten und eine mildernde Erklärung für den Schlaf der Jünger: sie schlafen vor Traurigkeit. Der Kelch, um dessen Abwendung gebeten wird, ist ein Bild der Prophetenbücher, in denen der Becher für ein Geschick steht, das auferlegt und ausgetrunken werden muß.\n\nAn dieser Stelle steht eines der bekanntesten textkritischen Probleme des Neuen Testaments. Die beiden Verse über den stärkenden Engel und den Schweiß wie Blutstropfen fehlen in mehreren der ältesten und besten Handschriften, darunter im Papyrus 75, im Codex Vaticanus und in der ersten Hand des Codex Sinaiticus. Sie stehen dagegen bei einem Korrektor desselben Codex, im Codex Bezae und in altlateinischen Zeugen, und Justin und Irenäus kennen sie bereits im zweiten Jahrhundert. Die modernen Ausgaben setzen sie in Klammern. Für ihre Ursprünglichkeit spricht das frühe Zeugnis der Kirchenväter und die Nachricht des Epiphanius, rechtgläubige Abschreiber hätten sie entfernt, weil sie im arianischen Streit gegen die Gottheit Christi verwendet wurden; dagegen spricht das Gewicht der ältesten Handschriften. Die Frage ist offen. Der Text sagt im übrigen nicht, es sei Blut gewesen, sondern der Schweiß sei wie Blutstropfen geworden; die Medizin kennt einen seltenen Zustand, bei dem unter äußerster Belastung Blut in den Schweißdrüsen austritt, doch der Wortlaut läßt auch einen bloßen Vergleich der Größe und Dichte zu.\n\nBei der Festnahme setzt Lukas eigene Akzente. Der Kuß wird angekündigt, aber nicht ausgeführt; Jesus unterbricht mit einer Frage. Der Schlag mit dem Schwert wird abgebrochen, und nur Lukas erzählt, daß der Verletzte geheilt wird. Damit endet die Waffengeschichte des Evangeliums genau dort, wo sie begonnen hatte: wenige Verse zuvor war von zwei Schwertern die Rede. Der Satz von der Stunde und der Macht der Finsternis nimmt den Anfang des Kapitels auf, wo es hieß, der Satan sei in Judas gefahren.',
+    reception:
+      'Das Gebet auf dem Ölberg ist zum entscheidenden Schriftbeleg einer Lehrentscheidung geworden. Im siebten Jahrhundert stritt die Kirche darüber, ob in Christus ein Wille oder zwei anzunehmen seien; die eine Seite wollte mit der Annahme eines einzigen Willens die Einheit der Person sichern. Das dritte Konzil von Konstantinopel entschied 681, es seien zwei natürliche Willen und zwei Wirkweisen anzunehmen, ein göttlicher und ein menschlicher, die einander nicht widerstreiten, sondern in denen der menschliche sich dem göttlichen fügt. Als Beleg diente eben dieser Vers: nicht mein Wille, sondern deiner. Ohne einen menschlichen Willen, so das Argument, wäre der Satz sinnlos.\n\nIn der Frömmigkeit ist die Szene zum Bild der Angst geworden, die nicht überspielt wird. Sie bildet das erste der schmerzhaften Geheimnisse des Rosenkranzes, ist unzählige Male gemalt worden und hat eine eigene musikalische Überlieferung; Beethoven schrieb 1803 ein Oratorium über den Ölberg. In der Seelsorge wird der Text regelmäßig herangezogen, wenn es darum geht, daß Klage und Ergebung nebeneinander bestehen können.\n\nDer abgebrochene Schwertschlag und die Heilung des Verletzten gehören zu den Grundstellen der christlichen Gewaltfreiheit. Die Täufer des sechzehnten Jahrhunderts, die Quäker und im zwanzigsten Jahrhundert die Bewegungen des gewaltlosen Widerstands haben sich darauf berufen. Bemerkenswert bleibt, daß die letzte Handlung Jesu vor seiner Verhaftung nach Lukas die Heilung eines Angehörigen der Gegenseite ist.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'An den Hängen des Ölbergs lagen ummauerte Gärten mit Ölbäumen und in den Fels geschlagenen Pressen. Sie waren Arbeitsstätten der Erntezeit und boten außerhalb der Saison einen abgeschlossenen, ruhigen Platz nahe der Stadt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Becher ist in den Prophetenbüchern ein Bild für ein auferlegtes Geschick. Wer ihn trinkt, nimmt an, was über ihn verhängt ist; die Psalmen und das Jesajabuch gebrauchen die Wendung für das Gericht über Völker und Einzelne.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Eine Festnahme bei Nacht und außerhalb des Tempelbezirks erforderte eine bewaffnete Gruppe. Daß Hohepriester, Hauptleute und Älteste selbst mitkommen, ist ungewöhnlich und zeigt, wie sehr die Sache als eilig und heikel behandelt wurde.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Kuß auf die Wange war unter Männern der übliche Gruß zwischen Vertrauten, besonders zwischen Schüler und Lehrer. Er war öffentlich und selbstverständlich; als Zeichen der Auslieferung wird er gerade deshalb wirksam.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. eis peirasmon',
+        rendered: 'in Anfechtung',
+        note: 'Das Wort bezeichnet die Prüfung ebenso wie die Versuchung. Es kehrt aus der Bitte des Vaterunsers wieder und rahmt die Szene zweimal ein.',
+      },
+      {
+        word: 'griech. to potērion touto',
+        rendered: 'diesen Kelch',
+        note: 'Ein Bild der Prophetenbücher für ein Geschick, das auferlegt ist. Es meint nicht Leid überhaupt, sondern ein bestimmtes, zugemessenes Maß.',
+      },
+      {
+        word: 'griech. hōsei thromboi haimatos',
+        rendered: 'wie Blutstropfen',
+        note: 'Der Vergleich läßt offen, ob Blut austrat oder nur die Größe der Tropfen gemeint ist. Die beiden Verse fehlen in mehreren der ältesten Handschriften.',
+      },
+      {
+        word: 'griech. hē exousia tou skotous',
+        rendered: 'die Macht der Finsternis',
+        note: 'Eine Wendung, die nur Lukas gebraucht. Sie nimmt den Satz vom Anfang des Kapitels auf, in dem der Satan in Judas fährt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas kürzt die Szene gegenüber Markus erheblich und mildert die Darstellung der Jünger. Die beiden Verse über Engel und Schweiß gehören zu den am häufigsten diskutierten Textfragen; ihre Echtheit ist weder zu beweisen noch zu widerlegen.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Todesangst gilt als Zeugnis dafür, daß die menschliche Natur vollständig angenommen ist. Der Katechismus bezieht sich für die Zweiheit der Willen auf das Konzil von 681 und auf diesen Vers.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Im Mittelpunkt steht die Bitte selbst, die den Wunsch nicht unterdrückt und ihn zugleich zurückstellt. Luther sah darin das Muster jedes Gebets in der Anfechtung: es darf alles sagen und muß nichts erzwingen.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die östliche Theologie hat den Vers im Streit um die Willen Christi ausführlich behandelt. Maximus der Bekenner legte dar, daß der menschliche Wille im Sichfügen nicht aufgehoben, sondern vollendet werde; er bezahlte diese Position mit Verstümmelung und Verbannung.',
+      },
+      {
+        tradition: 'friedenskirchlich',
+        text: 'Der Abbruch des Schwertschlags und die Heilung des Verletzten gelten als die klarste Aussage über den Umgang mit Gewalt. Wer sich auf das Schwertwort weniger Verse zuvor beruft, müsse erklären, warum es hier ausdrücklich zurückgenommen wird.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 14, verse: 32, note: 'Die Szene in Gethsemane bei Markus, mit dreimaligem Gebet und schärferer Zeichnung.' },
+      { book: 'ps', chapter: 75, verse: 9, note: 'Der Becher in der Hand des Herrn, aus dem die Gottlosen trinken müssen.' },
+      { book: 'jes', chapter: 51, verse: 17, note: 'Der Taumelbecher, den Jerusalem austrinken muß: die Herkunft des Bildes.' },
+      { book: 'joh', chapter: 18, verse: 10, note: 'Dort werden Petrus als Schläger und Malchus als Verletzter genannt.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 22,
+    from: 54,
+    to: 71,
+    title: '„Ehe denn der Hahn kräht“',
+    historicalShort:
+      'Im Hof des Hohenpriesters bestreitet Petrus dreimal, Jesus zu kennen. Die Wachen verspotten den Gefangenen, und am Morgen befragt ihn der Rat. Anders als bei Markus wird kein Urteil gesprochen.',
+    historicalLong:
+      'Lukas ordnet die Ereignisse anders als seine Vorlage. Bei Markus tagt der Rat noch in der Nacht, und die Verleugnung läuft parallel dazu im Hof. Lukas erzählt zuerst die Verleugnung, dann die Mißhandlung durch die Wachen, und erst am Morgen tritt der Rat zusammen. Damit fällt die nächtliche Sitzung fort. Das ist deshalb von Gewicht, weil die Mischna Verfahren, in denen es um Leben und Tod geht, bei Nacht ausdrücklich untersagt und eine Verurteilung erst am folgenden Tag zuläßt. Ob diese Regeln um das Jahr 30 schon galten, ist unsicher: die Mischna wurde erst um 200 abgeschlossen und beschreibt vielfach ein ideales, nicht ein tatsächlich geübtes Recht. Die Abweichung des Lukas kann also ein Wissen um solche Bestimmungen spiegeln oder schlicht ein anderer Erzählaufbau sein.\n\nDie Verleugnung ist bei Lukas in kleinen Zügen anders. Die dritte Feststellung lautet, der Mann sei ein Galiläer; Matthäus sagt ausdrücklich, die Sprache verrate ihn. Die Aussprache des Nordens galt als erkennbar, und rabbinische Texte spotten über die Galiläer, die Kehllaute nicht unterschieden. Der Hahnenschrei bezeichnet zugleich eine Zeitangabe: die Römer nannten das Ende der dritten Nachtwache um drei Uhr gallicinium, den Hahnenruf. Ein Einwand lautet, in Jerusalem sei das Halten von Hühnern untersagt gewesen, wie eine Bestimmung der Mischna nahelegt; wie streng das befolgt wurde, ist nicht zu klären.\n\nDen stärksten eigenen Zug hat Lukas in dem Satz, der Herr habe sich umgewandt und Petrus angesehen. Weder Markus noch Matthäus kennen ihn. Aus ihm ist eines der bekanntesten Motive der christlichen Kunst geworden.\n\nDie Verhandlung selbst ist bei Lukas auffällig unvollständig. Die Frage wird in zwei Teile zerlegt: erst nach dem Christus, dann nach dem Gottessohn. Die Antwort ist im Griechischen mehrdeutig und heißt wörtlich, ihr sagt, daß ich es bin; Luther entscheidet sie zur Bejahung. Auf die Ankündigung, der Menschensohn werde zur Rechten der Kraft Gottes sitzen, setzt Lukas die Worte von nun an und läßt das bei Markus stehende ihr werdet ihn sehen weg; damit spricht der Satz von der Erhöhung und nicht von einem sichtbaren Kommen. Vor allem aber fehlt, was bei Markus folgt: der Hohepriester zerreißt kein Gewand, das Wort Gotteslästerung fällt nicht, und ein Todesurteil wird nicht gesprochen. Der Rat stellt lediglich fest, man habe es selbst gehört, und bringt ihn zu Pilatus.',
+    reception:
+      'Die Verleugnung des Petrus gehört zu den meistdargestellten Szenen der christlichen Kunst. Der Blick, den nur Lukas überliefert, steht dabei im Mittelpunkt; Rembrandt hat ihn 1660 in einem seiner späten Bilder festgehalten, in dem das Licht der Magd auf das Gesicht des Petrus fällt. In der Frömmigkeitsgeschichte hat die Erzählung eine seelsorgliche Rolle bekommen: der erste unter den Aposteln versagt, und die Zusage seiner Umkehr war schon vorher ausgesprochen.\n\nDie Verhörszenen der Evangelien stehen am Ausgangspunkt der schwersten Belastung des christlich-jüdischen Verhältnisses. Aus ihnen wurde der Vorwurf abgeleitet, das jüdische Volk als ganzes habe den Tod Jesu verschuldet; über Jahrhunderte hat dieser Vorwurf Pogrome, Vertreibungen und rechtliche Ausgrenzung begleitet. Die Erklärung Nostra Aetate des Zweiten Vatikanischen Konzils stellte 1965 ausdrücklich fest, daß nicht alle Juden jener Zeit und erst recht nicht die Juden von heute für den Tod Jesu haftbar gemacht werden dürfen; die evangelischen Kirchen haben in ihren Beschlüssen seit 1980 Entsprechendes erklärt. Für die Auslegung des Lukastextes ist überdies festzuhalten, daß bei ihm überhaupt kein Urteil ergeht.\n\nUmstritten ist unter Rechtshistorikern, welche Befugnisse der Rat unter römischer Verwaltung noch besaß. Das Johannesevangelium läßt seine Vertreter sagen, sie dürften niemanden töten; der Talmud überliefert an mehreren Stellen, die Blutgerichtsbarkeit sei vierzig Jahre vor der Zerstörung des Tempels genommen worden. Beide Angaben stützen die verbreitete Annahme, daß nur der Statthalter ein Todesurteil vollstrecken konnte, sind aber nicht unbestritten.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Kaiphas amtierte von 18 bis 36 als Hoherpriester, ungewöhnlich lange, was auf ein gutes Verhältnis zur römischen Verwaltung schließen läßt. Sein Amtssitz lag in der Oberstadt; große Häuser dieses Viertels sind ausgegraben und zeigen Höfe mit umlaufenden Räumen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Mischna verlangt für Verfahren um Leben und Tod die Tagzeit, zwei übereinstimmende Zeugen und einen zweiten Sitzungstag vor der Verurteilung. Sie wurde erst um 200 abgeschlossen; wieweit ihre Regeln zweihundert Jahre früher galten, ist offen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Nacht war in Wachen eingeteilt. Das Ende der dritten Wache gegen drei Uhr hieß bei den Römern nach dem Hahnenruf; die Angabe im Text bezeichnet damit zugleich eine Uhrzeit und ein Geräusch.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die galiläische Aussprache galt als erkennbar; rabbinische Texte spotten darüber, daß dort Kehllaute nicht unterschieden würden. Herkunft war hörbar, und in einer Stadt voller Festpilger war sie ein naheliegendes Erkennungsmerkmal.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. paidiskē tis',
+        rendered: 'eine Magd',
+        note: 'Eine junge Sklavin oder Dienerin, in der Rangordnung des Hauses ganz unten. Ihr gegenüber versagt der erste der Jünger.',
+      },
+      {
+        word: 'griech. Galilaios estin',
+        rendered: 'er ist ein Galiläer',
+        note: 'Die Herkunft wird an der Sprache erkannt. Matthäus formuliert das ausdrücklich, Lukas setzt es voraus.',
+      },
+      {
+        word: 'griech. eis to synedrion autōn',
+        rendered: 'vor ihren Rat',
+        note: 'Der Hohe Rat als oberste Instanz in inneren Angelegenheiten. Bei Lukas tritt er erst am Morgen zusammen und spricht kein Urteil.',
+      },
+      {
+        word: 'griech. ek dexiōn tēs dynameōs tou theou',
+        rendered: 'zur rechten Hand der Kraft Gottes',
+        note: 'Kraft steht ersatzweise für den Gottesnamen, der gemieden wird. Die Wendung verbindet den hundertzehnten Psalm mit dem Menschensohn des Danielbuchs.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas stellt die Verleugnung vor die Ratssitzung und läßt diese am Morgen stattfinden. Ob er damit rechtliche Bedenken ausräumt oder nur klarer erzählt, ist umstritten; sicher ist, daß bei ihm weder eine Lästerung festgestellt noch ein Urteil gefällt wird.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Erzählung von Petrus wird als Beispiel für Fall und Wiederaufrichtung gelesen und mit dem Auftrag verbunden, die Brüder zu stärken. Das Konzil hat 1965 jede Zuschreibung kollektiver Schuld für den Tod Jesu zurückgewiesen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird, daß nicht die Erinnerung an das Wort, sondern der Blick den Umschlag bewirkt. Die Reue des Petrus wird der Verzweiflung des Judas gegenübergestellt, ohne daß der Text selbst diesen Vergleich zieht.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Karwochenliturgie liest die Verleugnung im Zusammenhang der Passionsevangelien der Nacht zum Karfreitag. Der Hahnenschrei ist in den Hymnen ein festes Bild für den Augenblick, in dem der Mensch sich selbst erkennt.',
+      },
+      {
+        tradition: 'jüdisch-christlicher Dialog',
+        text: 'Hervorgehoben wird, daß die Fassung des Lukas kein Todesurteil kennt und keine Lästerung feststellt. Die Ableitung einer kollektiven Schuld aus den Verhörszenen widerspreche schon dem Wortlaut der Texte, ganz abgesehen von ihrer verheerenden Wirkungsgeschichte.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 14, verse: 55, note: 'Die nächtliche Sitzung des Rates mit dem Vorwurf der Gotteslästerung und dem Todesurteil.' },
+      { book: 'ps', chapter: 110, verse: 1, note: 'Der Vers vom Sitzen zur Rechten, auf den die Antwort anspielt.' },
+      { book: 'dan', chapter: 7, verse: 13, note: 'Der Menschensohn, dessen Titel in der Antwort aufgenommen wird.' },
+      { book: 'lk', chapter: 23, verse: 1, note: 'Die Überführung zu Pilatus, mit der die Verhandlung vor dem Rat endet.' },
+    ],
+  },
 ];
 
 /**

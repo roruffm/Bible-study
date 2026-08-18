@@ -3397,6 +3397,26 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gilt als das stärkste Einzelargument dafür.',
     epoch: 'roemer',
   },
+  'lk 22,1': {
+    events: 'Die Ereignisse gehören in die Nacht vor der Kreuzigung, nach überwiegender Annahme im Frühjahr des Jahres 30 n. Chr. in Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Abendmahlsworte stimmen weitgehend mit der Fassung überein, die Paulus schon um 55 n. Chr. als übernommene Überlieferung anführt.',
+    epoch: 'roemer',
+  },
+  'lk 22,24': {
+    events: 'Die Ereignisse gehören in die Nacht vor der Kreuzigung, nach überwiegender Annahme im Frühjahr des Jahres 30 n. Chr. in Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Abendmahlsworte stimmen weitgehend mit der Fassung überein, die Paulus schon um 55 n. Chr. als übernommene Überlieferung anführt.',
+    epoch: 'roemer',
+  },
+  'lk 22,39': {
+    events: 'Die Ereignisse gehören in die Nacht vor der Kreuzigung und den frühen Morgen, nach überwiegender Annahme im Frühjahr des Jahres 30 n. Chr.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Passionserzählung weicht in Aufbau und Einzelheiten mehrfach von Markus ab.',
+    epoch: 'roemer',
+  },
+  'lk 22,54': {
+    events: 'Die Ereignisse gehören in die Nacht vor der Kreuzigung und den frühen Morgen, nach überwiegender Annahme im Frühjahr des Jahres 30 n. Chr.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Passionserzählung weicht in Aufbau und Einzelheiten mehrfach von Markus ab.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
