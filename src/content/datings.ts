@@ -3567,6 +3567,21 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; es kennt den Tempelbezirk und die Feste genau, obwohl es nach der Zerstörung geschrieben ist.',
     epoch: 'roemer',
   },
+  'joh 11,1': {
+    events: 'Die Ereignisse werden kurz vor das letzte Passafest gelegt, etwa im Frühjahr 30 n. Chr., in Bethanien und in Jerusalem.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Auferweckung des Lazarus fehlt in den drei anderen Evangelien vollständig.',
+    epoch: 'roemer',
+  },
+  'joh 11,27': {
+    events: 'Die Ereignisse werden kurz vor das letzte Passafest gelegt, etwa im Frühjahr 30 n. Chr., in Bethanien und in Jerusalem.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Auferweckung des Lazarus fehlt in den drei anderen Evangelien vollständig.',
+    epoch: 'roemer',
+  },
+  'joh 11,45': {
+    events: 'Die Ereignisse werden kurz vor das letzte Passafest gelegt, etwa im Frühjahr 30 n. Chr., in Bethanien und in Jerusalem.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Auferweckung des Lazarus fehlt in den drei anderen Evangelien vollständig.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
