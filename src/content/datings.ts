@@ -3547,6 +3547,26 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Schärfe dieser Auseinandersetzung spiegelt die Trennung der johanneischen Gemeinde von der Synagoge.',
     epoch: 'roemer',
   },
+  'joh 9,13': {
+    events: 'Die Szenen gehören in den Zusammenhang der Auseinandersetzungen in Jerusalem, etwa 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; der Ausschluß aus der Synagoge, von dem hier die Rede ist, gehört in die Zeit des Verfassers, nicht in die erzählte Zeit.',
+    epoch: 'roemer',
+  },
+  'joh 10,1': {
+    events: 'Die Szenen gehören in den Zusammenhang der Auseinandersetzungen in Jerusalem, etwa 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; der Ausschluß aus der Synagoge, von dem hier die Rede ist, gehört in die Zeit des Verfassers, nicht in die erzählte Zeit.',
+    epoch: 'roemer',
+  },
+  'joh 10,12': {
+    events: 'Die Hirtenrede gehört in den Zusammenhang des Herbstes, die anschließende Szene an das Tempelweihfest im Dezember, etwa 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; es kennt den Tempelbezirk und die Feste genau, obwohl es nach der Zerstörung geschrieben ist.',
+    epoch: 'roemer',
+  },
+  'joh 10,22': {
+    events: 'Die Hirtenrede gehört in den Zusammenhang des Herbstes, die anschließende Szene an das Tempelweihfest im Dezember, etwa 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; es kennt den Tempelbezirk und die Feste genau, obwohl es nach der Zerstörung geschrieben ist.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
