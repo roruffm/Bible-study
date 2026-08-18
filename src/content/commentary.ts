@@ -50395,6 +50395,332 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'joh', chapter: 20, verse: 19, note: 'Der Friedensgruß des Auferstandenen im vierten Evangelium.' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'joh',
+    chapter: 1,
+    from: 19,
+    to: 34,
+    title: '„Siehe, das ist Gottes Lamm“',
+    historicalShort:
+      'Eine Abordnung aus Jerusalem befragt Johannes den Täufer nach seiner Vollmacht. Er weist drei angebotene Rollen zurück und verweist auf einen anderen, den er am folgenden Tag als Gottes Lamm bezeichnet.',
+    historicalLong:
+      'Hier fällt zum ersten Mal in diesem Evangelium der Ausdruck die Juden als Bezeichnung einer Gruppe. Er begegnet im Buch etwa siebzigmal und meint an den meisten Stellen nicht das Volk, sondern die Führung in Jerusalem; an anderen bezeichnet er die Bewohner Judäas im Unterschied zu den Galiläern, gelegentlich auch die Festbesucher insgesamt. Der Verfasser, Jesus und alle Jünger sind selbst Juden. Weil die Wendung in der Wirkungsgeschichte verheerend gewirkt hat, geben einzelne neuere Übersetzungen sie je nach Zusammenhang mit die jüdische Obrigkeit oder die Judäer wieder. Zur Erklärung wird meist auf die Lage der johanneischen Gemeinde verwiesen: J. Louis Martyn legte 1968 dar, das Evangelium spiegele einen Konflikt des späten ersten Jahrhunderts, in dem eine judenchristliche Gruppe aus der Synagoge ausgeschlossen wurde. Die Schärfe wäre dann die einer Trennung innerhalb einer Familie. Ob dieser Ausschluß so früh und so allgemein stattfand, ist umstritten.\n\nDie drei Fragen an den Täufer entsprechen drei verschiedenen Erwartungen: dem Gesalbten, dem wiederkommenden Elia nach dem Maleachibuch und dem Propheten wie Mose nach dem fünften Buch Mose. Der Täufer verneint alle drei. Bemerkenswert ist der zweite Punkt, denn im Matthäusevangelium sagt Jesus ausdrücklich, Johannes sei der Elia, der kommen soll. Die beiden Aussagen stehen unvermittelt nebeneinander.\n\nSein Selbstzitat stammt aus dem Jesajabuch. Im hebräischen Text gehört die Wüste zur Aufforderung, den Weg zu bereiten, in der griechischen Übersetzung und in allen Evangelien dagegen zur Stimme. Dieselbe Stelle zitiert auch die Gemeinderegel der Gemeinschaft am Toten Meer als Begründung dafür, in die Wüste zu gehen; das Motiv lag also in der Luft.\n\nDer Ortsname schwankt. Die meisten Handschriften lesen Bethanien jenseits des Jordans; Origenes änderte im dritten Jahrhundert zu Bethabara, weil er ein Bethanien östlich des Flusses nicht finden konnte. Luther folgt der byzantinischen Überlieferung und schreibt Bethabara.\n\nDas Bild vom Lamm hat mehrere Wurzeln, die sich nicht gegeneinander ausspielen lassen. Da ist das Passalamm, dessen Schlachtung dieses Evangelium mit der Kreuzigung zusammenfallen läßt und auf das es später mit dem Wort von den ungebrochenen Knochen zurückkommt. Da ist das tägliche Opfer im Tempel. Und da ist das Lamm, das zur Schlachtbank geführt wird, aus dem Lied vom leidenden Knecht. Auffällig ist zuletzt, daß dieses Evangelium die Taufe Jesu überhaupt nicht erzählt; es berichtet nur, was der Täufer gesehen hat.',
+    reception:
+      'Aus dem Wort vom Lamm ist ein fester Bestandteil des Gottesdienstes geworden. Papst Sergius I. ordnete um das Jahr 700 an, während der Brotbrechung das Agnus Dei zu singen; seither steht es in jeder römischen Messe und in vielen evangelischen Ordnungen. In der Kunst wurde das Lamm mit der Siegesfahne zu einem der verbreitetsten Zeichen, und der Genter Altar der Brüder van Eyck von 1432 macht die Anbetung des Lammes zum Mittelpunkt eines ganzen Bildprogramms. Grünewalds Isenheimer Altar von 1515 zeigt den Täufer mit überlangem Zeigefinger neben dem Gekreuzigten; Karl Barth hatte eine Nachbildung dieser Figur über seinem Schreibtisch hängen und nannte sie das Bild des rechten Theologen.\n\nDie Rede von den Juden in diesem Evangelium gehört dagegen zu den schwersten Hypotheken der christlichen Überlieferung. Sie hat Passionsspielen, Predigten und Katechismen die Sprache geliefert, in der ein ganzes Volk zum Gegenspieler wurde. Die Erklärung Nostra Aetate von 1965 hat dem widersprochen, und mehrere Kirchen haben Handreichungen für den Umgang mit den johanneischen Texten im Gottesdienst herausgegeben; die evangelische Kirche im Rheinland faßte 1980 den ersten deutschen Synodalbeschluß zur Erneuerung des Verhältnisses zum Judentum. Übersetzungen wie die Bibel in gerechter Sprache von 2006 geben den Ausdruck durchgehend differenziert wieder, was seinerseits kritisiert worden ist, weil damit in den Text eingegriffen werde.\n\nDie Bewegung des Täufers hat den Tod ihres Stifters überdauert. Die Apostelgeschichte kennt in Ephesus Menschen, die nur die Taufe des Johannes empfangen hatten. Die Mandäer im Irak und im Iran, eine bis heute bestehende Religionsgemeinschaft, verehren Johannes als ihren wichtigsten Lehrer und lehnen Jesus ab; ihre Verbindung zur Täuferbewegung des ersten Jahrhunderts ist umstritten, aber vielfach erwogen worden.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Tauchbäder zur Reinigung waren im Judentum der Zeit alltäglich; in Jerusalem und auf dem Land sind Hunderte von Mikwen ausgegraben worden. Sie wurden wiederholt genommen. Die einmalige Taufe zur Umkehr, wie Johannes sie vollzog, war darin etwas Eigenes.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Der untere Jordan war an den Furten zu durchqueren und bildete die Grenze zwischen Judäa und dem Gebiet des Antipas jenseits des Flusses. Wer dort taufte, stand außerhalb der Zuständigkeit der Jerusalemer Behörden.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Das Lösen der Schuhriemen war Sklavenarbeit. Eine rabbinische Regel bestimmt, ein Schüler habe seinem Lehrer jeden Dienst zu leisten mit Ausnahme eben dieses einen; die Wendung des Täufers unterschreitet damit bewußt die Stellung eines Schülers.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Daß Priester und Leviten aus Jerusalem eine Befragung vornehmen, setzt voraus, daß die Bewegung als bedeutend galt. Josephus bestätigt unabhängig, daß Antipas den Täufer wegen seines Einflusses auf die Menge festnehmen ließ.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hiereis kai Leuitas',
+        rendered: 'Priester und Leviten',
+        note: 'Das Personal des Tempels. Ihre Entsendung zeigt, daß die Frage nach der Vollmacht als Angelegenheit des Heiligtums behandelt wird.',
+      },
+      {
+        word: 'griech. ho prophētēs',
+        rendered: 'Bist du der Prophet?',
+        note: 'Gemeint ist der Prophet wie Mose aus dem fünften Buch Mose. Er bildet neben dem Gesalbten und Elia eine dritte, eigene Erwartung.',
+      },
+      {
+        word: 'griech. phōnē boōntos en tē erēmō',
+        rendered: 'eine Stimme eines Predigers in der Wüste',
+        note: 'Im hebräischen Text gehört die Wüste zur Aufforderung, nicht zur Stimme. Die griechische Übersetzung und alle Evangelien lesen anders.',
+      },
+      {
+        word: 'griech. ho amnos tou theou',
+        rendered: 'Gottes Lamm',
+        note: 'Das Bild verbindet das Passalamm, das tägliche Tempelopfer und das Lamm des Gottesknechtsliedes. Eine Festlegung auf eine Herkunft ist nicht möglich.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Das Evangelium erzählt die Taufe Jesu nicht, sondern nur das Zeugnis des Täufers darüber. Darin wird eine bewußte Zurücknahme gesehen, die den Täufer ganz zum Zeugen macht; möglicherweise richtet sie sich gegen Kreise, die ihn selbst verehrten.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Das Wort vom Lamm ist seit dem frühen Mittelalter fester Teil der Messe. Es wird auf die Hingabe im Kreuzestod bezogen und mit dem Passalamm verbunden, dessen Schlachtung dieses Evangelium mit der Todesstunde zusammenfallen läßt.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Luther sah in dem Satz die Zusammenfassung des Evangeliums: das Lamm trägt, was der Mensch nicht tragen kann. Die zeigende Gebärde des Täufers wurde zum Bild für das Amt der Verkündigung, das nicht auf sich selbst weist.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Johannes trägt den Beinamen Vorläufer und steht in der Ikonostase unmittelbar neben Christus. Sein Zeugnis wird in der Liturgie an der Vorbereitung der Gaben aufgenommen, wo das Brot ausdrücklich als Lamm bezeichnet wird.',
+      },
+      {
+        tradition: 'jüdisch-christlicher Dialog',
+        text: 'Der Gebrauch des Ausdrucks die Juden gilt als das größte Problem dieses Evangeliums. Empfohlen wird, im Gottesdienst deutlich zu machen, daß eine innerjüdische Auseinandersetzung geschildert wird und daß die Bezeichnung an den meisten Stellen die Führung in Jerusalem meint.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 40, verse: 3, note: 'Die Stimme des Rufenden, mit der der Täufer sich selbst bezeichnet.' },
+      { book: '5mo', chapter: 18, verse: 15, note: 'Der Prophet wie Mose, nach dem die Abordnung fragt.' },
+      { book: '2mo', chapter: 12, verse: 46, note: 'Am Passalamm soll kein Bein zerbrochen werden: der Vers, den das Evangelium beim Kreuzestod aufnimmt.' },
+      { book: 'jes', chapter: 53, verse: 7, note: 'Das Lamm, das zur Schlachtbank geführt wird, aus dem Lied vom leidenden Knecht.' },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 1,
+    from: 35,
+    to: 51,
+    title: '„Was kann von Nazareth Gutes kommen?“',
+    historicalShort:
+      'Die ersten Jünger kommen aus dem Kreis des Täufers und finden einander weiter. Nathanael widerspricht zunächst und bekennt dann; die Szene endet mit einem Wort, das auf die Traumleiter Jakobs zurückgreift.',
+    historicalLong:
+      'Die Berufung verläuft hier völlig anders als bei Markus, Matthäus und Lukas. Dort steht Jesus am See, ruft Fischer weg von ihren Netzen, und sie folgen sofort. Hier lösen sich zwei Schüler des Täufers auf dessen Hinweis hin von ihm, und die weiteren kommen dadurch hinzu, daß einer den anderen holt. Andreas ist der erste; die östlichen Kirchen nennen ihn deshalb den Erstberufenen und führen die Kirche von Konstantinopel auf ihn zurück.\n\nDie Frage der beiden lautet im Griechischen, wo er bleibe. Das Wort für bleiben gehört zu den Leitbegriffen dieses Evangeliums; es kehrt in den Abschiedsreden wieder, wenn vom Bleiben im Weinstock die Rede ist. Die Antwort, kommt und seht, wird zur stehenden Formel des Buches. Die Zeitangabe der zehnten Stunde, also etwa vier Uhr nachmittags, gehört zu den zahlreichen genauen Angaben, mit denen dieses Evangelium arbeitet.\n\nDreimal übersetzt der Verfasser aramäische Wörter für seine Leser: Rabbi, Messias und Kephas. Daraus wird geschlossen, daß er für ein griechischsprachiges Publikum außerhalb des Landes schreibt. Kephas bedeutet Fels; das griechische Petros ist die Übersetzung, aus der der Name Petrus wurde.\n\nBethsaida lag am Nordostufer des Sees, im Gebiet des Tetrarchen Philippus, der es zur Stadt erhob und nach der Kaisertochter Julias benannte. Nazareth dagegen war ein Dorf von vielleicht zwei- bis vierhundert Einwohnern. Es wird im Alten Testament nicht erwähnt, ebensowenig bei Josephus oder in der rabbinischen Literatur; die Ausgrabungen zeigen eine kleine Bauernsiedlung mit Zisternen, Vorratsgruben und Terrassen. Der Einwand Nathanaels ist also nicht Spott über einen schlechten Ruf, sondern die Verwunderung darüber, daß aus einem völlig unbekannten Ort etwas kommen soll.\n\nNathanael erscheint nur in diesem Evangelium und in keiner Apostelliste. Die Gleichsetzung mit Bartholomäus ist eine mittelalterliche Vermutung ohne Anhalt in den Quellen. Der Feigenbaum, unter dem er saß, kann zweierlei bedeuten: die rabbinische Überlieferung schätzt seinen Schatten als Ort des Schriftstudiums, und die Propheten gebrauchen das Sitzen unter Weinstock und Feigenbaum als Bild der befriedeten Zeit.\n\nDer Schlußvers greift die Traumleiter Jakobs auf. Dabei nutzt er eine Zweideutigkeit des hebräischen Textes, die schon die jüdische Auslegung bemerkt hatte: die Engel steigen auf ihr oder auf ihm, also auf der Leiter oder auf Jakob. Der Midrasch zum ersten Buch Mose überliefert beide Lesarten. Hier steigen sie auf dem Menschensohn. Dazu paßt, daß Nathanael kurz zuvor ein Israelit ohne Falsch genannt wurde, denn Jakob, der später Israel heißt, war der Betrüger.',
+    reception:
+      'Der Satz über Nazareth ist zum geflügelten Wort geworden und wird bis heute zitiert, wenn jemandem seine Herkunft entgegengehalten wird. In der Antike wurde er auch gegen die Christen gewendet: Kelsos und andere Kritiker machten die Bedeutungslosigkeit des Ortes zum Argument. Die christliche Antwort verwies gerade darauf, daß der Text den Einwand selbst enthält und nicht verschweigt.\n\nAndreas hat als Erstberufener eine eigene Geschichte bekommen. Die Kirche von Konstantinopel führt ihre Gründung auf ihn zurück, was in der Auseinandersetzung mit Rom, das sich auf Petrus beruft, Gewicht erhielt; beim Austausch der Gesandtschaften zwischen Papst und Ökumenischem Patriarchen wird die Verbindung der beiden Brüder bis heute regelmäßig angeführt. Nach Schottland und Rußland gelangte seine Verehrung im Mittelalter; das schottische Andreaskreuz auf der Flagge geht darauf zurück.\n\nDas Wort von der Jakobsleiter hat die christliche Bildsprache über die Auslegung hinaus geprägt. In der Mystik des Mittelalters wurde die Leiter zum Bild des geistlichen Aufstiegs; Johannes Klimakos schrieb im siebten Jahrhundert eine Stufenschrift, die zu einem der meistgelesenen Bücher der östlichen Klöster wurde. Daß in der johanneischen Fassung die Engel nicht auf einer Leiter, sondern auf einem Menschen auf und nieder steigen, ist erst in der neueren Auslegung stärker beachtet worden.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Lehrer sammelten Schüler, die bei ihnen blieben und ihnen dienten. Ein Wechsel des Lehrers kam vor und war nicht ehrenrührig, wenn der bisherige selbst darauf hinwies. Genau so wird die Trennung vom Täufer hier geschildert.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Bethsaida lag am Nordostufer des Sees, außerhalb Galiläas im Gebiet des Philippus, der es zur Stadt erhob. Nazareth war ein Dorf im Bergland, abseits der großen Straßen, mit wenigen hundert Einwohnern.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Stunden wurden vom Sonnenaufgang an gezählt; die zehnte Stunde liegt am späten Nachmittag. Der Feigenbaum warf breiten Schatten und war der bevorzugte Platz zum Sitzen, Lesen und Gespräch.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Erwartungen waren nicht einheitlich. Neben dem königlichen Gesalbten aus dem Haus Davids standen die Vorstellung eines priesterlichen Gesalbten, die Rückkehr des Elia und der Prophet wie Mose; die Texte aus Qumran zeigen mehrere Linien nebeneinander.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. pou meneis',
+        rendered: 'wo bist du zur Herberge',
+        note: 'Wörtlich wo bleibst du. Das Wort bleiben gehört zu den Leitbegriffen dieses Evangeliums und kehrt im Bild vom Weinstock wieder.',
+      },
+      {
+        word: 'griech. hōra ēn hōs dekatē',
+        rendered: 'um die zehnte Stunde',
+        note: 'Etwa vier Uhr nachmittags, gezählt vom Sonnenaufgang an. Solche genauen Angaben sind für dieses Evangelium kennzeichnend.',
+      },
+      {
+        word: 'aram. Kepha',
+        rendered: 'Kephas',
+        note: 'Das aramäische Wort für Fels. Der griechische Name Petros ist seine Übersetzung; Paulus gebraucht in seinen Briefen beide Formen.',
+      },
+      {
+        word: 'griech. hypo tēn sykēn',
+        rendered: 'unter dem Feigenbaum',
+        note: 'Der Schatten des Feigenbaums galt als Ort des Schriftstudiums. Zugleich ist das Sitzen unter Weinstock und Feigenbaum ein prophetisches Bild des Friedens.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Berufungsgeschichte weicht vollständig von der synoptischen ab. Ob eine eigene Überlieferung dahintersteht oder eine bewußte Umformung, ist umstritten; die Herkunft der ersten Jünger aus dem Kreis des Täufers gilt vielen als historisch wahrscheinlich.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Umbenennung des Simon wird zusammen mit dem Wort vom Felsen im Matthäusevangelium gelesen. Die Szene gilt als Anfang einer Kette: einer holt den anderen, und daraus entsteht die Gemeinde.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird die Einladung, zu kommen und selbst zu sehen. Der Glaube entstehe nicht durch Autorität, sondern durch Begegnung; Nathanaels Einwand werde nicht widerlegt, sondern durch die Aufforderung überholt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Andreas gilt als der Erstberufene und als Gründer der Kirche von Byzanz. Sein Gedenktag am dreißigsten November ist im Patriarchat von Konstantinopel das höchste Fest des Jahres neben Ostern.',
+      },
+      {
+        tradition: 'jüdisch',
+        text: 'Jüdische Ausleger weisen darauf hin, daß der Schlußvers eine bekannte Zweideutigkeit des hebräischen Textes zur Jakobsleiter aufnimmt, die auch der Midrasch erörtert. Der Verfasser bewegt sich damit in einer geübten Auslegungspraxis seiner Zeit.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 28, verse: 12, note: 'Die Traumleiter Jakobs mit den auf- und niedersteigenden Engeln.' },
+      { book: 'mt', chapter: 4, verse: 18, note: 'Die Berufung am See mit den Netzen: die ganz andere synoptische Fassung.' },
+      { book: 'mi', chapter: 4, verse: 4, note: 'Jeder unter seinem Weinstock und Feigenbaum: das prophetische Friedensbild.' },
+      { book: 'joh', chapter: 21, verse: 2, note: 'Nathanael wird dort als aus Kana in Galiläa stammend bezeichnet.' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'joh',
+    chapter: 2,
+    from: 1,
+    to: 12,
+    title: '„du hast den guten Wein bisher behalten“',
+    historicalShort:
+      'Auf einer Hochzeit in Kana geht der Wein aus. Jesus läßt sechs steinerne Krüge mit Wasser füllen, und der Tafelmeister lobt den Bräutigam für einen Wein, dessen Herkunft er nicht kennt. Das Evangelium nennt es das erste seiner Zeichen.',
+    historicalLong:
+      'Wo Kana lag, ist nicht sicher. Die heute meist bevorzugte Ansetzung ist Chirbet Kana, ein Ruinenhügel etwa dreizehn Kilometer nördlich von Nazareth, an dem hellenistische und römische Siedlungsschichten ausgegraben wurden; der traditionell gezeigte Ort Kafr Kanna näher an Nazareth stützt sich auf eine erst mittelalterlich bezeugte Überlieferung.\n\nEine Hochzeit dauerte mehrere Tage; die Mischna rechnet für die Ehe mit einer Jungfrau mit sieben Tagen. Ausgerichtet wurde sie vom Haus des Bräutigams, und das ganze Dorf nahm teil. Wenn der Wein ausging, war das kein Mißgeschick, sondern eine öffentliche Beschämung mit möglichen Folgen: Hochzeitsgaben begründeten wechselseitige Verpflichtungen, und wer nicht angemessen ausrichtete, konnte sogar rechtlich in Anspruch genommen werden.\n\nDie Anrede an die Mutter klingt im Deutschen härter als im Griechischen. Das griechische Wort ist eine höfliche Anrede ohne jede Schroffheit, wie sie auch Fremden gegenüber gebraucht wurde; dieselbe Anrede verwendet Jesus am Kreuz. Die Wendung, was habe ich mit dir zu schaffen, ist dagegen wirklich distanzierend und stammt aus dem semitischen Sprachgebrauch, wo sie eine Einmischung abwehrt. Die Mutter wird in diesem Evangelium übrigens niemals mit Namen genannt.\n\nDie Stunde, die noch nicht gekommen sei, ist ein Leitwort des Buches. Sie meint nicht den passenden Zeitpunkt für ein Wunder, sondern die Stunde der Erhöhung am Kreuz, auf die alles zuläuft.\n\nDie sechs Krüge sind aus Stein, und das hat einen Grund. Steingefäße galten nach jüdischer Auffassung als nicht verunreinigungsfähig, während Ton bei Unreinheit zerbrochen werden mußte. Deshalb entstand ein eigenes Handwerk; Werkstätten für Steingefäße sind bei Jerusalem und bei Reina in der Nähe von Nazareth ausgegraben worden, mit halbfertigen Stücken und Abfall der Drechselarbeit. Die Menge ist enorm: das genannte Maß faßt rund neununddreißig Liter, so daß insgesamt fünfhundert bis siebenhundert Liter zusammenkommen. Das ist mehr, als eine Dorfhochzeit verbrauchen kann, und genau darin liegt die Aussage.\n\nDas Evangelium nennt den Vorgang nicht Wunder oder Krafttat, sondern Zeichen. Dieses Wort bezeichnet in dem Buch eine Reihe von Handlungen, die auf etwas anderes verweisen, und die Verse über den guten Wein am Schluß sind selbst schon Deutung: das Beste kommt nicht zuerst, sondern zuletzt.',
+    reception:
+      'Die Aufforderung der Mutter an die Diener, zu tun, was er sagt, ist zum meistzitierten marianischen Vers des Neuen Testaments geworden. Das Zweite Vatikanische Konzil führt die Szene in seiner Darstellung der Rolle Marias an, und sie steht über zahllosen Marienkirchen und in der Sprache der Wallfahrten. Die reformatorische Auslegung hält dagegen, daß der Satz die Diener auf Jesus verweist und nicht auf die Sprecherin, und daß die vorausgehende Zurückweisung nicht zu überhören ist.\n\nIm neunzehnten Jahrhundert wurde die Erzählung zum Gegenstand einer eigenen Auseinandersetzung. Die amerikanische Abstinenzbewegung, die auf ein Alkoholverbot hinarbeitete, vertrat die Auffassung, es habe sich um unvergorenen Traubensaft gehandelt. Sprachlich ist das nicht zu halten: das griechische Wort bezeichnet Wein, und die Bemerkung des Tafelmeisters über den geringeren Wein, den man reicht, wenn die Gäste schon getrunken haben, setzt Wirkung voraus. Aus derselben Bewegung stammt allerdings eine bleibende Neuerung: Thomas Welch entwickelte 1869 ein Verfahren, Traubensaft haltbar zu machen, damit Gemeinden das Abendmahl ohne Alkohol feiern konnten.\n\nIn der östlichen Kirche gehört die Hochzeit zu Kana zum Fest der Erscheinung des Herrn und wird bei der Trauung gelesen; das Evangelium des Ritus ist eben dieser Text. Im Westen erscheint er im Kalender an einem Sonntag nach Epiphanias, wo er neben der Taufe im Jordan und der Anbetung der Weisen als dritte Erscheinung gezählt wurde.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine Hochzeit war das größte gesellschaftliche Ereignis eines Dorfes und dauerte mehrere Tage. Das Haus des Bräutigams richtete aus, und die Gaben der Gäste begründeten Verpflichtungen, die später erwidert werden mußten. Ein Fehlschlag beschädigte das Ansehen dauerhaft.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wein wurde in der Regel mit Wasser gemischt getrunken, oft im Verhältnis eins zu zwei oder eins zu drei. Er war Grundnahrungsmittel und Festgetränk zugleich; unverdünnter Wein galt als unschicklich.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Vor dem Essen und bei anderen Anlässen wurden die Hände mit Wasser übergossen. Dafür standen Gefäße bereit, deren Inhalt für den ganzen Haushalt reichen mußte; bei einer mehrtägigen Feier entsprechend viel.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Steingefäße wurden auf großen Drehbänken aus weichem Kalkstein gearbeitet. Werkstätten sind bei Jerusalem und nördlich von Nazareth ausgegraben worden. Der Aufwand lohnte sich, weil Stein nach jüdischer Auffassung nicht unrein werden konnte.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ti emoi kai soi, gynai',
+        rendered: 'Weib, was habe ich mit dir zu schaffen',
+        note: 'Die Anrede ist im Griechischen höflich und nicht schroff. Die Wendung selbst stammt aus dem semitischen Sprachgebrauch und wehrt eine Einmischung ab.',
+      },
+      {
+        word: 'griech. hydriai lithinai hex',
+        rendered: 'sechs steinerne Wasserkrüge',
+        note: 'Steingefäße galten als nicht verunreinigungsfähig. Ihre Herstellung war ein eigenes Handwerk, dessen Werkstätten archäologisch nachgewiesen sind.',
+      },
+      {
+        word: 'griech. tō architriklinō',
+        rendered: 'dem Speisemeister',
+        note: 'Der Vorsteher des Speisezimmers, der die Reihenfolge der Gänge und die Mischung des Weins bestimmte. Er konnte ein Bediensteter oder ein dafür bestimmter Gast sein.',
+      },
+      {
+        word: 'griech. archēn tōn sēmeiōn',
+        rendered: 'das erste Zeichen',
+        note: 'Dieses Evangelium spricht nicht von Krafttaten, sondern von Zeichen. Der Ausdruck betont, daß die Handlung auf etwas anderes verweist.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die durchnumerierten Zeichen haben zu der Annahme geführt, dem Evangelisten habe eine Sammlung von Wundererzählungen vorgelegen, die er mit eigenen Reden verband. Die Hypothese einer solchen Zeichenquelle ist verbreitet, aber nicht beweisbar.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Szene gilt als Beispiel für die Fürsprache Marias, die auf den Mangel aufmerksam macht und die Diener auf ihren Sohn verweist. Das Zweite Vatikanische Konzil führt sie in seiner Darstellung ihrer Stellung in der Kirche an.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird die Zurückweisung, die der Bitte folgt, und daß der Satz der Mutter allein auf Jesus verweist. Die Fülle des Weines wird als Bild für die Überfülle der Gabe gelesen, die kein Maß kennt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Kana gehört zum Umkreis des Epiphaniefestes und wird bei der Trauung gelesen. Die Väter deuten die Verwandlung als Zeichen dafür, daß die Ordnungen der Reinigung ihre Erfüllung finden und nicht bloß ersetzt werden.',
+      },
+      {
+        tradition: 'sozialgeschichtlich',
+        text: 'Der Blick richtet sich auf die Lage der Gastgeber. Ein Dorf am Rand des Existenzminimums richtet ein Fest aus, das seine Mittel übersteigt; die Erzählung beginnt mit einer Not, die materiell und nicht symbolisch ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'joh', chapter: 19, verse: 26, note: 'Dieselbe Anrede an die Mutter unter dem Kreuz, wenn die Stunde gekommen ist.' },
+      { book: '1koe', chapter: 17, verse: 18, note: 'Was habe ich mit dir zu schaffen: dieselbe abwehrende Wendung im Munde der Witwe von Sarepta.' },
+      { book: 'jes', chapter: 25, verse: 6, note: 'Das Mahl mit reinem Wein auf dem Berg: das prophetische Bild der vollendeten Zeit.' },
+      { book: 'joh', chapter: 4, verse: 46, note: 'Die Rückkehr nach Kana, wo das zweite Zeichen geschieht.' },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 2,
+    from: 13,
+    to: 25,
+    title: '„macht nicht meines Vaters Haus zum Kaufhause“',
+    historicalShort:
+      'Beim Passafest treibt Jesus Händler und Wechsler aus dem Tempelbezirk. Auf die Frage nach seiner Vollmacht antwortet er mit einem Wort über den Abbruch und die Wiedererrichtung des Tempels, das der Erzähler auf seinen Leib deutet.',
+    historicalLong:
+      'Der auffälligste Unterschied zu den anderen Evangelien ist die Stellung. Bei Markus, Matthäus und Lukas geschieht die Tempelhandlung in der letzten Woche und löst den Entschluß zur Verhaftung aus; hier steht sie ganz am Anfang. Zwei Erklärungen stehen sich gegenüber. Die eine nimmt zwei getrennte Vorfälle an; sie hat den Nachteil, daß ein solcher Auftritt kaum ohne Folgen geblieben wäre und dann jahrelang nicht geahndet worden wäre. Die andere, heute verbreitetere, geht von einem Ereignis aus, das der vierte Evangelist umgestellt hat, weil bei ihm die Auferweckung des Lazarus den Anlaß zur Verhaftung gibt. Nur hier ist außerdem von einer Geißel aus Stricken, von Rindern und Schafen die Rede.\n\nDer Handel im äußeren Vorhof war für den Betrieb nötig. Pilger konnten Opfertiere nicht über weite Strecken mitführen, und die Tempelabgabe war in tyrischem Silber zu entrichten, weil dessen Feingehalt verläßlich war; also brauchte es Verkäufer und Wechsler. Das Wort, das Luther mit Kaufhaus wiedergibt, meint einen Handelsplatz und spielt auf den Schluß des Sacharjabuchs an, wo es heißt, an jenem Tage werde kein Händler mehr im Hause des Herrn sein. Die anderen Evangelien zitieren an dieser Stelle den Jeremia mit der Mördergrube; die Stoßrichtung ist damit eine andere: dort geht es um ein Heiligtum, hinter dem man sich versteckt, hier um Handel im heiligen Bezirk überhaupt.\n\nDie Zahl der sechsundvierzig Jahre ist einer der wenigen festen Anhaltspunkte für die Zeitrechnung der Evangelien. Josephus setzt den Beginn des herodianischen Umbaus in das achtzehnte Regierungsjahr des Herodes, also etwa zwanzig oder neunzehn vor Christus; sechsundvierzig Jahre später ergibt sich das Jahr siebenundzwanzig oder achtundzwanzig. Der Bau war damals längst nicht fertig und wurde es erst um das Jahr dreiundsechzig.\n\nDas Wort über den Abbruch des Tempels kehrt in den anderen Evangelien wieder, dort als Anklagepunkt im Prozeß, in verdrehter Form und von Zeugen vorgebracht, die sich widersprechen. Der vierte Evangelist überliefert es als eigene Aussage und fügt eine Deutung an: gemeint sei der Tempel seines Leibes. Solche erklärenden Einschübe des Erzählers sind für dieses Buch kennzeichnend; Luther hat sie in seiner Ausgabe in Klammern gesetzt.',
+    reception:
+      'Die Tempelreinigung ist die Belegstelle jeder kirchlichen Reformbewegung geworden. Sie steht hinter der Kritik am Ämterkauf, hinter den Bußpredigten des Mittelalters und hinter der Auseinandersetzung um den Ablaßhandel; Luther bezieht sich in den Predigten der frühen zwanziger Jahre unmittelbar darauf. Auch außerhalb der Kirchen ist das Bild geläufig geworden und wird gebraucht, wo religiöse oder öffentliche Einrichtungen dem Geschäft geöffnet werden.\n\nSchwieriger ist die Geißel. Sie wird angeführt, wo aus dem Handeln Jesu ein Recht auf Gewalt abgeleitet werden soll, von mittelalterlichen Rechtfertigungen des Kreuzzugs bis zu heutigen Auseinandersetzungen über militanten Protest. Dagegen wird eingewandt, daß der Text niemanden geschlagen sein läßt und daß die griechische Formulierung offenläßt, ob die Geißel überhaupt gegen Menschen oder nur gegen die Tiere gebraucht wird. Die Friedenskirchen lesen den Vorgang als aufsehenerregende, aber unblutige Handlung an Sachen.\n\nBelastet ist wiederum die Wirkung des Wortes von den Juden, das in diesem Abschnitt zweimal für die Fragenden im Tempel steht. In der Auslegungsgeschichte ist daraus regelmäßig eine Aussage über das ganze Volk geworden, obwohl gemeint sind, die im Heiligtum Verantwortung tragen. Die Handreichungen der Kirchen zum christlich-jüdischen Verhältnis weisen für den gottesdienstlichen Gebrauch ausdrücklich darauf hin.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Zum Passa kamen Zehntausende von Pilgern. Wer opfern wollte, kaufte das Tier vor Ort, weil ein fehlerfreies Stück über eine lange Reise kaum zu bringen war. Tauben waren das Opfer der Armen und der Wöchnerinnen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Tempelabgabe war in tyrischem Silber zu zahlen, dessen Gehalt als verläßlich galt. Die Wechsler nahmen dafür eine Gebühr. Der ganze Betrieb war ein Wirtschaftszweig mit festen Preisen und geregelten Standplätzen.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Der äußere Vorhof war der einzige Teil der Anlage, den auch Nichtjuden betreten durften. Er war eine weite, von Säulenhallen umgebene Fläche und diente zugleich als Markt, Versammlungsort und Durchgang.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Umbau des Tempels war das größte Bauvorhaben des Herodes und diente auch der Sicherung seiner Stellung. Er begann etwa zwanzig Jahre vor der Zeitenwende und war erst kurz vor dem Krieg abgeschlossen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. phragellion ek schoiniōn',
+        rendered: 'eine Geißel aus Stricken',
+        note: 'Nur dieses Evangelium erwähnt sie. Der Text sagt nicht, daß jemand geschlagen wird; der griechische Satzbau läßt offen, ob sie gegen Menschen gebraucht wird.',
+      },
+      {
+        word: 'griech. oikon emporiou',
+        rendered: 'zum Kaufhause',
+        note: 'Wörtlich Haus des Handels. Die Wendung spielt auf den Schluß des Sacharjabuchs an, wo kein Händler mehr im Hause des Herrn sein soll.',
+      },
+      {
+        word: 'griech. ho zēlos tou oikou sou',
+        rendered: 'Der Eifer um dein Haus',
+        note: 'Ein Zitat aus dem neunundsechzigsten Psalm, der in den Passionserzählungen mehrfach herangezogen wird.',
+      },
+      {
+        word: 'griech. tesserakonta kai hex etesin',
+        rendered: 'in 46 Jahren erbaut',
+        note: 'Vom Beginn des herodianischen Umbaus an gerechnet führt die Zahl auf das Jahr 27 oder 28. Sie gehört zu den wenigen festen Zeitangaben der Evangelien.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Mehrheit nimmt ein einziges Ereignis an, das der vierte Evangelist an den Anfang gestellt hat, weil bei ihm die Auferweckung des Lazarus den Anlaß zur Verhaftung bildet. Die Annahme zweier Vorfälle wird vor allem dort vertreten, wo an der Abfolge aller vier Bücher festgehalten wird.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Handlung wird als prophetisches Zeichen gedeutet, das den Kult nicht abschafft, sondern auf seine Erfüllung hin öffnet. Das Wort über den neuen Tempel wird auf den Leib Christi und von dort auf die Kirche bezogen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Die Szene diente in der Reformationszeit als unmittelbarer Beleg gegen die Verquickung von Heiligtum und Geld. Betont wird zugleich, daß die Frage nach der Vollmacht nicht mit einem Zeichen, sondern mit einem Verweis auf die Auferstehung beantwortet wird.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die östliche Auslegung stellt das Wort vom Tempel des Leibes in den Mittelpunkt und verbindet es mit der Lehre von der Kirche als Leib. Die Handlung selbst gilt als Ausdruck des Eifers, den der Psalmvers benennt.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Gelesen wird der Vorgang als Angriff auf ein Wirtschaftssystem, das an der Frömmigkeit der Armen verdiente. Der Streit gelte nicht dem Opfer, sondern den Bedingungen, unter denen es zu erlangen war.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 69, verse: 10, note: 'Der Eifer um dein Haus hat mich gefressen: das zitierte Psalmwort.' },
+      { book: 'sach', chapter: 14, verse: 21, note: 'Es wird kein Händler mehr sein im Hause des Herrn: die Anspielung hinter dem Wort vom Kaufhaus.' },
+      { book: 'mk', chapter: 11, verse: 15, note: 'Die Tempelhandlung bei Markus, dort in der letzten Woche vor der Verhaftung.' },
+      { book: 'mk', chapter: 14, verse: 58, note: 'Das Wort über den Abbruch des Tempels als Anklagepunkt im Prozeß.' },
+    ],
+  },
 ];
 
 /**

@@ -3442,6 +3442,26 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; sein Schluß führt unmittelbar auf die Apostelgeschichte desselben Verfassers zu.',
     epoch: 'roemer',
   },
+  'joh 1,19': {
+    events: 'Die Szenen gehören an den Anfang des öffentlichen Wirkens, etwa 27 oder 28 n. Chr., am Jordan und im Norden Galiläas.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; es setzt eine Gemeinde voraus, die sich von der Synagoge bereits getrennt hat oder aus ihr ausgeschlossen wurde.',
+    epoch: 'roemer',
+  },
+  'joh 1,35': {
+    events: 'Die Szenen gehören an den Anfang des öffentlichen Wirkens, etwa 27 oder 28 n. Chr., am Jordan und im Norden Galiläas.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; es setzt eine Gemeinde voraus, die sich von der Synagoge bereits getrennt hat oder aus ihr ausgeschlossen wurde.',
+    epoch: 'roemer',
+  },
+  'joh 2,1': {
+    events: 'Die Szenen gehören an den Anfang des Wirkens; die Angabe über die Bauzeit des Tempels führt auf das Jahr 27 oder 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert. Es ordnet die Tempelhandlung an den Anfang, während die drei anderen Evangelien sie an das Ende stellen.',
+    epoch: 'roemer',
+  },
+  'joh 2,13': {
+    events: 'Die Szenen gehören an den Anfang des Wirkens; die Angabe über die Bauzeit des Tempels führt auf das Jahr 27 oder 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert. Es ordnet die Tempelhandlung an den Anfang, während die drei anderen Evangelien sie an das Ende stellen.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
