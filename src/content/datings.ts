@@ -3532,6 +3532,21 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Reden dieses Kapitels greifen die Riten des Festes unmittelbar auf.',
     epoch: 'roemer',
   },
+  'joh 8,12': {
+    events: 'Die Reden gehören in den Zusammenhang des Laubhüttenfestes im Herbst, etwa 29 n. Chr., und spielen im Tempelbezirk.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Schärfe dieser Auseinandersetzung spiegelt die Trennung der johanneischen Gemeinde von der Synagoge.',
+    epoch: 'roemer',
+  },
+  'joh 8,31': {
+    events: 'Die Reden gehören in den Zusammenhang des Laubhüttenfestes im Herbst, etwa 29 n. Chr., und spielen im Tempelbezirk.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Schärfe dieser Auseinandersetzung spiegelt die Trennung der johanneischen Gemeinde von der Synagoge.',
+    epoch: 'roemer',
+  },
+  'joh 8,48': {
+    events: 'Die Reden gehören in den Zusammenhang des Laubhüttenfestes im Herbst, etwa 29 n. Chr., und spielen im Tempelbezirk.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Schärfe dieser Auseinandersetzung spiegelt die Trennung der johanneischen Gemeinde von der Synagoge.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
