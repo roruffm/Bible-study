@@ -3067,6 +3067,56 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
     epoch: 'roemer',
   },
+  'mt 24,1': {
+    events: 'Die Endzeitrede auf dem Ölberg, fünfte der großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 24,29': {
+    events: 'Die Endzeitrede auf dem Ölberg, fünfte der großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 25,1': {
+    events: 'Die Endzeitrede auf dem Ölberg, fünfte der großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 25,14': {
+    events: 'Die Endzeitrede auf dem Ölberg, fünfte der großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 26,1': {
+    events: 'Die Passion und der Ostermorgen bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 26,47': {
+    events: 'Die Passion und der Ostermorgen bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 27,1': {
+    events: 'Die Passion und der Ostermorgen bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 27,45': {
+    events: 'Die Passion und der Ostermorgen bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 28,1': {
+    events: 'Die Passion und der Ostermorgen bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 27,32': {
+    events: 'Die Kreuzigung vor den Mauern Jerusalems',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
