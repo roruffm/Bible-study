@@ -3497,6 +3497,26 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert. Die Beschreibung des Teiches mit fünf Hallen ist durch Ausgrabungen bestätigt worden.',
     epoch: 'roemer',
   },
+  'joh 6,1': {
+    events: 'Die Szenen spielen am See Genezareth und in Kapernaum kurz vor einem Passafest, etwa 28 oder 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Brotrede folgt dem Aufbau einer Synagogenpredigt über ein Schriftwort.',
+    epoch: 'roemer',
+  },
+  'joh 6,22': {
+    events: 'Die Szenen spielen am See Genezareth und in Kapernaum kurz vor einem Passafest, etwa 28 oder 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Brotrede folgt dem Aufbau einer Synagogenpredigt über ein Schriftwort.',
+    epoch: 'roemer',
+  },
+  'joh 6,41': {
+    events: 'Die Szenen spielen am See Genezareth und in Kapernaum kurz vor einem Passafest, etwa 28 oder 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Brotrede folgt dem Aufbau einer Synagogenpredigt über ein Schriftwort.',
+    epoch: 'roemer',
+  },
+  'joh 6,60': {
+    events: 'Die Szenen spielen am See Genezareth und in Kapernaum kurz vor einem Passafest, etwa 28 oder 29 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Brotrede folgt dem Aufbau einer Synagogenpredigt über ein Schriftwort.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
