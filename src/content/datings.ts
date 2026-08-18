@@ -3192,6 +3192,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., Ort unbekannt',
     epoch: 'roemer',
   },
+  'lk 7,1': {
+    events: 'Kapernaum, Nain und die Fahrt über den See',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 7,18': {
+    events: 'Kapernaum, Nain und die Fahrt über den See',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 7,36': {
+    events: 'Kapernaum, Nain und die Fahrt über den See',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 8,1': {
+    events: 'Kapernaum, Nain und die Fahrt über den See',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 8,22': {
+    events: 'Die Fahrt über den See und die Rückkehr nach Kapernaum',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 8,40': {
+    events: 'Die Fahrt über den See und die Rückkehr nach Kapernaum',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
