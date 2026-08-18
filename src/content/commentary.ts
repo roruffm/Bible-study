@@ -38506,6 +38506,690 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'mk', chapter: 8, verse: 17, note: 'Der Vorwurf an die Jünger noch einmal' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'mk',
+    chapter: 7,
+    from: 1,
+    to: 23,
+    title: '„was den Menschen gemein macht“',
+    historicalShort:
+      'Der Streit um gewaschene Hände wird zur Grundsatzfrage: Woher kommt die Unreinheit, von außen oder von innen?',
+    historicalLong:
+      'Markus schiebt eine Erklärung ein, die den Blick auf sein Publikum freigibt: Er muss auseinandersetzen, was die Pharisäer und alle Juden tun. Wer für Leser schreibt, denen jüdische Bräuche vertraut sind, erklärt sie nicht. Die Klammer in den Versen drei und vier gehört zu den deutlichsten Hinweisen darauf, dass dieses Evangelium außerhalb Judäas entstand und Nichtjuden im Blick hat. Sachlich ist die Erklärung dabei überzogen: Die rituelle Handwaschung vor dem Essen war eine Praxis der Pharisäer und der Priester, nicht aller Juden.\n\nDer Vorwurf betrifft nicht die Tora, sondern die Überlieferung der Ältesten – jene mündlich weitergegebene Auslegung, die später in Mischna und Talmud schriftlich wurde. Die Pharisäer verstanden sie als Zaun um das Gesetz: Wer die Vorschriften weiter fasst, als sie geschrieben stehen, gerät gar nicht erst in die Nähe einer Übertretung. Der Einwand in dieser Szene dreht das um: Der Zaun könne so hoch werden, dass er den Garten verdeckt.\n\nAls Beispiel dient das Korban-Gelübde. Wer einen Besitz für den Tempel weihte, entzog ihn jeder anderen Verwendung – auch der Unterstützung der eigenen Eltern. Rabbinische Quellen belegen, dass solche Gelübde vorkamen und dass man um ihre Auflösung stritt; die Mischna widmet dem Thema einen eigenen Traktat und kennt Wege, ein unbedacht gesprochenes Gelübde zurückzunehmen. Der Vorwurf trifft also einen wirklichen Konflikt, verallgemeinert ihn aber.\n\nDer entscheidende Satz kehrt die Richtung um: Nicht was hineingeht, verunreinigt, sondern was herauskommt. Markus zieht selbst die Folgerung und bemerkt, der natürliche Gang fege alle Speise aus – ein Halbsatz, den viele Handschriften anders lesen und den Matthäus streicht. In der einen Lesart spricht Jesus alle Speisen rein, in der anderen beschreibt der Satz nur den Verdauungsweg. An diesem Halbsatz hängt eine der folgenreichsten Weichenstellungen der frühen Kirche.',
+    reception:
+      'Die Frage, ob die Speisegebote für Christen gelten, entschied über den Weg der jungen Gemeinden. Die Apostelgeschichte erzählt sie an der Vision des Petrus, der Galaterbrief am Streit in Antiochia, wo Petrus und Paulus über die Tischgemeinschaft mit Nichtjuden aneinandergerieten. Der Halbsatz bei Markus ist der früheste Beleg dafür, dass man sich für die Freiheit auf ein Jesuswort berief.\n\nDie Wirkung reicht weit über die Ernährung hinaus. Wo Reinheit ins Innere verlegt wird, verliert die kultische Ordnung ihren Rang – und mit ihr eine Praxis, die Zugehörigkeit sichtbar machte. Jüdische Auslegung hat darauf hingewiesen, dass die christliche Lesart dieser Szene jahrhundertelang benutzt wurde, um jüdische Frömmigkeit als äußerlich abzutun. Das Wort vom Heucheln stammt aus einem innerjüdischen Prophetenzitat und war ursprünglich Selbstkritik, keine Fremdkritik.\n\nDie Aufzählung der zwölf Untugenden am Ende folgt einem Muster, das in der antiken Popularphilosophie verbreitet war; die Stoiker führten Lasterkataloge in derselben Form. Sie taucht bei Paulus mehrfach auf und ist über die Beichtspiegel des Mittelalters in die Lehre von den Hauptsünden eingegangen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Wasser war in Galiläa knapp und musste geschöpft und getragen werden. Ein Haushalt, der vor jeder Mahlzeit die Hände übergoss, verbrauchte davon spürbar mehr als einer, der es nicht tat.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Rein und unrein bezeichneten keine Hygiene, sondern die Tauglichkeit zum Gottesdienst. Wer unrein war, blieb dem Heiligtum fern, bis eine Frist verstrichen und ein Bad genommen war.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Versorgung alter Eltern lag bei den Kindern; eine staatliche Absicherung gab es nicht. Wer sich dieser Pflicht entzog, ließ Vater und Mutter ohne Auskommen zurück.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein einmal gesprochenes Gelübde galt als bindend, weil es Gott gegenüber ausgesprochen war. Die Gelehrten stritten darüber, unter welchen Bedingungen es sich auflösen ließ.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. koinos',
+        rendered: 'gemeinen',
+        note: 'Wörtlich gemein im Sinn von gewöhnlich, allgemein zugänglich – und darum nicht abgesondert für Gott. Luther übersetzt wörtlich; heutige Ausgaben schreiben unrein.',
+      },
+      {
+        word: 'griech. he paradosis ton presbyteron',
+        rendered: 'Aufsätze der Ältesten',
+        note: 'Die mündliche Überlieferung neben der geschriebenen Tora, später in der Mischna gesammelt. Bestritten wird hier nicht das Gesetz, sondern seine Auslegung.',
+      },
+      {
+        word: 'hebr. qorban',
+        rendered: 'Korban',
+        note: 'Eine Weihegabe. Markus behält das fremde Wort bei und übersetzt es sofort – ein Zeichen dafür, dass seine Leser es nicht kannten.',
+      },
+      {
+        word: 'griech. entalmata anthropon',
+        rendered: 'Menschengebot',
+        note: 'Aus dem Jesajazitat übernommen, das der griechischen Übersetzung folgt; der hebräische Wortlaut lautet an dieser Stelle anders.',
+      },
+      {
+        word: 'griech. katharizon panta ta bromata',
+        rendered: 'der alle Speise ausfegt',
+        note: 'Grammatisch mehrdeutig. Bezieht sich das Beiwort auf den Gang oder auf Jesus, der damit alle Speisen reinigt? Die Handschriften geben beides her.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Szene unterscheidet göttliches Gebot und menschliche Satzung, hebt aber die Überlieferung als solche nicht auf. Die Kirche kennt weiterhin Ordnungen, die nicht in der Schrift stehen und dennoch verpflichten.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Ein Kernbeleg gegen kirchliche Zusatzgebote. Luther bezog die Stelle auf Fastenordnungen und Klosterregeln seiner Zeit und las sie als Freiheit des Gewissens gegenüber solchen Vorschriften.',
+      },
+      {
+        tradition: 'Jüdische Sicht',
+        text: 'Der Vorwurf trifft eine Zuspitzung, nicht die Praxis im Ganzen. Auch die rabbinische Überlieferung kennt den Vorrang der Elternehrung vor einem Gelübde und Wege, ein solches aufzulösen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die eingeschobene Erklärung verrät ein nichtjüdisches Publikum. Ob die Bemerkung über die Speisen auf Jesus zurückgeht oder die Praxis der markinischen Gemeinde begründet, ist umstritten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 29, verse: 13, note: 'Das Zitat vom Ehren mit den Lippen' },
+      { book: '2mo', chapter: 20, verse: 12, note: 'Das Gebot der Elternehrung' },
+      { book: '3mo', chapter: 11, verse: 47, note: 'Die Unterscheidung rein und unrein' },
+      { book: 'apg', chapter: 10, verse: 15, note: 'Die Vision des Petrus' },
+      { book: 'roem', chapter: 14, verse: 14, note: 'Nichts ist an sich gemein' },
+      { book: 'gal', chapter: 2, verse: 12, note: 'Der Streit um die Tischgemeinschaft' },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 7,
+    from: 31,
+    to: 37,
+    title: '„Hephatha! das ist: Tu dich auf“',
+    historicalShort:
+      'Eine Heilung im heidnischen Zehnstädtebund, erzählt mit Speichel, Seufzen und einem aramäischen Wort.',
+    historicalLong:
+      'Der Weg, den Markus angibt, ist geografisch verwunderlich: von Tyrus über Sidon zum See Genezareth mitten durch das Gebiet der Zehnstädte. Sidon liegt nördlich von Tyrus, also in der Gegenrichtung; die Zehnstädte liegen östlich des Sees. Wer die Landkarte anlegt, erhält einen weiten Bogen durch überwiegend nichtjüdisches Gebiet. Ob Markus die Wege nicht kannte oder ob ihm die Route wichtiger war als die Entfernung, ist offen – erzählerisch führt sie durch lauter heidnisches Land.\n\nDie Zehnstädte waren ein Verbund griechisch geprägter Städte mit eigener Verfassung, Theatern und Tempeln; Plinius zählt sie auf, und ihre Münzen zeigen griechische Götter. Für einen jüdischen Wanderprediger war das fremdes Terrain. Dass Markus dorthin verlegt, was er erzählt, gehört zu einer Linie seines Buches: Zwischen den beiden Speisungen bewegt sich Jesus fast durchgehend außerhalb jüdischen Gebiets.\n\nDie Behandlung folgt Schritten, die aus antiken Heilberichten bekannt sind: Absonderung von der Menge, Berührung der betroffenen Stellen, Speichel, Blick nach oben, ein Seufzen und ein Machtwort in fremder Sprache. Speichel galt in der Antike weithin als heilkräftig; Plinius und Tacitus berichten davon, und Tacitus erzählt eine Heilung des Kaisers Vespasian in Alexandria mit demselben Mittel. Markus behält diese Züge bei, wo Matthäus und Lukas sie meiden.\n\nDas beibehaltene aramäische Wort steht in einer Reihe mit dem Zuruf an das Mädchen des Jairus und dem Ruf am Kreuz. Markus lässt solche Worte stehen und übersetzt sie sofort. Sie sind der stärkste Hinweis darauf, dass hinter dem griechischen Text eine aramäisch erzählte Überlieferung steht.',
+    reception:
+      'Der Ruf ist in die Taufliturgie eingegangen. Die römische Ordnung kannte einen Ritus, bei dem der Priester Ohren und Mund des Täuflings berührte und das Wort sprach; das Zweite Vatikanische Konzil behielt ihn als freigestellte Handlung bei der Kindertaufe bei. Ambrosius von Mailand erklärt ihn schon im vierten Jahrhundert seinen Täuflingen.\n\nDer Schlussruf der Menge zitiert die Schöpfungserzählung, wo Gott alles gut gemacht sieht, und nimmt zugleich eine Verheißung Jesajas auf, nach der Taube hören und Stumme jubeln werden. Die frühe Kirche las die Heilung darum als Anzeichen der versprochenen Wiederherstellung.\n\nIn der Geschichte der Gehörlosenbildung ist die Stelle zwiespältig geblieben. Sie diente jahrhundertelang als Beleg dafür, dass Taubheit ein zu behebender Mangel sei; die Gehörlosengemeinschaft hat dieser Lesart widersprochen und darauf bestanden, dass Gebärdensprache eine vollwertige Sprache ist und keine Ersatzform. Neuere theologische Arbeiten aus der Behindertenperspektive lesen die Szene darum gegen den Strich: als Begegnung, nicht als Reparatur.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der Städtebund östlich und südlich des Sees war griechisch verfasst, mit eigenen Ratsversammlungen und eigener Münzprägung. Er gehörte zur Provinz Syrien und nicht zum Herrschaftsgebiet des Antipas.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wer weder hörte noch verständlich sprach, war vom Handel, vom Gericht und vom Gottesdienst weitgehend ausgeschlossen; verbindliche Geschäfte wurden mündlich vor Zeugen geschlossen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Heilkundige der Antike arbeiteten mit Berührung, Anrufung und Substanzen; die Tempel des Asklepios in den griechischen Städten führten Listen über Genesungen, die Besucher als Weihgaben stifteten.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Aramäisch war die Umgangssprache Galiläas, Griechisch die Sprache der Verwaltung und des Handels. In den Zehnstädten hörte man beides, in den Dörfern östlich davon überwiegend das erste.',
+      },
+    ],
+    terms: [
+      {
+        word: 'aram. ephphatha',
+        rendered: 'Hephatha',
+        note: 'Ein Befehl in der Sprache, die Jesus sprach. Markus behält vier solcher Worte im griechischen Text und übersetzt sie jedes Mal.',
+      },
+      {
+        word: 'griech. mogilalos',
+        rendered: 'einen Tauben, der stumm war',
+        note: 'Das griechische Wort heißt schwer redend und steht in der ganzen griechischen Bibel nur noch einmal – in der Jesajastelle, die dieser Bericht aufnimmt.',
+      },
+      {
+        word: 'griech. ho desmos tes glosses',
+        rendered: 'das Band seiner Zunge war los',
+        note: 'Ein Bild, das in antiken Texten wiederkehrt: Die Sprachlosigkeit gilt als Fessel, die zu lösen ist.',
+      },
+      {
+        word: 'griech. kalos panta pepoieken',
+        rendered: 'Er hat alles wohl gemacht',
+        note: 'Der Ruf der Menge nimmt den Refrain des Schöpfungsberichts auf, wo Gott sein Werk gut nennt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Handlung ist in die Taufe eingegangen: Was hier geöffnet wird, öffnet sich dem Getauften für das Wort. Der Ritus wird bis heute bei der Kindertaufe gebraucht.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die leibliche Berührung zeigt, dass die Erlösung den ganzen Menschen betrifft. Speichel, Finger und Atem stehen für das Herabkommen Gottes in das Stoffliche.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Das Machtwort steht im Mittelpunkt, nicht die Gebärde. Nicht das Mittel wirkt, sondern der Zuspruch – die Zeichen sind Beiwerk, das dem Wort dient.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Wegangabe passt nicht zur Landkarte und gilt als Kunstgriff des Erzählers. Die Heilzüge entsprechen antiker Praxis; Matthäus und Lukas lassen sie aus.',
+      },
+      {
+        tradition: 'Auslegung aus der Behindertenperspektive',
+        text: 'Die Stelle diente lange als Beleg, Taubheit sei ein Mangel. Dagegen steht die Lesart, hier werde ein Ausgeschlossener in die Gemeinschaft zurückgeholt – die Begegnung, nicht das Ohr, sei der Gegenstand.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 35, verse: 5, note: 'Der Verheißung, dass Taube hören' },
+      { book: '1mo', chapter: 1, verse: 31, note: 'Gott sah alles, was er gemacht hatte' },
+      { book: 'mk', chapter: 5, verse: 41, note: 'Talitha kumi, ein zweites aramäisches Wort' },
+      { book: 'mk', chapter: 8, verse: 23, note: 'Speichel auch bei der Blindenheilung' },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 8,
+    from: 1,
+    to: 26,
+    title: '„Ich sehe Menschen gehen, als sähe ich Bäume“',
+    historicalShort:
+      'Eine zweite Speisung, ein verweigertes Zeichen und eine Heilung, die zwei Anläufe braucht.',
+    historicalLong:
+      'Dass Markus zweimal eine Speisung erzählt, hat die Auslegung lange beschäftigt. Die meisten sehen darin zwei Fassungen derselben Überlieferung, die in verschiedenen Gemeinden umliefen und die Markus beide aufnahm, statt sich zu entscheiden. Auffällig ist die Aufteilung: Die erste geschieht auf jüdischem Boden mit zwölf Körben voll Resten, diese hier im heidnischen Osten mit sieben. Zwölf steht für die Stämme Israels, sieben für die Völkerzahl der Antike – die Zahlen erzählen mit.\n\nDie Bitte um ein Zeichen vom Himmel wird nicht nur abgelehnt, sondern mit einem Seufzen abgelehnt. In der griechischen Bibel steht die Wendung von diesem Geschlecht regelmäßig für die Wüstengeneration, die trotz aller Zeichen nicht traute. Wer nach einem Beweis fragt, bekommt keinen; wer keinen fordert, hat gerade zwei Speisungen erlebt.\n\nDas Gespräch im Boot ist die schärfste Zurechtweisung der Jünger im ganzen Buch. Die Fragen häufen sich, und die Wendung von den Augen, die nicht sehen, und den Ohren, die nicht hören, stammt aus Jeremia und aus Jesaja, wo sie dem ungehorsamen Volk gilt. Markus wendet sie auf die zwölf engsten Begleiter an. Der Sauerteig, vor dem gewarnt wird, verbindet zwei Größen, die sonst nichts verbindet: die frommen Gegner und den Hof des Landesherrn.\n\nDie Blindenheilung ist die einzige im Neuen Testament, die stufenweise geschieht. Der erste Versuch bringt nur Umrisse, erst der zweite volle Schärfe. Die Stellung ist kaum zufällig: Unmittelbar danach folgt das Bekenntnis des Petrus, der Jesus richtig benennt und ihn im selben Atemzug missversteht. Was am Blinden geschieht, geschieht am Jüngerkreis in Zeitlupe.',
+    reception:
+      'Die stufenweise Heilung ist zu einem Bild für den Glaubensweg geworden. Gregor der Große deutete sie als Fortschritt der Erkenntnis, Bernhard von Clairvaux als Stufen der Betrachtung; John Newton, der Verfasser von Amazing Grace, griff sie im 18. Jahrhundert für die eigene Bekehrungsgeschichte auf. In der neueren Auslegung dient sie als Schlüssel zum Aufbau des ganzen Evangeliums, das zwischen zwei Blindenheilungen den Weg nach Jerusalem erzählt.\n\nDie Verweigerung des Zeichens hat eine lange Wirkung in der Frage, was Wunder beweisen können. Augustinus zog aus ihr, dass Zeichen den Glauben stützen, ihn aber nicht erzwingen; die Aufklärung las sie als Absage an jede Beglaubigung durch das Außerordentliche. Beide berufen sich auf denselben Satz.\n\nDas Wort vom Sauerteig ist sprichwörtlich geworden und wird meist auf verborgene Verderbnis gedeutet. Paulus verwendet dasselbe Bild in dieser Richtung, während es an anderer Stelle in den Evangelien für das Wachsen des Reiches Gottes steht – dasselbe Bild trägt beide Vorzeichen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Brot war die Hauptnahrung; Fisch kam vom See, gesalzen oder eingelegt, und war in Galiläa eine der wenigen Handelswaren, die über die Grenzen gingen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Sauerteig hieß ein Rest vom Vortag, den man aufhob und dem neuen Teig zusetzte. Jeder Haushalt bewahrte ihn auf; vor dem Passa musste er restlos beseitigt werden.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Hof des Antipas und die pharisäische Bewegung standen einander fern; hier werden sie in einem Atemzug genannt. Markus deutet Zusammenspiel an, wo sonst Gegensatz herrscht.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Bethsaida lag am Nordufer und wurde vom Tetrarchen Philippus zur Stadt ausgebaut; sie hieß danach Julias, nach einer Angehörigen des Kaiserhauses.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. splanchnizomai',
+        rendered: 'Mich jammert des Volks',
+        note: 'Wörtlich: Es dreht sich mir im Innersten um. Das Wort bezeichnet keine Stimmung, sondern eine körperlich empfundene Regung.',
+      },
+      {
+        word: 'griech. semeion apo tou ouranou',
+        rendered: 'ein Zeichen vom Himmel',
+        note: 'Verlangt wird kein Wunder überhaupt, sondern ein amtliches Beglaubigungszeichen von oben – etwas, das keinen Zweifel zulässt.',
+      },
+      {
+        word: 'griech. he zyme tou Herodou',
+        rendered: 'dem Sauerteig des Herodes',
+        note: 'Manche Handschriften lesen statt des Landesherrn dessen Anhänger. Beide Lesarten meinen die höfische Partei, nicht eine Lehre.',
+      },
+      {
+        word: 'griech. peporomene kardia',
+        rendered: 'ein erstarrtes Herz',
+        note: 'Dasselbe Wort stand vorher von den Gegnern. Markus legt den Jüngern zur Last, was er zuvor den Widersachern zuschrieb.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die zweite Speisung gilt den Völkern und weist auf die weltweite Kirche. Die zwei Anläufe der Heilung wurden als Stufen des geistlichen Wachstums gelesen, seit Gregor dem Großen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Verweigerung des Zeichens trifft jede Frömmigkeit, die Sicherheit sucht. Glaube hält sich an die Zusage und nicht an einen Beweis, den man vorzeigen könnte.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Erkenntnis wächst schrittweise; die Öffnung der Augen geschieht nicht auf einmal. Die Väter lasen darin den Weg der Reinigung, der Erleuchtung und der Vereinigung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Zwei Fassungen einer Überlieferung, vom Verfasser nebeneinandergestellt. Die Zahlen der Körbe und der Ort trennen jüdischen und heidnischen Bereich.',
+      },
+      {
+        tradition: 'Literarische Deutung',
+        text: 'Die Stelle bildet die Achse des Buches. Zwischen zwei Blindenheilungen steht der Weg nach Jerusalem, und die stufenweise Genesung spiegelt das halbe Verstehen der Begleiter.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 6, verse: 42, note: 'Die erste Speisung' },
+      { book: 'jer', chapter: 5, verse: 21, note: 'Augen, die nicht sehen' },
+      { book: 'mk', chapter: 10, verse: 51, note: 'Die zweite Blindenheilung' },
+      { book: '1kor', chapter: 5, verse: 6, note: 'Ein wenig Sauerteig versäuert den Teig' },
+      { book: 'mt', chapter: 16, verse: 12, note: 'Matthäus deutet den Sauerteig als Lehre' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'mk',
+    chapter: 9,
+    from: 1,
+    to: 29,
+    title: '„Ich glaube, lieber HERR, hilf meinem Unglauben“',
+    historicalShort:
+      'Licht auf einem Berg, drei Hütten, ein missglückter Exorzismus – und der ehrlichste Satz der Evangelien.',
+    historicalLong:
+      'Die Verklärung ist mit Bausteinen der Sinaierzählung gebaut. Sechs Tage warten, ein hoher Berg, eine Wolke, die überschattet, eine Stimme daraus, ein verändertes Aussehen – jeder dieser Züge steht im zweiten Buch Mose vom Aufstieg des Mose. Dass ausgerechnet Mose und Elia erscheinen, verstärkt das: die beiden, von denen die Schrift erzählt, dass sie Gott auf einem Berg begegneten, und die beiden, deren Ende ungewöhnlich blieb.\n\nWelcher Berg gemeint ist, sagt der Text nicht. Die Überlieferung entschied sich seit dem vierten Jahrhundert für den Tabor in der Jezreelebene, auf dem allerdings zur fraglichen Zeit eine Festung stand. Die Lage im Erzählverlauf spricht eher für den Hermon nahe Caesarea Philippi, wo die vorangehende Szene spielt und der mit 2800 Metern tatsächlich hoch ist.\n\nDer Vorschlag mit den Hütten wird von Markus ausdrücklich als Verlegenheit gekennzeichnet. Er meint wohl die Laubhütten des Herbstfestes, an dem man in Zweighütten wohnte und mit dem sich Erwartungen auf die kommende Zeit verbanden. Petrus will offenbar festhalten, was sich nicht festhalten lässt.\n\nDie Szene am Fuß des Berges liest sich wie ein Absturz aus der Höhe. Der Vater beschreibt Anfälle, die der antiken Beschreibung der fallenden Sucht entsprechen: Krämpfe, Schaum, Zähneknirschen, Stürze ins Feuer und ins Wasser. Antike Ärzte kannten das Bild und stritten über die Ursache – die hippokratische Schrift über die heilige Krankheit bestreitet ausdrücklich, dass Dämonen dahinterstehen, während die Volksmeinung daran festhielt. Markus erzählt aus dieser Volksmeinung heraus. Der Satz des Vaters, der Glauben und Unglauben in einem Atemzug bekennt, hat in der Auslegung mehr Gewicht bekommen als die Heilung selbst.',
+    reception:
+      'Die Verklärung ist im Osten ein Hochfest und wird am sechsten August begangen; die Ostkirche versteht das Licht dieser Szene als ungeschaffene Energie Gottes und nicht als Sinneseindruck. Im Streit des 14. Jahrhunderts zwischen Gregorios Palamas und Barlaam von Kalabrien stand genau das zur Debatte – ob Menschen das Licht Gottes wirklich schauen können. Palamas setzte sich durch, und die Antwort prägt orthodoxe Frömmigkeit bis heute.\n\nIn der westlichen Kunst gehört das Motiv zu den großen Aufgaben. Raffaels letztes Gemälde stellt die beiden Hälften dieser Szene übereinander: oben der Berg, unten der schreiende Vater mit dem Kind. Der Bildaufbau ist selbst eine Auslegung – die Herrlichkeit und die Ohnmacht in einem Rahmen.\n\nDer Halbsatz vom Beten und Fasten steht nicht in den ältesten Handschriften; das Fasten ist offenbar später hinzugefügt worden, als sich die Fastenpraxis der Kirche festigte. Er wurde jahrhundertelang zur Begründung asketischer Übungen herangezogen und ist ein Musterfall dafür, wie kirchliche Praxis auf den Text zurückwirkt.\n\nDie Deutung der Krankheit hat eine belastete Geschichte. Wo Anfallsleiden als Besessenheit galten, wurden Betroffene ausgegrenzt, exorziert und bis in die Neuzeit hinein an Behandlung gehindert. Erst das 19. Jahrhundert setzte die medizinische Beschreibung durch.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der Hermon im Norden erreicht über zweitausendachthundert Meter und trägt bis in den Sommer Schnee; der Tabor in der Ebene misst knapp sechshundert und war in römischer Zeit befestigt.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Am Laubhüttenfest wohnte man sieben Tage in Hütten aus Zweigen, zur Erinnerung an die Wanderung durch die Wüste. Mit dem Fest verbanden sich Erwartungen an eine kommende Heilszeit.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Färber arbeiteten mit Pflanzenfarben und mit Walkerde; ein Weiß ohne jeden Stich ins Gelbe war mit den Mitteln der Zeit nicht herzustellen. Der Vergleich greift nach dem Unmöglichen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Kind mit Anfällen konnte weder arbeiten noch verheiratet werden und blieb lebenslang auf die Familie angewiesen. Wer half, half zugleich einem Haushalt, der sonst niemanden hatte.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. metemorphothe',
+        rendered: 'verklärte sich vor ihnen',
+        note: 'Wörtlich: Er wurde umgestaltet. Dasselbe Wort gebraucht Paulus für die Verwandlung der Glaubenden – Markus beschreibt keinen Lichteffekt, sondern eine Wandlung der Gestalt.',
+      },
+      {
+        word: 'griech. skenas treis',
+        rendered: 'drei Hütten',
+        note: 'Das Wort meint Zelte oder Laubhütten. Es klingt sowohl an das Fest im Herbst an als auch an das Zelt der Begegnung in der Wüstenzeit.',
+      },
+      {
+        word: 'griech. epeskiazen',
+        rendered: 'die überschattete sie',
+        note: 'Der Ausdruck der griechischen Bibel für die Wolke, die sich über das Heiligtum legte. Wer ihn hörte, dachte an die Gegenwart Gottes und nicht an Wetter.',
+      },
+      {
+        word: 'griech. pneuma alalon',
+        rendered: 'einen sprachlosen Geist',
+        note: 'Die Ursache wird nach der Wirkung benannt: Der Geist heißt sprachlos, weil er den Jungen sprachlos macht. So beschreibt antike Volksmedizin regelmäßig.',
+      },
+      {
+        word: 'griech. boetheo te apistia mou',
+        rendered: 'hilf meinem Unglauben',
+        note: 'Der Vater bittet nicht um mehr Glauben, sondern um Hilfe für das, was ihm fehlt. Der Satz hebt den Widerspruch nicht auf, sondern legt ihn hin.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Licht auf dem Berg ist ungeschaffen und wirklich schaubar; darum ist die Verklärung ein Hochfest. Gregorios Palamas begründete diese Lehre im 14. Jahrhundert gegen den Einwand, Gott sei nicht wahrnehmbar.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Ein Vorausblick auf die Auferstehung, den drei Zeugen empfangen, bevor der Leidensweg beginnt. Der Zuruf aus der Wolke bestätigt, was zuvor bekannt wurde.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Satz des Vaters gilt als Beschreibung des wirklichen Glaubens: Er ist nie ungeteilt. Luther las darin, dass der Glaubende zugleich Zweifelnder bleibt und eben so beten kann.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Szene ist aus Motiven der Sinaierzählung gebaut; manche halten sie für eine vorgezogene Ostererscheinung. Der Zusatz vom Fasten fehlt in den ältesten Handschriften.',
+      },
+      {
+        tradition: 'Medizingeschichtliche Sicht',
+        text: 'Die Beschreibung entspricht einem Anfallsleiden, das antike Ärzte kannten und dessen dämonische Deutung die hippokratische Schrift bestreitet. Wo die Deutung als Besessenheit galt, hat sie Betroffenen geschadet.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 24, verse: 16, note: 'Die Wolke bedeckte den Berg sechs Tage' },
+      { book: '1koe', chapter: 19, verse: 8, note: 'Elia am Gottesberg' },
+      { book: 'mal', chapter: 4, verse: 5, note: 'Elia kommt zuvor' },
+      { book: '2petr', chapter: 1, verse: 17, note: 'Ein Zeuge beruft sich auf die Stimme' },
+      { book: 'mk', chapter: 1, verse: 11, note: 'Dieselbe Stimme bei der Taufe' },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 9,
+    from: 30,
+    to: 50,
+    title: '„Wer nicht wider uns ist, der ist für uns“',
+    historicalShort:
+      'Auf dem Weg streiten sie um den Rang; die Antwort besteht aus einem Kind, einem Fremden und harten Bildern.',
+    historicalLong:
+      'Die zweite Ankündigung des Leidens folgt demselben Muster wie die erste und die dritte: Sie wird ausgesprochen, sie wird nicht verstanden, und darauf zeigt sich das Missverstehen an einer Handlung der Begleiter. Hier ist es ein Rangstreit unterwegs, den sie auf die Nachfrage hin verschweigen. Markus baut daraus dreimal denselben Dreischritt – Ansage, Unverständnis, Belehrung –, und zwischen der ersten und der letzten liegt der ganze Weg nach Jerusalem.\n\nDass ein Kind mitten in die Runde gestellt wird, war keine Ehrung der Unschuld. Kinder hatten in der römischen wie in der jüdischen Gesellschaft keinen Rechtsstand und keine Stimme; sie zählten zum Haushalt wie das Gesinde. Wer einen Rangstreit mit einem Kind beantwortet, stellt den untersten Platz in die Mitte. Das Wort für aufnehmen gehört in die Sprache der Gastfreundschaft: Es geht um Beherbergen und Versorgen, nicht um Zuneigung.\n\nDer Einwand des Johannes gegen den fremden Exorzisten betrifft ein wirkliches Problem der frühen Gemeinden. Beschwörer, die den Namen Jesu gebrauchten, ohne zur Gemeinde zu gehören, sind auch anderswo belegt; die Apostelgeschichte erzählt eine solche Szene aus Ephesus, und in Zauberpapyri des dritten Jahrhunderts taucht der Name in Beschwörungsformeln auf. Die Antwort zieht die Grenze weit statt eng. Bei Matthäus steht der Satz in der umgekehrten Fassung – wer nicht mit mir ist, ist gegen mich –, und beide Sätze sind über die Jahrhunderte politisch benutzt worden.\n\nDie Reihe der Ärgernis-Worte gehört zu den härtesten Bildern des Neuen Testaments. Der Mühlstein ist der große, von einem Esel gedrehte Stein, nicht die Handmühle; Ertränken war eine Hinrichtungsart, die römische Quellen für Vatermörder nennen. Das Wort, das Luther mit Hölle wiedergibt, ist der Name eines Tals südlich Jerusalems, in dem nach dem Königsbuch Kinder verbrannt worden waren und das seit Jeremia als Ort des Gerichts galt.',
+    reception:
+      'Der Satz über den Fremden ist zu einem Grundtext der Ökumene geworden. Das Zweite Vatikanische Konzil zitiert ihn, wo es von den nichtkatholischen Kirchen spricht; zugleich wurde die matthäische Gegenfassung in der Geschichte ebenso oft angeführt, um Abgrenzung zu begründen. Beide Sätze stehen im Neuen Testament, und die Auswahl richtete sich meist nach dem Anliegen.\n\nDie Aufforderung, ein Glied abzuhauen, ist fast immer als Übertreibung verstanden worden; Origenes soll sie im dritten Jahrhundert wörtlich genommen und sich selbst verstümmelt haben, doch schon die Alte Kirche wies solche Wörtlichkeit zurück. Die orientalische Redeweise arbeitet mit maßlosen Bildern, um Dringlichkeit auszudrücken.\n\nDie Verse 44 und 46 fehlen in den ältesten Handschriften und stehen in modernen Ausgaben nur noch in der Fußnote; sie wiederholen den Jesajavers, den Vers 48 zitiert. Luthers Text folgt der später verbreiteten Fassung, weshalb sie hier dreimal erscheinen.\n\nDas Wort von der Hölle hat eine schwere Wirkungsgeschichte. Aus einem Talnamen wurde in der Predigt des Mittelalters ein Ort ewiger Qual mit ausgemalten Strafen; die Bilder der Kirchenportale und Dantes Dichtung haben daran mehr Anteil als der biblische Wortlaut.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehre war ein knappes Gut: Was einer gewann, verlor ein anderer. Wer in einer Gruppe den Vorrang beanspruchte, tat das öffentlich, und die Sitzordnung bei Tisch machte ihn sichtbar.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Kinder waren nicht geschäftsfähig und konnten vor Gericht nicht aussagen. Ein Vater durfte über die Aufnahme eines Neugeborenen in den Haushalt entscheiden.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die große Mühle wurde von einem Tier gedreht und wog mehrere Zentner; sie stand außerhalb des Hauses und gehörte oft dem Dorf gemeinsam.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Das Tal Hinnom zog sich südlich der Stadt entlang und trug einen unheilvollen Ruf; die Königsbücher berichten von Kinderopfern dort, die Propheten sagten dem Ort das Gericht an.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. diakonos panton',
+        rendered: 'aller Knecht',
+        note: 'Das Wort bezeichnet den Aufwärter bei Tisch, der die Speisen bringt. Daraus wurde später der Titel des Diakons.',
+      },
+      {
+        word: 'griech. dechetai',
+        rendered: 'aufnimmt',
+        note: 'Der Ausdruck der Gastfreundschaft: jemanden ins Haus lassen und versorgen. Gemeint ist eine Handlung, keine Gesinnung.',
+      },
+      {
+        word: 'griech. skandalize',
+        rendered: 'ärgert',
+        note: 'Wörtlich: zum Stolpern bringen. Das Bild ist die Falle oder der Stein auf dem Weg, nicht der Verdruss, den das deutsche Wort heute nahelegt.',
+      },
+      {
+        word: 'griech. geenna',
+        rendered: 'in die Hölle',
+        note: 'Der gräzisierte Name des Hinnomtals bei Jerusalem. Aus einem Ortsnamen wurde in der Überlieferung ein Begriff für das Gericht.',
+      },
+      {
+        word: 'griech. pyri halisthesetai',
+        rendered: 'mit Feuer gesalzen werden',
+        note: 'Einer der dunkelsten Sätze des Buches. Die Handschriften weichen stark ab, und keine Deutung hat sich durchgesetzt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Dienst begründet den Rang in der Kirche; die Amtsträger heißen danach. Das Wort über den Fremden wird im Konzilstext über die getrennten Kirchen aufgenommen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Bilder von Hand und Auge sind Übertreibungen, die den Ernst treffen sollen, nicht Anweisungen. Entscheidend ist, was einen von Gott trennt, nicht das Glied.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Weg nach unten ist der Weg der Vergöttlichung; wer zuletzt sein will, folgt dem Herabsteigen Christi. Das Kind steht für die Armut im Geist, die der Vater ehrt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt sammelt lose Sprüche, die durch Stichworte verbunden sind: Name, ärgern, Feuer, Salz. Die Verse 44 und 46 fehlen in den ältesten Handschriften.',
+      },
+      {
+        tradition: 'Wirkungsgeschichtlicher Befund',
+        text: 'Aus dem Talnamen wurde in der Predigt des Mittelalters ein ausgemalter Strafort. Die Kirchenportale und Dantes Dichtung prägten dieses Bild stärker als der Text selbst.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 66, verse: 24, note: 'Ihr Wurm wird nicht sterben' },
+      { book: 'jer', chapter: 7, verse: 31, note: 'Die Höhen im Tal Hinnom' },
+      { book: 'mt', chapter: 12, verse: 30, note: 'Der Satz in umgekehrter Fassung' },
+      { book: 'apg', chapter: 19, verse: 13, note: 'Fremde Beschwörer gebrauchen den Namen' },
+      { book: 'mk', chapter: 10, verse: 43, note: 'Derselbe Maßstab noch einmal' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'mk',
+    chapter: 10,
+    from: 1,
+    to: 31,
+    title: '„Was denn Gott zusammengefügt hat“',
+    historicalShort:
+      'Drei Fragen auf dem Weg: nach der Scheidung, nach den Kindern und nach dem, was Besitz mit einem Menschen macht.',
+    historicalLong:
+      'Die Frage nach der Scheidung war unter Gelehrten damals umstritten, aber nicht im Grundsatz. Das fünfte Buch Mose setzt den Scheidebrief voraus und regelt nur den Fall danach; gestritten wurde über den Grund. Die Schule Schammais ließ Ehebruch gelten, die Schule Hillels jede Verfehlung bis hin zum angebrannten Essen. Die Antwort hier führt hinter Mose zurück auf die Schöpfungserzählung und entzieht damit der ganzen Debatte den Boden. Der Scheidebrief erscheint als Zugeständnis, nicht als Ordnung.\n\nDer zweite Satz über die Frau, die sich scheidet, ist auffällig: Nach jüdischem Recht konnte allein der Mann die Ehe auflösen. Im römischen Recht konnte es auch die Frau, und Josephus berichtet empört von jüdischen Fürstinnen, die davon Gebrauch machten. Der Halbsatz fehlt bei Matthäus. Er ist der deutlichste Hinweis darauf, dass dieses Buch für Leser im römischen Rechtsraum verfasst wurde.\n\nDer Abschnitt über die Kinder gehört sachlich dazu: Frau und Kind waren die Schutzlosen einer Ehe. Wer geschieden wurde, verlor die Versorgung; die Kinder blieben beim Vater. Dass die Begleiter die Kinder abweisen wollen, entspricht der Rangordnung, und dass Jesus darüber unwillig wird, ist eine der wenigen Stellen, an denen Markus ihm Zorn zuschreibt.\n\nDie Begegnung mit dem Reichen endet als einzige Berufungsgeschichte der Evangelien mit einer Absage. Markus fügt einen Zug ein, den Matthäus und Lukas streichen: Er sah ihn an und liebte ihn. Auch die Rückfrage nach dem Wort gut fehlt bei Matthäus, der sie in eine Frage nach dem Guten umbaut – offenbar war der Satz früh anstößig. Das Bild vom Kamel und der Nadel ist eine Übertreibung nach orientalischer Art; die verbreitete Erklärung, ein Nadelöhr sei ein schmales Stadttor gewesen, lässt sich vor dem Mittelalter nirgends belegen und ist ein Versuch, die Härte zu mildern.',
+    reception:
+      'Kaum eine Stelle hat das Kirchenrecht so geprägt. Die katholische Kirche leitet daraus die Unauflöslichkeit der Ehe ab und kennt nur die Feststellung, dass eine Ehe nie gültig zustande kam; die Ostkirchen lassen unter Auflagen eine zweite und dritte Ehe zu und begründen das mit dem Grundsatz der Nachsicht. Die reformatorischen Kirchen folgten der matthäischen Ausnahme und weiteten sie im Lauf der Zeit aus. Dieselben Verse tragen also drei verschiedene Ordnungen.\n\nDie Wirkung war für Frauen zwiespältig. Das Verbot schützte sie in einer Rechtslage, in der ein Mann die Ehe einseitig lösen konnte, und band sie zugleich in Ehen, aus denen es keinen Ausweg gab. Die Diskussion um häusliche Gewalt hat das im 20. Jahrhundert in vielen Kirchen aufgeworfen; die evangelischen Kirchen haben ihre Ordnungen geändert, die katholische hat die Feststellung der Ungültigkeit ausgeweitet.\n\nDer Rat an den Reichen steht am Anfang des Mönchtums. Antonius der Große hörte ihn nach der Überlieferung im Gottesdienst und verkaufte seinen Besitz; Franz von Assisi tat im 13. Jahrhundert dasselbe. Ob der Rat allen gilt oder nur einem Einzelnen, ist seit Klemens von Alexandrien umstritten, der eine Schrift darüber verfasste und die Haltung zum Besitz wichtiger nannte als den Besitz.\n\nDie Verheißung, hundertfach zu empfangen, ist im 20. Jahrhundert zur Grundlage einer Wohlstandsverkündigung geworden, die materiellen Gewinn verspricht. Der Halbsatz mitten unter Verfolgungen, den Markus als einziger hat, steht dieser Lesart im Weg.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Scheidebrief war eine Urkunde vor Zeugen, die der Frau die Wiederverheiratung erlaubte. Funde aus der judäischen Wüste zeigen den Wortlaut solcher Papiere aus dem zweiten Jahrhundert.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine Ehe verband zwei Haushalte und wurde von den Familien geschlossen; die Mitgift ging bei einer Trennung zurück und war oft der eigentliche Streitpunkt.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Im römischen Recht konnten beide Seiten die Ehe lösen, formlos und ohne Gericht. Augustus versuchte mit Gesetzen gegenzusteuern, mit geringem Erfolg.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Grundbesitz war die einzige dauerhafte Anlage; wer Äcker verkaufte, gab die Versorgung der ganzen Sippe auf und stieg gesellschaftlich ab.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. biblion apostasiou',
+        rendered: 'einen Scheidebrief zu schreiben',
+        note: 'Die Urkunde nach dem fünften Buch Mose. Der Text dort regelt nicht die Trennung, sondern nur, was danach nicht mehr geht.',
+      },
+      {
+        word: 'griech. sklerokardia',
+        rendered: 'eures Herzens Härtigkeit',
+        note: 'Ein Wort der griechischen Bibel für die Unbelehrbarkeit des Volkes. Die Vorschrift gilt danach als Zugeständnis an eine Lage, nicht als Wille Gottes.',
+      },
+      {
+        word: 'griech. sarx mia',
+        rendered: 'ein Fleisch',
+        note: 'Aus der Schöpfungserzählung übernommen. Gemeint ist keine Empfindung, sondern eine neue Einheit, die rechtlich und leiblich zugleich besteht.',
+      },
+      {
+        word: 'griech. didaskale agathe',
+        rendered: 'Guter Meister',
+        note: 'Eine ungewöhnliche Anrede; gut galt als Eigenschaft Gottes. Die Rückfrage darauf fehlt bei Matthäus, der sie umbaut.',
+      },
+      {
+        word: 'griech. kamelon dia trypematos rhaphidos',
+        rendered: 'ein Kamel durch ein Nadelöhr',
+        note: 'Eine sprichwörtliche Übertreibung; der Talmud kennt dasselbe Bild mit einem Elefanten. Die Deutung als enges Stadttor ist mittelalterlich.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Ehe ist unauflöslich; eine Scheidung kann es nicht geben, nur die Feststellung, dass keine gültige Ehe bestand. Der Rat an den Reichen gilt als Grundlage der Ordensgelübde.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Grundsatz gilt, doch die Kirche kennt die Nachsicht gegenüber gescheiterten Menschen. Eine zweite Ehe wird mit einem Bußgebet geschlossen, eine dritte nur ausnahmsweise.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Ehe ist ein weltlich Ding, das der Ordnung des Staates untersteht; Luther zog daraus, dass Scheidung in bestimmten Fällen möglich ist. Der Rat an den Reichen gilt nicht als besonderer Stand.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Satz über die Frau, die sich scheidet, setzt römisches Recht voraus und fehlt bei Matthäus. Die Fassungen zeigen, wie Gemeinden ein strenges Wort an ihre Lage anpassten.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Das Verbot schützte Frauen vor der einseitigen Verstoßung und band sie zugleich an Ehen ohne Ausweg. Die Frage nach Gewalt in der Ehe hat die Auslegung im 20. Jahrhundert verändert.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 24, verse: 1, note: 'Die Vorschrift vom Scheidebrief' },
+      { book: '1mo', chapter: 2, verse: 24, note: 'Sie werden ein Fleisch sein' },
+      { book: 'mt', chapter: 19, verse: 9, note: 'Die Ausnahme bei Matthäus' },
+      { book: '1kor', chapter: 7, verse: 10, note: 'Paulus beruft sich auf dieses Wort' },
+      { book: 'mal', chapter: 2, verse: 16, note: 'Gott hasst das Verstoßen' },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 10,
+    from: 32,
+    to: 44,
+    title: '„Könnt ihr den Kelch trinken, den ich trinke“',
+    historicalShort:
+      'Die dritte Ankündigung des Leidens, und unmittelbar danach eine Bitte um die besten Plätze.',
+    historicalLong:
+      'Der Aufstieg nach Jerusalem ist wörtlich gemeint: Die Stadt liegt achthundert Meter über dem Meer, Jericho dreihundert darunter. Wer von Osten kam, stieg auf einer Strecke von siebenundzwanzig Kilometern mehr als tausend Meter hinauf. Der Satz, dass Jesus vor ihnen herging und die anderen sich fürchteten, gehört zu den eindrücklichsten Bildern des Buches – die Gruppe folgt einem, dessen Ziel sie erschreckt.\n\nDie dritte Ankündigung ist die genaueste. Sie nennt die Übergabe an die Ratsherren, das Todesurteil, die Auslieferung an die Heiden, Verspottung, Geißelung, Anspucken und Tötung – die Abfolge, die das Buch später erzählt. Gerade diese Genauigkeit hat die Forschung dazu gebracht, hier eine Formulierung im Rückblick zu vermuten. Andere halten dagegen, dass die Kreuzigung als Ende eines aufsehenerregenden Auftretens in Jerusalem absehbar war.\n\nDie Bitte der Zebedäussöhne setzt eine Thronvorstellung voraus: Wer zur Rechten und zur Linken eines Herrschers saß, war der Zweite und der Dritte im Reich. Bei Matthäus stellt die Mutter die Bitte, offenbar um die beiden zu entlasten. Markus lässt sie selbst fragen, unmittelbar nachdem sie gehört haben, wohin der Weg führt.\n\nDer Kelch ist ein Bild der Propheten für das zugemessene Geschick, meist für das Gericht; die Taufe steht bei Markus für das Untergehen. Beides zusammen umschreibt den Tod. Die Antwort auf den Unmut der übrigen zehn stellt zwei Ordnungen nebeneinander: die der Herrschenden, die niederdrücken, und eine andere, in der Größe am Dienst gemessen wird. Das Wort für Diener ist das des Aufwärters bei Tisch, das für Knecht das des Sklaven – die Steigerung geht bis zum Rechtlosen.',
+    reception:
+      'Der Satz über die Herrschenden hat eine lange politische Wirkung. Er wurde gegen die weltliche Anmaßung von Bischöfen ins Feld geführt, seit Bernhard von Clairvaux dem Papst schrieb, er solle sich nicht nach dem Vorbild der Fürsten richten. Gregor der Große nahm daraus den Titel Knecht der Knechte Gottes, den die Päpste bis heute führen. Zugleich blieb der Widerspruch zwischen dem Titel und der Amtsführung ein Dauerthema der Kirchenkritik.\n\nDie Bitte um die Ehrenplätze ist in der Kunst und in der Predigt zum Musterbeispiel des Ehrgeizes geworden. In der frühen Kirche diente sie zugleich als Beleg dafür, dass auch die engsten Begleiter irrten – ein Argument gegen jede Überhöhung der Apostel.\n\nDie Ankündigung, beide würden den Kelch trinken, hat man früh auf ihr Ende bezogen. Von Jakobus berichtet die Apostelgeschichte die Hinrichtung unter Agrippa; über Johannes gehen die Nachrichten auseinander, die Überlieferung lässt ihn hochbetagt in Ephesus sterben. Manche Ausleger sahen darin ein Wort, das sich nur halb erfüllte, andere deuteten die Taufe auf das Leiden überhaupt.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Die Straße von Jericho hinauf führte durch die Wüste Juda, ohne Wasser und mit schlechtem Ruf; Reisende schlossen sich zu Gruppen zusammen, besonders vor den Festen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'An einem Hof entschied die Nähe zum Herrscher über alles; die Plätze rechts und links vom Thron waren die begehrtesten Ämter und wurden offen erbeten.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Geißelung ging der Kreuzigung in der römischen Praxis regelmäßig voraus; sie galt nicht als Strafe für sich, sondern als Teil der Hinrichtung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer bei Tisch aufwartete, stand unten in der Ordnung des Hauses; das Wort für diese Tätigkeit wurde in den Gemeinden zum Namen eines Amtes.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. anabainomen eis Hierosolyma',
+        rendered: 'gingen hinauf gen Jerusalem',
+        note: 'Hinaufgehen ist der stehende Ausdruck für die Wallfahrt; er beschreibt zugleich die tatsächliche Steigung von über tausend Metern.',
+      },
+      {
+        word: 'griech. emptyousin',
+        rendered: 'verspeien',
+        note: 'Anspucken war in der Antike die schärfste Form der Ehrverletzung und gehörte zum Spott, den Verurteilte vor der Hinrichtung erlitten.',
+      },
+      {
+        word: 'griech. to poterion',
+        rendered: 'den Kelch trinken',
+        note: 'Bei den Propheten das Bild für das zugemessene Geschick, meist für das Gericht. Dasselbe Wort kehrt im Gebet vor der Verhaftung wieder.',
+      },
+      {
+        word: 'griech. katakyrieuousin',
+        rendered: 'die weltlichen Fürsten herrschen',
+        note: 'Wörtlich: Sie herrschen nieder. Die Vorsilbe gibt dem Wort einen abwertenden Klang, den das deutsche Herrschen nicht wiedergibt.',
+      },
+      {
+        word: 'griech. diakonos',
+        rendered: 'euer Diener sein',
+        note: 'Der Aufwärter bei Tisch. Die Steigerung im nächsten Satz geht zum Sklaven weiter, also vom Untergeordneten zum Rechtlosen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Autorität in der Kirche ist Dienst; der Papsttitel Knecht der Knechte Gottes stammt aus dieser Stelle. Die Bitte der beiden zeigt, dass Amt nicht durch Anspruch entsteht.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Gegensatz zur Herrschaftsordnung der Welt ist grundsätzlich gemeint. Wo Kirchenleitung sich nach fürstlichem Vorbild richtet, verfehlt sie diesen Satz.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Kelch und Taufe deuten auf das Mysterium des Leidens, an dem die Glaubenden teilhaben. Die Plätze zu vergeben steht auch dem Sohn nicht zu – der Vater ordnet.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Genauigkeit der Ankündigung legt eine Formulierung im Rückblick nahe. Bei Matthäus stellt die Mutter die Bitte, was die Söhne entlastet – ein Zug späterer Rücksicht.',
+      },
+      {
+        tradition: 'Politische Wirkungsgeschichte',
+        text: 'Der Satz wurde gegen die weltliche Machtausübung von Bischöfen und Päpsten angeführt, von Bernhard von Clairvaux bis in die Reformation. Der Abstand zwischen Titel und Praxis blieb Gegenstand der Kritik.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 51, verse: 17, note: 'Der Kelch des Zorns' },
+      { book: 'mk', chapter: 14, verse: 36, note: 'Nimm diesen Kelch von mir' },
+      { book: 'apg', chapter: 12, verse: 2, note: 'Der Tod des Jakobus' },
+      { book: 'mk', chapter: 9, verse: 34, note: 'Derselbe Streit schon einmal' },
+      { book: 'phil', chapter: 2, verse: 7, note: 'Er nahm Knechtsgestalt an' },
+    ],
+  },
+  {
+    book: 'mk',
+    chapter: 10,
+    from: 46,
+    to: 52,
+    title: '„Rabbuni, daß ich sehend werde“',
+    historicalShort:
+      'Der letzte Geheilte vor Jerusalem hat einen Namen – und ruft einen Titel, der politisch klingt.',
+    historicalLong:
+      'Dass ein Geheilter mit Namen genannt wird, ist bei Markus einmalig. Die Doppelung – Bartimäus und dazu die Übersetzung, des Timäus Sohn – deutet darauf, dass der Name in der Gemeinde bekannt war; vielleicht gehörte der Mann später dazu. Matthäus macht aus dem einen zwei Blinde und lässt die Namen weg, Lukas verlegt die Szene an den Ortseingang.\n\nJericho war eine wohlhabende Oasenstadt mit einem Winterpalast der Herodesfamilie, umgeben von Balsamgärten, deren Erträge zum Krongut gehörten. Vor den Wallfahrtsfesten zogen große Gruppen hindurch, und Bettler suchten die Wege, auf denen Pilger gingen: Almosen zu geben galt als fromme Tat und war vor einem Fest besonders naheliegend.\n\nDie Anrede Sohn Davids ist der politisch aufgeladene Titel des Buches. Sie meint den erwarteten König aus dem Haus Davids, der Israel wiederherstellt. Bis hierher hat Markus jeden solchen Ruf unterdrückt oder zum Schweigen gebracht; hier wird er zum ersten Mal öffentlich gerufen und nicht zurückgewiesen. Wenige Verse später zieht Jesus unter denselben Erwartungen in die Stadt ein.\n\nDass der Mann sein Kleid wegwirft, ist mehr als eine Bewegung. Der Mantel war die Unterlage, auf der ein Bettler saß und in die er das Erbettelte sammelte; er war meist sein einziger Besitz und nach dem Gesetz nicht pfändbar über Nacht. Ihn zurückzulassen heißt, die bisherige Existenz aufzugeben. Der Schluss – er folgte ihm nach auf dem Wege – nimmt das Leitwort des ganzen Mittelteils auf und beendet ihn: Der Weg führt nach Jerusalem.',
+    reception:
+      'Der Ruf des Bettlers ist in die Liturgie eingegangen. Aus ihm und ähnlichen Bitten formte sich das Kyrie eleison, das seit dem vierten Jahrhundert in östlichen Gottesdiensten und bald auch im Westen gesungen wird. Im Osten wurde daraus das Jesusgebet, das in immer neuer Wiederholung gesprochen wird und die Grundform der Herzensfrömmigkeit auf dem Athos bildet.\n\nIn der Auslegung steht die Szene als Gegenstück zur stufenweisen Heilung vor Bethsaida. Zwischen beiden liegt der Abschnitt über den Weg, in dem die Begleiter nichts begreifen; am Anfang sieht einer erst halb, am Ende sieht einer sofort und geht mit. Der Aufbau ist so auffällig, dass die neuere Auslegung von einer bewussten Rahmung spricht.\n\nDie befreiungstheologische Lesart hat den Bettler als Beispiel dafür gelesen, dass die Stimme der Armen zuerst zum Schweigen gebracht wird und sich durchsetzen muss. Der Zwischensatz, dass viele ihn bedrohten, hat darin besonderes Gewicht bekommen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Jericho lag als Oase weit unter dem Meeresspiegel und war für Palmen und Balsam berühmt; die Herodesfamilie unterhielt dort einen Winterpalast mit Bädern und Gärten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein Bettler saß an der Straße und breitete seinen Mantel aus, um das Erbettelte zu sammeln. Andere Möglichkeiten des Erwerbs gab es für Blinde kaum.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Almosen galten als eines der Werke, die vor Gott zählen; vor den Wallfahrtsfesten gaben Reisende besonders bereitwillig, weil sie selbst um Gelingen baten.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Ein Ruf nach dem Davidssohn hatte politischen Klang: Er meinte den König, der die Fremdherrschaft beendet. Solche Rufe in einer Festmenge waren für die Behörden ein Alarmzeichen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'aram. bar Timai',
+        rendered: 'Bartimäus, des Timäus Sohn',
+        note: 'Markus nennt den aramäischen Namen und übersetzt ihn sofort. Kein anderer Geheilter in diesem Buch trägt einen Namen.',
+      },
+      {
+        word: 'griech. hyie Dauid',
+        rendered: 'du Sohn Davids',
+        note: 'Der Titel des erwarteten Königs. Bis hierher wird jede Anrede dieser Art unterbunden; hier bleibt sie stehen.',
+      },
+      {
+        word: 'aram. rabbuni',
+        rendered: 'Rabbuni',
+        note: 'Eine gesteigerte Form von Rabbi, etwa mein Meister. Im Neuen Testament steht sie nur noch einmal, im Garten am Ostermorgen.',
+      },
+      {
+        word: 'griech. apobalon to himation',
+        rendered: 'warf sein Kleid von sich',
+        note: 'Der Mantel war Unterlage, Decke und Sammelstück zugleich – meist der einzige Besitz. Ihn liegen zu lassen heißt, alles zurückzulassen.',
+      },
+      {
+        word: 'griech. he pistis sou sesoken se',
+        rendered: 'dein Glaube hat dir geholfen',
+        note: 'Das griechische Wort heißt zugleich retten und heilen. Die deutsche Wiedergabe muss sich für eine der beiden Bedeutungen entscheiden.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Ruf des Blinden steht am Anfang des Jesusgebets, das im Osten in ständiger Wiederholung gesprochen wird. Die Erleuchtung der Augen gilt als Bild der Taufe.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Das beharrliche Rufen gegen den Widerstand der Umstehenden ist ein Bild des Gebets. Aus diesem Ruf ist das Kyrie der Messe hervorgegangen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Nicht das Rufen wirkt, sondern das Vertrauen, das darin steckt. Der Schlusssatz spricht dem Glauben zu, was der Geheilte empfangen hat.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Name und der Titel machen die Szene zum Übergang in den Jerusalemer Teil. Matthäus verdoppelt den Blinden, Lukas verlegt die Begegnung an den Ortseingang.',
+      },
+      {
+        tradition: 'Befreiungstheologische Lesart',
+        text: 'Ein Bettler am Straßenrand wird zum Schweigen gebracht und setzt sich durch. Die Stelle gilt als Beispiel dafür, dass die Stimme der Armen erst gegen Widerstand hörbar wird.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 8, verse: 22, note: 'Die erste Blindenheilung' },
+      { book: 'mk', chapter: 11, verse: 10, note: 'Das Reich Davids beim Einzug' },
+      { book: 'joh', chapter: 20, verse: 16, note: 'Rabbuni am Ostermorgen' },
+      { book: '2mo', chapter: 22, verse: 26, note: 'Der Mantel darf nicht über Nacht gepfändet werden' },
+    ],
+  },
 ];
 
 /**

@@ -2737,6 +2737,46 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 70 n. Chr., am ehesten in Rom',
     epoch: 'roemer',
   },
+  'mk 7,1': {
+    events: 'Reinheitsstreit, die Zehnstädte und der Weg nach Bethsaida',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 7,31': {
+    events: 'Reinheitsstreit, die Zehnstädte und der Weg nach Bethsaida',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 8,1': {
+    events: 'Reinheitsstreit, die Zehnstädte und der Weg nach Bethsaida',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 9,1': {
+    events: 'Der Berg der Verklärung und der Weg zurück durch Galiläa',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 9,30': {
+    events: 'Der Berg der Verklärung und der Weg zurück durch Galiläa',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 10,1': {
+    events: 'Der Weg durch Peräa nach Jericho und hinauf nach Jerusalem',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 10,32': {
+    events: 'Der Weg durch Peräa nach Jericho und hinauf nach Jerusalem',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 10,46': {
+    events: 'Der Weg durch Peräa nach Jericho und hinauf nach Jerusalem',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
