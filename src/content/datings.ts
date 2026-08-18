@@ -2717,6 +2717,26 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 70 n. Chr., am ehesten in Rom',
     epoch: 'roemer',
   },
+  'mk 5,1': {
+    events: 'Ostufer des Sees Genezareth und Kapernaum',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 5,35': {
+    events: 'Ostufer des Sees Genezareth und Kapernaum',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 6,1': {
+    events: 'Nazareth, Aussendung der Zwölf und der Hof des Herodes Antipas',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 6,30': {
+    events: 'Nazareth, Aussendung der Zwölf und der Hof des Herodes Antipas',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
