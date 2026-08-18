@@ -50721,6 +50721,332 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'mk', chapter: 14, verse: 58, note: 'Das Wort über den Abbruch des Tempels als Anklagepunkt im Prozeß.' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'joh',
+    chapter: 3,
+    from: 1,
+    to: 15,
+    title: '„daß jemand von neuem geboren werde“',
+    historicalShort:
+      'Ein Ratsherr sucht Jesus bei Nacht auf und wird mit einem Wort empfangen, das er nicht versteht. Das Gespräch dreht sich um eine Geburt aus Wasser und Geist und endet bei einem Bild aus der Wüstenwanderung.',
+    historicalLong:
+      'Nikodemus kommt nur in diesem Evangelium vor, dort aber dreimal: hier, dann als derjenige, der im Rat auf ein ordentliches Verfahren dringt, und schließlich bei der Grablegung. Sein Name ist griechisch und bedeutet Sieger des Volkes; er war unter Juden der Zeit gebräuchlich. Der Talmud kennt einen wohlhabenden Jerusalemer namens Nakdimon ben Gurion aus der Zeit des Krieges; ein Zusammenhang ist erwogen, aber zeitlich nicht herzustellen.\n\nDaß er bei Nacht kommt, läßt sich mehrfach erklären. In diesem Buch ist die Nacht durchweg das Gegenbild zum Licht; zugleich galt das nächtliche Studium der Schrift als besonders verdienstvoll, und Vorsicht wäre für einen Ratsherrn naheliegend gewesen. Der Text entscheidet nicht.\n\nDas Wort, an dem das Gespräch hängt, ist im Griechischen doppeldeutig. Es bedeutet von neuem und von oben zugleich. Nikodemus versteht die erste Bedeutung und fragt nach dem Mutterleib; gemeint ist die zweite. Dieses Spiel funktioniert nur im Griechischen, nicht im Hebräischen oder Aramäischen, und gehört zu den Beobachtungen, aus denen geschlossen wird, daß die Gespräche dieses Evangeliums als griechische Texte gestaltet sind und keine Mitschriften wiedergeben.\n\nDie Geburt aus Wasser und Geist ist seit der Alten Kirche fast durchweg auf die Taufe bezogen worden. Daneben sind zwei andere Deutungen vertreten worden: das Wasser als Bild der natürlichen Geburt, so daß natürliche und geistliche Herkunft einander gegenüberstünden, oder das Wasser als Taufe des Johannes, über die hinausgewiesen wird. Der wahrscheinlichste Hintergrund ist eine Stelle des Hesekielbuchs, in der Gott ankündigt, reines Wasser zu sprengen und einen neuen Geist zu geben; dort stehen beide bereits nebeneinander.\n\nDer folgende Vergleich nutzt eine Doppelbedeutung, die im Griechischen wie im Hebräischen besteht: dasselbe Wort meint Wind und Geist. Am Schluß steht das Bild von der ehernen Schlange, die Mose in der Wüste an einer Stange aufrichtete, damit die Gebissenen sie ansahen und am Leben blieben. Die Königsbücher berichten, daß eben dieses Bildwerk Jahrhunderte später zerstört werden mußte, weil man ihm zu räuchern begonnen hatte. Das Wort für erhöhen ist wieder doppelsinnig: es meint das Aufrichten am Kreuz und die Erhöhung zur Herrlichkeit.',
+    reception:
+      'Aus der Wendung von der neuen Geburt ist eine Selbstbezeichnung geworden. Im Pietismus und in den Erweckungsbewegungen des achtzehnten und neunzehnten Jahrhunderts bezeichnete Wiedergeburt das entscheidende Bekehrungserlebnis; im englischen Sprachraum wurde daraus born again, das seit der amerikanischen Präsidentschaftswahl von 1976 auch eine politische Zuordnung ausdrückt. Der Einwand aus der lutherischen und der katholischen Tradition lautet, daß der Text von einem Geschehen an dem Menschen spricht und nicht von einer Erfahrung, die er machen und datieren kann.\n\nDie Gestalt des Nikodemus hat einen Begriff hervorgebracht. Calvin nannte 1544 in einer Streitschrift jene Protestanten Nikodemiten, die in katholischen Ländern äußerlich mitmachten und ihren Glauben verbargen; er verurteilte diese Haltung scharf, während andere sie unter den Bedingungen der Verfolgung für vertretbar hielten. Die Auseinandersetzung um religiöse Verstellung wurde damit unter dem Namen dieses nächtlichen Besuchers geführt.\n\nDie eherne Schlange wurde früh zum Sinnbild des Gekreuzigten. Sie erscheint in Bibelillustrationen, auf Kirchenfenstern und in der Armenbibel des Spätmittelalters, wo alttestamentliche Vorbilder neben neutestamentliche Szenen gestellt wurden. In Ungarn steht seit 1740 auf dem Berg Nebo eine Nachbildung; die bekannteste heutige, ein Werk von Giovanni Fantoni, wurde dort 1984 aufgestellt. Von dem antiken Äskulapstab, dem Zeichen der Heilkunst, ist das Motiv unabhängig, wird aber häufig mit ihm verwechselt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Ein Oberster gehörte dem Hohen Rat an. Pharisäer bildeten dort eine Gruppe neben der priesterlichen Aristokratie; sie hatten Einfluß, stellten aber nicht die Mehrheit. Ein Gespräch außerhalb des Gremiums war für einen von ihnen heikel.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Wer aus den Völkern zum Judentum übertrat, wurde nach rabbinischer Auffassung wie ein neugeborenes Kind angesehen; dieselbe Wendung begegnet im Talmud. Die Rede von einer neuen Geburt war also nicht fremd, wohl aber ihre Anwendung auf einen Lehrer Israels.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Die Nacht war die Zeit ungestörter Gespräche und des Studiums. Öllampen gaben wenig Licht, so daß gelesen und auswendig wiederholt wurde. Wer nachts unterwegs war, hatte in der Regel einen Grund für die Wahl dieser Stunde.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Wüstenwanderung mit der Schlangenplage spielt in der Steppe südlich des Toten Meeres. Giftschlangen waren dort eine reale Gefahr; die Erzählung setzt eine Erfahrung voraus, die den Hörern vertraut war.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. archōn tōn Ioudaiōn',
+        rendered: 'ein Oberster unter den Juden',
+        note: 'Ein Mitglied des Hohen Rates. Der Ausdruck bezeichnet hier eine Amtsstellung und nicht die Zugehörigkeit zu einem Volk.',
+      },
+      {
+        word: 'griech. gennēthē anōthen',
+        rendered: 'von neuem geboren',
+        note: 'Das griechische Wort bedeutet von neuem und von oben zugleich. Das Mißverständnis des Nikodemus beruht auf dieser Doppeldeutigkeit, die nur im Griechischen besteht.',
+      },
+      {
+        word: 'griech. ex hydatos kai pneumatos',
+        rendered: 'aus Wasser und Geist',
+        note: 'Seit der Alten Kirche überwiegend auf die Taufe bezogen. Der nächste Hintergrund ist die Ankündigung von reinem Wasser und neuem Geist im Hesekielbuch.',
+      },
+      {
+        word: 'griech. hypsōsen ton ophin',
+        rendered: 'eine Schlange erhöht',
+        note: 'Das Bild aus der Wüstenwanderung. Das Wort für erhöhen meint in diesem Evangelium zugleich das Aufrichten am Kreuz und die Erhöhung zur Herrlichkeit.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Das Gespräch geht rasch in einen Vortrag über, in dem der Gesprächspartner verschwindet und die Wir-Form auftritt. Darin wird die Stimme der johanneischen Gemeinde gesehen, die ihre Auseinandersetzung mit der Synagoge in die Szene einträgt.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Verse gehören zu den Grundstellen der Tauflehre. Der Katechismus führt sie für die Notwendigkeit der Taufe an und verbindet die neue Geburt mit dem Empfang des Geistes in der Firmung.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Luther bezog die Wiedergeburt auf die Taufe und auf das tägliche Umkehren, nicht auf ein einmaliges Erlebnis. In den Erweckungsbewegungen verschob sich der Ton auf die persönliche Bekehrung, was innerprotestantisch bis heute strittig ist.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Taufe wird als Erleuchtung und als Beginn der Vergöttlichung des Menschen verstanden. Der Verweis auf die Erhöhung des Menschensohnes verbindet die Szene mit dem Fest der Kreuzerhöhung am vierzehnten September.',
+      },
+      {
+        tradition: 'jüdisch',
+        text: 'Die Vorstellung, ein Übertretender sei wie ein neugeborenes Kind, ist im rabbinischen Schrifttum belegt. Jüdische Ausleger merken an, daß die Zurechtweisung eines Lehrers Israels in diesem Ton die spätere Trennung der Gemeinden spiegelt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hes', chapter: 36, verse: 25, note: 'Reines Wasser und ein neuer Geist: der nächste Hintergrund der Wendung.' },
+      { book: '4mo', chapter: 21, verse: 9, note: 'Die eherne Schlange, die Mose an einer Stange aufrichtet.' },
+      { book: '2koe', chapter: 18, verse: 4, note: 'Hiskia zerschlägt die eherne Schlange, weil ihr geräuchert wurde.' },
+      { book: 'joh', chapter: 19, verse: 39, note: 'Nikodemus bei der Grablegung, mit Myrrhe und Aloe.' },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 3,
+    from: 17,
+    to: 36,
+    title: '„Er muß wachsen, ich aber muß abnehmen“',
+    historicalShort:
+      'Auf die Rede von Licht und Finsternis folgt ein Bericht über zwei gleichzeitig taufende Bewegungen. Die Jünger des Täufers beklagen den Zulauf zu Jesus, und ihr Lehrer antwortet mit dem Bild vom Brautführer.',
+    historicalLong:
+      'Wo in diesem Kapitel die wörtliche Rede endet und die Stimme des Erzählers beginnt, läßt sich nicht sicher bestimmen. Die alten Handschriften kennen keine Anführungszeichen. Die Verse über Licht und Finsternis und ebenso die Verse am Schluß über den, der von oben kommt, klingen nach der Sprache des Evangelisten und werden von vielen Auslegern als sein Kommentar verstanden, obwohl sie im Zusammenhang als Rede des Täufers erscheinen.\n\nDer Bericht über die parallele Tätigkeit ist von eigenem Gewicht. Die drei anderen Evangelien lassen Jesus erst auftreten, nachdem Johannes gefangengesetzt war; hier wird eigens vermerkt, daß dies noch nicht geschehen war, und es wird eine Zeit beschrieben, in der beide taufen. Wenig später schränkt das Buch selbst ein, nicht Jesus habe getauft, sondern seine Jünger. Die Angabe ist historisch wertvoll, weil sie einen Berührungspunkt zwischen beiden Bewegungen erkennen läßt, den die übrige Überlieferung eingeebnet hat.\n\nWo Enon bei Salim lag, ist offen. Das Ortsverzeichnis des Eusebius setzt es ins Jordantal südlich von Beth-Schean an; eine zweite Ansetzung sucht es in der Nähe von Sichem. Der Zusatz, dort sei viel Wasser gewesen, weist auf ein Quellgebiet und paßt zu einer Taufe durch Untertauchen.\n\nDer Streit über die Reinigung, der die Szene auslöst, gehört in eine Zeit, in der über die Bedeutung von Tauchbädern lebhaft gestritten wurde. Die Antwort des Täufers greift ein Bild aus dem Hochzeitsbrauch auf. Der Freund des Bräutigams war eine feste Rolle: er vermittelte die Ehe, führte die Braut zum Haus und wachte über den Ablauf. Sein Anteil an der Freude ist echt und bleibt doch abgeleitet; genau darin liegt der Vergleich.\n\nDer Schlußvers ist der schärfste des Kapitels und die einzige Stelle des Evangeliums, an der vom Zorn Gottes die Rede ist. Er steht in einer Reihe von Gegensatzpaaren, die das ganze Buch durchziehen: Licht und Finsternis, oben und unten, Wahrheit und Lüge, Glauben und Nichtglauben. Bis zur Mitte des zwanzigsten Jahrhunderts galt diese Denkform vielen als Zeichen griechischer oder gnostischer Herkunft. Die Funde vom Toten Meer haben das geändert: die dort gefundene Gemeinderegel entwirft eine Lehre von zwei Geistern, dem des Lichts und dem der Finsternis, in der Menschen den einen oder anderen Weg gehen. Seit 1947 gilt der Hintergrund dieses Evangeliums deshalb überwiegend als palästinisch-jüdisch.',
+    reception:
+      'Der Satz vom Wachsen und Abnehmen ist zum Wahlspruch geworden. Er steht über Bildern des Täufers, in Ordensregeln und in der Sprache geistlicher Begleitung, wo er die Zurücknahme der eigenen Person bezeichnet. Augustin hat ihn in einer Predigt mit dem Lauf der Sonne verbunden: der Gedenktag des Täufers am vierundzwanzigsten Juni liegt kurz nach der Sommersonnenwende, wenn die Tage kürzer werden, das Weihnachtsfest kurz nach der Wintersonnenwende, wenn sie wieder wachsen. Ob die Festdaten so entstanden sind, ist umstritten, doch die Deutung hat sich fest eingeprägt.\n\nDie scharfen Gegensätze dieses Kapitels haben eine doppelte Wirkung gehabt. Sie gaben der christlichen Sprache eine große Klarheit und zugleich ein Muster, in dem Menschen nach Glauben und Unglauben sortiert wurden. In der Auseinandersetzung mit Andersglaubenden ist der Schlußvers regelmäßig angeführt worden. Dagegen wird auf den Vers gewiesen, der den Abschnitt eröffnet: der Sohn sei nicht gesandt, damit er die Welt richte, sondern damit die Welt gerettet werde. Wie beide Aussagen zusammengehen, gehört zu den offenen Fragen der Auslegung dieses Buches.\n\nDie Funde in den Höhlen bei Qumran haben die Beurteilung des Evangeliums verändert wie kaum eine andere archäologische Entdeckung. Vor 1947 wurde es häufig als das griechischste der Evangelien behandelt und in die Nähe späterer gnostischer Systeme gerückt. Die Übereinstimmungen in der Sprache von Licht und Finsternis mit einer jüdischen Schrift des ersten vorchristlichen Jahrhunderts haben diese Einordnung weitgehend abgelöst.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Freund des Bräutigams vermittelte die Ehe, überbrachte die Botschaften zwischen den Familien, führte die Braut und leitete die Feier. Seine Rolle endete mit der Hochzeit; danach trat er zurück.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Für eine Taufe durch Untertauchen brauchte es fließendes oder stehendes Wasser in ausreichender Menge. Im Sommer führten die meisten Bäche kein Wasser, weshalb Quellgebiete und der Jordan selbst die einzigen ganzjährig geeigneten Orte waren.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Über Art und Wirkung ritueller Waschungen wurde im Judentum der Zeit gestritten. Die Gemeinschaft am Toten Meer verlangte tägliche Bäder und band ihre Wirkung an die Umkehr; andere Gruppen legten andere Maßstäbe an.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Zwei Bewegungen mit ähnlichem Ritus nebeneinander waren für die Behörden ein Grund zur Aufmerksamkeit. Josephus berichtet, Antipas habe den Täufer festnehmen lassen, weil dessen Einfluß auf die Menge ihm gefährlich erschien.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. en Ainōn engys tou Saleim',
+        rendered: 'zu Enon, nahe bei Salim',
+        note: 'Der Ort ist nicht sicher zu bestimmen. Der Name Enon hängt mit dem aramäischen Wort für Quellen zusammen, was zu der Bemerkung über das viele Wasser paßt.',
+      },
+      {
+        word: 'griech. peri katharismou',
+        rendered: 'über die Reinigung',
+        note: 'Der Streit betrifft Art und Wirkung ritueller Waschungen. Er war im Judentum der Zeit eine lebhaft diskutierte Frage zwischen den Gruppen.',
+      },
+      {
+        word: 'griech. ho philos tou nymphiou',
+        rendered: 'der Freund aber des Bräutigams',
+        note: 'Eine feste Rolle im Hochzeitsbrauch. Er vermittelte die Ehe und führte die Braut; mit der Feier endete sein Amt.',
+      },
+      {
+        word: 'griech. ou ek metrou',
+        rendered: 'nicht nach dem Maß',
+        note: 'Eine rabbinische Vorstellung besagte, den Propheten sei der Geist in bestimmtem Maß zugeteilt worden. Der Satz setzt sich davon ab.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Angabe über die gleichzeitige Tätigkeit beider Bewegungen gilt als historisch wertvoll, weil sie der glättenden Darstellung der übrigen Evangelien widerspricht. Wo die Rede des Täufers endet und der Kommentar des Verfassers beginnt, ist nicht zu bestimmen.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Der Täufer gilt als Vorbild dessen, der auf einen anderen verweist. Der Satz vom Wachsen und Abnehmen wird in der geistlichen Begleitung und in der Priesterausbildung regelmäßig angeführt.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird, daß der Täufer nichts für sich beansprucht und alles auf den Empfang zurückführt. Die Formulierung, ein Mensch könne nichts nehmen, es sei ihm denn gegeben, wurde in der Gnadenlehre häufig aufgenommen.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Johannes wird als Vorläufer in der Ikonostase unmittelbar neben Christus dargestellt, oft mit Flügeln als Bote. Sein Zurücktreten gilt als Muster der Demut, nicht als Minderung seines Ranges.',
+      },
+      {
+        tradition: 'religionsgeschichtlich',
+        text: 'Die Gegensatzpaare von Licht und Finsternis wurden lange auf griechische oder gnostische Herkunft zurückgeführt. Seit den Funden am Toten Meer gilt eine jüdische Herkunft als wahrscheinlicher; die Gemeinderegel von Qumran entwirft eine sehr ähnliche Lehre von zwei Geistern.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 1, verse: 14, note: 'Jesus tritt erst nach der Gefangennahme des Täufers auf: die abweichende synoptische Abfolge.' },
+      { book: 'joh', chapter: 4, verse: 2, note: 'Die Einschränkung, nicht Jesus selbst habe getauft, sondern seine Jünger.' },
+      { book: 'jes', chapter: 62, verse: 5, note: 'Wie sich ein Bräutigam freut über die Braut: das prophetische Bild im Hintergrund.' },
+      { book: 'roem', chapter: 1, verse: 18, note: 'Der Zorn Gottes vom Himmel: derselbe Ausdruck bei Paulus in anderem Zusammenhang.' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 2 Abschnitte */
+  {
+    book: 'joh',
+    chapter: 4,
+    from: 31,
+    to: 42,
+    title: '„es ist schon weiß zur Ernte“',
+    historicalShort:
+      'Während die Jünger ihn zum Essen drängen, spricht Jesus von einer anderen Speise und von einer Ernte, die nicht mehr bevorsteht, sondern begonnen hat. Die Samaritaner des Ortes kommen und bekennen ihn mit einem Titel, der sonst dem Kaiser galt.',
+    historicalLong:
+      'Die Bemerkung über die vier Monate bis zur Ernte ist wahrscheinlich ein Sprichwort. Zwischen der Aussaat im November oder Dezember und der Gerstenernte im April liegen etwa vier Monate; der Bauer hat in dieser Zeit nichts zu tun als zu warten. Genau das wird bestritten: nicht später, jetzt. Reifes Getreide ist eigentlich goldgelb, nicht weiß; manche Ausleger denken deshalb an die hellen Gewänder der Samaritaner, die in diesem Augenblick über die Felder auf den Brunnen zukommen.\n\nDer Satz, daß der eine sät und ein anderer schneidet, ist ebenfalls sprichwörtlich und begegnet in den Prophetenbüchern und im Hiobbuch als Klage über vergebliche Arbeit. Hier wird er umgekehrt: die Trennung ist kein Unglück, sondern die Ordnung der Sache. Der folgende Satz, andere hätten gearbeitet und die Angeredeten seien in ihre Arbeit eingetreten, blickt über die erzählte Zeit hinaus. Die Apostelgeschichte berichtet, daß Philippus nach der Verfolgung in Jerusalem in einer Stadt Samariens predigte und daß Petrus und Johannes ihm nachgesandt wurden. Der Evangelist scheint auf eine Missionsgeschichte zurückzuschauen, die zu seiner Zeit bereits Vergangenheit war.\n\nDas Bekenntnis am Schluß ist genauer, als es im Deutschen klingt. Heiland der Welt ist im ersten Jahrhundert ein politischer Titel. Städte und Provinzen ehrten römische Herrscher mit Inschriften, die sie als Retter der Welt bezeichneten; für Caesar, Augustus und spätere Kaiser ist die Formel mehrfach belegt. Daß ausgerechnet Samaritaner, die weder zum Tempel in Jerusalem gehörten noch römische Bürger waren, diesen Titel auf einen galiläischen Wanderprediger übertragen, ist eine doppelte Zumutung.\n\nHinzu kommt, wer hier bekennt. Die Samaritaner erwarteten keinen Sohn Davids, sondern den Taheb, einen wiederkehrenden Lehrer nach dem Vorbild des Mose, wie ihn das fünfte Buch Mose ankündigt; ihre Bibel bestand allein aus den fünf Büchern. Das Gespräch am Brunnen hatte entsprechend von einem Propheten gesprochen. Und schließlich ist es eine Frau, deren Rede die Stadt in Bewegung bringt, wobei der Text am Ende festhält, daß die Bewohner sich am Ende nicht mehr auf sie berufen, sondern auf das, was sie selbst gehört haben.',
+    reception:
+      'Die Frau am Brunnen hat in den östlichen Kirchen einen Namen bekommen: Photini, die Leuchtende, im slawischen Bereich Swetlana. Die Überlieferung macht sie zur Missionarin und zur Märtyrerin unter Nero; ihr Gedenktag wird begangen, und der vierte Sonntag nach Ostern trägt in der byzantinischen Ordnung ihren Namen. Im Westen blieb sie namenlos, wurde aber seit dem zwanzigsten Jahrhundert in der Diskussion über die Verkündigung durch Frauen häufig angeführt, weil der Text ihr ausdrücklich zuschreibt, daß viele um ihrer Rede willen glaubten.\n\nDer Titel Heiland der Welt ist über die Jahrhunderte zu einer der geläufigsten Bezeichnungen Christi geworden und hat dabei seinen politischen Klang verloren. In der Forschung des zwanzigsten Jahrhunderts wurde er wiederentdeckt; die Sammlungen griechischer Inschriften zeigen, wie eng die Sprache der frühen Gemeinden an die Sprache der Herrscherverehrung anschloß und wie sie diese zugleich bestritt.\n\nDas Bild von den weißen Feldern gehört zum festen Bestand der Missionsgeschichte. Es steht auf den Fahnen und in den Aufrufen der Missionsgesellschaften des neunzehnten Jahrhunderts und in den Berichten der Erweckungsbewegungen. Kritisch angemerkt wird seit den Debatten über das Verhältnis von Mission und Kolonialherrschaft, daß dieselbe Bildsprache Menschen zu einem Ertrag machen kann, den man einbringt; der Text selbst spricht davon, daß der Säende und der Erntende sich miteinander freuen.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Gesät wurde nach den ersten Regen im November und Dezember, geerntet wurde Gerste im April und Weizen einige Wochen später. Zwischen beidem lag eine Zeit, in der auf dem Feld wenig zu tun war.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Zwischen Juden und Samaritanern bestand eine alte Trennung, die den Umgang bis in Alltagsfragen bestimmte. Daß Jesus zwei Tage in einer samaritanischen Stadt bleibt, überschreitet diese Grenze in einer Weise, die für die ersten Leser auffällig war.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Retter der Welt war ein Ehrentitel römischer Herrscher, in Inschriften aus dem Osten des Reiches mehrfach belegt. Wer ihn auf einen anderen anwandte, bewegte sich in einer Sprache, die politisch besetzt war.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Samaritaner erkannten nur die fünf Bücher Mose als Schrift an und erwarteten keinen Sohn Davids, sondern einen Lehrer nach dem Vorbild des Mose. Ihre Gottesdienststätte war der Berg Garizim.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. emon brōma',
+        rendered: 'Meine Speise',
+        note: 'Der Ausdruck knüpft an das Drängen der Jünger an und verschiebt es. Ähnliche Wendungen kennt die Weisheitsliteratur für das Tun des göttlichen Willens.',
+      },
+      {
+        word: 'griech. eti tetramēnos estin',
+        rendered: 'noch vier Monate',
+        note: 'Wahrscheinlich ein Sprichwort. Zwischen Aussaat und Gerstenernte lagen etwa vier Monate, in denen der Bauer warten mußte.',
+      },
+      {
+        word: 'griech. allos estin ho speirōn',
+        rendered: 'Dieser sät, der andere schneidet',
+        note: 'In den Prophetenbüchern ist dieselbe Trennung eine Fluchformel für vergebliche Arbeit. Hier wird sie ins Positive gewendet.',
+      },
+      {
+        word: 'griech. ho sōtēr tou kosmou',
+        rendered: 'der Welt Heiland',
+        note: 'Ein Ehrentitel römischer Herrscher, in Inschriften des ersten Jahrhunderts belegt. Im Neuen Testament steht er nur hier und im ersten Johannesbrief.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Der Hinweis auf andere, die gearbeitet haben, wird meist auf die in der Apostelgeschichte berichtete Mission in Samarien bezogen. Die Szene spiegelt danach die Erfahrung einer Gemeinde, in der Samaritaner bereits einen festen Platz hatten.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Erzählung gehört zu den Schriftlesungen der Taufvorbereitung in der Fastenzeit. Die Ernte wird auf die Sendung der Kirche bezogen, das Bekenntnis der Samaritaner auf die Weite dieses Auftrags.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird der Schlußsatz: die Bewohner glauben zuletzt nicht mehr aufgrund fremder Rede, sondern aufgrund eigenen Hörens. Das Zeugnis führe zum Wort und mache sich dann überflüssig.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Frau am Brunnen trägt den Namen Photini und wird als Missionarin und Märtyrerin verehrt. Der vierte Sonntag nach Ostern ist ihr gewidmet; die Gesänge des Tages nennen sie eine Apostelgleiche.',
+      },
+      {
+        tradition: 'feministisch',
+        text: 'Hervorgehoben wird, daß eine Frau eine ganze Stadt in Bewegung setzt und daß der Text ihr Wirken ausdrücklich benennt. Die Beobachtung, daß die Bewohner sich am Ende nicht mehr auf sie berufen, wird verschieden bewertet.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mi', chapter: 6, verse: 15, note: 'Du sollst säen und nicht ernten: dieselbe Trennung als Fluchwort.' },
+      { book: 'apg', chapter: 8, verse: 5, note: 'Philippus predigt in einer Stadt Samariens: die Arbeit anderer, auf die hier verwiesen wird.' },
+      { book: '5mo', chapter: 18, verse: 18, note: 'Der Prophet wie Mose, auf den sich die samaritanische Erwartung stützte.' },
+      { book: '1joh', chapter: 4, verse: 14, note: 'Der Vater hat den Sohn gesandt als Heiland der Welt: derselbe Titel im Brief.' },
+    ],
+  },
+  {
+    book: 'joh',
+    chapter: 4,
+    from: 43,
+    to: 54,
+    title: '„Gehe hin, dein Sohn lebt!“',
+    historicalShort:
+      'In Kana bittet ein Hofbeamter aus Kapernaum um Hilfe für seinen sterbenden Sohn. Jesus geht nicht mit, sondern spricht ein Wort, und der Vater macht sich auf den Weg. Unterwegs erfährt er die Stunde der Besserung.',
+    historicalLong:
+      'Der Abschnitt beginnt mit einem Satz, der seit jeher Schwierigkeiten macht. Es heißt, ein Prophet gelte daheim nichts, und unmittelbar darauf wird berichtet, daß die Galiläer ihn aufnahmen. Zwei Erklärungen werden angeboten. Nach der einen ist mit der Heimat in diesem Evangelium Judäa gemeint, weil dort der Ort des Messias liegt und weil dort die Ablehnung erzählt wird. Nach der anderen ist die Aufnahme in Galiläa nur äußerlich, denn sie beruht darauf, daß man in Jerusalem Zeichen gesehen hatte, und eben dieser Glaube wird gleich darauf in Frage gestellt.\n\nDer Bittsteller ist ein Königischer, im Griechischen ein Mann des Königs, also ein Beamter am Hof des Antipas. Genaugenommen war Antipas kein König, sondern Tetrarch; im Volksmund wurde er dennoch so genannt, wie auch das Markusevangelium zeigt. Sein Hof residierte in Tiberias am See, wenige Stunden von Kapernaum entfernt.\n\nDie Erzählung hat eine deutliche Ähnlichkeit mit der Heilung des Knechtes eines Hauptmanns bei Matthäus und Lukas: derselbe Ort, dieselbe Heilung aus der Ferne, dasselbe Vertrauen auf das bloße Wort. Ob es sich um dieselbe Überlieferung handelt, ist umstritten. Dagegen sprechen mehrere Unterschiede: dort ein römischer Offizier, hier ein Beamter des Landesherrn; dort ein Knecht, hier ein Sohn; dort ein Nichtjude, hier vermutlich ein Jude.\n\nDer Satz über Zeichen und Wunder ist im vierten Evangelium einmalig; nur hier stehen die beiden Wörter nebeneinander, und zwar in kritischer Absicht. Das Buch erzählt Zeichen und mißtraut zugleich einem Glauben, der sie braucht; am Ende wird der Auferstandene denen einen Zuspruch geben, die nicht sehen und doch glauben. Der Beamte tut genau das: er geht, ehe er etwas erfahren hat.\n\nDie Zeitangabe der siebenten Stunde meint etwa ein Uhr mittags. Von Kana nach Kapernaum sind es rund dreißig Kilometer, dazu ein Abstieg von der Höhe des Berglandes bis auf mehr als zweihundert Meter unter den Meeresspiegel; das ist ein Tagesmarsch, weshalb die Knechte von gestern sprechen. Der Schlußsatz zählt: es ist das zweite Zeichen, und beide geschahen in Kana. Der Bericht, daß der Mann mit seinem ganzen Hause glaubte, verwendet eine Formel, die in der Apostelgeschichte mehrfach wiederkehrt.',
+    reception:
+      'Die Formel vom Glauben des ganzen Hauses gehört zu den meistverhandelten Wendungen der Taufgeschichte. Wer die Taufe von Kindern begründet, verweist darauf, daß in der Antike der Haushalt eine Einheit bildete und daß Kinder und Unfreie selbstverständlich eingeschlossen waren; die entsprechenden Stellen der Apostelgeschichte über Kornelius, Lydia und den Gefängnisaufseher werden mit angeführt. Die Gegenseite hält fest, daß keine dieser Stellen Kinder erwähnt und daß der Glaube in ihnen jeweils vorausgesetzt wird. Der Streit wurde in den fünfziger und sechziger Jahren des zwanzigsten Jahrhunderts zwischen Joachim Jeremias und Kurt Aland ausführlich geführt und ist nicht entschieden worden.\n\nDie Heilung aus der Ferne hat in der Frömmigkeitsgeschichte eine besondere Rolle gespielt, weil sie den Gedanken stützt, daß die Fürbitte über jede Entfernung wirkt. In der Krankenseelsorge wird der Text bis heute an Stellen gelesen, an denen Angehörige nicht bei den Kranken sein können; in den Jahren der Ausgangsbeschränkungen ab 2020 ist er in vielen Gemeinden aus diesem Grund aufgenommen worden.\n\nDer kritische Satz über Zeichen und Wunder hat eine eigene Wirkung entfaltet. Er wurde in der Auseinandersetzung mit einer auf Wunder gestützten Frömmigkeit angeführt, von den Reformatoren gegen die Wallfahrtspraxis bis zu heutigen Diskussionen über Heilungsversammlungen. Die Gegenrede weist darauf hin, daß dasselbe Evangelium sieben Zeichen erzählt und ihnen ausdrücklich eine Aufgabe zuschreibt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Antipas hielt in Tiberias einen Hof mit Beamten, Verwaltern und Wachpersonal. Die Stadt war um 20 n. Chr. gegründet und nach dem Kaiser benannt; sie lag am Westufer des Sees, wenige Stunden von Kapernaum entfernt.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Kana lag im galiläischen Bergland, Kapernaum am See mehr als zweihundert Meter unter dem Meeresspiegel. Die Strecke von rund dreißig Kilometern führte fast durchgehend bergab und war an einem Tag zu gehen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Fieber war eine der häufigsten Todesursachen. Im Jordantal und am See kam Malaria vor; die Krankheit verlief in Schüben, so daß der Zeitpunkt, an dem das Fieber wich, genau bemerkt und erinnert wurde.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Haushalt umfaßte Familie, Verwandte und Unfreie und galt rechtlich wie gesellschaftlich als Einheit. Eine Entscheidung des Hausherrn betraf alle; das erklärt die Formel vom Glauben des ganzen Hauses.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. prophētēs en tē idia patridi',
+        rendered: 'ein Prophet daheim nichts gilt',
+        note: 'Das Sprichwort steht auch bei den drei anderen Evangelisten, dort auf Nazareth bezogen. Welche Heimat hier gemeint ist, wird verschieden beantwortet.',
+      },
+      {
+        word: 'griech. basilikos',
+        rendered: 'ein Königischer',
+        note: 'Ein Mann im Dienst des Landesherrn. Antipas führte den Königstitel nicht, wurde im Volksmund aber so genannt.',
+      },
+      {
+        word: 'griech. sēmeia kai terata',
+        rendered: 'Zeichen und Wunder',
+        note: 'Die beiden Wörter stehen im vierten Evangelium nur hier nebeneinander, und zwar in kritischer Absicht gegenüber einem Glauben, der Beweise verlangt.',
+      },
+      {
+        word: 'griech. hōran hebdomēn',
+        rendered: 'die siebente Stunde',
+        note: 'Etwa ein Uhr mittags, vom Sonnenaufgang an gezählt. Die Genauigkeit dient dem Nachweis, daß Wort und Wirkung zusammenfielen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Nähe zur Erzählung vom Hauptmann von Kapernaum bei Matthäus und Lukas ist offenkundig, die Unterschiede sind erheblich. Ob eine gemeinsame Überlieferung zugrunde liegt, wird seit langem diskutiert und bleibt offen.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Auslegung sieht in dem Beamten ein Beispiel für den Glauben, der das Wort ernst nimmt, bevor er die Wirkung sieht. Die Heilung aus der Ferne wird auf die Wirksamkeit der Fürbitte bezogen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Im Mittelpunkt steht, daß der Mann dem bloßen Wort glaubt und geht. Luther las die Szene als Muster des Glaubens, der sich an die Zusage hält, obwohl er nichts in der Hand hat.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Das Zeichen wird auf die Macht des Wortes bezogen, die an keinen Ort gebunden ist. Die Väter verbinden es mit der Vorstellung, daß Christus überall gegenwärtig wirkt und die Entfernung keine Rolle spielt.',
+      },
+      {
+        tradition: 'täuferisch',
+        text: 'Die Formel vom Glauben des ganzen Hauses gilt in dieser Tradition nicht als Beleg für die Taufe von Kindern. Der Text spreche vom Glauben, und Glaube könne nicht stellvertretend geleistet werden; die Gegenposition verweist auf die rechtliche Einheit des antiken Haushalts.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 8, verse: 5, note: 'Der Hauptmann von Kapernaum: die verwandte Erzählung bei Matthäus.' },
+      { book: 'lk', chapter: 4, verse: 24, note: 'Das Sprichwort vom Propheten in seiner Heimat, dort in der Synagoge von Nazareth.' },
+      { book: 'joh', chapter: 20, verse: 29, note: 'Selig, die nicht sehen und doch glauben: die Linie, die hier beginnt.' },
+      { book: 'apg', chapter: 16, verse: 33, note: 'Der Gefängnisaufseher wird getauft mit allen den Seinen: dieselbe Formel vom ganzen Haus.' },
+    ],
+  },
 ];
 
 /**

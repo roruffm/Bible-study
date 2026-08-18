@@ -3462,6 +3462,26 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert. Es ordnet die Tempelhandlung an den Anfang, während die drei anderen Evangelien sie an das Ende stellen.',
     epoch: 'roemer',
   },
+  'joh 3,1': {
+    events: 'Die Szenen gehören in die Frühzeit des Wirkens, in Jerusalem und danach im Jordantal, etwa 27 bis 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Rede vom Licht und der Finsternis hat in den Texten vom Toten Meer nahe Entsprechungen.',
+    epoch: 'roemer',
+  },
+  'joh 3,17': {
+    events: 'Die Szenen gehören in die Frühzeit des Wirkens, in Jerusalem und danach im Jordantal, etwa 27 bis 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Rede vom Licht und der Finsternis hat in den Texten vom Toten Meer nahe Entsprechungen.',
+    epoch: 'roemer',
+  },
+  'joh 4,31': {
+    events: 'Die Szenen gehören in die Frühzeit des Wirkens, in Samarien und danach in Galiläa, etwa 27 bis 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; der Hinweis auf die Arbeit anderer setzt eine bereits zurückliegende Mission in Samarien voraus.',
+    epoch: 'roemer',
+  },
+  'joh 4,43': {
+    events: 'Die Szenen gehören in die Frühzeit des Wirkens, in Samarien und danach in Galiläa, etwa 27 bis 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; der Hinweis auf die Arbeit anderer setzt eine bereits zurückliegende Mission in Samarien voraus.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
