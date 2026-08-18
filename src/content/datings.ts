@@ -3307,6 +3307,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Gastmahlszenen setzen Leser voraus, denen die griechisch-römische Tischsitte vertraut ist.',
     epoch: 'roemer',
   },
+  'lk 15,1': {
+    events: 'Die Gleichnisse und Sprüche gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Gleichnisse vom Verlorenen sind größtenteils nur hier überliefert.',
+    epoch: 'roemer',
+  },
+  'lk 16,1': {
+    events: 'Die Gleichnisse und Sprüche gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Gleichnisse vom Verlorenen sind größtenteils nur hier überliefert.',
+    epoch: 'roemer',
+  },
+  'lk 16,14': {
+    events: 'Die Gleichnisse und Sprüche gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Gleichnisse vom Verlorenen sind größtenteils nur hier überliefert.',
+    epoch: 'roemer',
+  },
+  'lk 17,1': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg durch das Grenzgebiet nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Endzeitrede setzt die Zerstörung Jerusalems bereits voraus.',
+    epoch: 'roemer',
+  },
+  'lk 17,11': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg durch das Grenzgebiet nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Endzeitrede setzt die Zerstörung Jerusalems bereits voraus.',
+    epoch: 'roemer',
+  },
+  'lk 17,20': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg durch das Grenzgebiet nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Endzeitrede setzt die Zerstörung Jerusalems bereits voraus.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
