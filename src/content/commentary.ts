@@ -47453,6 +47453,751 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: '4mo', chapter: 19, verse: 16, note: 'Wer ein Grab berührt, ist unrein' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 12,
+    from: 1,
+    to: 12,
+    title: '„Verkauft man nicht fünf Sperlinge um zwei Pfennige?“',
+    historicalShort:
+      'Vor einer Menge, die sich gegenseitig zertritt, warnt Jesus vor der Heuchelei, spricht den Jüngern die Furcht vor Menschengerichten aus und verspricht ihnen Beistand, wenn sie vor Behörden stehen. Die Rede setzt eine Gemeinde voraus, die mit Verhören bereits rechnet.',
+    historicalLong:
+      'Lukas eröffnet mit einem Bild, das im Markusevangelium fehlt: etliche Tausend laufen zusammen, so dicht, daß sie einander treten. Mitten in diesen Andrang hinein wendet sich Jesus an seine Jünger, nicht an das Volk. Diese Doppelung ist bei Lukas Methode; er läßt die Menge da sein, adressiert aber die kleine Gruppe, und der Leser hört mit. Die Warnung vor dem Sauerteig steht auch bei Markus, dort aber ohne Erklärung und um den Sauerteig des Herodes erweitert. Lukas deutet sie sofort: der Sauerteig ist die Heuchelei. Sauerteig war in der Antike ein Bild für das Kleine, das die ganze Masse durchdringt, und im Passafest galt er als das, was aus dem Haus zu schaffen ist; die Metapher trägt beide Beiklänge.\n\nDas griechische Wort für Heuchler kommt aus dem Theater und bezeichnet den, der eine Rolle unter der Maske spielt. In der jüdischen Weisheitsliteratur meint es weniger die Schauspielerei als den Frevler, dessen Gottesfurcht bloß behauptet ist. Was folgt, ist die Ansage, daß dieses Verbergen nicht durchzuhalten ist: was in Kammern geflüstert wird, wird auf den Dächern gepredigt. Das Bild ist wörtlich zu nehmen. Häuser in Palästina hatten flache, begehbare Dächer, die als Schlafplatz, Arbeitsfläche und Aussichtspunkt dienten; wer dort sprach, sprach zur ganzen Gasse. Die Kammer dagegen war der fensterlose Innenraum ohne Zeugen.\n\nDie Preisangabe für Sperlinge gehört zu den wenigen Stellen im Neuen Testament, an denen ein konkreter Marktpreis genannt wird. Der Pfennig, den Luther setzt, übersetzt das Assarion, eine kleine Kupfermünze im Wert von etwa einem Sechzehntel eines Denars. Bei Matthäus kosten zwei Sperlinge ein Assarion, bei Lukas fünf zwei Assaria: der fünfte geht beim Mengenkauf umsonst mit. Genau dieser wertloseste Vogel des Marktes wird zum Argument. Kleine Singvögel wurden gerupft und gebraten als billigste Fleischnahrung der Armen verkauft; wer Sperlinge kaufte, konnte sich nichts anderes leisten.\n\nDer Abschnitt endet bei der Gerichtssituation. Die Jünger werden vor Synagogen, Obrigkeiten und Gewalthaber geführt werden. Luther übersetzt Synagogen hier mit Schulen, was seinem Sprachgebrauch entspricht und zugleich verdeckt, daß es um eine innerjüdische Gerichtsinstanz geht: die Ortsgemeinde konnte Prügelstrafen verhängen und Ausschluß aussprechen. Die Obrigkeit und die Gewaltigen sind daneben die römischen und städtischen Instanzen. Daß beide Ebenen nebeneinanderstehen, spiegelt die Erfahrung der Gemeinden der achtziger Jahre genauer als die Lage der Zwanziger; die Apostelgeschichte wird beide Verfahrenswege dann ausführlich erzählen.',
+    reception:
+      'Der Satz über die Lästerung wider den heiligen Geist hat eine lange und schwere Wirkungsgeschichte. In der Alten Kirche diente er den strengen Richtungen als Beleg dafür, daß bestimmte Vergehen keine kirchliche Vergebung finden können. Die Novatianer im dritten und die Donatisten im vierten Jahrhundert bestritten, daß die Kirche denen wieder aufnehmen dürfe, die in der Verfolgung geopfert hatten. Die Großkirche entschied dagegen und ließ Wiederaufnahme nach Buße zu, doch der Vers blieb als Grenzmarkierung stehen. Augustin deutete ihn schließlich nicht auf eine einzelne Tat, sondern auf die Verhärtung, die bis zum Lebensende an der Umkehr vorbeigeht; diese Auslegung wurde für die westliche Theologie bestimmend.\n\nSeelsorglich wurde die Stelle zur Quelle schwerer Ängste. John Bunyan schildert in seiner Selbstbiographie von 1666 jahrelange Qualen in der Überzeugung, er habe die unvergebbare Sünde begangen. Der Dichter William Cowper verbrachte lange Phasen seines Lebens in derselben Gewißheit. In der pietistischen und erwecklichen Frömmigkeit wurde die Frage so häufig gestellt, daß Prediger eine stehende Antwort entwickelten: wer sich fürchtet, sie begangen zu haben, hat sie eben dadurch nicht begangen. Die evangelische Seelsorge folgt dieser Linie bis heute weitgehend.\n\nDer Vers über das Geflüsterte, das von den Dächern gerufen wird, hat sich vom Kontext gelöst und ist zum Sprichwort geworden. Er begegnet in der Publizistik regelmäßig dort, wo es um staatliche oder wirtschaftliche Überwachung, um Datenlecks und um veröffentlichte Vertraulichkeit geht. Ursprünglich war er Trost für Verfolgte, denen zugesagt wurde, daß ihre Sache nicht im Dunkeln bleibt; in der modernen Verwendung wird meist die Drohung gehört.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Sperlinge und andere Kleinvögel wurden auf Märkten in Bündeln oder gerupft an Spießen verkauft. Sie galten als das billigste verfügbare Fleisch und tauchen in römischen Preislisten am unteren Ende auf. Ein Assarion, hier mit Pfennig übersetzt, war eine Kupfermünze; ein Tagelöhner verdiente etwa sechzehn davon.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Das flache Dach war Teil der Wohnfläche. Über eine Außentreppe erreichbar, diente es zum Trocknen von Feigen und Getreide, im Sommer als Schlafplatz und bei Festen als zusätzlicher Raum. Weil es von den Nachbardächern und der Gasse aus einsehbar war, stand es für Öffentlichkeit schlechthin.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die örtliche Synagoge war zugleich Versammlungs- und Gerichtsort. Ein Kollegium von Ältesten konnte in inneren Streitfragen entscheiden, Geißelstrafen von neununddreißig Schlägen verhängen und den Ausschluß aus der Gemeinschaft aussprechen. Fälle mit politischer Dimension gingen an die römische Verwaltung.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Mit Obrigkeiten und Gewaltigen sind die Instanzen einer Provinzstadt gemeint: Stadtmagistrate, Ratsversammlungen und daneben der Statthalter mit seinem Stab. Wer vor ihnen erschien, hatte in der Regel keinen geschulten Beistand, sondern mußte selbst reden; genau darauf zielt die Zusage.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hypokrisis',
+        rendered: 'Heuchelei',
+        note: 'Ursprünglich das Spiel des Schauspielers unter der Maske. In der griechisch geschriebenen jüdischen Literatur verschiebt sich die Bedeutung zur vorgetäuschten Frömmigkeit.',
+      },
+      {
+        word: 'griech. assariōn dyo',
+        rendered: 'zwei Pfennige',
+        note: 'Das Assarion war eine Kupfermünze, etwa ein Sechzehntel Denar. Luther greift zu Pfennig, der kleinsten Münze seiner eigenen Zeit.',
+      },
+      {
+        word: 'griech. geenna',
+        rendered: 'Hölle',
+        note: 'Das Wort geht auf das Hinnomtal südlich Jerusalems zurück, das in älteren Texten als Ort von Kinderopfern gilt und später zum Bild des Gerichtsortes wird.',
+      },
+      {
+        word: 'griech. eis tas synagōgas',
+        rendered: 'in ihre Schulen',
+        note: 'Gemeint sind die Ortssynagogen als Gerichtsinstanz. Luthers Wiedergabe mit Schule folgt dem spätmittelalterlichen deutschen Sprachgebrauch für jüdische Gemeindehäuser.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'katholisch',
+        text: 'Der Katechismus faßt die Sünde wider den heiligen Geist als die bewußte Verweigerung der Barmherzigkeit: nicht Gott könne nicht vergeben, sondern der Mensch weise die Vergebung zurück. Damit bleibt die Aussage streng, richtet sich aber nicht gegen eine einzelne Tat der Vergangenheit.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Luther, der die Angst vor dieser Sünde aus eigener Anfechtung kannte, riet, den Vers nicht auf sich selbst anzuwenden. Wer nach Trost frage, sei schon auf der anderen Seite. Die lutherische Seelsorgetradition hat diesen Rat übernommen und den Vers aus der Selbstprüfung herausgehalten.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die östliche Auslegung hebt die Zusage vom Beistand des Geistes vor Gericht hervor und liest sie zusammen mit den Martyrienberichten. Die Antwort des Bekenners gilt als vom Geist geschenkt, nicht als rhetorische Leistung.',
+      },
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Verse gelten überwiegend als Zusammenstellung aus der Spruchüberlieferung, die auch Matthäus vorlag; dort stehen sie in der Aussendungsrede. Daß Lukas sie in eine Szene mit Volksandrang einbaut und die Gerichtssituation ausführlicher schildert, wird als Anpassung an die Erfahrung seiner Leser verstanden.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Die Verbindung von Furchtlosigkeit vor denen, die den Leib töten, mit dem Bild der wertlosen Sperlinge wird als Zuspruch an Menschen ohne Rechtsschutz gelesen. Der Vers rechne offen mit tödlicher Gewalt und bestreite ihr nur das letzte Wort.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 8, verse: 15, note: 'Die Warnung vor dem Sauerteig, dort ohne Deutung und mit Herodes verbunden.' },
+      { book: 'mt', chapter: 10, verse: 29, note: 'Die Parallele mit zwei Sperlingen für ein Assarion, in der Aussendungsrede.' },
+      { book: 'mk', chapter: 3, verse: 29, note: 'Das Wort über die Lästerung des Geistes in seinem markinischen Zusammenhang.' },
+      { book: 'apg', chapter: 4, verse: 8, note: 'Petrus, vom Geist erfüllt, redet vor dem Rat: die Zusage wird erzählerisch eingelöst.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 12,
+    from: 22,
+    to: 34,
+    title: '„Nehmet wahr der Raben“',
+    historicalShort:
+      'Gegen die Sorge um Nahrung und Kleidung stellt Jesus zwei Beispiele aus der Natur und endet mit einer Aufforderung, den Besitz zu verkaufen. Lukas verschärft die Weisung gegenüber der Parallele bei Matthäus zu einem konkreten Handlungsauftrag.',
+    historicalLong:
+      'Die Rede folgt unmittelbar auf das Gleichnis vom reichen Kornbauern und ist an die Jünger gerichtet. Wo Matthäus allgemein von den Vögeln unter dem Himmel spricht, nennt Lukas die Raben. Das ist keine Kleinigkeit. Raben stehen in den Speisegeboten des dritten Buchs Mose auf der Liste der unreinen Tiere, und zugleich sagen die Psalmen und das Hiobbuch, daß Gott die jungen Raben speist, wenn sie schreien. Elia wird in der Königsbuch-Erzählung von Raben versorgt. Lukas wählt damit den Vogel, an dem die Aussage am äußersten Punkt hängt: sogar für den unreinen Aasfresser wird gesorgt.\n\nDas zweite Beispiel sind die Lilien. Botanisch ist wahrscheinlich nicht die Lilie im heutigen Sinn gemeint, sondern eine der auffälligen Feldblumen Palästinas, am ehesten die rote Kronenanemone, die im Frühjahr ganze Hänge überzieht. Die Pointe liegt im Vergleich mit Salomo, der in der Überlieferung für den größtmöglichen Aufwand steht. Danach wird das Bild abrupt praktisch: dasselbe Gras, das heute blüht, wird morgen in den Ofen geworfen. Backöfen waren Lehmkuppeln, die mit dem geheizt wurden, was billig verfügbar war, mit trockenem Gras, Stoppeln, Dornstrauch und getrocknetem Dung. Die Blume ist also nicht nur vergänglich, sie ist Brennstoff.\n\nZwischen beiden Bildern steht ein Satz, der sich nicht eindeutig übersetzen läßt. Das griechische Wort, das Luther mit Elle wiedergibt, bezeichnet ein Längenmaß von etwa einem halben Meter, wird aber auch übertragen auf Lebenszeit angewandt. Wer die Zeitangabe bevorzugt, liest: niemand kann durch Sorgen seine Lebensspanne verlängern. Wer beim Maß bleibt, liest: niemand kann sich einen halben Meter zusetzen, und dann liegt die Ironie darin, daß gerade das eben nicht das Geringste wäre. Beide Lesarten sind seit der Alten Kirche vertreten.\n\nDas seltene Wort, das Luther mit fahret nicht hoch her übersetzt, meint eigentlich das Emporgehobenwerden, etwa eines Schiffs in der Dünung. Es kann das Umhergetriebenwerden der Ängstlichen bezeichnen oder das Sichaufblähen der Ehrgeizigen; die Ausleger sind geteilt. Danach folgt die Anrede an die kleine Herde, ein Ausdruck, der im Neuen Testament nur hier steht und die Gruppe als zahlenmäßig unbedeutend beschreibt. Der Schluß unterscheidet Lukas deutlich von Matthäus: dort heißt es, man solle sich Schätze im Himmel sammeln, hier steht der Imperativ, das Vorhandene zu verkaufen und Almosen zu geben. Die Apostelgeschichte wird diese Weisung später als gelebte Praxis der Jerusalemer Gemeinde schildern.',
+    reception:
+      'Die Aufforderung zum Verkauf des Besitzes hat die Geschichte der christlichen Armutsbewegungen mitbestimmt. Franz von Assisi und seine frühen Gefährten verstanden sie wörtlich und ohne Einschränkung. Im Orden führte das zum Armutsstreit, der sich über Jahrzehnte hinzog und 1323 in der Bulle Cum inter nonnullos gipfelte: Johannes XXII. erklärte die Lehre, Christus und die Apostel hätten überhaupt kein Eigentum besessen, für irrig. Ein Teil des Ordens hielt dagegen, mehrere Vertreter der strengen Richtung wurden verurteilt. Der Streit war nicht bloß theologisch, es ging um die Rechtsform, in der ein Bettelorden Häuser und Bücher nutzen konnte, ohne sie zu besitzen.\n\nDie Täuferbewegung des sechzehnten Jahrhunderts las die Stelle als Gemeindeordnung. Die Hutterer, seit 1528 in Mähren, führten Gütergemeinschaft als verbindliche Lebensform ein und halten sie in Nordamerika bis heute. Die Reformatoren lehnten sowohl die klösterliche Zweiteilung in Gebot und Rat als auch die täuferische Gütergemeinschaft ab; Luther bezog den Vers auf die innere Freiheit vom Besitz und hielt Eigentum und Beruf für Gottes Ordnung. Der Einwand gegen ihn lautet seither, damit sei ein sehr konkreter Imperativ in eine Gesinnung überführt worden.\n\nIm zwanzigsten Jahrhundert wurde der Trost gegen die Sorge zweimal gegenläufig gebraucht. In der Bekennenden Kirche galt er als Wort für Menschen ohne wirtschaftliche Sicherheit; Dietrich Bonhoeffer legte ihn in der Nachfolge von 1937 in diesem Sinn aus. Zugleich wurde er in sozialpolitischen Debatten gegen Vorsorge und Absicherung ins Feld geführt, was von kirchlichen Sozialethikern zurückgewiesen wurde: der Text spreche zu Menschen über ihre eigene Angst, nicht zu Gesellschaften über die Versorgung anderer.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Spinnen war Frauenarbeit und wurde nebenher verrichtet, mit Spindel und Wirtel im Gehen wie im Sitzen. Die Herstellung eines einzigen Gewandes von der Wolle bis zum fertigen Stück kostete viele Tage; Kleidung war entsprechend teuer und wurde vererbt.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Backofen war eine Kuppel aus Lehm, oft im Hof mehrerer Familien gemeinsam genutzt. Geheizt wurde mit dem, was nichts kostete: mit trockenem Gras, Stoppeln vom Feld, Dornreisig und geformtem Dung. Holz war in weiten Teilen des Landes knapp.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Almosen galten im Judentum als Pflicht, nicht als freiwillige Wohltat. Neben der Gabe an einzelne gab es in den Ortsgemeinden geregelte Sammlungen für die tägliche Speisung Bedürftiger und für den Wochenbedarf ansässiger Armer.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Daß Gott die Tiere versorgt, gehört zu den festen Themen der Psalmen und der Weisheitsschriften. Der Schluß von der Versorgung der Geschöpfe auf die des Menschen ist ein geläufiges Argumentationsmuster jüdischer Lehrrede, das vom Geringeren auf das Größere schließt.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. korakes',
+        rendered: 'der Raben',
+        note: 'Raben zählen nach dem dritten Buch Mose zu den unreinen Vögeln. Matthäus hat an dieser Stelle allgemein die Vögel des Himmels.',
+      },
+      {
+        word: 'griech. pēchys',
+        rendered: 'eine Elle seiner Länge',
+        note: 'Das Wort bezeichnet ein Längenmaß von etwa einem halben Meter, wird aber auch auf Lebenszeit übertragen. Die Übersetzungen entscheiden bis heute verschieden.',
+      },
+      {
+        word: 'griech. meteōrizesthe',
+        rendered: 'fahret nicht hoch her',
+        note: 'Wörtlich in die Höhe gehoben werden, wie ein Schiff in der Dünung. Gemeint ist entweder ängstliches Schwanken oder überhebliches Streben.',
+      },
+      {
+        word: 'griech. to mikron poimnion',
+        rendered: 'du kleine Herde',
+        note: 'Eine doppelte Verkleinerung, die im Neuen Testament nur hier begegnet. Sie beschreibt die Gruppe als klein und schutzbedürftig zugleich.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'katholisch',
+        text: 'Die Ordenstheologie sieht in der Weisung einen evangelischen Rat, der für alle gilt, aber in den Gelübden besonders verwirklicht wird. Die Sozialenzykliken beziehen ihn zusätzlich auf die Sozialpflichtigkeit des Eigentums.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Die Reformatoren bestritten die Aufteilung in Gebote für alle und Räte für wenige. Der Vers ziele auf das Vertrauen, das den Besitz nicht festhält; Almosen sind Folge, nicht Bedingung des Glaubens. Kritiker halten dem entgegen, daß der Imperativ damit abgeschwächt wird.',
+      },
+      {
+        tradition: 'täuferisch',
+        text: 'Die Täufer lasen die Stelle als Anweisung an die Gemeinde und nicht an einzelne. Die hutterischen Gemeinschaften führten Gütergemeinschaft ein und begründeten sie mit diesem Vers und mit der Apostelgeschichte.',
+      },
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Ein Teil der Forschung ordnet die Sprüche einer Wanderüberlieferung zu, deren Träger tatsächlich ohne Vorrat lebten. Andere bestreiten das und rechnen mit ortsfesten Gemeinden, in denen die Worte als Aufforderung zur Teilung überliefert wurden.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Die Auslegung betont, daß Lukas den Verkauf gebietet, wo Matthäus vom Sammeln himmlischer Schätze spricht. Die Sorglosigkeit sei nicht Passivität, sondern setze die Umverteilung schon voraus.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 6, verse: 25, note: 'Die Parallele in der Bergpredigt, mit Vögeln statt Raben und ohne den Verkaufsbefehl.' },
+      { book: '1koe', chapter: 17, verse: 6, note: 'Elia am Bach Krith wird von Raben mit Brot und Fleisch versorgt.' },
+      { book: 'ps', chapter: 147, verse: 9, note: 'Gott gibt dem Vieh sein Futter und den jungen Raben, die ihn anrufen.' },
+      { book: 'apg', chapter: 4, verse: 32, note: 'Die Jerusalemer Gemeinde hält alles gemeinsam: die Weisung als erzählte Praxis.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 12,
+    from: 35,
+    to: 59,
+    title: '„Lasset eure Lenden umgürtet sein“',
+    historicalShort:
+      'Eine Folge von Bildern über Wachsamkeit, ein Gleichnis vom Haushalter mit abgestuften Strafen, das Wort vom Feuer und von der Zwietracht in den Häusern und zuletzt die Mahnung, sich mit dem Gegner vor dem Prozeß zu einigen. Der Abschnitt spricht die Verzögerung der erwarteten Wiederkunft offen aus.',
+    historicalLong:
+      'Die umgürteten Lenden meinen das Hochbinden des langen Untergewands mit dem Gürtel, damit die Beine frei sind. Es ist die Haltung des Aufbruchs und zitiert die Anweisung für die erste Passanacht im zweiten Buch Mose. Dazu die brennenden Lampen: tönerne Öllämpchen mit einem Docht, die Stunde um Stunde nachgefüllt werden mußten. Die Szene ist die Rückkehr des Hausherrn von einer Hochzeit, also spät in der Nacht, wenn die Türen von innen verriegelt und die Sklaven eigentlich längst schlafen. Dann folgt der Umschlag, der das Bild sprengt: der Herr gürtet sich selbst, setzt die Knechte zu Tisch und bedient sie. Eine solche Umkehrung war in der römischen Welt nur als Ausnahme an einem Fest denkbar, an den Saturnalien, und blieb dort Spiel.\n\nDie Wachen zählt Lukas nach der zweiten und dritten. Das jüdische Schema teilte die Nacht in drei Wachen, das römische in vier; Markus rechnet an anderer Stelle nach vier. Der Einbruch des Diebes, der die Stunde nicht ankündigt, ist ein Bild, das die frühen Gemeinden fest übernommen haben: es steht so im ersten Thessalonicherbrief, im zweiten Petrusbrief und in der Offenbarung. Neu und typisch lukanisch ist die Zwischenfrage des Petrus, ob das Gleichnis den Jüngern oder allen gelte. Sie bleibt unbeantwortet und leitet stattdessen zum Haushalter über, also zum Verwalter, der über das Gesinde gesetzt ist. Dieser Sklave in leitender Stellung war eine reale Figur großer Güter; er führte Rechnungen, verteilte Rationen und konnte über andere Sklaven verfügen, blieb aber selbst Eigentum.\n\nWas dem untreuen Verwalter angedroht wird, ist im Griechischen ein hartes Wort: es meint das Zerschneiden in zwei Teile. Luther gibt es mit zerscheitern wieder. Manche Ausleger nehmen es wörtlich als eine im Alten Orient bezeugte Hinrichtungsart, andere sehen eine übertragene Rede vom Abschneiden aus der Gemeinschaft. Daran schließt die Abstufung an: wer den Willen kannte und ihn nicht tat, bekommt viele Schläge, wer ihn nicht kannte, wenige. Körperstrafe an Sklaven war rechtlich unbeschränkt; das Gleichnis benutzt diese Welt als Bildmaterial, ohne sie zu bewerten. Der Schlußsatz, daß von dem viel gefordert wird, dem viel gegeben ist, hat sich als eigenständige Sentenz weit über den Text hinaus verbreitet.\n\nDer letzte Teil wechselt die Tonlage. Das Feuer auf Erden und die Taufe, die noch bevorsteht, sind bei Lukas Andeutungen des eigenen Todes. Dann die Ansage, nicht Frieden, sondern Zwietracht zu bringen, mit der Aufzählung der zerfallenden Hausgemeinschaft: fünf Personen in einem Haus, drei gegen zwei. Die Aufzählung greift eine Klage des Michabuchs auf, in der die Auflösung der Familienbindung als Zeichen der Krise gilt. Ein Haus meint hier nicht die Kleinfamilie, sondern den Mehrgenerationenhaushalt mit Schwiegertochter, in dem wirtschaftliche Existenz und Verwandtschaft dasselbe waren; eine Trennung darin bedeutete den Verlust der Lebensgrundlage. Zuletzt zwei Bilder aus der Erfahrung: eine Wolke, die vom Mittelmeer im Westen aufsteigt, bringt Regen, der Wind aus der südlichen Wüste bringt Hitze. Wer das Wetter lesen kann, soll auch die Lage lesen können. Und dann die Szene vor Gericht, in der zum Vergleich auf dem Weg geraten wird, bevor der Schuldner dem Vollstrecker übergeben wird.',
+    reception:
+      'Die Abstufung der Schläge nach Wissen und Unwissen wurde in der westlichen Theologie zur Stütze einer Lehre von abgestufter Vergeltung. Sie fand Eingang in die Bußtheologie und diente in der Scholastik als Argument dafür, daß Strafe nach dem Maß der Verantwortung bemessen wird; über diesen Weg gehört sie auch zur Begründungsgeschichte des Fegefeuers. Die Reformatoren wiesen die Ableitung zurück, hielten aber am Gedanken fest, daß Wissen die Verantwortung erhöht.\n\nBelastet ist die Geschichte dieser Verse in den Sklavenhaltergesellschaften der Neuzeit. In den Südstaaten der USA gehörten Predigten vor versklavten Menschen zum System, und die Auswahl der Texte lag bei den Besitzern oder den von ihnen beauftragten Predigern. Neben den Haustafeln der Briefe wurde auch das Wort vom Knecht, der viele Streiche leiden muß, in dieser Funktion herangezogen. Zeugnisse ehemals Versklavter, die nach 1865 gesammelt wurden, berichten von solchen Predigten und davon, daß sie eigene Zusammenkünfte hielten, in denen andere Texte gelesen wurden. Die Auslegung der schwarzen Kirchen hat dem entgegengehalten, daß das Gleichnis vom Verhalten eines Verwalters gegenüber Untergebenen handelt und gerade den kritisiert, der zu schlagen anfängt.\n\nDer Satz über den, dem viel gegeben ist, ist zur politischen Formel geworden. John F. Kennedy zitierte ihn im Januar 1961 vor der gesetzgebenden Versammlung von Massachusetts und nahm ihn in die Rede auf, die er in Dallas halten sollte. Seither erscheint er regelmäßig in Reden über Verantwortung von Amtsträgern und Vermögenden, meist ohne den Bezug auf das Gericht, in dem er im Text steht.\n\nDas Bild vom Dieb in der Nacht wiederum hat die Naherwartungsbewegungen begleitet. In der Millerbewegung, die für 1843 und dann für den 22. Oktober 1844 die Wiederkunft berechnete, wurde es zugleich als Mahnung und als Erklärung gebraucht, nachdem der Termin verstrichen war. Aus der Enttäuschung dieser Bewegung gingen mehrere bis heute bestehende Kirchen hervor.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Die Nacht wurde nicht nach Stunden, sondern nach Wachen gezählt. Öllampen aus gebranntem Ton faßten wenig Öl und mußten nachgefüllt werden; wer die Nacht durchwachte, verbrauchte einen spürbaren Teil des Haushaltsvorrats.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Verwalter eines größeren Haushalts war meist selbst unfrei, aber mit weitreichenden Vollmachten ausgestattet. Er verteilte die Rationen an das Gesinde, führte Buch und vertrat den abwesenden Eigentümer. Rechtlich blieb er Sache seines Herrn, faktisch war er Vorgesetzter vieler Freier.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Bei Schulden konnte der Gläubiger den Schuldner vor den Magistrat ziehen. Der Vollstreckungsbeamte übergab ihn dann der Haft, aus der er erst nach Zahlung freikam; oft mußten Angehörige die Summe aufbringen. Der Heller, den Luther nennt, steht für die kleinste umlaufende Münze.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Haushalt umfaßte mehrere Generationen unter einem Dach, dazu Schwiegertöchter, die in die Familie des Mannes einzogen. Der Bruch mit dem Haus bedeutete den Verlust von Wohnung, Arbeit und rechtlichem Rückhalt zugleich; deshalb wiegt die Ansage der Spaltung so schwer.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Das Wetter Palästinas ist von zwei Richtungen bestimmt. Wolken über dem Mittelmeer im Westen kündigen den Winterregen an, der heiße Wind aus der südlichen Wüste, der Schirokko, bringt Staub und Trockenheit. Beide Zeichen waren jedem Bauern geläufig.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. dichotomēsei',
+        rendered: 'zerscheitern',
+        note: 'Wörtlich in zwei Teile zerschneiden. Ob eine Hinrichtungsart oder bildlich der Ausschluß gemeint ist, wird seit der Alten Kirche diskutiert.',
+      },
+      {
+        word: 'griech. oikonomos',
+        rendered: 'Haushalter',
+        note: 'Der Verwalter eines Hauses oder Guts, häufig selbst Sklave. Aus dem Wort ist der Begriff Ökonomie hervorgegangen.',
+      },
+      {
+        word: 'griech. praktōr',
+        rendered: 'Stockmeister',
+        note: 'Der Beamte, der Geldstrafen und Schulden eintrieb und die Haft vollzog. Luther wählt die Bezeichnung des Gefängnisaufsehers seiner Zeit.',
+      },
+      {
+        word: 'griech. eschaton lepton',
+        rendered: 'den allerletzten Heller',
+        note: 'Das Lepton war die kleinste Kupfermünze im Umlauf. Die Wendung meint, daß nichts erlassen wird.',
+      },
+      {
+        word: 'griech. diamerismos',
+        rendered: 'Zwietracht',
+        note: 'Das Wort bezeichnet die Aufteilung und Spaltung. Matthäus hat an der entsprechenden Stelle das Schwert.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'katholisch',
+        text: 'Die Verse über die abgestuften Schläge gelten als Beleg dafür, daß die Zurechnung vom Wissen abhängt. Daraus wurde die Unterscheidung von schwerer und lascher Schuld entwickelt und mittelbar die Vorstellung einer Läuterung nach dem Tod begründet.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Die Auslegung lehnt eine Abstufung von Verdienst und Strafe ab und liest die Bilder als Ruf zur Bereitschaft. Das Gürten und Wachen beschreibe den Glauben, der sich nicht auf einen berechenbaren Termin verläßt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Daß der Herr sich schürzt und die Knechte bedient, wird auf die Fußwaschung und auf die Liturgie bezogen. In den Hymnen der Karwoche kehrt das Bild der brennenden Lampen und des kommenden Bräutigams regelmäßig wieder.',
+      },
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Frage des Petrus und der Satz vom Herrn, der zu kommen verzieht, gelten als Hinweis darauf, daß Lukas die ausbleibende Wiederkunft bearbeitet. Hans Conzelmann sah darin die Umformung der Naherwartung in eine Geschichte der Heilszeit; Widerspruch kam von Auslegern, die die Erwartung bei Lukas ungebrochen finden.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Der Blick richtet sich auf den Verwalter, der anfängt, die Knechte und Mägde zu schlagen. Das Gleichnis kritisiere die mittlere Macht, die ihre Vollmacht gegen die Schwächeren wendet, sobald sie sich unbeobachtet glaubt.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 12, verse: 11, note: 'Die Anweisung zur Passanacht: um die Lenden gegürtet, in Eile essen.' },
+      { book: 'mi', chapter: 7, verse: 6, note: 'Die Klage über den Zerfall des Hauses, die hier aufgenommen wird.' },
+      { book: '1thess', chapter: 5, verse: 2, note: 'Der Tag des Herrn kommt wie ein Dieb in der Nacht: dasselbe feste Bild.' },
+      { book: 'mt', chapter: 24, verse: 45, note: 'Die Parallele vom treuen und klugen Knecht, ohne die Frage des Petrus.' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 13,
+    from: 1,
+    to: 9,
+    title: '„so ihr euch nicht bessert, werdet ihr alle auch also umkommen“',
+    historicalShort:
+      'Zwei Katastrophenmeldungen, ein Massaker des Pilatus und ein Turmeinsturz, werden Jesus vorgetragen. Er bestreitet, daß die Opfer schuldiger gewesen seien als andere, und stellt statt einer Erklärung ein Gleichnis vom unfruchtbaren Feigenbaum daneben.',
+    historicalLong:
+      'Beide Vorfälle sind außerhalb dieser Verse nirgends bezeugt, und doch fügen sie sich in das, was über Pilatus bekannt ist. Josephus und Philo von Alexandria zeichnen ein Bild harter Amtsführung: die Aufstellung römischer Feldzeichen in Jerusalem, die Verwendung von Geldern aus dem Tempelschatz für einen Aquädukt und dagegen gerichtete Proteste, die mit Knüppeln aufgelöst wurden, schließlich ein blutiges Vorgehen gegen eine samaritanische Menge am Berg Garizim, das 36 oder 37 zur Abberufung führte. Daß Galiläer beim Opfern getötet wurden, setzt voraus, daß es im Tempelbezirk geschah; nur dort wurde geopfert, und dort waren Galiläer als Pilger vor allem zu den Wallfahrtsfesten. Die Formulierung, ihr Blut sei mit ihrem Opfer vermischt worden, ist bewußt drastisch: das Blut der Opfertiere und das der Menschen liefen zusammen.\n\nDer zweite Fall ist ein Unglück ohne Täter. Siloah bezeichnet den Teich im Süden Jerusalems, an dem der aus der Gihonquelle kommende Kanal endete. Ein Turm an dieser Stelle könnte zur Stadtbefestigung oder zu den Wasserbauten gehört haben; manche Ausleger stellen die Verbindung zu eben jenem Aquäduktbau des Pilatus her, doch bleibt das Vermutung. Die Zusammenstellung ist jedenfalls überlegt: einmal politische Gewalt, einmal blinder Zufall.\n\nDie Frage, die dahintersteht, ist die nach dem Zusammenhang von Tat und Ergehen. Daß Unglück auf Schuld schließen lasse, ist die Position der Freunde Hiobs und begegnet auch bei den Jüngern, die im Johannesevangelium nach der Schuld des Blindgeborenen fragen. Jesus verneint zweimal ausdrücklich. Er ersetzt die Erklärung aber nicht durch Trost, sondern durch eine Verschärfung: die Fragenden sind selbst betroffen, wenn sie nicht umkehren. Das griechische Wort meint das Umdenken und die Wendung des ganzen Lebens; Luthers bessern legt das Gewicht stärker auf die sittliche Besserung, als der Ausdruck fordert.\n\nDas Gleichnis vom Feigenbaum spielt in einer real vorstellbaren Anlage. Feigenbäume standen häufig zwischen den Reben, weil sie Schatten warfen und zusätzlichen Ertrag brachten; ein unfruchtbarer Baum entzog dem Weinstock Wasser und Nährstoffe, und genau darauf zielt die Frage, was er das Land hindere. Die drei Jahre sind ein realistischer Prüfzeitraum, zumal die Tora die Früchte der ersten drei Jahre eines neu gepflanzten Baumes ohnehin für unbrauchbar erklärt. Das Umgraben und Düngen entspricht dem, was die antiken Landwirtschaftsschriften für einen schwächelnden Baum empfehlen. Auffällig ist, daß Lukas die Verfluchung des Feigenbaums, die Markus vor der Tempelreinigung erzählt, überhaupt nicht bringt. An ihrer Stelle steht diese Erzählung, die nicht mit dem Verdorren endet, sondern mit einem Aufschub.',
+    reception:
+      'Die Verse gehören zu den meistzitierten Stellen, wenn nach Katastrophen die Frage nach Schuld und Strafe aufkommt. Nach dem Erdbeben von Lissabon am 1. November 1755, das eine Stadt an einem Feiertag traf und in ganz Europa als theologisches Problem verhandelt wurde, wurden auf beiden Seiten Predigten gehalten: die einen deuteten das Beben als Gericht, die anderen hielten mit diesem Text dagegen. Voltaire und Rousseau führten den Streit dann außerhalb der Kirchen weiter. Dasselbe Muster kehrt bis in die Gegenwart wieder, wenn nach Seuchen, Beben oder Anschlägen einzelne Prediger die Betroffenen zu besonders Schuldigen erklären; die Gegenrede beruft sich regelmäßig auf diese Antwort Jesu.\n\nDas Gleichnis vom Feigenbaum hat eine zweite, belastete Auslegungslinie. Seit der Alten Kirche wurde der unfruchtbare Baum vielfach auf Israel gedeutet, das Jahr Aufschub auf die Zeit bis zum Jahr 70, das Abhauen auf die Zerstörung Jerusalems. In dieser Lesart wird der Text zum Beleg einer Verwerfung. Gegen sie wird eingewandt, daß der Text selbst keine Deutung anfügt, daß der Weingärtner für den Baum eintritt und daß die Erzählung offen endet, ohne zu sagen, wie das vierte Jahr ausging. Nach 1945 hat sich in der deutschsprachigen Auslegung weitgehend durchgesetzt, das Gleichnis auf die Hörer zu beziehen, die im Kontext angesprochen sind.\n\nDer Ausdruck Gnadenfrist, in der Rechtssprache wie in der Alltagssprache geläufig, hat hier eine seiner Wurzeln. Er hat sich vom biblischen Zusammenhang gelöst und bezeichnet inzwischen jede eingeräumte Nachfrist.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Der Statthalter Judäas führte eine kleine Truppe von Hilfskohorten und residierte gewöhnlich in Caesarea am Meer. Zu den Wallfahrtsfesten zog er nach Jerusalem, weil dort Hunderttausende zusammenkamen; die Besatzung der Burg Antonia überblickte den Tempelvorhof unmittelbar.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Jerusalem hatte keine eigene Quelle innerhalb der Mauern. Das Wasser der Gihonquelle wurde durch einen in den Fels getriebenen Kanal in den Teich von Siloah im Südosten geleitet; unter Pilatus kam eine Fernleitung aus dem Süden hinzu, für deren Bau Tempelgelder verwendet wurden.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Weinberge waren keine Monokulturen. Zwischen den Reben standen Feigen- und Ölbäume, die Schatten spendeten und den Ertrag streuten. Wurzelkonkurrenz war das Argument gegen einen Baum, der nichts trug; das Umgraben mit Einbringen von Dung war der letzte Versuch vor dem Fällen.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Die Vorstellung, daß es dem Frommen wohl und dem Frevler übel ergehe, durchzieht die Weisheitsliteratur, wird aber im Hiobbuch und in einzelnen Psalmen ausdrücklich bestritten. Beide Positionen standen im Judentum des ersten Jahrhunderts nebeneinander.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ho pyrgos en tō Silōam',
+        rendered: 'Turm von Siloah',
+        note: 'Der Teich lag am Südende der Stadt. Ein Turm dort gehörte entweder zur Befestigung oder zu den Wasseranlagen; archäologisch ist er nicht sicher zu bestimmen.',
+      },
+      {
+        word: 'griech. hinati kai tēn gēn katargei',
+        rendered: 'was hindert er das Land',
+        note: 'Wörtlich: warum macht er auch noch den Boden unwirksam. Gemeint ist die Konkurrenz um Wasser und Nährstoffe im bepflanzten Weinberg.',
+      },
+      {
+        word: 'griech. balō kopria',
+        rendered: 'bedünge ihn',
+        note: 'Das Wort bezeichnet den Mist, der in die aufgegrabene Erde gegeben wird. Die antiken Fachschriften nennen dasselbe Verfahren für kränkelnde Bäume.',
+      },
+      {
+        word: 'griech. ean mē metanoēte',
+        rendered: 'so ihr euch nicht bessert',
+        note: 'Das griechische Wort meint das Umdenken und die Umkehr des ganzen Lebens. Luthers bessern verschiebt den Ton ins Sittliche.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Der Abschnitt gehört zum lukanischen Sondergut. Daß Lukas die Verfluchung des Feigenbaums aus Markus streicht und an dieser Stelle ein Gleichnis vom aufgeschobenen Fällen bietet, gilt vielen als bewußte Umformung: aus dem vollzogenen Gericht wird eine offene Frist.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Auslegung sieht in der zusätzlichen Jahresfrist die Zeit der Geduld Gottes und liest den Weingärtner als Fürsprecher. Der Text erscheint in der Fastenzeit und wird auf Umkehr und Buße bezogen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird die Zurückweisung des Schlusses von Unglück auf Schuld. Luther wandte sich in Pestzeiten gegen die Deutung der Seuche als Strafe für die Betroffenen und hielt fest, daß der Vers die Frage auf den Fragenden zurückwendet.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Der Baum wird auf die einzelne Seele gedeutet, das Graben und Düngen auf die asketische Übung und die Sakramente. Die Väterauslegung liest den Weingärtner christologisch als den, der beim Vater für den Unfruchtbaren eintritt.',
+      },
+      {
+        tradition: 'jüdisch',
+        text: 'Aus jüdischer Sicht bewegt sich die Antwort Jesu im Rahmen dessen, was auch rabbinische Texte zur Frage von Leid und Schuld sagen: das Leiden des Einzelnen erlaubt keinen Rückschluß auf sein Verhalten. Die spätere christliche Deutung des Feigenbaums auf Israel wird als Zusatz zurückgewiesen, der im Text keinen Anhalt hat.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hi', chapter: 4, verse: 7, note: 'Eliphas fragt, wo je ein Unschuldiger umgekommen sei: die bestrittene Position.' },
+      { book: 'joh', chapter: 9, verse: 2, note: 'Die Jüngerfrage nach der Schuld des Blindgeborenen, dieselbe Denkform.' },
+      { book: 'mk', chapter: 11, verse: 13, note: 'Der verfluchte Feigenbaum bei Markus, den Lukas nicht übernimmt.' },
+      { book: '3mo', chapter: 19, verse: 23, note: 'Die Früchte der ersten drei Jahre eines neu gepflanzten Baumes gelten als unbrauchbar.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 13,
+    from: 10,
+    to: 21,
+    title: '„diese, die doch Abrahams Tochter ist“',
+    historicalShort:
+      'In einer Synagoge richtet Jesus am Sabbat eine seit achtzehn Jahren verkrümmte Frau auf. Der Streit, der daraus entsteht, wird mit einem Beispiel aus der Viehhaltung entschieden. Zwei kurze Gleichnisse vom Senfkorn und vom Sauerteig schließen an.',
+    historicalLong:
+      'Es ist die letzte Synagogenszene des Evangeliums. Die Frau wird nicht als besessen beschrieben, und Jesus spricht keine Austreibungsformel; ihr Zustand heißt ein Geist der Krankheit, und die Heilung besteht in einem Zuspruch und im Auflegen der Hände. Erst im Streitgespräch fällt der Name des Satans, und zwar im Bild des Bindens. Die Beschreibung, sie sei krumm gewesen und habe sich nicht aufrichten können, wird medizinisch verschieden gedeutet, am häufigsten als schwere Wirbelsäulenverkrümmung. Für die Erzählung entscheidend ist die Körperhaltung: sie konnte niemandem ins Gesicht sehen.\n\nDer Widerspruch kommt vom Vorsteher der Synagoge, einem Amt, das für die Ordnung des Gottesdienstes und das Gebäude zuständig war und meist von einem angesehenen Ortsansässigen versehen wurde. Bemerkenswert ist, daß er sich nicht an Jesus wendet, sondern an das Volk, und daß er nicht das Heilen bestreitet, sondern den Tag. Sein Argument ist nicht unvernünftig: bei nicht lebensbedrohlichen Leiden konnte man den Sabbat abwarten, und eine achtzehn Jahre alte Krankheit war nicht dringend.\n\nDie Antwort argumentiert innerhalb der Sabbathalacha, nicht gegen sie. Ob man ein Tier am Sabbat von der Krippe lösen und zur Tränke führen dürfe, war tatsächlich strittig. Die in Qumran gefundene Damaskusschrift verbietet, ein Tier am Sabbat aus dem Gehöft zu führen; die spätere Mischna erlaubt das Tränken unter Bedingungen. Es gab also ein Spektrum von Positionen, und Jesus beruft sich auf die weitere. Der Schluß geht dann vom Tier auf den Menschen: wenn ein Ochse gelöst werden darf, dann diese Frau erst recht. Der Titel Tochter Abrahams ist außergewöhnlich; das männliche Gegenstück ist geläufig, die weibliche Form begegnet im Neuen Testament nur hier. Er spricht ihr die volle Zugehörigkeit zum Bundesvolk zu und macht sie damit zur Trägerin desselben Anspruchs wie jeden Mann in der Versammlung.\n\nDie beiden angefügten Gleichnisse setzen dieselbe Bewegung vom Kleinen zum Großen fort. Lukas läßt das Senfkorn in einen Garten werfen, während Markus vom Erdreich und Matthäus vom Acker spricht; spätere rabbinische Regeln raten vom Senfanbau im Gartenbeet gerade ab, weil er wuchert. Aus dem Kraut wird im Text ein Baum, unter dessen Zweigen Vögel wohnen, und dieses Bild stammt aus den Weltreichsvisionen bei Daniel und Hesekiel. Beim Sauerteig fällt die Menge auf: drei Scheffel Mehl sind rund vierzig Liter und ergeben Brot für weit über hundert Menschen, dieselbe Menge, die Sara im ersten Buch Mose für die drei Gäste anrührt. Und der Sauerteig, der wenige Verse zuvor noch für Heuchelei stand, wird hier ins Gegenteil gewendet; eine Frau ist es, die ihn verbirgt.',
+    reception:
+      'Die Sabbatheilungen sind über Jahrhunderte gegen das Judentum gewendet worden. Die Szene wurde als Beweis dafür gelesen, daß ein starres Gesetz dem Erbarmen im Weg stehe, und der Vorsteher zur Figur des Buchstabenmenschen gemacht. Die Erforschung der Halacha des ersten Jahrhunderts hat dieses Bild korrigiert: die Rettung von Leben hob den Sabbat auf, und über die Behandlung nicht dringlicher Fälle wurde innerjüdisch gestritten. Kirchliche Erklärungen seit den sechziger Jahren, in Deutschland vor allem die Synodalbeschlüsse zum Verhältnis von Christen und Juden ab 1980, haben dieser Lesart ausdrücklich widersprochen.\n\nDie aufgerichtete Frau ist zu einem der meistgebrauchten Bilder feministischer Theologie geworden. Die Gebeugte, die den Kopf nicht heben kann, und die Anrede als Tochter Abrahams werden als Text gelesen, in dem einer Frau öffentlich Würde und Zugehörigkeit zugesprochen wird, und zwar in einem Raum, in dem sie sonst nicht zu Wort kommt. Elisabeth Schüssler Fiorenza und andere haben die Erzählung in den achtziger Jahren in diesem Sinn ausgelegt; in vielen Gemeinden gehört sie inzwischen zum festen Bestand der Frauengottesdienste.\n\nDas Sauerteiggleichnis war im späten neunzehnten und frühen zwanzigsten Jahrhundert ein Leittext der sozialen Reformbewegung im amerikanischen Protestantismus. Das Reich Gottes erschien darin als das, was die Gesellschaft allmählich durchdringt; Walter Rauschenbusch argumentierte so. Nach 1918 widersprachen sowohl die konsequente Eschatologie Albert Schweitzers als auch die dialektische Theologie: das Gleichnis rede nicht von Entwicklung, sondern vom Mißverhältnis zwischen unscheinbarem Anfang und vollendetem Ergebnis.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Der Sabbat war durch kein einheitliches Regelwerk geordnet. Welche Handlungen als Arbeit galten, war zwischen den Gruppen strittig; die Gemeinschaft von Qumran urteilte deutlich strenger als die pharisäische Überlieferung, aus der später die Mischna hervorging.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Vieh mußte auch am Ruhetag versorgt werden. Ochsen und Esel standen nachts angebunden im Untergeschoß oder im Hof und wurden morgens zur Tränke geführt. Daß dies zulässig sei, war die verbreitete, aber nicht die einzige Auffassung.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Gebacken wurde mit einem Rest angesäuerten Teigs vom Vortag, der dem frischen Mehl untergeknetet wurde. Der Scheffel gibt hier ein Hohlmaß von gut dreizehn Litern wieder; drei davon sind eine Festtagsmenge, keine Tagesration.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Frauen nahmen am Synagogengottesdienst teil; eine bauliche Trennung der Geschlechter ist für das erste Jahrhundert nicht nachweisbar und entwickelte sich erst später. Öffentlich angesprochen und in die Mitte gerufen zu werden, blieb dennoch die Ausnahme.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. pneuma astheneias',
+        rendered: 'einen Geist der Krankheit',
+        note: 'Eine Umschreibung für ein chronisches Leiden, nicht für Besessenheit. Eine Austreibungsformel fehlt in der Erzählung.',
+      },
+      {
+        word: 'griech. archisynagōgos',
+        rendered: 'der Oberste der Schule',
+        note: 'Der Vorsteher war für Gebäude, Ordnung und Ablauf des Gottesdienstes zuständig. Inschriften belegen das Amt in vielen Städten des Reichs, vereinzelt auch für Frauen.',
+      },
+      {
+        word: 'griech. sata tria',
+        rendered: 'drei Scheffel Mehl',
+        note: 'Ein Sea faßte gut dreizehn Liter. Dieselbe Menge rührt Sara an, als die drei Gäste zu Abraham kommen.',
+      },
+      {
+        word: 'griech. thygatera Abraam',
+        rendered: 'Abrahams Tochter',
+        note: 'Die weibliche Form begegnet im Neuen Testament nur hier. Sie spricht der Frau dieselbe Bundeszugehörigkeit zu, die sonst mit dem Sohn Abrahams bezeichnet wird.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Erzählung gilt als Sondergut, die beiden Gleichnisse stammen aus der gemeinsamen Spruchüberlieferung mit Matthäus. Die Verbindung beider Stücke wird als lukanische Komposition verstanden: das Aufrichten der Gebeugten ist das kleine Beispiel für das, was die Gleichnisse im Großen behaupten.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Auslegung liest den Text als Vorrang des Menschen vor der Regel und verweist auf den Grundsatz, daß die Sonntagspflicht der Sorge um Kranke weichen muß. Das Sauerteiggleichnis wird auf das Wirken der Kirche in der Gesellschaft bezogen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Im Zentrum steht der Zuspruch, der die Frau löst, bevor eine Bedingung genannt wird. Der Sabbatstreit dient als Beispiel dafür, daß ein Gebot nicht gegen den steht, dem es dienen soll.',
+      },
+      {
+        tradition: 'feministisch',
+        text: 'Die Auslegung hebt hervor, daß eine Frau ohne eigenes Wort und ohne Bitte angesprochen, in die Mitte gerufen und als Tochter Abrahams bezeichnet wird. Die Verkrümmung wird zugleich als Bild für gesellschaftliche Beugung gelesen, ohne die leibliche Not zu übergehen.',
+      },
+      {
+        tradition: 'jüdisch',
+        text: 'Jüdische Ausleger weisen darauf hin, daß die Beweisführung mit dem Schluß vom Leichteren auf das Schwerere eine gängige rabbinische Argumentationsform ist. Der Streit sei ein innerjüdischer über den Umfang des Verbots, nicht ein Streit über den Sabbat selbst.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 5, verse: 14, note: 'Das Sabbatgebot schließt Vieh und Gesinde ausdrücklich in die Ruhe ein.' },
+      { book: 'mk', chapter: 4, verse: 30, note: 'Das Senfkorn bei Markus, dort in das Erdreich gesät statt in den Garten.' },
+      { book: '1mo', chapter: 18, verse: 6, note: 'Sara nimmt drei Maß Semmelmehl für die Gäste: dieselbe große Menge.' },
+      { book: 'lk', chapter: 19, verse: 9, note: 'Zachäus wird ein Sohn Abrahams genannt: das männliche Gegenstück zum Titel hier.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 13,
+    from: 22,
+    to: 35,
+    title: '„saget diesem Fuchs“',
+    historicalShort:
+      'Auf die Frage, ob nur wenige gerettet werden, antwortet Jesus mit dem Bild der verschlossenen Tür und der Völkerwallfahrt zum Mahl. Eine Warnung vor Herodes Antipas führt zur Klage über Jerusalem, die Lukas lange vor der Ankunft in der Stadt einordnet.',
+    historicalLong:
+      'Die Frage nach der Zahl der Geretteten war keine private Grübelei. Sie wird in der apokalyptischen Literatur der Zeit ausdrücklich gestellt, am schärfsten im vierten Esrabuch, wo der Seher darüber klagt, daß viele geschaffen und wenige gerettet würden. Die Antwort weicht aus: statt einer Zahl kommt eine Aufforderung, und statt einer Auskunft über andere die Rückwendung auf den Fragenden. Das Bild ist die enge Tür eines Hauses. Bei Matthäus steht ein Tor, hier die Tür, die der Hausherr abends verriegelt; danach wird nicht mehr geöffnet, und die Vertrautheit derer, die draußen stehen, hilft nicht. Was sie anführen, ist auffällig: sie haben mit ihm gegessen und getrunken und ihn auf ihren Gassen lehren hören. Das klingt nach Ortskenntnis und Tischgemeinschaft, also nach genau dem, was in Galiläa geschah.\n\nDem gegenüber steht das Kommen von den vier Himmelsrichtungen. Die Vorstellung, daß die Völker zum Zion ziehen und dort ein Mahl gehalten wird, stammt aus der Prophetie, besonders aus dem Jesajabuch. Lukas, der für ein Publikum weit außerhalb des Landes schreibt, hat an diesem Motiv besonderes Interesse; die Apostelgeschichte wird die Bewegung dann geographisch ausführen. Der Satz von den Letzten und den Ersten steht als geprägte Wendung am Schluß.\n\nDie Warnung vor Herodes Antipas kommt von Pharisäern, die hier nicht als Gegner auftreten, sondern als Warner. Antipas herrschte als Tetrarch über Galiläa und Peräa, hatte Tiberias am See gegründet und Johannes den Täufer hinrichten lassen; die Drohung war also nicht leer. Die Bezeichnung Fuchs ist im Deutschen sofort als Schlauheit verstanden worden, doch in rabbinischen Texten steht der Fuchs meist für das unbedeutende Tier im Gegensatz zum Löwen. Wahrscheinlicher als listig ist also gering geachtet. Das Wort, mit dem Jesus sein Ende beschreibt, heißt eigentlich vollendet werden und meint mehr als sterben.\n\nDie Klage über Jerusalem steht bei Matthäus am Ende der Rede im Tempel, hier weit vorher, auf offener Straße. Das erzeugt eine Schwierigkeit: nach Lukas war Jesus seit seiner Kindheit nicht mehr in der Stadt, und doch heißt es, wie oft habe er ihre Kinder sammeln wollen. Ein Teil der Forschung erklärt das damit, daß hier ein älteres Weisheitswort aufgenommen ist, in dem die Weisheit selbst über die getöteten Propheten klagt. Das Bild der Henne, die die Küken unter die Flügel nimmt, gehört zur Bildwelt der Psalmen, wo der Schutz Gottes mit Flügeln beschrieben wird. Der Schlußsatz vom Haus, das wüst gelassen wird, meint den Tempel; nach 70 geschrieben, war er für die ersten Leser unvermeidlich auf dessen Zerstörung zu beziehen. Das letzte Wort aber ist ein Zitat aus dem hundertachtzehnten Psalm, dem Wallfahrtsruf, den die Menge beim Einzug in Jerusalem tatsächlich rufen wird, und es steht unter einem bis daß.',
+    reception:
+      'Die enge Pforte hat eine lange Geschichte in der Frömmigkeit der Selbstprüfung. Im Puritanismus und im Pietismus wurde sie zum Bild der schmalen Zahl der wirklich Bekehrten, und die Frage, ob man selbst dazugehöre, hat ganze Generationen von Predigten geprägt. John Bunyan gestaltete daraus in der Pilgerreise von 1678 eine erzählte Szene. Gegen diese Verengung wurde eingewandt, daß der Text die Frage nach der Zahl gerade nicht beantwortet und unmittelbar danach vom Zustrom aus aller Welt spricht.\n\nSchwer belastet ist der Satz vom Haus, das wüst gelassen wird. Er gehört zu den Stellen, mit denen die Zerstörung des Tempels über Jahrhunderte als Strafe für die Ablehnung Jesu erklärt wurde, von den Kirchenvätern bis in Katechismen und Predigtreihen der Neuzeit. Aus dieser Deutung erwuchs die Vorstellung eines dauerhaft verworfenen Volkes, mit den bekannten Folgen. Die Gegenrede setzt an drei Punkten an: der Klageton der Verse ist nicht der eines Richters, sondern der eines Trauernden; die Rede vom verlassenen Haus ist eine Wendung der Prophetenbücher und zielt dort stets auf Umkehr; und der Abschnitt endet nicht mit dem Ende, sondern mit einem bis daß. Paulus hat diese offene Richtung im Römerbrief aufgenommen. Die Erklärung Nostra Aetate von 1965 und die evangelischen Synodalbeschlüsse seit 1980 haben die Strafdeutung ausdrücklich zurückgewiesen.\n\nDas Bild der Henne mit den Küken ist dagegen in der Kunst und in der Sprache der Frömmigkeit heimisch geworden. Es gehört zu den wenigen Stellen, an denen ein weibliches Bild auf Jesus selbst angewandt wird, und wird in der neueren Theologie regelmäßig angeführt, wenn es um die Bildsprache für Gott geht. In der Dominus-Flevit-Kirche am Ölberg, 1955 fertiggestellt, ist es im Mosaik vor dem Altarfenster dargestellt, das über die Stadt blickt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Herodes Antipas regierte von 4 v. Chr. bis 39 n. Chr. über Galiläa und Peräa, ohne Königstitel, als Tetrarch von Roms Gnaden. Er gründete Tiberias am See und benannte es nach dem Kaiser. Seine Zuständigkeit endete an der Grenze Judäas, das der Statthalter verwaltete.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Reise führt durch Städte und Marktflecken, also entlang der bewohnten Achsen, nicht querfeldein. Von Galiläa nach Jerusalem gab es drei Wege: durch Samarien, durch das Jordantal über Jericho und über die Küstenebene; Pilger wählten je nach Lage und Jahreszeit.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Gastmahl hatte eine feste Gästeliste und einen Zeitpunkt, an dem die Tür geschlossen wurde. Wer zu spät kam, blieb draußen, und der Ausschluß war öffentlich sichtbar. Das Bild rechnet mit dieser Selbstverständlichkeit und braucht sie nicht zu erklären.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der hundertachtzehnte Psalm gehörte zu den Hallelpsalmen, die an den Wallfahrtsfesten gesungen wurden. Der Segensruf über den Kommenden war Teil des Empfangs der Pilger am Tempel und damit jedem Hörer als Festformel vertraut.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. tēs stenēs thyras',
+        rendered: 'die enge Pforte',
+        note: 'Lukas spricht von der Tür eines Hauses, Matthäus vom Tor. Das Bild wechselt damit vom Stadteingang zum Zugang in einen bestimmten Raum.',
+      },
+      {
+        word: 'griech. ho klauthmos kai ho brygmos tōn odontōn',
+        rendered: 'Heulen und Zähneklappen',
+        note: 'Eine feste Wendung der Gerichtsrede, die bei Matthäus mehrfach begegnet. Sie beschreibt Klage und Wut der Ausgeschlossenen.',
+      },
+      {
+        word: 'griech. tē alōpeki tautē',
+        rendered: 'diesem Fuchs',
+        note: 'In rabbinischen Vergleichen steht der Fuchs meist für das unbedeutende Tier gegenüber dem Löwen. Die Bezeichnung zielt eher auf Geringschätzung als auf Schlauheit.',
+      },
+      {
+        word: 'griech. aphietai hymin ho oikos hymōn',
+        rendered: 'euer Haus soll euch wüst gelassen werden',
+        note: 'Haus meint hier den Tempel. Die Wendung greift die Prophetenrede vom verlassenen Heiligtum auf, die dort stets die Umkehr im Blick behält.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Einzelstücke haben Entsprechungen bei Matthäus, dort über mehrere Kapitel verteilt. Daß Lukas die Klage über Jerusalem lange vor der Ankunft in der Stadt bringt, wird als Komposition verstanden: die Reise steht von Anfang an unter dem Vorzeichen dessen, was dort geschehen wird.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die enge Tür wird auf die Mühe der Nachfolge bezogen, nicht auf eine begrenzte Zahl. Die kirchliche Lehre lehnt es ab, aus dem Text eine Aussage über den Umfang des Heils abzuleiten, und verweist auf den unmittelbar folgenden Zustrom aus allen Himmelsrichtungen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Calvin bezog das Ringen um den Eingang auf den Kampf des Glaubens, warnte aber davor, aus der Stelle eine Rechnung über Zahlen zu machen. In der lutherischen Auslegung dient die verschlossene Tür als Beispiel dafür, daß Vertrautheit mit religiösen Formen nichts verbürgt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter lesen die vier Himmelsrichtungen auf die Sammlung der Völker in der Liturgie und verbinden das Bild mit dem eucharistischen Mahl. Die Klage über Jerusalem gehört in den Gottesdiensten der Karwoche zu den gelesenen Texten.',
+      },
+      {
+        tradition: 'jüdisch-christlicher Dialog',
+        text: 'Die Aussage über das verlassene Haus wird als Prophetenklage innerhalb Israels gelesen, nicht als Urteil von außen. Entscheidend ist der Schluß mit dem bis daß, der die Wiederbegegnung offenhält; die daran anschließenden Erklärungen der Kirchen widersprechen der Deutung als endgültige Verwerfung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'ps', chapter: 118, verse: 26, note: 'Der Segensruf über den Kommenden, den Lukas beim Einzug in Jerusalem aufnimmt.' },
+      { book: 'jes', chapter: 25, verse: 6, note: 'Das Mahl für alle Völker auf dem Berg: der Hintergrund der Wallfahrtsvision.' },
+      { book: 'mt', chapter: 23, verse: 37, note: 'Dieselbe Klage über Jerusalem, dort am Ende der Rede im Tempel.' },
+      { book: 'mk', chapter: 6, verse: 14, note: 'Herodes Antipas und sein Verhältnis zu Johannes dem Täufer.' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 14,
+    from: 1,
+    to: 14,
+    title: '„Freund, rücke hinauf!“',
+    historicalShort:
+      'Bei einem Sabbatmahl im Haus eines vornehmen Pharisäers heilt Jesus einen Wassersüchtigen und knüpft daran zwei Ratschläge zur Tafel: über die Wahl des Platzes und über die Wahl der Gäste. Beide zielen auf das Regelwerk von Ehre und Gegenleistung.',
+    historicalLong:
+      'Lukas ist das einzige Evangelium, in dem Jesus mehrfach bei Pharisäern zu Tisch liegt; es ist bereits das dritte Mal. Die Bemerkung, man habe acht auf ihn gehabt, macht die Einladung zur Prüfung. Der Kranke wird als wassersüchtig bezeichnet, also als jemand mit krankhafter Wasseransammlung im Gewebe. In der antiken Moralliteratur war die Wassersucht das stehende Bild für die Habgier: der Kranke trinkt und wird davon nur durstiger. Daß ausgerechnet ein solcher Mann in einer Szene erscheint, in der es gleich darauf um Platzgier und um Gastmähler als Investition geht, ist kaum Zufall.\n\nJesus stellt die Rechtsfrage, bevor er handelt, und bekommt keine Antwort. Das Schweigen ist keine Zustimmung, sondern die Verweigerung einer Auskunft, die in beide Richtungen angreifbar wäre. Sein Gegenargument, das herausgezogene Tier, greift eine wirklich strittige Frage auf. Die Damaskusschrift aus den Funden am Toten Meer verbietet ausdrücklich, ein Tier am Sabbat aus einer Grube zu ziehen; die rabbinische Überlieferung erlaubte Hilfsmaßnahmen und diskutierte, wie weit sie gehen dürfen. Der Streit läuft also innerhalb des Judentums und nicht gegen es.\n\nDer Rat zum Sitzplatz setzt die Tischordnung des griechisch-römischen Gastmahls voraus. Man aß liegend auf drei um einen niedrigen Tisch gruppierten Polstern, und jeder Platz hatte einen festen Rang; der Ehrenplatz lag rechts vom Gastgeber. Wer sich falsch setzte und weichen mußte, verlor öffentlich Ansehen, und in einer Gesellschaft, die Ehre wie ein knappes Gut behandelte, war das ein realer Verlust. Der Rat selbst ist nicht neu; das Buch der Sprüche gibt ihn fast wörtlich. Neu ist die Wendung am Schluß, die aus der Klugheitsregel eine Aussage über Gott macht.\n\nDer zweite Rat greift tiefer. Einladungen liefen im römischen wie im jüdischen Umfeld nach dem Grundsatz der Gegenseitigkeit; wer lud, erwartete die Gegeneinladung, und die Gästeliste war ein Instrument, Beziehungen zu pflegen und Rang zu zeigen. Genau das wird untersagt. Statt dessen sollen die eingeladen werden, die nichts zurückgeben können. Die vier genannten Gruppen sind nicht beliebig: Arme, Krüppel, Lahme und Blinde entsprechen weitgehend jenen Listen körperlicher Merkmale, die im dritten Buch Mose Priester vom Altardienst ausschließen und die in der Gemeinderegel der Gemeinschaft am Toten Meer sogar den Zutritt zur Versammlung der Endzeit sperren. Die Aufzählung kehrt eine bekannte Ausschlußliste in eine Gästeliste um.',
+    reception:
+      'Der Rat zum untersten Platz wurde im Mittelalter zur Grundlage einer eigenen Literaturgattung. In den Hofzuchten und Tischzuchten des dreizehnten bis fünfzehnten Jahrhunderts steht er neben Regeln über Händewaschen und Messerführung, und in den Klosterregeln erscheint er unter der Demut. Die Benediktsregel führt in ihrem Kapitel über die Stufen der Demut ähnliche Gedanken aus. Kritisch angemerkt wurde schon früh, daß ein bewußt gewählter unterster Platz, der auf das Hinaufrücken hofft, die Rangordnung nicht aufhebt, sondern geschickter bedient; Augustin und später Franz von Sales gehen ausdrücklich darauf ein.\n\nDie Anweisung zur Gästeliste hat die Geschichte der christlichen Armenfürsorge begleitet. Vinzenz von Paul organisierte im siebzehnten Jahrhundert die Speisung in Paris nach diesem Muster, und im neunzehnten Jahrhundert berief sich die Innere Mission in Deutschland auf die Stelle. Johann Hinrich Wichern führte sie 1848 in seiner Rede auf dem Kirchentag in Wittenberg an. In der Gegenwart wird sie regelmäßig für offene Mittagstische, Vesperkirchen und Bahnhofsmissionen genannt; der Einwand lautet, daß der Text nicht von einer Einrichtung für Bedürftige spricht, sondern davon, mit ihnen an einem Tisch zu essen.\n\nSeit den neunziger Jahren wird die Aufzählung der vier Gruppen auch in der Theologie der Behinderung diskutiert. Nancy Eiesland legte 1994 eine Untersuchung vor, die danach fragt, ob solche Texte Menschen mit Behinderung als Handelnde oder nur als Empfänger von Wohltaten zeigen. Der Einwand gegen die Stelle lautet, daß die Genannten im Text nicht sprechen; die Gegenrede verweist darauf, daß im folgenden Gleichnis eben diese Gruppen den Saal füllen.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Bei einem festlichen Mahl lag man zu dritt auf jedem von drei Polstern, den linken Arm aufgestützt, die Füße nach außen. Gegessen wurde mit der rechten Hand aus gemeinsamen Schüsseln. Die Anordnung machte jeden Platzwechsel für alle sichtbar.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ehre war ein öffentliches und begrenztes Gut: was einer gewann, verlor ein anderer. Rangfragen wurden deshalb bei jeder Gelegenheit neu ausgehandelt, und die Sitzordnung bei Tisch war eines der wichtigsten Felder dafür.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ob am Sabbat einem in eine Grube gestürzten Tier geholfen werden dürfe, war eine ernsthaft umstrittene Frage. Die Gemeinschaft am Toten Meer verbot es und ließ allenfalls das Reichen von Futter zu, während die spätere rabbinische Regelung die Bergung erlaubte.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Ausdruck Auferstehung der Gerechten setzt die Vorstellung einer Auferweckung am Ende der Zeit voraus, wie sie das Danielbuch kennt. Sie war unter Pharisäern verbreitet, wurde von den Sadduzäern aber bestritten; die Wendung ordnet den Sprecher in diese Auseinandersetzung ein.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hydrōpikos',
+        rendered: 'wassersüchtig',
+        note: 'Bezeichnet die krankhafte Wasseransammlung im Gewebe. In der Moralliteratur der Antike diente das Bild sprichwörtlich für den Geizigen, dessen Verlangen mit dem Besitz wächst.',
+      },
+      {
+        word: 'griech. tas prōtoklisias',
+        rendered: 'obenan zu sitzen',
+        note: 'Wörtlich die ersten Liegeplätze. Gemeint sind die ranghöchsten Positionen auf den Polstern des Speisezimmers.',
+      },
+      {
+        word: 'griech. anapeirous',
+        rendered: 'die Krüppel',
+        note: 'Ein Wort für Menschen mit verstümmelten oder gelähmten Gliedern. Es steht in derselben Reihe wie in den Listen, die vom Priesterdienst ausschließen.',
+      },
+      {
+        word: 'griech. en tē anastasei tōn dikaiōn',
+        rendered: 'in der Auferstehung der Gerechten',
+        note: 'Die Formel setzt eine Auferstehung am Ende der Zeit voraus. Der Lohn wird damit ausdrücklich aus dem Kreislauf der Gegeneinladungen herausgenommen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Der ganze Abschnitt ist als Gastmahlszene komponiert, wie sie die griechische Literatur als eigene Form kennt: ein Streitgespräch, gefolgt von Belehrungen über das rechte Verhalten bei Tisch. Lukas füllt diese vertraute Form mit Stoffen aus seiner Überlieferung.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Verse gehören zu den Belegstellen der Soziallehre für die vorrangige Sorge um die Armen. Die Auslegung betont, daß nicht Almosen gefordert werden, sondern Tischgemeinschaft, also die Aufhebung des Abstands.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Der Schlußsatz über Erhöhung und Erniedrigung wird als Zusammenfassung gelesen und nicht als Anleitung zu berechnender Bescheidenheit. Wer den letzten Platz wählt, um hinaufgerufen zu werden, hat die Regel nur verfeinert.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter verbinden die Szene mit der Selbsterniedrigung Christi und lesen den Rat als Beschreibung eines Wegs, nicht als Verhaltensregel. Johannes Chrysostomos widmet der Gästeliste mehrere Predigten und wendet sie gegen den Aufwand städtischer Gastmähler.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Betont wird der Bruch mit der Gegenseitigkeit. Ein Mahl ohne Aussicht auf Rückgabe verlasse die Ökonomie des Tauschs und stelle damit die gesellschaftliche Ordnung selbst in Frage, nicht nur das persönliche Verhalten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'spr', chapter: 25, verse: 6, note: 'Der fast wörtliche Rat, sich nicht vor dem König zu brüsten und nicht obenan zu stellen.' },
+      { book: '3mo', chapter: 21, verse: 18, note: 'Die Liste körperlicher Merkmale, die vom Altardienst ausschließen: dieselben Gruppen werden hier geladen.' },
+      { book: 'lk', chapter: 6, verse: 34, note: 'Die Absage an das Leihen in Erwartung der Rückgabe: dieselbe Kritik am Tauschprinzip.' },
+      { book: 'dan', chapter: 12, verse: 2, note: 'Die Auferstehung zum ewigen Leben, auf die die Wendung von der Auferstehung der Gerechten zurückgeht.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 14,
+    from: 15,
+    to: 24,
+    title: '„nötige sie hereinzukommen“',
+    historicalShort:
+      'Ein Mann lädt zu einem großen Mahl, und alle Geladenen sagen mit Begründungen ab. Daraufhin läßt er die Armen der Stadt und schließlich die Menschen von den Landstraßen hereinholen. Der Satz vom Nötigen hat eine der folgenreichsten Wirkungsgeschichten des Neuen Testaments.',
+    historicalLong:
+      'Das Gleichnis steht auch bei Matthäus und im Thomasevangelium, in beiden Fällen deutlich anders. Bei Matthäus ist es ein König, der die Hochzeit seines Sohnes ausrichtet, die Boten werden getötet, und der König schickt Truppen, die die Stadt anzünden; das ist eine Allegorie, die die Zerstörung Jerusalems bereits eingearbeitet hat. Bei Lukas ist es ein Privatmann, das Mahl bleibt ein Abendessen, und es fließt kein Blut. Die schlichtere Form gilt vielen als die ältere.\n\nDie doppelte Einladung entspricht der Sitte. Bei einem größeren Mahl erging die Einladung im voraus, und am Tag selbst wurde ein Bote geschickt, der meldete, daß angerichtet sei. Wer zugesagt hatte, war gebunden; die Absage in letzter Minute traf den Gastgeber doppelt, weil die Speisen bereits zubereitet waren und sich nicht aufheben ließen. Genau das erklärt den Zorn.\n\nDie drei Entschuldigungen sind so gebaut, daß sie zunächst plausibel klingen und bei näherem Hinsehen nicht tragen: niemand kauft einen Acker ungesehen, niemand erwirbt fünf Gespanne Ochsen ohne Prüfung, und die Heirat war seit langem geplant. Auffällig ist die Reihe selbst. Im fünften Buch Mose werden vor einem Kriegszug genau drei Gruppen vom Dienst freigestellt: wer ein neues Haus gebaut, wer einen Weinberg gepflanzt und wer sich verlobt, aber noch nicht geheiratet hat. Wer diese Anspielung hört, sieht die Geladenen sich mit einem Recht entschuldigen, das für den heiligen Krieg gilt, und sich damit gerade dem entziehen, worauf es ankommt.\n\nDie zweite Aussendung führt in die Straßen und Gassen der Stadt und holt eben jene vier Gruppen herein, die kurz zuvor als Gästeliste empfohlen worden waren. Die dritte führt hinaus, an die Landstraßen und an die Hecken, wo die leben, die keine Adresse haben. Die klassische Auslegung hat in dieser Abfolge Israel, die Randgruppen und die Heiden gesehen; ob Lukas das so meint, ist umstritten, doch das Gefälle von innen nach außen ist deutlich. Das Wort, das Luther mit nötigen wiedergibt, meint zwingen. Im Umgangston des Ostens gehörte allerdings das drängende Bitten zum Ritual, weil ein Geladener nicht sofort zusagen durfte; ein hartnäckiges Nötigen war Höflichkeit, nicht Gewalt.',
+    reception:
+      'Aus diesem einen Wort wurde die lateinische Formel compelle intrare, und mit ihr ist Kirchengeschichte gemacht worden. Augustin hatte in jungen Jahren die Auffassung vertreten, im Glauben dürfe niemand gezwungen werden. Im Streit mit den Donatisten in Nordafrika änderte er seine Position und begründete in den Briefen 93 und 185 aus den Jahren um 408 und 417 die staatliche Zwangsgewalt gegen Abweichende mit eben diesem Vers; das Nötigen sei Ausdruck der Sorge, wie man einen Fieberkranken zur Behandlung zwingt. Diese Begründung wurde für das lateinische Mittelalter maßgebend. Sie erscheint in der Argumentation gegen die Katharer, in den Ketzergesetzen Innozenz III. und im Verfahrensrecht der Inquisition. Auch die Zwangstaufen in Spanien nach den Pogromen von 1391 und die erzwungene Bekehrung der Mauren nach 1500 wurden mit ihr gerechtfertigt.\n\nDer Widerspruch begann früh und wurde spät wirksam. Nachdem Ludwig XIV. 1685 das Edikt von Nantes aufgehoben und die Dragonaden gegen die Hugenotten in Gang gesetzt hatte, veröffentlichte der aus Frankreich geflohene Pierre Bayle 1686 einen philosophischen Kommentar, dessen ganzer Titel eben diese Worte Jesu nennt. Er führte durch, daß eine Auslegung, die zum Zwang berechtigt, jede beliebige Grausamkeit rechtfertigen kann und deshalb falsch sein muß, und stellte dem das Recht des irrenden Gewissens gegenüber. Die Schrift gehört zu den Grundtexten der neuzeitlichen Toleranzdebatte und wirkte auf Locke und die Aufklärung weiter.\n\nDie Kirchen haben die Zwangsdeutung förmlich verabschiedet. Die Erklärung Dignitatis humanae des Zweiten Vatikanischen Konzils vom 7. Dezember 1965 stellt fest, daß niemand gezwungen werden darf, gegen sein Gewissen zu handeln, und dies auch dann gilt, wenn er irrt. In der evangelischen Tradition hatte Luther 1523 in seiner Schrift über die weltliche Obrigkeit geschrieben, Glaube lasse sich nicht erzwingen und Ketzerei sei mit dem Schwert nicht auszurotten; die Praxis der protestantischen Territorien blieb dahinter zurück, und gegenüber den Täufern wurde von den dreißiger Jahren an anders verfahren.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Ein großes Mahl bedeutete geschlachtetes Vieh und stundenlange Zubereitung. Es gab keine Möglichkeit, Fleisch aufzubewahren, so daß alles am selben Abend verzehrt werden mußte. Eine kurzfristige Absage vernichtete den Aufwand.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wer eine Einladung annahm und dann fernblieb, fügte dem Gastgeber vor Zeugen einen Schaden zu. Die gemeinsame Absage aller Geladenen wirkt wie eine abgesprochene Beschämung und wäre für die ersten Hörer als offener Affront erkennbar gewesen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Fünf Joch Ochsen sind fünf Gespanne, also die Zugkraft für ein größeres Gut. Der Käufer prüfte die Tiere im Zug, weil ungleich gehende Gespanne unbrauchbar waren. Wer so viel Vieh besaß, gehörte zur begüterten Schicht.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Die Zäune und Hecken sind die Einfriedungen entlang der Wege außerhalb der Stadt. Dort lagerten Tagelöhner ohne Unterkunft, Durchreisende und Bettler, denen der Zutritt in die Stadt bei Nacht ohnehin verwehrt war.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. deipnon mega',
+        rendered: 'ein großes Abendmahl',
+        note: 'Die Hauptmahlzeit am Abend, hier in festlichem Umfang. Matthäus macht daraus die Hochzeit eines Königssohns.',
+      },
+      {
+        word: 'griech. zeugē boōn pente',
+        rendered: 'fünf Joch Ochsen',
+        note: 'Fünf Gespanne bedeuten eine erhebliche Landwirtschaft. Die Angabe kennzeichnet den zweiten Absagenden als wohlhabend.',
+      },
+      {
+        word: 'griech. phragmous',
+        rendered: 'an die Zäune',
+        note: 'Die Einfriedungen der Felder und Wege außerhalb der Stadt. Der Ausdruck bezeichnet den Ort derer, die weder Haus noch Bürgerrecht haben.',
+      },
+      {
+        word: 'griech. anankason eiselthein',
+        rendered: 'nötige sie hereinzukommen',
+        note: 'Wörtlich zwinge sie einzutreten. In der lateinischen Fassung compelle intrare wurde die Wendung zum meistgebrauchten Beleg für religiösen Zwang.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Der Vergleich mit Matthäus und dem Thomasevangelium legt nahe, daß die lukanische Fassung die ältere Form bewahrt und die dritte Aussendung eine Erweiterung ist. Die zweifache Sendung nach draußen paßt zu Lukas, dessen zweites Buch die Ausbreitung über die Grenzen des Landes hinaus erzählt.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Zwangsauslegung Augustins gilt als überholt. Dignitatis humanae hält 1965 fest, daß der Glaubensakt seiner Natur nach frei sein muß; das Nötigen wird auf die Dringlichkeit der Einladung bezogen, nicht auf äußeren Druck.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Die Auslegung hebt hervor, daß der Gastgeber niemanden holt, der abgesagt hat, sondern andere lädt. Das Nötigen richtet sich an Menschen, die sich für unwürdig halten, und meint das Überwinden ihrer Scheu.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Das Mahl wird auf die Eucharistie und auf das Reich Gottes bezogen, das Nötigen auf das Werben Gottes um den Menschen. Die östliche Tradition hat die Stelle nicht zur Begründung staatlichen Zwangs verwendet.',
+      },
+      {
+        tradition: 'befreiungstheologisch',
+        text: 'Im Mittelpunkt steht, wer am Ende im Saal liegt. Daß die Absagen aus Grundbesitz, Vieh und Familienstand begründet werden und die Plätze an Menschen ohne all das fallen, wird als Aussage über die Umkehrung gesellschaftlicher Verhältnisse gelesen.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 20, verse: 5, note: 'Die Freistellungen vom Kriegsdienst für Hausbau, Weinberg und Verlobung: der Hintergrund der drei Entschuldigungen.' },
+      { book: 'mt', chapter: 22, verse: 2, note: 'Die Parallele als königliche Hochzeit mit Truppen und brennender Stadt.' },
+      { book: 'jes', chapter: 55, verse: 1, note: 'Der Ruf an alle Durstigen, ohne Geld zu kommen und zu essen.' },
+      { book: 'apg', chapter: 13, verse: 46, note: 'Die Wendung zu den Heiden, die das Gefälle des Gleichnisses erzählerisch aufnimmt.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 14,
+    from: 25,
+    to: 35,
+    title: '„überschlägt die Kosten“',
+    historicalShort:
+      'Vor einer großen Menge nennt Jesus die Bedingungen der Nachfolge in schroffer Form: Bruch mit der Familie, Tragen des Kreuzes, Verzicht auf allen Besitz. Zwei Beispiele vom Turmbau und vom Feldzug fordern dazu auf, vorher zu rechnen.',
+    historicalLong:
+      'Das Wort vom Hassen ist die härteste Formulierung des Neuen Testaments zur Familie, und Matthäus hat an derselben Stelle die mildere Fassung, man solle Vater und Mutter nicht mehr lieben als ihn. Sprachlich liegt eine semitische Ausdrucksweise zugrunde, in der hassen den nachgeordneten Rang bezeichnet: im ersten Buch Mose heißt Lea gehaßt, weil Jakob Rahel vorzieht, und im Maleachibuch steht die Wendung für die Zurücksetzung. Lukas hat die scharfe Form stehen lassen, und Luther hat sie nicht abgemildert. Ihr Gewicht ergibt sich aus der Sache: der Haushalt war die wirtschaftliche und rechtliche Einheit, in der ein Mensch existierte. Wer ihn verließ, verlor Erbanspruch, Versorgung im Alter und den Rückhalt, der vor Gericht zählte.\n\nDas Kreuz war keine Metapher. Die Kreuzigung war die römische Strafe für Aufständische, entlaufene Sklaven und Räuber, öffentlich vollzogen an Straßen und Toren. Nach dem Aufstand im Jahr 4 vor Christus ließ der Statthalter Varus zweitausend Menschen in Judäa kreuzigen; die Hörer wußten, wovon die Rede war. Der Verurteilte trug den Querbalken selbst zum Richtplatz, und das Bild vom Tragen des Kreuzes meint zuerst diesen Gang.\n\nDie beiden Beispiele danach kommen aus zwei ganz verschiedenen Welten und funktionieren gleich. Der Turm ist wahrscheinlich der massive Wachturm eines Weinbergs oder Guts, wie ihn die Landwirtschaft der Zeit kannte; unter Herodes und seinen Söhnen war das Land voller Bauvorhaben, und stehengebliebene Rohbauten waren ein vertrauter Anblick. Der zweite Fall ist die Rechnung eines Königs vor der Schlacht, mit zehntausend gegen zwanzigtausend, was realistischen Stärken hellenistischer Feldheere entspricht. Wenige Jahre nach der erzählten Zeit verlor Herodes Antipas eine Schlacht gegen den Nabatäerkönig Aretas und mußte die Folgen tragen.\n\nDer Schluß, den beide Beispiele tragen, ist überraschend. Man erwartet die Mahnung, sich das Vorhaben gut zu überlegen. Statt dessen folgt der Satz, daß niemand Jünger sein kann, der nicht allem absagt, was er hat. Die Rechnung ergibt also nicht, ob es sich lohnt, sondern wie hoch der Preis ist. Das angefügte Salzwort steht bei Markus und Matthäus in anderem Zusammenhang. Salz aus der Umgebung des Toten Meeres war mit Gips und anderen Mineralien vermischt; wenn das eigentliche Salz durch Feuchtigkeit ausgewaschen wurde, blieb ein salzloser Rest zurück, der weder zum Würzen noch als Zusatz zum Dünger taugte. Das griechische Wort, das Luther mit dumm werden übersetzt, bedeutet töricht werden und ist dasselbe, das sonst für Narrheit steht.',
+    reception:
+      'Der Satz über den Familienbruch hat zwei sehr verschiedene Nachwirkungen. Er stand am Anfang vieler Ordensberufungen und wurde in den Lebensbeschreibungen der Heiligen regelmäßig zitiert, wenn ein Sohn oder eine Tochter gegen den Willen der Eltern ins Kloster ging; Thomas von Aquin wurde nach dem Bericht seiner Familie deswegen ein Jahr lang festgehalten. Zugleich ist der Vers in Gruppen mit strenger Binnenkontrolle benutzt worden, um Mitglieder von ihren Angehörigen zu trennen. Aussteigerberichte aus religiösen Gemeinschaften des zwanzigsten Jahrhunderts nennen ihn häufig; kirchliche Sektenberatungsstellen führen ihn seit den achtziger Jahren als Beispiel dafür, wie ein Text zur Bindung an eine Gruppe umgebogen werden kann. Die Gegenrede stützt sich darauf, daß derselbe Evangelist das Gebot der Elternehrung ausdrücklich anführt.\n\nDietrich Bonhoeffer hat 1937 in der Nachfolge die Verse zum Angelpunkt seiner Unterscheidung von billiger und teurer Gnade gemacht. Gnade ohne Nachfolge sei die Ware, die sich selbst verschleudert; die Verse vom Überschlagen der Kosten sind in seiner Darstellung der Prüfstein. Der Zusammenhang, in dem er schrieb, war die Auseinandersetzung der Bekennenden Kirche mit der Anpassung der Kirchen an den Nationalsozialismus.\n\nDie Wendung vom Tragen des eigenen Kreuzes ist in die Alltagssprache eingegangen und bezeichnet dort das geduldige Ertragen einer dauerhaften Last. Gegen diese Verschiebung ist von feministischer Seite seit den achtziger Jahren Einspruch erhoben worden: in der Seelsorge sei die Formel Frauen in gewalttätigen Ehen als Aufforderung zum Aushalten vorgehalten worden. Der Einwand lautet, daß der Text von einem frei gewählten Weg spricht und nicht von erlittener Gewalt; kirchliche Handreichungen zum Umgang mit häuslicher Gewalt greifen diese Unterscheidung inzwischen auf.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Die Kreuzigung galt als Strafe für Sklaven und Aufrührer und war für römische Bürger ausgeschlossen. Vollzogen wurde sie an gut sichtbaren Stellen vor den Toren, mit tagelangem Sterben; die Abschreckung war ausdrücklicher Zweck.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Haushalt sicherte Unterhalt, Erbe und rechtliche Vertretung. Wer sich von ihm löste, stand ohne Absicherung da; es gab keine Einrichtung, die diesen Ausfall aufgefangen hätte. Darin liegt die Härte des Wortes, nicht in einer Abwertung von Zuneigung.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Wachtürme in Weinbergen und auf Gütern waren gemauerte Bauten mit Zisterne und Lagerraum, in denen zur Erntezeit gewohnt wurde. Ein solcher Bau band Mittel über Monate; ein abgebrochenes Vorhaben blieb als Ruine im Gelände stehen.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Kleinkönige der Region führten Kriege mit Heeren von wenigen tausend bis zu einigen zehntausend Mann. Eine Gesandtschaft mit Friedensbitte war ein üblicher Schritt, solange der Gegner noch entfernt stand; danach galten die Bedingungen des Siegers.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Salz wurde am Toten Meer gewonnen und war mit Fremdstoffen durchsetzt. Es diente zum Würzen und Haltbarmachen, wurde auf den Misthaufen gegeben und als Schicht in Lehmöfen verwendet. Ausgelaugtes Salz war für all das unbrauchbar.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ou misei',
+        rendered: 'haßt nicht seinen Vater',
+        note: 'Im semitischen Sprachgebrauch bezeichnet hassen die Nachordnung. Matthäus gibt dasselbe Wort mit lieb haben mehr denn mich wieder.',
+      },
+      {
+        word: 'griech. ton stauron heautou',
+        rendered: 'sein Kreuz trägt',
+        note: 'Gemeint ist der Querbalken, den der Verurteilte selbst zum Richtplatz schleppte. Das Bild stammt aus dem Strafvollzug, nicht aus der Frömmigkeit.',
+      },
+      {
+        word: 'griech. apotassetai pasin',
+        rendered: 'absagt allem, was er hat',
+        note: 'Das Verb meint das förmliche Abschiednehmen und wird auch für die Aufkündigung von Bindungen gebraucht. Es ist mehr als innere Distanz.',
+      },
+      {
+        word: 'griech. ean de kai to halas mōranthē',
+        rendered: 'wo aber das Salz dumm wird',
+        note: 'Das griechische Verb heißt töricht werden. Es beschreibt den Verlust der Salzkraft, wie er bei mineralisch verunreinigtem Salz tatsächlich vorkam.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Sprüche stammen aus verschiedenen Überlieferungen; die beiden Beispielgleichnisse sind Sondergut. Ihre Verbindung mit den Bedingungssätzen wird als Aufbau des Evangelisten verstanden, der die Menge, die mitläuft, ausdrücklich als Adressat nennt.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Stelle gehört zu den Grundlagen der Ordensgelübde und wird auf die vollständige Verfügbarkeit bezogen. Zugleich hält die Auslegung fest, daß das Gebot der Elternehrung nicht aufgehoben wird, sondern eine Rangfolge beschrieben ist.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Luther bezog das Wort auf den Konfliktfall: erst wenn die Bindung an die Familie gegen den Glauben steht, tritt sie zurück. Der Verzicht ist keine Lebensform für einen besonderen Stand, sondern die Bereitschaft, die jedem Christen abverlangt wird.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die monastische Tradition liest die Verse als Beschreibung des Weges der Askese. Das Überschlagen der Kosten wird auf die Prüfung vor dem Eintritt bezogen; die Väterschriften warnen davor, ein Vorhaben zu beginnen, dessen Maß man nicht kennt.',
+      },
+      {
+        tradition: 'historisch-kontextuell',
+        text: 'Die Schärfe des Wortes wird aus der Lage einer Bewegung erklärt, deren Anhänger tatsächlich Häuser und Werkstätten verließen. Der Bruch mit der Familie war für sie keine Zuspitzung, sondern die praktische Folge der Wanderschaft.',
+      },
+    ],
+    crossRefs: [
+      { book: '1mo', chapter: 29, verse: 31, note: 'Lea heißt gehaßt, weil Jakob Rahel vorzieht: der Sprachgebrauch, der hinter dem Wort steht.' },
+      { book: 'mt', chapter: 10, verse: 37, note: 'Die mildere Fassung derselben Forderung, mit lieb haben mehr denn mich.' },
+      { book: 'mk', chapter: 9, verse: 50, note: 'Das Salzwort bei Markus, dort mit dem Frieden untereinander verbunden.' },
+      { book: 'phil', chapter: 3, verse: 8, note: 'Paulus rechnet allen bisherigen Gewinn als Schaden: dieselbe Bilanz in eigener Sprache.' },
+    ],
+  },
 ];
 
 /**

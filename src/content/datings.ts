@@ -3262,6 +3262,51 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., Ort unbekannt',
     epoch: 'roemer',
   },
+  'lk 12,1': {
+    events: 'Die Reden gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau in den langen Reisebericht nach Jerusalem eingeordnet.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; es verarbeitet Markus und eine Spruchsammlung, die es mit Matthäus teilt.',
+    epoch: 'roemer',
+  },
+  'lk 12,22': {
+    events: 'Die Reden gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau in den langen Reisebericht nach Jerusalem eingeordnet.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; es verarbeitet Markus und eine Spruchsammlung, die es mit Matthäus teilt.',
+    epoch: 'roemer',
+  },
+  'lk 12,35': {
+    events: 'Die Reden gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau in den langen Reisebericht nach Jerusalem eingeordnet.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; es verarbeitet Markus und eine Spruchsammlung, die es mit Matthäus teilt.',
+    epoch: 'roemer',
+  },
+  'lk 13,1': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr.; Pilatus war von 26 bis 36 n. Chr. Statthalter, Herodes Antipas bis 39 n. Chr. Tetrarch von Galiläa.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert, also nach der Zerstörung des Tempels im Jahr 70.',
+    epoch: 'roemer',
+  },
+  'lk 13,10': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr.; Pilatus war von 26 bis 36 n. Chr. Statthalter, Herodes Antipas bis 39 n. Chr. Tetrarch von Galiläa.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert, also nach der Zerstörung des Tempels im Jahr 70.',
+    epoch: 'roemer',
+  },
+  'lk 13,22': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr.; Pilatus war von 26 bis 36 n. Chr. Statthalter, Herodes Antipas bis 39 n. Chr. Tetrarch von Galiläa.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert, also nach der Zerstörung des Tempels im Jahr 70.',
+    epoch: 'roemer',
+  },
+  'lk 14,1': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Gastmahlszenen setzen Leser voraus, denen die griechisch-römische Tischsitte vertraut ist.',
+    epoch: 'roemer',
+  },
+  'lk 14,15': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Gastmahlszenen setzen Leser voraus, denen die griechisch-römische Tischsitte vertraut ist.',
+    epoch: 'roemer',
+  },
+  'lk 14,25': {
+    events: 'Die Szenen gehören in die Zeit des Wirkens Jesu, etwa 28 bis 30 n. Chr., im lukanischen Aufbau auf dem Weg nach Jerusalem.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Gastmahlszenen setzen Leser voraus, denen die griechisch-römische Tischsitte vertraut ist.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
