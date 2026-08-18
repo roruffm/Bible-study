@@ -2937,6 +2937,41 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
     epoch: 'roemer',
   },
+  'mt 11,1': {
+    events: 'Die Auseinandersetzung in Galiläa: Täuferanfrage, Sabbatstreit und Beelzebulvorwurf',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 11,20': {
+    events: 'Die Auseinandersetzung in Galiläa: Täuferanfrage, Sabbatstreit und Beelzebulvorwurf',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 12,1': {
+    events: 'Die Auseinandersetzung in Galiläa: Täuferanfrage, Sabbatstreit und Beelzebulvorwurf',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 12,22': {
+    events: 'Die Auseinandersetzung in Galiläa: Täuferanfrage, Sabbatstreit und Beelzebulvorwurf',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 12,38': {
+    events: 'Die Auseinandersetzung in Galiläa: Täuferanfrage, Sabbatstreit und Beelzebulvorwurf',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 13,24': {
+    events: 'Die Gleichnisrede am See, dritte der fünf großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 13,44': {
+    events: 'Die Gleichnisrede am See, dritte der fünf großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
