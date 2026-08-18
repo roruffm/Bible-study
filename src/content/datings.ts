@@ -3002,6 +3002,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
     epoch: 'roemer',
   },
+  'mt 17,1': {
+    events: 'Vom Berg der Verklärung über Peräa hinauf nach Jerusalem',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 17,14': {
+    events: 'Vom Berg der Verklärung über Peräa hinauf nach Jerusalem',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 18,1': {
+    events: 'Vom Berg der Verklärung über Peräa hinauf nach Jerusalem',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 19,1': {
+    events: 'Vom Berg der Verklärung über Peräa hinauf nach Jerusalem',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 19,27': {
+    events: 'Vom Berg der Verklärung über Peräa hinauf nach Jerusalem',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 20,17': {
+    events: 'Vom Berg der Verklärung über Peräa hinauf nach Jerusalem',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
