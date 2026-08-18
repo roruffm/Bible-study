@@ -3032,6 +3032,41 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
     epoch: 'roemer',
   },
+  'mt 21,1': {
+    events: 'Einzug und Streitgespräche im Tempelbezirk',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 21,28': {
+    events: 'Einzug und Streitgespräche im Tempelbezirk',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 22,1': {
+    events: 'Einzug und Streitgespräche im Tempelbezirk',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 22,23': {
+    events: 'Einzug und Streitgespräche im Tempelbezirk',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 22,41': {
+    events: 'Einzug und Streitgespräche im Tempelbezirk',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 23,1': {
+    events: 'Die Scheltrede im Tempelbezirk, kurz vor dem Passa',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 23,23': {
+    events: 'Die Scheltrede im Tempelbezirk, kurz vor dem Passa',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
