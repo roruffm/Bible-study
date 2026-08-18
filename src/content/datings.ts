@@ -2777,6 +2777,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 70 n. Chr., am ehesten in Rom',
     epoch: 'roemer',
   },
+  'mk 11,1': {
+    events: 'Die Tage zwischen dem Einzug und dem Passa im Tempelbezirk',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 11,20': {
+    events: 'Die Tage zwischen dem Einzug und dem Passa im Tempelbezirk',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 12,1': {
+    events: 'Die Tage zwischen dem Einzug und dem Passa im Tempelbezirk',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 12,18': {
+    events: 'Die Tage zwischen dem Einzug und dem Passa im Tempelbezirk',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 13,1': {
+    events: 'Die Rede auf dem Ölberg, im Rückblick auf den Jüdischen Krieg',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 13,24': {
+    events: 'Die Rede auf dem Ölberg, im Rückblick auf den Jüdischen Krieg',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
