@@ -3482,6 +3482,21 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; der Hinweis auf die Arbeit anderer setzt eine bereits zurückliegende Mission in Samarien voraus.',
     epoch: 'roemer',
   },
+  'joh 5,1': {
+    events: 'Die Szene spielt bei einem nicht näher bestimmten Fest in Jerusalem, in der Frühzeit des Wirkens, etwa 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert. Die Beschreibung des Teiches mit fünf Hallen ist durch Ausgrabungen bestätigt worden.',
+    epoch: 'roemer',
+  },
+  'joh 5,19': {
+    events: 'Die Szene spielt bei einem nicht näher bestimmten Fest in Jerusalem, in der Frühzeit des Wirkens, etwa 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert. Die Beschreibung des Teiches mit fünf Hallen ist durch Ausgrabungen bestätigt worden.',
+    epoch: 'roemer',
+  },
+  'joh 5,31': {
+    events: 'Die Szene spielt bei einem nicht näher bestimmten Fest in Jerusalem, in der Frühzeit des Wirkens, etwa 28 n. Chr.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert. Die Beschreibung des Teiches mit fünf Hallen ist durch Ausgrabungen bestätigt worden.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
