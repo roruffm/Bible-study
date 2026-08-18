@@ -3367,6 +3367,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gehört zu den Hauptargumenten für diesen Ansatz.',
     epoch: 'roemer',
   },
+  'lk 20,1': {
+    events: 'Die Streitgespräche gehören in die Tage zwischen dem Einzug und der Verhaftung, etwa im Jahr 30 n. Chr., und spielen sämtlich im Tempelbezirk.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Sadduzäer, die hier auftreten, gab es zur Abfassungszeit nicht mehr.',
+    epoch: 'roemer',
+  },
+  'lk 20,20': {
+    events: 'Die Streitgespräche gehören in die Tage zwischen dem Einzug und der Verhaftung, etwa im Jahr 30 n. Chr., und spielen sämtlich im Tempelbezirk.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Sadduzäer, die hier auftreten, gab es zur Abfassungszeit nicht mehr.',
+    epoch: 'roemer',
+  },
+  'lk 20,27': {
+    events: 'Die Streitgespräche gehören in die Tage zwischen dem Einzug und der Verhaftung, etwa im Jahr 30 n. Chr., und spielen sämtlich im Tempelbezirk.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Sadduzäer, die hier auftreten, gab es zur Abfassungszeit nicht mehr.',
+    epoch: 'roemer',
+  },
+  'lk 21,1': {
+    events: 'Die Szenen gehören in die Tage vor dem Passafest, etwa im Jahr 30 n. Chr., im Tempelbezirk und auf dem Ölberg.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gilt als das stärkste Einzelargument dafür.',
+    epoch: 'roemer',
+  },
+  'lk 21,20': {
+    events: 'Die Szenen gehören in die Tage vor dem Passafest, etwa im Jahr 30 n. Chr., im Tempelbezirk und auf dem Ölberg.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gilt als das stärkste Einzelargument dafür.',
+    epoch: 'roemer',
+  },
+  'lk 21,29': {
+    events: 'Die Szenen gehören in die Tage vor dem Passafest, etwa im Jahr 30 n. Chr., im Tempelbezirk und auf dem Ölberg.',
+    written: 'Das Lukasevangelium wird meist auf 80 bis 90 n. Chr. datiert; die Beschreibung der Belagerung Jerusalems gilt als das stärkste Einzelargument dafür.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

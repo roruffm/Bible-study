@@ -49174,6 +49174,494 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: 'jer', chapter: 7, verse: 11, note: 'Die Tempelrede gegen die Mördergrube, aus der das Zitat stammt.' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 20,
+    from: 1,
+    to: 19,
+    title: '„aus was für Macht tust du das?“',
+    historicalShort:
+      'Eine Abordnung der Tempelleitung verlangt Rechenschaft über die Vollmacht, mit der Jesus im Heiligtum auftritt. Er antwortet mit einer Gegenfrage und danach mit dem Gleichnis von den Weingärtnern, das seine Zuhörer sofort auf sich beziehen.',
+    historicalLong:
+      'Die Fragenden werden mit drei Gruppen benannt: Hohepriester, Schriftgelehrte und Älteste. Das ist die Zusammensetzung des Hohen Rates, der obersten Instanz in inneren Angelegenheiten, und zugleich die Leitung des Tempelbetriebs. Ihre Frage ist deshalb keine Neugier, sondern eine förmliche Anfrage nach der Befugnis: wer im Vorhof lehrte und handelte, tat das in ihrem Zuständigkeitsbereich.\n\nDie Gegenfrage nach der Taufe des Johannes ist ein bekanntes Verfahren der Lehrhausdebatte, in der eine Frage mit einer Frage beantwortet werden konnte. Ungewöhnlich ist, daß der Erzähler die Überlegung der Befragten offenlegt; der Leser hört mit, wie eine Antwort nach ihren Folgen und nicht nach ihrem Wahrheitsgehalt abgewogen wird. Daß das Volk Johannes für einen Propheten hielt, wird als politische Größe behandelt: sie fürchten die Steinigung.\n\nDas Gleichnis knüpft an das Lied vom Weinberg im Jesajabuch an, in dem Gott einen Weinberg anlegt und schlechte Frucht erntet. Markus zitiert die Beschreibung mit Zaun, Kelter und Turm fast wörtlich; Lukas kürzt sie auf den einen Satz vom Pflanzen zusammen. Die Verhältnisse, in denen es spielt, waren gewöhnlich. Große Güter gehörten Eigentümern, die anderswo lebten, und wurden von Pächtern bewirtschaftet, die einen Anteil des Ertrags abzuliefern hatten. Streit über die Abgabe war häufig, und aus Ägypten sind Verwalterbriefe erhalten, die von verweigerten Zahlungen und Handgreiflichkeiten berichten. Auch die Überlegung der Pächter, mit dem Erben falle ihnen das Gut zu, ist im Rahmen antiker Besitzverhältnisse nicht abwegig, in denen tatsächlicher Besitz Ansprüche begründen konnte.\n\nDer entscheidende Vers steht am Schluß. Dort heißt es ausdrücklich, die Hohenpriester und Schriftgelehrten hätten verstanden, daß das Gleichnis auf sie gesagt sei, und hätten deshalb zugreifen wollen. Der Text benennt seine Adressaten also selbst, und es sind nicht das Volk und nicht Israel, sondern die Leitung des Tempels. Bemerkenswert ist außerdem der Zwischenruf, den nur Lukas überliefert: als die Vernichtung der Weingärtner angekündigt wird, protestieren die Zuhörer.',
+    reception:
+      'Das Weingärtnergleichnis gehört zu den folgenreichsten Texten der Enterbungslehre. Von den Kirchenvätern an ist es so gelesen worden, daß Gott den Weinberg Israel weggenommen und der Kirche gegeben habe; in dieser Fassung erscheint es in Predigten, Katechismen und in der bildenden Kunst über anderthalb Jahrtausende. Die Wirkung war nicht bloß theoretisch: die Vorstellung eines von Gott verworfenen Volkes gehört zu den Voraussetzungen der Judenfeindschaft des christlichen Europa.\n\nGegen diese Auslegung werden drei Beobachtungen angeführt. Der Text nennt seine Adressaten selbst und meint die Tempelleitung. Im Bild wird der Weinberg nicht vernichtet, sondern anderen Pächtern übergeben; wenn der Weinberg nach dem Jesajabuch Israel ist, bleibt er also bestehen und wechseln nur die Verwalter. Und die Wendung vom verworfenen Stein, der zum Eckstein wird, stammt aus einem Wallfahrtspsalm, in dem Israel selbst der verworfene Stein ist. Die Erklärungen der Kirchen seit 1965 und die evangelischen Synodalbeschlüsse ab 1980 haben die Verwerfungslesart ausdrücklich zurückgewiesen.\n\nEine andere Wirkung ist unpolemisch geblieben. Der Eckstein aus dem Psalmzitat wurde zu einem der beständigsten Bilder der christlichen Sprache; er steht im ersten Petrusbrief, in Kirchweihliturgien und in der Formel vom Grundstein, die längst außerhalb der Kirche gebraucht wird. Ob der hebräische Ausdruck den Eckstein am Fundament oder den Schlußstein am Bogen meint, ist bis heute nicht entschieden.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Der Hohe Rat vereinte Priesteraristokratie, Gesetzeskundige und Vertreter angesehener Familien. Er entschied in inneren Angelegenheiten und verwaltete den Tempel; die Todesstrafe zu vollstrecken war ihm unter römischer Herrschaft entzogen.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Ein Weinberg trug erst nach mehreren Jahren. Pächter übernahmen die Anlage gegen einen festen Anteil des Ertrags, oft ein Viertel bis die Hälfte. In schlechten Jahren wurde um die Abgabe gestritten, und der Eigentümer schickte Boten, die den Anteil eintrieben.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Wer Land tatsächlich bewirtschaftete, konnte daraus mit der Zeit Ansprüche ableiten, wenn niemand sie bestritt. Fristen und Bedingungen sind für Palästina im ersten Jahrhundert nicht sicher zu bestimmen; die Vorstellung war jedoch verbreitet genug, um eine Erzählung zu tragen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Tempelvorhof war der einzige Ort, an dem sich täglich Menschen aus allen Landesteilen versammelten. Wer dort lehrte, sprach zu einem Publikum, das der Leitung nicht unterstand; das erklärt die Vorsicht, mit der sie vorgeht.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. hoi archiereis',
+        rendered: 'die Hohenpriester',
+        note: 'Der Plural bezeichnet die amtierenden und früheren Inhaber des Amtes samt den Häuptern der Priesterfamilien, also die Führungsschicht des Tempels.',
+      },
+      {
+        word: 'griech. to baptisma Iōannou',
+        rendered: 'Die Taufe des Johannes',
+        note: 'Die Gegenfrage stellt die Befragten vor dieselbe Entscheidung, die sie ihm abverlangen. Sie war eine anerkannte Form der Lehrhausdebatte.',
+      },
+      {
+        word: 'griech. geōrgois',
+        rendered: 'den Weingärtnern',
+        note: 'Pächter, die den Weinberg gegen einen Anteil des Ertrags bewirtschaften. Der Ausdruck bezeichnet keine Tagelöhner, sondern Vertragspartner des Eigentümers.',
+      },
+      {
+        word: 'griech. eis kephalēn gōnias',
+        rendered: 'zum Eckstein geworden',
+        note: 'Ob der Stein am Fundament oder der Schlußstein eines Bogens gemeint ist, läßt sich nicht entscheiden. Das Zitat stammt aus dem hundertachtzehnten Psalm.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Das Thomasevangelium überliefert das Gleichnis ohne die Anspielung auf das Jesajalied und ohne die Deutung auf den Sohn. Daraus wird geschlossen, daß eine schlichtere Erzählung von Pächtern und Boten am Anfang stand und die allegorischen Züge nachträglich verstärkt wurden.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Der Weinberg wird auf das Gottesvolk bezogen, der Wechsel der Pächter auf den Wechsel der Verantwortlichen. Die kirchliche Lehre hat seit 1965 ausdrücklich festgehalten, daß der Bund mit Israel nicht widerrufen ist.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird die Geduld des Eigentümers, der Boten schickt, statt sofort zu handeln. Das Gleichnis gilt als Bild dafür, wie Verantwortliche einer Institution die Botschaft abwehren, die ihre Stellung in Frage stellt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter lesen die Sendung der Knechte auf die Propheten und die des Sohnes christologisch. Der Eckstein wird in den Hymnen der Kirchweihe und der Karwoche regelmäßig aufgenommen.',
+      },
+      {
+        tradition: 'jüdisch-christlicher Dialog',
+        text: 'Hervorgehoben wird, daß der Text seine Adressaten selbst benennt und daß der Weinberg im Bild bestehen bleibt. Die Übertragung auf das ganze Volk gilt als spätere Deutung, die dem Wortlaut widerspricht.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 5, verse: 1, note: 'Das Lied vom Weinberg, das dem Gleichnis zugrunde liegt.' },
+      { book: 'ps', chapter: 118, verse: 22, note: 'Der Stein, den die Bauleute verwarfen: das Zitat und sein ursprünglicher Zusammenhang.' },
+      { book: 'mk', chapter: 12, verse: 12, note: 'Dieselbe Szene bei Markus, mit ausführlicher Beschreibung der Anlage des Weinbergs.' },
+      { book: '1petr', chapter: 2, verse: 7, note: 'Der Eckstein als festes Bild der frühchristlichen Sprache.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 20,
+    from: 20,
+    to: 26,
+    title: '„So gebet dem Kaiser, was des Kaisers ist“',
+    historicalShort:
+      'Vorgeschickte Fragesteller wollen Jesus zu einer Aussage über die Kopfsteuer verleiten, die vor dem Statthalter verwendbar wäre. Seine Antwort entzieht sich beiden Seiten der Falle und ist seither auf sehr verschiedene Weise gebraucht worden.',
+    historicalLong:
+      'Der Erzähler nennt die Absicht offen: die Fragesteller sind eingeschleust und sollen ein Wort erzeugen, das der Obrigkeit übergeben werden kann. Das Ziel ist der Landpfleger, also der römische Statthalter. Wenige Kapitel später wird die Anklage vor Pilatus tatsächlich lauten, Jesus habe verboten, dem Kaiser Steuern zu geben; Lukas legt die Verbindung selbst.\n\nDie Steuer, um die es geht, ist die Kopfsteuer, die mit der Erhebung des Vermögens unter dem Legaten Quirinius im Jahr sechs eingeführt wurde, als Judäa unter direkte römische Verwaltung kam. Diese Schätzung war der Anlaß des Aufstands, den Judas der Galiläer anführte; Josephus schildert ihn ausführlich, und die Apostelgeschichte erwähnt ihn. Aus dieser Bewegung ging der bewaffnete Widerstand hervor, der bis zum Krieg des Jahres 66 wirksam blieb. Die Frage ist deshalb keine akademische. Wer sie bejahte, verlor beim Volk; wer sie verneinte, hatte den Tatbestand des Aufruhrs erfüllt.\n\nDie Antwort beginnt mit einer Handlung. Jesus läßt sich die Münze zeigen und fragt nach Bild und Aufschrift. Der Denar des Tiberius trug auf der Vorderseite den Kopf des Kaisers mit der Umschrift, er sei Sohn des vergöttlichten Augustus, und auf der Rückseite die Bezeichnung als oberster Priester. Die Münze führte also einen Anspruch auf göttliche Abstammung und ein priesterliches Amt mit sich. Daß die Fragenden ein solches Stück im Tempelbezirk sofort zur Hand haben, ist von Auslegern häufig hervorgehoben worden.\n\nDer Satz selbst entscheidet nichts. Er sagt nicht, was dem Kaiser zusteht, und er sagt nicht, was Gott zusteht. Der zweite Teil wiegt schwerer als der erste, denn wenn alles Gott gehört, bleibt für den ersten wenig übrig. Genau diese Offenheit hat die Wirkungsgeschichte bestimmt: der Satz ist als Begründung des Gehorsams und als Begründung des Widerstands verwendet worden.',
+    reception:
+      'Die Stelle gehört zusammen mit dem dreizehnten Kapitel des Römerbriefs zu den Grundtexten des christlichen Verhältnisses zum Staat. Augustin und nach ihm das lateinische Mittelalter lasen sie als Anerkennung der weltlichen Ordnung in ihrem Bereich. Luther verband sie mit seiner Unterscheidung zweier Regimente: der Christ schulde der Obrigkeit Gehorsam in weltlichen Dingen, im Gewissen aber sei er allein Gott verpflichtet. Die spätere deutsche Geschichte hat gezeigt, wie leicht diese Unterscheidung zur bloßen Gehorsamslehre werden konnte.\n\nDas wurde 1933 offenkundig. Die Deutschen Christen führten den Vers für die Unterordnung unter den nationalsozialistischen Staat an. Die Barmer Theologische Erklärung vom Mai 1934 antwortete darauf in ihrer fünften These: der Staat habe nach göttlicher Anordnung für Recht und Frieden zu sorgen, die Kirche erinnere ihn an diese Aufgabe, und sie wies die Vorstellung zurück, der Staat solle über seinen besonderen Auftrag hinaus die einzige und totale Ordnung des Lebens werden. Damit war der Vers ausdrücklich als Grenzziehung und nicht als Blankovollmacht bestimmt.\n\nEine dritte Linie führt zur Steuerverweigerung. Quäker haben seit dem siebzehnten Jahrhundert Abgaben für Kriegszwecke verweigert; Henry David Thoreau ging 1846 wegen einer nicht gezahlten Kopfsteuer ins Gefängnis und veröffentlichte 1849 den Aufsatz über den zivilen Ungehorsam, der auf Gandhi und die amerikanische Bürgerrechtsbewegung wirkte. In den Vereinigten Staaten wird der Satz daneben regelmäßig in Auseinandersetzungen über die Trennung von Kirche und Staat angeführt, obwohl er von dieser Frage nicht handelt.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die Kopfsteuer war das sichtbarste Zeichen der Fremdherrschaft. Sie wurde nach der Vermögenserhebung des Jahres sechs erhoben, betraf jeden Erwachsenen und floß unmittelbar an Rom, nicht an einen einheimischen Fürsten.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Die Aufforderung, Steuern zu verweigern, erfüllte den Tatbestand des Aufruhrs und lag in der Zuständigkeit des Statthalters. Eine solche Anklage konnte mit dem Kreuz enden; darauf zielt die gestellte Frage.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Denar mit dem Bild des Kaisers war die geläufige Münze des Alltags. Weil Bilder von Menschen im Umkreis des Tempels als anstößig galten, wurden die Tempelabgaben in bildlosem tyrischem Silber entrichtet.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Widerstand gegen die Abgaben war nicht die Sache einer kleinen Gruppe. Die Erhebung berührte jeden Haushalt, und die Erinnerung an den Aufstand bei ihrer Einführung war ein Vierteljahrhundert später noch lebendig.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. enkathetous',
+        rendered: 'Laurer',
+        note: 'Vorgeschobene Personen, die eine Rolle spielen. Das Wort bezeichnet eingeschleuste Beobachter und macht die Absicht der Szene von vornherein deutlich.',
+      },
+      {
+        word: 'griech. tou hēgemonos',
+        rendered: 'des Landpflegers',
+        note: 'Der römische Statthalter, hier Pontius Pilatus. Vor ihn gehörten Verfahren mit politischem Gewicht, nicht vor den Hohen Rat.',
+      },
+      {
+        word: 'griech. phoron Kaisari dounai',
+        rendered: 'den Schoß geben',
+        note: 'Gemeint ist die Kopfsteuer an Rom. Luthers Schoß ist ein altes deutsches Wort für Abgabe und Steuer.',
+      },
+      {
+        word: 'griech. dēnarion',
+        rendered: 'den Groschen',
+        note: 'Der Denar trug den Kopf des Tiberius mit der Umschrift, er sei Sohn des vergöttlichten Augustus, und auf der Rückseite den Titel des obersten Priesters.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Szene steht in allen drei ersten Evangelien nahezu gleichlautend und gilt als alte Überlieferung. Lukas verstärkt die Verbindung zur Anklage vor Pilatus, indem er die Absicht der Fragesteller ausdrücklich auf den Statthalter richtet.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Soziallehre liest den Satz als Anerkennung einer eigenständigen weltlichen Ordnung, die aber begrenzt bleibt. Wo der Staat gegen die Würde des Menschen verstößt, endet die Gehorsamspflicht; der Katechismus formuliert das ausdrücklich.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Der Vers steht hinter der Unterscheidung zweier Regimente. Nach den Erfahrungen des zwanzigsten Jahrhunderts wird er in der evangelischen Ethik im Licht der Barmer Erklärung ausgelegt: die Zuständigkeit des Staates ist begrenzt, und die Kirche hat ihn daran zu erinnern.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die byzantinische Tradition entwickelte das Bild einer Zusammenarbeit von Kirche und Herrschaft, in der beide ihren Bereich haben. In der Auslegung wird betont, daß das Bild des Kaisers auf der Münze steht, das Bild Gottes aber im Menschen.',
+      },
+      {
+        tradition: 'politisch-ethisch',
+        text: 'In dieser Lesart liegt der Nachdruck auf dem zweiten Teil. Wenn dem Kaiser gehört, was sein Bild trägt, und Gott, was seines trägt, dann ist der Anspruch des Staates auf den Menschen von vornherein beschränkt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'roem', chapter: 13, verse: 1, note: 'Die Mahnung zur Unterordnung unter die Obrigkeit, der andere Grundtext dieser Frage.' },
+      { book: 'lk', chapter: 23, verse: 2, note: 'Die Anklage vor Pilatus, Jesus habe verboten, dem Kaiser Steuern zu geben.' },
+      { book: 'apg', chapter: 5, verse: 37, note: 'Judas der Galiläer und der Aufstand zur Zeit der Schätzung.' },
+      { book: '2mo', chapter: 20, verse: 4, note: 'Das Bilderverbot, aus dem sich der Anstoß an der Kaisermünze erklärt.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 20,
+    from: 27,
+    to: 47,
+    title: '„Gott aber ist nicht der Toten, sondern der Lebendigen Gott“',
+    historicalShort:
+      'Sadduzäer führen die Auferstehung mit einem konstruierten Fall zur Leviratsehe ad absurdum. Die Antwort bestreitet ihre Voraussetzung und belegt die Auferstehung aus der Tora. Am Ende steht eine Frage zum Psalm und eine Warnung vor den Schriftgelehrten.',
+    historicalLong:
+      'Die Sadduzäer waren die priesterliche Oberschicht, eng mit dem Tempel und mit der römischen Ordnung verbunden. Josephus schreibt ihnen zu, daß sie nur die geschriebene Tora als verbindlich anerkannten und Auferstehung, Engel und ein Wirken des Schicksals bestritten. Nach der Zerstörung des Tempels verschwinden sie; zur Abfassungszeit des Evangeliums gab es sie nicht mehr. Eigene Schriften von ihnen sind nicht erhalten, so daß alles über sie Bekannte von ihren Gegnern stammt.\n\nIhr Fall stützt sich auf die Schwagerehe, die das fünfte Buch Mose regelt: stirbt ein Mann kinderlos, soll sein Bruder die Witwe nehmen, damit der Name des Verstorbenen nicht ausgelöscht wird. Die Bestimmung setzt eine Ordnung voraus, in der Familienbesitz an männliche Nachkommen gebunden ist; sie sichert zugleich die Witwe. Die sieben Brüder sind erfunden und sollen den Widerspruch erzeugen: welchem der sieben gehört sie nach der Auferstehung.\n\nDie Antwort bestreitet die Voraussetzung, das kommende Leben sei eine Fortsetzung des jetzigen. Lukas formuliert dabei anders als Markus. Er fügt eine Einschränkung ein, die dort fehlt: es geht um jene, die gewürdigt werden, jene Welt zu erlangen. Und er erweitert die Begründung: sie können nicht mehr sterben, sind Engeln gleich und Kinder Gottes. Das Wort für engelgleich kommt im Neuen Testament nur an dieser Stelle vor.\n\nDer Schriftbeweis muß aus der Tora kommen, weil die Fragenden nur sie anerkennen. Er stützt sich auf die Selbstvorstellung Gottes am brennenden Busch und auf die Zeitform: Gott nennt sich Gott Abrahams, Isaaks und Jakobs, die längst gestorben sind. Argumente aus einer grammatischen Form waren im Lehrhaus geläufig.\n\nDie Frage nach dem Davidssohn setzt den meistzitierten Vers des Alten Testaments im Neuen ein, den ersten Vers des hundertzehnten Psalms. Sie bleibt unbeantwortet stehen. Zuletzt folgt die Warnung vor den Schriftgelehrten: lange Gewänder, Grüße auf dem Markt, Ehrenplätze. Was der Vorwurf über die Häuser der Witwen genau meint, ist unklar; erwogen werden Gebühren für die Verwaltung von Witwenvermögen oder das Leben auf Kosten frommer Unterstützerinnen. Belege für eine solche Praxis fehlen, so daß die Wendung als Polemik einzuschätzen ist.',
+    reception:
+      'Der Satz, in der Auferstehung werde nicht geheiratet, hat eine unmittelbar seelsorgliche Wirkung entfaltet, und zwar eine schwierige. Verwitweten Menschen ist er über Jahrhunderte als Auskunft gegeben worden, daß die Ehe mit dem Tod endgültig endet. Die Kirchen des Westens haben daraus die Formel abgeleitet, die Ehe gelte bis zum Tod. Widerspruch kommt von den Heiligen der Letzten Tage, die seit dem neunzehnten Jahrhundert eine im Tempel geschlossene Ehe für die Ewigkeit lehren und diese Stelle abweichend deuten; die übrigen Kirchen folgen dem nicht.\n\nDie Warnung vor den Schriftgelehrten ist in der christlichen Predigt zu einem Bild vom heuchlerischen jüdischen Gelehrten verallgemeinert worden. Über diesen Weg ist das deutsche Wort Pharisäer zum Schimpfwort geworden, und die Karikatur des äußerlich frommen, innerlich habgierigen Schriftkundigen gehört zum Bestand des christlichen Antijudaismus. Zwei Beobachtungen stehen dagegen. Der Text richtet sich gegen ein Verhalten, nicht gegen eine Lehrrichtung, und vergleichbare Kritik findet sich in der rabbinischen Literatur selbst: der babylonische Talmud zählt im Traktat Sota mehrere Arten von Pharisäern auf und beurteilt die meisten davon spöttisch. Die Schärfe gehört also in einen innerjüdischen Streit über die Redlichkeit der Frommen.\n\nDer Satz, Gott sei nicht ein Gott der Toten, sondern der Lebenden, ist unabhängig von seinem Zusammenhang in die Sprache der Trauerfeiern eingegangen. Er steht auf Grabsteinen, in Kondolenzformeln und in Kirchenliedern und wird meist ohne die Streitfrage zitiert, aus der er stammt.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Über die Auferstehung wurde im Judentum des ersten Jahrhunderts gestritten. Die pharisäische Richtung bejahte sie unter Berufung auf das Danielbuch, die sadduzäische bestritt sie, weil sie in der Tora nicht ausgesprochen ist. Der Streit war eine offene Frage, keine Randerscheinung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Schwagerehe sicherte den Fortbestand von Namen und Besitz einer Familie und versorgte zugleich die kinderlose Witwe. Das fünfte Buch Mose sieht ein Verfahren vor, mit dem der Bruder sich der Pflicht entziehen kann, verbindet es aber mit öffentlicher Beschämung.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Witwen ohne erwachsene Söhne brauchten für Vermögensangelegenheiten einen Vertreter. Diese Rolle konnte einträglich sein, und der Vorwurf, Häuser von Witwen zu verzehren, zielt vermutlich darauf; nachweisbar ist die Praxis nicht.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Lange, aufwendig gefertigte Gewänder waren Standeszeichen und im Alltag unpraktisch, weil sie beim Arbeiten hinderten. Wer sie trug, zeigte damit an, daß er keine Handarbeit verrichtete. Grußformeln auf dem Markt waren nach Rang abgestuft.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. Saddoukaiōn',
+        rendered: 'der Sadduzäer',
+        note: 'Die priesterliche Oberschicht, eng mit dem Tempel verbunden. Eigene Schriften sind nicht erhalten; alles Bekannte stammt von ihren Gegnern.',
+      },
+      {
+        word: 'griech. exanastēsē sperma',
+        rendered: 'einen Samen erwecken',
+        note: 'Die Nachkommenschaft, die im Rahmen der Schwagerehe dem verstorbenen Bruder zugerechnet wird. Es geht um Namen und Erbbesitz, nicht um Fortpflanzung als solche.',
+      },
+      {
+        word: 'griech. isangeloi',
+        rendered: 'den Engeln gleich',
+        note: 'Ein Wort, das im Neuen Testament nur hier vorkommt. Es begründet die Aussage über das Ende der Ehe nach der Auferstehung.',
+      },
+      {
+        word: 'griech. tas oikias tōn chērōn',
+        rendered: 'der Witwen Häuser',
+        note: 'Was genau vorgeworfen wird, bleibt unklar. Erwogen werden Gebühren für die Vermögensverwaltung oder der Unterhalt durch fromme Unterstützerinnen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas folgt Markus, fügt aber eine Einschränkung ein: die Rede gilt denen, die jener Welt gewürdigt werden. Diese Verschiebung wird als Anzeichen dafür gelesen, daß die Auferstehung bei ihm stärker an eine Entscheidung gebunden ist.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Aussage über die Engelgleichheit wird auf eine gewandelte Daseinsweise bezogen, nicht auf eine Aufhebung der Person. Die Ehe endet mit dem Tod, die Verbundenheit der Verstorbenen mit den Lebenden bleibt in der Gemeinschaft der Heiligen bestehen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Im Mittelpunkt steht der Schriftbeweis aus der Tora: Gott bleibt der Gott derer, die er gerufen hat, über den Tod hinaus. Luther zog daraus, daß die Auferstehung nicht aus der Beschaffenheit des Menschen, sondern aus der Treue Gottes folgt.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die östliche Auslegung liest die Engelgleichheit zusammen mit der Lehre von der Vergöttlichung des Menschen. Der Mönchsstand gilt als vorwegnehmendes Zeichen dieses Zustands, ohne daß die Ehe dadurch abgewertet würde.',
+      },
+      {
+        tradition: 'jüdisch',
+        text: 'Jüdische Ausleger weisen darauf hin, daß der Streit zwischen den Richtungen über die Auferstehung innerjüdisch war und daß der Schriftbeweis aus der Zeitform einem im Lehrhaus geläufigen Verfahren folgt. Die Kritik an ehrsüchtigen Gelehrten habe in der rabbinischen Literatur unmittelbare Entsprechungen.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 25, verse: 5, note: 'Die Bestimmung über die Schwagerehe, auf die der konstruierte Fall sich stützt.' },
+      { book: '2mo', chapter: 3, verse: 6, note: 'Die Selbstvorstellung Gottes am brennenden Busch: die Grundlage des Schriftbeweises.' },
+      { book: 'ps', chapter: 110, verse: 1, note: 'Der im Neuen Testament am häufigsten zitierte Vers des Alten Testaments.' },
+      { book: 'apg', chapter: 23, verse: 8, note: 'Die Angabe, daß die Sadduzäer Auferstehung, Engel und Geist bestreiten.' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 3 Abschnitte */
+  {
+    book: 'lk',
+    chapter: 21,
+    from: 1,
+    to: 19,
+    title: '„die legte zwei Scherflein ein“',
+    historicalShort:
+      'Eine arme Witwe wirft zwei kleinste Münzen in den Opferkasten, und Jesus stellt ihre Gabe über die der Reichen. Unmittelbar danach kündigt er die Zerstörung des Tempels an und beschreibt, was den Seinen vorher widerfahren wird.',
+    historicalLong:
+      'Der Opferkasten stand im Vorhof der Frauen. Nach der Mischna befanden sich dort dreizehn trichterförmige Behälter, jeder mit einer Aufschrift für einen bestimmten Zweck, von der Tempelabgabe bis zu einzelnen Opferarten. Weil das Metall auf Metall fiel, war hörbar, wieviel eingelegt wurde; die Szene setzt diese Öffentlichkeit voraus. Das Lepton war die kleinste umlaufende Münze; zwei davon ergaben den kleinsten römischen Nennwert. Markus erklärt das seinen Lesern eigens, Lukas läßt die Erklärung fort.\n\nÜber den Sinn der Szene wird gestritten. Die verbreitete Auslegung liest sie als Lob: nicht die Höhe der Gabe zählt, sondern was sie dem Geber kostet. Seit einem Aufsatz von Addison Wright aus dem Jahr 1982 wird eine andere Lesart vertreten. Sie verweist darauf, was unmittelbar vorausgeht und was unmittelbar folgt. Davor steht der Vorwurf, die Schriftgelehrten fräßen die Häuser der Witwen; danach die Ankündigung, daß von diesem Tempel kein Stein auf dem anderen bleibt. Dazwischen gibt eine Frau ihren gesamten Lebensunterhalt an eben diese Einrichtung. In dieser Lesart ist der Satz keine Belobigung, sondern eine Klage über ein System, das den Ärmsten das Letzte abnimmt. Beide Deutungen werden ernsthaft vertreten; der Text selbst gibt keine Wertung an.\n\nDer Tempel, von dem gleich darauf die Rede ist, war ein Bauwerk ohnegleichen. Herodes hatte im Jahr zwanzig oder neunzehn vor Christus mit einer vollständigen Erneuerung begonnen; die Arbeiten dauerten über achtzig Jahre und wurden erst um das Jahr dreiundsechzig abgeschlossen, sieben Jahre vor der Zerstörung. Josephus berichtet von Werksteinen von gewaltigen Ausmaßen und von Weihgeschenken, unter ihnen einem goldenen Weinstock über dem Eingang. Der Bau war zugleich der größte Arbeitgeber der Stadt; nach seinem Abschluß wurden Tausende von Handwerkern entlassen.\n\nDie anschließende Rede setzt entschieden anders ein als bei Markus. Nach der Warnung vor Verführern folgt der Satz, das Ende sei noch nicht sogleich da, und dann die ausdrückliche Bemerkung, die Verfolgung komme vor diesem allem. Lukas trennt damit, was in der älteren Fassung ineinanderfließt: der Untergang des Tempels ist das eine, das Ende der Zeit ein anderes, und was die Gemeinde erlebt, gehört in die Gegenwart. Eine Spannung bleibt: unmittelbar nach der Ankündigung, einige würden getötet, steht die Zusage, kein Haar werde umkommen.',
+    reception:
+      'Aus Luthers Übersetzung ist die Redensart hervorgegangen, sein Scherflein beizutragen. Sie hat sich vom Zusammenhang gelöst und meint einen kleinen, aber ehrlichen Anteil. Zugleich ist die Erzählung zum meistgebrauchten Text kirchlicher Spendenaufrufe geworden. Genau daran setzt die Kritik an: wenn eine Frau, die nichts hat, als Vorbild für das Geben vorgehalten wird, kehrt sich die Aussage gegen die, die ohnehin am wenigsten besitzen. Diakonische Verbände haben deshalb seit den achtziger Jahren empfohlen, den Text nicht in Kollektenansprachen zu verwenden.\n\nDie Steine des Tempels sind auf andere Weise geblieben. Die westliche Stützmauer des herodianischen Plateaus überstand die Zerstörung und ist seit dem Mittelalter der wichtigste Gebetsort des Judentums. In der christlichen Auslegung wurde die Ankündigung, kein Stein bleibe auf dem anderen, über Jahrhunderte als erfüllte Weissagung vorgeführt und dabei regelmäßig mit einem Schuldvorwurf verbunden; Reiseberichte des neunzehnten Jahrhunderts beschreiben die Ruinen ausdrücklich in dieser Absicht.\n\nDie Zusage, in der Verteidigung vor Gerichten werde der Beistand gegeben, gehört zu den am häufigsten angeführten Stellen in Martyrienberichten. Sie erscheint in den Akten der frühen Märtyrer ebenso wie in den Aufzeichnungen aus den Prozessen des zwanzigsten Jahrhunderts; Angehörige der Bekennenden Kirche und Mitglieder verfolgter Gemeinden in Osteuropa berufen sich in Briefen darauf.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Im Vorhof der Frauen standen nach der Mischna dreizehn trichterförmige Opferbehälter mit Aufschriften für die verschiedenen Zwecke. Wer einlegte, tat es vor allen; die Münzen waren beim Aufschlagen zu hören.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Das Lepton war die kleinste Münze im Umlauf, aus Kupfer und wenig größer als ein Fingernagel. Zwei davon reichten kaum für eine Handvoll Getreide; sie bezeichnen damit die unterste denkbare Summe.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Ausbau des Tempels beschäftigte über Jahrzehnte Tausende von Steinmetzen, Zimmerleuten und Trägern und war der größte Arbeitgeber der Stadt. Nach dem Abschluß der Arbeiten kurz vor dem Krieg wurden die Handwerker entlassen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Verfahren gegen Angehörige der Gemeinde konnten vor der Ortssynagoge, vor städtischen Behörden oder vor dem Statthalter geführt werden. Einen Verteidiger gab es nicht; der Angeklagte mußte selbst sprechen, und darauf zielt die Zusage.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. eis to gazophylakion',
+        rendered: 'in den Gotteskasten',
+        note: 'Die Opferbehälter im Vorhof der Frauen. Das Wort bezeichnet zugleich die Schatzkammer des Tempels.',
+      },
+      {
+        word: 'griech. lepta dyo',
+        rendered: 'zwei Scherflein',
+        note: 'Die kleinste Kupfermünze, zwei davon ergaben einen Quadrans. Markus erklärt den Wert für römische Leser, Lukas verzichtet darauf.',
+      },
+      {
+        word: 'griech. lithois kalois kai anathēmasin',
+        rendered: 'mit feinen Steinen und Kleinoden',
+        note: 'Die Weihgeschenke waren Stiftungen einzelner. Josephus nennt darunter einen goldenen Weinstock über dem Eingang zum Heiligtum.',
+      },
+      {
+        word: 'griech. eis martyrion',
+        rendered: 'zu einem Zeugnis',
+        note: 'Das griechische Wort steht am Ursprung des Begriffs Martyrium. Es bezeichnet zunächst die Aussage vor Gericht, nicht den Tod.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Die Szene steht bei Markus im selben Zusammenhang. Umstritten ist, ob sie Lob oder Klage ist: die Stellung zwischen dem Vorwurf gegen die Schriftgelehrten und der Ankündigung der Zerstörung spricht für die zweite Lesart, die Formulierung des Satzes eher für die erste.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Auslegung liest die Gabe der Witwe als Beispiel vollständiger Hingabe und verbindet sie mit der Lehre, daß der Wert einer Gabe sich nach dem bemißt, was dem Geber bleibt.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird der Blick, der die Unscheinbare wahrnimmt, während alle auf die großen Beträge sehen. Die Frage nach dem Wert der Gabe wird von der Leistung auf das Vertrauen verschoben.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Väter stellen die Witwe als Bild der Seele dar, die nichts zurückbehält. Zugleich mahnen sie, aus der Erzählung keine Forderung an die Armen zu machen; Chrysostomos wendet sie ausdrücklich an die Wohlhabenden.',
+      },
+      {
+        tradition: 'sozialgeschichtlich',
+        text: 'In dieser Lesart zeigt der Text, was ein Abgabensystem mit denen macht, die es am wenigsten tragen können. Das Lob gelte nicht der Einrichtung, die das Geld einnimmt, sondern richte sich gegen sie.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 12, verse: 41, note: 'Dieselbe Szene bei Markus, dort mit einer Erklärung des Münzwerts für römische Leser.' },
+      { book: 'mk', chapter: 13, verse: 2, note: 'Die Ankündigung über die Steine des Tempels in ihrer älteren Fassung.' },
+      { book: 'lk', chapter: 20, verse: 47, note: 'Der Vorwurf, die Häuser der Witwen zu verzehren, unmittelbar zuvor.' },
+      { book: 'apg', chapter: 5, verse: 18, note: 'Die Apostel im Gefängnis: die angekündigte Verfolgung als erzählte Wirklichkeit.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 21,
+    from: 20,
+    to: 28,
+    title: '„bis daß der Heiden Zeit erfüllt wird“',
+    historicalShort:
+      'Die Rede beschreibt die Einschließung Jerusalems, die Flucht aus Judäa und das Los der Gefangenen, danach kosmische Zeichen und das Kommen des Menschensohnes. Der Abschnitt endet nicht mit dem Ende, sondern mit einem Zeitpunkt, an dem etwas erfüllt sein wird.',
+    historicalLong:
+      'An dieser Stelle wird die Bearbeitung durch Lukas am deutlichsten greifbar. Markus schreibt, man werde den Greuel der Verwüstung stehen sehen, wo er nicht stehen soll, und fügt hinzu, der Leser solle darauf merken; das ist eine verschlüsselte Wendung aus dem Danielbuch. Lukas ersetzt sie durch eine militärische Beschreibung: Jerusalem, umlagert von einem Heer. Für die meisten Ausleger ist das der stärkste Hinweis darauf, daß er nach dem Jahr 70 schreibt und weiß, wie es ausgegangen ist. Dagegen wird eingewandt, daß sämtliche Ausdrücke aus den Belagerungsschilderungen der Prophetenbücher stammen und die Vorgänge einer römischen Einschließung ohnehin vorhersehbar waren.\n\nDie Anweisung zur Flucht ins Gebirge hat eine bekannte Nachgeschichte. Eusebius berichtet im vierten Jahrhundert, die Jerusalemer Gemeinde sei vor dem Krieg nach Pella in der Dekapolis ausgewichen. Ob das zutrifft, ist umstritten: eine unabhängige Bestätigung fehlt, und Pella liegt nicht im Gebirge, sondern im Jordangraben.\n\nDer Krieg selbst dauerte von 66 bis 70, die Belagerung Jerusalems fiel in die Monate von April bis September 70. Josephus, der als Überläufer im römischen Lager war, gibt Zahlen an, die überhöht sein dürften, beschreibt aber die Hungersnot, die Zerstörung des Heiligtums und den Abtransport der Gefangenen. Ein Teil wurde in den Bergwerken Ägyptens eingesetzt, andere in den Arenen getötet, die Kräftigsten für den Triumphzug nach Rom gebracht; der Bogen des Titus am Forum zeigt bis heute die fortgetragenen Geräte des Tempels.\n\nDer Abschnitt über die kosmischen Zeichen greift auf die Bildersprache der Propheten zurück, in der Verfinsterungen von Sonne und Mond das Gericht über Völker ankündigen. Der Menschensohn in der Wolke stammt aus dem siebten Kapitel des Danielbuchs. Der letzte Vers dieses Abschnitts gehört allein Lukas: wo die Vorlage bei den Schrecken bleibt, fordert er dazu auf, das Haupt zu erheben.\n\nEntscheidend für die Wirkungsgeschichte ist eine kleine Wendung in Vers vierundzwanzig. Jerusalem wird zertreten werden von den Heiden, heißt es, und dann folgt ein bis daß. Damit ist eine Frist gesetzt und kein Endzustand beschrieben. Paulus verwendet im Römerbrief eine ganz ähnliche Formulierung, wenn er von der Verstockung spricht, die währt, bis die Fülle der Heiden eingegangen ist.',
+    reception:
+      'Die Verse vom Zorn über dieses Volk gehören zum Kernbestand der Strafdeutung. Von Eusebius an ist die Zerstörung Jerusalems als Vergeltung für die Ablehnung Jesu vorgeführt worden, und diese Deutung hat der Vorstellung eines verworfenen Volkes über anderthalb Jahrtausende zugearbeitet. Ihr wird entgegengehalten, daß der Text keinen Grund nennt, daß seine Ausdrücke der prophetischen Klage über das eigene Volk entstammen und daß der Satz mit einer Befristung endet. Die Erklärung Nostra Aetate von 1965 und die evangelischen Synodalbeschlüsse seit 1980 haben die Strafdeutung zurückgewiesen.\n\nDie Wendung von den Zeiten der Heiden ist zum Gerüst ganzer Geschichtsentwürfe geworden. In der seit dem neunzehnten Jahrhundert ausgearbeiteten dispensationalistischen Auslegung bezeichnet sie einen abgegrenzten Zeitraum, dessen Ende an der Lage Jerusalems abgelesen werden könne. Die Eroberung der Stadt durch britische Truppen im Dezember 1917, die Gründung des Staates Israel 1948 und die Einnahme der Altstadt im Juni 1967 sind jeweils als Erfüllung ausgerufen worden. Auf dieser Deutung beruht ein erheblicher Teil des christlichen Zionismus, der bis in die Außenpolitik einzelner Staaten wirkt. Die anderen Kirchen teilen diese Berechnungsweise nicht.\n\nDer Aufruf, angesichts der Schrecken das Haupt zu erheben, hat eine eigene, unpolemische Geschichte. Er gehört zu den Lesungen des Advents und ist in Kirchenliedern und Predigten der Kriegs- und Nachkriegszeit häufig aufgenommen worden, weil er die Erwartung nicht mit Furcht, sondern mit Aufrichtung verbindet.',
+    world: [
+      {
+        aspect: 'macht',
+        text: 'Die römische Belagerung folgte einem festen Verfahren: Einschließung, Bau von Wall und Türmen, Aushungern, dann der Sturm. Vier Legionen standen 70 vor Jerusalem. Die Stadt fiel im Spätsommer, das Heiligtum brannte im August.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Kriegsgefangene wurden verkauft, in Bergwerke geschickt oder für Schauspiele bestimmt. Eine ausgewählte Gruppe führte man im Triumphzug durch Rom; der Bogen des Titus zeigt den Zug mit den Geräten des Tempels.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Wer aus Jerusalem floh, hatte die Wahl zwischen dem judäischen Bergland im Westen und dem Abstieg ins Jordantal. Die Anweisung, nicht in die Stadt zurückzukehren, setzt voraus, daß viele Landbewohner in Krisenzeiten hinter die Mauern strebten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Verfinsterungen von Sonne und Mond und das Erbeben der Himmelskräfte gehören zur festen Bildersprache der Prophetenbücher. Sie kündigen dort das Gericht über Völker an und sind nicht als Naturbeschreibung gemeint.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. kykloumenēn hypo stratopedōn',
+        rendered: 'belagert mit einem Heer',
+        note: 'Markus hat an dieser Stelle den verschlüsselten Ausdruck vom Greuel der Verwüstung. Lukas ersetzt ihn durch eine militärische Beschreibung.',
+      },
+      {
+        word: 'griech. hēmerai ekdikēseōs',
+        rendered: 'die Tage der Rache',
+        note: 'Eine Wendung der prophetischen Gerichtsrede. Sie bezeichnet dort das Eintreten dessen, was angekündigt war, nicht eine Vergeltung im rechtlichen Sinn.',
+      },
+      {
+        word: 'griech. patoumenē hypo ethnōn',
+        rendered: 'zertreten werden von den Heiden',
+        note: 'Das Bild stammt aus dem Danielbuch. Der angefügte Satz mit bis daß setzt dem beschriebenen Zustand ausdrücklich eine Grenze.',
+      },
+      {
+        word: 'griech. en nephelē',
+        rendered: 'in der Wolke',
+        note: 'Die Wolke ist in der Bibel das Zeichen der Gegenwart Gottes. Das Bild des Kommenden stammt aus dem siebten Kapitel des Danielbuchs.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Der Ersatz des verschlüsselten Ausdrucks durch eine Beschreibung der Belagerung gilt als der deutlichste Eingriff des Evangelisten. Die Mehrheit schließt daraus auf eine Abfassung nach 70; die Gegenposition verweist auf die prophetische Herkunft aller verwendeten Wendungen.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Kirche liest die Rede als Aussage über die Endlichkeit auch heiliger Institutionen und lehnt jede Berechnung des Zeitpunkts ab. Die Deutung der Zerstörung als Strafe für ein Volk ist seit 1965 ausdrücklich zurückgewiesen.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Betont wird die Trennung, die Lukas vornimmt: der Fall der Stadt ist ein geschichtliches Ereignis, das Kommen des Menschensohnes ein anderes. Wer beides vermengt, verrechnet sich; das Wort vom Haupterheben gilt der Gegenwart.',
+      },
+      {
+        tradition: 'dispensationalistisch',
+        text: 'In dieser Auslegung bezeichnen die Zeiten der Heiden einen abgegrenzten Abschnitt der Geschichte, dessen Ende an der Lage Jerusalems ablesbar sei. Die übrigen Kirchen teilen diese Berechnung nicht und verstehen die Wendung als offene Befristung.',
+      },
+      {
+        tradition: 'jüdisch-christlicher Dialog',
+        text: 'Hervorgehoben wird, daß der Text keinen Schuldgrund nennt und mit einem bis daß endet. Die Klage über die Stadt stehe in der Reihe prophetischer Texte, die von innen gesprochen sind, und begründe keine Aussage über eine dauerhafte Verwerfung.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 13, verse: 14, note: 'Der Greuel der Verwüstung, den Lukas durch die Beschreibung der Belagerung ersetzt.' },
+      { book: 'dan', chapter: 7, verse: 13, note: 'Der Menschensohn, der mit den Wolken des Himmels kommt.' },
+      { book: 'roem', chapter: 11, verse: 25, note: 'Die Verstockung währt, bis die Fülle der Heiden eingegangen ist: dieselbe Befristung bei Paulus.' },
+      { book: 'jes', chapter: 13, verse: 10, note: 'Verfinsterung von Sonne, Mond und Sternen als Bild des Gerichts über die Völker.' },
+    ],
+  },
+  {
+    book: 'lk',
+    chapter: 21,
+    from: 29,
+    to: 38,
+    title: '„Sehet an den Feigenbaum“',
+    historicalShort:
+      'Ein Gleichnis vom ausschlagenden Baum, die Zusage, dieses Geschlecht werde nicht vergehen, und die Mahnung zur Wachsamkeit beschließen die Rede. Ein kurzer Bericht über den Tagesablauf im Tempel und die Nächte auf dem Ölberg rundet sie ab.',
+    historicalLong:
+      'Lukas fügt dem Feigenbaum, den Markus allein nennt, die Worte und alle Bäume hinzu. Das ist mehr als eine Verschönerung. Der Feigenbaum konnte als Bild für Israel gelesen werden, und mit dem Zusatz wird aus der möglichen Anspielung eine schlichte Naturbeobachtung: an jedem Baum sieht man, wenn er ausschlägt. In Palästina fällt das besonders auf, weil der Feigenbaum als einer der wenigen einheimischen Bäume im Winter kahl steht, während Ölbaum und Steineiche ihr Laub behalten. Sein Austrieb im Frühjahr ist deshalb ein deutliches Zeichen.\n\nDer Satz über dieses Geschlecht gehört zu den umstrittensten der Evangelien. Vier Auskünfte werden gegeben. Man kann das Wort auf die Zeitgenossen beziehen, dann ist eine Erwartung ausgesprochen, die sich nicht erfüllt hat; Albert Schweitzer machte 1906 diese Feststellung zum Ausgangspunkt seiner Darstellung, nach der Jesus das nahe Ende erwartete und darin irrte. Man kann das Wort auf das jüdische Volk beziehen, das bestehen bleibt. Man kann es als Bezeichnung einer Art von Menschen verstehen, wie es im Alten Testament vom verkehrten Geschlecht heißt. Und man kann alles, was vorher gesagt wurde, auf den Fall Jerusalems beziehen, der tatsächlich in die Lebenszeit dieser Generation fiel. Keine der Auskünfte hat sich durchgesetzt.\n\nDie abschließende Mahnung wechselt in eine nüchterne Sprache. Vor Trunkenheit und vor den Sorgen der Nahrung wird gewarnt, also vor zwei entgegengesetzten Weisen, sich zu verlieren. Das Wort für Fallstrick bezeichnet die Schlinge, mit der Vögel gefangen wurden; sie schlägt zu, ohne daß das Tier etwas bemerkt hat.\n\nDie Schlußnotiz beschreibt einen Tagesablauf, der praktisch begründet ist. Zum Passafest kamen so viele Pilger nach Jerusalem, daß die Stadt sie nicht fassen konnte; man übernachtete in den umliegenden Ortschaften und in Zeltlagern an den Hängen. Der Ölberg und Bethanien lagen innerhalb des Bezirks, der für die Festzeit noch als zur Stadt gehörig galt. Daß Jesus die Nächte dort verbrachte, war also das Übliche und zugleich der Grund dafür, daß seine Verhaftung außerhalb der Mauern gelingen konnte.',
+    reception:
+      'Der Feigenbaum ist in der Gegenwart zum Gegenstand einer eigenen Auslegungstradition geworden. In Teilen der nordamerikanischen Endzeitverkündigung wird er auf die Gründung des Staates Israel im Mai 1948 gedeutet; das Ausschlagen sei damit geschehen, und die genannte Generation habe zu diesem Zeitpunkt begonnen. Daraus wurden mehrfach Jahreszahlen abgeleitet, unter anderem 1988, als eine viel verbreitete Broschüre Gründe für die Wiederkunft in eben jenem Jahr aufzählte. Gegen die ganze Konstruktion spricht, daß gerade Lukas den Zusatz und alle Bäume macht und die Stelle damit jeder Deutung auf einen einzelnen Baum entzieht.\n\nDer Satz über dieses Geschlecht hat die Erforschung des Lebens Jesu im zwanzigsten Jahrhundert wesentlich bestimmt. Schweitzers Buch von 1906 machte aus der Verlegenheit ein Programm und stellte einen Jesus in den Mittelpunkt, dessen Erwartung sich nicht erfüllte. Rudolf Bultmann zog daraus die Folgerung, die Aussagen über das Ende seien in ihrer Absicht und nicht in ihrem Weltbild zu verstehen. Beide Ansätze werden bis heute diskutiert; die Frage selbst gilt als ungelöst.\n\nDer Vers über Himmel und Erde, die vergehen, während die Worte bleiben, ist unabhängig davon zu einer der bekanntesten Zeilen der Bibel geworden. Er steht auf Kirchenportalen und Grabsteinen, ist in Kantaten und Motetten vertont und wird in Trauerreden regelmäßig zitiert.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Der Feigenbaum ist einer der wenigen einheimischen Bäume, die im Winter das Laub abwerfen. Sein Austrieb im März kündigt zuverlässig die warme Jahreszeit an, und die Bauern richteten Arbeiten danach ein.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Zu den Wallfahrtsfesten reichte der Wohnraum Jerusalems nicht aus. Pilger übernachteten in den Dörfern der Umgebung und in Lagern an den Hängen; für die Festzeit galt ein erweiterter Bezirk als noch zur Stadt gehörig.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Vögel wurden mit Schlingen und Klappnetzen gefangen, die verdeckt ausgelegt waren. Das Bild vom Fallstrick setzt voraus, daß jeder Hörer dieses Handwerk kennt; es meint das plötzliche Zuschlagen ohne Vorwarnung.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Wachen und Beten gehören in der Frömmigkeit der Zeit zusammen. Nachtgebete waren üblich, und die Aufforderung, allezeit wach zu sein, knüpft an eine geübte Praxis an, statt eine Stimmung zu beschreiben.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. tēn sykēn kai panta ta dendra',
+        rendered: 'den Feigenbaum und alle Bäume',
+        note: 'Der Zusatz über die übrigen Bäume steht nur bei Lukas. Er nimmt dem Bild die mögliche Deutung auf ein bestimmtes Volk.',
+      },
+      {
+        word: 'griech. hē genea hautē',
+        rendered: 'Dies Geschlecht',
+        note: 'Das Wort kann die Zeitgenossen, ein Volk oder eine Art von Menschen bezeichnen. An dieser Mehrdeutigkeit hängt eine der großen offenen Fragen der Auslegung.',
+      },
+      {
+        word: 'griech. hōs pagis',
+        rendered: 'wie ein Fallstrick',
+        note: 'Die Schlinge des Vogelfängers, die zuschnappt, ohne daß das Tier sie bemerkt hat. Das Bild betont die Plötzlichkeit, nicht die Härte.',
+      },
+      {
+        word: 'griech. eis to oros to kaloumenon Elaiōn',
+        rendered: 'am Ölberge',
+        note: 'Der Höhenzug östlich der Stadt, benannt nach seinen Ölbaumhainen. Er lag in der Entfernung, die am Sabbat zurückgelegt werden durfte.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'historisch-kritisch',
+        text: 'Lukas folgt Markus, entschärft aber das Feigenbaumbild durch den Zusatz über die übrigen Bäume. Der Satz über dieses Geschlecht wird meist als aus der Überlieferung übernommen betrachtet, den der Evangelist trotz der verstrichenen Zeit stehen ließ.',
+      },
+      {
+        tradition: 'katholisch',
+        text: 'Die Kirche bezieht die Aussage auf die bleibende Gültigkeit des Wortes und lehnt jede Berechnung ab. Die Rede erscheint in der Adventszeit und wird auf die wache Gegenwart bezogen, nicht auf einen Termin.',
+      },
+      {
+        tradition: 'reformatorisch',
+        text: 'Luther verstand das Geschlecht als Bezeichnung einer Art von Menschen, die bis zum Ende bestehen bleibt. Der Nachdruck liegt auf dem Satz vom bleibenden Wort, der die Unsicherheit über den Zeitpunkt aushaltbar macht.',
+      },
+      {
+        tradition: 'orthodox',
+        text: 'Die Mahnung zum Wachen wird mit der Praxis des Nachtgebets verbunden. Die Väter deuten das Ausschlagen der Bäume auf die Zeichen der Gnade, die im Leben des Einzelnen erkennbar werden.',
+      },
+      {
+        tradition: 'historisch-kontextuell',
+        text: 'In dieser Lesart bezieht sich alles Vorhergehende auf den Fall Jerusalems, der tatsächlich innerhalb einer Generation eintrat. Das Kommen des Menschensohnes bleibt davon unberührt und wird zeitlich nicht festgelegt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mk', chapter: 13, verse: 28, note: 'Das Gleichnis vom Feigenbaum bei Markus, ohne den Zusatz über die übrigen Bäume.' },
+      { book: 'mk', chapter: 13, verse: 30, note: 'Der Satz über dieses Geschlecht in seiner älteren Fassung.' },
+      { book: '1thess', chapter: 5, verse: 3, note: 'Das Verderben kommt plötzlich über die, die von Frieden reden: dasselbe Bild der Überraschung.' },
+      { book: 'joh', chapter: 8, verse: 1, note: 'Jesus geht an den Ölberg: dieselbe Gewohnheit in einem anderen Evangelium.' },
+    ],
+  },
 ];
 
 /**
