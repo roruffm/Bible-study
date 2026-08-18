@@ -2907,6 +2907,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
     epoch: 'roemer',
   },
+  'mt 8,1': {
+    events: 'Zehn Wundererzählungen in Galiläa, gebündelt nach der Bergpredigt',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 8,18': {
+    events: 'Zehn Wundererzählungen in Galiläa, gebündelt nach der Bergpredigt',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 9,1': {
+    events: 'Zehn Wundererzählungen in Galiläa, gebündelt nach der Bergpredigt',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 9,18': {
+    events: 'Zehn Wundererzählungen in Galiläa, gebündelt nach der Bergpredigt',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 10,1': {
+    events: 'Die Aussendung der Zwölf, zweite der fünf großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 10,24': {
+    events: 'Die Aussendung der Zwölf, zweite der fünf großen Reden',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
