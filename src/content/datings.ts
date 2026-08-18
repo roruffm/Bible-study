@@ -2807,6 +2807,41 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 70 n. Chr., am ehesten in Rom',
     epoch: 'roemer',
   },
+  'mk 14,1': {
+    events: 'Die Nacht vor dem Passa in Jerusalem',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 14,26': {
+    events: 'Die Nacht vor dem Passa in Jerusalem',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 14,53': {
+    events: 'Die Nacht vor dem Passa in Jerusalem',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 15,1': {
+    events: 'Der Prozess vor Pilatus und die Kreuzigung vor den Mauern Jerusalems',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 15,33': {
+    events: 'Der Prozess vor Pilatus und die Kreuzigung vor den Mauern Jerusalems',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 16,1': {
+    events: 'Der Morgen nach dem Sabbat und die Überlieferung des Buchschlusses',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
+  'mk 16,17': {
+    events: 'Der Morgen nach dem Sabbat und die Überlieferung des Buchschlusses',
+    written: 'um 70 n. Chr., am ehesten in Rom',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
