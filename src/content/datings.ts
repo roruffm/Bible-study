@@ -3117,6 +3117,46 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
     epoch: 'roemer',
   },
+  'lk 1,1': {
+    events: 'Die Vorgeschichte im Tempel und in Nazareth',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 1,26': {
+    events: 'Die Vorgeschichte im Tempel und in Nazareth',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 1,38': {
+    events: 'Die Vorgeschichte im Tempel und in Nazareth',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 1,56': {
+    events: 'Die Vorgeschichte im Tempel und in Nazareth',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 2,21': {
+    events: 'Kindheit, Tempelbesuch und der Beginn am Jordan',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 2,41': {
+    events: 'Kindheit, Tempelbesuch und der Beginn am Jordan',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 3,1': {
+    events: 'Kindheit, Tempelbesuch und der Beginn am Jordan',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 3,21': {
+    events: 'Kindheit, Tempelbesuch und der Beginn am Jordan',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
