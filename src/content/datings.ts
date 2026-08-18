@@ -3247,6 +3247,21 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., Ort unbekannt',
     epoch: 'roemer',
   },
+  'lk 11,1': {
+    events: 'Unterwegs nach Jerusalem: Gebet, Beelzebulvorwurf und Tischrede',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 11,14': {
+    events: 'Unterwegs nach Jerusalem: Gebet, Beelzebulvorwurf und Tischrede',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 11,37': {
+    events: 'Unterwegs nach Jerusalem: Gebet, Beelzebulvorwurf und Tischrede',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
