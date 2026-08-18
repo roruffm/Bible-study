@@ -2842,6 +2842,71 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 70 n. Chr., am ehesten in Rom',
     epoch: 'roemer',
   },
+  'mt 1,1': {
+    events: 'Herkunft, Geburt und die Anfänge am Jordan und in Galiläa',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 2,13': {
+    events: 'Herkunft, Geburt und die Anfänge am Jordan und in Galiläa',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 3,1': {
+    events: 'Herkunft, Geburt und die Anfänge am Jordan und in Galiläa',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 4,12': {
+    events: 'Herkunft, Geburt und die Anfänge am Jordan und in Galiläa',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 5,1': {
+    events: 'Die Bergpredigt, die erste der fünf großen Reden bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 5,13': {
+    events: 'Die Bergpredigt, die erste der fünf großen Reden bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 5,17': {
+    events: 'Die Bergpredigt, die erste der fünf großen Reden bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 5,33': {
+    events: 'Die Bergpredigt, die erste der fünf großen Reden bei Matthäus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 6,1': {
+    events: 'Die Bergpredigt, zweiter und dritter Teil',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 6,14': {
+    events: 'Die Bergpredigt, zweiter und dritter Teil',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 7,1': {
+    events: 'Die Bergpredigt, zweiter und dritter Teil',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 7,9': {
+    events: 'Die Bergpredigt, zweiter und dritter Teil',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 7,13': {
+    events: 'Die Bergpredigt, zweiter und dritter Teil',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */

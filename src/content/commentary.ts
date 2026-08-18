@@ -40334,6 +40334,1110 @@ export const COMMENTARY: CommentaryEntry[] = [
       { book: '1kor', chapter: 14, verse: 19, note: 'Paulus ordnet die Zungenrede unter' },
     ],
   },
+  /* ---------------------------------------------- Nachtrag: 4 Abschnitte */
+  {
+    book: 'mt',
+    chapter: 1,
+    from: 1,
+    to: 25,
+    title: '„Siehe, eine Jungfrau wird schwanger sein“',
+    historicalShort:
+      'Ein Stammbaum in dreimal vierzehn Gliedern, vier ungewöhnliche Frauen darin – und ein Zitat, an dem sich Christen und Juden seit dem zweiten Jahrhundert reiben.',
+    historicalLong:
+      'Der erste Satz des Neuen Testaments klingt wie eine Buchüberschrift und ist eine: Er nimmt die Formel des ersten Buches Mose auf, mit der dort die Geschlechterfolgen eingeleitet werden. Matthäus beginnt also nicht mit einer Geburt, sondern mit einer Einordnung – Sohn Davids und Sohn Abrahams, König und Stammvater.\n\nDie Dreiteilung in je vierzehn Glieder ist gemacht und nicht gezählt. Wer die Namen mit den Königsbüchern vergleicht, bemerkt, dass drei Könige fehlen; die Zahl vierzehn hat Vorrang vor der Vollständigkeit. Der wahrscheinlichste Grund liegt im Zahlenwert der hebräischen Buchstaben: Der Name David ergibt vier, sechs und vier, zusammen vierzehn. Der Stammbaum sagt seine Botschaft also auch dann, wenn man ihn nur zählt.\n\nDie vier genannten Frauen sind der auffälligste Zug. Tamar verschafft sich ihr Recht durch eine List am Schwiegervater, Rahab ist eine Dirne in Jericho, Ruth eine Moabiterin aus einem verfemten Volk, und die vierte wird nicht mit Namen genannt, sondern als das Weib des Uria – die Erinnerung an einen Ehebruch und einen befohlenen Tod. Alle vier stehen außerhalb der Ordnung, und drei von ihnen sind Nichtisraelitinnen. Wer sie nennt, bereitet die fünfte Frau vor, deren Schwangerschaft ebenfalls erklärungsbedürftig ist.\n\nDer Bruch am Ende ist gewollt. Vierzig Mal heißt es zeugte, dann bricht die Reihe ab: Josef ist der Mann Marias, von welcher geboren ist. Der Stammbaum ist der Josefs, und rechtlich zählt genau das – ein Kind gehörte in die Linie dessen, der es als seines annahm. Die Namensgebung durch Josef ist der Rechtsakt dieser Annahme.\n\nDas Jesajazitat folgt der griechischen Übersetzung. Der hebräische Text spricht von einer jungen Frau; das griechische Wort, das die Übersetzer des dritten Jahrhunderts vor Christus wählten, meint enger eine Jungfrau. Bei Jesaja geht es um ein Zeichen für König Ahas in einer akuten Kriegslage des achten Jahrhunderts, und das Kind wird dort binnen weniger Jahre geboren. Matthäus liest die Stelle neu, wie er es mit vielen Prophetenworten tut.',
+    reception:
+      'Die Übersetzungsfrage ist seit dem zweiten Jahrhundert Gegenstand der Auseinandersetzung. Justin der Märtyrer und sein jüdischer Gesprächspartner Tryphon streiten in einer erhaltenen Schrift genau darüber; Tryphon hält fest, der hebräische Text meine eine junge Frau. Die Debatte ist bis heute nicht beigelegt und trennt weniger Christen von Juden als vielmehr die Frage, welchem Textstand man folgt. Die jungfräuliche Empfängnis selbst hängt für die Kirchen nicht an dieser Übersetzung, sondern an den Erzählungen bei Matthäus und Lukas.\n\nDer Halbsatz, Josef habe sie nicht erkannt, bis sie gebar, ist zu einem konfessionellen Streitpunkt geworden. Die katholische und die orthodoxe Kirche halten an der immerwährenden Jungfräulichkeit Marias fest und verstehen das griechische Wörtchen als offene Angabe, die über das Danach nichts sagt. Luther und Calvin folgten dieser Deutung noch; die meisten heutigen evangelischen Auslegungen tun es nicht.\n\nDie beiden Stammbäume bei Matthäus und Lukas stimmen zwischen David und Josef fast nirgends überein. Vorschläge zur Vereinbarung gibt es seit der Alten Kirche – Julius Africanus erklärte sie im dritten Jahrhundert mit der Schwagerehe, andere nehmen an, Lukas gebe die Linie Marias. Beide Erklärungen tragen nicht weit; die Forschung sieht darin zwei eigenständige theologische Entwürfe.\n\nDie vier Frauen des Stammbaums sind in der neueren Auslegung stark beachtet worden. Wo ältere Kommentare sie als Sünderinnen deuteten, deren Erwähnung die Gnade zeige, betont die feministische Exegese, dass alle vier eigenständig und mutig handeln und dass drei von ihnen von außen kommen.',
+    world: [
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Verlobung war rechtlich bindend und wurde vor Zeugen geschlossen; die Frau blieb noch im Haus ihres Vaters. Eine Auflösung war nur durch einen Scheidebrief möglich.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Ein Kind gehörte in die Linie des Mannes, der es als seines annahm; die Namensgebung war der öffentliche Akt dieser Annahme. Blutsverwandtschaft war dafür nicht erforderlich.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Buchstaben dienten zugleich als Zahlzeichen, weshalb Namen einen Zahlenwert hatten. Das Rechnen mit solchen Werten war eine anerkannte Auslegungsweise und kein Geheimwissen.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Eine Schwangerschaft vor dem Einzug in das Haus des Mannes traf die Frau hart; die Familie konnte sie verstoßen. Ein stiller Scheidebrief war der schonendste Weg.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. biblos geneseos',
+        rendered: 'das Buch von der Geburt',
+        note: 'Dieselbe Formel leitet im ersten Buch Mose die Geschlechterfolgen ein. Der erste Satz ist eine Überschrift im Stil der Schrift.',
+      },
+      {
+        word: 'griech. ek tes tou Ouriou',
+        rendered: 'von dem Weib des Uria',
+        note: 'Batseba wird nicht mit Namen genannt, sondern über den getöteten Ehemann. Die Erinnerung an die Tat bleibt im Stammbaum stehen.',
+      },
+      {
+        word: 'griech. geneai dekatessares',
+        rendered: 'vierzehn Glieder',
+        note: 'Drei Könige fehlen gegenüber den Königsbüchern. Der Zahlenwert des Namens David beträgt vierzehn – die Zahl geht der Vollständigkeit vor.',
+      },
+      {
+        word: 'griech. parthenos',
+        rendered: 'eine Jungfrau',
+        note: 'Das griechische Wort der Übersetzung. Der hebräische Text Jesajas hat almah, eine junge Frau; die Verengung entstand bei der Übertragung ins Griechische.',
+      },
+      {
+        word: 'hebr. immanu el',
+        rendered: 'Immanuel',
+        note: 'Gott mit uns. Matthäus übersetzt den Namen für seine Leser und schließt sein Buch mit derselben Zusage – ich bin bei euch alle Tage.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die jungfräuliche Empfängnis gehört zum Glaubensbekenntnis; die immerwährende Jungfräulichkeit Marias ist Lehre der Kirche. Josef ist rechtmäßiger Vater und Bürge der davidischen Linie.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Stammbaum zeigt, dass Gott seine Geschichte durch fehlbare Menschen führt. Luther hielt an der Jungfräulichkeit fest, die meisten heutigen evangelischen Auslegungen nicht.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Maria heißt die Immerjungfrau; der Halbsatz über das Danach sagt darüber nichts aus. Die Menschwerdung ist der Anfang der Erneuerung der ganzen Schöpfung.',
+      },
+      {
+        tradition: 'Jüdische Sicht',
+        text: 'Der hebräische Jesajatext spricht von einer jungen Frau und meint ein Zeichen für König Ahas in seiner Zeit. Der Streit darüber ist seit Justin und Tryphon bezeugt.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die beiden Stammbäume der Evangelien lassen sich nicht vereinbaren; beide sind theologische Entwürfe. Die Dreiteilung in vierzehn Glieder ist konstruiert.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Die vier Frauen handeln eigenständig und gegen die Ordnung ihrer Zeit; drei kommen von außen. Ältere Kommentare deuteten sie als Sünderinnen, was der Text nicht hergibt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 7, verse: 14, note: 'Das Zeichen für König Ahas' },
+      { book: '1mo', chapter: 38, verse: 26, note: 'Tamar bekommt recht' },
+      { book: 'jos', chapter: 2, verse: 1, note: 'Rahab in Jericho' },
+      { book: 'rut', chapter: 4, verse: 17, note: 'Ruth wird Urgroßmutter Davids' },
+      { book: '2sam', chapter: 11, verse: 3, note: 'Das Weib des Uria' },
+      { book: 'lk', chapter: 3, verse: 23, note: 'Der andere Stammbaum' },
+      { book: 'mt', chapter: 28, verse: 20, note: 'Ich bin bei euch alle Tage' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 2,
+    from: 13,
+    to: 23,
+    title: '„Aus Ägypten habe ich meinen Sohn gerufen“',
+    historicalShort:
+      'Flucht über die Grenze, ein Kindermord ohne äußeren Beleg und drei Schriftworte, die anders gemeint waren.',
+    historicalLong:
+      'Matthäus erzählt die Anfänge als Wiederholung: ein Kind, das einem König entkommt, der Kinder töten lässt; ein Aufenthalt in Ägypten; eine Rückkehr, weil die gestorben sind, die ihm nach dem Leben standen. Jeder dieser Züge steht in der Mosegeschichte, der letzte sogar fast wörtlich. Wer die Bücher Mose kannte, hörte die Anspielung sofort. Der Verfasser zeichnet keinen neuen Mose im Sinn eines Nachfolgers, aber er erzählt in dessen Formen.\n\nDer Kindermord in Bethlehem ist außerhalb dieses Evangeliums nirgends bezeugt. Josephus schildert die Verbrechen des Herodes ausführlich – die Hinrichtung seiner Frau Mariamne, die Tötung dreier eigener Söhne, die Anordnung, bei seinem Tod angesehene Männer umbringen zu lassen, damit im Land geweint werde. Diesen Vorfall nennt er nicht. Das muss nicht gegen ihn sprechen: Bethlehem war ein Dorf von vielleicht dreihundert bis tausend Einwohnern, und die Zahl der Jungen unter zwei Jahren lag dort im einstelligen Bereich. Eine solche Tat wäre in der Bilanz des Herodes untergegangen. Beweisen lässt sie sich nicht, und die Meinungen gehen weit auseinander.\n\nDie drei Erfüllungszitate zeigen die Arbeitsweise des Verfassers besonders deutlich. Das erste stammt von Hosea und spricht dort vom Auszug Israels aus Ägypten – von einem Volk, nicht von einem Einzelnen. Das zweite stammt von Jeremia und meint die Verschleppung nach Babylon; Rahel, im Grab bei Rama, beweint die Fortgeführten. Das dritte ist überhaupt nicht auffindbar: Kein Prophetenbuch enthält den Satz vom Nazarener. Vermutet wird ein Anklang an das hebräische Wort für Spross im elften Kapitel Jesajas oder an den Geweihten der Nasiräer. Matthäus liest die Schrift nicht als Vorhersage im Sinn eines Fahrplans, sondern als Sprachvorrat, in dem sich Muster wiederholen.\n\nDie Furcht vor Archelaus ist historisch nachvollziehbar. Er ließ nach dem Tod seines Vaters bei einem Passafest nach Josephus dreitausend Menschen im Tempelbezirk niedermachen und wurde im Jahr sechs auf Beschwerden hin abgesetzt und verbannt. Galiläa unter Antipas galt demgegenüber als ruhiger.',
+    reception:
+      'Die getöteten Kinder werden als erste Märtyrer verehrt; ihr Gedenktag am achtundzwanzigsten Dezember gehört zu den ältesten Festen des Weihnachtskreises. In den mittelalterlichen Spielen war die Szene ein fester Bestandteil, und die Coventry-Carol aus dem 16. Jahrhundert ist ein Wiegenlied der Mütter von Bethlehem.\n\nDie Flucht nach Ägypten ist im 20. und 21. Jahrhundert zu einem Bezugspunkt in der Debatte über Flüchtlinge geworden. Kirchen aller Konfessionen haben sich darauf berufen, wenn es um Aufnahme und Kirchenasyl ging; die Familie erscheint dabei als das, was sie im Text ist – Menschen, die nachts über eine Grenze gehen, weil das Leben ihres Kindes bedroht ist. Kritiker halten dagegen, aus einer Erzählung lasse sich keine Rechtspolitik ableiten.\n\nDie koptische Kirche in Ägypten hat eine ausgebaute Überlieferung über die Stationen dieses Aufenthalts; mehrere Orte im Niltal werden als Rastplätze verehrt, und ein Pilgerweg verbindet sie. Historisch belastbar ist davon nichts, für die Selbstwahrnehmung dieser Kirche ist es zentral.\n\nDie Erfüllungszitate sind ein Musterfall für die Frage, wie das Neue Testament das Alte gebraucht. Wer sie als Beweisführung liest, findet sie fehlerhaft, weil die Stellen im Ursprung anderes meinen. Wer sie als typologische Lesart versteht, findet ein Verfahren, das auch die Auslegung von Qumran kennt: Alte Texte werden auf die eigene Zeit hin gelesen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Ägypten lag außerhalb des Herrschaftsbereichs des Herodes und war in wenigen Tagemärschen erreichbar. In Alexandrien lebte die größte jüdische Gemeinde außerhalb Judäas.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Herodes regierte als König von Roms Gnaden und fürchtete Thronanwärter bis in die eigene Familie; Josephus berichtet die Hinrichtung dreier Söhne und seiner Frau.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Spätere Legenden sprachen von vierzehntausend oder gar hundertvierundvierzigtausend getöteten Kindern; die Zahl stammt aus der Offenbarung und nicht aus einer Zählung. Ein Dorf dieser Größe konnte sie nicht hergeben.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wer sein Land verließ, nahm mit, was tragbar war, und war unterwegs auf Gastfreundschaft und Gelegenheitsarbeit angewiesen. Papiere kannte die Zeit nicht.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. ex Aigyptou ekalesa ton hyion mou',
+        rendered: 'Aus Ägypten habe ich meinen Sohn gerufen',
+        note: 'Bei Hosea meint der Satz den Auszug Israels, also ein Volk. Matthäus bezieht ihn auf einen Einzelnen – seine typische Lesart.',
+      },
+      {
+        word: 'griech. Rachel klaiousa ta tekna autes',
+        rendered: 'Rahel beweinte ihre Kinder',
+        note: 'Bei Jeremia gilt die Klage der Verschleppung nach Babylon. Rahels Grab lag nach der Überlieferung bei Rama, nördlich von Jerusalem.',
+      },
+      {
+        word: 'griech. dietous kai katotero',
+        rendered: 'zweijährig und darunter',
+        note: 'Die Altersgrenze folgt der Zeitangabe der Weisen. Sie zeigt, dass die Erzählung mit einem Abstand zwischen Geburt und Besuch rechnet.',
+      },
+      {
+        word: 'griech. Archelaos',
+        rendered: 'Archelaus',
+        note: 'Sohn des Herodes, Herrscher über Judäa. Josephus berichtet, er habe bei einem Passafest dreitausend Menschen töten lassen; im Jahr sechs wurde er abgesetzt.',
+      },
+      {
+        word: 'griech. Nazoraios klethesetai',
+        rendered: 'Er soll Nazarenus heißen',
+        note: 'Der Satz steht in keinem Prophetenbuch. Vermutet wird ein Anklang an das hebräische Wort für Spross oder an den Geweihten.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die getöteten Kinder gelten als erste Märtyrer und werden am achtundzwanzigsten Dezember gefeiert. Josef handelt als Beschützer der Familie und wurde darum zum Schutzpatron.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die koptische Kirche verehrt zahlreiche Stationen des ägyptischen Aufenthalts; ein Pilgerweg verbindet sie. Die Flucht gilt als Heiligung des Landes.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Gott bewahrt sein Werk nicht durch Machtentfaltung, sondern durch Flucht bei Nacht. Die Erfüllungszitate zeigen, dass die Schrift auf Christus hin gelesen wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Kindermord ist außerhalb dieses Evangeliums nicht bezeugt; die Erzählung folgt dem Muster der Mosegeschichte. Ob ein Kern historisch ist, bleibt offen.',
+      },
+      {
+        tradition: 'Gegenwärtige Anwendung',
+        text: 'Kirchen berufen sich auf die Flucht in der Debatte um Aufnahme und Kirchenasyl. Kritiker halten dagegen, aus einer Erzählung lasse sich keine Rechtspolitik ableiten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'hos', chapter: 11, verse: 1, note: 'Der Ursprung des ersten Zitats' },
+      { book: 'jer', chapter: 31, verse: 15, note: 'Rahel klagt um die Verschleppten' },
+      { book: '2mo', chapter: 1, verse: 22, note: 'Der Befehl des Pharao' },
+      { book: '2mo', chapter: 4, verse: 19, note: 'Sie sind tot, die dir nach dem Leben standen' },
+      { book: 'jes', chapter: 11, verse: 1, note: 'Ein Spross aus der Wurzel Isais' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 3,
+    from: 1,
+    to: 17,
+    title: '„Tut Buße, das Himmelreich ist nahe herbeigekommen“',
+    historicalShort:
+      'Ein Bußprediger in der Wüste, eine Taufe, die erklärungsbedürftig war – und eine Stimme, die diesmal an alle geht.',
+    historicalLong:
+      'Johannes ist die am besten bezeugte Gestalt des Neuen Testaments neben Jesus selbst. Josephus widmet ihm einen eigenen Abschnitt und beschreibt ihn als guten Mann, der die Juden zur Tugend rief und zu einer Taufe, die nicht Sünden abwasche, sondern den Leib reinige, nachdem die Seele durch Gerechtigkeit gereinigt sei. Als Grund für die Hinrichtung nennt Josephus die Furcht des Antipas vor seinem Einfluss – nicht den Streit um dessen Ehe, den die Evangelien berichten. Beide Angaben schließen einander nicht aus.\n\nDie Kleidung ist ein Zitat. Der Prophet Elia trug nach den Königsbüchern einen härenen Mantel und einen ledernen Gürtel; wer so auftrat, machte einen Anspruch sichtbar. Die Nahrung ist keine Askese um ihrer selbst willen: Heuschrecken gehörten zu den erlaubten Tieren und waren in der Wüste verfügbar, wilder Honig ebenso. Es ist die Kost dessen, der nichts anbaut und nichts kauft.\n\nMatthäus verändert die markinische Vorlage an einer aufschlussreichen Stelle. Bei Markus kommt das ganze Land, bei Matthäus richtet sich die Scheltrede an Pharisäer und Sadduzäer, die zur Taufe kommen. Diese Zuspitzung gehört zu einem durchgehenden Zug seines Buches, das die Auseinandersetzung mit der pharisäischen Richtung besonders scharf führt – vermutlich, weil die Gemeinde des Verfassers nach dem Jahr siebzig mit genau dieser Richtung um die Deutung der Schrift stritt. Beide waren nach der Zerstörung des Tempels die verbliebenen Erben.\n\nDie Taufe Jesu war früh erklärungsbedürftig: Wer sich taufen lässt, bekennt Sünden, und wer tauft, steht über dem Getauften. Markus erzählt den Vorgang ohne Kommentar, Matthäus fügt das Gespräch ein, in dem Johannes sich wehrt, Lukas erwähnt die Taufe nur im Nebensatz, Johannes lässt sie weg und erzählt stattdessen ein Zeugnis. Diese Reihe ist ein Musterfall dafür, wie eine unbequeme Überlieferung behandelt wird – und zugleich ein starkes Argument dafür, dass sie geschah. Erfunden hätte sie niemand.\n\nDie Stimme spricht bei Markus zu Jesus, bei Matthäus über ihn: Dies ist mein lieber Sohn. Aus einer inneren Erfahrung wird eine öffentliche Ansage.',
+    reception:
+      'Die Frage, warum Jesus sich taufen ließ, hat die Auslegung durch alle Jahrhunderte begleitet. Ignatius von Antiochien schrieb um 110, es sei geschehen, um das Wasser zu reinigen; die östliche Tradition entfaltete das zum Fest der Theophanie am sechsten Januar, an dem Gewässer gesegnet werden. Der Westen deutete es vor allem als Vorbild und als Einsetzung der Taufe.\n\nDie Schelte gegen die Pharisäer hat eine schwere Wirkung. Über Jahrhunderte wurde das Wort Pharisäer im Deutschen zum Schimpfwort für Heuchelei, und die Scheltreden des Matthäusevangeliums haben daran großen Anteil. Historisch waren die Pharisäer eine Erneuerungsbewegung, die die Frömmigkeit aus dem Tempel in den Alltag holte, und die spätere rabbinische Tradition steht in ihrer Linie. Die Kirchen haben diesen Sprachgebrauch seit den sechziger Jahren des 20. Jahrhunderts ausdrücklich zurückgewiesen; im Wörterbuch steht er weiter.\n\nDer Ruf, sich nicht auf die Abstammung zu berufen, ist in der christlichen Predigt oft gegen das Judentum gewendet worden. Im Text ist er innerjüdische Kritik, wie sie die Propheten seit Amos üben.\n\nDie Frage nach einer Verbindung zwischen Johannes und der Gemeinschaft am Toten Meer wird seit dem Fund der Rollen 1947 diskutiert. Beide leben in der Wüste, beide berufen sich auf denselben Jesajavers, beide praktizieren Waschungen. Ein Beleg für eine Zugehörigkeit fehlt; die Unterschiede sind erheblich, denn Johannes tauft öffentlich und einmalig, während dort täglich und in Abgeschiedenheit gebadet wurde.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Die Wüste Juda fällt vom Bergland steil zum Jordangraben ab; der Fluss lag mehr als dreihundert Meter unter dem Meeresspiegel. Der Weg von Jerusalem hinunter dauerte einen Tag.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Rituelle Bäder waren verbreitet; in Jerusalem sind zahlreiche Tauchbecken ausgegraben. Neu war nicht das Wasser, sondern dass ein anderer taufte und dass es einmalig geschah.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Die Wurfschaufel warf das gedroschene Korn gegen den Wind; das schwerere Korn fiel zu Boden, die Spreu wurde fortgetragen. Gedroschen wurde auf einer festen Tenne am Ortsrand.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Die Schuhe zu tragen oder zu lösen war die Arbeit eines Sklaven, und zwar die geringste. Die Wendung beschreibt einen Abstand, der nicht zu überbrücken ist.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. he basileia ton ouranon',
+        rendered: 'das Himmelreich',
+        note: 'Matthäus vermeidet weitgehend das Wort Gott und umschreibt es mit Himmel – jüdischer Sprachgebrauch, der den Namen schont. Markus und Lukas sagen Reich Gottes.',
+      },
+      {
+        word: 'griech. endyma apo trichon kamelou',
+        rendered: 'ein Kleid von Kamelhaaren',
+        note: 'Die Königsbücher beschreiben Elia mit härenem Mantel und ledernem Gürtel. Die Kleidung ist ein sichtbares Zitat.',
+      },
+      {
+        word: 'griech. akrides kai meli agrion',
+        rendered: 'Heuschrecken und wilder Honig',
+        note: 'Beides war erlaubt und in der Wüste verfügbar. Es ist die Nahrung dessen, der nichts anbaut und nichts kauft.',
+      },
+      {
+        word: 'griech. gennemata echidnon',
+        rendered: 'Ihr Otterngezüchte',
+        note: 'Eine der schärfsten Anreden des Neuen Testaments. Matthäus richtet sie an Pharisäer und Sadduzäer, während Markus die Menge nennt.',
+      },
+      {
+        word: 'griech. to ptyon',
+        rendered: 'seine Wurfschaufel',
+        note: 'Das Werkzeug beim Worfeln. Das Bild meint keine Vernichtung, sondern eine Scheidung, wie sie zu jeder Ernte gehörte.',
+      },
+      {
+        word: 'griech. plerosai pasan dikaiosynen',
+        rendered: 'alle Gerechtigkeit zu erfüllen',
+        note: 'Der Satz steht nur bei Matthäus und löst die Schwierigkeit, warum der Größere sich vom Geringeren taufen lässt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Taufe ist Theophanie: Der Dreieine zeigt sich, und das Wasser wird geheiligt. Am sechsten Januar werden darum Flüsse und Meere gesegnet.',
+      },
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Christus heiligt das Wasser und setzt damit das Sakrament ein. Das Gespräch mit dem Täufer zeigt, dass er sich freiwillig unter die Sünder stellt.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Buße ist Umkehr des ganzen Menschen und nicht eine Leistung. Luther bestand darauf, dass das griechische Wort Sinnesänderung meint und nicht das Bußwerk.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Taufe gilt als gesichert, weil sie erklärungsbedürftig war: Matthäus fügt ein Gespräch ein, Lukas kürzt, Johannes lässt sie weg. Josephus bezeugt den Täufer unabhängig.',
+      },
+      {
+        tradition: 'Christlich-jüdischer Dialog',
+        text: 'Die Zuspitzung auf Pharisäer und Sadduzäer spiegelt den Streit nach dem Jahr siebzig. Der Gebrauch des Wortes Pharisäer als Schimpfwort ist von den Kirchen zurückgewiesen worden.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 40, verse: 3, note: 'Die Stimme in der Wüste' },
+      { book: '2koe', chapter: 1, verse: 8, note: 'Elia im härenen Kleid' },
+      { book: 'mal', chapter: 4, verse: 5, note: 'Elia kommt zuvor' },
+      { book: 'mk', chapter: 1, verse: 11, note: 'Die Stimme spricht dort zu ihm' },
+      { book: 'apg', chapter: 19, verse: 3, note: 'Die Taufe des Johannes in Ephesus' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 4,
+    from: 12,
+    to: 25,
+    title: '„ich will euch zu Menschenfischern machen“',
+    historicalShort:
+      'Der Umzug nach Kapernaum, vier Fischer am Ufer und der Anfang eines Zulaufs, der bis nach Syrien reicht.',
+    historicalLong:
+      'Der Wechsel von Nazareth nach Kapernaum ist mehr als ein Ortswechsel. Nazareth lag im Binnenland abseits der Wege; Kapernaum lag an der Straße, die vom Mittelmeer nach Damaskus führte, hatte einen Hafen, eine Zollstation und mehrere hundert Einwohner. Wer von dort aus arbeitete, erreichte Reisende und Waren. Die Ausgrabungen haben eine Synagoge des vierten oder fünften Jahrhunderts freigelegt, deren Fundament auf einem älteren Bau aus schwarzem Basalt steht, sowie ein Wohnhaus, das seit dem ersten Jahrhundert baulich hervorgehoben und später überbaut wurde; die Überlieferung nennt es das Haus des Petrus.\n\nDas Jesajazitat ist für Matthäus programmatisch. Sebulon und Naftali waren die Gebiete, die im achten Jahrhundert vor Christus als erste an Assyrien fielen; das Wort vom heidnischen Galiläa bezeichnet die Folge – eine gemischte Bevölkerung. Wer sein Buch mit einem Stammbaum beginnt und mit der Sendung zu allen Völkern schließt, setzt diesen Anfang bewusst.\n\nDie Berufungsszene ist knapp und formelhaft. Sie folgt einem Muster, das die Königsbücher an der Berufung Elisas zeigen: Der Berufende geht vorüber, ruft, und der Gerufene lässt sein Werkzeug liegen. Elisa bittet dort noch, sich verabschieden zu dürfen; hier fehlt selbst das. Die Knappheit ist Absicht, nicht Bericht.\n\nDas Bild vom Menschenfischer hat eine unerwartete Vorgeschichte. Bei Jeremia lässt Gott Fischer aussenden, um das Volk aus seinen Schlupfwinkeln zu holen – ein Gerichtswort. Auch bei Hesekiel und Amos steht das Netz für das Einholen zum Gericht. Wer die Wendung zum ersten Mal hörte, hörte darin nicht ohne Weiteres etwas Freundliches. Erst der Zusammenhang kehrt das Bild um.\n\nDie Notiz, sein Ruf sei nach Syrien gedrungen, fällt auf: Für einen Wanderprediger in Galiläa ist Syrien der nächstliegende auswärtige Bezugspunkt, wenn man dort schreibt. Sie gehört zu den Gründen, die für Antiochia oder eine andere syrische Stadt als Ort der Abfassung sprechen.',
+    reception:
+      'Der Fisch wurde zum frühesten christlichen Erkennungszeichen. Das griechische Wort für Fisch ergibt als Anfangsbuchstabenreihe ein Bekenntnis: Jesus Christus, Gottes Sohn, Retter. In den Katakomben und auf Grabsteinen des zweiten und dritten Jahrhunderts ist das Zeichen häufig, oft ohne weitere Erklärung.\n\nDas Wort vom Menschenfischer ist zur Berufsbezeichnung ganzer Bewegungen geworden. Die Mission des 19. Jahrhunderts nannte sich danach, und die Erweckungsbewegungen des 20. Jahrhunderts gebrauchten es als Titel für Werbeschriften. Kritisch angemerkt wird dabei, dass ein Fisch beim Fangen nicht gefragt wird – das Bild trägt eine Zwiespältigkeit in sich, die in der Missionsgeschichte real geworden ist, wo Zwang und Verkündigung sich vermischten.\n\nDie Knappheit der Berufungsszene hat die Ordensgeschichte geprägt. Antonius, Franziskus und viele nach ihnen verstanden das sofortige Verlassen wörtlich; die Regel des Benedikt fordert dagegen ein Jahr der Prüfung, bevor jemand eintritt. Beide Linien berufen sich auf denselben Text.\n\nKapernaum ist seit dem vierten Jahrhundert Pilgerort. Die Pilgerin Egeria beschreibt das Haus, das in eine Kirche verwandelt worden sei. Über dem Fundort steht seit 1990 ein moderner Kirchenbau auf Stelzen, der den Blick auf die Grabung freilässt – eine bauliche Antwort auf die Frage, wie man einen umstrittenen Ort ehrt, ohne ihn zu verdecken.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Am See wurde mit Wurfnetzen vom Ufer und mit Zugnetzen vom Boot gefischt; das Flicken der Netze war tägliche Arbeit. Zebedäus hatte nach Markus Tagelöhner, war also kein Kleinstbetrieb.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Der Fischfang war abgabepflichtig; wer fischen wollte, brauchte eine Erlaubnis der Verwaltung des Antipas. In Kapernaum stand eine Zollstation an der Grenze zum Gebiet des Philippus.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Kapernaum lag an der Straße vom Mittelmeer nach Damaskus, am Nordufer des Sees. Nazareth lag im Binnenland abseits der Wege, gut dreißig Kilometer entfernt.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Söhne arbeiteten im Betrieb des Vaters und erbten ihn; ihn zu verlassen, hieß, die Versorgung der Familie zu gefährden. Der Bruch war nicht nur beruflich.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. Galilaia ton ethnon',
+        rendered: 'das heidnische Galiläa',
+        note: 'Wörtlich: Galiläa der Völker. Der Ausdruck erinnert an die assyrische Eroberung und die gemischte Bevölkerung, die daraus folgte.',
+      },
+      {
+        word: 'griech. halieis anthropon',
+        rendered: 'Menschenfischern',
+        note: 'Bei Jeremia und Hesekiel steht das Fischen nach Menschen für das Gericht. Der Zusammenhang hier kehrt das Bild um.',
+      },
+      {
+        word: 'griech. Kapharnaoum',
+        rendered: 'Kapernaum',
+        note: 'Dorf des Nahum. Der Ort lag an der Fernstraße nach Damaskus und hatte Hafen und Zollstation.',
+      },
+      {
+        word: 'griech. seleniazomenous kai paralytikous',
+        rendered: 'die Mondsüchtigen und Gichtbrüchigen',
+        note: 'Die erste Bezeichnung meint Anfallsleiden, die man dem Mond zuschrieb; die zweite Lähmungen. Beides sind antike Krankheitsnamen, keine Diagnosen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Berufung der Vier steht am Anfang der apostolischen Sendung. Kapernaum wird seit dem vierten Jahrhundert als Wirkungsort verehrt; über dem Haus des Petrus steht ein Kirchenbau.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Ruf ergeht mitten in die Arbeit hinein und nicht in einen besonderen Stand. Luther zog daraus, dass die Nachfolge im Beruf geschieht und nicht durch dessen Aufgabe.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das sofortige Verlassen der Netze gilt als Bild der ungeteilten Hinwendung. Die Mönchstradition sieht darin ihre Grundlage.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Szene folgt dem Muster der Berufung Elisas und ist formelhaft erzählt. Der Hinweis auf Syrien gehört zu den Gründen, dort den Ort der Abfassung zu vermuten.',
+      },
+      {
+        tradition: 'Missionsgeschichtlicher Befund',
+        text: 'Das Bild vom Menschenfischer wurde zum Namen ganzer Bewegungen. Kritisch angemerkt wird, dass ein Fisch beim Fangen nicht gefragt wird – eine Zwiespältigkeit, die real geworden ist.',
+      },
+    ],
+    crossRefs: [
+      { book: 'jes', chapter: 9, verse: 1, note: 'Der Weg am Meer, der Heiden Galiläa' },
+      { book: 'jer', chapter: 16, verse: 16, note: 'Fischer, die zum Gericht einholen' },
+      { book: '1koe', chapter: 19, verse: 19, note: 'Die Berufung Elisas' },
+      { book: 'mt', chapter: 28, verse: 19, note: 'Machet zu Jüngern alle Völker' },
+      { book: 'mk', chapter: 1, verse: 16, note: 'Dieselbe Szene bei Markus' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 4 Abschnitte */
+  {
+    book: 'mt',
+    chapter: 5,
+    from: 1,
+    to: 2,
+    title: '„ging er auf einen Berg und setzte sich“',
+    historicalShort:
+      'Zwei Verse, die den Rahmen setzen: der Berg, die sitzende Haltung, der Kreis der Nächsten und das Volk dahinter.',
+    historicalLong:
+      'Die kürzeste Szene des Evangeliums trägt die längste Rede. Jeder ihrer Züge ist gesetzt. Der Berg ist bei Matthäus ein wiederkehrender Ort: hier die Rede, später die Verklärung, am Ende der Sendungsauftrag. Wer ein Buch schreibt, das die Anfangserzählungen im Muster der Mosegeschichte anlegt, lässt die erste große Rede nicht zufällig auf einem Berg ergehen. Lukas hat dieselben Worte teilweise, aber an ebener Stätte – die Ortsangabe ist Auslegung und nicht Topografie.\n\nDas Sitzen war die Haltung des Lehrers, nicht die des Redners. Ein Wanderprediger, der eine Menge anspricht, steht; wer sitzt, unterrichtet Schüler. Später wird von dem Stuhl des Mose gesprochen, auf dem die Schriftgelehrten sitzen; in ausgegrabenen Synagogen Galiläas hat man solche steinernen Sitze gefunden. Die Haltung ordnet die Rede also einer Schule zu.\n\nDie Zuhörerschaft ist doppelt beschrieben, und diese Doppelung trägt weit. Die Jünger treten heran, das Volk ist da – am Ende der Rede heißt es, das Volk habe sich über die Lehre entsetzt. Die Frage, an wen die Bergpredigt gerichtet ist, hängt an diesen beiden Versen: an einen engeren Kreis, der Besonderes leisten soll, oder an alle. Von der Antwort hängt ab, ob man ihre Forderungen für zumutbar hält.\n\nDie Wendung, er habe seinen Mund aufgetan, ist eine feierliche Formel der griechischen Bibel; sie leitet dort gewichtige Reden ein. Matthäus signalisiert damit, dass nun etwas von Rang folgt.\n\nDie Rede selbst ist eine Sammlung. Ein Drittel ihres Stoffes findet sich bei Lukas verstreut über sein ganzes Buch, oft in anderen Zusammenhängen. Matthäus hat aus umlaufendem Überlieferungsgut fünf große Reden gebaut, die sein Buch gliedern; jede schließt mit derselben Wendung, dass Jesus diese Rede vollendet hatte. Ob die Fünfzahl auf die fünf Bücher Mose anspielt, wird diskutiert.',
+    reception:
+      'Der Ort ist seit dem vierten Jahrhundert Gegenstand der Pilgerfahrt. Egeria beschreibt eine Höhle nahe Kapernaum; die heutige Kirche der Seligpreisungen über dem Nordufer des Sees stammt von 1938. Ein bestimmter Berg lässt sich nicht bezeichnen, denn die Gegend kennt nur Hügel.\n\nDie Frage, an wen die Rede gerichtet sei, hat die Auslegungsgeschichte geteilt. Die mittelalterliche Unterscheidung zwischen Geboten für alle und Räten für die Vollkommenen ordnete die härteren Forderungen dem Ordensstand zu; die Reformatoren wiesen diese Zweiteilung zurück und hielten fest, dass die Rede allen gilt. Im 19. Jahrhundert kam die Deutung auf, sie beschreibe eine kommende Ordnung und sei für die Gegenwart nicht gedacht; im 20. verstand man sie als Bußspiegel, der die eigene Unfähigkeit zeigt. Alle vier Deutungen sind bis heute in Gebrauch.\n\nDie Wirkung der Bergpredigt reicht weit über die Kirchen hinaus. Tolstoi legte sie seiner Lehre vom Widerstand ohne Gewalt zugrunde, Gandhi las sie neben der Bhagavadgita und nannte sie eine der Quellen seines Handelns, Martin Luther King bezog sich in seinen Reden ausdrücklich auf sie. Diese Wirkungslinie ist so stark, dass die Rede heute vielen bekannt ist, die sonst nichts aus dem Neuen Testament kennen.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Am Nordwestufer des Sees steigt das Gelände sanft an; die Hänge bilden eine natürliche Mulde, in der eine Stimme weit trägt. Einen Berg im eigentlichen Sinn gibt es dort nicht.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Lehrer saß, seine Schüler standen oder saßen zu seinen Füßen. In ausgegrabenen Synagogen Galiläas sind steinerne Lehrsitze gefunden worden.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Wer eine Rede weitergeben wollte, lernte sie auswendig; Merkverse, Dreierreihen und Gegensatzpaare erleichterten das. Der Aufbau der Rede zeigt diese Formen durchgehend.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Berge galten als Orte der Gottesbegegnung – Sinai, Karmel, Zion. Wer auf einem Berg lehrte, stellte sich in diese Reihe, ohne es sagen zu müssen.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. anebe eis to oros',
+        rendered: 'ging er auf einen Berg',
+        note: 'Dieselbe Wendung gebraucht die griechische Bibel für den Aufstieg des Mose. Lukas verlegt vergleichbare Worte an eine ebene Stätte.',
+      },
+      {
+        word: 'griech. ekathisen',
+        rendered: 'und setzte sich',
+        note: 'Die Haltung des Lehrers, nicht des Redners. Sie ordnet die folgende Rede einer Schule zu und nicht einer Ansprache.',
+      },
+      {
+        word: 'griech. anoixas to stoma autou',
+        rendered: 'Und er tat seinen Mund auf',
+        note: 'Eine feierliche Formel der griechischen Bibel, die gewichtige Reden einleitet. Sie kündigt an, dass etwas von Rang folgt.',
+      },
+      {
+        word: 'griech. hoi mathetai autou',
+        rendered: 'seine Jünger',
+        note: 'Wörtlich die Lernenden. Neben ihnen bleibt das Volk anwesend – an dieser Doppelung hängt die Frage, wem die Rede gilt.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Rede gilt allen Getauften, kennt aber Formen besonderer Nachfolge. Die frühere Unterscheidung zwischen Geboten und Räten hat die Kirche nicht aufgegeben, aber neu eingeordnet.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Es gibt keine zwei Stufen christlichen Lebens; die Rede gilt allen. Luther wandte sich scharf gegen die Zweiteilung in Gebote für die Menge und Räte für die Klöster.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der Berg ist Ort der Begegnung; die Rede beschreibt den Weg der Vergöttlichung. Die Seligpreisungen werden in der Liturgie gesungen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Rede ist eine Sammlung; ein Drittel ihres Stoffes steht bei Lukas verstreut. Matthäus baut daraus die erste von fünf Reden, die sein Buch gliedern.',
+      },
+      {
+        tradition: 'Wirkung außerhalb der Kirchen',
+        text: 'Tolstoi, Gandhi und Martin Luther King haben sich ausdrücklich auf diese Rede berufen. Sie ist vielen bekannt, die sonst nichts aus dem Neuen Testament kennen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 7, verse: 28, note: 'Der Schluss der Rede' },
+      { book: 'lk', chapter: 6, verse: 17, note: 'Bei Lukas an ebener Stätte' },
+      { book: '2mo', chapter: 19, verse: 3, note: 'Mose steigt auf den Berg' },
+      { book: 'mt', chapter: 23, verse: 2, note: 'Der Stuhl des Mose' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 5,
+    from: 13,
+    to: 13,
+    title: '„Ihr seid das Salz der Erde“',
+    historicalShort:
+      'Ein Bild aus der Küche und vom Feld – und ein Nebensatz, der Auslegern seit jeher Kopfzerbrechen macht.',
+    historicalLong:
+      'Salz hatte in der Antike mehrere Verwendungen, und jede von ihnen ist als Hintergrund vorgeschlagen worden. Es würzte, es konservierte Fisch und Fleisch, es gehörte zu jedem Opfer nach dem dritten Buch Mose, es diente als Dünger in kleinen Mengen und als Mittel, den Verbrennungsvorgang in einem Ofen zu befördern. Der Zusatz, das untaugliche Salz werde hinausgeworfen und zertreten, spricht am ehesten für den Weg vom Haus auf die Straße – Abfall wurde dorthin gekippt.\n\nDer Nebensatz ist naturkundlich unmöglich: Natriumchlorid verliert seinen Geschmack nicht. Erklärungsversuche gibt es viele. Das im Land gebräuchliche Salz stammte aus der Verdunstung am Toten Meer und war stark mit Gips und anderen Mineralien vermischt; wenn der lösliche Anteil ausgewaschen wurde, blieb ein weißer Rückstand, der aussah wie Salz und keinen Geschmack hatte. Andere verweisen auf ein aramäisches Wortspiel oder halten den Satz für bewusst widersinnig – ein Bild, das gerade dadurch haftet, dass es nicht aufgeht.\n\nLuthers Wort dumm ist bemerkenswert. Das griechische Verb bedeutet töricht werden; dieselbe Wurzel steckt im Wort für den Narren. Wörtlich steht dort also, das Salz werde dumm. Andere Übersetzungen schreiben schal oder kraftlos und verlieren dabei den Doppelklang.\n\nDer Satz ist eine Feststellung, keine Aufforderung: Ihr seid es. Was folgt, ist keine Bedingung, unter der man es wird, sondern die Beschreibung dessen, was geschieht, wenn das Eigene verlorengeht. Dieselbe Bauform hat der Satz über das Licht, der unmittelbar folgt.',
+    reception:
+      'Kaum ein biblisches Bild ist so vollständig in die Alltagssprache übergegangen. Das Salz in der Suppe, das Salz der Erde als Bezeichnung für bodenständige, verlässliche Menschen – beide Wendungen gehen auf diesen Vers zurück und werden längst ohne Kenntnis der Herkunft gebraucht. Im Englischen ist salt of the earth ein gängiges Lob.\n\nIn der Auslegung wurde der Vers oft auf die Kirche in der Gesellschaft bezogen. Die Deutung reicht von einer Minderheit, die dem Ganzen Geschmack gibt, bis zu einer Kraft, die Fäulnis aufhält. Beide Richtungen sind vom Bild gedeckt; die zweite hat in Zeiten politischer Bedrängnis Gewicht bekommen, etwa in den Kirchenkampfschriften der dreißiger Jahre.\n\nDer Salzbund des Alten Testaments – ein Bund, der mit Salz geschlossen wird und darum unauflöslich ist – hat eine eigene Auslegungslinie begründet. Die Ostkirchen verwenden Salz bei der Taufvorbereitung, und die römische Ordnung kannte bis 1969 das Salz auf der Zunge des Täuflings.\n\nGandhis Salzmarsch von 1930 gegen das britische Salzmonopol hat dem Bild in Indien eine politische Aufladung gegeben; christliche Gruppen dort haben den Vers seither in diesem Zusammenhang gelesen.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Salz wurde am Toten Meer durch Verdunstung gewonnen und war mit Gips und anderen Mineralien vermischt; wusch der Regen den löslichen Anteil aus, blieb ein geschmackloser Rückstand.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ohne Kühlung war Salz das wichtigste Mittel zur Haltbarmachung; Fisch aus dem See wurde eingesalzen und ging so bis nach Rom. Abfall kippte man auf die Gasse.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Jedes Speisopfer musste nach dem dritten Buch Mose gesalzen werden. Salz stand für Dauer, weshalb ein unauflöslicher Bund ein Salzbund hieß.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Salz war besteuert und in vielen Reichen ein staatliches Vorrecht; römische Soldaten erhielten einen Zuschuss dafür, aus dem das Wort Sold hervorging.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. to halas tes ges',
+        rendered: 'das Salz der Erde',
+        note: 'Eine Feststellung, keine Aufforderung. Derselbe Bau kehrt im folgenden Satz über das Licht wieder.',
+      },
+      {
+        word: 'griech. moranthe',
+        rendered: 'dumm wird',
+        note: 'Wörtlich: töricht werden. Dieselbe Wurzel steckt im Wort für den Narren; Luther gibt den Doppelklang wieder, andere Übersetzungen schreiben schal.',
+      },
+      {
+        word: 'griech. eis ouden ischyei',
+        rendered: 'zu nichts nütze',
+        note: 'Der Ausdruck meint Untauglichkeit, nicht Wertlosigkeit. Was folgt, beschreibt den gewöhnlichen Weg des Abfalls auf die Gasse.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Gemeinde wirkt als kleine Größe auf das Ganze. Die römische Ordnung kannte bis 1969 das Salz auf der Zunge des Täuflings als Zeichen der Weisheit.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Satz stellt fest, was die Glaubenden sind, und fordert es nicht ein. Die Warnung gilt der Möglichkeit, das Eigene zu verlieren, nicht der Anstrengung, es zu erwerben.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Salz steht für die bewahrende Kraft der Kirche in der Welt. In der Taufvorbereitung wird Salz verwendet, in Anlehnung an den Salzbund der Schrift.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Nebensatz ist naturkundlich unmöglich; das im Land übliche Salz war jedoch stark verunreinigt. Ob ein aramäisches Wortspiel dahintersteht, ist offen.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 2, verse: 13, note: 'Jedes Speisopfer wird gesalzen' },
+      { book: '4mo', chapter: 18, verse: 19, note: 'Ein ewiger Salzbund' },
+      { book: 'mk', chapter: 9, verse: 50, note: 'Habt Salz bei euch' },
+      { book: 'kol', chapter: 4, verse: 6, note: 'Eure Rede mit Salz gewürzt' },
+      { book: 'mt', chapter: 5, verse: 14, note: 'Der Satz über das Licht' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 5,
+    from: 17,
+    to: 32,
+    title: '„Ich bin nicht gekommen, aufzulösen, sondern zu erfüllen“',
+    historicalShort:
+      'Erst die schärfste Bestätigung des Gesetzes im ganzen Neuen Testament – und dann vier Sätze, die es überbieten.',
+    historicalLong:
+      'Der Eröffnungssatz ist so entschieden formuliert, dass er der paulinischen Rede von der Freiheit vom Gesetz entgegenzustehen scheint. Kein Buchstabe soll vergehen, und wer das kleinste Gebot auflöst, wird der Kleinste heißen. Die Spannung zwischen dieser Stelle und den Paulusbriefen gehört zu den härtesten innerhalb des Neuen Testaments und ist nie aufgelöst worden. Sie zeigt, dass die frühen Gemeinden die Frage, wie das Gesetz gilt, unterschiedlich beantworteten – und dass beide Antworten in den Kanon aufgenommen wurden.\n\nDas entscheidende Wort ist erfüllen. Es meint nicht ausführen, sondern zur Fülle bringen: den Sinn eines Gebots so weit ausziehen, dass sein Ziel sichtbar wird. Genau das geschieht in den folgenden Sätzen. Sie werden Antithesen genannt, doch der Name führt in die Irre, denn sie heben nicht auf, sondern verschärfen. Nicht töten wird zu nicht zürnen, nicht ehebrechen zu nicht begehren. Die Bewegung geht von der Tat zum Beweggrund.\n\nDie Form ist im Judentum der Zeit nicht ohne Vorbild, aber die Wucht ist ungewöhnlich. Ein Lehrer beruft sich sonst auf eine Kette von Gewährsleuten; hier steht ein Ich aber sage euch neben dem, was zu den Alten gesagt ist. Diese Redeweise ist es, die am Ende der Rede als Vollmacht wahrgenommen wird.\n\nDas Wort Racha ist ein aramäischer Schimpf, etwa Hohlkopf. Die dreistufige Steigerung – Gericht, Rat, höllisches Feuer – ist keine Rechtsordnung, sondern eine rhetorische Figur: Sie führt vom örtlichen Gericht über die oberste Instanz zu einer Instanz, die keine irdische mehr ist.\n\nDie Scheidungsregel hier weicht von der markinischen ab. Matthäus fügt eine Ausnahme ein, die Markus nicht kennt; das griechische Wort dafür ist unbestimmt und bedeutet Unzucht in einem weiten Sinn. Ob es Ehebruch meint, eine verbotene Verwandtenehe oder eine vorehelich verschwiegene Beziehung, wird seit der Alten Kirche diskutiert. An dieser Unbestimmtheit hängen ganze Kirchenordnungen.',
+    reception:
+      'Die Ausnahmeklausel hat das Eherecht der Kirchen geformt. Die orthodoxen Kirchen leiten daraus die Möglichkeit einer Scheidung bei Ehebruch ab; die reformatorischen folgten ihnen und erweiterten die Gründe im Lauf der Jahrhunderte. Die katholische Kirche deutet die Klausel anders und hält an der Unauflöslichkeit fest – die Ehen, die für ungültig erklärt werden, gelten als nie geschlossen und nicht als geschieden. Drei Ordnungen, ein Vers.\n\nDas Wort über den begehrlichen Blick hat eine belastete Wirkungsgeschichte. Es wurde jahrhundertelang so ausgelegt, dass die Verantwortung bei der angeblich zum Anlass werdenden Frau lag; Kleiderordnungen und die Verhüllungspflichten in kirchlichen Räumen sind zum Teil damit begründet worden. Der Text spricht ausschließlich vom Blickenden und legt ihm allein die Verantwortung auf. Die feministische Auslegung hat darauf seit den siebziger Jahren nachdrücklich hingewiesen.\n\nDie Bilder von Auge und Hand sind fast durchgehend als Übertreibung verstanden worden. Origenes soll sie im dritten Jahrhundert wörtlich genommen haben; die Alte Kirche wies solche Wörtlichkeit zurück, und das Kirchenrecht verbot später die Selbstverstümmelung ausdrücklich.\n\nDie Anweisung, das Opfer am Altar liegen zu lassen und sich zuvor zu versöhnen, hat den Friedensgruß in der Liturgie geprägt. In der römischen Messe steht er vor der Kommunion, in mehreren östlichen Ordnungen vor der Gabenbereitung – näher am Wortlaut dieser Stelle.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Örtliche Gerichte mit sieben Mitgliedern entschieden in kleineren Sachen; schwere Fälle kamen vor den Hohen Rat. Wer eine Schuld nicht zahlte, konnte in Schuldhaft geraten.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Wer opfern wollte, brachte das Tier oder die Gabe selbst zum Altar und legte die Hand darauf. Den Vorgang abzubrechen und wegzugehen, war ein sichtbarer Vorgang vor allen Umstehenden.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Eine verstoßene Frau hatte keine Versorgung und musste zur Familie zurück oder erneut heiraten. Die Regelung der Scheidung war darum vor allem eine Frage ihres Auskommens.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Der Rock war das Untergewand, der Mantel das Übergewand, das zugleich als Decke diente. Wer beides verlor, stand ohne Schutz für die Nacht da.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. plerosai',
+        rendered: 'zu erfüllen',
+        note: 'Nicht ausführen, sondern zur Fülle bringen: den Sinn eines Gebots so weit ausziehen, dass sein Ziel sichtbar wird.',
+      },
+      {
+        word: 'griech. iota hen e mia keraia',
+        rendered: 'der kleinste Buchstabe noch ein Tüttel',
+        note: 'Gemeint sind der kleinste hebräische Buchstabe und ein Häkchen daran. Die Wendung beschreibt äußerste Genauigkeit.',
+      },
+      {
+        word: 'aram. reka',
+        rendered: 'Racha',
+        note: 'Ein aramäischer Schimpf, etwa Hohlkopf. Matthäus lässt das fremde Wort stehen, wie er es mit wenigen anderen tut.',
+      },
+      {
+        word: 'griech. pros to epithymesai auten',
+        rendered: 'ihrer zu begehren',
+        note: 'Der Satz spricht ausschließlich vom Blickenden. Die Verantwortung liegt nach dem Wortlaut allein bei ihm.',
+      },
+      {
+        word: 'griech. parektos logou porneias',
+        rendered: 'es sei denn um Ehebruch',
+        note: 'Das griechische Wort ist unbestimmt und meint Unzucht in weitem Sinn. Markus kennt die Ausnahme nicht; an ihr hängen ganze Kirchenordnungen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Klausel begründet keine Scheidung; die Ehe bleibt unauflöslich. Was aufgelöst wird, ist eine Ehe, die nie gültig zustande kam.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Bei Ehebruch ist eine Trennung möglich; die Kirche kennt die Nachsicht gegenüber gescheiterten Menschen. Eine zweite Ehe wird mit einem Bußgebet geschlossen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Verschärfungen zeigen, dass niemand das Gesetz erfüllt, und treiben zur Gnade. Luther las die Reihe als Spiegel und zugleich als Weisung für das Leben in der Welt.',
+      },
+      {
+        tradition: 'Jüdische Sicht',
+        text: 'Die Form ist der rabbinischen Auslegung nicht fremd; ungewöhnlich ist die Vollmacht, mit der hier gesprochen wird. Der Satz über den Bestand des Gesetzes gilt als bemerkenswert deutlich.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Spannung zu den Paulusbriefen ist real und nicht aufgelöst; beide Antworten stehen im Kanon. Matthäus schreibt für eine Gemeinde, die die Tora weiterhin hielt.',
+      },
+      {
+        tradition: 'Feministische Auslegung',
+        text: 'Das Wort über den Blick ist jahrhundertelang gegen Frauen gewendet worden, bis hin zu Kleiderordnungen. Der Wortlaut nimmt ausschließlich den Blickenden in die Pflicht.',
+      },
+    ],
+    crossRefs: [
+      { book: '2mo', chapter: 20, verse: 13, note: 'Du sollst nicht töten' },
+      { book: '5mo', chapter: 24, verse: 1, note: 'Die Vorschrift vom Scheidebrief' },
+      { book: 'mk', chapter: 10, verse: 11, note: 'Dieselbe Regel ohne Ausnahme' },
+      { book: 'roem', chapter: 10, verse: 4, note: 'Christus ist des Gesetzes Ende' },
+      { book: 'jak', chapter: 2, verse: 10, note: 'Wer eines übertritt, ist aller schuldig' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 5,
+    from: 33,
+    to: 48,
+    title: '„Liebet eure Feinde“',
+    historicalShort:
+      'Kein Eid, kein Zurückschlagen, kein Unterschied zwischen Freund und Feind – die drei Forderungen, an denen sich die Auslegung entscheidet.',
+    historicalLong:
+      'Das Verbot des Schwörens richtet sich nicht gegen den Meineid, sondern gegen den Eid überhaupt. Der Hintergrund ist eine verbreitete Praxis: Man schwor bei allem Möglichen außer bei Gott selbst, weil ein solcher Eid als weniger bindend galt. Das Mischnatraktat über Gelübde erörtert ausführlich, welche Schwurformeln verpflichten und welche nicht. Der Einwand hier zieht die Unterscheidung ein – Himmel, Erde und Jerusalem gehören alle Gott, und wer bei ihnen schwört, schwört bei ihm. Was bleibt, ist eine Rede, der man ohne Beteuerung glauben kann.\n\nAuge um Auge ist die meistmissverstandene Rechtsformel der Bibel. Sie steht dreimal in der Tora und begrenzt die Vergeltung, statt sie zu fordern: nicht mehr als ein Auge für ein Auge, nicht die Sippe für den Einzelnen. Gegenüber der Blutrache älterer Ordnungen war sie ein Fortschritt, und die rabbinische Auslegung setzte an ihre Stelle regelmäßig eine Geldbuße. Der Satz überbietet also nicht ein grausames Gesetz, sondern eine bereits begrenzende Regel.\n\nDie drei Beispiele sind genau gewählt. Ein Schlag auf die rechte Wange ist mit der rechten Hand ein Schlag mit dem Handrücken – eine Geste der Herabsetzung gegenüber einem Untergebenen, keine Prügelei. Das Untergewand einzuklagen, war bei Schulden möglich; das Obergewand nicht, denn es diente als Decke, und die Tora untersagt, es über Nacht zu behalten. Wer es dennoch hergibt, steht entblößt da und macht die Lage sichtbar. Die Meile schließlich meint ein römisches Recht: Soldaten konnten Einheimische zwingen, Lasten eine Meile weit zu tragen. Alle drei Beispiele beschreiben Menschen ohne Macht, und alle drei drehen die Lage um, ohne sie gewaltsam zu ändern.\n\nDer Satz über den Feindeshass hat keine Vorlage. Das Gebot der Nächstenliebe steht im dritten Buch Mose, die zweite Hälfte steht nirgends in der Schrift. Eine ähnliche Formulierung findet sich in der Gemeinderegel vom Toten Meer, wo von der Liebe zu den Söhnen des Lichts und dem Hass gegen die Söhne der Finsternis die Rede ist. Ob Matthäus darauf anspielt oder eine geläufige Redensart aufgreift, ist offen.\n\nDas Schlusswort vollkommen gibt ein Wort wieder, das im Hebräischen Ganzheit meint, nicht Fehlerlosigkeit. Lukas hat an derselben Stelle barmherzig.',
+    reception:
+      'Das Eidverbot hat Rechtsgeschichte gemacht. Die Waldenser, die Täufer und später die Quäker weigerten sich zu schwören und nahmen dafür Verfolgung in Kauf; in England wurden Quäker jahrzehntelang von öffentlichen Ämtern und Gerichten ferngehalten, weil sie den Eid verweigerten. Die schrittweise Einführung der Bekräftigung anstelle des Eides in den Rechtsordnungen Europas und Nordamerikas geht auf ihren Widerstand zurück. Das deutsche Recht kennt sie heute ausdrücklich.\n\nDie Feindesliebe ist der meistdiskutierte Satz der Bergpredigt. Die eine Linie versteht ihn als persönliche Haltung, die staatliches Handeln nicht bindet; Augustinus und Luther haben so unterschieden und damit den gerechten Krieg denkbar gemacht. Die andere Linie nimmt ihn als Absage an Gewalt überhaupt: die Täufer des 16. Jahrhunderts, die historischen Friedenskirchen, Tolstoi, Gandhi und die Bürgerrechtsbewegung. Beide berufen sich auf denselben Text, und der Streit ist so alt wie die Kirche.\n\nDietrich Bonhoeffer schrieb 1937 in seiner Auslegung dieser Verse die bekannteste deutsche Zeile darüber: Die Nachfolge ist Bindung an Christus allein. Dass er sieben Jahre später in ein Attentatsvorhaben verwickelt war und deshalb hingerichtet wurde, hat der Frage nach der Reichweite dieses Gebots eine Zuspitzung gegeben, die bis heute diskutiert wird.\n\nMartin Luther King nannte die Feindesliebe den Schlüssel zur Lösung der Probleme der Welt und stellte sie in den Mittelpunkt seiner Predigt von 1957 über diesen Abschnitt.',
+    world: [
+      {
+        aspect: 'recht',
+        text: 'Der Eid war das wichtigste Beweismittel vor Gericht; wer nicht schwor, konnte sein Recht kaum durchsetzen. Die Unterscheidung bindender und unverbindlicher Schwurformeln wird in der Mischna erörtert.',
+      },
+      {
+        aspect: 'macht',
+        text: 'Römische Soldaten konnten Einheimische zwingen, ihre Lasten eine Meile weit zu tragen. Das Recht dazu war eine der verhasstesten Alltagsseiten der Besatzung.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Schlag mit dem Handrücken war eine Geste der Herabsetzung gegenüber einem Untergebenen und wurde in Rechtstexten höher bebußt als ein gewöhnlicher Schlag.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Zöllner pachteten das Recht, Abgaben einzutreiben, und lebten von dem, was darüber hinausging. Sie galten als unrein und standen außerhalb der geachteten Gesellschaft.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. me omosai holos',
+        rendered: 'daß ihr überhaupt nicht schwören sollt',
+        note: 'Nicht der Meineid ist gemeint, sondern der Eid überhaupt. Der Hintergrund ist die Praxis, bei Ersatzgrößen zu schwören, um weniger gebunden zu sein.',
+      },
+      {
+        word: 'griech. nai nai ou ou',
+        rendered: 'Ja, ja; nein, nein',
+        note: 'Eine Rede, der man ohne Beteuerung glauben kann. Der Jakobusbrief nimmt die Forderung fast wörtlich auf.',
+      },
+      {
+        word: 'griech. ophthalmon anti ophthalmou',
+        rendered: 'Auge um Auge',
+        note: 'Die Formel begrenzt die Vergeltung, statt sie zu fordern. Die rabbinische Auslegung setzte an ihre Stelle regelmäßig eine Geldbuße.',
+      },
+      {
+        word: 'griech. angareusei milion hen',
+        rendered: 'nötigt eine Meile',
+        note: 'Das Verb stammt aus dem persischen Postwesen und meint die Zwangsdienstleistung. Römische Soldaten hatten dieses Recht gegenüber Einheimischen.',
+      },
+      {
+        word: 'griech. teleioi',
+        rendered: 'vollkommen',
+        note: 'Das zugrunde liegende hebräische Wort meint Ganzheit und Ungeteiltheit, nicht Fehlerlosigkeit. Lukas hat an derselben Stelle barmherzig.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die Feindesliebe ist allen aufgetragen; der Eid vor Gericht bleibt zulässig, weil er der Wahrheit dient. Die Lehre vom gerechten Krieg unterscheidet persönliches und staatliches Handeln.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Luther unterschied das Amt vom Menschen: Als Christ soll niemand widerstreben, als Amtsträger muss er das Recht schützen. Diese Unterscheidung ist bis heute umstritten.',
+      },
+      {
+        tradition: 'Täuferisch-friedenskirchliche Auslegung',
+        text: 'Der Verzicht auf Eid und Gegengewalt gilt ohne Ausnahme und ohne Rücksicht auf Ämter. Waldenser, Täufer und Quäker haben dafür Verfolgung in Kauf genommen.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Feindesliebe ist die Nachahmung Gottes, der über Gute und Böse regnen lässt. Sie gehört zum Weg der Reinigung des Herzens.',
+      },
+      {
+        tradition: 'Jüdische Sicht',
+        text: 'Der Satz vom Feindeshass hat in der Schrift keine Grundlage; die Tora gebietet, dem Feind sein verirrtes Tier zurückzubringen. Eine ähnliche Formulierung steht in der Gemeinderegel vom Toten Meer.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die drei Beispiele beschreiben durchweg Menschen ohne Macht und kehren die Lage um, ohne sie gewaltsam zu ändern. Sie sind nicht als allgemeine Regeln formuliert.',
+      },
+    ],
+    crossRefs: [
+      { book: '3mo', chapter: 19, verse: 18, note: 'Du sollst deinen Nächsten lieben' },
+      { book: '2mo', chapter: 21, verse: 24, note: 'Auge um Auge in der Tora' },
+      { book: '2mo', chapter: 23, verse: 4, note: 'Dem Feind sein Tier zurückbringen' },
+      { book: 'jak', chapter: 5, verse: 12, note: 'Das Eidverbot bei Jakobus' },
+      { book: 'roem', chapter: 12, verse: 20, note: 'Speise deinen Feind' },
+      { book: 'lk', chapter: 6, verse: 36, note: 'Seid barmherzig statt vollkommen' },
+    ],
+  },
+  /* ---------------------------------------------- Nachtrag: 5 Abschnitte */
+  {
+    book: 'mt',
+    chapter: 6,
+    from: 1,
+    to: 8,
+    title: '„gehe in dein Kämmerlein und schließ die Tür zu“',
+    historicalShort:
+      'Almosen, Gebet und Fasten – die drei Säulen der Frömmigkeit, jedes Mal mit derselben Warnung vor dem Publikum.',
+    historicalLong:
+      'Der Abschnitt behandelt in fester Reihenfolge, was im Judentum der Zeit als die drei Grundvollzüge galt: die Wohltätigkeit, das Gebet und das Fasten. Diese Zusammenstellung ist nicht neu, sie steht schon im Buch Tobit. Neu ist die Bauform: Jedes Mal folgt derselbe Dreischritt – wenn ihr das tut, macht es nicht so wie jene, sondern so; und jedes Mal endet die erste Hälfte mit demselben Satz, sie hätten ihren Lohn dahin.\n\nDas Wort, das Luther mit Heuchler wiedergibt, bezeichnet im Griechischen den Schauspieler. Es meint zunächst keine Lüge, sondern ein Spielen vor Zuschauern. Der Vorwurf lautet nicht, die Genannten meinten es nicht ernst, sondern sie hätten das falsche Gegenüber. Der Satz vom Lohn ist dabei ein kaufmännischer Ausdruck: Er stand auf Quittungen und bedeutet vollständig erhalten. Wer für die Anerkennung handelt, bekommt sie – die Rechnung ist beglichen.\n\nDas Posaunen vor dem Almosen ist als Brauch nirgends belegt. Möglicherweise steckt eine Anspielung dahinter: Die Opferstöcke im Tempelvorhof hatten nach der Mischna die Form gedrehter Hörner, und eine hineingeworfene Münze machte Lärm. Ebenso denkbar ist eine schlichte Übertreibung.\n\nDas Kämmerlein ist keine Andachtsecke. Das griechische Wort bezeichnet die Vorratskammer, in einem einfachen Haus meist der einzige Raum mit einer Tür, die sich schließen ließ – ein fensterloser Verschlag für Getreide und Werkzeug. Wer dort betete, tat es an dem einzigen Ort, an dem ihn niemand sah.\n\nDas viele Plappern spielt auf eine verbreitete Praxis an: Gebetstexte der Umwelt häuften Anrufungen und Namen, um die Gottheit sicher zu treffen; Zauberpapyri aus Ägypten zeigen ganze Ketten solcher Formeln. Der Einwand richtet sich gegen die Vorstellung, Länge und Genauigkeit erzwängen eine Antwort.',
+    reception:
+      'Die Spannung zu anderen Stellen desselben Buches ist offensichtlich. Wenige Verse zuvor heißt es, das Licht solle vor den Leuten leuchten, damit sie die guten Werke sehen. Beide Sätze stehen in derselben Rede. Die Auslegung hat daraus regelmäßig gefolgert, dass es nicht um Sichtbarkeit geht, sondern um die Absicht: Was gesehen wird, ist unschädlich – was um des Gesehenwerdens willen geschieht, nicht.\n\nDie Praxis der Kirchen ist dem nur teilweise gefolgt. Stifterbilder auf Altären, Namenstafeln in Kirchenschiffen, Fensterstiftungen mit Wappen und die Ablasspraxis des Spätmittelalters banden die Wohltätigkeit ausdrücklich an ihre öffentliche Sichtbarkeit. Die Reformatoren führten diesen Abschnitt gegen solche Formen an. Die heutige Diskussion um namentlich ausgewiesene Großspenden – in Kirchen wie in Stiftungen – berührt dieselbe Frage.\n\nDas Kämmerlein ist bei Luther zu einem Wort der deutschen Frömmigkeitsgeschichte geworden. Der Pietismus des 17. und 18. Jahrhunderts baute darauf die Praxis der stillen Andacht; die Stundenbücher und Erbauungsschriften jener Zeit gebrauchen den Ausdruck als feststehenden Begriff. Dass das griechische Wort eine Vorratskammer meint, ist dabei fast durchgehend übersehen worden.\n\nDie Kritik am vielen Plappern hat eine ungewollte Wendung genommen: Sie wurde in der Reformation gegen den wiederholten Rosenkranz und in der Neuzeit gegen liturgische Wiederholung überhaupt gerichtet. Die Ostkirche, die im Jesusgebet die Wiederholung zum Weg macht, hält dagegen, dass der Text sich gegen das Erzwingen richtet und nicht gegen die Häufigkeit.',
+    world: [
+      {
+        aspect: 'glaube',
+        text: 'Almosen, Gebet und Fasten galten als die drei Grundvollzüge der Frömmigkeit; das Buch Tobit nennt sie bereits zusammen. Gebetet wurde dreimal täglich zu festen Zeiten.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Ein einfaches Haus hatte einen Wohnraum und eine fensterlose Vorratskammer; nur diese ließ sich verschließen. Dort lagerten Getreide, Öl und Werkzeug.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Der Ausdruck vom dahin erhaltenen Lohn stammt aus dem Geschäftsverkehr und stand auf Quittungen. Er bedeutet: vollständig erhalten, nichts steht mehr aus.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Wohltätigkeit war eine öffentliche Angelegenheit; Gemeinden führten Listen und sammelten an festen Tagen. Wer gab, tat es meist vor Zeugen, schon zur Vermeidung von Streit.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. eleemosyne',
+        rendered: 'Almosen',
+        note: 'Wörtlich das Erbarmen. Aus dem griechischen Wort ist über das Kirchenlatein das deutsche Almosen geworden.',
+      },
+      {
+        word: 'griech. hypokritai',
+        rendered: 'die Heuchler',
+        note: 'Im Griechischen der Schauspieler. Der Vorwurf lautet nicht, es sei nicht ernst gemeint, sondern es gelte dem falschen Gegenüber.',
+      },
+      {
+        word: 'griech. apechousin ton misthon auton',
+        rendered: 'Sie haben ihren Lohn dahin',
+        note: 'Ein Ausdruck aus dem Geschäftsverkehr: vollständig erhalten. Wer für die Anerkennung handelt, bekommt sie – die Rechnung ist beglichen.',
+      },
+      {
+        word: 'griech. tameion',
+        rendered: 'in dein Kämmerlein',
+        note: 'Die Vorratskammer, in einem einfachen Haus der einzige verschließbare Raum. Luthers Wort hat die deutsche Frömmigkeitssprache geprägt.',
+      },
+      {
+        word: 'griech. battalogesete',
+        rendered: 'viel plappern',
+        note: 'Ein lautmalerisches Wort für sinnloses Reden. Gemeint ist die Häufung von Anrufungen, wie sie Zauberpapyri der Zeit zeigen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Die drei Werke bleiben verbindlich und prägen die Fastenzeit. Entscheidend ist die Absicht, nicht die Verborgenheit an sich – öffentliche Wohltätigkeit bleibt möglich.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Abschnitt richtet sich gegen jedes Werk, das vor Menschen zählen soll. Die Reformatoren führten ihn gegen Stiftungswesen und Ablasspraxis ihrer Zeit an.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Kritik gilt dem Erzwingen, nicht der Wiederholung; das Jesusgebet lebt gerade von ihr. Das Verborgene ist der Ort, an dem das Herz frei wird.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die drei Abschnitte sind streng parallel gebaut und gehen auf eine ältere Sammlung zurück. Das Posaunen vor dem Almosen ist als Brauch nirgends belegt.',
+      },
+    ],
+    crossRefs: [
+      { book: 'mt', chapter: 5, verse: 16, note: 'Euer Licht leuchte vor den Leuten' },
+      { book: 'jes', chapter: 29, verse: 13, note: 'Ehren mit den Lippen' },
+      { book: 'lk', chapter: 18, verse: 11, note: 'Der Pharisäer betet mit sich selbst' },
+      { book: 'mt', chapter: 23, verse: 5, note: 'Alles tun sie, um gesehen zu werden' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 6,
+    from: 14,
+    to: 32,
+    title: '„Ihr könnt nicht Gott dienen und dem Mammon“',
+    historicalShort:
+      'Vom Fasten über den Schatz zum Sorgen: eine zusammenhängende Kette über das, worauf ein Mensch sich verlässt.',
+    historicalLong:
+      'Der Abschnitt sieht wie eine Sammlung loser Sprüche aus, ist aber durchgehend gebaut. Alles hängt an einer Frage: Woran hängt das Herz? Der Fastenteil schließt die Reihe der drei Frömmigkeitsübungen ab; dann folgen Schatz, Auge und Herr, und aus dieser Dreiheit ergibt sich die lange Rede über das Sorgen.\n\nDas Wort vom Auge wird meist als Bildwort über die innere Ausrichtung gelesen. Wahrscheinlicher ist etwas anderes: Im Hebräischen ist ein gutes Auge die stehende Wendung für Freigebigkeit und ein böses Auge die für Geiz. Das Wort steht also nicht neben dem Geldabschnitt, sondern mitten darin. Luthers einfältig gibt ein griechisches Wort wieder, das ungeteilt bedeutet – und in der Umgangssprache auch großzügig.\n\nMammon ist ein aramäisches Wort für Vermögen; es steckt vermutlich dieselbe Wurzel darin wie in dem Wort für Vertrauen. Was einer besitzt, ist das, worauf er sich verlässt. Matthäus übersetzt das Wort nicht, obwohl er sonst fremde Ausdrücke erklärt – offenbar war es in den Gemeinden geläufig. Dass es hier wie ein Herr behandelt wird, dem man dient, ist die eigentliche Zuspitzung: Besitz erscheint nicht als Sache, sondern als Gegenüber mit Anspruch.\n\nDie Rede vom Sorgen ist an Menschen gerichtet, die tatsächlich wenig hatten. Ein Tagelöhner wurde abends bezahlt und wusste morgens nicht, ob er Arbeit finden würde; die Frage, was man essen werde, war keine Grübelei, sondern die Lage. Das griechische Wort meint ein Zerrissensein, nicht die Vorsorge. Wer säte und erntete, tat es weiter – die Vögel werden gerade als die genannt, die es nicht tun.\n\nDie Lilien sind botanisch unbestimmt; gemeint sind wahrscheinlich die Anemonen und Kronenwucherblumen, die im Frühjahr die Hänge Galiläas rot färben und nach wenigen Wochen als Brennmaterial im Backofen landen. Die Pointe hängt an dieser Kürze.',
+    reception:
+      'Kaum ein Abschnitt ist so oft gegen seine Adressaten gewendet worden. Die Aufforderung, nicht zu sorgen, wurde jahrhundertelang Armen gepredigt, während die Verhältnisse unangetastet blieben; die Sozialkritik des 19. Jahrhunderts hat das als Vertröstung angegriffen, und die Kirchen haben den Vorwurf zum Teil eingeräumt. Der Text selbst richtet sich an Menschen ohne Rücklagen und stellt ihre Lage nicht in Frage, sondern die Angst darin.\n\nDas Wort vom Mammon hat eine eigene Karriere gemacht. Aus dem aramäischen Wort für Vermögen wurde im Mittelalter ein Dämonenname; Petrus Lombardus und später Milton führen Mammon als gefallenen Engel. Die deutsche Redewendung vom schnöden Mammon geht auf Luther zurück.\n\nDie Anweisung, beim Fasten das Haupt zu salben, hat einen liturgischen Nachhall: Am Aschermittwoch wird Asche auf die Stirn gestreut – also gerade ein sichtbares Zeichen –, und die Lesung des Tages ist in vielen Ordnungen genau dieser Abschnitt. Die Kirchen haben diese Spannung bemerkt und deuten das Aschenkreuz als Bekenntnis vor Gott, nicht als Schau.\n\nDas Wort über die zwei Herren ist in die Wirtschaftsethik eingegangen. Die katholische Soziallehre, die evangelischen Denkschriften zur Wirtschaft und die Befreiungstheologie berufen sich gleichermaßen darauf, ziehen aber unterschiedliche Folgerungen – von der Bindung des Eigentums an seine Sozialpflicht bis zur grundsätzlichen Kritik am Kapital als Herrschaftsform.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Gearbeitet wurde von Sonnenaufgang bis Sonnenuntergang; angeworben wurde auf dem Dorfplatz in der Frühe. Wer bis zur dritten Stunde niemanden gefunden hatte, ging meist leer aus.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Vermögen bestand aus Kleidung, Vorräten und Metall; Motten fraßen die Gewänder, Feuchtigkeit zerstörte das Getreide. Wer Münzen hatte, vergrub sie im Hausboden.',
+      },
+      {
+        aspect: 'raum',
+        text: 'Im Frühjahr überziehen Anemonen und Kronenwucherblumen die Hänge Galiläas; nach wenigen Wochen sind sie verdorrt und dienen als Brennstoff im Backofen.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Ein Sklave konnte nur einem Herrn gehören; geteiltes Eigentum an einem Menschen führte in der Rechtspraxis zu ständigem Streit. Das Bild setzt diese Erfahrung voraus.',
+      },
+    ],
+    terms: [
+      {
+        word: 'aram. mamona',
+        rendered: 'dem Mammon',
+        note: 'Vermögen. Vermutlich dieselbe Wurzel wie das Wort für Vertrauen. Matthäus übersetzt es nicht – es war in den Gemeinden geläufig.',
+      },
+      {
+        word: 'griech. ses kai brosis',
+        rendered: 'die Motten und der Rost',
+        note: 'Das zweite Wort meint eigentlich das Fressen und kann Rost wie Ungeziefer bezeichnen. Beides zerstört, was gelagert wird.',
+      },
+      {
+        word: 'griech. haplous',
+        rendered: 'einfältig',
+        note: 'Ungeteilt – und in der Umgangssprache großzügig. Im Hebräischen steht das gute Auge für Freigebigkeit, das böse für Geiz.',
+      },
+      {
+        word: 'griech. me merimnate',
+        rendered: 'Sorget nicht',
+        note: 'Das Wort meint ein Zerrissensein, nicht die Vorsorge. Gemeint ist die Angst, nicht das Arbeiten.',
+      },
+      {
+        word: 'griech. helikian pechyn hena',
+        rendered: 'seiner Länge eine Elle zusetzen',
+        note: 'Das griechische Wort kann Körpergröße oder Lebenszeit meinen. Beide Übersetzungen sind vertretbar und ergeben verschiedene Bilder.',
+      },
+      {
+        word: 'griech. oligopistoi',
+        rendered: 'ihr Kleingläubigen',
+        note: 'Ein Wort, das fast nur bei Matthäus vorkommt. Es tadelt nicht den fehlenden Glauben, sondern den zu kleinen.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Eigentum ist erlaubt, aber an seine soziale Bestimmung gebunden; kein Besitz darf zum Herrn werden. Die Soziallehre entfaltet das seit dem 19. Jahrhundert.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Woran das Herz hängt, das ist der Gott eines Menschen – Luther formulierte es im Großen Katechismus so. Der Abschnitt ist damit eine Auslegung des ersten Gebots.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Sorglosigkeit ist Frucht des Vertrauens und wird eingeübt; das Fasten dient genau dieser Einübung. Die Väter lasen den Abschnitt als Anleitung zur Freiheit von den Dingen.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Abschnitt ist um ein Thema gebaut und nicht lose gereiht. Das Wort vom Auge gehört als hebräische Redewendung in den Geldzusammenhang.',
+      },
+      {
+        tradition: 'Sozialgeschichtliche Kritik',
+        text: 'Der Text wurde jahrhundertelang Armen gepredigt, ohne die Verhältnisse anzutasten. Er richtet sich an Menschen ohne Rücklagen und meint ihre Angst, nicht ihre Lage.',
+      },
+    ],
+    crossRefs: [
+      { book: 'lk', chapter: 12, verse: 22, note: 'Dieselbe Rede bei Lukas' },
+      { book: 'spr', chapter: 22, verse: 9, note: 'Ein gütiges Auge wird gesegnet' },
+      { book: '1tim', chapter: 6, verse: 10, note: 'Geiz ist eine Wurzel alles Übels' },
+      { book: 'ps', chapter: 55, verse: 22, note: 'Wirf dein Anliegen auf den HERRN' },
+      { book: 'mt', chapter: 6, verse: 33, note: 'Trachtet zuerst nach dem Reich Gottes' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 7,
+    from: 1,
+    to: 6,
+    title: '„den Splitter in deines Bruders Auge“',
+    historicalShort:
+      'Der meistzitierte Satz der Bergpredigt – und drei Verse später eine Unterscheidung, die genaues Hinsehen verlangt.',
+    historicalLong:
+      'Der Eröffnungssatz ist der bekannteste des Abschnitts und wird fast immer allein gebraucht. In der Rede steht er nicht allein. Wenige Verse später wird verlangt, Heiliges nicht den Hunden zu geben, und wenig danach, falsche Propheten an ihren Früchten zu erkennen – beides setzt Urteil voraus. Der Widerspruch löst sich am griechischen Wort: Es meint das richterliche Verurteilen, nicht das Unterscheiden. Untersagt ist, sich über einen anderen zu setzen, nicht das Beurteilen einer Sache.\n\nDie Bildrede vom Maß stammt aus dem Marktleben. Getreide wurde in einem genormten Gefäß gemessen, und der Verkäufer bestimmte, wie voll es war – gestrichen oder gerüttelt. Wer beim Verkaufen knapp maß, bekam beim Einkaufen dasselbe zu spüren. Lukas führt das Bild weiter aus und spricht vom gerüttelten und überfließenden Maß.\n\nSplitter und Balken sind eine bewusst maßlose Übertreibung, wie sie die rabbinische Erzählkunst kennt; im Talmud findet sich ein vergleichbares Wortpaar. Beide Wörter stammen aus der Holzarbeit – der eine ist ein Span, der andere ein tragender Deckenbalken. Wer als Handwerker sprach, griff zu dem, was in der Werkstatt lag.\n\nDer Satz über Hunde und Perlen fällt aus dem Ton. Hunde und Schweine waren unreine Tiere und dienten als Schimpfwörter für Außenstehende; das Wort für das Heilige bezeichnet das Opferfleisch, das nur die Priester essen durften. Wer der Satz ursprünglich meinte, ist unklar. Manche halten ihn für einen Rest innerjüdischer Rede über die Heiligtümer, andere für eine spätere Zufügung der Gemeinde, die ihre Grenze nach außen zog. Im Zusammenhang der Rede wirkt er wie ein Fremdkörper.',
+    reception:
+      'Richtet nicht ist der meistzitierte Bibelvers in nichtreligiösen Zusammenhängen und begegnet in Talkshows, Leserbriefen und Gerichtsberichten. Fast immer wird er als Verbot jeder Kritik verstanden. Diese Verwendung hat den Vers weit von seinem Zusammenhang gelöst; Ausleger aller Konfessionen weisen darauf hin, dass dieselbe Rede wenig später Unterscheidung ausdrücklich verlangt.\n\nDer Satz über die Perlen hat früh eine kirchenrechtliche Wirkung entfaltet. Die Didache, eine Gemeindeordnung des frühen zweiten Jahrhunderts, zitiert ihn als Begründung dafür, dass nur Getaufte am Mahl teilnehmen dürfen. Aus dieser Linie ist die Disziplin der Alten Kirche hervorgegangen, Ungetaufte vor dem Mahlteil zu entlassen; die orthodoxe Liturgie enthält den Ruf an die Katechumenen bis heute. Die Frage, wer zum Mahl zugelassen ist, wird zwischen den Konfessionen weiterhin verschieden beantwortet.\n\nPerlen vor die Säue ist als Redensart ins Deutsche eingegangen und wird längst ohne Bezug auf den Ursprung gebraucht. Luthers Übersetzung hat der Wendung ihre Form gegeben.\n\nDas Bild von Splitter und Balken hat in der Karikatur und in der politischen Rede eine lange Geschichte; es gehört zu den wenigen biblischen Bildern, die auch dort funktionieren, wo die Quelle unbekannt ist.',
+    world: [
+      {
+        aspect: 'arbeit',
+        text: 'Getreide wurde in genormten Gefäßen gemessen; ob gestrichen oder gerüttelt gefüllt wurde, entschied der Verkäufer. Falsche Maße waren ein häufiger Streitpunkt auf dem Markt.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Hunde liefen als Streuner durch die Dörfer und galten als unrein; Schweine hielt man in nichtjüdischen Gebieten. Beide Wörter dienten als Schimpf für Außenstehende.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Perlen kamen aus dem Roten Meer und dem Persischen Golf und gehörten zu den teuersten Waren überhaupt; Plinius nennt Preise, die ganze Landgüter aufwogen.',
+      },
+      {
+        aspect: 'recht',
+        text: 'Vor Gericht entschied eine Kammer von mindestens drei Männern; ein Einzelner durfte kein Urteil sprechen. Das griechische Wort für Richten meint genau diesen Vorgang.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. me krinete',
+        rendered: 'Richtet nicht',
+        note: 'Das Wort meint das richterliche Verurteilen, nicht das Unterscheiden. Dieselbe Rede verlangt wenig später ausdrücklich Urteilsvermögen.',
+      },
+      {
+        word: 'griech. en ho metro metreite',
+        rendered: 'mit welcherlei Maß ihr messet',
+        note: 'Ein Bild vom Markt: Wer beim Verkaufen knapp maß, bekam beim Einkaufen dasselbe zu spüren. Lukas führt es weiter aus.',
+      },
+      {
+        word: 'griech. ten dokon',
+        rendered: 'des Balkens in deinem Auge',
+        note: 'Der tragende Deckenbalken, dem Span gegenübergestellt. Beide Wörter stammen aus der Holzarbeit.',
+      },
+      {
+        word: 'griech. tous margaritas hymon',
+        rendered: 'eure Perlen',
+        note: 'Der Satz fällt aus dem Ton der Rede. Die Didache zitiert ihn im frühen zweiten Jahrhundert als Zulassungsregel für das Mahl.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Verboten ist das absprechende Urteil über den Menschen, nicht die Beurteilung einer Tat. Der Satz über die Perlen begründete früh die Ordnung des Mahlzugangs.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Wer richtet, stellt sich an einen Platz, der ihm nicht zusteht. Luther unterschied das Amt des Richters, das Gott eingesetzt hat, vom Richten des Einzelnen über andere.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Das Nichtrichten gehört zum Kern der Askese; die Wüstenväter nennen es die schwerste Übung. Der Ruf an die Katechumenen in der Liturgie geht auf den Perlensatz zurück.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Der Satz über Hunde und Perlen wirkt im Zusammenhang wie ein Fremdkörper. Ob er innerjüdische Rede über die Heiligtümer aufnimmt oder später zugefügt wurde, ist offen.',
+      },
+    ],
+    crossRefs: [
+      { book: 'lk', chapter: 6, verse: 38, note: 'Das gerüttelte Maß' },
+      { book: 'roem', chapter: 2, verse: 1, note: 'Du richtest dich selbst' },
+      { book: 'jak', chapter: 4, verse: 12, note: 'Einer ist der Richter' },
+      { book: 'mt', chapter: 7, verse: 16, note: 'An ihren Früchten erkennen' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 7,
+    from: 9,
+    to: 11,
+    title: '„so ihn sein Sohn bittet ums Brot“',
+    historicalShort:
+      'Drei Verse mit einem Schluss vom Kleineren aufs Größere – und einem Nebensatz, der überrascht.',
+    historicalLong:
+      'Die beiden Beispiele sind aus dem Alltag gegriffen und funktionieren nur, wenn man die Gegenstände vor sich sieht. Das Brot der Gegend war ein flacher, runder Fladen, gebacken auf heißen Steinen; ein glatter Kieselstein vom Seeufer sieht ihm zum Verwechseln ähnlich. Beim Fisch liegt es ebenso: Im See lebt ein aalartiger Wels ohne Schuppen, der nach dem Gesetz nicht gegessen werden durfte und einer Schlange gleicht. Beide Male geht es nicht um eine Beleidigung, sondern um eine Täuschung – etwas, das aussieht wie das Erbetene und es nicht ist.\n\nDie Beweisform ist im Judentum der Zeit fest eingeführt: der Schluss vom Leichteren auf das Schwerere. Wenn schon das Geringere gilt, um wie viel mehr das Größere. Die rabbinische Auslegung nennt sie unter ihren Auslegungsregeln an erster Stelle. Der Satz argumentiert also nicht mit einem Gefühl, sondern mit einem anerkannten Verfahren.\n\nDer Nebensatz ist der eigentlich bemerkenswerte Teil: die ihr doch arg seid. Er steht ohne Erklärung mitten in einem Satz über väterliche Güte. Wer ihn ernst nimmt, findet hier eine nüchterne Einschätzung des Menschen, die keine Ausnahme macht – und die gerade darum die Folgerung trägt. Nicht weil Menschen gut sind, ist Gott gut, sondern obwohl sie es nicht sind, geben sie ihren Kindern doch etwas Brauchbares.\n\nLukas hat denselben Spruch mit einer bezeichnenden Abweichung: Bei ihm gibt der Vater im Himmel nicht gute Gaben, sondern den Heiligen Geist. Die Änderung zeigt, wie eine Gemeinde einen Spruch auf das hin zuspitzt, was ihr das Wichtigste ist.',
+    reception:
+      'Der Abschnitt gehört zu den meistgebrauchten Trosttexten der Seelsorge und steht in vielen Gebetbüchern. Zugleich stellt er die Frage, die jede Zusage über das Gebet aufwirft: Was ist mit den Bitten, die unbeantwortet bleiben? Die Auslegung hat darauf drei Wege gefunden – die Antwort komme anders als erbeten, sie komme später, oder das Erbetene sei in Wahrheit der Stein gewesen. Alle drei Antworten sind alt, und keine hat sich durchgesetzt.\n\nAugustinus formulierte im Brief an Proba die vielzitierte Zuspitzung, Gott versage manchmal das Kleine, um das Größere zu geben. Teresa von Avila kehrte den Gedanken um und sprach von mehr Tränen über erhörte als über unerhörte Gebete.\n\nDer Nebensatz über die Bosheit der Menschen ist in der Lehre vom Menschen zu einem Beleg geworden. Augustinus und nach ihm die Reformatoren führten ihn für die Verderbtheit der menschlichen Natur an; die östliche Tradition liest ihn zurückhaltender als Feststellung über den gegenwärtigen Zustand und nicht über das Wesen.\n\nDie Fassung des Lukas mit dem Heiligen Geist ist in der Pfingstbewegung des 20. Jahrhunderts zu einer Kernstelle geworden. Sie wird dort als Zusage gelesen, dass diese Gabe jedem offensteht, der darum bittet.',
+    world: [
+      {
+        aspect: 'alltag',
+        text: 'Brot war ein flacher runder Fladen, auf heißen Steinen gebacken; ein glatter Kiesel vom Seeufer sieht ihm ähnlich. Getreide und Fisch waren die Hauptnahrung am See.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Nach dem Gesetz durfte nur essen, was Flossen und Schuppen hat; ein erheblicher Teil des Fangs war damit unbrauchbar und wurde am Ufer aussortiert.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Der Vater versorgte den Haushalt und verteilte die Nahrung; Kinder baten ihn unmittelbar. Die Selbstverständlichkeit dieser Versorgung trägt den ganzen Schluss.',
+      },
+      {
+        aspect: 'glaube',
+        text: 'Der Schluss vom Leichteren auf das Schwerere stand an erster Stelle unter den anerkannten Auslegungsregeln. Wer so argumentierte, gebrauchte ein geläufiges Verfahren.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. me lithon epidosei auto',
+        rendered: 'der ihm einen Stein biete',
+        note: 'Kein Hohn, sondern eine Täuschung: Der runde Fladen und der glatte Kiesel sehen einander ähnlich.',
+      },
+      {
+        word: 'griech. hymeis poneroi ontes',
+        rendered: 'die ihr doch arg seid',
+        note: 'Ein Nebensatz ohne Erklärung mitten in einer Zusage. Er trägt den Schluss gerade dadurch, dass er nichts beschönigt.',
+      },
+      {
+        word: 'griech. poso mallon',
+        rendered: 'wie viel mehr',
+        note: 'Die Formel des Schlusses vom Leichteren auf das Schwerere, die erste der anerkannten Auslegungsregeln.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Gott gibt, was gut ist, nicht immer das Erbetene. Augustinus formulierte, er versage manchmal das Kleine, um das Größere zu geben.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Der Nebensatz über die Bosheit der Menschen macht die Zusage erst tragfähig. Sie beruht nicht auf menschlicher Güte, sondern auf Gottes Art.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Die Feststellung über den Menschen betrifft seinen gegenwärtigen Zustand, nicht sein Wesen; das Bild Gottes bleibt unzerstört. Das Gebet führt zur Wiederherstellung.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Lukas hat denselben Spruch mit dem Heiligen Geist statt der guten Gaben. Die Abweichung zeigt, wie Gemeinden einen Spruch auf ihr Anliegen hin zuspitzten.',
+      },
+    ],
+    crossRefs: [
+      { book: 'lk', chapter: 11, verse: 13, note: 'Bei Lukas der Heilige Geist' },
+      { book: 'jak', chapter: 1, verse: 17, note: 'Alle gute Gabe kommt von oben' },
+      { book: 'ps', chapter: 103, verse: 13, note: 'Wie sich ein Vater erbarmt' },
+      { book: 'mt', chapter: 7, verse: 7, note: 'Bittet, so wird euch gegeben' },
+    ],
+  },
+  {
+    book: 'mt',
+    chapter: 7,
+    from: 13,
+    to: 29,
+    title: '„An ihren Früchten sollt ihr sie erkennen“',
+    historicalShort:
+      'Zwei Wege, zwei Bäume, zwei Häuser – und die Feststellung, dass Wunder kein Ausweis sind.',
+    historicalLong:
+      'Der Schluss der Rede besteht aus vier Doppelbildern, und alle vier stellen vor dieselbe Entscheidung. Die Form ist alt: Die Zwei-Wege-Lehre steht im fünften Buch Mose, im ersten Psalm, in der Gemeinderegel vom Toten Meer und, wenige Jahrzehnte nach diesem Evangelium, an der Spitze der Didache, die mit den Worten beginnt, es gebe zwei Wege, einen des Lebens und einen des Todes. Wer so redete, gebrauchte eine bekannte Lehrform.\n\nDie Warnung vor falschen Propheten hatte einen unmittelbaren Anlass. Wanderprediger zogen durch die Gemeinden und beanspruchten Aufnahme und Versorgung; die Didache gibt praktische Prüfregeln – wer länger als zwei Tage bleibt oder Geld verlangt, ist ein falscher Prophet. Die Frage, wie man einen Boten erkennt, war ein Alltagsproblem der frühen Gemeinden und keine grundsätzliche Erwägung.\n\nDer schärfste Satz des Abschnitts ist der über die Wundertäter. Weissagung, Dämonenaustreibung und Machttaten werden aufgezählt – also genau das, was sonst als Ausweis gilt – und ausdrücklich für unzureichend erklärt. Das ist ungewöhnlich, denn dieselben Zeichen gelten anderswo im Neuen Testament als Bestätigung. Der Maßstab ist hier allein das Tun des Willens Gottes. Für ein Buch, das zahlreiche Heilungen erzählt, ist das eine bemerkenswerte Selbstbegrenzung.\n\nDas Schlussbild setzt einen genauen Ortskenner voraus. In den Wadis Palästinas fließt den größten Teil des Jahres kein Wasser; wer dort baut, findet ebenen, leicht zu bearbeitenden Grund. Im Winter verwandelt ein Platzregen dasselbe Bett binnen Stunden in einen reißenden Strom. Der Unterschied zwischen den beiden Bauherren zeigt sich erst dann und ist vorher nicht zu sehen.\n\nDer Abschlusssatz über die Vollmacht ist die erste von fünf gleichlautenden Formeln, mit denen Matthäus seine großen Reden beendet. Die Feststellung, er habe nicht gelehrt wie die Schriftgelehrten, meint die Redeweise: Ein Gelehrter berief sich auf Gewährsleute, hier spricht einer aus sich.',
+    reception:
+      'Der Satz von der engen Pforte hat die Frage nach der Zahl der Geretteten über Jahrhunderte begleitet. Augustinus rechnete mit wenigen, Origenes hoffte auf alle und wurde dafür später verurteilt; die Reformatoren betonten, dass die Frage nicht zu beantworten sei. Im 20. Jahrhundert hat die katholische Theologie mit Karl Rahner und Hans Urs von Balthasar die Hoffnung für alle wieder ausdrücklich formuliert, ohne sie zur Lehre zu erheben. Die Auslegung dieses Verses hängt fast immer an dieser vorgängigen Entscheidung.\n\nDer Maßstab der Früchte ist zu einem allgemeinen Grundsatz geworden, weit über die Prüfung von Predigern hinaus. Er wird in Kirchenrecht, Ordensregeln und Aufarbeitungsverfahren gleichermaßen herangezogen. In der Aufarbeitung sexualisierter Gewalt in den Kirchen ist er in den letzten Jahrzehnten neu bedacht worden: Charisma, Erfolg und Frömmigkeit erwiesen sich gerade nicht als Ausweis, und der Satz über die Wundertäter hat dabei ein Gewicht bekommen, das er in der Predigt lange nicht hatte.\n\nDas Bild vom Hausbau ist als Kinderlied und in unzähligen Predigten geläufig. In der Auslegungsgeschichte war lange strittig, was der Fels sei – Christus, die Kirche, das Bekenntnis oder, wie der Text selbst sagt, das Tun der gehörten Worte. Der Wortlaut ist eindeutig; die Deutungen sind es weniger.\n\nDie Zwei-Wege-Form hat über die Didache und die Barnabasschrift die Katechese der Alten Kirche geprägt und findet sich in Taufunterweisungen bis ins Mittelalter.',
+    world: [
+      {
+        aspect: 'raum',
+        text: 'Der Regen fällt zwischen November und März, oft in wenigen heftigen Güssen; von Mai bis Oktober bleibt es fast durchgehend trocken. Wer im Sommer baute, sah nie Wasser.',
+      },
+      {
+        aspect: 'gesellschaft',
+        text: 'Gastfreundschaft war Pflicht und wurde nicht verweigert; wer sie missbrauchte, konnte lange von Ort zu Ort ziehen. Empfehlungsschreiben waren das einzige Mittel der Nachprüfung.',
+      },
+      {
+        aspect: 'arbeit',
+        text: 'Dornen und Disteln wuchsen zwischen den Kulturen und wurden zum Heizen gesammelt. Ein Baum wurde nach mehreren fruchtlosen Jahren gefällt, weil er Wasser und Platz beanspruchte.',
+      },
+      {
+        aspect: 'alltag',
+        text: 'Häuser wurden aus Bruchstein und Lehm gebaut, mit einem Dach aus Balken, Zweigen und gestampfter Erde. Starker Regen war die häufigste Ursache für Einstürze.',
+      },
+    ],
+    terms: [
+      {
+        word: 'griech. tes stenes pyles',
+        rendered: 'die enge Pforte',
+        note: 'Die Zwei-Wege-Lehre steht im fünften Buch Mose, im ersten Psalm und an der Spitze der Didache. Die Form war als Lehrmuster bekannt.',
+      },
+      {
+        word: 'griech. en endymasin probaton',
+        rendered: 'in Schafskleidern',
+        note: 'Der Prophetenmantel bestand aus Fell. Das Bild meint die äußere Kennzeichnung eines Boten, die sich nachahmen lässt.',
+      },
+      {
+        word: 'griech. kyrie kyrie',
+        rendered: 'HERR, HERR',
+        note: 'Die doppelte Anrede ist Ausdruck der Ehrerbietung. Der Satz erklärt sie ausdrücklich für unzureichend.',
+      },
+      {
+        word: 'griech. epi ten petran',
+        rendered: 'auf einen Felsen baute',
+        note: 'Der Text selbst nennt den Fels: das Tun der gehörten Worte. Spätere Deutungen setzten Christus, die Kirche oder das Bekenntnis ein.',
+      },
+      {
+        word: 'griech. hos exousian echon',
+        rendered: 'er predigte gewaltig',
+        note: 'Wörtlich: wie einer, der Vollmacht hat. Ein Gelehrter berief sich auf Gewährsleute; hier spricht einer aus sich.',
+      },
+    ],
+    interpretations: [
+      {
+        tradition: 'Katholische Auslegung',
+        text: 'Der Glaube muss sich in Werken zeigen; Bekenntnis allein genügt nicht. Zur Zahl der Geretteten äußert sich die Kirche nicht abschließend und lässt die Hoffnung offen.',
+      },
+      {
+        tradition: 'Reformatorische Auslegung',
+        text: 'Die Früchte sind Folge des Glaubens, nicht seine Bedingung; ein guter Baum bringt gute Früchte, nicht umgekehrt. Luther legte den Abschnitt in dieser Richtung aus.',
+      },
+      {
+        tradition: 'Orthodoxe Auslegung',
+        text: 'Der schmale Weg ist der Weg der Askese, der eingeübt wird. Die Zwei-Wege-Lehre prägt die Taufunterweisung seit der Alten Kirche.',
+      },
+      {
+        tradition: 'Historisch-kritische Deutung',
+        text: 'Die Warnung vor Wanderpropheten spiegelt ein Alltagsproblem der frühen Gemeinden; die Didache gibt dazu praktische Regeln. Der Abschluss ist die erste von fünf Redeformeln.',
+      },
+      {
+        tradition: 'Gegenwärtiger Befund',
+        text: 'In der Aufarbeitung sexualisierter Gewalt hat der Satz über die Wundertäter neues Gewicht bekommen: Charisma und Erfolg erwiesen sich gerade nicht als Ausweis.',
+      },
+    ],
+    crossRefs: [
+      { book: '5mo', chapter: 30, verse: 15, note: 'Leben und Tod vorgelegt' },
+      { book: 'ps', chapter: 1, verse: 1, note: 'Der Weg der Gerechten' },
+      { book: 'jer', chapter: 21, verse: 8, note: 'Der Weg zum Leben und zum Tode' },
+      { book: 'jak', chapter: 1, verse: 22, note: 'Seid Täter des Worts' },
+      { book: 'mk', chapter: 1, verse: 22, note: 'Dieselbe Feststellung bei Markus' },
+    ],
+  },
 ];
 
 /**
