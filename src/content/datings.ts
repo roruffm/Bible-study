@@ -2972,6 +2972,36 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
     epoch: 'roemer',
   },
+  'mt 14,1': {
+    events: 'Zwischen dem Hof des Antipas und der Grenze nach Tyrus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 14,22': {
+    events: 'Zwischen dem Hof des Antipas und der Grenze nach Tyrus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 15,1': {
+    events: 'Zwischen dem Hof des Antipas und der Grenze nach Tyrus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 15,21': {
+    events: 'Zwischen dem Hof des Antipas und der Grenze nach Tyrus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 16,1': {
+    events: 'Zwischen dem Hof des Antipas und der Grenze nach Tyrus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
+  'mt 16,21': {
+    events: 'Zwischen dem Hof des Antipas und der Grenze nach Tyrus',
+    written: 'um 80 bis 90 n. Chr., am ehesten in Syrien',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
