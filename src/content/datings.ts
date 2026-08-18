@@ -3157,6 +3157,41 @@ export const DATINGS: Record<string, Dating> = {
     written: 'um 80 bis 90 n. Chr., Ort unbekannt',
     epoch: 'roemer',
   },
+  'lk 4,1': {
+    events: 'Versuchung in der Wüste und die ersten Tage in Kapernaum',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 4,31': {
+    events: 'Versuchung in der Wüste und die ersten Tage in Kapernaum',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 5,1': {
+    events: 'Versuchung in der Wüste und die ersten Tage in Kapernaum',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 5,17': {
+    events: 'Versuchung in der Wüste und die ersten Tage in Kapernaum',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 6,1': {
+    events: 'Die Wahl der Zwölf und die Feldrede',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 6,32': {
+    events: 'Die Wahl der Zwölf und die Feldrede',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
+  'lk 6,39': {
+    events: 'Die Wahl der Zwölf und die Feldrede',
+    written: 'um 80 bis 90 n. Chr., Ort unbekannt',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
