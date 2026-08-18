@@ -3517,6 +3517,21 @@ export const DATINGS: Record<string, Dating> = {
     written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Brotrede folgt dem Aufbau einer Synagogenpredigt über ein Schriftwort.',
     epoch: 'roemer',
   },
+  'joh 7,1': {
+    events: 'Die Szenen spielen während des Laubhüttenfestes im Herbst, etwa 29 n. Chr., in Jerusalem und im Tempelbezirk.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Reden dieses Kapitels greifen die Riten des Festes unmittelbar auf.',
+    epoch: 'roemer',
+  },
+  'joh 7,25': {
+    events: 'Die Szenen spielen während des Laubhüttenfestes im Herbst, etwa 29 n. Chr., in Jerusalem und im Tempelbezirk.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Reden dieses Kapitels greifen die Riten des Festes unmittelbar auf.',
+    epoch: 'roemer',
+  },
+  'joh 7,45': {
+    events: 'Die Szenen spielen während des Laubhüttenfestes im Herbst, etwa 29 n. Chr., in Jerusalem und im Tempelbezirk.',
+    written: 'Das Johannesevangelium wird meist auf 90 bis 110 n. Chr. datiert; die Reden dieses Kapitels greifen die Riten des Festes unmittelbar auf.',
+    epoch: 'roemer',
+  },
 };
 
 /** Der Schlüssel, unter dem ein Artikel seine Datierung findet. */
